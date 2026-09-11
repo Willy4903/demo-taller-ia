@@ -306,25 +306,25 @@
     </div>
     <div class="periodo">
       Periodo actual
-      <strong id="periodo-actual">Septiembre 2026</strong>
+      <strong id="periodo-actual">__PERIODO_ACTUAL__</strong>
     </div>
   </header>
 
   <section class="stat-cards">
     <div class="stat-card">
       <div class="label">Total de ventas este mes</div>
-      <div class="value" id="stat-total">S/ 317,835</div>
-      <div class="delta">▲ 52.9% vs. mes anterior</div>
+      <div class="value" id="stat-total">__STAT_TOTAL__</div>
+      <div class="delta">__STAT_TOTAL_DELTA__</div>
     </div>
     <div class="stat-card">
       <div class="label">Promedio por producto</div>
-      <div class="value" id="stat-promedio">S/ 26,486</div>
-      <div class="delta">▲ 52.9% vs. mes anterior</div>
+      <div class="value" id="stat-promedio">__STAT_PROMEDIO__</div>
+      <div class="delta">__STAT_PROMEDIO_DELTA__</div>
     </div>
     <div class="stat-card">
       <div class="label">Clientes nuevos</div>
-      <div class="value" id="stat-clientes">42</div>
-      <div class="delta">▼ 7 menos vs. mes anterior</div>
+      <div class="value" id="stat-clientes">__STAT_CLIENTES__</div>
+      <div class="delta">__STAT_CLIENTES_DELTA__</div>
     </div>
   </section>
 
@@ -372,9 +372,9 @@
 </div>
 
 <script>
-  const ventasPorMes = [{"mes": "Abr", "anio": 2026, "total": 207482.2}, {"mes": "May", "anio": 2026, "total": 183803.89}, {"mes": "Jun", "anio": 2026, "total": 224675.22}, {"mes": "Jul", "anio": 2026, "total": 258718.13}, {"mes": "Ago", "anio": 2026, "total": 207888.81}, {"mes": "Sep", "anio": 2026, "total": 317835.28}];
+  const ventasPorMes = __VENTAS_POR_MES_JSON__;
 
-  const topProductos = [{"nombre": "Laptop Ultra X1", "unidades": 46, "ingresos": 148168.12}, {"nombre": "Smartphone Galaxy Z", "unidades": 41, "ingresos": 115409.23}, {"nombre": "Monitor 27 4K", "unidades": 19, "ingresos": 17114.0}, {"nombre": "Impresora LaserJet", "unidades": 19, "ingresos": 7699.21}, {"nombre": "Silla Ergonomica", "unidades": 10, "ingresos": 5583.67}, {"nombre": "Disco SSD 1TB", "unidades": 32, "ingresos": 4695.66}, {"nombre": "Auriculares Pro", "unidades": 51, "ingresos": 4574.56}, {"nombre": "Teclado Mecanico RGB", "unidades": 31, "ingresos": 3689.95}, {"nombre": "Router WiFi 6", "unidades": 13, "ingresos": 3205.94}, {"nombre": "Mouse Inalambrico", "unidades": 51, "ingresos": 3026.63}];
+  const topProductos = __TOP_PRODUCTOS_JSON__;
 
   function formatearMoneda(valor) {
     return "S/ " + valor.toLocaleString("es-PE", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
