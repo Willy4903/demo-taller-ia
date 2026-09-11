@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clientes VIP</title>
+<style>
+  :root {
+    --navy: #0D3B66;
+    --navy-dark: #082849;
+    --navy-light: #12508a;
+    --gold: #E8A537;
+    --gold-dark: #c98a24;
+    --surface: #f4f6f9;
+    --card-bg: #ffffff;
+    --text-primary: #10203a;
+    --text-secondary: #5b6b85;
+    --border: #e2e6ee;
+    --platinum: #5b6b85;
+    --silver: #9aa5b8;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--surface);
+    color: var(--text-primary);
+    padding-block: 24px;
+  }
+
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-inline: 16px;
+  }
+
+  header.page-header {
+    background: linear-gradient(135deg, var(--navy-dark), var(--navy-light));
+    border-radius: 14px;
+    padding: 26px 28px;
+    color: #ffffff;
+    margin-bottom: 22px;
+    box-shadow: 0 8px 24px rgba(13, 59, 102, 0.25);
+  }
+
+  header.page-header .subtitle {
+    margin: 0 0 4px;
+    color: var(--gold);
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  header.page-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    letter-spacing: 0.01em;
+  }
+
+  /* Filtros */
+  .filtros {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+
+  .filtro-btn {
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: var(--text-secondary);
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.18s ease;
+  }
+
+  .filtro-btn:hover {
+    border-color: var(--gold);
+    color: var(--navy);
+  }
+
+  .filtro-btn.activo {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: var(--gold);
+  }
+
+  /* Grid de tarjetas */
+  .grid-clientes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-bottom: 28px;
+  }
+
+  .cliente-card {
+    position: relative;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 20px;
+    cursor: default;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, z-index 0s;
+    z-index: 1;
+  }
+
+  .cliente-card.oculta {
+    display: none;
+  }
+
+  .cliente-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 18px 40px rgba(13, 59, 102, 0.22);
+    z-index: 5;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 14px;
+  }
+
+  .avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+    flex-shrink: 0;
+  }
+
+  .badge {
+    padding: 4px 11px;
+    border-radius: 999px;
+    font-size: 0.66rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+
+  .badge-platinum { background: #e8ecf3; color: var(--navy); border: 1px solid var(--platinum); }
+  .badge-gold { background: #fdf0dc; color: var(--gold-dark); border: 1px solid var(--gold); }
+  .badge-silver { background: #f1f2f5; color: var(--text-secondary); border: 1px solid var(--silver); }
+
+  .empresa-nombre {
+    font-size: 1.02rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 4px;
+  }
+
+  .empresa-industria {
+    display: inline-block;
+    font-size: 0.72rem;
+    color: var(--navy);
+    background: #eaf1f8;
+    padding: 2px 9px;
+    border-radius: 6px;
+    margin-bottom: 14px;
+    font-weight: 600;
+  }
+
+  .metrica-principal {
+    margin-bottom: 4px;
+  }
+
+  .metrica-principal .label {
+    font-size: 0.68rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .metrica-principal .valor {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--navy);
+  }
+
+  .duracion {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    margin-top: 6px;
+  }
+
+  .duracion strong { color: var(--text-primary); }
+
+  /* Panel adicional que aparece al hacer hover */
+  .detalle-hover {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.28s ease, opacity 0.22s ease, margin-top 0.28s ease;
+    margin-top: 0;
+    border-top: 1px dashed var(--border);
+  }
+
+  .cliente-card:hover .detalle-hover {
+    max-height: 200px;
+    opacity: 1;
+    margin-top: 14px;
+    padding-top: 14px;
+  }
+
+  .detalle-fila {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.78rem;
+    padding: 4px 0;
+  }
+
+  .detalle-fila .detalle-label {
+    color: var(--text-secondary);
+  }
+
+  .detalle-fila .detalle-valor {
+    color: var(--text-primary);
+    font-weight: 600;
+    text-align: right;
+  }
+
+  .detalle-fila .detalle-valor.destacado {
+    color: var(--gold-dark);
+  }
+
+  /* Footer de estadisticas */
+  .footer-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 24px;
+  }
+
+  .stat-item {
+    text-align: center;
+    border-right: 1px solid var(--border);
+  }
+
+  .stat-item:last-child { border-right: none; }
+
+  .stat-item .stat-label {
+    font-size: 0.74rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+  }
+
+  .stat-item .stat-valor {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--navy);
+  }
+
+  .stat-item .stat-valor.gold { color: var(--gold-dark); }
+
+  footer.pie-pagina {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.72rem;
+    margin-top: 16px;
+  }
+
+  @media (max-width: 900px) {
+    .grid-clientes { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 600px) {
+    body { padding-block: 16px; }
+    .grid-clientes { grid-template-columns: 1fr; }
+    header.page-header { padding: 20px; }
+    header.page-header h1 { font-size: 1.2rem; }
+    .footer-stats { grid-template-columns: 1fr; }
+    .stat-item { border-right: none; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+    .stat-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .cliente-card:hover { transform: scale(1.04); }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header class="page-header">
+    <p class="subtitle">Portafolio de Cuentas Estrategicas</p>
+    <h1>Nuestros Clientes VIP - Portafolio Activo</h1>
+  </header>
+
+  <div class="filtros" id="filtros">
+    <button class="filtro-btn activo" data-tier="Todos">Todos</button>
+    <button class="filtro-btn" data-tier="Platinum">Platinum</button>
+    <button class="filtro-btn" data-tier="Gold">Gold</button>
+    <button class="filtro-btn" data-tier="Silver">Silver</button>
+  </div>
+
+  <div class="grid-clientes" id="grid-clientes"></div>
+
+  <section class="footer-stats">
+    <div class="stat-item">
+      <div class="stat-label">Total de clientes VIP</div>
+      <div class="stat-valor" id="stat-total-clientes">0</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-label">Ingresos totales</div>
+      <div class="stat-valor gold" id="stat-ingresos-totales">S/ 0</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-label">Ingreso promedio</div>
+      <div class="stat-valor" id="stat-ingreso-promedio">S/ 0</div>
+    </div>
+  </section>
+
+  <footer class="pie-pagina">Datos simulados con fines demostrativos.</footer>
+</div>
+
+<script>
+  const clientes = [
+    {
+      empresa: "Andina Tech Solutions", industria: "Tecnologia", color: "#2E7DAF",
+      contrato: 620000, duracion: 4, especialista: "Renzo Aguilar",
+      renovacion: "2027-03-15", proyeccion: 694400,
+    },
+    {
+      empresa: "Grupo Minero Austral", industria: "Mineria", color: "#B84C3C",
+      contrato: 540000, duracion: 5, especialista: "Fiorella Suarez",
+      renovacion: "2027-01-20", proyeccion: 604800,
+    },
+    {
+      empresa: "Salud Integral Peru", industria: "Salud", color: "#3E8E5A",
+      contrato: 455000, duracion: 3, especialista: "Valeria Montes",
+      renovacion: "2027-06-10", proyeccion: 509600,
+    },
+    {
+      empresa: "Constructora Horizonte", industria: "Construccion", color: "#8B5CB8",
+      contrato: 210000, duracion: 3, especialista: "Diego Farfan",
+      renovacion: "2026-12-01", proyeccion: 235200,
+    },
+    {
+      empresa: "Educaria EdTech", industria: "Educacion", color: "#2FA6A0",
+      contrato: 165000, duracion: 2, especialista: "Camila Reyes",
+      renovacion: "2027-02-28", proyeccion: 184800,
+    },
+    {
+      empresa: "Retail Norte S.A.", industria: "Retail", color: "#D46A9F",
+      contrato: 180000, duracion: 2, especialista: "Andres Pacheco",
+      renovacion: "2026-11-18", proyeccion: 201600,
+    },
+    {
+      empresa: "Finanzas del Pacifico", industria: "Finanzas", color: "#C98A24",
+      contrato: 95000, duracion: 1, especialista: "Milagros Ponce",
+      renovacion: "2026-10-30", proyeccion: 106400,
+    },
+    {
+      empresa: "Distribuidora Sabor Andino", industria: "Alimentos", color: "#5B7FBD",
+      contrato: 68000, duracion: 1, especialista: "Sebastian Rojas",
+      renovacion: "2026-12-22", proyeccion: 76160,
+    },
+    {
+      empresa: "Logistica Rapida SAC", industria: "Logistica", color: "#7A9E3E",
+      contrato: 72000, duracion: 1, especialista: "Gonzalo Prado",
+      renovacion: "2027-01-05", proyeccion: 80640,
+    },
+  ];
+
+  function obtenerTier(monto) {
+    if (monto >= 400000) return "Platinum";
+    if (monto >= 150000) return "Gold";
+    return "Silver";
+  }
+
+  function obtenerIniciales(nombre) {
+    return nombre
+      .split(" ")
+      .filter(p => p.length > 2 || /^[A-Za-z]/.test(p))
+      .slice(0, 2)
+      .map(p => p[0].toUpperCase())
+      .join("");
+  }
+
+  function formatearSoles(valor) {
+    return "S/ " + Math.round(valor).toLocaleString("es-PE");
+  }
+
+  function formatearFecha(fechaIso) {
+    const [anio, mes, dia] = fechaIso.split("-");
+    const meses = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"];
+    return `${dia} ${meses[parseInt(mes, 10) - 1]} ${anio}`;
+  }
+
+  const grid = document.getElementById("grid-clientes");
+
+  clientes.forEach((cliente) => {
+    const tier = obtenerTier(cliente.contrato);
+    const claseBadge = `badge-${tier.toLowerCase()}`;
+
+    const card = document.createElement("div");
+    card.className = "cliente-card";
+    card.dataset.tier = tier;
+
+    card.innerHTML = `
+      <div class="card-top">
+        <div class="avatar" style="background:${cliente.color}">${obtenerIniciales(cliente.empresa)}</div>
+        <span class="badge ${claseBadge}">${tier}</span>
+      </div>
+      <p class="empresa-nombre">${cliente.empresa}</p>
+      <span class="empresa-industria">${cliente.industria}</span>
+      <div class="metrica-principal">
+        <div class="label">Contrato actual</div>
+        <div class="valor">${formatearSoles(cliente.contrato)}</div>
+      </div>
+      <div class="duracion">Relacion comercial: <strong>${cliente.duracion} ${cliente.duracion === 1 ? "año" : "años"}</strong></div>
+      <div class="detalle-hover">
+        <div class="detalle-fila">
+          <span class="detalle-label">Proyeccion de ingresos</span>
+          <span class="detalle-valor destacado">${formatearSoles(cliente.proyeccion)}</span>
+        </div>
+        <div class="detalle-fila">
+          <span class="detalle-label">Fecha de renovacion</span>
+          <span class="detalle-valor">${formatearFecha(cliente.renovacion)}</span>
+        </div>
+        <div class="detalle-fila">
+          <span class="detalle-label">Especialista asignado</span>
+          <span class="detalle-valor">${cliente.especialista}</span>
+        </div>
+      </div>
+    `;
+
+    grid.appendChild(card);
+  });
+
+  // --- Filtros ---
+  const botonesFiltro = document.querySelectorAll(".filtro-btn");
+  botonesFiltro.forEach((boton) => {
+    boton.addEventListener("click", () => {
+      botonesFiltro.forEach(b => b.classList.remove("activo"));
+      boton.classList.add("activo");
+
+      const tierSeleccionado = boton.dataset.tier;
+      document.querySelectorAll(".cliente-card").forEach((card) => {
+        const coincide = tierSeleccionado === "Todos" || card.dataset.tier === tierSeleccionado;
+        card.classList.toggle("oculta", !coincide);
+      });
+    });
+  });
+
+  // --- Estadisticas del pie de pagina ---
+  const totalClientes = clientes.length;
+  const ingresosTotales = clientes.reduce((suma, c) => suma + c.contrato, 0);
+  const ingresoPromedio = ingresosTotales / totalClientes;
+
+  document.getElementById("stat-total-clientes").textContent = totalClientes;
+  document.getElementById("stat-ingresos-totales").textContent = formatearSoles(ingresosTotales);
+  document.getElementById("stat-ingreso-promedio").textContent = formatearSoles(ingresoPromedio);
+</script>
+</body>
+</html>
