@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juego de Memoria</title>
+<style>
+  :root {
+    --celeste: #4FC3E8;
+    --rosa: #FF6FA5;
+    --amarillo: #FFD93D;
+    --verde: #6BCB77;
+    --naranja: #FF9F45;
+    --morado: #B98CE8;
+    --texto: #2b2245;
+    --fondo: #fff6e9;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Comic Sans MS", "Trebuchet MS", Verdana, sans-serif;
+    background: linear-gradient(160deg, #fff6e9, #eaf7ff);
+    color: var(--texto);
+    padding-block: 24px;
+    overflow-x: hidden;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-inline: 16px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+    margin: 0 0 6px;
+    color: var(--texto);
+    text-shadow: 2px 2px 0 var(--amarillo);
+  }
+
+  .subtitulo {
+    margin: 0 0 20px;
+    color: #6b5f8a;
+    font-size: 0.95rem;
+  }
+
+  .marcador {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .marcador-item {
+    background: #ffffff;
+    border: 3px solid var(--celeste);
+    border-radius: 16px;
+    padding: 10px 18px;
+    min-width: 110px;
+    box-shadow: 0 4px 0 rgba(0,0,0,0.08);
+  }
+
+  .marcador-item .etiqueta {
+    font-size: 0.7rem;
+    color: #6b5f8a;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .marcador-item .valor {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--texto);
+  }
+
+  .marcador-item.puntos { border-color: var(--amarillo); }
+  .marcador-item.intentos { border-color: var(--rosa); }
+  .marcador-item.parejas { border-color: var(--verde); }
+
+  .tablero {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .carta {
+    aspect-ratio: 1 / 1;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+
+  .carta-interior {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+
+  .carta.volteada .carta-interior {
+    transform: rotateY(180deg);
+  }
+
+  .carta.pop {
+    animation: rebote 0.4s ease;
+  }
+
+  .carta.tambalea .carta-interior {
+    animation: tambaleo 0.4s ease;
+  }
+
+  @keyframes rebote {
+    0% { transform: scale(1); }
+    40% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+  }
+
+  @keyframes tambaleo {
+    0%, 100% { transform: rotateY(180deg) translateX(0); }
+    25% { transform: rotateY(180deg) translateX(-6px); }
+    75% { transform: rotateY(180deg) translateX(6px); }
+  }
+
+  .cara {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    backface-visibility: hidden;
+    box-shadow: 0 4px 0 rgba(0,0,0,0.12);
+  }
+
+  .cara-oculta {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .cara-emoji {
+    background: #ffffff;
+    border: 3px solid var(--texto-borde, var(--celeste));
+    font-size: 2.4rem;
+    transform: rotateY(180deg);
+  }
+
+  .carta.emparejada .cara-emoji {
+    animation: brillo 0.6s ease;
+    border-color: var(--verde);
+  }
+
+  @keyframes brillo {
+    0% { box-shadow: 0 4px 0 rgba(0,0,0,0.12); }
+    50% { box-shadow: 0 0 0 8px rgba(107, 203, 119, 0.35); }
+    100% { box-shadow: 0 4px 0 rgba(0,0,0,0.12); }
+  }
+
+  .mensaje-flotante {
+    height: 26px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: var(--texto);
+    transition: opacity 0.3s;
+  }
+
+  .btn-reiniciar {
+    background: var(--rosa);
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #c94d7d;
+    transition: transform 0.15s ease;
+  }
+
+  .btn-reiniciar:hover { transform: translateY(-2px); }
+  .btn-reiniciar:active { transform: translateY(2px); box-shadow: 0 2px 0 #c94d7d; }
+
+  /* Overlay de victoria */
+  .overlay-victoria {
+    position: fixed;
+    inset: 0;
+    background: rgba(43, 34, 69, 0.55);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    padding: 20px;
+  }
+
+  .overlay-victoria.visible {
+    display: flex;
+  }
+
+  .tarjeta-victoria {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 32px 28px;
+    text-align: center;
+    max-width: 340px;
+    width: 100%;
+    box-shadow: 0 10px 0 rgba(0,0,0,0.15);
+    animation: rebote 0.5s ease;
+  }
+
+  .tarjeta-victoria h2 {
+    font-size: 1.8rem;
+    margin: 0 0 12px;
+    color: var(--texto);
+  }
+
+  .tarjeta-victoria p {
+    margin: 6px 0;
+    font-size: 1.05rem;
+  }
+
+  .tarjeta-victoria .destacado {
+    color: var(--rosa);
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  #confeti-contenedor {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 60;
+  }
+
+  .confeti-pieza {
+    position: absolute;
+    top: -20px;
+    width: 10px;
+    height: 16px;
+    opacity: 0.95;
+    animation-name: caer;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes caer {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(110vh) rotate(540deg); opacity: 0.9; }
+  }
+
+  @media (max-width: 560px) {
+    .tablero { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    h1 { font-size: 1.35rem; }
+    .cara-emoji { font-size: 2rem; }
+    .marcador-item { min-width: 90px; padding: 8px 12px; }
+  }
+
+  @media (max-width: 380px) {
+    .tablero { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .marcador { gap: 8px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>🧠 Juego de Memoria: Encuentra las Parejas</h1>
+  <p class="subtitulo">¡Voltea las tarjetas y encuentra los pares iguales! 🎵</p>
+
+  <div class="marcador">
+    <div class="marcador-item puntos">
+      <div class="etiqueta">Puntos</div>
+      <div class="valor" id="valor-puntos">0</div>
+    </div>
+    <div class="marcador-item intentos">
+      <div class="etiqueta">Intentos</div>
+      <div class="valor" id="valor-intentos">0</div>
+    </div>
+    <div class="marcador-item parejas">
+      <div class="etiqueta">Parejas</div>
+      <div class="valor" id="valor-parejas">0/6</div>
+    </div>
+  </div>
+
+  <p class="mensaje-flotante" id="mensaje-flotante"></p>
+
+  <div class="tablero" id="tablero"></div>
+
+  <button class="btn-reiniciar" id="btn-reiniciar">🔄 Reiniciar Juego</button>
+</div>
+
+<div class="overlay-victoria" id="overlay-victoria">
+  <div class="tarjeta-victoria">
+    <h2>¡Ganaste! 🎉</h2>
+    <p>Encontraste todas las parejas 🎵✨</p>
+    <p>Puntaje final: <span class="destacado" id="puntaje-final">0</span></p>
+    <p>Intentos usados: <span id="intentos-final">0</span></p>
+    <button class="btn-reiniciar" id="btn-jugar-de-nuevo">🔁 Jugar de nuevo</button>
+  </div>
+</div>
+
+<div id="confeti-contenedor"></div>
+
+<script>
+  const emojisJuego = ["🐶", "🐱", "🍎", "🍌", "🚗", "🚀"];
+  const coloresBordes = ["#4FC3E8", "#FF6FA5", "#FFD93D", "#6BCB77", "#FF9F45", "#B98CE8"];
+  const coloresFondoOculto = ["#4FC3E8", "#FF6FA5", "#FFD93D", "#6BCB77", "#FF9F45", "#B98CE8"];
+
+  const tablero = document.getElementById("tablero");
+  const valorPuntos = document.getElementById("valor-puntos");
+  const valorIntentos = document.getElementById("valor-intentos");
+  const valorParejas = document.getElementById("valor-parejas");
+  const mensajeFlotante = document.getElementById("mensaje-flotante");
+  const overlayVictoria = document.getElementById("overlay-victoria");
+  const puntajeFinal = document.getElementById("puntaje-final");
+  const intentosFinal = document.getElementById("intentos-final");
+  const confetiContenedor = document.getElementById("confeti-contenedor");
+
+  let cartasVolteadas = [];
+  let bloqueado = false;
+  let puntos = 0;
+  let intentos = 0;
+  let parejasEncontradas = 0;
+  const totalParejas = emojisJuego.length;
+
+  function mezclar(array) {
+    const copia = [...array];
+    for (let i = copia.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [copia[i], copia[j]] = [copia[j], copia[i]];
+    }
+    return copia;
+  }
+
+  function mostrarMensaje(texto, duracionMs = 1200) {
+    mensajeFlotante.textContent = texto;
+    mensajeFlotante.style.opacity = 1;
+    setTimeout(() => {
+      mensajeFlotante.style.opacity = 0;
+    }, duracionMs);
+  }
+
+  function crearTablero() {
+    tablero.innerHTML = "";
+    cartasVolteadas = [];
+    bloqueado = false;
+    puntos = 0;
+    intentos = 0;
+    parejasEncontradas = 0;
+
+    valorPuntos.textContent = puntos;
+    valorIntentos.textContent = intentos;
+    valorParejas.textContent = `0/${totalParejas}`;
+
+    const simbolos = mezclar([...emojisJuego, ...emojisJuego]);
+
+    simbolos.forEach((emoji, indice) => {
+      const carta = document.createElement("div");
+      carta.className = "carta";
+      carta.dataset.emoji = emoji;
+
+      const colorIndice = indice % coloresFondoOculto.length;
+
+      carta.innerHTML = `
+        <div class="carta-interior">
+          <div class="cara cara-oculta" style="background:${coloresFondoOculto[colorIndice]}">❓</div>
+          <div class="cara cara-emoji" style="border-color:${coloresBordes[colorIndice]}">${emoji}</div>
+        </div>
+      `;
+
+      carta.addEventListener("click", () => manejarClick(carta));
+      tablero.appendChild(carta);
+    });
+  }
+
+  function manejarClick(carta) {
+    if (bloqueado) return;
+    if (carta.classList.contains("volteada") || carta.classList.contains("emparejada")) return;
+
+    intentos++;
+    valorIntentos.textContent = intentos;
+
+    carta.classList.add("volteada", "pop");
+    setTimeout(() => carta.classList.remove("pop"), 400);
+
+    cartasVolteadas.push(carta);
+
+    if (cartasVolteadas.length === 2) {
+      bloqueado = true;
+      const [primera, segunda] = cartasVolteadas;
+
+      if (primera.dataset.emoji === segunda.dataset.emoji) {
+        setTimeout(() => {
+          primera.classList.add("emparejada");
+          segunda.classList.add("emparejada");
+          puntos += 10;
+          parejasEncontradas++;
+          valorPuntos.textContent = puntos;
+          valorParejas.textContent = `${parejasEncontradas}/${totalParejas}`;
+          mostrarMensaje("¡Pareja encontrada! 🎵");
+          cartasVolteadas = [];
+          bloqueado = false;
+
+          if (parejasEncontradas === totalParejas) {
+            setTimeout(mostrarVictoria, 500);
+          }
+        }, 400);
+      } else {
+        setTimeout(() => {
+          primera.classList.add("tambalea");
+          segunda.classList.add("tambalea");
+          mostrarMensaje("¡Casi! Intenta de nuevo 🙈");
+        }, 500);
+
+        setTimeout(() => {
+          primera.classList.remove("volteada", "tambalea");
+          segunda.classList.remove("volteada", "tambalea");
+          cartasVolteadas = [];
+          bloqueado = false;
+        }, 1100);
+      }
+    }
+  }
+
+  function mostrarVictoria() {
+    puntajeFinal.textContent = puntos;
+    intentosFinal.textContent = intentos;
+    overlayVictoria.classList.add("visible");
+    lanzarConfeti();
+  }
+
+  function lanzarConfeti() {
+    const colores = ["#4FC3E8", "#FF6FA5", "#FFD93D", "#6BCB77", "#FF9F45", "#B98CE8"];
+    const cantidadPiezas = 90;
+
+    for (let i = 0; i < cantidadPiezas; i++) {
+      const pieza = document.createElement("div");
+      pieza.className = "confeti-pieza";
+      pieza.style.left = Math.random() * 100 + "vw";
+      pieza.style.background = colores[Math.floor(Math.random() * colores.length)];
+      pieza.style.animationDuration = 2 + Math.random() * 1.5 + "s";
+      pieza.style.animationDelay = Math.random() * 0.6 + "s";
+      pieza.style.borderRadius = Math.random() > 0.5 ? "50%" : "2px";
+      confetiContenedor.appendChild(pieza);
+    }
+
+    setTimeout(() => {
+      confetiContenedor.innerHTML = "";
+    }, 4200);
+  }
+
+  function reiniciarJuego() {
+    overlayVictoria.classList.remove("visible");
+    confetiContenedor.innerHTML = "";
+    mensajeFlotante.textContent = "";
+    crearTablero();
+  }
+
+  document.getElementById("btn-reiniciar").addEventListener("click", reiniciarJuego);
+  document.getElementById("btn-jugar-de-nuevo").addEventListener("click", reiniciarJuego);
+
+  crearTablero();
+</script>
+</body>
+</html>
