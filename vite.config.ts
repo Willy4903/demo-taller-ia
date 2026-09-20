@@ -3,6 +3,7 @@ import { defineConfig } from 'vitest/config';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: process.env.GITHUB_PAGES ? '/demo-taller-ia/' : '/',
   plugins: [react()],
   worker: {
     format: 'es',
