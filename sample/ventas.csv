@@ -1,0 +1,2401 @@
+fecha,categoria,region,canal,unidades,ingresos,costo,margen
+2023-01-03,Moda,Centro,Marketplace,9,461.22,316.16,145.06
+2023-01-03,Electrónica,Este,Marketplace,34,9804.79,6999.96,2804.83
+2023-01-03,Deportes,Oeste,Tienda física,44,3751.01,2778.11,972.9
+2023-01-04,Electrónica,Centro,E-commerce,41,14596.78,9255.43,5341.35
+2023-01-04,Electrónica,Oeste,Tienda física,13,4118.94,2846.12,1272.82
+2023-01-05,Electrónica,Norte,Marketplace,26,9210.47,6792.11,2418.36
+2023-01-06,Juguetes,Centro,Marketplace,24,952.96,534.35,418.61
+2023-01-06,Juguetes,Norte,Tienda física,41,1530.38,994.75,535.63
+2023-01-06,Electrónica,Oeste,Distribuidor,9,3031.83,1791.32,1240.51
+2023-01-06,Electrónica,Este,Distribuidor,37,12172.5,7581.87,4590.63
+2023-01-06,Electrónica,Norte,E-commerce,33,11623.97,7436.23,4187.74
+2023-01-07,Juguetes,Norte,E-commerce,20,767.27,562.86,204.41
+2023-01-08,Moda,Centro,Distribuidor,20,1262.83,704.77,558.06
+2023-01-08,Electrónica,Sur,Tienda física,35,10661.43,7723.18,2938.25
+2023-01-08,Electrónica,Este,Tienda física,39,13981.13,10158.24,3822.89
+2023-01-09,Juguetes,Oeste,Distribuidor,29,915.67,643.25,272.42
+2023-01-09,Juguetes,Norte,Distribuidor,10,298.27,173.04,125.23
+2023-01-09,Deportes,Norte,Tienda física,23,1496.17,830.39,665.78
+2023-01-09,Electrónica,Centro,Distribuidor,40,12990.27,8638.31,4351.96
+2023-01-10,Deportes,Sur,Marketplace,20,1387.13,986.58,400.55
+2023-01-11,Deportes,Norte,Marketplace,39,2954.34,2015.85,938.49
+2023-01-12,Electrónica,Sur,E-commerce,23,8259,5624.8,2634.2
+2023-01-12,Moda,Centro,E-commerce,12,663.11,495.41,167.7
+2023-01-12,Alimentos,Sur,E-commerce,15,248.19,168.37,79.82
+2023-01-12,Alimentos,Oeste,Tienda física,14,277.36,166.92,110.44
+2023-01-12,Electrónica,Sur,Distribuidor,41,14073.12,10549.86,3523.26
+2023-01-13,Electrónica,Oeste,Tienda física,15,4469.93,3132.27,1337.66
+2023-01-13,Electrónica,Sur,Distribuidor,20,7248.62,4919.32,2329.3
+2023-01-13,Alimentos,Norte,Marketplace,42,863.63,588.89,274.74
+2023-01-14,Juguetes,Este,Marketplace,37,1377.68,769.99,607.69
+2023-01-14,Alimentos,Norte,Tienda física,10,175.46,109.43,66.03
+2023-01-14,Electrónica,Norte,E-commerce,10,3669.63,2530.35,1139.28
+2023-01-15,Electrónica,Centro,Tienda física,16,4660.25,3300.02,1360.23
+2023-01-15,Moda,Norte,Marketplace,28,1644.6,1033.67,610.93
+2023-01-15,Juguetes,Sur,E-commerce,36,1261.15,718.64,542.51
+2023-01-16,Juguetes,Este,Tienda física,13,440.26,292.48,147.78
+2023-01-16,Hogar,Este,Marketplace,18,1855.75,1206.87,648.88
+2023-01-17,Deportes,Centro,Tienda física,33,2265.12,1557.34,707.78
+2023-01-17,Hogar,Centro,Distribuidor,16,1646.91,1053.02,593.89
+2023-01-17,Electrónica,Sur,Distribuidor,30,9756.88,6042.04,3714.84
+2023-01-17,Moda,Norte,E-commerce,27,1776.39,1187.89,588.5
+2023-01-17,Electrónica,Este,Tienda física,27,7740.76,5664.11,2076.65
+2023-01-18,Juguetes,Norte,E-commerce,12,444.65,280.38,164.27
+2023-01-18,Electrónica,Oeste,Distribuidor,21,6371.63,4128.7,2242.93
+2023-01-18,Electrónica,Norte,Marketplace,14,5111.12,3107.52,2003.6
+2023-01-18,Hogar,Centro,E-commerce,45,4553.48,3375.7,1177.78
+2023-01-19,Electrónica,Norte,Tienda física,10,3458.15,2448.65,1009.5
+2023-01-20,Electrónica,Centro,E-commerce,14,4309.64,3007.61,1302.03
+2023-01-20,Moda,Sur,E-commerce,24,1309.81,933.17,376.64
+2023-01-20,Electrónica,Oeste,Tienda física,23,7426.09,4273.44,3152.65
+2023-01-21,Hogar,Norte,Distribuidor,38,3819.99,2664.63,1155.36
+2023-01-21,Electrónica,Norte,Distribuidor,41,12299.46,8553.37,3746.09
+2023-01-21,Moda,Centro,E-commerce,40,2391.9,1320.94,1070.96
+2023-01-22,Juguetes,Centro,E-commerce,31,1213.7,757.37,456.33
+2023-01-23,Electrónica,Norte,Distribuidor,20,6107.35,3401.14,2706.21
+2023-01-23,Moda,Centro,Marketplace,21,1409.24,1042.19,367.05
+2023-01-24,Electrónica,Oeste,E-commerce,14,4678.82,3138.41,1540.41
+2023-01-24,Alimentos,Sur,Tienda física,13,215.16,156.86,58.3
+2023-01-25,Alimentos,Centro,E-commerce,42,772.86,453.84,319.02
+2023-01-25,Electrónica,Centro,Tienda física,16,4371.6,3196.45,1175.15
+2023-01-26,Alimentos,Sur,Tienda física,8,149.21,97.35,51.86
+2023-01-26,Electrónica,Norte,Marketplace,38,13374.44,7510.02,5864.42
+2023-01-27,Deportes,Norte,Marketplace,5,395.72,286.4,109.32
+2023-01-27,Electrónica,Sur,Distribuidor,25,6906.56,4061.6,2844.96
+2023-01-28,Alimentos,Centro,Distribuidor,10,203.1,112.95,90.15
+2023-01-28,Juguetes,Norte,Distribuidor,41,1486.6,963.81,522.79
+2023-01-29,Juguetes,Este,Tienda física,38,1502.81,1112.61,390.2
+2023-01-30,Hogar,Oeste,E-commerce,32,2510.6,1412.64,1097.96
+2023-01-30,Juguetes,Norte,E-commerce,14,501.26,283.54,217.72
+2023-01-30,Electrónica,Oeste,Marketplace,9,3230.25,1898.56,1331.69
+2023-01-31,Hogar,Sur,Tienda física,41,3261.33,1823.6,1437.73
+2023-01-31,Hogar,Este,Distribuidor,16,1260.09,775.72,484.37
+2023-01-31,Alimentos,Este,E-commerce,42,6189.28,555.5,5633.78
+2023-01-31,Moda,Sur,Marketplace,33,2191.97,1545.1,646.87
+2023-01-31,Alimentos,Sur,E-commerce,13,223.53,148.66,74.87
+2023-02-01,Deportes,Norte,Distribuidor,23,1589.5,981.96,607.54
+2023-02-01,Alimentos,Norte,Tienda física,37,615.25,351.02,264.23
+2023-02-02,Electrónica,Norte,E-commerce,28,8756.72,5368.26,3388.46
+2023-02-02,Electrónica,Sur,Tienda física,11,3073.45,2035.92,1037.53
+2023-02-03,Electrónica,Este,Marketplace,10,3441.88,2045.87,1396.01
+2023-02-04,Deportes,Norte,Distribuidor,6,435.98,306.73,129.25
+2023-02-04,Electrónica,Sur,Tienda física,18,5269.44,3156.2,2113.24
+2023-02-04,Electrónica,Norte,Marketplace,14,4486.49,3046.71,1439.78
+2023-02-04,Moda,Norte,Distribuidor,41,2147.27,1365.03,782.24
+2023-02-05,Juguetes,Norte,Marketplace,44,1378.5,843.23,535.27
+2023-02-05,Moda,Este,E-commerce,45,2775.61,2021.96,753.65
+2023-02-05,Moda,Este,Marketplace,15,970.64,535.89,434.75
+2023-02-06,Electrónica,Norte,Distribuidor,51,16580.54,11321.95,5258.59
+2023-02-06,Hogar,Sur,Marketplace,22,1689.77,1006.12,683.65
+2023-02-06,Electrónica,Norte,Marketplace,32,8720.7,6134.43,2586.27
+2023-02-06,Electrónica,Oeste,Distribuidor,43,14647,8823.65,5823.35
+2023-02-07,Deportes,Centro,Distribuidor,36,2388.71,1446.3,942.41
+2023-02-07,Electrónica,Norte,Tienda física,31,10996.27,6992.43,4003.84
+2023-02-07,Moda,Sur,Tienda física,22,1280.61,846.55,434.06
+2023-02-08,Moda,Centro,E-commerce,9,579.4,416.73,162.67
+2023-02-08,Electrónica,Norte,Tienda física,19,5282.34,3199.12,2083.22
+2023-02-08,Electrónica,Norte,Distribuidor,35,10068.38,5945.3,4123.08
+2023-02-08,Alimentos,Norte,Distribuidor,48,924,648.73,275.27
+2023-02-08,Hogar,Norte,Marketplace,22,2156.52,1486.6,669.92
+2023-02-09,Moda,Centro,Marketplace,18,1043.8,667.15,376.65
+2023-02-09,Electrónica,Norte,Marketplace,43,12518.49,7871.89,4646.6
+2023-02-10,Juguetes,Norte,E-commerce,38,1339.27,921.43,417.84
+2023-02-11,Electrónica,Centro,Distribuidor,14,4166.18,3093.73,1072.45
+2023-02-11,Hogar,Norte,Marketplace,11,1070.48,590.48,480
+2023-02-12,Electrónica,Este,Distribuidor,41,14756.88,10335.53,4421.35
+2023-02-13,Electrónica,Oeste,E-commerce,15,4124.64,2726.45,1398.19
+2023-02-13,Alimentos,Sur,Tienda física,49,828.94,530.15,298.79
+2023-02-14,Electrónica,Sur,Tienda física,20,6512.17,3720.97,2791.2
+2023-02-14,Alimentos,Centro,Tienda física,22,406.64,276.26,130.38
+2023-02-14,Electrónica,Este,Tienda física,42,14035.66,9880.56,4155.1
+2023-02-16,Electrónica,Norte,E-commerce,21,7188.73,4312.72,2876.01
+2023-02-17,Electrónica,Centro,Tienda física,42,14812.24,8718.84,6093.4
+2023-02-17,Juguetes,Este,Marketplace,23,819.36,581,238.36
+2023-02-17,Hogar,Sur,E-commerce,26,2091.76,1431.06,660.7
+2023-02-18,Electrónica,Norte,E-commerce,18,5962.21,3395.33,2566.88
+2023-02-18,Electrónica,Sur,Distribuidor,48,16854.42,9664.88,7189.54
+2023-02-18,Hogar,Centro,E-commerce,13,1094.69,617.64,477.05
+2023-02-19,Electrónica,Norte,Marketplace,50,17580.51,10679.29,6901.22
+2023-02-20,Electrónica,Sur,Marketplace,35,11706.95,6520.26,5186.69
+2023-02-20,Electrónica,Norte,Distribuidor,14,3842.07,2117.52,1724.55
+2023-02-20,Moda,Sur,E-commerce,35,2143.91,1576.46,567.45
+2023-02-21,Electrónica,Norte,Distribuidor,36,10146.62,6782.98,3363.64
+2023-02-21,Electrónica,Norte,E-commerce,16,4585.88,2937.57,1648.31
+2023-02-22,Deportes,Norte,Marketplace,26,1711.35,1047.89,663.46
+2023-02-23,Hogar,Oeste,Tienda física,37,3630.77,2707.8,922.97
+2023-02-23,Electrónica,Este,E-commerce,27,7954.56,4530.27,3424.29
+2023-02-23,Alimentos,Norte,Distribuidor,49,805.14,598.02,207.12
+2023-02-23,Moda,Norte,Tienda física,32,2204.35,1319.43,884.92
+2023-02-23,Juguetes,Norte,Tienda física,8,273.63,176.83,96.8
+2023-02-23,Moda,Este,Tienda física,34,1900.47,1089.66,810.81
+2023-02-24,Juguetes,Oeste,E-commerce,11,329.72,231.9,97.82
+2023-02-24,Moda,Norte,Tienda física,20,1377.28,768.29,608.99
+2023-02-24,Electrónica,Oeste,Distribuidor,25,7782.45,5228.01,2554.44
+2023-02-24,Electrónica,Este,E-commerce,45,14140.74,9258.61,4882.13
+2023-02-25,Hogar,Sur,E-commerce,33,2864.47,1626.02,1238.45
+2023-02-25,Deportes,Norte,Distribuidor,14,1019.55,681.21,338.34
+2023-02-25,Deportes,Sur,Marketplace,7,543.89,334.92,208.97
+2023-02-26,Hogar,Norte,Tienda física,7,712.1,498.96,213.14
+2023-02-26,Electrónica,Norte,Tienda física,35,12559.09,9157.21,3401.88
+2023-02-27,Electrónica,Norte,Marketplace,6,1820,1348.39,471.61
+2023-02-27,Alimentos,Este,Tienda física,6,122.03,71.78,50.25
+2023-02-27,Deportes,Sur,Marketplace,23,1663.4,1136.39,527.01
+2023-02-28,Moda,Norte,E-commerce,49,2788.38,2014.73,773.65
+2023-02-28,Juguetes,Centro,Tienda física,40,1415.65,887.81,527.84
+2023-03-01,Electrónica,Este,Tienda física,20,6508.07,3854.78,2653.29
+2023-03-01,Electrónica,Norte,E-commerce,43,14719.73,8478.65,6241.08
+2023-03-03,Deportes,Sur,Marketplace,38,2632.34,1931.85,700.49
+2023-03-03,Deportes,Este,Tienda física,26,2005.13,1209.17,795.96
+2023-03-04,Alimentos,Este,Tienda física,27,459.87,341.52,118.35
+2023-03-04,Electrónica,Este,Distribuidor,55,17899.13,12137.05,5762.08
+2023-03-05,Moda,Centro,Tienda física,28,1545.36,880.47,664.89
+2023-03-05,Alimentos,Norte,Distribuidor,29,459,331.49,127.51
+2023-03-05,Deportes,Este,Marketplace,20,1625.76,1216.57,409.19
+2023-03-05,Juguetes,Oeste,E-commerce,12,372.43,278.86,93.57
+2023-03-05,Deportes,Sur,Marketplace,15,976.08,661.22,314.86
+2023-03-05,Electrónica,Centro,Distribuidor,33,11813.69,7537.45,4276.24
+2023-03-05,Juguetes,Centro,Distribuidor,17,514.1,307.31,206.79
+2023-03-06,Electrónica,Este,Tienda física,16,5754.32,4039.05,1715.27
+2023-03-06,Electrónica,Centro,Tienda física,40,10924.99,6396.61,4528.38
+2023-03-06,Juguetes,Norte,Distribuidor,55,2207.02,1568.45,638.57
+2023-03-06,Deportes,Norte,Distribuidor,32,2483.63,1407.42,1076.21
+2023-03-07,Juguetes,Oeste,Tienda física,39,1460.06,1042.71,417.35
+2023-03-07,Electrónica,Este,Tienda física,46,14133.53,9136.1,4997.43
+2023-03-07,Alimentos,Norte,E-commerce,9,139.66,90.02,49.64
+2023-03-07,Alimentos,Centro,Tienda física,38,677.98,497.24,180.74
+2023-03-07,Deportes,Centro,E-commerce,11,758.67,563.72,194.95
+2023-03-08,Alimentos,Norte,Distribuidor,36,561.94,318.18,243.76
+2023-03-08,Hogar,Oeste,Tienda física,11,927.58,691.65,235.93
+2023-03-09,Electrónica,Norte,E-commerce,56,17993.95,12257.08,5736.87
+2023-03-09,Electrónica,Norte,Tienda física,46,13986.65,8046.6,5940.05
+2023-03-09,Electrónica,Centro,Distribuidor,19,5409.45,3422.72,1986.73
+2023-03-10,Electrónica,Sur,E-commerce,7,2110.1,1493.57,616.53
+2023-03-10,Electrónica,Centro,Distribuidor,54,16157.2,9572.57,6584.63
+2023-03-10,Alimentos,Oeste,Tienda física,20,412.55,271.14,141.41
+2023-03-12,Electrónica,Norte,Tienda física,29,9231.44,5959.98,3271.46
+2023-03-12,Electrónica,Oeste,E-commerce,33,11646.37,6860.15,4786.22
+2023-03-12,Alimentos,Sur,Marketplace,16,328.98,209.01,119.97
+2023-03-12,Alimentos,Este,Tienda física,45,930.87,528.67,402.2
+2023-03-12,Electrónica,Este,Marketplace,13,4145.14,3068.2,1076.94
+2023-03-12,Alimentos,Norte,E-commerce,45,699.77,448.01,251.76
+2023-03-12,Electrónica,Centro,Tienda física,47,13228.12,9176.88,4051.24
+2023-03-13,Electrónica,Centro,Tienda física,41,14801.83,11003.86,3797.97
+2023-03-13,Electrónica,Centro,Distribuidor,42,12662.08,7516.15,5145.93
+2023-03-13,Deportes,Centro,E-commerce,35,2494.47,1390.46,1104.01
+2023-03-13,Electrónica,Centro,Tienda física,23,6712.05,4085.81,2626.24
+2023-03-13,Deportes,Norte,Marketplace,26,2008.39,1159.55,848.84
+2023-03-13,Alimentos,Oeste,E-commerce,24,473.07,341.75,131.32
+2023-03-14,Electrónica,Oeste,E-commerce,57,20423.15,13285.34,7137.81
+2023-03-14,Juguetes,Norte,Distribuidor,56,2197.51,1469.2,728.31
+2023-03-14,Hogar,Norte,Marketplace,26,2248.13,1480.81,767.32
+2023-03-15,Electrónica,Norte,Tienda física,16,4811.81,3118.89,1692.92
+2023-03-15,Hogar,Centro,Tienda física,40,3181.83,2007.5,1174.33
+2023-03-15,Alimentos,Sur,Distribuidor,53,1046.11,590.42,455.69
+2023-03-15,Alimentos,Norte,E-commerce,44,778.03,572.12,205.91
+2023-03-16,Electrónica,Norte,Tienda física,35,12303.64,8616.78,3686.86
+2023-03-17,Electrónica,Norte,E-commerce,8,2353.05,1505.51,847.54
+2023-03-18,Electrónica,Sur,E-commerce,11,26596.88,2320.08,24276.8
+2023-03-18,Electrónica,Norte,Marketplace,26,7705.47,5388.82,2316.65
+2023-03-19,Electrónica,Norte,Distribuidor,38,11977.13,7701.79,4275.34
+2023-03-19,Deportes,Sur,Tienda física,40,2969.14,2123.96,845.18
+2023-03-19,Juguetes,Centro,Tienda física,24,734.62,465.71,268.91
+2023-03-19,Juguetes,Centro,E-commerce,49,1655.42,1151.59,503.83
+2023-03-20,Moda,Este,Marketplace,39,2119.67,1365.06,754.61
+2023-03-21,Electrónica,Centro,E-commerce,7,2534.44,1880.12,654.32
+2023-03-22,Juguetes,Norte,Tienda física,39,1502.89,1037.55,465.34
+2023-03-23,Hogar,Oeste,Tienda física,46,4196.48,2860.35,1336.13
+2023-03-23,Deportes,Norte,Tienda física,10,800.91,485.01,315.9
+2023-03-23,Electrónica,Este,E-commerce,20,5914.82,3705.93,2208.89
+2023-03-24,Hogar,Oeste,Distribuidor,12,1149.25,810.49,338.76
+2023-03-24,Electrónica,Norte,Tienda física,11,3301.77,2233.48,1068.29
+2023-03-24,Deportes,Centro,E-commerce,22,1551.47,965.82,585.65
+2023-03-25,Deportes,Este,E-commerce,8,589.2,413.97,175.23
+2023-03-26,Alimentos,Norte,Distribuidor,48,815.21,597.73,217.48
+2023-03-26,Alimentos,Sur,E-commerce,40,738.34,480.94,257.4
+2023-03-26,Electrónica,Centro,E-commerce,7,2334.72,1589.82,744.9
+2023-03-26,Electrónica,Norte,Marketplace,25,8037.44,5706.94,2330.5
+2023-03-26,Electrónica,Sur,Marketplace,13,4459.85,2787.81,1672.04
+2023-03-27,Electrónica,Este,Marketplace,14,4951.45,3077.46,1873.99
+2023-03-27,Electrónica,Sur,E-commerce,32,11286.87,6884.51,4402.36
+2023-03-27,Moda,Este,Distribuidor,29,1823.67,1203.85,619.82
+2023-03-29,Electrónica,Este,Distribuidor,42,14009.78,7939.63,6070.15
+2023-03-29,Hogar,Oeste,Marketplace,44,4010.91,2412.37,1598.54
+2023-03-30,Moda,Centro,Marketplace,48,2736.04,1517.46,1218.58
+2023-03-30,Moda,Oeste,E-commerce,9,618.5,423.97,194.53
+2023-03-30,Electrónica,Este,Tienda física,51,16623.61,10734.13,5889.48
+2023-03-31,Electrónica,Centro,E-commerce,18,6204.59,4282.87,1921.72
+2023-03-31,Electrónica,Centro,Marketplace,14,4745.26,2980.91,1764.35
+2023-04-01,Moda,Norte,Distribuidor,18,1196.63,811.49,385.14
+2023-04-01,Electrónica,Norte,Marketplace,13,4088.93,2307.01,1781.92
+2023-04-03,Electrónica,Norte,Distribuidor,57,18153.98,11822.03,6331.95
+2023-04-03,Hogar,Este,Marketplace,31,3023.93,1802.73,1221.2
+2023-04-03,Moda,Oeste,Marketplace,13,710.73,438.01,272.72
+2023-04-04,Juguetes,Sur,Marketplace,59,1834.37,1065.44,768.93
+2023-04-04,Electrónica,Norte,Distribuidor,19,6667.1,4294.54,2372.56
+2023-04-04,Moda,Sur,Marketplace,36,2028.18,1397.27,630.91
+2023-04-04,Electrónica,Este,Marketplace,40,12868.77,7825.36,5043.41
+2023-04-05,Moda,Oeste,Marketplace,34,2149.9,1598.69,551.21
+2023-04-05,Juguetes,Norte,Distribuidor,49,1765.61,1176.17,589.44
+2023-04-06,Juguetes,Centro,E-commerce,44,10705.44,913.68,9791.76
+2023-04-06,Electrónica,Norte,E-commerce,30,9642.98,6269.24,3373.74
+2023-04-06,Moda,Centro,Marketplace,14,789.99,577.42,212.57
+2023-04-06,Electrónica,Norte,Marketplace,27,8896.06,5832.18,3063.88
+2023-04-06,Electrónica,Norte,E-commerce,50,14421.52,8170.01,6251.51
+2023-04-07,Electrónica,Este,Distribuidor,18,6608.2,3855.83,2752.37
+2023-04-08,Electrónica,Este,E-commerce,57,15589.05,11011.81,4577.24
+2023-04-08,Electrónica,Norte,Tienda física,53,17777.94,13107.25,4670.69
+2023-04-08,Electrónica,Norte,Tienda física,52,14599.31,9597.12,5002.19
+2023-04-09,Moda,Oeste,Tienda física,30,1622.95,961.74,661.21
+2023-04-09,Electrónica,Norte,Tienda física,44,12820.31,9506.51,3313.8
+2023-04-10,Hogar,Oeste,Marketplace,59,5463.44,3663.12,1800.32
+2023-04-10,Electrónica,Este,E-commerce,49,14535.72,8511.2,6024.52
+2023-04-11,Moda,Centro,E-commerce,28,1810.41,1132.22,678.19
+2023-04-11,Juguetes,Este,Marketplace,51,2051.22,1381.57,669.65
+2023-04-11,Hogar,Centro,Marketplace,11,875.18,492.94,382.24
+2023-04-11,Hogar,Norte,E-commerce,9,863.01,592.6,270.41
+2023-04-11,Juguetes,Centro,Marketplace,23,899.73,520.94,378.79
+2023-04-11,Hogar,Norte,Marketplace,27,2711.7,1926.09,785.61
+2023-04-12,Electrónica,Norte,Distribuidor,30,8955.2,5485.58,3469.62
+2023-04-14,Electrónica,Centro,Distribuidor,32,10808.99,6891.15,3917.84
+2023-04-14,Electrónica,Norte,E-commerce,8,2466.49,1488.93,977.56
+2023-04-14,Hogar,Sur,E-commerce,49,4766.25,2830.46,1935.79
+2023-04-14,Deportes,Oeste,E-commerce,51,3506.44,2360.04,1146.4
+2023-04-16,Electrónica,Oeste,E-commerce,40,12245.51,8381.12,3864.39
+2023-04-16,Deportes,Norte,Marketplace,15,1082.08,775.22,306.86
+2023-04-17,Electrónica,Norte,E-commerce,27,7454.59,4163.87,3290.72
+2023-04-18,Juguetes,Sur,E-commerce,32,1200.07,716.29,483.78
+2023-04-19,Juguetes,Norte,Tienda física,54,1654.16,1225.08,429.08
+2023-04-21,Moda,Norte,Marketplace,9,555.8,368.69,187.11
+2023-04-21,Electrónica,Centro,Distribuidor,34,11973.2,8684.15,3289.05
+2023-04-21,Hogar,Este,E-commerce,26,2534.98,1436.43,1098.55
+2023-04-22,Alimentos,Este,Marketplace,32,518.49,297.88,220.61
+2023-04-22,Electrónica,Este,E-commerce,8,2398,1722.45,675.55
+2023-04-23,Electrónica,Sur,Distribuidor,17,5218.18,3429.44,1788.74
+2023-04-23,Electrónica,Centro,Tienda física,38,10730.14,6134.33,4595.81
+2023-04-24,Deportes,Centro,Marketplace,22,1810.05,1352.76,457.29
+2023-04-24,Alimentos,Norte,Distribuidor,48,860.19,623.74,236.45
+2023-04-24,Alimentos,Centro,Distribuidor,33,624.65,403.14,221.51
+2023-04-24,Alimentos,Sur,Tienda física,12,229.04,134.89,94.15
+2023-04-25,Alimentos,Centro,Tienda física,43,731.52,413.52,318
+2023-04-25,Electrónica,Centro,Marketplace,44,12236.53,7932.84,4303.69
+2023-04-26,Alimentos,Centro,Tienda física,54,988,720.21,267.79
+2023-04-26,Electrónica,Norte,Marketplace,58,18084.07,12451.67,5632.4
+2023-04-26,Alimentos,Sur,E-commerce,52,1064.03,717.42,346.61
+2023-04-26,Hogar,Sur,Distribuidor,27,2639.51,1869.79,769.72
+2023-04-27,Juguetes,Centro,E-commerce,43,1681.85,1208.31,473.54
+2023-04-27,Alimentos,Sur,Distribuidor,9,157.01,96.72,60.29
+2023-04-28,Alimentos,Este,Distribuidor,22,412.79,243.81,168.98
+2023-04-28,Deportes,Sur,Marketplace,44,3013.89,2115.15,898.74
+2023-04-28,Moda,Norte,E-commerce,53,3531.1,2476.59,1054.51
+2023-04-28,Electrónica,Oeste,Tienda física,14,4505.92,2558.36,1947.56
+2023-04-28,Electrónica,Centro,Distribuidor,24,8153.03,4926.15,3226.88
+2023-04-29,Moda,Norte,Marketplace,17,971.24,682.42,288.82
+2023-04-29,Electrónica,Centro,Distribuidor,17,5223.91,3071.69,2152.22
+2023-04-29,Electrónica,Este,Distribuidor,20,6406.26,3540.01,2866.25
+2023-04-30,Hogar,Este,Distribuidor,9,695.76,397.84,297.92
+2023-04-30,Electrónica,Norte,Marketplace,18,6265.27,3847.94,2417.33
+2023-04-30,Moda,Norte,E-commerce,47,2614.31,1633.32,980.99
+2023-04-30,Deportes,Centro,Distribuidor,40,2728.86,1855.36,873.5
+2023-04-30,Hogar,Oeste,Tienda física,29,2378.46,1442.23,936.23
+2023-05-01,Hogar,Este,Marketplace,19,1799.74,1244.89,554.85
+2023-05-01,Deportes,Norte,Marketplace,31,2207.98,1363.56,844.42
+2023-05-01,Juguetes,Este,E-commerce,48,1785.83,1257.16,528.67
+2023-05-01,Electrónica,Este,Tienda física,40,14490.24,9993.33,4496.91
+2023-05-02,Electrónica,Sur,Distribuidor,45,12641.69,7062.27,5579.42
+2023-05-02,Moda,Oeste,Tienda física,21,1398.56,825.38,573.18
+2023-05-03,Hogar,Este,Distribuidor,12,961.28,670.37,290.91
+2023-05-03,Juguetes,Este,Marketplace,41,1517.48,1018.4,499.08
+2023-05-03,Hogar,Este,Distribuidor,47,3956.69,2599.99,1356.7
+2023-05-05,Electrónica,Oeste,Marketplace,56,18974.94,13719.32,5255.62
+2023-05-05,Juguetes,Centro,Marketplace,7,226.55,126.95,99.6
+2023-05-05,Hogar,Norte,E-commerce,24,2442.34,1496.02,946.32
+2023-05-05,Deportes,Norte,E-commerce,11,742.14,512.43,229.71
+2023-05-06,Hogar,Norte,Tienda física,46,4491.88,3220.83,1271.05
+2023-05-06,Alimentos,Centro,Distribuidor,29,580.96,391.65,189.31
+2023-05-07,Electrónica,Este,E-commerce,48,16053.77,8972.43,7081.34
+2023-05-07,Deportes,Sur,Tienda física,9,592.22,417.64,174.58
+2023-05-08,Juguetes,Oeste,E-commerce,23,811.48,469.27,342.21
+2023-05-08,Electrónica,Este,E-commerce,37,12864.11,8012.01,4852.1
+2023-05-08,Electrónica,Centro,Distribuidor,52,17237.64,10224.73,7012.91
+2023-05-09,Juguetes,Norte,E-commerce,26,839.4,535.73,303.67
+2023-05-09,Moda,Oeste,Tienda física,11,705.51,474.05,231.46
+2023-05-09,Moda,Norte,Tienda física,21,1092.01,664.46,427.55
+2023-05-09,Moda,Norte,Marketplace,56,2859.03,1687.08,1171.95
+2023-05-10,Electrónica,Norte,Distribuidor,50,13613.05,8819.2,4793.85
+2023-05-11,Hogar,Sur,E-commerce,17,1466.95,836.07,630.88
+2023-05-11,Deportes,Sur,Tienda física,58,4193.62,2415.8,1777.82
+2023-05-11,Electrónica,Norte,Tienda física,42,13450.87,9522.93,3927.94
+2023-05-12,Juguetes,Este,Marketplace,35,1140.27,698.78,441.49
+2023-05-12,Juguetes,Centro,E-commerce,49,1725.04,1032.23,692.81
+2023-05-13,Moda,Norte,Marketplace,35,2236.35,1523.12,713.23
+2023-05-13,Moda,Oeste,Tienda física,15,911.34,589.18,322.16
+2023-05-13,Hogar,Este,Marketplace,40,3331.75,2213.79,1117.96
+2023-05-14,Electrónica,Norte,Distribuidor,47,15661.19,9345.07,6316.12
+2023-05-14,Deportes,Sur,Tienda física,34,2457.43,1491.92,965.51
+2023-05-15,Hogar,Norte,Marketplace,39,3149.41,2143.54,1005.87
+2023-05-15,Moda,Norte,E-commerce,52,3531.12,1946.72,1584.4
+2023-05-15,Juguetes,Este,Tienda física,28,1081.08,674.3,406.78
+2023-05-15,Hogar,Centro,Marketplace,7,636.73,441.45,195.28
+2023-05-16,Alimentos,Sur,Tienda física,56,976.45,572.71,403.74
+2023-05-16,Hogar,Norte,Distribuidor,47,3672.87,2203.84,1469.03
+2023-05-16,Electrónica,Norte,E-commerce,21,6433.38,4007.91,2425.47
+2023-05-16,Alimentos,Norte,E-commerce,12,222.12,158.6,63.52
+2023-05-17,Electrónica,Norte,E-commerce,51,16637.08,9401.5,7235.58
+2023-05-18,Electrónica,Oeste,E-commerce,24,8289.63,5753.86,2535.77
+2023-05-18,Juguetes,Centro,E-commerce,40,1272.86,754.33,518.53
+2023-05-18,Electrónica,Este,Marketplace,17,4776.41,3420.81,1355.6
+2023-05-19,Moda,Sur,E-commerce,7,385.47,251.21,134.26
+2023-05-20,Electrónica,Sur,Marketplace,43,15129.9,9196.91,5932.99
+2023-05-21,Moda,Oeste,E-commerce,16,1006.43,586.28,420.15
+2023-05-21,Deportes,Centro,E-commerce,54,4507.12,2505.21,2001.91
+2023-05-22,Deportes,Este,Tienda física,58,4202.78,2679.92,1522.86
+2023-05-22,Deportes,Centro,Marketplace,20,1295.03,750.41,544.62
+2023-05-22,Alimentos,Oeste,Tienda física,50,783.25,557.72,225.53
+2023-05-23,Juguetes,Sur,Distribuidor,45,1397.88,800.2,597.68
+2023-05-23,Electrónica,Centro,E-commerce,43,12500.79,8184.43,4316.36
+2023-05-24,Deportes,Norte,Tienda física,35,2540.07,1726.35,813.72
+2023-05-24,Moda,Este,Tienda física,9,464.18,285.62,178.56
+2023-05-25,Alimentos,Norte,E-commerce,50,943.85,565.68,378.17
+2023-05-25,Alimentos,Norte,Marketplace,20,381.56,258.85,122.71
+2023-05-25,Electrónica,Norte,E-commerce,16,4958.4,2894.33,2064.07
+2023-05-25,Alimentos,Centro,Distribuidor,24,427.79,294.49,133.3
+2023-05-25,Electrónica,Sur,Marketplace,19,6602.66,4816.72,1785.94
+2023-05-26,Electrónica,Norte,Distribuidor,44,14063.78,10512.16,3551.62
+2023-05-26,Alimentos,Norte,E-commerce,40,619.97,407.51,212.46
+2023-05-27,Moda,Oeste,Tienda física,48,2519.77,1820.56,699.21
+2023-05-27,Deportes,Este,E-commerce,54,3769.18,2081.58,1687.6
+2023-05-28,Alimentos,Oeste,Tienda física,40,773,545.97,227.03
+2023-05-28,Alimentos,Oeste,Tienda física,57,1055.03,787.65,267.38
+2023-05-28,Electrónica,Centro,Marketplace,32,10404.11,6925,3479.11
+2023-05-29,Electrónica,Norte,Tienda física,26,7955.37,5907.86,2047.51
+2023-05-30,Electrónica,Centro,Distribuidor,50,17961.52,11926.72,6034.8
+2023-05-30,Alimentos,Norte,E-commerce,39,751.21,541.65,209.56
+2023-05-30,Electrónica,Norte,Distribuidor,9,2839.66,1789.84,1049.82
+2023-05-31,Electrónica,Sur,E-commerce,38,12487.82,8160.76,4327.06
+2023-05-31,Moda,Norte,Marketplace,19,992.82,726.4,266.42
+2023-05-31,Electrónica,Norte,E-commerce,25,8489.6,4856.96,3632.64
+2023-05-31,Electrónica,Norte,Tienda física,43,12200.04,8866.59,3333.45
+2023-06-01,Juguetes,Oeste,E-commerce,30,1201.92,773.13,428.79
+2023-06-01,Moda,Sur,Distribuidor,21,1220.34,885.92,334.42
+2023-06-01,Electrónica,Norte,Distribuidor,9,3305.03,1959.77,1345.26
+2023-06-02,Electrónica,Norte,E-commerce,55,17339.6,9539.34,7800.26
+2023-06-02,Electrónica,Este,Marketplace,37,13241.78,8111.95,5129.83
+2023-06-02,Electrónica,Norte,Tienda física,14,3892.41,2447.94,1444.47
+2023-06-03,Moda,Norte,Distribuidor,47,2730.25,1520.76,1209.49
+2023-06-03,Hogar,Norte,Distribuidor,34,3293.2,2074.56,1218.64
+2023-06-04,Moda,Centro,Marketplace,26,1425.86,1014.47,411.39
+2023-06-04,Alimentos,Este,Marketplace,42,656.74,362.36,294.38
+2023-06-04,Moda,Sur,Distribuidor,8,472.25,299.01,173.24
+2023-06-05,Electrónica,Sur,E-commerce,37,10878.76,7471.56,3407.2
+2023-06-06,Electrónica,Norte,Marketplace,11,3447.21,2304.81,1142.4
+2023-06-06,Electrónica,Norte,Tienda física,53,14655.9,10251.54,4404.36
+2023-06-06,Moda,Este,E-commerce,39,2391.25,1653.14,738.11
+2023-06-07,Hogar,Centro,Tienda física,30,2330.35,1343.82,986.53
+2023-06-07,Moda,Sur,Marketplace,44,2946.09,1785.27,1160.82
+2023-06-07,Electrónica,Norte,Marketplace,30,8689.07,6279.4,2409.67
+2023-06-07,Electrónica,Centro,Distribuidor,21,6872.76,4471.27,2401.49
+2023-06-08,Hogar,Este,Tienda física,33,3200.08,2037.18,1162.9
+2023-06-08,Hogar,Centro,Distribuidor,47,3864.42,2319.76,1544.66
+2023-06-08,Electrónica,Sur,Tienda física,27,9093.83,5408.29,3685.54
+2023-06-09,Deportes,Oeste,Distribuidor,8,674.67,487.66,187.01
+2023-06-09,Electrónica,Oeste,Marketplace,18,6142.12,3959.32,2182.8
+2023-06-10,Deportes,Oeste,E-commerce,25,1640.49,1224.52,415.97
+2023-06-10,Alimentos,Sur,Marketplace,53,899.56,591.15,308.41
+2023-06-10,Alimentos,Norte,Marketplace,28,490.17,363.09,127.08
+2023-06-11,Juguetes,Sur,Distribuidor,13,471.03,331.18,139.85
+2023-06-12,Electrónica,Norte,Distribuidor,26,8729,6202.22,2526.78
+2023-06-12,Hogar,Centro,Marketplace,11,924.66,581.73,342.93
+2023-06-12,Electrónica,Oeste,E-commerce,13,4120.56,2913.8,1206.76
+2023-06-13,Hogar,Sur,E-commerce,35,3595.56,2000.82,1594.74
+2023-06-13,Electrónica,Norte,Marketplace,26,7204.28,4150.86,3053.42
+2023-06-13,Juguetes,Norte,Distribuidor,53,1842.3,1204.97,637.33
+2023-06-14,Electrónica,Este,Distribuidor,10,3092.37,2305.08,787.29
+2023-06-14,Moda,Sur,Tienda física,11,730.22,425.19,305.03
+2023-06-14,Hogar,Centro,Distribuidor,21,1784.64,1096.96,687.68
+2023-06-14,Deportes,Sur,Tienda física,17,1332.87,994.85,338.02
+2023-06-15,Juguetes,Este,Marketplace,11,432.64,253.05,179.59
+2023-06-16,Alimentos,Norte,Tienda física,51,977.05,716.41,260.64
+2023-06-16,Juguetes,Norte,Distribuidor,40,1411.89,792.42,619.47
+2023-06-16,Juguetes,Norte,Distribuidor,33,1253.8,905.22,348.58
+2023-06-16,Alimentos,Este,E-commerce,32,547.73,394.67,153.06
+2023-06-16,Electrónica,Norte,Distribuidor,39,10805.52,7883.88,2921.64
+2023-06-16,Deportes,Este,E-commerce,55,4383.1,2912.71,1470.39
+2023-06-16,Electrónica,Sur,Tienda física,40,11746.57,6827.4,4919.17
+2023-06-18,Juguetes,Norte,E-commerce,34,1266.23,894.62,371.61
+2023-06-19,Electrónica,Este,Tienda física,27,7839.6,5247.78,2591.82
+2023-06-19,Electrónica,Centro,E-commerce,50,17001.38,9660.12,7341.26
+2023-06-19,Alimentos,Centro,E-commerce,33,582.23,369.82,212.41
+2023-06-19,Juguetes,Este,E-commerce,32,1189.69,827.52,362.17
+2023-06-20,Electrónica,Este,Distribuidor,35,10187.97,6107.83,4080.14
+2023-06-22,Electrónica,Norte,Marketplace,45,13731.96,8709.89,5022.07
+2023-06-22,Hogar,Norte,E-commerce,20,1650.75,927.11,723.64
+2023-06-23,Electrónica,Oeste,Distribuidor,47,14427.12,8897.1,5530.02
+2023-06-23,Electrónica,Centro,Marketplace,32,10722.07,6438.06,4284.01
+2023-06-24,Alimentos,Norte,E-commerce,26,487.61,363.04,124.57
+2023-06-25,Electrónica,Norte,Marketplace,32,10974.22,7557.68,3416.54
+2023-06-25,Electrónica,Norte,Distribuidor,52,16644,9710.48,6933.52
+2023-06-25,Alimentos,Sur,Marketplace,55,883.36,506.14,377.22
+2023-06-25,Electrónica,Sur,Marketplace,6,1926.18,1254.82,671.36
+2023-06-26,Juguetes,Oeste,Distribuidor,32,985.61,682.05,303.56
+2023-06-26,Deportes,Sur,Marketplace,21,1421.63,996.21,425.42
+2023-06-27,Deportes,Este,Marketplace,50,4077.66,2761.02,1316.64
+2023-06-27,Moda,Sur,E-commerce,49,2607.08,1929.57,677.51
+2023-06-27,Deportes,Este,E-commerce,50,3410.81,2160.24,1250.57
+2023-06-27,Hogar,Sur,Marketplace,9,829.94,475.15,354.79
+2023-06-28,Alimentos,Norte,Distribuidor,35,677.82,480.03,197.79
+2023-06-28,Electrónica,Norte,Distribuidor,10,2820.81,2070.47,750.34
+2023-06-29,Electrónica,Sur,Distribuidor,30,9297.91,5335.2,3962.71
+2023-06-29,Deportes,Norte,Marketplace,39,3230.82,1923.14,1307.68
+2023-06-30,Alimentos,Norte,Distribuidor,11,205.75,144.95,60.8
+2023-07-01,Alimentos,Norte,Distribuidor,38,599.05,369.42,229.63
+2023-07-02,Juguetes,Norte,Tienda física,14,519.59,384.73,134.86
+2023-07-02,Electrónica,Centro,Distribuidor,38,11603.65,6932.15,4671.5
+2023-07-02,Deportes,Centro,Tienda física,33,2815.12,1659.62,1155.5
+2023-07-03,Hogar,Norte,Marketplace,6,506.11,362.33,143.78
+2023-07-03,Deportes,Centro,Marketplace,13,994.82,552.07,442.75
+2023-07-03,Electrónica,Norte,Tienda física,14,4402.27,3141.32,1260.95
+2023-07-04,Electrónica,Oeste,Marketplace,28,9244.83,5586.18,3658.65
+2023-07-04,Deportes,Sur,Marketplace,19,1250.15,823.43,426.72
+2023-07-04,Juguetes,Sur,E-commerce,25,798.08,483.75,314.33
+2023-07-05,Alimentos,Este,Marketplace,24,410.57,283.72,126.85
+2023-07-05,Juguetes,Centro,Distribuidor,36,1241.45,720.97,520.48
+2023-07-05,Deportes,Sur,Distribuidor,43,3419.17,2133.8,1285.37
+2023-07-05,Hogar,Oeste,Marketplace,13,999.68,623,376.68
+2023-07-06,Juguetes,Norte,Tienda física,40,1511.04,1050.77,460.27
+2023-07-06,Electrónica,Norte,Marketplace,22,7361.63,4272.97,3088.66
+2023-07-06,Moda,Norte,Distribuidor,22,1433.32,854.11,579.21
+2023-07-07,Hogar,Sur,Tienda física,48,4029.22,2898.86,1130.36
+2023-07-09,Electrónica,Sur,Marketplace,40,11718.06,6680.11,5037.95
+2023-07-09,Deportes,Oeste,Marketplace,20,1678.66,1044.6,634.06
+2023-07-09,Deportes,Norte,Tienda física,14,1196.96,673.08,523.88
+2023-07-10,Hogar,Norte,E-commerce,12,983.91,586.02,397.89
+2023-07-10,Electrónica,Este,Distribuidor,26,8075.72,5131.28,2944.44
+2023-07-11,Electrónica,Sur,Distribuidor,43,13724.33,8460.52,5263.81
+2023-07-11,Hogar,Norte,Distribuidor,13,1000.91,554.5,446.41
+2023-07-11,Deportes,Este,Marketplace,21,1721.04,1117.64,603.4
+2023-07-12,Electrónica,Norte,E-commerce,19,6859.54,4821.53,2038.01
+2023-07-12,Juguetes,Centro,Marketplace,27,950.05,608.63,341.42
+2023-07-12,Deportes,Norte,Distribuidor,47,3445.6,2156.11,1289.49
+2023-07-13,Electrónica,Norte,E-commerce,24,8749.76,5178.67,3571.09
+2023-07-13,Hogar,Centro,Tienda física,48,4033.77,2622.97,1410.8
+2023-07-13,Electrónica,Sur,Tienda física,40,14541.07,10378.05,4163.02
+2023-07-14,Electrónica,Norte,E-commerce,11,3490.34,2226.6,1263.74
+2023-07-15,Electrónica,Centro,Distribuidor,36,12340.84,8807.49,3533.35
+2023-07-15,Moda,Oeste,Tienda física,37,2157.55,1403.85,753.7
+2023-07-15,Electrónica,Norte,Marketplace,40,13088.05,8261,4827.05
+2023-07-15,Deportes,Centro,Marketplace,17,1196.78,822.7,374.08
+2023-07-15,Juguetes,Sur,Tienda física,43,1457.38,1039.48,417.9
+2023-07-16,Electrónica,Centro,Marketplace,6,2036.45,1138.76,897.69
+2023-07-17,Electrónica,Este,E-commerce,48,14441.92,9700,4741.92
+2023-07-17,Electrónica,Centro,E-commerce,36,12980.55,8251.55,4729
+2023-07-17,Electrónica,Norte,Distribuidor,12,3805.5,2226.76,1578.74
+2023-07-17,Deportes,Oeste,Distribuidor,27,1801.56,1271.53,530.03
+2023-07-18,Electrónica,Norte,E-commerce,36,10605.47,6814.87,3790.6
+2023-07-19,Electrónica,Sur,Distribuidor,22,7759.98,4913.87,2846.11
+2023-07-19,Electrónica,Oeste,E-commerce,13,4223.09,3086.76,1136.33
+2023-07-19,Electrónica,Este,Marketplace,30,9452.63,6667.25,2785.38
+2023-07-19,Alimentos,Sur,Marketplace,35,629.56,349,280.56
+2023-07-19,Electrónica,Este,Tienda física,50,14408.74,8855.52,5553.22
+2023-07-19,Moda,Centro,Distribuidor,38,2501.01,1872.4,628.61
+2023-07-20,Electrónica,Centro,E-commerce,24,8254.11,5111.02,3143.09
+2023-07-23,Alimentos,Este,E-commerce,50,969.49,660.86,308.63
+2023-07-23,Alimentos,Centro,Tienda física,33,681.36,411.08,270.28
+2023-07-24,Deportes,Norte,E-commerce,45,3299.88,2232.03,1067.85
+2023-07-24,Deportes,Sur,Marketplace,23,1942.26,1236.38,705.88
+2023-07-25,Hogar,Sur,Distribuidor,13,1037.62,757.68,279.94
+2023-07-25,Electrónica,Norte,E-commerce,20,6937.37,5062.71,1874.66
+2023-07-25,Electrónica,Norte,E-commerce,14,4426.62,2674.46,1752.16
+2023-07-26,Deportes,Norte,Distribuidor,10,675.3,503.38,171.92
+2023-07-26,Electrónica,Norte,E-commerce,13,3558.27,2093.96,1464.31
+2023-07-26,Electrónica,Centro,Tienda física,25,7512.74,4677.01,2835.73
+2023-07-26,Hogar,Norte,Marketplace,9,834.53,562.93,271.6
+2023-07-26,Electrónica,Norte,Distribuidor,45,15682.3,10215.83,5466.47
+2023-07-27,Alimentos,Este,Tienda física,38,705.52,430.88,274.64
+2023-07-27,Alimentos,Sur,Marketplace,36,667.2,400.17,267.03
+2023-07-28,Electrónica,Norte,Distribuidor,46,16240.93,9289.83,6951.1
+2023-07-28,Hogar,Sur,Marketplace,16,1635.75,973.91,661.84
+2023-07-28,Electrónica,Norte,E-commerce,48,14382.26,8483.35,5898.91
+2023-07-28,Electrónica,Norte,Marketplace,21,7081.7,4536.51,2545.19
+2023-07-28,Electrónica,Centro,E-commerce,14,4859.47,3435.22,1424.25
+2023-07-28,Juguetes,Norte,Marketplace,29,1089.27,639.55,449.72
+2023-07-28,Electrónica,Oeste,Tienda física,16,4408.3,2516.66,1891.64
+2023-07-28,Electrónica,Norte,Marketplace,29,10280.12,7673.78,2606.34
+2023-07-28,Alimentos,Norte,Tienda física,34,666.39,377.81,288.58
+2023-07-29,Electrónica,Oeste,Marketplace,30,9664.83,5453.93,4210.9
+2023-07-29,Hogar,Norte,E-commerce,23,1802.41,1338.95,463.46
+2023-07-30,Alimentos,Sur,Tienda física,46,940.34,534.74,405.6
+2023-07-31,Hogar,Oeste,Distribuidor,30,2703.56,1821.39,882.17
+2023-08-01,Hogar,Este,Tienda física,13,1081.62,732.46,349.16
+2023-08-02,Electrónica,Este,E-commerce,22,6862.96,3833.48,3029.48
+2023-08-02,Alimentos,Este,Marketplace,12,216.23,139.9,76.33
+2023-08-02,Alimentos,Norte,E-commerce,22,353.84,202.27,151.57
+2023-08-03,Electrónica,Norte,Distribuidor,20,6750.97,4942.84,1808.13
+2023-08-04,Moda,Oeste,Distribuidor,36,2252.21,1317.13,935.08
+2023-08-04,Electrónica,Centro,Tienda física,35,12791.23,8286.6,4504.63
+2023-08-04,Hogar,Norte,Tienda física,25,2039.11,1426.1,613.01
+2023-08-05,Electrónica,Este,E-commerce,24,7256.67,5123.44,2133.23
+2023-08-05,Alimentos,Este,Tienda física,21,418.49,257.74,160.75
+2023-08-05,Deportes,Norte,E-commerce,43,3200.13,2174.52,1025.61
+2023-08-05,Electrónica,Oeste,E-commerce,23,8253.83,6002.09,2251.74
+2023-08-06,Deportes,Sur,E-commerce,6,499.7,334.21,165.49
+2023-08-06,Electrónica,Oeste,Marketplace,8,2771.86,1757.67,1014.19
+2023-08-07,Alimentos,Norte,E-commerce,32,561.52,349.47,212.05
+2023-08-07,Electrónica,Norte,E-commerce,24,8070.09,5210.23,2859.86
+2023-08-08,Juguetes,Norte,E-commerce,24,953.09,630.75,322.34
+2023-08-08,Juguetes,Sur,Distribuidor,26,867.42,640.49,226.93
+2023-08-08,Electrónica,Norte,Marketplace,23,8055.41,4558.99,3496.42
+2023-08-09,Hogar,Norte,Marketplace,28,2701.58,1841.28,860.3
+2023-08-09,Electrónica,Norte,Tienda física,5,1580.72,933.92,646.8
+2023-08-10,Electrónica,Norte,Marketplace,38,13846.97,9902.7,3944.27
+2023-08-11,Hogar,Centro,Tienda física,28,2774.67,2024.39,750.28
+2023-08-11,Deportes,Oeste,E-commerce,7,552.43,349.38,203.05
+2023-08-11,Electrónica,Norte,Distribuidor,10,2726.02,1794.77,931.25
+2023-08-12,Alimentos,Norte,Tienda física,35,718.61,434.43,284.18
+2023-08-12,Electrónica,Norte,Tienda física,34,9530.82,5460.37,4070.45
+2023-08-12,Electrónica,Oeste,E-commerce,43,14650.51,8516.25,6134.26
+2023-08-12,Electrónica,Norte,Distribuidor,32,10615.73,6470.54,4145.19
+2023-08-13,Hogar,Sur,E-commerce,7,596.88,405.17,191.71
+2023-08-14,Electrónica,Oeste,Tienda física,36,10448.21,6241.97,4206.24
+2023-08-14,Hogar,Norte,E-commerce,23,1829.66,1020.7,808.96
+2023-08-17,Juguetes,Sur,Marketplace,8,261.23,161.43,99.8
+2023-08-17,Juguetes,Oeste,E-commerce,30,1073.02,655.55,417.47
+2023-08-17,Moda,Norte,Distribuidor,16,1006.12,560.52,445.6
+2023-08-18,Electrónica,Norte,Distribuidor,40,14264.81,9760.63,4504.18
+2023-08-18,Hogar,Oeste,Tienda física,11,976.99,622.1,354.89
+2023-08-18,Electrónica,Sur,Marketplace,34,12141.65,8809.86,3331.79
+2023-08-19,Moda,Este,E-commerce,8,453.54,331.06,122.48
+2023-08-19,Alimentos,Norte,Tienda física,36,616.83,373.05,243.78
+2023-08-20,Deportes,Norte,Marketplace,8,555.7,374.98,180.72
+2023-08-21,Hogar,Este,Distribuidor,17,1522.78,930.93,591.85
+2023-08-21,Hogar,Centro,Distribuidor,23,1764.15,1261.47,502.68
+2023-08-21,Electrónica,Este,E-commerce,25,8526.17,6139.38,2386.79
+2023-08-21,Deportes,Norte,Distribuidor,11,917.32,549.63,367.69
+2023-08-22,Electrónica,Sur,Marketplace,28,8822.65,5654.37,3168.28
+2023-08-22,Moda,Norte,Distribuidor,30,1616.27,936.32,679.95
+2023-08-23,Deportes,Centro,E-commerce,9,695.12,508.89,186.23
+2023-08-23,Electrónica,Sur,Tienda física,11,3692.49,2753.36,939.13
+2023-08-24,Moda,Norte,Tienda física,29,1913.26,1361.34,551.92
+2023-08-24,Moda,Norte,Marketplace,18,988.31,673.53,314.78
+2023-08-25,Deportes,Este,Marketplace,32,2621.73,1447.74,1173.99
+2023-08-25,Moda,Este,Marketplace,6,405.85,237.08,168.77
+2023-08-26,Moda,Sur,E-commerce,31,1658.7,1020.48,638.22
+2023-08-26,Alimentos,Norte,E-commerce,29,507.37,337.24,170.13
+2023-08-27,Electrónica,Norte,Tienda física,43,13029.37,8460.02,4569.35
+2023-08-27,Juguetes,Norte,Marketplace,29,917.6,631.51,286.09
+2023-08-27,Electrónica,Oeste,E-commerce,39,14022.38,8694.25,5328.13
+2023-08-27,Alimentos,Este,Marketplace,27,441.79,298.48,143.31
+2023-08-28,Electrónica,Sur,E-commerce,34,10897.36,6409.09,4488.27
+2023-08-28,Electrónica,Este,Tienda física,31,9570.62,6750.72,2819.9
+2023-08-28,Electrónica,Centro,Tienda física,11,3500.3,2061.48,1438.82
+2023-08-28,Electrónica,Norte,E-commerce,13,4416.03,3166.92,1249.11
+2023-08-28,Electrónica,Centro,Tienda física,36,11319.7,7723.65,3596.05
+2023-08-29,Electrónica,Norte,Distribuidor,21,6565.99,3845.56,2720.43
+2023-08-29,Moda,Este,Marketplace,36,1940.43,1123.25,817.18
+2023-08-29,Electrónica,Oeste,Distribuidor,41,14967.82,8871.28,6096.54
+2023-08-29,Moda,Oeste,E-commerce,19,1032.01,734.24,297.77
+2023-08-29,Deportes,Centro,E-commerce,14,932.22,528.21,404.01
+2023-08-29,Electrónica,Norte,E-commerce,24,7157.99,4500.52,2657.47
+2023-08-30,Alimentos,Norte,Distribuidor,40,714.52,495.53,218.99
+2023-08-30,Hogar,Norte,Distribuidor,32,3304.99,2304.49,1000.5
+2023-08-31,Alimentos,Este,E-commerce,38,677.53,462.46,215.07
+2023-08-31,Electrónica,Norte,E-commerce,41,13487.68,8956.28,4531.4
+2023-08-31,Electrónica,Este,Tienda física,21,6586.4,4034.49,2551.91
+2023-09-01,Electrónica,Norte,Marketplace,34,10301.34,7283.71,3017.63
+2023-09-01,Juguetes,Este,Distribuidor,14,450.28,311.68,138.6
+2023-09-01,Moda,Norte,Distribuidor,37,2222.18,1316.55,905.63
+2023-09-02,Deportes,Sur,Tienda física,33,2584.79,1445.24,1139.55
+2023-09-02,Moda,Sur,Tienda física,5,293.4,168.67,124.73
+2023-09-03,Moda,Oeste,Marketplace,32,1726.85,1225.48,501.37
+2023-09-03,Juguetes,Este,Marketplace,16,532.03,328.67,203.36
+2023-09-04,Alimentos,Sur,Tienda física,28,554.36,390.49,163.87
+2023-09-05,Alimentos,Oeste,Marketplace,39,681.46,458.84,222.62
+2023-09-05,Electrónica,Sur,Marketplace,36,12399.01,7687.83,4711.18
+2023-09-05,Electrónica,Centro,Marketplace,8,2734.42,1510.91,1223.51
+2023-09-06,Deportes,Sur,Distribuidor,23,1617.23,1148.36,468.87
+2023-09-06,Electrónica,Norte,E-commerce,41,13604.02,8781.54,4822.48
+2023-09-06,Alimentos,Este,E-commerce,8,144.8,89.89,54.91
+2023-09-06,Deportes,Norte,E-commerce,40,3434.93,2189.5,1245.43
+2023-09-07,Hogar,Centro,Marketplace,28,2493.98,1646.46,847.52
+2023-09-09,Moda,Centro,Tienda física,35,1843.28,1270.89,572.39
+2023-09-09,Deportes,Norte,Marketplace,31,2284.28,1600.95,683.33
+2023-09-09,Moda,Sur,E-commerce,9,514.5,347.3,167.2
+2023-09-10,Moda,Norte,Marketplace,27,1654.64,1121.46,533.18
+2023-09-10,Moda,Sur,Distribuidor,29,1666.68,994.48,672.2
+2023-09-10,Hogar,Este,Marketplace,26,2388.44,1536.99,851.45
+2023-09-11,Deportes,Sur,E-commerce,9,639.46,373.72,265.74
+2023-09-11,Electrónica,Oeste,Marketplace,9,2914.93,2005.78,909.15
+2023-09-11,Electrónica,Sur,Tienda física,15,4293.63,2405.32,1888.31
+2023-09-11,Electrónica,Centro,Tienda física,34,12343.97,7791.47,4552.5
+2023-09-12,Juguetes,Norte,E-commerce,23,872.6,504.03,368.57
+2023-09-12,Electrónica,Sur,Marketplace,32,8717.18,5006.68,3710.5
+2023-09-12,Alimentos,Oeste,Marketplace,20,380.55,218.9,161.65
+2023-09-13,Electrónica,Centro,Marketplace,36,10061.05,6137.71,3923.34
+2023-09-13,Electrónica,Oeste,Distribuidor,11,3130.46,2204.75,925.71
+2023-09-14,Moda,Centro,Tienda física,9,614.03,454.5,159.53
+2023-09-14,Alimentos,Oeste,Distribuidor,10,172.02,106.1,65.92
+2023-09-14,Electrónica,Oeste,Tienda física,24,8568.45,5236.66,3331.79
+2023-09-15,Deportes,Oeste,Marketplace,34,2294.37,1611.89,682.48
+2023-09-15,Electrónica,Norte,Distribuidor,29,9040.59,6542.46,2498.13
+2023-09-15,Moda,Sur,E-commerce,26,1534.19,1057.69,476.5
+2023-09-15,Electrónica,Oeste,Distribuidor,21,5959.34,3690.14,2269.2
+2023-09-15,Deportes,Norte,Distribuidor,17,1414.03,906.16,507.87
+2023-09-17,Juguetes,Oeste,Tienda física,29,928.91,512.73,416.18
+2023-09-17,Moda,Este,Tienda física,23,1352.09,902.54,449.55
+2023-09-18,Deportes,Norte,Tienda física,16,1045.99,724.03,321.96
+2023-09-19,Moda,Centro,E-commerce,24,1540.99,863.36,677.63
+2023-09-20,Deportes,Este,Tienda física,13,1104.48,798.12,306.36
+2023-09-20,Electrónica,Este,Marketplace,8,2488.87,1502.48,986.39
+2023-09-20,Hogar,Este,Tienda física,21,1910.41,1243.39,667.02
+2023-09-20,Deportes,Norte,E-commerce,15,1000.35,635.34,365.01
+2023-09-20,Electrónica,Norte,E-commerce,22,6152.52,3828.82,2323.7
+2023-09-21,Juguetes,Centro,Distribuidor,30,1092.26,709.92,382.34
+2023-09-22,Electrónica,Oeste,Marketplace,32,11240.86,8412.91,2827.95
+2023-09-22,Electrónica,Sur,Distribuidor,21,7423.93,4627.05,2796.88
+2023-09-23,Electrónica,Norte,E-commerce,41,14011.66,9807.73,4203.93
+2023-09-23,Moda,Centro,E-commerce,27,1552.16,1004.75,547.41
+2023-09-24,Deportes,Norte,E-commerce,37,2682.39,1513.28,1169.11
+2023-09-25,Deportes,Este,E-commerce,16,1365.04,921.82,443.22
+2023-09-25,Electrónica,Sur,Tienda física,31,8791.7,5540.74,3250.96
+2023-09-26,Alimentos,Este,Marketplace,24,409.97,301.25,108.72
+2023-09-26,Electrónica,Norte,Tienda física,12,3516.99,2510.46,1006.53
+2023-09-26,Alimentos,Norte,Tienda física,27,420.5,254.7,165.8
+2023-09-26,Electrónica,Este,Distribuidor,20,6399.69,3771.01,2628.68
+2023-09-26,Deportes,Norte,Marketplace,28,2228.07,1426.93,801.14
+2023-09-26,Hogar,Este,Tienda física,20,1927.98,1443.71,484.27
+2023-09-27,Alimentos,Sur,Tienda física,17,277.52,190.32,87.2
+2023-09-27,Moda,Norte,Tienda física,34,2045.29,1145.55,899.74
+2023-09-28,Alimentos,Sur,Marketplace,5,80.21,53.53,26.68
+2023-09-28,Alimentos,Sur,Tienda física,22,421.31,248.36,172.95
+2023-09-29,Moda,Centro,Distribuidor,39,2219.67,1384.23,835.44
+2023-09-29,Electrónica,Centro,Distribuidor,16,5035.75,3301.3,1734.45
+2023-09-29,Moda,Este,Distribuidor,34,2226.88,1603.13,623.75
+2023-09-29,Electrónica,Norte,Tienda física,17,5442.3,3895.3,1547
+2023-09-30,Electrónica,Sur,E-commerce,6,2136.72,1255.81,880.91
+2023-09-30,Moda,Centro,Tienda física,15,899.15,581.97,317.18
+2023-09-30,Alimentos,Oeste,Distribuidor,40,680.39,506.18,174.21
+2023-10-01,Electrónica,Norte,Tienda física,16,4546.98,3317.18,1229.8
+2023-10-01,Juguetes,Norte,Marketplace,10,300.81,224.45,76.36
+2023-10-01,Hogar,Norte,Tienda física,6,530.82,349.6,181.22
+2023-10-01,Hogar,Sur,E-commerce,15,1237.98,726.5,511.48
+2023-10-02,Juguetes,Oeste,E-commerce,22,700.64,399.2,301.44
+2023-10-02,Electrónica,Norte,E-commerce,26,8202.96,5442.6,2760.36
+2023-10-02,Hogar,Norte,Marketplace,35,2926.51,1617.57,1308.94
+2023-10-03,Hogar,Centro,E-commerce,24,2081.86,1225.32,856.54
+2023-10-03,Juguetes,Sur,Marketplace,37,1444.62,991.24,453.38
+2023-10-04,Hogar,Oeste,Tienda física,32,2634.72,1599.11,1035.61
+2023-10-05,Electrónica,Oeste,Marketplace,28,8196.13,5447.95,2748.18
+2023-10-05,Electrónica,Centro,E-commerce,32,9163.97,6597.1,2566.87
+2023-10-06,Juguetes,Norte,E-commerce,32,1107.4,804.85,302.55
+2023-10-06,Hogar,Sur,Distribuidor,25,2234.47,1571.28,663.19
+2023-10-06,Hogar,Centro,E-commerce,20,2045.04,1225.96,819.08
+2023-10-07,Juguetes,Norte,Marketplace,14,498.56,289.49,209.07
+2023-10-07,Juguetes,Oeste,Distribuidor,31,1069.81,734.02,335.79
+2023-10-08,Electrónica,Sur,Marketplace,33,11019.3,6441.7,4577.6
+2023-10-10,Electrónica,Este,E-commerce,24,7237.33,5013.5,2223.83
+2023-10-10,Deportes,Centro,E-commerce,14,1139.29,660.99,478.3
+2023-10-10,Juguetes,Norte,Tienda física,25,921.6,659.9,261.7
+2023-10-11,Hogar,Oeste,Marketplace,38,3179.69,1917.13,1262.56
+2023-10-11,Electrónica,Norte,E-commerce,5,1546.05,957.19,588.86
+2023-10-11,Hogar,Centro,Tienda física,17,1318.44,912.64,405.8
+2023-10-12,Juguetes,Oeste,E-commerce,29,1026.77,594.35,432.42
+2023-10-12,Hogar,Norte,Tienda física,24,1957.64,1116.82,840.82
+2023-10-12,Juguetes,Centro,Distribuidor,32,1107.56,695.4,412.16
+2023-10-13,Hogar,Oeste,Tienda física,17,1734.26,1228.51,505.75
+2023-10-13,Electrónica,Este,Marketplace,15,5164.85,3150.11,2014.74
+2023-10-13,Juguetes,Centro,Tienda física,32,970.73,651.96,318.77
+2023-10-13,Deportes,Norte,Marketplace,37,2406.66,1532.31,874.35
+2023-10-14,Moda,Centro,E-commerce,31,2085.33,1428.8,656.53
+2023-10-15,Alimentos,Norte,Distribuidor,11,196.43,117.14,79.29
+2023-10-15,Moda,Sur,E-commerce,13,849.95,502.01,347.94
+2023-10-16,Hogar,Norte,Tienda física,31,2723.56,1731.37,992.19
+2023-10-16,Hogar,Norte,Tienda física,8,742.41,541.57,200.84
+2023-10-17,Electrónica,Norte,Distribuidor,6,1987.66,1206.02,781.64
+2023-10-17,Electrónica,Norte,Marketplace,27,8963.97,5318.7,3645.27
+2023-10-18,Electrónica,Norte,E-commerce,14,4202.85,2899.16,1303.69
+2023-10-18,Hogar,Centro,Marketplace,23,2309.17,1639.7,669.47
+2023-10-18,Electrónica,Oeste,Tienda física,39,12049.38,8904.04,3145.34
+2023-10-19,Electrónica,Norte,E-commerce,24,8237.66,6049.28,2188.38
+2023-10-19,Moda,Oeste,Marketplace,19,1221.76,723.7,498.06
+2023-10-20,Juguetes,Norte,Marketplace,36,1108.52,727.93,380.59
+2023-10-20,Deportes,Oeste,E-commerce,18,1392.63,969.96,422.67
+2023-10-20,Electrónica,Centro,Tienda física,21,6509.92,4229.26,2280.66
+2023-10-20,Electrónica,Centro,Tienda física,26,8857.63,5095.45,3762.18
+2023-10-20,Juguetes,Este,Tienda física,28,964.74,700.22,264.52
+2023-10-20,Hogar,Centro,Tienda física,37,3394.3,2089.28,1305.02
+2023-10-21,Juguetes,Norte,Tienda física,31,1236.42,764.83,471.59
+2023-10-22,Electrónica,Sur,Tienda física,26,8638.15,5203.42,3434.73
+2023-10-22,Alimentos,Norte,Tienda física,26,443.82,325.08,118.74
+2023-10-22,Deportes,Norte,Marketplace,27,2307.42,1560.61,746.81
+2023-10-22,Alimentos,Oeste,Tienda física,26,449.19,279.23,169.96
+2023-10-24,Juguetes,Sur,Distribuidor,17,521.07,346.93,174.14
+2023-10-24,Alimentos,Centro,Marketplace,32,557.69,332.51,225.18
+2023-10-25,Alimentos,Este,E-commerce,34,652.3,385.21,267.09
+2023-10-25,Juguetes,Centro,Tienda física,19,606.68,413.75,192.93
+2023-10-26,Alimentos,Este,Tienda física,5,96.85,55.79,41.06
+2023-10-26,Juguetes,Sur,E-commerce,13,423.75,258.95,164.8
+2023-10-26,Juguetes,Sur,E-commerce,31,978.34,711.74,266.6
+2023-10-26,Electrónica,Norte,E-commerce,6,1990.92,1426.75,564.17
+2023-10-26,Juguetes,Sur,Distribuidor,24,795.56,500.78,294.78
+2023-10-26,Deportes,Oeste,E-commerce,40,2757.67,1694.85,1062.82
+2023-10-28,Electrónica,Norte,E-commerce,17,5931.95,3746.41,2185.54
+2023-10-30,Deportes,Centro,Distribuidor,36,2875.9,1876.87,999.03
+2023-10-30,Alimentos,Centro,Tienda física,13,248.03,146.02,102.01
+2023-10-30,Moda,Norte,E-commerce,16,833.1,554.48,278.62
+2023-10-30,Electrónica,Norte,Distribuidor,21,6777.16,4290.06,2487.1
+2023-10-30,Electrónica,Oeste,Marketplace,20,6187.62,4506.89,1680.73
+2023-10-30,Electrónica,Sur,Tienda física,26,9273.41,5945.54,3327.87
+2023-11-01,Hogar,Norte,E-commerce,28,2230.97,1591.65,639.32
+2023-11-01,Juguetes,Norte,E-commerce,36,1409.89,1028.07,381.82
+2023-11-01,Moda,Sur,Tienda física,40,2589.38,1490.39,1098.99
+2023-11-03,Electrónica,Centro,E-commerce,6,1680.03,1170.39,509.64
+2023-11-03,Electrónica,Centro,E-commerce,16,5219.47,2907.87,2311.6
+2023-11-03,Electrónica,Centro,Tienda física,37,12482.69,8380.93,4101.76
+2023-11-03,Alimentos,Centro,Tienda física,11,227.04,149.75,77.29
+2023-11-04,Alimentos,Norte,Tienda física,22,427.11,259.09,168.02
+2023-11-04,Hogar,Centro,Marketplace,32,2568.61,1739.15,829.46
+2023-11-04,Juguetes,Sur,Distribuidor,14,501.14,318.04,183.1
+2023-11-05,Alimentos,Norte,E-commerce,35,571.01,393.69,177.32
+2023-11-05,Hogar,Este,Marketplace,34,2654.06,1898.03,756.03
+2023-11-05,Electrónica,Oeste,Distribuidor,31,10991.43,6657.83,4333.6
+2023-11-05,Alimentos,Norte,E-commerce,27,511.4,294.55,216.85
+2023-11-05,Deportes,Oeste,E-commerce,25,1675.4,1011.18,664.22
+2023-11-07,Electrónica,Norte,Marketplace,11,3743.54,2536.84,1206.7
+2023-11-07,Electrónica,Sur,Distribuidor,23,7243.81,4361.57,2882.24
+2023-11-08,Electrónica,Norte,Tienda física,28,8775.47,5150.49,3624.98
+2023-11-09,Hogar,Norte,Tienda física,28,2875.31,2155.28,720.03
+2023-11-09,Hogar,Oeste,Marketplace,39,3691.61,2667.34,1024.27
+2023-11-10,Electrónica,Norte,Marketplace,40,13443.54,8604.28,4839.26
+2023-11-11,Moda,Norte,E-commerce,41,2814.1,1762.3,1051.8
+2023-11-11,Moda,Este,Distribuidor,27,1768.42,1046.32,722.1
+2023-11-11,Electrónica,Oeste,Tienda física,18,6520.9,3916.78,2604.12
+2023-11-11,Deportes,Oeste,Marketplace,37,2622.6,1463.32,1159.28
+2023-11-11,Juguetes,Oeste,Marketplace,30,975.86,665.36,310.5
+2023-11-12,Alimentos,Norte,E-commerce,28,517.58,379.84,137.74
+2023-11-12,Moda,Oeste,Tienda física,8,451.11,248.94,202.17
+2023-11-12,Electrónica,Oeste,Distribuidor,32,10484.17,7844.06,2640.11
+2023-11-13,Alimentos,Norte,Tienda física,9,177.5,113.19,64.31
+2023-11-13,Electrónica,Oeste,Tienda física,18,5125.72,3512.72,1613
+2023-11-13,Juguetes,Oeste,Marketplace,13,397.39,248.51,148.88
+2023-11-14,Deportes,Norte,Marketplace,35,2562.28,1899.43,662.85
+2023-11-14,Juguetes,Norte,Marketplace,10,325.78,189.46,136.32
+2023-11-15,Deportes,Sur,Marketplace,19,1226.72,880.37,346.35
+2023-11-15,Alimentos,Norte,E-commerce,6,111.07,67.58,43.49
+2023-11-16,Hogar,Centro,Marketplace,23,1940.72,1222.05,718.67
+2023-11-16,Electrónica,Sur,Distribuidor,16,4558.61,2789.01,1769.6
+2023-11-17,Electrónica,Norte,Distribuidor,24,6608.1,4376.43,2231.67
+2023-11-17,Electrónica,Norte,E-commerce,27,8117.21,5702.27,2414.94
+2023-11-17,Deportes,Sur,Distribuidor,7,472.89,277.49,195.4
+2023-11-18,Electrónica,Oeste,Distribuidor,15,4849.22,3248.15,1601.07
+2023-11-18,Electrónica,Norte,Marketplace,29,9151,6406.86,2744.14
+2023-11-18,Juguetes,Norte,Tienda física,12,392.92,288.51,104.41
+2023-11-19,Moda,Centro,E-commerce,37,2126.88,1277.77,849.11
+2023-11-19,Electrónica,Norte,Distribuidor,37,11137.9,6662.17,4475.73
+2023-11-19,Electrónica,Oeste,Tienda física,28,8935.57,5246.56,3689.01
+2023-11-20,Hogar,Oeste,E-commerce,29,2400.1,1515.42,884.68
+2023-11-20,Electrónica,Este,E-commerce,41,13575.81,9676.86,3898.95
+2023-11-21,Juguetes,Norte,Distribuidor,33,1154.48,828.08,326.4
+2023-11-21,Electrónica,Oeste,Marketplace,38,12537.7,8662.34,3875.36
+2023-11-21,Electrónica,Oeste,Tienda física,30,10334.01,6126.8,4207.21
+2023-11-21,Moda,Oeste,Distribuidor,29,1803.2,1256.89,546.31
+2023-11-22,Electrónica,Norte,Tienda física,14,4306.22,2451.24,1854.98
+2023-11-22,Electrónica,Norte,Tienda física,17,4773.07,3362.94,1410.13
+2023-11-22,Electrónica,Centro,Marketplace,40,14133.68,7950.17,6183.51
+2023-11-23,Deportes,Oeste,Marketplace,16,1243.27,833.38,409.89
+2023-11-23,Alimentos,Norte,Tienda física,6,116.99,74.99,42
+2023-11-24,Juguetes,Norte,Marketplace,40,1531.9,1059.14,472.76
+2023-11-24,Alimentos,Este,Marketplace,30,575.42,351.96,223.46
+2023-11-24,Alimentos,Oeste,Distribuidor,12,223.77,162.92,60.85
+2023-11-25,Electrónica,Norte,Marketplace,22,6123.29,4126.62,1996.67
+2023-11-25,Alimentos,Norte,Distribuidor,39,756.54,460.09,296.45
+2023-11-25,Juguetes,Norte,E-commerce,5,167.23,99.36,67.87
+2023-11-25,Hogar,Centro,Marketplace,6,462.36,338.05,124.31
+2023-11-26,Hogar,Norte,Distribuidor,9,819.19,511.09,308.1
+2023-11-26,Electrónica,Sur,Distribuidor,7,2269.33,1571.76,697.57
+2023-11-26,Electrónica,Oeste,E-commerce,17,5221.81,3069.37,2152.44
+2023-11-26,Moda,Norte,Distribuidor,24,1457.84,1065.35,392.49
+2023-11-29,Electrónica,Norte,E-commerce,19,6234.94,4409.32,1825.62
+2023-11-29,Electrónica,Este,E-commerce,7,2414.68,1550.7,863.98
+2023-11-29,Juguetes,Norte,E-commerce,28,852.23,583.89,268.34
+2023-11-30,Alimentos,Centro,E-commerce,8,152.6,93.06,59.54
+2023-12-01,Juguetes,Norte,E-commerce,39,1284.42,833.32,451.1
+2023-12-02,Electrónica,Norte,Tienda física,40,14650.04,10288.78,4361.26
+2023-12-02,Electrónica,Norte,Tienda física,43,15656.18,8858.59,6797.59
+2023-12-03,Deportes,Norte,E-commerce,42,2758.29,1731.88,1026.41
+2023-12-04,Electrónica,Norte,Marketplace,28,10161.82,6094.46,4067.36
+2023-12-04,Electrónica,Sur,Distribuidor,17,4636.07,3465.93,1170.14
+2023-12-05,Deportes,Norte,Distribuidor,10,659.52,407.08,252.44
+2023-12-05,Hogar,Este,Distribuidor,9,842.26,554.52,287.74
+2023-12-05,Moda,Este,Distribuidor,8,423.82,295.36,128.46
+2023-12-06,Electrónica,Este,Tienda física,46,14405.8,10631.68,3774.12
+2023-12-06,Electrónica,Oeste,Tienda física,24,7548.9,4861.11,2687.79
+2023-12-07,Deportes,Este,Tienda física,36,2383.25,1597.2,786.05
+2023-12-08,Electrónica,Norte,E-commerce,37,12513.93,7937.27,4576.66
+2023-12-08,Deportes,Norte,Tienda física,45,3514.84,2144.27,1370.57
+2023-12-08,Moda,Norte,E-commerce,30,1586.52,1104.33,482.19
+2023-12-08,Juguetes,Norte,Marketplace,18,672.49,434.79,237.7
+2023-12-09,Electrónica,Este,E-commerce,9,2636.01,1512.95,1123.06
+2023-12-09,Deportes,Oeste,E-commerce,47,3491.78,2269.74,1222.04
+2023-12-09,Electrónica,Norte,E-commerce,31,11032.98,6370.45,4662.53
+2023-12-10,Hogar,Norte,Distribuidor,31,2991.84,2045.53,946.31
+2023-12-10,Deportes,Centro,Marketplace,17,1325,878.08,446.92
+2023-12-10,Hogar,Sur,Marketplace,11,1092.77,631.88,460.89
+2023-12-11,Electrónica,Centro,Distribuidor,27,8217.31,6090.95,2126.36
+2023-12-12,Electrónica,Oeste,Distribuidor,7,2509.87,1833.86,676.01
+2023-12-12,Hogar,Sur,Distribuidor,33,2930.56,2179.3,751.26
+2023-12-13,Electrónica,Centro,Distribuidor,17,5926.54,3909.17,2017.37
+2023-12-13,Electrónica,Norte,Marketplace,37,11146.9,7923.79,3223.11
+2023-12-13,Alimentos,Sur,Distribuidor,41,841.39,477.66,363.73
+2023-12-14,Moda,Centro,Distribuidor,15,834.41,506.92,327.49
+2023-12-14,Electrónica,Sur,Tienda física,35,11420.31,7585.66,3834.65
+2023-12-14,Electrónica,Sur,Tienda física,43,14296.85,8732,5564.85
+2023-12-14,Hogar,Norte,E-commerce,9,829.24,495.86,333.38
+2023-12-15,Electrónica,Este,E-commerce,21,6232.11,4399.88,1832.23
+2023-12-16,Deportes,Sur,Marketplace,15,1236.96,693.52,543.44
+2023-12-16,Hogar,Norte,Tienda física,44,4240.08,2731.89,1508.19
+2023-12-16,Alimentos,Norte,Marketplace,47,838.45,610.42,228.03
+2023-12-16,Electrónica,Sur,Distribuidor,20,6255.56,4670.79,1584.77
+2023-12-17,Juguetes,Oeste,Marketplace,39,1538.88,885.69,653.19
+2023-12-18,Electrónica,Este,E-commerce,42,12320.4,6818.68,5501.72
+2023-12-18,Electrónica,Este,Marketplace,16,4360.07,2478.79,1881.28
+2023-12-19,Electrónica,Centro,E-commerce,41,13600.14,8316.02,5284.12
+2023-12-19,Juguetes,Norte,E-commerce,35,1301.71,749.16,552.55
+2023-12-19,Electrónica,Este,E-commerce,16,5270.54,3227.04,2043.5
+2023-12-19,Juguetes,Sur,E-commerce,29,919.24,617.55,301.69
+2023-12-20,Electrónica,Sur,Tienda física,34,9654.63,7103.89,2550.74
+2023-12-20,Deportes,Norte,E-commerce,39,2617.76,1505.39,1112.37
+2023-12-20,Electrónica,Sur,Distribuidor,19,6456.61,3752.21,2704.4
+2023-12-21,Electrónica,Norte,Tienda física,24,8584.76,4948.34,3636.42
+2023-12-21,Juguetes,Norte,Marketplace,47,1426.72,1009.85,416.87
+2023-12-22,Juguetes,Sur,Distribuidor,12,369.92,274.08,95.84
+2023-12-22,Electrónica,Sur,Distribuidor,38,10628.24,6508.75,4119.49
+2023-12-22,Deportes,Norte,Marketplace,36,2504.57,1696.97,807.6
+2023-12-22,Hogar,Norte,Distribuidor,35,3120.6,1922.87,1197.73
+2023-12-23,Moda,Este,Distribuidor,10,660.29,494.7,165.59
+2023-12-23,Deportes,Centro,Tienda física,29,2370.67,1747.1,623.57
+2023-12-24,Electrónica,Norte,E-commerce,21,6459.92,4596.06,1863.86
+2023-12-25,Electrónica,Centro,Distribuidor,8,2404.51,1642.52,761.99
+2023-12-25,Electrónica,Este,Tienda física,30,10963.44,8165.77,2797.67
+2023-12-25,Moda,Oeste,Distribuidor,15,891.28,576.86,314.42
+2023-12-26,Electrónica,Centro,Marketplace,16,4376.57,2414.28,1962.29
+2023-12-26,Electrónica,Norte,E-commerce,18,5794.08,3367.15,2426.93
+2023-12-27,Electrónica,Oeste,E-commerce,39,12161.18,8349.88,3811.3
+2023-12-27,Electrónica,Sur,E-commerce,22,8095.94,5962.22,2133.72
+2023-12-28,Electrónica,Sur,Marketplace,36,10040.99,6156.17,3884.82
+2023-12-30,Moda,Sur,Tienda física,37,2406.3,1565.73,840.57
+2023-12-31,Alimentos,Norte,Tienda física,34,617.54,379.19,238.35
+2023-12-31,Electrónica,Centro,Distribuidor,26,7203.27,4513.57,2689.7
+2023-12-31,Alimentos,Este,Marketplace,38,697.16,413.35,283.81
+2023-12-31,Electrónica,Norte,Distribuidor,30,11034.04,8173.68,2860.36
+2024-01-01,Deportes,Centro,Tienda física,34,2856.74,1663.73,1193.01
+2024-01-02,Electrónica,Centro,E-commerce,48,14579.89,8322.24,6257.65
+2024-01-02,Hogar,Oeste,Tienda física,41,3895.53,2597.72,1297.81
+2024-01-02,Electrónica,Oeste,E-commerce,49,16079.9,10207.22,5872.68
+2024-01-02,Moda,Este,Tienda física,38,2045.11,1420.16,624.95
+2024-01-03,Juguetes,Sur,Distribuidor,50,1621.25,1124.38,496.87
+2024-01-03,Electrónica,Norte,Tienda física,10,2918.25,2173.91,744.34
+2024-01-03,Juguetes,Norte,Distribuidor,47,1772.72,1306.55,466.17
+2024-01-03,Electrónica,Sur,E-commerce,13,4117.64,2278.18,1839.46
+2024-01-04,Alimentos,Oeste,Distribuidor,27,530.7,348.31,182.39
+2024-01-05,Alimentos,Norte,E-commerce,38,581.87,369.19,212.68
+2024-01-06,Juguetes,Norte,Distribuidor,47,1474.08,931.84,542.24
+2024-01-06,Electrónica,Oeste,E-commerce,26,9282.79,5889.3,3393.49
+2024-01-06,Moda,Centro,Marketplace,19,1103.39,824.1,279.29
+2024-01-07,Moda,Norte,Marketplace,20,1251.35,779.27,472.08
+2024-01-07,Hogar,Oeste,Distribuidor,55,4419.66,2480.85,1938.81
+2024-01-07,Alimentos,Centro,Distribuidor,42,769.95,548.78,221.17
+2024-01-07,Deportes,Oeste,Marketplace,37,2719.68,1864.64,855.04
+2024-01-07,Juguetes,Sur,E-commerce,54,1990.8,1199.38,791.42
+2024-01-08,Hogar,Centro,Tienda física,13,1340.38,869.1,471.28
+2024-01-09,Hogar,Norte,Marketplace,55,5075.55,2870.75,2204.8
+2024-01-09,Moda,Centro,Tienda física,13,703,517.35,185.65
+2024-01-10,Electrónica,Oeste,Marketplace,7,2005.89,1276.7,729.19
+2024-01-10,Electrónica,Norte,Tienda física,27,7833.53,5605.13,2228.4
+2024-01-11,Hogar,Sur,Marketplace,31,2752.24,1554.39,1197.85
+2024-01-11,Electrónica,Norte,Tienda física,23,8242.55,5127.28,3115.27
+2024-01-11,Moda,Norte,Marketplace,19,1166.03,793.52,372.51
+2024-01-11,Juguetes,Sur,E-commerce,18,637.98,416.72,221.26
+2024-01-12,Moda,Sur,Tienda física,14,781.66,508.5,273.16
+2024-01-12,Electrónica,Este,Distribuidor,35,11618.55,7109.15,4509.4
+2024-01-12,Juguetes,Oeste,E-commerce,23,698.58,521.11,177.47
+2024-01-12,Moda,Sur,Distribuidor,14,884.29,536.57,347.72
+2024-01-12,Electrónica,Este,Distribuidor,36,10852.93,6968.52,3884.41
+2024-01-12,Electrónica,Norte,Marketplace,11,3216.04,2105.89,1110.15
+2024-01-13,Electrónica,Centro,Distribuidor,44,12044.59,8705.14,3339.45
+2024-01-13,Hogar,Sur,Distribuidor,34,3487.64,2255.09,1232.55
+2024-01-14,Deportes,Este,Tienda física,34,2794.85,1875.6,919.25
+2024-01-15,Juguetes,Este,Distribuidor,24,804.85,514.06,290.79
+2024-01-15,Electrónica,Centro,Distribuidor,23,7802.98,5434.65,2368.33
+2024-01-16,Electrónica,Sur,Tienda física,12,3377.44,1936.9,1440.54
+2024-01-17,Electrónica,Sur,E-commerce,15,4104.01,2509.79,1594.22
+2024-01-17,Electrónica,Centro,Distribuidor,36,9825.79,5710.8,4114.99
+2024-01-17,Hogar,Norte,Marketplace,45,4333.16,2654.67,1678.49
+2024-01-17,Alimentos,Norte,E-commerce,49,819.9,562.38,257.52
+2024-01-17,Electrónica,Norte,E-commerce,13,4576.29,2734.36,1841.93
+2024-01-19,Deportes,Norte,E-commerce,27,2292.59,1540.09,752.5
+2024-01-19,Moda,Norte,E-commerce,52,3237.28,1888.71,1348.57
+2024-01-19,Deportes,Sur,Tienda física,36,2967.06,1818.32,1148.74
+2024-01-20,Deportes,Centro,Distribuidor,22,1588.63,1031.27,557.36
+2024-01-20,Electrónica,Sur,Tienda física,26,9475.46,5914.59,3560.87
+2024-01-20,Alimentos,Sur,Tienda física,37,677.24,374.13,303.11
+2024-01-22,Electrónica,Sur,Tienda física,28,9437.13,6456.35,2980.78
+2024-01-22,Deportes,Este,Marketplace,42,2729.7,1513.89,1215.81
+2024-01-23,Hogar,Sur,E-commerce,18,1383.97,932.28,451.69
+2024-01-25,Electrónica,Centro,Distribuidor,8,2788.99,2039.79,749.2
+2024-01-25,Electrónica,Centro,Marketplace,8,2177.37,1544.83,632.54
+2024-01-25,Moda,Norte,Distribuidor,10,570.43,372.3,198.13
+2024-01-25,Moda,Centro,Distribuidor,47,2413.34,1727.04,686.3
+2024-01-26,Electrónica,Sur,Tienda física,18,5688.52,4221.56,1466.96
+2024-01-26,Electrónica,Este,Tienda física,55,16182.65,12066.17,4116.48
+2024-01-27,Electrónica,Centro,E-commerce,52,18304.68,11240.95,7063.73
+2024-01-27,Electrónica,Norte,Tienda física,40,11212.16,7868.66,3343.5
+2024-01-28,Electrónica,Norte,Tienda física,29,83039.76,6911.32,76128.44
+2024-01-28,Electrónica,Sur,Distribuidor,9,3221.92,2081.36,1140.56
+2024-01-28,Moda,Norte,Marketplace,46,3117.35,2236.76,880.59
+2024-01-29,Deportes,Norte,Marketplace,46,3538.55,2262.97,1275.58
+2024-01-30,Electrónica,Sur,E-commerce,36,11538.8,7054.91,4483.89
+2024-01-30,Hogar,Centro,Tienda física,12,983.8,737.55,246.25
+2024-01-31,Electrónica,Sur,Tienda física,30,8628.38,6229.36,2399.02
+2024-01-31,Alimentos,Sur,Tienda física,24,459.02,323.63,135.39
+2024-01-31,Hogar,Sur,Marketplace,12,1241.82,709.8,532.02
+2024-01-31,Electrónica,Centro,E-commerce,32,10844.55,6155.7,4688.85
+2024-01-31,Electrónica,Norte,Distribuidor,50,17167.96,12473.85,4694.11
+2024-01-31,Electrónica,Oeste,E-commerce,26,9497.12,5354.44,4142.68
+2024-01-31,Electrónica,Norte,E-commerce,41,14277.92,10556.71,3721.21
+2024-01-31,Juguetes,Centro,Marketplace,16,518.85,354.69,164.16
+2024-02-01,Hogar,Centro,Marketplace,61,5756.38,3196.94,2559.44
+2024-02-01,Electrónica,Oeste,E-commerce,29,9629.6,6603.93,3025.67
+2024-02-01,Deportes,Norte,Marketplace,35,2253.36,1421.08,832.28
+2024-02-01,Deportes,Este,Tienda física,22,1488.27,1074.04,414.23
+2024-02-01,Deportes,Centro,E-commerce,29,2436.08,1470.21,965.87
+2024-02-01,Electrónica,Norte,Distribuidor,42,15231.67,10605.99,4625.68
+2024-02-02,Electrónica,Norte,E-commerce,54,17578.96,9983.87,7595.09
+2024-02-02,Moda,Este,Marketplace,45,2943.65,1870.54,1073.11
+2024-02-02,Electrónica,Norte,E-commerce,45,12646.11,8402.84,4243.27
+2024-02-02,Electrónica,Norte,Tienda física,21,6715.6,4253.95,2461.65
+2024-02-03,Electrónica,Norte,E-commerce,57,15784.57,9006.27,6778.3
+2024-02-03,Deportes,Centro,Distribuidor,22,1738.16,1029.94,708.22
+2024-02-03,Electrónica,Oeste,Tienda física,8,2203.07,1223.55,979.52
+2024-02-03,Juguetes,Oeste,Marketplace,62,1915.27,1194.41,720.86
+2024-02-05,Deportes,Sur,Distribuidor,24,1848.69,1145.56,703.13
+2024-02-05,Electrónica,Norte,Marketplace,26,8160.06,5673.63,2486.43
+2024-02-06,Hogar,Norte,Tienda física,26,2162.32,1463.86,698.46
+2024-02-06,Electrónica,Norte,Marketplace,25,7197.87,4138.47,3059.4
+2024-02-07,Moda,Norte,Distribuidor,13,887.06,497.53,389.53
+2024-02-07,Alimentos,Centro,Tienda física,57,1033.79,598.95,434.84
+2024-02-08,Electrónica,Sur,Distribuidor,28,8719.29,6218.08,2501.21
+2024-02-08,Electrónica,Norte,Tienda física,35,12395.46,9114.19,3281.27
+2024-02-08,Moda,Sur,Marketplace,59,3060.24,2267.19,793.05
+2024-02-08,Deportes,Sur,E-commerce,46,3824.83,2175.8,1649.03
+2024-02-09,Electrónica,Norte,Marketplace,24,7288.19,4018.79,3269.4
+2024-02-09,Moda,Sur,E-commerce,21,1152.84,650.75,502.09
+2024-02-09,Deportes,Centro,Distribuidor,12,861.09,505.28,355.81
+2024-02-09,Deportes,Sur,Tienda física,57,4545.38,3031.26,1514.12
+2024-02-10,Electrónica,Sur,Tienda física,62,16997.11,10082.47,6914.64
+2024-02-10,Electrónica,Norte,E-commerce,59,17186.36,11314.38,5871.98
+2024-02-11,Hogar,Sur,Tienda física,18,1829.37,1247.96,581.41
+2024-02-12,Electrónica,Sur,E-commerce,49,17786.23,10739.89,7046.34
+2024-02-13,Electrónica,Centro,Marketplace,52,14491.33,8984.87,5506.46
+2024-02-13,Moda,Oeste,Marketplace,53,3018.82,1813.58,1205.24
+2024-02-14,Electrónica,Este,E-commerce,33,12011.74,8797.67,3214.07
+2024-02-14,Electrónica,Sur,Distribuidor,41,11490.53,6719.37,4771.16
+2024-02-15,Electrónica,Sur,E-commerce,61,17163.69,10205.67,6958.02
+2024-02-16,Alimentos,Oeste,Tienda física,34,530.61,378.66,151.95
+2024-02-18,Electrónica,Este,Distribuidor,27,9172.7,5457.22,3715.48
+2024-02-18,Hogar,Norte,Tienda física,36,3031.03,1693.84,1337.19
+2024-02-18,Electrónica,Norte,Distribuidor,25,7890.67,4351.03,3539.64
+2024-02-18,Electrónica,Norte,Distribuidor,43,14234.73,8848.93,5385.8
+2024-02-18,Electrónica,Norte,Marketplace,27,7690.36,4315.6,3374.76
+2024-02-19,Deportes,Este,Tienda física,16,1228.36,796.47,431.89
+2024-02-19,Alimentos,Norte,Tienda física,37,753.71,513.15,240.56
+2024-02-20,Electrónica,Norte,E-commerce,54,17689.62,12011.32,5678.3
+2024-02-20,Electrónica,Norte,Marketplace,38,12182.08,6720.92,5461.16
+2024-02-20,Electrónica,Norte,Marketplace,28,9467.83,6884.7,2583.13
+2024-02-21,Electrónica,Norte,Marketplace,57,19984.46,14363.42,5621.04
+2024-02-21,Juguetes,Norte,Distribuidor,42,1253.84,898.71,355.13
+2024-02-22,Electrónica,Centro,Marketplace,53,15798.69,11230.72,4567.97
+2024-02-22,Electrónica,Sur,E-commerce,18,4990.5,3622.8,1367.7
+2024-02-23,Juguetes,Norte,Marketplace,10,359,200.5,158.5
+2024-02-23,Alimentos,Centro,Distribuidor,59,1205.12,890.52,314.6
+2024-02-24,Moda,Sur,E-commerce,41,2752.72,1983.51,769.21
+2024-02-24,Moda,Centro,Tienda física,13,802.06,528.44,273.62
+2024-02-24,Alimentos,Oeste,Distribuidor,27,419.2,256.38,162.82
+2024-02-24,Moda,Este,Tienda física,54,3286.48,2140.87,1145.61
+2024-02-25,Electrónica,Norte,E-commerce,20,5747.96,3215.85,2532.11
+2024-02-26,Electrónica,Este,Distribuidor,45,13072.98,8832.53,4240.45
+2024-02-27,Deportes,Centro,Marketplace,24,1969.54,1441.52,528.02
+2024-02-27,Electrónica,Este,E-commerce,34,9666.9,7048.09,2618.81
+2024-02-27,Alimentos,Sur,Marketplace,34,531.9,305.96,225.94
+2024-02-27,Alimentos,Este,Distribuidor,47,900.55,635.86,264.69
+2024-02-28,Deportes,Oeste,Distribuidor,49,3898.76,2442.28,1456.48
+2024-02-28,Electrónica,Norte,Tienda física,30,10885.04,7633.2,3251.84
+2024-02-28,Deportes,Centro,E-commerce,44,3777.42,2098.48,1678.94
+2024-03-01,Electrónica,Centro,Marketplace,27,9777.58,6819.15,2958.43
+2024-03-01,Alimentos,Norte,Tienda física,26,465.52,290.01,175.51
+2024-03-01,Juguetes,Norte,Marketplace,23,727.44,506.29,221.15
+2024-03-02,Juguetes,Norte,Marketplace,43,1701.52,978.81,722.71
+2024-03-02,Electrónica,Norte,Tienda física,15,4144.46,2726.66,1417.8
+2024-03-02,Moda,Norte,Tienda física,9,586.84,437.71,149.13
+2024-03-03,Alimentos,Centro,E-commerce,56,954.62,670.65,283.97
+2024-03-03,Juguetes,Centro,E-commerce,31,993.49,546.66,446.83
+2024-03-04,Electrónica,Sur,Tienda física,39,13790.18,8972.26,4817.92
+2024-03-04,Juguetes,Oeste,Marketplace,37,1228.46,843.66,384.8
+2024-03-04,Deportes,Oeste,Tienda física,17,1345.14,840.2,504.94
+2024-03-05,Moda,Norte,E-commerce,19,1310.63,742.92,567.71
+2024-03-06,Electrónica,Oeste,Distribuidor,28,9732.5,6739.15,2993.35
+2024-03-06,Moda,Este,E-commerce,11,561.48,373.8,187.68
+2024-03-06,Electrónica,Oeste,Distribuidor,61,16782.56,12145.89,4636.67
+2024-03-07,Electrónica,Centro,E-commerce,46,14087.51,9316.85,4770.66
+2024-03-07,Electrónica,Norte,Tienda física,40,11554.78,7798.19,3756.59
+2024-03-08,Electrónica,Oeste,Distribuidor,8,2271.18,1679.96,591.22
+2024-03-08,Deportes,Centro,Marketplace,39,2620.38,1941.69,678.69
+2024-03-08,Alimentos,Oeste,Distribuidor,55,999.09,610.89,388.2
+2024-03-09,Juguetes,Oeste,Marketplace,33,1195.77,666.78,528.99
+2024-03-09,Alimentos,Norte,Distribuidor,18,299.7,178.15,121.55
+2024-03-09,Electrónica,Sur,Distribuidor,33,9771.73,6206.46,3565.27
+2024-03-09,Deportes,Norte,Marketplace,58,4640.03,3294.02,1346.01
+2024-03-10,Hogar,Este,Tienda física,50,3896.88,2457.72,1439.16
+2024-03-10,Juguetes,Norte,Marketplace,49,1655.59,1148.49,507.1
+2024-03-11,Hogar,Norte,Tienda física,56,5146.34,3723.17,1423.17
+2024-03-11,Moda,Sur,Distribuidor,54,3376.23,2045.11,1331.12
+2024-03-11,Electrónica,Sur,E-commerce,23,7156.3,4876.86,2279.44
+2024-03-11,Alimentos,Norte,E-commerce,41,667.29,382.59,284.7
+2024-03-11,Juguetes,Centro,Marketplace,10,313.43,179.29,134.14
+2024-03-12,Moda,Norte,Marketplace,30,1741.53,1160.36,581.17
+2024-03-14,Alimentos,Oeste,Distribuidor,23,430.5,269.42,161.08
+2024-03-14,Electrónica,Oeste,Tienda física,25,7478.64,4459.88,3018.76
+2024-03-14,Electrónica,Este,Distribuidor,16,5468.52,3159.54,2308.98
+2024-03-14,Electrónica,Norte,Distribuidor,8,2227.34,1667.13,560.21
+2024-03-16,Hogar,Norte,Marketplace,45,3839.08,2168.3,1670.78
+2024-03-16,Deportes,Centro,E-commerce,61,4213.64,3044.47,1169.17
+2024-03-17,Electrónica,Norte,Marketplace,44,12739.38,8882.59,3856.79
+2024-03-17,Hogar,Norte,Distribuidor,44,4364.94,2450.76,1914.18
+2024-03-17,Electrónica,Centro,Marketplace,29,9664.09,7064.14,2599.95
+2024-03-17,Alimentos,Centro,Marketplace,54,835.76,503.27,332.49
+2024-03-18,Moda,Norte,Marketplace,23,1443.95,934.57,509.38
+2024-03-18,Juguetes,Norte,Distribuidor,17,547.21,366.26,180.95
+2024-03-18,Moda,Norte,Tienda física,31,1793.78,1307.8,485.98
+2024-03-18,Deportes,Norte,E-commerce,21,1686.54,1069.92,616.62
+2024-03-20,Hogar,Sur,Tienda física,60,5545.19,3365.64,2179.55
+2024-03-20,Hogar,Este,Tienda física,13,1150.49,823.66,326.83
+2024-03-21,Juguetes,Norte,Distribuidor,21,645.77,454.97,190.8
+2024-03-21,Electrónica,Oeste,E-commerce,17,5215.81,2889.49,2326.32
+2024-03-21,Electrónica,Centro,Distribuidor,23,6889.62,4154.45,2735.17
+2024-03-21,Juguetes,Centro,Marketplace,57,1766.61,1125.57,641.04
+2024-03-21,Electrónica,Sur,Distribuidor,65,21733.14,14540.22,7192.92
+2024-03-21,Electrónica,Norte,E-commerce,39,13234.83,9668.43,3566.4
+2024-03-22,Electrónica,Este,Tienda física,68,191484.64,15302.48,176182.16
+2024-03-22,Electrónica,Norte,Tienda física,44,15707.98,9996.14,5711.84
+2024-03-23,Electrónica,Oeste,Marketplace,28,9682.71,6161.26,3521.45
+2024-03-23,Electrónica,Norte,E-commerce,28,10294.09,7561.33,2732.76
+2024-03-23,Electrónica,Este,Marketplace,30,9459.69,6305.1,3154.59
+2024-03-23,Moda,Norte,Distribuidor,19,1222.01,904.24,317.77
+2024-03-24,Juguetes,Centro,Marketplace,49,1814.17,1175.67,638.5
+2024-03-24,Electrónica,Sur,Marketplace,30,10110.19,6291.5,3818.69
+2024-03-25,Juguetes,Centro,E-commerce,40,1510.16,888.1,622.06
+2024-03-25,Juguetes,Oeste,E-commerce,64,1998.29,1200.53,797.76
+2024-03-26,Electrónica,Norte,Tienda física,58,20984.52,14567.83,6416.69
+2024-03-26,Electrónica,Centro,Tienda física,31,9089.53,5396.98,3692.55
+2024-03-26,Electrónica,Este,Marketplace,63,22691.56,16611.35,6080.21
+2024-03-26,Juguetes,Este,E-commerce,44,1529.31,991.03,538.28
+2024-03-26,Electrónica,Centro,Distribuidor,33,9369.03,5349.1,4019.93
+2024-03-26,Electrónica,Centro,Distribuidor,40,11461.43,7492.57,3968.86
+2024-03-27,Moda,Este,E-commerce,30,2007.1,1444.69,562.41
+2024-03-28,Electrónica,Norte,Marketplace,48,14011.46,9806.42,4205.04
+2024-03-29,Electrónica,Este,Distribuidor,17,4770.22,3144.07,1626.15
+2024-03-29,Moda,Este,Distribuidor,33,2269.42,1464.61,804.81
+2024-03-31,Deportes,Centro,Distribuidor,50,3434.1,2542.34,891.76
+2024-03-31,Electrónica,Norte,E-commerce,23,7300.9,5124.73,2176.17
+2024-03-31,Electrónica,Oeste,Tienda física,60,18688.12,10858.24,7829.88
+2024-04-01,Electrónica,Oeste,Distribuidor,21,6096.01,4448.52,1647.49
+2024-04-02,Electrónica,Centro,Distribuidor,20,6383.63,4032.94,2350.69
+2024-04-03,Moda,Sur,Tienda física,45,2881.22,1927.4,953.82
+2024-04-03,Electrónica,Centro,Tienda física,42,14208.77,8136.37,6072.4
+2024-04-03,Electrónica,Este,Distribuidor,11,3154.37,1941.7,1212.67
+2024-04-03,Electrónica,Norte,Marketplace,50,14465.37,8091.06,6374.31
+2024-04-04,Electrónica,Norte,Marketplace,34,11671.75,8440.24,3231.51
+2024-04-04,Juguetes,Norte,Marketplace,19,685.16,428.94,256.22
+2024-04-05,Hogar,Norte,Tienda física,12,963.36,580.64,382.72
+2024-04-06,Moda,Norte,Tienda física,11,758.25,557.45,200.8
+2024-04-06,Alimentos,Oeste,Tienda física,13,263.49,175.79,87.7
+2024-04-06,Alimentos,Este,Distribuidor,31,536.86,338.68,198.18
+2024-04-06,Electrónica,Este,E-commerce,39,12010.72,8759.85,3250.87
+2024-04-07,Hogar,Este,Tienda física,58,5686.11,3221.21,2464.9
+2024-04-07,Juguetes,Oeste,E-commerce,11,394.54,234.04,160.5
+2024-04-07,Electrónica,Este,Distribuidor,67,18830.64,12025.18,6805.46
+2024-04-08,Deportes,Centro,Marketplace,30,2552.66,1490.75,1061.91
+2024-04-09,Juguetes,Sur,E-commerce,39,1512.73,837.08,675.65
+2024-04-09,Moda,Norte,Marketplace,15,767.75,425.87,341.88
+2024-04-10,Electrónica,Oeste,Tienda física,12,4367.76,3062.56,1305.2
+2024-04-10,Electrónica,Este,E-commerce,63,20933.6,13223.42,7710.18
+2024-04-10,Juguetes,Norte,Marketplace,64,2427.02,1444.81,982.21
+2024-04-10,Hogar,Centro,Marketplace,72,6954.13,4027.55,2926.58
+2024-04-10,Deportes,Norte,Tienda física,29,2267.49,1297.24,970.25
+2024-04-10,Deportes,Norte,Marketplace,20,1423.99,991.73,432.26
+2024-04-11,Electrónica,Este,Distribuidor,68,24638.16,15897.97,8740.19
+2024-04-11,Electrónica,Este,E-commerce,9,2931.87,1670.15,1261.72
+2024-04-13,Electrónica,Centro,Marketplace,34,12502.02,8835.49,3666.53
+2024-04-13,Juguetes,Norte,Marketplace,63,1988.79,1373.11,615.68
+2024-04-13,Juguetes,Norte,Tienda física,62,2088.88,1464.06,624.82
+2024-04-14,Electrónica,Oeste,Marketplace,63,22836.05,13056.64,9779.41
+2024-04-14,Hogar,Norte,Marketplace,39,3759.13,2252.67,1506.46
+2024-04-15,Hogar,Norte,Distribuidor,55,5074.78,3048.61,2026.17
+2024-04-15,Electrónica,Norte,Marketplace,34,9505.94,5655.58,3850.36
+2024-04-15,Deportes,Oeste,Tienda física,56,4131.48,3027.24,1104.24
+2024-04-15,Juguetes,Oeste,Marketplace,20,723.98,505.76,218.22
+2024-04-16,Electrónica,Oeste,E-commerce,58,20417.03,14329.03,6088
+2024-04-16,Electrónica,Oeste,Marketplace,34,11640.51,8345.67,3294.84
+2024-04-16,Alimentos,Norte,Distribuidor,39,646.57,440.97,205.6
+2024-04-17,Deportes,Oeste,E-commerce,17,1131.51,722.1,409.41
+2024-04-17,Alimentos,Centro,Marketplace,36,610.11,452.37,157.74
+2024-04-18,Alimentos,Oeste,E-commerce,61,1024.18,612.36,411.82
+2024-04-18,Juguetes,Norte,Distribuidor,55,1951.54,1106,845.54
+2024-04-18,Electrónica,Sur,E-commerce,40,11327.88,6341.11,4986.77
+2024-04-18,Hogar,Sur,Tienda física,17,1384.36,887.08,497.28
+2024-04-19,Alimentos,Norte,Marketplace,49,753.33,522.41,230.92
+2024-04-19,Alimentos,Este,E-commerce,40,744.29,480.18,264.11
+2024-04-20,Electrónica,Centro,Tienda física,31,10001.88,6702.18,3299.7
+2024-04-20,Alimentos,Norte,E-commerce,35,687.42,413.4,274.02
+2024-04-21,Electrónica,Este,Marketplace,38,12758.8,8125.08,4633.72
+2024-04-22,Electrónica,Norte,E-commerce,25,7262.47,4679.82,2582.65
+2024-04-22,Electrónica,Sur,E-commerce,58,19377.59,12350.74,7026.85
+2024-04-22,Electrónica,Norte,Marketplace,19,6372.67,3639.52,2733.15
+2024-04-22,Deportes,Oeste,Marketplace,43,2843.11,1809.26,1033.85
+2024-04-23,Electrónica,Sur,Marketplace,51,14858.52,9141.38,5717.14
+2024-04-23,Moda,Norte,E-commerce,25,1604.1,973.77,630.33
+2024-04-23,Deportes,Sur,Marketplace,63,4972.59,3009.83,1962.76
+2024-04-23,Alimentos,Este,Marketplace,23,383.73,228.74,154.99
+2024-04-24,Electrónica,Norte,E-commerce,32,9551.76,7082.04,2469.72
+2024-04-24,Moda,Este,E-commerce,37,2305.2,1511.3,793.9
+2024-04-24,Juguetes,Este,Tienda física,52,1556.63,942.88,613.75
+2024-04-25,Electrónica,Oeste,Tienda física,16,5582.33,3362,2220.33
+2024-04-25,Electrónica,Norte,E-commerce,21,6860.1,3900.03,2960.07
+2024-04-25,Alimentos,Norte,Marketplace,35,653.36,377.53,275.83
+2024-04-25,Electrónica,Este,Distribuidor,71,22361.29,13285.64,9075.65
+2024-04-25,Moda,Oeste,Marketplace,19,1028.59,711.71,316.88
+2024-04-26,Electrónica,Norte,Tienda física,65,18642.32,12467.74,6174.58
+2024-04-27,Deportes,Norte,Tienda física,64,5515.99,3359.76,2156.23
+2024-04-27,Alimentos,Oeste,Distribuidor,9,177.47,103.84,73.63
+2024-04-28,Hogar,Oeste,Marketplace,24,2354.97,1363.49,991.48
+2024-04-28,Electrónica,Norte,Distribuidor,62,20829.6,11998.5,8831.1
+2024-04-28,Electrónica,Norte,E-commerce,41,14989.57,10062.74,4926.83
+2024-04-29,Electrónica,Norte,Distribuidor,48,15244.19,11281.72,3962.47
+2024-04-29,Alimentos,Centro,Tienda física,29,597.25,357.03,240.22
+2024-04-29,Hogar,Norte,Distribuidor,70,7101.93,4101.25,3000.68
+2024-04-30,Electrónica,Oeste,E-commerce,43,13929.38,8642.2,5287.18
+2024-05-01,Hogar,Norte,Marketplace,51,4815.79,3418.65,1397.14
+2024-05-01,Deportes,Este,Distribuidor,10,843.6,590.3,253.3
+2024-05-01,Electrónica,Centro,Distribuidor,48,15856.61,9027.53,6829.08
+2024-05-01,Alimentos,Centro,Distribuidor,12,225.24,144.01,81.23
+2024-05-01,Deportes,Norte,Marketplace,25,1683.7,1135.4,548.3
+2024-05-03,Electrónica,Norte,E-commerce,45,15640.48,10101.99,5538.49
+2024-05-03,Electrónica,Oeste,Distribuidor,12,3367.12,2382.56,984.56
+2024-05-04,Electrónica,Norte,Marketplace,51,18491.26,11939.28,6551.98
+2024-05-04,Electrónica,Norte,Marketplace,16,5591.43,3480.53,2110.9
+2024-05-05,Electrónica,Centro,Tienda física,22,6232.29,4251.58,1980.71
+2024-05-05,Moda,Norte,Tienda física,62,3267.86,2102.33,1165.53
+2024-05-05,Deportes,Sur,Tienda física,12,799.9,495.62,304.28
+2024-05-05,Electrónica,Centro,Marketplace,52,17256.77,12459.66,4797.11
+2024-05-05,Hogar,Oeste,Tienda física,24,2432.21,1739.06,693.15
+2024-05-05,Moda,Este,Tienda física,62,4072.08,2291.43,1780.65
+2024-05-05,Electrónica,Este,Distribuidor,53,16571.53,11027.03,5544.5
+2024-05-06,Moda,Norte,Marketplace,57,3731.1,2764.07,967.03
+2024-05-06,Alimentos,Centro,Distribuidor,29,491.21,349.71,141.5
+2024-05-06,Electrónica,Sur,E-commerce,41,13796.74,10013.35,3783.39
+2024-05-07,Alimentos,Centro,E-commerce,20,410.29,285.45,124.84
+2024-05-07,Electrónica,Sur,Marketplace,18,42283.76,3503.78,38779.98
+2024-05-07,Moda,Centro,Distribuidor,42,2705.06,1768.36,936.7
+2024-05-08,Hogar,Sur,E-commerce,23,1893.1,1129.83,763.27
+2024-05-08,Moda,Centro,E-commerce,43,2242.62,1428.73,813.89
+2024-05-08,Electrónica,Sur,Distribuidor,69,19069.84,10622.59,8447.25
+2024-05-09,Electrónica,Norte,Distribuidor,58,18227.73,12480.56,5747.17
+2024-05-09,Electrónica,Centro,Distribuidor,27,7689.62,4881.98,2807.64
+2024-05-10,Electrónica,Norte,Tienda física,14,4416.6,3291.14,1125.46
+2024-05-10,Electrónica,Centro,Tienda física,39,14284.66,10469.31,3815.35
+2024-05-11,Electrónica,Norte,Marketplace,66,18400.37,11570.98,6829.39
+2024-05-11,Electrónica,Oeste,Marketplace,34,12413.25,8825.91,3587.34
+2024-05-11,Deportes,Centro,Tienda física,12,800.84,440.78,360.06
+2024-05-11,Electrónica,Este,E-commerce,30,10602.01,7366.51,3235.5
+2024-05-11,Juguetes,Norte,Tienda física,58,2061.3,1446.67,614.63
+2024-05-12,Deportes,Este,E-commerce,48,3428.66,1956.1,1472.56
+2024-05-12,Electrónica,Oeste,Tienda física,25,8805.57,5925.48,2880.09
+2024-05-12,Alimentos,Norte,Distribuidor,52,816.39,588.67,227.72
+2024-05-12,Moda,Norte,Tienda física,65,3939.29,2180.22,1759.07
+2024-05-13,Alimentos,Sur,Marketplace,35,614.26,355.82,258.44
+2024-05-13,Deportes,Norte,Marketplace,65,5162.08,3317.33,1844.75
+2024-05-13,Electrónica,Centro,Marketplace,20,6824.56,4290.4,2534.16
+2024-05-14,Alimentos,Norte,E-commerce,65,1032.49,729.56,302.93
+2024-05-14,Alimentos,Norte,Distribuidor,53,958.71,706.34,252.37
+2024-05-15,Electrónica,Este,E-commerce,48,16338.61,12181.1,4157.51
+2024-05-15,Electrónica,Sur,Marketplace,54,17988.69,10695.25,7293.44
+2024-05-15,Electrónica,Sur,Tienda física,32,8991.39,5567.52,3423.87
+2024-05-16,Hogar,Sur,Marketplace,65,5232.16,3236.69,1995.47
+2024-05-16,Electrónica,Centro,Distribuidor,25,8355.71,4988.87,3366.84
+2024-05-16,Electrónica,Oeste,Tienda física,61,16820.84,11509.43,5311.41
+2024-05-17,Deportes,Norte,Tienda física,26,1879.92,1232.86,647.06
+2024-05-17,Juguetes,Norte,Marketplace,35,1124.93,631.03,493.9
+2024-05-17,Deportes,Norte,E-commerce,27,2075.93,1315.99,759.94
+2024-05-18,Electrónica,Norte,E-commerce,56,19068.09,10570.76,8497.33
+2024-05-18,Deportes,Sur,Distribuidor,9,761.37,526.96,234.41
+2024-05-18,Electrónica,Este,Distribuidor,18,6476.82,3592.72,2884.1
+2024-05-19,Electrónica,Centro,E-commerce,29,10052.68,5789.44,4263.24
+2024-05-19,Hogar,Norte,Marketplace,35,3374.81,2076.89,1297.92
+2024-05-19,Moda,Norte,Marketplace,34,2256.18,1296.72,959.46
+2024-05-20,Electrónica,Este,Tienda física,33,10142.58,6005.37,4137.21
+2024-05-20,Juguetes,Centro,Distribuidor,54,1748.86,1153.75,595.11
+2024-05-21,Electrónica,Norte,Marketplace,21,6547.2,4203.26,2343.94
+2024-05-21,Hogar,Este,E-commerce,65,5953.04,4200.78,1752.26
+2024-05-22,Moda,Norte,Distribuidor,57,3264.66,2137.47,1127.19
+2024-05-22,Juguetes,Centro,Tienda física,24,879.61,569.11,310.5
+2024-05-22,Alimentos,Oeste,Tienda física,54,970.38,727.64,242.74
+2024-05-22,Hogar,Oeste,E-commerce,25,2132.47,1245.32,887.15
+2024-05-24,Alimentos,Oeste,Marketplace,25,396.56,283.64,112.92
+2024-05-24,Electrónica,Norte,Distribuidor,25,8818.29,6498.16,2320.13
+2024-05-24,Electrónica,Oeste,E-commerce,59,19274.47,12482.2,6792.27
+2024-05-25,Moda,Este,E-commerce,26,1428.88,1029.49,399.39
+2024-05-25,Deportes,Sur,Tienda física,51,4237.33,3025.13,1212.2
+2024-05-25,Alimentos,Este,E-commerce,47,788.24,582.41,205.83
+2024-05-26,Juguetes,Norte,Tienda física,27,939.7,658.95,280.75
+2024-05-26,Electrónica,Norte,Tienda física,15,5254.35,3291.91,1962.44
+2024-05-26,Alimentos,Norte,Tienda física,62,985.13,548.96,436.17
+2024-05-26,Hogar,Norte,Distribuidor,9,729.31,433.14,296.17
+2024-05-26,Juguetes,Este,Marketplace,66,2586.95,1837.8,749.15
+2024-05-26,Hogar,Centro,Tienda física,49,4169.59,2759.59,1410
+2024-05-26,Moda,Sur,Distribuidor,24,1492.25,993.52,498.73
+2024-05-26,Electrónica,Norte,Distribuidor,59,17241.26,11858.44,5382.82
+2024-05-26,Hogar,Sur,Distribuidor,46,3763,2429.58,1333.42
+2024-05-27,Electrónica,Sur,Tienda física,16,4992.55,3721.56,1270.99
+2024-05-28,Juguetes,Oeste,Marketplace,48,1447.51,854.74,592.77
+2024-05-29,Electrónica,Centro,E-commerce,33,10791.37,8062.76,2728.61
+2024-05-29,Electrónica,Norte,Marketplace,8,2638.53,1822.42,816.11
+2024-05-30,Deportes,Centro,Tienda física,60,4095.75,2706.98,1388.77
+2024-05-30,Electrónica,Este,E-commerce,13,3900.98,2379.05,1521.93
+2024-05-30,Electrónica,Sur,E-commerce,46,15320.88,9290.77,6030.11
+2024-05-30,Electrónica,Este,Distribuidor,23,7682.53,4747.66,2934.87
+2024-05-30,Electrónica,Centro,E-commerce,67,20709.04,14303.26,6405.78
+2024-05-31,Hogar,Norte,Tienda física,30,2904.45,1811.54,1092.91
+2024-05-31,Juguetes,Centro,Marketplace,51,1870.26,1246.71,623.55
+2024-06-01,Juguetes,Centro,E-commerce,8,307.51,212.25,95.26
+2024-06-01,Alimentos,Centro,Tienda física,9,145.71,82.21,63.5
+2024-06-02,Electrónica,Oeste,Tienda física,47,16736.16,9735.38,7000.78
+2024-06-02,Electrónica,Oeste,E-commerce,10,2738.37,1612.03,1126.34
+2024-06-02,Electrónica,Sur,Tienda física,16,5834.59,4167.48,1667.11
+2024-06-02,Electrónica,Norte,E-commerce,11,3682.66,2334.34,1348.32
+2024-06-02,Juguetes,Sur,E-commerce,36,1421.12,815.45,605.67
+2024-06-02,Electrónica,Sur,E-commerce,27,7421.01,4903.87,2517.14
+2024-06-02,Electrónica,Sur,Marketplace,36,11116.8,7436.37,3680.43
+2024-06-03,Alimentos,Este,E-commerce,44,761.94,445.2,316.74
+2024-06-03,Moda,Norte,Marketplace,34,1742.37,1124.91,617.46
+2024-06-04,Juguetes,Norte,Distribuidor,66,2600.75,1430.79,1169.96
+2024-06-04,Electrónica,Oeste,Distribuidor,24,7186,4680.14,2505.86
+2024-06-04,Deportes,Oeste,E-commerce,27,2032.63,1350.43,682.2
+2024-06-04,Hogar,Centro,E-commerce,26,2022.33,1426.78,595.55
+2024-06-05,Electrónica,Este,Tienda física,62,17972.52,11562.63,6409.89
+2024-06-06,Electrónica,Sur,Marketplace,63,22879.01,13380.87,9498.14
+2024-06-07,Electrónica,Norte,Marketplace,50,16627.76,9549.93,7077.83
+2024-06-07,Hogar,Sur,Tienda física,39,4029.89,2894.14,1135.75
+2024-06-08,Deportes,Norte,Distribuidor,37,2806.52,2019.54,786.98
+2024-06-08,Hogar,Este,Tienda física,34,2770.9,1868.68,902.22
+2024-06-08,Electrónica,Sur,E-commerce,14,4512.58,2643.68,1868.9
+2024-06-08,Juguetes,Sur,Tienda física,64,2458.31,1499.73,958.58
+2024-06-08,Electrónica,Centro,E-commerce,29,9671.95,5666.85,4005.1
+2024-06-09,Electrónica,Centro,Tienda física,16,5016.36,2868.48,2147.88
+2024-06-10,Moda,Oeste,Distribuidor,48,2466.81,1708.91,757.9
+2024-06-10,Hogar,Sur,E-commerce,44,4344.9,2534.59,1810.31
+2024-06-10,Moda,Oeste,E-commerce,56,3200.11,1978.81,1221.3
+2024-06-10,Electrónica,Oeste,E-commerce,41,11236.55,6185.96,5050.59
+2024-06-10,Electrónica,Norte,Distribuidor,47,16229.72,9537.3,6692.42
+2024-06-11,Deportes,Este,E-commerce,24,1905.54,1280.02,625.52
+2024-06-11,Moda,Norte,Distribuidor,10,686.83,403.02,283.81
+2024-06-11,Electrónica,Este,E-commerce,42,11922.92,6830.36,5092.56
+2024-06-11,Electrónica,Oeste,Marketplace,18,5285.6,3163.26,2122.34
+2024-06-14,Electrónica,Centro,E-commerce,58,19417.13,12630.26,6786.87
+2024-06-14,Hogar,Norte,Marketplace,63,6452.99,3665.1,2787.89
+2024-06-14,Alimentos,Oeste,Distribuidor,41,800.35,473.15,327.2
+2024-06-15,Electrónica,Norte,Marketplace,47,15131.08,9719.31,5411.77
+2024-06-15,Electrónica,Norte,E-commerce,49,15034.17,10486.66,4547.51
+2024-06-16,Deportes,Oeste,Marketplace,52,3793.03,2353.5,1439.53
+2024-06-16,Alimentos,Norte,Marketplace,20,408.8,279.17,129.63
+2024-06-17,Hogar,Norte,Marketplace,51,4142.94,2308.52,1834.42
+2024-06-17,Electrónica,Norte,Marketplace,52,19001.7,14189.71,4811.99
+2024-06-18,Hogar,Norte,Distribuidor,25,2583.66,1577.64,1006.02
+2024-06-19,Alimentos,Este,Marketplace,57,882.94,624.71,258.23
+2024-06-19,Electrónica,Sur,E-commerce,25,6982.69,4109.36,2873.33
+2024-06-20,Moda,Sur,Tienda física,15,983.22,643.59,339.63
+2024-06-20,Alimentos,Sur,Tienda física,63,1221.07,706.3,514.77
+2024-06-20,Electrónica,Norte,E-commerce,14,4592.63,2691.66,1900.97
+2024-06-21,Hogar,Sur,Marketplace,29,2518.74,1743.49,775.25
+2024-06-21,Electrónica,Este,Marketplace,22,6756.01,3786.29,2969.72
+2024-06-21,Juguetes,Centro,Marketplace,13,395.43,246.89,148.54
+2024-06-21,Alimentos,Norte,Distribuidor,24,432.58,287.7,144.88
+2024-06-22,Electrónica,Norte,Tienda física,56,20561.52,14567.58,5993.94
+2024-06-22,Electrónica,Este,Tienda física,24,8321.5,5213.84,3107.66
+2024-06-22,Moda,Norte,Distribuidor,57,3446.38,2512.21,934.17
+2024-06-23,Hogar,Norte,Distribuidor,9,813.98,456.91,357.07
+2024-06-24,Hogar,Oeste,E-commerce,67,6048.53,3329.01,2719.52
+2024-06-24,Moda,Este,Tienda física,34,2024.82,1494.57,530.25
+2024-06-24,Deportes,Norte,Marketplace,67,4596.46,3168.19,1428.27
+2024-06-24,Hogar,Sur,Tienda física,21,1698.03,1156.76,541.27
+2024-06-24,Moda,Este,E-commerce,34,2149.43,1539.52,609.91
+2024-06-27,Electrónica,Norte,Distribuidor,11,3716.84,2372.8,1344.04
+2024-06-27,Moda,Sur,E-commerce,45,2316.2,1561.57,754.63
+2024-06-27,Moda,Norte,E-commerce,60,3363.02,2426.69,936.33
+2024-06-28,Moda,Este,E-commerce,51,3099.71,1757.43,1342.28
+2024-06-29,Electrónica,Sur,E-commerce,59,21180.2,15575.26,5604.94
+2024-06-30,Electrónica,Norte,Marketplace,39,13357.31,7759.93,5597.38
+2024-07-01,Moda,Este,Marketplace,28,1666.17,1096.29,569.88
+2024-07-01,Electrónica,Oeste,E-commerce,40,11363.65,7812.69,3550.96
+2024-07-01,Electrónica,Oeste,E-commerce,17,5404.29,3158.49,2245.8
+2024-07-01,Electrónica,Norte,Marketplace,35,9765.92,7248.17,2517.75
+2024-07-01,Moda,Oeste,E-commerce,48,3006.99,2082.47,924.52
+2024-07-01,Juguetes,Oeste,E-commerce,36,1091.27,615.81,475.46
+2024-07-02,Moda,Norte,Distribuidor,16,856.52,608.54,247.98
+2024-07-03,Deportes,Este,Distribuidor,20,1327.53,731.68,595.85
+2024-07-03,Alimentos,Oeste,Marketplace,58,1036.96,725.83,311.13
+2024-07-04,Juguetes,Centro,Marketplace,9,310.61,230.05,80.56
+2024-07-04,Deportes,Centro,Tienda física,45,3687.09,2501.69,1185.4
+2024-07-04,Electrónica,Sur,Marketplace,16,5852.37,3771.06,2081.31
+2024-07-04,Electrónica,Este,Tienda física,26,8335.39,4659.75,3675.64
+2024-07-04,Moda,Sur,Tienda física,54,3602.08,2284.83,1317.25
+2024-07-05,Deportes,Norte,Distribuidor,36,2355.96,1379.91,976.05
+2024-07-05,Alimentos,Oeste,E-commerce,34,682.43,469,213.43
+2024-07-05,Electrónica,Este,E-commerce,29,9069.43,5415.32,3654.11
+2024-07-05,Electrónica,Sur,Distribuidor,11,3240.84,2362.58,878.26
+2024-07-05,Electrónica,Este,Tienda física,17,4802.03,3444.85,1357.18
+2024-07-06,Electrónica,Este,Distribuidor,47,14539.25,9342.9,5196.35
+2024-07-06,Alimentos,Norte,Distribuidor,19,313.92,234.01,79.91
+2024-07-08,Moda,Oeste,Distribuidor,30,1632.95,1059.31,573.64
+2024-07-08,Electrónica,Oeste,Distribuidor,38,12730.99,8286.39,4444.6
+2024-07-08,Electrónica,Centro,E-commerce,48,13505.11,9340.03,4165.08
+2024-07-08,Alimentos,Norte,Distribuidor,37,737.68,487.86,249.82
+2024-07-08,Electrónica,Norte,Tienda física,60,20455.68,12591.4,7864.28
+2024-07-09,Electrónica,Sur,E-commerce,53,17295.84,11719.4,5576.44
+2024-07-10,Electrónica,Este,Marketplace,35,10292.75,6290.44,4002.31
+2024-07-11,Electrónica,Norte,Marketplace,21,6528.19,4614.97,1913.22
+2024-07-12,Electrónica,Norte,E-commerce,26,9464.28,6542.26,2922.02
+2024-07-13,Electrónica,Sur,Marketplace,9,3110,2153.26,956.74
+2024-07-14,Electrónica,Centro,E-commerce,27,9217.87,5620.06,3597.81
+2024-07-15,Electrónica,Norte,Tienda física,31,11067.34,7300.55,3766.79
+2024-07-15,Electrónica,Norte,Distribuidor,17,5907.3,4364.2,1543.1
+2024-07-15,Electrónica,Oeste,Tienda física,32,10448.74,7208.13,3240.61
+2024-07-16,Moda,Norte,Distribuidor,34,2236.34,1490.66,745.68
+2024-07-17,Alimentos,Sur,Distribuidor,8,161.61,108.36,53.25
+2024-07-17,Juguetes,Oeste,Marketplace,19,745.2,554.44,190.76
+2024-07-17,Electrónica,Este,Tienda física,15,4617.06,2639.06,1978
+2024-07-17,Juguetes,Sur,Distribuidor,39,1191.55,689.42,502.13
+2024-07-18,Moda,Oeste,Tienda física,14,923.64,664.56,259.08
+2024-07-18,Hogar,Centro,Tienda física,41,3864.04,2869.78,994.26
+2024-07-18,Electrónica,Este,E-commerce,33,10045.55,6199.02,3846.53
+2024-07-18,Juguetes,Norte,E-commerce,29,1029.33,683.4,345.93
+2024-07-19,Electrónica,Sur,Distribuidor,23,8036.97,5018.42,3018.55
+2024-07-19,Hogar,Centro,Marketplace,41,3638.63,2054.25,1584.38
+2024-07-19,Electrónica,Norte,Marketplace,48,14549.06,10522.16,4026.9
+2024-07-20,Moda,Norte,Tienda física,20,1187.29,733.16,454.13
+2024-07-20,Hogar,Oeste,Tienda física,10,802.52,546.48,256.04
+2024-07-20,Electrónica,Norte,Distribuidor,60,19123.36,14163.37,4959.99
+2024-07-21,Deportes,Este,Marketplace,31,2377.2,1655.18,722.02
+2024-07-21,Electrónica,Centro,E-commerce,45,14345.93,8720.43,5625.5
+2024-07-21,Alimentos,Norte,Distribuidor,27,497.76,281.23,216.53
+2024-07-21,Juguetes,Oeste,E-commerce,59,1797.9,1180.22,617.68
+2024-07-22,Juguetes,Centro,Tienda física,39,1359.75,905.09,454.66
+2024-07-23,Electrónica,Centro,Marketplace,20,7155.64,4258.7,2896.94
+2024-07-23,Juguetes,Centro,Distribuidor,22,707.86,473.64,234.22
+2024-07-23,Electrónica,Norte,E-commerce,26,7125.71,4434.25,2691.46
+2024-07-24,Alimentos,Norte,Marketplace,41,831.47,543.97,287.5
+2024-07-24,Alimentos,Norte,Tienda física,13,214.66,153.68,60.98
+2024-07-24,Electrónica,Oeste,Tienda física,45,12629.17,7175.28,5453.89
+2024-07-25,Moda,Oeste,Distribuidor,25,1543.27,888.06,655.21
+2024-07-25,Juguetes,Oeste,Distribuidor,38,1206.11,848.71,357.4
+2024-07-26,Deportes,Centro,Distribuidor,54,4364.55,2935.56,1428.99
+2024-07-26,Hogar,Este,Marketplace,15,1257.02,803.1,453.92
+2024-07-26,Juguetes,Este,E-commerce,17,577.9,424.6,153.3
+2024-07-27,Electrónica,Norte,Distribuidor,59,16056.86,11284.98,4771.88
+2024-07-27,Electrónica,Norte,Tienda física,17,5042.86,3157.11,1885.75
+2024-07-27,Deportes,Sur,Tienda física,26,1920.98,1152.46,768.52
+2024-07-27,Moda,Norte,Marketplace,48,2737.23,1933.4,803.83
+2024-07-29,Electrónica,Oeste,Marketplace,9,2630.29,1741.07,889.22
+2024-07-30,Alimentos,Sur,Tienda física,59,1127.26,837.56,289.7
+2024-07-30,Moda,Este,Distribuidor,55,3105.41,2035.51,1069.9
+2024-08-01,Electrónica,Oeste,Marketplace,46,14388.69,10495.39,3893.3
+2024-08-01,Moda,Norte,E-commerce,48,3060.37,1907.74,1152.63
+2024-08-02,Deportes,Norte,Marketplace,19,1322.83,952.14,370.69
+2024-08-02,Electrónica,Este,Marketplace,8,2220.21,1484.41,735.8
+2024-08-02,Electrónica,Este,Distribuidor,35,10267.8,6160.64,4107.16
+2024-08-03,Juguetes,Norte,Marketplace,44,1639.4,1168.5,470.9
+2024-08-03,Electrónica,Este,Marketplace,43,12763.5,8147.27,4616.23
+2024-08-03,Electrónica,Centro,Marketplace,33,11953.32,7504.4,4448.92
+2024-08-04,Hogar,Sur,Marketplace,35,3308.52,2432,876.52
+2024-08-05,Deportes,Sur,Tienda física,8,636.45,385.11,251.34
+2024-08-05,Electrónica,Centro,Tienda física,40,14075.13,8425.3,5649.83
+2024-08-05,Hogar,Norte,Distribuidor,10,862,571,291
+2024-08-06,Moda,Oeste,Marketplace,10,644.71,469.38,175.33
+2024-08-06,Moda,Centro,Tienda física,15,946.63,546.27,400.36
+2024-08-07,Juguetes,Norte,E-commerce,13,489.01,271.6,217.41
+2024-08-07,Moda,Este,Distribuidor,8,514.88,369.22,145.66
+2024-08-07,Electrónica,Norte,Distribuidor,27,9665.18,6102.08,3563.1
+2024-08-08,Electrónica,Sur,Distribuidor,11,3844.83,2684.97,1159.86
+2024-08-08,Electrónica,Oeste,E-commerce,36,12673.05,9189.13,3483.92
+2024-08-08,Moda,Este,Distribuidor,11,651.45,375.92,275.53
+2024-08-10,Electrónica,Oeste,Marketplace,19,5663.67,3980.94,1682.73
+2024-08-11,Juguetes,Norte,Distribuidor,27,1049.46,724.97,324.49
+2024-08-12,Electrónica,Oeste,Tienda física,34,11796.57,7787.57,4009
+2024-08-12,Electrónica,Este,Tienda física,29,9681.39,6713.32,2968.07
+2024-08-14,Deportes,Norte,Marketplace,41,3306.56,2090.17,1216.39
+2024-08-16,Electrónica,Sur,Marketplace,19,5271.29,3849.28,1422.01
+2024-08-16,Moda,Centro,Distribuidor,25,1463.48,1086.48,377
+2024-08-16,Deportes,Oeste,Distribuidor,41,2849.76,2003.38,846.38
+2024-08-16,Juguetes,Este,Marketplace,38,1501.73,1064.26,437.47
+2024-08-16,Alimentos,Oeste,Marketplace,26,483.51,309.86,173.65
+2024-08-16,Alimentos,Norte,Marketplace,34,624.2,436.26,187.94
+2024-08-16,Moda,Norte,Marketplace,7,393.05,239.04,154.01
+2024-08-17,Hogar,Norte,Distribuidor,7,680.53,455.48,225.05
+2024-08-18,Hogar,Sur,E-commerce,10,840.15,463.02,377.13
+2024-08-18,Electrónica,Oeste,Tienda física,30,8562.95,5644.59,2918.36
+2024-08-18,Hogar,Este,Tienda física,53,4561.07,3202.36,1358.71
+2024-08-18,Electrónica,Norte,Tienda física,16,5069.25,3223.09,1846.16
+2024-08-18,Electrónica,Norte,Tienda física,53,15794.26,10931.53,4862.73
+2024-08-19,Deportes,Centro,Tienda física,17,1412.47,928.64,483.83
+2024-08-19,Electrónica,Sur,Tienda física,52,15531.99,9457.14,6074.85
+2024-08-19,Electrónica,Sur,Distribuidor,35,12829.33,9485.38,3343.95
+2024-08-19,Juguetes,Este,Distribuidor,32,1053.18,780.91,272.27
+2024-08-19,Hogar,Norte,Tienda física,26,2445.46,1352.01,1093.45
+2024-08-20,Hogar,Centro,Tienda física,6,502.1,366.14,135.96
+2024-08-20,Juguetes,Sur,Marketplace,31,1150.83,790.36,360.47
+2024-08-20,Hogar,Oeste,Marketplace,18,1822.78,1203.17,619.61
+2024-08-20,Hogar,Sur,E-commerce,36,2843.09,1974.95,868.14
+2024-08-20,Electrónica,Centro,E-commerce,15,4163.81,2734.51,1429.3
+2024-08-21,Electrónica,Norte,E-commerce,27,7411.77,4642.37,2769.4
+2024-08-21,Moda,Oeste,Distribuidor,8,529.95,367.43,162.52
+2024-08-21,Hogar,Norte,Distribuidor,10,960.31,605.98,354.33
+2024-08-21,Juguetes,Este,Distribuidor,52,1869.81,1086.9,782.91
+2024-08-21,Deportes,Este,E-commerce,13,957.42,650.39,307.03
+2024-08-21,Hogar,Sur,Distribuidor,29,2968.27,1948.86,1019.41
+2024-08-22,Alimentos,Este,Marketplace,14,271.6,179.98,91.62
+2024-08-22,Deportes,Norte,Distribuidor,10,748.36,533.1,215.26
+2024-08-22,Electrónica,Norte,Distribuidor,37,10077.23,7273.39,2803.84
+2024-08-23,Deportes,Sur,Tienda física,51,3375.2,2470.04,905.16
+2024-08-24,Hogar,Norte,Marketplace,10,796.92,578.68,218.24
+2024-08-24,Electrónica,Norte,Tienda física,18,5561.2,3799.1,1762.1
+2024-08-25,Moda,Norte,Tienda física,53,3041.96,2233.44,808.52
+2024-08-26,Electrónica,Norte,Tienda física,52,18089.86,10167.02,7922.84
+2024-08-26,Electrónica,Este,Marketplace,32,10835.25,7995.45,2839.8
+2024-08-28,Deportes,Sur,Distribuidor,48,4128.88,2669.03,1459.85
+2024-08-28,Electrónica,Norte,E-commerce,14,4747.85,2927.22,1820.63
+2024-08-28,Electrónica,Sur,E-commerce,51,18534.93,11858.48,6676.45
+2024-08-28,Electrónica,Centro,Marketplace,32,8782.88,4893.59,3889.29
+2024-08-29,Electrónica,Oeste,Distribuidor,44,13837.24,8072.55,5764.69
+2024-08-29,Hogar,Norte,E-commerce,53,5153.89,3710.49,1443.4
+2024-08-30,Deportes,Norte,Tienda física,18,1447.9,1077.62,370.28
+2024-08-30,Electrónica,Oeste,Marketplace,33,11479.27,7755.48,3723.79
+2024-08-30,Moda,Norte,Distribuidor,36,2213.06,1340.47,872.59
+2024-08-30,Electrónica,Norte,Distribuidor,27,8450.92,5044.03,3406.89
+2024-08-30,Electrónica,Sur,Tienda física,6,1679.07,1038.74,640.33
+2024-08-31,Moda,Oeste,E-commerce,34,1961.74,1209.68,752.06
+2024-08-31,Deportes,Norte,Marketplace,42,3210.54,2110.42,1100.12
+2024-09-01,Alimentos,Oeste,Tienda física,24,474.87,295.52,179.35
+2024-09-01,Electrónica,Norte,E-commerce,17,6209.62,4544.82,1664.8
+2024-09-01,Deportes,Oeste,Tienda física,29,2258.17,1324.25,933.92
+2024-09-01,Hogar,Norte,Marketplace,31,2763.03,2052.7,710.33
+2024-09-01,Hogar,Este,Marketplace,46,3850.56,2232.8,1617.76
+2024-09-02,Electrónica,Norte,Distribuidor,47,12999.54,8524.16,4475.38
+2024-09-02,Hogar,Oeste,Distribuidor,28,2655.45,1535.11,1120.34
+2024-09-02,Moda,Centro,Tienda física,37,2289.13,1303.32,985.81
+2024-09-02,Electrónica,Sur,Distribuidor,21,7107.95,4676.77,2431.18
+2024-09-02,Hogar,Norte,Distribuidor,22,1775.63,1197.45,578.18
+2024-09-03,Deportes,Norte,Marketplace,29,2041.59,1157.92,883.67
+2024-09-03,Deportes,Norte,Marketplace,41,2789.68,2076.63,713.05
+2024-09-04,Juguetes,Norte,Marketplace,26,992.09,646.89,345.2
+2024-09-05,Moda,Norte,Tienda física,26,1372.66,886.88,485.78
+2024-09-06,Hogar,Este,Distribuidor,37,3658.71,2081.35,1577.36
+2024-09-07,Moda,Centro,Marketplace,6,334.58,214.78,119.8
+2024-09-08,Juguetes,Este,Distribuidor,19,638.85,416.53,222.32
+2024-09-08,Hogar,Sur,Tienda física,22,2250.76,1411.34,839.42
+2024-09-08,Moda,Sur,E-commerce,42,2543.92,1905.8,638.12
+2024-09-09,Deportes,Sur,Marketplace,6,468.31,288.94,179.37
+2024-09-09,Alimentos,Norte,Distribuidor,33,623.38,349.42,273.96
+2024-09-09,Moda,Sur,Distribuidor,35,2035.46,1447.36,588.1
+2024-09-10,Electrónica,Este,Marketplace,27,9925.26,6762.09,3163.17
+2024-09-10,Alimentos,Oeste,E-commerce,40,765.58,479.04,286.54
+2024-09-10,Electrónica,Centro,Marketplace,48,13491.91,7621.41,5870.5
+2024-09-11,Electrónica,Oeste,Distribuidor,11,3246.08,1827.6,1418.48
+2024-09-12,Electrónica,Este,Marketplace,44,13175.86,9501.26,3674.6
+2024-09-12,Hogar,Norte,E-commerce,48,3818.25,2713.5,1104.75
+2024-09-13,Electrónica,Oeste,Marketplace,42,12624.96,8398.25,4226.71
+2024-09-13,Deportes,Este,Tienda física,11,813.6,490.19,323.41
+2024-09-13,Moda,Norte,E-commerce,45,2408.54,1795.83,612.71
+2024-09-14,Electrónica,Norte,Tienda física,28,9734.24,6780.17,2954.07
+2024-09-14,Electrónica,Este,E-commerce,48,13422.74,8584.65,4838.09
+2024-09-14,Electrónica,Centro,E-commerce,25,8232.81,6078.8,2154.01
+2024-09-14,Hogar,Norte,E-commerce,47,4239.76,2568.4,1671.36
+2024-09-14,Electrónica,Oeste,Tienda física,7,1914.96,1405.1,509.86
+2024-09-14,Juguetes,Este,Tienda física,48,1486.58,871.57,615.01
+2024-09-14,Moda,Centro,Marketplace,35,2165.95,1342.87,823.08
+2024-09-14,Alimentos,Norte,Marketplace,21,380.42,281.33,99.09
+2024-09-15,Deportes,Oeste,Distribuidor,7,483.74,291.44,192.3
+2024-09-15,Deportes,Oeste,E-commerce,7,451.67,282,169.67
+2024-09-16,Alimentos,Este,Tienda física,29,546.45,365.8,180.65
+2024-09-16,Electrónica,Norte,Distribuidor,13,4634.39,2763.6,1870.79
+2024-09-17,Electrónica,Sur,Marketplace,31,11162.08,7538.61,3623.47
+2024-09-17,Electrónica,Oeste,Marketplace,21,6918.73,4599.99,2318.74
+2024-09-17,Hogar,Este,Tienda física,18,1540.4,926.68,613.72
+2024-09-19,Electrónica,Norte,E-commerce,37,12290.12,7654.97,4635.15
+2024-09-19,Electrónica,Oeste,Tienda física,6,1653.13,1062.4,590.73
+2024-09-19,Deportes,Norte,E-commerce,27,2142.29,1384.14,758.15
+2024-09-19,Hogar,Norte,Marketplace,43,3317.68,2487.07,830.61
+2024-09-19,Alimentos,Norte,Marketplace,20,376.96,229.11,147.85
+2024-09-19,Juguetes,Norte,Tienda física,19,690.65,483.16,207.49
+2024-09-20,Alimentos,Oeste,E-commerce,20,373.55,229.61,143.94
+2024-09-20,Deportes,Norte,E-commerce,42,3433.62,2030.94,1402.68
+2024-09-21,Electrónica,Sur,Distribuidor,34,11534.98,6646.75,4888.23
+2024-09-21,Juguetes,Norte,Distribuidor,13,491.14,312.85,178.29
+2024-09-22,Moda,Sur,Marketplace,19,1017.64,575.18,442.46
+2024-09-22,Juguetes,Sur,Marketplace,38,1518.88,998.06,520.82
+2024-09-22,Electrónica,Sur,E-commerce,49,16962.99,11074.85,5888.14
+2024-09-22,Electrónica,Sur,Tienda física,17,5368.79,3886.01,1482.78
+2024-09-23,Electrónica,Sur,Tienda física,38,11658.42,8425.99,3232.43
+2024-09-23,Moda,Oeste,Distribuidor,46,2641.56,1575.08,1066.48
+2024-09-23,Electrónica,Este,Marketplace,39,14207.46,8204.02,6003.44
+2024-09-23,Juguetes,Centro,E-commerce,32,966.41,577.08,389.33
+2024-09-24,Alimentos,Oeste,Marketplace,17,289.62,185.87,103.75
+2024-09-24,Deportes,Oeste,Distribuidor,37,2766.82,1681.21,1085.61
+2024-09-24,Electrónica,Norte,Marketplace,10,3197.69,1953.2,1244.49
+2024-09-24,Hogar,Norte,Marketplace,29,2925.52,2019.62,905.9
+2024-09-24,Alimentos,Oeste,Distribuidor,17,270.93,179.8,91.13
+2024-09-25,Electrónica,Norte,Distribuidor,37,11441.86,6696.68,4745.18
+2024-09-25,Hogar,Sur,E-commerce,38,3469.26,2117.12,1352.14
+2024-09-26,Electrónica,Norte,Marketplace,10,3604.05,2213.41,1390.64
+2024-09-26,Electrónica,Norte,Distribuidor,23,7144.19,4819.61,2324.58
+2024-09-26,Hogar,Norte,Marketplace,42,3612.85,2538.2,1074.65
+2024-09-27,Deportes,Este,Distribuidor,32,2086.46,1290.57,795.89
+2024-09-27,Electrónica,Norte,Tienda física,6,1722.98,1072.05,650.93
+2024-09-27,Hogar,Centro,E-commerce,34,2718.97,1718.69,1000.28
+2024-09-27,Electrónica,Norte,E-commerce,10,2754.18,1699.97,1054.21
+2024-09-28,Alimentos,Centro,E-commerce,33,609.58,353.57,256.01
+2024-09-28,Juguetes,Oeste,Distribuidor,11,344.72,214.58,130.14
+2024-09-28,Moda,Centro,E-commerce,19,1221.57,903.67,317.9
+2024-09-29,Moda,Norte,Marketplace,42,2707.07,1617.93,1089.14
+2024-09-29,Moda,Norte,Distribuidor,34,1957.62,1333.8,623.82
+2024-09-29,Moda,Sur,Tienda física,11,562.09,363.65,198.44
+2024-09-30,Juguetes,Norte,Distribuidor,25,815.27,510.84,304.43
+2024-09-30,Electrónica,Centro,Marketplace,9,3085.56,2021.9,1063.66
+2024-10-01,Deportes,Norte,Distribuidor,24,1614.84,1077.52,537.32
+2024-10-02,Hogar,Sur,Tienda física,8,679.51,413.43,266.08
+2024-10-03,Electrónica,Oeste,Tienda física,29,9780.35,6012.29,3768.06
+2024-10-03,Electrónica,Este,Tienda física,41,15011.97,9921.89,5090.08
+2024-10-03,Hogar,Norte,Distribuidor,12,1236.72,804.83,431.89
+2024-10-03,Deportes,Norte,Tienda física,17,1203.74,858.98,344.76
+2024-10-03,Deportes,Norte,Tienda física,33,2244.72,1269.44,975.28
+2024-10-04,Deportes,Norte,Distribuidor,18,1231.37,775.04,456.33
+2024-10-04,Electrónica,Centro,Tienda física,17,5834.61,3966.49,1868.12
+2024-10-05,Electrónica,Norte,Tienda física,13,4510.73,3043.88,1466.85
+2024-10-05,Electrónica,Centro,Marketplace,31,10510.82,6276.48,4234.34
+2024-10-05,Alimentos,Norte,Distribuidor,23,388.27,285.57,102.7
+2024-10-05,Electrónica,Oeste,Marketplace,41,13794.21,10065.09,3729.12
+2024-10-06,Deportes,Oeste,Tienda física,33,2317.17,1576.03,741.14
+2024-10-06,Alimentos,Centro,Marketplace,46,870.55,488.86,381.69
+2024-10-06,Juguetes,Oeste,Tienda física,25,805.47,486.51,318.96
+2024-10-07,Hogar,Centro,Distribuidor,41,3879.32,2402.53,1476.79
+2024-10-08,Deportes,Sur,Tienda física,16,1345.18,883.12,462.06
+2024-10-08,Alimentos,Norte,Tienda física,27,527.85,303.39,224.46
+2024-10-09,Juguetes,Centro,E-commerce,46,1675.25,972.22,703.03
+2024-10-09,Juguetes,Centro,E-commerce,40,1236.98,836.97,400.01
+2024-10-09,Electrónica,Norte,Marketplace,43,14883.56,8934.61,5948.95
+2024-10-10,Electrónica,Oeste,E-commerce,36,11140.24,7619.59,3520.65
+2024-10-11,Electrónica,Norte,Distribuidor,14,3859.57,2194.2,1665.37
+2024-10-11,Electrónica,Norte,Marketplace,42,12562.51,8225.39,4337.12
+2024-10-13,Deportes,Centro,Distribuidor,9,610.19,430.47,179.72
+2024-10-14,Hogar,Sur,E-commerce,26,2421.3,1745.21,676.09
+2024-10-14,Alimentos,Centro,Marketplace,10,158.95,99.06,59.89
+2024-10-15,Hogar,Norte,Tienda física,30,3076.77,1756.03,1320.74
+2024-10-15,Hogar,Sur,Tienda física,20,1570.22,1140.68,429.54
+2024-10-15,Electrónica,Este,Tienda física,29,9946.18,6116.58,3829.6
+2024-10-15,Electrónica,Sur,Tienda física,28,8919.62,4914.61,4005.01
+2024-10-15,Moda,Norte,E-commerce,31,1762.1,1254.63,507.47
+2024-10-16,Moda,Norte,Tienda física,46,2922.65,2086.05,836.6
+2024-10-16,Hogar,Norte,Tienda física,40,3247.07,1980.83,1266.24
+2024-10-16,Deportes,Este,Distribuidor,26,2040.99,1291.51,749.48
+2024-10-16,Electrónica,Norte,E-commerce,26,7288.87,4515.21,2773.66
+2024-10-17,Deportes,Centro,Distribuidor,18,1281.07,891.93,389.14
+2024-10-18,Electrónica,Centro,Tienda física,19,6865.58,4523.77,2341.81
+2024-10-18,Juguetes,Este,Tienda física,34,1185.04,758.67,426.37
+2024-10-18,Moda,Norte,Distribuidor,6,306.41,189.19,117.22
+2024-10-19,Juguetes,Norte,Distribuidor,44,1740.35,1031.92,708.43
+2024-10-19,Deportes,Norte,Tienda física,29,1933.13,1444.42,488.71
+2024-10-19,Moda,Centro,Distribuidor,30,1974.55,1129.31,845.24
+2024-10-21,Deportes,Sur,Tienda física,36,3041.09,1912.24,1128.85
+2024-10-21,Moda,Este,E-commerce,27,1861.29,1186.66,674.63
+2024-10-22,Electrónica,Este,Tienda física,40,13764.74,8793.02,4971.72
+2024-10-22,Juguetes,Sur,E-commerce,21,786.76,562.19,224.57
+2024-10-22,Deportes,Centro,Marketplace,24,1562.49,1107.61,454.88
+2024-10-22,Electrónica,Norte,E-commerce,10,2867.22,1909.54,957.68
+2024-10-23,Alimentos,Norte,Distribuidor,45,804.71,463.37,341.34
+2024-10-23,Moda,Oeste,E-commerce,44,2470.97,1673.73,797.24
+2024-10-23,Electrónica,Norte,Marketplace,33,10160.59,5748.49,4412.1
+2024-10-25,Alimentos,Norte,Tienda física,20,373.38,251,122.38
+2024-10-26,Deportes,Este,Marketplace,7,568.09,340.77,227.32
+2024-10-27,Electrónica,Norte,Marketplace,43,14358.81,10569.4,3789.41
+2024-10-28,Hogar,Norte,E-commerce,28,2873.68,1593.61,1280.07
+2024-10-28,Electrónica,Norte,Distribuidor,11,3073.81,2177.26,896.55
+2024-10-29,Juguetes,Sur,E-commerce,41,1229.43,757.9,471.53
+2024-10-29,Hogar,Oeste,E-commerce,36,3691.35,2479.13,1212.22
+2024-10-29,Electrónica,Norte,E-commerce,20,5492.29,3579.74,1912.55
+2024-10-29,Juguetes,Oeste,E-commerce,40,1282.39,748.45,533.94
+2024-10-30,Juguetes,Sur,Marketplace,7,257.31,189.47,67.84
+2024-10-30,Electrónica,Sur,E-commerce,17,4891.73,2746.18,2145.55
+2024-10-31,Deportes,Norte,Tienda física,23,1651.9,1191.8,460.1
+2024-11-01,Juguetes,Centro,Tienda física,19,570.67,408.72,161.95
+2024-11-01,Alimentos,Centro,E-commerce,29,445.21,316.14,129.07
+2024-11-02,Electrónica,Sur,E-commerce,39,13880.53,10339.01,3541.52
+2024-11-02,Juguetes,Sur,Distribuidor,11,337.71,217.93,119.78
+2024-11-03,Electrónica,Norte,E-commerce,40,12574.01,7742.2,4831.81
+2024-11-04,Deportes,Centro,E-commerce,23,1909.97,1110.45,799.52
+2024-11-05,Deportes,Sur,Distribuidor,30,2110.09,1502.87,607.22
+2024-11-05,Deportes,Sur,Tienda física,15,7986,687.4,7298.6
+2024-11-06,Electrónica,Oeste,Tienda física,33,10138.75,7537.11,2601.64
+2024-11-06,Juguetes,Norte,Tienda física,27,904.29,527.7,376.59
+2024-11-07,Juguetes,Este,Distribuidor,19,689.62,476.37,213.25
+2024-11-07,Hogar,Oeste,Tienda física,18,1614.96,960.78,654.18
+2024-11-07,Hogar,Norte,Tienda física,42,3566.07,2024.47,1541.6
+2024-11-08,Juguetes,Este,Tienda física,43,1660.31,980.48,679.83
+2024-11-09,Electrónica,Norte,Tienda física,11,3884.32,2549.98,1334.34
+2024-11-10,Electrónica,Norte,Tienda física,10,2789.35,1573.09,1216.26
+2024-11-11,Moda,Oeste,Tienda física,35,1879.97,1146.33,733.64
+2024-11-12,Deportes,Centro,Marketplace,38,3227.3,1816.74,1410.56
+2024-11-13,Alimentos,Oeste,Tienda física,35,599.05,417.7,181.35
+2024-11-13,Alimentos,Norte,Distribuidor,22,441.45,323.84,117.61
+2024-11-13,Moda,Este,E-commerce,42,2738.98,1968.55,770.43
+2024-11-13,Electrónica,Norte,Distribuidor,26,8488.73,5466.34,3022.39
+2024-11-14,Alimentos,Centro,Marketplace,48,916.36,630.52,285.84
+2024-11-14,Hogar,Norte,Marketplace,25,2198.58,1267.28,931.3
+2024-11-14,Moda,Sur,E-commerce,25,1368.6,996.2,372.4
+2024-11-15,Electrónica,Este,Distribuidor,49,13407.61,9037.32,4370.29
+2024-11-15,Electrónica,Norte,E-commerce,15,5275.3,3601.24,1674.06
+2024-11-15,Moda,Norte,Marketplace,17,1012.36,642.96,369.4
+2024-11-16,Hogar,Sur,Distribuidor,44,4095.19,2346.32,1748.87
+2024-11-16,Juguetes,Este,Distribuidor,50,1947.17,1355.08,592.09
+2024-11-16,Deportes,Sur,Distribuidor,48,3798.62,2269.53,1529.09
+2024-11-16,Alimentos,Norte,Distribuidor,50,768.27,546.35,221.92
+2024-11-17,Alimentos,Centro,Tienda física,37,757.26,434.2,323.06
+2024-11-17,Juguetes,Sur,E-commerce,33,1013.03,736.46,276.57
+2024-11-18,Moda,Norte,Distribuidor,14,808.46,517.68,290.78
+2024-11-18,Electrónica,Oeste,Marketplace,23,7502.1,4557.92,2944.18
+2024-11-18,Moda,Oeste,Marketplace,12,622.67,402.26,220.41
+2024-11-19,Electrónica,Oeste,Marketplace,35,12550.55,7536.4,5014.15
+2024-11-20,Deportes,Oeste,Tienda física,11,855.7,512.71,342.99
+2024-11-20,Electrónica,Centro,Marketplace,13,4514.68,2526.87,1987.81
+2024-11-21,Alimentos,Centro,Tienda física,25,408.61,232.13,176.48
+2024-11-22,Deportes,Oeste,Marketplace,14,935.02,636.74,298.28
+2024-11-22,Juguetes,Norte,E-commerce,22,666.85,440.98,225.87
+2024-11-23,Hogar,Norte,Distribuidor,28,2829.9,1744.28,1085.62
+2024-11-23,Juguetes,Oeste,Marketplace,14,463.61,263.56,200.05
+2024-11-23,Hogar,Norte,E-commerce,19,1551.72,1160.44,391.28
+2024-11-23,Electrónica,Centro,E-commerce,20,6074.42,3963.47,2110.95
+2024-11-23,Electrónica,Oeste,Distribuidor,17,5965.2,4321.95,1643.25
+2024-11-24,Deportes,Sur,Tienda física,19,1539.47,891.35,648.12
+2024-11-25,Moda,Norte,Distribuidor,28,1712.2,1264.25,447.95
+2024-11-25,Deportes,Centro,Tienda física,13,7636.32,537.21,7099.11
+2024-11-25,Moda,Centro,Marketplace,8,443.17,324.86,118.31
+2024-11-25,Electrónica,Norte,Tienda física,50,15510.41,8628.9,6881.51
+2024-11-25,Electrónica,Norte,Tienda física,12,3388.4,2236.53,1151.87
+2024-11-26,Electrónica,Norte,Marketplace,18,5034.55,3725.5,1309.05
+2024-11-26,Deportes,Norte,Marketplace,40,3313.55,1895.26,1418.29
+2024-11-27,Juguetes,Norte,Distribuidor,39,1517.76,945.71,572.05
+2024-11-28,Hogar,Sur,Distribuidor,42,4140.96,2491.64,1649.32
+2024-11-29,Electrónica,Sur,Distribuidor,27,9856.53,5533.86,4322.67
+2024-11-29,Moda,Norte,E-commerce,30,1702.13,1244.28,457.85
+2024-11-29,Alimentos,Este,Distribuidor,13,259.2,191.92,67.28
+2024-11-30,Electrónica,Oeste,Distribuidor,28,8022.81,5761.66,2261.15
+2024-11-30,Electrónica,Este,Marketplace,37,13254.54,9210.66,4043.88
+2024-12-01,Moda,Oeste,Marketplace,27,1384.25,1027.34,356.91
+2024-12-01,Electrónica,Este,Tienda física,37,10544.63,7412.55,3132.08
+2024-12-01,Moda,Norte,E-commerce,47,2952.27,2137.28,814.99
+2024-12-02,Electrónica,Oeste,Marketplace,16,4672.4,2898.53,1773.87
+2024-12-02,Alimentos,Norte,Distribuidor,30,603.54,417.22,186.32
+2024-12-02,Juguetes,Este,Tienda física,47,1419.74,853.59,566.15
+2024-12-02,Electrónica,Sur,Tienda física,50,13678.52,8500.68,5177.84
+2024-12-03,Electrónica,Norte,Tienda física,51,14778.44,8660.62,6117.82
+2024-12-03,Hogar,Este,Marketplace,55,5031.37,3146.07,1885.3
+2024-12-03,Deportes,Sur,Distribuidor,22,1630.99,1089.79,541.2
+2024-12-03,Hogar,Norte,E-commerce,41,3248.42,2149.19,1099.23
+2024-12-03,Moda,Norte,Distribuidor,19,1281.81,763.79,518.02
+2024-12-04,Electrónica,Sur,Marketplace,54,16188.62,10811.64,5376.98
+2024-12-05,Deportes,Sur,E-commerce,42,3195.44,2332.24,863.2
+2024-12-05,Deportes,Este,Marketplace,21,1704.83,1092.09,612.74
+2024-12-06,Electrónica,Norte,Distribuidor,19,5522.11,4040.3,1481.81
+2024-12-07,Deportes,Sur,E-commerce,43,3186.44,1774.78,1411.66
+2024-12-07,Electrónica,Centro,E-commerce,11,3032.07,1731.61,1300.46
+2024-12-08,Juguetes,Sur,Tienda física,18,600.38,349.89,250.49
+2024-12-08,Alimentos,Oeste,Distribuidor,51,807.58,537.8,269.78
+2024-12-08,Electrónica,Norte,Distribuidor,33,9198.92,6321.99,2876.93
+2024-12-08,Moda,Centro,Marketplace,23,1259.85,792.67,467.18
+2024-12-08,Electrónica,Norte,E-commerce,43,14700.41,9823.98,4876.43
+2024-12-09,Electrónica,Oeste,Tienda física,38,11272,7693.37,3578.63
+2024-12-09,Deportes,Sur,Marketplace,45,3645.82,2408.71,1237.11
+2024-12-09,Electrónica,Centro,Distribuidor,20,6837.67,5001.24,1836.43
+2024-12-10,Moda,Sur,Distribuidor,17,987.87,567.49,420.38
+2024-12-10,Electrónica,Oeste,E-commerce,11,3809.34,2214.46,1594.88
+2024-12-11,Electrónica,Este,Distribuidor,40,12484.31,7051.31,5433
+2024-12-12,Electrónica,Centro,E-commerce,23,7384.86,4669.25,2715.61
+2024-12-13,Hogar,Centro,Distribuidor,47,4766.66,2754.77,2011.89
+2024-12-13,Electrónica,Centro,Tienda física,27,7681.99,4276.31,3405.68
+2024-12-13,Moda,Este,Tienda física,22,1367.73,979.59,388.14
+2024-12-13,Electrónica,Oeste,Tienda física,53,18371.5,13680.55,4690.95
+2024-12-14,Deportes,Norte,Marketplace,40,2560.3,1728.61,831.69
+2024-12-14,Electrónica,Norte,E-commerce,22,7664.27,5602.26,2062.01
+2024-12-15,Deportes,Norte,Marketplace,18,1483.82,1081.06,402.76
+2024-12-15,Electrónica,Norte,Marketplace,36,10742.98,7071.61,3671.37
+2024-12-16,Electrónica,Oeste,Tienda física,14,4815.87,2729.8,2086.07
+2024-12-18,Moda,Sur,E-commerce,7,363.89,246.75,117.14
+2024-12-19,Deportes,Norte,Marketplace,47,3821.77,2802.19,1019.58
+2024-12-19,Alimentos,Oeste,Distribuidor,38,594.9,434.89,160.01
+2024-12-19,Deportes,Norte,E-commerce,12,944.44,606.53,337.91
+2024-12-19,Electrónica,Norte,Tienda física,36,10752.74,7668.77,3083.97
+2024-12-20,Hogar,Centro,Distribuidor,47,4659.53,3428.65,1230.88
+2024-12-20,Electrónica,Este,Distribuidor,51,16668.46,11440.99,5227.47
+2024-12-21,Juguetes,Norte,E-commerce,25,969.08,550.04,419.04
+2024-12-21,Electrónica,Este,Marketplace,56,17471.98,11664.7,5807.28
+2024-12-21,Deportes,Centro,Distribuidor,43,3484.65,2478.7,1005.95
+2024-12-21,Deportes,Norte,Distribuidor,21,1451.8,933.8,518
+2024-12-22,Juguetes,Norte,Tienda física,57,1939.68,1091.1,848.58
+2024-12-23,Deportes,Norte,E-commerce,51,3251.29,2158.96,1092.33
+2024-12-23,Alimentos,Centro,E-commerce,30,528.72,292.32,236.4
+2024-12-23,Juguetes,Oeste,Tienda física,40,1502.53,916.19,586.34
+2024-12-23,Deportes,Norte,Distribuidor,21,1706.3,1033.79,672.51
+2024-12-23,Electrónica,Sur,Tienda física,51,14272.72,9161.88,5110.84
+2024-12-24,Electrónica,Este,Tienda física,28,8810.19,5470.08,3340.11
+2024-12-24,Moda,Oeste,E-commerce,19,1072.32,625.7,446.62
+2024-12-24,Electrónica,Norte,Distribuidor,6,2179.47,1454.56,724.91
+2024-12-24,Hogar,Norte,Distribuidor,6,469.66,294.35,175.31
+2024-12-24,Alimentos,Este,E-commerce,50,959.52,568.69,390.83
+2024-12-24,Electrónica,Norte,Distribuidor,29,10172.73,6057.26,4115.47
+2024-12-25,Electrónica,Oeste,Marketplace,18,5303.81,3218.35,2085.46
+2024-12-26,Juguetes,Norte,Tienda física,10,320.57,236.29,84.28
+2024-12-26,Electrónica,Norte,Marketplace,56,18948.69,12136.89,6811.8
+2024-12-27,Alimentos,Norte,E-commerce,37,609.33,407.91,201.42
+2024-12-27,Electrónica,Este,E-commerce,50,16835.76,9842.15,6993.61
+2024-12-28,Alimentos,Norte,Tienda física,28,554.55,306.72,247.83
+2024-12-28,Moda,Centro,E-commerce,20,1352.15,891.89,460.26
+2024-12-28,Electrónica,Centro,E-commerce,24,8541.58,6095.34,2446.24
+2024-12-29,Electrónica,Centro,Tienda física,14,4275.85,3120.23,1155.62
+2024-12-29,Alimentos,Norte,Marketplace,8,150.94,89.72,61.22
+2024-12-30,Electrónica,Norte,Marketplace,42,11652.01,6836.26,4815.75
+2024-12-30,Hogar,Centro,Marketplace,32,2862.5,1736.47,1126.03
+2024-12-30,Electrónica,Sur,Tienda física,39,12659.46,8339.34,4320.12
+2024-12-30,Alimentos,Este,E-commerce,57,948.19,594.7,353.49
+2024-12-31,Electrónica,Norte,Distribuidor,9,2459.48,1731.54,727.94
+2024-12-31,Hogar,Sur,Tienda física,49,4336.43,2827.92,1508.51
+2025-01-01,Deportes,Centro,Tienda física,14,1129.48,723.22,406.26
+2025-01-01,Electrónica,Sur,E-commerce,55,15607.35,10296.76,5310.59
+2025-01-01,Electrónica,Este,E-commerce,41,13880.79,9061.17,4819.62
+2025-01-01,Alimentos,Centro,Distribuidor,54,916.77,509.99,406.78
+2025-01-02,Hogar,Este,Tienda física,43,3420.14,2409.95,1010.19
+2025-01-03,Hogar,Norte,Distribuidor,38,3009.86,2054.94,954.92
+2025-01-03,Electrónica,Norte,E-commerce,27,9350.64,6548.13,2802.51
+2025-01-03,Hogar,Este,E-commerce,43,3871.92,2208.04,1663.88
+2025-01-04,Electrónica,Sur,E-commerce,28,9684.01,7140.89,2543.12
+2025-01-04,Moda,Norte,Marketplace,18,1214.09,690.22,523.87
+2025-01-05,Juguetes,Norte,Marketplace,63,2086.28,1335.78,750.5
+2025-01-05,Electrónica,Sur,Marketplace,22,5997.57,4470.9,1526.67
+2025-01-05,Hogar,Norte,Tienda física,42,3675.2,2155.27,1519.93
+2025-01-06,Hogar,Oeste,Marketplace,31,3106.58,2086.9,1019.68
+2025-01-06,Electrónica,Centro,Tienda física,62,19819.79,11431.47,8388.32
+2025-01-06,Electrónica,Norte,Marketplace,43,15537.19,11620.51,3916.68
+2025-01-06,Electrónica,Sur,Distribuidor,55,19318.1,11568.77,7749.33
+2025-01-06,Electrónica,Sur,E-commerce,12,3983.26,2505.96,1477.3
+2025-01-07,Moda,Centro,E-commerce,55,3633.67,2356.65,1277.02
+2025-01-07,Electrónica,Oeste,Tienda física,33,9460.67,5489.25,3971.42
+2025-01-07,Alimentos,Sur,E-commerce,32,616.17,429.02,187.15
+2025-01-08,Deportes,Este,E-commerce,45,3651.18,2529.37,1121.81
+2025-01-08,Electrónica,Centro,Tienda física,22,6965.15,3916.76,3048.39
+2025-01-08,Electrónica,Norte,Distribuidor,54,19689.02,14441.03,5247.99
+2025-01-09,Juguetes,Norte,Marketplace,59,2132.81,1516.69,616.12
+2025-01-09,Electrónica,Norte,E-commerce,13,4267.68,2539.77,1727.91
+2025-01-10,Alimentos,Norte,E-commerce,13,223.86,151.43,72.43
+2025-01-11,Alimentos,Este,Distribuidor,50,927.82,517.66,410.16
+2025-01-11,Juguetes,Sur,Distribuidor,54,1945.11,1340.62,604.49
+2025-01-11,Deportes,Oeste,Marketplace,22,1450.54,1041.64,408.9
+2025-01-12,Electrónica,Sur,Marketplace,52,18224.14,10926.44,7297.7
+2025-01-12,Electrónica,Norte,Distribuidor,23,6356.71,4047.81,2308.9
+2025-01-12,Juguetes,Centro,Distribuidor,46,1493.83,1005.37,488.46
+2025-01-12,Alimentos,Norte,Marketplace,22,352.34,242.38,109.96
+2025-01-12,Alimentos,Centro,Distribuidor,51,922.16,539.51,382.65
+2025-01-13,Juguetes,Sur,Tienda física,8,273.93,190.83,83.1
+2025-01-13,Alimentos,Este,Marketplace,15,252.36,167.41,84.95
+2025-01-13,Electrónica,Sur,Marketplace,64,20699.89,13829.49,6870.4
+2025-01-14,Moda,Norte,Tienda física,30,1776.45,987.19,789.26
+2025-01-14,Juguetes,Norte,E-commerce,12,407.96,282.95,125.01
+2025-01-15,Electrónica,Norte,E-commerce,13,3752.82,2157.5,1595.32
+2025-01-15,Juguetes,Norte,Distribuidor,11,357.35,223.71,133.64
+2025-01-15,Alimentos,Norte,Tienda física,22,350.7,259.34,91.36
+2025-01-16,Deportes,Norte,E-commerce,13,1104.59,724.87,379.72
+2025-01-16,Hogar,Norte,E-commerce,27,2585.69,1495.28,1090.41
+2025-01-16,Hogar,Oeste,Tienda física,43,3777.98,2489.59,1288.39
+2025-01-16,Deportes,Sur,E-commerce,32,2640.15,1958.17,681.98
+2025-01-16,Juguetes,Sur,E-commerce,20,759.06,505.18,253.88
+2025-01-17,Electrónica,Este,Marketplace,37,11104.95,8241.9,2863.05
+2025-01-20,Electrónica,Sur,Tienda física,20,6491.65,4491.8,1999.85
+2025-01-20,Alimentos,Norte,Distribuidor,27,524.26,312.15,212.11
+2025-01-20,Juguetes,Norte,E-commerce,33,1022.16,760.31,261.85
+2025-01-22,Electrónica,Norte,Tienda física,47,14987.86,8903.81,6084.05
+2025-01-23,Electrónica,Sur,Marketplace,28,7847.84,4954.53,2893.31
+2025-01-23,Moda,Centro,E-commerce,18,1057.07,667.82,389.25
+2025-01-24,Electrónica,Norte,Distribuidor,48,15167.13,9601.86,5565.27
+2025-01-24,Hogar,Oeste,Distribuidor,64,5767.94,3694.41,2073.53
+2025-01-24,Alimentos,Oeste,Marketplace,50,796.02,549.57,246.45
+2025-01-24,Moda,Centro,Distribuidor,10,563.12,334.31,228.81
+2025-01-25,Hogar,Oeste,Marketplace,17,1734.72,1010.11,724.61
+2025-01-25,Electrónica,Centro,E-commerce,59,17684.78,9741.34,7943.44
+2025-01-25,Hogar,Centro,Distribuidor,50,4427.33,2450.13,1977.2
+2025-01-26,Moda,Norte,Distribuidor,25,1471.54,921.66,549.88
+2025-01-26,Hogar,Sur,Marketplace,51,4675.18,2611.78,2063.4
+2025-01-26,Electrónica,Sur,Tienda física,18,5080.46,2862.89,2217.57
+2025-01-26,Alimentos,Norte,Tienda física,20,320.6,215.35,105.25
+2025-01-27,Electrónica,Oeste,E-commerce,58,17842.07,11402.13,6439.94
+2025-01-27,Hogar,Norte,Marketplace,10,937.2,558.62,378.58
+2025-01-28,Electrónica,Norte,E-commerce,57,16973.73,10625.08,6348.65
+2025-01-28,Alimentos,Centro,E-commerce,61,1152.63,722.08,430.55
+2025-01-28,Moda,Este,Marketplace,64,4171.41,2680.76,1490.65
+2025-01-28,Juguetes,Norte,Tienda física,53,1801.63,1267.42,534.21
+2025-01-28,Juguetes,Oeste,Tienda física,42,1404.65,881.19,523.46
+2025-01-29,Electrónica,Sur,Marketplace,38,10463.82,5991.86,4471.96
+2025-01-30,Moda,Norte,Marketplace,43,2442.01,1604.57,837.44
+2025-01-30,Electrónica,Sur,Distribuidor,42,12666.47,7840.78,4825.69
+2025-01-30,Moda,Norte,Marketplace,36,2192.43,1293.49,898.94
+2025-01-31,Electrónica,Sur,Distribuidor,27,8663.82,5100.85,3562.97
+2025-01-31,Electrónica,Norte,E-commerce,45,15147.3,10291.58,4855.72
+2025-01-31,Electrónica,Este,Tienda física,42,12414.92,7000.09,5414.83
+2025-01-31,Alimentos,Oeste,Distribuidor,59,1208.85,856.19,352.66
+2025-01-31,Moda,Sur,Tienda física,27,1699.9,1215.88,484.02
+2025-02-01,Hogar,Norte,Marketplace,63,5306.12,2973.2,2332.92
+2025-02-01,Electrónica,Norte,Marketplace,25,7552.02,5042.4,2509.62
+2025-02-01,Electrónica,Oeste,Distribuidor,28,10059.01,6505.89,3553.12
+2025-02-03,Alimentos,Norte,E-commerce,68,1231.63,895.17,336.46
+2025-02-04,Electrónica,Sur,Marketplace,59,18274.02,12325.23,5948.79
+2025-02-04,Moda,Norte,E-commerce,33,2231.17,1486.6,744.57
+2025-02-05,Juguetes,Centro,Tienda física,45,1462.19,839.73,622.46
+2025-02-05,Deportes,Norte,Tienda física,17,1426.16,914.54,511.62
+2025-02-05,Juguetes,Norte,E-commerce,52,1648.33,1027.42,620.91
+2025-02-05,Electrónica,Este,Tienda física,53,18771.1,11981.61,6789.49
+2025-02-05,Electrónica,Centro,E-commerce,69,20657.61,13329.4,7328.21
+2025-02-05,Moda,Norte,Marketplace,44,2912.08,2170.32,741.76
+2025-02-06,Electrónica,Sur,Distribuidor,16,4357.72,3110.5,1247.22
+2025-02-06,Moda,Norte,Tienda física,54,2833.53,1683.32,1150.21
+2025-02-06,Hogar,Oeste,Marketplace,24,2140.65,1576.91,563.74
+2025-02-07,Electrónica,Este,Distribuidor,65,20367.09,13020.57,7346.52
+2025-02-07,Electrónica,Norte,Tienda física,46,15162.74,8956.79,6205.95
+2025-02-07,Electrónica,Sur,Distribuidor,29,9898.54,5764.19,4134.35
+2025-02-08,Electrónica,Centro,Tienda física,39,13340.26,9504.23,3836.03
+2025-02-08,Juguetes,Sur,E-commerce,11,403.62,222.25,181.37
+2025-02-08,Alimentos,Sur,Distribuidor,38,780.32,531.44,248.88
+2025-02-08,Deportes,Este,E-commerce,64,4287.09,3067.95,1219.14
+2025-02-09,Deportes,Centro,Distribuidor,29,2260.93,1503.17,757.76
+2025-02-09,Deportes,Centro,Marketplace,73,5080.46,3368.86,1711.6
+2025-02-09,Moda,Sur,E-commerce,31,2121.77,1567.59,554.18
+2025-02-09,Electrónica,Norte,Tienda física,55,15190.95,8507.93,6683.02
+2025-02-10,Juguetes,Centro,Distribuidor,63,2349.51,1571.29,778.22
+2025-02-11,Hogar,Centro,Tienda física,71,5638.31,3815.16,1823.15
+2025-02-11,Electrónica,Norte,E-commerce,17,5446.97,3499.41,1947.56
+2025-02-11,Hogar,Oeste,Distribuidor,29,2280.1,1671.54,608.56
+2025-02-12,Deportes,Centro,Distribuidor,11,870.25,497.82,372.43
+2025-02-12,Electrónica,Sur,Marketplace,38,12997.44,9380.45,3616.99
+2025-02-12,Alimentos,Oeste,Distribuidor,50,795.55,525.76,269.79
+2025-02-12,Deportes,Este,Marketplace,69,4962.64,3208.05,1754.59
+2025-02-13,Moda,Norte,Marketplace,11,662.11,484.56,177.55
+2025-02-14,Hogar,Sur,Marketplace,28,2578.48,1529.1,1049.38
+2025-02-14,Electrónica,Oeste,Tienda física,74,22566.5,16225.13,6341.37
+2025-02-14,Hogar,Norte,E-commerce,17,1673.31,1148.64,524.67
+2025-02-15,Alimentos,Sur,Tienda física,26,431.49,310.27,121.22
+2025-02-15,Moda,Norte,Tienda física,41,2658.49,1605.12,1053.37
+2025-02-16,Deportes,Norte,Tienda física,23,1848.84,1210.69,638.15
+2025-02-16,Juguetes,Centro,Marketplace,37,1313.48,742.11,571.37
+2025-02-16,Electrónica,Este,E-commerce,21,57238.56,5076.54,52162.02
+2025-02-16,Hogar,Centro,Distribuidor,45,3613.34,1990.92,1622.42
+2025-02-17,Deportes,Norte,Tienda física,41,2684.69,1739.06,945.63
+2025-02-18,Moda,Norte,Marketplace,45,2929.18,1825.72,1103.46
+2025-02-18,Electrónica,Sur,E-commerce,37,11672.86,6542.37,5130.49
+2025-02-19,Electrónica,Norte,Marketplace,9,2707.51,1955.06,752.45
+2025-02-20,Hogar,Centro,Marketplace,41,3837.41,2302.32,1535.09
+2025-02-20,Deportes,Sur,Marketplace,53,3884.36,2701.09,1183.27
+2025-02-20,Juguetes,Centro,Marketplace,33,1271.59,808.54,463.05
+2025-02-21,Deportes,Norte,Tienda física,57,3648.61,2722.88,925.73
+2025-02-22,Electrónica,Norte,Marketplace,17,4896.87,3008.57,1888.3
+2025-02-22,Juguetes,Centro,Marketplace,69,2523.54,1462.08,1061.46
+2025-02-22,Electrónica,Norte,E-commerce,21,6778.47,4372.67,2405.8
+2025-02-22,Alimentos,Este,Tienda física,29,593.73,421.43,172.3
+2025-02-23,Electrónica,Norte,Tienda física,21,6648.53,4962.38,1686.15
+2025-02-24,Electrónica,Norte,Marketplace,71,19494.91,13844.95,5649.96
+2025-02-25,Juguetes,Este,Distribuidor,42,1679.08,1015.39,663.69
+2025-02-26,Electrónica,Oeste,E-commerce,67,20372.38,14806.93,5565.45
+2025-02-26,Electrónica,Oeste,Tienda física,9,2716.79,1915.89,800.9
+2025-02-26,Hogar,Sur,Marketplace,33,2796.34,2028.76,767.58
+2025-02-26,Electrónica,Norte,Distribuidor,22,6800.5,5067.74,1732.76
+2025-02-27,Electrónica,Este,Tienda física,42,14457.52,10640.7,3816.82
+2025-02-27,Hogar,Oeste,Distribuidor,53,5014.49,3591.89,1422.6
+2025-02-28,Alimentos,Sur,Distribuidor,10,191.42,125.39,66.03
+2025-03-01,Electrónica,Centro,Marketplace,12,3681.1,2581.94,1099.16
+2025-03-01,Electrónica,Oeste,Marketplace,39,13378.91,9553.88,3825.03
+2025-03-02,Moda,Centro,Marketplace,69,4134.14,2946.69,1187.45
+2025-03-02,Electrónica,Norte,E-commerce,40,12848.03,7204.05,5643.98
+2025-03-03,Juguetes,Este,Distribuidor,80,2444.13,1513.18,930.95
+2025-03-03,Hogar,Oeste,E-commerce,53,4871.1,3514.59,1356.51
+2025-03-03,Juguetes,Centro,Distribuidor,27,838.06,525.08,312.98
+2025-03-03,Electrónica,Este,E-commerce,65,22799.51,12878.05,9921.46
+2025-03-03,Electrónica,Centro,Tienda física,80,27593.65,16013.83,11579.82
+2025-03-04,Electrónica,Centro,Distribuidor,27,8143.14,5814.69,2328.45
+2025-03-04,Juguetes,Norte,Tienda física,24,944.09,601.83,342.26
+2025-03-04,Alimentos,Centro,E-commerce,34,552.29,309.53,242.76
+2025-03-05,Deportes,Este,Tienda física,71,4618.82,2707.83,1910.99
+2025-03-05,Electrónica,Norte,Marketplace,51,18490.86,12835.68,5655.18
+2025-03-06,Moda,Este,E-commerce,15,775.91,450.13,325.78
+2025-03-06,Juguetes,Sur,Marketplace,19,744.95,458.57,286.38
+2025-03-06,Alimentos,Este,Distribuidor,77,1554.95,1153.85,401.1
+2025-03-07,Hogar,Norte,Tienda física,38,3043.19,2162.28,880.91
+2025-03-08,Juguetes,Centro,E-commerce,72,2413.52,1638.81,774.71
+2025-03-09,Hogar,Oeste,E-commerce,25,2044.89,1307.95,736.94
+2025-03-09,Hogar,Norte,Distribuidor,17,1465.49,957.18,508.31
+2025-03-10,Moda,Sur,Distribuidor,80,5131.86,3060.02,2071.84
+2025-03-10,Electrónica,Oeste,Tienda física,80,26159.93,18727.88,7432.05
+2025-03-10,Moda,Norte,Distribuidor,56,3355.98,2269.8,1086.18
+2025-03-11,Hogar,Oeste,E-commerce,54,5110.4,2897.3,2213.1
+2025-03-11,Deportes,Oeste,E-commerce,23,1901.26,1283.44,617.82
+2025-03-12,Hogar,Oeste,Distribuidor,68,5409.78,3834.05,1575.73
+2025-03-13,Hogar,Norte,Marketplace,58,5970.23,4003.88,1966.35
+2025-03-14,Electrónica,Oeste,E-commerce,25,7741.4,5071.21,2670.19
+2025-03-14,Electrónica,Norte,E-commerce,77,27677.16,16456.92,11220.24
+2025-03-15,Juguetes,Norte,Marketplace,15,590.91,428.25,162.66
+2025-03-15,Juguetes,Norte,Tienda física,10,328.93,197.47,131.46
+2025-03-15,Alimentos,Oeste,E-commerce,68,1143.42,806.83,336.59
+2025-03-15,Electrónica,Este,Distribuidor,73,24257.87,15098.47,9159.4
+2025-03-15,Juguetes,Sur,E-commerce,58,1860.96,1043.58,817.38
+2025-03-15,Electrónica,Norte,Distribuidor,31,9809.22,6328,3481.22
+2025-03-16,Electrónica,Norte,E-commerce,81,24307.6,13823.59,10484.01
+2025-03-16,Alimentos,Oeste,Tienda física,9,143.98,86.91,57.07
+2025-03-17,Electrónica,Norte,Marketplace,69,23891.52,14728.07,9163.45
+2025-03-17,Electrónica,Centro,Marketplace,49,16849.65,10622.36,6227.29
+2025-03-17,Deportes,Centro,Tienda física,40,3345.98,2015.38,1330.6
+2025-03-18,Electrónica,Este,Distribuidor,54,14800.82,10017.38,4783.44
+2025-03-18,Electrónica,Sur,Distribuidor,73,25808.38,15228.76,10579.62
+2025-03-19,Electrónica,Oeste,E-commerce,77,25480.22,18695.39,6784.83
+2025-03-19,Electrónica,Oeste,Distribuidor,80,24574.42,16780.41,7794.01
+2025-03-19,Electrónica,Sur,Marketplace,13,3891.52,2769.34,1122.18
+2025-03-20,Deportes,Este,Tienda física,73,6114.1,4292.59,1821.51
+2025-03-21,Hogar,Este,Distribuidor,31,2633.48,1679.46,954.02
+2025-03-21,Hogar,Este,E-commerce,42,3720,2514.05,1205.95
+2025-03-22,Moda,Norte,Marketplace,24,1647.97,1042.31,605.66
+2025-03-22,Moda,Oeste,Tienda física,69,4521.31,2703.32,1817.99
+2025-03-22,Electrónica,Norte,Tienda física,12,3914.16,2534.12,1380.04
+2025-03-22,Alimentos,Norte,Marketplace,15,251.79,147.51,104.28
+2025-03-24,Deportes,Centro,E-commerce,64,5307.73,3071.19,2236.54
+2025-03-24,Alimentos,Oeste,Distribuidor,58,906.84,567.19,339.65
+2025-03-24,Electrónica,Este,E-commerce,37,12019.43,7922.69,4096.74
+2025-03-24,Moda,Este,Marketplace,45,3056.35,2038.68,1017.67
+2025-03-24,Electrónica,Norte,E-commerce,73,20415.1,12216.3,8198.8
+2025-03-24,Hogar,Norte,Distribuidor,20,1810.75,1311.03,499.72
+2025-03-24,Deportes,Centro,E-commerce,26,2214.03,1466.16,747.87
+2025-03-25,Juguetes,Norte,E-commerce,46,14016.64,1211.61,12805.03
+2025-03-25,Deportes,Oeste,Marketplace,33,2753.93,1958.66,795.27
+2025-03-25,Deportes,Centro,Marketplace,15,963.29,580.14,383.15
+2025-03-26,Electrónica,Norte,Marketplace,52,18028.76,10744.22,7284.54
+2025-03-26,Alimentos,Norte,Distribuidor,52,918.85,614.89,303.96
+2025-03-26,Electrónica,Norte,E-commerce,44,12736.41,7508.13,5228.28
+2025-03-27,Hogar,Norte,E-commerce,79,7179.73,5046.02,2133.71
+2025-03-27,Juguetes,Oeste,E-commerce,47,1746.77,1255.31,491.46
+2025-03-27,Deportes,Norte,Marketplace,33,2745.19,1664.54,1080.65
+2025-03-28,Electrónica,Este,E-commerce,67,24258.44,14884.87,9373.57
+2025-03-28,Moda,Norte,Tienda física,46,2900.14,2105.53,794.61
+2025-03-28,Moda,Oeste,Tienda física,16,1062.81,782.38,280.43
+2025-03-29,Hogar,Este,E-commerce,57,5284.63,3156.99,2127.64
+2025-03-30,Electrónica,Este,Tienda física,10,3138.71,2278.37,860.34
+2025-03-30,Hogar,Este,Distribuidor,71,5511.83,4074.2,1437.63
+2025-03-30,Moda,Norte,E-commerce,59,3633.99,2608.23,1025.76
+2025-03-30,Moda,Este,Marketplace,80,4140.76,2821.57,1319.19
+2025-03-31,Electrónica,Norte,Distribuidor,50,18002.35,12325.24,5677.11
+2025-04-01,Juguetes,Oeste,Distribuidor,20,707.42,434.97,272.45
+2025-04-02,Electrónica,Este,Tienda física,15,4942.59,3391.57,1551.02
+2025-04-02,Electrónica,Este,Marketplace,15,4396.02,2755.17,1640.85
+2025-04-03,Electrónica,Norte,Marketplace,16,4858.85,3027.93,1830.92
+2025-04-03,Hogar,Norte,Distribuidor,72,5767.23,3707.48,2059.75
+2025-04-03,Juguetes,Norte,Marketplace,63,2231.66,1465.88,765.78
+2025-04-03,Alimentos,Oeste,Marketplace,26,423.08,250.69,172.39
+2025-04-04,Alimentos,Oeste,Marketplace,51,1039.48,685.97,353.51
+2025-04-04,Electrónica,Oeste,Tienda física,69,21364.96,14704.8,6660.16
+2025-04-04,Electrónica,Centro,Tienda física,32,10609.65,7697.15,2912.5
+2025-04-04,Deportes,Este,Marketplace,36,3014.95,1760.02,1254.93
+2025-04-05,Juguetes,Norte,Marketplace,54,2133.32,1237.87,895.45
+2025-04-05,Deportes,Centro,Marketplace,23,1757.65,1137.58,620.07
+2025-04-06,Deportes,Oeste,Marketplace,40,3093.06,1991.02,1102.04
+2025-04-06,Electrónica,Este,E-commerce,59,18970.93,10534.56,8436.37
+2025-04-06,Hogar,Sur,Tienda física,15,1504.75,1035.77,468.98
+2025-04-06,Electrónica,Norte,E-commerce,24,8692.57,5404.83,3287.74
+2025-04-07,Deportes,Norte,Marketplace,19,1528.65,1106.41,422.24
+2025-04-08,Alimentos,Sur,Tienda física,75,1476.24,1065.23,411.01
+2025-04-09,Electrónica,Sur,Marketplace,18,6522.15,4880.36,1641.79
+2025-04-09,Electrónica,Norte,E-commerce,65,20091.55,14023.98,6067.57
+2025-04-09,Hogar,Oeste,Marketplace,79,6174.02,3844.32,2329.7
+2025-04-10,Hogar,Este,Distribuidor,65,5905.87,4181.31,1724.56
+2025-04-10,Deportes,Norte,Distribuidor,51,4101.55,2512.55,1589
+2025-04-10,Electrónica,Oeste,Marketplace,38,10949.33,8154.72,2794.61
+2025-04-10,Moda,Sur,Distribuidor,71,4293.22,2744.58,1548.64
+2025-04-11,Alimentos,Centro,Distribuidor,84,1302.09,863.73,438.36
+2025-04-11,Deportes,Norte,Tienda física,70,5634.3,3304.44,2329.86
+2025-04-11,Juguetes,Oeste,Marketplace,61,2233.23,1299.6,933.63
+2025-04-12,Electrónica,Oeste,Marketplace,85,28732.76,20392.18,8340.58
+2025-04-13,Electrónica,Sur,E-commerce,45,13128.8,9316.14,3812.66
+2025-04-13,Deportes,Norte,Marketplace,54,3953.28,2423.64,1529.64
+2025-04-13,Moda,Este,E-commerce,80,5162.2,2999.48,2162.72
+2025-04-13,Electrónica,Centro,E-commerce,64,18679.47,10279.68,8399.79
+2025-04-14,Hogar,Norte,Distribuidor,37,2878.21,1818.47,1059.74
+2025-04-14,Juguetes,Norte,Distribuidor,21,702.96,439.92,263.04
+2025-04-15,Deportes,Norte,E-commerce,27,2242.79,1325.2,917.59
+2025-04-15,Deportes,Norte,Distribuidor,42,3222.73,2125.09,1097.64
+2025-04-15,Juguetes,Norte,E-commerce,70,2578.83,1922.73,656.1
+2025-04-15,Moda,Norte,Tienda física,69,3548.2,2562.77,985.43
+2025-04-15,Alimentos,Norte,Marketplace,75,1407.77,910.36,497.41
+2025-04-16,Hogar,Norte,Tienda física,54,5012.91,2901.6,2111.31
+2025-04-16,Electrónica,Norte,Distribuidor,18,5414.45,3833.88,1580.57
+2025-04-17,Moda,Oeste,Distribuidor,13,796.34,451.18,345.16
+2025-04-17,Juguetes,Norte,Marketplace,45,1624.42,1034.08,590.34
+2025-04-18,Alimentos,Norte,E-commerce,26,417.18,303.15,114.03
+2025-04-18,Hogar,Norte,Distribuidor,84,60257.36,4989.25,55268.11
+2025-04-18,Electrónica,Norte,Distribuidor,52,17599.39,10479.82,7119.57
+2025-04-18,Electrónica,Norte,Tienda física,13,4767.32,3475.35,1291.97
+2025-04-19,Juguetes,Este,Marketplace,72,2211.68,1423.37,788.31
+2025-04-20,Electrónica,Oeste,Marketplace,10,3299.28,2202.69,1096.59
+2025-04-20,Moda,Norte,E-commerce,84,4994.06,2855.52,2138.54
+2025-04-20,Hogar,Norte,Distribuidor,60,5045.16,3225.11,1820.05
+2025-04-21,Deportes,Norte,Tienda física,51,4342.48,2503.17,1839.31
+2025-04-21,Hogar,Sur,Distribuidor,28,2474.72,1697.65,777.07
+2025-04-21,Juguetes,Norte,Marketplace,66,2288.54,1572.93,715.61
+2025-04-21,Alimentos,Norte,Distribuidor,79,1230.66,690.78,539.88
+2025-04-21,Electrónica,Este,Distribuidor,78,26534.54,17146.67,9387.87
+2025-04-22,Moda,Este,E-commerce,70,31880.24,2880.19,29000.05
+2025-04-23,Juguetes,Este,Tienda física,52,1837.71,1132.75,704.96
+2025-04-23,Moda,Centro,Marketplace,56,3457.18,2177.89,1279.29
+2025-04-24,Electrónica,Sur,Distribuidor,23,6542.93,4759.06,1783.87
+2025-04-24,Hogar,Norte,Distribuidor,23,1768.57,1004.59,763.98
+2025-04-24,Electrónica,Norte,Marketplace,37,10344.93,7392.11,2952.82
+2025-04-24,Moda,Centro,Distribuidor,71,4426.89,2724.76,1702.13
+2025-04-25,Electrónica,Sur,Distribuidor,62,17594.45,12017.23,5577.22
+2025-04-25,Juguetes,Centro,Marketplace,54,1743.08,1159.82,583.26
+2025-04-25,Juguetes,Norte,E-commerce,66,2461.24,1629.58,831.66
+2025-04-26,Electrónica,Este,Tienda física,17,5491.02,3555.09,1935.93
+2025-04-27,Juguetes,Este,Distribuidor,84,2787.72,2026.88,760.84
+2025-04-27,Electrónica,Norte,E-commerce,37,12733.63,8820.39,3913.24
+2025-04-27,Deportes,Oeste,Tienda física,78,6597.54,4219.41,2378.13
+2025-04-27,Electrónica,Oeste,Marketplace,11,3540.06,2214.44,1325.62
+2025-04-28,Juguetes,Norte,Tienda física,15,515.11,341.83,173.28
+2025-04-28,Hogar,Centro,Tienda física,42,3754.83,2261.65,1493.18
+2025-04-29,Electrónica,Este,Marketplace,57,16184.15,9864.41,6319.74
+2025-04-30,Juguetes,Norte,Tienda física,56,1813.3,1100.91,712.39
+2025-05-01,Alimentos,Norte,Tienda física,35,568.9,425.99,142.91
+2025-05-01,Hogar,Centro,E-commerce,57,5639.87,3221.66,2418.21
+2025-05-01,Electrónica,Norte,Tienda física,69,24894.09,14096.88,10797.21
+2025-05-02,Electrónica,Este,Marketplace,51,15976.77,10923.25,5053.52
+2025-05-02,Juguetes,Norte,Distribuidor,46,1480.61,850.29,630.32
+2025-05-02,Juguetes,Norte,Marketplace,20,775.65,444.09,331.56
+2025-05-03,Electrónica,Este,Tienda física,13,3546.13,2465.36,1080.77
+2025-05-04,Alimentos,Centro,Marketplace,10,162.35,97.85,64.5
+2025-05-04,Electrónica,Oeste,E-commerce,28,10176.16,7322.07,2854.09
+2025-05-04,Electrónica,Norte,E-commerce,63,18179.36,12767.03,5412.33
+2025-05-05,Deportes,Este,Tienda física,34,2482.07,1758.82,723.25
+2025-05-06,Electrónica,Norte,E-commerce,67,18613.48,11810.61,6802.87
+2025-05-06,Deportes,Este,Tienda física,38,2530.04,1438.46,1091.58
+2025-05-06,Deportes,Este,Distribuidor,74,5769.39,3509.99,2259.4
+2025-05-06,Juguetes,Centro,Distribuidor,18,715.36,483.74,231.62
+2025-05-07,Deportes,Norte,Marketplace,39,3000.08,1990.38,1009.7
+2025-05-07,Deportes,Norte,Marketplace,75,5197.67,3273.42,1924.25
+2025-05-07,Electrónica,Norte,Tienda física,65,20281.93,13177.85,7104.08
+2025-05-07,Electrónica,Sur,Tienda física,50,13861.75,8745.33,5116.42
+2025-05-08,Electrónica,Norte,Tienda física,37,12782.8,8194.8,4588
+2025-05-08,Deportes,Sur,Marketplace,22,1694.69,1089.57,605.12
+2025-05-09,Electrónica,Centro,Tienda física,48,13148.29,8510.87,4637.42
+2025-05-09,Electrónica,Este,Tienda física,37,11828.64,8795.53,3033.11
+2025-05-10,Electrónica,Norte,Marketplace,23,8052.9,5192.84,2860.06
+2025-05-11,Juguetes,Centro,Distribuidor,54,1637.07,1130.56,506.51
+2025-05-11,Electrónica,Norte,E-commerce,70,25615.82,17466.19,8149.63
+2025-05-11,Moda,Oeste,E-commerce,14,789.21,591.66,197.55
+2025-05-13,Hogar,Oeste,Tienda física,56,5243.66,3433.01,1810.65
+2025-05-13,Electrónica,Norte,E-commerce,14,4276.11,2944.4,1331.71
+2025-05-14,Electrónica,Sur,Distribuidor,63,19143.91,10931.35,8212.56
+2025-05-14,Alimentos,Norte,Distribuidor,33,618.94,395.46,223.48
+2025-05-15,Electrónica,Norte,E-commerce,36,11611.99,7007.87,4604.12
+2025-05-15,Electrónica,Norte,Marketplace,76,22116.22,13549.86,8566.36
+2025-05-16,Hogar,Este,E-commerce,22,2180.27,1447.4,732.87
+2025-05-16,Moda,Oeste,Distribuidor,60,3197.75,2065.46,1132.29
+2025-05-17,Electrónica,Norte,Tienda física,16,5489.35,3292.91,2196.44
+2025-05-17,Moda,Centro,E-commerce,83,5274.21,3242.73,2031.48
+2025-05-17,Electrónica,Norte,Marketplace,56,16431.09,11519.36,4911.73
+2025-05-17,Electrónica,Centro,Tienda física,72,23132.56,13957.7,9174.86
+2025-05-17,Electrónica,Norte,Marketplace,22,6743.48,4884.08,1859.4
+2025-05-17,Electrónica,Norte,Distribuidor,56,19855.04,12989.59,6865.45
+2025-05-17,Hogar,Norte,Marketplace,15,1399.11,928.79,470.32
+2025-05-18,Alimentos,Oeste,Distribuidor,11,221.08,157.69,63.39
+2025-05-19,Hogar,Este,Marketplace,27,2106.73,1252.82,853.91
+2025-05-19,Electrónica,Sur,Tienda física,50,16691.44,10919.57,5771.87
+2025-05-19,Moda,Norte,Distribuidor,30,1883.94,1223.4,660.54
+2025-05-20,Alimentos,Norte,Marketplace,41,749.83,487.13,262.7
+2025-05-20,Hogar,Oeste,E-commerce,32,2602.12,1589.54,1012.58
+2025-05-20,Electrónica,Este,E-commerce,68,19784.5,11080.98,8703.52
+2025-05-20,Moda,Sur,Marketplace,84,5793.17,4099.12,1694.05
+2025-05-20,Hogar,Este,Tienda física,52,4007.77,2565.69,1442.08
+2025-05-21,Moda,Norte,Tienda física,16,1010.1,664.3,345.8
+2025-05-21,Hogar,Norte,Marketplace,77,7216.7,4469.52,2747.18
+2025-05-22,Hogar,Norte,Marketplace,41,4217.71,2754.1,1463.61
+2025-05-23,Electrónica,Norte,Tienda física,28,8459.36,5356.5,3102.86
+2025-05-23,Moda,Centro,Distribuidor,54,3067.38,2248.17,819.21
+2025-05-24,Electrónica,Este,Distribuidor,82,22933.75,13876.63,9057.12
+2025-05-24,Electrónica,Centro,Distribuidor,43,14279.54,8740.31,5539.23
+2025-05-24,Hogar,Norte,Distribuidor,76,6009.79,4086.47,1923.32
+2025-05-24,Hogar,Norte,Marketplace,77,5958.59,4257.13,1701.46
+2025-05-25,Moda,Sur,Tienda física,29,1610.39,1004.78,605.61
+2025-05-26,Deportes,Este,Tienda física,56,3938.32,2215.94,1722.38
+2025-05-26,Hogar,Norte,Tienda física,80,6989.94,4079.8,2910.14
+2025-05-26,Hogar,Norte,E-commerce,42,4012.6,2589.63,1422.97
+2025-05-26,Deportes,Sur,Marketplace,63,4611.99,2720.14,1891.85
+2025-05-27,Deportes,Oeste,Marketplace,24,1910.45,1071.57,838.88
+2025-05-27,Electrónica,Centro,Marketplace,77,24921.79,15102.85,9818.94
+2025-05-27,Deportes,Este,E-commerce,45,3028.95,2194.71,834.24
+2025-05-28,Electrónica,Sur,Tienda física,36,9983.94,7036.8,2947.14
+2025-05-29,Juguetes,Norte,E-commerce,78,2677.87,1833.62,844.25
+2025-05-29,Alimentos,Norte,E-commerce,67,1213.56,667.57,545.99
+2025-05-29,Deportes,Oeste,Marketplace,15,987.76,675.92,311.84
+2025-05-29,Electrónica,Sur,Tienda física,17,6110.02,3644.9,2465.12
+2025-05-29,Electrónica,Oeste,Tienda física,24,7171.22,5120.58,2050.64
+2025-05-29,Alimentos,Norte,Distribuidor,46,713.61,492.12,221.49
+2025-05-30,Electrónica,Norte,E-commerce,11,3990.32,2370.85,1619.47
+2025-05-30,Hogar,Norte,E-commerce,31,2994.52,1869.82,1124.7
+2025-05-30,Electrónica,Norte,E-commerce,21,6411.97,4252.07,2159.9
+2025-05-30,Electrónica,Norte,Marketplace,59,20180.02,13115.97,7064.05
+2025-05-30,Electrónica,Oeste,E-commerce,69,24446.61,17168.86,7277.75
+2025-05-31,Electrónica,Centro,Distribuidor,20,7102.33,5304.4,1797.93
+2025-05-31,Alimentos,Norte,E-commerce,33,539.84,397.3,142.54
+2025-05-31,Electrónica,Norte,E-commerce,26,7270.73,5113.89,2156.84
+2025-05-31,Electrónica,Oeste,Marketplace,64,22869.25,15538.58,7330.67
+2025-06-01,Deportes,Norte,Distribuidor,62,4747.25,2692.71,2054.54
+2025-06-02,Moda,Sur,E-commerce,28,1614.94,904.31,710.63
+2025-06-02,Moda,Oeste,Tienda física,71,4629.67,2634.97,1994.7
+2025-06-03,Moda,Sur,Distribuidor,52,2966.09,1795.87,1170.22
+2025-06-03,Electrónica,Oeste,Distribuidor,17,4886.53,3071.94,1814.59
+2025-06-03,Electrónica,Norte,Marketplace,74,21221.68,12189.57,9032.11
+2025-06-03,Electrónica,Oeste,Tienda física,41,11717.31,6617.53,5099.78
+2025-06-03,Hogar,Norte,Marketplace,54,5265.83,3512.67,1753.16
+2025-06-04,Alimentos,Oeste,Distribuidor,71,1303.89,913.27,390.62
+2025-06-04,Electrónica,Norte,Distribuidor,57,19423.25,14337.99,5085.26
+2025-06-04,Juguetes,Norte,Marketplace,54,1982.42,1403.03,579.39
+2025-06-06,Juguetes,Este,Distribuidor,20,762.89,454.2,308.69
+2025-06-06,Electrónica,Norte,Marketplace,40,11740.36,6750.55,4989.81
+2025-06-07,Electrónica,Este,Distribuidor,77,26774.2,15111.65,11662.55
+2025-06-08,Moda,Sur,Tienda física,37,2349.22,1447.96,901.26
+2025-06-08,Juguetes,Sur,Distribuidor,77,2659.13,1510.96,1148.17
+2025-06-09,Electrónica,Norte,Tienda física,43,13869.38,8047.4,5821.98
+2025-06-09,Alimentos,Norte,E-commerce,56,895.99,617.72,278.27
+2025-06-09,Moda,Norte,Distribuidor,70,4055.76,3016.27,1039.49
+2025-06-10,Electrónica,Centro,Distribuidor,60,21965.48,13362.69,8602.79
+2025-06-11,Electrónica,Centro,E-commerce,15,4155.16,2846.32,1308.84
+2025-06-11,Electrónica,Centro,Distribuidor,77,25640.11,14642.36,10997.75
+2025-06-11,Electrónica,Este,Distribuidor,76,27624.22,20465.82,7158.4
+2025-06-12,Electrónica,Centro,Distribuidor,60,19972.37,14586.78,5385.59
+2025-06-12,Electrónica,Norte,Marketplace,38,13613.38,8248.29,5365.09
+2025-06-12,Moda,Centro,Tienda física,33,2266.88,1557.82,709.06
+2025-06-12,Juguetes,Sur,Distribuidor,26,860.88,532.83,328.05
+2025-06-12,Juguetes,Sur,Distribuidor,72,2704.89,1728.61,976.28
+2025-06-12,Moda,Sur,Tienda física,66,3463.06,1976.7,1486.36
+2025-06-12,Alimentos,Norte,E-commerce,62,1201.79,692.82,508.97
+2025-06-14,Hogar,Centro,Marketplace,29,2764.44,1672.24,1092.2
+2025-06-14,Electrónica,Norte,E-commerce,75,21608.12,15618.09,5990.03
+2025-06-14,Deportes,Oeste,Marketplace,61,4622.38,3271.53,1350.85
+2025-06-14,Electrónica,Norte,Distribuidor,62,20580.76,12442.15,8138.61
+2025-06-14,Alimentos,Este,Tienda física,73,1506.34,1098.42,407.92
+2025-06-15,Alimentos,Norte,Marketplace,57,1110.53,623.55,486.98
+2025-06-15,Electrónica,Centro,Tienda física,66,22477.1,16331.03,6146.07
+2025-06-15,Deportes,Norte,E-commerce,49,3486.79,2577.95,908.84
+2025-06-15,Electrónica,Oeste,Distribuidor,27,9181.59,5272.33,3909.26
+2025-06-16,Electrónica,Norte,E-commerce,13,4196.35,2804.66,1391.69
+2025-06-16,Hogar,Norte,Distribuidor,25,2371.84,1579.69,792.15
+2025-06-16,Electrónica,Este,Distribuidor,42,11866.78,7986.02,3880.76
+2025-06-17,Hogar,Centro,Marketplace,20,1676.66,1032.52,644.14
+2025-06-17,Moda,Centro,Marketplace,52,3254.58,1821.94,1432.64
+2025-06-17,Deportes,Norte,E-commerce,31,2024.35,1359.85,664.5
+2025-06-18,Hogar,Sur,Tienda física,67,6593.99,4228.01,2365.98
+2025-06-18,Deportes,Norte,Tienda física,36,2852.36,1700.4,1151.96
+2025-06-18,Juguetes,Sur,Marketplace,59,2143.04,1310.34,832.7
+2025-06-18,Juguetes,Centro,Marketplace,26,917.43,667.75,249.68
+2025-06-20,Electrónica,Oeste,Distribuidor,45,13150.24,9778.69,3371.55
+2025-06-20,Electrónica,Sur,Distribuidor,46,15458.59,9554.19,5904.4
+2025-06-20,Moda,Sur,Tienda física,43,2519.44,1886.65,632.79
+2025-06-21,Moda,Centro,Tienda física,23,1405.18,883.74,521.44
+2025-06-21,Moda,Oeste,Distribuidor,64,4171.22,3085.18,1086.04
+2025-06-21,Juguetes,Norte,Marketplace,73,2340,1671.83,668.17
+2025-06-21,Electrónica,Norte,Distribuidor,11,3572.27,2062.16,1510.11
+2025-06-21,Electrónica,Este,Marketplace,40,11379.95,6621.81,4758.14
+2025-06-22,Deportes,Norte,Tienda física,76,6369.51,3869.17,2500.34
+2025-06-22,Deportes,Centro,Marketplace,23,1747.1,1289.89,457.21
+2025-06-22,Alimentos,Centro,E-commerce,47,852.46,574.91,277.55
+2025-06-22,Moda,Norte,Tienda física,36,2164.04,1503.12,660.92
+2025-06-23,Electrónica,Norte,Distribuidor,43,15506.7,9436.25,6070.45
+2025-06-23,Juguetes,Sur,Distribuidor,18,688.59,404.72,283.87
+2025-06-23,Electrónica,Norte,E-commerce,62,18216.26,11294.22,6922.04
+2025-06-24,Electrónica,Norte,E-commerce,23,7615.77,4391.21,3224.56
+2025-06-24,Deportes,Norte,Distribuidor,47,3417.65,2274.03,1143.62
+2025-06-25,Hogar,Norte,Tienda física,60,5373.59,3045.38,2328.21
+2025-06-27,Electrónica,Centro,Distribuidor,43,12512.61,7275.05,5237.56
+2025-06-28,Electrónica,Este,Distribuidor,62,19908.17,11926.62,7981.55
+2025-06-28,Hogar,Sur,E-commerce,45,3992.93,2842.91,1150.02
+2025-06-29,Alimentos,Este,Tienda física,36,587.98,346.32,241.66
+2025-06-29,Electrónica,Sur,E-commerce,52,18891.94,12233.63,6658.31
+2025-06-30,Moda,Norte,Tienda física,21,1318.49,977.83,340.66
+2025-07-01,Alimentos,Norte,Distribuidor,27,555.31,327.07,228.24
+2025-07-01,Juguetes,Este,Marketplace,32,1277.76,920.34,357.42
+2025-07-01,Electrónica,Este,Distribuidor,11,3787.01,2442.8,1344.21
+2025-07-01,Moda,Este,Tienda física,38,2370.56,1395.19,975.37
+2025-07-02,Hogar,Norte,Marketplace,36,3606.44,2074.51,1531.93
+2025-07-02,Electrónica,Oeste,Marketplace,66,19900.39,12395.99,7504.4
+2025-07-02,Alimentos,Norte,E-commerce,31,555.71,372.77,182.94
+2025-07-02,Hogar,Centro,Distribuidor,60,5114.25,2933.81,2180.44
+2025-07-03,Alimentos,Norte,Tienda física,62,1138.84,656.29,482.55
+2025-07-03,Electrónica,Este,Distribuidor,57,18830.22,13873.71,4956.51
+2025-07-04,Hogar,Sur,Distribuidor,70,6789.33,4783,2006.33
+2025-07-04,Alimentos,Norte,E-commerce,12,202.18,130.37,71.81
+2025-07-04,Hogar,Centro,Tienda física,10,806.63,468.71,337.92
+2025-07-04,Electrónica,Centro,Distribuidor,40,12657.43,7955.34,4702.09
+2025-07-05,Deportes,Este,Tienda física,8,620.36,452.23,168.13
+2025-07-05,Electrónica,Norte,E-commerce,29,9304.82,6312.48,2992.34
+2025-07-05,Electrónica,Centro,Distribuidor,25,7631.18,4795.84,2835.34
+2025-07-06,Electrónica,Este,Marketplace,67,18473.22,12381.3,6091.92
+2025-07-06,Juguetes,Este,E-commerce,28,1083.26,687.75,395.51
+2025-07-06,Electrónica,Norte,Distribuidor,11,3021.08,1866.84,1154.24
+2025-07-07,Electrónica,Centro,Distribuidor,24,8501.41,5805.69,2695.72
+2025-07-07,Electrónica,Norte,Distribuidor,34,11139.3,7445.96,3693.34
+2025-07-08,Electrónica,Oeste,Marketplace,53,18496.78,13834.48,4662.3
+2025-07-08,Electrónica,Este,Distribuidor,26,8980.93,6007.22,2973.71
+2025-07-09,Electrónica,Centro,Tienda física,17,4730.32,2756.66,1973.66
+2025-07-09,Juguetes,Centro,E-commerce,41,1220.22,763.45,456.77
+2025-07-10,Hogar,Oeste,Marketplace,22,1807.73,1062.97,744.76
+2025-07-11,Hogar,Norte,Marketplace,20,1575.34,890.35,684.99
+2025-07-12,Electrónica,Centro,Distribuidor,10,3499.92,2258.44,1241.48
+2025-07-12,Electrónica,Centro,Distribuidor,57,16364.4,11169.67,5194.73
+2025-07-12,Deportes,Oeste,Tienda física,70,4471.59,3243.75,1227.84
+2025-07-12,Juguetes,Centro,E-commerce,34,1216.93,774.66,442.27
+2025-07-13,Alimentos,Norte,Tienda física,67,1359.29,844.44,514.85
+2025-07-13,Hogar,Sur,Distribuidor,8,797.76,598.25,199.51
+2025-07-14,Deportes,Sur,E-commerce,69,4577.79,3294.64,1283.15
+2025-07-14,Hogar,Norte,Tienda física,51,4732.91,2619.2,2113.71
+2025-07-15,Electrónica,Norte,Distribuidor,13,3754.62,2486.22,1268.4
+2025-07-15,Hogar,Norte,Marketplace,38,3418.78,2336.52,1082.26
+2025-07-16,Juguetes,Norte,Marketplace,36,1446.1,1062.25,383.85
+2025-07-16,Alimentos,Sur,E-commerce,53,1091.65,807.14,284.51
+2025-07-16,Deportes,Norte,Marketplace,49,3172.95,1937.74,1235.21
+2025-07-18,Deportes,Norte,Marketplace,20,1661.08,920.63,740.45
+2025-07-18,Hogar,Norte,Marketplace,52,5234.39,3241.57,1992.82
+2025-07-18,Electrónica,Centro,Marketplace,21,6823.31,4249.08,2574.23
+2025-07-19,Moda,Norte,E-commerce,13,814.95,591.77,223.18
+2025-07-19,Electrónica,Centro,Distribuidor,9,2768.91,1984.91,784
+2025-07-19,Electrónica,Norte,Tienda física,24,8563.13,6106.47,2456.66
+2025-07-20,Electrónica,Oeste,Marketplace,69,19938.33,13022.02,6916.31
+2025-07-20,Electrónica,Oeste,Marketplace,37,11189.8,6511.22,4678.58
+2025-07-20,Alimentos,Norte,E-commerce,47,918.56,688.32,230.24
+2025-07-20,Deportes,Oeste,E-commerce,62,5050.72,3258.93,1791.79
+2025-07-20,Electrónica,Centro,E-commerce,54,17412.18,12576.14,4836.04
+2025-07-20,Juguetes,Oeste,Distribuidor,49,1940.65,1450.08,490.57
+2025-07-20,Alimentos,Norte,Distribuidor,12,186.4,130.39,56.01
+2025-07-21,Alimentos,Norte,Tienda física,19,352.76,212.63,140.13
+2025-07-21,Alimentos,Sur,Marketplace,57,990.87,552.61,438.26
+2025-07-21,Alimentos,Oeste,Marketplace,13,210.05,148.03,62.02
+2025-07-22,Alimentos,Norte,Distribuidor,59,916.4,532.01,384.39
+2025-07-22,Hogar,Oeste,Distribuidor,69,5573.91,3135.36,2438.55
+2025-07-22,Alimentos,Norte,E-commerce,59,1127.37,835.45,291.92
+2025-07-23,Deportes,Sur,Tienda física,19,1239.07,821.69,417.38
+2025-07-23,Alimentos,Centro,Tienda física,10,182.26,101.96,80.3
+2025-07-23,Electrónica,Oeste,E-commerce,53,17647.15,12645.04,5002.11
+2025-07-23,Electrónica,Norte,E-commerce,29,8950.93,5497.66,3453.27
+2025-07-25,Alimentos,Norte,Tienda física,29,522.06,310.1,211.96
+2025-07-26,Alimentos,Norte,E-commerce,63,1139.89,815.75,324.14
+2025-07-27,Electrónica,Centro,Tienda física,65,22806.07,16386.06,6420.01
+2025-07-27,Moda,Norte,Distribuidor,58,3144.58,2040.17,1104.41
+2025-07-28,Juguetes,Sur,Marketplace,52,1572.01,948.84,623.17
+2025-07-28,Moda,Centro,Marketplace,20,1166.17,778.9,387.27
+2025-07-28,Electrónica,Este,E-commerce,25,7621.59,4546.92,3074.67
+2025-07-29,Electrónica,Norte,Marketplace,11,3732.33,2679.13,1053.2
+2025-07-29,Electrónica,Sur,E-commerce,14,4068.62,2884.78,1183.84
+2025-07-29,Hogar,Norte,Tienda física,40,3473.26,2059.9,1413.36
+2025-07-30,Moda,Norte,Tienda física,18,1239.62,868.63,370.99
+2025-07-30,Electrónica,Centro,Tienda física,34,11121.54,8333.34,2788.2
+2025-07-30,Alimentos,Este,Tienda física,44,758.43,480.66,277.77
+2025-07-30,Electrónica,Centro,Tienda física,35,11093.26,6613.21,4480.05
+2025-08-02,Electrónica,Oeste,Tienda física,16,5195.43,3344.04,1851.39
+2025-08-02,Moda,Oeste,Marketplace,8,460.33,337.66,122.67
+2025-08-02,Electrónica,Norte,Marketplace,8,2654.92,1597.62,1057.3
+2025-08-02,Juguetes,Este,E-commerce,38,1502.9,882.06,620.84
+2025-08-02,Deportes,Norte,Distribuidor,44,3654.1,2323.71,1330.39
+2025-08-03,Electrónica,Este,Tienda física,48,14166.36,8965.09,5201.27
+2025-08-04,Alimentos,Norte,Marketplace,34,623.81,439.09,184.72
+2025-08-04,Deportes,Norte,Distribuidor,12,975.97,672.26,303.71
+2025-08-04,Electrónica,Sur,Tienda física,16,5144.34,2945.36,2198.98
+2025-08-04,Deportes,Sur,Tienda física,58,3981.08,2451.41,1529.67
+2025-08-05,Hogar,Este,E-commerce,58,5796.13,3837.85,1958.28
+2025-08-05,Electrónica,Norte,Tienda física,9,2847.39,1936.91,910.48
+2025-08-06,Electrónica,Este,Distribuidor,52,15041.7,10621.1,4420.6
+2025-08-06,Electrónica,Centro,Marketplace,33,11389.14,6280.55,5108.59
+2025-08-06,Juguetes,Este,Tienda física,34,1018.16,691.98,326.18
+2025-08-06,Hogar,Oeste,Tienda física,43,3297.58,2447.52,850.06
+2025-08-07,Electrónica,Sur,Marketplace,36,12489.51,9165.6,3323.91
+2025-08-07,Alimentos,Centro,Marketplace,55,876.28,544.15,332.13
+2025-08-07,Deportes,Oeste,Distribuidor,57,4552.01,3075.74,1476.27
+2025-08-07,Juguetes,Sur,Tienda física,13,474.19,316.26,157.93
+2025-08-07,Juguetes,Norte,Distribuidor,37,1370.23,935.51,434.72
+2025-08-07,Electrónica,Norte,Marketplace,20,6240.06,4564.08,1675.98
+2025-08-08,Deportes,Norte,Tienda física,47,3645.9,2048.03,1597.87
+2025-08-08,Hogar,Norte,Tienda física,46,4415.15,2658.62,1756.53
+2025-08-08,Deportes,Norte,Distribuidor,33,2501.32,1576.25,925.07
+2025-08-08,Hogar,Oeste,Tienda física,17,1677.01,1150,527.01
+2025-08-09,Electrónica,Norte,Distribuidor,44,15384.59,9519.95,5864.64
+2025-08-09,Hogar,Sur,E-commerce,30,2347.02,1549.87,797.15
+2025-08-09,Electrónica,Norte,Distribuidor,52,18140.3,10104.18,8036.12
+2025-08-10,Deportes,Norte,E-commerce,52,3423.64,2463.05,960.59
+2025-08-10,Juguetes,Sur,Tienda física,54,1998.72,1147.53,851.19
+2025-08-11,Electrónica,Centro,Tienda física,46,14075.39,7853.03,6222.36
+2025-08-11,Alimentos,Centro,Tienda física,14,228.2,148.29,79.91
+2025-08-12,Electrónica,Oeste,Distribuidor,15,4136.73,2789.48,1347.25
+2025-08-13,Electrónica,Norte,E-commerce,17,6154.99,4026.06,2128.93
+2025-08-13,Deportes,Norte,E-commerce,56,4476.57,2714.96,1761.61
+2025-08-14,Electrónica,Este,Marketplace,50,15348.97,9078.54,6270.43
+2025-08-15,Moda,Este,E-commerce,14,766.11,514.23,251.88
+2025-08-16,Electrónica,Norte,Distribuidor,21,7441.1,4909.94,2531.16
+2025-08-16,Electrónica,Norte,Distribuidor,39,12469.94,8635.41,3834.53
+2025-08-16,Electrónica,Norte,Distribuidor,11,3728.19,2317.1,1411.09
+2025-08-17,Hogar,Oeste,Tienda física,55,5497.65,3918.62,1579.03
+2025-08-17,Hogar,Centro,E-commerce,53,4440.73,2922.33,1518.4
+2025-08-18,Electrónica,Centro,Marketplace,51,114720.72,9160.49,105560.23
+2025-08-18,Electrónica,Sur,Distribuidor,13,3859.73,2815.61,1044.12
+2025-08-19,Juguetes,Oeste,Distribuidor,24,787.76,510.81,276.95
+2025-08-19,Moda,Este,Marketplace,55,3647.17,2269.17,1378
+2025-08-19,Moda,Centro,E-commerce,15,847.18,496.32,350.86
+2025-08-20,Electrónica,Centro,Distribuidor,39,12572.28,9346.07,3226.21
+2025-08-20,Juguetes,Este,Tienda física,50,2004.2,1153.98,850.22
+2025-08-20,Electrónica,Oeste,E-commerce,30,8382.25,6221,2161.25
+2025-08-20,Electrónica,Este,E-commerce,59,17778.04,10300.27,7477.77
+2025-08-20,Moda,Norte,Distribuidor,51,2639.58,1526.72,1112.86
+2025-08-20,Electrónica,Oeste,Marketplace,7,1930.83,1280.35,650.48
+2025-08-23,Juguetes,Oeste,Distribuidor,20,717.14,515.83,201.31
+2025-08-24,Juguetes,Este,Tienda física,47,1533.03,991.3,541.73
+2025-08-24,Electrónica,Norte,Marketplace,7,2115.42,1345.41,770.01
+2025-08-25,Electrónica,Sur,Marketplace,51,16086.83,11259.5,4827.33
+2025-08-25,Deportes,Centro,Distribuidor,48,3699.82,2330.85,1368.97
+2025-08-25,Moda,Sur,E-commerce,20,1030.29,605.34,424.95
+2025-08-26,Electrónica,Sur,Marketplace,51,14392.68,8951.08,5441.6
+2025-08-26,Hogar,Sur,E-commerce,62,6239.91,3788.99,2450.92
+2025-08-27,Moda,Este,Distribuidor,8,420.36,296.64,123.72
+2025-08-27,Electrónica,Sur,Tienda física,62,21773.23,15033.44,6739.79
+2025-08-27,Juguetes,Norte,Distribuidor,45,1799.64,1232.17,567.47
+2025-08-27,Electrónica,Oeste,Distribuidor,25,8410.43,5141.66,3268.77
+2025-08-28,Electrónica,Oeste,E-commerce,53,14881.09,9407.1,5473.99
+2025-08-28,Alimentos,Centro,Marketplace,27,420.46,231.75,188.71
+2025-08-28,Juguetes,Oeste,E-commerce,35,1130.35,669.04,461.31
+2025-08-28,Electrónica,Este,E-commerce,58,16735.94,11630.72,5105.22
+2025-08-28,Hogar,Norte,Marketplace,37,3445.22,2189.95,1255.27
+2025-08-29,Electrónica,Centro,Distribuidor,21,7277.98,5447.9,1830.08
+2025-08-29,Electrónica,Norte,Tienda física,45,15495.96,9544.67,5951.29
+2025-08-30,Electrónica,Norte,Tienda física,30,8594.44,5166.44,3428
+2025-08-30,Electrónica,Sur,E-commerce,11,3253.27,2062.17,1191.1
+2025-08-30,Electrónica,Sur,Distribuidor,40,11228.25,7775.57,3452.68
+2025-08-30,Hogar,Sur,Tienda física,47,4536.74,3340.34,1196.4
