@@ -23,7 +23,7 @@ function recomputeActiveRows(files: StoredFile[]): Row[] {
   return files.flatMap((f) => f.rows);
 }
 
-export const useDataStore = create<DataStoreState>((set, get) => ({
+export const useDataStore = create<DataStoreState>((set) => ({
   files: [],
   activeRows: [],
   isParsing: false,

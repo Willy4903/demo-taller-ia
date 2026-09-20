@@ -10,7 +10,7 @@ export function parseXlsxBuffer(buffer: ArrayBuffer): RawParseResult {
     const sheetName = workbook.SheetNames[0];
     if (!sheetName) return { rows: [], errors: ['El archivo no contiene hojas.'] };
     const sheet = workbook.Sheets[sheetName];
-    const rows = XLSX.utils.sheet_to_json<Row>(sheet, { defval: null, raw: true });
+    const rows = XLSX.utils.sheet_to_json<Record<string, unknown>>(sheet, { defval: null, raw: true });
     const normalized = rows.map((row) => {
       const out: Row = {};
       for (const [k, v] of Object.entries(row)) {

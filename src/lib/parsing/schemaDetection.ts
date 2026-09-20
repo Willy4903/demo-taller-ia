@@ -61,12 +61,12 @@ export function detectSchema(rows: Row[]): DatasetSchema {
 
     let type: ColumnType = 'string';
     let best = -1;
-    (Object.keys(typeCounts) as ColumnType[]).forEach((t) => {
+    for (const t of Object.keys(typeCounts) as ColumnType[]) {
       if (typeCounts[t] > best) {
         best = typeCounts[t];
         type = t;
       }
-    });
+    }
     if (best <= 0) type = 'string';
 
     return {
