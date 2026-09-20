@@ -5,8 +5,13 @@ interface MultiSelectFilterProps {
   options: string[];
 }
 
+// Stable reference so the Zustand selector below never returns a fresh array
+// identity on renders where the field has no selection (avoids "getSnapshot
+// should be cached" infinite-loop warnings).
+const EMPTY_SELECTION: string[] = [];
+
 export function MultiSelectFilter({ field, options }: MultiSelectFilterProps) {
-  const selected = useFilterStore((s) => s.filters.multiSelect[field] ?? []);
+  const selected = useFilterStore((s) => s.filters.multiSelect[field] ?? EMPTY_SELECTION);
   const setMultiSelect = useFilterStore((s) => s.setMultiSelect);
 
   const toggle = (value: string) => {

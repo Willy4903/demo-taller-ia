@@ -56,10 +56,16 @@ describe('groupAndAggregate2D', () => {
 });
 
 describe('timeSeries', () => {
-  it('buckets by month and sums', () => {
+  it('buckets by month and sums, skipping months where the metric is entirely null', () => {
     const series = timeSeries(rows, 'fecha', 'ingresos', 'sum', 'month');
     expect(series.find((s) => s.key === '2024-01')?.value).toBe(300);
     expect(series.find((s) => s.key === '2024-02')?.value).toBe(200);
-    expect(series.map((s) => s.key)).toEqual(['2024-01', '2024-02', '2024-03']);
+    // 2024-03 only has a null 'ingresos' value, so it is excluded from a sum aggregation.
+    expect(series.map((s) => s.key)).toEqual(['2024-01', '2024-02']);
+  });
+
+  it('still counts rows in months where the metric is null when using count', () => {
+    const series = timeSeries(rows, 'fecha', 'ingresos', 'count', 'month');
+    expect(series.find((s) => s.key === '2024-03')?.value).toBe(1);
   });
 });
