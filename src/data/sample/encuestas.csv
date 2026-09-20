@@ -1,0 +1,1801 @@
+respuesta_id,fecha,canal,region,segmento_cliente,nps_score,satisfaccion,tiempo_resolucion_dias,comentario
+1,2024-01-04,Call Center,Centro,VIP,4,3,4.9,El proceso fue confuso y lento.
+2,2024-01-03,Sucursal,Sur,VIP,9,5,4.6,"Muy buena atención, resolvieron rápido."
+3,2024-01-02,Call Center,Norte,Recurrente,3,2,5.2,"Mala comunicación, muy frustrante."
+4,2024-01-03,App,Oeste,Nuevo,8,4,1.7,"El servicio estuvo bien, sin más."
+5,2023-12-31,Call Center,Sur,Nuevo,5,3,5.1,No resolvieron mi problema.
+6,2024-01-03,Web,Norte,Recurrente,7,4,2.5,"El servicio estuvo bien, sin más."
+7,2024-01-05,Sucursal,Sur,Recurrente,7,4,3.3,Podría mejorar los tiempos de espera.
+8,2024-01-02,Sucursal,Sur,Recurrente,7,3,21,Cumplió lo básico.
+9,2024-01-01,App,Centro,Nuevo,6,3,3,Tuve que esperar demasiado tiempo.
+10,2023-12-30,App,Oeste,Nuevo,6,3,2.9,"Pésima atención, no lo recomiendo."
+11,2023-12-31,Web,Sur,Recurrente,7,3,1.6,Podría mejorar los tiempos de espera.
+12,2024-01-03,Sucursal,Centro,VIP,8,4,4.3,Cumplió lo básico.
+13,2024-01-04,Call Center,Este,VIP,3,3,5.4,No resolvieron mi problema.
+14,2024-01-05,Sucursal,Oeste,Recurrente,7,4,1.4,Ni bueno ni malo.
+15,2024-01-01,Sucursal,Oeste,Nuevo,6,3,1.8,"Pésima atención, no lo recomiendo."
+16,2024-01-01,App,Oeste,VIP,8,4,2.2,Ni bueno ni malo.
+17,2024-01-05,App,Centro,Nuevo,7,4,3.5,Cumplió lo básico.
+18,2024-01-02,App,Este,Nuevo,7,4,2.6,Podría mejorar los tiempos de espera.
+19,2024-01-07,Call Center,Centro,Nuevo,4,2,6.2,"Mala comunicación, muy frustrante."
+20,2024-01-02,Web,Norte,Recurrente,6,3,2.8,"Pésima atención, no lo recomiendo."
+21,2024-01-03,App,Oeste,Nuevo,7,4,1.7,Podría mejorar los tiempos de espera.
+22,2024-01-03,Sucursal,Oeste,VIP,6,4,2.5,El proceso fue confuso y lento.
+23,2024-01-04,Sucursal,Este,Nuevo,7,4,2.3,Podría mejorar los tiempos de espera.
+24,2024-01-02,App,Sur,VIP,8,4,2,Ni bueno ni malo.
+25,2024-01-05,Call Center,Sur,Nuevo,4,3,4.1,Tuve que esperar demasiado tiempo.
+26,2024-01-09,Call Center,Centro,VIP,4,3,2.6,No resolvieron mi problema.
+27,2024-01-06,Web,Norte,VIP,7,3,2.5,Podría mejorar los tiempos de espera.
+28,2024-01-07,Web,Norte,VIP,8,4,3.9,"El servicio estuvo bien, sin más."
+29,2024-01-06,Web,Este,Recurrente,8,4,2.1,Podría mejorar los tiempos de espera.
+30,2024-01-04,Sucursal,Este,VIP,6,3,2.3,El proceso fue confuso y lento.
+31,2024-01-05,App,Norte,Nuevo,7,4,1.4,Ni bueno ni malo.
+32,2024-01-09,Call Center,Oeste,Recurrente,3,2,5.9,Tuve que esperar demasiado tiempo.
+33,2024-01-04,Web,Este,Recurrente,5,3,4.4,"Mala comunicación, muy frustrante."
+34,2024-01-05,Call Center,Centro,Nuevo,4,3,3.7,El proceso fue confuso y lento.
+35,2024-01-09,Web,Centro,VIP,7,4,3,"El servicio estuvo bien, sin más."
+36,2024-01-09,Web,Centro,VIP,8,4,3.7,Podría mejorar los tiempos de espera.
+37,2024-01-07,Call Center,Norte,Nuevo,5,3,2.8,El proceso fue confuso y lento.
+38,2024-01-11,Call Center,Centro,Recurrente,5,3,6.3,No resolvieron mi problema.
+39,2024-01-10,Sucursal,Sur,Recurrente,6,4,3.2,Tuve que esperar demasiado tiempo.
+40,2024-01-06,Call Center,Oeste,VIP,6,3,3,"Mala comunicación, muy frustrante."
+41,2024-01-07,Web,Sur,VIP,7,4,4.8,Cumplió lo básico.
+42,2024-01-08,Sucursal,Este,Nuevo,7,4,2,Ni bueno ni malo.
+43,2024-01-10,Sucursal,Sur,VIP,7,4,2.1,Podría mejorar los tiempos de espera.
+44,2024-01-08,App,Sur,Recurrente,7,4,2.1,Ni bueno ni malo.
+45,2024-01-12,Web,Sur,VIP,7,4,20,Cumplió lo básico.
+46,2024-01-08,Call Center,Oeste,Recurrente,5,3,2.6,Tuve que esperar demasiado tiempo.
+47,2024-01-11,Web,Oeste,Recurrente,6,4,1,No resolvieron mi problema.
+48,2024-01-12,App,Centro,VIP,7,3,1.9,"El servicio estuvo bien, sin más."
+49,2024-01-13,Call Center,Este,Nuevo,3,2,6.3,Tuve que esperar demasiado tiempo.
+50,2024-01-08,Call Center,Centro,Recurrente,4,3,4,Tuve que esperar demasiado tiempo.
+51,2024-01-08,Sucursal,Sur,Nuevo,6,4,4.1,El proceso fue confuso y lento.
+52,2024-01-12,Web,Centro,Nuevo,8,4,2.7,"El servicio estuvo bien, sin más."
+53,2024-01-09,Web,Centro,VIP,7,4,3.2,Cumplió lo básico.
+54,2024-01-14,Sucursal,Oeste,Recurrente,6,3,2.6,"Pésima atención, no lo recomiendo."
+55,2024-01-09,Sucursal,Este,Recurrente,6,3,1.9,"Pésima atención, no lo recomiendo."
+56,2024-01-10,Call Center,Este,VIP,4,3,3.6,El proceso fue confuso y lento.
+57,2024-01-10,Web,Norte,VIP,6,3,4.2,"Mala comunicación, muy frustrante."
+58,2024-01-11,Call Center,Sur,VIP,4,2,2.8,"Mala comunicación, muy frustrante."
+59,2024-01-09,App,Este,Nuevo,8,5,2.3,Podría mejorar los tiempos de espera.
+60,2024-01-12,Call Center,Centro,Nuevo,3,2,5.7,Tuve que esperar demasiado tiempo.
+61,2024-01-15,Sucursal,Centro,VIP,8,4,4,"El servicio estuvo bien, sin más."
+62,2024-01-13,Call Center,Este,Nuevo,2,2,4.2,"Mala comunicación, muy frustrante."
+63,2024-01-13,Call Center,Norte,VIP,3,3,2.9,No resolvieron mi problema.
+64,2024-01-12,Call Center,Centro,Nuevo,5,4,6.4,"Pésima atención, no lo recomiendo."
+65,2024-01-11,Call Center,Sur,Nuevo,4,2,3.9,"Mala comunicación, muy frustrante."
+66,2024-01-12,Sucursal,Sur,Nuevo,7,3,2.8,Cumplió lo básico.
+67,2024-01-15,Call Center,Sur,Nuevo,2,2,4.6,"Mala comunicación, muy frustrante."
+68,2024-01-17,App,Este,VIP,7,3,4.3,Ni bueno ni malo.
+69,2024-01-12,Call Center,Sur,Nuevo,3,3,5,"Mala comunicación, muy frustrante."
+70,2024-01-15,Call Center,Oeste,Recurrente,4,2,3,El proceso fue confuso y lento.
+71,2024-01-15,Sucursal,Sur,Nuevo,7,3,3.5,Cumplió lo básico.
+72,2024-01-13,App,Centro,Nuevo,6,4,2.4,"Pésima atención, no lo recomiendo."
+73,2024-01-17,App,Norte,Nuevo,7,3,3.2,"El servicio estuvo bien, sin más."
+74,2024-01-16,Call Center,Centro,VIP,5,3,4.5,"Pésima atención, no lo recomiendo."
+75,2024-01-13,Web,Centro,VIP,8,4,2.6,Podría mejorar los tiempos de espera.
+76,2024-01-13,App,Centro,Nuevo,8,4,3.2,Podría mejorar los tiempos de espera.
+77,2024-01-13,Sucursal,Este,Recurrente,8,5,1.6,Ni bueno ni malo.
+78,2024-01-15,Sucursal,Centro,VIP,6,3,3,El proceso fue confuso y lento.
+79,2024-01-14,Web,Norte,Nuevo,7,4,4.3,"El servicio estuvo bien, sin más."
+80,2024-01-18,Call Center,Este,Nuevo,3,2,4.1,No resolvieron mi problema.
+81,2024-01-14,Sucursal,Este,VIP,8,4,2.7,Ni bueno ni malo.
+82,2024-01-19,Call Center,Sur,Nuevo,3,3,3.3,Tuve que esperar demasiado tiempo.
+83,2024-01-20,Call Center,Norte,Nuevo,3,2,6.3,Tuve que esperar demasiado tiempo.
+84,2024-01-20,Call Center,Centro,Recurrente,3,2,6.1,El proceso fue confuso y lento.
+85,2024-01-20,Web,Sur,Recurrente,8,4,2.5,Cumplió lo básico.
+86,2024-01-21,Call Center,Este,Recurrente,2,2,4.7,Tuve que esperar demasiado tiempo.
+87,2024-01-18,App,Este,VIP,8,4,3.8,Ni bueno ni malo.
+88,2024-01-20,Call Center,Centro,Recurrente,5,3,2.9,El proceso fue confuso y lento.
+89,2024-01-15,App,Oeste,VIP,6,4,4.9,El proceso fue confuso y lento.
+90,2024-01-20,Sucursal,Sur,Recurrente,7,4,3.3,Podría mejorar los tiempos de espera.
+91,2024-01-20,Sucursal,Centro,Nuevo,6,4,1.6,El proceso fue confuso y lento.
+92,2024-01-18,App,Este,Nuevo,5,4,26,Tuve que esperar demasiado tiempo.
+93,2024-01-18,Call Center,Norte,VIP,3,2,4.5,Tuve que esperar demasiado tiempo.
+94,2024-01-22,Call Center,Centro,Recurrente,5,3,6.3,"Mala comunicación, muy frustrante."
+95,2024-01-18,Call Center,Norte,Nuevo,3,2,5,El proceso fue confuso y lento.
+96,2024-01-20,Call Center,Este,Nuevo,4,3,5.7,El proceso fue confuso y lento.
+97,2024-01-17,Sucursal,Centro,Nuevo,6,3,3.8,Tuve que esperar demasiado tiempo.
+98,2024-01-23,Call Center,Norte,Recurrente,4,3,4.8,"Pésima atención, no lo recomiendo."
+99,2024-01-21,App,Oeste,Nuevo,6,3,3.7,"Mala comunicación, muy frustrante."
+100,2024-01-20,Call Center,Oeste,VIP,4,3,3.5,Tuve que esperar demasiado tiempo.
+101,2024-01-19,Web,Sur,Nuevo,6,4,3.3,"Pésima atención, no lo recomiendo."
+102,2024-01-22,Call Center,Norte,VIP,5,3,5.9,Tuve que esperar demasiado tiempo.
+103,2024-01-23,Sucursal,Centro,Nuevo,5,3,2.5,Tuve que esperar demasiado tiempo.
+104,2024-01-24,Sucursal,Sur,Nuevo,6,3,2.5,Tuve que esperar demasiado tiempo.
+105,2024-01-20,Web,Este,VIP,9,4,1.4,"Excelente servicio, volvería a comprar."
+106,2024-01-19,App,Este,Nuevo,8,4,4.3,Podría mejorar los tiempos de espera.
+107,2024-01-22,Sucursal,Centro,VIP,7,4,4,Cumplió lo básico.
+108,2024-01-19,Call Center,Oeste,Nuevo,3,2,3.2,El proceso fue confuso y lento.
+109,2024-01-24,Call Center,Sur,Recurrente,2,2,3.7,No resolvieron mi problema.
+110,2024-01-20,App,Oeste,VIP,7,4,2.7,Cumplió lo básico.
+111,2024-01-26,Web,Este,VIP,8,4,4.1,Cumplió lo básico.
+112,2024-01-26,Call Center,Oeste,VIP,5,3,5,Tuve que esperar demasiado tiempo.
+113,2024-01-20,App,Oeste,Recurrente,8,4,1.7,"El servicio estuvo bien, sin más."
+114,2024-01-24,App,Oeste,Recurrente,7,4,3.9,Ni bueno ni malo.
+115,2024-01-21,App,Centro,VIP,7,4,3,Podría mejorar los tiempos de espera.
+116,2024-01-23,Sucursal,Este,Nuevo,8,4,4,"El servicio estuvo bien, sin más."
+117,2024-01-27,App,Centro,Nuevo,7,4,3.9,Ni bueno ni malo.
+118,2024-01-21,Call Center,Sur,Recurrente,4,2,5.2,"Mala comunicación, muy frustrante."
+119,2024-01-26,App,Oeste,Recurrente,7,4,4.5,"El servicio estuvo bien, sin más."
+120,2024-01-26,Call Center,Centro,Nuevo,4,3,4.6,El proceso fue confuso y lento.
+121,2024-01-26,Web,Oeste,Recurrente,7,4,4.7,Ni bueno ni malo.
+122,2024-01-22,Call Center,Este,Recurrente,3,2,3.7,"Pésima atención, no lo recomiendo."
+123,2024-01-23,Call Center,Este,Recurrente,4,3,6.1,"Pésima atención, no lo recomiendo."
+124,2024-01-25,Call Center,Centro,Recurrente,2,2,6.4,Tuve que esperar demasiado tiempo.
+125,2024-01-28,Sucursal,Norte,Recurrente,7,4,4.2,Cumplió lo básico.
+126,2024-01-28,Call Center,Sur,VIP,5,3,4.8,Tuve que esperar demasiado tiempo.
+127,2024-01-25,Web,Oeste,Recurrente,7,3,3.4,Ni bueno ni malo.
+128,2024-01-29,Sucursal,Oeste,VIP,7,4,1.4,"El servicio estuvo bien, sin más."
+129,2024-01-28,Sucursal,Sur,Recurrente,6,4,2.3,El proceso fue confuso y lento.
+130,2024-01-24,App,Centro,Nuevo,7,4,3.2,Podría mejorar los tiempos de espera.
+131,2024-01-24,Web,Oeste,Nuevo,8,4,4.9,Podría mejorar los tiempos de espera.
+132,2024-01-24,Call Center,Centro,VIP,3,2,37,No resolvieron mi problema.
+133,2024-01-26,Web,Oeste,Recurrente,7,4,3.7,"El servicio estuvo bien, sin más."
+134,2024-01-27,Web,Centro,Nuevo,8,4,3.1,Ni bueno ni malo.
+135,2024-01-29,App,Sur,VIP,9,4,4.5,Gran experiencia de principio a fin.
+136,2024-01-31,Web,Oeste,Recurrente,6,3,36,El proceso fue confuso y lento.
+137,2024-01-28,Call Center,Sur,Nuevo,3,2,4.7,No resolvieron mi problema.
+138,2024-01-31,App,Oeste,VIP,7,4,3.2,Podría mejorar los tiempos de espera.
+139,2024-01-29,Web,Oeste,Recurrente,7,3,2.2,Ni bueno ni malo.
+140,2024-01-31,Call Center,Oeste,Nuevo,4,3,2.5,"Pésima atención, no lo recomiendo."
+141,2024-01-30,Sucursal,Centro,Recurrente,8,4,4.8,Podría mejorar los tiempos de espera.
+142,2024-01-29,App,Este,Recurrente,6,4,2.5,El proceso fue confuso y lento.
+143,2024-01-29,Call Center,Norte,Recurrente,2,2,4.6,"Pésima atención, no lo recomiendo."
+144,2024-01-27,Call Center,Este,VIP,4,3,5.2,El proceso fue confuso y lento.
+145,2024-01-29,Call Center,Norte,Recurrente,3,2,2.6,"Pésima atención, no lo recomiendo."
+146,2024-01-31,App,Sur,VIP,6,4,4.5,No resolvieron mi problema.
+147,2024-01-28,Web,Norte,Nuevo,6,3,2.8,"Pésima atención, no lo recomiendo."
+148,2024-01-28,Sucursal,Centro,VIP,8,5,5,"El servicio estuvo bien, sin más."
+149,2024-02-03,Web,Centro,Nuevo,5,3,4.1,"Pésima atención, no lo recomiendo."
+150,2024-02-01,Sucursal,Este,VIP,7,4,1.1,Ni bueno ni malo.
+151,2024-01-31,Call Center,Centro,VIP,5,3,35,"Pésima atención, no lo recomiendo."
+152,2024-02-03,Web,Oeste,VIP,7,4,2.3,"El servicio estuvo bien, sin más."
+153,2024-02-02,Sucursal,Sur,Recurrente,6,3,1.5,Tuve que esperar demasiado tiempo.
+154,2024-02-04,Sucursal,Este,Nuevo,5,3,3.7,"Mala comunicación, muy frustrante."
+155,2024-02-01,Web,Oeste,Nuevo,7,4,1.7,Cumplió lo básico.
+156,2024-02-03,Call Center,Sur,Recurrente,4,3,6.2,"Pésima atención, no lo recomiendo."
+157,2024-01-30,Call Center,Sur,VIP,5,3,3.1,No resolvieron mi problema.
+158,2024-02-02,Web,Centro,VIP,7,4,1.4,"El servicio estuvo bien, sin más."
+159,2024-02-04,Web,Este,Nuevo,5,3,1.1,No resolvieron mi problema.
+160,2024-02-02,App,Este,Nuevo,7,4,1.7,Cumplió lo básico.
+161,2024-01-31,Sucursal,Centro,Recurrente,6,4,4.3,No resolvieron mi problema.
+162,2024-01-31,App,Centro,Nuevo,8,4,1.8,Cumplió lo básico.
+163,2024-02-03,Call Center,Centro,VIP,4,3,4.6,Tuve que esperar demasiado tiempo.
+164,2024-02-05,App,Sur,Nuevo,6,4,1.4,"Mala comunicación, muy frustrante."
+165,2024-02-06,Web,Norte,Nuevo,6,3,1.7,El proceso fue confuso y lento.
+166,2024-02-02,App,Oeste,Nuevo,6,3,4.8,No resolvieron mi problema.
+167,2024-02-01,App,Norte,Nuevo,6,4,3.8,"Mala comunicación, muy frustrante."
+168,2024-02-05,App,Centro,VIP,8,4,3.8,"El servicio estuvo bien, sin más."
+169,2024-02-03,App,Norte,Recurrente,8,4,1.7,Podría mejorar los tiempos de espera.
+170,2024-02-02,Web,Centro,VIP,8,5,2.5,Podría mejorar los tiempos de espera.
+171,2024-02-04,App,Centro,Recurrente,7,4,3.2,Cumplió lo básico.
+172,2024-02-04,Call Center,Norte,Recurrente,4,3,6.4,El proceso fue confuso y lento.
+173,2024-02-04,App,Oeste,Nuevo,6,3,4.4,"Pésima atención, no lo recomiendo."
+174,2024-02-06,App,Centro,Nuevo,6,4,2.9,No resolvieron mi problema.
+175,2024-02-04,Web,Sur,Nuevo,8,4,1.3,"El servicio estuvo bien, sin más."
+176,2024-02-07,Call Center,Centro,Recurrente,2,2,6.1,"Pésima atención, no lo recomiendo."
+177,2024-02-03,Call Center,Centro,VIP,4,3,3.3,"Mala comunicación, muy frustrante."
+178,2024-02-07,App,Oeste,VIP,8,5,1.9,"El servicio estuvo bien, sin más."
+179,2024-02-09,Sucursal,Este,Recurrente,7,4,2,Ni bueno ni malo.
+180,2024-02-08,Sucursal,Sur,Recurrente,6,4,2.9,El proceso fue confuso y lento.
+181,2024-02-06,Web,Centro,VIP,6,4,1.8,El proceso fue confuso y lento.
+182,2024-02-07,Call Center,Norte,Recurrente,5,3,5.1,"Pésima atención, no lo recomiendo."
+183,2024-02-03,Sucursal,Norte,Recurrente,6,4,1.3,El proceso fue confuso y lento.
+184,2024-02-06,Web,Este,VIP,7,4,4,"El servicio estuvo bien, sin más."
+185,2024-02-08,Call Center,Este,VIP,4,3,6,"Mala comunicación, muy frustrante."
+186,2024-02-04,App,Norte,VIP,8,4,4,"El servicio estuvo bien, sin más."
+187,2024-02-04,App,Oeste,Nuevo,7,3,3.4,Cumplió lo básico.
+188,2024-02-08,App,Este,VIP,9,5,3.7,"Muy buena atención, resolvieron rápido."
+189,2024-02-07,Sucursal,Oeste,Recurrente,6,4,1.9,Tuve que esperar demasiado tiempo.
+190,2024-02-06,App,Oeste,VIP,6,3,3,Tuve que esperar demasiado tiempo.
+191,2024-02-09,Sucursal,Oeste,Recurrente,6,3,4.1,El proceso fue confuso y lento.
+192,2024-02-09,Web,Centro,VIP,7,4,2.1,Podría mejorar los tiempos de espera.
+193,2024-02-10,Call Center,Oeste,Recurrente,3,3,3.4,No resolvieron mi problema.
+194,2024-02-06,Call Center,Norte,Recurrente,3,3,6.3,El proceso fue confuso y lento.
+195,2024-02-11,Call Center,Este,Recurrente,5,3,5,El proceso fue confuso y lento.
+196,2024-02-08,Sucursal,Norte,Nuevo,6,4,3.1,"Mala comunicación, muy frustrante."
+197,2024-02-11,Sucursal,Sur,Recurrente,7,4,4.7,"El servicio estuvo bien, sin más."
+198,2024-02-09,Web,Norte,VIP,9,5,1.1,"Muy buena atención, resolvieron rápido."
+199,2024-02-12,App,Centro,Nuevo,5,4,1.5,"Mala comunicación, muy frustrante."
+200,2024-02-11,Sucursal,Centro,Nuevo,8,5,2.8,Ni bueno ni malo.
+201,2024-02-10,Web,Este,Nuevo,7,3,2,Ni bueno ni malo.
+202,2024-02-11,Web,Oeste,VIP,7,4,4.2,"El servicio estuvo bien, sin más."
+203,2024-02-09,Call Center,Norte,Recurrente,5,3,3.7,"Pésima atención, no lo recomiendo."
+204,2024-02-12,Sucursal,Este,Nuevo,5,3,1.2,No resolvieron mi problema.
+205,2024-02-14,App,Este,Nuevo,6,3,2.1,"Pésima atención, no lo recomiendo."
+206,2024-02-11,Call Center,Norte,Recurrente,4,2,3.4,El proceso fue confuso y lento.
+207,2024-02-11,Call Center,Oeste,VIP,4,2,3.1,"Pésima atención, no lo recomiendo."
+208,2024-02-10,Web,Oeste,Recurrente,8,5,2.2,Podría mejorar los tiempos de espera.
+209,2024-02-09,App,Norte,Nuevo,7,4,4.8,Podría mejorar los tiempos de espera.
+210,2024-02-15,Web,Norte,Recurrente,6,3,2.3,"Pésima atención, no lo recomiendo."
+211,2024-02-12,Sucursal,Sur,Recurrente,7,4,3.6,Ni bueno ni malo.
+212,2024-02-13,Web,Este,Recurrente,7,4,1.9,Podría mejorar los tiempos de espera.
+213,2024-02-15,Call Center,Sur,Recurrente,4,2,3.7,No resolvieron mi problema.
+214,2024-02-10,Web,Centro,Recurrente,8,4,1.3,Podría mejorar los tiempos de espera.
+215,2024-02-16,Web,Sur,VIP,7,4,4.3,Podría mejorar los tiempos de espera.
+216,2024-02-14,Call Center,Norte,Recurrente,5,3,5.8,El proceso fue confuso y lento.
+217,2024-02-11,Web,Sur,VIP,7,4,34,Podría mejorar los tiempos de espera.
+218,2024-02-16,Web,Sur,VIP,8,4,4.5,"El servicio estuvo bien, sin más."
+219,2024-02-11,Web,Centro,VIP,8,4,4.9,"El servicio estuvo bien, sin más."
+220,2024-02-14,Web,Centro,VIP,9,4,3.2,"Excelente servicio, volvería a comprar."
+221,2024-02-11,Call Center,Oeste,Recurrente,3,3,5.9,"Mala comunicación, muy frustrante."
+222,2024-02-11,Web,Este,VIP,9,5,1.5,"Muy buena atención, resolvieron rápido."
+223,2024-02-17,Sucursal,Este,Nuevo,6,3,3.5,"Mala comunicación, muy frustrante."
+224,2024-02-16,Web,Norte,Recurrente,8,4,3.5,Podría mejorar los tiempos de espera.
+225,2024-02-15,Web,Sur,Recurrente,7,4,2.4,Ni bueno ni malo.
+226,2024-02-12,Call Center,Este,Nuevo,4,2,2.7,El proceso fue confuso y lento.
+227,2024-02-13,Sucursal,Centro,Nuevo,7,4,4.9,Ni bueno ni malo.
+228,2024-02-15,Sucursal,Centro,VIP,8,4,2.5,Cumplió lo básico.
+229,2024-02-18,Web,Este,Recurrente,7,4,3,Cumplió lo básico.
+230,2024-02-17,App,Norte,Nuevo,6,4,3.5,"Pésima atención, no lo recomiendo."
+231,2024-02-14,App,Centro,Recurrente,7,3,4.9,"El servicio estuvo bien, sin más."
+232,2024-02-18,Call Center,Sur,Recurrente,5,3,5.7,"Mala comunicación, muy frustrante."
+233,2024-02-18,Sucursal,Sur,VIP,7,3,2.4,Podría mejorar los tiempos de espera.
+234,2024-02-20,App,Sur,Nuevo,6,4,4.5,"Pésima atención, no lo recomiendo."
+235,2024-02-20,Call Center,Oeste,VIP,3,2,5,"Mala comunicación, muy frustrante."
+236,2024-02-20,Sucursal,Sur,Nuevo,8,5,4.5,"El servicio estuvo bien, sin más."
+237,2024-02-15,Call Center,Centro,VIP,5,3,5.9,Tuve que esperar demasiado tiempo.
+238,2024-02-21,Call Center,Sur,Recurrente,3,2,5.7,No resolvieron mi problema.
+239,2024-02-17,Call Center,Norte,Recurrente,3,3,6.4,"Mala comunicación, muy frustrante."
+240,2024-02-20,Web,Norte,Recurrente,7,4,3.5,Ni bueno ni malo.
+241,2024-02-18,Call Center,Norte,Recurrente,5,3,2.5,"Pésima atención, no lo recomiendo."
+242,2024-02-19,App,Centro,Recurrente,7,3,2.5,Ni bueno ni malo.
+243,2024-02-19,Sucursal,Norte,Nuevo,6,4,4.9,Tuve que esperar demasiado tiempo.
+244,2024-02-17,App,Oeste,Recurrente,8,4,1.2,Ni bueno ni malo.
+245,2024-02-18,App,Centro,VIP,8,4,4.4,Cumplió lo básico.
+246,2024-02-22,App,Sur,Recurrente,8,4,3.5,Ni bueno ni malo.
+247,2024-02-17,Web,Oeste,Recurrente,8,4,3.6,Cumplió lo básico.
+248,2024-02-19,Web,Oeste,Nuevo,8,4,1.5,Cumplió lo básico.
+249,2024-02-23,Call Center,Este,VIP,6,3,3.9,"Mala comunicación, muy frustrante."
+250,2024-02-23,Web,Norte,VIP,8,5,3.2,"El servicio estuvo bien, sin más."
+251,2024-02-20,App,Norte,Nuevo,5,3,4.9,"Mala comunicación, muy frustrante."
+252,2024-02-18,Sucursal,Este,Recurrente,7,3,4.5,Ni bueno ni malo.
+253,2024-02-18,Sucursal,Oeste,Recurrente,5,3,3.1,No resolvieron mi problema.
+254,2024-02-21,App,Centro,VIP,7,4,1.5,Cumplió lo básico.
+255,2024-02-22,Web,Norte,VIP,9,4,4.9,"Muy buena atención, resolvieron rápido."
+256,2024-02-22,Call Center,Centro,Nuevo,5,3,3.7,"Pésima atención, no lo recomiendo."
+257,2024-02-18,App,Este,VIP,9,4,2.4,Todo funcionó como esperaba.
+258,2024-02-24,App,Norte,VIP,7,4,2.5,"El servicio estuvo bien, sin más."
+259,2024-02-21,App,Centro,VIP,8,5,3.6,Cumplió lo básico.
+260,2024-02-24,Call Center,Norte,VIP,5,3,4,"Mala comunicación, muy frustrante."
+261,2024-02-22,Sucursal,Norte,VIP,7,4,4.4,Podría mejorar los tiempos de espera.
+262,2024-02-24,Web,Norte,Nuevo,6,3,2.2,El proceso fue confuso y lento.
+263,2024-02-25,Sucursal,Sur,VIP,8,5,4.9,Cumplió lo básico.
+264,2024-02-24,App,Centro,Nuevo,7,4,1.5,Podría mejorar los tiempos de espera.
+265,2024-02-25,App,Sur,Recurrente,6,3,1.1,El proceso fue confuso y lento.
+266,2024-02-22,App,Oeste,Nuevo,7,4,4.5,"El servicio estuvo bien, sin más."
+267,2024-02-25,App,Sur,Recurrente,7,4,4.9,"El servicio estuvo bien, sin más."
+268,2024-02-21,App,Sur,Nuevo,8,4,3.2,"El servicio estuvo bien, sin más."
+269,2024-02-25,Web,Norte,VIP,6,3,25,El proceso fue confuso y lento.
+270,2024-02-24,Call Center,Norte,VIP,5,3,4.2,"Mala comunicación, muy frustrante."
+271,2024-02-26,Call Center,Este,Nuevo,3,2,3.8,No resolvieron mi problema.
+272,2024-02-23,App,Oeste,VIP,7,4,4.8,"El servicio estuvo bien, sin más."
+273,2024-02-24,Sucursal,Norte,Recurrente,7,4,3.2,Ni bueno ni malo.
+274,2024-02-22,Call Center,Este,Recurrente,4,2,4,"Pésima atención, no lo recomiendo."
+275,2024-02-28,App,Sur,Recurrente,7,4,3.8,"El servicio estuvo bien, sin más."
+276,2024-02-27,App,Norte,Recurrente,8,4,4,Cumplió lo básico.
+277,2024-02-24,Call Center,Oeste,Recurrente,4,3,5.5,No resolvieron mi problema.
+278,2024-02-26,Sucursal,Este,Nuevo,8,4,1.1,Podría mejorar los tiempos de espera.
+279,2024-02-27,App,Centro,Recurrente,6,4,4,"Mala comunicación, muy frustrante."
+280,2024-02-23,Sucursal,Norte,VIP,9,5,1.8,"Excelente servicio, volvería a comprar."
+281,2024-02-29,Call Center,Norte,Nuevo,3,2,5.1,El proceso fue confuso y lento.
+282,2024-02-27,Call Center,Sur,Nuevo,5,3,3.7,El proceso fue confuso y lento.
+283,2024-02-24,Web,Norte,VIP,9,5,2.8,Todo funcionó como esperaba.
+284,2024-03-01,Call Center,Oeste,VIP,6,4,3.8,"Pésima atención, no lo recomiendo."
+285,2024-02-25,App,Norte,Recurrente,7,4,1.8,Ni bueno ni malo.
+286,2024-02-25,Call Center,Oeste,Nuevo,5,3,3.6,Tuve que esperar demasiado tiempo.
+287,2024-02-26,App,Centro,Nuevo,5,4,4.4,"Mala comunicación, muy frustrante."
+288,2024-02-27,Sucursal,Centro,Recurrente,7,4,1.5,"El servicio estuvo bien, sin más."
+289,2024-02-25,Sucursal,Oeste,VIP,8,4,2.6,Cumplió lo básico.
+290,2024-02-28,App,Centro,Recurrente,6,3,4.6,Tuve que esperar demasiado tiempo.
+291,2024-03-02,Sucursal,Este,Nuevo,8,5,4.5,Podría mejorar los tiempos de espera.
+292,2024-03-01,Web,Centro,VIP,8,4,3.4,"El servicio estuvo bien, sin más."
+293,2024-03-02,App,Norte,Recurrente,6,4,2.1,"Mala comunicación, muy frustrante."
+294,2024-02-29,Sucursal,Oeste,VIP,7,4,1.8,Podría mejorar los tiempos de espera.
+295,2024-02-28,Web,Oeste,VIP,7,4,3.4,"El servicio estuvo bien, sin más."
+296,2024-02-29,Web,Este,VIP,8,4,3.9,Ni bueno ni malo.
+297,2024-03-04,Call Center,Norte,VIP,5,3,5.8,"Mala comunicación, muy frustrante."
+298,2024-02-28,Sucursal,Norte,Recurrente,5,3,1.7,No resolvieron mi problema.
+299,2024-03-01,Sucursal,Este,VIP,8,5,4.9,Podría mejorar los tiempos de espera.
+300,2024-03-04,Call Center,Oeste,Recurrente,3,3,4.6,"Pésima atención, no lo recomiendo."
+301,2024-03-04,Web,Centro,VIP,8,4,1.2,"El servicio estuvo bien, sin más."
+302,2024-03-03,App,Sur,Nuevo,7,3,4.2,Cumplió lo básico.
+303,2024-02-29,Sucursal,Norte,VIP,7,4,1.1,Cumplió lo básico.
+304,2024-02-29,App,Oeste,VIP,8,4,5,Ni bueno ni malo.
+305,2024-03-02,Web,Sur,VIP,7,4,4.7,Cumplió lo básico.
+306,2024-03-03,Sucursal,Norte,Nuevo,7,4,20,Ni bueno ni malo.
+307,2024-03-02,App,Este,VIP,8,4,1.7,"El servicio estuvo bien, sin más."
+308,2024-03-03,App,Oeste,Recurrente,7,3,2.3,Podría mejorar los tiempos de espera.
+309,2024-03-03,App,Norte,Recurrente,8,4,3.9,Cumplió lo básico.
+310,2024-03-03,App,Norte,Nuevo,6,3,3.3,"Pésima atención, no lo recomiendo."
+311,2024-03-04,Web,Oeste,Nuevo,8,4,1.7,Ni bueno ni malo.
+312,2024-03-03,Sucursal,Sur,Nuevo,6,4,3.9,El proceso fue confuso y lento.
+313,2024-03-06,Call Center,Norte,Recurrente,2,2,4.6,El proceso fue confuso y lento.
+314,2024-03-01,Sucursal,Este,VIP,9,5,4.2,El equipo fue muy amable y claro.
+315,2024-03-06,Sucursal,Este,VIP,9,4,4.3,Todo funcionó como esperaba.
+316,2024-03-06,Sucursal,Oeste,Recurrente,7,4,4.2,Cumplió lo básico.
+317,2024-03-06,App,Centro,Nuevo,8,4,1.1,Ni bueno ni malo.
+318,2024-03-04,App,Oeste,VIP,7,4,3.8,"El servicio estuvo bien, sin más."
+319,2024-03-05,Call Center,Norte,Recurrente,4,3,3,"Mala comunicación, muy frustrante."
+320,2024-03-08,Web,Oeste,Nuevo,7,4,3.1,Ni bueno ni malo.
+321,2024-03-03,App,Sur,Recurrente,6,3,1.7,No resolvieron mi problema.
+322,2024-03-05,Call Center,Este,Recurrente,3,3,3.6,Tuve que esperar demasiado tiempo.
+323,2024-03-08,Sucursal,Este,Recurrente,8,4,1.5,"El servicio estuvo bien, sin más."
+324,2024-03-08,App,Sur,VIP,7,4,4.7,Ni bueno ni malo.
+325,2024-03-05,Web,Este,Recurrente,7,4,4.9,Ni bueno ni malo.
+326,2024-03-09,Call Center,Norte,Nuevo,4,3,4.5,"Pésima atención, no lo recomiendo."
+327,2024-03-09,App,Sur,Recurrente,8,4,4.1,Cumplió lo básico.
+328,2024-03-05,App,Oeste,Nuevo,8,5,5,"El servicio estuvo bien, sin más."
+329,2024-03-05,App,Norte,Nuevo,7,3,2.9,Ni bueno ni malo.
+330,2024-03-05,Sucursal,Norte,Nuevo,8,5,2.6,Cumplió lo básico.
+331,2024-03-07,App,Centro,VIP,8,4,1.3,"El servicio estuvo bien, sin más."
+332,2024-03-07,Call Center,Oeste,Nuevo,5,3,5.4,"Mala comunicación, muy frustrante."
+333,2024-03-10,App,Este,Recurrente,8,5,3.5,Cumplió lo básico.
+334,2024-03-06,Web,Centro,VIP,9,5,4.9,El equipo fue muy amable y claro.
+335,2024-03-11,App,Norte,Nuevo,8,4,1.3,Ni bueno ni malo.
+336,2024-03-05,Web,Sur,Recurrente,7,4,1.5,Cumplió lo básico.
+337,2024-03-12,Web,Oeste,Recurrente,6,4,2.7,El proceso fue confuso y lento.
+338,2024-03-11,App,Este,Nuevo,7,4,1.8,"El servicio estuvo bien, sin más."
+339,2024-03-12,Call Center,Norte,VIP,6,3,5.3,"Pésima atención, no lo recomiendo."
+340,2024-03-09,Web,Este,VIP,6,3,1.8,"Pésima atención, no lo recomiendo."
+341,2024-03-11,App,Sur,Nuevo,8,5,4.6,Podría mejorar los tiempos de espera.
+342,2024-03-08,Web,Oeste,Recurrente,7,4,1.4,Ni bueno ni malo.
+343,2024-03-11,Web,Oeste,Recurrente,7,3,1.1,Ni bueno ni malo.
+344,2024-03-11,Call Center,Este,VIP,4,2,6.2,No resolvieron mi problema.
+345,2024-03-09,Sucursal,Oeste,Recurrente,7,4,1.2,Cumplió lo básico.
+346,2024-03-07,App,Este,Nuevo,7,4,3.7,Ni bueno ni malo.
+347,2024-03-08,Call Center,Centro,VIP,6,3,2.5,No resolvieron mi problema.
+348,2024-03-11,Web,Sur,Recurrente,8,4,2.3,"El servicio estuvo bien, sin más."
+349,2024-03-12,Web,Centro,Recurrente,7,4,4.5,Podría mejorar los tiempos de espera.
+350,2024-03-13,Sucursal,Centro,Recurrente,6,3,4.6,"Mala comunicación, muy frustrante."
+351,2024-03-09,App,Oeste,Recurrente,5,3,3.6,No resolvieron mi problema.
+352,2024-03-15,Web,Este,VIP,7,4,2.6,Podría mejorar los tiempos de espera.
+353,2024-03-12,Sucursal,Oeste,Nuevo,7,4,2.4,Podría mejorar los tiempos de espera.
+354,2024-03-09,App,Norte,VIP,7,4,4.2,Podría mejorar los tiempos de espera.
+355,2024-03-14,Sucursal,Sur,Nuevo,7,4,4.9,"El servicio estuvo bien, sin más."
+356,2024-03-10,Sucursal,Este,Recurrente,7,4,1.5,"El servicio estuvo bien, sin más."
+357,2024-03-10,Sucursal,Norte,Recurrente,8,4,3,Ni bueno ni malo.
+358,2024-03-16,Call Center,Centro,Recurrente,3,2,4,Tuve que esperar demasiado tiempo.
+359,2024-03-11,Sucursal,Este,Nuevo,5,3,39,"Pésima atención, no lo recomiendo."
+360,2024-03-16,Web,Sur,Nuevo,7,4,1.6,"El servicio estuvo bien, sin más."
+361,2024-03-13,Web,Oeste,Nuevo,6,3,4.1,"Mala comunicación, muy frustrante."
+362,2024-03-17,App,Centro,VIP,7,4,1.6,"El servicio estuvo bien, sin más."
+363,2024-03-11,App,Norte,Nuevo,8,4,2.9,Cumplió lo básico.
+364,2024-03-17,Sucursal,Este,Recurrente,8,4,1.2,"El servicio estuvo bien, sin más."
+365,2024-03-15,Call Center,Sur,VIP,4,3,2.8,"Pésima atención, no lo recomiendo."
+366,2024-03-16,Sucursal,Centro,Nuevo,7,4,4.4,Podría mejorar los tiempos de espera.
+367,2024-03-13,Web,Este,VIP,8,5,3.5,Cumplió lo básico.
+368,2024-03-15,Sucursal,Sur,Recurrente,6,3,3.4,El proceso fue confuso y lento.
+369,2024-03-16,Web,Oeste,Recurrente,8,5,1.2,Podría mejorar los tiempos de espera.
+370,2024-03-13,App,Oeste,Nuevo,7,3,2,Cumplió lo básico.
+371,2024-03-13,App,Oeste,Nuevo,8,5,2.7,"El servicio estuvo bien, sin más."
+372,2024-03-18,Web,Centro,Recurrente,8,4,4.3,Podría mejorar los tiempos de espera.
+373,2024-03-15,App,Oeste,Recurrente,8,5,3.8,Cumplió lo básico.
+374,2024-03-14,Call Center,Norte,Recurrente,3,2,3.7,No resolvieron mi problema.
+375,2024-03-17,Web,Este,Nuevo,8,4,4.6,Ni bueno ni malo.
+376,2024-03-18,Sucursal,Sur,VIP,7,4,3.8,Ni bueno ni malo.
+377,2024-03-19,Web,Sur,Recurrente,8,4,1,Ni bueno ni malo.
+378,2024-03-14,Web,Sur,VIP,8,4,1.1,"El servicio estuvo bien, sin más."
+379,2024-03-19,Call Center,Norte,VIP,5,3,2.6,El proceso fue confuso y lento.
+380,2024-03-16,Sucursal,Norte,VIP,8,4,2.1,"El servicio estuvo bien, sin más."
+381,2024-03-20,App,Oeste,VIP,7,4,4.9,Ni bueno ni malo.
+382,2024-03-18,Call Center,Norte,VIP,5,3,4.2,No resolvieron mi problema.
+383,2024-03-19,Web,Sur,Nuevo,8,5,4.4,Ni bueno ni malo.
+384,2024-03-19,Web,Oeste,Recurrente,6,4,3,"Mala comunicación, muy frustrante."
+385,2024-03-18,Sucursal,Oeste,Nuevo,7,3,28,Ni bueno ni malo.
+386,2024-03-18,App,Este,Nuevo,8,4,2.7,"El servicio estuvo bien, sin más."
+387,2024-03-22,Web,Norte,Nuevo,7,4,1.3,Ni bueno ni malo.
+388,2024-03-19,Web,Norte,VIP,9,4,1.7,Gran experiencia de principio a fin.
+389,2024-03-17,App,Centro,Recurrente,8,5,1.1,Cumplió lo básico.
+390,2024-03-19,Sucursal,Oeste,Recurrente,8,4,4.5,Cumplió lo básico.
+391,2024-03-20,Sucursal,Oeste,VIP,9,5,4.7,"Muy buena atención, resolvieron rápido."
+392,2024-03-20,Call Center,Norte,VIP,5,4,4.3,"Pésima atención, no lo recomiendo."
+393,2024-03-21,Call Center,Sur,VIP,6,4,5.4,"Pésima atención, no lo recomiendo."
+394,2024-03-19,App,Este,Nuevo,7,4,4.9,Cumplió lo básico.
+395,2024-03-22,Call Center,Norte,Nuevo,5,3,4.3,"Mala comunicación, muy frustrante."
+396,2024-03-19,Sucursal,Centro,Recurrente,6,3,2.6,"Mala comunicación, muy frustrante."
+397,2024-03-23,Call Center,Este,Nuevo,4,3,2.8,"Pésima atención, no lo recomiendo."
+398,2024-03-23,Sucursal,Norte,VIP,8,4,3.9,Podría mejorar los tiempos de espera.
+399,2024-03-22,Sucursal,Norte,Nuevo,7,4,3.5,Cumplió lo básico.
+400,2024-03-21,Call Center,Sur,Nuevo,3,2,6.5,"Pésima atención, no lo recomiendo."
+401,2024-03-22,App,Sur,Nuevo,6,4,1.4,El proceso fue confuso y lento.
+402,2024-03-19,Call Center,Este,Nuevo,4,2,3.2,"Pésima atención, no lo recomiendo."
+403,2024-03-20,Web,Oeste,VIP,9,5,2.9,Gran experiencia de principio a fin.
+404,2024-03-22,Sucursal,Este,Nuevo,8,4,2.1,Podría mejorar los tiempos de espera.
+405,2024-03-25,Call Center,Centro,Recurrente,3,3,5.6,Tuve que esperar demasiado tiempo.
+406,2024-03-25,Sucursal,Sur,Nuevo,6,4,2.1,"Pésima atención, no lo recomiendo."
+407,2024-03-23,App,Norte,Nuevo,8,4,5,Cumplió lo básico.
+408,2024-03-20,App,Norte,Nuevo,6,4,1.8,El proceso fue confuso y lento.
+409,2024-03-26,Call Center,Norte,VIP,4,3,3,No resolvieron mi problema.
+410,2024-03-22,Call Center,Centro,VIP,4,3,2.7,No resolvieron mi problema.
+411,2024-03-23,Web,Norte,Nuevo,7,3,1.7,"El servicio estuvo bien, sin más."
+412,2024-03-24,Sucursal,Este,Recurrente,7,4,4.2,"El servicio estuvo bien, sin más."
+413,2024-03-26,App,Centro,VIP,8,5,1.6,"El servicio estuvo bien, sin más."
+414,2024-03-24,Web,Norte,Nuevo,6,3,2.9,"Mala comunicación, muy frustrante."
+415,2024-03-27,Sucursal,Oeste,Nuevo,8,4,1.2,Podría mejorar los tiempos de espera.
+416,2024-03-25,Sucursal,Oeste,Recurrente,6,3,1.3,Tuve que esperar demasiado tiempo.
+417,2024-03-22,Call Center,Sur,Nuevo,5,3,5.9,"Mala comunicación, muy frustrante."
+418,2024-03-24,Call Center,Norte,Nuevo,5,4,4.8,"Mala comunicación, muy frustrante."
+419,2024-03-23,Call Center,Norte,Recurrente,5,3,4.7,Tuve que esperar demasiado tiempo.
+420,2024-03-23,Web,Este,Recurrente,7,4,1,Ni bueno ni malo.
+421,2024-03-24,Call Center,Este,Recurrente,4,2,3.3,El proceso fue confuso y lento.
+422,2024-03-28,App,Oeste,VIP,7,4,2.4,Podría mejorar los tiempos de espera.
+423,2024-03-23,Sucursal,Norte,Recurrente,7,4,4,"El servicio estuvo bien, sin más."
+424,2024-03-25,App,Centro,VIP,8,4,3.5,"El servicio estuvo bien, sin más."
+425,2024-03-30,Sucursal,Sur,Recurrente,6,4,1.8,No resolvieron mi problema.
+426,2024-03-30,App,Centro,Nuevo,8,4,4.2,"El servicio estuvo bien, sin más."
+427,2024-03-28,Web,Oeste,Nuevo,8,4,3.4,Ni bueno ni malo.
+428,2024-03-26,App,Centro,Nuevo,6,4,4.5,Tuve que esperar demasiado tiempo.
+429,2024-03-26,Call Center,Centro,VIP,4,3,6.1,"Pésima atención, no lo recomiendo."
+430,2024-03-30,Web,Centro,VIP,8,4,4.6,"El servicio estuvo bien, sin más."
+431,2024-03-31,App,Norte,Recurrente,7,4,44,"El servicio estuvo bien, sin más."
+432,2024-03-31,Sucursal,Centro,VIP,7,4,4.6,Cumplió lo básico.
+433,2024-03-31,Web,Norte,Nuevo,6,3,4.1,No resolvieron mi problema.
+434,2024-03-28,App,Oeste,VIP,7,4,4.5,Podría mejorar los tiempos de espera.
+435,2024-03-27,Web,Este,Nuevo,9,4,2.8,El equipo fue muy amable y claro.
+436,2024-03-27,Web,Sur,VIP,7,4,4.1,"El servicio estuvo bien, sin más."
+437,2024-03-29,Call Center,Centro,Recurrente,4,2,2.7,"Mala comunicación, muy frustrante."
+438,2024-03-30,Sucursal,Centro,VIP,9,4,3.3,El equipo fue muy amable y claro.
+439,2024-03-31,Sucursal,Sur,Recurrente,6,3,3.3,No resolvieron mi problema.
+440,2024-03-27,Web,Este,Recurrente,7,4,2.2,Ni bueno ni malo.
+441,2024-04-02,App,Este,Recurrente,7,4,1.1,Cumplió lo básico.
+442,2024-03-29,Sucursal,Centro,Nuevo,6,3,4.8,El proceso fue confuso y lento.
+443,2024-04-02,Web,Oeste,Recurrente,8,4,2.5,"El servicio estuvo bien, sin más."
+444,2024-03-31,Call Center,Sur,VIP,6,4,4.5,El proceso fue confuso y lento.
+445,2024-04-03,Sucursal,Oeste,Recurrente,6,3,3.5,El proceso fue confuso y lento.
+446,2024-04-02,Web,Este,Recurrente,7,4,5,Ni bueno ni malo.
+447,2024-04-02,Web,Oeste,Nuevo,7,4,4.3,Cumplió lo básico.
+448,2024-04-03,App,Oeste,VIP,9,4,2.5,El equipo fue muy amable y claro.
+449,2024-03-31,App,Oeste,VIP,8,4,4.7,Podría mejorar los tiempos de espera.
+450,2024-04-04,App,Centro,Recurrente,6,3,3.8,Tuve que esperar demasiado tiempo.
+451,2024-03-30,Sucursal,Este,Recurrente,7,4,4.8,Cumplió lo básico.
+452,2024-04-03,App,Centro,VIP,7,4,4.7,Podría mejorar los tiempos de espera.
+453,2024-04-04,Call Center,Norte,Nuevo,4,2,6,El proceso fue confuso y lento.
+454,2024-04-02,App,Oeste,VIP,8,4,1.3,Cumplió lo básico.
+455,2024-04-02,Web,Centro,Recurrente,7,3,3.9,"El servicio estuvo bien, sin más."
+456,2024-04-02,Web,Oeste,Nuevo,7,4,43,Podría mejorar los tiempos de espera.
+457,2024-03-30,App,Centro,Nuevo,7,4,3.5,"El servicio estuvo bien, sin más."
+458,2024-04-05,App,Norte,Recurrente,6,3,3.9,No resolvieron mi problema.
+459,2024-03-30,Call Center,Norte,VIP,5,3,4.7,El proceso fue confuso y lento.
+460,2024-04-04,Web,Norte,Recurrente,6,4,2.4,"Mala comunicación, muy frustrante."
+461,2024-04-06,App,Sur,Recurrente,7,4,2.6,"El servicio estuvo bien, sin más."
+462,2024-04-01,Sucursal,Norte,Nuevo,8,5,4.7,Podría mejorar los tiempos de espera.
+463,2024-04-04,Sucursal,Este,VIP,7,4,1.7,Ni bueno ni malo.
+464,2024-04-04,Web,Centro,VIP,7,4,2.6,Podría mejorar los tiempos de espera.
+465,2024-04-03,Call Center,Este,Recurrente,3,2,5.9,"Pésima atención, no lo recomiendo."
+466,2024-04-01,Sucursal,Oeste,Recurrente,8,4,4.1,Podría mejorar los tiempos de espera.
+467,2024-04-01,Call Center,Este,VIP,6,3,25,"Mala comunicación, muy frustrante."
+468,2024-04-01,App,Norte,Nuevo,8,4,1.5,Ni bueno ni malo.
+469,2024-04-01,App,Norte,Recurrente,7,4,3.8,Ni bueno ni malo.
+470,2024-04-04,Call Center,Oeste,Recurrente,3,2,2.6,Tuve que esperar demasiado tiempo.
+471,2024-04-02,Web,Sur,VIP,8,4,2.3,Podría mejorar los tiempos de espera.
+472,2024-04-05,App,Norte,VIP,8,4,4.4,Cumplió lo básico.
+473,2024-04-08,Call Center,Sur,Recurrente,5,3,6,"Pésima atención, no lo recomiendo."
+474,2024-04-06,Call Center,Sur,Nuevo,5,3,4.9,El proceso fue confuso y lento.
+475,2024-04-08,App,Sur,VIP,8,4,2.3,Podría mejorar los tiempos de espera.
+476,2024-04-07,Web,Oeste,Nuevo,6,3,2.1,"Pésima atención, no lo recomiendo."
+477,2024-04-06,Call Center,Sur,Nuevo,4,2,5.3,"Pésima atención, no lo recomiendo."
+478,2024-04-06,App,Oeste,Nuevo,6,3,4.4,Tuve que esperar demasiado tiempo.
+479,2024-04-03,App,Sur,Recurrente,7,4,37,Cumplió lo básico.
+480,2024-04-07,Call Center,Norte,Recurrente,3,2,6.4,El proceso fue confuso y lento.
+481,2024-04-09,Call Center,Este,Nuevo,3,2,5.2,Tuve que esperar demasiado tiempo.
+482,2024-04-08,Call Center,Centro,Nuevo,5,3,3.9,Tuve que esperar demasiado tiempo.
+483,2024-04-04,Sucursal,Este,VIP,7,4,2.1,Podría mejorar los tiempos de espera.
+484,2024-04-07,Sucursal,Oeste,Nuevo,7,3,3.6,Ni bueno ni malo.
+485,2024-04-06,App,Este,Recurrente,6,3,4.1,"Mala comunicación, muy frustrante."
+486,2024-04-08,Sucursal,Sur,Nuevo,6,3,4.5,"Pésima atención, no lo recomiendo."
+487,2024-04-07,Call Center,Sur,Nuevo,5,3,3.3,Tuve que esperar demasiado tiempo.
+488,2024-04-07,App,Centro,VIP,8,4,1,"El servicio estuvo bien, sin más."
+489,2024-04-09,App,Norte,Recurrente,7,3,3.1,Cumplió lo básico.
+490,2024-04-06,Call Center,Este,Recurrente,5,3,2.7,No resolvieron mi problema.
+491,2024-04-08,Sucursal,Centro,VIP,7,4,4.2,Podría mejorar los tiempos de espera.
+492,2024-04-10,Sucursal,Centro,VIP,7,4,1.1,Cumplió lo básico.
+493,2024-04-07,Call Center,Este,Nuevo,4,3,6.4,Tuve que esperar demasiado tiempo.
+494,2024-04-08,Web,Sur,Recurrente,7,4,4.6,Cumplió lo básico.
+495,2024-04-07,Web,Norte,Nuevo,6,3,1.2,No resolvieron mi problema.
+496,2024-04-12,App,Este,VIP,8,4,3.8,"El servicio estuvo bien, sin más."
+497,2024-04-12,Web,Este,Recurrente,7,4,1.2,Cumplió lo básico.
+498,2024-04-08,Sucursal,Oeste,Nuevo,8,4,2.6,"El servicio estuvo bien, sin más."
+499,2024-04-10,Web,Centro,Recurrente,8,4,4.9,Cumplió lo básico.
+500,2024-04-11,Call Center,Oeste,Recurrente,5,3,2.6,El proceso fue confuso y lento.
+501,2024-04-14,Web,Sur,Recurrente,8,4,4.3,Cumplió lo básico.
+502,2024-04-13,Web,Oeste,Recurrente,7,4,3.3,Cumplió lo básico.
+503,2024-04-10,Web,Este,Nuevo,8,5,3.3,"El servicio estuvo bien, sin más."
+504,2024-04-15,Web,Oeste,Recurrente,7,4,1.2,Podría mejorar los tiempos de espera.
+505,2024-04-13,Call Center,Oeste,VIP,6,3,3.5,"Pésima atención, no lo recomiendo."
+506,2024-04-15,Web,Este,Recurrente,6,3,2.7,"Mala comunicación, muy frustrante."
+507,2024-04-15,Sucursal,Oeste,Recurrente,8,4,4.3,Ni bueno ni malo.
+508,2024-04-15,Web,Sur,Recurrente,8,4,3.9,Podría mejorar los tiempos de espera.
+509,2024-04-11,Web,Oeste,Nuevo,8,4,2.4,Cumplió lo básico.
+510,2024-04-16,Call Center,Centro,Nuevo,3,3,6.2,Tuve que esperar demasiado tiempo.
+511,2024-04-12,Sucursal,Este,VIP,8,4,4,Podría mejorar los tiempos de espera.
+512,2024-04-14,Sucursal,Este,VIP,9,5,1.3,"Excelente servicio, volvería a comprar."
+513,2024-04-12,Web,Sur,Nuevo,6,3,1.4,No resolvieron mi problema.
+514,2024-04-14,App,Norte,Recurrente,6,3,1.4,"Mala comunicación, muy frustrante."
+515,2024-04-12,App,Norte,Recurrente,8,5,2.4,Ni bueno ni malo.
+516,2024-04-11,Call Center,Este,Nuevo,4,2,2.8,El proceso fue confuso y lento.
+517,2024-04-12,Sucursal,Oeste,VIP,7,4,3.1,Podría mejorar los tiempos de espera.
+518,2024-04-15,App,Centro,VIP,8,5,4.8,Ni bueno ni malo.
+519,2024-04-18,Call Center,Sur,Nuevo,5,3,5,Tuve que esperar demasiado tiempo.
+520,2024-04-13,Sucursal,Norte,Nuevo,8,5,4,Cumplió lo básico.
+521,2024-04-16,Web,Oeste,Nuevo,6,4,3.5,Tuve que esperar demasiado tiempo.
+522,2024-04-15,Web,Sur,Recurrente,8,4,2.9,Cumplió lo básico.
+523,2024-04-13,Web,Norte,Nuevo,7,3,3.2,"El servicio estuvo bien, sin más."
+524,2024-04-19,App,Sur,Recurrente,8,4,1.4,"El servicio estuvo bien, sin más."
+525,2024-04-18,Web,Sur,Nuevo,7,4,2.5,"El servicio estuvo bien, sin más."
+526,2024-04-13,App,Sur,VIP,9,5,3.6,Todo funcionó como esperaba.
+527,2024-04-14,Call Center,Este,VIP,5,3,3,"Pésima atención, no lo recomiendo."
+528,2024-04-15,Sucursal,Sur,VIP,8,4,1.4,"El servicio estuvo bien, sin más."
+529,2024-04-18,Sucursal,Oeste,VIP,8,4,4.2,Ni bueno ni malo.
+530,2024-04-16,Sucursal,Norte,VIP,7,4,2.9,Ni bueno ni malo.
+531,2024-04-20,App,Oeste,Recurrente,7,3,2.6,Cumplió lo básico.
+532,2024-04-16,App,Centro,VIP,9,5,4.1,"Muy buena atención, resolvieron rápido."
+533,2024-04-14,Call Center,Oeste,VIP,5,3,6.1,Tuve que esperar demasiado tiempo.
+534,2024-04-16,Web,Este,Recurrente,7,3,5,Cumplió lo básico.
+535,2024-04-16,App,Oeste,Recurrente,6,3,2.3,"Mala comunicación, muy frustrante."
+536,2024-04-15,Call Center,Norte,Nuevo,5,3,3,El proceso fue confuso y lento.
+537,2024-04-16,Call Center,Este,VIP,6,3,5.1,Tuve que esperar demasiado tiempo.
+538,2024-04-20,Sucursal,Oeste,VIP,7,4,1.7,Podría mejorar los tiempos de espera.
+539,2024-04-17,App,Norte,Nuevo,7,4,4.7,Cumplió lo básico.
+540,2024-04-19,Web,Norte,Recurrente,7,4,1.5,Podría mejorar los tiempos de espera.
+541,2024-04-16,Sucursal,Oeste,Recurrente,9,5,1.4,Todo funcionó como esperaba.
+542,2024-04-16,Sucursal,Este,VIP,9,4,1.1,Gran experiencia de principio a fin.
+543,2024-04-21,Call Center,Sur,VIP,5,3,3.2,"Pésima atención, no lo recomiendo."
+544,2024-04-20,Web,Oeste,Nuevo,9,4,4.3,Todo funcionó como esperaba.
+545,2024-04-20,Call Center,Centro,VIP,6,4,3.2,"Pésima atención, no lo recomiendo."
+546,2024-04-23,App,Centro,Recurrente,6,4,3.1,"Mala comunicación, muy frustrante."
+547,2024-04-17,Call Center,Norte,VIP,4,2,2.9,"Pésima atención, no lo recomiendo."
+548,2024-04-19,Sucursal,Centro,VIP,9,5,1.6,"Excelente servicio, volvería a comprar."
+549,2024-04-22,Call Center,Este,VIP,4,3,6.3,"Pésima atención, no lo recomiendo."
+550,2024-04-21,Call Center,Centro,VIP,6,3,5.3,"Pésima atención, no lo recomiendo."
+551,2024-04-18,Sucursal,Oeste,Recurrente,7,4,3.8,Podría mejorar los tiempos de espera.
+552,2024-04-22,Call Center,Centro,Nuevo,5,3,3.2,"Mala comunicación, muy frustrante."
+553,2024-04-21,App,Centro,Recurrente,7,3,2.5,Ni bueno ni malo.
+554,2024-04-24,Call Center,Oeste,Nuevo,4,2,4.7,Tuve que esperar demasiado tiempo.
+555,2024-04-24,Web,Centro,Nuevo,6,3,4.8,No resolvieron mi problema.
+556,2024-04-24,Call Center,Este,VIP,4,3,5.9,"Mala comunicación, muy frustrante."
+557,2024-04-25,Call Center,Centro,VIP,4,2,4.3,"Pésima atención, no lo recomiendo."
+558,2024-04-24,Sucursal,Norte,VIP,8,4,1.2,Ni bueno ni malo.
+559,2024-04-20,App,Oeste,Nuevo,8,4,4.5,Cumplió lo básico.
+560,2024-04-23,App,Oeste,Recurrente,6,4,1.8,"Pésima atención, no lo recomiendo."
+561,2024-04-20,Call Center,Este,Recurrente,4,2,3.4,El proceso fue confuso y lento.
+562,2024-04-21,Call Center,Sur,Nuevo,4,3,3.4,Tuve que esperar demasiado tiempo.
+563,2024-04-21,Web,Sur,Nuevo,6,4,2.9,Tuve que esperar demasiado tiempo.
+564,2024-04-27,Sucursal,Oeste,Recurrente,8,5,1.8,"El servicio estuvo bien, sin más."
+565,2024-04-27,App,Centro,Nuevo,8,4,3.6,Cumplió lo básico.
+566,2024-04-24,Web,Norte,Nuevo,6,4,1.3,Tuve que esperar demasiado tiempo.
+567,2024-04-26,Sucursal,Este,Recurrente,6,3,4,El proceso fue confuso y lento.
+568,2024-04-28,App,Sur,Recurrente,6,4,4.5,Tuve que esperar demasiado tiempo.
+569,2024-04-24,Sucursal,Centro,Recurrente,7,4,4,Ni bueno ni malo.
+570,2024-04-24,Sucursal,Este,VIP,7,4,3.4,Podría mejorar los tiempos de espera.
+571,2024-04-22,Call Center,Sur,Recurrente,5,3,5.2,El proceso fue confuso y lento.
+572,2024-04-26,Call Center,Este,Nuevo,3,2,3.4,El proceso fue confuso y lento.
+573,2024-04-26,Sucursal,Oeste,Recurrente,8,4,3,Ni bueno ni malo.
+574,2024-04-29,Web,Este,Nuevo,6,4,4.1,No resolvieron mi problema.
+575,2024-04-23,Sucursal,Centro,Recurrente,9,5,2,El equipo fue muy amable y claro.
+576,2024-04-23,Web,Este,Nuevo,8,4,1.9,Podría mejorar los tiempos de espera.
+577,2024-04-25,App,Centro,Nuevo,9,5,4.7,"Excelente servicio, volvería a comprar."
+578,2024-04-25,Web,Sur,Nuevo,7,4,3.4,Cumplió lo básico.
+579,2024-04-28,Web,Norte,VIP,9,4,3.1,"Muy buena atención, resolvieron rápido."
+580,2024-04-25,Web,Norte,Nuevo,6,4,4.6,El proceso fue confuso y lento.
+581,2024-04-30,Sucursal,Centro,Recurrente,8,4,1.1,Ni bueno ni malo.
+582,2024-04-24,Call Center,Centro,VIP,6,3,3,Tuve que esperar demasiado tiempo.
+583,2024-05-01,Web,Centro,VIP,8,4,2.8,"El servicio estuvo bien, sin más."
+584,2024-05-01,Sucursal,Sur,VIP,7,4,2,"El servicio estuvo bien, sin más."
+585,2024-04-25,Sucursal,Oeste,Recurrente,6,4,4.1,"Mala comunicación, muy frustrante."
+586,2024-04-29,App,Centro,Nuevo,8,4,2.2,Cumplió lo básico.
+587,2024-05-01,Call Center,Sur,VIP,6,4,2.7,"Pésima atención, no lo recomiendo."
+588,2024-04-27,Call Center,Sur,VIP,6,3,3.5,"Mala comunicación, muy frustrante."
+589,2024-05-01,App,Norte,Nuevo,7,4,1.8,"El servicio estuvo bien, sin más."
+590,2024-05-01,App,Oeste,Recurrente,6,3,1.6,"Mala comunicación, muy frustrante."
+591,2024-04-30,App,Este,Nuevo,8,4,2.2,Cumplió lo básico.
+592,2024-04-28,Call Center,Centro,VIP,4,2,6.3,No resolvieron mi problema.
+593,2024-04-29,Sucursal,Norte,Nuevo,6,4,2.2,"Mala comunicación, muy frustrante."
+594,2024-05-02,Web,Norte,Nuevo,7,4,3.6,"El servicio estuvo bien, sin más."
+595,2024-05-03,Sucursal,Este,Nuevo,7,3,1.9,Ni bueno ni malo.
+596,2024-04-27,App,Sur,Nuevo,7,4,2.1,Podría mejorar los tiempos de espera.
+597,2024-04-30,Sucursal,Oeste,Nuevo,7,4,1.3,Cumplió lo básico.
+598,2024-04-30,App,Sur,Recurrente,6,3,4.3,"Mala comunicación, muy frustrante."
+599,2024-05-04,App,Centro,Nuevo,8,4,4.3,Cumplió lo básico.
+600,2024-05-01,Sucursal,Norte,Recurrente,6,4,2.2,Tuve que esperar demasiado tiempo.
+601,2024-04-29,Web,Norte,VIP,9,5,3,"Muy buena atención, resolvieron rápido."
+602,2024-05-01,Sucursal,Centro,Recurrente,8,4,3.7,Ni bueno ni malo.
+603,2024-05-02,Call Center,Norte,Recurrente,5,2,2.8,El proceso fue confuso y lento.
+604,2024-05-02,App,Oeste,Recurrente,7,4,4.9,Podría mejorar los tiempos de espera.
+605,2024-05-04,App,Norte,Nuevo,7,3,3.3,Cumplió lo básico.
+606,2024-05-02,App,Este,Nuevo,9,5,1.7,"Excelente servicio, volvería a comprar."
+607,2024-05-05,Web,Centro,VIP,7,3,1,Podría mejorar los tiempos de espera.
+608,2024-05-01,Call Center,Norte,VIP,5,3,3.8,"Mala comunicación, muy frustrante."
+609,2024-05-06,App,Oeste,Nuevo,8,5,2.4,Cumplió lo básico.
+610,2024-04-30,Sucursal,Este,Recurrente,8,5,2.4,Ni bueno ni malo.
+611,2024-05-06,Call Center,Este,Recurrente,4,3,4.9,El proceso fue confuso y lento.
+612,2024-05-04,Web,Centro,Nuevo,6,4,2.3,El proceso fue confuso y lento.
+613,2024-05-06,Web,Norte,VIP,10,5,4.1,Gran experiencia de principio a fin.
+614,2024-05-02,Sucursal,Sur,Recurrente,7,4,1.8,Ni bueno ni malo.
+615,2024-05-04,App,Oeste,VIP,8,4,4.4,"El servicio estuvo bien, sin más."
+616,2024-05-06,Web,Este,VIP,8,4,1,Ni bueno ni malo.
+617,2024-05-02,App,Norte,Nuevo,8,4,4.5,Cumplió lo básico.
+618,2024-05-03,App,Oeste,Nuevo,7,4,3.9,Cumplió lo básico.
+619,2024-05-07,App,Este,Nuevo,6,3,4.2,No resolvieron mi problema.
+620,2024-05-05,Sucursal,Centro,Recurrente,7,4,2.4,"El servicio estuvo bien, sin más."
+621,2024-05-04,App,Centro,VIP,7,4,3.5,Cumplió lo básico.
+622,2024-05-07,Call Center,Centro,Recurrente,4,3,6.1,"Pésima atención, no lo recomiendo."
+623,2024-05-08,Web,Norte,VIP,8,4,2.5,"El servicio estuvo bien, sin más."
+624,2024-05-09,Call Center,Oeste,VIP,4,2,3.9,No resolvieron mi problema.
+625,2024-05-04,Web,Norte,Recurrente,7,4,1.2,Podría mejorar los tiempos de espera.
+626,2024-05-09,Call Center,Oeste,VIP,6,3,5.4,"Pésima atención, no lo recomiendo."
+627,2024-05-07,Sucursal,Sur,Nuevo,7,3,3.6,Ni bueno ni malo.
+628,2024-05-10,Call Center,Sur,Recurrente,4,3,2.6,No resolvieron mi problema.
+629,2024-05-08,App,Sur,VIP,7,3,1.6,"El servicio estuvo bien, sin más."
+630,2024-05-09,Sucursal,Norte,Recurrente,6,3,2,"Mala comunicación, muy frustrante."
+631,2024-05-09,Call Center,Norte,Recurrente,5,2,4.8,El proceso fue confuso y lento.
+632,2024-05-09,App,Oeste,Nuevo,8,4,2.5,Podría mejorar los tiempos de espera.
+633,2024-05-10,App,Centro,VIP,8,5,4.6,"El servicio estuvo bien, sin más."
+634,2024-05-07,Call Center,Norte,VIP,7,4,4.2,Podría mejorar los tiempos de espera.
+635,2024-05-10,Sucursal,Oeste,Nuevo,6,4,1.7,"Mala comunicación, muy frustrante."
+636,2024-05-05,Sucursal,Este,Recurrente,7,4,2.5,"El servicio estuvo bien, sin más."
+637,2024-05-10,Call Center,Sur,Recurrente,5,3,3.8,El proceso fue confuso y lento.
+638,2024-05-10,Web,Centro,VIP,8,4,2.1,"El servicio estuvo bien, sin más."
+639,2024-05-08,Web,Centro,Recurrente,6,4,2.7,"Pésima atención, no lo recomiendo."
+640,2024-05-06,App,Norte,Nuevo,8,4,1.2,Podría mejorar los tiempos de espera.
+641,2024-05-06,Web,Sur,VIP,8,4,2.7,"El servicio estuvo bien, sin más."
+642,2024-05-10,Call Center,Sur,Recurrente,5,3,5.6,El proceso fue confuso y lento.
+643,2024-05-12,App,Oeste,VIP,9,5,2.4,"Muy buena atención, resolvieron rápido."
+644,2024-05-13,Web,Este,VIP,9,5,2.6,El equipo fue muy amable y claro.
+645,2024-05-08,Web,Centro,VIP,9,4,1.8,"Muy buena atención, resolvieron rápido."
+646,2024-05-07,Web,Este,VIP,8,4,4.8,"El servicio estuvo bien, sin más."
+647,2024-05-12,Web,Norte,Recurrente,9,5,4.8,Gran experiencia de principio a fin.
+648,2024-05-09,Web,Sur,VIP,8,4,2.7,Ni bueno ni malo.
+649,2024-05-08,Call Center,Sur,Nuevo,3,3,5,El proceso fue confuso y lento.
+650,2024-05-10,Web,Sur,VIP,7,4,4.2,"El servicio estuvo bien, sin más."
+651,2024-05-10,Sucursal,Sur,Nuevo,9,5,1.8,"Excelente servicio, volvería a comprar."
+652,2024-05-11,Web,Centro,VIP,9,4,1.4,El equipo fue muy amable y claro.
+653,2024-05-12,Web,Sur,Recurrente,8,5,3.8,Podría mejorar los tiempos de espera.
+654,2024-05-10,Call Center,Oeste,Recurrente,4,3,3.7,"Pésima atención, no lo recomiendo."
+655,2024-05-13,Sucursal,Sur,Nuevo,7,4,1.5,Cumplió lo básico.
+656,2024-05-09,Sucursal,Sur,Recurrente,8,4,2.7,"El servicio estuvo bien, sin más."
+657,2024-05-14,Web,Norte,Recurrente,6,4,2.9,"Pésima atención, no lo recomiendo."
+658,2024-05-15,App,Oeste,Nuevo,6,4,2.9,No resolvieron mi problema.
+659,2024-05-14,App,Oeste,VIP,9,5,3.9,"Excelente servicio, volvería a comprar."
+660,2024-05-13,Call Center,Norte,Recurrente,4,3,4.3,No resolvieron mi problema.
+661,2024-05-13,Call Center,Sur,Nuevo,4,2,6.1,"Mala comunicación, muy frustrante."
+662,2024-05-11,App,Este,Nuevo,8,4,2.3,Cumplió lo básico.
+663,2024-05-13,Call Center,Centro,Recurrente,5,4,6.4,El proceso fue confuso y lento.
+664,2024-05-14,Call Center,Oeste,Recurrente,5,3,3,Tuve que esperar demasiado tiempo.
+665,2024-05-17,Web,Sur,Recurrente,6,3,5,"Pésima atención, no lo recomiendo."
+666,2024-05-17,Web,Centro,VIP,9,4,4.4,"Muy buena atención, resolvieron rápido."
+667,2024-05-16,Web,Oeste,Recurrente,7,4,4.7,Podría mejorar los tiempos de espera.
+668,2024-05-13,App,Norte,VIP,9,5,2.9,Todo funcionó como esperaba.
+669,2024-05-13,Web,Norte,Recurrente,8,4,4,Podría mejorar los tiempos de espera.
+670,2024-05-15,App,Norte,Nuevo,8,4,1.1,Cumplió lo básico.
+671,2024-05-16,Call Center,Sur,Nuevo,5,3,4.5,El proceso fue confuso y lento.
+672,2024-05-17,Sucursal,Centro,Nuevo,7,4,2.9,Podría mejorar los tiempos de espera.
+673,2024-05-19,Sucursal,Este,Nuevo,8,5,1.7,Cumplió lo básico.
+674,2024-05-18,Sucursal,Centro,Nuevo,7,4,4.4,Cumplió lo básico.
+675,2024-05-14,App,Este,VIP,8,5,4.1,"El servicio estuvo bien, sin más."
+676,2024-05-18,App,Este,Nuevo,9,5,1.6,Gran experiencia de principio a fin.
+677,2024-05-17,Web,Este,Recurrente,7,4,2.1,Podría mejorar los tiempos de espera.
+678,2024-05-18,App,Sur,VIP,8,5,2.5,"El servicio estuvo bien, sin más."
+679,2024-05-17,Sucursal,Sur,VIP,7,4,3.8,Cumplió lo básico.
+680,2024-05-17,Web,Centro,Recurrente,9,4,3,"Excelente servicio, volvería a comprar."
+681,2024-05-18,Call Center,Norte,Nuevo,6,4,2.6,El proceso fue confuso y lento.
+682,2024-05-16,Sucursal,Sur,Nuevo,7,3,3.2,Ni bueno ni malo.
+683,2024-05-18,App,Centro,Recurrente,7,4,2.2,"El servicio estuvo bien, sin más."
+684,2024-05-21,Web,Centro,VIP,9,4,3,El equipo fue muy amable y claro.
+685,2024-05-17,Sucursal,Este,VIP,7,4,2.8,Cumplió lo básico.
+686,2024-05-18,Sucursal,Norte,Nuevo,8,4,2.6,Ni bueno ni malo.
+687,2024-05-17,Call Center,Norte,Nuevo,4,3,4.7,"Mala comunicación, muy frustrante."
+688,2024-05-22,Web,Este,VIP,7,4,1.7,Cumplió lo básico.
+689,2024-05-22,Call Center,Este,Nuevo,5,3,4.7,El proceso fue confuso y lento.
+690,2024-05-18,App,Este,VIP,7,4,4.6,Cumplió lo básico.
+691,2024-05-19,Call Center,Centro,Nuevo,3,3,4.4,El proceso fue confuso y lento.
+692,2024-05-21,Sucursal,Oeste,Nuevo,6,3,3.1,Tuve que esperar demasiado tiempo.
+693,2024-05-17,Call Center,Norte,Nuevo,4,2,3.8,El proceso fue confuso y lento.
+694,2024-05-23,Call Center,Oeste,Recurrente,6,4,2.8,El proceso fue confuso y lento.
+695,2024-05-20,Call Center,Este,Nuevo,4,3,2.8,"Mala comunicación, muy frustrante."
+696,2024-05-18,Call Center,Oeste,Recurrente,5,3,4.7,No resolvieron mi problema.
+697,2024-05-24,Sucursal,Este,VIP,8,4,26,"El servicio estuvo bien, sin más."
+698,2024-05-24,App,Sur,Recurrente,8,5,1.4,"El servicio estuvo bien, sin más."
+699,2024-05-19,Sucursal,Este,Nuevo,8,4,3.7,"El servicio estuvo bien, sin más."
+700,2024-05-23,Web,Sur,Nuevo,6,3,4.9,No resolvieron mi problema.
+701,2024-05-24,Sucursal,Norte,Nuevo,9,5,2,"Muy buena atención, resolvieron rápido."
+702,2024-05-23,Call Center,Norte,Recurrente,4,3,5.5,"Mala comunicación, muy frustrante."
+703,2024-05-21,App,Este,VIP,9,4,4,Gran experiencia de principio a fin.
+704,2024-05-21,App,Centro,Nuevo,8,4,2.9,Cumplió lo básico.
+705,2024-05-24,App,Norte,Recurrente,8,4,1.7,Ni bueno ni malo.
+706,2024-05-20,Call Center,Este,Recurrente,5,3,2.9,"Mala comunicación, muy frustrante."
+707,2024-05-21,Call Center,Sur,Nuevo,4,3,4.5,No resolvieron mi problema.
+708,2024-05-24,App,Norte,VIP,9,5,3.6,"Excelente servicio, volvería a comprar."
+709,2024-05-23,Sucursal,Oeste,VIP,7,3,4,Podría mejorar los tiempos de espera.
+710,2024-05-20,Call Center,Este,Nuevo,4,3,2.9,Tuve que esperar demasiado tiempo.
+711,2024-05-25,Web,Centro,Nuevo,8,4,4.7,Cumplió lo básico.
+712,2024-05-24,Web,Centro,Nuevo,7,3,2.9,Podría mejorar los tiempos de espera.
+713,2024-05-26,Sucursal,Centro,Recurrente,7,3,1,Ni bueno ni malo.
+714,2024-05-26,Web,Sur,Nuevo,6,4,4.1,"Mala comunicación, muy frustrante."
+715,2024-05-26,Web,Centro,VIP,9,4,1,"Muy buena atención, resolvieron rápido."
+716,2024-05-22,App,Este,Nuevo,8,4,4.9,Podría mejorar los tiempos de espera.
+717,2024-05-27,App,Centro,VIP,7,4,4.7,Cumplió lo básico.
+718,2024-05-23,App,Este,Nuevo,7,3,1.4,Cumplió lo básico.
+719,2024-05-26,Sucursal,Oeste,Nuevo,7,4,4,Cumplió lo básico.
+720,2024-05-23,Web,Oeste,VIP,9,5,1.6,Todo funcionó como esperaba.
+721,2024-05-25,Sucursal,Este,Nuevo,8,4,3,Ni bueno ni malo.
+722,2024-05-24,Web,Oeste,Recurrente,7,4,20,"El servicio estuvo bien, sin más."
+723,2024-05-27,Web,Centro,VIP,9,4,3.9,"Muy buena atención, resolvieron rápido."
+724,2024-05-28,Sucursal,Sur,Recurrente,7,4,2.6,Ni bueno ni malo.
+725,2024-05-27,Call Center,Centro,VIP,5,3,3.8,"Pésima atención, no lo recomiendo."
+726,2024-05-27,App,Centro,VIP,8,5,3.9,"El servicio estuvo bien, sin más."
+727,2024-05-27,App,Este,VIP,9,4,4.4,Todo funcionó como esperaba.
+728,2024-05-24,Web,Sur,VIP,9,5,4.8,Todo funcionó como esperaba.
+729,2024-05-26,Call Center,Sur,VIP,4,3,3.6,No resolvieron mi problema.
+730,2024-05-28,Sucursal,Oeste,Nuevo,8,4,1.4,"El servicio estuvo bien, sin más."
+731,2024-05-25,Web,Centro,Recurrente,7,3,3.6,Podría mejorar los tiempos de espera.
+732,2024-05-25,App,Centro,Nuevo,8,4,1.7,Cumplió lo básico.
+733,2024-05-30,App,Sur,Nuevo,8,4,4.7,Cumplió lo básico.
+734,2024-05-27,Sucursal,Sur,VIP,8,4,1.6,Cumplió lo básico.
+735,2024-05-26,Sucursal,Oeste,VIP,9,5,1.4,Gran experiencia de principio a fin.
+736,2024-05-30,Web,Sur,VIP,8,4,1.2,Ni bueno ni malo.
+737,2024-05-31,Sucursal,Norte,Nuevo,8,4,1.8,"El servicio estuvo bien, sin más."
+738,2024-05-31,App,Este,Recurrente,6,4,4.4,El proceso fue confuso y lento.
+739,2024-05-26,Sucursal,Este,VIP,9,5,1.9,"Excelente servicio, volvería a comprar."
+740,2024-06-01,Sucursal,Sur,Nuevo,8,5,3.4,Ni bueno ni malo.
+741,2024-05-29,Sucursal,Este,Nuevo,7,4,1.7,Ni bueno ni malo.
+742,2024-06-02,Call Center,Sur,VIP,4,2,3.5,"Mala comunicación, muy frustrante."
+743,2024-05-31,App,Oeste,Recurrente,6,3,1.1,"Mala comunicación, muy frustrante."
+744,2024-06-01,Call Center,Norte,Nuevo,5,3,5.7,No resolvieron mi problema.
+745,2024-06-01,Web,Oeste,Recurrente,9,4,4.2,El equipo fue muy amable y claro.
+746,2024-06-01,Call Center,Centro,VIP,4,2,3.6,"Pésima atención, no lo recomiendo."
+747,2024-06-02,Call Center,Oeste,VIP,5,3,4.5,"Mala comunicación, muy frustrante."
+748,2024-05-31,Sucursal,Este,Nuevo,7,4,3.7,Ni bueno ni malo.
+749,2024-06-02,Sucursal,Este,VIP,10,5,1.4,"Excelente servicio, volvería a comprar."
+750,2024-05-28,Sucursal,Centro,Nuevo,8,5,1,"El servicio estuvo bien, sin más."
+751,2024-06-02,Web,Sur,VIP,8,5,3.5,"El servicio estuvo bien, sin más."
+752,2024-06-03,App,Este,Recurrente,8,4,1.9,Cumplió lo básico.
+753,2024-06-01,App,Centro,Recurrente,8,4,1.3,Ni bueno ni malo.
+754,2024-05-30,Call Center,Centro,Recurrente,5,3,4,"Pésima atención, no lo recomiendo."
+755,2024-05-30,Call Center,Este,Recurrente,6,3,4.2,No resolvieron mi problema.
+756,2024-06-03,App,Norte,Recurrente,8,4,2.8,"El servicio estuvo bien, sin más."
+757,2024-06-04,Web,Norte,Nuevo,6,4,3.8,El proceso fue confuso y lento.
+758,2024-05-30,Call Center,Sur,Recurrente,5,3,4.2,No resolvieron mi problema.
+759,2024-06-01,App,Este,VIP,7,4,4.6,"El servicio estuvo bien, sin más."
+760,2024-05-31,App,Este,Nuevo,7,4,2.3,Cumplió lo básico.
+761,2024-06-06,App,Centro,Nuevo,7,3,5,Cumplió lo básico.
+762,2024-06-03,Sucursal,Este,Nuevo,6,4,1.6,"Mala comunicación, muy frustrante."
+763,2024-06-01,App,Norte,VIP,7,3,1.1,Ni bueno ni malo.
+764,2024-06-03,Call Center,Este,VIP,6,4,6,"Mala comunicación, muy frustrante."
+765,2024-06-04,App,Sur,Nuevo,9,5,4.8,Gran experiencia de principio a fin.
+766,2024-06-04,Web,Este,Nuevo,7,3,3.1,Cumplió lo básico.
+767,2024-06-06,Web,Sur,Recurrente,8,5,4.3,Podría mejorar los tiempos de espera.
+768,2024-06-04,Web,Sur,VIP,9,4,1.4,"Muy buena atención, resolvieron rápido."
+769,2024-06-07,Call Center,Sur,Recurrente,4,3,4.9,"Pésima atención, no lo recomiendo."
+770,2024-06-04,Web,Centro,Nuevo,6,3,3.3,El proceso fue confuso y lento.
+771,2024-06-08,Sucursal,Sur,VIP,7,3,2.1,Podría mejorar los tiempos de espera.
+772,2024-06-02,Call Center,Oeste,Recurrente,4,3,6.4,No resolvieron mi problema.
+773,2024-06-08,App,Norte,VIP,8,5,4.6,Ni bueno ni malo.
+774,2024-06-07,Call Center,Norte,VIP,6,4,3.6,"Pésima atención, no lo recomiendo."
+775,2024-06-08,Call Center,Centro,VIP,7,4,4.1,Cumplió lo básico.
+776,2024-06-05,Sucursal,Oeste,VIP,9,5,3.1,"Excelente servicio, volvería a comprar."
+777,2024-06-07,Web,Este,Recurrente,7,4,4.4,"El servicio estuvo bien, sin más."
+778,2024-06-08,Web,Norte,VIP,9,4,3.7,Todo funcionó como esperaba.
+779,2024-06-05,Sucursal,Norte,Recurrente,8,4,1.8,Ni bueno ni malo.
+780,2024-06-05,Sucursal,Sur,VIP,9,5,3.9,Gran experiencia de principio a fin.
+781,2024-06-10,Call Center,Oeste,Nuevo,5,3,4.4,Tuve que esperar demasiado tiempo.
+782,2024-06-08,Web,Este,VIP,9,4,3.9,"Muy buena atención, resolvieron rápido."
+783,2024-06-07,Web,Norte,VIP,9,5,3.7,El equipo fue muy amable y claro.
+784,2024-06-10,Sucursal,Oeste,VIP,8,4,3.4,Cumplió lo básico.
+785,2024-06-11,Web,Este,Nuevo,8,4,4.1,Podría mejorar los tiempos de espera.
+786,2024-06-05,Call Center,Oeste,Recurrente,3,3,4.2,No resolvieron mi problema.
+787,2024-06-07,Web,Oeste,VIP,9,5,4.2,"Muy buena atención, resolvieron rápido."
+788,2024-06-06,Web,Oeste,Nuevo,8,5,1.6,Cumplió lo básico.
+789,2024-06-09,Web,Centro,Nuevo,8,4,4,"El servicio estuvo bien, sin más."
+790,2024-06-07,App,Oeste,VIP,8,4,4.2,"El servicio estuvo bien, sin más."
+791,2024-06-12,Call Center,Norte,Recurrente,4,2,4.9,No resolvieron mi problema.
+792,2024-06-06,App,Este,Nuevo,8,4,2.5,Podría mejorar los tiempos de espera.
+793,2024-06-06,Sucursal,Norte,Recurrente,9,4,2.5,"Excelente servicio, volvería a comprar."
+794,2024-06-12,App,Norte,Recurrente,6,3,4.4,"Mala comunicación, muy frustrante."
+795,2024-06-07,App,Centro,Recurrente,8,4,1.3,"El servicio estuvo bien, sin más."
+796,2024-06-11,Web,Oeste,VIP,8,5,2,"El servicio estuvo bien, sin más."
+797,2024-06-07,Call Center,Centro,VIP,4,2,5.2,"Pésima atención, no lo recomiendo."
+798,2024-06-09,Web,Sur,Nuevo,8,5,3.3,Ni bueno ni malo.
+799,2024-06-13,Sucursal,Este,Recurrente,7,4,1.8,Ni bueno ni malo.
+800,2024-06-14,Sucursal,Centro,Recurrente,8,4,4.2,"El servicio estuvo bien, sin más."
+801,2024-06-13,Call Center,Sur,Recurrente,6,3,5,No resolvieron mi problema.
+802,2024-06-11,App,Sur,Recurrente,9,4,4.8,El equipo fue muy amable y claro.
+803,2024-06-11,App,Centro,Nuevo,6,3,5,"Pésima atención, no lo recomiendo."
+804,2024-06-14,Call Center,Este,Recurrente,5,3,2.6,"Pésima atención, no lo recomiendo."
+805,2024-06-09,Sucursal,Sur,Nuevo,7,4,2.1,Cumplió lo básico.
+806,2024-06-10,App,Oeste,Recurrente,8,4,5,"El servicio estuvo bien, sin más."
+807,2024-06-13,Call Center,Centro,Recurrente,4,3,4.3,"Pésima atención, no lo recomiendo."
+808,2024-06-12,Call Center,Centro,Nuevo,4,3,6.1,Tuve que esperar demasiado tiempo.
+809,2024-06-09,Call Center,Norte,Nuevo,4,2,4.8,Tuve que esperar demasiado tiempo.
+810,2024-06-14,Web,Centro,VIP,7,4,3.8,"El servicio estuvo bien, sin más."
+811,2024-06-13,Call Center,Este,Recurrente,4,2,4.9,No resolvieron mi problema.
+812,2024-06-15,App,Centro,Recurrente,9,4,2.8,"Muy buena atención, resolvieron rápido."
+813,2024-06-15,Call Center,Oeste,Nuevo,3,3,4.6,"Mala comunicación, muy frustrante."
+814,2024-06-15,App,Oeste,Nuevo,7,3,1.4,Podría mejorar los tiempos de espera.
+815,2024-06-17,Sucursal,Oeste,Nuevo,9,5,2.5,Todo funcionó como esperaba.
+816,2024-06-15,Sucursal,Este,Recurrente,9,4,3.6,Todo funcionó como esperaba.
+817,2024-06-11,App,Oeste,Recurrente,8,4,1.6,Ni bueno ni malo.
+818,2024-06-14,Sucursal,Sur,Nuevo,7,3,1.6,Cumplió lo básico.
+819,2024-06-12,Web,Oeste,Recurrente,6,3,4.4,"Mala comunicación, muy frustrante."
+820,2024-06-14,App,Centro,Recurrente,8,4,3.2,"El servicio estuvo bien, sin más."
+821,2024-06-13,Sucursal,Este,Recurrente,8,5,28,Podría mejorar los tiempos de espera.
+822,2024-06-13,Sucursal,Oeste,VIP,9,5,4.7,"Muy buena atención, resolvieron rápido."
+823,2024-06-13,App,Oeste,Nuevo,7,4,4.3,Ni bueno ni malo.
+824,2024-06-18,Call Center,Centro,VIP,5,3,41,El proceso fue confuso y lento.
+825,2024-06-19,App,Este,VIP,8,4,3.8,Ni bueno ni malo.
+826,2024-06-15,Call Center,Centro,Nuevo,4,3,4,Tuve que esperar demasiado tiempo.
+827,2024-06-16,App,Oeste,Nuevo,8,4,2.1,"El servicio estuvo bien, sin más."
+828,2024-06-17,Call Center,Centro,VIP,5,3,5.1,No resolvieron mi problema.
+829,2024-06-13,Call Center,Centro,Nuevo,3,3,5.6,El proceso fue confuso y lento.
+830,2024-06-20,Call Center,Oeste,Nuevo,4,3,5.9,"Mala comunicación, muy frustrante."
+831,2024-06-17,Sucursal,Centro,Recurrente,7,4,1.7,"El servicio estuvo bien, sin más."
+832,2024-06-14,Sucursal,Este,Recurrente,7,4,4.9,Ni bueno ni malo.
+833,2024-06-19,Web,Centro,Recurrente,7,4,2.9,Cumplió lo básico.
+834,2024-06-15,App,Sur,VIP,10,5,5,Todo funcionó como esperaba.
+835,2024-06-15,Sucursal,Centro,Recurrente,7,3,3.9,Ni bueno ni malo.
+836,2024-06-15,Web,Centro,Nuevo,8,4,4.7,Ni bueno ni malo.
+837,2024-06-16,Call Center,Oeste,Recurrente,4,2,6,El proceso fue confuso y lento.
+838,2024-06-21,Sucursal,Este,Nuevo,7,4,4.2,Cumplió lo básico.
+839,2024-06-18,Web,Este,Nuevo,7,4,4.8,Podría mejorar los tiempos de espera.
+840,2024-06-21,Web,Centro,Nuevo,9,4,3.3,"Muy buena atención, resolvieron rápido."
+841,2024-06-18,App,Norte,Nuevo,9,5,4.7,Todo funcionó como esperaba.
+842,2024-06-19,Sucursal,Sur,Nuevo,7,4,2.1,Podría mejorar los tiempos de espera.
+843,2024-06-18,Sucursal,Oeste,VIP,9,5,4.3,Todo funcionó como esperaba.
+844,2024-06-17,Call Center,Este,Nuevo,6,4,6,"Mala comunicación, muy frustrante."
+845,2024-06-18,Sucursal,Sur,Nuevo,7,4,3.6,Cumplió lo básico.
+846,2024-06-21,Web,Centro,VIP,7,4,2.6,Podría mejorar los tiempos de espera.
+847,2024-06-23,Sucursal,Oeste,VIP,9,4,2.6,"Muy buena atención, resolvieron rápido."
+848,2024-06-18,App,Centro,Recurrente,7,4,4.4,Cumplió lo básico.
+849,2024-06-22,App,Centro,Nuevo,7,4,1.2,Podría mejorar los tiempos de espera.
+850,2024-06-21,App,Centro,Nuevo,8,5,1.9,Podría mejorar los tiempos de espera.
+851,2024-06-19,Web,Sur,Recurrente,8,4,3.5,Cumplió lo básico.
+852,2024-06-23,App,Centro,VIP,9,5,3,"Muy buena atención, resolvieron rápido."
+853,2024-06-23,Call Center,Sur,VIP,6,3,2.9,"Pésima atención, no lo recomiendo."
+854,2024-06-19,Web,Centro,Nuevo,8,4,3.8,"El servicio estuvo bien, sin más."
+855,2024-06-20,Sucursal,Este,VIP,7,4,3,Cumplió lo básico.
+856,2024-06-20,Web,Oeste,Recurrente,7,3,4.2,Cumplió lo básico.
+857,2024-06-22,Web,Este,Nuevo,6,3,4.3,"Mala comunicación, muy frustrante."
+858,2024-06-20,Call Center,Sur,VIP,5,3,5.8,No resolvieron mi problema.
+859,2024-06-25,Sucursal,Este,Nuevo,7,4,41,"El servicio estuvo bien, sin más."
+860,2024-06-23,Call Center,Norte,Nuevo,4,3,2.6,"Pésima atención, no lo recomiendo."
+861,2024-06-26,Web,Centro,Nuevo,8,4,1,"El servicio estuvo bien, sin más."
+862,2024-06-20,Sucursal,Norte,Recurrente,8,4,1.9,"El servicio estuvo bien, sin más."
+863,2024-06-21,Web,Oeste,VIP,9,4,44,El equipo fue muy amable y claro.
+864,2024-06-27,Web,Sur,Nuevo,7,4,4.6,Cumplió lo básico.
+865,2024-06-25,Sucursal,Oeste,VIP,8,5,5,Podría mejorar los tiempos de espera.
+866,2024-06-23,Web,Oeste,Recurrente,6,3,3.3,"Mala comunicación, muy frustrante."
+867,2024-06-22,Web,Este,VIP,7,4,4.5,Cumplió lo básico.
+868,2024-06-25,Web,Norte,Recurrente,8,4,1.7,Ni bueno ni malo.
+869,2024-06-27,Call Center,Norte,VIP,7,3,5.3,Ni bueno ni malo.
+870,2024-06-28,Call Center,Este,VIP,5,3,5.3,"Mala comunicación, muy frustrante."
+871,2024-06-23,App,Este,Recurrente,8,5,2.7,Ni bueno ni malo.
+872,2024-06-28,Sucursal,Oeste,VIP,9,4,1.5,"Excelente servicio, volvería a comprar."
+873,2024-06-25,Sucursal,Centro,Recurrente,7,4,1.3,Podría mejorar los tiempos de espera.
+874,2024-06-23,Web,Centro,VIP,7,4,2.9,"El servicio estuvo bien, sin más."
+875,2024-06-28,Web,Sur,Nuevo,9,5,3.5,Todo funcionó como esperaba.
+876,2024-06-23,Sucursal,Centro,Recurrente,7,4,4,Podría mejorar los tiempos de espera.
+877,2024-06-29,App,Oeste,Recurrente,7,3,1.4,Ni bueno ni malo.
+878,2024-06-29,Web,Centro,Recurrente,8,5,4.8,Cumplió lo básico.
+879,2024-06-24,App,Centro,Nuevo,9,4,3,El equipo fue muy amable y claro.
+880,2024-06-28,Sucursal,Oeste,Nuevo,8,4,1.2,"El servicio estuvo bien, sin más."
+881,2024-06-24,Sucursal,Centro,Recurrente,7,4,4.2,Cumplió lo básico.
+882,2024-06-26,Call Center,Este,VIP,6,4,2.7,"Mala comunicación, muy frustrante."
+883,2024-06-30,Sucursal,Centro,VIP,8,4,1.2,Podría mejorar los tiempos de espera.
+884,2024-06-25,Web,Sur,Nuevo,8,4,5,Podría mejorar los tiempos de espera.
+885,2024-06-30,App,Centro,Nuevo,8,4,1.7,Ni bueno ni malo.
+886,2024-06-29,Web,Centro,Recurrente,8,4,4.4,"El servicio estuvo bien, sin más."
+887,2024-06-28,App,Oeste,Nuevo,8,4,2,"El servicio estuvo bien, sin más."
+888,2024-06-25,Web,Este,Nuevo,7,4,3.5,Cumplió lo básico.
+889,2024-06-27,Web,Este,Nuevo,8,4,1.9,Cumplió lo básico.
+890,2024-06-28,Web,Centro,Nuevo,9,5,2.2,El equipo fue muy amable y claro.
+891,2024-07-01,Sucursal,Sur,Nuevo,8,4,1.5,Ni bueno ni malo.
+892,2024-06-30,Web,Sur,Recurrente,8,4,4.6,Ni bueno ni malo.
+893,2024-06-28,App,Centro,Nuevo,7,4,4.7,Podría mejorar los tiempos de espera.
+894,2024-07-03,Call Center,Oeste,Recurrente,3,2,4.2,"Mala comunicación, muy frustrante."
+895,2024-07-02,Call Center,Sur,Nuevo,3,2,5.1,Tuve que esperar demasiado tiempo.
+896,2024-06-27,Sucursal,Centro,Recurrente,8,4,4.4,Cumplió lo básico.
+897,2024-06-27,Web,Oeste,VIP,9,5,2.2,"Excelente servicio, volvería a comprar."
+898,2024-06-27,Web,Norte,Recurrente,9,5,1.8,"Muy buena atención, resolvieron rápido."
+899,2024-06-30,Sucursal,Norte,Recurrente,7,4,4.4,"El servicio estuvo bien, sin más."
+900,2024-06-28,Sucursal,Norte,Recurrente,7,4,2.9,Podría mejorar los tiempos de espera.
+901,2024-07-01,Call Center,Este,VIP,6,4,3.8,Tuve que esperar demasiado tiempo.
+902,2024-07-04,Web,Norte,Nuevo,7,3,3.7,Cumplió lo básico.
+903,2024-07-03,Call Center,Este,Recurrente,4,3,5.4,"Pésima atención, no lo recomiendo."
+904,2024-07-04,Sucursal,Norte,VIP,8,4,4.1,Podría mejorar los tiempos de espera.
+905,2024-07-03,Web,Oeste,VIP,8,4,1.2,Ni bueno ni malo.
+906,2024-07-02,Call Center,Centro,Recurrente,5,4,5.7,"Mala comunicación, muy frustrante."
+907,2024-07-02,Web,Oeste,Nuevo,8,4,2.1,Cumplió lo básico.
+908,2024-06-30,Web,Este,Nuevo,7,4,3.9,Podría mejorar los tiempos de espera.
+909,2024-07-02,Call Center,Oeste,Recurrente,6,3,4.1,"Pésima atención, no lo recomiendo."
+910,2024-07-04,Web,Sur,Recurrente,7,4,3.3,"El servicio estuvo bien, sin más."
+911,2024-06-30,Call Center,Este,Recurrente,6,3,4.4,"Mala comunicación, muy frustrante."
+912,2024-06-30,Web,Oeste,VIP,7,4,2.4,Cumplió lo básico.
+913,2024-07-06,Sucursal,Sur,VIP,10,4,42,El equipo fue muy amable y claro.
+914,2024-07-02,App,Sur,VIP,9,4,2.4,"Excelente servicio, volvería a comprar."
+915,2024-07-02,Call Center,Oeste,VIP,6,3,5.1,El proceso fue confuso y lento.
+916,2024-07-01,Sucursal,Este,Recurrente,8,4,1.8,Podría mejorar los tiempos de espera.
+917,2024-07-06,Sucursal,Este,VIP,8,4,1.8,Podría mejorar los tiempos de espera.
+918,2024-07-07,Call Center,Este,VIP,5,3,6.3,No resolvieron mi problema.
+919,2024-07-04,Web,Este,Recurrente,6,4,3.7,Tuve que esperar demasiado tiempo.
+920,2024-07-05,Web,Este,Recurrente,7,4,3.5,Ni bueno ni malo.
+921,2024-07-07,Sucursal,Norte,Nuevo,8,4,1.3,"El servicio estuvo bien, sin más."
+922,2024-07-03,App,Este,VIP,7,4,1.9,Podría mejorar los tiempos de espera.
+923,2024-07-03,Call Center,Centro,Recurrente,6,3,4,Tuve que esperar demasiado tiempo.
+924,2024-07-07,App,Sur,Nuevo,8,4,4,"El servicio estuvo bien, sin más."
+925,2024-07-05,Web,Sur,Nuevo,7,4,3.4,"El servicio estuvo bien, sin más."
+926,2024-07-04,App,Norte,Nuevo,7,4,1.7,"El servicio estuvo bien, sin más."
+927,2024-07-06,App,Centro,Recurrente,8,5,4,Podría mejorar los tiempos de espera.
+928,2024-07-07,App,Centro,Nuevo,8,4,3.1,"El servicio estuvo bien, sin más."
+929,2024-07-07,App,Sur,VIP,9,4,4.2,El equipo fue muy amable y claro.
+930,2024-07-09,Web,Este,Recurrente,6,3,4.2,Tuve que esperar demasiado tiempo.
+931,2024-07-07,Sucursal,Oeste,Nuevo,9,5,4.1,"Muy buena atención, resolvieron rápido."
+932,2024-07-04,Call Center,Centro,Nuevo,4,3,6.4,"Pésima atención, no lo recomiendo."
+933,2024-07-08,App,Centro,Nuevo,9,5,3.6,Todo funcionó como esperaba.
+934,2024-07-06,Sucursal,Este,Nuevo,8,4,1.3,Ni bueno ni malo.
+935,2024-07-07,App,Norte,Nuevo,9,5,2.9,"Muy buena atención, resolvieron rápido."
+936,2024-07-06,Web,Centro,VIP,9,4,1.3,"Excelente servicio, volvería a comprar."
+937,2024-07-05,Web,Norte,Nuevo,8,4,1.7,Ni bueno ni malo.
+938,2024-07-07,Sucursal,Norte,Recurrente,8,5,1.1,Podría mejorar los tiempos de espera.
+939,2024-07-11,Call Center,Norte,Nuevo,4,3,5.8,"Pésima atención, no lo recomiendo."
+940,2024-07-06,Call Center,Sur,Nuevo,5,3,6,"Mala comunicación, muy frustrante."
+941,2024-07-08,App,Centro,Nuevo,6,3,2.5,Tuve que esperar demasiado tiempo.
+942,2024-07-11,App,Este,VIP,9,5,3.5,Gran experiencia de principio a fin.
+943,2024-07-12,Call Center,Centro,VIP,6,3,5.9,Tuve que esperar demasiado tiempo.
+944,2024-07-10,Sucursal,Este,Nuevo,7,4,2.2,"El servicio estuvo bien, sin más."
+945,2024-07-08,App,Este,Recurrente,7,4,2,"El servicio estuvo bien, sin más."
+946,2024-07-08,Sucursal,Sur,Recurrente,7,4,4.6,Cumplió lo básico.
+947,2024-07-10,Sucursal,Sur,VIP,9,4,3.2,"Muy buena atención, resolvieron rápido."
+948,2024-07-12,Sucursal,Sur,VIP,9,5,2.7,Todo funcionó como esperaba.
+949,2024-07-13,Call Center,Oeste,Recurrente,6,4,5.6,Tuve que esperar demasiado tiempo.
+950,2024-07-09,Sucursal,Norte,Nuevo,7,3,4.4,Ni bueno ni malo.
+951,2024-07-14,Web,Sur,VIP,8,4,4.6,Podría mejorar los tiempos de espera.
+952,2024-07-11,Sucursal,Oeste,Nuevo,9,4,1.8,Todo funcionó como esperaba.
+953,2024-07-09,App,Oeste,Nuevo,7,4,4.9,Ni bueno ni malo.
+954,2024-07-14,App,Sur,Nuevo,7,3,2.9,Ni bueno ni malo.
+955,2024-07-09,App,Norte,Recurrente,8,4,4.8,"El servicio estuvo bien, sin más."
+956,2024-07-09,Web,Centro,Nuevo,8,4,3.6,Cumplió lo básico.
+957,2024-07-15,Web,Sur,Recurrente,8,5,4.3,Podría mejorar los tiempos de espera.
+958,2024-07-11,Call Center,Sur,VIP,6,3,5.5,No resolvieron mi problema.
+959,2024-07-15,Web,Este,Recurrente,7,4,3.5,"El servicio estuvo bien, sin más."
+960,2024-07-11,App,Oeste,VIP,9,5,4,Gran experiencia de principio a fin.
+961,2024-07-14,Call Center,Este,Recurrente,4,3,3.9,El proceso fue confuso y lento.
+962,2024-07-11,Call Center,Centro,Recurrente,6,3,5.3,"Mala comunicación, muy frustrante."
+963,2024-07-12,Sucursal,Este,Recurrente,6,4,5,"Pésima atención, no lo recomiendo."
+964,2024-07-11,Web,Norte,Nuevo,9,4,3.1,"Muy buena atención, resolvieron rápido."
+965,2024-07-16,Web,Sur,Recurrente,8,4,3.2,"El servicio estuvo bien, sin más."
+966,2024-07-16,Sucursal,Sur,Recurrente,8,4,2.2,Cumplió lo básico.
+967,2024-07-13,Sucursal,Sur,Nuevo,7,4,1.1,"El servicio estuvo bien, sin más."
+968,2024-07-15,Call Center,Sur,Nuevo,5,2,6.4,El proceso fue confuso y lento.
+969,2024-07-17,Web,Centro,VIP,9,5,2.7,"Excelente servicio, volvería a comprar."
+970,2024-07-13,Call Center,Sur,Recurrente,4,2,4.8,Tuve que esperar demasiado tiempo.
+971,2024-07-12,App,Oeste,Nuevo,7,4,3.9,Cumplió lo básico.
+972,2024-07-17,Web,Norte,VIP,10,5,1.4,"Excelente servicio, volvería a comprar."
+973,2024-07-15,Call Center,Norte,VIP,6,3,6.3,Tuve que esperar demasiado tiempo.
+974,2024-07-14,Call Center,Centro,VIP,5,3,4.6,No resolvieron mi problema.
+975,2024-07-16,Call Center,Oeste,Nuevo,6,3,2.8,"Pésima atención, no lo recomiendo."
+976,2024-07-16,Call Center,Oeste,Nuevo,6,4,6,No resolvieron mi problema.
+977,2024-07-18,Web,Norte,Recurrente,9,5,1.6,Todo funcionó como esperaba.
+978,2024-07-19,Sucursal,Sur,Nuevo,7,4,1.6,"El servicio estuvo bien, sin más."
+979,2024-07-18,Web,Este,VIP,7,4,1.5,Cumplió lo básico.
+980,2024-07-14,App,Oeste,VIP,9,5,2.3,"Muy buena atención, resolvieron rápido."
+981,2024-07-17,Web,Oeste,VIP,7,3,1,Podría mejorar los tiempos de espera.
+982,2024-07-16,Web,Sur,VIP,9,5,2.7,Gran experiencia de principio a fin.
+983,2024-07-17,Call Center,Centro,VIP,4,2,5.7,No resolvieron mi problema.
+984,2024-07-16,Sucursal,Oeste,Recurrente,9,5,2.7,El equipo fue muy amable y claro.
+985,2024-07-15,Sucursal,Centro,VIP,10,5,3.1,Todo funcionó como esperaba.
+986,2024-07-16,Web,Centro,Nuevo,6,3,2.4,Tuve que esperar demasiado tiempo.
+987,2024-07-21,App,Centro,VIP,9,4,1.7,Gran experiencia de principio a fin.
+988,2024-07-16,Sucursal,Norte,VIP,10,5,1.8,El equipo fue muy amable y claro.
+989,2024-07-18,Call Center,Oeste,VIP,5,3,5.4,Tuve que esperar demasiado tiempo.
+990,2024-07-21,Call Center,Sur,Recurrente,6,3,6.4,Tuve que esperar demasiado tiempo.
+991,2024-07-21,App,Oeste,Recurrente,9,5,1.8,"Excelente servicio, volvería a comprar."
+992,2024-07-20,Web,Sur,VIP,9,5,3.6,"Excelente servicio, volvería a comprar."
+993,2024-07-18,Call Center,Sur,Nuevo,4,2,4.9,No resolvieron mi problema.
+994,2024-07-18,Web,Norte,Nuevo,7,3,2,Ni bueno ni malo.
+995,2024-07-21,App,Norte,Recurrente,9,5,4.6,"Excelente servicio, volvería a comprar."
+996,2024-07-22,App,Norte,Recurrente,6,3,4.1,El proceso fue confuso y lento.
+997,2024-07-23,Sucursal,Este,Nuevo,7,3,1.5,"El servicio estuvo bien, sin más."
+998,2024-07-19,App,Centro,VIP,9,5,1.8,Gran experiencia de principio a fin.
+999,2024-07-24,Sucursal,Norte,Recurrente,8,4,2,Podría mejorar los tiempos de espera.
+1000,2024-07-21,Web,Este,VIP,7,4,3.2,Podría mejorar los tiempos de espera.
+1001,2024-07-18,Call Center,Este,VIP,6,4,3.8,El proceso fue confuso y lento.
+1002,2024-07-24,Call Center,Norte,VIP,5,3,5.7,El proceso fue confuso y lento.
+1003,2024-07-19,Call Center,Centro,Nuevo,5,3,3.6,No resolvieron mi problema.
+1004,2024-07-19,Sucursal,Oeste,VIP,9,5,5,Todo funcionó como esperaba.
+1005,2024-07-19,Call Center,Norte,Nuevo,5,3,3.2,"Pésima atención, no lo recomiendo."
+1006,2024-07-20,App,Norte,VIP,10,5,1.4,"Excelente servicio, volvería a comprar."
+1007,2024-07-25,Sucursal,Sur,Nuevo,8,4,4.9,Cumplió lo básico.
+1008,2024-07-21,Call Center,Este,Recurrente,3,2,2.9,Tuve que esperar demasiado tiempo.
+1009,2024-07-24,App,Sur,Nuevo,8,4,3.8,Ni bueno ni malo.
+1010,2024-07-21,App,Oeste,Nuevo,7,4,1.1,Ni bueno ni malo.
+1011,2024-07-21,Web,Sur,Nuevo,7,4,20,"El servicio estuvo bien, sin más."
+1012,2024-07-26,Call Center,Oeste,Nuevo,5,3,3.5,"Pésima atención, no lo recomiendo."
+1013,2024-07-26,Web,Norte,VIP,7,4,2,Podría mejorar los tiempos de espera.
+1014,2024-07-21,Web,Sur,VIP,7,4,1.9,Cumplió lo básico.
+1015,2024-07-22,Call Center,Oeste,Recurrente,6,3,4.1,"Mala comunicación, muy frustrante."
+1016,2024-07-23,Web,Oeste,VIP,9,4,1.3,Todo funcionó como esperaba.
+1017,2024-07-26,Sucursal,Este,Nuevo,8,5,3,"El servicio estuvo bien, sin más."
+1018,2024-07-25,Web,Norte,Recurrente,9,5,4.5,"Muy buena atención, resolvieron rápido."
+1019,2024-07-22,App,Centro,Recurrente,6,3,2.9,El proceso fue confuso y lento.
+1020,2024-07-26,Call Center,Sur,Nuevo,4,3,4.8,No resolvieron mi problema.
+1021,2024-07-24,Call Center,Este,VIP,5,3,4.1,Tuve que esperar demasiado tiempo.
+1022,2024-07-26,Sucursal,Este,VIP,8,5,1.8,Ni bueno ni malo.
+1023,2024-07-26,App,Centro,Nuevo,9,5,1.9,El equipo fue muy amable y claro.
+1024,2024-07-26,App,Oeste,Nuevo,7,3,3.9,Ni bueno ni malo.
+1025,2024-07-27,Call Center,Sur,Nuevo,4,3,6.4,"Pésima atención, no lo recomiendo."
+1026,2024-07-24,Web,Oeste,Recurrente,8,4,1.8,Ni bueno ni malo.
+1027,2024-07-28,Web,Este,Nuevo,7,4,3.5,"El servicio estuvo bien, sin más."
+1028,2024-07-24,Sucursal,Oeste,VIP,8,4,3.2,Ni bueno ni malo.
+1029,2024-07-28,App,Este,Nuevo,8,4,1.9,"El servicio estuvo bien, sin más."
+1030,2024-07-28,Web,Este,Nuevo,7,4,4.4,Cumplió lo básico.
+1031,2024-07-27,Sucursal,Oeste,Nuevo,8,4,3.8,"El servicio estuvo bien, sin más."
+1032,2024-07-26,App,Sur,Nuevo,9,5,1.2,"Muy buena atención, resolvieron rápido."
+1033,2024-07-26,Sucursal,Oeste,Nuevo,8,5,1.5,"El servicio estuvo bien, sin más."
+1034,2024-07-29,Sucursal,Centro,Nuevo,8,4,1.7,Podría mejorar los tiempos de espera.
+1035,2024-07-31,Sucursal,Este,VIP,9,5,2.8,"Muy buena atención, resolvieron rápido."
+1036,2024-07-25,Call Center,Oeste,Nuevo,4,3,3.3,No resolvieron mi problema.
+1037,2024-07-29,Sucursal,Sur,Recurrente,7,3,3.8,Podría mejorar los tiempos de espera.
+1038,2024-07-28,Call Center,Norte,Nuevo,6,3,3.2,"Pésima atención, no lo recomiendo."
+1039,2024-07-26,App,Norte,Nuevo,6,3,4.4,"Mala comunicación, muy frustrante."
+1040,2024-07-30,Web,Este,VIP,8,4,1.1,Cumplió lo básico.
+1041,2024-07-30,Web,Oeste,Recurrente,8,5,4.8,"El servicio estuvo bien, sin más."
+1042,2024-08-01,Call Center,Centro,Recurrente,5,3,5.8,"Mala comunicación, muy frustrante."
+1043,2024-08-01,Call Center,Sur,Nuevo,4,2,6.2,El proceso fue confuso y lento.
+1044,2024-08-02,Call Center,Sur,Nuevo,6,3,4.6,"Pésima atención, no lo recomiendo."
+1045,2024-07-27,App,Centro,Recurrente,8,4,4.4,"El servicio estuvo bien, sin más."
+1046,2024-08-02,Sucursal,Este,VIP,7,4,1.6,"El servicio estuvo bien, sin más."
+1047,2024-07-30,Call Center,Sur,VIP,4,3,5.2,"Mala comunicación, muy frustrante."
+1048,2024-08-02,App,Este,Nuevo,7,4,3.7,"El servicio estuvo bien, sin más."
+1049,2024-07-30,App,Este,VIP,8,4,2.7,Podría mejorar los tiempos de espera.
+1050,2024-07-31,Call Center,Este,Recurrente,4,2,3.1,Tuve que esperar demasiado tiempo.
+1051,2024-08-01,Sucursal,Oeste,VIP,9,5,1.3,"Muy buena atención, resolvieron rápido."
+1052,2024-07-31,App,Este,VIP,7,4,3,"El servicio estuvo bien, sin más."
+1053,2024-07-31,Call Center,Centro,VIP,6,3,24,"Pésima atención, no lo recomiendo."
+1054,2024-08-04,App,Norte,VIP,8,5,3,"El servicio estuvo bien, sin más."
+1055,2024-08-04,Web,Centro,VIP,8,4,2.9,Ni bueno ni malo.
+1056,2024-08-01,Web,Sur,VIP,8,4,1.7,"El servicio estuvo bien, sin más."
+1057,2024-07-30,Call Center,Oeste,VIP,4,3,5.9,"Pésima atención, no lo recomiendo."
+1058,2024-08-03,Call Center,Sur,Recurrente,4,2,5.5,El proceso fue confuso y lento.
+1059,2024-07-30,Call Center,Este,VIP,6,4,3.1,No resolvieron mi problema.
+1060,2024-08-04,App,Sur,Nuevo,7,3,2.1,Cumplió lo básico.
+1061,2024-08-06,Sucursal,Norte,Recurrente,7,3,2.4,Ni bueno ni malo.
+1062,2024-08-06,Call Center,Sur,Recurrente,6,3,5.2,"Pésima atención, no lo recomiendo."
+1063,2024-08-05,App,Oeste,Nuevo,8,4,3,Podría mejorar los tiempos de espera.
+1064,2024-08-06,App,Norte,VIP,9,5,1.1,"Excelente servicio, volvería a comprar."
+1065,2024-08-03,Web,Sur,VIP,7,4,3.2,"El servicio estuvo bien, sin más."
+1066,2024-08-07,Call Center,Oeste,Nuevo,4,3,3.6,El proceso fue confuso y lento.
+1067,2024-08-02,Sucursal,Oeste,Recurrente,8,4,3,"El servicio estuvo bien, sin más."
+1068,2024-08-06,Web,Sur,Recurrente,9,5,2.8,Gran experiencia de principio a fin.
+1069,2024-08-06,Web,Norte,VIP,9,4,2.5,"Muy buena atención, resolvieron rápido."
+1070,2024-08-04,Web,Centro,VIP,8,4,3.2,"El servicio estuvo bien, sin más."
+1071,2024-08-03,Sucursal,Sur,Nuevo,9,4,1.7,"Muy buena atención, resolvieron rápido."
+1072,2024-08-03,App,Sur,VIP,9,5,3.2,"Muy buena atención, resolvieron rápido."
+1073,2024-08-06,Call Center,Este,Recurrente,6,4,6.1,"Pésima atención, no lo recomiendo."
+1074,2024-08-07,App,Oeste,VIP,10,5,2.9,"Excelente servicio, volvería a comprar."
+1075,2024-08-08,Web,Este,VIP,10,5,3.1,El equipo fue muy amable y claro.
+1076,2024-08-05,App,Norte,VIP,7,4,2.2,"El servicio estuvo bien, sin más."
+1077,2024-08-04,App,Este,Nuevo,8,4,1.3,"El servicio estuvo bien, sin más."
+1078,2024-08-08,Web,Sur,VIP,7,4,1.2,"El servicio estuvo bien, sin más."
+1079,2024-08-05,App,Este,Nuevo,8,4,3.1,Podría mejorar los tiempos de espera.
+1080,2024-08-04,Call Center,Este,Recurrente,4,3,5.4,El proceso fue confuso y lento.
+1081,2024-08-07,App,Sur,Nuevo,7,3,4.7,Cumplió lo básico.
+1082,2024-08-07,Sucursal,Este,Nuevo,6,3,2.3,"Mala comunicación, muy frustrante."
+1083,2024-08-07,Web,Norte,VIP,10,5,1.8,Todo funcionó como esperaba.
+1084,2024-08-08,App,Este,VIP,10,5,4.3,"Muy buena atención, resolvieron rápido."
+1085,2024-08-06,Web,Oeste,VIP,8,4,2.7,Podría mejorar los tiempos de espera.
+1086,2024-08-10,Call Center,Sur,Nuevo,5,2,3.5,El proceso fue confuso y lento.
+1087,2024-08-06,Call Center,Sur,Recurrente,6,4,4.7,No resolvieron mi problema.
+1088,2024-08-10,App,Norte,VIP,8,5,3.3,"El servicio estuvo bien, sin más."
+1089,2024-08-11,App,Centro,Nuevo,7,4,3.4,Cumplió lo básico.
+1090,2024-08-10,Sucursal,Centro,Nuevo,9,5,4.4,El equipo fue muy amable y claro.
+1091,2024-08-10,Web,Sur,VIP,9,5,3.3,El equipo fue muy amable y claro.
+1092,2024-08-10,Call Center,Este,Nuevo,5,3,2.6,El proceso fue confuso y lento.
+1093,2024-08-07,Sucursal,Oeste,Nuevo,9,5,2.8,El equipo fue muy amable y claro.
+1094,2024-08-08,Web,Norte,Recurrente,9,4,1.4,Gran experiencia de principio a fin.
+1095,2024-08-10,Call Center,Centro,Recurrente,6,3,3.5,No resolvieron mi problema.
+1096,2024-08-07,Web,Este,Recurrente,7,4,1.4,Podría mejorar los tiempos de espera.
+1097,2024-08-07,Web,Norte,VIP,7,4,4.8,"El servicio estuvo bien, sin más."
+1098,2024-08-12,Web,Centro,Recurrente,8,4,1.1,Podría mejorar los tiempos de espera.
+1099,2024-08-09,App,Norte,Nuevo,9,5,3.3,Gran experiencia de principio a fin.
+1100,2024-08-08,Web,Norte,Recurrente,8,4,4.5,Podría mejorar los tiempos de espera.
+1101,2024-08-12,Sucursal,Norte,Nuevo,9,5,1.5,El equipo fue muy amable y claro.
+1102,2024-08-13,Web,Este,Recurrente,9,5,3.5,Todo funcionó como esperaba.
+1103,2024-08-13,Sucursal,Norte,Nuevo,8,4,3.4,"El servicio estuvo bien, sin más."
+1104,2024-08-08,Call Center,Este,Nuevo,6,4,3.7,"Mala comunicación, muy frustrante."
+1105,2024-08-14,Sucursal,Centro,Nuevo,8,4,4.9,Ni bueno ni malo.
+1106,2024-08-11,Sucursal,Este,VIP,9,4,4.5,"Excelente servicio, volvería a comprar."
+1107,2024-08-14,Sucursal,Oeste,Nuevo,6,4,2.1,"Pésima atención, no lo recomiendo."
+1108,2024-08-12,Web,Este,Recurrente,8,4,2.6,Podría mejorar los tiempos de espera.
+1109,2024-08-14,App,Sur,VIP,9,4,2.9,"Excelente servicio, volvería a comprar."
+1110,2024-08-14,Sucursal,Este,VIP,8,4,4.2,Cumplió lo básico.
+1111,2024-08-14,Web,Centro,VIP,7,3,3.5,Cumplió lo básico.
+1112,2024-08-14,Web,Sur,Recurrente,6,4,1.6,"Pésima atención, no lo recomiendo."
+1113,2024-08-12,Call Center,Este,Recurrente,5,3,5.1,El proceso fue confuso y lento.
+1114,2024-08-14,App,Centro,VIP,9,5,2.6,"Muy buena atención, resolvieron rápido."
+1115,2024-08-17,App,Centro,VIP,9,4,3.5,Todo funcionó como esperaba.
+1116,2024-08-14,Sucursal,Oeste,Nuevo,7,4,3.3,Cumplió lo básico.
+1117,2024-08-14,Call Center,Sur,Recurrente,6,3,4.5,El proceso fue confuso y lento.
+1118,2024-08-13,Call Center,Norte,Nuevo,5,2,5.2,El proceso fue confuso y lento.
+1119,2024-08-11,Web,Este,VIP,8,4,2.2,Ni bueno ni malo.
+1120,2024-08-12,Web,Oeste,Nuevo,9,5,3.7,Todo funcionó como esperaba.
+1121,2024-08-15,Sucursal,Oeste,Nuevo,7,4,1.1,Cumplió lo básico.
+1122,2024-08-16,Web,Norte,Recurrente,7,4,3.4,Podría mejorar los tiempos de espera.
+1123,2024-08-17,Call Center,Oeste,Nuevo,4,3,5.1,Tuve que esperar demasiado tiempo.
+1124,2024-08-13,Web,Sur,Nuevo,7,4,2.7,Ni bueno ni malo.
+1125,2024-08-13,Call Center,Centro,Recurrente,4,2,3.3,El proceso fue confuso y lento.
+1126,2024-08-17,Call Center,Este,Nuevo,5,3,3.2,"Mala comunicación, muy frustrante."
+1127,2024-08-14,Web,Oeste,Recurrente,9,5,3.6,"Excelente servicio, volvería a comprar."
+1128,2024-08-19,Sucursal,Oeste,VIP,9,5,4.4,"Excelente servicio, volvería a comprar."
+1129,2024-08-14,Web,Este,Recurrente,8,5,1.1,Podría mejorar los tiempos de espera.
+1130,2024-08-15,App,Oeste,Recurrente,8,5,2.8,"El servicio estuvo bien, sin más."
+1131,2024-08-15,Call Center,Sur,Recurrente,4,2,3.8,No resolvieron mi problema.
+1132,2024-08-17,Call Center,Oeste,Nuevo,4,2,6.3,El proceso fue confuso y lento.
+1133,2024-08-15,Sucursal,Norte,Nuevo,9,5,3.2,El equipo fue muy amable y claro.
+1134,2024-08-18,App,Este,VIP,7,4,2.5,"El servicio estuvo bien, sin más."
+1135,2024-08-21,App,Oeste,VIP,8,4,3.7,Podría mejorar los tiempos de espera.
+1136,2024-08-19,Call Center,Sur,Nuevo,5,3,5.3,El proceso fue confuso y lento.
+1137,2024-08-20,Web,Norte,Recurrente,8,4,3.9,Podría mejorar los tiempos de espera.
+1138,2024-08-18,App,Norte,Recurrente,7,4,4.9,Podría mejorar los tiempos de espera.
+1139,2024-08-17,Sucursal,Este,Nuevo,9,5,3.8,Gran experiencia de principio a fin.
+1140,2024-08-18,Sucursal,Oeste,VIP,10,5,1.6,"Excelente servicio, volvería a comprar."
+1141,2024-08-22,Web,Centro,Recurrente,7,4,3.3,Podría mejorar los tiempos de espera.
+1142,2024-08-17,Call Center,Sur,VIP,5,4,3.4,"Mala comunicación, muy frustrante."
+1143,2024-08-19,Sucursal,Norte,Nuevo,7,4,2.5,Podría mejorar los tiempos de espera.
+1144,2024-08-22,Call Center,Oeste,Nuevo,5,3,3.4,"Mala comunicación, muy frustrante."
+1145,2024-08-22,Call Center,Sur,Nuevo,4,2,2.8,El proceso fue confuso y lento.
+1146,2024-08-20,Call Center,Norte,Nuevo,6,4,3.1,"Mala comunicación, muy frustrante."
+1147,2024-08-18,Web,Este,Recurrente,7,4,3.8,Cumplió lo básico.
+1148,2024-08-17,Call Center,Este,Nuevo,3,2,6.5,"Mala comunicación, muy frustrante."
+1149,2024-08-19,App,Este,VIP,8,4,2,"El servicio estuvo bien, sin más."
+1150,2024-08-21,Sucursal,Oeste,VIP,8,4,4,Cumplió lo básico.
+1151,2024-08-22,App,Sur,VIP,7,4,3.9,Ni bueno ni malo.
+1152,2024-08-24,App,Oeste,Recurrente,7,4,2.7,"El servicio estuvo bien, sin más."
+1153,2024-08-22,App,Norte,VIP,9,4,1.4,"Muy buena atención, resolvieron rápido."
+1154,2024-08-19,Web,Centro,Nuevo,7,4,1,Podría mejorar los tiempos de espera.
+1155,2024-08-23,App,Centro,Recurrente,8,4,2.6,Ni bueno ni malo.
+1156,2024-08-21,Call Center,Oeste,VIP,7,4,4.6,Cumplió lo básico.
+1157,2024-08-22,Web,Oeste,Recurrente,9,5,3.4,Gran experiencia de principio a fin.
+1158,2024-08-22,App,Oeste,Recurrente,8,5,4.7,Podría mejorar los tiempos de espera.
+1159,2024-08-21,Call Center,Sur,Nuevo,5,3,5.5,Tuve que esperar demasiado tiempo.
+1160,2024-08-23,Call Center,Este,VIP,5,3,3.6,"Mala comunicación, muy frustrante."
+1161,2024-08-20,App,Oeste,VIP,10,5,4.1,"Excelente servicio, volvería a comprar."
+1162,2024-08-23,Web,Sur,Nuevo,9,5,3.1,Todo funcionó como esperaba.
+1163,2024-08-25,Web,Norte,Recurrente,7,3,4,Cumplió lo básico.
+1164,2024-08-22,App,Centro,Recurrente,8,4,3.8,"El servicio estuvo bien, sin más."
+1165,2024-08-23,Sucursal,Este,VIP,8,4,3.5,Cumplió lo básico.
+1166,2024-08-21,Sucursal,Sur,VIP,10,5,4.2,"Excelente servicio, volvería a comprar."
+1167,2024-08-26,Call Center,Oeste,Nuevo,5,4,4.2,Tuve que esperar demasiado tiempo.
+1168,2024-08-26,Sucursal,Centro,VIP,8,4,4.2,Cumplió lo básico.
+1169,2024-08-22,Web,Centro,Recurrente,8,4,1.6,Podría mejorar los tiempos de espera.
+1170,2024-08-24,Sucursal,Sur,VIP,9,5,3.9,"Excelente servicio, volvería a comprar."
+1171,2024-08-25,App,Norte,VIP,9,4,4.1,Todo funcionó como esperaba.
+1172,2024-08-28,Sucursal,Este,VIP,9,4,3.2,"Excelente servicio, volvería a comprar."
+1173,2024-08-27,Sucursal,Norte,VIP,8,5,2.3,Cumplió lo básico.
+1174,2024-08-24,Sucursal,Oeste,Recurrente,9,5,2.2,"Muy buena atención, resolvieron rápido."
+1175,2024-08-29,Sucursal,Centro,VIP,8,4,4.1,Podría mejorar los tiempos de espera.
+1176,2024-08-28,App,Centro,Recurrente,9,5,4.9,Gran experiencia de principio a fin.
+1177,2024-08-23,Sucursal,Centro,VIP,10,5,1.6,El equipo fue muy amable y claro.
+1178,2024-08-23,Web,Centro,Nuevo,9,5,3.3,Todo funcionó como esperaba.
+1179,2024-08-24,Sucursal,Este,VIP,9,4,2.8,Gran experiencia de principio a fin.
+1180,2024-08-25,Sucursal,Centro,Recurrente,8,5,1.3,"El servicio estuvo bien, sin más."
+1181,2024-08-30,App,Sur,VIP,8,4,3.7,"El servicio estuvo bien, sin más."
+1182,2024-08-26,Web,Centro,Nuevo,8,5,3,Ni bueno ni malo.
+1183,2024-08-29,Web,Centro,Recurrente,8,4,4.2,Cumplió lo básico.
+1184,2024-08-27,Sucursal,Oeste,Recurrente,7,4,4.3,"El servicio estuvo bien, sin más."
+1185,2024-08-28,Call Center,Sur,Nuevo,6,4,5.9,"Mala comunicación, muy frustrante."
+1186,2024-08-27,Call Center,Sur,VIP,6,3,2.9,"Mala comunicación, muy frustrante."
+1187,2024-08-26,App,Oeste,Recurrente,7,4,4.2,Ni bueno ni malo.
+1188,2024-08-26,App,Centro,Nuevo,7,3,2.1,Podría mejorar los tiempos de espera.
+1189,2024-08-31,Call Center,Norte,Nuevo,5,3,5.3,"Mala comunicación, muy frustrante."
+1190,2024-09-01,App,Este,Recurrente,8,5,2.4,"El servicio estuvo bien, sin más."
+1191,2024-08-27,App,Sur,Recurrente,8,4,3,Cumplió lo básico.
+1192,2024-08-30,Sucursal,Centro,Recurrente,9,4,2.4,"Muy buena atención, resolvieron rápido."
+1193,2024-08-30,Sucursal,Este,VIP,9,4,1.8,"Excelente servicio, volvería a comprar."
+1194,2024-08-29,Sucursal,Sur,Recurrente,7,4,2.1,"El servicio estuvo bien, sin más."
+1195,2024-09-02,Call Center,Oeste,Nuevo,5,3,5.8,"Pésima atención, no lo recomiendo."
+1196,2024-09-01,Sucursal,Oeste,Recurrente,8,4,1.5,"El servicio estuvo bien, sin más."
+1197,2024-08-28,Call Center,Oeste,Nuevo,5,3,4,El proceso fue confuso y lento.
+1198,2024-08-29,App,Centro,Nuevo,8,4,4.5,Podría mejorar los tiempos de espera.
+1199,2024-08-30,Web,Este,Nuevo,8,5,4.4,"El servicio estuvo bien, sin más."
+1200,2024-09-01,Web,Norte,Nuevo,8,4,3.2,Ni bueno ni malo.
+1201,2024-08-31,Web,Este,Nuevo,7,4,1.9,Ni bueno ni malo.
+1202,2024-09-03,Call Center,Norte,VIP,6,4,3,No resolvieron mi problema.
+1203,2024-08-31,Call Center,Norte,Nuevo,6,4,4.6,Tuve que esperar demasiado tiempo.
+1204,2024-08-30,App,Norte,Recurrente,7,4,3.5,"El servicio estuvo bien, sin más."
+1205,2024-08-31,Call Center,Centro,VIP,5,3,5.4,"Mala comunicación, muy frustrante."
+1206,2024-08-30,Web,Centro,VIP,7,4,1.2,Ni bueno ni malo.
+1207,2024-08-30,App,Este,Recurrente,9,4,4.5,Todo funcionó como esperaba.
+1208,2024-08-31,App,Oeste,Nuevo,9,5,2.6,Gran experiencia de principio a fin.
+1209,2024-09-05,Web,Centro,Nuevo,7,3,4.6,Podría mejorar los tiempos de espera.
+1210,2024-08-31,Call Center,Este,VIP,5,3,5.1,No resolvieron mi problema.
+1211,2024-09-02,Sucursal,Sur,VIP,9,4,4.5,Gran experiencia de principio a fin.
+1212,2024-08-30,Web,Norte,VIP,10,5,4.3,El equipo fue muy amable y claro.
+1213,2024-08-30,Web,Oeste,Nuevo,9,4,4,Gran experiencia de principio a fin.
+1214,2024-09-06,App,Oeste,Nuevo,7,4,4.7,Podría mejorar los tiempos de espera.
+1215,2024-09-04,Sucursal,Centro,VIP,10,5,3.2,Todo funcionó como esperaba.
+1216,2024-09-04,App,Norte,Nuevo,8,4,4.7,Podría mejorar los tiempos de espera.
+1217,2024-08-31,Call Center,Norte,Nuevo,6,3,3.6,"Mala comunicación, muy frustrante."
+1218,2024-09-01,App,Este,Nuevo,9,5,4.4,Gran experiencia de principio a fin.
+1219,2024-09-03,Web,Sur,Nuevo,9,4,4.6,"Excelente servicio, volvería a comprar."
+1220,2024-09-06,App,Oeste,Nuevo,7,3,3.7,Podría mejorar los tiempos de espera.
+1221,2024-09-05,App,Sur,Recurrente,9,5,2.8,Gran experiencia de principio a fin.
+1222,2024-09-02,Web,Centro,Nuevo,7,4,2.7,Ni bueno ni malo.
+1223,2024-09-06,App,Sur,Recurrente,8,4,4.6,Cumplió lo básico.
+1224,2024-09-05,Web,Norte,VIP,8,4,1.4,Cumplió lo básico.
+1225,2024-09-07,App,Norte,Recurrente,7,4,2.1,Podría mejorar los tiempos de espera.
+1226,2024-09-07,Sucursal,Norte,Recurrente,7,4,3.8,"El servicio estuvo bien, sin más."
+1227,2024-09-07,App,Centro,Nuevo,9,4,3.3,"Excelente servicio, volvería a comprar."
+1228,2024-09-02,App,Norte,Nuevo,9,5,1.8,Todo funcionó como esperaba.
+1229,2024-09-08,Web,Este,Nuevo,8,4,4.2,Ni bueno ni malo.
+1230,2024-09-04,Call Center,Norte,Recurrente,6,4,5,No resolvieron mi problema.
+1231,2024-09-06,Call Center,Norte,VIP,7,4,6.2,Podría mejorar los tiempos de espera.
+1232,2024-09-04,App,Centro,Nuevo,8,4,4.8,Podría mejorar los tiempos de espera.
+1233,2024-09-05,App,Este,Recurrente,7,4,4.9,"El servicio estuvo bien, sin más."
+1234,2024-09-04,Sucursal,Este,Recurrente,9,5,1.9,"Muy buena atención, resolvieron rápido."
+1235,2024-09-10,Web,Norte,Nuevo,8,4,4.7,"El servicio estuvo bien, sin más."
+1236,2024-09-04,Call Center,Norte,VIP,6,3,4,No resolvieron mi problema.
+1237,2024-09-07,Sucursal,Sur,Recurrente,9,5,4.3,"Muy buena atención, resolvieron rápido."
+1238,2024-09-09,Web,Oeste,VIP,10,5,2.9,El equipo fue muy amable y claro.
+1239,2024-09-05,Call Center,Oeste,VIP,7,4,5,"El servicio estuvo bien, sin más."
+1240,2024-09-08,Web,Sur,VIP,8,4,2.9,Ni bueno ni malo.
+1241,2024-09-08,App,Oeste,Nuevo,7,3,2.3,Podría mejorar los tiempos de espera.
+1242,2024-09-05,App,Este,VIP,9,5,2.6,Todo funcionó como esperaba.
+1243,2024-09-10,Sucursal,Centro,Recurrente,7,4,4.8,Ni bueno ni malo.
+1244,2024-09-10,Web,Centro,VIP,9,4,2,Todo funcionó como esperaba.
+1245,2024-09-12,Sucursal,Centro,Recurrente,9,4,3,"Excelente servicio, volvería a comprar."
+1246,2024-09-06,Web,Norte,VIP,10,5,5,El equipo fue muy amable y claro.
+1247,2024-09-07,Sucursal,Centro,VIP,9,5,4.9,Todo funcionó como esperaba.
+1248,2024-09-10,Call Center,Sur,Recurrente,6,4,5.2,No resolvieron mi problema.
+1249,2024-09-08,Sucursal,Oeste,Recurrente,8,4,2.4,Cumplió lo básico.
+1250,2024-09-12,Sucursal,Sur,Nuevo,9,5,2,Gran experiencia de principio a fin.
+1251,2024-09-08,Sucursal,Este,Recurrente,7,4,3.6,Ni bueno ni malo.
+1252,2024-09-13,Web,Sur,VIP,9,5,4,El equipo fue muy amable y claro.
+1253,2024-09-08,App,Norte,Recurrente,8,5,4.4,Podría mejorar los tiempos de espera.
+1254,2024-09-08,Sucursal,Norte,Recurrente,8,4,1.7,"El servicio estuvo bien, sin más."
+1255,2024-09-14,Web,Oeste,Nuevo,7,4,5,"El servicio estuvo bien, sin más."
+1256,2024-09-08,Web,Centro,VIP,8,4,3.1,Ni bueno ni malo.
+1257,2024-09-12,Call Center,Sur,VIP,6,4,2.6,No resolvieron mi problema.
+1258,2024-09-09,App,Oeste,Nuevo,9,4,4.1,Gran experiencia de principio a fin.
+1259,2024-09-11,App,Oeste,Nuevo,9,5,5,El equipo fue muy amable y claro.
+1260,2024-09-15,Call Center,Sur,Recurrente,4,2,6.3,Tuve que esperar demasiado tiempo.
+1261,2024-09-15,Call Center,Centro,VIP,4,3,6,No resolvieron mi problema.
+1262,2024-09-13,Call Center,Centro,Recurrente,5,3,2.6,No resolvieron mi problema.
+1263,2024-09-12,App,Sur,Nuevo,7,4,3.7,Cumplió lo básico.
+1264,2024-09-12,Web,Sur,VIP,10,5,1.2,El equipo fue muy amable y claro.
+1265,2024-09-15,Sucursal,Este,Recurrente,7,4,2.6,"El servicio estuvo bien, sin más."
+1266,2024-09-16,Web,Oeste,VIP,8,4,4.9,Cumplió lo básico.
+1267,2024-09-11,Call Center,Este,VIP,5,3,2.6,"Pésima atención, no lo recomiendo."
+1268,2024-09-14,Web,Norte,Recurrente,8,4,4.2,Cumplió lo básico.
+1269,2024-09-13,Call Center,Este,VIP,5,3,4.8,"Mala comunicación, muy frustrante."
+1270,2024-09-17,Call Center,Sur,Recurrente,5,3,4.7,No resolvieron mi problema.
+1271,2024-09-14,Web,Este,VIP,10,5,1.1,"Muy buena atención, resolvieron rápido."
+1272,2024-09-13,Sucursal,Sur,Nuevo,8,4,1.9,"El servicio estuvo bien, sin más."
+1273,2024-09-16,Web,Sur,VIP,9,5,2.6,El equipo fue muy amable y claro.
+1274,2024-09-16,App,Este,VIP,9,5,4.3,Todo funcionó como esperaba.
+1275,2024-09-16,Call Center,Norte,VIP,5,4,5.3,"Pésima atención, no lo recomiendo."
+1276,2024-09-17,Call Center,Sur,Recurrente,4,3,3.8,No resolvieron mi problema.
+1277,2024-09-15,Call Center,Oeste,Recurrente,6,3,6.2,No resolvieron mi problema.
+1278,2024-09-19,Sucursal,Sur,Nuevo,7,4,4,Podría mejorar los tiempos de espera.
+1279,2024-09-15,Sucursal,Sur,Nuevo,7,4,1.2,Cumplió lo básico.
+1280,2024-09-19,Call Center,Norte,Recurrente,6,3,2.8,No resolvieron mi problema.
+1281,2024-09-13,Web,Centro,VIP,9,5,1.4,Todo funcionó como esperaba.
+1282,2024-09-19,App,Oeste,VIP,8,4,2.4,Ni bueno ni malo.
+1283,2024-09-19,Sucursal,Sur,Recurrente,9,5,1.2,Todo funcionó como esperaba.
+1284,2024-09-19,Sucursal,Este,Nuevo,9,4,3,Gran experiencia de principio a fin.
+1285,2024-09-16,Web,Este,VIP,8,4,4.8,Ni bueno ni malo.
+1286,2024-09-18,Call Center,Centro,Nuevo,4,3,4.9,Tuve que esperar demasiado tiempo.
+1287,2024-09-19,Sucursal,Centro,Recurrente,8,4,3.9,Ni bueno ni malo.
+1288,2024-09-16,Call Center,Este,Recurrente,5,3,4.9,No resolvieron mi problema.
+1289,2024-09-16,Call Center,Norte,VIP,6,4,4.3,No resolvieron mi problema.
+1290,2024-09-21,Call Center,Centro,Recurrente,6,4,4.6,No resolvieron mi problema.
+1291,2024-09-18,Web,Norte,VIP,8,4,1.3,"El servicio estuvo bien, sin más."
+1292,2024-09-17,Call Center,Norte,Recurrente,4,2,4,No resolvieron mi problema.
+1293,2024-09-21,App,Norte,Nuevo,7,3,3.5,Podría mejorar los tiempos de espera.
+1294,2024-09-22,Call Center,Sur,Nuevo,4,2,3,Tuve que esperar demasiado tiempo.
+1295,2024-09-22,App,Norte,Nuevo,7,4,1.4,Cumplió lo básico.
+1296,2024-09-17,Sucursal,Este,Nuevo,7,4,4.2,Podría mejorar los tiempos de espera.
+1297,2024-09-16,App,Centro,Nuevo,9,4,2.9,Gran experiencia de principio a fin.
+1298,2024-09-20,Web,Este,VIP,8,4,2.5,Ni bueno ni malo.
+1299,2024-09-17,App,Oeste,Nuevo,8,4,4.1,"El servicio estuvo bien, sin más."
+1300,2024-09-22,Call Center,Este,Nuevo,6,4,6,Tuve que esperar demasiado tiempo.
+1301,2024-09-23,Web,Sur,VIP,10,5,4.9,El equipo fue muy amable y claro.
+1302,2024-09-22,App,Sur,VIP,10,5,2.2,Todo funcionó como esperaba.
+1303,2024-09-23,Call Center,Centro,Recurrente,5,3,2.9,El proceso fue confuso y lento.
+1304,2024-09-24,Call Center,Norte,Nuevo,5,3,5.1,Tuve que esperar demasiado tiempo.
+1305,2024-09-21,Sucursal,Este,Nuevo,9,5,1.6,Gran experiencia de principio a fin.
+1306,2024-09-23,Web,Centro,Recurrente,7,4,4.6,Cumplió lo básico.
+1307,2024-09-19,Web,Centro,VIP,8,5,1.5,Podría mejorar los tiempos de espera.
+1308,2024-09-23,App,Este,VIP,9,5,1.3,Todo funcionó como esperaba.
+1309,2024-09-24,Sucursal,Sur,Nuevo,8,5,1,Podría mejorar los tiempos de espera.
+1310,2024-09-22,Sucursal,Norte,Nuevo,9,5,1.6,Gran experiencia de principio a fin.
+1311,2024-09-20,Call Center,Este,Recurrente,5,3,5.7,"Pésima atención, no lo recomiendo."
+1312,2024-09-20,Call Center,Este,Nuevo,4,2,3.2,Tuve que esperar demasiado tiempo.
+1313,2024-09-24,App,Oeste,VIP,9,4,3.1,Todo funcionó como esperaba.
+1314,2024-09-25,Call Center,Centro,Nuevo,5,3,2.9,Tuve que esperar demasiado tiempo.
+1315,2024-09-26,Sucursal,Oeste,Nuevo,8,4,1.6,Cumplió lo básico.
+1316,2024-09-22,Sucursal,Sur,Nuevo,9,5,4.7,Gran experiencia de principio a fin.
+1317,2024-09-22,Sucursal,Oeste,Nuevo,8,4,3.8,"El servicio estuvo bien, sin más."
+1318,2024-09-26,Sucursal,Este,VIP,10,5,3.7,Gran experiencia de principio a fin.
+1319,2024-09-23,Sucursal,Oeste,Recurrente,7,3,1.6,Ni bueno ni malo.
+1320,2024-09-21,App,Oeste,VIP,10,5,2.4,Todo funcionó como esperaba.
+1321,2024-09-23,Sucursal,Este,Recurrente,9,5,3.1,"Muy buena atención, resolvieron rápido."
+1322,2024-09-24,Web,Oeste,Recurrente,9,5,4.8,"Excelente servicio, volvería a comprar."
+1323,2024-09-24,Sucursal,Sur,Nuevo,8,5,4.3,Ni bueno ni malo.
+1324,2024-09-26,Sucursal,Oeste,Nuevo,9,5,2.8,Gran experiencia de principio a fin.
+1325,2024-09-24,App,Centro,Nuevo,7,3,1.2,Podría mejorar los tiempos de espera.
+1326,2024-09-27,Web,Este,Recurrente,8,4,4.5,Cumplió lo básico.
+1327,2024-09-23,Web,Este,VIP,9,4,1.7,"Muy buena atención, resolvieron rápido."
+1328,2024-09-28,Sucursal,Sur,VIP,8,4,1.8,Podría mejorar los tiempos de espera.
+1329,2024-09-29,Call Center,Norte,Recurrente,4,2,3.4,No resolvieron mi problema.
+1330,2024-09-28,Web,Norte,Nuevo,9,4,2.9,"Excelente servicio, volvería a comprar."
+1331,2024-09-26,App,Este,VIP,8,4,1.7,Cumplió lo básico.
+1332,2024-09-28,App,Oeste,Recurrente,7,4,3.5,Ni bueno ni malo.
+1333,2024-09-24,Call Center,Centro,Recurrente,5,3,2.8,No resolvieron mi problema.
+1334,2024-09-26,App,Sur,VIP,9,5,3.9,Todo funcionó como esperaba.
+1335,2024-09-28,App,Norte,VIP,9,4,4.4,"Muy buena atención, resolvieron rápido."
+1336,2024-09-24,Sucursal,Oeste,VIP,10,5,3.9,Gran experiencia de principio a fin.
+1337,2024-09-25,Sucursal,Sur,Nuevo,9,5,3.3,Gran experiencia de principio a fin.
+1338,2024-09-29,Sucursal,Norte,VIP,8,4,3.6,Podría mejorar los tiempos de espera.
+1339,2024-09-27,Call Center,Sur,Recurrente,6,3,3.3,El proceso fue confuso y lento.
+1340,2024-09-26,Sucursal,Sur,VIP,9,5,3,Todo funcionó como esperaba.
+1341,2024-09-29,Web,Sur,Recurrente,8,4,4,Cumplió lo básico.
+1342,2024-09-30,App,Este,VIP,9,4,2,Todo funcionó como esperaba.
+1343,2024-10-01,Web,Sur,Recurrente,8,4,1.9,Podría mejorar los tiempos de espera.
+1344,2024-09-26,Web,Oeste,Recurrente,8,4,4.7,Cumplió lo básico.
+1345,2024-10-01,Web,Norte,Recurrente,7,4,3.4,Cumplió lo básico.
+1346,2024-09-28,Call Center,Oeste,Nuevo,5,3,4.5,Tuve que esperar demasiado tiempo.
+1347,2024-10-02,Call Center,Centro,Recurrente,6,3,6.1,El proceso fue confuso y lento.
+1348,2024-09-30,Sucursal,Oeste,VIP,8,4,1,Ni bueno ni malo.
+1349,2024-10-01,Call Center,Este,Nuevo,5,3,2.9,Tuve que esperar demasiado tiempo.
+1350,2024-10-01,Web,Oeste,Nuevo,7,4,2.7,"El servicio estuvo bien, sin más."
+1351,2024-09-30,Sucursal,Norte,VIP,10,5,1.9,"Excelente servicio, volvería a comprar."
+1352,2024-10-02,App,Este,VIP,10,5,4.1,Todo funcionó como esperaba.
+1353,2024-09-29,Web,Oeste,Recurrente,7,4,2.1,Cumplió lo básico.
+1354,2024-10-02,Call Center,Norte,Nuevo,5,3,2.6,Tuve que esperar demasiado tiempo.
+1355,2024-10-04,Call Center,Norte,Nuevo,5,3,3.5,"Mala comunicación, muy frustrante."
+1356,2024-10-01,Web,Oeste,Nuevo,9,5,1.8,"Excelente servicio, volvería a comprar."
+1357,2024-10-02,Web,Este,VIP,10,5,1.5,El equipo fue muy amable y claro.
+1358,2024-09-30,App,Sur,Recurrente,8,4,2.1,Cumplió lo básico.
+1359,2024-09-29,Sucursal,Oeste,Nuevo,9,5,4.7,El equipo fue muy amable y claro.
+1360,2024-10-05,App,Oeste,Recurrente,9,4,2.2,Todo funcionó como esperaba.
+1361,2024-10-01,Call Center,Centro,Recurrente,6,3,5,No resolvieron mi problema.
+1362,2024-10-04,App,Norte,Recurrente,9,5,1.8,Todo funcionó como esperaba.
+1363,2024-10-05,Web,Centro,Recurrente,9,5,2.1,Gran experiencia de principio a fin.
+1364,2024-09-30,App,Este,Recurrente,7,4,1.2,Ni bueno ni malo.
+1365,2024-10-06,App,Centro,VIP,10,5,4.3,Todo funcionó como esperaba.
+1366,2024-10-03,App,Oeste,Recurrente,7,3,4.2,Cumplió lo básico.
+1367,2024-10-01,App,Centro,VIP,9,4,2.1,"Muy buena atención, resolvieron rápido."
+1368,2024-10-07,Web,Centro,Nuevo,7,4,2.9,"El servicio estuvo bien, sin más."
+1369,2024-10-02,App,Oeste,VIP,8,4,3.6,Ni bueno ni malo.
+1370,2024-10-02,Sucursal,Centro,VIP,8,4,1.3,Podría mejorar los tiempos de espera.
+1371,2024-10-02,App,Este,VIP,10,5,4.8,"Muy buena atención, resolvieron rápido."
+1372,2024-10-04,App,Centro,Recurrente,10,5,3.3,El equipo fue muy amable y claro.
+1373,2024-10-02,Web,Norte,Recurrente,8,4,1.7,Cumplió lo básico.
+1374,2024-10-05,Call Center,Oeste,VIP,7,4,6.5,"El servicio estuvo bien, sin más."
+1375,2024-10-08,Call Center,Oeste,Nuevo,7,3,3.7,Ni bueno ni malo.
+1376,2024-10-05,App,Este,Recurrente,8,4,2.3,Cumplió lo básico.
+1377,2024-10-07,Sucursal,Sur,VIP,9,4,2.4,Todo funcionó como esperaba.
+1378,2024-10-06,Sucursal,Sur,VIP,8,4,3.3,Podría mejorar los tiempos de espera.
+1379,2024-10-05,Web,Oeste,Recurrente,9,4,2.2,Gran experiencia de principio a fin.
+1380,2024-10-05,Call Center,Centro,Nuevo,5,3,5.5,Tuve que esperar demasiado tiempo.
+1381,2024-10-09,Sucursal,Norte,VIP,10,5,1.8,Gran experiencia de principio a fin.
+1382,2024-10-05,Web,Este,Nuevo,10,5,4.4,"Excelente servicio, volvería a comprar."
+1383,2024-10-06,Call Center,Sur,Nuevo,4,3,6.4,El proceso fue confuso y lento.
+1384,2024-10-10,App,Centro,Recurrente,8,5,4.4,Cumplió lo básico.
+1385,2024-10-09,App,Este,Recurrente,7,4,3.8,Ni bueno ni malo.
+1386,2024-10-08,App,Sur,Recurrente,8,4,4.1,Cumplió lo básico.
+1387,2024-10-05,Sucursal,Este,VIP,8,4,2.3,Cumplió lo básico.
+1388,2024-10-05,App,Oeste,Nuevo,9,5,3.5,"Excelente servicio, volvería a comprar."
+1389,2024-10-07,Sucursal,Este,VIP,10,5,4.5,Gran experiencia de principio a fin.
+1390,2024-10-08,Web,Centro,Nuevo,9,4,2.5,"Excelente servicio, volvería a comprar."
+1391,2024-10-09,Call Center,Este,Nuevo,6,3,3.9,"Mala comunicación, muy frustrante."
+1392,2024-10-11,Call Center,Centro,VIP,7,4,2.7,Podría mejorar los tiempos de espera.
+1393,2024-10-10,Sucursal,Sur,Nuevo,8,5,3.9,Podría mejorar los tiempos de espera.
+1394,2024-10-06,Sucursal,Norte,Recurrente,9,5,3.5,Todo funcionó como esperaba.
+1395,2024-10-10,Sucursal,Norte,VIP,8,4,1.1,Cumplió lo básico.
+1396,2024-10-09,Web,Centro,Nuevo,9,5,1.5,"Excelente servicio, volvería a comprar."
+1397,2024-10-10,App,Centro,VIP,10,5,1.9,Todo funcionó como esperaba.
+1398,2024-10-09,Sucursal,Centro,VIP,9,5,3.2,Gran experiencia de principio a fin.
+1399,2024-10-09,Web,Sur,Recurrente,7,4,2.4,Podría mejorar los tiempos de espera.
+1400,2024-10-10,Web,Oeste,Nuevo,7,4,4.6,"El servicio estuvo bien, sin más."
+1401,2024-10-08,Call Center,Centro,Nuevo,5,3,4.1,Tuve que esperar demasiado tiempo.
+1402,2024-10-10,Sucursal,Sur,Recurrente,9,4,1.6,Todo funcionó como esperaba.
+1403,2024-10-13,App,Sur,Recurrente,9,5,2.5,"Muy buena atención, resolvieron rápido."
+1404,2024-10-09,Call Center,Norte,VIP,5,3,3.8,"Pésima atención, no lo recomiendo."
+1405,2024-10-10,Call Center,Oeste,Nuevo,4,3,3.5,Tuve que esperar demasiado tiempo.
+1406,2024-10-09,Web,Este,VIP,9,4,2.6,"Muy buena atención, resolvieron rápido."
+1407,2024-10-14,App,Centro,Recurrente,7,4,1.2,"El servicio estuvo bien, sin más."
+1408,2024-10-14,Web,Norte,Nuevo,10,5,2.7,"Muy buena atención, resolvieron rápido."
+1409,2024-10-10,Sucursal,Norte,VIP,8,4,4,Podría mejorar los tiempos de espera.
+1410,2024-10-11,Web,Este,Nuevo,7,4,2.3,"El servicio estuvo bien, sin más."
+1411,2024-10-13,Call Center,Sur,Nuevo,4,3,4.1,"Mala comunicación, muy frustrante."
+1412,2024-10-16,Web,Oeste,Nuevo,8,5,1.7,"El servicio estuvo bien, sin más."
+1413,2024-10-15,Web,Sur,Nuevo,7,4,4.8,"El servicio estuvo bien, sin más."
+1414,2024-10-12,Call Center,Centro,VIP,6,3,6.2,"Pésima atención, no lo recomiendo."
+1415,2024-10-16,Web,Norte,Nuevo,10,5,2.6,Todo funcionó como esperaba.
+1416,2024-10-16,Sucursal,Norte,Recurrente,8,4,3.4,Podría mejorar los tiempos de espera.
+1417,2024-10-17,Web,Centro,Nuevo,9,4,4.1,"Excelente servicio, volvería a comprar."
+1418,2024-10-11,App,Norte,Recurrente,8,4,1.8,Cumplió lo básico.
+1419,2024-10-17,Call Center,Oeste,Nuevo,5,3,2.8,El proceso fue confuso y lento.
+1420,2024-10-12,Web,Norte,VIP,9,5,3.8,"Muy buena atención, resolvieron rápido."
+1421,2024-10-18,Call Center,Este,VIP,7,4,3.7,Podría mejorar los tiempos de espera.
+1422,2024-10-14,Sucursal,Centro,Recurrente,7,4,1.5,Ni bueno ni malo.
+1423,2024-10-17,Sucursal,Norte,VIP,8,4,2.7,"El servicio estuvo bien, sin más."
+1424,2024-10-14,Web,Oeste,VIP,10,5,2.8,"Muy buena atención, resolvieron rápido."
+1425,2024-10-15,Web,Este,Nuevo,9,4,2.9,"Excelente servicio, volvería a comprar."
+1426,2024-10-15,App,Este,Nuevo,8,4,3.8,Cumplió lo básico.
+1427,2024-10-13,Call Center,Centro,VIP,5,3,4.2,"Mala comunicación, muy frustrante."
+1428,2024-10-14,Sucursal,Norte,Recurrente,9,5,4.5,Todo funcionó como esperaba.
+1429,2024-10-17,App,Sur,Recurrente,7,3,2.3,Cumplió lo básico.
+1430,2024-10-19,Call Center,Oeste,VIP,5,3,6.4,"Pésima atención, no lo recomiendo."
+1431,2024-10-15,Sucursal,Este,VIP,9,5,1.4,"Excelente servicio, volvería a comprar."
+1432,2024-10-18,Call Center,Norte,VIP,7,4,6.4,Podría mejorar los tiempos de espera.
+1433,2024-10-18,Call Center,Oeste,Nuevo,5,3,5.8,Tuve que esperar demasiado tiempo.
+1434,2024-10-15,Call Center,Este,VIP,7,4,6.1,Podría mejorar los tiempos de espera.
+1435,2024-10-20,Web,Centro,Nuevo,8,4,2.8,Podría mejorar los tiempos de espera.
+1436,2024-10-20,Call Center,Centro,VIP,5,3,5.4,"Pésima atención, no lo recomiendo."
+1437,2024-10-16,App,Centro,Recurrente,8,5,5,Cumplió lo básico.
+1438,2024-10-16,Call Center,Norte,Recurrente,4,2,4.5,El proceso fue confuso y lento.
+1439,2024-10-17,App,Oeste,Recurrente,7,4,2.9,"El servicio estuvo bien, sin más."
+1440,2024-10-19,Sucursal,Norte,Recurrente,7,3,1.7,Ni bueno ni malo.
+1441,2024-10-18,App,Oeste,Recurrente,9,5,4.4,El equipo fue muy amable y claro.
+1442,2024-10-22,App,Sur,Nuevo,7,4,4,"El servicio estuvo bien, sin más."
+1443,2024-10-18,App,Sur,Recurrente,8,4,1.6,Podría mejorar los tiempos de espera.
+1444,2024-10-16,Call Center,Sur,Recurrente,7,4,3.5,Podría mejorar los tiempos de espera.
+1445,2024-10-18,Web,Norte,Nuevo,7,4,2.4,"El servicio estuvo bien, sin más."
+1446,2024-10-18,App,Norte,Nuevo,9,4,3.7,"Excelente servicio, volvería a comprar."
+1447,2024-10-17,Call Center,Oeste,VIP,6,3,4.4,"Mala comunicación, muy frustrante."
+1448,2024-10-18,Call Center,Centro,Recurrente,5,3,2.6,"Pésima atención, no lo recomiendo."
+1449,2024-10-23,Sucursal,Norte,Recurrente,9,5,3.1,Todo funcionó como esperaba.
+1450,2024-10-18,Web,Oeste,VIP,8,5,2.1,"El servicio estuvo bien, sin más."
+1451,2024-10-21,Web,Este,Nuevo,7,4,3,Ni bueno ni malo.
+1452,2024-10-18,App,Sur,Nuevo,8,4,2.8,Cumplió lo básico.
+1453,2024-10-18,Sucursal,Centro,Recurrente,8,4,2.5,Ni bueno ni malo.
+1454,2024-10-23,Sucursal,Centro,Recurrente,10,5,3.1,Todo funcionó como esperaba.
+1455,2024-10-23,Web,Norte,VIP,9,4,1.7,El equipo fue muy amable y claro.
+1456,2024-10-22,Call Center,Sur,Recurrente,5,3,4.7,El proceso fue confuso y lento.
+1457,2024-10-25,App,Sur,Nuevo,9,4,4.5,"Excelente servicio, volvería a comprar."
+1458,2024-10-20,Call Center,Oeste,Recurrente,6,3,4.3,El proceso fue confuso y lento.
+1459,2024-10-21,Sucursal,Este,Recurrente,9,5,3.1,"Muy buena atención, resolvieron rápido."
+1460,2024-10-24,Call Center,Centro,Recurrente,6,4,3.7,El proceso fue confuso y lento.
+1461,2024-10-23,Sucursal,Este,VIP,9,4,1.2,Todo funcionó como esperaba.
+1462,2024-10-21,Sucursal,Norte,Recurrente,9,5,1.2,El equipo fue muy amable y claro.
+1463,2024-10-24,Call Center,Sur,VIP,5,3,4.6,No resolvieron mi problema.
+1464,2024-10-23,App,Sur,Nuevo,9,4,3.9,"Excelente servicio, volvería a comprar."
+1465,2024-10-26,Call Center,Sur,VIP,8,4,6.1,Podría mejorar los tiempos de espera.
+1466,2024-10-26,Web,Sur,VIP,10,5,2.3,"Muy buena atención, resolvieron rápido."
+1467,2024-10-26,Sucursal,Centro,Recurrente,9,5,1.8,"Excelente servicio, volvería a comprar."
+1468,2024-10-27,Sucursal,Sur,Recurrente,9,4,4.3,Todo funcionó como esperaba.
+1469,2024-10-25,App,Oeste,Recurrente,7,4,2.7,Ni bueno ni malo.
+1470,2024-10-22,Web,Sur,VIP,9,4,2,"Muy buena atención, resolvieron rápido."
+1471,2024-10-25,Web,Sur,Nuevo,9,5,3.2,Todo funcionó como esperaba.
+1472,2024-10-23,Sucursal,Norte,Recurrente,7,3,3.3,Ni bueno ni malo.
+1473,2024-10-23,Call Center,Oeste,VIP,5,2,4.9,"Pésima atención, no lo recomiendo."
+1474,2024-10-22,Web,Oeste,VIP,10,5,4.3,Gran experiencia de principio a fin.
+1475,2024-10-29,App,Norte,Recurrente,8,4,3.2,Podría mejorar los tiempos de espera.
+1476,2024-10-29,App,Sur,VIP,8,4,1,"El servicio estuvo bien, sin más."
+1477,2024-10-26,Call Center,Este,VIP,6,4,4.2,"Pésima atención, no lo recomiendo."
+1478,2024-10-28,Sucursal,Centro,Nuevo,9,4,1.4,El equipo fue muy amable y claro.
+1479,2024-10-29,App,Oeste,Nuevo,9,5,1.9,Gran experiencia de principio a fin.
+1480,2024-10-27,Sucursal,Sur,Nuevo,7,4,1.4,Ni bueno ni malo.
+1481,2024-10-26,Sucursal,Centro,Recurrente,9,5,4.8,Todo funcionó como esperaba.
+1482,2024-10-24,Sucursal,Oeste,Nuevo,8,4,1.1,Ni bueno ni malo.
+1483,2024-10-28,Call Center,Norte,VIP,7,3,4.8,Cumplió lo básico.
+1484,2024-10-28,Sucursal,Norte,Nuevo,8,4,4.4,Cumplió lo básico.
+1485,2024-10-31,Web,Norte,VIP,10,5,1.5,"Muy buena atención, resolvieron rápido."
+1486,2024-10-25,App,Sur,Nuevo,8,5,3.5,Cumplió lo básico.
+1487,2024-10-25,Web,Centro,VIP,9,4,3.3,Todo funcionó como esperaba.
+1488,2024-10-27,App,Este,VIP,9,4,2.2,"Muy buena atención, resolvieron rápido."
+1489,2024-10-26,Web,Centro,VIP,8,4,4.9,"El servicio estuvo bien, sin más."
+1490,2024-10-30,Call Center,Este,Recurrente,5,3,6,"Pésima atención, no lo recomiendo."
+1491,2024-10-27,Web,Este,VIP,10,4,2.1,El equipo fue muy amable y claro.
+1492,2024-11-01,Sucursal,Este,Nuevo,8,4,2.5,Cumplió lo básico.
+1493,2024-10-26,Call Center,Sur,Recurrente,5,3,4.4,"Pésima atención, no lo recomiendo."
+1494,2024-10-26,Web,Sur,Recurrente,7,3,4.2,Podría mejorar los tiempos de espera.
+1495,2024-11-02,Sucursal,Centro,Recurrente,9,5,3.4,"Muy buena atención, resolvieron rápido."
+1496,2024-10-27,Sucursal,Norte,Nuevo,9,4,1.6,"Excelente servicio, volvería a comprar."
+1497,2024-10-31,Web,Sur,Nuevo,8,4,3.6,"El servicio estuvo bien, sin más."
+1498,2024-11-02,Call Center,Centro,Recurrente,5,3,4.1,El proceso fue confuso y lento.
+1499,2024-10-29,Call Center,Centro,Recurrente,5,3,5,No resolvieron mi problema.
+1500,2024-11-02,Web,Este,VIP,10,5,3.3,"Muy buena atención, resolvieron rápido."
+1501,2024-11-03,App,Norte,Nuevo,9,5,3,"Excelente servicio, volvería a comprar."
+1502,2024-11-01,App,Norte,VIP,9,4,3.6,"Excelente servicio, volvería a comprar."
+1503,2024-10-30,Sucursal,Este,Recurrente,10,5,2.2,"Muy buena atención, resolvieron rápido."
+1504,2024-10-30,App,Este,VIP,10,5,3.7,"Excelente servicio, volvería a comprar."
+1505,2024-11-03,Web,Este,VIP,10,5,1,Gran experiencia de principio a fin.
+1506,2024-11-04,Sucursal,Centro,Nuevo,10,5,3.3,"Excelente servicio, volvería a comprar."
+1507,2024-10-29,Web,Oeste,VIP,10,5,3.6,Todo funcionó como esperaba.
+1508,2024-11-01,App,Norte,VIP,8,4,2.7,Cumplió lo básico.
+1509,2024-10-31,App,Oeste,Nuevo,9,4,1.7,"Excelente servicio, volvería a comprar."
+1510,2024-11-05,App,Este,VIP,8,5,1.7,"El servicio estuvo bien, sin más."
+1511,2024-11-02,App,Oeste,Nuevo,9,5,3.6,Gran experiencia de principio a fin.
+1512,2024-11-01,Web,Este,Recurrente,8,4,4.4,Podría mejorar los tiempos de espera.
+1513,2024-11-03,App,Este,Nuevo,8,4,1.1,Cumplió lo básico.
+1514,2024-11-03,Call Center,Este,Nuevo,4,2,4.3,"Mala comunicación, muy frustrante."
+1515,2024-11-03,App,Sur,Nuevo,10,5,2.3,Todo funcionó como esperaba.
+1516,2024-11-05,App,Este,VIP,8,4,4.8,"El servicio estuvo bien, sin más."
+1517,2024-11-03,Web,Centro,VIP,9,5,3.2,"Muy buena atención, resolvieron rápido."
+1518,2024-11-06,Call Center,Este,Recurrente,6,3,4,El proceso fue confuso y lento.
+1519,2024-11-02,Call Center,Este,Recurrente,4,3,5.2,No resolvieron mi problema.
+1520,2024-11-07,App,Sur,VIP,9,4,3.8,"Muy buena atención, resolvieron rápido."
+1521,2024-11-01,Sucursal,Centro,Nuevo,8,5,3.9,Cumplió lo básico.
+1522,2024-11-07,Sucursal,Centro,Nuevo,7,4,4.8,Ni bueno ni malo.
+1523,2024-11-05,Web,Este,VIP,10,5,3.7,El equipo fue muy amable y claro.
+1524,2024-11-07,Web,Oeste,Recurrente,9,5,1.5,Todo funcionó como esperaba.
+1525,2024-11-03,Sucursal,Oeste,Nuevo,10,5,3.2,El equipo fue muy amable y claro.
+1526,2024-11-05,Web,Norte,Recurrente,7,3,1.9,Podría mejorar los tiempos de espera.
+1527,2024-11-07,Web,Norte,VIP,8,4,2.4,Cumplió lo básico.
+1528,2024-11-03,App,Oeste,VIP,9,5,1.9,"Muy buena atención, resolvieron rápido."
+1529,2024-11-04,App,Norte,VIP,8,4,1.3,"El servicio estuvo bien, sin más."
+1530,2024-11-08,App,Norte,VIP,10,5,1.6,"Muy buena atención, resolvieron rápido."
+1531,2024-11-06,Sucursal,Sur,Nuevo,7,3,3.8,Podría mejorar los tiempos de espera.
+1532,2024-11-05,App,Sur,VIP,10,5,4.9,"Muy buena atención, resolvieron rápido."
+1533,2024-11-08,Sucursal,Sur,Recurrente,10,5,2,Todo funcionó como esperaba.
+1534,2024-11-09,Web,Este,Recurrente,10,5,4,Gran experiencia de principio a fin.
+1535,2024-11-10,Call Center,Sur,Recurrente,6,3,5.3,Tuve que esperar demasiado tiempo.
+1536,2024-11-05,Call Center,Oeste,Nuevo,7,3,4.1,Ni bueno ni malo.
+1537,2024-11-10,Call Center,Norte,Recurrente,5,3,2.9,El proceso fue confuso y lento.
+1538,2024-11-07,Sucursal,Oeste,VIP,10,5,1,"Excelente servicio, volvería a comprar."
+1539,2024-11-11,Sucursal,Centro,Nuevo,7,4,2.6,"El servicio estuvo bien, sin más."
+1540,2024-11-09,Web,Oeste,Recurrente,9,4,3,Gran experiencia de principio a fin.
+1541,2024-11-11,Sucursal,Este,Nuevo,9,4,3.4,"Excelente servicio, volvería a comprar."
+1542,2024-11-10,Call Center,Este,Nuevo,5,3,6.2,"Mala comunicación, muy frustrante."
+1543,2024-11-09,Web,Norte,VIP,8,4,3.9,Ni bueno ni malo.
+1544,2024-11-11,Web,Sur,Recurrente,7,3,2.1,Podría mejorar los tiempos de espera.
+1545,2024-11-09,Call Center,Oeste,Recurrente,6,3,5.6,El proceso fue confuso y lento.
+1546,2024-11-11,Sucursal,Norte,VIP,10,5,3.1,"Excelente servicio, volvería a comprar."
+1547,2024-11-06,App,Norte,Nuevo,10,5,4,Gran experiencia de principio a fin.
+1548,2024-11-10,Call Center,Oeste,Nuevo,5,3,5.3,"Mala comunicación, muy frustrante."
+1549,2024-11-11,Call Center,Sur,Recurrente,4,2,5,"Pésima atención, no lo recomiendo."
+1550,2024-11-09,Web,Sur,Recurrente,9,4,4.1,Todo funcionó como esperaba.
+1551,2024-11-08,App,Oeste,VIP,8,4,2.7,Ni bueno ni malo.
+1552,2024-11-07,Web,Oeste,Recurrente,7,4,4.1,Podría mejorar los tiempos de espera.
+1553,2024-11-10,Sucursal,Centro,Nuevo,8,5,1.5,Ni bueno ni malo.
+1554,2024-11-13,Web,Norte,Recurrente,8,4,3.8,Podría mejorar los tiempos de espera.
+1555,2024-11-14,Call Center,Centro,Recurrente,5,3,5.6,No resolvieron mi problema.
+1556,2024-11-09,Web,Este,Recurrente,8,4,3.2,Podría mejorar los tiempos de espera.
+1557,2024-11-08,Web,Centro,Recurrente,7,3,2.2,Podría mejorar los tiempos de espera.
+1558,2024-11-13,Call Center,Oeste,Nuevo,6,4,3.7,El proceso fue confuso y lento.
+1559,2024-11-11,Web,Centro,Recurrente,10,5,4.1,El equipo fue muy amable y claro.
+1560,2024-11-09,Call Center,Oeste,Nuevo,6,4,6.4,"Mala comunicación, muy frustrante."
+1561,2024-11-11,Web,Oeste,Recurrente,9,4,1.6,Gran experiencia de principio a fin.
+1562,2024-11-11,App,Centro,VIP,9,4,3.3,"Muy buena atención, resolvieron rápido."
+1563,2024-11-11,Web,Este,Recurrente,8,4,2.8,Cumplió lo básico.
+1564,2024-11-14,Web,Oeste,Nuevo,8,4,1.3,Podría mejorar los tiempos de espera.
+1565,2024-11-11,Call Center,Norte,Nuevo,7,4,5.2,Ni bueno ni malo.
+1566,2024-11-14,Sucursal,Oeste,VIP,8,4,3,Cumplió lo básico.
+1567,2024-11-10,Sucursal,Oeste,Nuevo,8,5,4.2,Podría mejorar los tiempos de espera.
+1568,2024-11-15,Web,Este,Nuevo,9,5,4.3,Todo funcionó como esperaba.
+1569,2024-11-16,Web,Sur,VIP,10,5,4.4,"Muy buena atención, resolvieron rápido."
+1570,2024-11-15,App,Sur,Recurrente,8,4,1.3,"El servicio estuvo bien, sin más."
+1571,2024-11-14,Call Center,Oeste,Nuevo,4,3,5.7,Tuve que esperar demasiado tiempo.
+1572,2024-11-14,Sucursal,Centro,VIP,10,5,2,"Excelente servicio, volvería a comprar."
+1573,2024-11-11,App,Centro,VIP,9,5,3.7,"Muy buena atención, resolvieron rápido."
+1574,2024-11-14,Call Center,Sur,Nuevo,5,2,3.9,"Mala comunicación, muy frustrante."
+1575,2024-11-15,Sucursal,Sur,Nuevo,8,4,2.9,Podría mejorar los tiempos de espera.
+1576,2024-11-12,Call Center,Centro,Nuevo,6,4,3.9,El proceso fue confuso y lento.
+1577,2024-11-18,Web,Este,Recurrente,8,4,1.8,Podría mejorar los tiempos de espera.
+1578,2024-11-16,Web,Sur,Nuevo,10,4,2.1,Todo funcionó como esperaba.
+1579,2024-11-15,App,Este,VIP,9,4,4.3,El equipo fue muy amable y claro.
+1580,2024-11-14,Call Center,Este,Nuevo,4,3,2.9,El proceso fue confuso y lento.
+1581,2024-11-16,App,Este,VIP,9,5,2.5,"Muy buena atención, resolvieron rápido."
+1582,2024-11-17,Call Center,Oeste,VIP,5,3,6,"Mala comunicación, muy frustrante."
+1583,2024-11-17,App,Este,VIP,8,4,4.3,Podría mejorar los tiempos de espera.
+1584,2024-11-20,Sucursal,Centro,VIP,9,5,3.1,"Excelente servicio, volvería a comprar."
+1585,2024-11-19,App,Sur,VIP,10,5,1.9,"Excelente servicio, volvería a comprar."
+1586,2024-11-15,App,Centro,Recurrente,8,4,1.5,Podría mejorar los tiempos de espera.
+1587,2024-11-19,App,Norte,VIP,9,5,3.1,Todo funcionó como esperaba.
+1588,2024-11-17,Call Center,Centro,Nuevo,4,2,5,"Mala comunicación, muy frustrante."
+1589,2024-11-19,Web,Oeste,Recurrente,7,3,44,Ni bueno ni malo.
+1590,2024-11-18,Call Center,Este,VIP,5,2,4.5,"Mala comunicación, muy frustrante."
+1591,2024-11-21,App,Sur,Recurrente,8,5,3.8,Ni bueno ni malo.
+1592,2024-11-21,Sucursal,Centro,Recurrente,10,5,4.6,"Excelente servicio, volvería a comprar."
+1593,2024-11-20,Call Center,Centro,VIP,6,4,3.8,"Mala comunicación, muy frustrante."
+1594,2024-11-17,App,Sur,Nuevo,9,5,2,Gran experiencia de principio a fin.
+1595,2024-11-17,App,Este,Nuevo,8,5,4.5,Cumplió lo básico.
+1596,2024-11-19,Call Center,Oeste,Recurrente,5,3,4.5,"Mala comunicación, muy frustrante."
+1597,2024-11-20,Sucursal,Centro,Recurrente,8,4,2.4,"El servicio estuvo bien, sin más."
+1598,2024-11-22,Sucursal,Oeste,Nuevo,7,4,3.6,Podría mejorar los tiempos de espera.
+1599,2024-11-17,Call Center,Sur,Recurrente,4,3,5.4,"Pésima atención, no lo recomiendo."
+1600,2024-11-22,Call Center,Centro,Recurrente,6,4,5.5,No resolvieron mi problema.
+1601,2024-11-19,Web,Oeste,Recurrente,9,4,1,El equipo fue muy amable y claro.
+1602,2024-11-23,App,Centro,Recurrente,7,4,4,Ni bueno ni malo.
+1603,2024-11-22,Web,Centro,Recurrente,8,5,1.9,"El servicio estuvo bien, sin más."
+1604,2024-11-23,Sucursal,Centro,VIP,9,5,3.6,Gran experiencia de principio a fin.
+1605,2024-11-23,Web,Norte,Recurrente,7,4,2.4,Ni bueno ni malo.
+1606,2024-11-22,Call Center,Oeste,VIP,7,4,4.5,"El servicio estuvo bien, sin más."
+1607,2024-11-23,Web,Norte,Nuevo,9,5,2.5,Gran experiencia de principio a fin.
+1608,2024-11-22,Web,Este,VIP,10,5,2,"Muy buena atención, resolvieron rápido."
+1609,2024-11-24,Call Center,Norte,Nuevo,7,4,3.9,"El servicio estuvo bien, sin más."
+1610,2024-11-20,Web,Norte,VIP,10,5,4.7,"Muy buena atención, resolvieron rápido."
+1611,2024-11-23,Sucursal,Centro,VIP,9,5,1.9,"Excelente servicio, volvería a comprar."
+1612,2024-11-24,Web,Oeste,VIP,8,4,3,"El servicio estuvo bien, sin más."
+1613,2024-11-23,App,Oeste,Nuevo,9,5,1,El equipo fue muy amable y claro.
+1614,2024-11-21,Call Center,Sur,Recurrente,7,4,6.5,Podría mejorar los tiempos de espera.
+1615,2024-11-21,Call Center,Este,VIP,7,4,5.4,Ni bueno ni malo.
+1616,2024-11-25,Sucursal,Oeste,Nuevo,10,5,2.7,Todo funcionó como esperaba.
+1617,2024-11-26,App,Norte,Nuevo,9,5,2.4,El equipo fue muy amable y claro.
+1618,2024-11-21,App,Norte,VIP,10,5,4,"Excelente servicio, volvería a comprar."
+1619,2024-11-24,Call Center,Oeste,Recurrente,6,4,6,No resolvieron mi problema.
+1620,2024-11-23,Web,Sur,Nuevo,8,4,5,Podría mejorar los tiempos de espera.
+1621,2024-11-27,Web,Norte,Recurrente,9,5,2.4,"Muy buena atención, resolvieron rápido."
+1622,2024-11-24,Sucursal,Este,VIP,10,5,1.7,"Excelente servicio, volvería a comprar."
+1623,2024-11-24,App,Este,VIP,9,5,3.9,Gran experiencia de principio a fin.
+1624,2024-11-26,Web,Oeste,Nuevo,9,5,2,Todo funcionó como esperaba.
+1625,2024-11-26,Sucursal,Centro,VIP,9,4,1,El equipo fue muy amable y claro.
+1626,2024-11-26,App,Oeste,Nuevo,10,5,2,"Muy buena atención, resolvieron rápido."
+1627,2024-11-28,Call Center,Norte,VIP,8,5,3.4,Podría mejorar los tiempos de espera.
+1628,2024-11-27,Call Center,Este,Recurrente,5,3,3.2,No resolvieron mi problema.
+1629,2024-11-23,Call Center,Sur,VIP,6,3,3.9,"Mala comunicación, muy frustrante."
+1630,2024-11-26,Call Center,Este,Recurrente,6,4,2.5,"Mala comunicación, muy frustrante."
+1631,2024-11-24,Sucursal,Sur,Recurrente,10,5,2.6,Todo funcionó como esperaba.
+1632,2024-11-25,Web,Sur,Recurrente,9,5,4,El equipo fue muy amable y claro.
+1633,2024-11-25,Sucursal,Sur,Nuevo,8,4,2.4,"El servicio estuvo bien, sin más."
+1634,2024-11-30,Web,Centro,Recurrente,10,5,2.7,El equipo fue muy amable y claro.
+1635,2024-11-24,App,Sur,VIP,10,5,1.9,"Excelente servicio, volvería a comprar."
+1636,2024-11-28,Web,Este,Recurrente,10,5,1,El equipo fue muy amable y claro.
+1637,2024-11-30,Call Center,Norte,Recurrente,7,4,2.6,Cumplió lo básico.
+1638,2024-11-25,Web,Norte,Nuevo,10,5,3,"Excelente servicio, volvería a comprar."
+1639,2024-11-29,Sucursal,Oeste,VIP,8,5,3.9,Cumplió lo básico.
+1640,2024-11-28,Call Center,Este,VIP,7,4,6.2,"El servicio estuvo bien, sin más."
+1641,2024-11-26,Web,Sur,Nuevo,8,4,2.4,Cumplió lo básico.
+1642,2024-12-01,Sucursal,Centro,Recurrente,9,5,2,Todo funcionó como esperaba.
+1643,2024-12-01,Sucursal,Centro,Recurrente,8,5,4.6,"El servicio estuvo bien, sin más."
+1644,2024-11-27,Web,Norte,VIP,9,5,3,"Excelente servicio, volvería a comprar."
+1645,2024-11-28,Call Center,Este,VIP,5,3,3.9,Tuve que esperar demasiado tiempo.
+1646,2024-11-28,Sucursal,Sur,Recurrente,10,4,3.7,Todo funcionó como esperaba.
+1647,2024-12-01,Web,Centro,VIP,10,5,3.9,Todo funcionó como esperaba.
+1648,2024-11-30,Web,Sur,VIP,9,4,23,"Muy buena atención, resolvieron rápido."
+1649,2024-11-29,Web,Centro,VIP,9,4,3.6,El equipo fue muy amable y claro.
+1650,2024-12-01,App,Centro,VIP,10,5,1.2,"Excelente servicio, volvería a comprar."
+1651,2024-11-29,App,Centro,Recurrente,7,3,2.6,Cumplió lo básico.
+1652,2024-12-03,App,Norte,Nuevo,9,5,4.9,El equipo fue muy amable y claro.
+1653,2024-11-30,Sucursal,Centro,VIP,9,4,1.2,"Excelente servicio, volvería a comprar."
+1654,2024-11-28,Web,Sur,Recurrente,9,5,4.3,El equipo fue muy amable y claro.
+1655,2024-11-30,Sucursal,Oeste,Recurrente,7,4,3.4,"El servicio estuvo bien, sin más."
+1656,2024-11-29,Call Center,Sur,VIP,5,3,4.9,"Mala comunicación, muy frustrante."
+1657,2024-11-29,Sucursal,Sur,VIP,9,4,1.4,Gran experiencia de principio a fin.
+1658,2024-12-01,Sucursal,Sur,VIP,10,5,2.2,"Excelente servicio, volvería a comprar."
+1659,2024-12-05,App,Norte,Nuevo,9,4,3,El equipo fue muy amable y claro.
+1660,2024-11-30,Web,Norte,VIP,9,5,4.6,"Excelente servicio, volvería a comprar."
+1661,2024-12-03,Web,Este,Recurrente,10,4,4.2,Gran experiencia de principio a fin.
+1662,2024-12-01,Sucursal,Centro,VIP,10,4,2.7,Gran experiencia de principio a fin.
+1663,2024-12-01,Call Center,Norte,Recurrente,4,3,2.6,"Mala comunicación, muy frustrante."
+1664,2024-12-06,Web,Este,VIP,8,4,4.5,Ni bueno ni malo.
+1665,2024-12-04,Sucursal,Este,Recurrente,7,4,1.7,Podría mejorar los tiempos de espera.
+1666,2024-12-04,Sucursal,Norte,Recurrente,8,5,1.9,"El servicio estuvo bien, sin más."
+1667,2024-12-01,Web,Oeste,Recurrente,7,4,2,"El servicio estuvo bien, sin más."
+1668,2024-12-03,Call Center,Oeste,Nuevo,6,3,4.5,El proceso fue confuso y lento.
+1669,2024-12-04,Sucursal,Centro,Recurrente,10,5,1.9,"Excelente servicio, volvería a comprar."
+1670,2024-12-07,Call Center,Norte,VIP,7,3,5.3,"El servicio estuvo bien, sin más."
+1671,2024-12-06,Web,Norte,Recurrente,9,5,1.5,"Excelente servicio, volvería a comprar."
+1672,2024-12-04,Web,Sur,Recurrente,9,4,4.2,"Excelente servicio, volvería a comprar."
+1673,2024-12-08,App,Norte,Nuevo,8,4,4.8,Cumplió lo básico.
+1674,2024-12-06,Web,Oeste,VIP,9,4,4.3,Todo funcionó como esperaba.
+1675,2024-12-08,Sucursal,Norte,VIP,8,4,3.7,Cumplió lo básico.
+1676,2024-12-02,Web,Centro,Nuevo,8,4,4,Podría mejorar los tiempos de espera.
+1677,2024-12-03,Sucursal,Norte,Recurrente,9,4,2.3,"Muy buena atención, resolvieron rápido."
+1678,2024-12-04,Call Center,Centro,Recurrente,4,2,5,"Pésima atención, no lo recomiendo."
+1679,2024-12-09,Call Center,Centro,VIP,5,3,6.1,"Pésima atención, no lo recomiendo."
+1680,2024-12-05,Sucursal,Centro,VIP,10,5,2.6,Gran experiencia de principio a fin.
+1681,2024-12-08,Call Center,Este,Nuevo,5,3,4,El proceso fue confuso y lento.
+1682,2024-12-06,App,Centro,VIP,9,5,1.3,Todo funcionó como esperaba.
+1683,2024-12-07,Sucursal,Norte,Recurrente,9,4,4.1,"Excelente servicio, volvería a comprar."
+1684,2024-12-06,Call Center,Oeste,VIP,7,3,5.3,Ni bueno ni malo.
+1685,2024-12-05,App,Oeste,VIP,10,4,1.4,Gran experiencia de principio a fin.
+1686,2024-12-05,App,Este,VIP,9,5,1.9,"Excelente servicio, volvería a comprar."
+1687,2024-12-10,Web,Sur,Nuevo,7,4,2.3,"El servicio estuvo bien, sin más."
+1688,2024-12-05,Call Center,Norte,VIP,7,4,5.1,Podría mejorar los tiempos de espera.
+1689,2024-12-07,Call Center,Oeste,Nuevo,5,3,4.4,El proceso fue confuso y lento.
+1690,2024-12-10,App,Oeste,Recurrente,10,5,1,El equipo fue muy amable y claro.
+1691,2024-12-10,App,Centro,Nuevo,7,4,43,Cumplió lo básico.
+1692,2024-12-09,App,Sur,Nuevo,9,4,1.2,"Muy buena atención, resolvieron rápido."
+1693,2024-12-12,Web,Norte,VIP,9,5,4.2,Gran experiencia de principio a fin.
+1694,2024-12-10,Sucursal,Centro,Nuevo,9,5,3.1,"Excelente servicio, volvería a comprar."
+1695,2024-12-07,App,Centro,VIP,10,5,3,El equipo fue muy amable y claro.
+1696,2024-12-11,Web,Sur,Nuevo,9,5,4.8,El equipo fue muy amable y claro.
+1697,2024-12-11,App,Este,Recurrente,7,3,1.5,Podría mejorar los tiempos de espera.
+1698,2024-12-12,App,Centro,Nuevo,9,5,2.1,Todo funcionó como esperaba.
+1699,2024-12-12,App,Sur,Nuevo,8,5,3.6,"El servicio estuvo bien, sin más."
+1700,2024-12-12,Sucursal,Norte,VIP,10,5,3,Todo funcionó como esperaba.
+1701,2024-12-13,Web,Centro,VIP,9,5,1.4,"Excelente servicio, volvería a comprar."
+1702,2024-12-12,Sucursal,Este,VIP,9,4,3.7,El equipo fue muy amable y claro.
+1703,2024-12-08,Web,Sur,Nuevo,8,4,2.9,Cumplió lo básico.
+1704,2024-12-10,Sucursal,Oeste,Recurrente,8,4,4,Cumplió lo básico.
+1705,2024-12-14,Sucursal,Oeste,Recurrente,8,4,4,Ni bueno ni malo.
+1706,2024-12-08,Sucursal,Oeste,VIP,10,5,3.9,"Muy buena atención, resolvieron rápido."
+1707,2024-12-15,App,Norte,VIP,9,4,4.8,El equipo fue muy amable y claro.
+1708,2024-12-13,App,Centro,Recurrente,9,5,3.6,Gran experiencia de principio a fin.
+1709,2024-12-13,Call Center,Sur,Nuevo,4,2,2.8,No resolvieron mi problema.
+1710,2024-12-10,Web,Oeste,VIP,8,5,2.9,Cumplió lo básico.
+1711,2024-12-11,App,Este,Nuevo,9,5,1.4,"Muy buena atención, resolvieron rápido."
+1712,2024-12-14,Call Center,Oeste,Nuevo,5,3,3.3,"Pésima atención, no lo recomiendo."
+1713,2024-12-10,Call Center,Este,Nuevo,5,3,2.7,"Pésima atención, no lo recomiendo."
+1714,2024-12-16,App,Este,Recurrente,9,5,4.5,"Excelente servicio, volvería a comprar."
+1715,2024-12-14,Web,Este,Nuevo,10,5,4.7,El equipo fue muy amable y claro.
+1716,2024-12-11,Call Center,Norte,Recurrente,4,2,4.3,El proceso fue confuso y lento.
+1717,2024-12-11,App,Este,Nuevo,8,5,3.8,"El servicio estuvo bien, sin más."
+1718,2024-12-14,App,Oeste,VIP,8,4,4.7,Podría mejorar los tiempos de espera.
+1719,2024-12-14,App,Sur,VIP,10,5,2.6,El equipo fue muy amable y claro.
+1720,2024-12-14,Sucursal,Sur,VIP,9,4,2.4,"Muy buena atención, resolvieron rápido."
+1721,2024-12-16,Sucursal,Norte,Recurrente,7,4,1,Podría mejorar los tiempos de espera.
+1722,2024-12-15,Web,Oeste,Recurrente,8,4,3.7,"El servicio estuvo bien, sin más."
+1723,2024-12-12,App,Oeste,Nuevo,8,4,26,Ni bueno ni malo.
+1724,2024-12-13,Web,Este,Nuevo,8,5,2.8,"El servicio estuvo bien, sin más."
+1725,2024-12-14,App,Oeste,Recurrente,10,5,4.5,"Excelente servicio, volvería a comprar."
+1726,2024-12-13,App,Sur,Nuevo,8,4,3.1,"El servicio estuvo bien, sin más."
+1727,2024-12-14,Call Center,Sur,Recurrente,5,3,5.1,Tuve que esperar demasiado tiempo.
+1728,2024-12-15,Sucursal,Centro,VIP,10,5,25,Gran experiencia de principio a fin.
+1729,2024-12-14,Sucursal,Sur,VIP,10,5,3.6,"Excelente servicio, volvería a comprar."
+1730,2024-12-18,App,Este,Recurrente,7,4,4.1,Ni bueno ni malo.
+1731,2024-12-17,Call Center,Sur,Recurrente,7,4,5,"El servicio estuvo bien, sin más."
+1732,2024-12-19,Web,Norte,Nuevo,7,3,2.8,"El servicio estuvo bien, sin más."
+1733,2024-12-19,Web,Norte,Recurrente,10,5,3,Gran experiencia de principio a fin.
+1734,2024-12-19,App,Este,VIP,10,5,1.2,El equipo fue muy amable y claro.
+1735,2024-12-20,Web,Oeste,VIP,10,5,2.2,El equipo fue muy amable y claro.
+1736,2024-12-19,Call Center,Centro,Nuevo,6,4,4.7,"Pésima atención, no lo recomiendo."
+1737,2024-12-15,App,Sur,Nuevo,10,5,1.1,"Muy buena atención, resolvieron rápido."
+1738,2024-12-17,Web,Sur,Recurrente,8,4,4.9,Cumplió lo básico.
+1739,2024-12-15,Web,Centro,Nuevo,10,5,3.6,Todo funcionó como esperaba.
+1740,2024-12-15,Web,Este,VIP,10,5,2.3,El equipo fue muy amable y claro.
+1741,2024-12-22,Web,Sur,Nuevo,9,5,1.8,"Muy buena atención, resolvieron rápido."
+1742,2024-12-21,App,Oeste,Nuevo,8,4,3.3,Ni bueno ni malo.
+1743,2024-12-21,Call Center,Oeste,VIP,6,4,5.2,"Mala comunicación, muy frustrante."
+1744,2024-12-17,App,Oeste,Nuevo,9,4,4,Todo funcionó como esperaba.
+1745,2024-12-19,Sucursal,Norte,VIP,10,5,1.3,Todo funcionó como esperaba.
+1746,2024-12-22,Web,Oeste,Nuevo,7,4,4.4,Ni bueno ni malo.
+1747,2024-12-18,App,Sur,Recurrente,8,5,2.5,Podría mejorar los tiempos de espera.
+1748,2024-12-17,Web,Oeste,Nuevo,8,5,4.4,Ni bueno ni malo.
+1749,2024-12-22,Call Center,Sur,Nuevo,7,4,4.8,Podría mejorar los tiempos de espera.
+1750,2024-12-19,Call Center,Este,VIP,6,4,5.6,No resolvieron mi problema.
+1751,2024-12-19,App,Este,VIP,9,5,3.9,Gran experiencia de principio a fin.
+1752,2024-12-22,App,Sur,VIP,10,5,3.5,"Muy buena atención, resolvieron rápido."
+1753,2024-12-22,Sucursal,Sur,Nuevo,9,4,4.1,Gran experiencia de principio a fin.
+1754,2024-12-22,Web,Centro,Recurrente,9,5,2.6,Todo funcionó como esperaba.
+1755,2024-12-24,Call Center,Sur,Recurrente,6,4,5.5,El proceso fue confuso y lento.
+1756,2024-12-24,Sucursal,Este,Nuevo,8,4,1.3,Cumplió lo básico.
+1757,2024-12-20,Web,Norte,VIP,10,5,3.5,El equipo fue muy amable y claro.
+1758,2024-12-23,Call Center,Norte,Recurrente,5,3,5.1,El proceso fue confuso y lento.
+1759,2024-12-21,App,Oeste,Nuevo,10,5,2.7,"Muy buena atención, resolvieron rápido."
+1760,2024-12-22,App,Este,Nuevo,10,5,1.7,"Muy buena atención, resolvieron rápido."
+1761,2024-12-23,App,Sur,Nuevo,10,5,1.6,Todo funcionó como esperaba.
+1762,2024-12-22,Sucursal,Oeste,Recurrente,9,5,3.4,El equipo fue muy amable y claro.
+1763,2024-12-23,App,Centro,Recurrente,9,4,4.1,"Excelente servicio, volvería a comprar."
+1764,2024-12-20,Call Center,Norte,Recurrente,5,2,6.3,El proceso fue confuso y lento.
+1765,2024-12-22,Web,Sur,Recurrente,9,5,2.3,Todo funcionó como esperaba.
+1766,2024-12-25,Call Center,Sur,VIP,7,4,3.3,Podría mejorar los tiempos de espera.
+1767,2024-12-22,Call Center,Oeste,Nuevo,5,3,22,No resolvieron mi problema.
+1768,2024-12-26,App,Centro,Nuevo,9,4,2.1,Gran experiencia de principio a fin.
+1769,2024-12-25,Web,Norte,VIP,10,5,1.1,Todo funcionó como esperaba.
+1770,2024-12-26,App,Centro,Recurrente,10,5,3,Todo funcionó como esperaba.
+1771,2024-12-24,App,Centro,Recurrente,9,5,4.8,"Muy buena atención, resolvieron rápido."
+1772,2024-12-26,Web,Centro,VIP,8,4,3.6,"El servicio estuvo bien, sin más."
+1773,2024-12-28,App,Este,VIP,10,5,4.2,"Excelente servicio, volvería a comprar."
+1774,2024-12-24,Web,Oeste,VIP,9,4,3.8,Todo funcionó como esperaba.
+1775,2024-12-24,App,Norte,Nuevo,8,5,3.3,Ni bueno ni malo.
+1776,2024-12-23,Call Center,Este,VIP,6,3,5.2,Tuve que esperar demasiado tiempo.
+1777,2024-12-27,App,Este,Recurrente,7,4,2.1,Ni bueno ni malo.
+1778,2024-12-27,App,Sur,VIP,8,4,3.3,Cumplió lo básico.
+1779,2024-12-23,App,Centro,Recurrente,9,5,4.5,Todo funcionó como esperaba.
+1780,2024-12-23,Web,Centro,VIP,10,5,2.5,Todo funcionó como esperaba.
+1781,2024-12-25,Web,Sur,VIP,8,4,2.5,Ni bueno ni malo.
+1782,2024-12-27,Sucursal,Sur,Recurrente,9,4,1.5,Gran experiencia de principio a fin.
+1783,2024-12-26,Call Center,Este,VIP,7,4,5.8,Ni bueno ni malo.
+1784,2024-12-30,Call Center,Oeste,Recurrente,5,3,5.5,"Pésima atención, no lo recomiendo."
+1785,2024-12-26,App,Oeste,VIP,10,5,1.7,"Excelente servicio, volvería a comprar."
+1786,2024-12-25,App,Norte,Nuevo,10,5,2.3,Gran experiencia de principio a fin.
+1787,2024-12-27,Call Center,Oeste,Recurrente,5,3,4.3,Tuve que esperar demasiado tiempo.
+1788,2024-12-27,Sucursal,Este,Recurrente,8,4,4.2,Podría mejorar los tiempos de espera.
+1789,2024-12-26,App,Oeste,Recurrente,9,5,3.5,Todo funcionó como esperaba.
+1790,2024-12-27,Sucursal,Oeste,Nuevo,9,5,1.8,Todo funcionó como esperaba.
+1791,2024-12-26,Call Center,Este,Nuevo,6,4,5.4,Tuve que esperar demasiado tiempo.
+1792,2024-12-28,Call Center,Oeste,Recurrente,4,3,4.5,"Mala comunicación, muy frustrante."
+1793,2024-12-31,Web,Sur,VIP,10,5,4,Todo funcionó como esperaba.
+1794,2024-12-28,Call Center,Oeste,VIP,6,3,21,No resolvieron mi problema.
+1795,2024-12-27,Web,Sur,Recurrente,9,5,1.8,"Muy buena atención, resolvieron rápido."
+1796,2024-12-31,Sucursal,Norte,Recurrente,7,4,4.6,Podría mejorar los tiempos de espera.
+1797,2024-12-29,Sucursal,Oeste,Recurrente,10,5,2.2,Gran experiencia de principio a fin.
+1798,2024-12-30,Sucursal,Sur,Recurrente,7,4,3.8,Cumplió lo básico.
+1799,2024-12-30,App,Norte,Nuevo,10,5,2.3,El equipo fue muy amable y claro.
+1800,2024-12-30,App,Sur,Recurrente,10,5,2.7,Todo funcionó como esperaba.
