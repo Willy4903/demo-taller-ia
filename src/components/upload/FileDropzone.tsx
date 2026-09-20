@@ -1,11 +1,16 @@
 import { useRef, useState } from 'react';
 import { useFileIngestion } from '../../hooks/useFileIngestion';
 import { ErrorState } from '../common/ErrorState';
+import type { Row } from '../../lib/data/types';
 
 const ACCEPTED = '.csv,.xlsx,.xls,.json';
 
-export function FileDropzone() {
-  const { ingestFiles, ingestErrors } = useFileIngestion();
+interface FileDropzoneProps {
+  enrichRow?: (row: Row) => Row;
+}
+
+export function FileDropzone({ enrichRow }: FileDropzoneProps = {}) {
+  const { ingestFiles, ingestErrors } = useFileIngestion(enrichRow);
   const inputRef = useRef<HTMLInputElement>(null);
   const [isDragging, setIsDragging] = useState(false);
 

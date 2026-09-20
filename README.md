@@ -1,9 +1,17 @@
 # Dashboard Analítico Ejecutivo
 
-SPA de dashboard analítico estilo Bloomberg/McKinsey Insights: carga archivos CSV, XLSX o JSON,
-explora los datos con filtros dinámicos y gráficas interactivas (ECharts), y genera un informe
-PDF ejecutivo redactado con el Principio de la Pirámide. **Todo el procesamiento ocurre en el
-navegador**: no hay backend ni se envían datos a ningún servidor.
+SPA con **dos dashboards** que comparten la misma infraestructura genérica (parseo, detección de
+esquema, filtros dinámicos, agregación, motor de hallazgos estadísticos e informe PDF estilo
+McKinsey): carga archivos CSV, XLSX o JSON, explora los datos con filtros dinámicos y gráficas
+interactivas (ECharts), y genera un informe PDF ejecutivo redactado con el Principio de la
+Pirámide. **Todo el procesamiento ocurre en el navegador**: no hay backend ni se envían datos a
+ningún servidor.
+
+- **`/` — Dashboard Analítico Ejecutivo**: análisis de ventas (dataset sintético `ventas.csv`).
+- **`/encuestas/` — Dashboard de Encuestas — Satisfacción y NPS**: análisis de encuestas de
+  satisfacción con KPIs de NPS/CSAT (dataset sintético `encuestas.csv`).
+
+Cada cabecera incluye un enlace cruzado discreto al otro dashboard.
 
 ## Stack
 
@@ -31,18 +39,32 @@ npm run test:watch # Vitest en modo watch
 npm run format     # Prettier --write
 ```
 
-Al abrir `npm run dev`, la aplicación intenta cargar automáticamente
-`public/sample/ventas.csv` (un dataset sintético de ~2400 filas de ventas: fecha, categoría,
-región, canal, unidades, ingresos, costo, margen) si no hay ningún archivo cargado todavía. Esto
-permite explorar el tablero de inmediato. Cargar cualquier archivo propio (drag & drop o selector)
-sustituye/añade a este dataset y **recalcula todo automáticamente**, sin recargar la página.
+`npm run dev` sirve **ambos entrypoints** simultáneamente (Vite build multi-página):
+
+- http://localhost:5173/ — Dashboard de ventas, autocarga `public/sample/ventas.csv` (~2400 filas:
+  fecha, categoría, región, canal, unidades, ingresos, costo, margen).
+- http://localhost:5173/encuestas/ — Dashboard de encuestas, autocarga `public/sample/encuestas.csv`
+  (~1800 filas: respuesta_id, fecha, canal, region, segmento_cliente, nps_score, satisfaccion,
+  tiempo_resolucion_dias, comentario), con una columna derivada `nps_categoria`
+  (Promotor/Pasivo/Detractor) añadida al vuelo.
+
+Cargar cualquier archivo propio (drag & drop o selector) sustituye/añade al dataset de ese
+dashboard y **recalcula todo automáticamente**, sin recargar la página.
+
+En producción (`npm run build`), Vite genera dos páginas HTML independientes:
+`dist/index.html` (ventas) y `dist/encuestas/index.html` (encuestas), cada una con su propio
+bundle de JS. Con `base: '/demo-taller-ia/'` (variable `GITHUB_PAGES=true`, usada en CI para
+GitHub Pages), el dashboard de encuestas queda servido en `/demo-taller-ia/encuestas/`.
 
 ## Arquitectura
 
 ```
 src/
+  appConfigs/   DashboardConfig (types.ts) + sales.ts / survey.ts: título, subtítulo, dataset de
+                muestra, enriquecimiento de filas (enrichRow), KPIs extra (extraKpis) y subtítulo
+                del PDF por dashboard — ver "Arquitectura multi-dashboard" abajo.
   components/
-    layout/     Header, Sidebar, AppShell (composición general de la página)
+    layout/     Header, Sidebar, AppShell (composición general de la página, recibe `config`)
     upload/     FileDropzone, FileHistory, SchemaPreview
     filters/    FilterPanel + controles por tipo de columna + chips activos
     kpi/        KpiCard, KpiRow
@@ -69,9 +91,50 @@ src/
                 del hilo principal
   hooks/        useFileIngestion, useFilteredData, useSchemaFields, useChartPngExport,
                 useAutoLoadSample
-  data/sample/  ventas.csv — dataset sintético de ejemplo (también servido desde public/sample/)
+  data/sample/  ventas.csv, encuestas.csv — datasets sintéticos (también servidos desde
+                public/sample/)
   __tests__/    pruebas unitarias (Vitest)
+main.tsx            entrypoint del dashboard de ventas (monta <App config={salesConfig} />)
+main-encuestas.tsx  entrypoint del dashboard de encuestas (monta <App config={surveyConfig} />)
+index.html           página HTML del dashboard de ventas
+encuestas/index.html página HTML del dashboard de encuestas
 ```
+
+## Arquitectura multi-dashboard (`appConfigs/`)
+
+Toda la lógica de datos, filtros, gráficas y el generador de PDF es **agnóstica al dominio**: no
+sabe nada de "ventas" ni de "encuestas", solo trabaja sobre el `DatasetSchema` detectado. Lo único
+que distingue un dashboard de otro es una `DashboardConfig` (`src/appConfigs/types.ts`):
+
+```ts
+interface DashboardConfig {
+  id: string;                          // 'sales' | 'survey'
+  title: string;                       // título en el header y en el PDF
+  subtitle: string;                    // subtítulo del header
+  sampleDataPath: string;              // archivo bajo public/sample/ a autocargar
+  enrichRow?: (row: Row) => Row;       // enriquecimiento por fila al ingerir (columnas derivadas)
+  extraKpis?: ComponentType[];         // tarjetas KPI específicas del dominio
+  pdfCoverSubtitle: string;            // subtítulo de la portada del informe PDF
+}
+```
+
+- `sales.ts` envuelve el comportamiento original del dashboard de ventas (sin `enrichRow` ni
+  `extraKpis`), así que su título, dataset y salida quedan **exactamente igual** que antes.
+- `survey.ts` define `enrichRow` para calcular `nps_categoria` (Promotor/Pasivo/Detractor) a partir
+  de `nps_score` en cada fila al cargar los datos — el resto del pipeline (esquema, filtros,
+  agregación, motor de hallazgos) la trata como una columna categórica normal, sin cambios de
+  código. También declara `extraKpis: [NpsScoreCard]` para las tarjetas de NPS/CSAT.
+- `AppShell` recibe la `config` como prop y la usa para: el título/subtítulo del header, el
+  dataset a autocargar (`useAutoLoadSample`), el `enrichRow` pasado a `useFileIngestion` (tanto
+  para la carga automática como para archivos que el usuario suba), las tarjetas KPI extra, y
+  (condicionado a `config.id === 'survey'`) el `NpsBreakdownChart`.
+- `main.tsx` / `main-encuestas.tsx` son los dos entrypoints de Vite; cada uno monta `<App>` con su
+  propia config. `vite.config.ts` declara ambos HTML como `build.rollupOptions.input` para que
+  `npm run build` genere las dos páginas.
+
+**Añadir un tercer dashboard** implica: crear `appConfigs/nuevo.ts`, un `nuevo/index.html` +
+`main-nuevo.tsx` análogos, sumar la entrada a `vite.config.ts`, y (opcionalmente) componentes KPI/
+chart específicos referenciados desde `extraKpis` — sin tocar `lib/` ni los dashboards existentes.
 
 **Separación de responsabilidades:** toda la lógica de datos (parseo, detección de esquema,
 agregación, filtrado, KPIs, generación de hallazgos) vive en `lib/`, es TypeScript puro sin
@@ -159,14 +222,20 @@ npm run test
 
 Cubren: `lib/data/aggregation.ts` (sum/avg/count/median, agrupación 1D/2D, series de tiempo),
 `lib/data/filtering.ts` (cada tipo de filtro y su combinación AND), `lib/parsing/schemaDetection.ts`
-(inferencia de tipos, nulos, duplicados, coerción) y `lib/insights/rules.ts` +
+(inferencia de tipos, nulos, duplicados, coerción), `lib/insights/rules.ts` +
 `lib/insights/narrative.ts` (que el motor detecte cada tipo de hallazgo en un dataset sintético
-diseñado para dispararlos todos, orden por severidad, y los constructores de resumen/recomendaciones).
+diseñado para dispararlos todos, orden por severidad, y los constructores de resumen/recomendaciones)
+y `lib/data/nps.ts` (`__tests__/nps.test.ts`: clasificación Promotor/Pasivo/Detractor en los
+límites 6/7 y 8/9, cálculo de NPS y CSAT contra conjuntos con resultado calculado a mano).
 
-## Generar el informe de muestra (`docs/informe-muestra.pdf`)
+## Informes y capturas de muestra (`docs/`)
 
-El PDF incluido en `docs/informe-muestra.pdf` se generó automatizadamente contra el dataset
-sintético precargado, así:
+- `docs/informe-muestra.pdf` — informe del dashboard de ventas.
+- `docs/informe-muestra-encuestas.pdf` — informe del dashboard de encuestas.
+- `docs/screenshot-encuestas-claro.png` / `docs/screenshot-encuestas-oscuro.png` — capturas del
+  dashboard de encuestas en modo claro y oscuro.
+
+Ambos PDFs se generaron automatizadamente contra el dataset sintético precargado, así:
 
 ```bash
 npm run build && npm run preview -- --port 4173 &

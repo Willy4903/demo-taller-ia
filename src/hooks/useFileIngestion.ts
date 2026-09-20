@@ -1,7 +1,8 @@
 import { useCallback, useState } from 'react';
 import { parseFileInWorker } from '../lib/parsing/worker';
 import { useDataStore } from '../store/useDataStore';
-import type { DataFile } from '../lib/data/types';
+import { detectSchema } from '../lib/parsing/schemaDetection';
+import type { DataFile, Row } from '../lib/data/types';
 
 let nextId = 1;
 
@@ -10,8 +11,12 @@ export interface IngestError {
   message: string;
 }
 
-/** Handles parsing + ingesting new files into the data store, with recompute-on-upload semantics. */
-export function useFileIngestion() {
+/**
+ * Handles parsing + ingesting new files into the data store, with recompute-on-upload semantics.
+ * `enrichRow`, when provided (e.g. by a DashboardConfig), is applied to every parsed row before
+ * the schema is (re)detected, so derived columns are treated like any other field downstream.
+ */
+export function useFileIngestion(enrichRow?: (row: Row) => Row) {
   const addFile = useDataStore((s) => s.addFile);
   const replaceFile = useDataStore((s) => s.replaceFile);
   const setParsing = useDataStore((s) => s.setParsing);
@@ -27,14 +32,16 @@ export function useFileIngestion() {
         for (const file of files) {
           try {
             const result = await parseFileInWorker(file);
-            const dataFile: DataFile & { rows: (typeof result)['rows'] } = {
+            const rows = enrichRow ? result.rows.map(enrichRow) : result.rows;
+            const schema = enrichRow ? detectSchema(rows) : result.schema;
+            const dataFile: DataFile & { rows: Row[] } = {
               id: replaceId ?? `file-${nextId++}-${Date.now()}`,
               name: result.fileName,
               addedAt: Date.now(),
-              rowCount: result.rows.length,
-              schema: result.schema,
+              rowCount: rows.length,
+              schema,
               errors: result.errors,
-              rows: result.rows,
+              rows,
             };
             if (replaceId) {
               replaceFile(replaceId, dataFile);
@@ -58,7 +65,7 @@ export function useFileIngestion() {
         setParsing(false, null);
       }
     },
-    [addFile, replaceFile, setParsing],
+    [addFile, replaceFile, setParsing, enrichRow],
   );
 
   return { ingestFiles, ingestErrors };

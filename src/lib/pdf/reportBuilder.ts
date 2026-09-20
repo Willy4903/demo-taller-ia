@@ -82,11 +82,15 @@ export interface ReportInput {
   filters: FilterState;
   fileNames: string[];
   datasetLabel: string;
+  /** Overrides the cover page title (defaults to a generic "Análisis ejecutivo: <dataset>"). */
+  reportTitle?: string;
+  /** Overrides the cover page subtitle (defaults to the generic exec-summary copy). */
+  reportSubtitle?: string;
 }
 
 /** Builds and downloads the McKinsey-style executive PDF report from current data + filters. */
 export async function buildAndDownloadReport(input: ReportInput): Promise<void> {
-  const { rows, schema, filters, fileNames, datasetLabel } = input;
+  const { rows, schema, filters, fileNames, datasetLabel, reportTitle, reportSubtitle } = input;
   const insights = generateInsights(rows, schema).slice(0, 5);
   const execMessages = buildExecutiveSummary(insights, datasetLabel);
   const recommendations = buildRecommendations(insights);
@@ -152,8 +156,9 @@ export async function buildAndDownloadReport(input: ReportInput): Promise<void> 
       await renderAndCapture(
         0,
         createElement(Cover, {
-          title: `Análisis ejecutivo: ${datasetLabel}`,
+          title: reportTitle ? `${reportTitle}: ${datasetLabel}` : `Análisis ejecutivo: ${datasetLabel}`,
           subtitle:
+            reportSubtitle ??
             'Hallazgos clave, tendencias y recomendaciones basados en los datos cargados y los filtros vigentes al momento de la generación.',
           dateLabel,
           totalPages,

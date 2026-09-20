@@ -4,9 +4,14 @@ import { useFilterStore } from '../../store/useFilterStore';
 import { applyFilters } from '../../lib/data/filtering';
 import { detectSchema } from '../../lib/parsing/schemaDetection';
 import { buildAndDownloadReport } from '../../lib/pdf/reportBuilder';
+import type { DashboardConfig } from '../../appConfigs/types';
+
+interface ReportButtonProps {
+  config: DashboardConfig;
+}
 
 /** Header button that generates and downloads the executive PDF report from current data + filters. */
-export function ReportButton() {
+export function ReportButton({ config }: ReportButtonProps) {
   const [isGenerating, setIsGenerating] = useState(false);
   const activeRows = useDataStore((s) => s.activeRows);
   const files = useDataStore((s) => s.files);
@@ -24,6 +29,8 @@ export function ReportButton() {
         filters,
         fileNames: files.map((f) => f.name),
         datasetLabel: files.map((f) => f.name).join(', ') || 'conjunto de datos cargado',
+        reportTitle: config.title,
+        reportSubtitle: config.pdfCoverSubtitle,
       });
     } finally {
       setIsGenerating(false);

@@ -1,7 +1,10 @@
 import { AppShell } from './components/layout/AppShell';
-import { useAutoLoadSample } from './hooks/useAutoLoadSample';
+import type { DashboardConfig } from './appConfigs/types';
 
-export default function App() {
-  useAutoLoadSample();
-  return <AppShell />;
+interface AppProps {
+  config: DashboardConfig;
+}
+
+export default function App({ config }: AppProps) {
+  return <AppShell config={config} />;
 }
