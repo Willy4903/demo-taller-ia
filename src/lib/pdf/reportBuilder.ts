@@ -29,6 +29,7 @@ function renderInsightChartImage(insight: Insight, rows: Row[]): string | null {
       if (!dateField) return null;
       const series = timeSeries(rows, dateField, insight.chartHint.metric, insight.chartHint.aggType, 'month');
       chart.setOption({
+        animation: false,
         grid: { left: 50, right: 20, top: 20, bottom: 30 },
         xAxis: { type: 'category', data: series.map((s) => s.key) },
         yAxis: { type: 'value' },
@@ -37,6 +38,7 @@ function renderInsightChartImage(insight: Insight, rows: Row[]): string | null {
     } else if (insight.chartHint.type === 'bar' && insight.chartHint.dimension) {
       const grouped = groupAndAggregate(rows, insight.chartHint.dimension, insight.chartHint.metric, insight.chartHint.aggType).slice(0, 10);
       chart.setOption({
+        animation: false,
         grid: { left: 90, right: 30, top: 20, bottom: 20 },
         xAxis: { type: 'value' },
         yAxis: { type: 'category', data: grouped.map((g) => g.key).reverse(), axisLabel: { fontSize: 11 } },
@@ -49,6 +51,7 @@ function renderInsightChartImage(insight: Insight, rows: Row[]): string | null {
         .map((r, i) => [i, r[metric]])
         .filter((p): p is [number, number] => typeof p[1] === 'number');
       chart.setOption({
+        animation: false,
         grid: { left: 50, right: 20, top: 20, bottom: 30 },
         xAxis: { type: 'value', show: false },
         yAxis: { type: 'value' },
@@ -57,6 +60,9 @@ function renderInsightChartImage(insight: Insight, rows: Row[]): string | null {
     } else {
       return null;
     }
+    // Force a synchronous repaint before snapshotting: ECharts schedules its
+    // first paint on a frame even with animation disabled in some versions.
+    chart.resize({ width: 680, height: 320 });
     const url = chart.getDataURL({ type: 'png', pixelRatio: 2, backgroundColor: '#ffffff' });
     return url;
   } finally {

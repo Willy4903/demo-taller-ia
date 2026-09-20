@@ -73,10 +73,10 @@ export function HeatmapChart() {
       <ReactECharts
         ref={ref}
         notMerge
-        style={{ height: 300 }}
+        style={{ height: 360 }}
         option={{
           tooltip: { position: 'top' },
-          grid: { left: 90, right: 20, top: 10, bottom: 60 },
+          grid: { left: 90, right: 20, top: 10, bottom: 100 },
           xAxis: { type: 'category', data: xCats, axisLabel: { rotate: 45, fontSize: 10 }, splitArea: { show: true } },
           yAxis: { type: 'category', data: yCats, axisLabel: { fontSize: 10 }, splitArea: { show: true } },
           visualMap: {
@@ -85,7 +85,9 @@ export function HeatmapChart() {
             calculable: true,
             orient: 'horizontal',
             left: 'center',
-            bottom: 0,
+            bottom: 4,
+            itemHeight: 12,
+            textStyle: { fontSize: 10 },
             inRange: { color: theme === 'dark' ? ['#141a24', '#b08d2c'] : ['#f4f5f7', '#0b1f3a'] },
           },
           series: [{ type: 'heatmap', data: cells, label: { show: false } }],
