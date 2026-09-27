@@ -40,6 +40,7 @@ canvas {
   right: 10px;
   display: flex;
   justify-content: space-between;
+  gap: 6px;
   z-index: 3;
   pointer-events: none;
   font-family: "Courier New", monospace;
@@ -49,9 +50,11 @@ canvas {
   background: rgba(10, 10, 30, 0.7);
   border: 2px solid #ffd93d;
   border-radius: 6px;
-  padding: 4px 12px;
+  padding: 4px 10px;
   text-align: center;
   color: #fff;
+  flex: 1;
+  min-width: 0;
 }
 
 .hud-box.center {
