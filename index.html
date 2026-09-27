@@ -3,29 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Dino Saltarín - Aventura de Estrellas</title>
+<title>Súper Turbo Rally</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="game-container">
     <div id="hud">
-      <div id="score">⭐ <span id="score-value">0</span></div>
-      <div id="lives">❤️❤️❤️</div>
+      <div class="hud-box">
+        <div class="hud-label">VELOCIDAD</div>
+        <div id="speed-value" class="hud-value">000</div>
+        <div class="hud-label">km/h</div>
+      </div>
+      <div class="hud-box center">
+        <div class="hud-label">TIEMPO</div>
+        <div id="time-value" class="hud-value">60</div>
+      </div>
+      <div class="hud-box">
+        <div class="hud-label">DISTANCIA</div>
+        <div id="dist-value" class="hud-value">0%</div>
+      </div>
     </div>
+
+    <div id="gear-indicator">
+      <span id="gear-value">1</span>
+      <div class="gear-label">MARCHA</div>
+    </div>
+
+    <div id="checkpoint-msg" class="hidden">+15s ¡CONTROL!</div>
 
     <canvas id="game-canvas" width="800" height="450"></canvas>
 
+    <div id="touch-controls">
+      <button id="btn-left" class="ctrl-btn">◀</button>
+      <button id="btn-gas" class="ctrl-btn gas">GAS</button>
+      <button id="btn-right" class="ctrl-btn">▶</button>
+      <button id="btn-turbo" class="ctrl-btn turbo">🔥</button>
+    </div>
+
     <div id="start-screen" class="overlay">
-      <h1>🦕 Dino Saltarín 🦖</h1>
-      <p>¡Ayuda al dinosaurio a recoger todas las estrellas!</p>
-      <p class="instructions">Toca la pantalla, haz clic o presiona ESPACIO para saltar</p>
-      <button id="start-btn">¡JUGAR! 🎮</button>
+      <h1>🏎️ SÚPER TURBO RALLY 🏁</h1>
+      <p>¡Carrera retro estilo 16 bits! Llega a cada control antes de que se acabe el tiempo.</p>
+      <p class="instructions">
+        Flechas ◀▶ para girar · ▲ para acelerar · ESPACIO para turbo<br>
+        (o usa los botones en pantalla)
+      </p>
+      <button id="start-btn">¡ARRANCAR! 🏁</button>
     </div>
 
     <div id="game-over-screen" class="overlay hidden">
-      <h1 id="game-over-title">🎉 ¡Muy bien! 🎉</h1>
-      <p id="final-score">Estrellas recogidas: 0</p>
-      <button id="restart-btn">Jugar de nuevo 🔄</button>
+      <h1 id="game-over-title">🏁 ¡Meta! 🏁</h1>
+      <p id="final-stats">Distancia: 0%</p>
+      <button id="restart-btn">Correr de nuevo 🔄</button>
     </div>
   </div>
 
