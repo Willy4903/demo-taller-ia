@@ -1,66 +1,780 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Súper Turbo Rally</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Top Racer Retro</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 100%; height: 100%;
+    overflow: hidden;
+    background: #000;
+    font-family: "Courier New", monospace;
+  }
+  #game { display: block; width: 100vw; height: 100vh; touch-action: none; }
+
+  .screen {
+    position: fixed; inset: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 16px;
+    background: rgba(5, 5, 20, 0.88);
+    color: #fff; text-align: center; padding: 20px; z-index: 10;
+  }
+  .screen.hidden { display: none; }
+  .screen h1 {
+    font-size: clamp(24px, 5vw, 44px);
+    color: #ffd93d;
+    text-shadow: 3px 3px 0 #ff3b3b;
+    letter-spacing: 2px;
+  }
+  .screen p { max-width: 560px; font-size: clamp(12px, 2vw, 16px); line-height: 1.5; opacity: 0.9; }
+  .screen button {
+    margin-top: 8px;
+    padding: 14px 34px;
+    font-size: 18px; font-weight: bold; font-family: inherit;
+    color: #222; background: #ffd93d; border: none; border-radius: 8px;
+    cursor: pointer; box-shadow: 0 6px 0 #b8860b;
+  }
+  .screen button:active { transform: translateY(6px); box-shadow: 0 0 0 #b8860b; }
+
+  /* ---- HUD (dibujado sobre el canvas via CSS overlay para nitidez de texto) ---- */
+  #hud { position: fixed; inset: 0; pointer-events: none; z-index: 5; }
+  .hud-panel {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.55);
+    border: 2px solid #444;
+    border-radius: 6px;
+    padding: 4px 10px;
+    color: #fff;
+  }
+  #speed-panel { top: 12px; right: 12px; border-color: #ff2222; text-align: right; }
+  #speed-value { color: #ff2222; font-size: clamp(20px, 3.2vw, 34px); font-weight: bold; text-shadow: 0 0 6px #ff2222aa; }
+  #speed-unit { color: #ff8888; font-size: 11px; letter-spacing: 1px; }
+
+  #timer-panel { top: 12px; left: 12px; border-color: #6bd4ff; }
+  #timer-value { color: #6bd4ff; font-size: clamp(16px, 2.6vw, 26px); font-weight: bold; text-shadow: 0 0 6px #6bd4ffaa; }
+
+  #position-panel {
+    top: 12px; left: 50%; transform: translateX(-50%);
+    border-color: #ffd93d; text-align: center;
+  }
+  #position-value { color: #ffd93d; font-size: clamp(18px, 3vw, 30px); font-weight: bold; text-shadow: 0 0 6px #ffd93daa; }
+
+  #radar-panel {
+    bottom: 16px; right: 16px;
+    width: clamp(90px, 16vw, 140px); height: clamp(90px, 16vw, 140px);
+    border-radius: 50%;
+    border: 2px solid #7cff6b;
+    background: rgba(0, 20, 0, 0.5);
+    padding: 0;
+  }
+
+  #touch-controls {
+    position: fixed; left: 0; right: 0; bottom: 14px;
+    display: flex; justify-content: space-between; padding: 0 14px;
+    z-index: 6; pointer-events: none;
+  }
+  #touch-controls button {
+    pointer-events: all;
+    width: 62px; height: 62px; border-radius: 50%;
+    border: 3px solid #fff; background: rgba(20, 20, 50, 0.5);
+    color: #fff; font-size: 20px; font-weight: bold;
+  }
+  #touch-controls .gas { width: 82px; height: 82px; background: rgba(255, 80, 80, 0.55); }
+</style>
 </head>
 <body>
-  <div id="game-container">
-    <div id="hud">
-      <div class="hud-box">
-        <div class="hud-label">VELOCIDAD</div>
-        <div id="speed-value" class="hud-value">000</div>
-        <div class="hud-label">km/h</div>
-      </div>
-      <div class="hud-box center">
-        <div class="hud-label">TIEMPO</div>
-        <div id="time-value" class="hud-value">60</div>
-      </div>
-      <div class="hud-box">
-        <div class="hud-label">DISTANCIA</div>
-        <div id="dist-value" class="hud-value">0%</div>
-      </div>
-      <div class="hud-box">
-        <div class="hud-label">POSICIÓN</div>
-        <div id="position-value" class="hud-value">1/8</div>
-      </div>
+  <canvas id="game"></canvas>
+
+  <!-- HUD: velocímetro, temporizador, posición y radar de rivales -->
+  <div id="hud">
+    <div id="speed-panel" class="hud-panel">
+      <div id="speed-value">000</div>
+      <div id="speed-unit">MPH</div>
     </div>
-
-    <div id="gear-indicator">
-      <span id="gear-value">1</span>
-      <div class="gear-label">MARCHA</div>
+    <div id="timer-panel" class="hud-panel">
+      <div id="timer-value">00:00:00</div>
     </div>
-
-    <div id="checkpoint-msg" class="hidden">+15s ¡CONTROL!</div>
-
-    <canvas id="game-canvas" width="800" height="450"></canvas>
-
-    <div id="touch-controls">
-      <button id="btn-left" class="ctrl-btn">◀</button>
-      <button id="btn-gas" class="ctrl-btn gas">GAS</button>
-      <button id="btn-right" class="ctrl-btn">▶</button>
-      <button id="btn-turbo" class="ctrl-btn turbo">🔥</button>
+    <div id="position-panel" class="hud-panel">
+      <div id="position-value">1st</div>
     </div>
-
-    <div id="start-screen" class="overlay">
-      <h1>🏎️ SÚPER TURBO RALLY 🏁</h1>
-      <p>¡Carrera retro estilo 16 bits! Llega a cada control antes de que se acabe el tiempo.</p>
-      <p class="instructions">
-        Flechas ◀▶ para girar · ▲ para acelerar · ESPACIO para turbo<br>
-        (o usa los botones en pantalla)
-      </p>
-      <button id="start-btn">¡ARRANCAR! 🏁</button>
-    </div>
-
-    <div id="game-over-screen" class="overlay hidden">
-      <h1 id="game-over-title">🏁 ¡Meta! 🏁</h1>
-      <p id="final-stats">Distancia: 0%</p>
-      <button id="restart-btn">Correr de nuevo 🔄</button>
-    </div>
+    <canvas id="radar-panel" width="140" height="140"></canvas>
   </div>
 
-  <script src="script.js"></script>
+  <div id="touch-controls">
+    <button id="btn-left">◀</button>
+    <button id="btn-gas" class="gas">GAS</button>
+    <button id="btn-right">▶</button>
+  </div>
+
+  <div id="start-screen" class="screen">
+    <h1>🏁 TOP RACER RETRO 🏁</h1>
+    <p>
+      Carrera infinita estilo 16 bits. Acelera, esquiva a los rivales y no te salgas
+      del asfalto o perderás velocidad. ¡Sobrevive hasta que se acabe el reloj!
+    </p>
+    <p>Flechas / WASD para conducir · el césped frena el auto</p>
+    <button id="start-btn">ARRANCAR</button>
+  </div>
+
+  <div id="gameover-screen" class="screen hidden">
+    <h1 id="gameover-title">GAME OVER</h1>
+    <p id="gameover-stats"></p>
+    <button id="restart-btn">REINTENTAR</button>
+  </div>
+
+<script>
+"use strict";
+
+/* =========================================================================
+   TOP RACER RETRO
+   Recreación estilo SNES ("Top Gear" / "Top Racer") en un único archivo,
+   sin librerías externas. Todo el arte se dibuja por código en <canvas>.
+   Estructura: init() -> handleInput() -> gameLoop() -> update() -> draw()
+   ========================================================================= */
+
+// ---------------------------------------------------------------------------
+// 1. REFERENCIAS A ELEMENTOS DEL DOM
+// ---------------------------------------------------------------------------
+const canvas = document.getElementById("game");
+const ctx = canvas.getContext("2d");
+const radarCanvas = document.getElementById("radar-panel");
+const radarCtx = radarCanvas.getContext("2d");
+
+const speedValueEl = document.getElementById("speed-value");
+const timerValueEl = document.getElementById("timer-value");
+const positionValueEl = document.getElementById("position-value");
+
+const startScreen = document.getElementById("start-screen");
+const gameOverScreen = document.getElementById("gameover-screen");
+const gameOverTitle = document.getElementById("gameover-title");
+const gameOverStats = document.getElementById("gameover-stats");
+const startBtn = document.getElementById("start-btn");
+const restartBtn = document.getElementById("restart-btn");
+
+// ---------------------------------------------------------------------------
+// 2. CONFIGURACIÓN GLOBAL DE LA PISTA (Mode 7 simplificado)
+// ---------------------------------------------------------------------------
+let W = 0, H = 0, HORIZON_Y = 0; // se recalculan en resizeCanvas()
+
+const ROAD_HALF_WIDTH = 1000;   // ancho de la pista en "unidades de mundo"
+const VIEW_DISTANCE = 6000;     // qué tan lejos se ve la pista hacia el horizonte
+const ROAD_ROWS = 90;           // franjas horizontales usadas para dibujar la pista
+
+// Física del coche del jugador
+const MAX_SPEED = 620;          // unidades de mundo / segundo
+const ACCELERATION = 260;
+const BRAKE_POWER = 420;
+const FRICTION = 140;           // frenado natural al soltar el acelerador
+const OFFROAD_FRICTION = 520;   // frenado brusco al pisar el césped
+const OFFROAD_MAX_SPEED = MAX_SPEED * 0.35;
+const STEER_RATE = 900;         // sensibilidad de giro base (se escala con la velocidad)
+
+// ---------------------------------------------------------------------------
+// 3. ESTADO DEL JUEGO
+// ---------------------------------------------------------------------------
+let gameState = "start"; // "start" | "playing" | "over"
+let lastTimestamp = null;
+let rafId = null;
+
+const player = {
+  position: 0,   // distancia recorrida sobre la pista infinita (Z absoluto)
+  lateral: 0,    // desplazamiento lateral respecto al centro del carril
+  speed: 0,
+  steerInput: 0, // -1 izquierda, 0 recto, 1 derecha (para animar el sprite)
+};
+
+let raceTime = 90;      // segundos que cuenta hacia atrás el temporizador
+let elapsedTime = 0;
+
+const keys = { left: false, right: false, up: false, down: false };
+
+// ---------------------------------------------------------------------------
+// 4. GENERACIÓN PROCEDURAL DE LA PISTA (infinita, basada en funciones seno)
+// ---------------------------------------------------------------------------
+// En vez de precalcular segmentos, el centro de la pista en cualquier punto
+// "z" del mundo se calcula con una combinación de senos: esto genera curvas
+// suaves de forma infinita sin necesidad de guardar un arreglo enorme.
+function roadCenterWorldX(z) {
+  return Math.sin(z * 0.00055) * 1300 + Math.sin(z * 0.00021 + 1.7) * 850;
+}
+
+// Pendiente aproximada de la curva en z (para un pequeño empuje centrífugo)
+function roadSlopeAt(z) {
+  const delta = 40;
+  return (roadCenterWorldX(z + delta) - roadCenterWorldX(z - delta)) / (2 * delta);
+}
+
+// Proyecta un punto del mundo (a una distancia relativa delante de la cámara,
+// y un desplazamiento lateral) a coordenadas de pantalla + escala.
+// Devuelve null si el punto está fuera del rango visible.
+function projectWorldPoint(relativeDepth, lateralOffsetWorld) {
+  if (relativeDepth < 0) relativeDepth = 0;
+  if (relativeDepth >= VIEW_DISTANCE) return null;
+
+  const t = 1 - Math.sqrt(relativeDepth / VIEW_DISTANCE); // 1 = cerca, 0 = horizonte
+  const scale = 0.08 + 0.92 * t;
+  const rowY = HORIZON_Y + t * (H - HORIZON_Y);
+
+  const centerWorldXAtZ = roadCenterWorldX(player.position + relativeDepth);
+  const playerWorldX = roadCenterWorldX(player.position) + player.lateral;
+
+  const maxRoadHalfWidthPx = W * 0.42;
+  const px =
+    W / 2 +
+    (centerWorldXAtZ + lateralOffsetWorld - playerWorldX) *
+      scale *
+      (maxRoadHalfWidthPx / ROAD_HALF_WIDTH);
+
+  return { x: px, y: rowY, scale };
+}
+
+// ---------------------------------------------------------------------------
+// 5. RIVALES (IA): al menos 3 autos de colores distintos con zigzag
+// ---------------------------------------------------------------------------
+const RIVAL_COLORS = ["#ff3b3b", "#3fa7ff", "#ffd93d"];
+let rivals = [];
+
+function spawnRival(color, index) {
+  return {
+    color,
+    position: player.position + VIEW_DISTANCE * (0.3 + index * 0.25),
+    baseLateral: (Math.random() * 2 - 1) * ROAD_HALF_WIDTH * 0.55,
+    lateral: 0,
+    speed: MAX_SPEED * (0.55 + Math.random() * 0.2),
+    phase: Math.random() * Math.PI * 2,
+  };
+}
+
+function initRivals() {
+  rivals = RIVAL_COLORS.map((color, i) => spawnRival(color, i));
+}
+
+function updateRivals(dt) {
+  for (const rival of rivals) {
+    rival.position += rival.speed * dt;
+    // Zigzag suave de un lado a otro del carril
+    rival.lateral =
+      rival.baseLateral + Math.sin(rival.position * 0.004 + rival.phase) * 320;
+
+    // Si un rival queda muy atrás o demasiado lejos adelante, se reubica
+    // cerca del jugador para mantener siempre "tráfico" en la pista infinita.
+    const relative = rival.position - player.position;
+    if (relative < -VIEW_DISTANCE * 0.6 || relative > VIEW_DISTANCE * 1.6) {
+      rival.position = player.position + VIEW_DISTANCE * (0.4 + Math.random() * 0.9);
+      rival.baseLateral = (Math.random() * 2 - 1) * ROAD_HALF_WIDTH * 0.55;
+    }
+  }
+}
+
+function getPlayerRank() {
+  let ahead = 0;
+  for (const rival of rivals) {
+    if (rival.position > player.position) ahead++;
+  }
+  return ahead + 1;
+}
+
+function ordinal(n) {
+  if (n === 1) return "1st";
+  if (n === 2) return "2nd";
+  if (n === 3) return "3rd";
+  return `${n}th`;
+}
+
+// ---------------------------------------------------------------------------
+// 6. SONIDO (Web Audio API, sin archivos externos)
+// ---------------------------------------------------------------------------
+let audioCtx = null;
+let engineOsc = null;
+let engineGain = null;
+let lastOffroadNoiseTime = 0;
+
+function initAudio() {
+  if (audioCtx) return;
+  audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+  // Zumbido de motor: oscilador cuya frecuencia sube con la velocidad
+  engineOsc = audioCtx.createOscillator();
+  engineGain = audioCtx.createGain();
+  engineOsc.type = "sawtooth";
+  engineOsc.frequency.value = 60;
+  engineGain.gain.value = 0.02;
+  engineOsc.connect(engineGain).connect(audioCtx.destination);
+  engineOsc.start();
+}
+
+function updateEngineSound() {
+  if (!audioCtx || !engineOsc) return;
+  const speedRatio = player.speed / MAX_SPEED;
+  engineOsc.frequency.setTargetAtTime(60 + speedRatio * 180, audioCtx.currentTime, 0.05);
+  engineGain.gain.setTargetAtTime(0.015 + speedRatio * 0.03, audioCtx.currentTime, 0.05);
+}
+
+function stopEngineSound() {
+  if (engineGain) engineGain.gain.setTargetAtTime(0, audioCtx.currentTime, 0.05);
+}
+
+// Ruido corto tipo "grava/césped" generado con una ráfaga de ruido blanco
+function playOffroadNoise() {
+  if (!audioCtx) return;
+  const now = audioCtx.currentTime;
+  if (now - lastOffroadNoiseTime < 0.15) return; // evita saturar de sonido
+  lastOffroadNoiseTime = now;
+
+  const bufferSize = audioCtx.sampleRate * 0.12;
+  const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+  const data = buffer.getChannelData(0);
+  for (let i = 0; i < bufferSize; i++) data[i] = Math.random() * 2 - 1;
+
+  const noiseSource = audioCtx.createBufferSource();
+  noiseSource.buffer = buffer;
+
+  const filter = audioCtx.createBiquadFilter();
+  filter.type = "bandpass";
+  filter.frequency.value = 400;
+
+  const gain = audioCtx.createGain();
+  gain.gain.value = 0.25;
+
+  noiseSource.connect(filter).connect(gain).connect(audioCtx.destination);
+  noiseSource.start();
+}
+
+// ---------------------------------------------------------------------------
+// 7. ENTRADA DE TECLADO / TÁCTIL
+// ---------------------------------------------------------------------------
+function handleInput() {
+  window.addEventListener("keydown", (e) => {
+    if (e.code === "ArrowLeft" || e.code === "KeyA") keys.left = true;
+    if (e.code === "ArrowRight" || e.code === "KeyD") keys.right = true;
+    if (e.code === "ArrowUp" || e.code === "KeyW") keys.up = true;
+    if (e.code === "ArrowDown" || e.code === "KeyS") keys.down = true;
+  });
+  window.addEventListener("keyup", (e) => {
+    if (e.code === "ArrowLeft" || e.code === "KeyA") keys.left = false;
+    if (e.code === "ArrowRight" || e.code === "KeyD") keys.right = false;
+    if (e.code === "ArrowUp" || e.code === "KeyW") keys.up = false;
+    if (e.code === "ArrowDown" || e.code === "KeyS") keys.down = false;
+  });
+
+  const bindHold = (id, key) => {
+    const el = document.getElementById(id);
+    const on = (e) => { e.preventDefault(); keys[key] = true; };
+    const off = (e) => { e.preventDefault(); keys[key] = false; };
+    el.addEventListener("touchstart", on);
+    el.addEventListener("touchend", off);
+    el.addEventListener("mousedown", on);
+    el.addEventListener("mouseup", off);
+    el.addEventListener("mouseleave", off);
+  };
+  bindHold("btn-left", "left");
+  bindHold("btn-right", "right");
+  bindHold("btn-gas", "up");
+}
+
+// ---------------------------------------------------------------------------
+// 8. LÓGICA / FÍSICA (update)
+// ---------------------------------------------------------------------------
+function update(dt) {
+  // --- Aceleración / frenado ---
+  if (keys.up) {
+    player.speed += ACCELERATION * dt;
+  } else if (keys.down) {
+    player.speed -= BRAKE_POWER * dt;
+  } else {
+    player.speed -= FRICTION * dt;
+  }
+
+  // --- Colisión con el césped: fricción fuerte + límite de velocidad ---
+  const offRoad = Math.abs(player.lateral) > ROAD_HALF_WIDTH;
+  if (offRoad) {
+    player.speed -= OFFROAD_FRICTION * dt;
+    if (player.speed > OFFROAD_MAX_SPEED) player.speed = OFFROAD_MAX_SPEED;
+    playOffroadNoise();
+  }
+
+  player.speed = Math.max(0, Math.min(MAX_SPEED, player.speed));
+
+  // --- Dirección: a mayor velocidad, el giro responde de forma más brusca ---
+  const speedRatio = player.speed / MAX_SPEED;
+  const steerPower = STEER_RATE * dt * (0.35 + 0.65 * speedRatio);
+  player.steerInput = keys.left ? -1 : keys.right ? 1 : 0;
+  player.lateral += player.steerInput * steerPower;
+
+  // Pequeño efecto centrífugo: las curvas empujan levemente hacia afuera
+  const slope = roadSlopeAt(player.position);
+  player.lateral += slope * speedRatio * 12 * dt * 60;
+
+  // Límite generoso para no perder el auto de vista en el césped
+  const maxLateral = ROAD_HALF_WIDTH * 2.2;
+  player.lateral = Math.max(-maxLateral, Math.min(maxLateral, player.lateral));
+
+  // --- Avance sobre la pista infinita ---
+  player.position += player.speed * dt;
+
+  updateRivals(dt);
+  updateEngineSound();
+
+  // --- Temporizador ---
+  raceTime -= dt;
+  elapsedTime += dt;
+  if (raceTime <= 0) {
+    raceTime = 0;
+    endGame();
+  }
+
+  updateHUDText();
+}
+
+function updateHUDText() {
+  const mph = Math.floor((player.speed / MAX_SPEED) * 200); // 0-200 mph aprox.
+  speedValueEl.textContent = String(mph).padStart(3, "0");
+
+  const minutes = Math.floor(raceTime / 60);
+  const seconds = Math.floor(raceTime % 60);
+  const hundredths = Math.floor((raceTime * 100) % 100);
+  timerValueEl.textContent =
+    `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}:${String(hundredths).padStart(2, "0")}`;
+
+  positionValueEl.textContent = ordinal(getPlayerRank());
+}
+
+// ---------------------------------------------------------------------------
+// 9. DIBUJO (draw)
+// ---------------------------------------------------------------------------
+function drawSky() {
+  const grd = ctx.createLinearGradient(0, 0, 0, HORIZON_Y);
+  grd.addColorStop(0, "#1e78d6");
+  grd.addColorStop(1, "#8fd8ff");
+  ctx.fillStyle = grd;
+  ctx.fillRect(0, 0, W, HORIZON_Y);
+
+  ctx.fillStyle = "#fff6c8";
+  ctx.beginPath();
+  ctx.arc(W * 0.82, HORIZON_Y * 0.4, Math.max(20, W * 0.03), 0, Math.PI * 2);
+  ctx.fill();
+}
+
+// Dibuja un objeto de decoración (árbol, valla publicitaria o torre)
+// en un carril lateral, escalado según la profundidad.
+function drawDecoration(x, y, scale, type, seed) {
+  if (scale < 0.03) return;
+  ctx.save();
+  ctx.translate(x, y);
+
+  if (type === 0) {
+    // Árbol
+    ctx.fillStyle = "#6b4226";
+    ctx.fillRect(-4 * scale, -10 * scale, 8 * scale, 20 * scale);
+    ctx.fillStyle = seed % 2 === 0 ? "#2f8f4e" : "#3aa65c";
+    ctx.beginPath();
+    ctx.arc(0, -28 * scale, 22 * scale, 0, Math.PI * 2);
+    ctx.fill();
+  } else if (type === 1) {
+    // Valla publicitaria
+    ctx.fillStyle = "#d9d9d9";
+    ctx.fillRect(-30 * scale, -55 * scale, 60 * scale, 32 * scale);
+    ctx.fillStyle = "#ff3b3b";
+    ctx.fillRect(-26 * scale, -50 * scale, 52 * scale, 8 * scale);
+    ctx.fillStyle = "#3fa7ff";
+    ctx.fillRect(-26 * scale, -38 * scale, 30 * scale, 8 * scale);
+    ctx.fillStyle = "#333";
+    ctx.fillRect(-3 * scale, -23 * scale, 6 * scale, 23 * scale);
+  } else {
+    // Torre / faro
+    ctx.fillStyle = "#c9c9c9";
+    ctx.fillRect(-6 * scale, -90 * scale, 12 * scale, 90 * scale);
+    ctx.fillStyle = "#ff3b3b";
+    ctx.beginPath();
+    ctx.arc(0, -92 * scale, 6 * scale, 0, Math.PI * 2);
+    ctx.fill();
+  }
+  ctx.restore();
+}
+
+// Genera decoraciones deterministas a partir de un "bucket" de z, para que
+// no cambien de aspecto al acercarse (pseudo-aleatorio estable).
+function hash(n) {
+  const x = Math.sin(n * 12.9898) * 43758.5453;
+  return x - Math.floor(x);
+}
+
+function drawRoadsideDecorations() {
+  const bucketSize = 500;
+  const firstBucket = Math.floor(player.position / bucketSize);
+  const lastBucket = Math.floor((player.position + VIEW_DISTANCE) / bucketSize);
+
+  for (let b = lastBucket; b >= firstBucket; b--) {
+    const z = b * bucketSize + hash(b) * bucketSize;
+    const relativeDepth = z - player.position;
+    if (relativeDepth < 0 || relativeDepth > VIEW_DISTANCE) continue;
+
+    const side = hash(b * 3.1) > 0.5 ? 1 : -1;
+    const type = Math.floor(hash(b * 7.7) * 3);
+    const lateral = side * (ROAD_HALF_WIDTH * 1.35 + hash(b * 5.3) * ROAD_HALF_WIDTH * 0.6);
+
+    const proj = projectWorldPoint(relativeDepth, lateral);
+    if (!proj) continue;
+    drawDecoration(proj.x, proj.y, proj.scale * 2.2, type, b);
+  }
+}
+
+function drawRoad() {
+  ctx.fillStyle = "#7a9a4e"; // césped
+  ctx.fillRect(0, HORIZON_Y, W, H - HORIZON_Y);
+
+  for (let i = ROAD_ROWS - 1; i >= 0; i--) {
+    const t0 = i / ROAD_ROWS;
+    const t1 = (i + 1) / ROAD_ROWS;
+    const depthFar = VIEW_DISTANCE * (1 - t0) * (1 - t0);
+    const depthNear = VIEW_DISTANCE * (1 - t1) * (1 - t1);
+
+    const far = {
+      left: projectWorldPoint(depthFar, -ROAD_HALF_WIDTH),
+      right: projectWorldPoint(depthFar, ROAD_HALF_WIDTH),
+    };
+    const near = {
+      left: projectWorldPoint(depthNear, -ROAD_HALF_WIDTH),
+      right: projectWorldPoint(depthNear, ROAD_HALF_WIDTH),
+    };
+    if (!far.left || !far.right || !near.left || !near.right) continue;
+
+    const worldZ = player.position + depthNear;
+    const band = Math.floor(worldZ / 300) % 2 === 0;
+
+    // césped con leve variación de tono para dar sensación de movimiento
+    ctx.fillStyle = band ? "#7a9a4e" : "#6c8a45";
+    ctx.beginPath();
+    ctx.moveTo(0, far.left.y);
+    ctx.lineTo(W, far.right.y);
+    ctx.lineTo(W, near.right.y);
+    ctx.lineTo(0, near.left.y);
+    ctx.closePath();
+    ctx.fill();
+
+    // franja roja/blanca del borde de la pista
+    const rumbleWidthFar = (far.right.x - far.left.x) * 0.06;
+    const rumbleWidthNear = (near.right.x - near.left.x) * 0.06;
+    ctx.fillStyle = band ? "#d94a4a" : "#f2f2f2";
+    ctx.beginPath();
+    ctx.moveTo(far.left.x - rumbleWidthFar, far.left.y);
+    ctx.lineTo(far.right.x + rumbleWidthFar, far.right.y);
+    ctx.lineTo(near.right.x + rumbleWidthNear, near.right.y);
+    ctx.lineTo(near.left.x - rumbleWidthNear, near.left.y);
+    ctx.closePath();
+    ctx.fill();
+
+    // asfalto
+    ctx.fillStyle = "#3a3d44";
+    ctx.beginPath();
+    ctx.moveTo(far.left.x, far.left.y);
+    ctx.lineTo(far.right.x, far.right.y);
+    ctx.lineTo(near.right.x, near.right.y);
+    ctx.lineTo(near.left.x, near.left.y);
+    ctx.closePath();
+    ctx.fill();
+
+    // línea discontinua central
+    if (band) {
+      const farCenter = projectWorldPoint(depthFar, 0);
+      const nearCenter = projectWorldPoint(depthNear, 0);
+      if (farCenter && nearCenter) {
+        const lineWidthFar = (far.right.x - far.left.x) * 0.02;
+        const lineWidthNear = (near.right.x - near.left.x) * 0.02;
+        ctx.fillStyle = "#f2f2f2";
+        ctx.beginPath();
+        ctx.moveTo(farCenter.x - lineWidthFar, farCenter.y);
+        ctx.lineTo(farCenter.x + lineWidthFar, farCenter.y);
+        ctx.lineTo(nearCenter.x + lineWidthNear, nearCenter.y);
+        ctx.lineTo(nearCenter.x - lineWidthNear, nearCenter.y);
+        ctx.closePath();
+        ctx.fill();
+      }
+    }
+  }
+}
+
+// Sprite de auto visto desde atrás, construido con rectángulos (pixel art)
+function drawCarSprite(cx, cy, scale, color, isPlayer) {
+  if (scale < 0.03) return;
+  const w = 46 * scale;
+  const h = 34 * scale;
+
+  ctx.save();
+  ctx.translate(cx, cy);
+
+  // sombra
+  ctx.fillStyle = "rgba(0,0,0,0.35)";
+  ctx.fillRect(-w * 0.5, h * 0.32, w, h * 0.14);
+
+  // ruedas traseras
+  ctx.fillStyle = "#1a1a1a";
+  ctx.fillRect(-w * 0.52, -h * 0.05, w * 0.14, h * 0.4);
+  ctx.fillRect(w * 0.38, -h * 0.05, w * 0.14, h * 0.4);
+
+  // carrocería
+  ctx.fillStyle = color;
+  ctx.fillRect(-w * 0.45, -h * 0.5, w * 0.9, h * 0.85);
+
+  // techo / luneta trasera
+  ctx.fillStyle = "#1c2733";
+  ctx.fillRect(-w * 0.3, -h * 0.5, w * 0.6, h * 0.32);
+
+  // luces traseras
+  ctx.fillStyle = "#ff2d2d";
+  ctx.fillRect(-w * 0.42, h * 0.02, w * 0.16, h * 0.14);
+  ctx.fillRect(w * 0.26, h * 0.02, w * 0.16, h * 0.14);
+
+  // parachoques
+  ctx.fillStyle = "#222";
+  ctx.fillRect(-w * 0.45, h * 0.24, w * 0.9, h * 0.11);
+
+  if (isPlayer) {
+    // franja central blanca estilo deportivo
+    ctx.fillStyle = "#e8e8e8";
+    ctx.fillRect(-w * 0.06, -h * 0.5, w * 0.12, h * 0.85);
+  }
+
+  ctx.restore();
+}
+
+function drawRivals() {
+  // Ordenamos por profundidad para dibujar primero los más lejanos
+  const sorted = [...rivals].sort((a, b) => b.position - a.position);
+  for (const rival of sorted) {
+    const relativeDepth = rival.position - player.position;
+    const proj = projectWorldPoint(relativeDepth, rival.lateral);
+    if (!proj) continue;
+    drawCarSprite(proj.x, proj.y, proj.scale * 2.6, rival.color, false);
+  }
+}
+
+function drawPlayerCar() {
+  const leanX = player.steerInput * 6;
+  drawCarSprite(W / 2 + leanX, H - H * 0.12, 2.6, "#f2f2f2", true);
+}
+
+function drawRadar() {
+  const rW = radarCanvas.width;
+  const rH = radarCanvas.height;
+  radarCtx.clearRect(0, 0, rW, rH);
+
+  radarCtx.fillStyle = "rgba(0, 30, 0, 0.4)";
+  radarCtx.beginPath();
+  radarCtx.arc(rW / 2, rH / 2, rW / 2 - 2, 0, Math.PI * 2);
+  radarCtx.fill();
+
+  // auto del jugador en el centro
+  radarCtx.fillStyle = "#fff";
+  radarCtx.beginPath();
+  radarCtx.arc(rW / 2, rH / 2, 4, 0, Math.PI * 2);
+  radarCtx.fill();
+
+  const radius = rW / 2 - 8;
+  const depthScale = radius / (VIEW_DISTANCE * 0.6);
+  const lateralScale = radius / (ROAD_HALF_WIDTH * 2.5);
+
+  for (const rival of rivals) {
+    const dz = rival.position - player.position;
+    const dx = rival.lateral - player.lateral;
+    let py = -dz * depthScale;
+    let px = dx * lateralScale;
+    const dist = Math.hypot(px, py);
+    if (dist > radius) {
+      const ratio = radius / dist;
+      px *= ratio;
+      py *= ratio;
+    }
+    radarCtx.fillStyle = rival.color;
+    radarCtx.beginPath();
+    radarCtx.arc(rW / 2 + px, rH / 2 + py, 4, 0, Math.PI * 2);
+    radarCtx.fill();
+  }
+}
+
+function draw() {
+  drawSky();
+  drawRoad();
+  drawRoadsideDecorations();
+  drawRivals();
+  drawPlayerCar();
+  drawRadar();
+}
+
+// ---------------------------------------------------------------------------
+// 10. BUCLE PRINCIPAL
+// ---------------------------------------------------------------------------
+function gameLoop(timestamp) {
+  if (gameState !== "playing") return;
+  if (lastTimestamp === null) lastTimestamp = timestamp;
+  const dt = Math.min((timestamp - lastTimestamp) / 1000, 0.05);
+  lastTimestamp = timestamp;
+
+  update(dt);
+  draw();
+
+  rafId = requestAnimationFrame(gameLoop);
+}
+
+// ---------------------------------------------------------------------------
+// 11. CANVAS RESPONSIVE
+// ---------------------------------------------------------------------------
+function resizeCanvas() {
+  W = canvas.width = window.innerWidth;
+  H = canvas.height = window.innerHeight;
+  HORIZON_Y = H * 0.42;
+  if (gameState !== "playing") draw();
+}
+window.addEventListener("resize", resizeCanvas);
+
+// ---------------------------------------------------------------------------
+// 12. ARRANQUE / REINICIO / FIN DE PARTIDA
+// ---------------------------------------------------------------------------
+function startGame() {
+  initAudio();
+
+  player.position = 0;
+  player.lateral = 0;
+  player.speed = 0;
+  raceTime = 90;
+  elapsedTime = 0;
+  initRivals();
+
+  gameState = "playing";
+  lastTimestamp = null;
+  startScreen.classList.add("hidden");
+  gameOverScreen.classList.add("hidden");
+  rafId = requestAnimationFrame(gameLoop);
+}
+
+function endGame() {
+  gameState = "over";
+  cancelAnimationFrame(rafId);
+  stopEngineSound();
+
+  gameOverTitle.textContent = "GAME OVER";
+  const rank = getPlayerRank();
+  const distanceKm = (player.position / 1000).toFixed(1);
+  gameOverStats.textContent = `Posición final: ${ordinal(rank)} · Distancia recorrida: ${distanceKm} km`;
+  gameOverScreen.classList.remove("hidden");
+}
+
+// ---------------------------------------------------------------------------
+// 13. INICIALIZACIÓN GENERAL
+// ---------------------------------------------------------------------------
+function init() {
+  resizeCanvas();
+  handleInput();
+  initRivals();
+  draw(); // dibuja un primer frame estático antes de arrancar
+
+  startBtn.addEventListener("click", startGame);
+  restartBtn.addEventListener("click", startGame);
+}
+
+window.addEventListener("load", init);
+</script>
 </body>
 </html>
