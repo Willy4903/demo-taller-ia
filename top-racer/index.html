@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="theme-color" content="#050204" />
 <title>TOP RACER</title>
 <style>
   html, body {
@@ -265,12 +269,11 @@ const Sfx = (() => {
     ambientStart(kind) {
       try {
         this.ambientStop();
-        if (kind !== "rain" && kind !== "hail" && kind !== "snow") return;
+        if (kind !== "hail" && kind !== "snow") return;
         const a = audio(); if (!a) return;
         const s = a.createBufferSource(); s.buffer = noiseBuffer(); s.loop = true;
         const f = a.createBiquadFilter(), g = a.createGain();
-        if (kind === "rain") { f.type = "highpass"; f.frequency.value = 900; g.gain.value = 0.08; }
-        else if (kind === "hail") { f.type = "bandpass"; f.frequency.value = 2600; f.Q.value = 0.8; g.gain.value = 0.1; }
+        if (kind === "hail") { f.type = "bandpass"; f.frequency.value = 2600; f.Q.value = 0.8; g.gain.value = 0.1; }
         else { f.type = "lowpass"; f.frequency.value = 420; g.gain.value = 0.05; }
         s.connect(f); f.connect(g); g.connect(master); s.start();
         amb = { s, g, kind };
@@ -1209,7 +1212,7 @@ function trackPlan(w, t) {
   const rng = mulberry32(0x9E3779B1 ^ (key * 7919 + 17));
   const difficulty = key / 39;
   // Largo de UNA vuelta (el circuito se recorre LAPS veces)
-  const target = Math.round(520 + w * 120 + t * 40 + (t === 9 ? 100 : 0));
+  const target = Math.round(620 + w * 150 + t * 55 + (t === 9 ? 140 : 0));
   const curves = [];
   const push = (n, c) => { for (let i = 0; i < n; i++) curves.push(c); };
   // Curva con entrada y salida suaves
@@ -1223,13 +1226,13 @@ function trackPlan(w, t) {
   let lastWasCurve = false;
   while (curves.length < target) {
     if (lastWasCurve && rng() < 0.55) {
-      push(Math.round(lerp(80, 34, difficulty) + rng() * 50), 0);
+      push(Math.round(lerp(72, 28, difficulty) + rng() * 46), 0);
       lastWasCurve = false;
       continue;
     }
     const dir = rng() < 0.5 ? -1 : 1;
-    const mag = 1.2 + rng() * 2.2 + difficulty * 3.6;
-    const len = Math.round(46 + rng() * 80 + difficulty * 36);
+    const mag = 1.2 + rng() * 2.2 + difficulty * 4.3;
+    const len = Math.round(44 + rng() * 76 + difficulty * 34);
     if (rng() < 0.25 + difficulty * 0.2) {
       addCurve(Math.round(len * 0.6), dir * mag);
       addCurve(Math.round(len * 0.6), -dir * mag * 0.9);
@@ -1340,7 +1343,7 @@ function generateTrack(w, t) {
   if (plan.hour === "sunset") drawDistance = 190;
   if (plan.weather === "rain" || plan.weather === "hail" || plan.weather === "snow") drawDistance = 150;
   if (plan.hour === "night") drawDistance = Math.min(drawDistance, 130);
-  if (plan.weather === "fog") drawDistance = 62;
+  if (plan.weather === "fog") drawDistance = 100;
 
   const startZ = plan.startIndex * SEGMENT_LENGTH;
   return {
@@ -1973,7 +1976,7 @@ function project(p, cz, relX) {
 }
 
 function fogAmount(trk, t) {
-  if (trk.plan.weather === "fog") return clamp(1 - Math.exp(-t * 4.2), 0, 1) * 1.02;
+  if (trk.plan.weather === "fog") return clamp(1 - Math.exp(-t * 2.6), 0, 1);
   const k = trk.plan.hour === "night" ? 1 : 0.9;
   return clamp(Math.pow(t, 2.1) * k, 0, 1);
 }
@@ -2427,7 +2430,7 @@ function ambientOverlay(trk) {
     if (hour === "sunset") { g.fillStyle = "rgba(255,120,50,0.07)"; g.fillRect(0, 0, W, H); }
     if (weather === "fog") {
       const fg = g.createLinearGradient(0, H * 0.2, 0, H * 0.95);
-      fg.addColorStop(0, rgba(fog, 0)); fg.addColorStop(0.42, rgba(fog, 0.55)); fg.addColorStop(1, rgba(fog, 0));
+      fg.addColorStop(0, rgba(fog, 0)); fg.addColorStop(0.42, rgba(fog, 0.36)); fg.addColorStop(1, rgba(fog, 0));
       g.fillStyle = fg; g.fillRect(0, H * 0.2, W, H * 0.75);
     }
     const vg = g.createRadialGradient(W / 2, H / 2, Math.min(W, H) * 0.45, W / 2, H / 2, Math.hypot(W, H) * 0.6);
