@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Dino Saltarín - Aventura de Estrellas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <div id="hud">
+      <div id="score">⭐ <span id="score-value">0</span></div>
+      <div id="lives">❤️❤️❤️</div>
+    </div>
+
+    <canvas id="game-canvas" width="800" height="450"></canvas>
+
+    <div id="start-screen" class="overlay">
+      <h1>🦕 Dino Saltarín 🦖</h1>
+      <p>¡Ayuda al dinosaurio a recoger todas las estrellas!</p>
+      <p class="instructions">Toca la pantalla, haz clic o presiona ESPACIO para saltar</p>
+      <button id="start-btn">¡JUGAR! 🎮</button>
+    </div>
+
+    <div id="game-over-screen" class="overlay hidden">
+      <h1 id="game-over-title">🎉 ¡Muy bien! 🎉</h1>
+      <p id="final-score">Estrellas recogidas: 0</p>
+      <button id="restart-btn">Jugar de nuevo 🔄</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
