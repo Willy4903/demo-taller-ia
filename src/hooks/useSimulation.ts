@@ -31,6 +31,7 @@ export function useSimulation() {
   const universitarioWinsAll = useCallback(() => setInputs((p) => teamWinsAll(DATASET, p, UNIVERSITARIO_ID)), [])
   const everyoneDraws = useCallback(() => setInputs(allDraw(DATASET)), [])
   const reset = useCallback(() => setInputs(resetAll()), [])
+  const setAll = useCallback((next: ScoreInputs) => setInputs(next), [])
 
-  return { inputs, base, tables, title, setScore, pick, clear, universitarioWinsAll, everyoneDraws, reset }
+  return { inputs, base, tables, title, setScore, pick, clear, universitarioWinsAll, everyoneDraws, reset, setAll }
 }

@@ -12,7 +12,7 @@ import type {
 import { evaluateInput, completedScores } from './scores'
 import { HEAD_TO_HEAD_MEETINGS_PER_PAIR, TIE_BOUNDARIES, zoneFor } from './rules'
 
-interface RawRow {
+export interface RawRow {
   teamId: TeamId
   pj: number
   pg: number | null

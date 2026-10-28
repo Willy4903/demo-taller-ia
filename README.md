@@ -4,6 +4,16 @@ Aplicación web para simular los 35 partidos pendientes del Torneo Clausura 2026
 
 Estado de los datos: corte del 28 de octubre de 2026, incluyendo Juan Pablo II 2-0 Sport Huancayo del 27 de octubre. Lee la sección Limitaciones antes de usar los números como referencia.
 
+## Experiencia y herramientas interactivas
+
+- Portada cinematográfica con fondo animado en canvas (respeta `prefers-reduced-motion`) y contadores en vivo de Universitario.
+- Resumen fijo en vivo con posición y puntos de Universitario en Clausura y acumulado.
+- Carrera de puntos: barras animadas que se reordenan con cada marcador, con el techo de puntos de cada club.
+- Simulador: marcadores editables, accesos rápidos, escenarios, filtros, tablas del Clausura y del acumulado, exportación CSV.
+- Matriz de Universitario: las 15 combinaciones de victorias y empates en sus cuatro partidos y dónde termina en cada tabla; cada celda carga el escenario.
+- Laboratorio de probabilidades: simulación de Monte Carlo en el navegador con semilla reproducible.
+- Techos y descenso: situación matemática (campeón, sin opciones, descendido, a salvo) calculada sin modelos.
+
 ## Requisitos e instalación
 
 - Node.js 22 o superior y npm.
@@ -63,6 +73,10 @@ e2e/                     Playwright
 - Los accesos rápidos fijan 1-0, 0-0 o 0-1; el marcador queda editable.
 - Desempates del Clausura: puntos, diferencia de goles, goles a favor, Fair Play. Acumulado: puntos, diferencia de goles, goles a favor, enfrentamientos directos y Fair Play. No hay datos de Fair Play ni de enfrentamientos directos cargados (`headToHead` y `fairPlay` están vacíos), por lo que un empate completo se marca como provisional con orden alfabético y una advertencia. El motor ya resuelve el empate si esos datos se cargan en `src/data/index.ts`.
 - Zonas del acumulado: 1 a 4 zona alta (candidatas a Libertadores), 5 a 8 candidatas a Sudamericana, 17 y 18 descenso. Las cuatro primeras posiciones no son clasificación automática: los cupos dependen del campeonato y de los play-offs.
+
+## Modelo de probabilidades
+
+`src/engine/montecarlo.ts` sortea los partidos que no tienen marcador cargado. Los goles de cada equipo siguen una distribución de Poisson con media igual al promedio de goles por equipo y partido de la liga, multiplicado por el ataque del club y la defensa del rival. Ataque y defensa salen de los goles a favor y en contra del acumulado de la temporada, suavizados hacia 1 con el peso de 10 partidos. No hay ventaja de local, bajas, forma reciente ni motivación. Los empates absolutos se resuelven por sorteo, como en el art. 14 para el Clausura, y se aplica también al acumulado como aproximación. Es una estimación del modelo, no un pronóstico ni un dato oficial. Los marcadores que cargues se tratan como resultados fijos.
 
 ## Fuentes y trazabilidad
 

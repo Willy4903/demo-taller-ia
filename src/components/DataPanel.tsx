@@ -24,12 +24,12 @@ function SourceLinks({ ids }: { ids: string[] }) {
 }
 
 const block = 'rounded-md bg-crema-50 p-4 shadow-sm ring-1 ring-crema-300'
-const h3 = 'font-serif text-lg font-bold text-granate-800'
+const h3 = 'font-display text-lg font-bold text-granate-800'
 
 export function DataPanel() {
   return (
     <section id="fuentes" aria-labelledby="fuentes-title" className="space-y-4">
-      <h2 id="fuentes-title" className="font-serif text-2xl font-bold text-granate-800">
+      <h2 id="fuentes-title" className="font-display text-2xl font-bold text-granate-800">
         Fuentes y trazabilidad
       </h2>
       <p className="text-sm">

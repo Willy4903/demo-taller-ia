@@ -1,7 +1,7 @@
 import type { Dataset, ScoreInputs, TeamId } from '../domain/types'
-import { OUTCOME_SCORES, type Outcome } from './scores'
+import { OUTCOME_SCORES, type Outcome as ScoreOutcome } from './scores'
 
-export function setOutcome(inputs: ScoreInputs, matchId: string, outcome: Outcome): ScoreInputs {
+export function setOutcome(inputs: ScoreInputs, matchId: string, outcome: ScoreOutcome): ScoreInputs {
   return { ...inputs, [matchId]: { ...OUTCOME_SCORES[outcome] } }
 }
 
@@ -30,4 +30,23 @@ export function allDraw(dataset: Dataset): ScoreInputs {
 
 export function resetAll(): ScoreInputs {
   return {}
+}
+
+/** Fija las victorias y empates de un equipo en sus partidos pendientes; el resto son derrotas (0-1). */
+export function teamRecordScenario(
+  dataset: Dataset,
+  inputs: ScoreInputs,
+  teamId: TeamId,
+  wins: number,
+  draws: number,
+): ScoreInputs {
+  const next = { ...inputs }
+  const own = dataset.fixtures.filter((f) => f.homeId === teamId || f.awayId === teamId)
+  own.forEach((fx, i) => {
+    const result = i < wins ? 'win' : i < wins + draws ? 'draw' : 'loss'
+    const home = fx.homeId === teamId
+    const outcome: ScoreOutcome = result === 'draw' ? 'draw' : (result === 'win') === home ? 'home' : 'away'
+    next[fx.id] = { ...OUTCOME_SCORES[outcome] }
+  })
+  return next
 }

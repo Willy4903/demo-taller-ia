@@ -68,7 +68,7 @@ export function StandingsTable({ kind, onKindChange, tables }: Props) {
   return (
     <section aria-labelledby={`${baseId}-title`} className="rounded-md bg-crema-50 shadow-sm ring-1 ring-crema-300">
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-crema-300 px-4 py-3">
-        <h2 id={`${baseId}-title`} className="font-serif text-xl font-bold text-granate-800">
+        <h2 id={`${baseId}-title`} className="font-display text-xl font-bold text-granate-800">
           Clasificación proyectada
         </h2>
         <div role="tablist" aria-label="Tipo de tabla" className="inline-flex rounded-md bg-crema-200 p-1">

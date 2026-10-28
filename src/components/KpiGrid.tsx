@@ -20,7 +20,7 @@ function Kpi({ label, value, detail, delta, deltaLabel, tone = 'neutro' }: KpiPr
   return (
     <div className={`rounded-md border-t-4 bg-crema-50 p-3 shadow-sm sm:p-4 ring-1 ring-crema-300 ${accent}`}>
       <p className="text-xs font-semibold uppercase tracking-wide text-granate-700">{label}</p>
-      <p className="num mt-1 break-words font-serif text-2xl font-bold leading-tight text-tinta sm:text-3xl">
+      <p className="num mt-1 break-words font-display text-2xl font-bold leading-tight text-tinta sm:text-3xl">
         {value}
         {delta ? (
           <span className="ml-2 align-middle text-sm font-semibold text-granate-700" aria-label={deltaLabel}>
