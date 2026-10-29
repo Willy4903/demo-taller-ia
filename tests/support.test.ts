@@ -51,14 +51,14 @@ describe('exportación CSV', () => {
     expect(lines[18]).toContain('UTC')
   })
 
-  it('exporta los 35 partidos con su estado', () => {
+  it('exporta los 31 partidos pendientes con su estado', () => {
     const fx = fixtureOf('universitario', 'sport-boys')
-    const csv = resultsCsv(ds, { [fx.id]: { home: '2', away: '1' }, [fixtureOf('adt', 'cd-moquegua').id]: { home: '1', away: '' } })
+    const csv = resultsCsv(ds, { [fx.id]: { home: '2', away: '1' }, [fixtureOf('melgar', 'comerciantes-unidos').id]: { home: '1', away: '' } })
     const lines = csv.trim().split('\r\n')
-    expect(lines).toHaveLength(36)
+    expect(lines).toHaveLength(32)
     expect(lines.find((l) => l.includes('Universitario,Sport Boys'))).toBe('14,2026-11-04,Universitario,Sport Boys,2,1,simulado')
-    expect(lines.find((l) => l.includes('ADT,CD Moquegua'))).toBe('14,2026-10-28,ADT,CD Moquegua,,,incompleto')
-    expect(lines.filter((l) => l.endsWith(',pendiente'))).toHaveLength(33)
+    expect(lines.find((l) => l.includes('FBC Melgar,Comerciantes Unidos'))).toBe('14,2026-10-29,FBC Melgar,Comerciantes Unidos,,,incompleto')
+    expect(lines.filter((l) => l.endsWith(',pendiente'))).toHaveLength(29)
   })
 })
 
@@ -113,7 +113,7 @@ describe('proyección del título', () => {
     const p = projectTitle(ds, baseTables(ds))
     expect(p.clausuraLeaderId).toBe('sport-huancayo')
     expect(p.directChampion).toBe(false)
-    expect(p.clausuraChampionAcumPosition).toBe(9)
+    expect(p.clausuraChampionAcumPosition).toBe(10)
     expect(p.clausuraChampionEligibility).toBe('no')
     expect(p.contenders.map((c) => c.teamId)).toEqual(['alianza-lima', 'universitario'])
   })

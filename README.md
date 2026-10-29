@@ -1,8 +1,8 @@
 # Simulador Liga 1 Perú 2026 · Universitario de Deportes
 
-Aplicación web para simular los 35 partidos pendientes del Torneo Clausura 2026 (fechas 14 a 17) y recalcular al instante la tabla del Clausura y la tabla acumulada anual, con foco en Universitario de Deportes. Funciona sin backend: React, Vite y TypeScript estricto, con un motor de cálculo independiente de la interfaz.
+Aplicación web para simular los 31 partidos pendientes del Torneo Clausura 2026 (fechas 14 a 17) y recalcular al instante la tabla del Clausura y la tabla acumulada anual, con foco en Universitario de Deportes. Funciona sin backend: React, Vite y TypeScript estricto, con un motor de cálculo independiente de la interfaz.
 
-Estado de los datos: corte del 28 de octubre de 2026, incluyendo Juan Pablo II 2-0 Sport Huancayo del 27 de octubre. Lee la sección Limitaciones antes de usar los números como referencia.
+Estado de los datos: corte del 29 de octubre de 2026, con los cinco partidos de la fecha 14 jugados el 27 y 28 de octubre (Juan Pablo II 2-0 Sport Huancayo, ADT 2-0 CD Moquegua, FC Cajamarca 1-3 UTC, Alianza Atlético 3-2 Garcilaso y Cienciano 3-0 Atlético Grau). El corte original del 28 de octubre tenía 35 pendientes: 31 siguen pendientes y 4 se jugaron ese día. Lee la sección Limitaciones antes de usar los números como referencia.
 
 ## Experiencia y herramientas interactivas
 
@@ -46,7 +46,7 @@ src/
   data/                  Datos deportivos versionados (se editan a mano)
     teams.ts             Los 18 equipos
     standings.ts         Clausura al corte, Apertura final y ajustes del acumulado
-    fixtures.ts          35 partidos pendientes, ventanas por fecha y partidos jugados
+    fixtures.ts          31 partidos pendientes, ventanas por fecha y partidos jugados
     records.ts           Sanciones y discrepancias entre fuentes
     sources.ts           Fuentes con URL y fecha de consulta
     index.ts             Conjunto de datos y versión
@@ -82,7 +82,7 @@ e2e/                     Playwright
 
 Cada dato tiene su fuente en `src/data/sources.ts` y la aplicación las lista con enlace en la sección Fuentes y trazabilidad, junto con las sanciones y las discrepancias entre fuentes y la decisión tomada. Fuentes principales: liga1.pe (fixture y reglamento), Depor, Líbero, Infobae, La República, RPP, Fútbol Peruano (tabla del Apertura), la web oficial de Universitario y Wikipedia.
 
-Controles de coherencia que ejecutan las pruebas: PJ = PG + PE + PP, puntos = 3 PG + PE − sanción, goles a favor = goles en contra, victorias = derrotas, 118 partidos jugados al corte, PJ + pendientes = 17 en cada equipo y el orden del acumulado igual al publicado.
+Controles de coherencia que ejecutan las pruebas: PJ = PG + PE + PP, puntos = 3 PG + PE − sanción, goles a favor = goles en contra, victorias = derrotas, 122 partidos jugados al corte, PJ + pendientes = 17 en cada equipo y el orden del acumulado igual al publicado.
 
 ## Actualizar los datos durante el torneo
 
@@ -90,7 +90,7 @@ Controles de coherencia que ejecutan las pruebas: PJ = PG + PE + PP, puntos = 3 
 2. Quitar el partido de `FIXTURES` en `src/data/fixtures.ts` y agregarlo a `PLAYED`.
 3. Actualizar `cutoff`, `updatedAt` y `version` en `src/data/index.ts`. Cambiar `version` descarta las simulaciones guardadas en los navegadores.
 4. Registrar sanciones nuevas en `records.ts` y los ajustes en `ACUMULADO_ADJUSTMENTS`.
-5. Ejecutar `npm run check`. Las pruebas de datos fallan si las tablas dejan de cuadrar. Las pruebas de la simulación asumen el corte del 28 de octubre (35 partidos) y deben actualizarse al cambiar el corte.
+5. Ejecutar `npm run check`. Las pruebas de datos fallan si las tablas dejan de cuadrar. Las pruebas de la simulación asumen el corte del 29 de octubre (31 partidos pendientes) y deben actualizarse al cambiar el corte. Los identificadores de los partidos (`c14-08`) se conservan aunque otros se jueguen.
 
 ## Despliegue en GitHub Pages
 
@@ -100,7 +100,8 @@ Controles de coherencia que ejecutan las pruebas: PJ = PG + PE + PP, puntos = 3 
 
 - La web oficial de la Liga 1 y la mayoría de los medios no se pudieron abrir al reunir los datos; la información proviene de resúmenes de búsqueda que citan esas páginas. Hay que contrastar las tablas con liga1.pe antes de tomarlas como oficiales.
 - El PDF del reglamento no pudo leerse. Los artículos 7, 8, 9 y 15 se reconstruyen desde medios y se marcan como no verificados; los emparejamientos de semifinales y los cupos exactos a Libertadores y Sudamericana 2027 no se proyectan. El descenso (art. 10) y los desempates del Clausura (art. 14) coinciden en dos fuentes.
-- Los ajustes de puntos del acumulado de ADT (−1), Sport Boys (−4) y UTC (−5) se derivan por diferencia entre la suma de los torneos y el acumulado publicado por Líbero; solo parte tiene motivo documentado. Cusco FC usa 48 puntos (Líbero publica 49).
+- Los ajustes de puntos del acumulado se derivan por diferencia entre la suma de los torneos y el acumulado publicado: ADT (−1), Sport Boys (−4), UTC (−5 además de los 5 del Clausura) y FC Cajamarca (−2, Artículo 89 del Reglamento de Licencias según Bolavip; Líbero menciona 1). Solo la de Cajamarca y la de UTC en el Clausura tienen motivo documentado. Cusco FC usa 48 puntos (Líbero publica 49).
+- El 29 de octubre se corrigió un dato anterior: FC Cajamarca figuraba con 28 puntos en el acumulado y las tablas del 28 de octubre lo muestran con 26.
 - El acumulado no desglosa PG, PE y PP porque la tabla del Apertura consultada no los incluía.
 - Los resultados de las fechas 1 a 12 no se detallan individualmente; solo se registran la fecha 13 y el partido del 27 de octubre.
 - Las fechas de varios partidos de las fechas 15 a 17 no están publicadas y se muestran como "Sin fecha".

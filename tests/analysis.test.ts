@@ -16,19 +16,19 @@ describe('techos de puntos y situación matemática', () => {
     const { clausura } = at()
     expect(find(clausura, 'universitario')).toMatchObject({ pts: 27, pending: 4, max: 39 })
     expect(find(clausura, 'sport-huancayo')).toMatchObject({ pts: 28, pending: 3, max: 37 })
-    expect(find(clausura, 'utc')).toMatchObject({ pts: -3, pending: 4, max: 9 })
+    expect(find(clausura, 'utc')).toMatchObject({ pts: 0, pending: 3, max: 9 })
   })
 
   it('al corte nadie es campeón del Clausura y quienes no alcanzan al líder están eliminados', () => {
     const { clausura } = at()
     expect(clausura.some((c) => c.title === 'campeon')).toBe(false)
     expect(find(clausura, 'universitario').title).toBe('en-carrera')
-    // Moquegua: 10 + 12 = 22 < 28 del líder; ADT: 7 + 12 = 19.
+    // Moquegua: 10 + 9 = 19 < 28 del líder; ADT: 10 + 9 = 19.
     expect(find(clausura, 'cd-moquegua').title).toBe('eliminado')
     expect(find(clausura, 'adt').title).toBe('eliminado')
-    // Cienciano: 14 + 12 = 26 < 28.
+    // Cienciano: 17 + 9 = 26 < 28.
     expect(find(clausura, 'cienciano').title).toBe('eliminado')
-    // Alianza Atlético: 22 + 12 = 34 puede alcanzar al líder.
+    // Alianza Atlético: 25 + 9 = 34 puede alcanzar al líder.
     expect(find(clausura, 'alianza-atletico').title).toBe('en-carrera')
   })
 
@@ -38,6 +38,7 @@ describe('techos de puntos y situación matemática', () => {
     expect(find(acumulado, 'alianza-lima').relegation).toBe('salvado')
     expect(find(acumulado, 'adt').relegation).toBe('en-juego')
     expect(find(acumulado, 'cd-moquegua').relegation).toBe('en-juego')
+    expect(find(acumulado, 'fc-cajamarca').relegation).toBe('en-juego')
   })
 
   it('un campeón matemático aparece cuando nadie más puede alcanzarlo', () => {
@@ -111,7 +112,7 @@ describe('simulación de Monte Carlo', () => {
     const t = computeTables(ds, inputs)
     const r = runMonteCarlo(ds, inputs, { iterations: 50, seed: 3 })
     expect(r.simulatedMatches).toBe(0)
-    expect(r.fixedMatches).toBe(35)
+    expect(r.fixedMatches).toBe(31)
     for (const row of t.clausura.rows) {
       const est = r.teams.find((x) => x.teamId === row.teamId)!
       expect(est.clausuraPosition[row.position - 1]).toBe(1)

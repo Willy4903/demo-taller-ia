@@ -17,7 +17,7 @@ test('muestra las tablas iniciales del corte', async ({ page }) => {
   await expect(page.getByTestId('hud-acumulado')).toContainText('2.º · 56 pts')
   await expect(pos(page, 'clausura', 'universitario')).toHaveText('2')
   await expect(pts(page, 'clausura', 'universitario')).toHaveText('27')
-  await expect(page.getByTestId('fixture-count')).toHaveText('Mostrando 35 de 35 partidos')
+  await expect(page.getByTestId('fixture-count')).toHaveText('Mostrando 31 de 31 partidos')
   await page.getByRole('tab', { name: 'Acumulado anual' }).click()
   await expect(pts(page, 'acumulado', 'universitario')).toHaveText('56')
   await expect(pts(page, 'acumulado', 'alianza-lima')).toHaveText('65')
@@ -31,7 +31,7 @@ test('un marcador completo recalcula Clausura y acumulado sin recargar', async (
   await expect(pts(page, 'clausura', 'universitario')).toHaveText('30')
   await page.getByRole('tab', { name: 'Acumulado anual' }).click()
   await expect(pts(page, 'acumulado', 'universitario')).toHaveText('59')
-  await expect(page.getByText('1 de 35')).toBeVisible()
+  await expect(page.getByText('1 de 31', { exact: true })).toBeVisible()
 })
 
 test('un marcador incompleto o inválido no modifica la tabla y muestra el error', async ({ page }) => {
@@ -75,9 +75,9 @@ test('los accesos rápidos fijan victoria local, empate y victoria visitante', a
 
 test('filtra partidos por equipo y por fecha', async ({ page }) => {
   await page.getByLabel('Equipo').selectOption('universitario')
-  await expect(page.getByTestId('fixture-count')).toHaveText('Mostrando 4 de 35 partidos')
+  await expect(page.getByTestId('fixture-count')).toHaveText('Mostrando 4 de 31 partidos')
   await page.getByLabel('Fecha', { exact: true }).selectOption('16')
-  await expect(page.getByTestId('fixture-count')).toHaveText('Mostrando 1 de 35 partidos')
+  await expect(page.getByTestId('fixture-count')).toHaveText('Mostrando 1 de 31 partidos')
   await expect(page.getByTestId('match-c16-09')).toBeVisible()
 })
 
@@ -128,10 +128,10 @@ test('la carrera de barras reordena los equipos al simular', async ({ page }) =>
 test('el resumen en vivo se actualiza y restablece', async ({ page }) => {
   await page.getByRole('button', { name: 'Universitario gana todos' }).click()
   await expect(page.getByTestId('hud-clausura')).toContainText('1.º · 39 pts')
-  await expect(page.getByTestId('hud-sim')).toHaveText('4/35 simulados')
+  await expect(page.getByTestId('hud-sim')).toHaveText('4/31 simulados')
   await page.getByRole('region', { name: 'Resumen en vivo de Universitario' }).getByRole('button', { name: 'Restablecer' }).click()
   await expect(page.getByTestId('hud-clausura')).toContainText('2.º · 27 pts')
-  await expect(page.getByTestId('hud-sim')).toHaveText('0/35 simulados')
+  await expect(page.getByTestId('hud-sim')).toHaveText('0/31 simulados')
 })
 
 test('la matriz de Universitario carga el escenario elegido', async ({ page }) => {
@@ -141,7 +141,7 @@ test('la matriz de Universitario carga el escenario elegido', async ({ page }) =
   await cell.click()
   await expect(cell).toHaveAttribute('aria-pressed', 'true')
   await expect(page.getByTestId('hud-clausura')).toContainText('34 pts')
-  await expect(page.getByTestId('hud-sim')).toHaveText('4/35 simulados')
+  await expect(page.getByTestId('hud-sim')).toHaveText('4/31 simulados')
 })
 
 test('el laboratorio de probabilidades responde a los marcadores', async ({ page }) => {
@@ -151,7 +151,7 @@ test('el laboratorio de probabilidades responde a los marcadores', async ({ page
   const before = await champ.textContent()
   await page.getByRole('button', { name: 'Universitario gana todos' }).click()
   await expect(champ).not.toHaveText(before ?? '')
-  await expect(page.getByText('31 partidos al azar, 4 fijados por ti')).toBeVisible()
+  await expect(page.getByText('27 partidos al azar, 4 fijados por ti')).toBeVisible()
   const share = (text: string | null) => Number((text ?? '0').replace(',', '.').replace(/[^\d.]/g, ''))
   expect(share(await champ.textContent())).toBeGreaterThan(share(before))
 })

@@ -54,8 +54,8 @@ export function Hero({ tables }: { tables: Tables }) {
               className="rise mt-4 block max-w-3xl font-body text-lg font-semibold normal-case leading-snug tracking-normal text-crema-100 sm:text-2xl"
               style={{ animationDelay: '0.55s' }}
             >
-              Simulador de resultados · Universitario de Deportes. Treinta y cinco partidos, cuatro fechas y una tabla que se reescribe con cada
-              marcador.
+              Simulador de resultados · Universitario de Deportes. {DATASET.fixtures.length} partidos por jugar, cuatro fechas y una tabla que se
+              reescribe con cada marcador.
             </span>
           </h1>
           <div className="rise mt-7 flex flex-wrap gap-3" style={{ animationDelay: '0.75s' }}>

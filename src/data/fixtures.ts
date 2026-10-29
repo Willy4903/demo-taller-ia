@@ -1,10 +1,11 @@
 import type { FechaWindow, Fixture, PlayedMatch } from '../domain/types'
 
-type Row = [home: string, away: string, date: string | null]
+/** `n` es el número del partido dentro de la fecha; se conserva aunque otros se jueguen. */
+type Row = [home: string, away: string, date: string | null, n?: number]
 
 const build = (fecha: number, rows: Row[]): Fixture[] =>
-  rows.map(([homeId, awayId, date], i) => ({
-    id: `c${fecha}-${String(i + 1).padStart(2, '0')}`,
+  rows.map(([homeId, awayId, date, n], i) => ({
+    id: `c${fecha}-${String(n ?? i + 1).padStart(2, '0')}`,
     fecha,
     homeId,
     awayId,
@@ -12,18 +13,15 @@ const build = (fecha: number, rows: Row[]): Fixture[] =>
   }))
 
 /**
- * Fecha 14: ocho partidos pendientes (Juan Pablo II 2-0 Sport Huancayo ya se jugó el 27 de octubre).
+ * Fecha 14: cuatro partidos pendientes. Ya se jugaron Juan Pablo II 2-0 Sport Huancayo (27 de octubre)
+ * y ADT, FC Cajamarca, Alianza Atlético y Cienciano (28 de octubre); ver PLAYED.
  * Universitario vs Sport Boys se reprogramó al 4 de noviembre.
  */
 const FECHA_14 = build(14, [
-  ['adt', 'cd-moquegua', '2026-10-28'],
-  ['fc-cajamarca', 'utc', '2026-10-28'],
-  ['alianza-atletico', 'garcilaso', '2026-10-28'],
-  ['cienciano', 'atletico-grau', '2026-10-28'],
-  ['los-chankas', 'cusco-fc', '2026-10-29'],
-  ['sporting-cristal', 'alianza-lima', '2026-10-29'],
-  ['melgar', 'comerciantes-unidos', '2026-10-29'],
-  ['universitario', 'sport-boys', '2026-11-04'],
+  ['los-chankas', 'cusco-fc', '2026-10-29', 5],
+  ['sporting-cristal', 'alianza-lima', '2026-10-29', 6],
+  ['melgar', 'comerciantes-unidos', '2026-10-29', 7],
+  ['universitario', 'sport-boys', '2026-11-04', 8],
 ])
 
 const FECHA_15 = build(15, [
@@ -62,11 +60,11 @@ const FECHA_17 = build(17, [
   ['juan-pablo-ii', 'garcilaso', null],
 ])
 
-/** 35 partidos pendientes al corte: 8 + 9 + 9 + 9. */
+/** 31 partidos pendientes al corte del 29 de octubre: 4 + 9 + 9 + 9. */
 export const FIXTURES: Fixture[] = [...FECHA_14, ...FECHA_15, ...FECHA_16, ...FECHA_17]
 
 export const FECHA_WINDOWS: FechaWindow[] = [
-  { fecha: 14, window: '27 oct al 4 nov', note: 'Universitario vs Sport Boys reprogramado al 4 de noviembre.' },
+  { fecha: 14, window: '27 oct al 4 nov', note: 'Ya se jugaron cinco partidos (27 y 28 de octubre). Universitario vs Sport Boys fue reprogramado al 4 de noviembre.' },
   { fecha: 15, window: '30 oct al 3 nov', note: 'Sin fecha publicada para Alianza Lima vs Cienciano ni Sporting Cristal vs FC Cajamarca.' },
   { fecha: 16, window: '6 al 8 nov' },
   { fecha: 17, window: '14 al 22 nov', note: 'Aún no programada oficialmente; las fuentes la ubican entre el 14 y el 22 de noviembre.' },
@@ -74,7 +72,8 @@ export const FECHA_WINDOWS: FechaWindow[] = [
 
 /**
  * Partidos jugados con resultado confirmado que se registran por trazabilidad. No alimentan el
- * cálculo: sus puntos ya están en las tablas base. Las fechas 1 a 12 no se detallan porque las
+ * cálculo: sus puntos ya están en las tablas base. Los cinco de la fecha 14 se jugaron después del
+ * corte original del 28 de octubre, que tenía 35 partidos pendientes. Las fechas 1 a 12 no se detallan porque las
  * tablas publicadas son la referencia; ver README.
  */
 export const PLAYED: PlayedMatch[] = [
@@ -115,4 +114,17 @@ export const PLAYED: PlayedMatch[] = [
     sourceIds: ['depor-clausura-f14', 'libero-acum-f14'],
     note: 'Resultado incorporado en las tablas base del corte.',
   },
+  { fecha: 14, date: '2026-10-28', homeId: 'adt', awayId: 'cd-moquegua', homeGoals: 2, awayGoals: 0, sourceIds: ['infobae-adt-moquegua', 'bolavip-descenso'] },
+  { fecha: 14, date: '2026-10-28', homeId: 'fc-cajamarca', awayId: 'utc', homeGoals: 1, awayGoals: 3, sourceIds: ['dsn-utc-cajamarca', 'bolavip-descenso'] },
+  {
+    fecha: 14,
+    date: '2026-10-28',
+    homeId: 'alianza-atletico',
+    awayId: 'garcilaso',
+    homeGoals: 3,
+    awayGoals: 2,
+    sourceIds: ['infobae-alatl-garcilaso', 'bolavip-clausura-f14'],
+    note: 'Un medio publica 3-1; la mayoría de las fuentes indica 3-2.',
+  },
+  { fecha: 14, date: '2026-10-28', homeId: 'cienciano', awayId: 'atletico-grau', homeGoals: 3, awayGoals: 0, sourceIds: ['bolavip-clausura-f14', 'futbolperuano-f14'] },
 ]
