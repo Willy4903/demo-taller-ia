@@ -28,8 +28,8 @@ describe('datos iniciales de los 18 equipos', () => {
     const sum = (f: (r: (typeof ds.clausuraBase)[number]) => number) => ds.clausuraBase.reduce((a, r) => a + f(r), 0)
     expect(sum((r) => r.gf)).toBe(sum((r) => r.gc))
     expect(sum((r) => r.pg)).toBe(sum((r) => r.pp))
-    // 13 fechas de 9 partidos más cinco partidos de la fecha 14: 122 partidos, 244 PJ.
-    expect(sum((r) => r.pj)).toBe(2 * (13 * 9 + 5))
+    // 13 fechas de 9 partidos más siete partidos de la fecha 14: 124 partidos, 248 PJ.
+    expect(sum((r) => r.pj)).toBe(2 * (13 * 9 + 7))
   })
 
   it('la tabla del Apertura está balanceada y todos jugaron 17', () => {
@@ -66,8 +66,12 @@ describe('datos iniciales de los 18 equipos', () => {
 
   it('el corte coincide con los datos publicados de los equipos clave', () => {
     const t = baseTables(ds)
-    expect(rowOf(t.clausura, 'sport-huancayo')).toMatchObject({ position: 1, pts: 28, pj: 14 })
-    expect(rowOf(t.clausura, 'universitario')).toMatchObject({ position: 2, pts: 27, gf: 28, gc: 19, gd: 9 })
+    expect(rowOf(t.clausura, 'sporting-cristal')).toMatchObject({ position: 1, pts: 28, pj: 14, gd: 12 })
+    expect(rowOf(t.clausura, 'sport-huancayo')).toMatchObject({ position: 2, pts: 28, pj: 14, gd: 6 })
+    expect(rowOf(t.clausura, 'universitario')).toMatchObject({ position: 3, pts: 27, gf: 28, gc: 19, gd: 9 })
+    expect(rowOf(t.acumulado, 'cusco-fc')).toMatchObject({ pts: 51 })
+    expect(rowOf(t.acumulado, 'los-chankas')).toMatchObject({ pts: 46 })
+    expect(rowOf(t.acumulado, 'sporting-cristal')).toMatchObject({ pts: 47 })
     expect(rowOf(t.acumulado, 'alianza-lima')).toMatchObject({ position: 1, pts: 65 })
     expect(rowOf(t.acumulado, 'universitario')).toMatchObject({ position: 2, pts: 56 })
     expect(rowOf(t.acumulado, 'utc')).toMatchObject({ position: 18, pts: 13, pj: 31 })
@@ -82,20 +86,16 @@ describe('datos iniciales de los 18 equipos', () => {
   it('el orden del Clausura al corte sigue puntos, diferencia de goles y goles a favor', () => {
     const t = baseTables(ds)
     expect(t.clausura.rows.map((r) => r.teamId).slice(0, 8)).toEqual([
+      'sporting-cristal',
       'sport-huancayo',
       'universitario',
       'garcilaso',
-      'sporting-cristal',
       'melgar',
       'juan-pablo-ii',
       'alianza-lima',
       'alianza-atletico',
     ])
-    // Garcilaso y Sporting Cristal empatan en puntos, diferencia y goles a favor: sin Fair Play es provisional.
-    expect(t.clausura.ties).toHaveLength(1)
-    expect(t.clausura.ties[0]).toMatchObject({ positions: [3, 4], critical: false })
-    expect(t.clausura.ties[0]?.teamIds.sort()).toEqual(['garcilaso', 'sporting-cristal'])
-    expect(rowOf(t.clausura, 'garcilaso').provisional).toBe(true)
+    expect(t.clausura.ties).toHaveLength(0)
     expect(t.acumulado.ties).toHaveLength(0)
   })
 
@@ -106,11 +106,11 @@ describe('datos iniciales de los 18 equipos', () => {
       'universitario',
       'melgar',
       'garcilaso',
-      'cienciano',
       'cusco-fc',
+      'cienciano',
+      'sporting-cristal',
       'alianza-atletico',
       'los-chankas',
-      'sporting-cristal',
       'sport-huancayo',
       'juan-pablo-ii',
       'sport-boys',

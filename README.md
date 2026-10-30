@@ -1,8 +1,8 @@
 # Simulador Liga 1 Perú 2026 · Universitario de Deportes
 
-Aplicación web para simular los 31 partidos pendientes del Torneo Clausura 2026 (fechas 14 a 17) y recalcular al instante la tabla del Clausura y la tabla acumulada anual, con foco en Universitario de Deportes. Funciona sin backend: React, Vite y TypeScript estricto, con un motor de cálculo independiente de la interfaz.
+Aplicación web para simular los 29 partidos pendientes del Torneo Clausura 2026 (fechas 14 a 17) y recalcular al instante la tabla del Clausura y la tabla acumulada anual, con foco en Universitario de Deportes. Funciona sin backend: React, Vite y TypeScript estricto, con un motor de cálculo independiente de la interfaz.
 
-Estado de los datos: corte del 29 de octubre de 2026, con los cinco partidos de la fecha 14 jugados el 27 y 28 de octubre (Juan Pablo II 2-0 Sport Huancayo, ADT 2-0 CD Moquegua, FC Cajamarca 1-3 UTC, Alianza Atlético 3-2 Garcilaso y Cienciano 3-0 Atlético Grau). El corte original del 28 de octubre tenía 35 pendientes: 31 siguen pendientes y 4 se jugaron ese día. Lee la sección Limitaciones antes de usar los números como referencia.
+Estado de los datos: corte del 30 de octubre de 2026, con los siete partidos de la fecha 14 jugados del 27 al 29 de octubre (Juan Pablo II 2-0 Sport Huancayo, ADT 2-0 CD Moquegua, FC Cajamarca 1-3 UTC, Alianza Atlético 3-2 Garcilaso, Cienciano 3-0 Atlético Grau, Los Chankas 0-1 Cusco FC y Sporting Cristal 3-2 Alianza Lima). El corte original del 28 de octubre tenía 35 pendientes: 29 siguen pendientes y 6 se jugaron desde entonces. Melgar vs Comerciantes Unidos se jugó el 29 de octubre, pero solo hay cobertura en vivo (1-0) y se mantiene como pendiente hasta confirmar el marcador final. Lee la sección Limitaciones antes de usar los números como referencia.
 
 ## Experiencia y herramientas interactivas
 
@@ -46,7 +46,7 @@ src/
   data/                  Datos deportivos versionados (se editan a mano)
     teams.ts             Los 18 equipos
     standings.ts         Clausura al corte, Apertura final y ajustes del acumulado
-    fixtures.ts          31 partidos pendientes, ventanas por fecha y partidos jugados
+    fixtures.ts          29 partidos pendientes, ventanas por fecha y partidos jugados
     records.ts           Sanciones y discrepancias entre fuentes
     sources.ts           Fuentes con URL y fecha de consulta
     index.ts             Conjunto de datos y versión
@@ -82,7 +82,7 @@ e2e/                     Playwright
 
 Cada dato tiene su fuente en `src/data/sources.ts` y la aplicación las lista con enlace en la sección Fuentes y trazabilidad, junto con las sanciones y las discrepancias entre fuentes y la decisión tomada. Fuentes principales: liga1.pe (fixture y reglamento), Depor, Líbero, Infobae, La República, RPP, Fútbol Peruano (tabla del Apertura), la web oficial de Universitario y Wikipedia.
 
-Controles de coherencia que ejecutan las pruebas: PJ = PG + PE + PP, puntos = 3 PG + PE − sanción, goles a favor = goles en contra, victorias = derrotas, 122 partidos jugados al corte, PJ + pendientes = 17 en cada equipo y el orden del acumulado igual al publicado.
+Controles de coherencia que ejecutan las pruebas: PJ = PG + PE + PP, puntos = 3 PG + PE − sanción, goles a favor = goles en contra, victorias = derrotas, 124 partidos jugados al corte, PJ + pendientes = 17 en cada equipo y el orden del acumulado igual al publicado.
 
 ## Actualizar los datos durante el torneo
 
@@ -90,7 +90,7 @@ Controles de coherencia que ejecutan las pruebas: PJ = PG + PE + PP, puntos = 3 
 2. Quitar el partido de `FIXTURES` en `src/data/fixtures.ts` y agregarlo a `PLAYED`.
 3. Actualizar `cutoff`, `updatedAt` y `version` en `src/data/index.ts`. Cambiar `version` descarta las simulaciones guardadas en los navegadores.
 4. Registrar sanciones nuevas en `records.ts` y los ajustes en `ACUMULADO_ADJUSTMENTS`.
-5. Ejecutar `npm run check`. Las pruebas de datos fallan si las tablas dejan de cuadrar. Las pruebas de la simulación asumen el corte del 29 de octubre (31 partidos pendientes) y deben actualizarse al cambiar el corte. Los identificadores de los partidos (`c14-08`) se conservan aunque otros se jueguen.
+5. Ejecutar `npm run check`. Las pruebas de datos fallan si las tablas dejan de cuadrar. Las pruebas de la simulación asumen el corte del 30 de octubre (29 partidos pendientes) y deben actualizarse al cambiar el corte. Los identificadores de los partidos (`c14-08`) se conservan aunque otros se jueguen.
 
 ## Despliegue en GitHub Pages
 

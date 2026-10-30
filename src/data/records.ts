@@ -83,8 +83,9 @@ export const DISCREPANCIES: Discrepancy[] = [
     id: 'cusco-acum',
     subject: 'Cusco FC, puntos del acumulado',
     detail: 'Líbero publica 49; Apertura (27) más Clausura (21) suman 48 y otra fuente publica 48.',
-    resolution: 'Se usa 48, sin ajuste de sanción.',
-    sourceIds: ['libero-acum-f14', 'futbolperuano-apertura', 'larepublica-tabla-f14'],
+    resolution:
+      'Se usa 48 antes de su partido del 29 de octubre. Bolavip confirma después 51 puntos tras ganarle 1-0 a Los Chankas, que coincide con 48 + 3.',
+    sourceIds: ['libero-acum-f14', 'futbolperuano-apertura', 'larepublica-tabla-f14', 'bolavip-cristal-alianza'],
   },
   {
     id: 'acum-gd-libero',
@@ -108,9 +109,10 @@ export const DISCREPANCIES: Discrepancy[] = [
     id: 'f14-results',
     subject: 'Resultados de la fecha 14 entre fuentes',
     detail:
-      'Se confirman cinco partidos: Juan Pablo II 2-0 Sport Huancayo (27 de octubre), ADT 2-0 CD Moquegua, FC Cajamarca 1-3 UTC, Alianza Atlético 3-2 Garcilaso y Cienciano 3-0 Atlético Grau (28 de octubre). Un medio publica el cuarto como 3-1. Un resumen de búsqueda adelantó Los Chankas 0-1 Cusco FC y un medio da Sporting Cristal 3-2 Alianza Lima, pero esos partidos son del 29 de octubre y otras fuentes los muestran pendientes.',
-    resolution: 'Solo se incorporan los cinco resultados confirmados por varias fuentes; los otros cuatro partidos de la fecha 14 siguen pendientes.',
-    sourceIds: ['infobae-prog-f14', 'rpp-f14', 'infobae-alatl-garcilaso', 'futbolperuano-f14'],
+      'Se confirman siete partidos: Juan Pablo II 2-0 Sport Huancayo (27 de octubre); ADT 2-0 CD Moquegua, FC Cajamarca 1-3 UTC, Alianza Atlético 3-2 Garcilaso y Cienciano 3-0 Atlético Grau (28 de octubre); Los Chankas 0-1 Cusco FC y Sporting Cristal 3-2 Alianza Lima (29 de octubre). Un medio publica Alianza Atlético-Garcilaso como 3-1. De Melgar vs Comerciantes Unidos (29 de octubre) solo hay cobertura en vivo con 1-0 (gol de Vidales a los 8 minutos), con un titular contradictorio de 0-0 en la misma nota.',
+    resolution:
+      'Solo se incorporan los siete resultados confirmados por varias fuentes. Melgar vs Comerciantes Unidos sigue como pendiente hasta confirmar el marcador final; si terminó 1-0, Melgar suma 3 puntos.',
+    sourceIds: ['infobae-prog-f14', 'rpp-f14', 'infobae-alatl-garcilaso', 'futbolperuano-f14', 'ovacion-melgar-comerciantes', 'bolavip-cristal-alianza'],
   },
   {
     id: 'f17-dates',

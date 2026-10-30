@@ -13,13 +13,12 @@ const build = (fecha: number, rows: Row[]): Fixture[] =>
   }))
 
 /**
- * Fecha 14: cuatro partidos pendientes. Ya se jugaron Juan Pablo II 2-0 Sport Huancayo (27 de octubre)
- * y ADT, FC Cajamarca, Alianza Atlético y Cienciano (28 de octubre); ver PLAYED.
- * Universitario vs Sport Boys se reprogramó al 4 de noviembre.
+ * Fecha 14: dos partidos pendientes. Ya se jugaron Juan Pablo II 2-0 Sport Huancayo (27 de octubre),
+ * ADT, FC Cajamarca, Alianza Atlético y Cienciano (28 de octubre), y Los Chankas y Sporting Cristal
+ * (29 de octubre); ver PLAYED. Melgar vs Comerciantes Unidos se jugó el 29 pero su resultado final
+ * no está confirmado. Universitario vs Sport Boys se reprogramó al 4 de noviembre.
  */
 const FECHA_14 = build(14, [
-  ['los-chankas', 'cusco-fc', '2026-10-29', 5],
-  ['sporting-cristal', 'alianza-lima', '2026-10-29', 6],
   ['melgar', 'comerciantes-unidos', '2026-10-29', 7],
   ['universitario', 'sport-boys', '2026-11-04', 8],
 ])
@@ -60,11 +59,11 @@ const FECHA_17 = build(17, [
   ['juan-pablo-ii', 'garcilaso', null],
 ])
 
-/** 31 partidos pendientes al corte del 29 de octubre: 4 + 9 + 9 + 9. */
+/** 29 partidos pendientes al corte del 30 de octubre: 2 + 9 + 9 + 9. */
 export const FIXTURES: Fixture[] = [...FECHA_14, ...FECHA_15, ...FECHA_16, ...FECHA_17]
 
 export const FECHA_WINDOWS: FechaWindow[] = [
-  { fecha: 14, window: '27 oct al 4 nov', note: 'Ya se jugaron cinco partidos (27 y 28 de octubre). Universitario vs Sport Boys fue reprogramado al 4 de noviembre.' },
+  { fecha: 14, window: '27 oct al 4 nov', note: 'Ya se jugaron siete partidos (27 al 29 de octubre). Universitario vs Sport Boys fue reprogramado al 4 de noviembre.' },
   { fecha: 15, window: '30 oct al 3 nov', note: 'Sin fecha publicada para Alianza Lima vs Cienciano ni Sporting Cristal vs FC Cajamarca.' },
   { fecha: 16, window: '6 al 8 nov' },
   { fecha: 17, window: '14 al 22 nov', note: 'Aún no programada oficialmente; las fuentes la ubican entre el 14 y el 22 de noviembre.' },
@@ -72,7 +71,7 @@ export const FECHA_WINDOWS: FechaWindow[] = [
 
 /**
  * Partidos jugados con resultado confirmado que se registran por trazabilidad. No alimentan el
- * cálculo: sus puntos ya están en las tablas base. Los cinco de la fecha 14 se jugaron después del
+ * cálculo: sus puntos ya están en las tablas base. Los siete de la fecha 14 se jugaron después del
  * corte original del 28 de octubre, que tenía 35 partidos pendientes. Las fechas 1 a 12 no se detallan porque las
  * tablas publicadas son la referencia; ver README.
  */
@@ -127,4 +126,6 @@ export const PLAYED: PlayedMatch[] = [
     note: 'Un medio publica 3-1; la mayoría de las fuentes indica 3-2.',
   },
   { fecha: 14, date: '2026-10-28', homeId: 'cienciano', awayId: 'atletico-grau', homeGoals: 3, awayGoals: 0, sourceIds: ['bolavip-clausura-f14', 'futbolperuano-f14'] },
+  { fecha: 14, date: '2026-10-29', homeId: 'los-chankas', awayId: 'cusco-fc', homeGoals: 0, awayGoals: 1, sourceIds: ['americatv-chankas-cusco'], note: 'Gol de penal de Iván Colman a los 95 minutos.' },
+  { fecha: 14, date: '2026-10-29', homeId: 'sporting-cristal', awayId: 'alianza-lima', homeGoals: 3, awayGoals: 2, sourceIds: ['libero-cristal-alianza', 'larepublica-cristal-alianza', 'bolavip-cristal-alianza'] },
 ]

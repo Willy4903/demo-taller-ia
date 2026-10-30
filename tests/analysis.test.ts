@@ -16,6 +16,7 @@ describe('techos de puntos y situación matemática', () => {
     const { clausura } = at()
     expect(find(clausura, 'universitario')).toMatchObject({ pts: 27, pending: 4, max: 39 })
     expect(find(clausura, 'sport-huancayo')).toMatchObject({ pts: 28, pending: 3, max: 37 })
+    expect(find(clausura, 'sporting-cristal')).toMatchObject({ pts: 28, pending: 3, max: 37 })
     expect(find(clausura, 'utc')).toMatchObject({ pts: 0, pending: 3, max: 9 })
   })
 
@@ -112,7 +113,7 @@ describe('simulación de Monte Carlo', () => {
     const t = computeTables(ds, inputs)
     const r = runMonteCarlo(ds, inputs, { iterations: 50, seed: 3 })
     expect(r.simulatedMatches).toBe(0)
-    expect(r.fixedMatches).toBe(31)
+    expect(r.fixedMatches).toBe(29)
     for (const row of t.clausura.rows) {
       const est = r.teams.find((x) => x.teamId === row.teamId)!
       expect(est.clausuraPosition[row.position - 1]).toBe(1)
