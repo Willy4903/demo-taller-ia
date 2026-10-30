@@ -10,7 +10,7 @@ const ELIG: Record<TitleProjection['clausuraChampionEligibility'], string> = {
 export function TitlePanel({ title }: { title: TitleProjection }) {
   return (
     <section aria-labelledby="title-panel" className="rounded-md bg-crema-50 p-4 shadow-sm ring-1 ring-crema-300">
-      <h2 id="title-panel" className="font-serif text-xl font-bold text-granate-800">
+      <h2 id="title-panel" className="font-display text-xl font-bold text-granate-800">
         Camino al título
       </h2>
       <dl className="mt-3 grid gap-3 text-sm sm:grid-cols-2">

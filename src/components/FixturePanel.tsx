@@ -32,7 +32,7 @@ export function FixturePanel({ inputs, onScore, onPick, onClear }: Props) {
   return (
     <section aria-labelledby={`${id}-title`} className="rounded-md bg-crema-50 shadow-sm ring-1 ring-crema-300">
       <div className="border-b border-crema-300 px-4 py-3">
-        <h2 id={`${id}-title`} className="font-serif text-xl font-bold text-granate-800">
+        <h2 id={`${id}-title`} className="font-display text-xl font-bold text-granate-800">
           Partidos pendientes
         </h2>
         <p className="mt-1 text-xs text-tinta/70">

@@ -11,9 +11,9 @@ import { TEAMS } from './teams'
  */
 export const DATASET: Dataset = {
   season: 2026,
-  cutoff: '2026-10-28',
-  updatedAt: '2026-10-28',
-  version: '2026-10-28.1',
+  cutoff: '2026-10-30',
+  updatedAt: '2026-10-30',
+  version: '2026-10-30.2',
   teams: TEAMS,
   aperturaChampionId: 'alianza-lima',
   apertura: APERTURA_FINAL,

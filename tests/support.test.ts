@@ -41,24 +41,24 @@ describe('exportación CSV', () => {
     expect(lines).toHaveLength(19)
     expect(lines[0]).toBe('posicion,equipo,pj,pg,pe,pp,gf,gc,dg,puntos,puntos_al_corte,posicion_al_corte,zona,provisional')
     expect(lines[1]).toContain('1,Universitario,17,12,3,2')
-    expect(lines[1]).toContain(',39,27,2,campeon,no')
+    expect(lines[1]).toContain(',39,27,3,campeon,no')
   })
 
   it('exporta el acumulado sin columnas de PG/PE/PP', () => {
     const lines = standingsCsv(ds, baseTables(ds).acumulado).trim().split('\r\n')
     expect(lines[0]).toBe('posicion,equipo,pj,gf,gc,dg,puntos,puntos_al_corte,posicion_al_corte,zona,provisional')
-    expect(lines[1]).toContain('1,Alianza Lima,30')
+    expect(lines[1]).toContain('1,Alianza Lima,31')
     expect(lines[18]).toContain('UTC')
   })
 
-  it('exporta los 35 partidos con su estado', () => {
+  it('exporta los 28 partidos pendientes con su estado', () => {
     const fx = fixtureOf('universitario', 'sport-boys')
-    const csv = resultsCsv(ds, { [fx.id]: { home: '2', away: '1' }, [fixtureOf('adt', 'cd-moquegua').id]: { home: '1', away: '' } })
+    const csv = resultsCsv(ds, { [fx.id]: { home: '2', away: '1' }, [fixtureOf('cusco-fc', 'sport-boys').id]: { home: '1', away: '' } })
     const lines = csv.trim().split('\r\n')
-    expect(lines).toHaveLength(36)
+    expect(lines).toHaveLength(29)
     expect(lines.find((l) => l.includes('Universitario,Sport Boys'))).toBe('14,2026-11-04,Universitario,Sport Boys,2,1,simulado')
-    expect(lines.find((l) => l.includes('ADT,CD Moquegua'))).toBe('14,2026-10-28,ADT,CD Moquegua,,,incompleto')
-    expect(lines.filter((l) => l.endsWith(',pendiente'))).toHaveLength(33)
+    expect(lines.find((l) => l.includes('Cusco FC,Sport Boys'))).toBe('15,2026-11-01,Cusco FC,Sport Boys,,,incompleto')
+    expect(lines.filter((l) => l.endsWith(',pendiente'))).toHaveLength(26)
   })
 })
 
@@ -109,13 +109,14 @@ describe('persistencia local', () => {
 })
 
 describe('proyección del título', () => {
-  it('al corte el líder del Clausura es Sport Huancayo y no hay campeón directo', () => {
+  it('al corte el líder del Clausura es Sporting Cristal y no hay campeón directo', () => {
     const p = projectTitle(ds, baseTables(ds))
-    expect(p.clausuraLeaderId).toBe('sport-huancayo')
+    expect(p.clausuraLeaderId).toBe('sporting-cristal')
     expect(p.directChampion).toBe(false)
-    expect(p.clausuraChampionAcumPosition).toBe(9)
-    expect(p.clausuraChampionEligibility).toBe('no')
-    expect(p.contenders.map((c) => c.teamId)).toEqual(['alianza-lima', 'universitario'])
+    expect(p.clausuraChampionAcumPosition).toBe(7)
+    expect(p.clausuraChampionEligibility).toBe('si')
+    expect(p.contenders.map((c) => c.teamId)).toEqual(['alianza-lima', 'sporting-cristal', 'universitario'])
+    expect(p.contenders[0]?.reason).toContain('puesto 1 del acumulado')
   })
 
   it('si Alianza Lima lidera el Clausura es campeón nacional directo', () => {

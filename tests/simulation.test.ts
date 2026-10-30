@@ -11,7 +11,7 @@ describe('motor de simulación', () => {
     expect(t.clausura).toEqual(base.clausura)
     expect(t.acumulado).toEqual(base.acumulado)
     expect(t.simulatedCount).toBe(0)
-    expect(t.pendingCount).toBe(35)
+    expect(t.pendingCount).toBe(28)
   })
 
   it('una victoria agrega tres puntos al ganador en Clausura y acumulado y nada al perdedor', () => {
@@ -38,13 +38,14 @@ describe('motor de simulación', () => {
   })
 
   it('los empates otorgan un punto a cada equipo', () => {
-    const fx = fixtureOf('melgar', 'comerciantes-unidos')
+    const fx = fixtureOf('cusco-fc', 'sport-boys')
     const t = computeTables(ds, inputsFor({ [fx.id]: ['1', '1'] }))
     for (const kind of ['clausura', 'acumulado'] as const) {
-      expect(rowOf(t[kind], 'melgar').pts).toBe(rowOf(base[kind], 'melgar').pts + 1)
-      expect(rowOf(t[kind], 'comerciantes-unidos').pts).toBe(rowOf(base[kind], 'comerciantes-unidos').pts + 1)
+      expect(rowOf(t[kind], 'cusco-fc').pts).toBe(rowOf(base[kind], 'cusco-fc').pts + 1)
+      expect(rowOf(t[kind], 'sport-boys').pts).toBe(rowOf(base[kind], 'sport-boys').pts + 1)
     }
-    expect(rowOf(t.clausura, 'melgar').pe).toBe(5)
+    expect(rowOf(t.clausura, 'cusco-fc').pe).toBe(1)
+    expect(rowOf(t.clausura, 'sport-boys').pe).toBe(4)
   })
 
   it('todos empatan: cada equipo suma un punto por partido pendiente', () => {
@@ -54,18 +55,18 @@ describe('motor de simulación', () => {
       expect(row.pts - row.basePts).toBe(pending)
       expect(row.pj).toBe(17)
     }
-    expect(t.simulatedCount).toBe(35)
+    expect(t.simulatedCount).toBe(28)
     expect(t.pendingCount).toBe(0)
   })
 
   it('las sanciones no desaparecen al simular', () => {
     const t = computeTables(ds, allDraw(ds))
     const utcClausura = rowOf(t.clausura, 'utc')
-    // -3 al corte (incluye la sanción de 5) más 4 empates.
-    expect(rowOf(base.clausura, 'utc').pts).toBe(-3)
-    expect(utcClausura.pts).toBe(-3 + 4)
+    // 0 al corte (1 victoria y 2 empates, con la sanción de 5 incluida) más 3 empates.
+    expect(rowOf(base.clausura, 'utc').pts).toBe(0)
+    expect(utcClausura.pts).toBe(0 + 3)
     const utcAcum = rowOf(t.acumulado, 'utc')
-    expect(utcAcum.pts).toBe(10 + 4)
+    expect(utcAcum.pts).toBe(13 + 3)
     for (const adj of ds.acumuladoAdjustments) {
       const ap = ds.apertura.find((a) => a.teamId === adj.teamId)!
       const c = rowOf(t.clausura, adj.teamId)
@@ -75,15 +76,15 @@ describe('motor de simulación', () => {
 
   it('acumulado proyectado = acumulado al corte + puntos de los partidos simulados', () => {
     const inputs = inputsFor({
-      [fixtureOf('sporting-cristal', 'alianza-lima').id]: 'away',
+      [fixtureOf('alianza-lima', 'cienciano').id]: 'home',
       [fixtureOf('universitario', 'sport-boys').id]: 'home',
       [fixtureOf('cienciano', 'sport-huancayo').id]: 'draw',
     })
     const t = computeTables(ds, inputs)
     expect(rowOf(t.acumulado, 'alianza-lima').pts).toBe(65 + 3)
-    expect(rowOf(t.acumulado, 'sporting-cristal').pts).toBe(44)
+    expect(rowOf(t.acumulado, 'sporting-cristal').pts).toBe(47)
     expect(rowOf(t.acumulado, 'universitario').pts).toBe(56 + 3)
-    expect(rowOf(t.acumulado, 'cienciano').pts).toBe(47 + 1)
+    expect(rowOf(t.acumulado, 'cienciano').pts).toBe(50 + 1)
     expect(rowOf(t.acumulado, 'sport-huancayo').pts).toBe(44 + 1)
   })
 
@@ -101,6 +102,7 @@ describe('motor de simulación', () => {
   it('un marcador de un partido ya jugado o inexistente no modifica las tablas', () => {
     const t = computeTables(ds, {
       'c14-99': { home: '3', away: '0' },
+      'c14-01': { home: '2', away: '2' },
       'jp2-huancayo': { home: '5', away: '0' },
     })
     expect(t.clausura).toEqual(base.clausura)
@@ -111,6 +113,8 @@ describe('motor de simulación', () => {
     const t = computeTables(ds, allDraw(ds))
     expect(rowOf(t.clausura, 'juan-pablo-ii').pj).toBe(14 + 3)
     expect(rowOf(t.clausura, 'sport-huancayo').pj).toBe(14 + 3)
+    // Los cuatro partidos del 28 de octubre ya están en la base: ADT y UTC suman tres partidos, no cuatro.
+    expect(rowOf(t.clausura, 'adt').pj).toBe(14 + 3)
   })
 
   it('los partidos sin marcador completo no modifican ninguna clasificación', () => {
@@ -150,9 +154,11 @@ describe('motor de simulación', () => {
 describe('ordenamiento y zonas proyectadas', () => {
   it('las victorias de Universitario lo llevan al primer lugar del Clausura y del acumulado', () => {
     const t = computeTables(ds, teamWinsAll(ds, {}, 'universitario'))
-    expect(rowOf(base.clausura, 'universitario').position).toBe(2)
-    expect(rowOf(t.clausura, 'universitario')).toMatchObject({ position: 1, zone: 'campeon', basePosition: 2 })
-    expect(rowOf(t.clausura, 'sport-huancayo').position).toBe(2)
+    expect(rowOf(base.clausura, 'universitario').position).toBe(3)
+    expect(rowOf(t.clausura, 'universitario')).toMatchObject({ position: 1, zone: 'campeon', basePosition: 3 })
+    expect(rowOf(t.clausura, 'sporting-cristal').position).toBe(2)
+    expect(rowOf(t.clausura, 'sport-huancayo').position).toBe(3)
+    expect(rowOf(t.clausura, 'melgar').position).toBe(4)
     expect(rowOf(t.acumulado, 'universitario')).toMatchObject({ pts: 68, position: 1, basePosition: 2 })
     expect(rowOf(t.acumulado, 'alianza-lima')).toMatchObject({ pts: 65, position: 2, basePosition: 1 })
   })
@@ -179,46 +185,49 @@ describe('ordenamiento y zonas proyectadas', () => {
   })
 
   it('un equipo sale de la zona de descenso al ganar sus partidos y otro entra', () => {
-    // ADT (26) y UTC (10) descienden al corte; CD Moquegua y FC Cajamarca tienen 28.
-    expect(rowOf(base.acumulado, 'adt').zone).toBe('descenso')
-    const inputs = inputsFor({
-      [fixtureOf('adt', 'cd-moquegua').id]: ['3', '0'],
-      [fixtureOf('comerciantes-unidos', 'adt').id]: ['0', '2'],
-      [fixtureOf('adt', 'sporting-cristal').id]: ['1', '0'],
-      [fixtureOf('cusco-fc', 'adt').id]: ['0', '1'],
-    })
-    // Moquegua pierde el resto de partidos para quedar por debajo de ADT (26 + 12 = 38).
-    for (const fx of ds.fixtures) {
-      if (fx.homeId === 'cd-moquegua' && !inputs[fx.id]) inputs[fx.id] = { home: '0', away: '1' }
-      if (fx.awayId === 'cd-moquegua' && !inputs[fx.id]) inputs[fx.id] = { home: '1', away: '0' }
-    }
-    for (const fx of ds.fixtures) {
-      if ((fx.homeId === 'fc-cajamarca' || fx.awayId === 'fc-cajamarca') && !inputs[fx.id]) {
-        inputs[fx.id] = fx.homeId === 'fc-cajamarca' ? { home: '0', away: '2' } : { home: '2', away: '0' }
+    // Al corte descienden FC Cajamarca (26) y UTC (13); CD Moquegua (28) está justo encima.
+    expect(rowOf(base.acumulado, 'fc-cajamarca').zone).toBe('descenso')
+    expect(rowOf(base.acumulado, 'cd-moquegua').zone).toBe('media')
+    const inputs: Record<string, { home: string; away: string }> = {}
+    const lose = (team: string) => {
+      for (const fx of ds.fixtures) {
+        if (fx.homeId === team) inputs[fx.id] = { home: '0', away: '1' }
+        else if (fx.awayId === team) inputs[fx.id] = { home: '1', away: '0' }
       }
     }
+    const winAll = (team: string) => {
+      for (const fx of ds.fixtures) {
+        if (fx.homeId === team) inputs[fx.id] = { home: '1', away: '0' }
+        else if (fx.awayId === team) inputs[fx.id] = { home: '0', away: '1' }
+      }
+    }
+    winAll('fc-cajamarca')
+    lose('cd-moquegua')
+    lose('utc')
     const t = computeTables(ds, inputs)
-    expect(rowOf(t.acumulado, 'adt')).toMatchObject({ pts: 38, zone: 'media' })
+    expect(rowOf(t.acumulado, 'fc-cajamarca')).toMatchObject({ pts: 35, zone: 'media' })
     expect(rowOf(t.acumulado, 'utc').zone).toBe('descenso')
     const down = t.acumulado.rows.filter((r) => r.zone === 'descenso').map((r) => r.teamId)
     expect(down).toContain('utc')
     expect(down).toContain('cd-moquegua')
-    expect(down).not.toContain('adt')
+    expect(down).not.toContain('fc-cajamarca')
   })
 
   it('el desempate del Clausura usa diferencia de goles y luego goles a favor', () => {
-    // Alianza Lima, Melgar, Cristal, Garcilaso y Juan Pablo II tienen 25 puntos al corte.
+    // Garcilaso, Juan Pablo II, Alianza Lima y Alianza Atlético tienen 25 puntos al corte.
     const order = base.clausura.rows.map((r) => r.teamId)
-    expect(order.indexOf('garcilaso')).toBeLessThan(order.indexOf('sporting-cristal'))
-    expect(order.indexOf('sporting-cristal')).toBeLessThan(order.indexOf('melgar'))
-    expect(order.indexOf('melgar')).toBeLessThan(order.indexOf('juan-pablo-ii'))
+    expect(order.indexOf('melgar')).toBeLessThan(order.indexOf('garcilaso'))
+    expect(order.indexOf('garcilaso')).toBeLessThan(order.indexOf('juan-pablo-ii'))
     expect(order.indexOf('juan-pablo-ii')).toBeLessThan(order.indexOf('alianza-lima'))
+    expect(order.indexOf('alianza-lima')).toBeLessThan(order.indexOf('alianza-atletico'))
+    // Sporting Cristal y Sport Huancayo empatan en 28: gana por diferencia de goles.
+    expect(order.indexOf('sporting-cristal')).toBeLessThan(order.indexOf('sport-huancayo'))
   })
 
   it('registra la posición al corte para mostrar cambios', () => {
     const t = computeTables(ds, inputsFor({ [fixtureOf('universitario', 'sport-boys').id]: 'home' }))
     const row = rowOf(t.clausura, 'universitario')
-    expect(row.basePosition).toBe(2)
+    expect(row.basePosition).toBe(3)
     expect(row.basePts).toBe(27)
   })
 
@@ -233,28 +242,32 @@ describe('ordenamiento y zonas proyectadas', () => {
     cajC.gc = moqC.gc = 20
     caj.gf = moq.gf = 20
     caj.gc = moq.gc = 25
+    // Cajamarca suma 17 + 11 - 2 = 26; Moquegua queda también en 26.
+    moq.pts = 16
     const t = computeTables(copy, {})
     const a = rowOf(t.acumulado, 'fc-cajamarca')
     const b = rowOf(t.acumulado, 'cd-moquegua')
+    expect(a.pts).toBe(26)
+    expect(b.pts).toBe(26)
     expect(a.provisional).toBe(true)
     expect(b.provisional).toBe(true)
     expect(t.acumulado.ties).toHaveLength(1)
-    expect(t.acumulado.ties[0]).toMatchObject({ positions: [15, 16], critical: false })
+    expect(t.acumulado.ties[0]).toMatchObject({ positions: [16, 17] })
   })
 
   it('un empate que cruza el límite de descenso se marca como crítico', () => {
     const copy = structuredClone(ds)
-    // ADT queda idéntico a CD Moquegua (16.º) en puntos, goles a favor y en contra.
+    // FC Cajamarca queda idéntico a CD Moquegua (16.º) en puntos, goles a favor y en contra.
     const src = { ap: copy.apertura.find((r) => r.teamId === 'cd-moquegua')!, c: copy.clausuraBase.find((r) => r.teamId === 'cd-moquegua')! }
-    const dst = { ap: copy.apertura.find((r) => r.teamId === 'adt')!, c: copy.clausuraBase.find((r) => r.teamId === 'adt')! }
+    const dst = { ap: copy.apertura.find((r) => r.teamId === 'fc-cajamarca')!, c: copy.clausuraBase.find((r) => r.teamId === 'fc-cajamarca')! }
     Object.assign(dst.ap, { pts: src.ap.pts, gf: src.ap.gf, gc: src.ap.gc })
     Object.assign(dst.c, { pg: src.c.pg, pe: src.c.pe, pp: src.c.pp, gf: src.c.gf, gc: src.c.gc })
     copy.acumuladoAdjustments = []
     const t = computeTables(copy, {})
-    const tie = t.acumulado.ties.find((g) => g.teamIds.includes('adt'))
+    const tie = t.acumulado.ties.find((g) => g.teamIds.includes('fc-cajamarca'))
     expect(tie).toMatchObject({ positions: [16, 17], critical: true })
     expect(tie?.teamIds).toContain('cd-moquegua')
-    expect(rowOf(t.acumulado, 'adt').provisional).toBe(true)
+    expect(rowOf(t.acumulado, 'fc-cajamarca').provisional).toBe(true)
   })
 
   it('los enfrentamientos directos y el Fair Play resuelven el empate cuando hay datos completos', () => {
@@ -267,6 +280,7 @@ describe('ordenamiento y zonas proyectadas', () => {
     cajC.gc = moqC.gc = 20
     caj.gf = moq.gf = 20
     caj.gc = moq.gc = 25
+    moq.pts = 16
     // Cuatro enfrentamientos en la temporada; Moquegua suma más puntos.
     const meet = (homeId: string, awayId: string, homeGoals: number, awayGoals: number) => ({ homeId, awayId, homeGoals, awayGoals })
     copy.headToHead = [
@@ -276,8 +290,8 @@ describe('ordenamiento y zonas proyectadas', () => {
       meet('fc-cajamarca', 'cd-moquegua', 0, 1),
     ]
     const t = computeTables(copy, {})
-    expect(rowOf(t.acumulado, 'cd-moquegua').position).toBe(15)
-    expect(rowOf(t.acumulado, 'fc-cajamarca').position).toBe(16)
+    expect(rowOf(t.acumulado, 'cd-moquegua').position).toBe(16)
+    expect(rowOf(t.acumulado, 'fc-cajamarca').position).toBe(17)
     expect(t.acumulado.ties).toHaveLength(0)
 
     // Con enfrentamientos incompletos el empate sigue provisional; el Fair Play lo resuelve.
@@ -286,7 +300,7 @@ describe('ordenamiento y zonas proyectadas', () => {
     copy.fairPlay = { 'fc-cajamarca': 10, 'cd-moquegua': 20 }
     const fp = computeTables(copy, {})
     expect(fp.acumulado.ties).toHaveLength(0)
-    expect(rowOf(fp.acumulado, 'fc-cajamarca').position).toBe(15)
+    expect(rowOf(fp.acumulado, 'fc-cajamarca').position).toBe(16)
   })
 
   it('el Clausura no usa enfrentamientos directos', () => {
@@ -319,7 +333,7 @@ describe('ordenamiento y zonas proyectadas', () => {
   })
 
   it('teamWinsAll solo toca los partidos del equipo y respeta la localía', () => {
-    const other = fixtureOf('melgar', 'comerciantes-unidos')
+    const other = fixtureOf('cusco-fc', 'sport-boys')
     const inputs = teamWinsAll(ds, { [other.id]: { home: '2', away: '2' } }, 'universitario')
     expect(inputs[other.id]).toEqual({ home: '2', away: '2' })
     expect(inputs[fixtureOf('universitario', 'sport-boys').id]).toEqual({ home: '1', away: '0' })

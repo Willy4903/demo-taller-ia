@@ -28,8 +28,8 @@ describe('datos iniciales de los 18 equipos', () => {
     const sum = (f: (r: (typeof ds.clausuraBase)[number]) => number) => ds.clausuraBase.reduce((a, r) => a + f(r), 0)
     expect(sum((r) => r.gf)).toBe(sum((r) => r.gc))
     expect(sum((r) => r.pg)).toBe(sum((r) => r.pp))
-    // 13 fechas de 9 partidos más Juan Pablo II 2-0 Sport Huancayo: 118 partidos, 236 PJ.
-    expect(sum((r) => r.pj)).toBe(2 * (13 * 9 + 1))
+    // 13 fechas de 9 partidos más ocho partidos de la fecha 14: 125 partidos, 250 PJ.
+    expect(sum((r) => r.pj)).toBe(2 * (13 * 9 + 8))
   })
 
   it('la tabla del Apertura está balanceada y todos jugaron 17', () => {
@@ -66,30 +66,43 @@ describe('datos iniciales de los 18 equipos', () => {
 
   it('el corte coincide con los datos publicados de los equipos clave', () => {
     const t = baseTables(ds)
-    expect(rowOf(t.clausura, 'sport-huancayo')).toMatchObject({ position: 1, pts: 28, pj: 14 })
-    expect(rowOf(t.clausura, 'universitario')).toMatchObject({ position: 2, pts: 27, gf: 28, gc: 19, gd: 9 })
+    expect(rowOf(t.clausura, 'sporting-cristal')).toMatchObject({ position: 1, pts: 28, pj: 14, gd: 12 })
+    expect(rowOf(t.clausura, 'sport-huancayo')).toMatchObject({ position: 2, pts: 28, pj: 14, gd: 6 })
+    expect(rowOf(t.clausura, 'universitario')).toMatchObject({ position: 3, pts: 27, gf: 28, gc: 19, gd: 9 })
+    expect(rowOf(t.acumulado, 'cusco-fc')).toMatchObject({ pts: 51 })
+    expect(rowOf(t.acumulado, 'los-chankas')).toMatchObject({ pts: 46 })
+    expect(rowOf(t.clausura, 'melgar')).toMatchObject({ position: 4, pts: 26, pj: 14, gd: 10 })
+    expect(rowOf(t.acumulado, 'melgar')).toMatchObject({ position: 3, pts: 54 })
+    expect(rowOf(t.acumulado, 'comerciantes-unidos')).toMatchObject({ pts: 35 })
+    expect(rowOf(t.acumulado, 'sporting-cristal')).toMatchObject({ pts: 47 })
     expect(rowOf(t.acumulado, 'alianza-lima')).toMatchObject({ position: 1, pts: 65 })
     expect(rowOf(t.acumulado, 'universitario')).toMatchObject({ position: 2, pts: 56 })
-    expect(rowOf(t.acumulado, 'utc')).toMatchObject({ position: 18, pts: 10 })
-    expect(rowOf(t.acumulado, 'adt')).toMatchObject({ position: 17, pts: 26 })
+    expect(rowOf(t.acumulado, 'utc')).toMatchObject({ position: 18, pts: 13, pj: 31 })
+    expect(rowOf(t.acumulado, 'fc-cajamarca')).toMatchObject({ position: 17, pts: 26 })
+    expect(rowOf(t.acumulado, 'cd-moquegua')).toMatchObject({ position: 16, pts: 28 })
+    expect(rowOf(t.acumulado, 'adt')).toMatchObject({ position: 15, pts: 29 })
+    expect(rowOf(t.clausura, 'utc')).toMatchObject({ pts: 0, pg: 1, pe: 2, pp: 11 })
+    expect(rowOf(t.clausura, 'cienciano')).toMatchObject({ pts: 17, pj: 14 })
+    expect(rowOf(t.clausura, 'garcilaso')).toMatchObject({ pts: 25, gf: 26, gc: 15, gd: 11 })
   })
 
   it('el orden del Clausura al corte sigue puntos, diferencia de goles y goles a favor', () => {
     const t = baseTables(ds)
-    expect(t.clausura.rows.map((r) => r.teamId).slice(0, 7)).toEqual([
+    expect(t.clausura.rows.map((r) => r.teamId).slice(0, 8)).toEqual([
+      'sporting-cristal',
       'sport-huancayo',
       'universitario',
-      'garcilaso',
-      'sporting-cristal',
       'melgar',
+      'garcilaso',
       'juan-pablo-ii',
       'alianza-lima',
+      'alianza-atletico',
     ])
     expect(t.clausura.ties).toHaveLength(0)
     expect(t.acumulado.ties).toHaveLength(0)
   })
 
-  it('las 17 posiciones publicadas del acumulado coinciden con el orden calculado', () => {
+  it('el orden calculado del acumulado coincide con las tablas publicadas', () => {
     const order = baseTables(ds).acumulado.rows.map((r) => r.teamId)
     expect(order).toEqual([
       'alianza-lima',
@@ -98,17 +111,17 @@ describe('datos iniciales de los 18 equipos', () => {
       'garcilaso',
       'cusco-fc',
       'cienciano',
-      'los-chankas',
       'sporting-cristal',
-      'sport-huancayo',
       'alianza-atletico',
+      'los-chankas',
+      'sport-huancayo',
       'juan-pablo-ii',
       'sport-boys',
       'comerciantes-unidos',
       'atletico-grau',
-      'fc-cajamarca',
-      'cd-moquegua',
       'adt',
+      'cd-moquegua',
+      'fc-cajamarca',
       'utc',
     ])
   })

@@ -39,7 +39,7 @@ export function ScenarioBar({ inputs, tables, onUniversitarioWins, onAllDraw, on
         </button>
       </div>
       <p className="mt-2 text-xs text-tinta/70">
-        Universitario gana todos fija 1-0 en sus cuatro partidos y conserva el resto. Todos empatan fija 0-0 en los 35 partidos. Las
+        Universitario gana todos fija 1-0 en sus cuatro partidos y conserva el resto. Todos empatan fija 0-0 en los {DATASET.fixtures.length} partidos pendientes. Las
         simulaciones se guardan en este navegador.
       </p>
     </section>
