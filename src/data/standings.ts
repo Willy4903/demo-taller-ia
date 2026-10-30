@@ -2,8 +2,8 @@ import type { AcumuladoAdjustment, AperturaFinalRow, ClausuraBaseRow } from '../
 
 /**
  * Tabla del Clausura 2026 al corte del 30 de octubre: fecha 13 completa más los partidos de la
- * fecha 14 jugados del 27 al 29 de octubre. La base del 27 de octubre sale de Depor (17 equipos),
- * Líbero (UTC) y la web oficial de Universitario; los seis resultados del 28 y 29 de octubre se
+ * fecha 14 jugados del 27 al 29 de octubre (ocho partidos). La base del 27 de octubre sale de Depor (17 equipos),
+ * Líbero (UTC) y la web oficial de Universitario; los siete resultados del 28 y 29 de octubre se
  * sumaron a esa base (ver PLAYED). Las correcciones por inconsistencias de una fuente están en
  * records.ts.
  */
@@ -12,7 +12,7 @@ export const CLAUSURA_BASE: ClausuraBaseRow[] = [
   { teamId: 'universitario', pj: 13, pg: 8, pe: 3, pp: 2, gf: 28, gc: 19, deduction: 0, publishedPts: 27 },
   { teamId: 'garcilaso', pj: 14, pg: 8, pe: 1, pp: 5, gf: 26, gc: 15, deduction: 0, publishedPts: 25 },
   { teamId: 'sporting-cristal', pj: 14, pg: 9, pe: 1, pp: 4, gf: 29, gc: 17, deduction: 0, publishedPts: 28 },
-  { teamId: 'melgar', pj: 13, pg: 7, pe: 4, pp: 2, gf: 24, gc: 14, deduction: 0, publishedPts: 25 },
+  { teamId: 'melgar', pj: 14, pg: 7, pe: 5, pp: 2, gf: 25, gc: 15, deduction: 0, publishedPts: 26 },
   { teamId: 'juan-pablo-ii', pj: 14, pg: 7, pe: 4, pp: 3, gf: 25, gc: 16, deduction: 0, publishedPts: 25 },
   { teamId: 'alianza-lima', pj: 14, pg: 7, pe: 4, pp: 3, gf: 22, gc: 15, deduction: 0, publishedPts: 25 },
   { teamId: 'alianza-atletico', pj: 14, pg: 8, pe: 1, pp: 5, gf: 28, gc: 28, deduction: 0, publishedPts: 25 },
@@ -20,7 +20,7 @@ export const CLAUSURA_BASE: ClausuraBaseRow[] = [
   { teamId: 'sport-boys', pj: 13, pg: 6, pe: 3, pp: 4, gf: 19, gc: 14, deduction: 0, publishedPts: 21 },
   { teamId: 'atletico-grau', pj: 14, pg: 5, pe: 3, pp: 6, gf: 16, gc: 20, deduction: 0, publishedPts: 18 },
   { teamId: 'cienciano', pj: 14, pg: 5, pe: 2, pp: 7, gf: 19, gc: 21, deduction: 0, publishedPts: 17 },
-  { teamId: 'comerciantes-unidos', pj: 13, pg: 3, pe: 4, pp: 6, gf: 23, gc: 24, deduction: 0, publishedPts: 13 },
+  { teamId: 'comerciantes-unidos', pj: 14, pg: 3, pe: 5, pp: 6, gf: 24, gc: 25, deduction: 0, publishedPts: 14 },
   { teamId: 'los-chankas', pj: 14, pg: 3, pe: 3, pp: 8, gf: 14, gc: 30, deduction: 0, publishedPts: 12 },
   { teamId: 'fc-cajamarca', pj: 14, pg: 3, pe: 2, pp: 9, gf: 21, gc: 32, deduction: 0, publishedPts: 11 },
   { teamId: 'cd-moquegua', pj: 14, pg: 2, pe: 4, pp: 8, gf: 8, gc: 22, deduction: 0, publishedPts: 10 },

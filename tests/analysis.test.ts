@@ -113,7 +113,7 @@ describe('simulación de Monte Carlo', () => {
     const t = computeTables(ds, inputs)
     const r = runMonteCarlo(ds, inputs, { iterations: 50, seed: 3 })
     expect(r.simulatedMatches).toBe(0)
-    expect(r.fixedMatches).toBe(29)
+    expect(r.fixedMatches).toBe(28)
     for (const row of t.clausura.rows) {
       const est = r.teams.find((x) => x.teamId === row.teamId)!
       expect(est.clausuraPosition[row.position - 1]).toBe(1)

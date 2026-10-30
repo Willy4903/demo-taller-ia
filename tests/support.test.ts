@@ -51,14 +51,14 @@ describe('exportación CSV', () => {
     expect(lines[18]).toContain('UTC')
   })
 
-  it('exporta los 29 partidos pendientes con su estado', () => {
+  it('exporta los 28 partidos pendientes con su estado', () => {
     const fx = fixtureOf('universitario', 'sport-boys')
-    const csv = resultsCsv(ds, { [fx.id]: { home: '2', away: '1' }, [fixtureOf('melgar', 'comerciantes-unidos').id]: { home: '1', away: '' } })
+    const csv = resultsCsv(ds, { [fx.id]: { home: '2', away: '1' }, [fixtureOf('cusco-fc', 'sport-boys').id]: { home: '1', away: '' } })
     const lines = csv.trim().split('\r\n')
-    expect(lines).toHaveLength(30)
+    expect(lines).toHaveLength(29)
     expect(lines.find((l) => l.includes('Universitario,Sport Boys'))).toBe('14,2026-11-04,Universitario,Sport Boys,2,1,simulado')
-    expect(lines.find((l) => l.includes('FBC Melgar,Comerciantes Unidos'))).toBe('14,2026-10-29,FBC Melgar,Comerciantes Unidos,,,incompleto')
-    expect(lines.filter((l) => l.endsWith(',pendiente'))).toHaveLength(27)
+    expect(lines.find((l) => l.includes('Cusco FC,Sport Boys'))).toBe('15,2026-11-01,Cusco FC,Sport Boys,,,incompleto')
+    expect(lines.filter((l) => l.endsWith(',pendiente'))).toHaveLength(26)
   })
 })
 

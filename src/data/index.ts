@@ -13,7 +13,7 @@ export const DATASET: Dataset = {
   season: 2026,
   cutoff: '2026-10-30',
   updatedAt: '2026-10-30',
-  version: '2026-10-30.1',
+  version: '2026-10-30.2',
   teams: TEAMS,
   aperturaChampionId: 'alianza-lima',
   apertura: APERTURA_FINAL,

@@ -28,8 +28,8 @@ describe('datos iniciales de los 18 equipos', () => {
     const sum = (f: (r: (typeof ds.clausuraBase)[number]) => number) => ds.clausuraBase.reduce((a, r) => a + f(r), 0)
     expect(sum((r) => r.gf)).toBe(sum((r) => r.gc))
     expect(sum((r) => r.pg)).toBe(sum((r) => r.pp))
-    // 13 fechas de 9 partidos más siete partidos de la fecha 14: 124 partidos, 248 PJ.
-    expect(sum((r) => r.pj)).toBe(2 * (13 * 9 + 7))
+    // 13 fechas de 9 partidos más ocho partidos de la fecha 14: 125 partidos, 250 PJ.
+    expect(sum((r) => r.pj)).toBe(2 * (13 * 9 + 8))
   })
 
   it('la tabla del Apertura está balanceada y todos jugaron 17', () => {
@@ -71,6 +71,9 @@ describe('datos iniciales de los 18 equipos', () => {
     expect(rowOf(t.clausura, 'universitario')).toMatchObject({ position: 3, pts: 27, gf: 28, gc: 19, gd: 9 })
     expect(rowOf(t.acumulado, 'cusco-fc')).toMatchObject({ pts: 51 })
     expect(rowOf(t.acumulado, 'los-chankas')).toMatchObject({ pts: 46 })
+    expect(rowOf(t.clausura, 'melgar')).toMatchObject({ position: 4, pts: 26, pj: 14, gd: 10 })
+    expect(rowOf(t.acumulado, 'melgar')).toMatchObject({ position: 3, pts: 54 })
+    expect(rowOf(t.acumulado, 'comerciantes-unidos')).toMatchObject({ pts: 35 })
     expect(rowOf(t.acumulado, 'sporting-cristal')).toMatchObject({ pts: 47 })
     expect(rowOf(t.acumulado, 'alianza-lima')).toMatchObject({ position: 1, pts: 65 })
     expect(rowOf(t.acumulado, 'universitario')).toMatchObject({ position: 2, pts: 56 })
@@ -89,8 +92,8 @@ describe('datos iniciales de los 18 equipos', () => {
       'sporting-cristal',
       'sport-huancayo',
       'universitario',
-      'garcilaso',
       'melgar',
+      'garcilaso',
       'juan-pablo-ii',
       'alianza-lima',
       'alianza-atletico',

@@ -109,10 +109,17 @@ export const DISCREPANCIES: Discrepancy[] = [
     id: 'f14-results',
     subject: 'Resultados de la fecha 14 entre fuentes',
     detail:
-      'Se confirman siete partidos: Juan Pablo II 2-0 Sport Huancayo (27 de octubre); ADT 2-0 CD Moquegua, FC Cajamarca 1-3 UTC, Alianza Atlético 3-2 Garcilaso y Cienciano 3-0 Atlético Grau (28 de octubre); Los Chankas 0-1 Cusco FC y Sporting Cristal 3-2 Alianza Lima (29 de octubre). Un medio publica Alianza Atlético-Garcilaso como 3-1. De Melgar vs Comerciantes Unidos (29 de octubre) solo hay cobertura en vivo con 1-0 (gol de Vidales a los 8 minutos), con un titular contradictorio de 0-0 en la misma nota.',
+      'Se confirman ocho partidos: Juan Pablo II 2-0 Sport Huancayo (27 de octubre); ADT 2-0 CD Moquegua, FC Cajamarca 1-3 UTC, Alianza Atlético 3-2 Garcilaso y Cienciano 3-0 Atlético Grau (28 de octubre); Los Chankas 0-1 Cusco FC, Sporting Cristal 3-2 Alianza Lima y Melgar 1-1 Comerciantes Unidos (29 de octubre). Un medio publica Alianza Atlético-Garcilaso como 3-1. La cobertura en vivo de Ovación mostró Melgar 1-0 antes del final y su titular decía 0-0; Infobae, Diario UNO, DSN y Bolavip confirman 1-1.',
     resolution:
-      'Solo se incorporan los siete resultados confirmados por varias fuentes. Melgar vs Comerciantes Unidos sigue como pendiente hasta confirmar el marcador final; si terminó 1-0, Melgar suma 3 puntos.',
-    sourceIds: ['infobae-prog-f14', 'rpp-f14', 'infobae-alatl-garcilaso', 'futbolperuano-f14', 'ovacion-melgar-comerciantes', 'bolavip-cristal-alianza'],
+      'Se incorporan los ocho resultados confirmados por varias fuentes. Solo queda pendiente Universitario vs Sport Boys, reprogramado al 4 de noviembre. En una versión anterior de estos datos Melgar vs Comerciantes figuraba como pendiente con un 1-0 en vivo sin confirmar.',
+    sourceIds: ['infobae-prog-f14', 'rpp-f14', 'infobae-alatl-garcilaso', 'futbolperuano-f14', 'ovacion-melgar-comerciantes', 'infobae-melgar-comerciantes', 'diariouno-melgar-comerciantes'],
+  },
+  {
+    id: 'huancayo-26',
+    subject: 'Sport Huancayo, puntos del Clausura',
+    detail: 'Un resumen de búsqueda del 30 de octubre lo ubica con 26 puntos; Depor y la tabla del 27 de octubre lo muestran con 28 (9 victorias, 1 empate, 4 derrotas).',
+    resolution: 'Se usan 28: la aritmética de su línea (3 × 9 + 1) lo confirma y ningún otro resultado lo afectó desde su derrota del 27 de octubre.',
+    sourceIds: ['depor-clausura-f14', 'infobae-tabla-f14'],
   },
   {
     id: 'f17-dates',

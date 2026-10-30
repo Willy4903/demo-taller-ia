@@ -11,7 +11,7 @@ describe('motor de simulación', () => {
     expect(t.clausura).toEqual(base.clausura)
     expect(t.acumulado).toEqual(base.acumulado)
     expect(t.simulatedCount).toBe(0)
-    expect(t.pendingCount).toBe(29)
+    expect(t.pendingCount).toBe(28)
   })
 
   it('una victoria agrega tres puntos al ganador en Clausura y acumulado y nada al perdedor', () => {
@@ -38,13 +38,14 @@ describe('motor de simulación', () => {
   })
 
   it('los empates otorgan un punto a cada equipo', () => {
-    const fx = fixtureOf('melgar', 'comerciantes-unidos')
+    const fx = fixtureOf('cusco-fc', 'sport-boys')
     const t = computeTables(ds, inputsFor({ [fx.id]: ['1', '1'] }))
     for (const kind of ['clausura', 'acumulado'] as const) {
-      expect(rowOf(t[kind], 'melgar').pts).toBe(rowOf(base[kind], 'melgar').pts + 1)
-      expect(rowOf(t[kind], 'comerciantes-unidos').pts).toBe(rowOf(base[kind], 'comerciantes-unidos').pts + 1)
+      expect(rowOf(t[kind], 'cusco-fc').pts).toBe(rowOf(base[kind], 'cusco-fc').pts + 1)
+      expect(rowOf(t[kind], 'sport-boys').pts).toBe(rowOf(base[kind], 'sport-boys').pts + 1)
     }
-    expect(rowOf(t.clausura, 'melgar').pe).toBe(5)
+    expect(rowOf(t.clausura, 'cusco-fc').pe).toBe(1)
+    expect(rowOf(t.clausura, 'sport-boys').pe).toBe(4)
   })
 
   it('todos empatan: cada equipo suma un punto por partido pendiente', () => {
@@ -54,7 +55,7 @@ describe('motor de simulación', () => {
       expect(row.pts - row.basePts).toBe(pending)
       expect(row.pj).toBe(17)
     }
-    expect(t.simulatedCount).toBe(29)
+    expect(t.simulatedCount).toBe(28)
     expect(t.pendingCount).toBe(0)
   })
 
@@ -157,6 +158,7 @@ describe('ordenamiento y zonas proyectadas', () => {
     expect(rowOf(t.clausura, 'universitario')).toMatchObject({ position: 1, zone: 'campeon', basePosition: 3 })
     expect(rowOf(t.clausura, 'sporting-cristal').position).toBe(2)
     expect(rowOf(t.clausura, 'sport-huancayo').position).toBe(3)
+    expect(rowOf(t.clausura, 'melgar').position).toBe(4)
     expect(rowOf(t.acumulado, 'universitario')).toMatchObject({ pts: 68, position: 1, basePosition: 2 })
     expect(rowOf(t.acumulado, 'alianza-lima')).toMatchObject({ pts: 65, position: 2, basePosition: 1 })
   })
@@ -212,10 +214,10 @@ describe('ordenamiento y zonas proyectadas', () => {
   })
 
   it('el desempate del Clausura usa diferencia de goles y luego goles a favor', () => {
-    // Garcilaso, Melgar, Juan Pablo II, Alianza Lima y Alianza Atlético tienen 25 puntos al corte.
+    // Garcilaso, Juan Pablo II, Alianza Lima y Alianza Atlético tienen 25 puntos al corte.
     const order = base.clausura.rows.map((r) => r.teamId)
-    expect(order.indexOf('garcilaso')).toBeLessThan(order.indexOf('melgar'))
-    expect(order.indexOf('melgar')).toBeLessThan(order.indexOf('juan-pablo-ii'))
+    expect(order.indexOf('melgar')).toBeLessThan(order.indexOf('garcilaso'))
+    expect(order.indexOf('garcilaso')).toBeLessThan(order.indexOf('juan-pablo-ii'))
     expect(order.indexOf('juan-pablo-ii')).toBeLessThan(order.indexOf('alianza-lima'))
     expect(order.indexOf('alianza-lima')).toBeLessThan(order.indexOf('alianza-atletico'))
     // Sporting Cristal y Sport Huancayo empatan en 28: gana por diferencia de goles.
@@ -331,7 +333,7 @@ describe('ordenamiento y zonas proyectadas', () => {
   })
 
   it('teamWinsAll solo toca los partidos del equipo y respeta la localía', () => {
-    const other = fixtureOf('melgar', 'comerciantes-unidos')
+    const other = fixtureOf('cusco-fc', 'sport-boys')
     const inputs = teamWinsAll(ds, { [other.id]: { home: '2', away: '2' } }, 'universitario')
     expect(inputs[other.id]).toEqual({ home: '2', away: '2' })
     expect(inputs[fixtureOf('universitario', 'sport-boys').id]).toEqual({ home: '1', away: '0' })
