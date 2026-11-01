@@ -117,6 +117,22 @@ export const SOURCES: SourceRef[] = [
     access: 'resumen',
   },
   {
+    id: 'infobae-grau-uni',
+    label: 'Infobae: Universitario 3-1 Atlético Grau, fecha 15 del Clausura',
+    url: 'https://www.infobae.com/peru/deportes/2026/11/01/universitario-vs-atletico-grau-en-vivo-hoy-minuto-a-minuto-partido-trujillo-fecha-15-torneo-clausura-liga-1-2026-goles-resumen-resultado/',
+    accessed: '2026-11-01',
+    access: 'resumen',
+    note: 'Marcador final 3-1 en el estadio Mansiche de Trujillo; contrastado con El Comercio y DSN.',
+  },
+  {
+    id: 'infobae-f14-f15',
+    label: 'Infobae, Depor y Líbero: resultados de las fechas 14 y 15 del Clausura',
+    url: 'https://www.infobae.com/peru/deportes/2026/10/27/resultados-de-la-fecha-14-del-torneo-clausura-de-la-liga-1-2026-hoy-asi-van-los-partidos/',
+    accessed: '2026-11-01',
+    access: 'resumen',
+    note: 'Marcadores contrastados con las tablas de Líbero y futbolperuano.com del 31 de octubre (Cristal 28 pts, Alianza Atlético 28 pts, Melgar 26, Garcilaso 25).',
+  },
+  {
     id: 'atv-f16',
     label: 'ATV: programación de la fecha 16 del Clausura',
     url: 'https://www.atv.pe/noticia/programacion-fecha-16-liga-1-2026-clausura/',

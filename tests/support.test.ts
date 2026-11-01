@@ -41,24 +41,24 @@ describe('exportación CSV', () => {
     expect(lines).toHaveLength(19)
     expect(lines[0]).toBe('posicion,equipo,pj,pg,pe,pp,gf,gc,dg,puntos,puntos_al_corte,posicion_al_corte,zona,provisional')
     expect(lines[1]).toContain('1,Universitario,17,12,3,2')
-    expect(lines[1]).toContain(',39,27,2,campeon,no')
+    expect(lines[1]).toContain(',39,30,1,campeon,no')
   })
 
   it('exporta el acumulado sin columnas de PG/PE/PP', () => {
     const lines = standingsCsv(ds, baseTables(ds).acumulado).trim().split('\r\n')
     expect(lines[0]).toBe('posicion,equipo,pj,gf,gc,dg,puntos,puntos_al_corte,posicion_al_corte,zona,provisional')
-    expect(lines[1]).toContain('1,Alianza Lima,30')
+    expect(lines[1]).toContain('1,Alianza Lima,31')
     expect(lines[18]).toContain('UTC')
   })
 
-  it('exporta los 35 partidos con su estado', () => {
+  it('exporta los 24 partidos con su estado', () => {
     const fx = fixtureOf('universitario', 'sport-boys')
-    const csv = resultsCsv(ds, { [fx.id]: { home: '2', away: '1' }, [fixtureOf('adt', 'cd-moquegua').id]: { home: '1', away: '' } })
+    const csv = resultsCsv(ds, { [fx.id]: { home: '2', away: '1' }, [fixtureOf('comerciantes-unidos', 'adt').id]: { home: '1', away: '' } })
     const lines = csv.trim().split('\r\n')
-    expect(lines).toHaveLength(36)
+    expect(lines).toHaveLength(25)
     expect(lines.find((l) => l.includes('Universitario,Sport Boys'))).toBe('14,2026-11-04,Universitario,Sport Boys,2,1,simulado')
-    expect(lines.find((l) => l.includes('ADT,CD Moquegua'))).toBe('14,2026-10-28,ADT,CD Moquegua,,,incompleto')
-    expect(lines.filter((l) => l.endsWith(',pendiente'))).toHaveLength(33)
+    expect(lines.find((l) => l.includes('Comerciantes Unidos,ADT'))).toBe('15,2026-11-03,Comerciantes Unidos,ADT,,,incompleto')
+    expect(lines.filter((l) => l.endsWith(',pendiente'))).toHaveLength(22)
   })
 })
 
@@ -93,9 +93,9 @@ describe('persistencia local', () => {
     expect(loadInputs(ds, store)).toEqual({})
     store.setItem(
       'liga1-2026-simulador',
-      JSON.stringify({ datasetVersion: ds.version, inputs: { 'c14-99': { home: '1', away: '0' }, 'c15-01': { home: '2', away: '2' } } }),
+      JSON.stringify({ datasetVersion: ds.version, inputs: { 'c14-99': { home: '1', away: '0' }, 'c15-02': { home: '2', away: '2' } } }),
     )
-    expect(loadInputs(ds, store)).toEqual({ 'c15-01': { home: '2', away: '2' } })
+    expect(loadInputs(ds, store)).toEqual({ 'c15-02': { home: '2', away: '2' } })
   })
 
   it('vaciar las simulaciones borra el registro y tolera un almacenamiento ausente', () => {
@@ -109,12 +109,12 @@ describe('persistencia local', () => {
 })
 
 describe('proyección del título', () => {
-  it('al corte el líder del Clausura es Sport Huancayo y no hay campeón directo', () => {
+  it('al corte el líder del Clausura es Universitario y no hay campeón directo', () => {
     const p = projectTitle(ds, baseTables(ds))
-    expect(p.clausuraLeaderId).toBe('sport-huancayo')
+    expect(p.clausuraLeaderId).toBe('universitario')
     expect(p.directChampion).toBe(false)
-    expect(p.clausuraChampionAcumPosition).toBe(9)
-    expect(p.clausuraChampionEligibility).toBe('no')
+    expect(p.clausuraChampionAcumPosition).toBe(2)
+    expect(p.clausuraChampionEligibility).toBe('si')
     expect(p.contenders.map((c) => c.teamId)).toEqual(['alianza-lima', 'universitario'])
   })
 

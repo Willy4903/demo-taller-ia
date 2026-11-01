@@ -28,8 +28,8 @@ describe('datos iniciales de los 18 equipos', () => {
     const sum = (f: (r: (typeof ds.clausuraBase)[number]) => number) => ds.clausuraBase.reduce((a, r) => a + f(r), 0)
     expect(sum((r) => r.gf)).toBe(sum((r) => r.gc))
     expect(sum((r) => r.pg)).toBe(sum((r) => r.pp))
-    // 13 fechas de 9 partidos más Juan Pablo II 2-0 Sport Huancayo: 118 partidos, 236 PJ.
-    expect(sum((r) => r.pj)).toBe(2 * (13 * 9 + 1))
+    // 13 fechas de 9 partidos más 12 de las fechas 14 y 15 ya jugados al 1 de noviembre: 129 partidos, 258 PJ.
+    expect(sum((r) => r.pj)).toBe(2 * (13 * 9 + 12))
   })
 
   it('la tabla del Apertura está balanceada y todos jugaron 17', () => {
@@ -49,10 +49,10 @@ describe('datos iniciales de los 18 equipos', () => {
     }
   })
 
-  it('los ajustes derivados reproducen los puntos del acumulado publicado', () => {
+  it('los puntos del acumulado nunca bajan respecto del acumulado publicado el 27 de octubre', () => {
     const { acumulado } = baseRows(ds)
     for (const adj of ds.acumuladoAdjustments) {
-      expect(acumulado.find((r) => r.teamId === adj.teamId)!.pts).toBe(adj.publishedAcumPts)
+      expect(acumulado.find((r) => r.teamId === adj.teamId)!.pts).toBeGreaterThanOrEqual(adj.publishedAcumPts)
     }
   })
 
@@ -66,22 +66,24 @@ describe('datos iniciales de los 18 equipos', () => {
 
   it('el corte coincide con los datos publicados de los equipos clave', () => {
     const t = baseTables(ds)
-    expect(rowOf(t.clausura, 'sport-huancayo')).toMatchObject({ position: 1, pts: 28, pj: 14 })
-    expect(rowOf(t.clausura, 'universitario')).toMatchObject({ position: 2, pts: 27, gf: 28, gc: 19, gd: 9 })
+    expect(rowOf(t.clausura, 'sporting-cristal')).toMatchObject({ position: 2, pts: 28, pj: 14, gf: 29, gc: 17 })
+    expect(rowOf(t.clausura, 'alianza-atletico')).toMatchObject({ pts: 28, pj: 15, gf: 29, gc: 28 })
+    expect(rowOf(t.clausura, 'universitario')).toMatchObject({ position: 1, pts: 30, pj: 14, gf: 31, gc: 20, gd: 11 })
     expect(rowOf(t.acumulado, 'alianza-lima')).toMatchObject({ position: 1, pts: 65 })
-    expect(rowOf(t.acumulado, 'universitario')).toMatchObject({ position: 2, pts: 56 })
-    expect(rowOf(t.acumulado, 'utc')).toMatchObject({ position: 18, pts: 10 })
-    expect(rowOf(t.acumulado, 'adt')).toMatchObject({ position: 17, pts: 26 })
+    expect(rowOf(t.acumulado, 'universitario')).toMatchObject({ position: 2, pts: 59 })
+    expect(rowOf(t.acumulado, 'utc')).toMatchObject({ position: 18, pts: 13 })
+    expect(rowOf(t.acumulado, 'adt')).toMatchObject({ position: 15, pts: 29 })
   })
 
   it('el orden del Clausura al corte sigue puntos, diferencia de goles y goles a favor', () => {
     const t = baseTables(ds)
-    expect(t.clausura.rows.map((r) => r.teamId).slice(0, 7)).toEqual([
-      'sport-huancayo',
+    expect(t.clausura.rows.map((r) => r.teamId).slice(0, 8)).toEqual([
       'universitario',
-      'garcilaso',
       'sporting-cristal',
+      'sport-huancayo',
+      'alianza-atletico',
       'melgar',
+      'garcilaso',
       'juan-pablo-ii',
       'alianza-lima',
     ])
@@ -89,7 +91,7 @@ describe('datos iniciales de los 18 equipos', () => {
     expect(t.acumulado.ties).toHaveLength(0)
   })
 
-  it('las 17 posiciones publicadas del acumulado coinciden con el orden calculado', () => {
+  it('el orden del acumulado sigue puntos y desempates', () => {
     const order = baseTables(ds).acumulado.rows.map((r) => r.teamId)
     expect(order).toEqual([
       'alianza-lima',
@@ -98,17 +100,17 @@ describe('datos iniciales de los 18 equipos', () => {
       'garcilaso',
       'cusco-fc',
       'cienciano',
-      'los-chankas',
-      'sporting-cristal',
-      'sport-huancayo',
       'alianza-atletico',
+      'sporting-cristal',
+      'los-chankas',
+      'sport-huancayo',
       'juan-pablo-ii',
       'sport-boys',
       'comerciantes-unidos',
       'atletico-grau',
-      'fc-cajamarca',
-      'cd-moquegua',
       'adt',
+      'cd-moquegua',
+      'fc-cajamarca',
       'utc',
     ])
   })

@@ -12,8 +12,9 @@ const build = (fecha: number, rows: Row[]): Fixture[] =>
   }))
 
 /**
- * Fecha 14: ocho partidos pendientes (Juan Pablo II 2-0 Sport Huancayo ya se jugó el 27 de octubre).
- * Universitario vs Sport Boys se reprogramó al 4 de noviembre.
+ * Calendario restante desde la fecha 14 (Juan Pablo II 2-0 Sport Huancayo, jugado el 27 de octubre,
+ * no figura). Universitario vs Sport Boys se reprogramó al 4 de noviembre. Los partidos ya jugados
+ * se filtran más abajo con PLAYED.
  */
 const FECHA_14 = build(14, [
   ['adt', 'cd-moquegua', '2026-10-28'],
@@ -62,16 +63,6 @@ const FECHA_17 = build(17, [
   ['juan-pablo-ii', 'garcilaso', null],
 ])
 
-/** 35 partidos pendientes al corte: 8 + 9 + 9 + 9. */
-export const FIXTURES: Fixture[] = [...FECHA_14, ...FECHA_15, ...FECHA_16, ...FECHA_17]
-
-export const FECHA_WINDOWS: FechaWindow[] = [
-  { fecha: 14, window: '27 oct al 4 nov', note: 'Universitario vs Sport Boys reprogramado al 4 de noviembre.' },
-  { fecha: 15, window: '30 oct al 3 nov', note: 'Sin fecha publicada para Alianza Lima vs Cienciano ni Sporting Cristal vs FC Cajamarca.' },
-  { fecha: 16, window: '6 al 8 nov' },
-  { fecha: 17, window: '14 al 22 nov', note: 'Aún no programada oficialmente; las fuentes la ubican entre el 14 y el 22 de noviembre.' },
-]
-
 /**
  * Partidos jugados con resultado confirmado que se registran por trazabilidad. No alimentan el
  * cálculo: sus puntos ya están en las tablas base. Las fechas 1 a 12 no se detallan porque las
@@ -115,4 +106,42 @@ export const PLAYED: PlayedMatch[] = [
     sourceIds: ['depor-clausura-f14', 'libero-acum-f14'],
     note: 'Resultado incorporado en las tablas base del corte.',
   },
+  { fecha: 14, date: '2026-10-28', homeId: 'adt', awayId: 'cd-moquegua', homeGoals: 2, awayGoals: 0, sourceIds: ['infobae-f14-f15'] },
+  { fecha: 14, date: '2026-10-28', homeId: 'fc-cajamarca', awayId: 'utc', homeGoals: 1, awayGoals: 3, sourceIds: ['infobae-f14-f15'] },
+  { fecha: 14, date: '2026-10-28', homeId: 'alianza-atletico', awayId: 'garcilaso', homeGoals: 3, awayGoals: 2, sourceIds: ['infobae-f14-f15'] },
+  { fecha: 14, date: '2026-10-28', homeId: 'cienciano', awayId: 'atletico-grau', homeGoals: 3, awayGoals: 0, sourceIds: ['infobae-f14-f15'] },
+  { fecha: 14, date: '2026-10-29', homeId: 'los-chankas', awayId: 'cusco-fc', homeGoals: 0, awayGoals: 1, sourceIds: ['infobae-f14-f15'], note: 'Penal en el último minuto.' },
+  { fecha: 14, date: '2026-10-29', homeId: 'sporting-cristal', awayId: 'alianza-lima', homeGoals: 3, awayGoals: 2, sourceIds: ['infobae-f14-f15'] },
+  { fecha: 14, date: '2026-10-29', homeId: 'melgar', awayId: 'comerciantes-unidos', homeGoals: 1, awayGoals: 1, sourceIds: ['infobae-f14-f15'] },
+  { fecha: 15, date: '2026-10-31', homeId: 'alianza-atletico', awayId: 'juan-pablo-ii', homeGoals: 1, awayGoals: 0, sourceIds: ['infobae-f14-f15'] },
+  { fecha: 15, date: '2026-11-01', homeId: 'cd-moquegua', awayId: 'los-chankas', homeGoals: 0, awayGoals: 0, sourceIds: ['infobae-f14-f15'] },
+  { fecha: 15, date: '2026-11-01', homeId: 'cusco-fc', awayId: 'sport-boys', homeGoals: 0, awayGoals: 1, sourceIds: ['infobae-f14-f15'] },
+  {
+    fecha: 15,
+    date: '2026-11-01',
+    homeId: 'atletico-grau',
+    awayId: 'universitario',
+    homeGoals: 1,
+    awayGoals: 3,
+    sourceIds: ['infobae-grau-uni'],
+    note: 'Goles: Adrián Fernández; Andy Polo, Lapadula y Alzugaray. Resultado incorporado en las tablas base del corte.',
+  },
 ]
+
+const ALL_FIXTURES: Fixture[] = [...FECHA_14, ...FECHA_15, ...FECHA_16, ...FECHA_17]
+
+/**
+ * Partidos pendientes al corte: los 36 del calendario restante menos los ya jugados. Los ids
+ * (c14-08, c15-06...) conservan la posición original en el calendario.
+ */
+export const FIXTURES: Fixture[] = ALL_FIXTURES.filter(
+  (f) => !PLAYED.some((p) => p.fecha === f.fecha && p.homeId === f.homeId && p.awayId === f.awayId),
+)
+
+export const FECHA_WINDOWS: FechaWindow[] = [
+  { fecha: 14, window: '27 oct al 4 nov', note: 'Solo queda pendiente Universitario vs Sport Boys, reprogramado al 4 de noviembre.' },
+  { fecha: 15, window: '31 oct al 3 nov', note: 'Sin fecha publicada para Alianza Lima vs Cienciano ni Sporting Cristal vs FC Cajamarca.' },
+  { fecha: 16, window: '6 al 8 nov' },
+  { fecha: 17, window: '14 al 22 nov', note: 'Aún no programada oficialmente; las fuentes la ubican entre el 14 y el 22 de noviembre.' },
+]
+
