@@ -103,9 +103,9 @@ export const DISCREPANCIES: Discrepancy[] = [
   {
     id: 'f14-results',
     subject: 'Resultados de la fecha 14 entre fuentes',
-    detail: 'Las fuentes consultadas solo confirman Juan Pablo II 2-0 Sport Huancayo (27 de octubre).',
-    resolution: 'Los otros ocho partidos de la fecha 14 figuran como pendientes, tal como indica el corte del 28 de octubre.',
-    sourceIds: ['infobae-prog-f14', 'rpp-f14'],
+    detail: 'Las primeras fuentes del 28 de octubre solo confirmaban Juan Pablo II 2-0 Sport Huancayo (27 de octubre).',
+    resolution: 'Al 1 de noviembre se incorporan los otros siete partidos jugados de la fecha 14; las tablas publicadas del 31 de octubre cuadran con la suma de los resultados.',
+    sourceIds: ['infobae-f14-f15'],
   },
   {
     id: 'f17-dates',

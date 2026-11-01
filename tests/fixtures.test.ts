@@ -2,12 +2,12 @@ import { describe, expect, it } from 'vitest'
 import { baseRows } from '../src/engine/standings'
 import { ds } from './helpers'
 
-describe('los 34 partidos inicialmente pendientes', () => {
-  it('hay 34 partidos: 8 de las fechas 14 y 15 y 9 de cada una de las fechas 16 y 17', () => {
-    expect(ds.fixtures).toHaveLength(34)
+describe('los 24 partidos inicialmente pendientes', () => {
+  it('hay 24 partidos: 1 de la fecha 14, 5 de la 15 y 9 de cada una de las fechas 16 y 17', () => {
+    expect(ds.fixtures).toHaveLength(24)
     const byFecha = (n: number) => ds.fixtures.filter((f) => f.fecha === n).length
-    expect([byFecha(14), byFecha(15), byFecha(16), byFecha(17)]).toEqual([8, 8, 9, 9])
-    expect(new Set(ds.fixtures.map((f) => f.id)).size).toBe(34)
+    expect([byFecha(14), byFecha(15), byFecha(16), byFecha(17)]).toEqual([1, 5, 9, 9])
+    expect(new Set(ds.fixtures.map((f) => f.id)).size).toBe(24)
   })
 
   it('el partido ya jugado de la fecha 14 no está en el fixture pendiente', () => {
@@ -34,12 +34,12 @@ describe('los 34 partidos inicialmente pendientes', () => {
       const ids = ds.fixtures.filter((f) => f.fecha === fecha).flatMap((f) => [f.homeId, f.awayId])
       expect(new Set(ids).size, `fecha ${fecha}`).toBe(18)
     }
-    const f15 = ds.fixtures.filter((f) => f.fecha === 15).flatMap((f) => [f.homeId, f.awayId])
-    expect(new Set(f15).size).toBe(16)
-    const f14 = ds.fixtures.filter((f) => f.fecha === 14).flatMap((f) => [f.homeId, f.awayId])
-    expect(new Set(f14).size).toBe(16)
+    for (const [fecha, n] of [[14, 2], [15, 10]] as const) {
+      const ids = ds.fixtures.filter((f) => f.fecha === fecha).flatMap((f) => [f.homeId, f.awayId])
+      expect(new Set(ids).size, `fecha ${fecha}`).toBe(n)
+    }
     const pairs = ds.fixtures.map((f) => [f.homeId, f.awayId].sort().join('|'))
-    expect(new Set(pairs).size).toBe(34)
+    expect(new Set(pairs).size).toBe(24)
   })
 
   it('PJ al corte más partidos pendientes suman 17 para cada equipo', () => {

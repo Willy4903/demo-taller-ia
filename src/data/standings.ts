@@ -1,30 +1,30 @@
 import type { AcumuladoAdjustment, AperturaFinalRow, ClausuraBaseRow } from '../domain/types'
 
 /**
- * Tabla del Clausura 2026 al corte del 1 de noviembre (tras la fecha 13 completa, el
- * Juan Pablo II 2-0 Sport Huancayo del 27 de octubre y el Atlético Grau 1-3 Universitario del 1 de noviembre). Fuentes: Depor (17 equipos),
+ * Tabla del Clausura 2026 al corte del 1 de noviembre (tras la fecha 13 completa, la fecha 14 salvo
+ * Universitario vs Sport Boys, y los cuatro partidos ya jugados de la fecha 15 hasta el 1 de noviembre). Fuentes: Depor (17 equipos),
  * Líbero (UTC) y la web oficial de Universitario. Las correcciones por inconsistencias
  * de una fuente están en discrepancies.ts.
  */
 export const CLAUSURA_BASE: ClausuraBaseRow[] = [
   { teamId: 'sport-huancayo', pj: 14, pg: 9, pe: 1, pp: 4, gf: 23, gc: 17, deduction: 0, publishedPts: 28 },
   { teamId: 'universitario', pj: 14, pg: 9, pe: 3, pp: 2, gf: 31, gc: 20, deduction: 0, publishedPts: 30 },
-  { teamId: 'garcilaso', pj: 13, pg: 8, pe: 1, pp: 4, gf: 24, gc: 12, deduction: 0, publishedPts: 25 },
-  { teamId: 'sporting-cristal', pj: 13, pg: 8, pe: 1, pp: 4, gf: 26, gc: 15, deduction: 0, publishedPts: 25 },
-  { teamId: 'melgar', pj: 13, pg: 7, pe: 4, pp: 2, gf: 24, gc: 14, deduction: 0, publishedPts: 25 },
-  { teamId: 'juan-pablo-ii', pj: 14, pg: 7, pe: 4, pp: 3, gf: 25, gc: 16, deduction: 0, publishedPts: 25 },
-  { teamId: 'alianza-lima', pj: 13, pg: 7, pe: 4, pp: 2, gf: 20, gc: 12, deduction: 0, publishedPts: 25 },
-  { teamId: 'alianza-atletico', pj: 13, pg: 7, pe: 1, pp: 5, gf: 25, gc: 26, deduction: 0, publishedPts: 22 },
-  { teamId: 'cusco-fc', pj: 13, pg: 7, pe: 0, pp: 6, gf: 24, gc: 19, deduction: 0, publishedPts: 21 },
-  { teamId: 'sport-boys', pj: 13, pg: 6, pe: 3, pp: 4, gf: 19, gc: 14, deduction: 0, publishedPts: 21 },
-  { teamId: 'atletico-grau', pj: 14, pg: 5, pe: 3, pp: 6, gf: 17, gc: 20, deduction: 0, publishedPts: 18 },
-  { teamId: 'cienciano', pj: 13, pg: 4, pe: 2, pp: 7, gf: 16, gc: 21, deduction: 0, publishedPts: 14 },
-  { teamId: 'comerciantes-unidos', pj: 13, pg: 3, pe: 4, pp: 6, gf: 23, gc: 24, deduction: 0, publishedPts: 13 },
-  { teamId: 'los-chankas', pj: 13, pg: 3, pe: 3, pp: 7, gf: 14, gc: 29, deduction: 0, publishedPts: 12 },
-  { teamId: 'fc-cajamarca', pj: 13, pg: 3, pe: 2, pp: 8, gf: 20, gc: 29, deduction: 0, publishedPts: 11 },
-  { teamId: 'cd-moquegua', pj: 13, pg: 2, pe: 4, pp: 7, gf: 8, gc: 20, deduction: 0, publishedPts: 10 },
-  { teamId: 'adt', pj: 13, pg: 1, pe: 4, pp: 8, gf: 9, gc: 24, deduction: 0, publishedPts: 7 },
-  { teamId: 'utc', pj: 13, pg: 0, pe: 2, pp: 11, gf: 12, gc: 28, deduction: 5, publishedPts: -3 },
+  { teamId: 'garcilaso', pj: 14, pg: 8, pe: 1, pp: 5, gf: 26, gc: 15, deduction: 0, publishedPts: 25 },
+  { teamId: 'sporting-cristal', pj: 14, pg: 9, pe: 1, pp: 4, gf: 29, gc: 17, deduction: 0, publishedPts: 28 },
+  { teamId: 'melgar', pj: 14, pg: 7, pe: 5, pp: 2, gf: 25, gc: 15, deduction: 0, publishedPts: 26 },
+  { teamId: 'juan-pablo-ii', pj: 15, pg: 7, pe: 4, pp: 4, gf: 25, gc: 17, deduction: 0, publishedPts: 25 },
+  { teamId: 'alianza-lima', pj: 14, pg: 7, pe: 4, pp: 3, gf: 22, gc: 15, deduction: 0, publishedPts: 25 },
+  { teamId: 'alianza-atletico', pj: 15, pg: 9, pe: 1, pp: 5, gf: 29, gc: 28, deduction: 0, publishedPts: 28 },
+  { teamId: 'cusco-fc', pj: 15, pg: 8, pe: 0, pp: 7, gf: 25, gc: 20, deduction: 0, publishedPts: 24 },
+  { teamId: 'sport-boys', pj: 14, pg: 7, pe: 3, pp: 4, gf: 20, gc: 14, deduction: 0, publishedPts: 24 },
+  { teamId: 'atletico-grau', pj: 15, pg: 5, pe: 3, pp: 7, gf: 17, gc: 23, deduction: 0, publishedPts: 18 },
+  { teamId: 'cienciano', pj: 14, pg: 5, pe: 2, pp: 7, gf: 19, gc: 21, deduction: 0, publishedPts: 17 },
+  { teamId: 'comerciantes-unidos', pj: 14, pg: 3, pe: 5, pp: 6, gf: 24, gc: 25, deduction: 0, publishedPts: 14 },
+  { teamId: 'los-chankas', pj: 15, pg: 3, pe: 4, pp: 8, gf: 14, gc: 30, deduction: 0, publishedPts: 13 },
+  { teamId: 'fc-cajamarca', pj: 14, pg: 3, pe: 2, pp: 9, gf: 21, gc: 32, deduction: 0, publishedPts: 11 },
+  { teamId: 'cd-moquegua', pj: 15, pg: 2, pe: 5, pp: 8, gf: 8, gc: 22, deduction: 0, publishedPts: 11 },
+  { teamId: 'adt', pj: 14, pg: 2, pe: 4, pp: 8, gf: 11, gc: 24, deduction: 0, publishedPts: 10 },
+  { teamId: 'utc', pj: 14, pg: 1, pe: 2, pp: 11, gf: 15, gc: 29, deduction: 5, publishedPts: 0 },
 ]
 
 /**

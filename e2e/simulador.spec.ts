@@ -15,7 +15,7 @@ test('muestra las tablas iniciales del corte', async ({ page }) => {
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Universitario')
   await expect(pos(page, 'clausura', 'universitario')).toHaveText('1')
   await expect(pts(page, 'clausura', 'universitario')).toHaveText('30')
-  await expect(page.getByTestId('fixture-count')).toHaveText('Mostrando 34 de 34 partidos')
+  await expect(page.getByTestId('fixture-count')).toHaveText('Mostrando 24 de 24 partidos')
   await page.getByRole('tab', { name: 'Acumulado anual' }).click()
   await expect(pts(page, 'acumulado', 'universitario')).toHaveText('59')
   await expect(pts(page, 'acumulado', 'alianza-lima')).toHaveText('65')
@@ -29,7 +29,7 @@ test('un marcador completo recalcula Clausura y acumulado sin recargar', async (
   await expect(pts(page, 'clausura', 'universitario')).toHaveText('33')
   await page.getByRole('tab', { name: 'Acumulado anual' }).click()
   await expect(pts(page, 'acumulado', 'universitario')).toHaveText('62')
-  await expect(page.getByText('1 de 34')).toBeVisible()
+  await expect(page.getByText('1 de 24')).toBeVisible()
 })
 
 test('un marcador incompleto o inválido no modifica la tabla y muestra el error', async ({ page }) => {
@@ -73,9 +73,9 @@ test('los accesos rápidos fijan victoria local, empate y victoria visitante', a
 
 test('filtra partidos por equipo y por fecha', async ({ page }) => {
   await page.getByLabel('Equipo').selectOption('universitario')
-  await expect(page.getByTestId('fixture-count')).toHaveText('Mostrando 3 de 34 partidos')
+  await expect(page.getByTestId('fixture-count')).toHaveText('Mostrando 3 de 24 partidos')
   await page.getByLabel('Fecha', { exact: true }).selectOption('16')
-  await expect(page.getByTestId('fixture-count')).toHaveText('Mostrando 1 de 34 partidos')
+  await expect(page.getByTestId('fixture-count')).toHaveText('Mostrando 1 de 24 partidos')
   await expect(page.getByTestId('match-c16-09')).toBeVisible()
 })
 
@@ -101,7 +101,7 @@ test('exporta las tablas y los resultados a CSV', async ({ page }) => {
   expect(clausura.text).toContain('posicion,equipo,pj,pg,pe,pp')
   expect(clausura.text).toContain('Universitario,15,10,3,2')
   const acum = await download('CSV acumulado')
-  expect(acum.text).toContain('Alianza Lima,30')
+  expect(acum.text).toContain('Alianza Lima,31')
   const res = await download('CSV resultados')
   expect(res.text).toContain('Universitario,Sport Boys,1,0,simulado')
 })
