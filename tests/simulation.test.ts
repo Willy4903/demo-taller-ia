@@ -11,7 +11,7 @@ describe('motor de simulación', () => {
     expect(t.clausura).toEqual(base.clausura)
     expect(t.acumulado).toEqual(base.acumulado)
     expect(t.simulatedCount).toBe(0)
-    expect(t.pendingCount).toBe(35)
+    expect(t.pendingCount).toBe(34)
   })
 
   it('una victoria agrega tres puntos al ganador en Clausura y acumulado y nada al perdedor', () => {
@@ -24,17 +24,17 @@ describe('motor de simulación', () => {
       expect(rowOf(t[kind], 'universitario').gf).toBe(rowOf(base[kind], 'universitario').gf + 2)
       expect(rowOf(t[kind], 'sport-boys').gc).toBe(rowOf(base[kind], 'sport-boys').gc + 2)
     }
-    expect(rowOf(t.clausura, 'universitario')).toMatchObject({ pg: 9, pe: 3, pp: 2, pj: 14, pts: 30, gd: 11 })
+    expect(rowOf(t.clausura, 'universitario')).toMatchObject({ pg: 10, pe: 3, pp: 2, pj: 15, pts: 33, gd: 13 })
     expect(rowOf(t.clausura, 'sport-boys')).toMatchObject({ pg: 6, pp: 5, pj: 14, pts: 21 })
   })
 
-  it('cuatro victorias de Universitario agregan doce puntos al Clausura y al acumulado', () => {
+  it('tres victorias de Universitario agregan nueve puntos al Clausura y al acumulado', () => {
     const t = computeTables(ds, teamWinsAll(ds, {}, 'universitario'))
-    expect(rowOf(t.clausura, 'universitario').pts).toBe(27 + 12)
-    expect(rowOf(t.acumulado, 'universitario').pts).toBe(56 + 12)
+    expect(rowOf(t.clausura, 'universitario').pts).toBe(30 + 9)
+    expect(rowOf(t.acumulado, 'universitario').pts).toBe(59 + 9)
     expect(rowOf(t.clausura, 'universitario').pj).toBe(17)
     expect(rowOf(t.acumulado, 'universitario').pj).toBe(34)
-    expect(t.simulatedCount).toBe(4)
+    expect(t.simulatedCount).toBe(3)
   })
 
   it('los empates otorgan un punto a cada equipo', () => {
@@ -54,7 +54,7 @@ describe('motor de simulación', () => {
       expect(row.pts - row.basePts).toBe(pending)
       expect(row.pj).toBe(17)
     }
-    expect(t.simulatedCount).toBe(35)
+    expect(t.simulatedCount).toBe(34)
     expect(t.pendingCount).toBe(0)
   })
 
@@ -82,7 +82,7 @@ describe('motor de simulación', () => {
     const t = computeTables(ds, inputs)
     expect(rowOf(t.acumulado, 'alianza-lima').pts).toBe(65 + 3)
     expect(rowOf(t.acumulado, 'sporting-cristal').pts).toBe(44)
-    expect(rowOf(t.acumulado, 'universitario').pts).toBe(56 + 3)
+    expect(rowOf(t.acumulado, 'universitario').pts).toBe(59 + 3)
     expect(rowOf(t.acumulado, 'cienciano').pts).toBe(47 + 1)
     expect(rowOf(t.acumulado, 'sport-huancayo').pts).toBe(44 + 1)
   })
@@ -92,10 +92,10 @@ describe('motor de simulación', () => {
     const once = computeTables(ds, inputsFor({ [fx.id]: ['1', '0'] }))
     const again = computeTables(ds, inputsFor({ [fx.id]: ['1', '0'] }))
     expect(again).toEqual(once)
-    expect(rowOf(once.clausura, 'universitario').pj).toBe(14)
+    expect(rowOf(once.clausura, 'universitario').pj).toBe(15)
     // Recalcular sobre las mismas entradas no acumula: el motor parte siempre del corte.
     const third = computeTables(ds, inputsFor({ [fx.id]: ['1', '0'] }))
-    expect(rowOf(third.acumulado, 'universitario').pts).toBe(59)
+    expect(rowOf(third.acumulado, 'universitario').pts).toBe(62)
   })
 
   it('un marcador de un partido ya jugado o inexistente no modifica las tablas', () => {
@@ -150,8 +150,8 @@ describe('motor de simulación', () => {
 describe('ordenamiento y zonas proyectadas', () => {
   it('las victorias de Universitario lo llevan al primer lugar del Clausura y del acumulado', () => {
     const t = computeTables(ds, teamWinsAll(ds, {}, 'universitario'))
-    expect(rowOf(base.clausura, 'universitario').position).toBe(2)
-    expect(rowOf(t.clausura, 'universitario')).toMatchObject({ position: 1, zone: 'campeon', basePosition: 2 })
+    expect(rowOf(base.clausura, 'universitario').position).toBe(1)
+    expect(rowOf(t.clausura, 'universitario')).toMatchObject({ position: 1, zone: 'campeon', basePosition: 1 })
     expect(rowOf(t.clausura, 'sport-huancayo').position).toBe(2)
     expect(rowOf(t.acumulado, 'universitario')).toMatchObject({ pts: 68, position: 1, basePosition: 2 })
     expect(rowOf(t.acumulado, 'alianza-lima')).toMatchObject({ pts: 65, position: 2, basePosition: 1 })
@@ -218,8 +218,8 @@ describe('ordenamiento y zonas proyectadas', () => {
   it('registra la posición al corte para mostrar cambios', () => {
     const t = computeTables(ds, inputsFor({ [fixtureOf('universitario', 'sport-boys').id]: 'home' }))
     const row = rowOf(t.clausura, 'universitario')
-    expect(row.basePosition).toBe(2)
-    expect(row.basePts).toBe(27)
+    expect(row.basePosition).toBe(1)
+    expect(row.basePts).toBe(30)
   })
 
   it('un empate sin datos de Fair Play ni enfrentamientos se marca como provisional', () => {
@@ -323,8 +323,8 @@ describe('ordenamiento y zonas proyectadas', () => {
     const inputs = teamWinsAll(ds, { [other.id]: { home: '2', away: '2' } }, 'universitario')
     expect(inputs[other.id]).toEqual({ home: '2', away: '2' })
     expect(inputs[fixtureOf('universitario', 'sport-boys').id]).toEqual({ home: '1', away: '0' })
-    expect(inputs[fixtureOf('atletico-grau', 'universitario').id]).toEqual({ home: '0', away: '1' })
-    expect(univFixtures()).toHaveLength(4)
-    expect(Object.keys(inputs)).toHaveLength(5)
+    expect(inputs[fixtureOf('universitario', 'cd-moquegua').id]).toEqual({ home: '1', away: '0' })
+    expect(univFixtures()).toHaveLength(3)
+    expect(Object.keys(inputs)).toHaveLength(4)
   })
 })

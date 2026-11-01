@@ -32,7 +32,6 @@ const FECHA_15 = build(15, [
   ['sport-huancayo', 'melgar', '2026-11-02'],
   ['alianza-lima', 'cienciano', null],
   ['utc', 'garcilaso', '2026-11-02'],
-  ['atletico-grau', 'universitario', '2026-11-01'],
   ['sporting-cristal', 'fc-cajamarca', null],
   ['cd-moquegua', 'los-chankas', '2026-11-01'],
   ['cusco-fc', 'sport-boys', '2026-11-01'],
@@ -62,7 +61,7 @@ const FECHA_17 = build(17, [
   ['juan-pablo-ii', 'garcilaso', null],
 ])
 
-/** 35 partidos pendientes al corte: 8 + 9 + 9 + 9. */
+/** 34 partidos pendientes al corte: 8 + 8 + 9 + 9. */
 export const FIXTURES: Fixture[] = [...FECHA_14, ...FECHA_15, ...FECHA_16, ...FECHA_17]
 
 export const FECHA_WINDOWS: FechaWindow[] = [
@@ -114,5 +113,15 @@ export const PLAYED: PlayedMatch[] = [
     awayGoals: 0,
     sourceIds: ['depor-clausura-f14', 'libero-acum-f14'],
     note: 'Resultado incorporado en las tablas base del corte.',
+  },
+  {
+    fecha: 15,
+    date: '2026-11-01',
+    homeId: 'atletico-grau',
+    awayId: 'universitario',
+    homeGoals: 1,
+    awayGoals: 3,
+    sourceIds: ['infobae-grau-uni'],
+    note: 'Goles: Adrián Fernández; Andy Polo, Lapadula y Alzugaray. Resultado incorporado en las tablas base del corte.',
   },
 ]

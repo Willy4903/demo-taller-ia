@@ -2,18 +2,24 @@ import { describe, expect, it } from 'vitest'
 import { baseRows } from '../src/engine/standings'
 import { ds } from './helpers'
 
-describe('los 35 partidos inicialmente pendientes', () => {
-  it('hay 35 partidos: 8 de la fecha 14 y 9 de cada una de las fechas 15, 16 y 17', () => {
-    expect(ds.fixtures).toHaveLength(35)
+describe('los 34 partidos inicialmente pendientes', () => {
+  it('hay 34 partidos: 8 de las fechas 14 y 15 y 9 de cada una de las fechas 16 y 17', () => {
+    expect(ds.fixtures).toHaveLength(34)
     const byFecha = (n: number) => ds.fixtures.filter((f) => f.fecha === n).length
-    expect([byFecha(14), byFecha(15), byFecha(16), byFecha(17)]).toEqual([8, 9, 9, 9])
-    expect(new Set(ds.fixtures.map((f) => f.id)).size).toBe(35)
+    expect([byFecha(14), byFecha(15), byFecha(16), byFecha(17)]).toEqual([8, 8, 9, 9])
+    expect(new Set(ds.fixtures.map((f) => f.id)).size).toBe(34)
   })
 
   it('el partido ya jugado de la fecha 14 no está en el fixture pendiente', () => {
     expect(ds.fixtures.some((f) => f.homeId === 'juan-pablo-ii' && f.awayId === 'sport-huancayo')).toBe(false)
     const played = ds.played.find((p) => p.homeId === 'juan-pablo-ii' && p.awayId === 'sport-huancayo')
     expect(played).toMatchObject({ fecha: 14, date: '2026-10-27', homeGoals: 2, awayGoals: 0 })
+  })
+
+  it('el partido jugado de la fecha 15 no está en el fixture pendiente', () => {
+    expect(ds.fixtures.some((f) => f.homeId === 'atletico-grau' && f.awayId === 'universitario')).toBe(false)
+    const played = ds.played.find((p) => p.homeId === 'atletico-grau' && p.awayId === 'universitario')
+    expect(played).toMatchObject({ fecha: 15, date: '2026-11-01', homeGoals: 1, awayGoals: 3 })
   })
 
   it('ningún partido jugado figura también como pendiente', () => {
@@ -24,14 +30,16 @@ describe('los 35 partidos inicialmente pendientes', () => {
   })
 
   it('cada equipo juega una vez por fecha y no se repiten cruces', () => {
-    for (const fecha of [15, 16, 17]) {
+    for (const fecha of [16, 17]) {
       const ids = ds.fixtures.filter((f) => f.fecha === fecha).flatMap((f) => [f.homeId, f.awayId])
       expect(new Set(ids).size, `fecha ${fecha}`).toBe(18)
     }
+    const f15 = ds.fixtures.filter((f) => f.fecha === 15).flatMap((f) => [f.homeId, f.awayId])
+    expect(new Set(f15).size).toBe(16)
     const f14 = ds.fixtures.filter((f) => f.fecha === 14).flatMap((f) => [f.homeId, f.awayId])
     expect(new Set(f14).size).toBe(16)
     const pairs = ds.fixtures.map((f) => [f.homeId, f.awayId].sort().join('|'))
-    expect(new Set(pairs).size).toBe(35)
+    expect(new Set(pairs).size).toBe(34)
   })
 
   it('PJ al corte más partidos pendientes suman 17 para cada equipo', () => {
@@ -42,11 +50,10 @@ describe('los 35 partidos inicialmente pendientes', () => {
     }
   })
 
-  it('Universitario tiene cuatro partidos pendientes', () => {
+  it('Universitario tiene tres partidos pendientes', () => {
     const own = ds.fixtures.filter((f) => f.homeId === 'universitario' || f.awayId === 'universitario')
     expect(own.map((f) => `${f.fecha}:${f.homeId}-${f.awayId}`)).toEqual([
       '14:universitario-sport-boys',
-      '15:atletico-grau-universitario',
       '16:universitario-cd-moquegua',
       '17:sport-huancayo-universitario',
     ])

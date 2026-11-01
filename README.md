@@ -1,8 +1,8 @@
 # Simulador Liga 1 Perú 2026 · Universitario de Deportes
 
-Aplicación web para simular los 35 partidos pendientes del Torneo Clausura 2026 (fechas 14 a 17) y recalcular al instante la tabla del Clausura y la tabla acumulada anual, con foco en Universitario de Deportes. Funciona sin backend: React, Vite y TypeScript estricto, con un motor de cálculo independiente de la interfaz.
+Aplicación web para simular los 34 partidos pendientes del Torneo Clausura 2026 (fechas 14 a 17) y recalcular al instante la tabla del Clausura y la tabla acumulada anual, con foco en Universitario de Deportes. Funciona sin backend: React, Vite y TypeScript estricto, con un motor de cálculo independiente de la interfaz.
 
-Estado de los datos: corte del 28 de octubre de 2026, incluyendo Juan Pablo II 2-0 Sport Huancayo del 27 de octubre. Lee la sección Limitaciones antes de usar los números como referencia.
+Estado de los datos: corte del 1 de noviembre de 2026, incluyendo Juan Pablo II 2-0 Sport Huancayo del 27 de octubre y Atlético Grau 1-3 Universitario del 1 de noviembre. Lee la sección Limitaciones antes de usar los números como referencia.
 
 ## Requisitos e instalación
 
@@ -36,7 +36,7 @@ src/
   data/                  Datos deportivos versionados (se editan a mano)
     teams.ts             Los 18 equipos
     standings.ts         Clausura al corte, Apertura final y ajustes del acumulado
-    fixtures.ts          35 partidos pendientes, ventanas por fecha y partidos jugados
+    fixtures.ts          34 partidos pendientes, ventanas por fecha y partidos jugados
     records.ts           Sanciones y discrepancias entre fuentes
     sources.ts           Fuentes con URL y fecha de consulta
     index.ts             Conjunto de datos y versión
@@ -68,7 +68,7 @@ e2e/                     Playwright
 
 Cada dato tiene su fuente en `src/data/sources.ts` y la aplicación las lista con enlace en la sección Fuentes y trazabilidad, junto con las sanciones y las discrepancias entre fuentes y la decisión tomada. Fuentes principales: liga1.pe (fixture y reglamento), Depor, Líbero, Infobae, La República, RPP, Fútbol Peruano (tabla del Apertura), la web oficial de Universitario y Wikipedia.
 
-Controles de coherencia que ejecutan las pruebas: PJ = PG + PE + PP, puntos = 3 PG + PE − sanción, goles a favor = goles en contra, victorias = derrotas, 118 partidos jugados al corte, PJ + pendientes = 17 en cada equipo y el orden del acumulado igual al publicado.
+Controles de coherencia que ejecutan las pruebas: PJ = PG + PE + PP, puntos = 3 PG + PE − sanción, goles a favor = goles en contra, victorias = derrotas, 119 partidos jugados al corte, PJ + pendientes = 17 en cada equipo y el orden del acumulado igual al publicado.
 
 ## Actualizar los datos durante el torneo
 
@@ -76,7 +76,7 @@ Controles de coherencia que ejecutan las pruebas: PJ = PG + PE + PP, puntos = 3 
 2. Quitar el partido de `FIXTURES` en `src/data/fixtures.ts` y agregarlo a `PLAYED`.
 3. Actualizar `cutoff`, `updatedAt` y `version` en `src/data/index.ts`. Cambiar `version` descarta las simulaciones guardadas en los navegadores.
 4. Registrar sanciones nuevas en `records.ts` y los ajustes en `ACUMULADO_ADJUSTMENTS`.
-5. Ejecutar `npm run check`. Las pruebas de datos fallan si las tablas dejan de cuadrar. Las pruebas de la simulación asumen el corte del 28 de octubre (35 partidos) y deben actualizarse al cambiar el corte.
+5. Ejecutar `npm run check`. Las pruebas de datos fallan si las tablas dejan de cuadrar. Las pruebas de la simulación asumen el corte del 1 de noviembre (34 partidos) y deben actualizarse al cambiar el corte.
 
 ## Despliegue en GitHub Pages
 

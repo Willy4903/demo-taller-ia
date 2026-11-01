@@ -1,14 +1,14 @@
 import type { AcumuladoAdjustment, AperturaFinalRow, ClausuraBaseRow } from '../domain/types'
 
 /**
- * Tabla del Clausura 2026 al corte del 28 de octubre (tras la fecha 13 completa y el
- * Juan Pablo II 2-0 Sport Huancayo del 27 de octubre). Fuentes: Depor (17 equipos),
+ * Tabla del Clausura 2026 al corte del 1 de noviembre (tras la fecha 13 completa, el
+ * Juan Pablo II 2-0 Sport Huancayo del 27 de octubre y el Atlético Grau 1-3 Universitario del 1 de noviembre). Fuentes: Depor (17 equipos),
  * Líbero (UTC) y la web oficial de Universitario. Las correcciones por inconsistencias
  * de una fuente están en discrepancies.ts.
  */
 export const CLAUSURA_BASE: ClausuraBaseRow[] = [
   { teamId: 'sport-huancayo', pj: 14, pg: 9, pe: 1, pp: 4, gf: 23, gc: 17, deduction: 0, publishedPts: 28 },
-  { teamId: 'universitario', pj: 13, pg: 8, pe: 3, pp: 2, gf: 28, gc: 19, deduction: 0, publishedPts: 27 },
+  { teamId: 'universitario', pj: 14, pg: 9, pe: 3, pp: 2, gf: 31, gc: 20, deduction: 0, publishedPts: 30 },
   { teamId: 'garcilaso', pj: 13, pg: 8, pe: 1, pp: 4, gf: 24, gc: 12, deduction: 0, publishedPts: 25 },
   { teamId: 'sporting-cristal', pj: 13, pg: 8, pe: 1, pp: 4, gf: 26, gc: 15, deduction: 0, publishedPts: 25 },
   { teamId: 'melgar', pj: 13, pg: 7, pe: 4, pp: 2, gf: 24, gc: 14, deduction: 0, publishedPts: 25 },
@@ -17,7 +17,7 @@ export const CLAUSURA_BASE: ClausuraBaseRow[] = [
   { teamId: 'alianza-atletico', pj: 13, pg: 7, pe: 1, pp: 5, gf: 25, gc: 26, deduction: 0, publishedPts: 22 },
   { teamId: 'cusco-fc', pj: 13, pg: 7, pe: 0, pp: 6, gf: 24, gc: 19, deduction: 0, publishedPts: 21 },
   { teamId: 'sport-boys', pj: 13, pg: 6, pe: 3, pp: 4, gf: 19, gc: 14, deduction: 0, publishedPts: 21 },
-  { teamId: 'atletico-grau', pj: 13, pg: 5, pe: 3, pp: 5, gf: 16, gc: 17, deduction: 0, publishedPts: 18 },
+  { teamId: 'atletico-grau', pj: 14, pg: 5, pe: 3, pp: 6, gf: 17, gc: 20, deduction: 0, publishedPts: 18 },
   { teamId: 'cienciano', pj: 13, pg: 4, pe: 2, pp: 7, gf: 16, gc: 21, deduction: 0, publishedPts: 14 },
   { teamId: 'comerciantes-unidos', pj: 13, pg: 3, pe: 4, pp: 6, gf: 23, gc: 24, deduction: 0, publishedPts: 13 },
   { teamId: 'los-chankas', pj: 13, pg: 3, pe: 3, pp: 7, gf: 14, gc: 29, deduction: 0, publishedPts: 12 },

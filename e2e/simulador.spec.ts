@@ -13,35 +13,35 @@ test.beforeEach(async ({ page }) => {
 
 test('muestra las tablas iniciales del corte', async ({ page }) => {
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Universitario')
-  await expect(pos(page, 'clausura', 'universitario')).toHaveText('2')
-  await expect(pts(page, 'clausura', 'universitario')).toHaveText('27')
-  await expect(page.getByTestId('fixture-count')).toHaveText('Mostrando 35 de 35 partidos')
+  await expect(pos(page, 'clausura', 'universitario')).toHaveText('1')
+  await expect(pts(page, 'clausura', 'universitario')).toHaveText('30')
+  await expect(page.getByTestId('fixture-count')).toHaveText('Mostrando 34 de 34 partidos')
   await page.getByRole('tab', { name: 'Acumulado anual' }).click()
-  await expect(pts(page, 'acumulado', 'universitario')).toHaveText('56')
+  await expect(pts(page, 'acumulado', 'universitario')).toHaveText('59')
   await expect(pts(page, 'acumulado', 'alianza-lima')).toHaveText('65')
   await expect(page.getByTestId('row-acumulado-utc')).toHaveAttribute('data-zone', 'descenso')
 })
 
 test('un marcador completo recalcula Clausura y acumulado sin recargar', async ({ page }) => {
   await page.getByTestId('home-c14-08').fill('2')
-  await expect(pts(page, 'clausura', 'universitario')).toHaveText('27')
-  await page.getByTestId('away-c14-08').fill('0')
   await expect(pts(page, 'clausura', 'universitario')).toHaveText('30')
+  await page.getByTestId('away-c14-08').fill('0')
+  await expect(pts(page, 'clausura', 'universitario')).toHaveText('33')
   await page.getByRole('tab', { name: 'Acumulado anual' }).click()
-  await expect(pts(page, 'acumulado', 'universitario')).toHaveText('59')
-  await expect(page.getByText('1 de 35')).toBeVisible()
+  await expect(pts(page, 'acumulado', 'universitario')).toHaveText('62')
+  await expect(page.getByText('1 de 34')).toBeVisible()
 })
 
 test('un marcador incompleto o inválido no modifica la tabla y muestra el error', async ({ page }) => {
   await page.getByTestId('home-c14-08').fill('3')
-  await expect(pts(page, 'clausura', 'universitario')).toHaveText('27')
+  await expect(pts(page, 'clausura', 'universitario')).toHaveText('30')
   await page.getByTestId('away-c14-08').fill('x')
   await expect(page.getByTestId('match-c14-08').getByRole('alert')).toContainText('número entero')
-  await expect(pts(page, 'clausura', 'universitario')).toHaveText('27')
+  await expect(pts(page, 'clausura', 'universitario')).toHaveText('30')
   await expect(page.getByTestId('away-c14-08')).toHaveAttribute('aria-invalid', 'true')
 })
 
-test('Universitario gana todos sus partidos: suma 12 puntos y sube a la cima del Clausura', async ({ page }) => {
+test('Universitario gana todos sus partidos: suma 9 puntos y sube a la cima del Clausura', async ({ page }) => {
   await page.getByRole('button', { name: 'Universitario gana todos' }).click()
   await expect(pts(page, 'clausura', 'universitario')).toHaveText('39')
   await expect(pos(page, 'clausura', 'universitario')).toHaveText('1')
@@ -53,11 +53,11 @@ test('Universitario gana todos sus partidos: suma 12 puntos y sube a la cima del
 
 test('todos empatan y restablecer devuelve las tablas iniciales', async ({ page }) => {
   await page.getByRole('button', { name: 'Todos empatan' }).click()
-  await expect(pts(page, 'clausura', 'universitario')).toHaveText('31')
+  await expect(pts(page, 'clausura', 'universitario')).toHaveText('33')
   await expect(page.getByTestId('fixture-count')).toBeVisible()
   await page.getByTestId('reset').click()
-  await expect(pts(page, 'clausura', 'universitario')).toHaveText('27')
-  await expect(pos(page, 'clausura', 'universitario')).toHaveText('2')
+  await expect(pts(page, 'clausura', 'universitario')).toHaveText('30')
+  await expect(pos(page, 'clausura', 'universitario')).toHaveText('1')
   await expect(page.getByTestId('home-c14-08')).toHaveValue('')
 })
 
@@ -66,24 +66,24 @@ test('los accesos rápidos fijan victoria local, empate y victoria visitante', a
   await expect(page.getByTestId('home-c14-08')).toHaveValue('1')
   await expect(page.getByTestId('away-c14-08')).toHaveValue('0')
   await page.getByTestId('away-btn-c14-08').click()
-  await expect(pts(page, 'clausura', 'universitario')).toHaveText('27')
+  await expect(pts(page, 'clausura', 'universitario')).toHaveText('30')
   await page.getByTestId('draw-btn-c14-08').click()
-  await expect(pts(page, 'clausura', 'universitario')).toHaveText('28')
+  await expect(pts(page, 'clausura', 'universitario')).toHaveText('31')
 })
 
 test('filtra partidos por equipo y por fecha', async ({ page }) => {
   await page.getByLabel('Equipo').selectOption('universitario')
-  await expect(page.getByTestId('fixture-count')).toHaveText('Mostrando 4 de 35 partidos')
+  await expect(page.getByTestId('fixture-count')).toHaveText('Mostrando 3 de 34 partidos')
   await page.getByLabel('Fecha', { exact: true }).selectOption('16')
-  await expect(page.getByTestId('fixture-count')).toHaveText('Mostrando 1 de 35 partidos')
+  await expect(page.getByTestId('fixture-count')).toHaveText('Mostrando 1 de 34 partidos')
   await expect(page.getByTestId('match-c16-09')).toBeVisible()
 })
 
 test('las simulaciones persisten al recargar la página', async ({ page }) => {
   await page.getByTestId('home-btn-c14-08').click()
-  await expect(pts(page, 'clausura', 'universitario')).toHaveText('30')
+  await expect(pts(page, 'clausura', 'universitario')).toHaveText('33')
   await page.reload()
-  await expect(pts(page, 'clausura', 'universitario')).toHaveText('30')
+  await expect(pts(page, 'clausura', 'universitario')).toHaveText('33')
   await expect(page.getByTestId('home-c14-08')).toHaveValue('1')
 })
 
@@ -99,7 +99,7 @@ test('exporta las tablas y los resultados a CSV', async ({ page }) => {
   const clausura = await download('CSV Clausura')
   expect(clausura.filename).toBe('tabla_clausura_2026.csv')
   expect(clausura.text).toContain('posicion,equipo,pj,pg,pe,pp')
-  expect(clausura.text).toContain('Universitario,14,9,3,2')
+  expect(clausura.text).toContain('Universitario,15,10,3,2')
   const acum = await download('CSV acumulado')
   expect(acum.text).toContain('Alianza Lima,30')
   const res = await download('CSV resultados')

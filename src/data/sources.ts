@@ -117,6 +117,14 @@ export const SOURCES: SourceRef[] = [
     access: 'resumen',
   },
   {
+    id: 'infobae-grau-uni',
+    label: 'Infobae: Universitario 3-1 Atlético Grau, fecha 15 del Clausura',
+    url: 'https://www.infobae.com/peru/deportes/2026/11/01/universitario-vs-atletico-grau-en-vivo-hoy-minuto-a-minuto-partido-trujillo-fecha-15-torneo-clausura-liga-1-2026-goles-resumen-resultado/',
+    accessed: '2026-11-01',
+    access: 'resumen',
+    note: 'Marcador final 3-1 en el estadio Mansiche de Trujillo; contrastado con El Comercio y DSN.',
+  },
+  {
     id: 'atv-f16',
     label: 'ATV: programación de la fecha 16 del Clausura',
     url: 'https://www.atv.pe/noticia/programacion-fecha-16-liga-1-2026-clausura/',

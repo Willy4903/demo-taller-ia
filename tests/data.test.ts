@@ -28,8 +28,8 @@ describe('datos iniciales de los 18 equipos', () => {
     const sum = (f: (r: (typeof ds.clausuraBase)[number]) => number) => ds.clausuraBase.reduce((a, r) => a + f(r), 0)
     expect(sum((r) => r.gf)).toBe(sum((r) => r.gc))
     expect(sum((r) => r.pg)).toBe(sum((r) => r.pp))
-    // 13 fechas de 9 partidos más Juan Pablo II 2-0 Sport Huancayo: 118 partidos, 236 PJ.
-    expect(sum((r) => r.pj)).toBe(2 * (13 * 9 + 1))
+    // 13 fechas de 9 partidos más Juan Pablo II 2-0 Sport Huancayo y Atlético Grau 1-3 Universitario: 119 partidos, 238 PJ.
+    expect(sum((r) => r.pj)).toBe(2 * (13 * 9 + 2))
   })
 
   it('la tabla del Apertura está balanceada y todos jugaron 17', () => {
@@ -66,10 +66,10 @@ describe('datos iniciales de los 18 equipos', () => {
 
   it('el corte coincide con los datos publicados de los equipos clave', () => {
     const t = baseTables(ds)
-    expect(rowOf(t.clausura, 'sport-huancayo')).toMatchObject({ position: 1, pts: 28, pj: 14 })
-    expect(rowOf(t.clausura, 'universitario')).toMatchObject({ position: 2, pts: 27, gf: 28, gc: 19, gd: 9 })
+    expect(rowOf(t.clausura, 'sport-huancayo')).toMatchObject({ position: 2, pts: 28, pj: 14 })
+    expect(rowOf(t.clausura, 'universitario')).toMatchObject({ position: 1, pts: 30, pj: 14, gf: 31, gc: 20, gd: 11 })
     expect(rowOf(t.acumulado, 'alianza-lima')).toMatchObject({ position: 1, pts: 65 })
-    expect(rowOf(t.acumulado, 'universitario')).toMatchObject({ position: 2, pts: 56 })
+    expect(rowOf(t.acumulado, 'universitario')).toMatchObject({ position: 2, pts: 59 })
     expect(rowOf(t.acumulado, 'utc')).toMatchObject({ position: 18, pts: 10 })
     expect(rowOf(t.acumulado, 'adt')).toMatchObject({ position: 17, pts: 26 })
   })
@@ -77,8 +77,8 @@ describe('datos iniciales de los 18 equipos', () => {
   it('el orden del Clausura al corte sigue puntos, diferencia de goles y goles a favor', () => {
     const t = baseTables(ds)
     expect(t.clausura.rows.map((r) => r.teamId).slice(0, 7)).toEqual([
-      'sport-huancayo',
       'universitario',
+      'sport-huancayo',
       'garcilaso',
       'sporting-cristal',
       'melgar',
