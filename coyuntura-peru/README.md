@@ -31,6 +31,10 @@ El sitio se sirve desde la rama `gh-pages` (Settings → Pages → Deploy from a
 
 El flujo `Actualizar Contexto Perú` corre a las 08:00 y 23:00 (hora de Lima), hace commit de los datos en `main` e invoca `CI y despliegue` para republicar. Para agregar o quitar medios, edita `FEEDS`. También puede lanzarse a mano desde la pestaña *Actions*.
 
+## Talleres de IA
+
+`data/talleres.js` controla la promoción de los talleres: autor, lista de talleres, enlaces de contacto (WhatsApp, TikTok, web) y "otras páginas". Se muestra en la franja del inicio, en la sección Inteligencia artificial, en la Ruta, en el pie y en la página `#/talleres`. Para agregar precios o fechas, completa el campo `detalle` de cada taller.
+
 ## Contenido editorial
 
 `data/editorial.js` contiene los insights, el glosario, las misiones y el directorio de fuentes. Cada cifra lleva fuente enlazada y fecha de corte (`corte`). **Revisa y actualiza ese archivo** cuando cambie la coyuntura: es la parte editorial, no se genera sola.

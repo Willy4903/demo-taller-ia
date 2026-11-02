@@ -425,7 +425,7 @@ a.s:hover h2,a.s:hover h3{color:var(--gold-t)}
   .tips{grid-template-columns:repeat(2,minmax(0,1fr))}
   .kpis{grid-template-columns:repeat(4,minmax(0,1fr))}
   #gl-l{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .foot-in{grid-template-columns:1.4fr 1fr 1fr}
+  .foot-in{grid-template-columns:1.4fr 1fr 1fr 1fr}
   .ins-g{grid-template-columns:repeat(4,minmax(0,1fr))}
   .sheet{bottom:0}
 }
@@ -535,3 +535,43 @@ a.s:hover h2,a.s:hover h3{color:var(--gold-t)}
 @media (min-width:720px){.dp-b{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (min-width:1080px){.dp-b{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media (max-width:420px){.dp-b{grid-template-columns:minmax(0,1fr)}.flip.w2{grid-column:auto}}
+
+/* ───── Talleres de IA ───── */
+.mnav a.nav-talleres{color:var(--gold-t)}
+.mnav a.nav-talleres::after{background:var(--gold-t)}
+.promo{display:grid;gap:14px;align-items:center;margin:16px 0;padding:18px;border-radius:var(--R);border:1px solid color-mix(in srgb,var(--gold) 45%,var(--border));background:linear-gradient(100deg,color-mix(in srgb,var(--gold) 16%,var(--card)),var(--card) 70%)}
+.promo h2{font-size:1.3rem;margin:2px 0 4px}
+.promo p{margin:0;color:var(--tx2)}
+.promo .po-eye{margin:0 0 6px;color:var(--gold-t)}
+.promo .po-cta{margin-top:0}
+@media (min-width:720px){.promo{grid-template-columns:minmax(0,1fr) auto;padding:20px 24px}}
+.promo-ia{margin:22px 0;padding:18px;border-radius:var(--R);border:1px solid var(--border);background:var(--card)}
+.promo-ia h2{font-size:1.25rem;margin:0 0 4px}
+.promo-ia>p{margin:0;color:var(--tx2)}
+.t-g{display:grid;gap:12px;grid-template-columns:minmax(0,1fr);margin:14px 0}
+@media (min-width:720px){.t-g{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.t-card{display:flex;flex-direction:column;gap:6px;padding:16px;border-radius:var(--R);border:1px solid var(--border);border-top:3px solid var(--gold);background:var(--card2)}
+.t-card h3{font-size:1.05rem;margin:2px 0 0}
+.t-card small{color:var(--tx3);font-family:var(--mono);font-size:.7rem}
+.t-card p{margin:0;color:var(--tx2);font-size:.9rem;flex:1}
+.t-card .t-det{flex:none;color:var(--tx3);font-size:.82rem}
+.t-card .btn{margin-top:8px;min-height:40px}
+.t-ic{font-size:1.5rem;line-height:1}
+.t-mas{margin:4px 0 0}
+.t-mas a{font-size:.85rem;font-weight:700;color:var(--gold-t)}
+.t-mas a:hover{text-decoration:underline}
+.autor{margin:16px 0}
+.autor .a-n{display:block;font-size:1.1rem}
+.autor small{display:block;color:var(--tx3);margin:2px 0 8px}
+.autor p{margin:0;color:var(--tx2)}
+.t-links{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+details.mas{margin-top:10px}
+details.mas>summary{list-style:none;cursor:pointer;width:max-content}
+details.mas>summary::-webkit-details-marker{display:none}
+details.mas[open]>summary{margin-bottom:10px}
+
+/* Etiqueta de confianza: se muestra en las notas y análisis, no en el panel del inicio */
+.bento .conf{display:none}
+.f-aut{color:var(--tx3)}
+.f-lk a{color:var(--gold-t);font-weight:600}
+.f-lk a:hover{text-decoration:underline}
