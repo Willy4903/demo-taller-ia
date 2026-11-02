@@ -140,10 +140,23 @@
   function radarHTML() { var r = radar(); return r.length ? r.map(function (x, i) { return '<div class="num"><i>' + (i + 1) + "</i><div><b>" + esc(x.t) + "</b><small>" + x.n + (x.n === 1 ? " nota" : " notas") + "</small></div></div>"; }).join("") : '<div class="vacio">Aún no hay suficientes notas.</div>'; }
   function rail() { return '<section><h3 class="rt">Radar de temas</h3>' + radarHTML() + '</section><section><h3 class="rt">Término del día</h3>' + glosarioDia() + "</section>"; }
 
+  /* ───── sección exclusiva: El Niño ───── */
+  function ninoBanner() {
+    var n = ED.nino; if (!n) return "";
+    return '<a class="nino-b fade" href="#/s/nino"><span class="nb-i" aria-hidden="true">🌊</span><span class="nb-t"><b>El Niño costero</b><small>' + esc(n.estado[0].k) + ": " + esc(n.estado[0].v) + " · " + esc(n.estado[2].v) + '</small></span><span class="nb-g">Ver la sección →</span></a>';
+  }
+  function ninoPanel() {
+    var n = ED.nino; if (!n) return "";
+    var h = '<div class="panel nino-p"><h3 class="pt">Estado actual · ENFEN</h3><div class="nk">' + n.estado.map(function (x) { return '<div class="nk-i"><span class="k">' + esc(x.k) + '</span><span class="v">' + esc(x.v) + "</span><small>" + esc(x.n) + "</small></div>"; }).join("") + "</div>";
+    h += '<p class="mono" style="margin:12px 0 0;font-size:.7rem;color:var(--tx3)">' + esc(n.corte) + "</p></div>";
+    h += '<div class="panel nino-p"><h3 class="pt">Cómo ha cambiado el pronóstico</h3><ol class="tl nl">' + n.linea.map(function (x) { return '<li class="hecho"><span class="nodo">●</span><div class="tx"><b>' + esc(x.c) + (x.f ? " · " + esc(x.f) : "") + "</b><p>" + esc(x.x) + '</p><a class="lk" href="' + safeUrl(x.u) + '" target="_blank" rel="noopener noreferrer">Ver comunicado o fuente ↗</a></div></li>'; }).join("") + "</ol></div>";
+    return h;
+  }
+
   /* ───── VISTAS ───── */
   function vistaHome() {
     var principal = INS.filter(function (i) { return i.id === "politica"; })[0] || INS[0], otros = INS.filter(function (i) { return i !== principal; });
-    var h = '<div class="bento fade"><div class="b1 panel">' + (HILO ? '<a class="panorama" href="#/a/hilo"><b>Panorama</b><span>' + esc(HILO.titulo) + "</span></a>" : "") + (principal ? leadCard(principal) : "") + '<div class="minis">' + otros.slice(0, 6).map(card).join("") + "</div></div>";
+    var h = ninoBanner() + '<div class="bento fade"><div class="b1 panel">' + (HILO ? '<a class="panorama" href="#/a/hilo"><b>Panorama</b><span>' + esc(HILO.titulo) + "</span></a>" : "") + (principal ? leadCard(principal) : "") + '<div class="minis">' + otros.slice(0, 6).map(card).join("") + "</div></div>";
     h += '<div class="panel"><h3 class="pt">La Ruta de Aprendizaje <a href="#/ruta">Ver todo</a></h3>' + rutaMini() + "</div>";
     h += '<div class="stack"><div class="panel"><h3 class="pt">Indicadores <a href="#/estadisticas">Estadísticas</a></h3>' + indicadores(false) + '</div><div class="panel"><h3 class="pt">Glosario cívico</h3>' + glosarioDia() + '</div><div class="panel"><h3 class="pt">Radar de temas</h3>' + radarHTML() + "</div></div></div>";
     h += sh("Últimas notas de los medios", "var(--gold)", "#/historial", "Historial") + '<div class="chips" id="f-chips"></div><div class="lista2" id="f-lista"></div><p style="text-align:center;margin-top:14px" id="f-mas"></p>';
@@ -175,6 +188,7 @@
     var terms = (s.terminos || []).filter(function (t) { return GLOS[t]; });
     var h = '<div class="fade"><div class="shead" style="--c:' + s.color + '"><h1>' + s.icono + " " + esc(s.nombre) + "</h1><p>" + esc(s.lema) + '</p></div><div class="cols sec-cols"><div>';
     var inss = INS.filter(function (i) { return i.sector === id; });
+    if (id === "nino") h += ninoPanel();
     h += '<div class="panel">' + (ins ? leadCard(ins) : "") + "</div>";
     if (inss.length > 1) h += '<div class="minis">' + inss.slice(1).map(card).join("") + "</div>";
     h += '<div class="entender"><h2>Para entender ' + esc(s.nombre.toLowerCase()) + '</h2><ul>' + s.esencial.map(function (e) { return "<li>" + gl(e) + "</li>"; }).join("") + "</ul></div>";
