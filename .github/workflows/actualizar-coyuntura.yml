@@ -27,6 +27,7 @@ concurrency:
 jobs:
   actualizar:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
@@ -36,8 +37,16 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Pruebas del actualizador
+        run: python -m unittest discover -s coyuntura-peru/scripts -p "test_*.py"
+
+      # Si ningún feed responde o el resultado no pasa las validaciones, el script termina con error
+      # y los datos anteriores quedan intactos (no se guarda ni se publica nada).
       - name: Leer feeds y regenerar datos
         run: python coyuntura-peru/scripts/actualizar_noticias.py
+
+      - name: Validar contenido
+        run: python coyuntura-peru/scripts/validar_contenido.py
 
       - name: Guardar cambios en main
         id: guardar
@@ -50,7 +59,11 @@ jobs:
             echo "Sin cambios en los datos."
           else
             git commit -m "chore(coyuntura): actualización automática $(TZ=America/Lima date '+%Y-%m-%d %H:%M') (hora de Lima)"
-            git push origin main
+            for intento in 1 2 3; do
+              git pull --rebase origin main && git push origin main && break
+              echo "Intento $intento fallido; se reintenta"; sleep 5
+            done
+            git diff --quiet origin/main HEAD || { echo "No se pudo guardar en main" >&2; exit 1; }
             echo "cambios=si" >> "$GITHUB_OUTPUT"
           fi
 
@@ -60,3 +73,12 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run ci-deploy.yml --ref main
+
+      - name: Registrar fallo
+        if: failure()
+        run: |
+          {
+            echo "### La actualización falló"
+            echo
+            echo "Se conservaron los datos anteriores: no se guardó ni se publicó nada nuevo. Revisa los pasos de arriba para ver la causa."
+          } >> "$GITHUB_STEP_SUMMARY"

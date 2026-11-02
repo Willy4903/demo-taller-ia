@@ -28,6 +28,9 @@ ARCHIVO_EDITORIAL = os.path.join(DATOS, "editorial.js")
 MAX_POR_SECTOR = 24
 MAX_POR_SECTOR_ESPECIAL = {"ia": 40}  # IA cubre Perú y mundo
 MAX_POR_FEED = 15
+SECTORES = {"politica", "economia", "salud", "nino", "tecnologia", "ia", "deporte", "investigacion", "coyuntura", "mundo"}
+UMBRAL_REDUCCION = 0.5  # no se publica si las notas caen por debajo de esta fracción de las anteriores
+MAX_REGISTRO = 30
 DIAS_MAXIMOS = 30
 TIMEOUT = 20
 MAX_BYTES = 3 * 1024 * 1024
@@ -68,6 +71,35 @@ FEEDS = [
     ("Google Noticias · IA en el mundo", ["https://news.google.com/rss/search?q=%22inteligencia+artificial%22+(OpenAI+OR+Anthropic+OR+Google+OR+regulaci%C3%B3n+OR+NVIDIA)+when:7d&hl=es-419&gl=US&ceid=US:es-419"], "internacional", "ia"),
 ]
 
+# Medios con feed directo caído: se prueban endpoints alternativos y, si ninguno responde, un respaldo
+# en Google Noticias restringido al dominio del medio. Esas notas se marcan como "agregador" y nunca
+# se presentan como obtenidas directamente del medio.
+ALTERNATIVAS = {
+    "OjoPúblico": ["https://ojo-publico.com/rss", "https://ojo-publico.com/rss.xml", "https://ojo-publico.com/feed", "https://ojo-publico.com/feed/"],
+    "Convoca": ["https://convoca.pe/rss.xml", "https://convoca.pe/rss", "https://convoca.pe/feed/", "https://convoca.pe/feed"],
+    "Hildebrandt en sus trece": ["https://www.hildebrandtensustrece.com/feed/", "https://hildebrandtensustrece.com/feed/", "https://www.hildebrandtensustrece.com/rss", "https://hildebrandtensustrece.com/rss.xml"],
+    "La República": ["https://larepublica.pe/rss/", "https://larepublica.pe/rss", "https://larepublica.pe/arc/outboundfeeds/rss/?outputType=xml", "https://larepublica.pe/feed/"],
+    "Expreso": ["https://www.expreso.com.pe/feed/", "https://www.expreso.com.pe/rss", "https://www.expreso.com.pe/arc/outboundfeeds/rss/?outputType=xml"],
+}
+RESPALDO_DOMINIO = {
+    "OjoPúblico": "ojo-publico.com",
+    "Convoca": "convoca.pe",
+    "Hildebrandt en sus trece": "hildebrandtensustrece.com",
+    "La República": "larepublica.pe",
+    "Expreso": "expreso.com.pe",
+}
+GENERO_OPINION = re.compile(r"/(opinion|opinión|columna|columnas|columnistas|editorial|blog|blogs|tribuna)(/|-|$)", re.I)
+
+
+def url_respaldo(dominio):
+    return ("https://news.google.com/rss/search?q=site:" + dominio + "+when:7d&hl=es-419&gl=PE&ceid=PE:es-419")
+
+
+def genero_de(url, titulo=""):
+    """'opinion' si la dirección indica una columna, editorial o blog; 'noticia' en los demás casos."""
+    return "opinion" if GENERO_OPINION.search(url or "") else "noticia"
+
+
 CLAVES = {
     "politica": ["congreso", "senad", "diputad", "president", "ministr", "gabinete", "premier", "jne", "onpe", "eleccion",
                  "partido", "fuerza popular", "vacancia", "censura", "reforma", "constitucion", "bancada", "ejecutivo",
@@ -90,7 +122,7 @@ CLAVES = {
     "investigacion": ["investigacion", "fiscalia", "fiscal", "corrupcion", "reportaje", "lavado", "organizacion criminal",
                       "colaboracion eficaz", "allanamiento", "prision preventiva", "audios", "denuncia", "contraloria",
                       "extorsion", "crimen organizado", "narcotrafico", "sicari", "caso "],
-    "coyuntura": ["protesta", "paro ", "seguridad ciudadana", "huaico", "lluvia", "emergencia", "transporte",
+    "coyuntura": ["protesta", "paro ", "seguridad ciudadana", "huaico", "temblor", "terremoto", "lluvia", "emergencia", "transporte",
                   "marcha", "inseguridad", "delincuencia", "clima", "sismo", "incendio", "apagon"],
 }
 
@@ -387,6 +419,7 @@ def parsear_feed(datos, nombre, tipo, sector_def):
             "fecha": fecha.strftime("%Y-%m-%dT%H:%M:%SZ") if fecha else None,
             "tipo": tipo,
             "ambito": "mundo" if tipo == "internacional" else "peru",
+            "genero": genero_de(url, titulo),
             "imagen": extraer_imagen(e),
         }
         salida.append(item)
@@ -403,6 +436,10 @@ def clasificar(titulo, resumen, sector_def):
     mejor = max(puntos, key=lambda s: puntos[s])
     if puntos[mejor] == 0:
         return sector_def or "coyuntura"
+    if sector_def and puntos[mejor] < 2 and puntos.get(sector_def, 0) > 0:
+        return sector_def
+    if sector_def and puntos[mejor] < 2 and sector_def in ("economia",):
+        return "coyuntura"  # un medio económico publica de todo: sin señales claras no se fuerza el sector
     if sector_def and puntos[mejor] < 2:
         return sector_def
     return mejor
@@ -426,8 +463,17 @@ def clave_orden(i):
     return i.get("fecha") or "0000"
 
 
+def es_antiguo(it, ahora=None):
+    f = parsear_fecha(it.get("fecha") or "")
+    if not f:
+        return False
+    ahora = ahora or dt.datetime.now(dt.timezone.utc)
+    return f < ahora - dt.timedelta(days=DIAS_MAXIMOS)
+
+
 def fusionar(nuevos, previos):
     vistos_url, vistos_tit, todos = set(), set(), []
+    previos = [i for i in previos if not es_antiguo(i)]
     for it in sorted(nuevos, key=clave_orden, reverse=True) + sorted(previos, key=clave_orden, reverse=True):
         u, t = url_canonica(it["url"]), norm(it["titulo"])[:90]
         if u in vistos_url or t in vistos_tit:
@@ -444,55 +490,212 @@ def fusionar(nuevos, previos):
     return sorted(final, key=clave_orden, reverse=True)
 
 
+def ahora_iso():
+    return dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
 def obtener_feed(nombre, urls, tipo, sector_def):
+    """Devuelve (items, error, url_usada). Prueba cada URL en orden."""
     ultimo = "sin intentos"
     for u in urls:
         try:
-            return parsear_feed(descargar(u), nombre, tipo, sector_def), None
+            items = parsear_feed(descargar(u), nombre, tipo, sector_def)
+            if not items:
+                ultimo = "respuesta válida pero sin notas recientes"
+                continue
+            return items, None, u
         except Exception as ex:  # noqa: BLE001 - cualquier fallo de un feed no debe detener el resto
             ultimo = f"{type(ex).__name__}: {str(ex)[:120]}"
-    return None, ultimo
+    return None, ultimo, None
+
+
+def obtener_con_respaldo(nombre, urls, tipo, sector_def):
+    """Feed directo (con alternativas) y, si falla, respaldo identificado en Google Noticias."""
+    candidatas = list(urls) + [u for u in ALTERNATIVAS.get(nombre, []) if u not in urls]
+    items, err, usada = obtener_feed(nombre, candidatas, tipo, sector_def)
+    if items is not None:
+        for it in items:
+            it["procedencia"] = "directa"
+        return items, {"ok": True, "procedencia": "directa", "url": usada}
+    dominio = RESPALDO_DOMINIO.get(nombre)
+    if dominio:
+        gn, err2, usada2 = obtener_feed("Google Noticias · " + nombre, [url_respaldo(dominio)], tipo, sector_def)
+        if gn is not None:
+            propios = []
+            for it in gn:
+                # el nombre real del medio llega en <source>; se descartan notas de otros dominios
+                propio, ajeno = norm(nombre).replace(" ", ""), norm(it["fuente"]).replace(" ", "")
+                if propio not in ajeno and ajeno not in propio:
+                    continue
+                it["fuente"] = nombre
+                it["procedencia"] = "agregador"
+                it["via"] = "Google Noticias"
+                propios.append(it)
+            if propios:
+                return propios, {"ok": True, "procedencia": "agregador", "via": "Google Noticias", "url": usada2, "error_directo": err}
+            err2 = "Google Noticias respondió sin notas de ese medio"
+        return None, {"ok": False, "procedencia": "sin datos", "error": err, "error_respaldo": err2}
+    return None, {"ok": False, "procedencia": "sin datos", "error": err}
+
+
+def validar_item(it):
+    """Devuelve un motivo de descarte o None si el registro es válido."""
+    if not it.get("titulo") or not str(it.get("url", "")).startswith("http"):
+        return "sin título o dirección válida"
+    if it.get("sector") not in SECTORES:
+        return "sector desconocido"
+    f = it.get("fecha")
+    if f:
+        d = parsear_fecha(f)
+        if not d:
+            return "fecha inválida"
+        if d > dt.datetime.now(dt.timezone.utc) + dt.timedelta(days=1):
+            return "fecha en el futuro"
+    return None
+
+
+def validar_datos(items, previos):
+    """Descarta registros inválidos y decide si el resultado se puede publicar."""
+    buenos, descartes = [], {}
+    for it in items:
+        motivo = validar_item(it)
+        if motivo:
+            descartes[motivo] = descartes.get(motivo, 0) + 1
+        else:
+            buenos.append(it)
+    errores = []
+    if not buenos:
+        errores.append("el resultado quedó vacío")
+    elif previos and len(buenos) < UMBRAL_REDUCCION * len(previos):
+        errores.append(f"las notas bajaron de {len(previos)} a {len(buenos)} (más de la mitad)")
+    return buenos, descartes, errores
+
+
+MESES_ES = {"enero": 1, "febrero": 2, "marzo": 3, "abril": 4, "mayo": 5, "junio": 6, "julio": 7, "agosto": 8,
+            "setiembre": 9, "septiembre": 9, "octubre": 10, "noviembre": 11, "diciembre": 12}
+URL_ENFEN = "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen"
+
+
+def parsear_enfen(html_txt):
+    """Busca el comunicado ENFEN más reciente (mayor año y número) y, si aparece cerca, su fecha."""
+    txt = html.unescape(re.sub(r"<[^>]+>", " ", html_txt))
+    txt = re.sub(r"\s+", " ", txt)
+    mejor = None
+    for m in re.finditer(r"Comunicado Oficial ENFEN\s*N[°º.]?\s*(\d{1,3})\s*-\s*(\d{4})", txt, re.I):
+        clave = (int(m.group(2)), int(m.group(1)))
+        if mejor is None or clave > mejor[0]:
+            ventana = txt[m.end(): m.end() + 260]
+            fecha = None
+            f = re.search(r"(\d{1,2}) de ([a-záéíóú]+) de (\d{4})", ventana, re.I)
+            if f and MESES_ES.get(f.group(2).lower()):
+                try:
+                    fecha = dt.date(int(f.group(3)), MESES_ES[f.group(2).lower()], int(f.group(1))).isoformat()
+                except ValueError:
+                    fecha = None
+            mejor = (clave, {"numero": f"{m.group(1)}-{m.group(2)}", "fecha": fecha})
+    return mejor[1] if mejor else None
+
+
+def enfen_ultimo(previo=None):
+    """Último comunicado oficial ENFEN publicado en gob.pe (lectura automática; la fecha puede no detectarse)."""
+    try:
+        r = parsear_enfen(descargar_parcial(URL_ENFEN))
+        if r:
+            r.update({"url": URL_ENFEN, "comprobado": ahora_iso(), "ok": True})
+            print(f"ENFEN: último comunicado detectado N.° {r['numero']} ({r['fecha'] or 'fecha no detectada'})")
+            return r
+        print("  ✗ ENFEN: no se detectó ningún comunicado en la página")
+        err = "no se detectó ningún comunicado"
+    except Exception as ex:  # noqa: BLE001
+        print(f"  ✗ ENFEN: {type(ex).__name__}: {str(ex)[:100]}")
+        err = f"{type(ex).__name__}: {str(ex)[:100]}"
+    previo = dict(previo or {})
+    previo.update({"ok": False, "comprobado": ahora_iso(), "error": err, "url": URL_ENFEN})
+    return previo
 
 
 def escribir(datos):
     os.makedirs(DATOS, exist_ok=True)
-    with open(ARCHIVO_JSON, "w", encoding="utf-8") as f:
+    tmp_json, tmp_js = ARCHIVO_JSON + ".tmp", ARCHIVO_JS + ".tmp"
+    with open(tmp_json, "w", encoding="utf-8") as f:
         json.dump(datos, f, ensure_ascii=False, indent=1)
-    with open(ARCHIVO_JS, "w", encoding="utf-8") as f:
+    with open(tmp_js, "w", encoding="utf-8") as f:
         f.write("/* Generado por scripts/actualizar_noticias.py (GitHub Actions, 7 veces al día, hora de Lima). No editar a mano. */\n")
         f.write("window.NOTICIAS = " + json.dumps(datos, ensure_ascii=False, indent=1) + ";\n")
+    os.replace(tmp_json, ARCHIVO_JSON)  # se escribe a un temporal y se reemplaza: nunca queda un archivo a medias
+    os.replace(tmp_js, ARCHIVO_JS)
+
+
+def resumen_ejecucion(titulo, lineas):
+    """Escribe el resumen visible en la pestaña de la ejecución de GitHub Actions."""
+    ruta = os.environ.get("GITHUB_STEP_SUMMARY")
+    if not ruta:
+        return
+    try:
+        with open(ruta, "a", encoding="utf-8") as f:
+            f.write(f"### {titulo}\n\n" + "\n".join(lineas) + "\n")
+    except OSError:
+        pass
 
 
 def main(feeds=None):
     feeds = feeds or FEEDS
     previo = cargar_previo()
+    previo_estado = previo.get("estado_fuentes") or {}
+    ahora = ahora_iso()
     nuevos, estado, ok = [], {}, 0
     for nombre, urls, tipo, sector in feeds:
-        items, err = obtener_feed(nombre, urls, tipo, sector)
-        if items is None:
-            estado[nombre] = {"ok": False, "error": err}
-            print(f"  ✗ {nombre}: {err}")
-        else:
+        items, info = obtener_con_respaldo(nombre, urls, tipo, sector)
+        info["comprobado"] = ahora
+        ant = previo_estado.get(nombre) or {}
+        if items:
             ok += 1
             nuevos.extend(items)
-            estado[nombre] = {"ok": True, "n": len(items)}
-            print(f"  ✓ {nombre}: {len(items)} notas")
-    print(f"Feeds correctos: {ok}/{len(feeds)} · notas nuevas: {len(nuevos)}")
+            fechas = [i["fecha"] for i in items if i.get("fecha")]
+            info.update({"n": len(items), "ultima_nota": max(fechas) if fechas else None, "ultimo_ok": ahora})
+            etiqueta_via = " (vía Google Noticias)" if info["procedencia"] == "agregador" else ""
+            print(f"  ✓ {nombre}: {len(items)} notas{etiqueta_via}")
+        else:
+            info["ultimo_ok"] = ant.get("ultimo_ok")
+            info["ultima_nota"] = ant.get("ultima_nota")
+            print(f"  ✗ {nombre}: {info.get('error')}")
+        estado[nombre] = info
+    print(f"Feeds con datos: {ok}/{len(feeds)} · notas nuevas: {len(nuevos)}")
     if ok == 0:
         print("Ningún feed respondió: se conservan los datos actuales.", file=sys.stderr)
-        return 0
+        resumen_ejecucion("Actualización sin cambios", ["Ningún feed respondió; se conservaron los datos anteriores."])
+        return 1
     enriquecer_imagenes(nuevos, previo.get("items", []))
+    combinados = fusionar(nuevos, previo.get("items", []))
+    items, descartes, errores = validar_datos(combinados, previo.get("items", []))
+    if errores:
+        print("Validación fallida, no se publica: " + "; ".join(errores), file=sys.stderr)
+        resumen_ejecucion("Actualización rechazada", ["- " + e for e in errores])
+        return 1
+    if descartes:
+        print("Registros descartados por validación: " + json.dumps(descartes, ensure_ascii=False))
+    registro = (previo.get("registro") or [])[-(MAX_REGISTRO - 1):]
+    registro.append({"t": ahora, "fuentes_ok": ok, "fuentes": len(feeds), "nuevas": len(nuevos), "notas": len(items),
+                     "descartes": descartes, "agregador": [n for n, v in estado.items() if v.get("procedencia") == "agregador"],
+                     "sin_datos": [n for n, v in estado.items() if not v.get("ok")]})
     datos = {
-        "generado": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "generado": ahora,
         "modo": "automatico",
         "estado_fuentes": estado,
-        "items": fusionar(nuevos, previo.get("items", [])),
+        "items": items,
         "imagenes_editorial": imagenes_editoriales(previo.get("imagenes_editorial")),
         "indicadores": {"tipo_cambio": tipo_cambio((previo.get("indicadores") or {}).get("tipo_cambio"))},
         "datos_bm": datos_bm(previo.get("datos_bm")),
+        "enfen": enfen_ultimo(previo.get("enfen")),
+        "registro": registro,
     }
     escribir(datos)
     print(f"Escrito {ARCHIVO_JS} con {len(datos['items'])} notas.")
+    resumen_ejecucion("Actualización publicada", [
+        f"- Fuentes con datos: {ok}/{len(feeds)}",
+        f"- Notas nuevas: {len(nuevos)}; notas publicadas: {len(items)}",
+        "- Respaldo (agregador): " + (", ".join(registro[-1]["agregador"]) or "ninguna"),
+        "- Sin datos: " + (", ".join(registro[-1]["sin_datos"]) or "ninguna")])
     return 0
 
 

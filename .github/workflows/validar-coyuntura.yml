@@ -1,0 +1,64 @@
+name: Validar Contexto Perú
+
+# Pruebas del proyecto coyuntura-peru. No toca los otros proyectos del repositorio.
+on:
+  pull_request:
+    paths:
+      - "coyuntura-peru/**"
+      - ".github/workflows/*coyuntura*.yml"
+      - ".github/workflows/ci-deploy.yml"
+  push:
+    branches: [main]
+    paths:
+      - "coyuntura-peru/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validar-coyuntura-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Sintaxis de JavaScript
+        run: |
+          node --check coyuntura-peru/assets/app.js
+          node --check coyuntura-peru/sw.js
+          node --check coyuntura-peru/data/editorial.js
+          node --check coyuntura-peru/data/talleres.js
+          node --check coyuntura-peru/tests/e2e_rutas.cjs
+
+      - name: Pruebas del actualizador (Python)
+        run: python -m unittest discover -s coyuntura-peru/scripts -p "test_*.py" -v
+
+      - name: Control de calidad de datos, contenido y HTML
+        run: python coyuntura-peru/scripts/validar_contenido.py
+
+      - name: Enlaces de las fuentes (informativo)
+        continue-on-error: true
+        run: python coyuntura-peru/scripts/verificar_enlaces.py
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Instalar Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Pruebas de navegador (rutas, errores y desbordes)
+        run: node coyuntura-peru/tests/e2e_rutas.cjs

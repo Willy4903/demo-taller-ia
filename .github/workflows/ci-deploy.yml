@@ -55,7 +55,7 @@ jobs:
         run: |
           mkdir -p dist/peru-en-claro
           cp -r coyuntura-peru/. dist/peru-en-claro/
-          rm -rf dist/peru-en-claro/scripts dist/peru-en-claro/README.md
+          rm -rf dist/peru-en-claro/scripts dist/peru-en-claro/tests dist/peru-en-claro/README.md
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
@@ -79,12 +79,17 @@ jobs:
         with:
           ref: gh-pages
           path: sitio
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validar contenido antes de publicar
+        run: python fuente/coyuntura-peru/scripts/validar_contenido.py
       - name: Copiar Perú en Claro a gh-pages/peru-en-claro/
         run: |
           rm -rf sitio/peru-en-claro
           mkdir -p sitio/peru-en-claro
           cp -r fuente/coyuntura-peru/. sitio/peru-en-claro/
-          rm -rf sitio/peru-en-claro/scripts sitio/peru-en-claro/README.md
+          rm -rf sitio/peru-en-claro/scripts sitio/peru-en-claro/tests sitio/peru-en-claro/README.md
           touch sitio/.nojekyll
           # Versión en las URL de los recursos para que el navegador no use copias viejas
           sed -i "s/__V__/${GITHUB_SHA::10}/g" sitio/peru-en-claro/index.html

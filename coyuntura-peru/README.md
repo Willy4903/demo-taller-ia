@@ -52,3 +52,15 @@ python3 scripts/actualizar_noticias.py   # prueba el actualizador (requiere inte
 - La clasificación por sector es automática y puede equivocarse.
 - Titulares y resúmenes pertenecen a cada medio; el sitio enlaza siempre a la fuente original.
 - El proyecto no está afiliado a los medios citados. “Independiente” significa autonomía editorial, no neutralidad.
+
+## Calidad y pruebas
+
+- `scripts/test_actualizador.py`: pruebas del actualizador sin red (parseo, clasificación, duplicados, antigüedad, respaldo de feeds, validación, ENFEN, indicadores). `python3 -m unittest discover -s coyuntura-peru/scripts -p "test_*.py"`.
+- `scripts/validar_contenido.py`: revisa noticias (fechas, duplicados, sector, dirección), estado de fuentes, indicadores del contenido editorial (unidad, fecha de corte y fuente primaria), enlaces con https y estructura de `index.html`. Sale con error si algo grave falla.
+- `scripts/verificar_enlaces.py`: comprueba que respondan los enlaces de las fuentes (informativo).
+- `tests/e2e_rutas.cjs`: Playwright. Recorre todas las rutas `#/` en 390, 430, 768, 1024 y 1440 px y revisa errores de consola, desplazamiento horizontal, tarjetas de la portada, datos con fecha de corte y unidad, navegación, búsqueda y menú.
+- Flujos: `Validar Contenido Perú` corre todo lo anterior en cada pull request; `Actualizar Contexto Perú` prueba, actualiza, valida y solo entonces guarda y publica.
+
+## Fuentes de noticias que fallan
+
+El actualizador prueba varias direcciones por medio. Si ninguna funciona usa Google Noticias restringido al dominio del medio. Esas notas se marcan «vía Google Noticias» y nunca como directas. Si tampoco hay datos, se conservan las últimas notas válidas y la fuente figura «Sin datos» con la fecha de comprobación y el error (página Fuentes).
