@@ -520,3 +520,18 @@ a.s:hover h2,a.s:hover h3{color:var(--gold-t)}
   .flip:hover .back,.flip.on .back,.flip:focus-visible .back{opacity:1}
   .flip:hover .front,.flip.on .front,.flip:focus-visible .front{opacity:0}
 }
+
+/* ───── DataPerú: panel "Datos y cifras clave" ───── */
+.dp-head{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:12px 20px;padding:6px 0 14px}
+.dp-head h1{font-size:clamp(1.8rem,5.6vw,2.7rem);font-weight:800;text-transform:none}
+.dp-sub{margin:8px 0 0;color:var(--tx2);font-size:.98rem;max-width:64ch}
+.dp-b{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;grid-auto-flow:dense;margin:2px 0 6px}
+.dp-b>.vacio{grid-column:1/-1}
+.flip.w2{grid-column:span 2}
+.flip .tag{align-self:flex-start;font-family:var(--mono);font-size:.62rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border-radius:999px;border:1px solid var(--border2);color:var(--tx2);margin-bottom:2px}
+.flip .spark.g{height:96px}
+.dp-aviso{margin:18px 0 0;padding-top:14px;border-top:1px solid var(--border);font-size:.78rem;color:var(--tx3);line-height:1.5}
+.dp-aviso a{color:var(--gold-t);text-decoration:underline;text-underline-offset:2px}
+@media (min-width:720px){.dp-b{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (min-width:1080px){.dp-b{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:420px){.dp-b{grid-template-columns:minmax(0,1fr)}.flip.w2{grid-column:auto}}
