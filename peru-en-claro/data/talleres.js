@@ -13,6 +13,7 @@ window.TALLERES = {
       nombre: "IA generativa desde cero",
       para: "Público general · Virtual",
       desc: "Aprende a usar ChatGPT, Claude y Gemini para estudiar, trabajar y redactar mejor, sin saber programar.",
+      aprenderas: ["Escribir instrucciones claras para ChatGPT, Claude y Gemini", "Resumir, redactar y estudiar más rápido con IA", "Verificar lo que responde y evitar errores"],
       detalle: ""
     },
     {
@@ -21,6 +22,7 @@ window.TALLERES = {
       nombre: "IA para la toma de decisiones",
       para: "Ejecutivos y equipos · Presencial o virtual",
       desc: "Usa la IA para analizar información, comparar opciones y preparar informes con criterio.",
+      aprenderas: ["Analizar información y comparar opciones con apoyo de la IA", "Preparar informes y presentaciones con criterio", "Usar la IA cuidando la reserva de la información"],
       detalle: ""
     },
     {
@@ -29,6 +31,7 @@ window.TALLERES = {
       nombre: "Claude Code y automatización",
       para: "Nivel práctico · Con ejemplos reales",
       desc: "Crea páginas, reportes y automatizaciones con IA, paso a paso y con ejemplos que puedes replicar.",
+      aprenderas: ["Crear páginas y reportes con IA, paso a paso", "Automatizar tareas repetitivas con ejemplos reales", "Probar y publicar lo que construyes"],
       detalle: ""
     }
   ],

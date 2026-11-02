@@ -187,23 +187,22 @@
   function proxHora(now, off, y, m, d) {
     return HORAS.map(function (h) { return Date.UTC(y, m, d, h) - off; }).concat([Date.UTC(y, m, d + 1, HORAS[0]) - off]).filter(function (t) { return t > now; })[0];
   }
-  function popHTML(o) {
-    var P = (ED.portal || {})[o.id]; if (!P) return "";
-    var u = porSector(o.id).filter(function (i) { return i.fecha; })[0], ext = /^https?:/.test(P.u);
-    return '<div class="tp-h"><span class="ic">' + ic(o.id) + "</span><div><b>" + esc(o.nombre) + "</b><small>" + esc(o.sub) + '</small></div></div><span class="bk">Qué es</span><p>' + esc(P.c) + '</p><span class="bk">Ejemplo</span><p class="ej">' + esc(P.e) + "</p>" +
-      (u ? '<span class="bk">Lo último</span><a class="tp-u" href="' + safeUrl(u.url) + '" target="_blank" rel="noopener noreferrer">' + esc(sin(u.titulo, 92)) + "<small>" + esc(u.fuente) + " · " + esc(relativo(u.fecha) || "") + " ↗</small></a>" : "") +
-      '<div class="tp-f"><a class="btn" href="' + esc(o.href) + '" data-cerrar="1">Entrar →</a><a class="lk" href="' + (ext ? safeUrl(P.u) : esc(P.u)) + '"' + (ext ? ' target="_blank" rel="noopener noreferrer"' : "") + ">Fuente: " + esc(P.f) + (ext ? " ↗" : "") + "</a></div>";
+  /* ───── tarjetas que se voltean: al pasar el cursor (o tocar) la paleta se invierte y aparece el concepto ───── */
+  function lum(h) { var m = /^#([0-9a-f]{6})$/i.exec(h || ""); if (!m) return 0; var n = parseInt(m[1], 16); return [n >> 16 & 255, n >> 8 & 255, n & 255].map(function (v) { v /= 255; return v <= .03928 ? v / 12.92 : Math.pow((v + .055) / 1.055, 2.4); }).reduce(function (a, v, k) { return a + v * [.2126, .7152, .0722][k]; }, 0); }
+  function colorFc(c) {
+    var l = lum(c), blanco = 1.05 / (l + .05), negro = (l + .05) / (lum("#0B1220") + .05), oscuro = negro >= blanco;
+    return "--c:" + c + ";--on:" + (oscuro ? "#0B1220" : "#FFFFFF") + ";--onr:" + (oscuro ? "#FFFFFF" : "#0B1220") + ";--c2:" + (oscuro ? "color-mix(in srgb," + c + " 72%,#fff)" : "color-mix(in srgb," + c + " 66%,#000)");
+  }
+  function hint() { return '<span class="fc-hint" aria-hidden="true"><i>↻</i><span class="h-m">Pasa el cursor</span><span class="h-t">Toca para voltear</span></span>'; }
+  function fc(o) {
+    return '<div class="fc ' + (o.cls || "") + '" tabindex="0" role="group" aria-label="' + esc(o.label) + '" style="' + colorFc(o.color) + '"' + (o.id ? ' data-t="' + o.id + '"' : "") + '><div class="fc-in"><div class="fc-f fc-front">' + o.front + '</div><div class="fc-f fc-back">' + o.back + "</div></div></div>";
   }
   function tile(o) {
-    var P = (ED.portal || {})[o.id];
-    return '<div class="po-t' + (o.cls || "") + '" data-t="' + o.id + '" style="--c:' + o.color + '"><a class="tl-a" href="' + esc(o.href) + '"><span class="ic">' + ic(o.id) + "</span><b>" + esc(o.nombre) + "</b><small>" + esc(o.sub) + "</small></a>" +
-      (P ? '<button class="tl-i" type="button" data-info="' + o.id + '" aria-label="Qué es ' + esc(o.nombre) + '">i</button><div class="tl-pop" role="tooltip">' + popHTML(o) + "</div>" : "") + "</div>";
-  }
-  function abrirConcepto(id) {
-    var el = $('.po-t[data-t="' + id + '"]'); if (!el) return;
-    var nombre = $("b", el).textContent, sub = $("small", el).textContent, href = $(".tl-a", el).getAttribute("href");
-    $("#m-caja").innerHTML = '<button class="sx" aria-label="Cerrar" data-x="1">✕</button><div class="tl-sheet" style="--c:' + el.style.getPropertyValue("--c") + '">' + popHTML({ id: id, nombre: nombre, sub: sub, href: href }) + "</div>";
-    abrirHoja("#modal");
+    var P = (ED.portal || {})[o.id] || {}, ex = /^https?:/.test(P.u || "");
+    return fc({ cls: "tile" + (o.cls || ""), color: o.color, id: o.id, label: o.nombre + ". " + o.sub + ". Pasa el cursor o toca para ver qué es.",
+      front: '<span class="ic">' + ic(o.id) + "</span><b>" + esc(o.nombre) + "</b><small>" + esc(o.sub) + "</small>" + hint(),
+      back: '<span class="fc-k">' + esc(o.nombre) + '</span><p class="fc-c">' + esc(P.c || "") + "</p>" + (P.e ? '<p class="fc-e"><b>Ejemplo</b>' + esc(P.e) + "</p>" : "") +
+        '<div class="fc-b"><a class="fc-go" href="' + esc(o.href) + '">Entrar →</a>' + (P.f ? '<a class="fc-src" href="' + (ex ? safeUrl(P.u) : esc(P.u)) + '"' + (ex ? ' target="_blank" rel="noopener noreferrer"' : "") + ">" + esc(P.f) + (ex ? " ↗" : "") + "</a>" : "") + "</div>" });
   }
   function portal() {
     var g = NOT.estado_fuentes || {}, tot = Object.keys(g).length, ok = Object.keys(g).filter(function (k) { return g[k].ok; }).length, tc = (NOT.indicadores || {}).tipo_cambio;
@@ -227,7 +226,19 @@
   function ext(u) { return 'href="' + safeUrl(u) + '" target="_blank" rel="noopener noreferrer"'; }
   function tCards() {
     return '<div class="t-g">' + T.talleres.map(function (x) {
-      return '<article class="t-card"><span class="t-ic" aria-hidden="true">' + x.icono + "</span><h3>" + esc(x.nombre) + "</h3><small>" + esc(x.para) + "</small><p>" + esc(x.desc) + "</p>" + (x.detalle ? '<p class="t-det">' + esc(x.detalle) + "</p>" : "") + '<a class="btn o" ' + ext(waUrl("Hola Willy, quiero información del taller: " + x.nombre + ".")) + ">Consultar por WhatsApp</a></article>";
+      var wa = waUrl("Hola Willy, quiero información del taller: " + x.nombre + ".");
+      return fc({ cls: "tcard", color: "#F59E0B", label: x.nombre + ". " + x.para + ". Pasa el cursor o toca para ver qué aprenderás.",
+        front: '<span class="t-ic" aria-hidden="true">' + x.icono + "</span><h3>" + esc(x.nombre) + "</h3><small>" + esc(x.para) + "</small><p>" + esc(x.desc) + "</p>" + hint(),
+        back: '<span class="fc-k">Qué aprenderás</span>' + (x.aprenderas && x.aprenderas.length ? '<ul class="fc-l">' + x.aprenderas.map(function (b) { return "<li>" + esc(b) + "</li>"; }).join("") + "</ul>" : '<p class="fc-c">' + esc(x.desc) + "</p>") +
+          (x.detalle ? '<p class="fc-e">' + esc(x.detalle) + "</p>" : "") + '<div class="fc-b"><a class="fc-go" ' + ext(wa) + ">Consultar por WhatsApp →</a></div>" });
+    }).join("") + "</div>";
+  }
+  function pCards() {
+    return '<div class="pg-g">' + T.paginas.map(function (p) {
+      var sc = SECT[p.sector];
+      return fc({ cls: "pgcard", color: sc ? sc.color : "#F59E0B", label: p.n + ". " + p.d + ". Pasa el cursor o toca para ver qué encontrarás.",
+        front: '<span class="t-ic" aria-hidden="true">' + p.icono + "</span><h3>" + esc(p.n) + "</h3>" + (sc ? "<small>" + esc(sc.nombre) + "</small>" : "") + hint(),
+        back: '<span class="fc-k">Qué encontrarás</span><p class="fc-c">' + esc(p.d) + '</p><div class="fc-b"><a class="fc-go" ' + ext(p.u) + ">Abrir página ↗</a></div>" });
     }).join("") + "</div>";
   }
   function promoBanda() {
@@ -260,7 +271,7 @@
     var h = '<div class="fade"><div class="shead" style="--c:var(--gold)"><h1>🎓 Talleres de IA</h1><p>Aprende a usar la inteligencia artificial con ejemplos prácticos, en talleres presenciales y virtuales.</p></div>' + tCards();
     h += '<div class="autor panel"><h3 class="pt">Quién está detrás</h3><b class="a-n">' + esc(a.nombre) + "</b><small>" + esc(a.titulo) + "</small><p>" + esc(a.resumen) + "</p></div>";
     h += '<div class="t-links"><a class="btn" ' + ext(waUrl()) + ">Escribir por WhatsApp</a>" + (c.tiktok ? '<a class="btn o" ' + ext(c.tiktok) + ">TikTok @luwiuni</a>" : "") + (c.web ? '<a class="btn o" ' + ext(c.web) + ">Web de los talleres</a>" : "") + "</div>";
-    if (T.paginas && T.paginas.length) h += sh("Mis páginas", "var(--gold)") + T.paginas.map(function (p) { return '<a class="fr" ' + ext(p.u) + "><div><b>" + esc(p.icono + " " + p.n) + "</b><p>" + esc(p.d) + "</p></div><span>↗</span></a>"; }).join("");
+    if (T.paginas && T.paginas.length) h += sh("Mis páginas", "var(--gold)") + pCards();
     return h + "</div>";
   }
 
@@ -590,9 +601,8 @@
     if (c("[data-cerrar]")) { setTimeout(cerrarHojas, 10); return; }
     if (t.id === "veil" || c("[data-x]")) { cerrarHojas(); return; }
     if (c("[data-buscar]")) { abrirBuscar(); return; }
-    var inf = c("[data-info]"); if (inf) { abrirConcepto(inf.getAttribute("data-info")); return; }
     var df = c("[data-df]"); if (df) { dFil = df.getAttribute("data-df"); pintarDatos(); return; }
-    var fl = c(".flip"); if (fl && !c("a") && window.matchMedia && matchMedia("(hover: none)").matches) { var ya = fl.classList.contains("on"); $$(".flip.on").forEach(function (x) { x.classList.remove("on"); }); if (!ya) fl.classList.add("on"); return; }
+    var fl = c(".flip,.fc"); if (fl && !c("a") && window.matchMedia && matchMedia("(hover: none)").matches) { var ya = fl.classList.contains("on"); $$(".flip.on,.fc.on").forEach(function (x) { x.classList.remove("on"); }); if (!ya) fl.classList.add("on"); return; }
     var mi = c("[data-m]"); if (mi) { abrirMision(mi.getAttribute("data-m")); return; }
     var o = c("[data-o]"); if (o && M) { responder(+o.getAttribute("data-o")); return; }
     var a = c("[data-a]"); if (!a || !M) return; var act = a.getAttribute("data-a"), m = SECT[M.id].mision;
@@ -606,16 +616,12 @@
   });
   /* tarjetas del portal: foco de luz que sigue al cursor, ligera inclinación y apertura del globo hacia el lado con espacio */
   document.addEventListener("pointermove", function (e) {
-    if (e.pointerType === "touch") return; var t = e.target.closest ? e.target.closest(".po-t") : null; if (!t || e.target.closest(".tl-pop")) return;
+    if (e.pointerType === "touch") return; var t = e.target.closest ? e.target.closest(".fc") : null; if (!t) return;
     var r = t.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
     t.style.setProperty("--mx", (x * 100).toFixed(0) + "%"); t.style.setProperty("--my", (y * 100).toFixed(0) + "%"); t.style.setProperty("--rx", ((x - .5) * 2).toFixed(2)); t.style.setProperty("--ry", ((y - .5) * 2).toFixed(2));
   }, { passive: true });
-  document.addEventListener("pointerout", function (e) { var t = e.target.closest ? e.target.closest(".po-t") : null; if (t && !t.contains(e.relatedTarget)) { t.style.setProperty("--rx", 0); t.style.setProperty("--ry", 0); } });
-  document.addEventListener("mouseover", function (e) {
-    var t = e.target.closest ? e.target.closest(".po-t") : null; if (!t || t.contains(e.relatedTarget)) return;
-    var r = t.getBoundingClientRect(); var lim = ($(".po-grid") || document.body).getBoundingClientRect().right; t.classList.toggle("rt", r.left + 336 > lim); t.classList.toggle("up", r.bottom + 360 > innerHeight && r.top > 380);
-  });
-  addEventListener("keydown", function (e) { var f = e.target && e.target.classList && e.target.classList.contains("flip") ? e.target : null; if (f && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); f.classList.toggle("on"); return; } if (e.key === "/" && !/^(INPUT|TEXTAREA)$/.test((document.activeElement || {}).tagName || "") && !hojaAbierta) { e.preventDefault(); abrirBuscar(); return; } if (e.key === "Escape") { cerrarHojas(); $("#pop").classList.remove("on"); } });
+  document.addEventListener("pointerout", function (e) { var t = e.target.closest ? e.target.closest(".fc") : null; if (t && !t.contains(e.relatedTarget)) { t.style.setProperty("--rx", 0); t.style.setProperty("--ry", 0); } });
+  addEventListener("keydown", function (e) { var f = e.target && e.target.classList && (e.target.classList.contains("flip") || e.target.classList.contains("fc")) ? e.target : null; if (f && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); f.classList.toggle("on"); return; } if (e.key === "/" && !/^(INPUT|TEXTAREA)$/.test((document.activeElement || {}).tagName || "") && !hojaAbierta) { e.preventDefault(); abrirBuscar(); return; } if (e.key === "Escape") { cerrarHojas(); $("#pop").classList.remove("on"); } });
   addEventListener("hashchange", function () { cerrarHojas(); navegar(); });
   addEventListener("scroll", function () { if (Math.abs(window.scrollY - popY) > 60) $("#pop").classList.remove("on"); }, { passive: true });
   $("#b-buscar").onclick = abrirBuscar; $("#t-bus").onclick = abrirBuscar; $("#t-sec").onclick = abrirMenu;
