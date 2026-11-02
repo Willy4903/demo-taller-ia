@@ -1,3 +1,10 @@
+# Python / demos
+__pycache__/
+*.pyc
+*.pdf
+agendas/
+
+# Simulador Liga 1 (Vite)
 node_modules
 dist
 coverage
