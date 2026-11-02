@@ -7,7 +7,7 @@ Portal de noticias sobre la coyuntura peruana: política, economía, salud, El N
 - Las fotos son reales: la `og:image` de cada nota y, para los análisis, la de la primera fuente citada que la tenga (con crédito). Si no hay foto, la nota se muestra sin imagen; no se usan ilustraciones generadas.
 - Una línea dinámica (de derecha a izquierda) muestra lo último: tipo de cambio, estado de El Niño, análisis y notas recientes. Se pausa al pasar el cursor o con el botón; con "reducir movimiento" queda estática.
 - El tipo de cambio (USD/PEN) se lee de la API pública del BCRP; si falla, se usa un valor referencial de una API pública sin clave y se acumula entre ejecuciones. Si ambas fallan, se conserva el último dato.
-- Se actualiza solo a las **08:00** y **23:00 (hora de Lima)** mediante GitHub Actions.
+- Se actualiza solo a las **08:00**, **12:00** y **18:00 (hora de Lima)** mediante GitHub Actions.
 
 ## Publicación en GitHub Pages
 
@@ -29,7 +29,7 @@ El sitio se sirve desde la rama `gh-pages` (Settings → Pages → Deploy from a
 3. Conserva como máximo 24 notas por sector y descarta lo anterior a 30 días.
 4. Reescribe `data/noticias.js` y `data/noticias.json`. Si ningún feed responde, **no** toca los datos.
 
-El flujo `Actualizar Contexto Perú` corre a las 08:00 y 23:00 (hora de Lima), hace commit de los datos en `main` e invoca `CI y despliegue` para republicar. Para agregar o quitar medios, edita `FEEDS`. También puede lanzarse a mano desde la pestaña *Actions*.
+El flujo `Actualizar Contexto Perú` corre a las 08:00, 12:00 y 18:00 (hora de Lima), hace commit de los datos en `main` e invoca `CI y despliegue` para republicar. Para agregar o quitar medios, edita `FEEDS`. También puede lanzarse a mano desde la pestaña *Actions*.
 
 ## Talleres de IA
 

@@ -3,7 +3,7 @@
 
 - Solo usa la biblioteca estándar de Python.
 - Tolera feeds caídos: si ninguno responde no sobrescribe los datos existentes.
-- Pensado para correr en GitHub Actions a las 08:00 y 23:00 (hora de Lima).
+- Pensado para correr en GitHub Actions a las 08:00, 12:00 y 18:00 (hora de Lima).
 """
 import datetime as dt
 import email.utils
@@ -459,7 +459,7 @@ def escribir(datos):
     with open(ARCHIVO_JSON, "w", encoding="utf-8") as f:
         json.dump(datos, f, ensure_ascii=False, indent=1)
     with open(ARCHIVO_JS, "w", encoding="utf-8") as f:
-        f.write("/* Generado por scripts/actualizar_noticias.py (GitHub Actions, 08:00 y 23:00 hora de Lima). No editar a mano. */\n")
+        f.write("/* Generado por scripts/actualizar_noticias.py (GitHub Actions, 08:00, 12:00 y 18:00 hora de Lima). No editar a mano. */\n")
         f.write("window.NOTICIAS = " + json.dumps(datos, ensure_ascii=False, indent=1) + ";\n")
 
 

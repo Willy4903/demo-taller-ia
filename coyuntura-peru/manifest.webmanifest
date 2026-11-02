@@ -1,7 +1,7 @@
 {
   "name": "Contexto Perú",
   "short_name": "Contexto Perú",
-  "description": "La coyuntura peruana explicada para cualquiera. Se actualiza a las 8:00 y 23:00 (hora de Lima).",
+  "description": "La coyuntura peruana explicada para cualquiera. Se actualiza a las 8:00, 12:00 y 18:00 (hora de Lima).",
   "lang": "es-PE",
   "start_url": "./index.html#/",
   "scope": "./",
