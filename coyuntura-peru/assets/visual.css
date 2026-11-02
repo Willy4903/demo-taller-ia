@@ -17,7 +17,7 @@ body{overflow-x:clip}
 main:has(> .home){max-width:none;padding:0 0 50px}
 body:has(.home)>.ticker{display:none}
 .home{--home-width:1360px}
-.home .hero{position:relative;min-height:560px;margin:0;padding:73px max(23px,calc((100vw - var(--home-width))/2)) 170px;isolation:isolate;overflow:hidden;display:flex;align-items:flex-start;flex-direction:column;justify-content:center;color:#fff;background-color:#244456;background-image:linear-gradient(180deg,rgba(242,144,131,.18),rgba(5,22,45,.17) 65%),url("https://upload.wikimedia.org/wikipedia/commons/9/98/Costa_Verde_%26_Highrise_Buildings_-_Lima.jpg"),url("hero-costa-verde.svg");background-size:cover,cover,cover;background-repeat:no-repeat;background-position:center,center top,center}
+.home .hero{position:relative;min-height:560px;margin:0;padding:73px max(23px,calc((100vw - var(--home-width))/2)) 170px;isolation:isolate;overflow:hidden;display:flex;align-items:flex-start;flex-direction:column;justify-content:center;color:#fff;background:#1a3554}
 .home .hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#0b182ee8 0%,#111f38c2 36%,#09264240 75%,#193f3100),linear-gradient(0deg,#0a19244d,transparent 48%)}
 .home .hero-content{position:relative;z-index:2;max-width:740px}
 .home .hero-kicker{color:#f4d6d7;font-size:.8rem;letter-spacing:.17em;font-weight:800;margin:0 0 16px}
@@ -44,9 +44,9 @@ body:has(.home)>.ticker{display:none}
 .home .q1{background:linear-gradient(130deg,#a72836,#dd686d)}
 .home .q2{background:linear-gradient(135deg,#093f7a,#158bd0)}
 .home .q3{background:linear-gradient(135deg,#075444,#15916d)}
-.home .q1:after{background-image:url("card-noticias.svg")}
-.home .q2:after{background-image:url("card-datos.svg")}
-.home .q3:after{background-image:url("card-nino.svg")}
+.home .q1:after{background-image:none}
+.home .q2:after{background-image:none}
+.home .q3:after{background-image:none}
 .home .q header{display:flex;align-items:flex-start;gap:12px;margin-bottom:15px}
 .home .q-n{width:47px;height:47px;border-radius:12px;display:grid;place-items:center;background:#ffffff23;color:#fff;border:1px solid #ffffff85;flex:none}
 .home .q-n svg{width:25px;height:25px}
@@ -86,11 +86,30 @@ body:has(.home)>.ticker{display:none}
 @media(max-width:640px){.top-in{height:var(--top)}.home .hero{min-height:520px;padding:39px 18px 212px;justify-content:flex-start;background-position:center,67% top,center}.home .hero h1{font-size:clamp(2.2rem,9vw,3.45rem)}.home .hero-sub{font-size:1rem}.home .hero-kicker{font-size:.68rem}.home .hero-stats{left:12px;right:12px;bottom:13px;border-radius:15px}.home .hero-stat{gap:6px;min-height:85px;padding:9px 8px}.home .hero-stat .hs-ico{width:32px;height:32px;flex-basis:32px}.home .hero-stat .hs-ico svg{width:20px;height:20px}.home .hero-stat strong{font-size:.79rem;overflow-wrap:anywhere}.home .hero-stat .hs-label{font-size:.64rem}.home .hero-stat small{font-size:.56rem}.home .qs{padding:0 12px;grid-template-columns:1fr;gap:12px;margin-top:14px}.home .q{min-height:330px;padding:19px}.home .q h2{font-size:1.4rem}.home .q3{grid-column:auto}.home .q:after{width:49%;height:40%}.home .home-topics{width:calc(100% - 24px);padding:12px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:15px}.home-topics a{padding:10px}.home .dest,.home .fresh,.home .mas-rec{margin:20px 12px}.home .hero-updated{font-size:.7rem;padding:8px 11px}}
 @media(prefers-reduced-motion:reduce){.home .q-go{transition:none}}
 
-/* Foto verificable (CC BY-SA 2.0). El SVG anterior queda como respaldo offline.
-   Fotografía: Padmanaba01, Wikimedia Commons, Costa Verde & Highrise Buildings - Lima.
-   https://commons.wikimedia.org/wiki/File:Costa_Verde_%26_Highrise_Buildings_-_Lima.jpg */
-.home .hero .hero-photo-credit{position:absolute;z-index:3;bottom:137px;right:max(20px,calc((100vw - var(--home-width))/2));max-width:45%;background:#091c32c9;border:1px solid #ffffff40;border-radius:99px;color:#e7f4ff;font:500 .68rem/1.45 var(--sans);padding:6px 12px;text-decoration:none;backdrop-filter:blur(9px)}
+/* Fotografías documentales reales: portada Lima 2012 (McKay Savage, CC BY 2.0),
+   Congreso Lima 2021 (Freddiearomerop, CC BY-SA 4.0), sede BCRP Lima 2025
+   (AlejandroFC, CC BY-SA 4.0), inundación en Sechura 2023
+   (Ministerio de Defensa del Perú, CC BY 2.0). Créditos visibles bajo las tarjetas.
+   Los fondos ilustran temas; no son pruebas de hechos actuales. */
+.home .hero{
+ background-color:#10243c;
+ background-image:linear-gradient(90deg,rgba(7,18,38,.94) 0%,rgba(11,27,47,.82) 37%,rgba(13,36,58,.22) 88%),url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Peru_-_Lima_004_-_sunset_light_over_the_coastal_cliffs_%286999152559%29.jpg/1280px-Peru_-_Lima_004_-_sunset_light_over_the_coastal_cliffs_%286999152559%29.jpg");
+ background-position:center,center 54%;background-size:cover,cover;background-repeat:no-repeat
+}
+.home .hero:before{background:linear-gradient(0deg,#0a19244d,transparent 40%)}
+.home .q1{background:linear-gradient(180deg,rgba(108,26,38,.84),rgba(72,13,26,.93)),url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Congreso_de_la_Rep%C3%BAblica_del_Per%C3%BA.jpg/1280px-Congreso_de_la_Rep%C3%BAblica_del_Per%C3%BA.jpg") center/cover no-repeat}
+.home .q2{background:linear-gradient(180deg,rgba(5,66,115,.79),rgba(5,36,78,.93)),url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Edificio_del_BCRP_en_Lima_01.jpg/1280px-Edificio_del_BCRP_en_Lima_01.jpg") center/cover no-repeat}
+.home .q3{background:linear-gradient(180deg,rgba(6,80,63,.72),rgba(4,51,43,.94)),url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MINISTRO_DE_DEFENSA_LLEV%C3%93_AYUDA_HUMANITARIA_A_PIURA_Y_COORDIN%C3%93_ACCIONES_PARA_ENFRENTAR_EFECTOS_DEL_FEN%C3%93MENO_DEL_NI%C3%91O_COSTERO.jpg/1280px-MINISTRO_DE_DEFENSA_LLEV%C3%93_AYUDA_HUMANITARIA_A_PIURA_Y_COORDIN%C3%93_ACCIONES_PARA_ENFRENTAR_EFECTOS_DEL_FEN%C3%93MENO_DEL_NI%C3%91O_COSTERO.jpg") center/cover no-repeat}
+.home .q:before,.home .q:after{display:none}
+.home .hero .hero-photo-credit{position:absolute;z-index:3;bottom:137px;right:max(20px,calc((100vw - var(--home-width))/2));max-width:47%;background:#091c32c9;border:1px solid #ffffff40;border-radius:99px;color:#e7f4ff;font:500 .68rem/1.45 var(--sans);padding:6px 12px;text-decoration:none;backdrop-filter:blur(9px)}
 .home .hero .hero-photo-credit:hover{text-decoration:underline;background:#091c32ef}
 .home .hero .hero-photo-credit:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.home .photo-sources{max-width:var(--home-width);margin:9px auto 0;padding:0 21px;color:var(--tx3);font-size:.75rem;line-height:1.65}
+.home .photo-sources a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.home .photo-sources a:hover{color:var(--red-t)}
 @media(max-width:950px){.home .hero .hero-photo-credit{bottom:173px;right:16px}}
-@media(max-width:640px){.home .hero .hero-photo-credit{bottom:193px;right:13px;max-width:68%;font-size:.58rem;padding:5px 9px}}
+@media(max-width:640px){
+ .home .hero{background-position:center,60% center}
+ .home .hero .hero-photo-credit{bottom:193px;right:13px;max-width:70%;font-size:.58rem;padding:5px 9px}
+ .home .photo-sources{padding:0 13px;font-size:.7rem}
+}
