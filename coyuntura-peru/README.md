@@ -16,7 +16,7 @@ Perú en Claro comparte el sitio de GitHub Pages con el simulador de la Liga 1 q
 
 El flujo `CI y despliegue` (`.github/workflows/ci-deploy.yml`) copia esta carpeta a `dist/peru-en-claro/` antes de publicar.
 
-**Requisito (una sola vez):** en el repositorio, *Settings → Pages → Build and deployment → Source: **GitHub Actions***. Si el job `deploy` falla de inmediato y sin pasos, es porque falta este ajuste.
+El sitio se sirve desde la rama `gh-pages` (Settings → Pages → Deploy from a branch). El job `publicar-peru` copia esta carpeta a `gh-pages/peru-en-claro/` sin tocar el resto de la rama. El job `deploy` (GitHub Actions) solo aplica si se cambia el origen de Pages a "GitHub Actions"; mientras tanto puede fallar sin afectar la publicación.
 
 ## Cómo se actualiza
 
