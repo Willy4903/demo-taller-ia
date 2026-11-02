@@ -11,9 +11,8 @@ Portal de noticias sobre la coyuntura peruana: política, economía, salud, El N
 
 ## Publicación en GitHub Pages
 
-Contexto Perú comparte el sitio de GitHub Pages con el simulador de la Liga 1 que ya existe en este repositorio:
+Contexto Perú vive en una carpeta del sitio de GitHub Pages del repositorio (la raíz del sitio es otro proyecto y no forma parte de Contexto Perú):
 
-- Simulador: `https://<usuario>.github.io/demo-taller-ia/`
 - Contexto Perú: `https://<usuario>.github.io/demo-taller-ia/peru-en-claro/`
 
 El flujo `CI y despliegue` (`.github/workflows/ci-deploy.yml`) copia esta carpeta a `dist/peru-en-claro/` antes de publicar.
