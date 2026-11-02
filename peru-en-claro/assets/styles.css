@@ -573,8 +573,8 @@ details.mas>summary{list-style:none;cursor:pointer;width:max-content}
 details.mas>summary::-webkit-details-marker{display:none}
 details.mas[open]>summary{margin-bottom:10px}
 
-/* Etiqueta de confianza: se muestra en las notas y análisis, no en el panel del inicio */
-.bento .conf{display:none}
+/* Etiqueta de confianza: solo dentro del análisis completo, no en tarjetas ni listas */
+.meta .conf,.bento .conf{display:none}
 .f-aut{color:var(--tx3)}
 .f-lk a{color:var(--gold-t);font-weight:600}
 .f-lk a:hover{text-decoration:underline}
