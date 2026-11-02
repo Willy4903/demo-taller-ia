@@ -48,9 +48,9 @@ window.EDITORIAL = {
         { id: "tasa", un: "% anual", corte: "Vigente (más de un año sin cambios)", fp: "BCRP", cat: "eco", tag: "BCRP", k: "Tasa de referencia BCRP", v: "4,25 %", n: "Más de un año sin cambios", c: "Tasa de interés que fija el BCRP. Sirve de guía para el costo del crédito en la economía.", e: "Ejemplo simplificado: 4,25 % anual sobre S/ 1 000 son S/ 42,50 al año; las tasas que cobran los bancos son mayores.", f: "Perú Retail", u: "https://www.peru-retail.com/bcrp-mantiene-la-tasa-de-referencia-en-425-por-mas-de-un-ano-que-factores-influyen-en-su-decision/" }
       ]},
       { g: "Clima y ENFEN", c: "#0EA5E9", items: [
-        { id: "nestado", un: "estado", corte: "Comunicado ENFEN N.° 12-2026", fp: "ENFEN", cat: "clima", tag: "ENFEN", k: "Estado ENFEN", v: "Alerta", n: "Alerta de El Niño costero", c: "El ENFEN clasifica la situación del mar en tres estados: No activo, Vigilancia o Alerta.", e: "En enero de 2026 pasó de No activo a Vigilancia (comunicado N.° 01-2026); hoy figura en Alerta.", f: "ENFEN (gob.pe)", u: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" },
-        { id: "nmag", un: "magnitud", corte: "Comunicado ENFEN N.° 12-2026", fp: "ENFEN", cat: "clima", tag: "ENFEN", k: "Magnitud esperada", v: "Fuerte → moderada", n: "Fuerte hasta octubre, moderada desde noviembre", c: "Qué tan intenso se espera el calentamiento del mar: débil, moderado o fuerte.", e: "Un evento fuerte aumenta el riesgo de lluvias intensas en la costa norte.", f: "ENFEN (comunicado N.° 12-2026)", u: "https://opsaa.iica.int/en/resource-2820-enfen-official-communique-no-12-2026" },
-        { id: "nhor", un: "periodo", corte: "Comunicado ENFEN N.° 12-2026", fp: "ENFEN", cat: "clima", tag: "ENFEN", k: "Horizonte del evento", v: "Verano 2027", n: "Dic. 2026 a mar. 2027: fuerte o moderada", c: "Hasta cuándo se espera que dure el evento, según el último pronóstico.", e: "Cada comunicado del ENFEN puede cambiar el horizonte: conviene revisar siempre el más reciente.", f: "ENFEN (gob.pe)", u: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" },
+        { id: "nestado", un: "estado", corte: "Comunicado ENFEN N.° 16-2026 y notas de prensa posteriores", fp: "ENFEN", cat: "clima", tag: "ENFEN", k: "Estado ENFEN", v: "Alerta", n: "Alerta de El Niño costero; una nota de RPP confirma que se mantiene", c: "El ENFEN clasifica la situación del mar en tres estados: No activo, Vigilancia o Alerta.", e: "En enero de 2026 pasó de No activo a Vigilancia (comunicado N.° 01-2026); hoy figura en Alerta.", f: "ENFEN (gob.pe)", u: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" },
+        { id: "nmag", un: "magnitud", corte: "Comunicado ENFEN N.° 16-2026 (14 de septiembre de 2026)", fp: "ENFEN", cat: "clima", tag: "ENFEN", k: "Magnitud esperada (último pronóstico verificado)", v: "Extraordinaria", n: "Más probable entre setiembre de 2026 y enero de 2027. Comunicados posteriores (hasta el N.° 19-2026, del 16 de octubre) pueden haberlo cambiado: una nota de RPP cita magnitud moderada para el verano de 2027. Confirma en el ENFEN.", c: "Qué tan intenso se espera el calentamiento del mar: débil, moderado, fuerte o extraordinario.", e: "Para el verano de 2027, el N.° 16 daba 48 % a magnitud extraordinaria y 45 % a fuerte: juntas suman 93 %.", f: "Canal N sobre el comunicado N.° 16-2026", u: "https://canaln.pe/actualidad/enfen-nino-costero-se-extendera-hasta-mediados-otono-2027-n495035" },
+        { id: "nhor", un: "periodo", corte: "Comunicado ENFEN N.° 16-2026 (14 de septiembre de 2026)", fp: "ENFEN", cat: "clima", tag: "ENFEN", k: "Horizonte del evento", v: "Otoño 2027", n: "Según el N.° 16 se extendería hasta mediados del otoño de 2027; una nota posterior de RPP habla de febrero de 2027.", c: "Hasta cuándo se espera que dure el evento, según el último pronóstico.", e: "Cada comunicado del ENFEN puede cambiar el horizonte: conviene revisar siempre el más reciente.", f: "ENFEN (gob.pe)", u: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" },
         { id: "nglobal", un: "estado global", corte: "Diagnóstico del 13 de agosto de 2026", fp: "NOAA CPC", cat: "clima", tag: "NOAA", k: "El Niño a escala global", v: "Advisory", n: "Diagnóstico del CPC del 13 de agosto de 2026", c: "El Niño Advisory es el aviso de la NOAA cuando El Niño está presente y se espera que continúe.", e: "La OMM lo describía en agosto como firmemente establecido, con persistencia probable hasta inicios de 2027.", f: "NOAA CPC", u: "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml" }
       ]},
       { g: "Salud (CDC-Minsa)", c: "#35E0D2", items: [
@@ -76,24 +76,27 @@ window.EDITORIAL = {
 
   /* Panel de la sección El Niño (cifras de comunicados ENFEN; verificar en el comunicado más reciente) */
   nino: {
-    corte: "Según el comunicado N.° 12-2026 del ENFEN; puede haber comunicados posteriores.",
+    corte: "El pronóstico resumido es el del comunicado N.° 16-2026 (14 de septiembre de 2026); el ENFEN ya publicó comunicados posteriores.",
+    comunicadoRef: "16-2026",
     observatorio: { n: "El Niño Perú: observatorio", u: "https://willy4903.github.io/observatorio-elnino-peru/#meteo", d: "Datos del mar, pronóstico del tiempo por distrito y zonas de riesgo." },
     enfenUrl: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen",
     tres: [
       { k: "Estado observado", v: "Alerta de El Niño costero", d: "Es la condición que el ENFEN ve hoy en el mar frente a la costa: más cálido de lo normal.", f: "ENFEN" },
-      { k: "Pronóstico", v: "Fuerte hasta octubre, moderada desde noviembre", d: "Lo que el ENFEN espera que ocurra. Para diciembre de 2026 a marzo de 2027 prevé magnitud fuerte o moderada.", f: "ENFEN, comunicado N.° 12-2026" },
+      { k: "Pronóstico", v: "Extraordinaria entre setiembre de 2026 y enero de 2027 (comunicado N.° 16)", d: "Para el verano de 2027 el ENFEN daba 48 % de probabilidad a magnitud extraordinaria y 45 % a fuerte, con el evento hasta mediados del otoño de 2027. Comunicados posteriores pueden haberlo cambiado: una nota de RPP cita magnitud moderada para el verano de 2027.", f: "ENFEN, comunicado N.° 16-2026 (14 de septiembre de 2026), vía Canal N; y RPP" },
       { k: "Riesgo", v: "Lluvias intensas, pesca, agro y salud", d: "Lo que podría afectar si el evento es fuerte: lluvias y huaicos en la costa norte, pesca, agricultura y dengue. No es un pronóstico oficial de daños: consulta Indeci y Senamhi.", f: "Contexto Perú, a partir de ENFEN" }
     ],
     estado: [
       { k: "Estado ENFEN", v: "Alerta", n: "Alerta de El Niño costero" },
-      { k: "Magnitud esperada", v: "Fuerte → moderada", n: "Fuerte hasta octubre, moderada desde noviembre" },
-      { k: "Horizonte", v: "Verano 2027", n: "Dic. 2026 a mar. 2027: fuerte o moderada" }
+      { k: "Magnitud esperada", v: "Extraordinaria (N.° 16)", n: "Setiembre de 2026 a enero de 2027" },
+      { k: "Horizonte", v: "Otoño 2027", n: "Hasta mediados del otoño de 2027 (N.° 16)" }
     ],
     linea: [
       { c: "N.° 01-2026", f: "15 de enero", x: "El ENFEN pasa de No activo a Vigilancia. Se esperaban condiciones cálidas débiles desde abril hasta al menos octubre.", u: "https://www.gob.pe/institucion/imarpe/informes-publicaciones/7624651-comunicado-oficial-enfen-n-01-2026" },
       { c: "N.° 08-2026", f: "", x: "El Niño costero se presentaría con magnitud débil y podría alcanzar nivel moderado entre junio y julio.", u: "https://andina.pe/ingles/noticia-peru-weak-coastal-nino-to-reach-moderate-strength-between-june-and-july-1073533.aspx" },
       { c: "N.° 11-2026", f: "", x: "Se eleva la proyección: magnitud fuerte entre junio y septiembre y evento prolongado hasta el verano de 2027.", u: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" },
-      { c: "N.° 12-2026", f: "", x: "Magnitud fuerte hasta octubre y moderada desde noviembre. Para diciembre de 2026 a marzo de 2027 se prevé magnitud fuerte o moderada.", u: "https://opsaa.iica.int/en/resource-2820-enfen-official-communique-no-12-2026" }
+      { c: "N.° 12-2026", f: "", x: "Magnitud fuerte hasta octubre y moderada desde noviembre. Para diciembre de 2026 a marzo de 2027 se preveía magnitud fuerte o moderada.", u: "https://opsaa.iica.int/en/resource-2820-enfen-official-communique-no-12-2026" },
+      { c: "N.° 16-2026", f: "14 de septiembre", x: "Magnitud extraordinaria más probable entre setiembre de 2026 y enero de 2027. Para el verano, 48 % de probabilidad de magnitud extraordinaria y 45 % de fuerte. El evento se extendería hasta mediados del otoño de 2027.", u: "https://canaln.pe/actualidad/enfen-nino-costero-se-extendera-hasta-mediados-otono-2027-n495035" },
+      { c: "Comunicados posteriores (hasta el N.° 19-2026, del 16 de octubre)", f: "", x: "El ENFEN mantiene el estado de alerta. Una nota de RPP reporta magnitud moderada para el verano de 2027 y una prolongación hasta febrero de 2027. Lee el comunicado vigente: el pronóstico cambió respecto del N.° 16.", u: "https://rpp.pe/peru/actualidad/enfen-mantiene-el-estado-de-alerta-ante-fenomeno-el-nino-costero-y-estima-que-se-prolongaria-hasta-febrero-de-2027-noticia-1690813" }
     ]
   },
 
@@ -102,7 +105,7 @@ window.EDITORIAL = {
     { k: "PBI 2026 · proyección BCRP", un: "% de variación anual", corte: "Proyección para 2026", fp: "BCRP", v: "3,2 %", n: "Recortada citando El Niño", f: "BCRP", u: "https://www.bcrp.gob.pe" },
     { k: "Inflación 2026 · proyección BCRP", un: "% anual", corte: "Proyección para 2026", fp: "BCRP", v: "~4,2 %", n: "Meta 1 %-3 %; BCP proyecta 4,7 %", f: "Forbes Perú", u: "https://forbes.pe/economia-y-finanzas/2026-09-10/bcp-elevo-su-proyeccion-de-inflacion-de-42-a-47-para-cierre-de-ano/" },
     { k: "Tasa de referencia BCRP", un: "% anual", corte: "Vigente", fp: "BCRP", v: "4,25 %", n: "Más de un año sin cambios", f: "Perú Retail", u: "https://www.peru-retail.com/bcrp-mantiene-la-tasa-de-referencia-en-425-por-mas-de-un-ano-que-factores-influyen-en-su-decision/" },
-    { k: "El Niño costero · estado ENFEN", un: "estado", corte: "Comunicado ENFEN N.° 12-2026", fp: "ENFEN", v: "Alerta", n: "Extensión prevista hasta el verano de 2027", f: "ENFEN", u: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" },
+    { k: "El Niño costero · estado ENFEN", un: "estado", corte: "Comunicado ENFEN N.° 16-2026 y notas de prensa posteriores", fp: "ENFEN", v: "Alerta", n: "El pronóstico cambia en cada comunicado; ver la sección El Niño", f: "ENFEN", u: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" },
     { k: "Dengue · fallecidos 2026", un: "fallecidos", corte: "Semana epidemiológica 40 de 2026", fp: "CDC-Minsa", v: "75", n: "Corte semana epidemiológica 40", f: "CDC-Minsa", u: "https://www.dge.gob.pe/portalnuevo/?p=4861" },
     { k: "Congreso bicameral", un: "senadores + diputados", corte: "Julio de 2026", fp: "Congreso", v: "60 + 130", n: "Senadores y diputados", f: "Diario Libre", u: "https://www.diariolibre.com/mundo/america-latina/2026/07/24/peru-establece-un-sistema-parlamentario-bicameral/3610006" }
   ],
@@ -359,13 +362,14 @@ window.EDITORIAL = {
     },
     {
       id: "nino-peru", sector: "nino", nivel: "media",
-      titulo: "El Niño costero sigue en alerta y se extendería hasta el verano de 2027",
-      resumen: "El ENFEN mantiene el estado de alerta de El Niño costero. Según su comunicado oficial N.° 12-2026, el evento se extendería hasta el verano de 2027, con magnitud fuerte hasta octubre y moderada desde noviembre; para diciembre de 2026 a marzo de 2027 se prevé magnitud fuerte o moderada. Un titular de Canal N atribuye a un comunicado posterior (N.° 16-2026) una extensión hasta mediados del otoño de 2027, pero no se pudo verificar su texto.",
+      titulo: "El Niño costero sigue en alerta y el pronóstico cambia de un comunicado a otro",
+      resumen: "El ENFEN mantiene el estado de alerta de El Niño costero. Su comunicado N.° 16-2026 (14 de septiembre) hablaba de magnitud extraordinaria más probable entre setiembre de 2026 y enero de 2027, con 48 % de probabilidad de magnitud extraordinaria y 45 % de fuerte para el verano, y de una extensión hasta mediados del otoño de 2027. Después se publicaron más comunicados (el sistema detectó el N.° 19-2026, del 16 de octubre) y una nota de RPP cita magnitud moderada para el verano de 2027 y una prolongación hasta febrero de 2027: el pronóstico cambió y conviene leer el comunicado vigente.",
       paraTi: "Sigue las indicaciones de Indeci y de tu gobierno regional, evita el agua estancada (dengue) y revisa el comunicado ENFEN más reciente: el pronóstico cambia de un comunicado a otro.",
       fuentes: [
         { n: "ENFEN · comunicados oficiales (gob.pe)", u: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" },
         { n: "RPP · alerta e impactos hasta 2027", u: "https://rpp.pe/peru/actualidad/enfen-mantiene-alerta-por-el-nino-costero-y-advierte-posibles-impactos-hasta-2027-noticia-1686644" },
-        { n: "Canal N · hasta mediados del otoño 2027", u: "https://canaln.pe/amp/actualidad/enfen-nino-costero-se-extendera-hasta-mediados-otono-2027-n495035" },
+        { n: "Canal N · hasta mediados del otoño 2027 (N.° 16)", u: "https://canaln.pe/amp/actualidad/enfen-nino-costero-se-extendera-hasta-mediados-otono-2027-n495035" },
+        { n: "RPP · estado de alerta y verano 2027 (nota posterior)", u: "https://rpp.pe/peru/actualidad/enfen-mantiene-el-estado-de-alerta-ante-fenomeno-el-nino-costero-y-estima-que-se-prolongaria-hasta-febrero-de-2027-noticia-1690813" },
         { n: "Expreso · gremios exportadores y pesqueros", u: "https://www.expreso.com.pe/en-portada/fenomeno-el-nino-activa-vigilia-de-gremios-exportadores-y-pesqueros-lluvias-noticia/1260592/" }
       ]
     },
