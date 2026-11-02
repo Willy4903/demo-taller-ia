@@ -63,6 +63,8 @@ FEEDS = [
     ("ONU Noticias", ["https://news.un.org/feed/subscribe/es/news/all/rss.xml"], "internacional", "mundo"),
     # Inteligencia artificial: Perú y mundo (Google Noticias agrega varios medios; la fuente real viene en <source>)
     ("Google Noticias · IA en el Perú", ["https://news.google.com/rss/search?q=%22inteligencia+artificial%22+Per%C3%BA+when:7d&hl=es-419&gl=PE&ceid=PE:es-419"], "comercial", "ia"),
+    # El Niño costero (Perú)
+    ("Google Noticias · El Niño", ["https://news.google.com/rss/search?q=%22Fen%C3%B3meno+El+Ni%C3%B1o%22+OR+%22Ni%C3%B1o+costero%22+ENFEN+when:14d&hl=es-419&gl=PE&ceid=PE:es-419"], "comercial", "nino"),
     ("Google Noticias · IA en el mundo", ["https://news.google.com/rss/search?q=%22inteligencia+artificial%22+(OpenAI+OR+Anthropic+OR+Google+OR+regulaci%C3%B3n+OR+NVIDIA)+when:7d&hl=es-419&gl=US&ceid=US:es-419"], "internacional", "ia"),
 ]
 
@@ -75,6 +77,8 @@ CLAVES = {
                  "cobre", "oro", "minero", "fiscal ", "deficit", "credito"],
     "salud": ["salud", "minsa", "essalud", "dengue", "hospital", "vacuna", "epidemi", "enfermedad", "medic", "paciente",
               "anemia", "covid", "brote", "sis ", "clinica", "cancer", "diresa"],
+    "nino": ["el nino", "nino costero", "enfen", "senamhi", "indeci", "anomalia termica", "temperatura del mar",
+             "temperatura superficial del mar", "la nina", "oceanograf", "imarpe", "fenomeno el nino"],
     "ia": ["inteligencia artificial", " ia ", "chatgpt", "openai", "anthropic", "gemini", "claude", "modelo de lenguaje",
            "machine learning", "aprendizaje automatico", "ia generativa", "agente de ia", "nvidia", "deepfake",
            "algoritmo", "robot", "copilot", "deepseek", "llm", "centro de datos", "ai act"],
@@ -86,7 +90,7 @@ CLAVES = {
     "investigacion": ["investigacion", "fiscalia", "fiscal", "corrupcion", "reportaje", "lavado", "organizacion criminal",
                       "colaboracion eficaz", "allanamiento", "prision preventiva", "audios", "denuncia", "contraloria",
                       "extorsion", "crimen organizado", "narcotrafico", "sicari", "caso "],
-    "coyuntura": ["protesta", "paro ", "seguridad ciudadana", "el nino", "huaico", "lluvia", "emergencia", "transporte",
+    "coyuntura": ["protesta", "paro ", "seguridad ciudadana", "huaico", "lluvia", "emergencia", "transporte",
                   "marcha", "inseguridad", "delincuencia", "clima", "sismo", "incendio", "apagon"],
 }
 
@@ -202,34 +206,69 @@ MESES = {"ene": 1, "jan": 1, "feb": 2, "mar": 3, "abr": 4, "apr": 4, "may": 5, "
          "set": 9, "sep": 9, "oct": 10, "nov": 11, "dic": 12, "dec": 12}
 
 
+def _bcrp(hoy):
+    """Serie diaria interbancario venta (S/ por US$) de la API del BCRP (PD04638PD); prueba formatos de fecha."""
+    ini = hoy - dt.timedelta(days=45)
+    ultimo = "sin intentos"
+    for fmt in ("{d.year}-{d.month}-{d.day}", "{d:%Y-%m-%d}"):
+        url = ("https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PD04638PD/json/"
+               + fmt.format(d=ini) + "/" + fmt.format(d=hoy) + "/esp")
+        crudo = b""
+        try:
+            crudo = descargar(url)
+            datos = json.loads(crudo.decode("utf-8", errors="replace"))
+            serie = []
+            for per in datos.get("periods", []):
+                m = re.search(r"(\d{1,2})\D*([A-Za-z]{3})\D*(\d{2,4})", per.get("name", ""))
+                vals = per.get("values") or []
+                if not m or not vals:
+                    continue
+                try:
+                    v = float(vals[0])
+                except (TypeError, ValueError):
+                    continue
+                mes = MESES.get(m.group(2).lower())
+                if not mes:
+                    continue
+                anio = int(m.group(3)) + (2000 if len(m.group(3)) == 2 else 0)
+                serie.append({"f": dt.date(anio, mes, int(m.group(1))).isoformat(), "v": round(v, 4)})
+            serie = sorted(serie, key=lambda x: x["f"])[-30:]
+            if len(serie) >= 3:
+                return serie
+            ultimo = f"respuesta sin datos suficientes ({len(serie)})"
+        except Exception as ex:  # noqa: BLE001
+            ultimo = f"{type(ex).__name__}: {str(ex)[:80]} | inicio de la respuesta: {crudo[:100]!r}"
+    print(f"  ✗ Tipo de cambio BCRP: {ultimo}")
+    return None
+
+
+def _spot_pen():
+    """Respaldo: tipo de cambio referencial USD/PEN de APIs públicas sin clave."""
+    for url, ruta in (("https://open.er-api.com/v6/latest/USD", ("rates", "PEN")), ("https://api.exchangerate-api.com/v4/latest/USD", ("rates", "PEN"))):
+        try:
+            datos = json.loads(descargar(url).decode("utf-8", errors="replace"))
+            v = float(datos[ruta[0]][ruta[1]])
+            if 2.0 < v < 6.0:
+                return round(v, 4), urlsplit(url).netloc
+        except Exception as ex:  # noqa: BLE001
+            print(f"  ✗ Respaldo {urlsplit(url).netloc}: {type(ex).__name__}: {str(ex)[:80]}")
+    return None
+
+
 def tipo_cambio(previo=None):
-    """Tipo de cambio interbancario venta (S/ por US$) desde la API pública del BCRP (serie PD04638PD)."""
-    hoy = dt.date.today()
-    ini = (hoy - dt.timedelta(days=45)).isoformat()
-    url = f"https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PD04638PD/json/{ini}/{hoy.isoformat()}/esp"
-    try:
-        datos = json.loads(descargar(url).decode("utf-8", errors="replace"))
-        serie = []
-        for per in datos.get("periods", []):
-            m = re.search(r"(\d{1,2})\D*([A-Za-z]{3})\D*(\d{2,4})", per.get("name", ""))
-            vals = per.get("values") or []
-            if not m or not vals:
-                continue
-            try:
-                v = float(vals[0])
-            except (TypeError, ValueError):
-                continue
-            mes = MESES.get(m.group(2).lower())
-            if not mes:
-                continue
-            anio = int(m.group(3)) + (2000 if len(m.group(3)) == 2 else 0)
-            serie.append({"f": dt.date(anio, mes, int(m.group(1))).isoformat(), "v": round(v, 4)})
-        serie = sorted(serie, key=lambda x: x["f"])[-30:]
-        if len(serie) >= 3:
-            print(f"Tipo de cambio BCRP: {len(serie)} datos, último {serie[-1]}")
-            return {"serie": serie, "fuente": "BCRP", "serie_id": "PD04638PD"}
-    except Exception as ex:  # noqa: BLE001
-        print(f"  ✗ Tipo de cambio BCRP: {type(ex).__name__}: {str(ex)[:120]}")
+    """USD/PEN: serie del BCRP; si falla, valor referencial diario que se acumula entre ejecuciones."""
+    hoy = dt.datetime.now(dt.timezone(dt.timedelta(hours=-5))).date()
+    serie = _bcrp(hoy)
+    if serie:
+        print(f"Tipo de cambio BCRP: {len(serie)} datos, último {serie[-1]}")
+        return {"serie": serie, "fuente": "BCRP", "serie_id": "PD04638PD"}
+    spot = _spot_pen()
+    if spot:
+        v, host = spot
+        hist = [x for x in ((previo or {}).get("serie") or []) if x.get("f") != hoy.isoformat()]
+        hist.append({"f": hoy.isoformat(), "v": v})
+        print(f"Tipo de cambio referencial ({host}): {v}")
+        return {"serie": hist[-60:], "fuente": "Referencial · " + host, "nota": "Valor de mercado referencial; el oficial está en el BCRP."}
     return previo
 
 
@@ -328,7 +367,7 @@ def parsear_feed(datos, nombre, tipo, sector_def):
 
 
 def clasificar(titulo, resumen, sector_def):
-    if sector_def in ("mundo", "ia"):
+    if sector_def in ("mundo", "ia", "nino"):
         return sector_def
     t = " " + norm(titulo + " " + resumen) + " "
     puntos = {s: sum(t.count(k) for k in ks) for s, ks in CLAVES.items()}

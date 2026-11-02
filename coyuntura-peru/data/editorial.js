@@ -18,6 +18,7 @@ window.EDITORIAL = {
     { k: "PBI 2026 · proyección BCRP", v: "3,2 %", n: "Recortada citando El Niño", f: "BCRP", u: "https://www.bcrp.gob.pe" },
     { k: "Inflación 2026 · proyección BCRP", v: "~4,2 %", n: "Meta 1 %-3 %; BCP proyecta 4,7 %", f: "Forbes Perú", u: "https://forbes.pe/economia-y-finanzas/2026-09-10/bcp-elevo-su-proyeccion-de-inflacion-de-42-a-47-para-cierre-de-ano/" },
     { k: "Tasa de referencia BCRP", v: "4,25 %", n: "Más de un año sin cambios", f: "Perú Retail", u: "https://www.peru-retail.com/bcrp-mantiene-la-tasa-de-referencia-en-425-por-mas-de-un-ano-que-factores-influyen-en-su-decision/" },
+    { k: "El Niño costero · estado ENFEN", v: "Alerta", n: "Extensión prevista hasta el verano de 2027", f: "ENFEN", u: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" },
     { k: "Dengue · fallecidos 2026", v: "75", n: "Corte semana epidemiológica 40", f: "CDC-Minsa", u: "https://www.dge.gob.pe/portalnuevo/?p=4861" },
     { k: "Congreso bicameral", v: "60 + 130", n: "Senadores y diputados", f: "Diario Libre", u: "https://www.diariolibre.com/mundo/america-latina/2026/07/24/peru-establece-un-sistema-parlamentario-bicameral/3610006" }
   ],
@@ -78,6 +79,25 @@ window.EDITORIAL = {
           { q: "¿Qué mosquito transmite el dengue?", o: ["Anopheles", "Aedes aegypti", "Culex", "Simulium"], c: 1, p: "El Aedes aegypti transmite dengue, zika y chikungunya." },
           { q: "¿Cuál es la mejor medida de prevención doméstica contra el dengue?", o: ["Tapar y eliminar recipientes con agua estancada", "Usar más perfume", "Cerrar ventanas todo el día", "Tomar vitaminas"], c: 0, p: "Sin agua estancada no hay criaderos: tapa, voltea o elimina recipientes." },
           { q: "Una semana epidemiológica agrupa…", o: ["3 días", "7 días", "15 días", "30 días"], c: 1, p: "Es un periodo estándar de 7 días para comparar la vigilancia de enfermedades." }
+        ]
+      }
+    },
+    {
+      id: "nino", nombre: "El Niño", icono: "🌊", color: "#0EA5E9",
+      lema: "Qué es el Niño costero, cómo se vigila y qué puede pasar este verano.",
+      esencial: [
+        "El {{el-nino-costero|Niño costero}} es un calentamiento anormal del mar frente a Perú y Ecuador (región {{nino-1-2|Niño 1+2}}). Forma parte del {{enso|ENOS}}: la fase cálida es El Niño y la fría es {{la-nina|La Niña}}.",
+        "El {{enfen|ENFEN}} emite comunicados oficiales con un estado (No activo, Vigilancia o Alerta), la magnitud esperada (débil, moderada, fuerte) y el pronóstico. El {{senamhi|Senamhi}} informa el clima y {{indeci|Indeci}} coordina la respuesta ante emergencias.",
+        "Según comunicados recientes del ENFEN, el evento de 2026 se extendería hasta el verano de 2027. La magnitud y las fechas cambian con cada comunicado: revisa siempre el más reciente.",
+        "Puede afectar la costa con lluvias intensas, la pesca, la agricultura y la salud (por ejemplo, más agua estancada donde se cría el mosquito del dengue)."
+      ],
+      terminos: ["el-nino-costero","enfen","enso","tsm","nino-1-2","la-nina","senamhi","indeci","dengue"],
+      mision: {
+        titulo: "Estación El Niño: el Observatorio del Mar",
+        preguntas: [
+          { q: "¿Qué entidad emite los comunicados oficiales sobre El Niño costero en el Perú?", o: ["El ENFEN", "La SUNAT", "El JNE", "La Contraloría"], c: 0, p: "El ENFEN (Comisión Multisectorial del Estudio Nacional del Fenómeno El Niño) emite el estado de alerta y el pronóstico." },
+          { q: "En el ciclo ENOS, El Niño es la fase…", o: ["Cálida", "Fría", "Neutral", "Eléctrica"], c: 0, p: "El Niño es la fase cálida; La Niña es la fase fría." },
+          { q: "Para vigilar El Niño costero se mira sobre todo…", o: ["La temperatura del mar frente a la costa", "El precio del pescado", "La cantidad de turistas", "La altura de los edificios"], c: 0, p: "Se compara la temperatura superficial del mar con su promedio: la diferencia es la anomalía." }
         ]
       }
     },
@@ -254,6 +274,28 @@ window.EDITORIAL = {
       ]
     },
     {
+      id: "nino-peru", sector: "nino", nivel: "media",
+      titulo: "El Niño costero sigue en alerta y se extendería hasta el verano de 2027",
+      resumen: "El ENFEN mantiene el estado de Alerta de El Niño Costero. Según su comunicado oficial N.° 12-2026, el evento se extendería hasta el verano de 2027, con magnitud fuerte hasta octubre y moderada desde noviembre; para diciembre de 2026 a marzo de 2027 se prevé magnitud fuerte o moderada. Un titular de Canal N atribuye a un comunicado posterior (N.° 16-2026) una extensión hasta mediados del otoño de 2027, pero no se pudo verificar su texto.",
+      paraTi: "Sigue las indicaciones de Indeci y de tu gobierno regional, evita el agua estancada (dengue) y revisa el comunicado ENFEN más reciente: el pronóstico cambia de un comunicado a otro.",
+      fuentes: [
+        { n: "ENFEN · comunicados oficiales (gob.pe)", u: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" },
+        { n: "RPP · alerta e impactos hasta 2027", u: "https://rpp.pe/peru/actualidad/enfen-mantiene-alerta-por-el-nino-costero-y-advierte-posibles-impactos-hasta-2027-noticia-1686644" },
+        { n: "Canal N · hasta mediados del otoño 2027", u: "https://canaln.pe/amp/actualidad/enfen-nino-costero-se-extendera-hasta-mediados-otono-2027-n495035" },
+        { n: "Expreso · gremios exportadores y pesqueros", u: "https://www.expreso.com.pe/en-portada/fenomeno-el-nino-activa-vigilia-de-gremios-exportadores-y-pesqueros-lluvias-noticia/1260592/" }
+      ]
+    },
+    {
+      id: "nino-mundo", sector: "nino", nivel: "media",
+      titulo: "A escala global, El Niño está establecido y seguiría hasta inicios de 2027",
+      resumen: "El diagnóstico del Climate Prediction Center de EE. UU. del 13 de agosto de 2026 mantenía el estado de El Niño Advisory, con pronóstico de que siga intensificándose hasta fin de año. La OMM, en su actualización de agosto, lo describe como firmemente establecido y en fortalecimiento, con persistencia probable hasta comienzos de 2027.",
+      paraTi: "Un El Niño global altera lluvias y temperaturas en distintas regiones. Para el Perú importa sobre todo el comunicado del ENFEN, que mide el mar frente a la costa. No se encontró el diagnóstico más reciente: confirma en el sitio del CPC.",
+      fuentes: [
+        { n: "NOAA CPC · diagnóstico ENSO", u: "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml" },
+        { n: "OMM · actualización ENSO (agosto 2026)", u: "https://wmo.int/sites/default/files/2026-08/Factsheet-ENSO-Update-August-2026-en.pdf" }
+      ]
+    },
+    {
       sector: "tecnologia", nivel: "media",
       titulo: "El Estado fija estrategias de IA y ciberseguridad mientras suben los ataques",
       resumen: "El marco peruano de IA (Ley 31814, 2023) convive con la Estrategia Nacional de Ciberseguridad 2026-2028, y reportes citados por El Peruano indican que los ciberataques con IA y ransomware aumentan, con banca, telecomunicaciones, salud, comercio y gobierno entre los más expuestos.",
@@ -385,6 +427,13 @@ window.EDITORIAL = {
     { id: "datos-personales", t: "Datos personales", s: "tecnologia", d: "Información que identifica a una persona. En el Perú están protegidos por la Ley 29733 y una autoridad nacional de protección de datos." },
     { id: "deepfake", t: "Deepfake", s: "tecnologia", d: "Video, audio o imagen falsificados con IA que imitan a una persona real. Verifica la fuente antes de compartir." },
     { id: "gobierno-digital", t: "Gobierno digital (gob.pe)", s: "tecnologia", d: "Estrategia para ofrecer trámites y servicios del Estado en línea, centralizados en la plataforma gob.pe." },
+    { id: "enfen", t: "ENFEN", s: "nino", d: "Comisión Multisectorial del Estudio Nacional del Fenómeno El Niño. Emite comunicados oficiales con el estado (No activo, Vigilancia o Alerta), la magnitud esperada y el pronóstico." },
+    { id: "enso", t: "ENOS (El Niño-Oscilación del Sur)", s: "nino", d: "Ciclo climático del Pacífico ecuatorial con una fase cálida (El Niño), una fría (La Niña) y una neutral. Influye en el clima de muchas regiones del mundo." },
+    { id: "tsm", t: "Temperatura superficial del mar (TSM)", s: "nino", d: "Temperatura del agua en la superficie. Su diferencia respecto al promedio, llamada anomalía, se usa para detectar El Niño." },
+    { id: "nino-1-2", t: "Región Niño 1+2", s: "nino", d: "Zona del Pacífico frente a las costas de Ecuador y Perú que se vigila para El Niño costero." },
+    { id: "la-nina", t: "La Niña", s: "nino", d: "Fase fría del ENOS: el Pacífico ecuatorial está más frío de lo normal. Suele tener efectos opuestos a los de El Niño." },
+    { id: "senamhi", t: "Senamhi", s: "nino", d: "Servicio Nacional de Meteorología e Hidrología del Perú: publica pronósticos del clima y avisos meteorológicos." },
+    { id: "indeci", t: "Indeci", s: "nino", d: "Instituto Nacional de Defensa Civil: coordina la preparación y la respuesta ante emergencias y desastres." },
     { id: "ia-generativa", t: "IA generativa", s: "ia", d: "IA que crea contenido nuevo (texto, imágenes, audio, código) a partir de instrucciones, tras entrenarse con grandes volúmenes de datos." },
     { id: "llm", t: "Modelo de lenguaje (LLM)", s: "ia", d: "Sistema entrenado con enormes cantidades de texto que genera lenguaje. Es la base de asistentes como ChatGPT, Claude o Gemini." },
     { id: "agente-ia", t: "Agente de IA", s: "ia", d: "Sistema que no solo responde: ejecuta tareas de varios pasos usando herramientas (buscar, escribir, operar programas). Conviene supervisarlo." },
@@ -430,6 +479,8 @@ window.EDITORIAL = {
     { n: "BCRP", u: "https://www.bcrp.gob.pe", tipo: "Dato oficial", foco: "Notas de política monetaria e indicadores.", feed: false },
     { n: "INEI", u: "https://www.inei.gob.pe", tipo: "Dato oficial", foco: "Estadísticas oficiales: pobreza, empleo, población.", feed: false },
     { n: "CDC-Minsa", u: "https://www.dge.gob.pe", tipo: "Dato oficial", foco: "Salas situacionales y alertas epidemiológicas.", feed: false },
+    { n: "ENFEN · comunicados oficiales", u: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen", tipo: "Dato oficial", foco: "Estado de alerta, magnitud y pronóstico de El Niño costero.", feed: false },
+    { n: "NOAA · Climate Prediction Center", u: "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml", tipo: "Dato oficial", foco: "Diagnóstico mensual de El Niño y La Niña a escala global.", feed: false },
     { n: "SGTD · PCM (gob.pe)", u: "https://www.gob.pe/pcm", tipo: "Dato oficial", foco: "Autoridad nacional de IA y gobierno digital: directivas, estrategia y reglamento.", feed: false },
     { n: "Comisión Europea · IA", u: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", tipo: "Dato oficial", foco: "Marco normativo europeo de IA (AI Act) y calendario de aplicación.", feed: false },
     { n: "BBC Mundo", u: "https://www.bbc.com/mundo", tipo: "Internacional", foco: "Noticias del mundo en español.", feed: true },
@@ -469,6 +520,14 @@ window.EDITORIAL.articulos = {
   "ia-infra": {
     contexto: "Entrenar y ejecutar modelos de IA exige chips especializados y centros de datos con gran consumo eléctrico. Por eso la disponibilidad de energía, la regulación de las redes eléctricas y el comercio de chips se volvieron parte del debate sobre IA.",
     terminos: ["gpu", "centro-de-datos", "llm", "agente-ia"]
+  },
+  "nino-peru": {
+    contexto: "El Niño costero se declara cuando el mar frente a Perú y Ecuador se calienta por encima de lo normal durante varios meses. El ENFEN revisa datos del mar y modelos climáticos y publica un comunicado oficial con el estado, la magnitud esperada y los plazos. Cuando el evento es fuerte, aumentan los riesgos de lluvias intensas, huaicos e inundaciones en la costa norte, además de efectos en la pesca, la agricultura y la salud.",
+    terminos: ["el-nino-costero", "enfen", "nino-1-2", "tsm", "senamhi", "indeci"]
+  },
+  "nino-mundo": {
+    contexto: "El Niño se mide en el Pacífico central y oriental. Los centros internacionales (NOAA, OMM) usan índices distintos al del ENFEN, por eso pueden hablar de un evento global y a la vez de un Niño costero de magnitud diferente frente a Perú. Ambas lecturas son útiles y se complementan.",
+    terminos: ["enso", "la-nina", "tsm", "el-nino-costero"]
   },
   mundo: {
     contexto: "Un arancel encarece los productos importados en el país que lo aplica. Para economías exportadoras como la peruana, los aranceles de grandes mercados pueden reducir la demanda, mover los precios de las materias primas y alterar el tipo de cambio, incluso cuando el producto peruano no es el directamente gravado.",
