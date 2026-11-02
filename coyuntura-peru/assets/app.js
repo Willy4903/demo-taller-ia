@@ -168,7 +168,7 @@
     if (ED.nino) hoy += '<div class="i"><span class="k">El Niño costero · ENFEN</span><span class="v">' + esc(ED.nino.estado[0].v) + "</span></div>";
     hoy += '<div class="i"><span class="k">Notas indexadas</span><span class="v">' + ITEMS.length + "</span></div>" + (tot ? '<div class="i"><span class="k">Fuentes activas</span><span class="v">' + ok + "/" + tot + "</span></div>" : "") + '<div class="i"><span class="k">Próxima actualización</span><span class="v" style="font-size:1.05rem">' + proxima() + "</span></div>";
     var tiles = ED.sectores.map(function (s) { var n = porSector(s.id).length; return '<a class="po-t' + (s.id === "nino" ? " nino" : "") + '" href="#/s/' + s.id + '" style="--c:' + s.color + '"><span class="ic" aria-hidden="true">' + s.icono + "</span><b>" + esc(s.nombre) + "</b><small>" + (n ? n + (n === 1 ? " nota" : " notas") : "Análisis y misión") + "</small></a>"; })
-      .concat(['<a class="po-t" href="#/ruta" style="--c:#D97706"><span class="ic" aria-hidden="true">🧭</span><b>La Ruta</b><small>' + ORDEN.length + " misiones</small></a>", '<a class="po-t" href="#/glosario" style="--c:#94A3B8"><span class="ic" aria-hidden="true">📖</span><b>Glosario</b><small>' + ED.glosario.length + " términos</small></a>"]).join("");
+      .concat(['<a class="po-t" href="#/ruta" style="--c:#D97706"><span class="ic" aria-hidden="true">🧭</span><b>La Ruta</b><small>' + ORDEN.length + " misiones</small></a>", '<a class="po-t" href="#/datos" style="--c:#38BDF8"><span class="ic" aria-hidden="true">🇵🇪</span><b>DataPerú</b><small>Datos oficiales</small></a>']).join("");
     return '<section class="portal fade" aria-label="Portal"><div class="po-hero"><div class="po-main"><p class="po-eye">Portal de coyuntura · ' + esc(fecha) + '</p><h1>La coyuntura del Perú, explicada con sus fuentes</h1><p class="po-sub">Análisis propios, noticias de medios independientes y comerciales, indicadores y una ruta para aprender. Se actualiza a las 08:00 y 23:00, hora de Lima.</p>' +
       '<button class="po-search" type="button" data-buscar="1"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Busca noticias, análisis o términos</span><kbd aria-hidden="true">/</kbd></button>' +
       '<div class="po-cta"><a class="btn" href="#/a/hilo">Panorama del momento →</a><a class="btn o" href="#/ruta">Empezar la Ruta</a></div></div>' +
@@ -179,7 +179,7 @@
     var principal = INS.filter(function (i) { return i.id === "politica"; })[0] || INS[0], otros = INS.filter(function (i) { return i !== principal; });
     var h = portal() + ninoBanner() + '<div class="bento fade"><div class="b1 panel">' + (HILO ? '<a class="panorama" href="#/a/hilo"><b>Panorama</b><span>' + esc(HILO.titulo) + "</span></a>" : "") + (principal ? leadCard(principal) : "") + '<div class="minis">' + otros.slice(0, 6).map(card).join("") + "</div></div>";
     h += '<div class="panel"><h3 class="pt">La Ruta de Aprendizaje <a href="#/ruta">Ver todo</a></h3>' + rutaMini() + "</div>";
-    h += '<div class="stack"><div class="panel"><h3 class="pt">Indicadores <a href="#/estadisticas">Estadísticas</a></h3>' + indicadores(false) + '</div><div class="panel"><h3 class="pt">Glosario cívico</h3>' + glosarioDia() + '</div><div class="panel"><h3 class="pt">Radar de temas</h3>' + radarHTML() + "</div></div></div>";
+    h += '<div class="stack"><div class="panel"><h3 class="pt">Indicadores <a href="#/datos">DataPerú</a></h3>' + indicadores(false) + '</div><div class="panel"><h3 class="pt">Glosario cívico</h3>' + glosarioDia() + '</div><div class="panel"><h3 class="pt">Radar de temas</h3>' + radarHTML() + "</div></div></div>";
     h += sh("Últimas notas de los medios", "var(--gold)", "#/historial", "Historial") + '<div class="chips" id="f-chips"></div><div class="lista2" id="f-lista"></div><p style="text-align:center;margin-top:14px" id="f-mas"></p>';
     ED.sectores.forEach(function (s) {
       var its = porSector(s.id).slice(0, 4); if (!its.length) return;
@@ -306,6 +306,26 @@
     h += '<div class="bento"><div class="panel b1"><h3 class="pt">Indicadores</h3>' + indicadores(true) + '</div><div class="panel"><h3 class="pt">Notas por sección</h3>' + ED.sectores.map(function (x) { var n = cnt[x.id] || 0; return '<div class="hbar" style="--c:' + x.color + '"><span>' + esc(x.nombre) + '</span><span><i style="width:' + Math.round(n / max * 100) + '%"></i></span><span>' + n + "</span></div>"; }).join("") + '</div><div class="panel"><h3 class="pt">Estado de las fuentes</h3>' + (nom.length ? nom.map(function (k) { return '<div class="fuente-i"><span>' + esc(k) + '</span><span class="' + (g[k].ok ? "ok" : "no") + '">' + (g[k].ok ? "OK · " + g[k].n : "sin respuesta") + "</span></div>"; }).join("") : '<div class="vacio">Aún no hay una carga automática registrada.</div>') + "</div></div></div>";
     return h;
   }
+  function fmtNum(v, dec) { try { return new Intl.NumberFormat("es-PE", { minimumFractionDigits: dec, maximumFractionDigits: dec }).format(v); } catch (e) { return String(v); } }
+  function vistaDatos() {
+    var D = ED.datos; if (!D) return vistaHome();
+    var bm = NOT.datos_bm || {};
+    var dest = []; D.grupos.forEach(function (g) { g.items.forEach(function (i) { if (i.dest) dest.push(i); }); });
+    var h = '<div class="fade"><div class="shead" style="--c:#38BDF8"><h1>DataPerú</h1><p>' + esc(D.intro) + '</p></div>';
+    h += '<div class="dp-hero">' + dest.map(function (i) { return '<a class="dp-h" href="' + safeUrl(i.u) + '" target="_blank" rel="noopener noreferrer"><span class="k">' + esc(i.k) + '</span><span class="v">' + esc(i.v) + "</span><small>" + esc(i.n) + '</small><small class="fu">Fuente: ' + esc(i.f) + " ↗</small></a>"; }).join("") + "</div>";
+    D.grupos.forEach(function (g) {
+      var resto = g.items.filter(function (i) { return !i.dest; }); if (!resto.length) return;
+      h += sh(g.g, g.c) + '<div class="dp-g">' + resto.map(function (i) { return '<article class="dcard"><span class="k">' + esc(i.k) + '</span><span class="v">' + esc(i.v) + "</span><p>" + esc(i.n) + '</p><a class="lk" href="' + safeUrl(i.u) + '" target="_blank" rel="noopener noreferrer">' + esc(i.f) + " ↗</a></article>"; }).join("") + "</div>";
+    });
+    var ser = (D.series || []).filter(function (x) { return bm[x.cod] && bm[x.cod].serie && bm[x.cod].serie.length >= 3; });
+    h += sh("Tendencias históricas", "#94A3B8") + '<p class="dp-nota">Series anuales del Banco Mundial para el Perú (últimos años disponibles). Sirven para ver la tendencia; para el dato oficial más reciente usa las cifras del INEI de arriba.</p>';
+    if (ser.length) h += '<div class="dp-g">' + ser.map(function (x) { var b = bm[x.cod], v = b.serie.map(function (p) { return p.v; }), u = b.serie[b.serie.length - 1], pri = b.serie[0];
+      return '<article class="dcard"><span class="k">' + esc(x.k) + '</span><span class="v">' + esc(fmtNum(u.v, x.dec)) + (x.unidad === "%" ? " %" : "") + "</span><p>" + (x.unidad === "personas" || x.unidad === "años" ? esc(x.unidad) + " · " : "") + "Dato de " + u.a + " · desde " + pri.a + ": " + esc(fmtNum(pri.v, x.dec)) + "</p>" + spark(v, false) + '<a class="lk" href="https://data.worldbank.org/indicator/' + esc(x.cod) + '?locations=PE" target="_blank" rel="noopener noreferrer">Banco Mundial ↗</a></article>'; }).join("") + "</div>";
+    else h += '<div class="vacio">Las series históricas se cargan en la próxima actualización automática (08:00 / 23:00).</div>';
+    h += sh("Dónde buscar más datos", "#94A3B8") + D.enlaces.map(function (e) { return '<a class="fr" href="' + safeUrl(e.u) + '" target="_blank" rel="noopener noreferrer"><div><b>' + esc(e.n) + "</b><p>" + esc(e.d) + "</p></div><span>↗</span></a>"; }).join("");
+    h += '<div class="box" style="margin-top:20px"><h3>Cómo leer estas cifras</h3><p>Cada dato indica su periodo y quién lo publicó. Compara solo cifras del mismo periodo y de la misma población: el desempleo de Lima Metropolitana no es el desempleo nacional, y un trimestre móvil no equivale a un año. Corte editorial: ' + esc(fmtFecha(D.corte + "T12:00:00Z")) + ".</p></div></div>";
+    return h;
+  }
   var hSec = "todos", hMax = 30;
   function vistaHistorial() {
     var h = '<div class="fade"><div class="shead" style="--c:var(--gold)"><h1>Historial</h1><p>Todas las notas indexadas, de la más reciente a la más antigua. Cada una enlaza al medio original.</p></div><div class="chips" id="h-chips"></div><div id="h-lista"></div><p style="text-align:center;margin-top:14px" id="h-mas"></p></div>';
@@ -336,6 +356,7 @@
     else if (r.v === "a") { html = vistaArticulo(r.id); var ar = ED.insights.filter(function (x) { return (x.id || x.sector) === r.id; })[0]; nav = r.id === "hilo" ? "inicio" : (ar ? ar.sector : "inicio"); t = (r.id === "hilo" ? ED.hilo.titulo : ar ? ar.titulo : TITULO) + " · " + TITULO; }
     else if (r.v === "ruta") { html = vistaRuta(); nav = "ruta"; tab = "ruta"; t = "La Ruta · " + TITULO; }
     else if (r.v === "glosario") { html = vistaGlosario(); nav = "glosario"; tab = "glosario"; t = "Glosario · " + TITULO; }
+    else if (r.v === "datos") { html = vistaDatos(); nav = "datos"; tab = ""; t = "DataPerú · " + TITULO; }
     else if (r.v === "estadisticas") { html = vistaEstadisticas(); nav = "estadisticas"; tab = ""; t = "Estadísticas · " + TITULO; }
     else if (r.v === "historial") { html = vistaHistorial(); nav = "historial"; tab = ""; t = "Historial · " + TITULO; }
     else if (r.v === "fuentes") { html = vistaFuentes(); nav = "fuentes"; tab = ""; t = "Fuentes · " + TITULO; }
@@ -414,7 +435,7 @@
     q.addEventListener("input", ir); ir();
   }
   function abrirMenu() {
-    $("#menu-in").innerHTML = '<button class="sx" aria-label="Cerrar" data-x="1">✕</button><div class="paso">Secciones</div><h3>Explora por tema</h3><div class="menu-g">' + ED.sectores.map(function (s) { return '<a href="#/s/' + s.id + '" data-cerrar="1" style="--c:' + s.color + '"><span>' + s.icono + "</span>" + esc(s.nombre) + "</a>"; }).join("") + '</div><div class="menu-g"><a href="#/ruta" data-cerrar="1" style="--c:#D97706"><span>🧭</span>La Ruta</a><a href="#/glosario" data-cerrar="1" style="--c:#D97706"><span>📖</span>Glosario</a><a href="#/estadisticas" data-cerrar="1" style="--c:#10B981"><span>📊</span>Estadísticas</a><a href="#/historial" data-cerrar="1" style="--c:#10B981"><span>🗂️</span>Historial</a><a href="#/fuentes" data-cerrar="1" style="--c:#94A3B8"><span>🔗</span>Fuentes</a></div>';
+    $("#menu-in").innerHTML = '<button class="sx" aria-label="Cerrar" data-x="1">✕</button><div class="paso">Secciones</div><h3>Explora por tema</h3><div class="menu-g">' + ED.sectores.map(function (s) { return '<a href="#/s/' + s.id + '" data-cerrar="1" style="--c:' + s.color + '"><span>' + s.icono + "</span>" + esc(s.nombre) + "</a>"; }).join("") + '</div><div class="menu-g"><a href="#/ruta" data-cerrar="1" style="--c:#D97706"><span>🧭</span>La Ruta</a><a href="#/glosario" data-cerrar="1" style="--c:#D97706"><span>📖</span>Glosario</a><a href="#/datos" data-cerrar="1" style="--c:#38BDF8"><span>🇵🇪</span>DataPerú</a><a href="#/estadisticas" data-cerrar="1" style="--c:#10B981"><span>📊</span>Estadísticas</a><a href="#/historial" data-cerrar="1" style="--c:#10B981"><span>🗂️</span>Historial</a><a href="#/fuentes" data-cerrar="1" style="--c:#94A3B8"><span>🔗</span>Fuentes</a></div>';
     abrirHoja("#menu");
   }
 
@@ -461,6 +482,8 @@
     var w = $("#tk-t"); if (!w) return;
     var it = [], tc = (NOT.indicadores || {}).tipo_cambio;
     if (tc && tc.serie && tc.serie.length) { var v = tc.serie[tc.serie.length - 1].v, a = tc.serie.length > 1 ? v - tc.serie[tc.serie.length - 2].v : null; it.push({ h: "#/estadisticas", t: "USD/PEN", x: "S/ " + v.toFixed(3) + (a === null ? "" : (a >= 0 ? " ▲" : " ▼") + Math.abs(a).toFixed(3)), cls: "fx" }); }
+    var dd = ED.datos ? [].concat.apply([], ED.datos.grupos.map(function (g) { return g.items; })) : [];
+    [["pob", "Población (Censo 2025)"], ["hogint", "Hogares con internet"], ["desemp", "Desempleo Lima Metropolitana"]].forEach(function (p) { var x = dd.filter(function (i) { return i.id === p[0]; })[0]; if (x) it.push({ h: "#/datos", t: p[1], x: x.v, cls: "fx" }); });
     var nino = (ED.indicadores || []).filter(function (x) { return /Niño/.test(x.k); })[0];
     if (nino) it.push({ h: "#/s/nino", t: "El Niño costero", x: "ENFEN: " + nino.v, cls: "nino" });
     ["politica", "economia", "nino-peru", "salud", "ia-peru", "mundo"].forEach(function (id) { var c = INS.filter(function (i) { return i.id === id; })[0]; if (c) it.push({ h: c.url, t: (SECT[c.sector] || {}).nombre || "", x: c.titulo, cls: "an" }); });

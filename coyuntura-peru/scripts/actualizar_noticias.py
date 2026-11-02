@@ -272,6 +272,35 @@ def tipo_cambio(previo=None):
     return previo
 
 
+SERIES_BM = [
+    ("SP.POP.TOTL", "Población total", "personas"),
+    ("SL.UEM.TOTL.ZS", "Desempleo (estimación OIT, % de la fuerza laboral)", "%"),
+    ("IT.NET.USER.ZS", "Personas que usan internet (% de la población)", "%"),
+    ("NY.GDP.MKTP.KD.ZG", "Crecimiento del PBI (% anual)", "%"),
+    ("FP.CPI.TOTL.ZG", "Inflación (precios al consumidor, % anual)", "%"),
+    ("SP.DYN.LE00.IN", "Esperanza de vida al nacer", "años"),
+]
+
+
+def datos_bm(previo=None):
+    """Series históricas del Perú desde la API pública del Banco Mundial (sin clave)."""
+    res = dict(previo or {})
+    nuevas = 0
+    for cod, nombre, unidad in SERIES_BM:
+        url = f"https://api.worldbank.org/v2/country/PER/indicator/{cod}?format=json&per_page=80"
+        try:
+            datos = json.loads(descargar(url).decode("utf-8", errors="replace"))
+            filas = datos[1] if isinstance(datos, list) and len(datos) > 1 and datos[1] else []
+            serie = sorted(({"a": int(f["date"]), "v": float(f["value"])} for f in filas if f.get("value") is not None), key=lambda x: x["a"])[-20:]
+            if len(serie) >= 3:
+                res[cod] = {"nombre": nombre, "unidad": unidad, "serie": serie, "fuente": "Banco Mundial"}
+                nuevas += 1
+        except Exception as ex:  # noqa: BLE001
+            print(f"  ✗ Banco Mundial {cod}: {type(ex).__name__}: {str(ex)[:80]}")
+    print(f"Series del Banco Mundial: {nuevas}/{len(SERIES_BM)}")
+    return res
+
+
 def parsear_fecha(txt):
     if not txt:
         return None
@@ -460,6 +489,7 @@ def main(feeds=None):
         "items": fusionar(nuevos, previo.get("items", [])),
         "imagenes_editorial": imagenes_editoriales(previo.get("imagenes_editorial")),
         "indicadores": {"tipo_cambio": tipo_cambio((previo.get("indicadores") or {}).get("tipo_cambio"))},
+        "datos_bm": datos_bm(previo.get("datos_bm")),
     }
     escribir(datos)
     print(f"Escrito {ARCHIVO_JS} con {len(datos['items'])} notas.")

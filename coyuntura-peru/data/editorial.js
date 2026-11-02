@@ -13,6 +13,52 @@ window.EDITORIAL = {
     ]
   },
 
+  /* ───────────── DataPerú: estadísticas oficiales (INEI y otros). Cada cifra lleva periodo y fuente; contrastar en la fuente primaria ───────────── */
+  datos: {
+    corte: "2026-11-02",
+    intro: "Cifras oficiales del Perú con su periodo y su fuente. Los datos del INEI se cargan a mano con corte editorial; las series históricas del Banco Mundial se actualizan solas.",
+    grupos: [
+      { g: "Población", c: "#38BDF8", items: [
+        { id: "pob", k: "Población total", v: "34 157 732", n: "Censos Nacionales 2025", f: "INEI vía Andina", u: "https://andina.pe/agencia/noticia-poblacion-total-del-peru-se-eleva-a-34-millones-157-mil-732-habitantes-informa-inei-1077241.aspx", dest: true },
+        { id: "lima", k: "Lima Metropolitana", v: "10 129 708", n: "29,7 % de la población nacional (Censos 2025)", f: "INEI vía RPP", u: "https://rpp.pe/peru/actualidad/censos-nacionales-2025-poblacion-total-del-peru-supera-los-34-millones-segun-inei-noticia-1690726" },
+        { id: "crec", k: "Crecimiento anual", v: "1,11 %", n: "Promedio entre 2017 y 2025", f: "INEI vía El Peruano", u: "https://www.elperuano.pe/noticia/296847-peru-numero-de-habitantes-asciende-a-34-millones-157-mil-732-informa-el-inei" },
+        { id: "pob2050", k: "Proyección al 2050", v: "39,4 millones", n: "Estimación del INEI (39 363 mil)", f: "INEI vía La Cámara", u: "https://lacamara.pe/peru-supera-34-millones-de-habitantes-y-acelera-su-envejecimiento/" }
+      ]},
+      { g: "Internet y tecnología", c: "#7C5CFF", items: [
+        { id: "hogint", k: "Hogares con conexión a internet", v: "62,7 %", n: "Primer trimestre de 2026 (ENAHO)", f: "INEI (gob.pe)", u: "https://www.gob.pe/institucion/inei/noticias/1412359-el-62-7-de-los-hogares-del-pais-tuvo-conexion-a-internet-entre-los-meses-de-enero-y-marzo-de-2026", dest: true },
+        { id: "intm", k: "Mujeres de 6 años a más que usan internet", v: "80,9 %", n: "Primer trimestre de 2026 (ENAHO)", f: "INEI (gob.pe)", u: "https://www.gob.pe/institucion/inei/noticias/1405641-se-incremento-el-uso-de-internet-en-mujeres-y-hombres-en-el-primer-trimestre-2026" },
+        { id: "inth", k: "Hombres de 6 años a más que usan internet", v: "83,4 %", n: "Primer trimestre de 2026 (ENAHO)", f: "INEI (gob.pe)", u: "https://www.gob.pe/institucion/inei/noticias/1405641-se-incremento-el-uso-de-internet-en-mujeres-y-hombres-en-el-primer-trimestre-2026" },
+        { id: "intcel", k: "Usuarios que acceden desde un celular", v: "90,7 %", n: "Población usuaria de 6 años a más, primer trimestre de 2026", f: "INEI (gob.pe)", u: "https://www.gob.pe/institucion/inei/noticias/1405641-se-incremento-el-uso-de-internet-en-mujeres-y-hombres-en-el-primer-trimestre-2026" }
+      ]},
+      { g: "Empleo", c: "#10B981", items: [
+        { id: "desemp", k: "Desempleo en Lima Metropolitana", v: "4,9 %", n: "Trimestre móvil abril-junio de 2026. Reportes posteriores citan 4,4 % para julio-setiembre: confirma en el INEI", f: "INEI vía El Peruano", u: "https://elperuano.pe/noticia/300485-desempleo-cayo-a-49-entre-abril-y-junio-de-2026", dest: true }
+      ]},
+      { g: "Pobreza", c: "#F97316", items: [
+        { id: "pobreza", k: "Pobreza monetaria", v: "25,7 %", n: "Año 2025 (27,6 % en 2024); unos 8,8 millones de personas", f: "INEI vía El Peruano", u: "https://elperuano.pe/noticia/295035-inei-pobreza-se-redujo-en-19-en-el-2025-y-afecta-al-257-de-peruanos", dest: true },
+        { id: "pobur", k: "Pobreza urbana / rural", v: "23,4 % / 35,5 %", n: "Año 2025 (en 2024: 24,8 % y 39,3 %)", f: "INEI vía Energiminas", u: "https://energiminas.com/2026/05/05/inei-pobreza-monetaria-alcanzo-al-257-de-la-poblacion-en-peru-durante-2025/" },
+        { id: "extrema", k: "Pobreza monetaria extrema", v: "4,7 %", n: "Año 2025 (5,5 % en 2024). Una fuente cita otra cifra: confirma en el INEI", f: "INEI vía La República", u: "https://larepublica.pe/economia/2026/05/05/inei-pobreza-monetaria-extrema-alcanzo-al-47-de-la-poblacion-en-2025-hnews-320660" }
+      ]},
+      { g: "Economía", c: "#F5B83D", items: [
+        { id: "pbi", k: "Producción nacional (PBI) · agosto 2026", v: "+3,23 %", n: "Variación interanual; enero-agosto: +3,14 %; últimos 12 meses: +3,31 %", f: "INEI vía Forbes Perú", u: "https://forbes.pe/economia-y-finanzas/2026-10-15/inei-economia-peruana-crecio-323-en-agosto/", dest: true },
+        { id: "pbiinf", k: "Informe técnico de producción nacional", v: "Agosto 2026", n: "Documento oficial del INEI", f: "INEI", u: "https://www.inei.gob.pe/media/MenuRecursivo/boletines/10-informe-tecnico-produccion-nacional-agosto-2026.pdf" }
+      ]}
+    ],
+    series: [
+      { cod: "SP.POP.TOTL", k: "Población total", dec: 0, unidad: "personas" },
+      { cod: "SL.UEM.TOTL.ZS", k: "Desempleo (estimación OIT, % de la fuerza laboral)", dec: 1, unidad: "%" },
+      { cod: "IT.NET.USER.ZS", k: "Personas que usan internet (% de la población)", dec: 1, unidad: "%" },
+      { cod: "NY.GDP.MKTP.KD.ZG", k: "Crecimiento del PBI (% anual)", dec: 1, unidad: "%" },
+      { cod: "FP.CPI.TOTL.ZG", k: "Inflación (precios al consumidor, % anual)", dec: 1, unidad: "%" },
+      { cod: "SP.DYN.LE00.IN", k: "Esperanza de vida al nacer", dec: 1, unidad: "años" }
+    ],
+    enlaces: [
+      { n: "INEI · portal institucional", u: "https://www.gob.pe/inei", d: "Notas de prensa, informes técnicos y boletines." },
+      { n: "INEI · estadísticas por tema", u: "https://m.inei.gob.pe/estadisticas/indice-tematico/", d: "Índice temático de cuadros estadísticos." },
+      { n: "BCRP · series estadísticas", u: "https://estadisticas.bcrp.gob.pe/estadisticas/series/", d: "Tipo de cambio, inflación, PBI y más." },
+      { n: "Banco Mundial · datos del Perú", u: "https://data.worldbank.org/country/peru", d: "Series internacionales comparables por año." }
+    ]
+  },
+
   /* Panel de la sección El Niño (cifras de comunicados ENFEN; verificar en el comunicado más reciente) */
   nino: {
     corte: "Según el comunicado N.° 12-2026 del ENFEN; puede haber comunicados posteriores.",
