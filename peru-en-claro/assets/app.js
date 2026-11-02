@@ -450,5 +450,9 @@
 
   /* ───── arranque ───── */
   menuNav(); estado(); xpChip(); ticker(); navegar();
-  if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) navigator.serviceWorker.register("sw.js").catch(function () {});
+  if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
+    var tenia = !!navigator.serviceWorker.controller, recargado = false;
+    navigator.serviceWorker.addEventListener("controllerchange", function () { if (tenia && !recargado) { recargado = true; location.reload(); } });
+    navigator.serviceWorker.register("sw.js").then(function (r) { r.update(); }).catch(function () {});
+  }
 })();
