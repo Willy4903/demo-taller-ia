@@ -39,6 +39,22 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
     ok(await p.locator(".hero-content h1").innerText() === "El Perú, explicado con claridad", `[${w}] portada: título editorial no renderizado`);
     ok(await p.locator(".home-topics a").count() === 4, `[${w}] portada: accesos temáticos incompletos`);
     ok(await p.locator(".hero-updated").count() === 1, `[${w}] portada: no aparece fecha de comprobación`);
+    for (const name of ["hero-lima.jpg","noticias-congreso.jpg","datos-bcrp.jpg","nino-piura.jpg"]) {
+      const file = path.join(RAIZ,"assets","photos",name);
+      ok(fs.existsSync(file) && fs.statSync(file).size > 20000 &&
+        fs.readFileSync(file).subarray(0,3).equals(Buffer.from([0xff,0xd8,0xff])),
+        `[${w}] foto real verificada: ${name}`);
+    }
+    const photos = await p.evaluate(() => {
+      const hero = getComputedStyle(document.querySelector(".hero")).backgroundImage;
+      const cards = [...document.querySelectorAll(".qs .q")].map(el => getComputedStyle(el).backgroundImage);
+      return {hero, cards, credit: !!document.querySelector(".photo-sources")};
+    });
+    ok(photos.hero.includes("photos/hero-lima.jpg"), `[${w}] la portada no usa foto real`);
+    ok(["noticias-congreso.jpg","datos-bcrp.jpg","nino-piura.jpg"].every((name,i) =>
+      photos.cards[i].includes("photos/"+name)), `[${w}] las tarjetas no muestran fotos reales`);
+    ok(photos.credit, `[${w}] faltan atribuciones fotográficas`);
+
     const tit = await p.locator(".qs .q h2").allInnerTexts();
     ok(/pasando/.test(tit[0]) && /datos/.test(tit[1]) && /Niño/.test(tit[2]), `[${w}] portada: títulos de las tres preguntas (${tit.join(" / ")})`);
     ok(await p.locator(".q1 .gn").count() > 0, `[${w}] portada: las noticias llevan etiqueta de género`);
