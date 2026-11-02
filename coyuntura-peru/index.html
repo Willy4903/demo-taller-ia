@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perú en Claro · La coyuntura peruana, explicada</title>
+<meta name="description" content="Coyuntura peruana explicada para cualquiera: política, economía, salud, tecnología, deporte, investigación y mundo. Con ruta de aprendizaje, glosario y fuentes. Se actualiza a las 8:00 y 23:00 (hora de Lima).">
+<meta name="theme-color" content="#05070d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23E11D2E'/%3E%3Cpath d='M8 46 24 22l9 13 7-9 16 20z' fill='%23F5B83D'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<nav class="nav" aria-label="Principal">
+  <a class="logo" href="#inicio"><i></i><b>PERÚ EN CLARO</b></a>
+  <ul id="menu">
+    <li><a href="#insight">Insight</a></li>
+    <li><a href="#ruta">Ruta</a></li>
+    <li><a href="#sectores">Sectores</a></li>
+    <li><a href="#glosario">Glosario</a></li>
+    <li><a href="#fuentes">Fuentes</a></li>
+  </ul>
+  <button class="xpchip" id="xpchip" aria-label="Ver mi progreso en la Ruta"><span id="xpnivel">🧭 Viajero</span><span class="bar"><i id="xpmini"></i></span><span id="xpnum">0 XP</span></button>
+</nav>
+
+<header class="hero" id="inicio">
+  <svg class="arte" id="arte" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice" aria-hidden="true"></svg>
+  <canvas id="red" aria-hidden="true"></canvas>
+  <div class="hero-in">
+    <span class="badge-live">En vivo · coyuntura peruana</span>
+    <h1>El Perú,<br><span class="grad">en claro.</span></h1>
+    <p class="lema">Política, economía, salud, tecnología, deporte e investigación — explicados para que cualquiera los entienda. Recorre la Ruta, gana nivel y aprende a leer el país.</p>
+    <div class="hero-cta">
+      <a class="cta" href="#ruta">🧭 Empezar la Ruta</a>
+      <a class="cta ghost" href="#insight">Ver lo más importante hoy</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><small>Última actualización</small><strong id="h-ult">—</strong></div>
+      <div class="stat"><small>Próxima actualización</small><strong id="h-prox">—</strong></div>
+      <div class="stat"><small>Notas indexadas</small><strong id="h-n">—</strong></div>
+    </div>
+  </div>
+  <div class="scroll">desliza ↓</div>
+</header>
+
+<div class="ticker" aria-label="Titulares recientes"><span class="tag">Últimas</span><div class="pista" id="pista"></div></div>
+
+<section class="sec" id="insight">
+  <div class="wrap">
+    <div class="kicker rev">Insight · lo más importante</div>
+    <h2 class="t rev">Lo que tienes que saber hoy</h2>
+    <p class="sub rev">Una lectura sintetizada de la coyuntura, con fuentes enlazadas y el nivel de confianza de cada punto. Las cifras llevan fecha de corte: contrástalas en la fuente primaria.</p>
+    <div class="bento" id="bento"></div>
+  </div>
+</section>
+
+<section class="sec alt" id="ruta">
+  <div class="wrap">
+    <div class="kicker rev">Gamificación · Ruta del ciudadano informado</div>
+    <h2 class="t rev">Recorre el Qhapaq Ñan de la información</h2>
+    <p class="sub rev">Nueve estaciones, nueve misiones. Lee el briefing, responde 3 preguntas, gana XP y sube de nivel: de <b>Viajero</b> a <b>Apu</b>. Tu progreso se guarda en este navegador.</p>
+    <div class="glass ruta-box rev">
+      <div class="ruta-top">
+        <div class="nivel"><div class="medalla" id="medalla">🧭</div><div><strong id="nivel-n">Viajero</strong><small id="nivel-d">Empieza tu camino</small></div></div>
+        <div class="xpbar"><small id="xp-t">0 / 80 XP para el siguiente nivel</small><div class="bar"><i id="xp-b"></i></div></div>
+        <div><small style="color:var(--tx2)">Racha</small> <b id="racha">1 día</b></div>
+      </div>
+      <div class="ruta-scroll"><svg class="ruta-svg" id="ruta-svg" viewBox="0 0 1000 600" role="group" aria-label="Mapa de la Ruta"></svg></div>
+      <div class="insignias" id="insignias"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="sectores">
+  <div class="wrap">
+    <div class="kicker rev">Sectores</div>
+    <h2 class="t rev">Todo el país, por temas</h2>
+    <p class="sub rev">Cada sector explica lo esencial, enlaza términos del glosario y muestra las últimas notas de medios independientes, comerciales y oficiales.</p>
+    <div class="tabs" id="tabs" role="tablist"></div>
+    <div id="sector-panel"></div>
+  </div>
+</section>
+
+<section class="sec alt" id="glosario">
+  <div class="wrap">
+    <div class="kicker rev">Glosario</div>
+    <h2 class="t rev">Palabras que ya no te van a asustar</h2>
+    <p class="sub rev">Toca un término para marcarlo como aprendido (suma XP). También verás estos términos subrayados en los briefings.</p>
+    <div class="gl-tools rev"><input id="gl-q" type="search" placeholder="Buscar: vacancia, PBI, dengue, phishing…" aria-label="Buscar en el glosario"></div>
+    <div class="tabs" id="gl-tabs"></div>
+    <div class="gl-grid" id="gl-grid"></div>
+  </div>
+</section>
+
+<section class="sec" id="fuentes">
+  <div class="wrap">
+    <div class="kicker rev">Fuentes</div>
+    <h2 class="t rev">De dónde sale la información</h2>
+    <p class="sub rev">Medios independientes, comerciales, estatales y datos oficiales. “Independiente” no es sinónimo de neutral: lee varios y contrasta.</p>
+    <div class="check rev" id="check"></div>
+    <div class="f-grid" id="f-grid"></div>
+    <details class="glass metodo rev">
+      <summary>¿Cómo funciona esta página y cada cuánto se actualiza?</summary>
+      <ul>
+        <li><b>Actualización automática:</b> un flujo de GitHub Actions lee los feeds RSS de los medios listados dos veces al día, a las <b>8:00</b> y <b>23:00</b> (hora de Lima), clasifica las notas por sector y publica el sitio. GitHub puede demorar el disparo algunos minutos.</li>
+        <li><b>Titulares y enlaces:</b> solo mostramos título, resumen breve y enlace; el contenido pertenece a cada medio.</li>
+        <li><b>Insights:</b> son lecturas editoriales con corte indicado; cada punto enlaza sus fuentes y marca su nivel de confianza.</li>
+        <li><b>Limitaciones:</b> la clasificación por sector es automática y puede equivocarse; los medios mencionados no están afiliados a este proyecto. Si ves un error, contrasta con la fuente primaria.</li>
+      </ul>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><b>PERÚ EN CLARO</b><br>Proyecto educativo de lectura de coyuntura.<br>Corte editorial: <span id="f-corte">—</span></div>
+    <div>Actualización automática:<br><b>08:00</b> y <b>23:00</b> hora de Lima (UTC−5)<br>Última: <span id="f-ult">—</span></div>
+    <div>No sustituye a las fuentes oficiales.<br>Contrasta cifras en JNE, BCRP, INEI y CDC-Minsa.</div>
+  </div>
+</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="m-t"><div class="caja" id="m-caja"></div></div>
+<div class="pop" id="pop" role="tooltip"></div>
+<div class="confeti" id="confeti" aria-hidden="true"></div>
+
+<script src="data/editorial.js"></script>
+<script src="data/noticias.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

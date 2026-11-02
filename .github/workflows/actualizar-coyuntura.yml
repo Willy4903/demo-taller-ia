@@ -1,0 +1,65 @@
+name: Actualizar Perú en Claro
+
+# Hora de Lima = UTC-5 (sin horario de verano):
+#   08:00 Lima -> 13:00 UTC
+#   23:00 Lima -> 04:00 UTC (del día siguiente)
+# GitHub puede retrasar los disparos programados algunos minutos en horas de alta carga.
+on:
+  schedule:
+    - cron: "0 13 * * *"
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "coyuntura-peru/**"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  construir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Leer feeds y regenerar datos
+        run: python coyuntura-peru/scripts/actualizar_noticias.py
+
+      - name: Guardar cambios en el repositorio
+        run: |
+          git config user.name "peru-en-claro-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add coyuntura-peru/data
+          if git diff --cached --quiet; then
+            echo "Sin cambios en los datos."
+          else
+            git commit -m "chore(coyuntura): actualización automática $(TZ=America/Lima date '+%Y-%m-%d %H:%M') (hora de Lima)"
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: coyuntura-peru
+
+  publicar:
+    needs: construir
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.despliegue.outputs.page_url }}
+    steps:
+      - id: despliegue
+        uses: actions/deploy-pages@v4
