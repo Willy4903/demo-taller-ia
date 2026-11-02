@@ -311,8 +311,8 @@
   function fmtNum(v, dec) { return num(v, dec); }
   /* tarjeta que se voltea: frente con la cifra; reverso con concepto, ejemplo y fuente */
   function flipCard(o) {
-    return '<article class="flip' + (o.hero ? " hero" : "") + '" tabindex="0" aria-label="' + esc(o.k + ": " + o.v + ". Pasa el cursor o toca para ver el concepto, un ejemplo y la fuente.") + '"><div class="flip-in">' +
-      '<div class="face front"><span class="k">' + esc(o.k) + '</span><span class="v cifra">' + esc(o.v) + "</span><p>" + esc(o.n) + '</p><span class="hint" aria-hidden="true">↻ Voltea para ver el concepto</span></div>' +
+    return '<article class="flip' + (o.w2 ? " w2" : "") + '" data-cat="' + esc(o.cat || "") + '" tabindex="0" aria-label="' + esc(o.k + ": " + o.v + ". Pasa el cursor o toca para ver el concepto, un ejemplo y la fuente.") + '"><div class="flip-in">' +
+      '<div class="face front">' + (o.tag ? '<span class="tag">' + esc(o.tag) + "</span>" : "") + '<span class="k">' + esc(o.k) + '</span><span class="v cifra">' + esc(o.v) + "</span><p>" + esc(o.n) + "</p>" + (o.spark || "") + '<span class="hint" aria-hidden="true">↻ Voltea para ver el concepto</span></div>' +
       '<div class="face back"><span class="bk">Qué significa</span><p>' + esc(o.c) + '</p><span class="bk">Ejemplo</span><p class="ej">' + esc(o.e) + '</p><a class="lk" href="' + safeUrl(o.u) + '" target="_blank" rel="noopener noreferrer">Fuente: ' + esc(o.f) + " ↗</a></div></div></article>";
   }
   function ejSerie(x, b) {
@@ -335,25 +335,38 @@
       if (k < 1) requestAnimationFrame(paso); else el.textContent = fin;
     })(t0);
   }
+  var DCATS = [["todos", "Todo"], ["eco", "Economía"], ["clima", "Clima / ENFEN"], ["soc", "Sociedad / INEI"], ["salud", "Salud / Minsa"]], dFil = "todos";
+  function bloquesDatos() {
+    var D = ED.datos, bm = NOT.datos_bm || {}, B = [], tc = (NOT.indicadores || {}).tipo_cambio;
+    if (tc && tc.serie && tc.serie.length) {
+      var v = tc.serie.map(function (x) { return x.v; }), u = v[v.length - 1], d = v.length > 1 ? u - v[v.length - 2] : null, ref = /Referencial/.test(tc.fuente || "");
+      B.push({ cat: "eco", tag: ref ? "Referencial" : "BCRP", w2: 1, k: "Tipo de cambio USD / PEN", v: "S/ " + num(u, 3), n: (d !== null ? "Variación " + (d >= 0 ? "+" : "") + num(d, 3) + " · " : "") + esc(corta(tc.serie[tc.serie.length - 1].f + "T12:00:00Z")) + (ref ? " · valor de mercado referencial; el oficial está en el BCRP" : ""), spark: spark(v, false),
+        c: "Cuántos soles cuesta comprar un dólar estadounidense. Si el número sube, el dólar se encarece; si baja, se abarata.", e: "Con S/ " + num(u, 3) + " por dólar, US$ 100 equivalen a S/ " + num(u * 100, 2) + ".", f: ref ? "BCRP (dato oficial)" : "BCRP", u: "https://estadisticas.bcrp.gob.pe/estadisticas/series/" });
+    }
+    D.grupos.forEach(function (g) { g.items.forEach(function (i) { B.push(i); }); });
+    (D.series || []).forEach(function (x) {
+      var b = bm[x.cod]; if (!b || !b.serie || b.serie.length < 3) return;
+      var u = b.serie[b.serie.length - 1];
+      B.push({ cat: x.cat, tag: "Banco Mundial", k: x.k, v: fmtNum(u.v, x.dec) + (x.unidad === "%" ? " %" : ""), n: (x.unidad === "personas" || x.unidad === "años" ? x.unidad + " · " : "") + "Dato de " + u.a, spark: spark(b.serie.map(function (p) { return p.v; }), false), c: x.c, e: ejSerie(x, b), f: "Banco Mundial", u: "https://data.worldbank.org/indicator/" + x.cod + "?locations=PE" });
+    });
+    var orden = { eco: 0, clima: 1, soc: 2, salud: 3 };
+    return B.map(function (x, i) { return { x: x, i: i }; }).sort(function (a, b) { return (orden[a.x.cat] - orden[b.x.cat]) || (a.i - b.i); }).map(function (o) { return o.x; });
+  }
+  function pintarDatos() {
+    var c = $("#d-chips"), g = $("#d-grid"); if (!c || !g) return;
+    c.innerHTML = DCATS.map(function (x) { return '<button class="chip' + (x[0] === dFil ? " on" : "") + '" data-df="' + x[0] + '">' + esc(x[1]) + "</button>"; }).join("");
+    var B = bloquesDatos().filter(function (b) { return dFil === "todos" || b.cat === dFil; });
+    g.innerHTML = B.length ? B.map(flipCard).join("") : '<div class="vacio">No hay datos en esta categoría todavía.</div>';
+    animarCifras();
+  }
   function vistaDatos() {
     var D = ED.datos; if (!D) return vistaHome();
-    var bm = NOT.datos_bm || {};
-    var dest = []; D.grupos.forEach(function (g) { g.items.forEach(function (i) { if (i.dest) dest.push(i); }); });
-    var h = '<div class="fade"><div class="shead" style="--c:#38BDF8"><h1>DataPerú</h1><p>' + esc(D.intro) + '</p></div>';
-    h += '<div class="dp-hero">' + dest.map(function (i) { return flipCard({ hero: 1, k: i.k, v: i.v, n: i.n, c: i.c, e: i.e, f: i.f, u: i.u }); }).join("") + "</div>";
-    D.grupos.forEach(function (g) {
-      var resto = g.items.filter(function (i) { return !i.dest; }); if (!resto.length) return;
-      h += sh(g.g, g.c) + '<div class="dp-g">' + resto.map(function (i) { return flipCard(i); }).join("") + "</div>";
-    });
-    var ser = (D.series || []).filter(function (x) { return bm[x.cod] && bm[x.cod].serie && bm[x.cod].serie.length >= 3; });
-    h += sh("Tendencias históricas", "#94A3B8") + '<p class="dp-nota">Series anuales del Banco Mundial para el Perú (últimos años disponibles). Sirven para ver la tendencia; para el dato oficial más reciente usa las cifras del INEI de arriba.</p>';
-    if (ser.length) h += '<div class="dp-g">' + ser.map(function (x) {
-      var b = bm[x.cod], v = b.serie.map(function (p) { return p.v; }), u = b.serie[b.serie.length - 1];
-      return flipCard({ k: x.k, v: fmtNum(u.v, x.dec) + (x.unidad === "%" ? " %" : ""), n: (x.unidad === "personas" || x.unidad === "años" ? x.unidad + " · " : "") + "Dato de " + u.a, c: x.c, e: ejSerie(x, b), f: "Banco Mundial", u: "https://data.worldbank.org/indicator/" + x.cod + "?locations=PE" }).replace('<span class="hint"', spark(v, false) + '<span class="hint"');
-    }).join("") + "</div>";
-        else h += '<div class="vacio">Las series históricas se cargan en la próxima actualización automática (08:00 / 23:00).</div>';
+    var h = '<div class="fade"><div class="dp-head"><div><p class="po-eye">DataPerú · corte ' + esc(corta(D.corte + "T12:00:00Z")) + '</p><h1>Datos y cifras clave</h1><p class="dp-sub">' + esc(D.intro) + '</p></div><span class="pill-act" style="display:inline-flex"><i aria-hidden="true"></i>Actualización: 08:00 / 23:00</span></div>';
+    h += '<div class="chips" id="d-chips" role="tablist" aria-label="Categorías"></div><div class="dp-b" id="d-grid" aria-live="polite"></div>';
     h += sh("Dónde buscar más datos", "#94A3B8") + D.enlaces.map(function (e) { return '<a class="fr" href="' + safeUrl(e.u) + '" target="_blank" rel="noopener noreferrer"><div><b>' + esc(e.n) + "</b><p>" + esc(e.d) + "</p></div><span>↗</span></a>"; }).join("");
-    h += '<div class="box" style="margin-top:20px"><h3>Cómo leer estas cifras</h3><p>Cada dato indica su periodo y quién lo publicó. Compara solo cifras del mismo periodo y de la misma población: el desempleo de Lima Metropolitana no es el desempleo nacional, y un trimestre móvil no equivale a un año. Corte editorial: ' + esc(fmtFecha(D.corte + "T12:00:00Z")) + ".</p></div></div>";
+    h += '<div class="box" style="margin-top:20px"><h3>Cómo leer estas cifras</h3><p>Cada dato indica su periodo y quién lo publicó. Compara solo cifras del mismo periodo y de la misma población: el desempleo de Lima Metropolitana no es el desempleo nacional, y un trimestre móvil no equivale a un año.</p></div>';
+    h += '<p class="dp-aviso">* Cifras con fines informativos y educativos. Cada tarjeta enlaza a su fuente y no sustituye a la información oficial en tiempo real. Contrasta en: <a href="https://estadisticas.bcrp.gob.pe/estadisticas/series/" target="_blank" rel="noopener noreferrer">BCRP</a>, <a href="https://www.gob.pe/inei" target="_blank" rel="noopener noreferrer">INEI</a>, <a href="https://www.dge.gob.pe" target="_blank" rel="noopener noreferrer">CDC-Minsa</a> y <a href="https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" target="_blank" rel="noopener noreferrer">ENFEN</a>.</p></div>';
+    setTimeout(pintarDatos, 0);
     return h;
   }
   var hSec = "todos", hMax = 30;
@@ -395,7 +408,6 @@
     $$("#snav a, .mnav a").forEach(function (a) { var on = a.getAttribute("data-n") === nav; a.classList.toggle("on", on); if (on) a.scrollIntoView({ inline: "center", block: "nearest" }); });
     $$("#tabbar [data-t]").forEach(function (a) { a.classList.toggle("on", a.getAttribute("data-t") === tab); });
     if (r.v === "inicio") iniFeed();
-    if (r.v === "datos") animarCifras();
     var sh = $("#b-share"); if (sh) sh.onclick = compartir;
     window.scrollTo(0, 0);
   }
@@ -488,6 +500,7 @@
     if (c("[data-cerrar]")) { setTimeout(cerrarHojas, 10); return; }
     if (t.id === "veil" || c("[data-x]")) { cerrarHojas(); return; }
     if (c("[data-buscar]")) { abrirBuscar(); return; }
+    var df = c("[data-df]"); if (df) { dFil = df.getAttribute("data-df"); pintarDatos(); return; }
     var fl = c(".flip"); if (fl && !c("a") && window.matchMedia && matchMedia("(hover: none)").matches) { var ya = fl.classList.contains("on"); $$(".flip.on").forEach(function (x) { x.classList.remove("on"); }); if (!ya) fl.classList.add("on"); return; }
     var mi = c("[data-m]"); if (mi) { abrirMision(mi.getAttribute("data-m")); return; }
     var o = c("[data-o]"); if (o && M) { responder(+o.getAttribute("data-o")); return; }
