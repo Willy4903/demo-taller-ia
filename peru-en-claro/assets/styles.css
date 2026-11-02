@@ -486,3 +486,37 @@ a.s:hover h2,a.s:hover h3{color:var(--gold-t)}
 .top-in{min-width:0}
 .mnav{min-width:0}
 .dp-h .fu{margin-top:auto;padding-top:8px;color:var(--gold-t);font-weight:700;font-size:.72rem}
+
+/* ───── Tarjetas que se voltean (DataPerú) ───── */
+.flip{display:grid;perspective:1100px;outline:none;cursor:pointer;min-width:0;-webkit-tap-highlight-color:transparent}
+.flip-in{display:grid;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.flip .face{grid-area:1/1;display:flex;flex-direction:column;gap:5px;padding:16px;border-radius:var(--R);border:1px solid var(--border);
+  -webkit-backface-visibility:hidden;backface-visibility:hidden;min-width:0;overflow:hidden}
+.flip .front{background:var(--card);position:relative}
+.flip.hero .front{border-color:var(--border2);background:linear-gradient(160deg,color-mix(in srgb,#0EA5E9 16%,var(--card)),var(--card))}
+.flip .front::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.07) 50%,transparent 60%);transform:translateX(-120%);transition:transform .9s ease;pointer-events:none}
+.flip:hover .front::after{transform:translateX(120%)}
+.flip .k{font-size:.78rem;color:var(--tx2);font-weight:600;line-height:1.3}
+.flip .v{font-family:var(--mono);font-weight:800;font-size:1.55rem;font-variant-numeric:tabular-nums;overflow-wrap:anywhere;line-height:1.15}
+.flip.hero .v{font-size:clamp(1.3rem,4.8vw,1.95rem)}
+.flip .front p{margin:0;color:var(--tx3);font-size:.8rem;line-height:1.4}
+.flip .spark{margin-top:6px}
+.flip .hint{margin-top:auto;padding-top:10px;font-family:var(--mono);font-size:.66rem;letter-spacing:.04em;color:#7DD3FC;opacity:.85}
+:root[data-theme="light"] .flip .hint{color:#0369A1}
+.flip .back{transform:rotateY(180deg);color:#E2E8F0;border-color:#38BDF8;
+  background:radial-gradient(260px 160px at 100% 0,rgba(56,189,248,.28),transparent 70%),linear-gradient(160deg,#0B3A5E,#0B1220)}
+.flip .back p{margin:0;font-size:.86rem;line-height:1.45;color:#E2E8F0}
+.flip .back .ej{color:#FDE68A}
+.flip .bk{font-family:var(--mono);font-size:.64rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#7DD3FC;margin-top:4px}
+.flip .bk:first-child{margin-top:0}
+.flip .back .lk{margin-top:auto;padding-top:8px;align-self:flex-start;color:#FBBF24;font-size:.8rem}
+.flip:focus-visible .face{outline:2px solid var(--gold-t);outline-offset:2px}
+.flip.on .flip-in,.flip:focus-visible .flip-in{transform:rotateY(180deg)}
+@media (hover:hover){.flip:hover .flip-in{transform:rotateY(180deg)}.flip:hover{z-index:2}}
+@media (prefers-reduced-motion:reduce){
+  .flip-in{transform:none!important;transition:none}
+  .flip .back{transform:none;opacity:0;transition:opacity .2s}
+  .flip .front{transition:opacity .2s}
+  .flip:hover .back,.flip.on .back,.flip:focus-visible .back{opacity:1}
+  .flip:hover .front,.flip.on .front,.flip:focus-visible .front{opacity:0}
+}

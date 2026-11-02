@@ -26,6 +26,8 @@
     if (m < 43200) return "hace " + Math.round(m / 1440) + " días";
     return fmtFecha(iso);
   }
+  /* formato peruano oficial del INEI: coma decimal y espacio como separador de miles */
+  function num(v, dec) { return new Intl.NumberFormat("en-US", { minimumFractionDigits: dec, maximumFractionDigits: dec }).format(v).replace(/,/g, " ").replace(".", ","); }
   function primera(t) { var m = String(t).match(/^.*?[.!?](\s|$)/); return m ? m[0].trim() : t; }
   function nomFrase(s) { return s.id === "nino" ? "El Niño" : s.nombre.toLowerCase(); }
   function sin(t, n) { return t.length > n ? t.slice(0, n).replace(/\s+\S*$/, "") + "…" : t; }
@@ -126,13 +128,13 @@
     var w = 240, h = grande ? 120 : 54, p = 6, mn = Math.min.apply(null, pts), mx = Math.max.apply(null, pts), d = mx - mn || 1;
     var xy = pts.map(function (v, i) { return [p + i * (w - 2 * p) / (pts.length - 1), h - p - (v - mn) / d * (h - 2 * p)]; });
     var ln = xy.map(function (q) { return q[0].toFixed(1) + "," + q[1].toFixed(1); }).join(" "), ult = xy[xy.length - 1];
-    return '<svg class="spark' + (grande ? " g" : "") + '" viewBox="0 0 ' + w + " " + h + '" preserveAspectRatio="none" role="img" aria-label="Evolución reciente: de ' + mn.toFixed(3) + " a " + mx.toFixed(3) + '"><polygon points="' + p + "," + (h - p) + " " + ln + " " + (w - p) + "," + (h - p) + '" fill="#10B981" fill-opacity=".14"/><polyline points="' + ln + '" fill="none" stroke="#10B981" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/><circle cx="' + ult[0].toFixed(1) + '" cy="' + ult[1].toFixed(1) + '" r="3.5" fill="#34D399"/></svg>';
+    return '<svg class="spark' + (grande ? " g" : "") + '" viewBox="0 0 ' + w + " " + h + '" preserveAspectRatio="none" role="img" aria-label="Evolución reciente: de ' + num(mn, 3) + " a " + num(mx, 3) + '"><polygon points="' + p + "," + (h - p) + " " + ln + " " + (w - p) + "," + (h - p) + '" fill="#10B981" fill-opacity=".14"/><polyline points="' + ln + '" fill="none" stroke="#10B981" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/><circle cx="' + ult[0].toFixed(1) + '" cy="' + ult[1].toFixed(1) + '" r="3.5" fill="#34D399"/></svg>';
   }
   function indicadores(grande) {
     var h = '<div class="ind">', tc = (NOT.indicadores || {}).tipo_cambio;
     if (tc && tc.serie && tc.serie.length >= 1) {
       var v = tc.serie.map(function (x) { return x.v; }), ult = v[v.length - 1], dif = v.length > 1 ? ult - v[v.length - 2] : null, fec = tc.serie[tc.serie.length - 1].f;
-      h += '<div class="i"><span class="k">Tipo de cambio USD / PEN</span><span class="v">S/ ' + ult.toFixed(3) + '</span><span class="n">' + (dif !== null ? 'Variación <span class="mono">' + (dif >= 0 ? "+" : "") + dif.toFixed(3) + "</span> · " : "") + esc(tc.fuente || "BCRP") + " · " + esc(corta(fec + "T12:00:00Z")) + "</span>" + spark(v, grande) + "</div>";
+      h += '<div class="i"><span class="k">Tipo de cambio USD / PEN</span><span class="v">S/ ' + num(ult, 3) + '</span><span class="n">' + (dif !== null ? 'Variación <span class="mono">' + (dif >= 0 ? "+" : "") + num(dif, 3) + "</span> · " : "") + esc(tc.fuente || "BCRP") + " · " + esc(corta(fec + "T12:00:00Z")) + "</span>" + spark(v, grande) + "</div>";
     }
         (ED.indicadores || []).forEach(function (x) { h += '<div class="i"><span class="k">' + esc(x.k) + '</span><span class="v">' + esc(x.v) + '</span><span class="n">' + esc(x.n) + ' · <a href="' + safeUrl(x.u) + '" target="_blank" rel="noopener noreferrer">' + esc(x.f) + "</a></span></div>"; });
     return h + "</div>" + '<p class="mono" style="margin:12px 0 0;font-size:.68rem;color:var(--tx3)">Corte editorial: ' + esc(corta(ED.corte + "T12:00:00Z")) + ". Verifica en la fuente primaria.</p>";
@@ -164,7 +166,7 @@
     var g = NOT.estado_fuentes || {}, tot = Object.keys(g).length, ok = Object.keys(g).filter(function (k) { return g[k].ok; }).length, tc = (NOT.indicadores || {}).tipo_cambio;
     var fecha = ""; try { fecha = new Intl.DateTimeFormat("es-PE", { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: TZ }).format(new Date()); } catch (e) {}
     var hoy = "";
-    if (tc && tc.serie && tc.serie.length) hoy += '<div class="i"><span class="k">USD / PEN</span><span class="v">S/ ' + tc.serie[tc.serie.length - 1].v.toFixed(3) + "</span></div>";
+    if (tc && tc.serie && tc.serie.length) hoy += '<div class="i"><span class="k">USD / PEN</span><span class="v">S/ ' + num(tc.serie[tc.serie.length - 1].v, 3) + "</span></div>";
     if (ED.nino) hoy += '<div class="i"><span class="k">El Niño costero · ENFEN</span><span class="v">' + esc(ED.nino.estado[0].v) + "</span></div>";
     hoy += '<div class="i"><span class="k">Notas indexadas</span><span class="v">' + ITEMS.length + "</span></div>" + (tot ? '<div class="i"><span class="k">Fuentes activas</span><span class="v">' + ok + "/" + tot + "</span></div>" : "") + '<div class="i"><span class="k">Próxima actualización</span><span class="v" style="font-size:1.05rem">' + proxima() + "</span></div>";
     var tiles = ED.sectores.map(function (s) { var n = porSector(s.id).length; return '<a class="po-t' + (s.id === "nino" ? " nino" : "") + '" href="#/s/' + s.id + '" style="--c:' + s.color + '"><span class="ic" aria-hidden="true">' + s.icono + "</span><b>" + esc(s.nombre) + "</b><small>" + (n ? n + (n === 1 ? " nota" : " notas") : "Análisis y misión") + "</small></a>"; })
@@ -306,22 +308,50 @@
     h += '<div class="bento"><div class="panel b1"><h3 class="pt">Indicadores</h3>' + indicadores(true) + '</div><div class="panel"><h3 class="pt">Notas por sección</h3>' + ED.sectores.map(function (x) { var n = cnt[x.id] || 0; return '<div class="hbar" style="--c:' + x.color + '"><span>' + esc(x.nombre) + '</span><span><i style="width:' + Math.round(n / max * 100) + '%"></i></span><span>' + n + "</span></div>"; }).join("") + '</div><div class="panel"><h3 class="pt">Estado de las fuentes</h3>' + (nom.length ? nom.map(function (k) { return '<div class="fuente-i"><span>' + esc(k) + '</span><span class="' + (g[k].ok ? "ok" : "no") + '">' + (g[k].ok ? "OK · " + g[k].n : "sin respuesta") + "</span></div>"; }).join("") : '<div class="vacio">Aún no hay una carga automática registrada.</div>') + "</div></div></div>";
     return h;
   }
-  function fmtNum(v, dec) { try { return new Intl.NumberFormat("es-PE", { minimumFractionDigits: dec, maximumFractionDigits: dec }).format(v); } catch (e) { return String(v); } }
+  function fmtNum(v, dec) { return num(v, dec); }
+  /* tarjeta que se voltea: frente con la cifra; reverso con concepto, ejemplo y fuente */
+  function flipCard(o) {
+    return '<article class="flip' + (o.hero ? " hero" : "") + '" tabindex="0" aria-label="' + esc(o.k + ": " + o.v + ". Pasa el cursor o toca para ver el concepto, un ejemplo y la fuente.") + '"><div class="flip-in">' +
+      '<div class="face front"><span class="k">' + esc(o.k) + '</span><span class="v cifra">' + esc(o.v) + "</span><p>" + esc(o.n) + '</p><span class="hint" aria-hidden="true">↻ Voltea para ver el concepto</span></div>' +
+      '<div class="face back"><span class="bk">Qué significa</span><p>' + esc(o.c) + '</p><span class="bk">Ejemplo</span><p class="ej">' + esc(o.e) + '</p><a class="lk" href="' + safeUrl(o.u) + '" target="_blank" rel="noopener noreferrer">Fuente: ' + esc(o.f) + " ↗</a></div></div></article>";
+  }
+  function ejSerie(x, b) {
+    var a = b.serie[0], u = b.serie[b.serie.length - 1], d = u.v - a.v;
+    if (x.unidad === "personas") return "En " + a.a + " había " + fmtNum(a.v, 0) + " habitantes y en " + u.a + ", " + fmtNum(u.v, 0) + ": " + fmtNum(Math.abs(d / a.v * 100), 1) + " % " + (d >= 0 ? "más" : "menos") + ".";
+    if (x.unidad === "años") return "Un recién nacido en " + u.a + " viviría en promedio " + fmtNum(u.v, x.dec) + " años, " + fmtNum(Math.abs(d), x.dec) + " " + (d >= 0 ? "más" : "menos") + " que en " + a.a + ".";
+    return "En " + a.a + " fue " + fmtNum(a.v, x.dec) + " % y en " + u.a + ", " + fmtNum(u.v, x.dec) + " %: " + (d >= 0 ? "subió " : "bajó ") + fmtNum(Math.abs(d), x.dec) + " puntos porcentuales.";
+  }
+  function animarCifras() {
+    if (reduce || !("IntersectionObserver" in window)) return;
+    var io = new IntersectionObserver(function (en) { en.forEach(function (e) { if (!e.isIntersecting) return; io.unobserve(e.target); contar(e.target); }); }, { threshold: .4 });
+    $$(".cifra").forEach(function (el) { io.observe(el); });
+  }
+  function contar(el) {
+    var fin = el.textContent, re = /\d[\d ]*(?:,\d+)?/g, toks = fin.match(re); if (!toks) return;
+    var vals = toks.map(function (t) { return { dec: (t.split(",")[1] || "").length, sep: /\s/.test(t), n: parseFloat(t.replace(/\s/g, "").replace(",", ".")) }; }), t0 = performance.now(), dur = 1000;
+    (function paso(t) {
+      var k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 3), i = 0;
+      el.textContent = fin.replace(re, function () { var v = vals[i++], x = v.n * e; var r = num(x, v.dec); return v.sep ? r : r.replace(/ /g, ""); });
+      if (k < 1) requestAnimationFrame(paso); else el.textContent = fin;
+    })(t0);
+  }
   function vistaDatos() {
     var D = ED.datos; if (!D) return vistaHome();
     var bm = NOT.datos_bm || {};
     var dest = []; D.grupos.forEach(function (g) { g.items.forEach(function (i) { if (i.dest) dest.push(i); }); });
     var h = '<div class="fade"><div class="shead" style="--c:#38BDF8"><h1>DataPerú</h1><p>' + esc(D.intro) + '</p></div>';
-    h += '<div class="dp-hero">' + dest.map(function (i) { return '<a class="dp-h" href="' + safeUrl(i.u) + '" target="_blank" rel="noopener noreferrer"><span class="k">' + esc(i.k) + '</span><span class="v">' + esc(i.v) + "</span><small>" + esc(i.n) + '</small><small class="fu">Fuente: ' + esc(i.f) + " ↗</small></a>"; }).join("") + "</div>";
+    h += '<div class="dp-hero">' + dest.map(function (i) { return flipCard({ hero: 1, k: i.k, v: i.v, n: i.n, c: i.c, e: i.e, f: i.f, u: i.u }); }).join("") + "</div>";
     D.grupos.forEach(function (g) {
       var resto = g.items.filter(function (i) { return !i.dest; }); if (!resto.length) return;
-      h += sh(g.g, g.c) + '<div class="dp-g">' + resto.map(function (i) { return '<article class="dcard"><span class="k">' + esc(i.k) + '</span><span class="v">' + esc(i.v) + "</span><p>" + esc(i.n) + '</p><a class="lk" href="' + safeUrl(i.u) + '" target="_blank" rel="noopener noreferrer">' + esc(i.f) + " ↗</a></article>"; }).join("") + "</div>";
+      h += sh(g.g, g.c) + '<div class="dp-g">' + resto.map(function (i) { return flipCard(i); }).join("") + "</div>";
     });
     var ser = (D.series || []).filter(function (x) { return bm[x.cod] && bm[x.cod].serie && bm[x.cod].serie.length >= 3; });
     h += sh("Tendencias históricas", "#94A3B8") + '<p class="dp-nota">Series anuales del Banco Mundial para el Perú (últimos años disponibles). Sirven para ver la tendencia; para el dato oficial más reciente usa las cifras del INEI de arriba.</p>';
-    if (ser.length) h += '<div class="dp-g">' + ser.map(function (x) { var b = bm[x.cod], v = b.serie.map(function (p) { return p.v; }), u = b.serie[b.serie.length - 1], pri = b.serie[0];
-      return '<article class="dcard"><span class="k">' + esc(x.k) + '</span><span class="v">' + esc(fmtNum(u.v, x.dec)) + (x.unidad === "%" ? " %" : "") + "</span><p>" + (x.unidad === "personas" || x.unidad === "años" ? esc(x.unidad) + " · " : "") + "Dato de " + u.a + " · desde " + pri.a + ": " + esc(fmtNum(pri.v, x.dec)) + "</p>" + spark(v, false) + '<a class="lk" href="https://data.worldbank.org/indicator/' + esc(x.cod) + '?locations=PE" target="_blank" rel="noopener noreferrer">Banco Mundial ↗</a></article>'; }).join("") + "</div>";
-    else h += '<div class="vacio">Las series históricas se cargan en la próxima actualización automática (08:00 / 23:00).</div>';
+    if (ser.length) h += '<div class="dp-g">' + ser.map(function (x) {
+      var b = bm[x.cod], v = b.serie.map(function (p) { return p.v; }), u = b.serie[b.serie.length - 1];
+      return flipCard({ k: x.k, v: fmtNum(u.v, x.dec) + (x.unidad === "%" ? " %" : ""), n: (x.unidad === "personas" || x.unidad === "años" ? x.unidad + " · " : "") + "Dato de " + u.a, c: x.c, e: ejSerie(x, b), f: "Banco Mundial", u: "https://data.worldbank.org/indicator/" + x.cod + "?locations=PE" }).replace('<span class="hint"', spark(v, false) + '<span class="hint"');
+    }).join("") + "</div>";
+        else h += '<div class="vacio">Las series históricas se cargan en la próxima actualización automática (08:00 / 23:00).</div>';
     h += sh("Dónde buscar más datos", "#94A3B8") + D.enlaces.map(function (e) { return '<a class="fr" href="' + safeUrl(e.u) + '" target="_blank" rel="noopener noreferrer"><div><b>' + esc(e.n) + "</b><p>" + esc(e.d) + "</p></div><span>↗</span></a>"; }).join("");
     h += '<div class="box" style="margin-top:20px"><h3>Cómo leer estas cifras</h3><p>Cada dato indica su periodo y quién lo publicó. Compara solo cifras del mismo periodo y de la misma población: el desempleo de Lima Metropolitana no es el desempleo nacional, y un trimestre móvil no equivale a un año. Corte editorial: ' + esc(fmtFecha(D.corte + "T12:00:00Z")) + ".</p></div></div>";
     return h;
@@ -365,6 +395,7 @@
     $$("#snav a, .mnav a").forEach(function (a) { var on = a.getAttribute("data-n") === nav; a.classList.toggle("on", on); if (on) a.scrollIntoView({ inline: "center", block: "nearest" }); });
     $$("#tabbar [data-t]").forEach(function (a) { a.classList.toggle("on", a.getAttribute("data-t") === tab); });
     if (r.v === "inicio") iniFeed();
+    if (r.v === "datos") animarCifras();
     var sh = $("#b-share"); if (sh) sh.onclick = compartir;
     window.scrollTo(0, 0);
   }
@@ -457,6 +488,7 @@
     if (c("[data-cerrar]")) { setTimeout(cerrarHojas, 10); return; }
     if (t.id === "veil" || c("[data-x]")) { cerrarHojas(); return; }
     if (c("[data-buscar]")) { abrirBuscar(); return; }
+    var fl = c(".flip"); if (fl && !c("a") && window.matchMedia && matchMedia("(hover: none)").matches) { var ya = fl.classList.contains("on"); $$(".flip.on").forEach(function (x) { x.classList.remove("on"); }); if (!ya) fl.classList.add("on"); return; }
     var mi = c("[data-m]"); if (mi) { abrirMision(mi.getAttribute("data-m")); return; }
     var o = c("[data-o]"); if (o && M) { responder(+o.getAttribute("data-o")); return; }
     var a = c("[data-a]"); if (!a || !M) return; var act = a.getAttribute("data-a"), m = SECT[M.id].mision;
@@ -468,7 +500,7 @@
     else if (act === "sector") { var sid = a.getAttribute("data-s"); cerrarHojas(); location.hash = "#/s/" + sid; }
     else if (act === "fin") { cerrarHojas(); location.hash = "#/ruta"; toast("🏔️ ¡Llegaste a la cumbre!"); confeti(); }
   });
-  addEventListener("keydown", function (e) { if (e.key === "/" && !/^(INPUT|TEXTAREA)$/.test((document.activeElement || {}).tagName || "") && !hojaAbierta) { e.preventDefault(); abrirBuscar(); return; } if (e.key === "Escape") { cerrarHojas(); $("#pop").classList.remove("on"); } });
+  addEventListener("keydown", function (e) { var f = e.target && e.target.classList && e.target.classList.contains("flip") ? e.target : null; if (f && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); f.classList.toggle("on"); return; } if (e.key === "/" && !/^(INPUT|TEXTAREA)$/.test((document.activeElement || {}).tagName || "") && !hojaAbierta) { e.preventDefault(); abrirBuscar(); return; } if (e.key === "Escape") { cerrarHojas(); $("#pop").classList.remove("on"); } });
   addEventListener("hashchange", function () { cerrarHojas(); navegar(); });
   addEventListener("scroll", function () { if (Math.abs(window.scrollY - popY) > 60) $("#pop").classList.remove("on"); }, { passive: true });
   $("#b-buscar").onclick = abrirBuscar; $("#t-bus").onclick = abrirBuscar; $("#t-sec").onclick = abrirMenu;
@@ -481,7 +513,7 @@
   function ticker() {
     var w = $("#tk-t"); if (!w) return;
     var it = [], tc = (NOT.indicadores || {}).tipo_cambio;
-    if (tc && tc.serie && tc.serie.length) { var v = tc.serie[tc.serie.length - 1].v, a = tc.serie.length > 1 ? v - tc.serie[tc.serie.length - 2].v : null; it.push({ h: "#/estadisticas", t: "USD/PEN", x: "S/ " + v.toFixed(3) + (a === null ? "" : (a >= 0 ? " ▲" : " ▼") + Math.abs(a).toFixed(3)), cls: "fx" }); }
+    if (tc && tc.serie && tc.serie.length) { var v = tc.serie[tc.serie.length - 1].v, a = tc.serie.length > 1 ? v - tc.serie[tc.serie.length - 2].v : null; it.push({ h: "#/estadisticas", t: "USD/PEN", x: "S/ " + num(v, 3) + (a === null ? "" : (a >= 0 ? " ▲" : " ▼") + num(Math.abs(a), 3)), cls: "fx" }); }
     var dd = ED.datos ? [].concat.apply([], ED.datos.grupos.map(function (g) { return g.items; })) : [];
     [["pob", "Población (Censo 2025)"], ["hogint", "Hogares con internet"], ["desemp", "Desempleo Lima Metropolitana"]].forEach(function (p) { var x = dd.filter(function (i) { return i.id === p[0]; })[0]; if (x) it.push({ h: "#/datos", t: p[1], x: x.v, cls: "fx" }); });
     var nino = (ED.indicadores || []).filter(function (x) { return /Niño/.test(x.k); })[0];
