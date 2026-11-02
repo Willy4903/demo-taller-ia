@@ -259,7 +259,8 @@
       '<p class="hero-kicker">ACTUALIDAD · DATOS · ANÁLISIS</p><h1 id="h1">El Perú, explicado con claridad</h1>'+
       '<p class="hero-sub">Noticias con fuentes enlazadas, cifras con su fecha de corte y análisis para entender lo que sucede en el país.</p>'+
       '<p class="hero-updated"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></svg>Última comprobación: '+esc(fechaSistema)+'</p></div>'+
-      '<div class="hero-stats" aria-label="Indicadores y sus periodos">'+visualStats()+'</div></section>';
+      '<div class="hero-stats" aria-label="Indicadores y sus periodos">'+visualStats()+'</div>'+ 
+      '<a class="hero-photo-credit" href="https://commons.wikimedia.org/wiki/File:Costa_Verde_%26_Highrise_Buildings_-_Lima.jpg" target="_blank" rel="noopener noreferrer" title="Fotografía real de la Costa Verde, Padmanaba01. CC BY-SA 2.0. Fondo adaptado por superposición de color.">Foto: Padmanaba01 / Wikimedia Commons · CC BY-SA 2.0</a></section>';
     h+='<div class="qs">';
     h+=visualCard(1,"q1","¿Qué está pasando en el Perú?","Noticias importantes, explicadas con contexto y enlaces al medio que las publicó.",
       A.length?'<ul class="q-l">'+A.slice(0,2).map(function(x){return '<li><a href="'+safeUrl(x.url)+'" target="_blank" rel="noopener noreferrer"><span class="q-t">'+esc(sin(x.titulo,90))+'</span>'+meta(x)+'</a></li>';}).join("")+'</ul>':'<p>Actualmente no hay noticias recientes confirmadas.</p>',
