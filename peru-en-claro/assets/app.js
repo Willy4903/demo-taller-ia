@@ -84,26 +84,10 @@
     if (externo(s)) { var r = s.fecha ? relativo(s.fecha) : null; return '<div class="meta"><span class="tp ' + esc(s.tipo) + '">' + esc(s.tipo) + "</span><span>" + esc(s.fuente) + "</span><span>· " + esc(r || s.nota || "fecha no confirmada") + " ↗</span></div>"; }
     return '<div class="meta"><span>Contexto Perú · ' + esc(corta(ED.corte + "T12:00:00Z")) + "</span>" + (s.nivel ? '<span class="conf ' + (s.nivel === "alta" ? "alta" : "media") + '">Confianza ' + (s.nivel === "alta" ? "alta" : "media") + "</span>" : "") + "</div>";
   }
-  /* entidades oficiales para contrastar cada tema */
-  var CONTRASTE = {
-    politica: [["JNE", "https://www.jne.gob.pe"], ["ONPE", "https://www.onpe.gob.pe"]],
-    economia: [["BCRP", "https://www.bcrp.gob.pe"], ["INEI", "https://www.inei.gob.pe"]],
-    salud: [["CDC-Minsa", "https://www.dge.gob.pe"], ["Minsa", "https://www.gob.pe/minsa"]],
-    tecnologia: [["PCM", "https://www.gob.pe/pcm"], ["El Peruano", "https://elperuano.pe"]],
-    ia: [["PCM", "https://www.gob.pe/pcm"], ["El Peruano", "https://elperuano.pe"]],
-    deporte: [["FPF", "https://www.fpf.org.pe"]],
-    investigacion: [["MPFN", "https://www.mpfn.gob.pe"], ["Contraloría", "https://www.gob.pe/contraloria"]],
-    coyuntura: [["INEI", "https://www.inei.gob.pe"], ["El Peruano", "https://elperuano.pe"]],
-    mundo: [["ONU", "https://news.un.org/es/"]]
-  };
-  function contrasta(sector) {
-    var c = CONTRASTE[sector] || CONTRASTE.coyuntura;
-    return '<div class="contrasta"><a href="' + safeUrl(c[0][1]) + '" target="_blank" rel="noopener noreferrer">Contrastar en ' + esc(c.map(function (x) { return x[0]; }).join(" / ")) + ' ↗</a><span class="sellos">' + c.map(function (x) { return '<a href="' + safeUrl(x[1]) + '" target="_blank" rel="noopener noreferrer" aria-label="Abrir ' + esc(x[0]) + '">' + esc(x[0]) + "</a>"; }).join("") + "</span></div>";
-  }
   function leadCard(s) {
     var raw = s.raw || {}, fu = (raw.fuentes || [])[0];
     return '<article class="lead-card"><a href="' + esc(s.url) + '" aria-hidden="true" tabindex="-1">' + thumb(s, true) + "</a>" + kicker(s) + '<span class="kick" style="margin-left:8px;color:var(--red-t)">· ANÁLISIS</span><h2><a href="' + esc(s.url) + '">' + esc(s.titulo) + '</a></h2><p class="res">' + esc(sin(primera(s.resumen), 260)) + "</p>" + meta(s) +
-      '<div class="acc"><a class="btn" href="' + esc(s.url) + '">Leer el análisis →</a>' + (fu ? '<a class="lk" href="' + safeUrl(fu.u) + '" target="_blank" rel="noopener noreferrer">Leer fuente original ↗</a>' : "") + "</div>" + contrasta(s.sector) + "</article>";
+      '<div class="acc"><a class="btn" href="' + esc(s.url) + '">Leer el análisis →</a>' + (fu ? '<a class="lk" href="' + safeUrl(fu.u) + '" target="_blank" rel="noopener noreferrer">Leer fuente original ↗</a>' : "") + "</div>" + "</article>";
   }
   function row(s) { var f = thumb(s); return '<a class="s row' + (f ? "" : " nofoto") + '" ' + attrs(s) + "><div>" + kicker(s) + "<h3>" + esc(s.titulo) + "</h3>" + (s.resumen ? "<p>" + esc(sin(primera(s.resumen), 160)) + "</p>" : "") + meta(s) + "</div>" + f + "</a>"; }
   function card(s) { return '<a class="s card" ' + attrs(s) + ">" + thumb(s) + "<div>" + kicker(s) + "<h3>" + esc(s.titulo) + "</h3><p>" + esc(sin(primera(s.resumen), 150)) + "</p>" + meta(s) + "</div></a>"; }
@@ -145,11 +129,11 @@
   }
   function indicadores(grande) {
     var h = '<div class="ind">', tc = (NOT.indicadores || {}).tipo_cambio;
-    if (tc && tc.serie && tc.serie.length >= 3) {
-      var v = tc.serie.map(function (x) { return x.v; }), ult = v[v.length - 1], ant = v[v.length - 2], dif = ult - ant;
-      h += '<div class="i"><span class="k">USD / PEN · venta</span><span class="v">S/ ' + ult.toFixed(3) + '</span><span class="n">Variación diaria <span class="mono">' + (dif >= 0 ? "+" : "") + dif.toFixed(3) + "</span> · " + esc(tc.fuente || "BCRP") + " · " + esc(corta(tc.serie[tc.serie.length - 1].f + "T12:00:00Z")) + "</span>" + spark(v, grande) + "</div>";
+    if (tc && tc.serie && tc.serie.length >= 1) {
+      var v = tc.serie.map(function (x) { return x.v; }), ult = v[v.length - 1], dif = v.length > 1 ? ult - v[v.length - 2] : null, fec = tc.serie[tc.serie.length - 1].f;
+      h += '<div class="i"><span class="k">Tipo de cambio USD / PEN</span><span class="v">S/ ' + ult.toFixed(3) + '</span><span class="n">' + (dif !== null ? 'Variación <span class="mono">' + (dif >= 0 ? "+" : "") + dif.toFixed(3) + "</span> · " : "") + esc(tc.fuente || "BCRP") + " · " + esc(corta(fec + "T12:00:00Z")) + "</span>" + spark(v, grande) + "</div>";
     }
-    (ED.indicadores || []).forEach(function (x) { h += '<div class="i"><span class="k">' + esc(x.k) + '</span><span class="v">' + esc(x.v) + '</span><span class="n">' + esc(x.n) + ' · <a href="' + safeUrl(x.u) + '" target="_blank" rel="noopener noreferrer">' + esc(x.f) + "</a></span></div>"; });
+        (ED.indicadores || []).forEach(function (x) { h += '<div class="i"><span class="k">' + esc(x.k) + '</span><span class="v">' + esc(x.v) + '</span><span class="n">' + esc(x.n) + ' · <a href="' + safeUrl(x.u) + '" target="_blank" rel="noopener noreferrer">' + esc(x.f) + "</a></span></div>"; });
     return h + "</div>" + '<p class="mono" style="margin:12px 0 0;font-size:.68rem;color:var(--tx3)">Corte editorial: ' + esc(corta(ED.corte + "T12:00:00Z")) + ". Verifica en la fuente primaria.</p>";
   }
   function glosarioDia() { var t = termDelDia(); return '<div class="dia"><b>' + esc(t.t) + "</b><p>" + esc(t.d) + '</p><a class="mas" href="#/glosario">Ver el glosario completo →</a></div>'; }
@@ -233,13 +217,13 @@
 
   function vistaRuta() {
     var i = nivelDe(S.xp), nv = NIVELES[i], sig = NIVELES[i + 1], todos = ORDEN.every(function (id) { return S.hechas[id]; });
-    var h = '<div class="fade"><div class="shead" style="--c:var(--brand)"><h1>🧭 La Ruta</h1><p>Diez estaciones, diez misiones. Lee, responde, gana XP y sube de nivel: de Viajero a Apu.</p></div>';
+    var h = '<div class="fade"><div class="shead" style="--c:var(--brand)"><h1>🧭 La Ruta</h1><p>' + ORDEN.length + ' estaciones, ' + ORDEN.length + ' misiones. Lee, responde, gana XP y sube de nivel: de Viajero a Apu.</p></div>';
     h += '<div class="nivel-card"><div class="nv"><div class="medalla">' + nv.ic + "</div><div><b>" + nv.n + "</b><small>" + nv.d + '</small></div><div style="margin-left:auto;text-align:right"><b style="font-size:1.1rem">' + racha() + '</b><small style="display:block">día(s) de racha</small></div></div><div class="bar"><i id="xp-b"></i></div><small class="xt">' + (sig ? S.xp + " / " + sig.min + " XP para " + sig.n : S.xp + " XP · nivel máximo") + "</small></div>";
     h += '<div class="camino">' + ORDEN.map(function (id, k) {
       var s = SECT[id], hecho = !!S.hechas[id], disp = !hecho && (k === 0 || !!S.hechas[ORDEN[k - 1]]), est = hecho ? "hecho" : disp ? "disp" : "bloq";
       return '<div class="st ' + est + '"><div class="dot">' + (hecho ? "✓" : disp ? s.icono : "🔒") + '</div><div class="stc"><span class="paso">Estación ' + (k + 1) + "</span><h3>" + esc(s.nombre) + "</h3><p>" + esc(s.lema) + '</p><div class="stt"><span>' + (hecho ? "Superada · " + S.hechas[id].ac + "/3 aciertos" : disp ? "Disponible" : "Completa la anterior") + "</span>" + (hecho || disp ? '<button class="btn' + (hecho ? " o" : "") + '" data-m="' + id + '" style="min-height:40px">' + (hecho ? "Repetir" : "Empezar") + "</button>" : "") + "</div></div></div>";
     }).join("") + "</div>";
-    var ins = [["brujula", "Primer paso", "🧭"], ["politica", "Cívico", "🏛️"], ["economia", "Economista", "📈"], ["salud", "Guardián de la salud", "🩺"], ["tecnologia", "Ciberescudo", "🛰️"], ["deporte", "Hincha informado", "⚽"], ["investigacion", "Sabueso", "🔎"], ["coyuntura", "Analista", "🧭"], ["mundo", "Ciudadano del mundo", "🌎"], ["ia", "Domador de algoritmos", "🤖"]], nt = Object.keys(S.terminos).length;
+    var ins = [["brujula", "Primer paso", "🧭"], ["politica", "Cívico", "🏛️"], ["economia", "Economista", "📈"], ["salud", "Guardián de la salud", "🩺"], ["tecnologia", "Ciberescudo", "🛰️"], ["deporte", "Hincha informado", "⚽"], ["investigacion", "Sabueso", "🔎"], ["coyuntura", "Analista", "🧭"], ["mundo", "Ciudadano del mundo", "🌎"], ["ia", "Domador de algoritmos", "🤖"], ["nino", "Vigía del mar", "🌊"]], nt = Object.keys(S.terminos).length;
     h += sh("Insignias", "#000") + '<div class="ins-g">' + ins.map(function (x) { return '<div class="ins ' + (S.hechas[x[0]] ? "on" : "") + '"><i>' + x[2] + "</i>" + x[1] + "</div>"; }).join("") + '<div class="ins ' + (nt >= 20 ? "on" : "") + '"><i>📖</i>Lexicógrafo<br>' + Math.min(nt, 20) + '/20 términos</div><div class="ins ' + (todos ? "on" : "") + '"><i>🏔️</i>Cumbre</div></div>';
     h += '<p style="color:var(--tx3);font-size:.85rem;margin-top:16px">Tu progreso se guarda solo en este dispositivo.</p></div>';
     setTimeout(function () { var b = $("#xp-b"); if (b) b.style.width = Math.min(100, pctNivel()) + "%"; }, 150);
@@ -436,6 +420,22 @@
     $("#b-tema").onclick = function () { var oscuro = r.getAttribute("data-theme") ? r.getAttribute("data-theme") === "dark" : true; var n = oscuro ? "light" : "dark"; r.setAttribute("data-theme", n); try { localStorage.setItem("cp_tema", n); } catch (e) {} };
   })();
 
+  /* ───── línea dinámica de lo último y más relevante (derecha a izquierda) ───── */
+  function ticker() {
+    var w = $("#tk-t"); if (!w) return;
+    var it = [], tc = (NOT.indicadores || {}).tipo_cambio;
+    if (tc && tc.serie && tc.serie.length) { var v = tc.serie[tc.serie.length - 1].v, a = tc.serie.length > 1 ? v - tc.serie[tc.serie.length - 2].v : null; it.push({ h: "#/estadisticas", t: "USD/PEN", x: "S/ " + v.toFixed(3) + (a === null ? "" : (a >= 0 ? " ▲" : " ▼") + Math.abs(a).toFixed(3)), cls: "fx" }); }
+    var nino = (ED.indicadores || []).filter(function (x) { return /Niño/.test(x.k); })[0];
+    if (nino) it.push({ h: "#/s/nino", t: "El Niño costero", x: "ENFEN: " + nino.v, cls: "nino" });
+    ["politica", "economia", "nino-peru", "salud", "ia-peru", "mundo"].forEach(function (id) { var c = INS.filter(function (i) { return i.id === id; })[0]; if (c) it.push({ h: c.url, t: (SECT[c.sector] || {}).nombre || "", x: c.titulo, cls: "an" }); });
+    var vistos = {}, n = 0;
+    ITEMS.forEach(function (i) { if (n >= 10 || !i.fecha || vistos[i.fuente]) return; vistos[i.fuente] = 1; n++; it.push({ h: i.url, ext: 1, t: i.fuente, x: i.titulo, cls: "nt" }); });
+    var uno = it.map(function (x) { return '<a class="tk-i ' + x.cls + '" href="' + (x.ext ? safeUrl(x.h) : esc(x.h)) + '"' + (x.ext ? ' target="_blank" rel="noopener noreferrer"' : "") + "><b>" + esc(x.t) + "</b> " + esc(sin(x.x, 110)) + "</a>"; }).join("");
+    w.innerHTML = '<div class="tk-g">' + uno + '</div><div class="tk-g" aria-hidden="true">' + uno.replace(/<a /g, '<a tabindex="-1" ') + "</div>";
+    requestAnimationFrame(function () { var g = w.firstChild; if (g) w.style.animationDuration = Math.max(40, Math.round(g.scrollWidth / 70)) + "s"; });
+    $("#tk-p").onclick = function () { var p = $("#ticker").classList.toggle("pausa"); this.setAttribute("aria-pressed", p ? "true" : "false"); this.setAttribute("aria-label", p ? "Reanudar ticker" : "Pausar ticker"); this.textContent = p ? "▶" : "❚❚"; };
+  }
+
   /* ───── estado en vivo ───── */
   function estado() {
     function pintar() {
@@ -449,6 +449,6 @@
   }
 
   /* ───── arranque ───── */
-  menuNav(); estado(); xpChip(); navegar();
+  menuNav(); estado(); xpChip(); ticker(); navegar();
   if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) navigator.serviceWorker.register("sw.js").catch(function () {});
 })();
