@@ -134,6 +134,27 @@ a.s:hover h2,a.s:hover h3{color:var(--gold-t)}
 .panel>h3.pt,.pt{font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-t);display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
 .pt a{font-family:var(--sans);letter-spacing:0;text-transform:none;font-size:.78rem;color:var(--tx3)}
 .pt a:hover{color:var(--tx)}
+.nino-b{display:flex;align-items:center;gap:14px;margin-bottom:16px;padding:14px 18px;border-radius:var(--R);border:1px solid color-mix(in srgb,#0EA5E9 55%,var(--border));
+  background:linear-gradient(100deg,color-mix(in srgb,#0EA5E9 26%,var(--card)),var(--card) 70%)}
+.nino-b:hover{border-color:#38BDF8}
+.nb-i{font-size:1.9rem;line-height:1}
+.nb-t{display:flex;flex-direction:column;min-width:0;flex:1}
+.nb-t b{font-family:var(--serif);font-size:1.25rem}
+.nb-t small{color:var(--tx2);font-size:.84rem}
+.nb-g{font-weight:700;font-size:.86rem;color:#7DD3FC;white-space:nowrap}
+.nino-p{margin-bottom:16px}
+.nk{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+.nk-i{padding:12px 14px;border-radius:var(--r);background:var(--card2);border:1px solid var(--border)}
+.nk-i .k{display:block;font-size:.74rem;color:var(--tx3);font-weight:600}
+.nk-i .v{display:block;font-family:var(--mono);font-weight:800;font-size:1.3rem;margin:2px 0;color:#7DD3FC}
+.nk-i small{color:var(--tx2);font-size:.78rem}
+.nl .tx p{margin:3px 0 4px;color:var(--tx2);font-size:.9rem;font-family:var(--sans)}
+.nl .nodo{font-size:.55rem;border-color:#0EA5E9;color:#7DD3FC;background:var(--card)}
+.nl li.hecho::before{background:#0EA5E9}
+.mnav a.nav-nino{color:#7DD3FC}
+.mnav a.nav-nino::after{background:#38BDF8}
+:root[data-theme="light"] .nb-g,:root[data-theme="light"] .nk-i .v,:root[data-theme="light"] .mnav a.nav-nino{color:#0369A1}
+@media (min-width:720px){.nk{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .stack{display:flex;flex-direction:column;gap:16px;min-width:0}
 .panorama{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:var(--r);border:1px solid var(--border2);background:var(--card2);margin-bottom:16px}
 .panorama b{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--red-t);flex:none}
@@ -412,3 +433,4 @@ a.s:hover h2,a.s:hover h3{color:var(--gold-t)}
   .tk-w{overflow-x:auto}
   .tk-p{display:none}
 }
+.tl,ol.tl{list-style:none;margin:0;padding:0}
