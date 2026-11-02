@@ -30,6 +30,27 @@
   function num(v, dec) { return new Intl.NumberFormat("en-US", { minimumFractionDigits: dec, maximumFractionDigits: dec }).format(v).replace(/,/g, " ").replace(".", ","); }
   function primera(t) { var m = String(t).match(/^.*?[.!?](\s|$)/); return m ? m[0].trim() : t; }
   function nomFrase(s) { return s.id === "nino" ? "El Niño" : s.nombre.toLowerCase(); }
+  /* ───── íconos propios (SVG animados, sin emojis) ───── */
+  var ICO = {
+    politica: '<path d="M3.5 9.5 12 4.8l8.5 4.7"/><path d="M5.5 10.8v6.7M9.5 10.8v6.7M14.5 10.8v6.7M18.5 10.8v6.7"/><path d="M3.5 19.5h17"/><path class="a fl" d="M12 4.8V1.9l3.4 1.1L12 4.1"/>',
+    economia: '<rect class="bar b1" x="4" y="13" width="3.4" height="7" rx=".8"/><rect class="bar b2" x="10.3" y="9.5" width="3.4" height="10.5" rx=".8"/><rect class="bar b3" x="16.6" y="6" width="3.4" height="14" rx=".8"/><path class="a tr" d="M4 10.5 9 7l4.2 2.4L20 3.5"/><path class="a" d="M16 3.5h4v4"/>',
+    salud: '<path class="beat" d="M12 20s-7.5-4.6-7.5-10A4.1 4.1 0 0 1 12 7.6 4.1 4.1 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/><path class="a ecg" d="M3 12.5h4.5l1.8-3.2 2.4 6.2 1.8-3 1.2 0H21"/>',
+    nino: '<circle class="a sun" cx="17" cy="6.5" r="2.7"/><path class="a wv" d="M2 13.5c2.2-2.4 4.4-2.4 6.6 0s4.4 2.4 6.6 0 4.4-2.4 6.6 0"/><path class="wv w2" d="M2 18.5c2.2-2.4 4.4-2.4 6.6 0s4.4 2.4 6.6 0 4.4-2.4 6.6 0"/>',
+    tecnologia: '<rect x="6.5" y="6.5" width="11" height="11" rx="2.2"/><rect class="a core" x="10" y="10" width="4" height="4" rx=".9"/><path class="pins" d="M9.5 3.5v3M14.5 3.5v3M9.5 17.5v3M14.5 17.5v3M3.5 9.5h3M3.5 14.5h3M17.5 9.5h3M17.5 14.5h3"/>',
+    ia: '<path d="M6.6 7.7l4.1 3M6.6 16.3l4.1-3M13.9 10.9l3.8-3.7M13.9 13.1l3.8 3.7"/><circle class="a nd n1" cx="5" cy="7" r="1.9"/><circle class="a nd n2" cx="5" cy="17" r="1.9"/><circle class="a nd n3" cx="12.2" cy="12" r="2.5"/><circle class="a nd n4" cx="19" cy="6.2" r="1.9"/><circle class="a nd n5" cx="19" cy="17.8" r="1.9"/>',
+    deporte: '<g class="ball"><circle cx="12" cy="12" r="8.5"/><path class="a" d="M12 7.6l3.7 2.7-1.4 4.3H9.7l-1.4-4.3z"/><path d="M12 3.5v4.1M15.7 10.3l4-1.3M14.3 14.6l2.4 3.4M9.7 14.6l-2.4 3.4M8.3 10.3l-4-1.3"/></g>',
+    investigacion: '<g class="scan"><circle cx="10.5" cy="10.5" r="6"/><path class="a" d="M15 15l5.6 5.6"/><path d="M8.2 9.4a3 3 0 0 1 2.3-1.6" opacity=".7"/></g>',
+    coyuntura: '<circle cx="12" cy="12" r="8.6"/><path d="M12 2.2v1.8M12 20v1.8M2.2 12h1.8M20 12h1.8" opacity=".6"/><g class="needle"><path class="a f" d="M12 5.2l2.7 6.8H9.3z"/><path d="M12 18.8 9.3 12h5.4z" opacity=".55"/></g><circle cx="12" cy="12" r=".9"/>',
+    mundo: '<circle cx="12" cy="12" r="8.6"/><ellipse class="a mer" cx="12" cy="12" rx="3.8" ry="8.6"/><path d="M3.5 12h17M5 7.6h14M5 16.4h14"/>',
+    ruta: '<path class="a trail" d="M3.5 20c3.6 0 3-5.8 7-5.8 3.2 0 3.6 3.6 7.2.6"/><path class="pin" d="M17.2 2.6a3.4 3.4 0 0 1 3.4 3.4c0 2.7-3.4 5.8-3.4 5.8S13.8 8.700 13.8 6a3.4 3.4 0 0 1 3.4-3.4z"/><circle class="a" cx="17.2" cy="6" r="1.1"/>',
+    datos: '<path d="M4 4v16h16"/><path class="a ln" d="M7.2 15.2l3.9-4 3 2.4 5-6.2"/><circle class="a dot" cx="19.1" cy="7.4" r="1.6"/><path d="M7.5 20v-1.8M11.5 20v-3.4M15.5 20v-2.4" opacity=".55"/>',
+    talleres: '<path d="M2.6 9.6 12 5l9.4 4.6L12 14.2z"/><path d="M6.6 11.9v4.2c0 1.3 2.5 2.7 5.4 2.7s5.4-1.4 5.4-2.7v-4.2"/><path class="a" d="M21.4 9.6v5"/><path class="a sp" d="M19.2 2.6l.7 1.6 1.6.7-1.6.7-.7 1.6-.7-1.6-1.6-.7 1.6-.7z"/>'
+  };
+  ICO.brujula = ICO.coyuntura;
+  function ic(id, cls) {
+    var g = ICO[id]; if (!g) return "";
+    return '<svg class="ico' + (cls ? " " + cls : "") + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">' + g + "</svg>";
+  }
   function sin(t, n) { return t.length > n ? t.slice(0, n).replace(/\s+\S*$/, "") + "…" : t; }
 
   var SECT = {}; ED.sectores.forEach(function (s) { SECT[s.id] = s; }); SECT.brujula = ED.brujula;
@@ -161,6 +182,24 @@
     var c = [Date.UTC(y, m, d, 8) - off, Date.UTC(y, m, d, 23) - off, Date.UTC(y, m, d + 1, 8) - off].filter(function (t) { return t > now; })[0];
     var cl = new Date(c + off); return (cl.getUTCDate() === d ? "hoy " : "mañana ") + String(cl.getUTCHours()).padStart(2, "0") + ":00";
   }
+  function popHTML(o) {
+    var P = (ED.portal || {})[o.id]; if (!P) return "";
+    var u = porSector(o.id).filter(function (i) { return i.fecha; })[0], ext = /^https?:/.test(P.u);
+    return '<div class="tp-h"><span class="ic">' + ic(o.id) + "</span><div><b>" + esc(o.nombre) + "</b><small>" + esc(o.sub) + '</small></div></div><span class="bk">Qué es</span><p>' + esc(P.c) + '</p><span class="bk">Ejemplo</span><p class="ej">' + esc(P.e) + "</p>" +
+      (u ? '<span class="bk">Lo último</span><a class="tp-u" href="' + safeUrl(u.url) + '" target="_blank" rel="noopener noreferrer">' + esc(sin(u.titulo, 92)) + "<small>" + esc(u.fuente) + " · " + esc(relativo(u.fecha) || "") + " ↗</small></a>" : "") +
+      '<div class="tp-f"><a class="btn" href="' + esc(o.href) + '" data-cerrar="1">Entrar →</a><a class="lk" href="' + (ext ? safeUrl(P.u) : esc(P.u)) + '"' + (ext ? ' target="_blank" rel="noopener noreferrer"' : "") + ">Fuente: " + esc(P.f) + (ext ? " ↗" : "") + "</a></div>";
+  }
+  function tile(o) {
+    var P = (ED.portal || {})[o.id];
+    return '<div class="po-t' + (o.cls || "") + '" data-t="' + o.id + '" style="--c:' + o.color + '"><a class="tl-a" href="' + esc(o.href) + '"><span class="ic">' + ic(o.id) + "</span><b>" + esc(o.nombre) + "</b><small>" + esc(o.sub) + "</small></a>" +
+      (P ? '<button class="tl-i" type="button" data-info="' + o.id + '" aria-label="Qué es ' + esc(o.nombre) + '">i</button><div class="tl-pop" role="tooltip">' + popHTML(o) + "</div>" : "") + "</div>";
+  }
+  function abrirConcepto(id) {
+    var el = $('.po-t[data-t="' + id + '"]'); if (!el) return;
+    var nombre = $("b", el).textContent, sub = $("small", el).textContent, href = $(".tl-a", el).getAttribute("href");
+    $("#m-caja").innerHTML = '<button class="sx" aria-label="Cerrar" data-x="1">✕</button><div class="tl-sheet" style="--c:' + el.style.getPropertyValue("--c") + '">' + popHTML({ id: id, nombre: nombre, sub: sub, href: href }) + "</div>";
+    abrirHoja("#modal");
+  }
   function portal() {
     var g = NOT.estado_fuentes || {}, tot = Object.keys(g).length, ok = Object.keys(g).filter(function (k) { return g[k].ok; }).length, tc = (NOT.indicadores || {}).tipo_cambio;
     var fecha = ""; try { fecha = new Intl.DateTimeFormat("es-PE", { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: TZ }).format(new Date()); } catch (e) {}
@@ -168,8 +207,9 @@
     if (tc && tc.serie && tc.serie.length) hoy += '<div class="i"><span class="k">USD / PEN</span><span class="v">S/ ' + num(tc.serie[tc.serie.length - 1].v, 3) + "</span></div>";
     if (ED.nino) hoy += '<div class="i"><span class="k">El Niño costero · ENFEN</span><span class="v">' + esc(ED.nino.estado[0].v) + "</span></div>";
     hoy += '<div class="i"><span class="k">Notas indexadas</span><span class="v">' + ITEMS.length + "</span></div>" + (tot ? '<div class="i"><span class="k">Fuentes activas</span><span class="v">' + ok + "/" + tot + "</span></div>" : "") + '<div class="i"><span class="k">Próxima actualización</span><span class="v" style="font-size:1.05rem">' + proxima() + "</span></div>";
-    var tiles = ED.sectores.filter(function (s) { return s.id !== "deporte" && s.id !== "mundo"; }).map(function (s) { var n = porSector(s.id).length; return '<a class="po-t' + (s.id === "nino" ? " nino" : "") + '" href="#/s/' + s.id + '" style="--c:' + s.color + '"><span class="ic" aria-hidden="true">' + s.icono + "</span><b>" + esc(s.nombre) + "</b><small>" + (n ? n + (n === 1 ? " nota" : " notas") : "Análisis y misión") + "</small></a>"; })
-      .concat(['<a class="po-t" href="#/talleres" style="--c:#F59E0B"><span class="ic" aria-hidden="true">🎓</span><b>Talleres de IA</b><small>Aprende con práctica</small></a>', '<a class="po-t" href="#/ruta" style="--c:#D97706"><span class="ic" aria-hidden="true">🧭</span><b>La Ruta</b><small>' + ORDEN.length + " misiones</small></a>", '<a class="po-t" href="#/datos" style="--c:#38BDF8"><span class="ic" aria-hidden="true">🇵🇪</span><b>DataPerú</b><small>Datos oficiales</small></a>']).join("");
+    var T = ED.sectores.filter(function (x) { return x.id !== "deporte" && x.id !== "mundo"; }).map(function (x) { var n = porSector(x.id).length; return { id: x.id, href: "#/s/" + x.id, color: x.color, nombre: x.nombre, sub: n ? n + (n === 1 ? " nota" : " notas") : "Análisis y misión", cls: x.id === "nino" ? " nino" : "" }; })
+      .concat([{ id: "talleres", href: "#/talleres", color: "#F59E0B", nombre: "Talleres de IA", sub: "Aprende con práctica" }, { id: "ruta", href: "#/ruta", color: "#D97706", nombre: "La Ruta", sub: ORDEN.length + " misiones" }, { id: "datos", href: "#/datos", color: "#38BDF8", nombre: "DataPerú", sub: "Datos oficiales" }]);
+    var tiles = T.map(tile).join("");
     return '<section class="portal fade" aria-label="Portal"><div class="po-hero"><div class="po-main"><p class="po-eye">Portal de coyuntura · ' + esc(fecha) + '</p><h1>La coyuntura del Perú, explicada con sus fuentes</h1><p class="po-sub">Entiende la coyuntura con datos y aprende a usar IA para analizarla. Análisis propios, noticias, indicadores y una ruta para aprender. Se actualiza a las 08:00 y 23:00, hora de Lima.</p>' +
       '<button class="po-search" type="button" data-buscar="1"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Busca noticias, análisis o términos</span><kbd aria-hidden="true">/</kbd></button>' +
       '<div class="po-cta"><a class="btn" href="#/a/hilo">Panorama del momento →</a><a class="btn o" href="#/ruta">Empezar la Ruta</a></div></div>' +
@@ -249,7 +289,7 @@
     var s = SECT[id]; if (!s || id === "brujula") return vistaHome();
     var ins = insDe(id), its = porSector(id).map(asFeed), a = ARTS[id], hecho = !!S.hechas[id];
     var terms = (s.terminos || []).filter(function (t) { return GLOS[t]; });
-    var h = '<div class="fade"><div class="shead" style="--c:' + s.color + '"><h1>' + s.icono + " " + esc(s.nombre) + "</h1><p>" + esc(s.lema) + '</p></div><div class="cols sec-cols"><div>';
+    var h = '<div class="fade"><div class="shead" style="--c:' + s.color + '"><h1><span class="ic big">' + ic(id) + "</span> " + esc(s.nombre) + "</h1><p>" + esc(s.lema) + '</p></div><div class="cols sec-cols"><div>';
     var inss = INS.filter(function (i) { return i.sector === id; });
     if (id === "nino") h += ninoPanel();
     h += '<div class="panel">' + (ins ? leadCard(ins) : "") + "</div>";
@@ -299,7 +339,7 @@
     h += '<div class="nivel-card"><div class="nv"><div class="medalla">' + nv.ic + "</div><div><b>" + nv.n + "</b><small>" + nv.d + '</small></div><div style="margin-left:auto;text-align:right"><b style="font-size:1.1rem">' + racha() + '</b><small style="display:block">día(s) de racha</small></div></div><div class="bar"><i id="xp-b"></i></div><small class="xt">' + (sig ? S.xp + " / " + sig.min + " XP para " + sig.n : S.xp + " XP · nivel máximo") + "</small></div>";
     h += '<div class="camino">' + ORDEN.map(function (id, k) {
       var s = SECT[id], hecho = !!S.hechas[id], disp = !hecho && (k === 0 || !!S.hechas[ORDEN[k - 1]]), est = hecho ? "hecho" : disp ? "disp" : "bloq";
-      return '<div class="st ' + est + '"><div class="dot">' + (hecho ? "✓" : disp ? s.icono : "🔒") + '</div><div class="stc"><span class="paso">Estación ' + (k + 1) + "</span><h3>" + esc(s.nombre) + "</h3><p>" + esc(s.lema) + '</p><div class="stt"><span>' + (hecho ? "Superada · " + S.hechas[id].ac + "/3 aciertos" : disp ? "Disponible" : "Completa la anterior") + "</span>" + (hecho || disp ? '<button class="btn' + (hecho ? " o" : "") + '" data-m="' + id + '" style="min-height:40px">' + (hecho ? "Repetir" : "Empezar") + "</button>" : "") + "</div></div></div>";
+      return '<div class="st ' + est + '"><div class="dot">' + (hecho ? "✓" : disp ? (ic(id) || s.icono) : "🔒") + '</div><div class="stc"><span class="paso">Estación ' + (k + 1) + "</span><h3>" + esc(s.nombre) + "</h3><p>" + esc(s.lema) + '</p><div class="stt"><span>' + (hecho ? "Superada · " + S.hechas[id].ac + "/3 aciertos" : disp ? "Disponible" : "Completa la anterior") + "</span>" + (hecho || disp ? '<button class="btn' + (hecho ? " o" : "") + '" data-m="' + id + '" style="min-height:40px">' + (hecho ? "Repetir" : "Empezar") + "</button>" : "") + "</div></div></div>";
     }).join("") + "</div>";
     var ins = [["brujula", "Primer paso", "🧭"], ["politica", "Cívico", "🏛️"], ["economia", "Economista", "📈"], ["salud", "Guardián de la salud", "🩺"], ["tecnologia", "Ciberescudo", "🛰️"], ["deporte", "Hincha informado", "⚽"], ["investigacion", "Sabueso", "🔎"], ["coyuntura", "Analista", "🧭"], ["mundo", "Ciudadano del mundo", "🌎"], ["ia", "Domador de algoritmos", "🤖"], ["nino", "Vigía del mar", "🌊"]], nt = Object.keys(S.terminos).length;
     h += sh("Insignias", "#000") + '<div class="ins-g">' + ins.map(function (x) { return '<div class="ins ' + (S.hechas[x[0]] ? "on" : "") + '"><i>' + x[2] + "</i>" + x[1] + "</div>"; }).join("") + '<div class="ins ' + (nt >= 20 ? "on" : "") + '"><i>📖</i>Lexicógrafo<br>' + Math.min(nt, 20) + '/20 términos</div><div class="ins ' + (todos ? "on" : "") + '"><i>🏔️</i>Cumbre</div></div>';
@@ -486,7 +526,7 @@
     var s = SECT[M.id], m = s.mision, c = $("#m-caja"), h = '<button class="sx" aria-label="Cerrar" data-x="1">✕</button>';
     if (M.paso === 0) {
       var nt = porSector(M.id).slice(0, 2);
-      h += '<div class="paso">Estación ' + (ORDEN.indexOf(M.id) + 1) + " de " + ORDEN.length + ' · Briefing</div><h3 id="m-t">' + s.icono + " " + esc(m.titulo) + '</h3><p style="color:var(--tx2);margin:0">' + esc(s.lema) + '</p><ul class="esc">' + s.esencial.map(function (e) { return "<li>" + gl(e) + "</li>"; }).join("") + "</ul>" +
+      h += '<div class="paso">Estación ' + (ORDEN.indexOf(M.id) + 1) + " de " + ORDEN.length + ' · Briefing</div><h3 id="m-t"><span class="ic sm">' + ic(M.id) + "</span> " + esc(m.titulo) + '</h3><p style="color:var(--tx2);margin:0">' + esc(s.lema) + '</p><ul class="esc">' + s.esencial.map(function (e) { return "<li>" + gl(e) + "</li>"; }).join("") + "</ul>" +
         (nt.length ? '<p style="font-size:.85rem;color:var(--tx3);margin-bottom:6px">Para ir más profundo:</p>' + nt.map(function (n) { return '<p style="margin:4px 0"><a href="' + safeUrl(n.url) + '" target="_blank" rel="noopener noreferrer" style="color:var(--brand);font-weight:700">↗ ' + esc(sin(n.titulo, 70)) + "</a></p>"; }).join("") : "") +
         '<p style="margin-top:18px"><button class="btn" data-a="quiz" style="width:100%">Listo, a la misión →</button></p>';
     } else if (M.paso === 1) {
@@ -521,7 +561,7 @@
     q.addEventListener("input", ir); ir();
   }
   function abrirMenu() {
-    $("#menu-in").innerHTML = '<button class="sx" aria-label="Cerrar" data-x="1">✕</button><div class="paso">Secciones</div><h3>Explora por tema</h3><div class="menu-g">' + ED.sectores.map(function (s) { return '<a href="#/s/' + s.id + '" data-cerrar="1" style="--c:' + s.color + '"><span>' + s.icono + "</span>" + esc(s.nombre) + "</a>"; }).join("") + '</div><div class="menu-g"><a href="#/ruta" data-cerrar="1" style="--c:#D97706"><span>🧭</span>La Ruta</a><a href="#/glosario" data-cerrar="1" style="--c:#D97706"><span>📖</span>Glosario</a><a href="#/datos" data-cerrar="1" style="--c:#38BDF8"><span>🇵🇪</span>DataPerú</a><a href="#/estadisticas" data-cerrar="1" style="--c:#10B981"><span>📊</span>Estadísticas</a><a href="#/historial" data-cerrar="1" style="--c:#10B981"><span>🗂️</span>Historial</a><a href="#/talleres" data-cerrar="1" style="--c:#F59E0B"><span>🎓</span>Talleres de IA</a><a href="#/fuentes" data-cerrar="1" style="--c:#94A3B8"><span>🔗</span>Fuentes</a></div>';
+    $("#menu-in").innerHTML = '<button class="sx" aria-label="Cerrar" data-x="1">✕</button><div class="paso">Secciones</div><h3>Explora por tema</h3><div class="menu-g">' + ED.sectores.map(function (s) { return '<a href="#/s/' + s.id + '" data-cerrar="1" style="--c:' + s.color + '"><span class="ic sm">' + ic(s.id) + "</span>" + esc(s.nombre) + "</a>"; }).join("") + '</div><div class="menu-g"><a href="#/ruta" data-cerrar="1" style="--c:#D97706"><span class="ic sm">' + ic("ruta") + '</span>La Ruta</a><a href="#/glosario" data-cerrar="1" style="--c:#D97706"><span>📖</span>Glosario</a><a href="#/datos" data-cerrar="1" style="--c:#38BDF8"><span class="ic sm">' + ic("datos") + '</span>DataPerú</a><a href="#/estadisticas" data-cerrar="1" style="--c:#10B981"><span>📊</span>Estadísticas</a><a href="#/historial" data-cerrar="1" style="--c:#10B981"><span>🗂️</span>Historial</a><a href="#/talleres" data-cerrar="1" style="--c:#F59E0B"><span class="ic sm">' + ic("talleres") + '</span>Talleres de IA</a><a href="#/fuentes" data-cerrar="1" style="--c:#94A3B8"><span>🔗</span>Fuentes</a></div>';
     abrirHoja("#menu");
   }
 
@@ -543,6 +583,7 @@
     if (c("[data-cerrar]")) { setTimeout(cerrarHojas, 10); return; }
     if (t.id === "veil" || c("[data-x]")) { cerrarHojas(); return; }
     if (c("[data-buscar]")) { abrirBuscar(); return; }
+    var inf = c("[data-info]"); if (inf) { abrirConcepto(inf.getAttribute("data-info")); return; }
     var df = c("[data-df]"); if (df) { dFil = df.getAttribute("data-df"); pintarDatos(); return; }
     var fl = c(".flip"); if (fl && !c("a") && window.matchMedia && matchMedia("(hover: none)").matches) { var ya = fl.classList.contains("on"); $$(".flip.on").forEach(function (x) { x.classList.remove("on"); }); if (!ya) fl.classList.add("on"); return; }
     var mi = c("[data-m]"); if (mi) { abrirMision(mi.getAttribute("data-m")); return; }
@@ -555,6 +596,17 @@
     else if (act === "sig") { var s2 = a.getAttribute("data-s"); cerrarHojas(); if (ruta().v === "ruta") navegar(); abrirMision(s2); }
     else if (act === "sector") { var sid = a.getAttribute("data-s"); cerrarHojas(); location.hash = "#/s/" + sid; }
     else if (act === "fin") { cerrarHojas(); location.hash = "#/ruta"; toast("🏔️ ¡Llegaste a la cumbre!"); confeti(); }
+  });
+  /* tarjetas del portal: foco de luz que sigue al cursor, ligera inclinación y apertura del globo hacia el lado con espacio */
+  document.addEventListener("pointermove", function (e) {
+    if (e.pointerType === "touch") return; var t = e.target.closest ? e.target.closest(".po-t") : null; if (!t || e.target.closest(".tl-pop")) return;
+    var r = t.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+    t.style.setProperty("--mx", (x * 100).toFixed(0) + "%"); t.style.setProperty("--my", (y * 100).toFixed(0) + "%"); t.style.setProperty("--rx", ((x - .5) * 2).toFixed(2)); t.style.setProperty("--ry", ((y - .5) * 2).toFixed(2));
+  }, { passive: true });
+  document.addEventListener("pointerout", function (e) { var t = e.target.closest ? e.target.closest(".po-t") : null; if (t && !t.contains(e.relatedTarget)) { t.style.setProperty("--rx", 0); t.style.setProperty("--ry", 0); } });
+  document.addEventListener("mouseover", function (e) {
+    var t = e.target.closest ? e.target.closest(".po-t") : null; if (!t || t.contains(e.relatedTarget)) return;
+    var r = t.getBoundingClientRect(); var lim = ($(".po-grid") || document.body).getBoundingClientRect().right; t.classList.toggle("rt", r.left + 336 > lim); t.classList.toggle("up", r.bottom + 360 > innerHeight && r.top > 380);
   });
   addEventListener("keydown", function (e) { var f = e.target && e.target.classList && e.target.classList.contains("flip") ? e.target : null; if (f && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); f.classList.toggle("on"); return; } if (e.key === "/" && !/^(INPUT|TEXTAREA)$/.test((document.activeElement || {}).tagName || "") && !hojaAbierta) { e.preventDefault(); abrirBuscar(); return; } if (e.key === "Escape") { cerrarHojas(); $("#pop").classList.remove("on"); } });
   addEventListener("hashchange", function () { cerrarHojas(); navegar(); });

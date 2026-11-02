@@ -619,3 +619,20 @@ window.EDITORIAL.articulos = {
     terminos: ["fiscalia", "presuncion-de-inocencia", "colaboracion-eficaz", "prision-preventiva", "reglaje", "independiente"]
   }
 };
+
+/* ───── Qué es cada sección: concepto, ejemplo y fuente (se muestran al pasar el cursor por el portal) ───── */
+window.EDITORIAL.portal = {
+  politica: { c: "Cómo se toman las decisiones del Estado: quién gobierna, quién legisla y con cuántos votos.", e: "Para aprobar una ley, hoy debe pasar por el Senado (60 miembros) y la Cámara de Diputados (130).", f: "Congreso de la República", u: "https://www.congreso.gob.pe" },
+  economia: { c: "Cuánto produce el país, cuánto suben los precios y cuánto cuesta el dinero.", e: "Si los precios suben 4 % en un año, lo que hoy cuesta S/ 100 costará S/ 104.", f: "BCRP", u: "https://www.bcrp.gob.pe" },
+  salud: { c: "Cómo se cuida y se vigila la salud pública: seguros, hospitales y alertas epidemiológicas.", e: "Una alerta epidemiológica del CDC-Minsa avisa de un riesgo, como el dengue, y de qué hacer.", f: "Ministerio de Salud", u: "https://www.gob.pe/minsa" },
+  nino: { c: "Calentamiento anormal del mar frente a Perú y Ecuador que cambia el clima de la costa.", e: "Un Niño fuerte puede traer lluvias intensas y huaicos en la costa norte.", f: "ENFEN", u: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" },
+  tecnologia: { c: "Cómo la tecnología cambia la vida diaria y qué riesgos trae: datos personales, fraudes y ciberseguridad.", e: "El phishing te engaña con un mensaje falso de tu banco para robarte las claves.", f: "PCM · Gobierno digital", u: "https://www.gob.pe/pcm" },
+  ia: { c: "Sistemas que hacen tareas que antes pedían inteligencia humana, como escribir, traducir o reconocer imágenes.", e: "Un asistente como ChatGPT, Claude o Gemini redacta un correo a partir de una instrucción de una línea.", f: "Ley 31814 (El Peruano)", u: "https://www.elperuano.pe/noticia/217129-ley-no-31814-promueven-uso-de-inteligencia-artificial-en-favor-del-desarrollo-economico-y-social-del-pais" },
+  deporte: { c: "Resultados y tablas del deporte, sobre todo del fútbol peruano.", e: "La tabla acumulada suma los puntos del Apertura y del Clausura.", f: "Federación Peruana de Fútbol", u: "https://www.fpf.org.pe" },
+  investigacion: { c: "Periodismo que revisa documentos y datos para destapar casos de poder y corrupción.", e: "Una denuncia no es una condena: rige la presunción de inocencia hasta que haya sentencia firme.", f: "Ministerio Público", u: "https://www.mpfn.gob.pe" },
+  coyuntura: { c: "Lo que ocurre ahora en el país y por qué importa hoy.", e: "Con un Congreso sin mayoría propia, las leyes salen adelante con alianzas entre bancadas.", f: "INEI", u: "https://www.gob.pe/inei" },
+  mundo: { c: "Hechos internacionales que terminan llegando al Perú.", e: "Si EE. UU. sube aranceles, pueden cambiar el precio de los metales y el tipo de cambio.", f: "ONU Noticias", u: "https://news.un.org/es/" },
+  ruta: { c: "Un camino de misiones cortas para aprender a leer la coyuntura y ganar puntos.", e: "Respondes 3 preguntas, sumas XP y subes de nivel, de Viajero a Apu.", f: "Contexto Perú", u: "#/ruta" },
+  datos: { c: "Cifras oficiales del Perú, cada una con su periodo y su fuente.", e: "Con 34 157 732 habitantes (Censo 2025), casi 3 de cada 10 peruanos viven en Lima Metropolitana.", f: "INEI", u: "https://www.gob.pe/inei" },
+  talleres: { c: "Talleres prácticos para aprender a usar la inteligencia artificial en el estudio y el trabajo.", e: "Aprendes a usar ChatGPT, Claude y Gemini para redactar mejor, sin saber programar.", f: "Contexto Perú", u: "#/talleres" }
+};
