@@ -25,6 +25,7 @@ ARCHIVO_JS = os.path.join(DATOS, "noticias.js")
 ARCHIVO_JSON = os.path.join(DATOS, "noticias.json")
 
 MAX_POR_SECTOR = 24
+MAX_POR_SECTOR_ESPECIAL = {"ia": 40}  # IA cubre Perú y mundo
 MAX_POR_FEED = 15
 DIAS_MAXIMOS = 30
 TIMEOUT = 20
@@ -59,6 +60,9 @@ FEEDS = [
     ("El País América", ["https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada"], "internacional", "mundo"),
     ("France 24 Español", ["https://www.france24.com/es/rss"], "internacional", "mundo"),
     ("ONU Noticias", ["https://news.un.org/feed/subscribe/es/news/all/rss.xml"], "internacional", "mundo"),
+    # Inteligencia artificial: Perú y mundo (Google Noticias agrega varios medios; la fuente real viene en <source>)
+    ("Google Noticias · IA en el Perú", ["https://news.google.com/rss/search?q=%22inteligencia+artificial%22+Per%C3%BA+when:7d&hl=es-419&gl=PE&ceid=PE:es-419"], "comercial", "ia"),
+    ("Google Noticias · IA en el mundo", ["https://news.google.com/rss/search?q=%22inteligencia+artificial%22+(OpenAI+OR+Anthropic+OR+Google+OR+regulaci%C3%B3n+OR+NVIDIA)+when:7d&hl=es-419&gl=US&ceid=US:es-419"], "internacional", "ia"),
 ]
 
 CLAVES = {
@@ -70,9 +74,12 @@ CLAVES = {
                  "cobre", "oro", "minero", "fiscal ", "deficit", "credito"],
     "salud": ["salud", "minsa", "essalud", "dengue", "hospital", "vacuna", "epidemi", "enfermedad", "medic", "paciente",
               "anemia", "covid", "brote", "sis ", "clinica", "cancer", "diresa"],
-    "tecnologia": ["tecnolog", "inteligencia artificial", " ia ", "ciberseg", "hacker", "ciberataque", "datos personales",
-                   "internet", "digital", "software", "aplicacion", "startup", "robot", "phishing", "5g", "satelit",
-                   "ransomware", "algoritmo", "chatgpt", "celular"],
+    "ia": ["inteligencia artificial", " ia ", "chatgpt", "openai", "anthropic", "gemini", "claude", "modelo de lenguaje",
+           "machine learning", "aprendizaje automatico", "ia generativa", "agente de ia", "nvidia", "deepfake",
+           "algoritmo", "robot", "copilot", "deepseek", "llm", "centro de datos", "ai act"],
+    "tecnologia": ["tecnolog", "ciberseg", "hacker", "ciberataque", "datos personales",
+                   "internet", "digital", "software", "aplicacion", "startup", "phishing", "5g", "satelit",
+                   "ransomware", "celular"],
     "deporte": ["futbol", "liga 1", "seleccion", "deporte", "campeonato", "copa ", "olimpic", "voley", "tenis", "gol ",
                 "entrenador", "alianza lima", "universitario", "sporting cristal", "mundial", "atleta", "clasificatoria"],
     "investigacion": ["investigacion", "fiscalia", "fiscal", "corrupcion", "reportaje", "lavado", "organizacion criminal",
@@ -136,8 +143,8 @@ def enriquecer_imagenes(items, previos):
     conocidas = {url_canonica(i["url"]): i.get("imagen") for i in previos if i.get("imagen")}
     pendientes = []
     for it in items:
-        if it.get("imagen"):
-            continue
+        if it.get("imagen") or urlsplit(it["url"]).netloc.endswith("news.google.com"):
+            continue  # las páginas de Google Noticias no exponen la foto del medio
         k = url_canonica(it["url"])
         if k in conocidas:
             it["imagen"] = conocidas[k]
@@ -220,15 +227,23 @@ def parsear_feed(datos, nombre, tipo, sector_def):
         if fecha and fecha < limite:
             continue
         resumen = limpiar(hijo_texto(e, "description", "summary", "encoded", "content"))
+        fuente = nombre
+        if nombre.startswith("Google Noticias"):
+            # Google Noticias agrega medios: el titular termina en " - Medio" y <source> trae el nombre real.
+            fuente = limpiar(hijo_texto(e, "source"), 60) or nombre
+            if fuente != nombre and titulo.endswith(" - " + fuente):
+                titulo = titulo[: -len(fuente) - 3].strip()
+            resumen = ""  # el resumen de Google Noticias solo repite el titular con enlaces
         item = {
             "id": hashlib.sha1(url_canonica(url).encode()).hexdigest()[:10],
             "sector": clasificar(titulo, resumen, sector_def),
             "titulo": titulo,
             "resumen": resumen if norm(resumen) != norm(titulo) else "",
-            "fuente": nombre,
+            "fuente": fuente,
             "url": url,
             "fecha": fecha.strftime("%Y-%m-%dT%H:%M:%SZ") if fecha else None,
             "tipo": tipo,
+            "ambito": "mundo" if tipo == "internacional" else "peru",
             "imagen": extraer_imagen(e),
         }
         salida.append(item)
@@ -238,8 +253,8 @@ def parsear_feed(datos, nombre, tipo, sector_def):
 
 
 def clasificar(titulo, resumen, sector_def):
-    if sector_def == "mundo":
-        return "mundo"
+    if sector_def in ("mundo", "ia"):
+        return sector_def
     t = " " + norm(titulo + " " + resumen) + " "
     puntos = {s: sum(t.count(k) for k in ks) for s, ks in CLAVES.items()}
     mejor = max(puntos, key=lambda s: puntos[s])
@@ -280,7 +295,7 @@ def fusionar(nuevos, previos):
     por_sector, final = {}, []
     for it in todos:
         n = por_sector.get(it["sector"], 0)
-        if n < MAX_POR_SECTOR:
+        if n < MAX_POR_SECTOR_ESPECIAL.get(it["sector"], MAX_POR_SECTOR):
             por_sector[it["sector"]] = n + 1
             final.append(it)
     return sorted(final, key=clave_orden, reverse=True)

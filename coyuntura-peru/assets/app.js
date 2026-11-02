@@ -59,6 +59,7 @@
       economia: '<g fill="#fff" fill-opacity=".85"><rect x="88" y="140" width="28" height="42" rx="4"/><rect x="130" y="116" width="28" height="66" rx="4"/><rect x="172" y="96" width="28" height="86" rx="4"/><rect x="214" y="72" width="28" height="110" rx="4"/><rect x="256" y="46" width="28" height="136" rx="4"/></g><polyline points="102,126 144,98 186,80 228,54 270,28" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/><circle cx="270" cy="28" r="8" fill="#fff"/>',
       salud: '<path d="M30 125h95l18-48 30 92 26-62 14 18h157" fill="none" stroke="#fff" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><g fill="#fff"><rect x="182" y="34" width="36" height="12" rx="3"/><rect x="194" y="22" width="12" height="36" rx="3"/></g>',
       tecnologia: '<g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M60 60h80v50h70v-30h90M60 170h120v-40h60v50h100M140 30v30M280 80v-40"/></g><g fill="#fff"><circle cx="60" cy="60" r="7"/><circle cx="300" cy="80" r="7"/><circle cx="60" cy="170" r="7"/><circle cx="340" cy="180" r="7"/><circle cx="140" cy="30" r="6"/><circle cx="280" cy="40" r="6"/></g><rect x="165" y="92" width="70" height="46" rx="8" fill="rgba(255,255,255,.12)" stroke="#fff" stroke-width="3"/>',
+      ia: '<g stroke="#fff" stroke-width="2.5" stroke-opacity=".75" fill="none"><path d="M90 60L200 40 310 70M90 60L150 112 200 40M90 60L120 170M150 112L120 170 220 150 310 70M150 112L220 150M200 40L260 118 310 70M260 118L220 150 330 175M260 118L330 175M120 170L220 150"/></g><g fill="#fff"><circle cx="90" cy="60" r="8"/><circle cx="200" cy="40" r="8"/><circle cx="310" cy="70" r="8"/><circle cx="150" cy="112" r="8"/><circle cx="260" cy="118" r="8"/><circle cx="120" cy="170" r="8"/><circle cx="220" cy="150" r="8"/><circle cx="330" cy="175" r="8"/></g><rect x="170" y="88" width="60" height="46" rx="9" fill="rgba(255,255,255,.14)" stroke="#fff" stroke-width="3"/><text x="200" y="120" text-anchor="middle" font-family="system-ui,sans-serif" font-size="26" font-weight="800" fill="#fff">IA</text>',
       deporte: '<g fill="none" stroke="#fff" stroke-width="3"><circle cx="200" cy="112" r="62" fill="rgba(255,255,255,.1)"/><path d="M200 82l26 19-10 30h-32l-10-30z" fill="#fff" fill-opacity=".9"/><path d="M200 82V52M226 101l30-10M216 131l18 26M184 131l-18 26M174 101l-30-10"/></g><path d="M20 200q180-60 360 0" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="3"/>',
       investigacion: '<g fill="none" stroke="#fff" stroke-width="3"><rect x="250" y="40" width="90" height="120" rx="8" fill="rgba(255,255,255,.1)"/><path d="M265 70h60M265 90h60M265 110h40"/></g><circle cx="170" cy="105" r="52" fill="rgba(255,255,255,.1)" stroke="#fff" stroke-width="7"/><path d="M208 144l52 50" stroke="#fff" stroke-width="13" stroke-linecap="round"/>',
       coyuntura: '<g fill="none" stroke="#fff" stroke-width="3"><circle cx="200" cy="112" r="74"/><circle cx="200" cy="112" r="56" stroke-opacity=".5"/><path d="M200 30v14M200 180v14M118 112h14M268 112h14" stroke-linecap="round"/></g><polygon points="200,52 214,112 200,126 186,112" fill="#fff"/><polygon points="200,172 214,112 200,98 186,112" fill="#fff" fill-opacity=".35"/>',
@@ -72,11 +73,12 @@
   /* ───── modelo de historias ───── */
   var ITEMS = (NOT.items || []).slice().sort(function (a, b) { return (Date.parse(b.fecha) || 0) - (Date.parse(a.fecha) || 0); });
   var HILO = ED.hilo ? { kind: "hilo", sector: "coyuntura", id: "hilo", titulo: ED.hilo.titulo, resumen: ED.hilo.puntos.map(function (p) { return p.k + ": " + p.t; }).join(" · "), url: "#/a/hilo", badge: "Análisis" } : null;
-  var INS = ED.insights.map(function (c) { return { kind: "insight", sector: c.sector, id: c.sector, titulo: c.titulo, resumen: c.resumen, url: "#/a/" + c.sector, badge: "Análisis", nivel: c.nivel, raw: c }; });
+  var INS = ED.insights.map(function (c) { return { kind: "insight", sector: c.sector, id: c.id || c.sector, titulo: c.titulo, resumen: c.resumen, url: "#/a/" + (c.id || c.sector), badge: "Análisis", nivel: c.nivel, raw: c }; });
   function porSector(id) { return ITEMS.filter(function (i) { return i.sector === id; }); }
   function insDe(id) { return INS.filter(function (i) { return i.sector === id; })[0]; }
   function externo(s) { return s.kind === "feed"; }
-  function asFeed(it) { return { kind: "feed", sector: it.sector, titulo: it.titulo, resumen: it.resumen || "", url: it.url, fuente: it.fuente, tipo: it.tipo || "comercial", fecha: it.fecha, nota: it.nota, imagen: it.imagen }; }
+  function ambitoDe(it) { return it.ambito || (it.tipo === "internacional" ? "mundo" : "peru"); }
+  function asFeed(it) { return { kind: "feed", ambito: it.ambito, sector: it.sector, titulo: it.titulo, resumen: it.resumen || "", url: it.url, fuente: it.fuente, tipo: it.tipo || "comercial", fecha: it.fecha, nota: it.nota, imagen: it.imagen }; }
   var FEED = ITEMS.map(asFeed);
 
   function thumb(s, badge) {
@@ -151,18 +153,24 @@
     var ins = insDe(id), its = porSector(id).map(asFeed), a = ARTS[id], hecho = !!S.hechas[id];
     var terms = (s.terminos || []).filter(function (t) { return GLOS[t]; });
     var h = '<div class="fade"><div class="shead" style="--c:' + s.color + '"><h1>' + s.icono + " " + esc(s.nombre) + "</h1><p>" + esc(s.lema) + '</p></div><div class="cols sec-cols"><div>';
+    var inss = INS.filter(function (i) { return i.sector === id; });
     h += ins ? lead(ins) : "";
+    if (inss.length > 1) h += inss.slice(1).map(row).join("");
     h += '<div class="entender"><h2>Para entender ' + esc(s.nombre.toLowerCase()) + '</h2><ul>' + s.esencial.map(function (e) { return "<li>" + gl(e) + "</li>"; }).join("") + "</ul></div>";
     h += '<div class="cta-m" style="--c:' + s.color + '"><div><b>' + (hecho ? "✅ Misión superada" : "🎯 Misión: " + esc(s.nombre)) + "</b><small>" + (hecho ? "Puedes repetirla cuando quieras." : "3 preguntas · gana hasta 80 XP") + '</small></div><button class="btn" data-m="' + id + '">' + (hecho ? "Repetir" : "Empezar") + "</button></div>";
-    h += sh("Últimas notas · " + s.nombre, s.color) + (its.length ? its.map(row).join("") : '<div class="vacio">Aún no hay notas en esta sección. La próxima actualización automática (08:00 / 23:00) las incorporará.</div>');
+    var vacio = '<div class="vacio">Aún no hay notas en esta sección. La próxima actualización automática (08:00 / 23:00) las incorporará.</div>';
+    if (s.ambitos) {
+      var enPeru = its.filter(function (i) { return ambitoDe(i) === "peru"; }), enMundo = its.filter(function (i) { return ambitoDe(i) === "mundo"; });
+      h += sh("IA en el Perú", s.color) + (enPeru.length ? enPeru.map(row).join("") : vacio) + sh("IA en el mundo", s.color) + (enMundo.length ? enMundo.map(row).join("") : vacio);
+    } else h += sh("Últimas notas · " + s.nombre, s.color) + (its.length ? its.map(row).join("") : vacio);
     h += '</div><aside class="rail"><section><h3 class="rt">Términos clave</h3>' + terms.map(function (t) { return '<button class="term" data-gl="' + t + '">' + esc(GLOS[t].t) + "</button>"; }).join("") + "</section>" + rail().split("</section>").slice(1).join("</section>") + "</aside></div></div>";
     return h;
   }
 
   function vistaArticulo(id) {
-    var esHilo = id === "hilo", c = esHilo ? null : ED.insights.filter(function (x) { return x.sector === id; })[0];
+    var esHilo = id === "hilo", c = esHilo ? null : ED.insights.filter(function (x) { return (x.id || x.sector) === id; })[0];
     if (!esHilo && !c) return vistaHome();
-    var sid = esHilo ? "coyuntura" : c.sector, s = SECT[sid], a = ARTS[sid] || {};
+    var sid = esHilo ? "coyuntura" : c.sector, s = SECT[sid], a = ARTS[id] || ARTS[sid] || {};
     var titulo = esHilo ? ED.hilo.titulo : c.titulo, resumen = esHilo ? "Cuatro frentes explican el momento que vive el país tras el cambio de gobierno." : c.resumen;
     var h = '<article class="art fade"><div class="crumb"><a href="#/">Inicio</a> › <a href="#/s/' + sid + '">' + esc(s.nombre) + "</a></div>" + kicker({ sector: sid }) + "<h1>" + esc(titulo) + '</h1><p class="stand">' + esc(esHilo ? resumen : primera(resumen)) + "</p>";
     h += '<div class="by"><span><b>Redacción Perú en Claro</b></span><span>Corte ' + esc(fmtFecha(ED.corte + "T12:00:00Z")) + "</span>" + (esHilo ? "" : '<span class="conf ' + (c.nivel === "alta" ? "alta" : "media") + '">Confianza ' + (c.nivel === "alta" ? "alta" : "media · verifica") + "</span>") + '<button class="share" id="b-share">↗ Compartir</button></div>';
@@ -179,7 +187,7 @@
       h += '<h2>Fuentes</h2><ul class="src">' + c.fuentes.map(function (f) { return '<li><a href="' + safeUrl(f.u) + '" target="_blank" rel="noopener noreferrer"><span>' + esc(f.n) + "</span><span>↗</span></a></li>"; }).join("") + "</ul>";
       var its = porSector(sid).slice(0, 3).map(asFeed);
       if (its.length) h += sh("Más sobre " + s.nombre.toLowerCase(), s.color, "#/s/" + sid) + its.map(row).join("");
-      var sig = INS[(INS.indexOf(insDe(sid)) + 1) % INS.length];
+      var sig = INS[(INS.map(function (i) { return i.id; }).indexOf(id) + 1) % INS.length];
       h += sh("Siguiente análisis", "#000") + row(sig);
     }
     return h + "</article>";
@@ -187,13 +195,13 @@
 
   function vistaRuta() {
     var i = nivelDe(S.xp), nv = NIVELES[i], sig = NIVELES[i + 1], todos = ORDEN.every(function (id) { return S.hechas[id]; });
-    var h = '<div class="fade"><div class="shead" style="--c:var(--brand)"><h1>🧭 La Ruta</h1><p>Nueve estaciones, nueve misiones. Lee, responde, gana XP y sube de nivel: de Viajero a Apu.</p></div>';
+    var h = '<div class="fade"><div class="shead" style="--c:var(--brand)"><h1>🧭 La Ruta</h1><p>Diez estaciones, diez misiones. Lee, responde, gana XP y sube de nivel: de Viajero a Apu.</p></div>';
     h += '<div class="nivel-card"><div class="nv"><div class="medalla">' + nv.ic + "</div><div><b>" + nv.n + "</b><small>" + nv.d + '</small></div><div style="margin-left:auto;text-align:right"><b style="font-size:1.1rem">' + racha() + '</b><small style="display:block">día(s) de racha</small></div></div><div class="bar"><i id="xp-b"></i></div><small class="xt">' + (sig ? S.xp + " / " + sig.min + " XP para " + sig.n : S.xp + " XP · nivel máximo") + "</small></div>";
     h += '<div class="camino">' + ORDEN.map(function (id, k) {
       var s = SECT[id], hecho = !!S.hechas[id], disp = !hecho && (k === 0 || !!S.hechas[ORDEN[k - 1]]), est = hecho ? "hecho" : disp ? "disp" : "bloq";
       return '<div class="st ' + est + '"><div class="dot">' + (hecho ? "✓" : disp ? s.icono : "🔒") + '</div><div class="stc"><span class="paso">Estación ' + (k + 1) + "</span><h3>" + esc(s.nombre) + "</h3><p>" + esc(s.lema) + '</p><div class="stt"><span>' + (hecho ? "Superada · " + S.hechas[id].ac + "/3 aciertos" : disp ? "Disponible" : "Completa la anterior") + "</span>" + (hecho || disp ? '<button class="btn' + (hecho ? " o" : "") + '" data-m="' + id + '" style="min-height:40px">' + (hecho ? "Repetir" : "Empezar") + "</button>" : "") + "</div></div></div>";
     }).join("") + "</div>";
-    var ins = [["brujula", "Primer paso", "🧭"], ["politica", "Cívico", "🏛️"], ["economia", "Economista", "📈"], ["salud", "Guardián de la salud", "🩺"], ["tecnologia", "Ciberescudo", "🛰️"], ["deporte", "Hincha informado", "⚽"], ["investigacion", "Sabueso", "🔎"], ["coyuntura", "Analista", "🧭"], ["mundo", "Ciudadano del mundo", "🌎"]], nt = Object.keys(S.terminos).length;
+    var ins = [["brujula", "Primer paso", "🧭"], ["politica", "Cívico", "🏛️"], ["economia", "Economista", "📈"], ["salud", "Guardián de la salud", "🩺"], ["tecnologia", "Ciberescudo", "🛰️"], ["deporte", "Hincha informado", "⚽"], ["investigacion", "Sabueso", "🔎"], ["coyuntura", "Analista", "🧭"], ["mundo", "Ciudadano del mundo", "🌎"], ["ia", "Domador de algoritmos", "🤖"]], nt = Object.keys(S.terminos).length;
     h += sh("Insignias", "#000") + '<div class="ins-g">' + ins.map(function (x) { return '<div class="ins ' + (S.hechas[x[0]] ? "on" : "") + '"><i>' + x[2] + "</i>" + x[1] + "</div>"; }).join("") + '<div class="ins ' + (nt >= 20 ? "on" : "") + '"><i>📖</i>Lexicógrafo<br>' + Math.min(nt, 20) + '/20 términos</div><div class="ins ' + (todos ? "on" : "") + '"><i>🏔️</i>Cumbre</div></div>';
     h += '<p style="color:var(--tx3);font-size:.85rem;margin-top:16px">Tu progreso se guarda solo en este dispositivo.</p></div>';
     setTimeout(function () { var b = $("#xp-b"); if (b) b.style.width = Math.min(100, pctNivel()) + "%"; }, 150);
