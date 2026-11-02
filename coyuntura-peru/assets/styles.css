@@ -485,7 +485,7 @@ a.s:hover h2,a.s:hover h3{color:var(--gold-t)}
   .tk-p{display:none}
 }
 .tl,ol.tl{list-style:none;margin:0;padding:0}
-@media (min-width:1500px){.pill-act{display:inline-flex}}
+/* El indicador de actualización ya aparece en la franja "Actualizado / Próxima" bajo el menú; no se repite en la barra superior. */
 .top-in{min-width:0}
 .mnav{min-width:0}
 .dp-h .fu{margin-top:auto;padding-top:8px;color:var(--gold-t);font-weight:700;font-size:.72rem}
@@ -679,3 +679,15 @@ details.mas[open]>summary{margin-bottom:10px}
 .menu-g a{gap:12px}
 .dot .ico{width:20px;height:20px;color:var(--tx)}
 .portal{overflow-x:clip}
+
+/* Menú superior sin desbordes en ningún ancho */
+.snav .solo-medio{display:none}
+@media (min-width:1000px) and (max-width:1279px){
+  .mnav{gap:0}
+  .mnav a{padding:8px 7px;font-size:.86rem}
+  .mnav a::after{left:7px;right:7px}
+}
+@media (min-width:1000px) and (max-width:1199px){
+  .mnav a[data-n="estadisticas"],.mnav a[data-n="historial"]{display:none}
+  .snav .solo-medio{display:block}
+}

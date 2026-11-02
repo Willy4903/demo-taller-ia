@@ -505,8 +505,8 @@
     else if (navigator.clipboard) navigator.clipboard.writeText(location.href).then(function () { toast("Enlace copiado"); });
   }
   function menuNav() {
-    var items = [["inicio", "Inicio", "#/"]].concat(ED.sectores.map(function (s) { return [s.id, s.nombre, "#/s/" + s.id]; }), [["talleres", "Talleres de IA", "#/talleres"], ["fuentes", "Fuentes", "#/fuentes"]]);
-    $("#snav").innerHTML = items.map(function (x) { return '<li><a href="' + x[2] + '" data-n="' + x[0] + '">' + esc(x[1]) + "</a></li>"; }).join("");
+    var items = [["inicio", "Inicio", "#/"]].concat(ED.sectores.map(function (s) { return [s.id, s.nombre, "#/s/" + s.id]; }), [["talleres", "Talleres de IA", "#/talleres"], ["fuentes", "Fuentes", "#/fuentes"], ["estadisticas", "Estadísticas", "#/estadisticas", "solo-medio"], ["historial", "Historial", "#/historial", "solo-medio"]]);
+    $("#snav").innerHTML = items.map(function (x) { return "<li" + (x[3] ? ' class="' + x[3] + '"' : "") + '><a href="' + x[2] + '" data-n="' + x[0] + '">' + esc(x[1]) + "</a></li>"; }).join("");
   }
 
   /* ───── hojas, toasts y utilidades de interfaz ───── */
