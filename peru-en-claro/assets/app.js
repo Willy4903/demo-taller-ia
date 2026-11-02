@@ -85,7 +85,7 @@
   function kicker(s) { var x = SECT[s.sector] || SECT.coyuntura; return '<span class="kick" style="--c:' + x.color + '">' + esc(x.nombre) + "</span>"; }
   function meta(s) {
     if (externo(s)) { var r = s.fecha ? relativo(s.fecha) : null; return '<div class="meta"><span class="tp ' + esc(s.tipo) + '">' + esc(s.tipo) + "</span><span>" + esc(s.fuente) + "</span><span>· " + esc(r || s.nota || "fecha no confirmada") + " ↗</span></div>"; }
-    return '<div class="meta"><span>Contexto Perú · ' + esc(corta(ED.corte + "T12:00:00Z")) + "</span>" + (s.nivel ? '<span class="conf ' + (s.nivel === "alta" ? "alta" : "media") + '">Confianza ' + (s.nivel === "alta" ? "alta" : "media") + "</span>" : "") + "</div>";
+    return '<div class="meta"><span>Contexto Perú · ' + esc(corta(ED.corte + "T12:00:00Z")) + "</span>" + (s.nivel ? '<span class="conf ' + (s.nivel === "alta" ? "alta" : "media") + '" title="Alta: confirmado en fuente oficial. Media: se apoya en prensa; conviene verificar.">Confianza ' + (s.nivel === "alta" ? "alta" : "media") + "</span>" : "") + "</div>";
   }
   function leadCard(s) {
     var raw = s.raw || {}, fu = (raw.fuentes || [])[0];
@@ -119,8 +119,7 @@
       var k = ORDEN.indexOf(id), s = SECT[id], hecho = !!S.hechas[id], disp = !hecho && (k === 0 || !!S.hechas[ORDEN[k - 1]]), est = hecho ? "hecho" : disp ? "disp" : "bloq";
       return '<li class="' + est + '"><span class="nodo">' + (hecho ? "✓" : disp ? String(k + 1) : "🔒") + '</span><div class="tx"><b>' + String(k + 1).padStart(2, "0") + ". " + esc(id === "brujula" ? "Brújula: leer noticias" : s.nombre) + "</b><span>" + (hecho ? "Superada · " + S.hechas[id].ac + "/3" : "+50 XP") + "</span>" + (hecho || disp ? '<br><button class="go" data-m="' + id + '">' + (hecho ? "Repetir misión" : "Empezar misión →") + "</button>" : "") + "</div></li>";
     }).join("") + "</ol>";
-    var g = NOT.estado_fuentes || {}, tot = Object.keys(g).length, ok = Object.keys(g).filter(function (k) { return g[k].ok; }).length;
-    h += '<div class="alerta"><b>Check actualización automática</b>' + (NOT.generado ? "Última carga: " + esc(fmtFecha(NOT.generado, true)).replace(/\.$/, "") + ". " : "Aún sin carga automática. ") + (tot ? '<span class="mono">' + ok + "/" + tot + "</span> fuentes respondieron." : "Próxima: 08:00 o 23:00 (Lima).") + (tot && ok < tot ? ' <span class="err">' + (tot - ok) + " sin respuesta.</span>" : "") + "</div>";
+    h += '<div class="alerta"><b>Check actualización automática</b>' + (NOT.generado ? "Última carga: " + esc(fmtFecha(NOT.generado, true)).replace(/\.$/, "") + ". " : "Aún sin carga automática. ") + "Próxima: 08:00 o 23:00 (Lima)." + "</div>";
     return h + '<p style="margin:14px 0 0"><a class="btn w" href="#/ruta">' + (hechas ? "Continuar la Ruta" : "Empezar la Ruta") + " →</a></p>" + (sig ? '<p class="mono" style="margin:10px 0 0;font-size:.72rem;color:var(--tx3)">' + S.xp + " / " + sig.min + " XP para " + sig.n + "</p>" : "") + "</div>";
   }
   function spark(pts, grande) {
@@ -169,29 +168,70 @@
     if (tc && tc.serie && tc.serie.length) hoy += '<div class="i"><span class="k">USD / PEN</span><span class="v">S/ ' + num(tc.serie[tc.serie.length - 1].v, 3) + "</span></div>";
     if (ED.nino) hoy += '<div class="i"><span class="k">El Niño costero · ENFEN</span><span class="v">' + esc(ED.nino.estado[0].v) + "</span></div>";
     hoy += '<div class="i"><span class="k">Notas indexadas</span><span class="v">' + ITEMS.length + "</span></div>" + (tot ? '<div class="i"><span class="k">Fuentes activas</span><span class="v">' + ok + "/" + tot + "</span></div>" : "") + '<div class="i"><span class="k">Próxima actualización</span><span class="v" style="font-size:1.05rem">' + proxima() + "</span></div>";
-    var tiles = ED.sectores.map(function (s) { var n = porSector(s.id).length; return '<a class="po-t' + (s.id === "nino" ? " nino" : "") + '" href="#/s/' + s.id + '" style="--c:' + s.color + '"><span class="ic" aria-hidden="true">' + s.icono + "</span><b>" + esc(s.nombre) + "</b><small>" + (n ? n + (n === 1 ? " nota" : " notas") : "Análisis y misión") + "</small></a>"; })
-      .concat(['<a class="po-t" href="#/ruta" style="--c:#D97706"><span class="ic" aria-hidden="true">🧭</span><b>La Ruta</b><small>' + ORDEN.length + " misiones</small></a>", '<a class="po-t" href="#/datos" style="--c:#38BDF8"><span class="ic" aria-hidden="true">🇵🇪</span><b>DataPerú</b><small>Datos oficiales</small></a>']).join("");
-    return '<section class="portal fade" aria-label="Portal"><div class="po-hero"><div class="po-main"><p class="po-eye">Portal de coyuntura · ' + esc(fecha) + '</p><h1>La coyuntura del Perú, explicada con sus fuentes</h1><p class="po-sub">Análisis propios, noticias de medios independientes y comerciales, indicadores y una ruta para aprender. Se actualiza a las 08:00 y 23:00, hora de Lima.</p>' +
+    var tiles = ED.sectores.filter(function (s) { return s.id !== "deporte" && s.id !== "mundo"; }).map(function (s) { var n = porSector(s.id).length; return '<a class="po-t' + (s.id === "nino" ? " nino" : "") + '" href="#/s/' + s.id + '" style="--c:' + s.color + '"><span class="ic" aria-hidden="true">' + s.icono + "</span><b>" + esc(s.nombre) + "</b><small>" + (n ? n + (n === 1 ? " nota" : " notas") : "Análisis y misión") + "</small></a>"; })
+      .concat(['<a class="po-t" href="#/talleres" style="--c:#F59E0B"><span class="ic" aria-hidden="true">🎓</span><b>Talleres de IA</b><small>Aprende con práctica</small></a>', '<a class="po-t" href="#/ruta" style="--c:#D97706"><span class="ic" aria-hidden="true">🧭</span><b>La Ruta</b><small>' + ORDEN.length + " misiones</small></a>", '<a class="po-t" href="#/datos" style="--c:#38BDF8"><span class="ic" aria-hidden="true">🇵🇪</span><b>DataPerú</b><small>Datos oficiales</small></a>']).join("");
+    return '<section class="portal fade" aria-label="Portal"><div class="po-hero"><div class="po-main"><p class="po-eye">Portal de coyuntura · ' + esc(fecha) + '</p><h1>La coyuntura del Perú, explicada con sus fuentes</h1><p class="po-sub">Entiende la coyuntura con datos y aprende a usar IA para analizarla. Análisis propios, noticias, indicadores y una ruta para aprender. Se actualiza a las 08:00 y 23:00, hora de Lima.</p>' +
       '<button class="po-search" type="button" data-buscar="1"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Busca noticias, análisis o términos</span><kbd aria-hidden="true">/</kbd></button>' +
       '<div class="po-cta"><a class="btn" href="#/a/hilo">Panorama del momento →</a><a class="btn o" href="#/ruta">Empezar la Ruta</a></div></div>' +
       '<aside class="po-hoy" aria-label="Hoy en cifras"><h3 class="pt">Hoy en cifras</h3><div class="ind">' + hoy + "</div></aside></div>" +
       '<nav class="po-grid" aria-label="Explora por sección">' + tiles + "</nav></section>";
   }
+  /* ───── promoción de talleres de IA (datos en data/talleres.js) ───── */
+  var T = window.TALLERES || null;
+  function waUrl(txt) { var c = T && T.contacto; return c && c.whatsapp ? "https://wa.me/" + String(c.whatsapp).replace(/\D/g, "") + "?text=" + encodeURIComponent(txt || c.mensaje || "") : "#/talleres"; }
+  function ext(u) { return 'href="' + safeUrl(u) + '" target="_blank" rel="noopener noreferrer"'; }
+  function tCards() {
+    return '<div class="t-g">' + T.talleres.map(function (x) {
+      return '<article class="t-card"><span class="t-ic" aria-hidden="true">' + x.icono + "</span><h3>" + esc(x.nombre) + "</h3><small>" + esc(x.para) + "</small><p>" + esc(x.desc) + "</p>" + (x.detalle ? '<p class="t-det">' + esc(x.detalle) + "</p>" : "") + '<a class="btn o" ' + ext(waUrl("Hola Willy, quiero información del taller: " + x.nombre + ".")) + ">Consultar por WhatsApp</a></article>";
+    }).join("") + "</div>";
+  }
+  function promoBanda() {
+    if (!T) return "";
+    return '<section class="promo fade" aria-label="Talleres de IA"><div><p class="po-eye">Talleres de IA</p><h2>Aprende IA aplicada con datos reales</h2><p>Talleres prácticos para usar la inteligencia artificial en tu estudio y en tu trabajo.</p></div><div class="po-cta"><a class="btn" href="#/talleres">Ver talleres →</a><a class="btn o" ' + ext(waUrl()) + ">Escribir por WhatsApp</a></div></section>";
+  }
+  function bloqueIA() {
+    if (!T) return "";
+    return '<section class="promo-ia"><h2>De la noticia a la práctica</h2><p>Entender la IA es el primer paso. En estos talleres aprendes a usarla.</p>' + tCards() + '<p class="t-mas"><a href="#/talleres">Conocer más sobre los talleres →</a></p></section>';
+  }
+  function bloqueLiga() {
+    var p = T && T.paginas && T.paginas[0]; if (!p) return "";
+    return '<div class="cta-m" style="--c:#10B981"><div><b>' + esc(p.icono + " " + p.n) + "</b><small>" + esc(p.d) + '</small></div><a class="btn" ' + ext(p.u) + ">Abrir</a></div>";
+  }
+  function promoRuta(todos) {
+    if (!T) return "";
+    return '<div class="cta-m" style="--c:var(--gold)"><div><b>' + (todos ? "Completaste la Ruta" : "¿Quieres ir más allá de la lectura?") + '</b><small>Practica con IA en un taller guiado.</small></div><a class="btn" href="#/talleres">Ver talleres</a></div>';
+  }
+  function listaCorta(arr, n, vacio) {
+    if (!arr.length) return '<div class="lista2">' + vacio + "</div>";
+    var h = '<div class="lista2">' + arr.slice(0, n).map(row).join("") + "</div>";
+    if (arr.length > n) h += '<details class="mas"><summary class="btn o">Ver más notas (' + (arr.length - n) + ')</summary><div class="lista2">' + arr.slice(n).map(row).join("") + "</div></details>";
+    return h;
+  }
+  function vistaTalleres() {
+    if (!T) return vistaHome();
+    var a = T.autor, c = T.contacto || {};
+    var h = '<div class="fade"><div class="shead" style="--c:var(--gold)"><h1>🎓 Talleres de IA</h1><p>Aprende a usar la inteligencia artificial con ejemplos prácticos, en talleres presenciales y virtuales.</p></div>' + tCards();
+    h += '<div class="autor panel"><h3 class="pt">Quién está detrás</h3><b class="a-n">' + esc(a.nombre) + "</b><small>" + esc(a.titulo) + "</small><p>" + esc(a.resumen) + "</p></div>";
+    h += '<div class="t-links"><a class="btn" ' + ext(waUrl()) + ">Escribir por WhatsApp</a>" + (c.tiktok ? '<a class="btn o" ' + ext(c.tiktok) + ">TikTok @luwiuni</a>" : "") + (c.web ? '<a class="btn o" ' + ext(c.web) + ">Web de los talleres</a>" : "") + "</div>";
+    if (T.paginas && T.paginas.length) h += sh("Otras páginas", "var(--gold)") + T.paginas.map(function (p) { return '<a class="fr" ' + ext(p.u) + "><div><b>" + esc(p.icono + " " + p.n) + "</b><p>" + esc(p.d) + "</p></div><span>↗</span></a>"; }).join("");
+    return h + "</div>";
+  }
+
   function vistaHome() {
     var principal = INS.filter(function (i) { return i.id === "politica"; })[0] || INS[0], otros = INS.filter(function (i) { return i !== principal; });
-    var h = portal() + ninoBanner() + '<div class="bento fade"><div class="b1 panel">' + (HILO ? '<a class="panorama" href="#/a/hilo"><b>Panorama</b><span>' + esc(HILO.titulo) + "</span></a>" : "") + (principal ? leadCard(principal) : "") + '<div class="minis">' + otros.slice(0, 6).map(card).join("") + "</div></div>";
+    var h = portal() + promoBanda() + ninoBanner() + '<div class="bento fade"><div class="b1 panel">' + (HILO ? '<a class="panorama" href="#/a/hilo"><b>Panorama</b><span>' + esc(HILO.titulo) + "</span></a>" : "") + (principal ? leadCard(principal) : "") + '<div class="minis">' + otros.slice(0, 6).map(card).join("") + "</div></div>";
     h += '<div class="panel"><h3 class="pt">La Ruta de Aprendizaje <a href="#/ruta">Ver todo</a></h3>' + rutaMini() + "</div>";
     h += '<div class="stack"><div class="panel"><h3 class="pt">Indicadores <a href="#/datos">DataPerú</a></h3>' + indicadores(false) + '</div><div class="panel"><h3 class="pt">Glosario cívico</h3>' + glosarioDia() + '</div><div class="panel"><h3 class="pt">Radar de temas</h3>' + radarHTML() + "</div></div></div>";
     h += sh("Últimas notas de los medios", "var(--gold)", "#/historial", "Historial") + '<div class="chips" id="f-chips"></div><div class="lista2" id="f-lista"></div><p style="text-align:center;margin-top:14px" id="f-mas"></p>';
     ED.sectores.forEach(function (s) {
-      var its = porSector(s.id).slice(0, 4); if (!its.length) return;
+      if (s.id === "deporte" || s.id === "mundo") return; var its = porSector(s.id).slice(0, 4); if (!its.length) return;
       h += sh(s.nombre, s.color, "#/s/" + s.id, "Ver sección") + '<div class="lista2">' + its.map(function (i) { return row(asFeed(i)); }).join("") + "</div>";
     });
     return h;
   }
   var filtro = "todas", cuantas = 8;
   function pintarFeed() {
-    var l = FEED.filter(function (s) { return filtro === "todas" || (filtro === "indep" ? s.tipo === "independiente" : filtro === "com" ? s.tipo === "comercial" : filtro === "int" ? s.tipo === "internacional" : (s.tipo === "oficial" || s.tipo === "estatal")); });
+    var l = FEED.filter(function (s) { if (s.sector === "deporte") return false; return filtro === "todas" || (filtro === "indep" ? s.tipo === "independiente" : filtro === "com" ? s.tipo === "comercial" : filtro === "int" ? s.tipo === "internacional" : (s.tipo === "oficial" || s.tipo === "estatal")); });
     var el = $("#f-lista"); if (!el) return;
     el.innerHTML = l.length ? l.slice(0, cuantas).map(row).join("") : '<div class="vacio">No hay notas con este filtro todavía. La próxima actualización (08:00 / 23:00) traerá más.</div>';
     $("#f-mas").innerHTML = l.length > cuantas ? '<button class="btn o" id="b-mas">Ver más notas (' + (l.length - cuantas) + ")</button>" : "";
@@ -215,11 +255,12 @@
     h += '<div class="panel">' + (ins ? leadCard(ins) : "") + "</div>";
     if (inss.length > 1) h += '<div class="minis">' + inss.slice(1).map(card).join("") + "</div>";
     h += '<div class="entender"><h2>Para entender ' + esc(nomFrase(s)) + '</h2><ul>' + s.esencial.map(function (e) { return "<li>" + gl(e) + "</li>"; }).join("") + "</ul></div>";
+    h += (id === "ia" ? bloqueIA() : "") + (id === "deporte" ? bloqueLiga() : "");
     h += '<div class="cta-m" style="--c:' + s.color + '"><div><b>' + (hecho ? "✅ Misión superada" : "🎯 Misión: " + esc(s.nombre)) + "</b><small>" + (hecho ? "Puedes repetirla cuando quieras." : "3 preguntas · gana hasta 80 XP") + '</small></div><button class="btn" data-m="' + id + '">' + (hecho ? "Repetir" : "Empezar") + "</button></div>";
     var vacio = '<div class="vacio">Aún no hay notas en esta sección. La próxima actualización automática (08:00 / 23:00) las incorporará.</div>';
     if (s.ambitos) {
       var enPeru = its.filter(function (i) { return ambitoDe(i) === "peru"; }), enMundo = its.filter(function (i) { return ambitoDe(i) === "mundo"; });
-      h += sh("IA en el Perú", s.color) + '<div class="lista2">' + (enPeru.length ? enPeru.map(row).join("") : vacio) + "</div>" + sh("IA en el mundo", s.color) + '<div class="lista2">' + (enMundo.length ? enMundo.map(row).join("") : vacio) + "</div>";
+      h += sh("IA en el Perú", s.color) + listaCorta(enPeru, 6, vacio) + sh("IA en el mundo", s.color) + listaCorta(enMundo, 6, vacio);
     } else h += sh("Últimas notas · " + s.nombre, s.color) + '<div class="lista2">' + (its.length ? its.map(row).join("") : vacio) + "</div>";
     h += '</div><aside class="rail"><section><h3 class="rt">Términos clave</h3>' + terms.map(function (t) { return '<button class="term" data-gl="' + t + '">' + esc(GLOS[t].t) + "</button>"; }).join("") + "</section>" + rail().split("</section>").slice(1).join("</section>") + "</aside></div></div>";
     return h;
@@ -231,7 +272,7 @@
     var sid = esHilo ? "coyuntura" : c.sector, s = SECT[sid], a = ARTS[id] || ARTS[sid] || {};
     var titulo = esHilo ? ED.hilo.titulo : c.titulo, resumen = esHilo ? "Cuatro frentes explican el momento que vive el país tras el cambio de gobierno." : c.resumen;
     var h = '<article class="art fade"><div class="crumb"><a href="#/">Inicio</a> › <a href="#/s/' + sid + '">' + esc(s.nombre) + "</a></div>" + kicker({ sector: sid }) + "<h1>" + esc(titulo) + '</h1><p class="stand">' + esc(esHilo ? resumen : primera(resumen)) + "</p>";
-    h += '<div class="by"><span><b>Redacción Contexto Perú</b></span><span>Corte ' + esc(fmtFecha(ED.corte + "T12:00:00Z")) + "</span>" + (esHilo ? "" : '<span class="conf ' + (c.nivel === "alta" ? "alta" : "media") + '">Confianza ' + (c.nivel === "alta" ? "alta" : "media · verifica") + "</span>") + '<button class="share" id="b-share">↗ Compartir</button></div>';
+    h += '<div class="by"><span><b>Redacción Contexto Perú</b></span><span>Corte ' + esc(fmtFecha(ED.corte + "T12:00:00Z")) + "</span>" + (esHilo ? "" : '<span class="conf ' + (c.nivel === "alta" ? "alta" : "media") + '" title="Alta: confirmado en fuente oficial. Media: se apoya en prensa; conviene verificar.">Confianza ' + (c.nivel === "alta" ? "alta" : "media · verifica") + "</span>") + '<button class="share" id="b-share">↗ Compartir</button></div>';
     var pf = esHilo ? HILO : INS.filter(function (i) { return i.id === id; })[0], fo = pf ? fotoInfo(pf) : null;
     if (fo) h += thumb(pf, false) + '<p class="cap">Foto: ' + esc(fo.c || "fuente enlazada") + ". Imagen tomada de la fuente citada; derechos de su autor. Las cifras provienen de las fuentes enlazadas al final.</p>";
     if (esHilo) {
@@ -262,6 +303,7 @@
     }).join("") + "</div>";
     var ins = [["brujula", "Primer paso", "🧭"], ["politica", "Cívico", "🏛️"], ["economia", "Economista", "📈"], ["salud", "Guardián de la salud", "🩺"], ["tecnologia", "Ciberescudo", "🛰️"], ["deporte", "Hincha informado", "⚽"], ["investigacion", "Sabueso", "🔎"], ["coyuntura", "Analista", "🧭"], ["mundo", "Ciudadano del mundo", "🌎"], ["ia", "Domador de algoritmos", "🤖"], ["nino", "Vigía del mar", "🌊"]], nt = Object.keys(S.terminos).length;
     h += sh("Insignias", "#000") + '<div class="ins-g">' + ins.map(function (x) { return '<div class="ins ' + (S.hechas[x[0]] ? "on" : "") + '"><i>' + x[2] + "</i>" + x[1] + "</div>"; }).join("") + '<div class="ins ' + (nt >= 20 ? "on" : "") + '"><i>📖</i>Lexicógrafo<br>' + Math.min(nt, 20) + '/20 términos</div><div class="ins ' + (todos ? "on" : "") + '"><i>🏔️</i>Cumbre</div></div>';
+    h += promoRuta(todos);
     h += '<p style="color:var(--tx3);font-size:.85rem;margin-top:16px">Tu progreso se guarda solo en este dispositivo.</p></div>';
     setTimeout(function () { var b = $("#xp-b"); if (b) b.style.width = Math.min(100, pctNivel()) + "%"; }, 150);
     return h;
@@ -402,6 +444,7 @@
     else if (r.v === "datos") { html = vistaDatos(); nav = "datos"; tab = ""; t = "DataPerú · " + TITULO; }
     else if (r.v === "estadisticas") { html = vistaEstadisticas(); nav = "estadisticas"; tab = ""; t = "Estadísticas · " + TITULO; }
     else if (r.v === "historial") { html = vistaHistorial(); nav = "historial"; tab = ""; t = "Historial · " + TITULO; }
+    else if (r.v === "talleres") { html = vistaTalleres(); nav = "talleres"; tab = ""; t = "Talleres de IA · " + TITULO; }
     else if (r.v === "fuentes") { html = vistaFuentes(); nav = "fuentes"; tab = ""; t = "Fuentes · " + TITULO; }
     else { html = vistaHome(); }
     $("#app").innerHTML = html; document.title = t;
@@ -417,7 +460,7 @@
     else if (navigator.clipboard) navigator.clipboard.writeText(location.href).then(function () { toast("Enlace copiado"); });
   }
   function menuNav() {
-    var items = [["inicio", "Inicio", "#/"]].concat(ED.sectores.map(function (s) { return [s.id, s.nombre, "#/s/" + s.id]; }), [["fuentes", "Fuentes", "#/fuentes"]]);
+    var items = [["inicio", "Inicio", "#/"]].concat(ED.sectores.map(function (s) { return [s.id, s.nombre, "#/s/" + s.id]; }), [["talleres", "Talleres de IA", "#/talleres"], ["fuentes", "Fuentes", "#/fuentes"]]);
     $("#snav").innerHTML = items.map(function (x) { return '<li><a href="' + x[2] + '" data-n="' + x[0] + '">' + esc(x[1]) + "</a></li>"; }).join("");
   }
 
@@ -478,7 +521,7 @@
     q.addEventListener("input", ir); ir();
   }
   function abrirMenu() {
-    $("#menu-in").innerHTML = '<button class="sx" aria-label="Cerrar" data-x="1">✕</button><div class="paso">Secciones</div><h3>Explora por tema</h3><div class="menu-g">' + ED.sectores.map(function (s) { return '<a href="#/s/' + s.id + '" data-cerrar="1" style="--c:' + s.color + '"><span>' + s.icono + "</span>" + esc(s.nombre) + "</a>"; }).join("") + '</div><div class="menu-g"><a href="#/ruta" data-cerrar="1" style="--c:#D97706"><span>🧭</span>La Ruta</a><a href="#/glosario" data-cerrar="1" style="--c:#D97706"><span>📖</span>Glosario</a><a href="#/datos" data-cerrar="1" style="--c:#38BDF8"><span>🇵🇪</span>DataPerú</a><a href="#/estadisticas" data-cerrar="1" style="--c:#10B981"><span>📊</span>Estadísticas</a><a href="#/historial" data-cerrar="1" style="--c:#10B981"><span>🗂️</span>Historial</a><a href="#/fuentes" data-cerrar="1" style="--c:#94A3B8"><span>🔗</span>Fuentes</a></div>';
+    $("#menu-in").innerHTML = '<button class="sx" aria-label="Cerrar" data-x="1">✕</button><div class="paso">Secciones</div><h3>Explora por tema</h3><div class="menu-g">' + ED.sectores.map(function (s) { return '<a href="#/s/' + s.id + '" data-cerrar="1" style="--c:' + s.color + '"><span>' + s.icono + "</span>" + esc(s.nombre) + "</a>"; }).join("") + '</div><div class="menu-g"><a href="#/ruta" data-cerrar="1" style="--c:#D97706"><span>🧭</span>La Ruta</a><a href="#/glosario" data-cerrar="1" style="--c:#D97706"><span>📖</span>Glosario</a><a href="#/datos" data-cerrar="1" style="--c:#38BDF8"><span>🇵🇪</span>DataPerú</a><a href="#/estadisticas" data-cerrar="1" style="--c:#10B981"><span>📊</span>Estadísticas</a><a href="#/historial" data-cerrar="1" style="--c:#10B981"><span>🗂️</span>Historial</a><a href="#/talleres" data-cerrar="1" style="--c:#F59E0B"><span>🎓</span>Talleres de IA</a><a href="#/fuentes" data-cerrar="1" style="--c:#94A3B8"><span>🔗</span>Fuentes</a></div>';
     abrirHoja("#menu");
   }
 
@@ -553,7 +596,14 @@
   }
 
   /* ───── arranque ───── */
-  menuNav(); estado(); xpChip(); ticker(); navegar();
+  function pintarPie() {
+    var el = $("#f-talleres"); if (!el || !T) return;
+    var c = T.contacto || {}, a = T.autor || {}, p = (T.paginas || [])[0];
+    el.innerHTML = "<h4>Talleres de IA</h4><p>Aprende a usar la inteligencia artificial con ejemplos prácticos.</p>" +
+      (a.nombre ? '<p class="f-aut"><b>' + esc(a.nombre) + "</b><br>" + esc(a.titulo || "") + "</p>" : "") +
+      '<p class="f-lk"><a href="#/talleres">Ver talleres</a>' + (c.tiktok ? ' · <a ' + ext(c.tiktok) + ">TikTok</a>" : "") + (c.web ? ' · <a ' + ext(c.web) + ">Web de talleres</a>" : "") + (p ? ' · <a ' + ext(p.u) + ">" + esc(p.n) + "</a>" : "") + "</p>";
+  }
+  menuNav(); estado(); xpChip(); ticker(); pintarPie(); navegar();
   if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
     var tenia = !!navigator.serviceWorker.controller, recargado = false;
     navigator.serviceWorker.addEventListener("controllerchange", function () { if (tenia && !recargado) { recargado = true; location.reload(); } });
