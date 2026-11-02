@@ -85,7 +85,7 @@
   function kicker(s) { var x = SECT[s.sector] || SECT.coyuntura; return '<span class="kick" style="--c:' + x.color + '">' + esc(x.nombre) + "</span>"; }
   function meta(s) {
     if (externo(s)) { var r = s.fecha ? relativo(s.fecha) : null; return '<div class="meta"><span class="tp ' + esc(s.tipo) + '">' + esc(s.tipo) + "</span><span>" + esc(s.fuente) + "</span><span>· " + esc(r || s.nota || "fecha no confirmada") + " ↗</span></div>"; }
-    return '<div class="meta"><span>Contexto Perú · ' + esc(corta(ED.corte + "T12:00:00Z")) + "</span>" + (s.nivel ? '<span class="conf ' + (s.nivel === "alta" ? "alta" : "media") + '">Confianza ' + (s.nivel === "alta" ? "alta" : "media") + "</span>" : "") + "</div>";
+    return '<div class="meta"><span>Contexto Perú · ' + esc(corta(ED.corte + "T12:00:00Z")) + "</span>" + (s.nivel ? '<span class="conf ' + (s.nivel === "alta" ? "alta" : "media") + '" title="Alta: confirmado en fuente oficial. Media: se apoya en prensa; conviene verificar.">Confianza ' + (s.nivel === "alta" ? "alta" : "media") + "</span>" : "") + "</div>";
   }
   function leadCard(s) {
     var raw = s.raw || {}, fu = (raw.fuentes || [])[0];
@@ -168,9 +168,9 @@
     if (tc && tc.serie && tc.serie.length) hoy += '<div class="i"><span class="k">USD / PEN</span><span class="v">S/ ' + num(tc.serie[tc.serie.length - 1].v, 3) + "</span></div>";
     if (ED.nino) hoy += '<div class="i"><span class="k">El Niño costero · ENFEN</span><span class="v">' + esc(ED.nino.estado[0].v) + "</span></div>";
     hoy += '<div class="i"><span class="k">Notas indexadas</span><span class="v">' + ITEMS.length + "</span></div>" + (tot ? '<div class="i"><span class="k">Fuentes activas</span><span class="v">' + ok + "/" + tot + "</span></div>" : "") + '<div class="i"><span class="k">Próxima actualización</span><span class="v" style="font-size:1.05rem">' + proxima() + "</span></div>";
-    var tiles = ED.sectores.map(function (s) { var n = porSector(s.id).length; return '<a class="po-t' + (s.id === "nino" ? " nino" : "") + '" href="#/s/' + s.id + '" style="--c:' + s.color + '"><span class="ic" aria-hidden="true">' + s.icono + "</span><b>" + esc(s.nombre) + "</b><small>" + (n ? n + (n === 1 ? " nota" : " notas") : "Análisis y misión") + "</small></a>"; })
-      .concat(['<a class="po-t" href="#/ruta" style="--c:#D97706"><span class="ic" aria-hidden="true">🧭</span><b>La Ruta</b><small>' + ORDEN.length + " misiones</small></a>", '<a class="po-t" href="#/datos" style="--c:#38BDF8"><span class="ic" aria-hidden="true">🇵🇪</span><b>DataPerú</b><small>Datos oficiales</small></a>']).join("");
-    return '<section class="portal fade" aria-label="Portal"><div class="po-hero"><div class="po-main"><p class="po-eye">Portal de coyuntura · ' + esc(fecha) + '</p><h1>La coyuntura del Perú, explicada con sus fuentes</h1><p class="po-sub">Análisis propios, noticias de medios independientes y comerciales, indicadores y una ruta para aprender. Se actualiza a las 08:00 y 23:00, hora de Lima.</p>' +
+    var tiles = ED.sectores.filter(function (s) { return s.id !== "deporte" && s.id !== "mundo"; }).map(function (s) { var n = porSector(s.id).length; return '<a class="po-t' + (s.id === "nino" ? " nino" : "") + '" href="#/s/' + s.id + '" style="--c:' + s.color + '"><span class="ic" aria-hidden="true">' + s.icono + "</span><b>" + esc(s.nombre) + "</b><small>" + (n ? n + (n === 1 ? " nota" : " notas") : "Análisis y misión") + "</small></a>"; })
+      .concat(['<a class="po-t" href="#/talleres" style="--c:#F59E0B"><span class="ic" aria-hidden="true">🎓</span><b>Talleres de IA</b><small>Aprende con práctica</small></a>', '<a class="po-t" href="#/ruta" style="--c:#D97706"><span class="ic" aria-hidden="true">🧭</span><b>La Ruta</b><small>' + ORDEN.length + " misiones</small></a>", '<a class="po-t" href="#/datos" style="--c:#38BDF8"><span class="ic" aria-hidden="true">🇵🇪</span><b>DataPerú</b><small>Datos oficiales</small></a>']).join("");
+    return '<section class="portal fade" aria-label="Portal"><div class="po-hero"><div class="po-main"><p class="po-eye">Portal de coyuntura · ' + esc(fecha) + '</p><h1>La coyuntura del Perú, explicada con sus fuentes</h1><p class="po-sub">Entiende la coyuntura con datos y aprende a usar IA para analizarla. Análisis propios, noticias, indicadores y una ruta para aprender. Se actualiza a las 08:00 y 23:00, hora de Lima.</p>' +
       '<button class="po-search" type="button" data-buscar="1"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Busca noticias, análisis o términos</span><kbd aria-hidden="true">/</kbd></button>' +
       '<div class="po-cta"><a class="btn" href="#/a/hilo">Panorama del momento →</a><a class="btn o" href="#/ruta">Empezar la Ruta</a></div></div>' +
       '<aside class="po-hoy" aria-label="Hoy en cifras"><h3 class="pt">Hoy en cifras</h3><div class="ind">' + hoy + "</div></aside></div>" +
@@ -272,7 +272,7 @@
     var sid = esHilo ? "coyuntura" : c.sector, s = SECT[sid], a = ARTS[id] || ARTS[sid] || {};
     var titulo = esHilo ? ED.hilo.titulo : c.titulo, resumen = esHilo ? "Cuatro frentes explican el momento que vive el país tras el cambio de gobierno." : c.resumen;
     var h = '<article class="art fade"><div class="crumb"><a href="#/">Inicio</a> › <a href="#/s/' + sid + '">' + esc(s.nombre) + "</a></div>" + kicker({ sector: sid }) + "<h1>" + esc(titulo) + '</h1><p class="stand">' + esc(esHilo ? resumen : primera(resumen)) + "</p>";
-    h += '<div class="by"><span><b>Redacción Contexto Perú</b></span><span>Corte ' + esc(fmtFecha(ED.corte + "T12:00:00Z")) + "</span>" + (esHilo ? "" : '<span class="conf ' + (c.nivel === "alta" ? "alta" : "media") + '">Confianza ' + (c.nivel === "alta" ? "alta" : "media · verifica") + "</span>") + '<button class="share" id="b-share">↗ Compartir</button></div>';
+    h += '<div class="by"><span><b>Redacción Contexto Perú</b></span><span>Corte ' + esc(fmtFecha(ED.corte + "T12:00:00Z")) + "</span>" + (esHilo ? "" : '<span class="conf ' + (c.nivel === "alta" ? "alta" : "media") + '" title="Alta: confirmado en fuente oficial. Media: se apoya en prensa; conviene verificar.">Confianza ' + (c.nivel === "alta" ? "alta" : "media · verifica") + "</span>") + '<button class="share" id="b-share">↗ Compartir</button></div>';
     var pf = esHilo ? HILO : INS.filter(function (i) { return i.id === id; })[0], fo = pf ? fotoInfo(pf) : null;
     if (fo) h += thumb(pf, false) + '<p class="cap">Foto: ' + esc(fo.c || "fuente enlazada") + ". Imagen tomada de la fuente citada; derechos de su autor. Las cifras provienen de las fuentes enlazadas al final.</p>";
     if (esHilo) {
@@ -596,7 +596,14 @@
   }
 
   /* ───── arranque ───── */
-  menuNav(); estado(); xpChip(); ticker(); navegar();
+  function pintarPie() {
+    var el = $("#f-talleres"); if (!el || !T) return;
+    var c = T.contacto || {}, a = T.autor || {}, p = (T.paginas || [])[0];
+    el.innerHTML = "<h4>Talleres de IA</h4><p>Aprende a usar la inteligencia artificial con ejemplos prácticos.</p>" +
+      (a.nombre ? '<p class="f-aut"><b>' + esc(a.nombre) + "</b><br>" + esc(a.titulo || "") + "</p>" : "") +
+      '<p class="f-lk"><a href="#/talleres">Ver talleres</a>' + (c.tiktok ? ' · <a ' + ext(c.tiktok) + ">TikTok</a>" : "") + (c.web ? ' · <a ' + ext(c.web) + ">Web de talleres</a>" : "") + (p ? ' · <a ' + ext(p.u) + ">" + esc(p.n) + "</a>" : "") + "</p>";
+  }
+  menuNav(); estado(); xpChip(); ticker(); pintarPie(); navegar();
   if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
     var tenia = !!navigator.serviceWorker.controller, recargado = false;
     navigator.serviceWorker.addEventListener("controllerchange", function () { if (tenia && !recargado) { recargado = true; location.reload(); } });
