@@ -23,6 +23,7 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATOS = os.path.join(RAIZ, "data")
 ARCHIVO_JS = os.path.join(DATOS, "noticias.js")
 ARCHIVO_JSON = os.path.join(DATOS, "noticias.json")
+ARCHIVO_EDITORIAL = os.path.join(DATOS, "editorial.js")
 
 MAX_POR_SECTOR = 24
 MAX_POR_SECTOR_ESPECIAL = {"ia": 40}  # IA cubre Perú y mundo
@@ -156,6 +157,80 @@ def enriquecer_imagenes(items, previos):
             for it, img in zip(pendientes, ex.map(lambda i: imagen_og(i["url"]), pendientes)):
                 it["imagen"] = img
     print(f"Imágenes de portada: {sum(1 for i in items if i.get('imagen'))}/{len(items)} notas")
+
+
+def fuentes_editoriales():
+    """Lee data/editorial.js y devuelve {id_del_análisis: [(medio, url), ...]} (solo enlaces https de los insights)."""
+    try:
+        with open(ARCHIVO_EDITORIAL, encoding="utf-8") as f:
+            txt = f.read()
+    except OSError:
+        return {}
+    ini = txt.find("insights: [")
+    fin = txt.find("glosario: [", ini)
+    if ini < 0 or fin < 0:
+        return {}
+    bloque = txt[ini:fin]
+    salida = {}
+    partes = re.split(r"\n    \{\n      (?=(?:id: \"[^\"]+\", )?sector: )", bloque)
+    for parte in partes[1:]:
+        m = re.match(r'(?:id: "([^"]+)", )?sector: "([^"]+)"', parte)
+        if not m:
+            continue
+        clave = m.group(1) or m.group(2)
+        salida[clave] = re.findall(r'\{ n: "([^"]+)", u: "(https://[^"]+)"', parte)
+    return salida
+
+
+def imagenes_editoriales(previas):
+    """Foto de portada (og:image) de la primera fuente citada que la tenga, por cada análisis."""
+    res = dict(previas or {})
+    for clave, fuentes in fuentes_editoriales().items():
+        for nombre, url in fuentes:
+            host = urlsplit(url).netloc
+            if host.endswith("bcrp.gob.pe") or host.endswith("dge.gob.pe"):
+                continue
+            img = imagen_og(url)
+            if img:
+                res[clave] = {"url": img, "fuente": re.split(r" · ", nombre)[0], "enlace": url}
+                break
+    print(f"Fotos de análisis: {len([c for c in res if res[c].get('url')])}/{len(fuentes_editoriales())}")
+    return res
+
+
+MESES = {"ene": 1, "jan": 1, "feb": 2, "mar": 3, "abr": 4, "apr": 4, "may": 5, "jun": 6, "jul": 7, "ago": 8, "aug": 8,
+         "set": 9, "sep": 9, "oct": 10, "nov": 11, "dic": 12, "dec": 12}
+
+
+def tipo_cambio(previo=None):
+    """Tipo de cambio interbancario venta (S/ por US$) desde la API pública del BCRP (serie PD04638PD)."""
+    hoy = dt.date.today()
+    ini = (hoy - dt.timedelta(days=45)).isoformat()
+    url = f"https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PD04638PD/json/{ini}/{hoy.isoformat()}/esp"
+    try:
+        datos = json.loads(descargar(url).decode("utf-8", errors="replace"))
+        serie = []
+        for per in datos.get("periods", []):
+            m = re.search(r"(\d{1,2})\D*([A-Za-z]{3})\D*(\d{2,4})", per.get("name", ""))
+            vals = per.get("values") or []
+            if not m or not vals:
+                continue
+            try:
+                v = float(vals[0])
+            except (TypeError, ValueError):
+                continue
+            mes = MESES.get(m.group(2).lower())
+            if not mes:
+                continue
+            anio = int(m.group(3)) + (2000 if len(m.group(3)) == 2 else 0)
+            serie.append({"f": dt.date(anio, mes, int(m.group(1))).isoformat(), "v": round(v, 4)})
+        serie = sorted(serie, key=lambda x: x["f"])[-30:]
+        if len(serie) >= 3:
+            print(f"Tipo de cambio BCRP: {len(serie)} datos, último {serie[-1]}")
+            return {"serie": serie, "fuente": "BCRP", "serie_id": "PD04638PD"}
+    except Exception as ex:  # noqa: BLE001
+        print(f"  ✗ Tipo de cambio BCRP: {type(ex).__name__}: {str(ex)[:120]}")
+    return previo
 
 
 def parsear_fecha(txt):
@@ -344,6 +419,8 @@ def main(feeds=None):
         "modo": "automatico",
         "estado_fuentes": estado,
         "items": fusionar(nuevos, previo.get("items", [])),
+        "imagenes_editorial": imagenes_editoriales(previo.get("imagenes_editorial")),
+        "indicadores": {"tipo_cambio": tipo_cambio((previo.get("indicadores") or {}).get("tipo_cambio"))},
     }
     escribir(datos)
     print(f"Escrito {ARCHIVO_JS} con {len(datos['items'])} notas.")

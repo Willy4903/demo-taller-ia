@@ -1,18 +1,19 @@
-# Perú en Claro
+# Contexto Perú
 
-Portal de noticias sobre la coyuntura peruana: política, economía, salud, tecnología, inteligencia artificial (Perú y mundo), deporte, investigación, coyuntura y mundo. Diseño editorial *mobile-first* (portada con nota principal, listas con miniaturas, páginas de lectura, barra inferior para iPhone/Android, modo oscuro y búsqueda), con **Ruta gamificada** (misiones, XP, niveles, insignias), **glosario A–Z**, **fuentes** y análisis con fuentes enlazadas.
+Portal de noticias sobre la coyuntura peruana: política, economía, salud, tecnología, inteligencia artificial (Perú y mundo), deporte, investigación, coyuntura y mundo. Panel *Bento Grid* oscuro por defecto y *mobile-first* (análisis, Ruta, indicadores y glosario en la portada, páginas de lectura, Estadísticas, Historial, barra inferior para iPhone/Android y búsqueda), con **Ruta gamificada** (misiones, XP, niveles, insignias), **glosario A–Z**, **fuentes** y análisis con fuentes enlazadas.
 
-- Sin dependencias externas: HTML + CSS + JavaScript puro. Se abre con doble clic en `index.html`.
+- Sin dependencias de código: HTML + CSS + JavaScript puro (solo las tipografías vienen de Google Fonts). Se abre con doble clic en `index.html`.
 - Instalable como app: en iPhone, Safari → Compartir → *Añadir a pantalla de inicio*; en Android, menú → *Instalar app*. Funciona sin conexión con lo último que cargó (service worker, solo en https).
-- Las fotos de portada se toman de la etiqueta `og:image` de cada nota; si falta, se muestra una ilustración generada.
+- Las fotos son reales: la `og:image` de cada nota y, para los análisis, la de la primera fuente citada que la tenga (con crédito). Si no hay foto, la nota se muestra sin imagen; no se usan ilustraciones generadas.
+- El tipo de cambio (USD/PEN) se lee de la API pública del BCRP en cada actualización; si falla, se conserva el último dato.
 - Se actualiza solo a las **08:00** y **23:00 (hora de Lima)** mediante GitHub Actions.
 
 ## Publicación en GitHub Pages
 
-Perú en Claro comparte el sitio de GitHub Pages con el simulador de la Liga 1 que ya existe en este repositorio:
+Contexto Perú comparte el sitio de GitHub Pages con el simulador de la Liga 1 que ya existe en este repositorio:
 
 - Simulador: `https://<usuario>.github.io/demo-taller-ia/`
-- Perú en Claro: `https://<usuario>.github.io/demo-taller-ia/peru-en-claro/`
+- Contexto Perú: `https://<usuario>.github.io/demo-taller-ia/peru-en-claro/`
 
 El flujo `CI y despliegue` (`.github/workflows/ci-deploy.yml`) copia esta carpeta a `dist/peru-en-claro/` antes de publicar.
 
@@ -27,7 +28,7 @@ El sitio se sirve desde la rama `gh-pages` (Settings → Pages → Deploy from a
 3. Conserva como máximo 24 notas por sector y descarta lo anterior a 30 días.
 4. Reescribe `data/noticias.js` y `data/noticias.json`. Si ningún feed responde, **no** toca los datos.
 
-El flujo `Actualizar Perú en Claro` corre a las 08:00 y 23:00 (hora de Lima), hace commit de los datos en `main` e invoca `CI y despliegue` para republicar. Para agregar o quitar medios, edita `FEEDS`. También puede lanzarse a mano desde la pestaña *Actions*.
+El flujo `Actualizar Contexto Perú` corre a las 08:00 y 23:00 (hora de Lima), hace commit de los datos en `main` e invoca `CI y despliegue` para republicar. Para agregar o quitar medios, edita `FEEDS`. También puede lanzarse a mano desde la pestaña *Actions*.
 
 ## Contenido editorial
 
