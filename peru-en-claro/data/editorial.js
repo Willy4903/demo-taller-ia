@@ -1,4 +1,4 @@
-/* Contenido editorial de "Perú en Claro".
+/* Contenido editorial de "Contexto Perú".
    Los datos con cifras llevan fuente enlazada y fecha de corte. Contrástalos siempre en la fuente primaria. */
 window.EDITORIAL = {
   corte: "2026-11-02",
@@ -12,6 +12,15 @@ window.EDITORIAL = {
       { k: "Mundo", t: "nuevos aranceles de EE. UU. a la región pueden afectar comercio, metales y tipo de cambio." }
     ]
   },
+
+  /* Indicadores con fuente (cifras citadas por la prensa o por el organismo; verificar en la fuente primaria) */
+  indicadores: [
+    { k: "PBI 2026 · proyección BCRP", v: "3,2 %", n: "Recortada citando El Niño", f: "BCRP", u: "https://www.bcrp.gob.pe" },
+    { k: "Inflación 2026 · proyección BCRP", v: "~4,2 %", n: "Meta 1 %-3 %; BCP proyecta 4,7 %", f: "Forbes Perú", u: "https://forbes.pe/economia-y-finanzas/2026-09-10/bcp-elevo-su-proyeccion-de-inflacion-de-42-a-47-para-cierre-de-ano/" },
+    { k: "Tasa de referencia BCRP", v: "4,25 %", n: "Más de un año sin cambios", f: "Perú Retail", u: "https://www.peru-retail.com/bcrp-mantiene-la-tasa-de-referencia-en-425-por-mas-de-un-ano-que-factores-influyen-en-su-decision/" },
+    { k: "Dengue · fallecidos 2026", v: "75", n: "Corte semana epidemiológica 40", f: "CDC-Minsa", u: "https://www.dge.gob.pe/portalnuevo/?p=4861" },
+    { k: "Congreso bicameral", v: "60 + 130", n: "Senadores y diputados", f: "Diario Libre", u: "https://www.diariolibre.com/mundo/america-latina/2026/07/24/peru-establece-un-sistema-parlamentario-bicameral/3610006" }
+  ],
 
   /* ───────────── SECTORES (cada uno es una estación de la Ruta) ───────────── */
   sectores: [

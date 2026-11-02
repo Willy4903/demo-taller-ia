@@ -1,4 +1,4 @@
-/* Perú en Claro · portal de noticias (mobile-first, sin dependencias externas) */
+/* Contexto Perú · panel de inteligencia cívica (mobile-first, sin dependencias de código) */
 (function () {
   "use strict";
   var ED = window.EDITORIAL, NOT = window.NOTICIAS || { items: [] };
@@ -48,27 +48,10 @@
   function racha() { var set = {}; S.dias.forEach(function (d) { set[d] = 1; }); var n = 0, d = new Date(); while (set[ymd(d)]) { n++; d.setDate(d.getDate() - 1); } return n; }
   (function () { var h = ymd(new Date()); if (S.dias.indexOf(h) < 0) S.dias.push(h); if (S.bonus !== h) { S.bonus = h; S.xp += 5; } S.dias = S.dias.slice(-60); guardar(); })();
   function pctNivel() { var i = nivelDe(S.xp), nv = NIVELES[i], sig = NIVELES[i + 1]; return sig ? (S.xp - nv.min) / (sig.min - nv.min) * 100 : 100; }
-  function xpChip() { var nv = NIVELES[nivelDe(S.xp)]; $("#xpnivel").textContent = nv.ic; $("#xpnum").textContent = S.xp + " XP"; }
+  function xpChip() { var nv = NIVELES[nivelDe(S.xp)]; $("#xpchip").title = "Nivel: " + nv.n; $("#xpnum").textContent = S.xp + " XP"; }
 
-  /* ───── arte editorial (SVG generado) ───── */
-  var _g = 0;
-  function arte(id, c) {
-    var g = "g" + (++_g), grid = ""; for (var i = 25; i < 400; i += 25) grid += '<path d="M' + i + ' 0V225"/>'; for (var j = 25; j < 225; j += 25) grid += '<path d="M0 ' + j + 'H400"/>';
-    var M = {
-      politica: '<g fill="rgba(255,255,255,.1)" stroke="#fff" stroke-width="3" stroke-linejoin="round"><path d="M100 88h200L200 46z"/><path d="M118 98v56M158 98v56M200 98v56M242 98v56M282 98v56" fill="none"/><path d="M92 160h216v10H92z" fill="#fff"/></g>',
-      economia: '<g fill="#fff" fill-opacity=".85"><rect x="88" y="140" width="28" height="42" rx="4"/><rect x="130" y="116" width="28" height="66" rx="4"/><rect x="172" y="96" width="28" height="86" rx="4"/><rect x="214" y="72" width="28" height="110" rx="4"/><rect x="256" y="46" width="28" height="136" rx="4"/></g><polyline points="102,126 144,98 186,80 228,54 270,28" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/><circle cx="270" cy="28" r="8" fill="#fff"/>',
-      salud: '<path d="M30 125h95l18-48 30 92 26-62 14 18h157" fill="none" stroke="#fff" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><g fill="#fff"><rect x="182" y="34" width="36" height="12" rx="3"/><rect x="194" y="22" width="12" height="36" rx="3"/></g>',
-      tecnologia: '<g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M60 60h80v50h70v-30h90M60 170h120v-40h60v50h100M140 30v30M280 80v-40"/></g><g fill="#fff"><circle cx="60" cy="60" r="7"/><circle cx="300" cy="80" r="7"/><circle cx="60" cy="170" r="7"/><circle cx="340" cy="180" r="7"/><circle cx="140" cy="30" r="6"/><circle cx="280" cy="40" r="6"/></g><rect x="165" y="92" width="70" height="46" rx="8" fill="rgba(255,255,255,.12)" stroke="#fff" stroke-width="3"/>',
-      ia: '<g stroke="#fff" stroke-width="2.5" stroke-opacity=".75" fill="none"><path d="M90 60L200 40 310 70M90 60L150 112 200 40M90 60L120 170M150 112L120 170 220 150 310 70M150 112L220 150M200 40L260 118 310 70M260 118L220 150 330 175M260 118L330 175M120 170L220 150"/></g><g fill="#fff"><circle cx="90" cy="60" r="8"/><circle cx="200" cy="40" r="8"/><circle cx="310" cy="70" r="8"/><circle cx="150" cy="112" r="8"/><circle cx="260" cy="118" r="8"/><circle cx="120" cy="170" r="8"/><circle cx="220" cy="150" r="8"/><circle cx="330" cy="175" r="8"/></g><rect x="170" y="88" width="60" height="46" rx="9" fill="rgba(255,255,255,.14)" stroke="#fff" stroke-width="3"/><text x="200" y="120" text-anchor="middle" font-family="system-ui,sans-serif" font-size="26" font-weight="800" fill="#fff">IA</text>',
-      deporte: '<g fill="none" stroke="#fff" stroke-width="3"><circle cx="200" cy="112" r="62" fill="rgba(255,255,255,.1)"/><path d="M200 82l26 19-10 30h-32l-10-30z" fill="#fff" fill-opacity=".9"/><path d="M200 82V52M226 101l30-10M216 131l18 26M184 131l-18 26M174 101l-30-10"/></g><path d="M20 200q180-60 360 0" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="3"/>',
-      investigacion: '<g fill="none" stroke="#fff" stroke-width="3"><rect x="250" y="40" width="90" height="120" rx="8" fill="rgba(255,255,255,.1)"/><path d="M265 70h60M265 90h60M265 110h40"/></g><circle cx="170" cy="105" r="52" fill="rgba(255,255,255,.1)" stroke="#fff" stroke-width="7"/><path d="M208 144l52 50" stroke="#fff" stroke-width="13" stroke-linecap="round"/>',
-      coyuntura: '<g fill="none" stroke="#fff" stroke-width="3"><circle cx="200" cy="112" r="74"/><circle cx="200" cy="112" r="56" stroke-opacity=".5"/><path d="M200 30v14M200 180v14M118 112h14M268 112h14" stroke-linecap="round"/></g><polygon points="200,52 214,112 200,126 186,112" fill="#fff"/><polygon points="200,172 214,112 200,98 186,112" fill="#fff" fill-opacity=".35"/>',
-      mundo: '<g fill="none" stroke="#fff" stroke-width="3"><circle cx="200" cy="112" r="70" fill="rgba(255,255,255,.08)"/><ellipse cx="200" cy="112" rx="30" ry="70"/><path d="M130 112h140M142 80h116M142 144h116"/><ellipse cx="200" cy="112" rx="110" ry="28" stroke-opacity=".5" transform="rotate(-22 200 112)"/></g>'
-    };
-    M.brujula = M.coyuntura;
-    return '<svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="' + g + '" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="' + c + '"/><stop offset="1" stop-color="#0a0a0d"/></linearGradient><radialGradient id="' + g + 'r" cx=".78" cy=".2" r=".65"><stop offset="0" stop-color="#fff" stop-opacity=".45"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs><rect width="400" height="225" fill="url(#' + g + ')"/><rect width="400" height="225" fill="url(#' + g + 'r)"/><g stroke="#fff" stroke-opacity=".07" fill="none">' + grid + "</g>" + (M[id] || M.coyuntura) + "</svg>";
-  }
-  window.cpImg = function (im) { var d = im.parentNode, s = d.getAttribute("data-s") || "coyuntura"; d.innerHTML = arte(s, (SECT[s] || SECT.coyuntura).color) + (d.getAttribute("data-b") ? '<span class="badge">' + esc(d.getAttribute("data-b")) + "</span>" : ""); };
+  /* ───── fotos reales: si una imagen falla, se quita (nunca se sustituye por ilustraciones) ───── */
+  window.cpImg = function (im) { var d = im.parentNode; if (!d) return; var r = d.closest && d.closest(".row"); if (r) r.classList.add("nofoto"); d.remove(); };
 
   /* ───── modelo de historias ───── */
   var ITEMS = (NOT.items || []).slice().sort(function (a, b) { return (Date.parse(b.fecha) || 0) - (Date.parse(a.fecha) || 0); });
@@ -81,20 +64,49 @@
   function asFeed(it) { return { kind: "feed", ambito: it.ambito, sector: it.sector, titulo: it.titulo, resumen: it.resumen || "", url: it.url, fuente: it.fuente, tipo: it.tipo || "comercial", fecha: it.fecha, nota: it.nota, imagen: it.imagen }; }
   var FEED = ITEMS.map(asFeed);
 
-  function thumb(s, badge) {
-    var c = (SECT[s.sector] || SECT.coyuntura).color, b = badge ? esc(badge) : "";
-    var inner = s.imagen ? '<img loading="lazy" decoding="async" referrerpolicy="no-referrer" alt="" src="' + safeUrl(s.imagen) + '" onerror="cpImg(this)">' : arte(s.sector, c) + (b ? '<span class="badge">' + b + "</span>" : "");
-    return '<div class="img" data-s="' + esc(s.sector) + '" data-b="' + b + '">' + inner + "</div>";
+  var EI = NOT.imagenes_editorial || {};
+  function fotoInfo(s) {
+    if (s.imagen) return { u: s.imagen, c: s.fuente || "" };
+    var k = s.kind === "hilo" ? "hilo" : s.id, e = EI[k];
+    if (e && e.url) return { u: e.url, c: e.fuente || "" };
+    if (s.kind === "hilo") { for (var j = 0; j < INS.length; j++) { var f = EI[INS[j].id]; if (f && f.url) return { u: f.url, c: f.fuente || "" }; } }
+    if (s.kind === "feed") return null;
+    var it = ITEMS.filter(function (x) { return x.sector === s.sector && x.imagen; })[0];
+    return it ? { u: it.imagen, c: it.fuente || "" } : null;
+  }
+  function thumb(s, cred) {
+    var f = fotoInfo(s); if (!f) return "";
+    return '<div class="ph"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" alt="" src="' + safeUrl(f.u) + '" onerror="cpImg(this)">' + (cred && f.c ? '<span class="cred">Foto: ' + esc(f.c) + "</span>" : "") + "</div>";
   }
   function attrs(s) { return 'href="' + (externo(s) ? safeUrl(s.url) : esc(s.url)) + '"' + (externo(s) ? ' target="_blank" rel="noopener noreferrer"' : ""); }
   function kicker(s) { var x = SECT[s.sector] || SECT.coyuntura; return '<span class="kick" style="--c:' + x.color + '">' + esc(x.nombre) + "</span>"; }
   function meta(s) {
     if (externo(s)) { var r = s.fecha ? relativo(s.fecha) : null; return '<div class="meta"><span class="tp ' + esc(s.tipo) + '">' + esc(s.tipo) + "</span><span>" + esc(s.fuente) + "</span><span>· " + esc(r || s.nota || "fecha no confirmada") + " ↗</span></div>"; }
-    return '<div class="meta"><span>Perú en Claro · ' + esc(corta(ED.corte + "T12:00:00Z")) + "</span>" + (s.nivel ? '<span class="conf ' + (s.nivel === "alta" ? "alta" : "media") + '">Confianza ' + (s.nivel === "alta" ? "alta" : "media") + "</span>" : "") + "</div>";
+    return '<div class="meta"><span>Contexto Perú · ' + esc(corta(ED.corte + "T12:00:00Z")) + "</span>" + (s.nivel ? '<span class="conf ' + (s.nivel === "alta" ? "alta" : "media") + '">Confianza ' + (s.nivel === "alta" ? "alta" : "media") + "</span>" : "") + "</div>";
   }
-  function lead(s) { return '<a class="s lead" ' + attrs(s) + ">" + thumb(s, s.badge) + '<div>' + '<div style="margin-top:12px">' + kicker(s) + "</div><h2>" + esc(s.titulo) + "</h2><p>" + esc(sin(s.kind === "hilo" ? "Poder, bolsillo, vida diaria y mundo: cuatro frentes que explican el momento del país." : primera(s.resumen), 220)) + "</p>" + meta(s) + "</div></a>"; }
-  function row(s) { return '<a class="s row" ' + attrs(s) + "><div>" + kicker(s) + "<h3>" + esc(s.titulo) + "</h3>" + (s.resumen ? "<p>" + esc(sin(primera(s.resumen), 160)) + "</p>" : "") + meta(s) + "</div>" + thumb(s) + "</a>"; }
-  function card(s) { return '<a class="s card" ' + attrs(s) + ">" + thumb(s, s.badge) + "<div>" + '<div style="margin-top:10px">' + kicker(s) + "</div><h3>" + esc(s.titulo) + "</h3><p>" + esc(sin(primera(s.resumen), 150)) + "</p>" + meta(s) + "</div></a>"; }
+  /* entidades oficiales para contrastar cada tema */
+  var CONTRASTE = {
+    politica: [["JNE", "https://www.jne.gob.pe"], ["ONPE", "https://www.onpe.gob.pe"]],
+    economia: [["BCRP", "https://www.bcrp.gob.pe"], ["INEI", "https://www.inei.gob.pe"]],
+    salud: [["CDC-Minsa", "https://www.dge.gob.pe"], ["Minsa", "https://www.gob.pe/minsa"]],
+    tecnologia: [["PCM", "https://www.gob.pe/pcm"], ["El Peruano", "https://elperuano.pe"]],
+    ia: [["PCM", "https://www.gob.pe/pcm"], ["El Peruano", "https://elperuano.pe"]],
+    deporte: [["FPF", "https://www.fpf.org.pe"]],
+    investigacion: [["MPFN", "https://www.mpfn.gob.pe"], ["Contraloría", "https://www.gob.pe/contraloria"]],
+    coyuntura: [["INEI", "https://www.inei.gob.pe"], ["El Peruano", "https://elperuano.pe"]],
+    mundo: [["ONU", "https://news.un.org/es/"]]
+  };
+  function contrasta(sector) {
+    var c = CONTRASTE[sector] || CONTRASTE.coyuntura;
+    return '<div class="contrasta"><a href="' + safeUrl(c[0][1]) + '" target="_blank" rel="noopener noreferrer">Contrastar en ' + esc(c.map(function (x) { return x[0]; }).join(" / ")) + ' ↗</a><span class="sellos">' + c.map(function (x) { return '<a href="' + safeUrl(x[1]) + '" target="_blank" rel="noopener noreferrer" aria-label="Abrir ' + esc(x[0]) + '">' + esc(x[0]) + "</a>"; }).join("") + "</span></div>";
+  }
+  function leadCard(s) {
+    var raw = s.raw || {}, fu = (raw.fuentes || [])[0];
+    return '<article class="lead-card"><a href="' + esc(s.url) + '" aria-hidden="true" tabindex="-1">' + thumb(s, true) + "</a>" + kicker(s) + '<span class="kick" style="margin-left:8px;color:var(--red-t)">· ANÁLISIS</span><h2><a href="' + esc(s.url) + '">' + esc(s.titulo) + '</a></h2><p class="res">' + esc(sin(primera(s.resumen), 260)) + "</p>" + meta(s) +
+      '<div class="acc"><a class="btn" href="' + esc(s.url) + '">Leer el análisis →</a>' + (fu ? '<a class="lk" href="' + safeUrl(fu.u) + '" target="_blank" rel="noopener noreferrer">Leer fuente original ↗</a>' : "") + "</div>" + contrasta(s.sector) + "</article>";
+  }
+  function row(s) { var f = thumb(s); return '<a class="s row' + (f ? "" : " nofoto") + '" ' + attrs(s) + "><div>" + kicker(s) + "<h3>" + esc(s.titulo) + "</h3>" + (s.resumen ? "<p>" + esc(sin(primera(s.resumen), 160)) + "</p>" : "") + meta(s) + "</div>" + f + "</a>"; }
+  function card(s) { return '<a class="s card" ' + attrs(s) + ">" + thumb(s) + "<div>" + kicker(s) + "<h3>" + esc(s.titulo) + "</h3><p>" + esc(sin(primera(s.resumen), 150)) + "</p>" + meta(s) + "</div></a>"; }
   function sh(titulo, color, enlace, txt) { return '<div class="sh" style="--c:' + color + '"><h2>' + esc(titulo) + "</h2>" + (enlace ? '<a href="' + enlace + '">' + esc(txt || "Ver todo") + " →</a>" : "") + "</div>"; }
 
   /* ───── radar de temas (derivado de las notas indexadas) ───── */
@@ -110,26 +122,51 @@
     return arr.filter(function (a) { return a[1] >= min; }).slice(0, 6).map(function (a) { return { t: forma[a[0]] || a[0], n: a[1] }; });
   }
   function termDelDia() { var d = new Date(); var i = (d.getFullYear() * 400 + d.getMonth() * 31 + d.getDate()) % ED.glosario.length; return ED.glosario[i]; }
-  function rail() {
-    var r = radar(), t = termDelDia(), niv = NIVELES[nivelDe(S.xp)], hechas = ORDEN.filter(function (i) { return S.hechas[i]; }).length;
-    return '<section><h3 class="rt">Radar de temas</h3>' + (r.length ? r.map(function (x, i) { return '<div class="num"><i>' + (i + 1) + "</i><div><b>" + esc(x.t) + "</b><small>" + x.n + (x.n === 1 ? " nota" : " notas") + "</small></div></div>"; }).join("") : '<div class="vacio">Aún no hay suficientes notas.</div>') + "</section>" +
-      '<section><div class="promo"><span class="kick" style="color:#ffb3bb">Aprende jugando</span><h3>La Ruta del ciudadano informado</h3><p>' + niv.ic + " " + niv.n + " · " + S.xp + " XP · " + hechas + " de " + ORDEN.length + ' estaciones superadas.</p><a class="btn w" href="#/ruta">' + (hechas ? "Continuar la Ruta" : "Empezar la Ruta") + " →</a></div></section>" +
-      '<section><h3 class="rt">Término del día</h3><div class="dia"><b>' + esc(t.t) + "</b><p>" + esc(t.d) + '</p></div><p style="margin:10px 0 0"><a href="#/glosario" style="font-weight:800;color:var(--brand)">Ver el glosario completo →</a></p></section>';
+  function rutaMini() {
+    var niv = NIVELES[nivelDe(S.xp)], sig = NIVELES[nivelDe(S.xp) + 1], hechas = ORDEN.filter(function (i) { return S.hechas[i]; }).length;
+    var pend = ORDEN.findIndex(function (i) { return !S.hechas[i]; }); if (pend < 0) pend = ORDEN.length - 1;
+    var ini = Math.max(0, Math.min(pend - 1, ORDEN.length - 5)), vis = ORDEN.slice(ini, ini + 5);
+    var h = '<div class="rmini"><div class="nv"><div class="medalla">' + niv.ic + "</div><div><b>" + niv.n + '</b><small class="mono">' + hechas + " de " + ORDEN.length + " estaciones</small></div></div>" +
+      '<div class="bar" aria-hidden="true"><i style="width:' + Math.min(100, pctNivel()) + '%"></i></div><ol class="tl" style="list-style:none;margin:0;padding:0">';
+    h += vis.map(function (id) {
+      var k = ORDEN.indexOf(id), s = SECT[id], hecho = !!S.hechas[id], disp = !hecho && (k === 0 || !!S.hechas[ORDEN[k - 1]]), est = hecho ? "hecho" : disp ? "disp" : "bloq";
+      return '<li class="' + est + '"><span class="nodo">' + (hecho ? "✓" : disp ? String(k + 1) : "🔒") + '</span><div class="tx"><b>' + String(k + 1).padStart(2, "0") + ". " + esc(id === "brujula" ? "Brújula: leer noticias" : s.nombre) + "</b><span>" + (hecho ? "Superada · " + S.hechas[id].ac + "/3" : "+50 XP") + "</span>" + (hecho || disp ? '<br><button class="go" data-m="' + id + '">' + (hecho ? "Repetir misión" : "Empezar misión →") + "</button>" : "") + "</div></li>";
+    }).join("") + "</ol>";
+    var g = NOT.estado_fuentes || {}, tot = Object.keys(g).length, ok = Object.keys(g).filter(function (k) { return g[k].ok; }).length;
+    h += '<div class="alerta"><b>Check actualización automática</b>' + (NOT.generado ? "Última carga: " + esc(fmtFecha(NOT.generado, true)).replace(/\.$/, "") + ". " : "Aún sin carga automática. ") + (tot ? '<span class="mono">' + ok + "/" + tot + "</span> fuentes respondieron." : "Próxima: 08:00 o 23:00 (Lima).") + (tot && ok < tot ? ' <span class="err">' + (tot - ok) + " sin respuesta.</span>" : "") + "</div>";
+    return h + '<p style="margin:14px 0 0"><a class="btn w" href="#/ruta">' + (hechas ? "Continuar la Ruta" : "Empezar la Ruta") + " →</a></p>" + (sig ? '<p class="mono" style="margin:10px 0 0;font-size:.72rem;color:var(--tx3)">' + S.xp + " / " + sig.min + " XP para " + sig.n + "</p>" : "") + "</div>";
   }
+  function spark(pts, grande) {
+    if (!pts || pts.length < 3) return "";
+    var w = 240, h = grande ? 120 : 54, p = 6, mn = Math.min.apply(null, pts), mx = Math.max.apply(null, pts), d = mx - mn || 1;
+    var xy = pts.map(function (v, i) { return [p + i * (w - 2 * p) / (pts.length - 1), h - p - (v - mn) / d * (h - 2 * p)]; });
+    var ln = xy.map(function (q) { return q[0].toFixed(1) + "," + q[1].toFixed(1); }).join(" "), ult = xy[xy.length - 1];
+    return '<svg class="spark' + (grande ? " g" : "") + '" viewBox="0 0 ' + w + " " + h + '" preserveAspectRatio="none" role="img" aria-label="Evolución reciente: de ' + mn.toFixed(3) + " a " + mx.toFixed(3) + '"><polygon points="' + p + "," + (h - p) + " " + ln + " " + (w - p) + "," + (h - p) + '" fill="#10B981" fill-opacity=".14"/><polyline points="' + ln + '" fill="none" stroke="#10B981" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/><circle cx="' + ult[0].toFixed(1) + '" cy="' + ult[1].toFixed(1) + '" r="3.5" fill="#34D399"/></svg>';
+  }
+  function indicadores(grande) {
+    var h = '<div class="ind">', tc = (NOT.indicadores || {}).tipo_cambio;
+    if (tc && tc.serie && tc.serie.length >= 3) {
+      var v = tc.serie.map(function (x) { return x.v; }), ult = v[v.length - 1], ant = v[v.length - 2], dif = ult - ant;
+      h += '<div class="i"><span class="k">USD / PEN · venta</span><span class="v">S/ ' + ult.toFixed(3) + '</span><span class="n">Variación diaria <span class="mono">' + (dif >= 0 ? "+" : "") + dif.toFixed(3) + "</span> · " + esc(tc.fuente || "BCRP") + " · " + esc(corta(tc.serie[tc.serie.length - 1].f + "T12:00:00Z")) + "</span>" + spark(v, grande) + "</div>";
+    }
+    (ED.indicadores || []).forEach(function (x) { h += '<div class="i"><span class="k">' + esc(x.k) + '</span><span class="v">' + esc(x.v) + '</span><span class="n">' + esc(x.n) + ' · <a href="' + safeUrl(x.u) + '" target="_blank" rel="noopener noreferrer">' + esc(x.f) + "</a></span></div>"; });
+    return h + "</div>" + '<p class="mono" style="margin:12px 0 0;font-size:.68rem;color:var(--tx3)">Corte editorial: ' + esc(corta(ED.corte + "T12:00:00Z")) + ". Verifica en la fuente primaria.</p>";
+  }
+  function glosarioDia() { var t = termDelDia(); return '<div class="dia"><b>' + esc(t.t) + "</b><p>" + esc(t.d) + '</p><a class="mas" href="#/glosario">Ver el glosario completo →</a></div>'; }
+  function radarHTML() { var r = radar(); return r.length ? r.map(function (x, i) { return '<div class="num"><i>' + (i + 1) + "</i><div><b>" + esc(x.t) + "</b><small>" + x.n + (x.n === 1 ? " nota" : " notas") + "</small></div></div>"; }).join("") : '<div class="vacio">Aún no hay suficientes notas.</div>'; }
+  function rail() { return '<section><h3 class="rt">Radar de temas</h3>' + radarHTML() + '</section><section><h3 class="rt">Término del día</h3>' + glosarioDia() + "</section>"; }
 
   /* ───── VISTAS ───── */
   function vistaHome() {
-    var rest = INS.filter(function (i) { return ["politica", "economia", "salud"].indexOf(i.sector) < 0; });
-    var side = INS.filter(function (i) { return ["politica", "economia", "salud"].indexOf(i.sector) >= 0; });
-    var h = '<div class="home-top fade">' + (HILO ? lead(HILO) : "") + '<div class="side">' + side.map(row).join("") + "</div></div>";
-    h += '<div class="rail-m">' + rail() + "</div>";
-    h += '<div class="cols"><div>' + sh("Más análisis", "#000") + '<div class="grid4">' + rest.map(card).join("") + "</div>";
-    h += sh("Últimas notas de los medios", "var(--brand)") + '<div class="chips" id="f-chips"></div><div id="f-lista"></div><p style="text-align:center;margin-top:14px" id="f-mas"></p>';
+    var principal = INS.filter(function (i) { return i.id === "politica"; })[0] || INS[0], otros = INS.filter(function (i) { return i !== principal; });
+    var h = '<div class="bento fade"><div class="b1 panel">' + (HILO ? '<a class="panorama" href="#/a/hilo"><b>Panorama</b><span>' + esc(HILO.titulo) + "</span></a>" : "") + (principal ? leadCard(principal) : "") + '<div class="minis">' + otros.slice(0, 6).map(card).join("") + "</div></div>";
+    h += '<div class="panel"><h3 class="pt">La Ruta de Aprendizaje <a href="#/ruta">Ver todo</a></h3>' + rutaMini() + "</div>";
+    h += '<div class="stack"><div class="panel"><h3 class="pt">Indicadores <a href="#/estadisticas">Estadísticas</a></h3>' + indicadores(false) + '</div><div class="panel"><h3 class="pt">Glosario cívico</h3>' + glosarioDia() + '</div><div class="panel"><h3 class="pt">Radar de temas</h3>' + radarHTML() + "</div></div></div>";
+    h += sh("Últimas notas de los medios", "var(--gold)", "#/historial", "Historial") + '<div class="chips" id="f-chips"></div><div class="lista2" id="f-lista"></div><p style="text-align:center;margin-top:14px" id="f-mas"></p>';
     ED.sectores.forEach(function (s) {
-      var its = porSector(s.id).slice(0, 3); if (!its.length) return;
-      h += sh(s.nombre, s.color, "#/s/" + s.id, "Ver sección") + its.map(function (i) { return row(asFeed(i)); }).join("");
+      var its = porSector(s.id).slice(0, 4); if (!its.length) return;
+      h += sh(s.nombre, s.color, "#/s/" + s.id, "Ver sección") + '<div class="lista2">' + its.map(function (i) { return row(asFeed(i)); }).join("") + "</div>";
     });
-    h += '</div><aside class="rail-d rail">' + rail() + "</aside></div>";
     return h;
   }
   var filtro = "todas", cuantas = 8;
@@ -154,15 +191,15 @@
     var terms = (s.terminos || []).filter(function (t) { return GLOS[t]; });
     var h = '<div class="fade"><div class="shead" style="--c:' + s.color + '"><h1>' + s.icono + " " + esc(s.nombre) + "</h1><p>" + esc(s.lema) + '</p></div><div class="cols sec-cols"><div>';
     var inss = INS.filter(function (i) { return i.sector === id; });
-    h += ins ? lead(ins) : "";
-    if (inss.length > 1) h += inss.slice(1).map(row).join("");
+    h += '<div class="panel">' + (ins ? leadCard(ins) : "") + "</div>";
+    if (inss.length > 1) h += '<div class="minis">' + inss.slice(1).map(card).join("") + "</div>";
     h += '<div class="entender"><h2>Para entender ' + esc(s.nombre.toLowerCase()) + '</h2><ul>' + s.esencial.map(function (e) { return "<li>" + gl(e) + "</li>"; }).join("") + "</ul></div>";
     h += '<div class="cta-m" style="--c:' + s.color + '"><div><b>' + (hecho ? "✅ Misión superada" : "🎯 Misión: " + esc(s.nombre)) + "</b><small>" + (hecho ? "Puedes repetirla cuando quieras." : "3 preguntas · gana hasta 80 XP") + '</small></div><button class="btn" data-m="' + id + '">' + (hecho ? "Repetir" : "Empezar") + "</button></div>";
     var vacio = '<div class="vacio">Aún no hay notas en esta sección. La próxima actualización automática (08:00 / 23:00) las incorporará.</div>';
     if (s.ambitos) {
       var enPeru = its.filter(function (i) { return ambitoDe(i) === "peru"; }), enMundo = its.filter(function (i) { return ambitoDe(i) === "mundo"; });
-      h += sh("IA en el Perú", s.color) + (enPeru.length ? enPeru.map(row).join("") : vacio) + sh("IA en el mundo", s.color) + (enMundo.length ? enMundo.map(row).join("") : vacio);
-    } else h += sh("Últimas notas · " + s.nombre, s.color) + (its.length ? its.map(row).join("") : vacio);
+      h += sh("IA en el Perú", s.color) + '<div class="lista2">' + (enPeru.length ? enPeru.map(row).join("") : vacio) + "</div>" + sh("IA en el mundo", s.color) + '<div class="lista2">' + (enMundo.length ? enMundo.map(row).join("") : vacio) + "</div>";
+    } else h += sh("Últimas notas · " + s.nombre, s.color) + '<div class="lista2">' + (its.length ? its.map(row).join("") : vacio) + "</div>";
     h += '</div><aside class="rail"><section><h3 class="rt">Términos clave</h3>' + terms.map(function (t) { return '<button class="term" data-gl="' + t + '">' + esc(GLOS[t].t) + "</button>"; }).join("") + "</section>" + rail().split("</section>").slice(1).join("</section>") + "</aside></div></div>";
     return h;
   }
@@ -173,8 +210,9 @@
     var sid = esHilo ? "coyuntura" : c.sector, s = SECT[sid], a = ARTS[id] || ARTS[sid] || {};
     var titulo = esHilo ? ED.hilo.titulo : c.titulo, resumen = esHilo ? "Cuatro frentes explican el momento que vive el país tras el cambio de gobierno." : c.resumen;
     var h = '<article class="art fade"><div class="crumb"><a href="#/">Inicio</a> › <a href="#/s/' + sid + '">' + esc(s.nombre) + "</a></div>" + kicker({ sector: sid }) + "<h1>" + esc(titulo) + '</h1><p class="stand">' + esc(esHilo ? resumen : primera(resumen)) + "</p>";
-    h += '<div class="by"><span><b>Redacción Perú en Claro</b></span><span>Corte ' + esc(fmtFecha(ED.corte + "T12:00:00Z")) + "</span>" + (esHilo ? "" : '<span class="conf ' + (c.nivel === "alta" ? "alta" : "media") + '">Confianza ' + (c.nivel === "alta" ? "alta" : "media · verifica") + "</span>") + '<button class="share" id="b-share">↗ Compartir</button></div>';
-    h += '<div class="img" data-s="' + sid + '">' + arte(sid, s.color) + '</div><p class="cap">Ilustración generada. Las cifras provienen de las fuentes enlazadas al final.</p>';
+    h += '<div class="by"><span><b>Redacción Contexto Perú</b></span><span>Corte ' + esc(fmtFecha(ED.corte + "T12:00:00Z")) + "</span>" + (esHilo ? "" : '<span class="conf ' + (c.nivel === "alta" ? "alta" : "media") + '">Confianza ' + (c.nivel === "alta" ? "alta" : "media · verifica") + "</span>") + '<button class="share" id="b-share">↗ Compartir</button></div>';
+    var pf = esHilo ? HILO : INS.filter(function (i) { return i.id === id; })[0], fo = pf ? fotoInfo(pf) : null;
+    if (fo) h += thumb(pf, false) + '<p class="cap">Foto: ' + esc(fo.c || "fuente enlazada") + ". Imagen tomada de la fuente citada; derechos de su autor. Las cifras provienen de las fuentes enlazadas al final.</p>";
     if (esHilo) {
       var mapa = { Poder: "politica", Bolsillo: "economia", "Vida diaria": "salud", Mundo: "mundo" };
       h += ED.hilo.puntos.map(function (p, i) { var t = mapa[p.k]; return '<a class="s hilo-li" href="#/a/' + t + '"><i>' + (i + 1) + "</i><div><b>" + esc(p.k) + "</b><p style=\"margin:2px 0 0;font-size:1rem\">" + esc(p.t) + ' <span style="color:var(--brand);font-weight:800">Leer más →</span></p></div></a>'; }).join("");
@@ -239,19 +277,52 @@
     return h;
   }
 
+  function vistaEstadisticas() {
+    var g = NOT.estado_fuentes || {}, nom = Object.keys(g), ok = nom.filter(function (k) { return g[k].ok; }).length, cnt = {};
+    ITEMS.forEach(function (i) { cnt[i.sector] = (cnt[i.sector] || 0) + 1; });
+    var max = Math.max.apply(null, ED.sectores.map(function (x) { return cnt[x.id] || 0; }).concat([1]));
+    var indep = ITEMS.filter(function (i) { return i.tipo === "independiente"; }).length;
+    var h = '<div class="fade"><div class="shead" style="--c:var(--gold)"><h1>Estadísticas</h1><p>Indicadores con fuente y cobertura de las notas que procesa este sitio. Las cifras externas se contrastan siempre en la fuente primaria.</p></div>';
+    h += '<div class="kpis"><div class="kpi"><div class="k">Notas indexadas</div><div class="v">' + ITEMS.length + '</div><small>Últimos 30 días</small></div><div class="kpi"><div class="k">Fuentes activas</div><div class="v">' + (nom.length ? ok + "/" + nom.length : "—") + '</div><small>Última carga</small></div><div class="kpi"><div class="k">Medios independientes</div><div class="v">' + indep + '</div><small>Notas en el índice</small></div><div class="kpi"><div class="k">Análisis propios</div><div class="v">' + INS.length + '</div><small>Con fuentes enlazadas</small></div></div>';
+    h += '<div class="bento"><div class="panel b1"><h3 class="pt">Indicadores</h3>' + indicadores(true) + '</div><div class="panel"><h3 class="pt">Notas por sección</h3>' + ED.sectores.map(function (x) { var n = cnt[x.id] || 0; return '<div class="hbar" style="--c:' + x.color + '"><span>' + esc(x.nombre) + '</span><span><i style="width:' + Math.round(n / max * 100) + '%"></i></span><span>' + n + "</span></div>"; }).join("") + '</div><div class="panel"><h3 class="pt">Estado de las fuentes</h3>' + (nom.length ? nom.map(function (k) { return '<div class="fuente-i"><span>' + esc(k) + '</span><span class="' + (g[k].ok ? "ok" : "no") + '">' + (g[k].ok ? "OK · " + g[k].n : "sin respuesta") + "</span></div>"; }).join("") : '<div class="vacio">Aún no hay una carga automática registrada.</div>') + "</div></div></div>";
+    return h;
+  }
+  var hSec = "todos", hMax = 30;
+  function vistaHistorial() {
+    var h = '<div class="fade"><div class="shead" style="--c:var(--gold)"><h1>Historial</h1><p>Todas las notas indexadas, de la más reciente a la más antigua. Cada una enlaza al medio original.</p></div><div class="chips" id="h-chips"></div><div id="h-lista"></div><p style="text-align:center;margin-top:14px" id="h-mas"></p></div>';
+    setTimeout(pintarHistorial, 0);
+    return h;
+  }
+  function pintarHistorial() {
+    var c = $("#h-chips"); if (!c) return;
+    c.innerHTML = [{ id: "todos", nombre: "Todos" }].concat(ED.sectores).map(function (x) { return '<button class="chip' + (x.id === hSec ? " on" : "") + '" data-s="' + x.id + '">' + esc(x.nombre) + "</button>"; }).join("");
+    $$("button", c).forEach(function (b) { b.onclick = function () { hSec = b.getAttribute("data-s"); hMax = 30; pintarHistorial(); }; });
+    var l = ITEMS.filter(function (i) { return hSec === "todos" || i.sector === hSec; }), out = "", dia = "";
+    l.slice(0, hMax).forEach(function (i) {
+      var d = i.fecha ? new Intl.DateTimeFormat("es-PE", { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: TZ }).format(new Date(i.fecha)) : "Fecha no confirmada";
+      if (d !== dia) { dia = d; out += '<div class="dia-h">' + esc(d) + "</div>"; }
+      out += row(asFeed(i));
+    });
+    $("#h-lista").innerHTML = out || '<div class="vacio">No hay notas en esta sección todavía.</div>';
+    $("#h-mas").innerHTML = l.length > hMax ? '<button class="btn o" id="h-b">Ver más (' + (l.length - hMax) + ")</button>" : "";
+    var b = $("#h-b"); if (b) b.onclick = function () { hMax += 30; pintarHistorial(); };
+  }
+
   /* ───── enrutador ───── */
-  var TITULO = "Perú en Claro";
+  var TITULO = "Contexto Perú";
   function ruta() { var h = location.hash.replace(/^#\/?/, ""), p = h.split("/"); return { v: p[0] || "inicio", id: p[1] }; }
   function navegar() {
     var r = ruta(), html, tab = "inicio", nav = "inicio", t = TITULO;
     if (r.v === "s" && SECT[r.id] && r.id !== "brujula") { html = vistaSector(r.id); nav = r.id; tab = "secciones"; t = SECT[r.id].nombre + " · " + TITULO; }
-    else if (r.v === "a") { html = vistaArticulo(r.id); var ar = ED.insights.filter(function (x) { return x.sector === r.id; })[0]; nav = r.id === "hilo" ? "inicio" : (ar ? ar.sector : "inicio"); t = (r.id === "hilo" ? ED.hilo.titulo : ar ? ar.titulo : TITULO) + " · " + TITULO; }
+    else if (r.v === "a") { html = vistaArticulo(r.id); var ar = ED.insights.filter(function (x) { return (x.id || x.sector) === r.id; })[0]; nav = r.id === "hilo" ? "inicio" : (ar ? ar.sector : "inicio"); t = (r.id === "hilo" ? ED.hilo.titulo : ar ? ar.titulo : TITULO) + " · " + TITULO; }
     else if (r.v === "ruta") { html = vistaRuta(); nav = "ruta"; tab = "ruta"; t = "La Ruta · " + TITULO; }
     else if (r.v === "glosario") { html = vistaGlosario(); nav = "glosario"; tab = "glosario"; t = "Glosario · " + TITULO; }
+    else if (r.v === "estadisticas") { html = vistaEstadisticas(); nav = "estadisticas"; tab = ""; t = "Estadísticas · " + TITULO; }
+    else if (r.v === "historial") { html = vistaHistorial(); nav = "historial"; tab = ""; t = "Historial · " + TITULO; }
     else if (r.v === "fuentes") { html = vistaFuentes(); nav = "fuentes"; tab = ""; t = "Fuentes · " + TITULO; }
     else { html = vistaHome(); }
     $("#app").innerHTML = html; document.title = t;
-    $$("#snav a").forEach(function (a) { var on = a.getAttribute("data-n") === nav; a.classList.toggle("on", on); if (on) a.scrollIntoView({ inline: "center", block: "nearest" }); });
+    $$("#snav a, .mnav a").forEach(function (a) { var on = a.getAttribute("data-n") === nav; a.classList.toggle("on", on); if (on) a.scrollIntoView({ inline: "center", block: "nearest" }); });
     $$("#tabbar [data-t]").forEach(function (a) { a.classList.toggle("on", a.getAttribute("data-t") === tab); });
     if (r.v === "inicio") iniFeed();
     var sh = $("#b-share"); if (sh) sh.onclick = compartir;
@@ -263,7 +334,7 @@
     else if (navigator.clipboard) navigator.clipboard.writeText(location.href).then(function () { toast("Enlace copiado"); });
   }
   function menuNav() {
-    var items = [["inicio", "Inicio", "#/"]].concat(ED.sectores.map(function (s) { return [s.id, s.nombre, "#/s/" + s.id]; }), [["ruta", "Ruta", "#/ruta"], ["glosario", "Glosario", "#/glosario"], ["fuentes", "Fuentes", "#/fuentes"]]);
+    var items = [["inicio", "Inicio", "#/"]].concat(ED.sectores.map(function (s) { return [s.id, s.nombre, "#/s/" + s.id]; }), [["fuentes", "Fuentes", "#/fuentes"]]);
     $("#snav").innerHTML = items.map(function (x) { return '<li><a href="' + x[2] + '" data-n="' + x[0] + '">' + esc(x[1]) + "</a></li>"; }).join("");
   }
 
@@ -275,7 +346,7 @@
   function refrescar() { var r = ruta().v; if (r === "ruta" || r === "s" || r === "inicio") { var y = window.scrollY; navegar(); window.scrollTo(0, y); } }
   function toast(t) { var d = document.createElement("div"); d.className = "toast"; d.textContent = t; document.body.appendChild(d); setTimeout(function () { d.style.transition = "opacity .5s"; d.style.opacity = 0; setTimeout(function () { d.remove(); }, 600); }, 2400); }
   function confeti() {
-    if (reduce) return; var c = $("#confeti"), col = ["#D91023", "#F5B83D", "#111", "#fff", "#2f7bff"];
+    if (reduce) return; var c = $("#confeti"), col = ["#DC2626", "#F59E0B", "#10B981", "#F8FAFC", "#38BDF8"];
     for (var i = 0; i < 80; i++) { var p = document.createElement("i"); p.style.left = Math.random() * 100 + "vw"; p.style.background = col[i % col.length]; p.style.animationDuration = 2 + Math.random() * 2 + "s"; p.style.animationDelay = Math.random() * .5 + "s"; p.style.borderRadius = Math.random() > .5 ? "50%" : "2px"; c.appendChild(p); }
     setTimeout(function () { c.innerHTML = ""; }, 4800);
   }
@@ -324,7 +395,7 @@
     q.addEventListener("input", ir); ir();
   }
   function abrirMenu() {
-    $("#menu-in").innerHTML = '<button class="sx" aria-label="Cerrar" data-x="1">✕</button><div class="paso">Secciones</div><h3>Explora por tema</h3><div class="menu-g">' + ED.sectores.map(function (s) { return '<a href="#/s/' + s.id + '" data-cerrar="1" style="--c:' + s.color + '"><span>' + s.icono + "</span>" + esc(s.nombre) + "</a>"; }).join("") + '</div><div class="menu-g" style="grid-template-columns:1fr 1fr"><a href="#/fuentes" data-cerrar="1" style="--c:#000"><span>🔗</span>Fuentes</a><a href="#/ruta" data-cerrar="1" style="--c:var(--brand)"><span>🧭</span>La Ruta</a></div>';
+    $("#menu-in").innerHTML = '<button class="sx" aria-label="Cerrar" data-x="1">✕</button><div class="paso">Secciones</div><h3>Explora por tema</h3><div class="menu-g">' + ED.sectores.map(function (s) { return '<a href="#/s/' + s.id + '" data-cerrar="1" style="--c:' + s.color + '"><span>' + s.icono + "</span>" + esc(s.nombre) + "</a>"; }).join("") + '</div><div class="menu-g"><a href="#/ruta" data-cerrar="1" style="--c:#D97706"><span>🧭</span>La Ruta</a><a href="#/glosario" data-cerrar="1" style="--c:#D97706"><span>📖</span>Glosario</a><a href="#/estadisticas" data-cerrar="1" style="--c:#10B981"><span>📊</span>Estadísticas</a><a href="#/historial" data-cerrar="1" style="--c:#10B981"><span>🗂️</span>Historial</a><a href="#/fuentes" data-cerrar="1" style="--c:#94A3B8"><span>🔗</span>Fuentes</a></div>';
     abrirHoja("#menu");
   }
 
@@ -362,7 +433,7 @@
   $("#b-buscar").onclick = abrirBuscar; $("#t-bus").onclick = abrirBuscar; $("#t-sec").onclick = abrirMenu;
   (function tema() {
     var r = document.documentElement, g = null; try { g = localStorage.getItem("cp_tema"); } catch (e) {} if (g) r.setAttribute("data-theme", g);
-    $("#b-tema").onclick = function () { var oscuro = r.getAttribute("data-theme") ? r.getAttribute("data-theme") === "dark" : matchMedia("(prefers-color-scheme: dark)").matches; var n = oscuro ? "light" : "dark"; r.setAttribute("data-theme", n); try { localStorage.setItem("cp_tema", n); } catch (e) {} };
+    $("#b-tema").onclick = function () { var oscuro = r.getAttribute("data-theme") ? r.getAttribute("data-theme") === "dark" : true; var n = oscuro ? "light" : "dark"; r.setAttribute("data-theme", n); try { localStorage.setItem("cp_tema", n); } catch (e) {} };
   })();
 
   /* ───── estado en vivo ───── */
