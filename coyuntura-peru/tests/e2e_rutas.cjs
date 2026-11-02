@@ -35,6 +35,10 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
     // portada
     await p.goto(base + "#/"); await p.waitForTimeout(250);
     ok(await p.locator(".qs .q").count() === 3, `[${w}] portada: deben verse 3 tarjetas de preguntas`);
+    ok(await p.locator(".hero-stats .hero-stat").count() >= 3, `[${w}] portada: faltan indicadores dinámicos`);
+    ok(await p.locator(".hero-content h1").innerText() === "El Perú, explicado con claridad", `[${w}] portada: título editorial no renderizado`);
+    ok(await p.locator(".home-topics a").count() === 4, `[${w}] portada: accesos temáticos incompletos`);
+    ok(await p.locator(".hero-updated").count() === 1, `[${w}] portada: no aparece fecha de comprobación`);
     const tit = await p.locator(".qs .q h2").allInnerTexts();
     ok(/pasando/.test(tit[0]) && /datos/.test(tit[1]) && /Niño/.test(tit[2]), `[${w}] portada: títulos de las tres preguntas (${tit.join(" / ")})`);
     ok(await p.locator(".q1 .gn").count() > 0, `[${w}] portada: las noticias llevan etiqueta de género`);

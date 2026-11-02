@@ -233,19 +233,52 @@
   function tarjetaPregunta(num_, id, titulo, cuerpo, pie) {
     return '<section class="q q' + num_ + '" aria-labelledby="' + id + '"><header><span class="q-n" aria-hidden="true">' + num_ + '</span><h2 id="' + id + '">' + esc(titulo) + "</h2></header>" + cuerpo + '<footer>' + pie + "</footer></section>";
   }
+  function visualStats() {
+    // Se muestran únicamente cifras reales y sus periodos: no se copian valores de la maqueta.
+    var grupos=ED.datos && ED.datos.grupos || [], todos=[];
+    grupos.forEach(function(g){(g.items||[]).forEach(function(i){todos.push(i);});});
+    function dato(id){return todos.filter(function(i){return i.id===id;})[0];}
+    var pob=dato("pob"), internet=dato("hogint"), tc=bloqueTc(), e=ultimoEnfen(), arr=[];
+    if(pob)arr.push({k:"Población del Perú",v:pob.v,fecha:pob.corte,ico:"salud",url:"#/datos"});
+    if(tc)arr.push({k:"Tipo de cambio",v:tc.v,fecha:tc.corte,ico:"economia",url:"#/datos"});
+    if(internet)arr.push({k:"Hogares con internet",v:internet.v,fecha:internet.corte,ico:"datos",url:"#/datos"});
+    if(e && e.auto && NOT.enfen && NOT.enfen.numero)arr.push({k:"Comunicado ENFEN",v:"N.° "+NOT.enfen.numero,fecha:NOT.enfen.fecha?fechaLarga(NOT.enfen.fecha):"Fecha no disponible",ico:"nino",url:"#/s/nino"});
+    else arr.push({k:"Situación El Niño",v:"Consultar",fecha:"Estado oficial por verificar",ico:"nino",url:"#/s/nino"});
+    return arr.slice(0,4).map(function(x){
+      return '<a class="hero-stat" href="'+esc(x.url)+'"><span class="hs-ico">'+ic(x.ico)+'</span><span class="hs-copy"><strong>'+esc(x.v)+'</strong><span class="hs-label">'+esc(x.k)+'</span><small>'+esc(x.fecha)+'</small></span></a>';
+    }).join("");
+  }
+  function visualCard(num_,id,title,summary,body,route,action,icono){
+    return '<section class="q q'+num_+'" aria-labelledby="'+id+'"><header><span class="q-n" aria-hidden="true">'+ic(icono)+'</span><h2 id="'+id+'">'+esc(title)+'</h2></header><p class="q-lead">'+esc(summary)+'</p>'+body+'<footer><a class="q-go" href="'+route+'">'+esc(action)+' →</a></footer></section>';
+  }
   function vistaHome() {
-    var fecha = ""; try { fecha = new Intl.DateTimeFormat("es-PE", { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: TZ }).format(new Date()); } catch (e) {}
-    var A = noticiasRecientes(4), B = indicadoresClave(), n = ED.nino, u = ultimoEnfen(), principal = INS.filter(function (i) { return i.id === "politica"; })[0] || INS[0];
-    var h = '<div class="home fade"><section class="hero" aria-labelledby="h1"><p class="po-eye">' + esc(fecha) + '</p><h1 id="h1">La coyuntura del Perú, explicada con sus fuentes</h1><p class="hero-sub">Qué está pasando, qué dicen los datos y qué ocurre con El Niño, con la fecha y la fuente de cada dato.</p>' +
-      '<button class="po-search" type="button" data-buscar="1"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Busca noticias, datos o términos</span></button></section>';
-    h += '<div class="qs">';
-    h += tarjetaPregunta(1, "q1", "¿Qué está pasando en el Perú?", A.length ? '<ul class="q-l">' + A.map(function (x) { return '<li><a href="' + safeUrl(x.url) + '" target="_blank" rel="noopener noreferrer"><span class="q-t">' + esc(sin(x.titulo, 110)) + "</span>" + meta(x) + "</a></li>"; }).join("") + "</ul>" : '<p class="vacio">Todavía no hay noticias con fecha. La próxima actualización las traerá.</p>', '<a class="q-go" href="#/noticias">Ver todas las noticias →</a>');
-    h += tarjetaPregunta(2, "q2", "¿Qué dicen los datos?", '<ul class="q-l q-d">' + B.map(function (d) { return '<li><span class="q-dk">' + esc(d.k) + '</span><span class="q-dv"><b class="cifra">' + esc(d.v) + '</b> <small>' + esc(d.un) + '</small></span><span class="q-dm">Corte: ' + esc(d.corte) + " · Fuente: " + esc(d.fp) + "</span></li>"; }).join("") + "</ul>", '<a class="q-go" href="#/datos">Ver los datos del Perú →</a>');
-    h += tarjetaPregunta(3, "q3", "¿Qué ocurre con El Niño?", n ? '<ul class="q-l q-n3">' + n.tres.map(function (x) { return "<li><b>" + esc(x.k) + ":</b> " + esc(x.v) + "</li>"; }).join("") + '</ul><p class="q-u">Último comunicado oficial del ENFEN: ' + esc(u.txt) + "</p>" : "", '<a class="q-go" href="#/s/nino">Ver la sección El Niño →</a>');
-    h += "</div>";
-    if (principal) h += '<section class="dest" aria-labelledby="dest-h"><h2 id="dest-h">Análisis destacado</h2>' + leadCard(principal) + '<p class="why"><b>Por qué importa:</b> ' + esc((principal.raw || {}).paraTi || "") + "</p></section>";
-    h += frescura();
-    h += '<details class="mas-rec"><summary>Más recursos: formación, glosario, estadísticas y talleres</summary><div class="mas-g"><a href="#/ruta">La Ruta (aprende jugando)</a><a href="#/glosario">Glosario</a><a href="#/estadisticas">Estadísticas del sitio</a><a href="#/historial">Historial de notas</a><a href="#/talleres">Talleres de IA</a><a href="#/fuentes">Fuentes y su estado</a></div></details></div>';
+    var A=noticiasRecientes(3), B=indicadoresClave().slice(0,2), n=ED.nino, u=ultimoEnfen();
+    var principal=INS.filter(function(i){return i.id==="politica";})[0]||INS[0];
+    var fechaSistema=NOT.generado?fechaHora(NOT.generado)+" (hora de Lima)":"sin fecha confirmada";
+    var h='<div class="home fade"><section class="hero" aria-labelledby="h1"><div class="hero-content">'+
+      '<p class="hero-kicker">ACTUALIDAD · DATOS · ANÁLISIS</p><h1 id="h1">El Perú, explicado con claridad</h1>'+
+      '<p class="hero-sub">Noticias con fuentes enlazadas, cifras con su fecha de corte y análisis para entender lo que sucede en el país.</p>'+
+      '<p class="hero-updated"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></svg>Última comprobación: '+esc(fechaSistema)+'</p></div>'+
+      '<div class="hero-stats" aria-label="Indicadores y sus periodos">'+visualStats()+'</div></section>';
+    h+='<div class="qs">';
+    h+=visualCard(1,"q1","¿Qué está pasando en el Perú?","Noticias importantes, explicadas con contexto y enlaces al medio que las publicó.",
+      A.length?'<ul class="q-l">'+A.slice(0,2).map(function(x){return '<li><a href="'+safeUrl(x.url)+'" target="_blank" rel="noopener noreferrer"><span class="q-t">'+esc(sin(x.titulo,90))+'</span>'+meta(x)+'</a></li>';}).join("")+'</ul>':'<p>Actualmente no hay noticias recientes confirmadas.</p>',
+      "#/noticias","Ver noticias","politica");
+    h+=visualCard(2,"q2","¿Qué dicen los datos?","Indicadores de economía y sociedad, con fecha de corte y fuente identificada.",
+      '<ul class="q-l q-d">'+B.map(function(d){return '<li><span class="q-dk">'+esc(d.k)+'</span><span class="q-dv"><b class="cifra">'+esc(d.v)+'</b> <small>'+esc(d.un)+'</small></span><span class="q-dm">'+esc(d.corte)+' · '+esc(d.fp)+'</span></li>';}).join("")+'</ul>',
+      "#/datos","Ver indicadores","economia");
+    h+=visualCard(3,"q3","¿Qué ocurre con El Niño?","Distingue entre estado observado, pronóstico y riesgo potencial.",
+      n && n.tres?'<ul class="q-l q-n3">'+n.tres.map(function(x){return '<li><b>'+esc(x.k)+':</b> '+esc(x.v)+'</li>';}).join("")+'</ul><p class="q-u">Último comunicado ENFEN: '+esc(u.txt)+'</p>':'<p>Información en revisión.</p>',
+      "#/s/nino","Ver El Niño","nino");
+    h+='</div>';
+    h+='<nav class="home-topics" aria-label="Explora los temas del Perú"><div class="home-topics-title"><h2>El Perú, en un vistazo</h2><p>Amplía lo que te interesa, con fuentes y fechas.</p></div>'+
+      '<a href="#/s/politica"><strong>Actualidad</strong><span>Hechos y decisiones del país</span></a>'+
+      '<a href="#/s/economia"><strong>Economía</strong><span>Actividad, precios y empleo</span></a>'+
+      '<a href="#/s/salud"><strong>Sociedad</strong><span>Salud y servicios públicos</span></a>'+
+      '<a href="#/s/nino"><strong>Ambiente</strong><span>Clima, pronóstico y riesgos</span></a></nav>';
+    if(principal)h+='<section class="dest" aria-labelledby="dest-h"><h2 id="dest-h">Análisis destacado</h2>'+leadCard(principal)+'<p class="why"><b>Por qué importa:</b> '+esc((principal.raw||{}).paraTi||"")+'</p></section>';
+    h+=frescura();
+    h+='<details class="mas-rec"><summary>Más recursos: formación, glosario, estadísticas y talleres</summary><div class="mas-g"><a href="#/ruta">La Ruta (aprende jugando)</a><a href="#/glosario">Glosario</a><a href="#/estadisticas">Estadísticas del sitio</a><a href="#/historial">Historial de notas</a><a href="#/talleres">Talleres de IA</a><a href="#/fuentes">Fuentes y su estado</a></div></details></div>';
     return h;
   }
   var nF = { sector: "todos", tipo: "todas", genero: "todos" }, nMax = 15;
