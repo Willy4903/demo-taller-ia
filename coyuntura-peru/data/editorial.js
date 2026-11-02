@@ -17,7 +17,7 @@ window.EDITORIAL = {
   nino: {
     corte: "Según el comunicado N.° 12-2026 del ENFEN; puede haber comunicados posteriores.",
     estado: [
-      { k: "Estado ENFEN", v: "Alerta", n: "El Niño costero" },
+      { k: "Estado ENFEN", v: "Alerta", n: "Alerta de El Niño costero" },
       { k: "Magnitud esperada", v: "Fuerte → moderada", n: "Fuerte hasta octubre, moderada desde noviembre" },
       { k: "Horizonte", v: "Verano 2027", n: "Dic. 2026 a mar. 2027: fuerte o moderada" }
     ],
@@ -103,7 +103,7 @@ window.EDITORIAL = {
       lema: "Qué es el Niño costero, cómo se vigila y qué puede pasar este verano.",
       esencial: [
         "El {{el-nino-costero|Niño costero}} es un calentamiento anormal del mar frente a Perú y Ecuador (región {{nino-1-2|Niño 1+2}}). Forma parte del {{enso|ENOS}}: la fase cálida es El Niño y la fría es {{la-nina|La Niña}}.",
-        "El {{enfen|ENFEN}} emite comunicados oficiales con un estado (No activo, Vigilancia o Alerta), la magnitud esperada (débil, moderada, fuerte) y el pronóstico. El {{senamhi|Senamhi}} informa el clima y {{indeci|Indeci}} coordina la respuesta ante emergencias.",
+        "El {{enfen|ENFEN}} emite comunicados oficiales con un estado (No activo, Vigilancia o Alerta), la magnitud esperada (débil, moderada, fuerte) y el pronóstico. El {{senamhi|Senamhi}} informa sobre el clima e {{indeci|Indeci}} coordina la respuesta ante emergencias.",
         "Según comunicados recientes del ENFEN, el evento de 2026 se extendería hasta el verano de 2027. La magnitud y las fechas cambian con cada comunicado: revisa siempre el más reciente.",
         "Puede afectar la costa con lluvias intensas, la pesca, la agricultura y la salud (por ejemplo, más agua estancada donde se cría el mosquito del dengue)."
       ],
@@ -292,7 +292,7 @@ window.EDITORIAL = {
     {
       id: "nino-peru", sector: "nino", nivel: "media",
       titulo: "El Niño costero sigue en alerta y se extendería hasta el verano de 2027",
-      resumen: "El ENFEN mantiene el estado de Alerta de El Niño Costero. Según su comunicado oficial N.° 12-2026, el evento se extendería hasta el verano de 2027, con magnitud fuerte hasta octubre y moderada desde noviembre; para diciembre de 2026 a marzo de 2027 se prevé magnitud fuerte o moderada. Un titular de Canal N atribuye a un comunicado posterior (N.° 16-2026) una extensión hasta mediados del otoño de 2027, pero no se pudo verificar su texto.",
+      resumen: "El ENFEN mantiene el estado de alerta de El Niño costero. Según su comunicado oficial N.° 12-2026, el evento se extendería hasta el verano de 2027, con magnitud fuerte hasta octubre y moderada desde noviembre; para diciembre de 2026 a marzo de 2027 se prevé magnitud fuerte o moderada. Un titular de Canal N atribuye a un comunicado posterior (N.° 16-2026) una extensión hasta mediados del otoño de 2027, pero no se pudo verificar su texto.",
       paraTi: "Sigue las indicaciones de Indeci y de tu gobierno regional, evita el agua estancada (dengue) y revisa el comunicado ENFEN más reciente: el pronóstico cambia de un comunicado a otro.",
       fuentes: [
         { n: "ENFEN · comunicados oficiales (gob.pe)", u: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" },
