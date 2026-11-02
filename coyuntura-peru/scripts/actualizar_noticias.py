@@ -524,7 +524,7 @@ def obtener_con_respaldo(nombre, urls, tipo, sector_def):
             propios = []
             for it in gn:
                 # el nombre real del medio llega en <source>; se descartan notas de otros dominios
-                propio, ajeno = norm(nombre).replace(" ", ""), norm(it["fuente"]).replace(" ", "")
+                propio, ajeno = re.sub(r"[^a-z0-9]", "", norm(nombre)), re.sub(r"[^a-z0-9]", "", norm(it["fuente"]))
                 if propio not in ajeno and ajeno not in propio:
                     continue
                 it["fuente"] = nombre

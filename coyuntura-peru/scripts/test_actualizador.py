@@ -127,6 +127,13 @@ class Respaldo(unittest.TestCase):
         self.assertIsNone(items)
         self.assertFalse(info["ok"])
 
+    def test_nombre_con_guion_o_espacio(self):
+        for escrito in ("Ojo-Público", "Ojo Público", "OjoPúblico"):
+            a.descargar = lambda u, e=escrito: rss([("Nota - X", "https://news.google.com/rss/articles/q", hoy_rfc())], fuente=e) if "news.google.com" in u else (_ for _ in ()).throw(OSError("404"))
+            items, info = a.obtener_con_respaldo("OjoPúblico", ["https://ojo-publico.com/rss.xml"], "independiente", "investigacion")
+            self.assertIsNotNone(items, escrito)
+            self.assertEqual(info["procedencia"], "agregador")
+
     def test_sin_datos(self):
         def fake(u):
             raise OSError("caído")

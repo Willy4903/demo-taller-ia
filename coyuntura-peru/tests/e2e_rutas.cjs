@@ -48,6 +48,9 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
     await p.goto(base + "#/nino"); await p.waitForTimeout(300);
     ok(await p.locator(".n3-i").count() === 3, `[${w}] El Niño: estado, pronóstico y riesgo`);
     ok(/Último comunicado oficial del ENFEN/.test(await p.locator("#app").innerText()), `[${w}] El Niño: falta el último comunicado oficial`);
+    const datosNoticias = JSON.parse(fs.readFileSync(path.join(RAIZ, "data", "noticias.json"), "utf-8"));
+    const nEnf = datosNoticias.enfen && datosNoticias.enfen.numero ? datosNoticias.enfen.numero.split("-").reduce((a, b) => +b * 1000 + +a) : 0;
+    if (nEnf > 2026016) ok(await p.locator(".n-aviso").count() === 1, `[${w}] El Niño: falta el aviso de comunicado más reciente que el del resumen`);
     ok(await p.locator('#app a[href*="observatorio-elnino-peru"]').count() > 0, `[${w}] El Niño: falta el enlace al observatorio`);
     // navegación y tamaños táctiles
     if (w >= 1000) {
