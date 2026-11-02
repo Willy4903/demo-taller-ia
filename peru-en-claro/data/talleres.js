@@ -60,14 +60,6 @@ window.TALLERES = {
       sector: "deporte"
     },
     {
-      id: "liga1-simulador",
-      icono: "🏆",
-      n: "Simulador Liga 1",
-      d: "Tabla, calculadora y escenarios del Torneo Clausura 2026.",
-      u: "https://willy4903.github.io/demo-taller-ia/",
-      sector: "deporte"
-    },
-    {
       id: "observatorio-nino",
       icono: "🌊",
       n: "El Niño Perú: observatorio",
