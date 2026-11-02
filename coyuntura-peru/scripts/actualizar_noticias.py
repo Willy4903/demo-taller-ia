@@ -38,9 +38,9 @@ UA = "PeruEnClaroBot/1.0 (+https://github.com/Willy4903/demo-taller-ia)"
 FEEDS = [
     # Independientes / sin fines de lucro
     ("IDL-Reporteros", ["https://www.idl-reporteros.pe/feed/"], "independiente", "investigacion"),
-    ("OjoPúblico", ["https://ojo-publico.com/rss.xml", "https://ojo-publico.com/feed"], "independiente", "investigacion"),
-    ("Convoca", ["https://convoca.pe/feed"], "independiente", "investigacion"),
-    ("Hildebrandt en sus trece", ["https://www.hildebrandtensustrece.com/feed/"], "independiente", None),
+    ("OjoPúblico", ["https://ojo-publico.com/rss.xml", "https://ojo-publico.com/feed", "https://ojo-publico.com/rss", "https://ojo-publico.com/feed/"], "independiente", "investigacion"),
+    ("Convoca", ["https://convoca.pe/feed", "https://convoca.pe/feed/", "https://convoca.pe/rss.xml", "https://convoca.pe/rss"], "independiente", "investigacion"),
+    ("Hildebrandt en sus trece", ["https://www.hildebrandtensustrece.com/feed/", "https://hildebrandtensustrece.com/feed/", "https://hildebrandtensustrece.com/feed", "https://www.hildebrandtensustrece.com/rss"], "independiente", None),
     ("Wayka", ["https://wayka.pe/feed/"], "independiente", None),
     ("La Mula", ["https://www.lamula.pe/feed/"], "independiente", None),
     ("Salud con Lupa", ["https://saludconlupa.com/feed/"], "independiente", "salud"),
@@ -49,7 +49,7 @@ FEEDS = [
     # Comerciales
     ("El Comercio", ["https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml"], "comercial", None),
     ("Gestión", ["https://gestion.pe/arc/outboundfeeds/rss/?outputType=xml"], "comercial", "economia"),
-    ("La República", ["https://larepublica.pe/rss/"], "comercial", None),
+    ("La República", ["https://larepublica.pe/rss/", "https://larepublica.pe/arc/outboundfeeds/rss/?outputType=xml", "https://larepublica.pe/feed/"], "comercial", None),
     ("RPP", ["https://rpp.pe/feed"], "comercial", None),
     ("Infobae Perú", ["https://www.infobae.com/arc/outboundfeeds/rss/category/peru/"], "comercial", None),
     ("Expreso", ["https://www.expreso.com.pe/feed/"], "comercial", None),
@@ -206,7 +206,7 @@ def extraer_imagen(el):
 
 
 def parsear_feed(datos, nombre, tipo, sector_def):
-    texto = datos.decode("utf-8", errors="replace")
+    texto = datos.decode("utf-8", errors="replace").lstrip("\ufeff \t\r\n")  # algunos feeds (Wayka) anteponen espacios o BOM
     if re.search(r"<!ENTITY", texto, re.I):
         raise ValueError("feed con entidades XML no permitido")
     raiz = ET.fromstring(texto.encode("utf-8"))
