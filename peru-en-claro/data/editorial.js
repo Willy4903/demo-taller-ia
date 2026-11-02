@@ -13,6 +13,22 @@ window.EDITORIAL = {
     ]
   },
 
+  /* Panel de la sección El Niño (cifras de comunicados ENFEN; verificar en el comunicado más reciente) */
+  nino: {
+    corte: "Según el comunicado N.° 12-2026 del ENFEN; puede haber comunicados posteriores.",
+    estado: [
+      { k: "Estado ENFEN", v: "Alerta", n: "El Niño costero" },
+      { k: "Magnitud esperada", v: "Fuerte → moderada", n: "Fuerte hasta octubre, moderada desde noviembre" },
+      { k: "Horizonte", v: "Verano 2027", n: "Dic. 2026 a mar. 2027: fuerte o moderada" }
+    ],
+    linea: [
+      { c: "N.° 01-2026", f: "15 de enero", x: "El ENFEN pasa de No activo a Vigilancia. Se esperaban condiciones cálidas débiles desde abril hasta al menos octubre.", u: "https://www.gob.pe/institucion/imarpe/informes-publicaciones/7624651-comunicado-oficial-enfen-n-01-2026" },
+      { c: "N.° 08-2026", f: "", x: "El Niño costero se presentaría con magnitud débil y podría alcanzar nivel moderado entre junio y julio.", u: "https://andina.pe/ingles/noticia-peru-weak-coastal-nino-to-reach-moderate-strength-between-june-and-july-1073533.aspx" },
+      { c: "N.° 11-2026", f: "", x: "Se eleva la proyección: magnitud fuerte entre junio y septiembre y evento prolongado hasta el verano de 2027.", u: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" },
+      { c: "N.° 12-2026", f: "", x: "Magnitud fuerte hasta octubre y moderada desde noviembre. Para diciembre de 2026 a marzo de 2027 se prevé magnitud fuerte o moderada.", u: "https://opsaa.iica.int/en/resource-2820-enfen-official-communique-no-12-2026" }
+    ]
+  },
+
   /* Indicadores con fuente (cifras citadas por la prensa o por el organismo; verificar en la fuente primaria) */
   indicadores: [
     { k: "PBI 2026 · proyección BCRP", v: "3,2 %", n: "Recortada citando El Niño", f: "BCRP", u: "https://www.bcrp.gob.pe" },
