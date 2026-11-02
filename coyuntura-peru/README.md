@@ -1,8 +1,10 @@
 # Perú en Claro
 
-Sitio web sobre la coyuntura peruana: política, economía, salud, tecnología, deporte, investigación, coyuntura y mundo. Incluye una **Ruta gamificada** (misiones, XP, niveles, insignias), **glosario**, **fuentes** y un **insight** con fuentes enlazadas.
+Portal de noticias sobre la coyuntura peruana: política, economía, salud, tecnología, deporte, investigación, coyuntura y mundo. Diseño editorial *mobile-first* (portada con nota principal, listas con miniaturas, páginas de lectura, barra inferior para iPhone/Android, modo oscuro y búsqueda), con **Ruta gamificada** (misiones, XP, niveles, insignias), **glosario A–Z**, **fuentes** y análisis con fuentes enlazadas.
 
 - Sin dependencias externas: HTML + CSS + JavaScript puro. Se abre con doble clic en `index.html`.
+- Instalable como app: en iPhone, Safari → Compartir → *Añadir a pantalla de inicio*; en Android, menú → *Instalar app*. Funciona sin conexión con lo último que cargó (service worker, solo en https).
+- Las fotos de portada se toman de la etiqueta `og:image` de cada nota; si falta, se muestra una ilustración generada.
 - Se actualiza solo a las **08:00** y **23:00 (hora de Lima)** mediante GitHub Actions.
 
 ## Cómo activarlo en GitHub (una sola vez)

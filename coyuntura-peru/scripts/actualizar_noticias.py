@@ -16,7 +16,8 @@ import sys
 import unicodedata
 import urllib.request
 import xml.etree.ElementTree as ET
-from urllib.parse import urlsplit, urlunsplit
+from concurrent.futures import ThreadPoolExecutor
+from urllib.parse import urljoin, urlsplit, urlunsplit
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATOS = os.path.join(RAIZ, "data")
@@ -28,6 +29,8 @@ MAX_POR_FEED = 15
 DIAS_MAXIMOS = 30
 TIMEOUT = 20
 MAX_BYTES = 3 * 1024 * 1024
+MAX_BYTES_HTML = 250 * 1024
+MAX_IMAGENES_POR_EJECUCION = 40
 UA = "PeruEnClaroBot/1.0 (+https://github.com/Willy4903/demo-taller-ia)"
 
 # nombre, [urls alternativas], tipo, sector por defecto (None = clasificar por palabras clave)
@@ -99,6 +102,53 @@ def descargar(url):
     if len(datos) > MAX_BYTES:
         raise ValueError("feed demasiado grande")
     return datos
+
+
+def descargar_parcial(url):
+    """Lee solo el inicio de una página HTML (donde están las etiquetas <meta>)."""
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html,*/*"})
+    with urllib.request.urlopen(req, timeout=10) as r:
+        return r.read(MAX_BYTES_HTML).decode("utf-8", errors="replace")
+
+
+RE_OG = [
+    re.compile(r'<meta[^>]+(?:property|name)=["\'](?:og:image(?::secure_url)?|twitter:image)["\'][^>]*content=["\']([^"\']+)["\']', re.I),
+    re.compile(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]*(?:property|name)=["\'](?:og:image(?::secure_url)?|twitter:image)["\']', re.I),
+]
+
+
+def imagen_og(url):
+    try:
+        cabecera = descargar_parcial(url)
+    except Exception:  # noqa: BLE001
+        return None
+    for rx in RE_OG:
+        m = rx.search(cabecera)
+        if m:
+            img = urljoin(url, html.unescape(m.group(1)).strip())
+            if img.startswith("https://"):
+                return img
+    return None
+
+
+def enriquecer_imagenes(items, previos):
+    """Hereda imágenes ya conocidas y busca la foto de portada (og:image) de las notas nuevas."""
+    conocidas = {url_canonica(i["url"]): i.get("imagen") for i in previos if i.get("imagen")}
+    pendientes = []
+    for it in items:
+        if it.get("imagen"):
+            continue
+        k = url_canonica(it["url"])
+        if k in conocidas:
+            it["imagen"] = conocidas[k]
+        else:
+            pendientes.append(it)
+    pendientes = pendientes[:MAX_IMAGENES_POR_EJECUCION]
+    if pendientes:
+        with ThreadPoolExecutor(max_workers=6) as ex:
+            for it, img in zip(pendientes, ex.map(lambda i: imagen_og(i["url"]), pendientes)):
+                it["imagen"] = img
+    print(f"Imágenes de portada: {sum(1 for i in items if i.get('imagen'))}/{len(items)} notas")
 
 
 def parsear_fecha(txt):
@@ -273,6 +323,7 @@ def main(feeds=None):
     if ok == 0:
         print("Ningún feed respondió: se conservan los datos actuales.", file=sys.stderr)
         return 0
+    enriquecer_imagenes(nuevos, previo.get("items", []))
     datos = {
         "generado": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "modo": "automatico",

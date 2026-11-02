@@ -365,3 +365,35 @@ window.EDITORIAL = {
     { n: "ONU Noticias", u: "https://news.un.org/es/", tipo: "Internacional · organismos", foco: "Temas globales: clima, salud, derechos.", feed: true }
   ]
 };
+
+/* ───── Contexto y términos para las páginas de lectura (una por insight) ───── */
+window.EDITORIAL.articulos = {
+  politica: {
+    contexto: "Hasta 2026 el Perú tuvo un Congreso de una sola cámara, vigente desde la Constitución de 1993. Con el regreso del Senado y la Cámara de Diputados, las leyes pasan por ambas cámaras. Cuando los escaños están repartidos entre varios partidos, ningún grupo decide solo: el Gobierno necesita pactos para aprobar medidas y evitar enfrentamientos como una censura o una cuestión de confianza fallida.",
+    terminos: ["bicameralidad", "congreso-fragmentado", "cuestion-de-confianza", "censura", "jne", "onpe"]
+  },
+  economia: {
+    contexto: "La inflación mide cuánto suben los precios y el BCRP busca mantenerla entre 1 % y 3 %. Cuando se ubica por encima, el banco central suele sostener tasas altas para enfriar la demanda, lo que encarece los créditos. El crecimiento depende de la inversión, el consumo y las exportaciones; fenómenos climáticos como El Niño pueden golpear la pesca, la agricultura y el transporte.",
+    terminos: ["pbi", "inflacion", "tasa-de-referencia", "bcrp", "el-nino-costero", "mef"]
+  },
+  salud: {
+    contexto: "El dengue se concentra en el norte y la selva, donde hay calor y lluvias, y los brotes se agravan cuando el Fenómeno El Niño aumenta el agua estancada donde se cría el mosquito. Las alertas epidemiológicas activan acciones de control del vector, vigilancia y refuerzo de la atención en hospitales y postas.",
+    terminos: ["dengue", "aedes", "alerta-epidemiologica", "semana-epidemiologica", "minsa", "el-nino-costero"]
+  },
+  tecnologia: {
+    contexto: "La Ley 31814 (2023) fija principios para el uso ético y seguro de la inteligencia artificial. Mientras tanto, los ataques de phishing y ransomware aprovechan la IA para parecer más creíbles. Las organizaciones deben invertir en ciberseguridad y las personas en hábitos básicos, como la verificación en dos pasos.",
+    terminos: ["ia", "ciberseguridad", "phishing", "ransomware", "datos-personales", "deepfake"]
+  },
+  mundo: {
+    contexto: "Un arancel encarece los productos importados en el país que lo aplica. Para economías exportadoras como la peruana, los aranceles de grandes mercados pueden reducir la demanda, mover los precios de las materias primas y alterar el tipo de cambio, incluso cuando el producto peruano no es el directamente gravado.",
+    terminos: ["arancel", "tipo-de-cambio", "riesgo-pais"]
+  },
+  deporte: {
+    contexto: "La Liga 1 divide la temporada en Apertura y Clausura y suma ambos torneos en la tabla acumulada. Una tabla apretada significa pocos puntos de diferencia entre los líderes, de modo que cada jornada puede cambiar el panorama. Las posiciones de este informe corresponden a la fecha 11 del Clausura.",
+    terminos: ["liga-1", "apertura-clausura", "tabla-acumulada", "fpf"]
+  },
+  investigacion: {
+    contexto: "En el Perú buena parte del periodismo de investigación nace en medios sin fines de lucro que se financian en gran parte con donaciones y fondos de cooperación. Su trabajo suele partir de documentos, audios y datos públicos, y sus reportajes pueden activar investigaciones fiscales. Por eso importa distinguir entre una denuncia periodística, una investigación fiscal y una sentencia.",
+    terminos: ["fiscalia", "presuncion-de-inocencia", "colaboracion-eficaz", "prision-preventiva", "reglaje", "independiente"]
+  }
+};
