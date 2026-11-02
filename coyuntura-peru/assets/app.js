@@ -238,9 +238,11 @@
     if (!T) return "";
     return '<section class="promo-ia"><h2>De la noticia a la práctica</h2><p>Entender la IA es el primer paso. En estos talleres aprendes a usarla.</p>' + tCards() + '<p class="t-mas"><a href="#/talleres">Conocer más sobre los talleres →</a></p></section>';
   }
-  function bloqueLiga() {
-    var p = T && T.paginas && T.paginas[0]; if (!p) return "";
-    return '<div class="cta-m" style="--c:#10B981"><div><b>' + esc(p.icono + " " + p.n) + "</b><small>" + esc(p.d) + '</small></div><a class="btn" ' + ext(p.u) + ">Abrir</a></div>";
+  function bloquesPagina(sector) {
+    if (!T || !T.paginas) return "";
+    return T.paginas.filter(function (p) { return p.sector === sector; }).map(function (p) {
+      return '<div class="cta-m" style="--c:var(--gold)"><div><b>' + esc(p.icono + " " + p.n) + "</b><small>" + esc(p.d) + '</small></div><a class="btn" ' + ext(p.u) + ">Abrir</a></div>";
+    }).join("");
   }
   function promoRuta(todos) {
     if (!T) return "";
@@ -258,7 +260,7 @@
     var h = '<div class="fade"><div class="shead" style="--c:var(--gold)"><h1>🎓 Talleres de IA</h1><p>Aprende a usar la inteligencia artificial con ejemplos prácticos, en talleres presenciales y virtuales.</p></div>' + tCards();
     h += '<div class="autor panel"><h3 class="pt">Quién está detrás</h3><b class="a-n">' + esc(a.nombre) + "</b><small>" + esc(a.titulo) + "</small><p>" + esc(a.resumen) + "</p></div>";
     h += '<div class="t-links"><a class="btn" ' + ext(waUrl()) + ">Escribir por WhatsApp</a>" + (c.tiktok ? '<a class="btn o" ' + ext(c.tiktok) + ">TikTok @luwiuni</a>" : "") + (c.web ? '<a class="btn o" ' + ext(c.web) + ">Web de los talleres</a>" : "") + "</div>";
-    if (T.paginas && T.paginas.length) h += sh("Otras páginas", "var(--gold)") + T.paginas.map(function (p) { return '<a class="fr" ' + ext(p.u) + "><div><b>" + esc(p.icono + " " + p.n) + "</b><p>" + esc(p.d) + "</p></div><span>↗</span></a>"; }).join("");
+    if (T.paginas && T.paginas.length) h += sh("Mis páginas", "var(--gold)") + T.paginas.map(function (p) { return '<a class="fr" ' + ext(p.u) + "><div><b>" + esc(p.icono + " " + p.n) + "</b><p>" + esc(p.d) + "</p></div><span>↗</span></a>"; }).join("");
     return h + "</div>";
   }
 
@@ -300,7 +302,7 @@
     h += '<div class="panel">' + (ins ? leadCard(ins) : "") + "</div>";
     if (inss.length > 1) h += '<div class="minis">' + inss.slice(1).map(card).join("") + "</div>";
     h += '<div class="entender"><h2>Para entender ' + esc(nomFrase(s)) + '</h2><ul>' + s.esencial.map(function (e) { return "<li>" + gl(e) + "</li>"; }).join("") + "</ul></div>";
-    h += (id === "ia" ? bloqueIA() : "") + (id === "deporte" ? bloqueLiga() : "");
+    h += (id === "ia" ? bloqueIA() : "") + bloquesPagina(id);
     h += '<div class="cta-m" style="--c:' + s.color + '"><div><b>' + (hecho ? "✅ Misión superada" : "🎯 Misión: " + esc(s.nombre)) + "</b><small>" + (hecho ? "Puedes repetirla cuando quieras." : "3 preguntas · gana hasta 80 XP") + '</small></div><button class="btn" data-m="' + id + '">' + (hecho ? "Repetir" : "Empezar") + "</button></div>";
     var vacio = '<div class="vacio">Aún no hay notas en esta sección. La próxima actualización automática (7 veces al día) las incorporará.</div>';
     if (s.ambitos) {
@@ -655,10 +657,11 @@
   /* ───── arranque ───── */
   function pintarPie() {
     var el = $("#f-talleres"); if (!el || !T) return;
-    var c = T.contacto || {}, a = T.autor || {}, p = (T.paginas || [])[0];
+    var c = T.contacto || {}, a = T.autor || {}, pg = T.paginas || [];
     el.innerHTML = "<h4>Talleres de IA</h4><p>Aprende a usar la inteligencia artificial con ejemplos prácticos.</p>" +
       (a.nombre ? '<p class="f-aut"><b>' + esc(a.nombre) + "</b><br>" + esc(a.titulo || "") + "</p>" : "") +
-      '<p class="f-lk"><a href="#/talleres">Ver talleres</a>' + (c.tiktok ? ' · <a ' + ext(c.tiktok) + ">TikTok</a>" : "") + (c.web ? ' · <a ' + ext(c.web) + ">Web de talleres</a>" : "") + (p ? ' · <a ' + ext(p.u) + ">" + esc(p.n) + "</a>" : "") + "</p>";
+      '<p class="f-lk"><a href="#/talleres">Ver talleres</a>' + (c.tiktok ? ' · <a ' + ext(c.tiktok) + ">TikTok</a>" : "") + (c.web ? ' · <a ' + ext(c.web) + ">Web de talleres</a>" : "") + "</p>" +
+      (pg.length ? '<p class="f-lk"><b>Mis páginas:</b> ' + pg.map(function (p) { return "<a " + ext(p.u) + ">" + esc(p.n) + "</a>"; }).join(" · ") + "</p>" : "");
   }
   menuNav(); estado(); xpChip(); ticker(); pintarPie(); navegar();
   if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
