@@ -1,11 +1,12 @@
 # Contexto Perú
 
-Portal de noticias sobre la coyuntura peruana: política, economía, salud, tecnología, inteligencia artificial (Perú y mundo), deporte, investigación, coyuntura y mundo. Panel *Bento Grid* oscuro por defecto y *mobile-first* (análisis, Ruta, indicadores y glosario en la portada, páginas de lectura, Estadísticas, Historial, barra inferior para iPhone/Android y búsqueda), con **Ruta gamificada** (misiones, XP, niveles, insignias), **glosario A–Z**, **fuentes** y análisis con fuentes enlazadas.
+Portal de noticias sobre la coyuntura peruana: política, economía, salud, El Niño, tecnología, inteligencia artificial (Perú y mundo), deporte, investigación, coyuntura y mundo. Panel *Bento Grid* oscuro por defecto y *mobile-first* (análisis, Ruta, indicadores y glosario en la portada, páginas de lectura, Estadísticas, Historial, barra inferior para iPhone/Android y búsqueda), con **Ruta gamificada** (misiones, XP, niveles, insignias), **glosario A–Z**, **fuentes** y análisis con fuentes enlazadas.
 
 - Sin dependencias de código: HTML + CSS + JavaScript puro (solo las tipografías vienen de Google Fonts). Se abre con doble clic en `index.html`.
 - Instalable como app: en iPhone, Safari → Compartir → *Añadir a pantalla de inicio*; en Android, menú → *Instalar app*. Funciona sin conexión con lo último que cargó (service worker, solo en https).
 - Las fotos son reales: la `og:image` de cada nota y, para los análisis, la de la primera fuente citada que la tenga (con crédito). Si no hay foto, la nota se muestra sin imagen; no se usan ilustraciones generadas.
-- El tipo de cambio (USD/PEN) se lee de la API pública del BCRP en cada actualización; si falla, se conserva el último dato.
+- Una línea dinámica (de derecha a izquierda) muestra lo último: tipo de cambio, estado de El Niño, análisis y notas recientes. Se pausa al pasar el cursor o con el botón; con "reducir movimiento" queda estática.
+- El tipo de cambio (USD/PEN) se lee de la API pública del BCRP; si falla, se usa un valor referencial de una API pública sin clave y se acumula entre ejecuciones. Si ambas fallan, se conserva el último dato.
 - Se actualiza solo a las **08:00** y **23:00 (hora de Lima)** mediante GitHub Actions.
 
 ## Publicación en GitHub Pages
