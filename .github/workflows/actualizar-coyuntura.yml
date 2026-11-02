@@ -9,25 +9,22 @@ on:
     - cron: "0 13 * * *"
     - cron: "0 4 * * *"
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - "coyuntura-peru/**"
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
+  actions: write
 
 concurrency:
-  group: "pages"
+  group: actualizar-coyuntura
   cancel-in-progress: false
 
 jobs:
-  construir:
+  actualizar:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
@@ -36,30 +33,24 @@ jobs:
       - name: Leer feeds y regenerar datos
         run: python coyuntura-peru/scripts/actualizar_noticias.py
 
-      - name: Guardar cambios en el repositorio
+      - name: Guardar cambios en main
+        id: guardar
         run: |
           git config user.name "peru-en-claro-bot"
           git config user.email "actions@users.noreply.github.com"
           git add coyuntura-peru/data
           if git diff --cached --quiet; then
+            echo "cambios=no" >> "$GITHUB_OUTPUT"
             echo "Sin cambios en los datos."
           else
             git commit -m "chore(coyuntura): actualización automática $(TZ=America/Lima date '+%Y-%m-%d %H:%M') (hora de Lima)"
-            git push
+            git push origin main
+            echo "cambios=si" >> "$GITHUB_OUTPUT"
           fi
 
-      - uses: actions/configure-pages@v5
-
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: coyuntura-peru
-
-  publicar:
-    needs: construir
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.despliegue.outputs.page_url }}
-    steps:
-      - id: despliegue
-        uses: actions/deploy-pages@v4
+      # Un push hecho con GITHUB_TOKEN no dispara otros flujos, así que se invoca el despliegue de forma explícita.
+      - name: Publicar sitio (CI y despliegue)
+        if: steps.guardar.outputs.cambios == 'si'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run ci-deploy.yml --ref main
