@@ -140,7 +140,7 @@
       var k = ORDEN.indexOf(id), s = SECT[id], hecho = !!S.hechas[id], disp = !hecho && (k === 0 || !!S.hechas[ORDEN[k - 1]]), est = hecho ? "hecho" : disp ? "disp" : "bloq";
       return '<li class="' + est + '"><span class="nodo">' + (hecho ? "✓" : disp ? String(k + 1) : "🔒") + '</span><div class="tx"><b>' + String(k + 1).padStart(2, "0") + ". " + esc(id === "brujula" ? "Brújula: leer noticias" : s.nombre) + "</b><span>" + (hecho ? "Superada · " + S.hechas[id].ac + "/3" : "+50 XP") + "</span>" + (hecho || disp ? '<br><button class="go" data-m="' + id + '">' + (hecho ? "Repetir misión" : "Empezar misión →") + "</button>" : "") + "</div></li>";
     }).join("") + "</ol>";
-    h += '<div class="alerta"><b>Check actualización automática</b>' + (NOT.generado ? "Última carga: " + esc(fmtFecha(NOT.generado, true)).replace(/\.$/, "") + ". " : "Aún sin carga automática. ") + "Próxima: 08:00, 12:00 o 18:00 (Lima)." + "</div>";
+    h += '<div class="alerta"><b>Check actualización automática</b>' + (NOT.generado ? "Última carga: " + esc(fmtFecha(NOT.generado, true)).replace(/\.$/, "") + ". " : "Aún sin carga automática. ") + "Próxima: en las próximas horas (7 veces al día, hora de Lima)." + "</div>";
     return h + '<p style="margin:14px 0 0"><a class="btn w" href="#/ruta">' + (hechas ? "Continuar la Ruta" : "Empezar la Ruta") + " →</a></p>" + (sig ? '<p class="mono" style="margin:10px 0 0;font-size:.72rem;color:var(--tx3)">' + S.xp + " / " + sig.min + " XP para " + sig.n + "</p>" : "") + "</div>";
   }
   function spark(pts, grande) {
@@ -182,8 +182,8 @@
     var c = proxHora(now, off, y, m, d);
     var cl = new Date(c + off); return (cl.getUTCDate() === d ? "hoy " : "mañana ") + String(cl.getUTCHours()).padStart(2, "0") + ":00";
   }
-  /* actualizaciones automáticas, hora de Lima (UTC-5): 08:00, 12:00 y 18:00 */
-  var HORAS = [8, 12, 18];
+  /* actualizaciones automáticas, hora de Lima (UTC-5): 00:00, 06:00, 10:00, 12:00, 15:00, 18:00 y 21:00 */
+  var HORAS = [0, 6, 10, 12, 15, 18, 21];
   function proxHora(now, off, y, m, d) {
     return HORAS.map(function (h) { return Date.UTC(y, m, d, h) - off; }).concat([Date.UTC(y, m, d + 1, HORAS[0]) - off]).filter(function (t) { return t > now; })[0];
   }
@@ -215,7 +215,7 @@
     var T = ED.sectores.filter(function (x) { return x.id !== "deporte" && x.id !== "mundo"; }).map(function (x) { var n = porSector(x.id).length; return { id: x.id, href: "#/s/" + x.id, color: x.color, nombre: x.nombre, sub: n ? n + (n === 1 ? " nota" : " notas") : "Análisis y misión", cls: x.id === "nino" ? " nino" : "" }; })
       .concat([{ id: "talleres", href: "#/talleres", color: "#F59E0B", nombre: "Talleres de IA", sub: "Aprende con práctica" }, { id: "ruta", href: "#/ruta", color: "#D97706", nombre: "La Ruta", sub: ORDEN.length + " misiones" }, { id: "datos", href: "#/datos", color: "#38BDF8", nombre: "DataPerú", sub: "Datos oficiales" }]);
     var tiles = T.map(tile).join("");
-    return '<section class="portal fade" aria-label="Portal"><div class="po-hero"><div class="po-main"><p class="po-eye">Portal de coyuntura · ' + esc(fecha) + '</p><h1>La coyuntura del Perú, explicada con sus fuentes</h1><p class="po-sub">Entiende la coyuntura con datos y aprende a usar IA para analizarla. Análisis propios, noticias, indicadores y una ruta para aprender. Se actualiza a las 08:00, 12:00 y 18:00, hora de Lima.</p>' +
+    return '<section class="portal fade" aria-label="Portal"><div class="po-hero"><div class="po-main"><p class="po-eye">Portal de coyuntura · ' + esc(fecha) + '</p><h1>La coyuntura del Perú, explicada con sus fuentes</h1><p class="po-sub">Entiende la coyuntura con datos y aprende a usar IA para analizarla. Análisis propios, noticias, indicadores y una ruta para aprender. Se actualiza 7 veces al día (hora de Lima).</p>' +
       '<button class="po-search" type="button" data-buscar="1"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Busca noticias, análisis o términos</span><kbd aria-hidden="true">/</kbd></button>' +
       '<div class="po-cta"><a class="btn" href="#/a/hilo">Panorama del momento →</a><a class="btn o" href="#/ruta">Empezar la Ruta</a></div></div>' +
       '<aside class="po-hoy" aria-label="Hoy en cifras"><h3 class="pt">Hoy en cifras</h3><div class="ind">' + hoy + "</div></aside></div>" +
@@ -278,7 +278,7 @@
   function pintarFeed() {
     var l = FEED.filter(function (s) { if (s.sector === "deporte") return false; return filtro === "todas" || (filtro === "indep" ? s.tipo === "independiente" : filtro === "com" ? s.tipo === "comercial" : filtro === "int" ? s.tipo === "internacional" : (s.tipo === "oficial" || s.tipo === "estatal")); });
     var el = $("#f-lista"); if (!el) return;
-    el.innerHTML = l.length ? l.slice(0, cuantas).map(row).join("") : '<div class="vacio">No hay notas con este filtro todavía. La próxima actualización (08:00 / 12:00 / 18:00) traerá más.</div>';
+    el.innerHTML = l.length ? l.slice(0, cuantas).map(row).join("") : '<div class="vacio">No hay notas con este filtro todavía. La próxima actualización (7 veces al día) traerá más.</div>';
     $("#f-mas").innerHTML = l.length > cuantas ? '<button class="btn o" id="b-mas">Ver más notas (' + (l.length - cuantas) + ")</button>" : "";
     var b = $("#b-mas"); if (b) b.onclick = function () { cuantas += 8; pintarFeed(); };
   }
@@ -302,7 +302,7 @@
     h += '<div class="entender"><h2>Para entender ' + esc(nomFrase(s)) + '</h2><ul>' + s.esencial.map(function (e) { return "<li>" + gl(e) + "</li>"; }).join("") + "</ul></div>";
     h += (id === "ia" ? bloqueIA() : "") + (id === "deporte" ? bloqueLiga() : "");
     h += '<div class="cta-m" style="--c:' + s.color + '"><div><b>' + (hecho ? "✅ Misión superada" : "🎯 Misión: " + esc(s.nombre)) + "</b><small>" + (hecho ? "Puedes repetirla cuando quieras." : "3 preguntas · gana hasta 80 XP") + '</small></div><button class="btn" data-m="' + id + '">' + (hecho ? "Repetir" : "Empezar") + "</button></div>";
-    var vacio = '<div class="vacio">Aún no hay notas en esta sección. La próxima actualización automática (08:00 / 12:00 / 18:00) las incorporará.</div>';
+    var vacio = '<div class="vacio">Aún no hay notas en esta sección. La próxima actualización automática (7 veces al día) las incorporará.</div>';
     if (s.ambitos) {
       var enPeru = its.filter(function (i) { return ambitoDe(i) === "peru"; }), enMundo = its.filter(function (i) { return ambitoDe(i) === "mundo"; });
       h += sh("IA en el Perú", s.color) + listaCorta(enPeru, 6, vacio) + sh("IA en el mundo", s.color) + listaCorta(enMundo, 6, vacio);
@@ -381,7 +381,7 @@
     });
     var resto = ED.fuentes.filter(function (f) { return !usados[f.n]; });
     if (resto.length) h += '<section class="fg"><h2>Otras fuentes</h2>' + resto.map(function (f) { return '<a class="fr" href="' + safeUrl(f.u) + '" target="_blank" rel="noopener noreferrer"><div><b>' + esc(f.n) + "</b><small>" + esc(f.tipo) + "</small><p>" + esc(f.foco) + "</p></div><span>↗</span></a>"; }).join("") + "</section>";
-    h += '<section class="fg"><h2>¿Cómo funciona y cada cuánto se actualiza?</h2><div class="box" style="margin:10px 0"><p style="font-size:.95rem">Un flujo automático de GitHub Actions lee los feeds RSS de estos medios <b>tres veces al día (08:00, 12:00 y 18:00, hora de Lima)</b>, clasifica las notas por sector y publica el sitio. Mostramos título, resumen breve y enlace; el contenido pertenece a cada medio. Los análisis llevan fecha de corte y nivel de confianza. La clasificación por sector es automática y puede equivocarse.</p></div></section></div>';
+    h += '<section class="fg"><h2>¿Cómo funciona y cada cuánto se actualiza?</h2><div class="box" style="margin:10px 0"><p style="font-size:.95rem">Un flujo automático de GitHub Actions lee los feeds RSS de estos medios <b>siete veces al día (00:00, 06:00, 10:00, 12:00, 15:00, 18:00 y 21:00, hora de Lima)</b>, clasifica las notas por sector y publica el sitio. Mostramos título, resumen breve y enlace; el contenido pertenece a cada medio. Los análisis llevan fecha de corte y nivel de confianza. La clasificación por sector es automática y puede equivocarse.</p></div></section></div>';
     return h;
   }
 
