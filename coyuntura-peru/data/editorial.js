@@ -92,6 +92,25 @@ window.EDITORIAL = {
       }
     },
     {
+      id: "ia", nombre: "Inteligencia artificial", icono: "🤖", color: "#E879F9", ambitos: true,
+      lema: "Qué hace la IA, cómo se regula en el Perú y qué pasa en el mundo.",
+      esencial: [
+        "La {{ia-generativa|IA generativa}} crea texto, imágenes, audio y código. Funciona con {{llm|modelos de lenguaje}} entrenados con enormes volúmenes de datos y alimenta asistentes como ChatGPT, Claude o Gemini.",
+        "En el Perú rigen la Ley 31814 (2023), su reglamento (Decreto Supremo 115-2025-PCM, setiembre de 2025) y la {{enia|Estrategia Nacional de IA 2026-2030}}. La {{sgtd|SGTD}} de la PCM es la autoridad técnico-normativa. El enfoque es de fomento, con principios de uso ético.",
+        "En el mundo, la Unión Europea regula con el {{ai-act|AI Act}} según el nivel de riesgo y en 2026 acordó aplazar parte de sus plazos. Estados Unidos y China compiten por {{gpu|chips}}, modelos y {{centro-de-datos|centros de datos}}.",
+        "Un modelo puede equivocarse con seguridad ({{alucinacion|alucinaciones}}) y repetir {{sesgo-algoritmico|sesgos}}. Verifica los datos importantes y desconfía de imágenes o audios sospechosos ({{deepfake|deepfakes}})."
+      ],
+      terminos: ["ia","ia-generativa","llm","agente-ia","alucinacion","sesgo-algoritmico","enia","sgtd","oficial-ia","ai-act","gpu","centro-de-datos","deepfake"],
+      mision: {
+        titulo: "Estación IA: el Laboratorio",
+        preguntas: [
+          { q: "Una alucinación de un modelo de IA es…", o: ["Una respuesta falsa presentada con apariencia convincente", "Un fallo del cargador del equipo", "Un permiso de la PCM", "Un tipo de chip"], c: 0, p: "Los modelos pueden inventar datos con tono seguro: verifica lo importante en fuentes confiables." },
+          { q: "En el Perú, ¿qué entidad es la autoridad técnico-normativa de la IA?", o: ["La PCM, a través de la SGTD", "El BCRP", "El JNE", "El INEI"], c: 0, p: "La Ley 31814 designa a la PCM; la SGTD ejerce esa función." },
+          { q: "El AI Act de la Unión Europea regula la IA principalmente según…", o: ["El nivel de riesgo del sistema", "El color de la interfaz", "El país del programador", "El precio del servicio"], c: 0, p: "Clasifica los sistemas por riesgo y exige más obligaciones a los de mayor riesgo." }
+        ]
+      }
+    },
+    {
       id: "deporte", nombre: "Deporte", icono: "⚽", color: "#22C55E",
       lema: "Resultados, tablas y por qué importan.",
       esencial: [
@@ -237,6 +256,39 @@ window.EDITORIAL = {
       ]
     },
     {
+      id: "ia-peru", sector: "ia", nivel: "media",
+      titulo: "Perú ya tiene reglas y estrategia de IA; ahora cada entidad pública debe tener un Oficial de IA",
+      resumen: "La Ley 31814 (2023) fue reglamentada con el Decreto Supremo 115-2025-PCM (9 de setiembre de 2025). Según un análisis jurídico, en mayo de 2026 se aprobó la Estrategia Nacional de Inteligencia Artificial 2026-2030 (Resolución Ministerial 152-2026-PCM), y el 19 de octubre de 2026 la SGTD aprobó la directiva que define el perfil y las responsabilidades del Oficial de IA. Esa estrategia ubica al Perú por debajo del promedio de la región en inversión privada y adopción de IA, según el Índice Latinoamericano de IA 2025.",
+      paraTi: "Si trabajas con el Estado o le vendes servicios de IA, revisa el reglamento y la directiva. Como ciudadano, pregunta cuándo una entidad usa IA en un trámite que te afecta. Confirma la estrategia en El Peruano: las fuentes no coinciden en todo.",
+      fuentes: [
+        { n: "Garrigues · aprobación de la ENIA", u: "https://www.garrigues.com/es_ES/noticia/peru-aprueba-estrategia-nacional-inteligencia-artificial-enia-establece-obligaciones" },
+        { n: "El Peruano · rol del Oficial de IA", u: "https://elperuano.pe/noticia/307294-peru-define-el-rol-del-oficial-de-ia-para-una-transformacion-digital-responsable-del-estado" },
+        { n: "Andina · reglamento de la Ley 31814", u: "https://andina.pe/agencia/noticia-gobierno-aprobo-reglamento-ley-promueve-uso-inteligencia-artificial-1044279.aspx" },
+        { n: "Perú Retail · cómo se aplicará el reglamento", u: "https://www.peru-retail.com/gobierno-aprueba-reglamento-que-promueve-uso-de-inteligencia-artificial-asi-se-aplicara/" }
+      ]
+    },
+    {
+      id: "ia-ue", sector: "ia", nivel: "media",
+      titulo: "La Unión Europea aplaza parte de su ley de IA: el etiquetado de contenido pasa a diciembre de 2026",
+      resumen: "Según reportes, el Parlamento Europeo y el Consejo alcanzaron en mayo de 2026 un acuerdo (el AI Omnibus) que simplifica el AI Act. Las obligaciones de transparencia sobre contenido generado por IA pasan del 2 de agosto al 2 de diciembre de 2026, algunas obligaciones de alto riesgo al 2 de diciembre de 2027 y los sistemas integrados en productos al 2 de agosto de 2028. El Parlamento aprobó los cambios el 16 de junio de 2026; la publicación final en el Diario Oficial de la UE no se pudo confirmar.",
+      paraTi: "Es una ley europea, pero afecta a las empresas que ofrecen IA en Europa y suele tomarse como referencia en el debate regulatorio. Confirma los plazos en la Comisión Europea.",
+      fuentes: [
+        { n: "IEB School · AI Act 2026", u: "https://www.iebschool.com/hub/ai-act-2026-la-ue-retrasa-el-cumplimiento-de-la-ia-de-alto-riesgo-a-diciembre-de-2027/" },
+        { n: "BHRRC · acuerdo del AI Omnibus", u: "https://www.bhrrc.org/de/neuste-meldungen/eu-council-parliament-agree-to-water-down-ai-act-as-part-of-digital-omnibus/" },
+        { n: "Comisión Europea · marco normativo de IA", u: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" }
+      ]
+    },
+    {
+      id: "ia-infra", sector: "ia", nivel: "media",
+      titulo: "Chips y centros de datos: la IA presiona la red eléctrica",
+      resumen: "Boletines de octubre de 2026 reportan que Microsoft, AMD, NVIDIA y Marvell presentaron nuevos diseños de chips y racks para centros de datos el 12 de octubre, y que el regulador eléctrico FERC de EE. UU. rechazó el 9 de octubre el núcleo del plan de PJM para limitar nuevas cargas grandes, como los centros de datos, que no aporten capacidad propia. Son fuentes secundarias: contrástalas con las primarias.",
+      paraTi: "La demanda de energía de la IA es un tema abierto en varios países. Revisa la orden de FERC y los comunicados de las empresas antes de sacar conclusiones.",
+      fuentes: [
+        { n: "FourWeekMBA · resumen del 12 de octubre", u: "https://fourweekmba.com/ai-daily-roundup-12-oct-2026-ai-chips-racks-large-loads/" },
+        { n: "Bloomberg Government · disputas tecnológicas 2026", u: "https://news.bgov.com/bloomberg-government-news/ai-regulation-chip-exports-data-centers-form-2026-tech-fights" }
+      ]
+    },
+    {
       sector: "mundo", nivel: "media",
       titulo: "EE. UU. aplica nuevos aranceles a decenas de países, incluida la región",
       resumen: "En julio de 2026 se informó que Washington impuso nuevos aranceles de entre 10 % y 12,5 % a 18 países de América Latina y el Caribe (Brasil, entre los más afectados). Varios gobiernos dijeron que negociarán; otros buscan diversificar su comercio.",
@@ -324,6 +376,17 @@ window.EDITORIAL = {
     { id: "datos-personales", t: "Datos personales", s: "tecnologia", d: "Información que identifica a una persona. En el Perú están protegidos por la Ley 29733 y una autoridad nacional de protección de datos." },
     { id: "deepfake", t: "Deepfake", s: "tecnologia", d: "Video, audio o imagen falsificados con IA que imitan a una persona real. Verifica la fuente antes de compartir." },
     { id: "gobierno-digital", t: "Gobierno digital (gob.pe)", s: "tecnologia", d: "Estrategia para ofrecer trámites y servicios del Estado en línea, centralizados en la plataforma gob.pe." },
+    { id: "ia-generativa", t: "IA generativa", s: "ia", d: "IA que crea contenido nuevo (texto, imágenes, audio, código) a partir de instrucciones, tras entrenarse con grandes volúmenes de datos." },
+    { id: "llm", t: "Modelo de lenguaje (LLM)", s: "ia", d: "Sistema entrenado con enormes cantidades de texto que genera lenguaje. Es la base de asistentes como ChatGPT, Claude o Gemini." },
+    { id: "agente-ia", t: "Agente de IA", s: "ia", d: "Sistema que no solo responde: ejecuta tareas de varios pasos usando herramientas (buscar, escribir, operar programas). Conviene supervisarlo." },
+    { id: "alucinacion", t: "Alucinación (IA)", s: "ia", d: "Respuesta falsa que un modelo presenta con apariencia convincente. Verifica datos importantes en fuentes confiables." },
+    { id: "sesgo-algoritmico", t: "Sesgo algorítmico", s: "ia", d: "Resultados sistemáticamente injustos de un sistema porque sus datos o su diseño reflejan prejuicios." },
+    { id: "enia", t: "ENIA", s: "ia", d: "Estrategia Nacional de Inteligencia Artificial del Perú 2026-2030, aprobada por la PCM (Resolución Ministerial 152-2026-PCM, según un análisis jurídico)." },
+    { id: "sgtd", t: "SGTD", s: "ia", d: "Secretaría de Gobierno y Transformación Digital de la PCM: autoridad técnico-normativa para el uso y la promoción de la IA en el Perú." },
+    { id: "oficial-ia", t: "Oficial de IA", s: "ia", d: "Funcionario de cada entidad pública que formula su plan de acción de IA. Su perfil y responsabilidades fueron fijados por una directiva de la SGTD en octubre de 2026." },
+    { id: "ai-act", t: "AI Act (UE)", s: "ia", d: "Reglamento de la Unión Europea que regula la IA según el nivel de riesgo. Se aplica por etapas y en 2026 se acordó aplazar parte de sus plazos." },
+    { id: "gpu", t: "Chip de IA (GPU)", s: "ia", d: "Procesador especializado que acelera el entrenamiento y uso de modelos de IA. Su comercio es un tema geopolítico entre grandes potencias." },
+    { id: "centro-de-datos", t: "Centro de datos", s: "ia", d: "Instalación con miles de servidores donde se entrena y ejecuta la IA. Consume mucha electricidad y agua." },
     { id: "liga-1", t: "Liga 1", s: "deporte", d: "Primera división del fútbol profesional peruano." },
     { id: "apertura-clausura", t: "Apertura y Clausura", s: "deporte", d: "Los dos torneos cortos en que se divide la temporada de la Liga 1." },
     { id: "tabla-acumulada", t: "Tabla acumulada", s: "deporte", d: "Tabla que suma los puntos de Apertura y Clausura durante el año." },
@@ -358,6 +421,8 @@ window.EDITORIAL = {
     { n: "BCRP", u: "https://www.bcrp.gob.pe", tipo: "Dato oficial", foco: "Notas de política monetaria e indicadores.", feed: false },
     { n: "INEI", u: "https://www.inei.gob.pe", tipo: "Dato oficial", foco: "Estadísticas oficiales: pobreza, empleo, población.", feed: false },
     { n: "CDC-Minsa", u: "https://www.dge.gob.pe", tipo: "Dato oficial", foco: "Salas situacionales y alertas epidemiológicas.", feed: false },
+    { n: "SGTD · PCM (gob.pe)", u: "https://www.gob.pe/pcm", tipo: "Dato oficial", foco: "Autoridad nacional de IA y gobierno digital: directivas, estrategia y reglamento.", feed: false },
+    { n: "Comisión Europea · IA", u: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai", tipo: "Dato oficial", foco: "Marco normativo europeo de IA (AI Act) y calendario de aplicación.", feed: false },
     { n: "BBC Mundo", u: "https://www.bbc.com/mundo", tipo: "Internacional", foco: "Noticias del mundo en español.", feed: true },
     { n: "DW Español", u: "https://www.dw.com/es", tipo: "Internacional", foco: "Actualidad internacional.", feed: true },
     { n: "El País América", u: "https://elpais.com/america/", tipo: "Internacional", foco: "América Latina y el mundo.", feed: true },
@@ -383,6 +448,18 @@ window.EDITORIAL.articulos = {
   tecnologia: {
     contexto: "La Ley 31814 (2023) fija principios para el uso ético y seguro de la inteligencia artificial. Mientras tanto, los ataques de phishing y ransomware aprovechan la IA para parecer más creíbles. Las organizaciones deben invertir en ciberseguridad y las personas en hábitos básicos, como la verificación en dos pasos.",
     terminos: ["ia", "ciberseguridad", "phishing", "ransomware", "datos-personales", "deepfake"]
+  },
+  "ia-peru": {
+    contexto: "El Perú optó por un marco que promueve el uso de la IA con principios de ética, seguridad y transparencia, en lugar de prohibiciones. La Ley 31814 fija el rumbo, el reglamento detalla plazos y obligaciones, y la estrategia 2026-2030 ordena las prioridades. La PCM, mediante la SGTD, supervisa y cada entidad pública debe contar con un Oficial de IA que prepare su plan de acción.",
+    terminos: ["enia", "sgtd", "oficial-ia", "ia", "ia-generativa", "sesgo-algoritmico"]
+  },
+  "ia-ue": {
+    contexto: "El AI Act clasifica los sistemas de IA por riesgo: más obligaciones para los de alto riesgo y reglas de transparencia, por ejemplo, para el contenido generado por IA. El acuerdo de 2026 ajusta los plazos para dar más tiempo a las empresas. Un plazo aplazado no elimina la obligación, solo cambia cuándo empieza a exigirse.",
+    terminos: ["ai-act", "ia-generativa", "deepfake", "llm"]
+  },
+  "ia-infra": {
+    contexto: "Entrenar y ejecutar modelos de IA exige chips especializados y centros de datos con gran consumo eléctrico. Por eso la disponibilidad de energía, la regulación de las redes eléctricas y el comercio de chips se volvieron parte del debate sobre IA.",
+    terminos: ["gpu", "centro-de-datos", "llm", "agente-ia"]
   },
   mundo: {
     contexto: "Un arancel encarece los productos importados en el país que lo aplica. Para economías exportadoras como la peruana, los aranceles de grandes mercados pueden reducir la demanda, mover los precios de las materias primas y alterar el tipo de cambio, incluso cuando el producto peruano no es el directamente gravado.",
