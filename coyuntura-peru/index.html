@@ -3,17 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Perú en Claro · Noticias y coyuntura peruana explicadas</title>
-<meta name="description" content="Noticias y análisis de la coyuntura peruana explicados para cualquiera: política, economía, salud, tecnología, deporte, investigación y mundo. Se actualiza a las 8:00 y 23:00 (hora de Lima).">
-<meta name="theme-color" content="#000000">
+<title>Contexto Perú</title>
+<meta name="description" content="Contexto Perú: entender la coyuntura con datos oficiales. Análisis, noticias de medios independientes, indicadores, glosario y una ruta de aprendizaje. Se actualiza a las 08:00 y 23:00 (hora de Lima).">
+<meta name="theme-color" content="#090D16">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Perú en Claro">
+<meta name="apple-mobile-web-app-title" content="Contexto Perú">
 <meta name="format-detection" content="telephone=no">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="assets/icono-180.png">
 <link rel="icon" type="image/png" href="assets/icono-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700;800&family=Playfair+Display:wght@600;700;800&display=swap">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -21,14 +24,22 @@
 
 <header class="top">
   <div class="top-in">
-    <a class="brand" href="#/" aria-label="Perú en Claro, ir al inicio">
-      <span class="logo" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M2 26 12 9l6 9 4-5 8 13z" fill="#fff"/></svg></span>
-      <span class="wm"><b>Perú</b> en Claro</span>
+    <a class="brand" href="#/" aria-label="Contexto Perú, ir al inicio">
+      <span class="wm">CONTEXTO <b>PERÚ</b></span>
+      <span class="lema">Entender la coyuntura con datos oficiales</span>
     </a>
+    <span class="pill-act" title="Horas de actualización automática (Lima)"><i aria-hidden="true"></i>Actualización: 08:00 / 23:00</span>
+    <nav class="mnav" aria-label="Navegación principal">
+      <a href="#/" data-n="inicio">Inicio</a>
+      <a href="#/ruta" data-n="ruta">La Ruta</a>
+      <a href="#/glosario" data-n="glosario">Glosario</a>
+      <a href="#/estadisticas" data-n="estadisticas">Estadísticas</a>
+      <a href="#/historial" data-n="historial">Historial</a>
+    </nav>
     <div class="top-act">
       <button class="ib" id="b-buscar" aria-label="Buscar"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
       <button class="ib" id="b-tema" aria-label="Cambiar tema claro u oscuro"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
-      <a class="xp" href="#/ruta" id="xpchip" aria-label="Mi progreso en la Ruta"><span id="xpnivel">🧭</span><b id="xpnum">0 XP</b></a>
+      <a class="xp" href="#/ruta" id="xpchip" aria-label="Mi progreso en la Ruta"><span id="xpnivel">🧭</span><span class="xl">Mi Ruta:</span><b id="xpnum">0 XP</b></a>
     </div>
   </div>
 </header>
@@ -44,7 +55,7 @@
 <footer class="foot">
   <div class="foot-in">
     <div>
-      <a class="brand" href="#/"><span class="logo" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M2 26 12 9l6 9 4-5 8 13z" fill="#fff"/></svg></span><span class="wm"><b>Perú</b> en Claro</span></a>
+      <a class="brand" href="#/"><span class="wm">CONTEXTO <b>PERÚ</b></span><span class="lema">Entender la coyuntura con datos oficiales</span></a>
       <p>Proyecto educativo para entender la coyuntura peruana. No sustituye a las fuentes oficiales ni está afiliado a los medios citados.</p>
     </div>
     <div>
