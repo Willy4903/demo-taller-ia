@@ -1,6 +1,6 @@
 /* Generado por scripts/actualizar_noticias.py (GitHub Actions, 08:00 y 23:00 hora de Lima). No editar a mano. */
 window.NOTICIAS = {
- "generado": "2026-11-02T14:43:28Z",
+ "generado": "2026-11-02T14:49:16Z",
  "modo": "automatico",
  "estado_fuentes": {
   "IDL-Reporteros": {
@@ -91,12 +91,160 @@ window.NOTICIAS = {
    "ok": true,
    "n": 15
   },
+  "Google Noticias · El Niño": {
+   "ok": true,
+   "n": 15
+  },
   "Google Noticias · IA en el mundo": {
    "ok": true,
    "n": 15
   }
  },
  "items": [
+  {
+   "id": "22dd4e5c42",
+   "sector": "economia",
+   "titulo": "Tía María, Los Chancas y otros: Southern eleva inversión en Perú a US$ 10,380 millones",
+   "resumen": "Southern Perú incrementó su inversión proyectada en Perú a US$ 10,380 millones destinada, principalmente, al desarrollo de proyectos mineros como Tía María, Los Chancas, Michiquillay, Expansión Cuajone, Nueva Fundición y la Refinería de Ilo, entre otros, informó el Ministerio…",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/economia/empresas/southern-incrementa-inversion-estimada-en-peru-a-mas-de-us-10000-millones-con-foco-en-tia-maria-los-chancas-y-otros-proyectos-noticia/",
+   "fecha": "2026-11-02T14:45:04Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://gestion.pe/resizer/v2/RV4JSS6ECBEQBER2TPWLC5F2OE.png?auth=bed5f3c256df28ac1d0683955a246722cfd6bf8d49b54f35a52ea094a0b32636&smart=true&width=1102&height=588"
+  },
+  {
+   "id": "2148a9b029",
+   "sector": "economia",
+   "titulo": "Chile: aprobación de Kast cae a mínimo tras liberación anticipada de pedófilos",
+   "resumen": "Las polémicas rebajas de pena aprobadas por el Gobierno chileno a 56 condenados por abusos sexuales y pederastia están lastrando la imagen del presidente José Atonio Kast, cuya aprobación ha caído a mínimos menos de ocho meses después de su llegada al poder, según diversas…",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/mundo/internacional/chile-aprobacion-de-jose-antonio-kast-cae-a-minimo-tras-liberacion-anticipada-de-pedofilos-noticia/",
+   "fecha": "2026-11-02T14:43:02Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://gestion.pe/resizer/v2/RJND44PE6VD6JF77ULOVHO254M.jpg?auth=1952597cff3a8192d5a64e7458766cc0fee737573a5eb15e12663baf61a8eb6f&smart=true&width=1200&height=800"
+  },
+  {
+   "id": "4f425e45e5",
+   "sector": "deporte",
+   "titulo": "Alianza Lima derrotó 3-1 a Circolo Sportivo Italiano por la fecha 3 de la Fase 1 de la Liga Peruana de Vóley 2026/2027",
+   "resumen": "No te pierdas el encuentro entre Alianza Lima y Circolo en directo. Sigue aquí la tercera fecha de la Liga Peruana de Vóley 2026/2027 punto a punto.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/deporte-total/voley/alianza-lima-vs-circolo-sportivo-italiano-en-vivo-hora-canal-tv-y-donde-ver-la-fecha-3-de-la-fase-1-de-la-liga-peruana-de-voley-20262027-latina-tv-sets-y-puntos-tdpe-noticia/",
+   "fecha": "2026-11-02T14:42:12Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://elcomercio.pe/resizer/v2/YEFAXRYGVJHOXLUPISFZ6DMHPY.png?auth=06cb47a51d152c605233c7affb67724ca519bee25447dce0a40a399141e118b1&smart=true&width=1072&height=792"
+  },
+  {
+   "id": "39c602e55e",
+   "sector": "coyuntura",
+   "titulo": "De tres horas a 45 minutos: ¿qué necesita Lima para transformar su transporte público?",
+   "resumen": "El conversatorio Desde la Cúpula, organizado por El Comercio en alianza con la Universidad del Pacífico, reunió a representantes de la ATU, la Asociación Automotriz del Perú y la Cámara Internacional del Transporte para discutir propuestas sobre infraestructura, educación vial…",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/lima/transporte/de-tres-horas-a-45-minutos-que-necesita-lima-para-transformar-su-transporte-publico-noticia/",
+   "fecha": "2026-11-02T14:42:10Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://elcomercio.pe/resizer/v2/SU6EJPEFNZDLRAAFBMN6ROUD74.jpg?auth=907942ad01a839483b6d393ac7049d9ea342b8fd29801278d7f83a42bd3090e5&smart=true&width=1600&height=1067"
+  },
+  {
+   "id": "bf1e4b4781",
+   "sector": "coyuntura",
+   "titulo": "Jude Bellingham se quita la camiseta del Real Madrid y posa en ropa interior para Calvin Klein",
+   "resumen": "El centrocampista del Real Madrid protagoniza su primera campaña para Calvin Klein, donde luce los icónicos modelos de ropa interior de la firma estadounidense.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/famosos/celebridades/jude-bellingham-se-quita-la-camiseta-del-real-madrid-y-posa-en-ropa-interior-para-calvin-klein-noticia-1715558",
+   "fecha": "2026-11-02T14:41:29Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://f.rpp-noticias.io/2026/11/02/561856_1924917.jpg?imgdimension=look"
+  },
+  {
+   "id": "be3bbebc32",
+   "sector": "economia",
+   "titulo": "Precio del dólar en Perú: tipo de cambio hoy, lunes 2 de noviembre",
+   "resumen": "Precio del dólar hoy EN VIVO: cotización en compra y venta del dólar en el Perú en la jornada de hoy, lunes 2 de noviembre. Revisa los movimientos de la moneda estadounidense en el mercado nacional.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/economia/mercados/precio-del-dolar-en-peru-2026-hoy-lunes-2-de-noviembre-tipo-de-cambio-segun-el-bcrp-tasa-cotizacion-compra-y-venta-segun-bcrp-dolares-a-soles-sbs-ocona-lbposting-noticia/",
+   "fecha": "2026-11-02T14:41:05Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://elcomercio.pe/resizer/v2/T2XAH3YFGVDT5ONDUIIWRTZMYY.jpg?auth=359de91890d28fd8836b57058cf9b251ba893174042802b1fa9880c2f2bde440&smart=true&width=1200&height=700"
+  },
+  {
+   "id": "7a2da09dce",
+   "sector": "politica",
+   "titulo": "Melgar vs Sport Huancayo EN VIVO HOY: minuto a minuto del partido clave por Torneo Clausura de Liga 1 2026",
+   "resumen": "Ambos equipos llegan con objetivos importantes: el ‘rojo matador’ quiere retomar el liderato y el ‘dominó’ necesita consolidarse en los puestos de vanguardia. Sigue todas las incidencias",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/deportes/2026/11/02/melgar-vs-sport-huancayo-en-vivo-hoy-minuto-a-minuto-partido-fecha-15-torneo-clausura-liga-1-2026-goles-resumen-resultado/",
+   "fecha": "2026-11-02T14:40:11Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://www.infobae.com/resizer/v2/FH6MXQHWINCO7NI2YDES7L3JWY.png?auth=181ade43bdf46b2c35ec412c355870b6505db43f87f37341a987e6647b793f34&smart=true&width=1920&height=1080"
+  },
+  {
+   "id": "6fbf02d0a8",
+   "sector": "coyuntura",
+   "titulo": "“ONE PIECE 1198” Manga: Fecha del nuevo capítulo",
+   "resumen": "Conoce la fecha de estreno confirmada, la hora exacta de lanzamiento por país en Manga Plus y todos los detalles del esperado capítulo 1198 del manga de “ONE PIECE”.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/cuando/one-piece-1198-manga-fecha-del-nuevo-capitulo-shueisha-tdpe-noticia/",
+   "fecha": "2026-11-02T14:40:05Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://elcomercio.pe/resizer/v2/CD5M2C2WIREFRB7TKHV6O4VOFU.png?auth=98f8d929d404603f1110caf62ec9f37f3f90eca09b4dc47663d5909095868e10&smart=true&width=989&height=579"
+  },
+  {
+   "id": "2a37796c5f",
+   "sector": "investigacion",
+   "titulo": "La actriz Margaret Qualley y el músico Jack Antonoff solicitan el divorcio en Nueva York",
+   "resumen": "NUEVA YORK.- La actriz Margaret Qualley y el ganador del Grammy Jack Antonoff han presentado una demanda de divorcio tras tres años de matrimonio, según registros judiciales. El caso se presentó el viernes en el Tribunal Supremo del condado de Kings, en Brooklyn, Nueva York, y…",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/mag/fama/celebs/la-actriz-margaret-qualley-y-el-musico-jack-antonoff-solicitan-el-divorcio-en-nueva-york-nnda-nnrt-noticia/",
+   "fecha": "2026-11-02T14:39:06Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://elcomercio.pe/resizer/v2/OT2UCJZDPZARHJWPONFMLXQYJE.jpg?auth=fb79a6887fa003e5df5bba2691f0dcda46c3f65bf36573c3c204b32bf05f19b7&smart=true&width=1920&height=1280"
+  },
+  {
+   "id": "06fab1b1a7",
+   "sector": "coyuntura",
+   "titulo": "Resultados de La Tinka del domingo 1 de noviembre: mira los números ganadores del Sí o Sí",
+   "resumen": "Resultados de La Tinka EN VIVO: Conoce aquí los resultados del sorteo que juega el miércoles 28 de octubre, que tiene un Pozo Millonario de S/ 9'506,888.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/loterias/resultados-de-la-tinka-hoy-1-de-noviembre-en-vivo-ultimo-sorteo-del-domingo-ver-numeros-y-jugada-ganadora-pozo-millonario-resultado-si-o-si-boliyapa-intralot-lbposting-noticia/",
+   "fecha": "2026-11-02T14:38:44Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://elcomercio.pe/resizer/v2/654VTNGL45CG5NGT4TQAYXNXYA.jpg?auth=349d7fdf061bea379b7b23dd891c57bff3487a6a5c58d28afa91562cf82e7093&smart=true&width=1200&height=700"
+  },
+  {
+   "id": "a1a7eac79f",
+   "sector": "coyuntura",
+   "titulo": "La Tinka del domingo 1 de noviembre: mira los números ganadores y premios del último sorteo",
+   "resumen": "La Tinka EN VIVO: resultados y sorteo del domingo 1 de noviembre que tiene un Pozo Millonario de S/ 9'506,888. Revisa también la bolilla del Sí o Sí.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/loterias/la-tinka-hoy-domingo-1-de-noviembre-en-vivo-resultados-del-ultimo-sorteo-y-jugada-ganadora-tinkanet-pozo-millonario-loteria-si-o-si-boliyapa-intralot-lbposting-noticia/",
+   "fecha": "2026-11-02T14:38:43Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://elcomercio.pe/resizer/v2/ULVLHD5QSRGTFNBBTEFZV6MBIY.jpg?auth=255cf59a7bc23454e447ab9d632e67ab5c500dd38a9e948bea6ec7b159f6b8ba&smart=true&width=1200&height=700"
+  },
+  {
+   "id": "7ad3fa39e9",
+   "sector": "salud",
+   "titulo": "Ministerio de Salud anuncia instalación de hospital de campaña en Tumbes ante fuertes lluvias en la región",
+   "resumen": "El ministro Luis Dyer anunció que el hospital de campaña se instalará en el Coliseo Cáceres, debido a que es un punto alto que no es propenso a inundaciones.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/peru/tumbes/ministerio-de-salud-anuncia-instalacion-de-hospital-de-campana-en-tumbes-ante-fuertes-lluvias-en-la-region-noticia-1715554",
+   "fecha": "2026-11-02T14:38:11Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://f.rpp-noticias.io/2026/11/02/040704_1924916.jpg?imgdimension=look"
+  },
   {
    "id": "37e5eee73c",
    "sector": "deporte",
@@ -156,18 +304,6 @@ window.NOTICIAS = {
    "tipo": "comercial",
    "ambito": "peru",
    "imagen": "https://www.infobae.com/resizer/v2/NAN4IMPRMVGDZATBBWOH6NRWRA.png?auth=97a2ad41a02743858a44c9a0e01dab5842a1d84d3169be357dfc566be6a6b500&smart=true&width=1920&height=1080"
-  },
-  {
-   "id": "be3bbebc32",
-   "sector": "economia",
-   "titulo": "Precio del dólar en Perú hoy, lunes 2 de noviembre: cuál es el tipo de cambio",
-   "resumen": "Precio del dólar hoy EN VIVO: cotización en compra y venta del dólar en el Perú en la jornada de hoy, lunes 2 de noviembre. Revisa los movimientos de la moneda estadounidense en el mercado nacional.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/economia/mercados/precio-del-dolar-en-peru-2026-hoy-lunes-2-de-noviembre-tipo-de-cambio-segun-el-bcrp-tasa-cotizacion-compra-y-venta-segun-bcrp-dolares-a-soles-sbs-ocona-lbposting-noticia/",
-   "fecha": "2026-11-02T14:34:36Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://elcomercio.pe/resizer/v2/T2XAH3YFGVDT5ONDUIIWRTZMYY.jpg?auth=359de91890d28fd8836b57058cf9b251ba893174042802b1fa9880c2f2bde440&smart=true&width=1200&height=700"
   },
   {
    "id": "2a4e6e97e1",
@@ -231,7 +367,7 @@ window.NOTICIAS = {
   },
   {
    "id": "d49045d1ca",
-   "sector": "coyuntura",
+   "sector": "nino",
    "titulo": "Lluvias en el norte y otras regiones del Perú EN VIVO: pronósticos del Senamhi y reportes por Fenómeno El Niño 2026",
    "resumen": "Lluvias en el norte y otras regiones del Perú EN VIVO: pronósticos del Senamhi y reportes por El Niño 2026",
    "fuente": "El Comercio",
@@ -255,7 +391,7 @@ window.NOTICIAS = {
   },
   {
    "id": "7609d1811e",
-   "sector": "coyuntura",
+   "sector": "nino",
    "titulo": "Claro y El Niño: el plan para blindar su red y crecer a doble dígito en nube e IA",
    "resumen": "Claro Empresas alista su red ante El Niño con un plan de tres frentes. Además, apunta a crecer a doble dígito en 2027. ¿En qué servicios?",
    "fuente": "Gestión",
@@ -290,18 +426,6 @@ window.NOTICIAS = {
    "imagen": "https://elcomercio.pe/resizer/v2/OQ3VYW4D6RC3NKOELI6GLKKBME.jpg?auth=99ba2b3f6ed09e8eec0f7bdd0f441340e08b25e5cd20a03d2cd7046c7d4a38ce&smart=true&width=1200&height=800"
   },
   {
-   "id": "5072c731f2",
-   "sector": "coyuntura",
-   "titulo": "Temblor en Perú: magnitud, lugar y hora del último sismo reportado hoy, lunes 2 de noviembre",
-   "resumen": "Temblor en Perú EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Instituto Geofísico del Perú (IGP).",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/temblor-en-peru-hoy-en-vivo-magnitud-epicentro-intensidad-del-ultimo-sismo-reportado-el-1-y-2-de-noviembre-de-2026-via-el-igp-instituto-geofisico-del-peru-lima-callao-ica-lbposting-noticia/",
-   "fecha": "2026-11-02T14:27:46Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://elcomercio.pe/resizer/v2/CQLUAJVOYRAXJFB763PSZ63DRI.jpeg?auth=8fbfc5ff2f55b3d348246d65f944fe361296fdda1d22e7bac3ae99c2c7d5e05c&smart=true&width=1200&height=700"
-  },
-  {
    "id": "7927e5f25d",
    "sector": "politica",
    "titulo": "Juan Reynoso regañó a futbolista que terminó llorando tras ser sustituido en partido de Necaxa [VIDEO]",
@@ -312,18 +436,6 @@ window.NOTICIAS = {
    "tipo": "comercial",
    "ambito": "peru",
    "imagen": "https://f.rpp-noticias.io/2026/11/02/434543_1924912.jpg?imgdimension=look"
-  },
-  {
-   "id": "3383d5d09f",
-   "sector": "coyuntura",
-   "titulo": "Capturado de banda criminal ‘La Nueva Jauría’ está afiliado a Juntos por el Perú",
-   "resumen": "El reciente megaoperativo de la Diviac que desarticuló a las bandas criminales ‘La Nueva Jauría de San José’ y ‘La Nueva Jauría de Virú’ en La Libertad reveló que varios de sus principales integrantes mantienen afiliaciones políticas vigentes y válidas.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/politica/juntos-por-el-peru-capturado-de-banda-criminal-la-nueva-jauria-esta-afiliado-a-partido-de-roberto-sanchez-la-libertad-noticia/",
-   "fecha": "2026-11-02T14:27:33Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://elcomercio.pe/resizer/v2/VKYIZODXJ5BZDPUBVQQIS4K6VM.jpeg?auth=ce757facf22371a93a4603ff6e71423f54b17a15548e47cc65306b7691b1ab69&smart=true&width=512&height=286"
   },
   {
    "id": "0d2fc802be",
@@ -375,7 +487,7 @@ window.NOTICIAS = {
   },
   {
    "id": "bdc36d64dc",
-   "sector": "coyuntura",
+   "sector": "nino",
    "titulo": "Lluvias intensas en Tumbes y Piura persistirán hasta el 7 de noviembre, advierte Senamhi",
    "resumen": "Las regiones de Tumbes y Piura continúan bajo vigilancia ante la presencia de lluvias de fuerte intensidad. El Servicio Nacional de Meteorología e Hidrología del Perú (Senamhi) reportó importantes registros de precipitaciones en ambas jurisdicciones durante las últimas 24 horas…",
    "fuente": "Gestión",
@@ -407,7 +519,7 @@ window.NOTICIAS = {
    "fecha": "2026-11-02T14:20:10Z",
    "tipo": "internacional",
    "ambito": "mundo",
-   "imagen": "https://imagenes.elpais.com/resizer/v2/TDBYDTKIBZCFRNJ277BMU6J3CM.jpg?auth=d0be37553737dc49caad8d54b472bddb739dd8496ef023ac1ab0155aaa22ea09"
+   "imagen": "https://imagenes.elpais.com/resizer/v2/7KZPZVPUMBCI3IW3BRVLSZ72NE.jpg?auth=63656780b446161a59c4d693b227e99ae160f9dabbbc7a790c962b2f989fe81b"
   },
   {
    "id": "a84f51cec0",
@@ -614,18 +726,6 @@ window.NOTICIAS = {
    "imagen": "https://s.france24.com/media/display/2ee2e932-d6c2-11f1-8bcd-695cb59fade5/w:1024/p:16x9/ES-20261102-071454-072517-CS.jpg"
   },
   {
-   "id": "7a2da09dce",
-   "sector": "politica",
-   "titulo": "Melgar vs Sport Huancayo EN VIVO HOY: minuto a minuto del partido clave por Torneo Clausura de Liga 1 2026",
-   "resumen": "Ambos equipos llegan con objetivos importantes: el ‘rojo matador’ quiere retomar el liderato y el ‘dominó’ necesita consolidarse en los puestos de vanguardia. Sigue todas las incidencias",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/deportes/2026/11/02/melgar-vs-sport-huancayo-en-vivo-hoy-minuto-a-minuto-partido-fecha-15-torneo-clausura-liga-1-2026-goles-resumen-resultado/",
-   "fecha": "2026-11-02T13:54:08Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://www.infobae.com/resizer/v2/FH6MXQHWINCO7NI2YDES7L3JWY.png?auth=181ade43bdf46b2c35ec412c355870b6505db43f87f37341a987e6647b793f34&smart=true&width=1920&height=1080"
-  },
-  {
    "id": "6c82225d3b",
    "sector": "deporte",
    "titulo": "¿Asalto a la punta? A qué hora y dónde ver Sporting Cristal vs. FC Cajamarca por el Torneo Clausura",
@@ -711,7 +811,7 @@ window.NOTICIAS = {
   },
   {
    "id": "91b426bf0b",
-   "sector": "coyuntura",
+   "sector": "economia",
    "titulo": "Las previsiones a tomar por las empresas para no ver sus operaciones afectadas por El Niño",
    "resumen": "Las lluvias y bloqueos de vías de comunicación ponen en riesgo las operaciones de las empresas. Sepa las medidas preventivas a tomar.",
    "fuente": "Gestión",
@@ -987,7 +1087,7 @@ window.NOTICIAS = {
   },
   {
    "id": "5753553f49",
-   "sector": "coyuntura",
+   "sector": "nino",
    "titulo": "Fenómeno El Niño: Alerta roja por incremento del caudal del río Tumbes tras intensas precipitaciones",
    "resumen": "El norte del Perú soporta acumulados de lluvia de entre 5 y 15 milímetros. Habrá tregua temporal hasta el miércoles 4 y luego un repunte",
    "fuente": "El Búho",
@@ -1034,6 +1134,18 @@ window.NOTICIAS = {
    "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/a294/live/769a3ef0-d6b9-11f1-aacc-5b5f23abff4b.jpg"
   },
   {
+   "id": "39dc698357",
+   "sector": "coyuntura",
+   "titulo": "Un ataque informático altera los congeladores en supermercados de Bélgica, Suecia y Luxemburgo",
+   "resumen": "MADRID 2 Nov. (EUROPA PRESS) - Un nuevo ataque informático provocó esta pasada noche subidas acusadas de la temperatura en congeladores y… The post Un ataque informático altera los congeladores en supermercados de Bélgica, Suecia y Luxemburgo appeared first on Caretas .",
+   "fuente": "Caretas",
+   "url": "https://caretas.pe/mundo/ciberataque-afecta-supermercados-en-tres-paises-de-europa/",
+   "fecha": "2026-11-02T12:31:11Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://caretas.pe/wp-content/uploads/2026/11/cibertaqu.jpg"
+  },
+  {
    "id": "da64cdc1db",
    "sector": "mundo",
    "titulo": "¿Y si fallan las encuestas? Cómo la “ola azul” demócrata podría pasar a tsunami o quedarse en marejada",
@@ -1044,6 +1156,18 @@ window.NOTICIAS = {
    "tipo": "internacional",
    "ambito": "mundo",
    "imagen": "https://imagenes.elpais.com/resizer/v2/7CFFKHUYCNGQJITAWJ66HTMEWY.png?auth=2c923b266695f9ae5af7852016d7446e7cc975b66a6c8eecff4f2ccfd3278186&width=1200"
+  },
+  {
+   "id": "8d9718717f",
+   "sector": "coyuntura",
+   "titulo": "Al menos cuatro muertos, entre ellas una recién nacida, en un atentado en el centro de Colombia",
+   "resumen": "MADRID 2 Nov. (EUROPA PRESS) - Al menos cuatro personas murieron este domingo en el centro de Colombia, entre ellas una niña… The post Al menos cuatro muertos, entre ellas una recién nacida, en un atentado en el centro de Colombia appeared first on Caretas .",
+   "fuente": "Caretas",
+   "url": "https://caretas.pe/mundo/colombia-atentado-deja-cuatro-muertos-incluida-una-bebe/",
+   "fecha": "2026-11-02T12:21:17Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://caretas.pe/wp-content/uploads/2026/11/colombia-camion.jpg"
   },
   {
    "id": "a67f2264c1",
@@ -1430,18 +1554,6 @@ window.NOTICIAS = {
    "imagen": "https://caretas.pe/wp-content/uploads/2026/11/g20.jpg"
   },
   {
-   "id": "8a285a18d2",
-   "sector": "economia",
-   "titulo": "Mall de Huaraz con viabilidad comercial: oferta, gasto y plazos de proyecto frente al Huascarán",
-   "resumen": "Mall en Huaraz con potencial para ser desarrollado en el predio de la Municipalidad Distrital de Independencia.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/economia/empresas/mall-de-huaraz-alcanza-viabilidad-comercial-estos-son-los-plazos-que-siguen-para-su-ejecucion-noticia/",
-   "fecha": "2026-11-02T00:46:00Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://gestion.pe/resizer/v2/EXMNNEIU5VFQNK7BH56O3MAQZU.jpeg?auth=d863f0bb17c8249113e45e03d6cd86ee1d0a8c5f897c3179760f9441c1a09f32&smart=true&width=1280&height=723"
-  },
-  {
    "id": "e64680ff84",
    "sector": "salud",
    "titulo": "Junín: mineras buscan frenar protección de cabeceras de cuenca (VIDEO)",
@@ -1539,7 +1651,7 @@ window.NOTICIAS = {
   },
   {
    "id": "0fe05ddab0",
-   "sector": "economia",
+   "sector": "nino",
    "titulo": "La Bistecca con dos nuevos puntos en Lima y apunta a nuevos distritos",
    "resumen": "La Bistecca amplía su presencia en Lima, prepara la renovación de sus restaurantes y evalúa nuevas ubicaciones mientras enfrenta el alza de costos por el Fenómeno El Niño.",
    "fuente": "Gestión",
@@ -1548,6 +1660,42 @@ window.NOTICIAS = {
    "tipo": "comercial",
    "ambito": "peru",
    "imagen": "https://gestion.pe/resizer/v2/IL6B2PF5MBAVJAQ5O2IMD7I674.png?auth=4c50e42681f2c9382e3d4f96b784c3c7ca09bc168abce9aa4282d46c1ecdee5b&smart=true&width=1536&height=1024"
+  },
+  {
+   "id": "0550398eec",
+   "sector": "nino",
+   "titulo": "Áncash: Enfen prevé lluvias superiores a lo normal hasta el verano de 2027",
+   "resumen": "",
+   "fuente": "Radio RSD",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUW51WHJ3bklMVWN4djRfb2xMek1Ba3JKTUdZVlZycmxLWmJfb2RGc3dOUFZKY1RQang0UHF1d1lPU1k5RFVvM0RZY0ItUnppTDlYWWd3VzNWbU1iVzR1WjZsMU9keVRmTEZuRi03S29ITWhONGl6NXhVVTZsTGxLN0tMaTY2cm1JdC12Vmh3cTVHLVNBVHBqdzZBUHRMY053VWc?oc=5",
+   "fecha": "2026-10-31T22:01:06Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": null
+  },
+  {
+   "id": "66b143bc48",
+   "sector": "nino",
+   "titulo": "Enfen advierte que El Niño Costero extraordinario se prolongaría hasta febrero de 2027",
+   "resumen": "",
+   "fuente": "TVPerú",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQQkxmMVhfbnFERFMxOERKSGpmeHVmeWh6cmZRcy1ZRl9UR0c5WkgxTVBTbXUxYnpvN2ZvbE1sTS0wc1dxQXRHbGx5WDN1bDNfRFI0YVpOeHMxdzdRNW9mT2RLdnVScERjZlJ0SW82My1iSXUycmdKWjI2MllIRkNhY0tHZm5QM3BQMjRDUG9mT3JIbkxzdFRadVJGNjNNM2xkTDEzNlFfQzJ2LWZVc0ZZdlFBRVZWSklkQm9mdTluLWRyVW1abzFaTGktMkE?oc=5",
+   "fecha": "2026-10-31T19:36:37Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": null
+  },
+  {
+   "id": "a90130a0c9",
+   "sector": "nino",
+   "titulo": "Enfen prevé que El Niño Costero continuará hasta fines de otoño de 2027",
+   "resumen": "",
+   "fuente": "Radio Yaraví Arequipa",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQak85U21aMFgzbDAtTmNaLUlIWVkwb3F4RVhwUTJRMnV6S0Z6RDZ1SkJZVXl0am5ES08tZzRPRjFGZGoxV3Ezd3BRRk5zZ0xsUDFtV2RibGdtTnlJZWJFWlQwbTBJU0dfT3d6eUhZdmw5b3Y5U2htampfcUZjUXRPbWZEd1pOdmdIVU10RFlSRE1tYUE1M3VEOVczSm9LZi1ZYXhYc0dLRTRaUmk2bGpaT0dicw?oc=5",
+   "fecha": "2026-10-31T18:04:32Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": null
   },
   {
    "id": "bcbd8bcd36",
@@ -1574,16 +1722,52 @@ window.NOTICIAS = {
    "imagen": "https://lamula.pe/media/uploads/t/cc7f8c1677118f85d1a5363a1d281841.jpg"
   },
   {
-   "id": "9fc6c51167",
-   "sector": "economia",
-   "titulo": "El Niño pone a prueba la entrega oportuna de bonos y créditos",
-   "resumen": "Actuar de manera célere implica enfrentar diversos obstáculos; entre ellos, un padrón de hogares vulnerables aún incompleto. Para evitar que los retrasos en la atención de estas poblaciones se repitan, Apoyo Consultoría sugiere cuatro acciones.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/economia/ajustes-para-que-los-apoyos-ante-el-nino-lleguen-a-quienes-mas-los-necesitan-noticia/",
-   "fecha": "2026-10-31T17:46:44Z",
+   "id": "799df158a1",
+   "sector": "nino",
+   "titulo": "Enfen pronostica que el Niño Costero...",
+   "resumen": "",
+   "fuente": "Panamericana TV",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQeWpHeGlJZDQtdFNVOWE5dkpLcWRYRndybHVCeTZzdUlzWjFEOHNXRlQ5QmFIa3UtdXVaS25Fc3VocHNSNnlJU3l0SDJmU1JUWFk2UWR0MEhfdWkyQ295OC1RSXhWdzlhdEg0eWJJTTJWd2pCbDg2a1dQUFU4SnRiOFNiVVhyOHA4YkNneEtJamJtN0doOGx1LVpPRDhyeVJDa3RCcmMwc9IBpwFBVV95cUxNZzVwNmdtOWJBS3FNemNKTkJSSnZrdmRvUGVkY3M1cU9wdXpPSGt5NUFGODlJUkVYNS1yTi1LLVB0TW5ndjRZQk5vWFdoSlMwRl8ydFdaTmZad0g3WGdKMzVlTzU0SFJpOTB1UUJOUnpsX1FVa0ZnZUVXQ3JncXM5ZWV5R3NJWC04dTF2V2Y3ZUVVLWhjQzVxMUc4bzVkdHNIMy02YnpJbw?oc=5",
+   "fecha": "2026-10-31T17:23:40Z",
    "tipo": "comercial",
    "ambito": "peru",
-   "imagen": "https://elcomercio.pe/resizer/v2/5O6V62EWQFBDVBSZJWNAR2YPMY.jpeg?auth=cbb6576c55d0e06c36dd8e551e22599bf456d141228f066a245c6a57f4b9f291&smart=true&width=743&height=486"
+   "imagen": null
+  },
+  {
+   "id": "3ef45c8e05",
+   "sector": "nino",
+   "titulo": "Enfen prevé que El Niño Costero mantenga magnitud extraordinaria hasta febrero de 2027",
+   "resumen": "",
+   "fuente": "El Comercio Perú",
+   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOWEo0UUdsMHl6QjJhU01hZ01IRmJ3anJYbTVKd2hfaDdXNkF2NUlBSXhWSTZlaWQ2Z3Vvd19VZ01KRzF2LTBodUJ1QVZUalRJME5udXo1b3J2ek9mQTc2eWlsZi1kMHVhcWl3VUhrZGVtSEVXQm1qRVppMTdqU1pLOFpFM3BmVEZ1U1BCSzA2VGxmNHZMMHRWQUdZYWFMU0lIQlNEbzZ4bUt2R1VMbDhuTkNpNHUxcDc0NElaRXVrMnRQa3h3WWlxcXJKaHFhaGU3ak1RelhPa1ByN1lRMlg4aHhCYy1hSTZXRDNvcEV30gGCAkFVX3lxTE9kZEFZVEFsbktvb0hPemxZaWRxSFJKZmx6R194TmVyM3FEdV9CZGdzaDJueHhWZGx6OEZzUjMtWHQ2Ry1UNTVFWkYyV1pmSlJ5eDY4QnVpUEVZS09pMmtuYUlDRFFfa1l2VmM0TTA1Wk8xNWR6VmM2Qk8zM0FkWjBOS3VpdWhWX3NBdHladWlGTjVlM0hDSWVRTnJIdW5rdEEwMkFSLWxNZFpBbzNXNWFYOEdmR2Vpalh3d2pBR2RPMnE4Q3poeXhsQ1FDMkdjY2IyX0FiRklDNF95SldxYm13enlucWNVR18zdk5vVmYyN0lJQzBCVHIzYm9NaXdrb0Z6dw?oc=5",
+   "fecha": "2026-10-31T16:20:55Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": null
+  },
+  {
+   "id": "d12cb06c11",
+   "sector": "nino",
+   "titulo": "ENFEN prevé que El Niño Costero seguirá en nivel extraordinario hasta febrero de 2027",
+   "resumen": "",
+   "fuente": "Diario Correo",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOeU50TG5UakRtQXU4OEZJblE2V3lid09MVHRYUHZieUVldFFuOHhRVExydVR3WmtVMURXWElQX002Y2hIamwtX2dka3FhNlU1Yjl3Q19uTV9wU19mejllUHdYdkdoTWxaV1lEc0xZMWk1T0xYTzFzdlpOU0NCZk5lY085aTJKUEdzckZzd0p4RXJRUUNfVmNwZW85aVFRWFI3WTFkWkN4TU12WnFhUmNCRmM3dDNvU1Y0ZV9Wb19zUznSAdQBQVVfeXFMTkViakdwelduMldrN3BmWnI0b01XOUJ2cnhPaS1SRUVWMUlvanJpS0dXWUtDcmJBUDB4WGJUQmdzUW51T0VJZUlRdk41NFVERFJxdzA1cFB5N3BldWJLNGloSjc1YkhkZlp5cDljbmx6WmxhbGx3Z1gyYjBHcUZQTEdmQzZGMHFKTE01RWdZUF8xLVlWQkJkR0cwaExXWVpuMW9DelhncFV3bkZ5QmU0RDAzQk1KZFZPV2xfaXJzSHpkcTVydFJ5em5CaUpfaXd5UzJmZUI?oc=5",
+   "fecha": "2026-10-31T16:18:14Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": null
+  },
+  {
+   "id": "ef3f92dfe4",
+   "sector": "nino",
+   "titulo": "El Niño Costero será extraordinario hasta febrero de 2027: Enfen alerta por lluvias intensas y crecida de ríos",
+   "resumen": "",
+   "fuente": "Perú 21",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQbDBCekhlLXRBanZZSTdDaHo2MVJlcmw5ZEpGai0zXzFhZnhPX3lXZjhHU3IxSzE2R3NNRHdYbzNiamg0SmE4aWhySnZLNld5b0xoM2dhMkM5bFdjdXNfOHBDWXBfTDRfM0Yta25DWnRDZm1ZWTJjdlZWUUt1WnBkdWNUMDBMaXlMM0REZGZVSWZISjl2NWFXVHkydF9KMjdRdHBNblhfVng2NWlBaGZBR2hSVS1WQ0daYzFYc3ExcldycFlIM0dVaXZ6TWhfUQ?oc=5",
+   "fecha": "2026-10-31T16:03:58Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": null
   },
   {
    "id": "b26d74db35",
@@ -1593,6 +1777,30 @@ window.NOTICIAS = {
    "fuente": "El Comercio Perú",
    "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQelA5eXlSXzFZblhQOWZFSTN4TUFRSmFBcWJ1SHhTSEZJSVhXNGZDMVBXeERlbFJ1MGZRbkl2SmhmZERQbVVNMmtIeWZ6OHFreVFrdEphcENLR2I0NjBUbzloYVpPRXYxcWFxOGtoeU5EZi1kRzRGTTY1S3FSdEFOcHFGekljRDFmN1RYUDBWT092MEU1UDNDOW9DemFPclVISmJlMkxVUDJJOHlSRG5IS1g3bHdvamtMdV9hX3J6ejRXWVR5MmRDT1BWQkRmTnc2V0VsejhtUEpxbHc5bFZ6cDhIQXRCbWEyQUFDbnlaUFdEQTdQM0ZPdWdJONIBjwJBVV95cUxPdWNwUFktakw2OHBocEszVGkzYVp0cmExTmtGRV9pR3B1aGNiVG51b05LRW1rSTFBT2RWVFJ4enZxLXlVM2VkMHNjVWRqY0xqMEE1V0RyOGhHOC1Zdm02Qloza2p3RGlsQ2hqM01DM09hRzRNOTBFS1FIbDNFM3JJXzYtR1FGRDZpN3ZFU2JycWxTd3Q3OFh0MEFaMVplbURQREktdUgzWU5KRnowLVhHN1ZYbEE4UjEtUVE3ZXh5bkx3cGJmMzNUNUpzblQ1cFBfWlJYaHA5OG5LVUhVaHFDN3NfMDJNX0VNRUVzTm5LYzh5WGZydnFseVJSMUxWUXRuVmNhYWg0RDRSdERNRHlF?oc=5",
    "fecha": "2026-10-31T15:00:00Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": null
+  },
+  {
+   "id": "6f3eaeb656",
+   "sector": "nino",
+   "titulo": "El Niño no da tregua: mantendrá magnitud extraordinaria hasta febrero de 2027, según estimaciones del ENFEN",
+   "resumen": "",
+   "fuente": "RPP Noticias",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPV0VmLWRCVzROcXlBQVBhUkxoS1BRckdTSno3Q3dDZldhU3FBazVhSkdXWlhlZUd1SkluQ1hvWnJUVlJxRk02WnlUNWxmVjZmLWV3UVFvT3V3c3FTTVZqOWJLaG43NEltLVZKajJvNDBndDNzdEN2Y2hHR3VsWmt5d0puQTFYUEZjODFWYWItdGNCbTd1SGJ5ZGZ1TmxpeERnaWRVeUJNdEFHS0t2cHptUkVZNWpVMWxMRVZRY2dmQW1VeFJ5RWNsY2F3?oc=5",
+   "fecha": "2026-10-31T14:30:16Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": null
+  },
+  {
+   "id": "e1329f65c5",
+   "sector": "nino",
+   "titulo": "Exitosa Noticias. . 🔴🔵 #ExitosaPerú🇵🇪🇵🇪 | La Comisión Multisectorial encargada del Estudio Nacional del Fenómeno El Niño (ENFEN) emitió un comunicado oficial en el que prevé que el fenómeno El Niño…",
+   "resumen": "",
+   "fuente": "Facebook",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNdXNfbklmMnNXSFBwdTlTVEExVm5aNzFrYXQzQkd6bUxNdGx3LTBxdmxUREJQTk1XZThUaUdEckJRREVrRTFVS3Fla0RKR2pTUlhKQTZpSUxGcHlTbVptVnR2MmpZX1AwMmwwT2lIb2E4dnBTcWRYc1dWVWFyeDhuTU1aMVp1V1ZyNWtVSEdMT0UwVWt5c3dkcTRkd2JNUUpxSnEtMnlOcVQyc0VtTUlpc3Ywd3ZSdDJOc1BCYTFKNF80eG9fdTFodndzM1FqempYcDBmb1hKUEhJWEtVZzdweHM4SnBlbFNhMlFMRS1FNnlrYXc?oc=5",
+   "fecha": "2026-10-31T11:39:23Z",
    "tipo": "comercial",
    "ambito": "peru",
    "imagen": null
@@ -1646,6 +1854,42 @@ window.NOTICIAS = {
    "imagen": null
   },
   {
+   "id": "9211b5a28e",
+   "sector": "nino",
+   "titulo": "ENFEN advierte que El Niño Costero se extenderá hasta fines de otoño de 2027 -",
+   "resumen": "",
+   "fuente": "Perú Informa",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORVIwNVFZNG16VlNrMHVUVUM1N2R5X2VGcndQdzBrU013RDVWQUZwQ05FazZiRWRxOVRBdkZkVmtlLTBDblpLd2pwd2NLSTVsZjY0TTdJNGdhaG5yWXZEQS1waVlzWGdZZzExXzlmS2FjZ0cydmxyaDgyYkZ6dndLY1BfU3lSTkFiYWxvV0FBQkVnN0ZGRnA4MEQ1d0NKU0lhNGRib1NyLWU?oc=5",
+   "fecha": "2026-10-31T02:22:17Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": null
+  },
+  {
+   "id": "379f0a8ee8",
+   "sector": "nino",
+   "titulo": "El Niño Costero seguirá hasta 2027: ENFEN alerta magnitud extraordinaria hasta febrero",
+   "resumen": "",
+   "fuente": "Diario Expreso",
+   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQMXFhdkpaWGVkTXhoUVdHV3BVSkFqRkF6SktESlo2Mm9SLWxha0R0TFVxS1FoMHNTYWhoZy05UmdRMHRMVEVSWmRNZGhNX2w5Yk9NempUV0l1elc2djNYcWl1ZEpRM1ZJUF9FUjh4X09lZjljQVRpVWNxS056RTBLZVJKNTRZRG03bWNxaG9od2NZUmtVRjN0RDBGZFVfQ3lvOTk1WXpaMUl4VHZ2Ri1tTUc4U3ZjRjN1Ync1a20yUU5HYzNWNGUzcktvcUNxT1hXaTlEOHVzekh6NFlyRTFxR2Q2WGpMTzVhQ0NSVGtyaFlINGtBbmxjT2JGeHNBaDlPd0ZfZg?oc=5",
+   "fecha": "2026-10-31T01:32:13Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": null
+  },
+  {
+   "id": "a34ca316ac",
+   "sector": "nino",
+   "titulo": "ENFEN alerta que el fenómeno El Niño Costero seguiría hasta fines de otoño de 2027 con lluvias y temperaturas elevadas",
+   "resumen": "",
+   "fuente": "Infobae",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPd0Vid0t3ck9pS0JOZExfVHVGNm9FMFg3SUNTWC0tWkJmcWV4OEd4S0lGMzVyb0RGRDJLUGU2dkdnVDdjZkJIQnRQVEJWam5yR3dBTU5YMHRwd2laUlludkVMS2owWmlFMmFLRElVWnVLUmFJMU5CU0tFS2VJaEJHQno2UWpUazVoRXlrX3pOOXZDcTh2OW9zdXg1Q3l2blNlSjVSdUE1UWRTYWNLLTJJV1FjV015UHNqdkc5bHVoamt6aU1zbG4yYzZYY0htZ2VzdmJqczVnSzEtM2N0RXhwYW1sdE4wSWNqOWFZZF9INWHSAYsCQVVfeXFMTzUwcnFqRk1falZISWV5TzVOakh3V2swTDVEUzRkamw3elMyZzQzV2lYZ0lhTS1NcktpLXlhN1Y5UnNhcEszQXlFYVNOcUVwNXRPaVcwd2ttWFJyM0U4N2R6TzJ2ZzhoR3pYTHNRaTBfQkx3SmdYWGw4b0l4SzNGemw2emFyZUZLUngyR09xd1lucklfWjc0a1JIaHZ0QzRuU0VaVzU1XzBITGxLbVRPMlQtZHphMlJuclg4cjRaVTVWc3I3eTd2VTVlNHdCQXJnT2tqcmtKeU1RN1dxZ3BGYWJIMXE0TUJCYnduM3lyVXE4d1JUOFNWMVJGNTNqTVVBb0pCWG9yNnE4Q2d3?oc=5",
+   "fecha": "2026-10-31T01:18:00Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": null
+  },
+  {
    "id": "1064faddd1",
    "sector": "deporte",
    "titulo": "Tenis y ajedrez: las citas deportivas del Hay Festival 2026",
@@ -1668,6 +1912,18 @@ window.NOTICIAS = {
    "tipo": "independiente",
    "ambito": "peru",
    "imagen": "https://imgs.mongabay.com/wp-content/uploads/sites/25/2026/10/30195517/de-la-espriella-reserva-amazonia-colombia-768x512.jpg"
+  },
+  {
+   "id": "92fd0ba247",
+   "sector": "nino",
+   "titulo": "ENFEN prevé que El Niño Costero mantendrá una magnitud \"extraordinaria\" frente al litoral hasta febrero 2027",
+   "resumen": "",
+   "fuente": "Exitosa Noticias",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNOEpTdnFmcWNfeEFVN1I1U0N1Wjc5MWU1bkpmT0gyZkVmRzBnSDE4d1Z4bVdsQTZsOWpoRGcxQ0xhcm9qb0xsRkloR245NFk2MjZxbWNmTzd2elNaTXJRcEszQUtERTVSMkdEWmh4V2FZM2lNb1RjQWVjaDlZTE5jRzhlaUQ3WDdpMUNKcTdDZWIxT0hHVGpUUkM2NFhTVVptVEk1VHU1bGpsbVZuWmVmbVlMUS15aFNCNF9LVFFjRzN1YTVEOFJoa1FMN3NFZzcwYi1adFlyRQ?oc=5",
+   "fecha": "2026-10-30T21:27:00Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": null
   },
   {
    "id": "1370b92108",
@@ -2090,18 +2346,6 @@ window.NOTICIAS = {
    "imagen": null
   },
   {
-   "id": "f8246478e5",
-   "sector": "ia",
-   "titulo": "UNI anuncia más de 80 cursos gratuitos en IA, programación y ciberseguridad: los detalles",
-   "resumen": "",
-   "fuente": "Gestión",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPdHdLdHhpcGtObFhvVWVVR1RVODhlVHlyZ1hXWUlFMTZjeV82SksxbFltLWJjc0ZtamJQRlVmcFJJQ18waW9JZmJUeFliMWV1ZWxOYkFZX3A3Nm5XLVRjN3c2SWMxbTA4SnBTaTYtZnQ5OGI5czd4TUp5VHRFeC1IUTJCYmlCS0otc08zdkUxX09ZWEZGclZHZG9jcnBfWlh6ZngtZ2dDVlhmX0tKdEJ4Zy1GSmVwcjI3U0NHdzVmR3A2NEJWZmx0eVpkMXUwbjY0aGU4NA?oc=5",
-   "fecha": "2026-10-26T22:22:00Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": null
-  },
-  {
    "id": "6439d6dd13",
    "sector": "ia",
    "titulo": "OpenAI ha descubierto que sus agentes de IA han encontrado la forma de hablar entre ellos a escondidas",
@@ -2138,6 +2382,18 @@ window.NOTICIAS = {
    "imagen": null
   },
   {
+   "id": "066fa7df3f",
+   "sector": "ia",
+   "titulo": "Compañías de inteligencia artificial van camino a lucrativos debuts bursátiles",
+   "resumen": "",
+   "fuente": "AOL.com",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZ21lV0hXY09wNWhTTFIwUEJ2ZE0wYlBlTkUxXzJzREpXLWRrX3l4WEpCbjZXMU53Y3E3QURyNElmRjJYQWFpTDR3M1dIdW1MUEpfMlhNc1BWNnBjb0tHOEpzZVdWMzlEc3pfTzBvbVhMSThRdzdpRGFmRFJxZUY3dGFJRGl1UVVqYmEtcHhqSXZsdEZsWXRybXFKOUc0eHZmb2N0WFk5ZmU?oc=5",
+   "fecha": "2026-10-26T15:35:42Z",
+   "tipo": "internacional",
+   "ambito": "mundo",
+   "imagen": null
+  },
+  {
    "id": "49f9237503",
    "sector": "salud",
    "titulo": "El informe que CultiVida quiere retirar y el Midagri intenta desacreditar",
@@ -2160,6 +2416,18 @@ window.NOTICIAS = {
    "tipo": "independiente",
    "ambito": "peru",
    "imagen": "https://www.idl-reporteros.pe/wp-content/uploads/2026/10/1400x788.png"
+  },
+  {
+   "id": "5229b60bad",
+   "sector": "nino",
+   "titulo": "ENFEN ADVIERTE QUE EL NIÑO SUPERA NIVELES HISTÓRICOS: CAJAMARCA Y LA SIERRA NORTE EN RIESGO POR LLUVIAS INTENSAS",
+   "resumen": "",
+   "fuente": "RCR Peru",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNeFN3MlVscXhtblo1VXpPcWtadWtIcEVBUS1JN1U5enlFbVV1M3BxUVY0Y01Qb0lUaUs5eEM1SHhuaWhfR3dJN0FfRHNjUnpvSU5iR3NZZWVjWlBLTVNISGZ2Yi1KMll0MmxVNlVkQ1laTkVUQ2duNnBodEJJZ0JPT1o0bTFjLXpCUzExWXVOZ2phLWhnVVloLWg5ZC1pY1V4ZWJsQ29jNUR0dUtocy1HaEVlNDFWcHJiVTVlc3RDb3FxeXQxcjhOSHhwTHVNRzRZT2c?oc=5",
+   "fecha": "2026-10-23T07:00:00Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": null
   },
   {
    "id": "82c206c4a5",
@@ -2208,6 +2476,30 @@ window.NOTICIAS = {
    "tipo": "independiente",
    "ambito": "peru",
    "imagen": "https://saludconlupa.com/media/images/IMG_2813.1b14361c.fill-1800x945.jpg"
+  },
+  {
+   "id": "251207ae18",
+   "sector": "nino",
+   "titulo": "El Niño: por qué unas regiones podrían inundarse mientras otras ya enfrentan escasez de agua",
+   "resumen": "El ENFEN prevé que El Niño costero mantendrá una magnitud extraordinaria hasta enero de 2027. Mientras las primeras lluvias ya provocan problemas en el norte, otras regiones enfrentan restricciones de agua. El fenómeno también podría agravar la transmisión del dengue y la…",
+   "fuente": "Salud con Lupa",
+   "url": "https://saludconlupa.com/climatopedia/el-nino-por-que-unas-regiones-podrian-inundarse-mientras-otras-ya-enfrentan-escasez-de-agua/",
+   "fecha": "2026-10-21T13:00:00Z",
+   "tipo": "independiente",
+   "ambito": "peru",
+   "imagen": "https://saludconlupa.com/media/images/MapaSenamhi1.2e16d0ba.fill-1800x945.jpg"
+  },
+  {
+   "id": "75a52be086",
+   "sector": "nino",
+   "titulo": "Enfen mantiene la alerta por El Niño Costero, que se extendería hasta el otoño de 2027",
+   "resumen": "",
+   "fuente": "AGROPERÚ Informa",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUWVxdGpXX09Ra3hJaDV0OHJRN3RZZXpiSDhfa2gyWEJ4LVdxczV2THRfWnFpbDdsb0V5Q0NSYzFhZ0c1YjlQa25ER1p6aTVpbmdhbXNZenlleFdRbzVKQ09wbEhlbUNyS09PUGxKaXhGVU4wRG1wYU96YVJPM3hRSy03azhPcENNZEEwVzNVSEtTZ1ZnUk1vMlBHTkZ1TTRSSkNGSUVhcnVpZXJQNHVR?oc=5",
+   "fecha": "2026-10-20T07:00:00Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": null
   },
   {
    "id": "54f4584a95",
@@ -2304,18 +2596,6 @@ window.NOTICIAS = {
    "tipo": "independiente",
    "ambito": "peru",
    "imagen": "https://www.idl-reporteros.pe/wp-content/uploads/2026/10/SL.jpg"
-  },
-  {
-   "id": "s14",
-   "sector": "deporte",
-   "titulo": "Liga 1: tabla del Clausura y acumulada tras la fecha 11",
-   "resumen": "Garcilaso lideraba el Clausura con 22 puntos, seguido de Universitario y Sporting Cristal.",
-   "fuente": "La República",
-   "url": "https://larepublica.pe/deportes/2026/10/08/tabla-de-posiciones-torneo-clausura-y-acumulado-de-la-liga-1-2026-683392",
-   "fecha": "2026-10-08T12:00:00Z",
-   "tipo": "comercial",
-   "imagen": null,
-   "semilla": true
   },
   {
    "id": "s09",
@@ -2436,9 +2716,9 @@ window.NOTICIAS = {
    "enlace": "https://www.iebschool.com/hub/ai-act-2026-la-ue-retrasa-el-cumplimiento-de-la-ia-de-alto-riesgo-a-diciembre-de-2027/"
   },
   "ia-infra": {
-   "url": "https://news-api.bgov.com/v1/resize-image?url=https%3A%2F%2Fbloomberg-bna-brightspot.s3.us-east-1.amazonaws.com%2F67%2F3a%2F4b4b047c4c0ea9ceab449d6ec699%2F446274991.jpg&width=1200&height=630&fit=cover&removeAnimation=true&crop=3994x1539%2B3%2B188",
-   "fuente": "Bloomberg Government",
-   "enlace": "https://news.bgov.com/bloomberg-government-news/ai-regulation-chip-exports-data-centers-form-2026-tech-fights"
+   "url": "https://i0.wp.com/fourweekmba.com/wp-content/uploads/2026/10/daily-roundup-12-oct-2026-ai-chips-racks-large-loads.png?fit=2400%2C1260&ssl=1",
+   "fuente": "FourWeekMBA",
+   "enlace": "https://fourweekmba.com/ai-daily-roundup-12-oct-2026-ai-chips-racks-large-loads/"
   },
   "deporte": {
    "url": "https://www.infobae.com/resizer/v2/W6XQTQ5TXRAFRCAAPQUSMH2EOE.png?auth=a6d1474aa5efde4b988e04e13a9177f91f5a8ce0e815d138b9ce80329746b2df&smart=true&width=1024&height=512&quality=85",
@@ -2449,9 +2729,23 @@ window.NOTICIAS = {
    "url": "https://cpj.org/wp-content/uploads/2021/11/000_14M7IR.jpg?resize=1200,814&strip=all&quality=80",
    "fuente": "CPJ",
    "enlace": "https://cpj.org/es/2021/11/las-autoridades-peruanas-abren-investigacion-penal-contra-el-periodista-ernesto-cabral-de-ojo-publico-por-sus-investigaciones-sobre-la-corrupcion/"
+  },
+  "nino-peru": {
+   "url": "https://www.gob.pe/assets/escudo-rojo-200-f4bf73f7.png",
+   "fuente": "ENFEN",
+   "enlace": "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen"
   }
  },
  "indicadores": {
-  "tipo_cambio": null
+  "tipo_cambio": {
+   "serie": [
+    {
+     "f": "2026-11-02",
+     "v": 3.4672
+    }
+   ],
+   "fuente": "Referencial · open.er-api.com",
+   "nota": "Valor de mercado referencial; el oficial está en el BCRP."
+  }
  }
 };
