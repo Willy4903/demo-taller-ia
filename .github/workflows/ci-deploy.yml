@@ -86,6 +86,8 @@ jobs:
           cp -r fuente/coyuntura-peru/. sitio/peru-en-claro/
           rm -rf sitio/peru-en-claro/scripts sitio/peru-en-claro/README.md
           touch sitio/.nojekyll
+          # Versión en las URL de los recursos para que el navegador no use copias viejas
+          sed -i "s/__V__/${GITHUB_SHA::10}/g" sitio/peru-en-claro/index.html
       - name: Publicar en gh-pages
         working-directory: sitio
         run: |
