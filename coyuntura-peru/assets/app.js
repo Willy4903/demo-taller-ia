@@ -179,13 +179,18 @@
     var n = ED.nino; if (!n || !n.tres) return "";
     return '<div class="n3">' + n.tres.map(function (x, i) { return '<article class="n3-i n3-' + (i + 1) + '"><h3>' + esc(x.k) + '</h3><p class="n3-v">' + esc(x.v) + "</p><p>" + esc(x.d) + '</p><small>Fuente: ' + esc(x.f) + "</small></article>"; }).join("") + "</div>";
   }
+  function numEnfen(x) { var m = /^(\d+)-(\d{4})$/.exec(x || ""); return m ? +m[2] * 1000 + +m[1] : 0; }
+  function avisoEnfen() {
+    var e = NOT.enfen, ref = (ED.nino || {}).comunicadoRef; if (!e || !e.numero || !ref || numEnfen(e.numero) <= numEnfen(ref)) return "";
+    return '<p class="n-aviso" role="note"><b>Aviso:</b> el ENFEN ya publicó el comunicado N.° ' + esc(e.numero) + (e.fecha ? " (" + esc(fechaLarga(e.fecha)) + ")" : "") + ", posterior al N.° " + esc(ref) + " en que se basa el pronóstico resumido aquí. El pronóstico puede haber cambiado: léelo en el ENFEN antes de decidir.</p>";
+  }
   function ninoLinks() {
     var n = ED.nino || {}, u = ultimoEnfen(), ob = n.observatorio;
     return '<p class="n-ult"><b>Último comunicado oficial del ENFEN:</b> ' + esc(u.txt) + (u.auto && u.comprobado ? " <small>(leído de gob.pe el " + esc(corta(u.comprobado)) + ")</small>" : "") + '</p><div class="n-lk"><a class="btn" href="' + safeUrl(u.url) + '" target="_blank" rel="noopener noreferrer">Comunicados oficiales del ENFEN ↗</a>' + (ob ? '<a class="btn o" href="' + safeUrl(ob.u) + '" target="_blank" rel="noopener noreferrer">' + esc(ob.n) + " ↗</a>" : "") + "</div>";
   }
   function ninoPanel() {
     var n = ED.nino; if (!n) return "";
-    var h = '<section class="panel nino-p" aria-labelledby="n-h"><h2 id="n-h" class="pt">Estado, pronóstico y riesgo</h2>' + ninoTres() + ninoLinks() + '<p class="mono nota-corte">Contenido editorial con corte al ' + esc(corta(ED.corte + "T12:00:00Z")) + ". " + esc(n.corte) + "</p></section>";
+    var h = '<section class="panel nino-p" aria-labelledby="n-h"><h2 id="n-h" class="pt">Estado, pronóstico y riesgo</h2>' + avisoEnfen() + ninoTres() + ninoLinks() + '<p class="mono nota-corte">Contenido editorial con corte al ' + esc(corta(ED.corte + "T12:00:00Z")) + ". " + esc(n.corte) + "</p></section>";
     h += '<details class="panel nino-p det"><summary>Cómo ha cambiado el pronóstico</summary><ol class="tl nl">' + n.linea.map(function (x) { return '<li class="hecho"><span class="nodo">●</span><div class="tx"><b>' + esc(x.c) + (x.f ? " · " + esc(x.f) : "") + "</b><p>" + esc(x.x) + '</p><a class="lk" href="' + safeUrl(x.u) + '" target="_blank" rel="noopener noreferrer">Ver comunicado o fuente ↗</a></div></li>'; }).join("") + "</ol></details>";
     return h;
   }
