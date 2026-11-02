@@ -7,12 +7,16 @@ Portal de noticias sobre la coyuntura peruana: política, economía, salud, tecn
 - Las fotos de portada se toman de la etiqueta `og:image` de cada nota; si falta, se muestra una ilustración generada.
 - Se actualiza solo a las **08:00** y **23:00 (hora de Lima)** mediante GitHub Actions.
 
-## Cómo activarlo en GitHub (una sola vez)
+## Publicación en GitHub Pages
 
-1. Fusiona esta rama en `main` (el cron de GitHub solo corre desde la rama por defecto).
-2. En el repositorio: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-3. En **Actions → “Actualizar Perú en Claro” → Run workflow** para la primera publicación.
-4. La URL aparecerá en el job *publicar* (normalmente `https://<usuario>.github.io/demo-taller-ia/`).
+Perú en Claro comparte el sitio de GitHub Pages con el simulador de la Liga 1 que ya existe en este repositorio:
+
+- Simulador: `https://<usuario>.github.io/demo-taller-ia/`
+- Perú en Claro: `https://<usuario>.github.io/demo-taller-ia/peru-en-claro/`
+
+El flujo `CI y despliegue` (`.github/workflows/ci-deploy.yml`) copia esta carpeta a `dist/peru-en-claro/` antes de publicar.
+
+**Requisito (una sola vez):** en el repositorio, *Settings → Pages → Build and deployment → Source: **GitHub Actions***. Si el job `deploy` falla de inmediato y sin pasos, es porque falta este ajuste.
 
 ## Cómo se actualiza
 
@@ -23,7 +27,7 @@ Portal de noticias sobre la coyuntura peruana: política, economía, salud, tecn
 3. Conserva como máximo 24 notas por sector y descarta lo anterior a 30 días.
 4. Reescribe `data/noticias.js` y `data/noticias.json`. Si ningún feed responde, **no** toca los datos.
 
-El flujo hace commit de los datos y publica el sitio. Para agregar o quitar medios, edita `FEEDS`.
+El flujo `Actualizar Perú en Claro` corre a las 08:00 y 23:00 (hora de Lima), hace commit de los datos en `main` e invoca `CI y despliegue` para republicar. Para agregar o quitar medios, edita `FEEDS`. También puede lanzarse a mano desde la pestaña *Actions*.
 
 ## Contenido editorial
 
