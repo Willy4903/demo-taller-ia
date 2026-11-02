@@ -72,7 +72,7 @@
   function racha() { var set = {}; S.dias.forEach(function (d) { set[d] = 1; }); var n = 0, d = new Date(); while (set[ymd(d)]) { n++; d.setDate(d.getDate() - 1); } return n; }
   (function () { var h = ymd(new Date()); if (S.dias.indexOf(h) < 0) S.dias.push(h); if (S.bonus !== h) { S.bonus = h; S.xp += 5; } S.dias = S.dias.slice(-60); guardar(); })();
   function pctNivel() { var i = nivelDe(S.xp), nv = NIVELES[i], sig = NIVELES[i + 1]; return sig ? (S.xp - nv.min) / (sig.min - nv.min) * 100 : 100; }
-  function xpChip() { var nv = NIVELES[nivelDe(S.xp)]; $("#xpchip").title = "Nivel: " + nv.n; $("#xpnum").textContent = S.xp + " XP"; }
+  function xpChip() { var nv = NIVELES[nivelDe(S.xp)], c = $("#xpchip"), n = $("#xpnum"); if (c) c.title = "Nivel: " + nv.n; if (n) n.textContent = S.xp + " XP"; }
 
   /* ───── fotos reales: si una imagen falla, se quita (nunca se sustituye por ilustraciones) ───── */
   window.cpImg = function (im) { var d = im.parentNode; if (!d) return; var r = d.closest && d.closest(".row"); if (r) r.classList.add("nofoto"); d.remove(); };
@@ -85,7 +85,7 @@
   function insDe(id) { return INS.filter(function (i) { return i.sector === id; })[0]; }
   function externo(s) { return s.kind === "feed"; }
   function ambitoDe(it) { return it.ambito || (it.tipo === "internacional" ? "mundo" : "peru"); }
-  function asFeed(it) { return { kind: "feed", ambito: it.ambito, sector: it.sector, titulo: it.titulo, resumen: it.resumen || "", url: it.url, fuente: it.fuente, tipo: it.tipo || "comercial", fecha: it.fecha, nota: it.nota, imagen: it.imagen }; }
+  function asFeed(it) { return { kind: "feed", ambito: it.ambito, sector: it.sector, titulo: it.titulo, resumen: it.resumen || "", url: it.url, fuente: it.fuente, tipo: it.tipo || "comercial", fecha: it.fecha, nota: it.nota, imagen: it.imagen, genero: it.genero || "noticia", procedencia: it.procedencia, via: it.via }; }
   var FEED = ITEMS.map(asFeed);
 
   var EI = NOT.imagenes_editorial || {};
@@ -104,9 +104,14 @@
   }
   function attrs(s) { return 'href="' + (externo(s) ? safeUrl(s.url) : esc(s.url)) + '"' + (externo(s) ? ' target="_blank" rel="noopener noreferrer"' : ""); }
   function kicker(s) { var x = SECT[s.sector] || SECT.coyuntura; return '<span class="kick" style="--c:' + x.color + '">' + esc(x.nombre) + "</span>"; }
+  var GEN = { noticia: "Noticia", opinion: "Opinión", analisis: "Análisis" };
+  function badgeGenero(g) { g = GEN[g] ? g : "noticia"; return '<span class="gn ' + g + '">' + GEN[g] + "</span>"; }
   function meta(s) {
-    if (externo(s)) { var r = s.fecha ? relativo(s.fecha) : null; return '<div class="meta"><span class="tp ' + esc(s.tipo) + '">' + esc(s.tipo) + "</span><span>" + esc(s.fuente) + "</span><span>· " + esc(r || s.nota || "fecha no confirmada") + " ↗</span></div>"; }
-    return '<div class="meta"><span>Contexto Perú · ' + esc(corta(ED.corte + "T12:00:00Z")) + "</span>" + (s.nivel ? '<span class="conf ' + (s.nivel === "alta" ? "alta" : "media") + '" title="Alta: confirmado en fuente oficial. Media: se apoya en prensa; conviene verificar.">Confianza ' + (s.nivel === "alta" ? "alta" : "media") + "</span>" : "") + "</div>";
+    if (externo(s)) {
+      var f = s.fecha ? '<time datetime="' + esc(s.fecha) + '" title="' + esc(relativo(s.fecha) || "") + '">' + esc(corta(s.fecha)) + "</time>" : "<span>fecha no confirmada</span>";
+      return '<div class="meta">' + badgeGenero(s.genero) + '<span class="fu">' + esc(s.fuente) + "</span>" + (s.via ? '<span class="via" title="Esta nota llegó por un agregador, no por el feed del medio">vía ' + esc(s.via) + "</span>" : "") + f + '<span class="ext" aria-hidden="true">↗</span></div>';
+    }
+    return '<div class="meta">' + badgeGenero("analisis") + "<span>Corte editorial: " + esc(corta(ED.corte + "T12:00:00Z")) + "</span>" + (s.nivel ? '<span class="conf ' + (s.nivel === "alta" ? "alta" : "media") + '" title="Alta: confirmado en fuente oficial. Media: se apoya en prensa; conviene verificar.">Confianza ' + (s.nivel === "alta" ? "alta" : "media") + "</span>" : "") + "</div>";
   }
   function leadCard(s) {
     var raw = s.raw || {}, fu = (raw.fuentes || [])[0];
@@ -164,19 +169,99 @@
   function rail() { return '<section><h3 class="rt">Radar de temas</h3>' + radarHTML() + '</section><section><h3 class="rt">Término del día</h3>' + glosarioDia() + "</section>"; }
 
   /* ───── sección exclusiva: El Niño ───── */
-  function ninoBanner() {
-    var n = ED.nino; if (!n) return "";
-    return '<a class="nino-b fade" href="#/s/nino"><span class="nb-i" aria-hidden="true">🌊</span><span class="nb-t"><b>El Niño costero</b><small>' + esc(n.estado[0].k) + ": " + esc(n.estado[0].v) + " · " + esc(n.estado[2].v) + '</small></span><span class="nb-g">Ver la sección →</span></a>';
+  function fechaLarga(iso) { try { return new Intl.DateTimeFormat("es-PE", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(iso + "T12:00:00Z")); } catch (e) { return iso; } }
+  function ultimoEnfen() {
+    var e = NOT.enfen, n = ED.nino || {};
+    if (e && e.numero) return { txt: "N.° " + e.numero + (e.fecha ? " · " + fechaLarga(e.fecha) : " · fecha no detectada automáticamente"), auto: true, comprobado: e.comprobado, ok: e.ok !== false, url: e.url || n.enfenUrl };
+    return { txt: "N.° 12-2026 · fecha no verificada (el sistema aún no pudo leer la lista oficial)", auto: false, url: n.enfenUrl };
+  }
+  function ninoTres() {
+    var n = ED.nino; if (!n || !n.tres) return "";
+    return '<div class="n3">' + n.tres.map(function (x, i) { return '<article class="n3-i n3-' + (i + 1) + '"><h3>' + esc(x.k) + '</h3><p class="n3-v">' + esc(x.v) + "</p><p>" + esc(x.d) + '</p><small>Fuente: ' + esc(x.f) + "</small></article>"; }).join("") + "</div>";
+  }
+  function ninoLinks() {
+    var n = ED.nino || {}, u = ultimoEnfen(), ob = n.observatorio;
+    return '<p class="n-ult"><b>Último comunicado oficial del ENFEN:</b> ' + esc(u.txt) + (u.auto && u.comprobado ? " <small>(leído de gob.pe el " + esc(corta(u.comprobado)) + ")</small>" : "") + '</p><div class="n-lk"><a class="btn" href="' + safeUrl(u.url) + '" target="_blank" rel="noopener noreferrer">Comunicados oficiales del ENFEN ↗</a>' + (ob ? '<a class="btn o" href="' + safeUrl(ob.u) + '" target="_blank" rel="noopener noreferrer">' + esc(ob.n) + " ↗</a>" : "") + "</div>";
   }
   function ninoPanel() {
     var n = ED.nino; if (!n) return "";
-    var h = '<div class="panel nino-p"><h3 class="pt">Estado actual · ENFEN</h3><div class="nk">' + n.estado.map(function (x) { return '<div class="nk-i"><span class="k">' + esc(x.k) + '</span><span class="v">' + esc(x.v) + "</span><small>" + esc(x.n) + "</small></div>"; }).join("") + "</div>";
-    h += '<p class="mono" style="margin:12px 0 0;font-size:.7rem;color:var(--tx3)">' + esc(n.corte) + "</p></div>";
-    h += '<div class="panel nino-p"><h3 class="pt">Cómo ha cambiado el pronóstico</h3><ol class="tl nl">' + n.linea.map(function (x) { return '<li class="hecho"><span class="nodo">●</span><div class="tx"><b>' + esc(x.c) + (x.f ? " · " + esc(x.f) : "") + "</b><p>" + esc(x.x) + '</p><a class="lk" href="' + safeUrl(x.u) + '" target="_blank" rel="noopener noreferrer">Ver comunicado o fuente ↗</a></div></li>'; }).join("") + "</ol></div>";
+    var h = '<section class="panel nino-p" aria-labelledby="n-h"><h2 id="n-h" class="pt">Estado, pronóstico y riesgo</h2>' + ninoTres() + ninoLinks() + '<p class="mono nota-corte">Contenido editorial con corte al ' + esc(corta(ED.corte + "T12:00:00Z")) + ". " + esc(n.corte) + "</p></section>";
+    h += '<details class="panel nino-p det"><summary>Cómo ha cambiado el pronóstico</summary><ol class="tl nl">' + n.linea.map(function (x) { return '<li class="hecho"><span class="nodo">●</span><div class="tx"><b>' + esc(x.c) + (x.f ? " · " + esc(x.f) : "") + "</b><p>" + esc(x.x) + '</p><a class="lk" href="' + safeUrl(x.u) + '" target="_blank" rel="noopener noreferrer">Ver comunicado o fuente ↗</a></div></li>'; }).join("") + "</ol></details>";
     return h;
   }
 
   /* ───── VISTAS ───── */
+  /* fechas separadas: sistema, noticias, indicadores y contenido editorial */
+  function fechaHora(iso) { try { return new Intl.DateTimeFormat("es-PE", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit", timeZone: TZ }).format(new Date(iso)); } catch (e) { return iso; } }
+  function ultimaNota() { var f = ITEMS.filter(function (i) { return i.fecha; })[0]; return f ? f.fecha : null; }
+  function frescura() {
+    var g = NOT.estado_fuentes || {}, nombres = Object.keys(g), ok = nombres.filter(function (k) { return g[k].ok; }).length, agr = nombres.filter(function (k) { return g[k].procedencia === "agregador"; }), sd = nombres.filter(function (k) { return !g[k].ok; });
+    return '<section class="fresh" aria-labelledby="fr-h"><h2 id="fr-h">¿De cuándo es esta información?</h2><dl>' +
+      "<div><dt>Sistema</dt><dd>Última comprobación automática: " + (NOT.generado ? esc(fechaHora(NOT.generado)) + " (hora de Lima)" : "sin registro") + ". Próxima: " + proxima() + ". Que el sistema se haya ejecutado no significa que cada fuente tenga datos nuevos.</dd></div>" +
+      "<div><dt>Noticias</dt><dd>" + (ultimaNota() ? "La nota más reciente indexada se publicó el " + esc(fechaHora(ultimaNota())) + "." : "Sin notas con fecha.") + " Cada nota muestra su propia fecha de publicación.</dd></div>" +
+      "<div><dt>Indicadores</dt><dd>Cada cifra muestra su fecha de corte. Muchas se publican con semanas o meses de rezago.</dd></div>" +
+      "<div><dt>Análisis editorial</dt><dd>Redactado con corte al " + esc(fechaLarga(ED.corte)) + ".</dd></div></dl>" +
+      (nombres.length ? '<p class="fresh-f">Medios consultados: ' + ok + " de " + nombres.length + " con datos" + (agr.length ? "; vía Google Noticias (no directo): " + esc(agr.join(", ")) : "") + (sd.length ? "; sin datos: " + esc(sd.join(", ")) : "") + '. <a href="#/fuentes">Ver el estado de cada fuente</a>.</p>' : "") + "</section>";
+  }
+  function noticiasRecientes(n) {
+    var vistos = {}, r = [];
+    ITEMS.forEach(function (i) { if (r.length >= n || !i.fecha || i.sector === "deporte" || i.sector === "mundo" || i.tipo === "internacional" || vistos[i.fuente + i.sector]) return; vistos[i.fuente + i.sector] = 1; r.push(asFeed(i)); });
+    return r;
+  }
+  function indicadoresClave() {
+    var D = ED.datos, ids = ["desemp", "pobreza", "hogint", "pob"], dd = [];
+    D.grupos.forEach(function (g) { g.items.forEach(function (i) { dd.push(i); }); });
+    var sel = ids.map(function (id) { return dd.filter(function (i) { return i.id === id; })[0]; }).filter(Boolean), tc = bloqueTc();
+    return (tc ? [tc] : []).concat(sel).slice(0, 4);
+  }
+  function bloqueTc() {
+    var tc = (NOT.indicadores || {}).tipo_cambio; if (!tc || !tc.serie || !tc.serie.length) return null;
+    var v = tc.serie.map(function (x) { return x.v; }), u = v[v.length - 1], d = v.length > 1 ? u - v[v.length - 2] : null, ref = /Referencial/.test(tc.fuente || ""), f = tc.serie[tc.serie.length - 1].f;
+    return { cat: "eco", k: "Tipo de cambio: soles por dólar", v: "S/ " + num(u, 3), un: "soles por US$ 1", corte: fechaLarga(f) + (d !== null ? " · variación diaria " + (d >= 0 ? "+" : "") + num(d, 3) : ""), fp: ref ? "Referencial (" + String(tc.fuente).replace("Referencial · ", "") + ")" : "BCRP",
+      n: ref ? "Valor de mercado referencial; el dato oficial está en el BCRP." : "Tipo de cambio interbancario venta.", c: "Cuántos soles cuesta comprar un dólar estadounidense. Si el número sube, el dólar se encarece; si baja, se abarata.", e: "Con S/ " + num(u, 3) + " por dólar, US$ 100 equivalen a S/ " + num(u * 100, 2) + ".", f: ref ? "BCRP (dato oficial)" : "BCRP", u: "https://estadisticas.bcrp.gob.pe/estadisticas/series/", spark: spark(v, false) };
+  }
+  function dataCard(d, compacta) {
+    return '<article class="dc' + (compacta ? " dc-c" : "") + '"><header><span class="tag">' + esc(d.fp) + "</span><h3>" + esc(d.k) + '</h3></header><p class="dc-v"><span class="cifra">' + esc(d.v) + '</span> <span class="un">' + esc(d.un) + "</span></p>" + (d.n && !compacta ? '<p class="dc-n">' + esc(d.n) + "</p>" : "") + (d.spark || "") +
+      '<p class="dc-c"><b>Qué significa:</b> ' + esc(d.c) + "</p>" + (compacta ? "" : '<p class="dc-e"><b>Ejemplo:</b> ' + esc(d.e) + "</p>") +
+      '<p class="dc-m"><span>Fecha de corte: <b>' + esc(d.corte) + '</b></span><a href="' + safeUrl(d.u) + '" target="_blank" rel="noopener noreferrer">Fuente: ' + esc(d.f || d.fp) + " ↗</a></p></article>";
+  }
+  function tarjetaPregunta(num_, id, titulo, cuerpo, pie) {
+    return '<section class="q q' + num_ + '" aria-labelledby="' + id + '"><header><span class="q-n" aria-hidden="true">' + num_ + '</span><h2 id="' + id + '">' + esc(titulo) + "</h2></header>" + cuerpo + '<footer>' + pie + "</footer></section>";
+  }
+  function vistaHome() {
+    var fecha = ""; try { fecha = new Intl.DateTimeFormat("es-PE", { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: TZ }).format(new Date()); } catch (e) {}
+    var A = noticiasRecientes(4), B = indicadoresClave(), n = ED.nino, u = ultimoEnfen(), principal = INS.filter(function (i) { return i.id === "politica"; })[0] || INS[0];
+    var h = '<div class="home fade"><section class="hero" aria-labelledby="h1"><p class="po-eye">' + esc(fecha) + '</p><h1 id="h1">La coyuntura del Perú, explicada con sus fuentes</h1><p class="hero-sub">Qué está pasando, qué dicen los datos y qué ocurre con El Niño, con la fecha y la fuente de cada dato.</p>' +
+      '<button class="po-search" type="button" data-buscar="1"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Busca noticias, datos o términos</span></button></section>';
+    h += '<div class="qs">';
+    h += tarjetaPregunta(1, "q1", "¿Qué está pasando en el Perú?", A.length ? '<ul class="q-l">' + A.map(function (x) { return '<li><a href="' + safeUrl(x.url) + '" target="_blank" rel="noopener noreferrer"><span class="q-t">' + esc(sin(x.titulo, 110)) + "</span>" + meta(x) + "</a></li>"; }).join("") + "</ul>" : '<p class="vacio">Todavía no hay noticias con fecha. La próxima actualización las traerá.</p>', '<a class="q-go" href="#/noticias">Ver todas las noticias →</a>');
+    h += tarjetaPregunta(2, "q2", "¿Qué dicen los datos?", '<ul class="q-l q-d">' + B.map(function (d) { return '<li><span class="q-dk">' + esc(d.k) + '</span><span class="q-dv"><b class="cifra">' + esc(d.v) + '</b> <small>' + esc(d.un) + '</small></span><span class="q-dm">Corte: ' + esc(d.corte) + " · Fuente: " + esc(d.fp) + "</span></li>"; }).join("") + "</ul>", '<a class="q-go" href="#/datos">Ver los datos del Perú →</a>');
+    h += tarjetaPregunta(3, "q3", "¿Qué ocurre con El Niño?", n ? '<ul class="q-l q-n3">' + n.tres.map(function (x) { return "<li><b>" + esc(x.k) + ":</b> " + esc(x.v) + "</li>"; }).join("") + '</ul><p class="q-u">Último comunicado oficial del ENFEN: ' + esc(u.txt) + "</p>" : "", '<a class="q-go" href="#/s/nino">Ver la sección El Niño →</a>');
+    h += "</div>";
+    if (principal) h += '<section class="dest" aria-labelledby="dest-h"><h2 id="dest-h">Análisis destacado</h2>' + leadCard(principal) + '<p class="why"><b>Por qué importa:</b> ' + esc((principal.raw || {}).paraTi || "") + "</p></section>";
+    h += frescura();
+    h += '<details class="mas-rec"><summary>Más recursos: formación, glosario, estadísticas y talleres</summary><div class="mas-g"><a href="#/ruta">La Ruta (aprende jugando)</a><a href="#/glosario">Glosario</a><a href="#/estadisticas">Estadísticas del sitio</a><a href="#/historial">Historial de notas</a><a href="#/talleres">Talleres de IA</a><a href="#/fuentes">Fuentes y su estado</a></div></details></div>';
+    return h;
+  }
+  var nF = { sector: "todos", tipo: "todas", genero: "todos" }, nMax = 15;
+  function vistaNoticias() {
+    var h = '<div class="fade"><div class="shead" style="--c:var(--gold)"><h1>Noticias</h1><p>Lo publicado por medios independientes, comerciales e internacionales. Cada nota enlaza al medio original y muestra su fecha de publicación.</p></div>';
+    h += '<details class="filtros"><summary>Filtrar por tema, tipo de medio o género</summary><div class="filtros-in"><div><span class="fl">Tema</span><div class="chips" id="n-sec"></div></div><div><span class="fl">Tipo de medio</span><div class="chips" id="n-tipo"></div></div><div><span class="fl">Género</span><div class="chips" id="n-gen"></div></div></div></details>';
+    h += '<div id="n-lista" aria-live="polite"></div><p style="text-align:center;margin-top:14px" id="n-mas"></p><p class="nota-pie">' + (ultimaNota() ? "La nota más reciente indexada es del " + esc(fechaHora(ultimaNota())) + "." : "") + " Los titulares y resúmenes pertenecen a cada medio. Las notas marcadas «vía Google Noticias» no llegaron por el feed del medio.</p></div>";
+    setTimeout(pintarNoticias, 0);
+    return h;
+  }
+  function pintarNoticias() {
+    var a = $("#n-sec"); if (!a) return;
+    function chips(el, arr, clave) { el.innerHTML = arr.map(function (o) { return '<button class="chip' + (o[0] === nF[clave] ? " on" : "") + '" data-nf="' + clave + ":" + o[0] + '" aria-pressed="' + (o[0] === nF[clave]) + '">' + esc(o[1]) + "</button>"; }).join(""); }
+    chips(a, [["todos", "Todos"]].concat(ED.sectores.map(function (x) { return [x.id, x.nombre]; })), "sector");
+    chips($("#n-tipo"), [["todas", "Todos"], ["independiente", "Independientes"], ["comercial", "Comerciales"], ["internacional", "Internacionales"], ["estatal", "Oficiales"]], "tipo");
+    chips($("#n-gen"), [["todos", "Todos"], ["noticia", "Noticias"], ["opinion", "Opinión"]], "genero");
+    var l = FEED.filter(function (x) { return (nF.sector === "todos" ? x.sector !== "deporte" : x.sector === nF.sector) && (nF.tipo === "todas" || x.tipo === nF.tipo || (nF.tipo === "estatal" && x.tipo === "oficial")) && (nF.genero === "todos" || x.genero === nF.genero); });
+    $("#n-lista").innerHTML = l.length ? '<div class="lista2">' + l.slice(0, nMax).map(row).join("") + "</div>" : '<div class="vacio">No hay notas con estos filtros. Prueba con otros o espera la próxima actualización.</div>';
+    $("#n-mas").innerHTML = l.length > nMax ? '<button class="btn o" id="n-b">Ver más notas (' + (l.length - nMax) + ")</button>" : "";
+    var b = $("#n-b"); if (b) b.onclick = function () { nMax += 15; pintarNoticias(); };
+  }
   function proxima() {
     var now = Date.now(), off = -5 * 3600e3, l = new Date(now + off), y = l.getUTCFullYear(), m = l.getUTCMonth(), d = l.getUTCDate();
     var c = proxHora(now, off, y, m, d);
@@ -197,29 +282,6 @@
   function fc(o) {
     return '<div class="fc ' + (o.cls || "") + '" tabindex="0" role="group" aria-label="' + esc(o.label) + '" style="' + colorFc(o.color) + '"' + (o.id ? ' data-t="' + o.id + '"' : "") + '><div class="fc-in"><div class="fc-f fc-front">' + o.front + '</div><div class="fc-f fc-back">' + o.back + "</div></div></div>";
   }
-  function tile(o) {
-    var P = (ED.portal || {})[o.id] || {}, ex = /^https?:/.test(P.u || "");
-    return fc({ cls: "tile" + (o.cls || ""), color: o.color, id: o.id, label: o.nombre + ". " + o.sub + ". Pasa el cursor o toca para ver qué es.",
-      front: '<span class="ic">' + ic(o.id) + "</span><b>" + esc(o.nombre) + "</b><small>" + esc(o.sub) + "</small>" + hint(),
-      back: '<span class="fc-k">' + esc(o.nombre) + '</span><p class="fc-c">' + esc(P.c || "") + "</p>" + (P.e ? '<p class="fc-e"><b>Ejemplo</b>' + esc(P.e) + "</p>" : "") +
-        '<div class="fc-b"><a class="fc-go" href="' + esc(o.href) + '">Entrar →</a>' + (P.f ? '<a class="fc-src" href="' + (ex ? safeUrl(P.u) : esc(P.u)) + '"' + (ex ? ' target="_blank" rel="noopener noreferrer"' : "") + ">" + esc(P.f) + (ex ? " ↗" : "") + "</a>" : "") + "</div>" });
-  }
-  function portal() {
-    var g = NOT.estado_fuentes || {}, tot = Object.keys(g).length, ok = Object.keys(g).filter(function (k) { return g[k].ok; }).length, tc = (NOT.indicadores || {}).tipo_cambio;
-    var fecha = ""; try { fecha = new Intl.DateTimeFormat("es-PE", { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: TZ }).format(new Date()); } catch (e) {}
-    var hoy = "";
-    if (tc && tc.serie && tc.serie.length) hoy += '<div class="i"><span class="k">USD / PEN</span><span class="v">S/ ' + num(tc.serie[tc.serie.length - 1].v, 3) + "</span></div>";
-    if (ED.nino) hoy += '<div class="i"><span class="k">El Niño costero · ENFEN</span><span class="v">' + esc(ED.nino.estado[0].v) + "</span></div>";
-    hoy += '<div class="i"><span class="k">Notas indexadas</span><span class="v">' + ITEMS.length + "</span></div>" + (tot ? '<div class="i"><span class="k">Fuentes activas</span><span class="v">' + ok + "/" + tot + "</span></div>" : "") + '<div class="i"><span class="k">Próxima actualización</span><span class="v" style="font-size:1.05rem">' + proxima() + "</span></div>";
-    var T = ED.sectores.filter(function (x) { return x.id !== "deporte" && x.id !== "mundo"; }).map(function (x) { var n = porSector(x.id).length; return { id: x.id, href: "#/s/" + x.id, color: x.color, nombre: x.nombre, sub: n ? n + (n === 1 ? " nota" : " notas") : "Análisis y misión", cls: x.id === "nino" ? " nino" : "" }; })
-      .concat([{ id: "talleres", href: "#/talleres", color: "#F59E0B", nombre: "Talleres de IA", sub: "Aprende con práctica" }, { id: "ruta", href: "#/ruta", color: "#D97706", nombre: "La Ruta", sub: ORDEN.length + " misiones" }, { id: "datos", href: "#/datos", color: "#38BDF8", nombre: "DataPerú", sub: "Datos oficiales" }]);
-    var tiles = T.map(tile).join("");
-    return '<section class="portal fade" aria-label="Portal"><div class="po-hero"><div class="po-main"><p class="po-eye">Portal de coyuntura · ' + esc(fecha) + '</p><h1>La coyuntura del Perú, explicada con sus fuentes</h1><p class="po-sub">Entiende la coyuntura con datos y aprende a usar IA para analizarla. Análisis propios, noticias, indicadores y una ruta para aprender. Se actualiza 7 veces al día (hora de Lima).</p>' +
-      '<button class="po-search" type="button" data-buscar="1"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Busca noticias, análisis o términos</span><kbd aria-hidden="true">/</kbd></button>' +
-      '<div class="po-cta"><a class="btn" href="#/a/hilo">Panorama del momento →</a><a class="btn o" href="#/ruta">Empezar la Ruta</a></div></div>' +
-      '<aside class="po-hoy" aria-label="Hoy en cifras"><h3 class="pt">Hoy en cifras</h3><div class="ind">' + hoy + "</div></aside></div>" +
-      '<nav class="po-grid" aria-label="Explora por sección">' + tiles + "</nav></section>";
-  }
   /* ───── promoción de talleres de IA (datos en data/talleres.js) ───── */
   var T = window.TALLERES || null;
   function waUrl(txt) { var c = T && T.contacto; return c && c.whatsapp ? "https://wa.me/" + String(c.whatsapp).replace(/\D/g, "") + "?text=" + encodeURIComponent(txt || c.mensaje || "") : "#/talleres"; }
@@ -237,7 +299,7 @@
     return '<div class="pg-g">' + T.paginas.map(function (p) {
       var sc = SECT[p.sector];
       return fc({ cls: "pgcard", color: sc ? sc.color : "#F59E0B", label: p.n + ". " + p.d + ". Pasa el cursor o toca para ver qué encontrarás.",
-        front: '<span class="t-ic" aria-hidden="true">' + p.icono + "</span><h3>" + esc(p.n) + "</h3>" + (sc ? "<small>" + esc(sc.nombre) + "</small>" : "") + hint(),
+        front: '<span class="t-ic" aria-hidden="true">' + p.icono + "</span><h3>" + esc(p.n) + "</h3>" + (sc ? "<small>" + esc(sc.nombre) + "</small>" : "") + "<p>" + esc(p.d) + "</p>" + hint(),
         back: '<span class="fc-k">Qué encontrarás</span><p class="fc-c">' + esc(p.d) + '</p><div class="fc-b"><a class="fc-go" ' + ext(p.u) + ">Abrir página ↗</a></div>" });
     }).join("") + "</div>";
   }
@@ -273,34 +335,6 @@
     h += '<div class="t-links"><a class="btn" ' + ext(waUrl()) + ">Escribir por WhatsApp</a>" + (c.tiktok ? '<a class="btn o" ' + ext(c.tiktok) + ">TikTok @luwiuni</a>" : "") + (c.web ? '<a class="btn o" ' + ext(c.web) + ">Web de los talleres</a>" : "") + "</div>";
     if (T.paginas && T.paginas.length) h += sh("Mis páginas", "var(--gold)") + pCards();
     return h + "</div>";
-  }
-
-  function vistaHome() {
-    var principal = INS.filter(function (i) { return i.id === "politica"; })[0] || INS[0], otros = INS.filter(function (i) { return i !== principal; });
-    var h = portal() + promoBanda() + ninoBanner() + '<div class="bento fade"><div class="b1 panel">' + (HILO ? '<a class="panorama" href="#/a/hilo"><b>Panorama</b><span>' + esc(HILO.titulo) + "</span></a>" : "") + (principal ? leadCard(principal) : "") + '<div class="minis">' + otros.slice(0, 6).map(card).join("") + "</div></div>";
-    h += '<div class="panel"><h3 class="pt">La Ruta de Aprendizaje <a href="#/ruta">Ver todo</a></h3>' + rutaMini() + "</div>";
-    h += '<div class="stack"><div class="panel"><h3 class="pt">Indicadores <a href="#/datos">DataPerú</a></h3>' + indicadores(false) + '</div><div class="panel"><h3 class="pt">Glosario cívico</h3>' + glosarioDia() + '</div><div class="panel"><h3 class="pt">Radar de temas</h3>' + radarHTML() + "</div></div></div>";
-    h += sh("Últimas notas de los medios", "var(--gold)", "#/historial", "Historial") + '<div class="chips" id="f-chips"></div><div class="lista2" id="f-lista"></div><p style="text-align:center;margin-top:14px" id="f-mas"></p>';
-    ED.sectores.forEach(function (s) {
-      if (s.id === "deporte" || s.id === "mundo") return; var its = porSector(s.id).slice(0, 4); if (!its.length) return;
-      h += sh(s.nombre, s.color, "#/s/" + s.id, "Ver sección") + '<div class="lista2">' + its.map(function (i) { return row(asFeed(i)); }).join("") + "</div>";
-    });
-    return h;
-  }
-  var filtro = "todas", cuantas = 8;
-  function pintarFeed() {
-    var l = FEED.filter(function (s) { if (s.sector === "deporte") return false; return filtro === "todas" || (filtro === "indep" ? s.tipo === "independiente" : filtro === "com" ? s.tipo === "comercial" : filtro === "int" ? s.tipo === "internacional" : (s.tipo === "oficial" || s.tipo === "estatal")); });
-    var el = $("#f-lista"); if (!el) return;
-    el.innerHTML = l.length ? l.slice(0, cuantas).map(row).join("") : '<div class="vacio">No hay notas con este filtro todavía. La próxima actualización (7 veces al día) traerá más.</div>';
-    $("#f-mas").innerHTML = l.length > cuantas ? '<button class="btn o" id="b-mas">Ver más notas (' + (l.length - cuantas) + ")</button>" : "";
-    var b = $("#b-mas"); if (b) b.onclick = function () { cuantas += 8; pintarFeed(); };
-  }
-  function iniFeed() {
-    var c = $("#f-chips"); if (!c) return;
-    var op = [["todas", "Todas"], ["indep", "Independientes"], ["com", "Comerciales"], ["int", "Internacionales"], ["of", "Oficiales"]];
-    c.innerHTML = op.map(function (o) { return '<button class="chip' + (o[0] === filtro ? " on" : "") + '" data-f="' + o[0] + '">' + o[1] + "</button>"; }).join("");
-    $$("button", c).forEach(function (b) { b.onclick = function () { filtro = b.getAttribute("data-f"); cuantas = 8; iniFeed(); }; });
-    pintarFeed();
   }
 
   function vistaSector(id) {
@@ -384,6 +418,13 @@
     $$("#gl-l .gt").forEach(function (b) { b.onclick = function () { marcar(b.getAttribute("data-t")); b.classList.add("visto"); }; });
   }
 
+  function estadoTxt(e) { return e.ok ? (e.procedencia === "agregador" ? "Vía Google Noticias (no directo) · " + e.n + " notas" : "Directa · " + e.n + " notas") : "Sin datos"; }
+  function estadoFuentesHTML() {
+    var g = NOT.estado_fuentes || {}, nom = Object.keys(g);
+    if (!nom.length) return '<section class="fg"><h2>Estado de las fuentes de noticias</h2><div class="vacio">Aún no hay una comprobación automática registrada.</div></section>';
+    return '<section class="fg"><h2>Estado de las fuentes de noticias</h2><p class="dp-nota">Resultado de la última comprobación automática. «Vía Google Noticias» significa que el feed del medio no respondió y se usó un agregador identificado; esas notas nunca se presentan como directas. «Sin datos» conserva las últimas notas válidas.</p><div class="tabla-w"><table class="tabla"><thead><tr><th scope="col">Medio</th><th scope="col">Resultado</th><th scope="col">Última nota</th><th scope="col">Comprobado</th><th scope="col">Detalle</th></tr></thead><tbody>' +
+      nom.map(function (k) { var e = g[k]; return "<tr><th scope=\"row\">" + esc(k) + '</th><td class="' + (e.ok ? (e.procedencia === "agregador" ? "ag" : "ok") : "no") + '">' + esc(estadoTxt(e)) + "</td><td>" + (e.ultima_nota ? esc(corta(e.ultima_nota)) : "—") + "</td><td>" + (e.comprobado ? esc(fechaHora(e.comprobado)) : "—") + "</td><td>" + esc(e.ok ? (e.procedencia === "agregador" ? "Feed directo: " + (e.error_directo || "sin respuesta") : "") : (e.error || "") + (e.error_respaldo ? " · respaldo: " + e.error_respaldo : "")) + "</td></tr>"; }).join("") + "</tbody></table></div></section>";
+  }
   function vistaFuentes() {
     var grupos = [["Medios independientes y de investigación", function (f) { return /Independiente|Sin fines|Semanario|Programa|Análisis|Medio referente|Digital/.test(f.tipo) && !/Comercial/.test(f.tipo); }], ["Medios comerciales y semanarios", function (f) { return /Comercial|Semanario ?$/.test(f.tipo) && !/Independiente/.test(f.tipo); }], ["Internacionales", function (f) { return /Internacional/.test(f.tipo); }], ["Datos oficiales y Estado", function (f) { return /Dato oficial|Estatal/.test(f.tipo); }]], usados = {};
     var h = '<div class="fade"><div class="shead" style="--c:var(--brand)"><h1>🔗 Fuentes</h1><p>De dónde sale la información. “Independiente” no es sinónimo de neutral: lee varios medios y contrasta.</p></div>';
@@ -394,6 +435,7 @@
     });
     var resto = ED.fuentes.filter(function (f) { return !usados[f.n]; });
     if (resto.length) h += '<section class="fg"><h2>Otras fuentes</h2>' + resto.map(function (f) { return '<a class="fr" href="' + safeUrl(f.u) + '" target="_blank" rel="noopener noreferrer"><div><b>' + esc(f.n) + "</b><small>" + esc(f.tipo) + "</small><p>" + esc(f.foco) + "</p></div><span>↗</span></a>"; }).join("") + "</section>";
+    h += estadoFuentesHTML();
     h += '<section class="fg"><h2>¿Cómo funciona y cada cuánto se actualiza?</h2><div class="box" style="margin:10px 0"><p style="font-size:.95rem">Un flujo automático de GitHub Actions lee los feeds RSS de estos medios <b>siete veces al día (00:00, 06:00, 10:00, 12:00, 15:00, 18:00 y 21:00, hora de Lima)</b>, clasifica las notas por sector y publica el sitio. Mostramos título, resumen breve y enlace; el contenido pertenece a cada medio. Los análisis llevan fecha de corte y nivel de confianza. La clasificación por sector es automática y puede equivocarse.</p></div></section></div>';
     return h;
   }
@@ -405,66 +447,42 @@
     var indep = ITEMS.filter(function (i) { return i.tipo === "independiente"; }).length;
     var h = '<div class="fade"><div class="shead" style="--c:var(--gold)"><h1>Estadísticas</h1><p>Indicadores con fuente y cobertura de las notas que procesa este sitio. Las cifras externas se contrastan siempre en la fuente primaria.</p></div>';
     h += '<div class="kpis"><div class="kpi"><div class="k">Notas indexadas</div><div class="v">' + ITEMS.length + '</div><small>Últimos 30 días</small></div><div class="kpi"><div class="k">Fuentes activas</div><div class="v">' + (nom.length ? ok + "/" + nom.length : "—") + '</div><small>Última carga</small></div><div class="kpi"><div class="k">Medios independientes</div><div class="v">' + indep + '</div><small>Notas en el índice</small></div><div class="kpi"><div class="k">Análisis propios</div><div class="v">' + INS.length + '</div><small>Con fuentes enlazadas</small></div></div>';
-    h += '<div class="bento"><div class="panel b1"><h3 class="pt">Indicadores</h3>' + indicadores(true) + '</div><div class="panel"><h3 class="pt">Notas por sección</h3>' + ED.sectores.map(function (x) { var n = cnt[x.id] || 0; return '<div class="hbar" style="--c:' + x.color + '"><span>' + esc(x.nombre) + '</span><span><i style="width:' + Math.round(n / max * 100) + '%"></i></span><span>' + n + "</span></div>"; }).join("") + '</div><div class="panel"><h3 class="pt">Estado de las fuentes</h3>' + (nom.length ? nom.map(function (k) { return '<div class="fuente-i"><span>' + esc(k) + '</span><span class="' + (g[k].ok ? "ok" : "no") + '">' + (g[k].ok ? "OK · " + g[k].n : "sin respuesta") + "</span></div>"; }).join("") : '<div class="vacio">Aún no hay una carga automática registrada.</div>') + "</div></div></div>";
+    h += '<div class="bento"><div class="panel b1"><h3 class="pt">Indicadores</h3>' + indicadores(true) + '</div><div class="panel"><h3 class="pt">Notas por sección</h3>' + ED.sectores.map(function (x) { var n = cnt[x.id] || 0; return '<div class="hbar" style="--c:' + x.color + '"><span>' + esc(x.nombre) + '</span><span><i style="width:' + Math.round(n / max * 100) + '%"></i></span><span>' + n + "</span></div>"; }).join("") + '</div><div class="panel"><h3 class="pt">Estado de las fuentes</h3>' + (nom.length ? nom.map(function (k) { return '<div class="fuente-i"><span>' + esc(k) + '</span><span class="' + (g[k].ok ? (g[k].procedencia === "agregador" ? "ag" : "ok") : "no") + '">' + esc(estadoTxt(g[k])) + "</span></div>"; }).join("") : '<div class="vacio">Aún no hay una carga automática registrada.</div>') + "</div></div></div>";
     return h;
   }
   function fmtNum(v, dec) { return num(v, dec); }
-  /* tarjeta que se voltea: frente con la cifra; reverso con concepto, ejemplo y fuente */
-  function flipCard(o) {
-    return '<article class="flip' + (o.w2 ? " w2" : "") + '" data-cat="' + esc(o.cat || "") + '" tabindex="0" aria-label="' + esc(o.k + ": " + o.v + ". Pasa el cursor o toca para ver el concepto, un ejemplo y la fuente.") + '"><div class="flip-in">' +
-      '<div class="face front">' + (o.tag ? '<span class="tag">' + esc(o.tag) + "</span>" : "") + '<span class="k">' + esc(o.k) + '</span><span class="v cifra">' + esc(o.v) + "</span><p>" + esc(o.n) + "</p>" + (o.spark || "") + '<span class="hint" aria-hidden="true">↻ Voltea para ver el concepto</span></div>' +
-      '<div class="face back"><span class="bk">Qué significa</span><p>' + esc(o.c) + '</p><span class="bk">Ejemplo</span><p class="ej">' + esc(o.e) + '</p><a class="lk" href="' + safeUrl(o.u) + '" target="_blank" rel="noopener noreferrer">Fuente: ' + esc(o.f) + " ↗</a></div></div></article>";
-  }
   function ejSerie(x, b) {
     var a = b.serie[0], u = b.serie[b.serie.length - 1], d = u.v - a.v;
     if (x.unidad === "personas") return "En " + a.a + " había " + fmtNum(a.v, 0) + " habitantes y en " + u.a + ", " + fmtNum(u.v, 0) + ": " + fmtNum(Math.abs(d / a.v * 100), 1) + " % " + (d >= 0 ? "más" : "menos") + ".";
     if (x.unidad === "años") return "Un recién nacido en " + u.a + " viviría en promedio " + fmtNum(u.v, x.dec) + " años, " + fmtNum(Math.abs(d), x.dec) + " " + (d >= 0 ? "más" : "menos") + " que en " + a.a + ".";
     return "En " + a.a + " fue " + fmtNum(a.v, x.dec) + " % y en " + u.a + ", " + fmtNum(u.v, x.dec) + " %: " + (d >= 0 ? "subió " : "bajó ") + fmtNum(Math.abs(d), x.dec) + " puntos porcentuales.";
   }
-  function animarCifras() {
-    if (reduce || !("IntersectionObserver" in window)) return;
-    var io = new IntersectionObserver(function (en) { en.forEach(function (e) { if (!e.isIntersecting) return; io.unobserve(e.target); contar(e.target); }); }, { threshold: .4 });
-    $$(".cifra").forEach(function (el) { io.observe(el); });
-  }
-  function contar(el) {
-    var fin = el.textContent, re = /\d[\d ]*(?:,\d+)?/g, toks = fin.match(re); if (!toks) return;
-    var vals = toks.map(function (t) { return { dec: (t.split(",")[1] || "").length, sep: /\s/.test(t), n: parseFloat(t.replace(/\s/g, "").replace(",", ".")) }; }), t0 = performance.now(), dur = 1000;
-    (function paso(t) {
-      var k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 3), i = 0;
-      el.textContent = fin.replace(re, function () { var v = vals[i++], x = v.n * e; var r = num(x, v.dec); return v.sep ? r : r.replace(/ /g, ""); });
-      if (k < 1) requestAnimationFrame(paso); else el.textContent = fin;
-    })(t0);
-  }
+  var UNIDAD_BM = { "SP.POP.TOTL": "habitantes", "SL.UEM.TOTL.ZS": "% de la fuerza laboral", "IT.NET.USER.ZS": "% de la población", "NY.GDP.MKTP.KD.ZG": "% de variación anual", "FP.CPI.TOTL.ZG": "% anual", "SP.DYN.LE00.IN": "años" };
   var DCATS = [["todos", "Todo"], ["eco", "Economía"], ["clima", "Clima / ENFEN"], ["soc", "Sociedad / INEI"], ["salud", "Salud / Minsa"]], dFil = "todos";
   function bloquesDatos() {
-    var D = ED.datos, bm = NOT.datos_bm || {}, B = [], tc = (NOT.indicadores || {}).tipo_cambio;
-    if (tc && tc.serie && tc.serie.length) {
-      var v = tc.serie.map(function (x) { return x.v; }), u = v[v.length - 1], d = v.length > 1 ? u - v[v.length - 2] : null, ref = /Referencial/.test(tc.fuente || "");
-      B.push({ cat: "eco", tag: ref ? "Referencial" : "BCRP", w2: 1, k: "Tipo de cambio USD / PEN", v: "S/ " + num(u, 3), n: (d !== null ? "Variación " + (d >= 0 ? "+" : "") + num(d, 3) + " · " : "") + esc(corta(tc.serie[tc.serie.length - 1].f + "T12:00:00Z")) + (ref ? " · valor de mercado referencial; el oficial está en el BCRP" : ""), spark: spark(v, false),
-        c: "Cuántos soles cuesta comprar un dólar estadounidense. Si el número sube, el dólar se encarece; si baja, se abarata.", e: "Con S/ " + num(u, 3) + " por dólar, US$ 100 equivalen a S/ " + num(u * 100, 2) + ".", f: ref ? "BCRP (dato oficial)" : "BCRP", u: "https://estadisticas.bcrp.gob.pe/estadisticas/series/" });
-    }
+    var D = ED.datos, bm = NOT.datos_bm || {}, B = [], tc = bloqueTc();
+    if (tc) B.push(tc);
     D.grupos.forEach(function (g) { g.items.forEach(function (i) { B.push(i); }); });
     (D.series || []).forEach(function (x) {
       var b = bm[x.cod]; if (!b || !b.serie || b.serie.length < 3) return;
       var u = b.serie[b.serie.length - 1];
-      B.push({ cat: x.cat, tag: "Banco Mundial", k: x.k, v: fmtNum(u.v, x.dec) + (x.unidad === "%" ? " %" : ""), n: (x.unidad === "personas" || x.unidad === "años" ? x.unidad + " · " : "") + "Dato de " + u.a, spark: spark(b.serie.map(function (p) { return p.v; }), false), c: x.c, e: ejSerie(x, b), f: "Banco Mundial", u: "https://data.worldbank.org/indicator/" + x.cod + "?locations=PE" });
+      B.push({ cat: x.cat, fp: "Banco Mundial", k: x.k, v: fmtNum(u.v, x.dec), un: UNIDAD_BM[x.cod] || x.unidad, corte: "Año " + u.a + " (serie anual)", n: "", spark: spark(b.serie.map(function (p) { return p.v; }), false), c: x.c, e: ejSerie(x, b), f: "Banco Mundial", u: "https://data.worldbank.org/indicator/" + x.cod + "?locations=PE" });
     });
     var orden = { eco: 0, clima: 1, soc: 2, salud: 3 };
     return B.map(function (x, i) { return { x: x, i: i }; }).sort(function (a, b) { return (orden[a.x.cat] - orden[b.x.cat]) || (a.i - b.i); }).map(function (o) { return o.x; });
   }
   function pintarDatos() {
     var c = $("#d-chips"), g = $("#d-grid"); if (!c || !g) return;
-    c.innerHTML = DCATS.map(function (x) { return '<button class="chip' + (x[0] === dFil ? " on" : "") + '" data-df="' + x[0] + '">' + esc(x[1]) + "</button>"; }).join("");
+    c.innerHTML = DCATS.map(function (x) { return '<button class="chip' + (x[0] === dFil ? " on" : "") + '" data-df="' + x[0] + '" aria-pressed="' + (x[0] === dFil) + '">' + esc(x[1]) + "</button>"; }).join("");
     var B = bloquesDatos().filter(function (b) { return dFil === "todos" || b.cat === dFil; });
-    g.innerHTML = B.length ? B.map(flipCard).join("") : '<div class="vacio">No hay datos en esta categoría todavía.</div>';
-    animarCifras();
+    g.innerHTML = B.length ? B.map(function (d) { return dataCard(d); }).join("") : '<div class="vacio">No hay datos en esta categoría todavía.</div>';
   }
   function vistaDatos() {
     var D = ED.datos; if (!D) return vistaHome();
-    var h = '<div class="fade"><div class="dp-head"><div><p class="po-eye">DataPerú · corte ' + esc(corta(D.corte + "T12:00:00Z")) + '</p><h1>Datos y cifras clave</h1><p class="dp-sub">' + esc(D.intro) + '</p></div><span class="pill-act" style="display:inline-flex"><i aria-hidden="true"></i>Actualización: 08:00 / 12:00 / 18:00</span></div>';
-    h += '<div class="chips" id="d-chips" role="tablist" aria-label="Categorías"></div><div class="dp-b" id="d-grid" aria-live="polite"></div>';
+    var h = '<div class="fade"><div class="shead" style="--c:#38BDF8"><p class="po-eye">Datos del Perú</p><h1>Datos y cifras clave</h1><p>' + esc(D.intro) + "</p></div>";
+    h += '<details class="filtros"><summary>Filtrar por tema</summary><div class="chips" id="d-chips" aria-label="Categorías"></div></details><div class="dp-b" id="d-grid" aria-live="polite"></div>';
     h += sh("Dónde buscar más datos", "#94A3B8") + D.enlaces.map(function (e) { return '<a class="fr" href="' + safeUrl(e.u) + '" target="_blank" rel="noopener noreferrer"><div><b>' + esc(e.n) + "</b><p>" + esc(e.d) + "</p></div><span>↗</span></a>"; }).join("");
-    h += '<div class="box" style="margin-top:20px"><h3>Cómo leer estas cifras</h3><p>Cada dato indica su periodo y quién lo publicó. Compara solo cifras del mismo periodo y de la misma población: el desempleo de Lima Metropolitana no es el desempleo nacional, y un trimestre móvil no equivale a un año.</p></div>';
+    h += '<div class="box" style="margin-top:20px"><h3>Cómo leer estas cifras</h3><p>Cada dato indica su unidad, su fecha de corte y quién lo publicó. Compara solo cifras del mismo periodo y de la misma población: el desempleo de Lima Metropolitana no es el desempleo nacional, y un trimestre móvil no equivale a un año. Los datos del INEI se cargan con corte editorial al ' + esc(fechaLarga(D.corte)) + "; el tipo de cambio y las series del Banco Mundial se actualizan solos.</p></div>" + frescura();
     h += '<p class="dp-aviso">* Cifras con fines informativos y educativos. Cada tarjeta enlaza a su fuente y no sustituye a la información oficial en tiempo real. Contrasta en: <a href="https://estadisticas.bcrp.gob.pe/estadisticas/series/" target="_blank" rel="noopener noreferrer">BCRP</a>, <a href="https://www.gob.pe/inei" target="_blank" rel="noopener noreferrer">INEI</a>, <a href="https://www.dge.gob.pe" target="_blank" rel="noopener noreferrer">CDC-Minsa</a> y <a href="https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" target="_blank" rel="noopener noreferrer">ENFEN</a>.</p></div>';
     setTimeout(pintarDatos, 0);
     return h;
@@ -492,23 +510,27 @@
 
   /* ───── enrutador ───── */
   var TITULO = "Contexto Perú";
+  var primeraVez = true;
   function ruta() { var h = location.hash.replace(/^#\/?/, ""), p = h.split("/"); return { v: p[0] || "inicio", id: p[1] }; }
   function navegar() {
     var r = ruta(), html, tab = "inicio", nav = "inicio", t = TITULO;
-    if (r.v === "s" && SECT[r.id] && r.id !== "brujula") { html = vistaSector(r.id); nav = r.id; tab = "secciones"; t = SECT[r.id].nombre + " · " + TITULO; }
+    if (r.v === "noticias") { html = vistaNoticias(); nav = "noticias"; tab = "noticias"; t = "Noticias · " + TITULO; }
+    else if (r.v === "nino") { html = vistaSector("nino"); nav = "nino"; tab = "nino"; t = "El Niño · " + TITULO; }
+    else if (r.v === "s" && SECT[r.id] && r.id !== "brujula") { html = vistaSector(r.id); nav = r.id; tab = r.id === "nino" ? "nino" : ""; t = SECT[r.id].nombre + " · " + TITULO; }
     else if (r.v === "a") { html = vistaArticulo(r.id); var ar = ED.insights.filter(function (x) { return (x.id || x.sector) === r.id; })[0]; nav = r.id === "hilo" ? "inicio" : (ar ? ar.sector : "inicio"); t = (r.id === "hilo" ? ED.hilo.titulo : ar ? ar.titulo : TITULO) + " · " + TITULO; }
-    else if (r.v === "ruta") { html = vistaRuta(); nav = "ruta"; tab = "ruta"; t = "La Ruta · " + TITULO; }
-    else if (r.v === "glosario") { html = vistaGlosario(); nav = "glosario"; tab = "glosario"; t = "Glosario · " + TITULO; }
-    else if (r.v === "datos") { html = vistaDatos(); nav = "datos"; tab = ""; t = "DataPerú · " + TITULO; }
+    else if (r.v === "ruta") { html = vistaRuta(); nav = "ruta"; tab = ""; t = "La Ruta · " + TITULO; }
+    else if (r.v === "glosario") { html = vistaGlosario(); nav = "glosario"; tab = ""; t = "Glosario · " + TITULO; }
+    else if (r.v === "datos") { html = vistaDatos(); nav = "datos"; tab = "datos"; t = "Datos del Perú · " + TITULO; }
     else if (r.v === "estadisticas") { html = vistaEstadisticas(); nav = "estadisticas"; tab = ""; t = "Estadísticas · " + TITULO; }
     else if (r.v === "historial") { html = vistaHistorial(); nav = "historial"; tab = ""; t = "Historial · " + TITULO; }
     else if (r.v === "talleres") { html = vistaTalleres(); nav = "talleres"; tab = ""; t = "Talleres de IA · " + TITULO; }
     else if (r.v === "fuentes") { html = vistaFuentes(); nav = "fuentes"; tab = ""; t = "Fuentes · " + TITULO; }
     else { html = vistaHome(); }
     $("#app").innerHTML = html; document.title = t;
-    $$("#snav a, .mnav a").forEach(function (a) { var on = a.getAttribute("data-n") === nav; a.classList.toggle("on", on); if (on) a.scrollIntoView({ inline: "center", block: "nearest" }); });
-    $$("#tabbar [data-t]").forEach(function (a) { a.classList.toggle("on", a.getAttribute("data-t") === tab); });
-    if (r.v === "inicio") iniFeed();
+    document.body.setAttribute("data-v", r.v);
+    $$(".mnav a").forEach(function (a) { var on = a.getAttribute("data-n") === nav; a.classList.toggle("on", on); if (on) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+    $$("#tabbar [data-t]").forEach(function (a) { var on = a.getAttribute("data-t") === tab; a.classList.toggle("on", on); if (on) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+    if (primeraVez) primeraVez = false; else { try { $("#app").focus({ preventScroll: true }); } catch (e) {} }
     var sh = $("#b-share"); if (sh) sh.onclick = compartir;
     window.scrollTo(0, 0);
   }
@@ -517,10 +539,7 @@
     if (navigator.share) navigator.share(d).catch(function () {});
     else if (navigator.clipboard) navigator.clipboard.writeText(location.href).then(function () { toast("Enlace copiado"); });
   }
-  function menuNav() {
-    var items = [["inicio", "Inicio", "#/"]].concat(ED.sectores.map(function (s) { return [s.id, s.nombre, "#/s/" + s.id]; }), [["talleres", "Talleres de IA", "#/talleres"], ["fuentes", "Fuentes", "#/fuentes"], ["estadisticas", "Estadísticas", "#/estadisticas", "solo-medio"], ["historial", "Historial", "#/historial", "solo-medio"]]);
-    $("#snav").innerHTML = items.map(function (x) { return "<li" + (x[3] ? ' class="' + x[3] + '"' : "") + '><a href="' + x[2] + '" data-n="' + x[0] + '">' + esc(x[1]) + "</a></li>"; }).join("");
-  }
+  function menuNav() { /* la navegación secundaria vive en el menú «Más» (abrirMenu) */ }
 
   /* ───── hojas, toasts y utilidades de interfaz ───── */
   var hojaAbierta = null;
@@ -579,7 +598,12 @@
     q.addEventListener("input", ir); ir();
   }
   function abrirMenu() {
-    $("#menu-in").innerHTML = '<button class="sx" aria-label="Cerrar" data-x="1">✕</button><div class="paso">Secciones</div><h3>Explora por tema</h3><div class="menu-g">' + ED.sectores.map(function (s) { return '<a href="#/s/' + s.id + '" data-cerrar="1" style="--c:' + s.color + '"><span class="ic sm">' + ic(s.id) + "</span>" + esc(s.nombre) + "</a>"; }).join("") + '</div><div class="menu-g"><a href="#/ruta" data-cerrar="1" style="--c:#D97706"><span class="ic sm">' + ic("ruta") + '</span>La Ruta</a><a href="#/glosario" data-cerrar="1" style="--c:#D97706"><span>📖</span>Glosario</a><a href="#/datos" data-cerrar="1" style="--c:#38BDF8"><span class="ic sm">' + ic("datos") + '</span>DataPerú</a><a href="#/estadisticas" data-cerrar="1" style="--c:#10B981"><span>📊</span>Estadísticas</a><a href="#/historial" data-cerrar="1" style="--c:#10B981"><span>🗂️</span>Historial</a><a href="#/talleres" data-cerrar="1" style="--c:#F59E0B"><span class="ic sm">' + ic("talleres") + '</span>Talleres de IA</a><a href="#/fuentes" data-cerrar="1" style="--c:#94A3B8"><span>🔗</span>Fuentes</a></div>';
+    var nv = NIVELES[nivelDe(S.xp)];
+    $("#menu-in").innerHTML = '<button class="sx" aria-label="Cerrar" data-x="1">✕</button><h3 id="menu-t">Más opciones</h3>' +
+      '<a class="xp xp-m" href="#/ruta" data-cerrar="1" id="xpchip" aria-label="Mi progreso en la Ruta"><span aria-hidden="true">🧭</span><span>Mi Ruta:</span><b id="xpnum">' + S.xp + " XP</b></a>" +
+      '<div class="paso">Formación</div><div class="menu-l"><a href="#/ruta" data-cerrar="1">La Ruta: aprende jugando</a><a href="#/glosario" data-cerrar="1">Glosario</a><a href="#/talleres" data-cerrar="1">Talleres de IA</a></div>' +
+      '<div class="paso">Datos y archivo</div><div class="menu-l"><a href="#/estadisticas" data-cerrar="1">Estadísticas del sitio</a><a href="#/historial" data-cerrar="1">Historial de notas</a><a href="#/fuentes" data-cerrar="1">Fuentes y su estado</a></div>' +
+      '<div class="paso">Temas</div><div class="menu-g">' + ED.sectores.map(function (x) { return '<a href="#/s/' + x.id + '" data-cerrar="1" style="--c:' + x.color + '"><span class="ic sm">' + ic(x.id) + "</span>" + esc(x.nombre) + "</a>"; }).join("") + "</div>";
     abrirHoja("#menu");
   }
 
@@ -602,6 +626,7 @@
     if (t.id === "veil" || c("[data-x]")) { cerrarHojas(); return; }
     if (c("[data-buscar]")) { abrirBuscar(); return; }
     var df = c("[data-df]"); if (df) { dFil = df.getAttribute("data-df"); pintarDatos(); return; }
+    var nf = c("[data-nf]"); if (nf) { var kv = nf.getAttribute("data-nf").split(":"); nF[kv[0]] = kv[1]; nMax = 15; pintarNoticias(); return; }
     var fl = c(".flip,.fc"); if (fl && !c("a") && window.matchMedia && matchMedia("(hover: none)").matches) { var ya = fl.classList.contains("on"); $$(".flip.on,.fc.on").forEach(function (x) { x.classList.remove("on"); }); if (!ya) fl.classList.add("on"); return; }
     var mi = c("[data-m]"); if (mi) { abrirMision(mi.getAttribute("data-m")); return; }
     var o = c("[data-o]"); if (o && M) { responder(+o.getAttribute("data-o")); return; }
@@ -624,7 +649,7 @@
   addEventListener("keydown", function (e) { var f = e.target && e.target.classList && (e.target.classList.contains("flip") || e.target.classList.contains("fc")) ? e.target : null; if (f && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); f.classList.toggle("on"); return; } if (e.key === "/" && !/^(INPUT|TEXTAREA)$/.test((document.activeElement || {}).tagName || "") && !hojaAbierta) { e.preventDefault(); abrirBuscar(); return; } if (e.key === "Escape") { cerrarHojas(); $("#pop").classList.remove("on"); } });
   addEventListener("hashchange", function () { cerrarHojas(); navegar(); });
   addEventListener("scroll", function () { if (Math.abs(window.scrollY - popY) > 60) $("#pop").classList.remove("on"); }, { passive: true });
-  $("#b-buscar").onclick = abrirBuscar; $("#t-bus").onclick = abrirBuscar; $("#t-sec").onclick = abrirMenu;
+  $("#b-buscar").onclick = abrirBuscar; $("#t-bus").onclick = abrirBuscar; $("#b-mas").onclick = abrirMenu;
   (function tema() {
     var r = document.documentElement, g = null; try { g = localStorage.getItem("cp_tema"); } catch (e) {} if (g) r.setAttribute("data-theme", g);
     $("#b-tema").onclick = function () { var oscuro = r.getAttribute("data-theme") ? r.getAttribute("data-theme") === "dark" : true; var n = oscuro ? "light" : "dark"; r.setAttribute("data-theme", n); try { localStorage.setItem("cp_tema", n); } catch (e) {} };
@@ -634,7 +659,7 @@
   function ticker() {
     var w = $("#tk-t"); if (!w) return;
     var it = [], tc = (NOT.indicadores || {}).tipo_cambio;
-    if (tc && tc.serie && tc.serie.length) { var v = tc.serie[tc.serie.length - 1].v, a = tc.serie.length > 1 ? v - tc.serie[tc.serie.length - 2].v : null; it.push({ h: "#/estadisticas", t: "USD/PEN", x: "S/ " + num(v, 3) + (a === null ? "" : (a >= 0 ? " ▲" : " ▼") + num(Math.abs(a), 3)), cls: "fx" }); }
+    if (tc && tc.serie && tc.serie.length) { var v = tc.serie[tc.serie.length - 1].v, a = tc.serie.length > 1 ? v - tc.serie[tc.serie.length - 2].v : null; it.push({ h: "#/datos", t: "USD/PEN", x: "S/ " + num(v, 3) + (a === null ? "" : (a >= 0 ? " ▲" : " ▼") + num(Math.abs(a), 3)), cls: "fx" }); }
     var dd = ED.datos ? [].concat.apply([], ED.datos.grupos.map(function (g) { return g.items; })) : [];
     [["pob", "Población (Censo 2025)"], ["hogint", "Hogares con internet"], ["desemp", "Desempleo Lima Metropolitana"]].forEach(function (p) { var x = dd.filter(function (i) { return i.id === p[0]; })[0]; if (x) it.push({ h: "#/datos", t: p[1], x: x.v, cls: "fx" }); });
     var nino = (ED.indicadores || []).filter(function (x) { return /Niño/.test(x.k); })[0];
@@ -654,7 +679,7 @@
       var now = Date.now(), off = -5 * 3600e3, l = new Date(now + off), y = l.getUTCFullYear(), m = l.getUTCMonth(), d = l.getUTCDate();
       var c = proxHora(now, off, y, m, d);
       var mins = Math.round((c - now) / 60000), hh = Math.floor(mins / 60), mm = mins % 60, cl = new Date(c + off), hoy = cl.getUTCDate() === d;
-      $("#status").innerHTML = '<span class="live">Actualizado</span><span>' + (NOT.generado ? esc(corta(NOT.generado)) + ", " + esc(new Intl.DateTimeFormat("es-PE", { hour: "2-digit", minute: "2-digit", timeZone: TZ }).format(new Date(NOT.generado))) : "—") + '</span><span class="nx">Próxima: ' + (hoy ? "hoy" : "mañana") + " " + String(cl.getUTCHours()).padStart(2, "0") + ":00 · en " + (hh ? hh + " h " : "") + mm + " min</span>";
+      $("#status").innerHTML = '<span class="live">Sistema</span><span>Última comprobación: ' + (NOT.generado ? esc(fechaHora(NOT.generado)) : "sin registro") + '</span><span class="nx">Próxima: ' + (hoy ? "hoy" : "mañana") + " " + String(cl.getUTCHours()).padStart(2, "0") + ":00 · en " + (hh ? hh + " h " : "") + mm + " min</span>";
     }
     pintar(); setInterval(pintar, 30000);
     $("#f-ult").textContent = NOT.generado ? fmtFecha(NOT.generado, true) : "—"; $("#f-corte").textContent = fmtFecha(ED.corte + "T12:00:00Z");
@@ -669,7 +694,12 @@
       '<p class="f-lk"><a href="#/talleres">Ver talleres</a>' + (c.tiktok ? ' · <a ' + ext(c.tiktok) + ">TikTok</a>" : "") + (c.web ? ' · <a ' + ext(c.web) + ">Web de talleres</a>" : "") + "</p>" +
       (pg.length ? '<p class="f-lk"><b>Mis páginas:</b> ' + pg.map(function (p) { return "<a " + ext(p.u) + ">" + esc(p.n) + "</a>"; }).join(" · ") + "</p>" : "");
   }
-  menuNav(); estado(); xpChip(); ticker(); pintarPie(); navegar();
+  function pintarOffline() {
+    var o = $("#offline"); if (!o) return;
+    if (navigator.onLine === false) { o.hidden = false; o.textContent = "Sin conexión: se muestran los últimos datos guardados en este dispositivo" + (NOT.generado ? " (sistema comprobado el " + fechaHora(NOT.generado) + ")" : "") + "."; } else o.hidden = true;
+  }
+  addEventListener("online", pintarOffline); addEventListener("offline", pintarOffline);
+  menuNav(); estado(); xpChip(); ticker(); pintarPie(); pintarOffline(); navegar();
   if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
     var tenia = !!navigator.serviceWorker.controller, recargado = false;
     navigator.serviceWorker.addEventListener("controllerchange", function () { if (tenia && !recargado) { recargado = true; location.reload(); } });
