@@ -259,7 +259,8 @@
       '<p class="hero-kicker">ACTUALIDAD · DATOS · ANÁLISIS</p><h1 id="h1">El Perú, explicado con claridad</h1>'+
       '<p class="hero-sub">Noticias con fuentes enlazadas, cifras con su fecha de corte y análisis para entender lo que sucede en el país.</p>'+
       '<p class="hero-updated"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></svg>Última comprobación: '+esc(fechaSistema)+'</p></div>'+
-      '<div class="hero-stats" aria-label="Indicadores y sus periodos">'+visualStats()+'</div></section>';
+      '<div class="hero-stats" aria-label="Indicadores y sus periodos">'+visualStats()+'</div>'+ 
+      '<a class="hero-photo-credit" href="https://commons.wikimedia.org/wiki/File:Peru_-_Lima_004_-_sunset_light_over_the_coastal_cliffs_(6999152559).jpg" target="_blank" rel="noopener noreferrer" title="Fotografía documental de la Costa Verde al atardecer, 2012. McKay Savage, CC BY 2.0. Recortada y oscurecida para legibilidad.">Costa Verde real · McKay Savage / Wikimedia · 2012 · CC BY 2.0</a></section>';
     h+='<div class="qs">';
     h+=visualCard(1,"q1","¿Qué está pasando en el Perú?","Noticias importantes, explicadas con contexto y enlaces al medio que las publicó.",
       A.length?'<ul class="q-l">'+A.slice(0,2).map(function(x){return '<li><a href="'+safeUrl(x.url)+'" target="_blank" rel="noopener noreferrer"><span class="q-t">'+esc(sin(x.titulo,90))+'</span>'+meta(x)+'</a></li>';}).join("")+'</ul>':'<p>Actualmente no hay noticias recientes confirmadas.</p>',
@@ -271,6 +272,7 @@
       n && n.tres?'<ul class="q-l q-n3">'+n.tres.map(function(x){return '<li><b>'+esc(x.k)+':</b> '+esc(x.v)+'</li>';}).join("")+'</ul><p class="q-u">Último comunicado ENFEN: '+esc(u.txt)+'</p>':'<p>Información en revisión.</p>',
       "#/s/nino","Ver El Niño","nino");
     h+='</div>';
+    h+='<p class="photo-sources">Fotografías de archivo (no representan hechos de hoy): <a href="https://commons.wikimedia.org/wiki/File:Congreso_de_la_Rep%C3%BAblica_del_Per%C3%BA.jpg" target="_blank" rel="noopener noreferrer">Congreso, Freddiearomerop (2021, CC BY-SA 4.0)</a> · <a href="https://commons.wikimedia.org/wiki/File:Edificio_del_BCRP_en_Lima_01.jpg" target="_blank" rel="noopener noreferrer">BCRP, AlejandroFC (2025, CC BY-SA 4.0)</a> · <a href="https://commons.wikimedia.org/wiki/File:MINISTRO_DE_DEFENSA_LLEV%C3%93_AYUDA_HUMANITARIA_A_PIURA_Y_COORDIN%C3%93_ACCIONES_PARA_ENFRENTAR_EFECTOS_DEL_FEN%C3%93MENO_DEL_NI%C3%91O_COSTERO.jpg" target="_blank" rel="noopener noreferrer">Piura, Ministerio de Defensa del Perú (2023, CC BY 2.0)</a>. Imágenes recortadas y tintadas para el diseño.</p>';
     h+='<nav class="home-topics" aria-label="Explora los temas del Perú"><div class="home-topics-title"><h2>El Perú, en un vistazo</h2><p>Amplía lo que te interesa, con fuentes y fechas.</p></div>'+
       '<a href="#/s/politica"><strong>Actualidad</strong><span>Hechos y decisiones del país</span></a>'+
       '<a href="#/s/economia"><strong>Economía</strong><span>Actividad, precios y empleo</span></a>'+
