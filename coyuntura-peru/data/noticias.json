@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-02T14:49:16Z",
+ "generado": "2026-11-02T15:05:49Z",
  "modo": "automatico",
  "estado_fuentes": {
   "IDL-Reporteros": {
@@ -101,6 +101,294 @@
  },
  "items": [
   {
+   "id": "d432dd30ee",
+   "sector": "mundo",
+   "titulo": "Foro World in Progress 2026 de Barcelona, en directo | Saiz afirma que el Gobierno trabaja ya en el desmontaje de centros de migrantes en Ceuta ante los miles de retornos",
+   "resumen": "Albares: “La disuasión europea tiene que estar más en nuestras manos” | Sánchez pide defender el progreso frente a quienes “tienen la involución como proyecto político”",
+   "fuente": "El País América",
+   "url": "https://elpais.com/internacional/2026-11-02/foro-world-in-progress-de-barcelona-en-directo.html",
+   "fecha": "2026-11-02T15:02:22Z",
+   "tipo": "internacional",
+   "ambito": "mundo",
+   "imagen": "https://imagenes.elpais.com/resizer/v2/H6DTGPBH4NEJPGFDKF5UOAMVJQ.jpg?auth=5d5e939fb3f84602a59a4b7bb779c8136e4c280378f1e336d9c1b94c2bba4923"
+  },
+  {
+   "id": "52cf4c33d4",
+   "sector": "deporte",
+   "titulo": "“Tienen que comer asado, tomar una cerveza, un vino”: Riquelme, una frase especial para sus jugadores y cómo celebró Boca tras ganarle a River",
+   "resumen": "El ídolo y presidente xeneize pidió a sus futbolistas disfrutar del triunfo en el Superclásico. También habló de la clasificación a la Copa Libertadores 2027 y elogió a Sebastián Villa.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/deporte-total/futbol-mundial/juan-roman-riquelme-una-frase-especial-para-sus-jugadores-y-como-celebro-boca-juniors-tras-ganarle-a-river-plate-tienen-que-comer-asado-tomar-una-cerveza-un-vino-noticia/",
+   "fecha": "2026-11-02T15:00:17Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://elcomercio.pe/resizer/v2/QQJMCBH4JBGA5B23FHAX7BS3XU.jpg?auth=73bbe0752f20161149dcdd09ba03c6a5fa81aaee46a09882c2abace67b539f34&smart=true&width=1200&height=800"
+  },
+  {
+   "id": "d7ccf65823",
+   "sector": "deporte",
+   "titulo": "¡Tomó el liderato! Universitario remontó 3-1 a Atlético Grau por Torneo Clausura en Trujillo | RESUMEN Y GOLES",
+   "resumen": "Sigue la transmisión del partido de Universitario vs. Atlético Grau EN VIVO por la fecha 15 del Torneo Clausura de la Liga 1, desde el estadio Mansiche de Trujillo.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/deporte-total/futbol-peruano/universitario-vs-atletico-grau-en-vivo-online-gratis-por-torneo-clausura-de-la-liga-1-lbposting-noticia/",
+   "fecha": "2026-11-02T15:00:04Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://elcomercio.pe/resizer/v2/5Y5XHAOFNNH5BAEV6QKTDZK7RE.png?auth=4ddfe01daa89d199ff633462b6989a0d43937a9bc3f2d8e6f2322fe15a72b8d0&smart=true&width=1018&height=657"
+  },
+  {
+   "id": "2b7f904ad8",
+   "sector": "deporte",
+   "titulo": "Kimi Antonelli es campeón del mundo de la Fórmula 1 2026 tras subir el podio en el GP de México",
+   "resumen": "Con solo 20 años, el piloto italiano de Mercedes se convierte en el campeón mundial más joven de la historia de la F1 tras lograr el podio en México.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/deporte-total/donde-ver-f1-gp-mexico-en-vivo-gratis-hoy-horarios-y-canales-tv-que-transmiten-carrera-online-streaming-noticia/",
+   "fecha": "2026-11-02T15:00:03Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://elcomercio.pe/resizer/v2/JFZCS7IMDNETHKWLOOQVLN4GLY.png?auth=7c5eeb9aaefb7a62a7e55f63a889e45a1bd8a0cfaf26f9c3ebb230a634df94dc&smart=true&width=1600&height=900"
+  },
+  {
+   "id": "2b3f1241ae",
+   "sector": "nino",
+   "titulo": "Lluvias en Tumbes y el norte del Perú EN VIVO: fuertes precipitaciones por el Fenómeno El Niño activan quebradas e inundan calles",
+   "resumen": "Las precipitaciones ocasionan acumulaciones de agua en calles y vías rurales desde la noche del domingo. Senamhi pronosticó nuevos episodios de lluvia intensa en la costa norte y otras regiones del país",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/02/lluvias-en-tumbes-y-el-norte-del-peru-precipitaciones-intensas-por-el-fenomeno-el-nino-inundan-calles-y-activan-quebradas-en-la-region/",
+   "fecha": "2026-11-02T14:59:18Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://www.infobae.com/resizer/v2/RQKOPALTEVDRFFMVGG2MVVXOXQ.jpg?auth=de008977d7781c42b053dabb4eac8abffe954646d813f3c9c863e1ab16050ff5&smart=true&width=1920&height=1080"
+  },
+  {
+   "id": "114669266b",
+   "sector": "coyuntura",
+   "titulo": "Lima Metropolitana podría registrar lluvias intensas como en 1970, advierte jefe del Cenepred",
+   "resumen": "El jefe del Centro Nacional de Estimación, Prevención y Reducción del Riesgo de Desastres (Cenepred), Miguel Yamasaki, advirtió que Lima Metropolitana podría registrar lluvias similares a las de 1970 si continúa el incremento de las temperaturas del mar y del aire.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/lima/sucesos/lima-metropolitana-podria-registrar-lluvias-intensas-como-en-1970-advierte-jefe-del-cenepred-fenomeno-el-nino-apuesplan-ultimas-noticia/",
+   "fecha": "2026-11-02T14:58:02Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://elcomercio.pe/resizer/v2/WGW7NQOI3ZEUXPPLUBV2ZASYXU.jpg?auth=8e111c7d7b956eeffbab3ff3b65be526f2955b37334a5de693a4ef1a558062d0&smart=true&width=1196&height=927"
+  },
+  {
+   "id": "f769226996",
+   "sector": "deporte",
+   "titulo": "¡Con gol de Erick Noriega! Gremio venció 2-0 a Atlético Mineiro por la semifinal de ida de la Copa de Brasil | VIDEO",
+   "resumen": "El mediocampista peruano apareció sin marca en el área de Atlético Mineiro y anotó el 2-0 final a favor del ‘Tricolor’.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/deporte-total/peruanos-en-el-mundo/video-gol-de-erick-noriega-hoy-gremio-vs-atletico-mineiro-por-copa-de-brasil-noticia/",
+   "fecha": "2026-11-02T14:57:49Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://elcomercio.pe/resizer/v2/UFTODSYS25GXXLZNDNSGNG6AQM.png?auth=c79b3e8852d8a7cf739bc8c320ef606590b642daac19f697413fb04f06db9abb&smart=true&width=1392&height=887"
+  },
+  {
+   "id": "688fafabba",
+   "sector": "coyuntura",
+   "titulo": "Tumbes y Piura en alerta roja por lluvias extremas: por qué las precipitaciones podrían superar los 100 mm",
+   "resumen": "Las tres provincias de Tumbes y las ocho de Piura están comprendidas en la alerta roja vigente hasta el lunes 2 de noviembre. El Gobierno moviliza recursos ante la emergencia y la presidenta Keiko Fujimori canceló su viaje a España.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/peru/piura/tumbes-y-piura-en-alerta-roja-por-lluvias-extremas-por-que-las-precipitaciones-podrian-superar-los-100-mm-apuesplan-noticia/",
+   "fecha": "2026-11-02T14:56:59Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://elcomercio.pe/resizer/v2/YCMHHXH4Z5FFJC75U6EUJGIOMI.jpg?auth=1e1f1ec7d6b6b6c6189e6dd8ef73e31d6525f3cc80676bcf3410ab0f7350d94a&smart=true&width=500&height=375"
+  },
+  {
+   "id": "bf2ba374de",
+   "sector": "nino",
+   "titulo": "Puerto del Callao ante El Niño: APM Terminals alista ruta por mar y busca extender concesión",
+   "resumen": "APM Terminals Callao ejecuta una inversión de US$ 600 millones y ya alista una propuesta para extender su concesión, con obras incluso fuera del puerto. ¿Qué plantea y cómo se prepara para El Niño?",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/economia/empresas/el-nino-y-mas-concesion-el-plan-de-apm-terminals-para-el-puerto-del-callao-hacia-2027-noticia/",
+   "fecha": "2026-11-02T14:56:40Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://gestion.pe/resizer/v2/GRHHCDAJNFFHLMHMRXC4EILQNU.webp?auth=8744e619b90a0f3c46aaeb67b695c5a92b7662421d035c8abf6e32f2a2de9c04&smart=true&width=1600&height=1066"
+  },
+  {
+   "id": "9d29470ad9",
+   "sector": "coyuntura",
+   "titulo": "¿Cuánto debe dormir un runner para no lesionarse y qué técnicas usar para conciliar el sueño?",
+   "resumen": "",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/deporte-total/running/cuanto-debe-dormir-un-runner-para-no-lesionarse-y-que-tecnicas-usar-para-conciliar-el-sueno-noticia/",
+   "fecha": "2026-11-02T14:56:20Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://elcomercio.pe/resizer/v2/SLSVJQL3AJDMLIPU5ZLP52CSV4.jpg?auth=6bdb302d5e0eec58c98fd441192af1bcd539712f298127f2dc9a405e92ac789a&smart=true&width=4911&height=3508"
+  },
+  {
+   "id": "fa78e750bc",
+   "sector": "politica",
+   "titulo": "Selección peruana: cuándo se conocerá la lista de convocados para enfrentar a Bolivia en Matute",
+   "resumen": "La selección peruana se medirá con Bolivia este viernes 13 de noviembre en un partido amistoso por fecha FIFA. La lista de convocados tendría algunas sorpresas.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/deporte-total/seleccion/seleccion-peruana-cuando-se-conocera-la-lista-de-convocados-para-enfrentar-a-bolivia-en-matute-noticia/",
+   "fecha": "2026-11-02T14:56:20Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://elcomercio.pe/resizer/v2/GGB3U2L5BBHVBGUXWJVPJLCR6Q.png?auth=4bdd2d9b4db3336e0b57fb4a611d1877c719584472a447d9cc90ed44554a4572&smart=true&width=3750&height=2125"
+  },
+  {
+   "id": "ba8b58c8ed",
+   "sector": "deporte",
+   "titulo": "¡A tomar conciencia! La camiseta que presentó Atlético Grau que alerta sobre los efectos del Fenómeno de El Niño",
+   "resumen": "Previo al duelo ante Universitario de Deportes, los ‘Albos’ presentaron una camiseta manchada que representa la altura a la que llegó el agua durante las inundaciones en Piura en el 2017.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/deporte-total/futbol-peruano/a-tomar-conciencia-la-camiseta-que-presento-atletico-grau-que-alerta-sobre-los-efectos-del-fenomeno-de-el-nino-noticia/",
+   "fecha": "2026-11-02T14:56:05Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://elcomercio.pe/resizer/v2/BAJ7E4F23ZBV3NYJLLA5NAVUFQ.png?auth=e6361f415cf8ef76ff103f538b78a38f7b85b4bf81fc65bc95b2f1bc284c7686&smart=true&width=1842&height=1062"
+  },
+  {
+   "id": "e66f0fafea",
+   "sector": "ia",
+   "titulo": "¿Hemos dejado de pensar? La peligrosa tendencia que se impone en la era de la Inteligencia Artificial",
+   "resumen": "Recientes escándalos sobre novelas redactadas con Inteligencia Artificial revelan que, más allá del fraude literario, estamos renunciando a nuestra capacidad de reflexionar y crear.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/eldominical/actualidad/hemos-dejado-de-pensar-la-peligrosa-tendencia-que-se-impone-en-la-era-de-la-inteligencia-artificial-noticia/",
+   "fecha": "2026-11-02T14:55:52Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://elcomercio.pe/resizer/v2/MPGR2EAVRREWVA2DGGQRJG4BZ4.jpg?auth=8d170412bd3de8480def67d12d012def3962c8c38e4234ea7632742e4f8f0fbc&smart=true&width=1200&height=630"
+  },
+  {
+   "id": "2784c79bfb",
+   "sector": "nino",
+   "titulo": "Tumbes: intensa lluvia se registra por segundo día consecutivo en varios distritos de la región",
+   "resumen": "Una intensa lluvia se viene registrando en varios distritos de la región Tumbes, provocando calles anegadas y en medio del contexto del Fenómeno El Niño, informó el Servicio Nacional de Meteorología e Hidrología (Senamhi).",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/peru/tumbes/tumbes-intensa-lluvia-se-registra-por-segundo-dia-consecutivo-en-varios-distritos-de-la-region-fenomeno-el-nino-senamhi-apuesplan-ultimas-noticia/",
+   "fecha": "2026-11-02T14:55:46Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://elcomercio.pe/resizer/v2/OTMRDRLZT5HRZBMUP3PNQU2DKU.jpg?auth=606d6e8e367592af689ba730d97e8522dae71e365abbea6083d066901eee27bf&smart=true&width=1450&height=1080"
+  },
+  {
+   "id": "57b5406cd6",
+   "sector": "coyuntura",
+   "titulo": "La nueva serie animada de Netflix apuesta por acción y terror en un Viejo Oeste retrofuturista: así es “Bass X Machina”",
+   "resumen": "Un padre convertido en juez, jurado y verdugo en un Oeste steampunk: descubre de qué trata la serie animada \"Bass X Machina\" y cómo verla en Netflix.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/mag/fama/que-ver/bass-x-machina-de-que-trata-y-fecha-de-estreno-guia-completa-de-la-serie-animada-de-netflix-nnda-nnlt-noticia/",
+   "fecha": "2026-11-02T14:54:39Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://elcomercio.pe/resizer/v2/RCHOW7ALFNDX5MA5VE7ERH7K6U.jpg?auth=e801d9ed0631b89605c27e37c1da1b008aec033633692f1f47afd3c05f5e9ff0&smart=true&width=2400&height=1620"
+  },
+  {
+   "id": "d4fd269df0",
+   "sector": "mundo",
+   "titulo": "El emotivo regreso a casa de Karl Bushby, el aventurero británico que recorrió el mundo a pie tras partir de Chile hace 28 años",
+   "resumen": "El aventurero británico culmina este lunes su travesía por el mundo. Un viaje que emprendió hace 28 años desde Chile para regresar a su hogar en Reino Unido.",
+   "fuente": "BBC Mundo",
+   "url": "https://www.bbc.com/mundo/articles/c8wy941ee4rzo?at_medium=RSS&at_campaign=rss",
+   "fecha": "2026-11-02T14:54:04Z",
+   "tipo": "internacional",
+   "ambito": "mundo",
+   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/78f8/live/bdc40720-d6c8-11f1-ac20-7783925c811f.jpg"
+  },
+  {
+   "id": "45eb164a0c",
+   "sector": "nino",
+   "titulo": "El Niño 2026: caudal del río Tumbes continúa en ascenso y supera alerta rojo",
+   "resumen": "El río Tumbes alcanzó los 1.021,33 m³/s durante la madrugada del lunes 2 de noviembre y superó el umbral de alerta roja establecido en 1.000 m³/s. Las autoridades recomendaron evitar las riberas y mantenerse informados sobre la evolución del caudal.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/peru/tumbes/fenomeno-el-nino-caudal-del-rio-tumbes-continua-en-ascenso-y-supera-alerta-roja-apuesplan-ultimas-noticia/",
+   "fecha": "2026-11-02T14:52:53Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://elcomercio.pe/resizer/v2/Y6RDGEX6XJAXTO5JM4LU6UFMAE.jpeg?auth=12317b634207506ec4b39976ed5b4c7e334b1118eb3655b66f1cfe3aac2dc9d7&smart=true&width=1200&height=800"
+  },
+  {
+   "id": "9f4dbe9ef4",
+   "sector": "economia",
+   "titulo": "Precios se disparan: inflación supera el 5% por primera vez en más de 3 años, ¿qué presionó?",
+   "resumen": "El fenómeno de El Niño y los altos precios de los combustibles, por citar dos ejemplos, no dejan de presionar los precios al alza en el Perú.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/economia/precios-en-peru-se-disparan-inflacion-anual-supera-el-5-por-primera-vez-en-mas-de-3-anos-noticia/",
+   "fecha": "2026-11-02T14:49:41Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://gestion.pe/resizer/v2/YH4SZUK6S5DEXFAAXV5I5RDEBE.jpg?auth=120d38d7d931a260a81259af31d2a9499fa5e8372aa2435a14dbc5fe2f3a0318&smart=true&width=1200&height=800"
+  },
+  {
+   "id": "8b2fbcaa29",
+   "sector": "mundo",
+   "titulo": "¿Quién era Antonio Navarro Wolff, el exconstituyente que hizo parte de la historia de Colombia?",
+   "resumen": "Antonio Navarro Wolff, el político colombiano que pasó de ser uno de los principales comandantes de la guerrilla M-19 a convertirse en negociador de paz, copresidente de la Asamblea Constituyente de 1991 y una de las figuras más reconocidas de la izquierda democrática del país,…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/am%C3%A9rica-latina/20261102-qui%C3%A9n-era-antonio-navarro-wolff-el-exconstituyente-que-hizo-parte-de-la-historia-de-colombia",
+   "fecha": "2026-11-02T14:49:35Z",
+   "tipo": "internacional",
+   "ambito": "mundo",
+   "imagen": "https://s.france24.com/media/display/beb73870-d6cb-11f1-bfd9-695cb59fade5/w:1024/p:16x9/e84123f7f93403427646c195da187726110ff93ew.jpg"
+  },
+  {
+   "id": "592b54e98b",
+   "sector": "economia",
+   "titulo": "El Niño: riesgo por el fenómeno en el norte del Perú aumenta, los pronósticos que alertan",
+   "resumen": "Recientemente, la presidenta de la República, Keiko Fujimori, dio a conocer que no asistirá a la Cumbre de jefes de Estado en España en este contexto de riesgo en el norte. Aquí los detalles.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/economia/el-nino-riesgo-por-el-fenomeno-en-el-norte-del-peru-aumenta-los-pronosticos-que-ponen-en-alertan-al-pais-noticia/",
+   "fecha": "2026-11-02T14:49:22Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://gestion.pe/resizer/v2/CC3JPLDPLJA3JKZ5YWKJTIJN6I.png?auth=e60ad70494134142340a0dad86e25473fb46936987ff3096c574a8c63e9f8b09&smart=true&width=1536&height=1024"
+  },
+  {
+   "id": "1786b8217c",
+   "sector": "economia",
+   "titulo": "A 2 meses del fin de 2026, los millones que quedan para proyectos: ¿qué velocidad se necesita?",
+   "resumen": "Los tres niveles de gobierno (municipalidades, regiones y ministerios) en el Perú cuentan con S/ 73,451.8 millones para sus proyectos este año. Al 31 de octubre, se ha invertido el 65% de ese monto.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/economia/inversion-publica-a-2-meses-del-fin-de-2026-estos-son-los-millones-de-soles-que-quedan-para-proyectos-que-velocidad-se-necesita-para-ejecutarlos-noticia/",
+   "fecha": "2026-11-02T14:48:53Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://gestion.pe/resizer/v2/W3NI2VLLVRFCRDFC2IJDKXXF34.jpg?auth=9dfaba98e121e185fbfa33340ca2b520580d4cba02cead41ed16f41fff9b1103&smart=true&width=1200&height=800"
+  },
+  {
+   "id": "e8c010c485",
+   "sector": "economia",
+   "titulo": "Textil y confecciones: las 3 medidas de financiamiento para reactivar sector, según nuevo plan",
+   "resumen": "Plan para reactivar a sector textil y confecciones impulsará 3 medidas de financiamiento. Además, otro brazo del plan es el de facilitar el acceso de las mypes a las compras públicas y el impulso a través de ferias textiles en formato outlet.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/economia/textil-y-confecciones-plan-para-reactivar-al-sector-en-el-peru-impulsara-3-medidas-de-financiamiento-noticia/",
+   "fecha": "2026-11-02T14:48:32Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://gestion.pe/resizer/v2/FAONB26R6JD5JLNBGWP7A53MLA.jpg?auth=26e95133214d47e3438dafb0979ef7b6223218ef687a001668c8618b9ddd437e&smart=true&width=1800&height=1212"
+  },
+  {
+   "id": "de10612b6b",
+   "sector": "economia",
+   "titulo": "Precio del dólar en República Dominicana hoy, lunes 2 de noviembre de 2026: cuánto cuesta el USD a DOP, cotización de divisa, tasa de compra y venta",
+   "resumen": "Consulta el precio del dólar en República Dominicana este lunes 2 de noviembre de 2026, la tasa oficial del BCRD y cuánto equivalen 100 y 1.000 dólares.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/mag/respuestas/precio-del-dolar-en-republica-dominicana-hoy-lunes-2-de-noviembre-de-2026-cuanto-cuesta-el-usd-a-dop-cotizacion-de-divisa-tasa-de-compra-y-venta-nnda-nnrt-noticia/",
+   "fecha": "2026-11-02T14:46:36Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://elcomercio.pe/resizer/v2/FO6U43IVPZCG5GBOAFKDEKYNRU.jpg?auth=3200bed391b7050097a1acc605e039ac360dfb9bdb2046aba90b8441c5be7bed&smart=true&width=2400&height=1620"
+  },
+  {
+   "id": "574bfe17aa",
+   "sector": "coyuntura",
+   "titulo": "Sport Huancayo vs Melgar EN VIVO vía L1 Max: juegan por la fecha 15 del Torneo Clausura",
+   "resumen": "Sport Huancayo vs Melgar EN VIVO: sigue la transmisión de encuentro por la fecha 15 del Torneo Clausura.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/futbol/descentralizado/sport-huancayo-vs-melgar-en-vivo-a-que-hora-juegan-y-donde-ver-fecha-15-torneo-clausura-2026-via-l1max-partidos-de-hoy-noticia-1715475",
+   "fecha": "2026-11-02T14:45:10Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://f.rpp-noticias.io/2026/11/01/043004_1924769.jpg?imgdimension=look"
+  },
+  {
    "id": "22dd4e5c42",
    "sector": "economia",
    "titulo": "Tía María, Los Chancas y otros: Southern eleva inversión en Perú a US$ 10,380 millones",
@@ -135,18 +423,6 @@
    "tipo": "comercial",
    "ambito": "peru",
    "imagen": "https://elcomercio.pe/resizer/v2/YEFAXRYGVJHOXLUPISFZ6DMHPY.png?auth=06cb47a51d152c605233c7affb67724ca519bee25447dce0a40a399141e118b1&smart=true&width=1072&height=792"
-  },
-  {
-   "id": "39c602e55e",
-   "sector": "coyuntura",
-   "titulo": "De tres horas a 45 minutos: ¿qué necesita Lima para transformar su transporte público?",
-   "resumen": "El conversatorio Desde la Cúpula, organizado por El Comercio en alianza con la Universidad del Pacífico, reunió a representantes de la ATU, la Asociación Automotriz del Perú y la Cámara Internacional del Transporte para discutir propuestas sobre infraestructura, educación vial…",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/lima/transporte/de-tres-horas-a-45-minutos-que-necesita-lima-para-transformar-su-transporte-publico-noticia/",
-   "fecha": "2026-11-02T14:42:10Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://elcomercio.pe/resizer/v2/SU6EJPEFNZDLRAAFBMN6ROUD74.jpg?auth=907942ad01a839483b6d393ac7049d9ea342b8fd29801278d7f83a42bd3090e5&smart=true&width=1600&height=1067"
   },
   {
    "id": "bf1e4b4781",
@@ -185,18 +461,6 @@
    "imagen": "https://www.infobae.com/resizer/v2/FH6MXQHWINCO7NI2YDES7L3JWY.png?auth=181ade43bdf46b2c35ec412c355870b6505db43f87f37341a987e6647b793f34&smart=true&width=1920&height=1080"
   },
   {
-   "id": "6fbf02d0a8",
-   "sector": "coyuntura",
-   "titulo": "“ONE PIECE 1198” Manga: Fecha del nuevo capítulo",
-   "resumen": "Conoce la fecha de estreno confirmada, la hora exacta de lanzamiento por país en Manga Plus y todos los detalles del esperado capítulo 1198 del manga de “ONE PIECE”.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/cuando/one-piece-1198-manga-fecha-del-nuevo-capitulo-shueisha-tdpe-noticia/",
-   "fecha": "2026-11-02T14:40:05Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://elcomercio.pe/resizer/v2/CD5M2C2WIREFRB7TKHV6O4VOFU.png?auth=98f8d929d404603f1110caf62ec9f37f3f90eca09b4dc47663d5909095868e10&smart=true&width=989&height=579"
-  },
-  {
    "id": "2a37796c5f",
    "sector": "investigacion",
    "titulo": "La actriz Margaret Qualley y el músico Jack Antonoff solicitan el divorcio en Nueva York",
@@ -207,30 +471,6 @@
    "tipo": "comercial",
    "ambito": "peru",
    "imagen": "https://elcomercio.pe/resizer/v2/OT2UCJZDPZARHJWPONFMLXQYJE.jpg?auth=fb79a6887fa003e5df5bba2691f0dcda46c3f65bf36573c3c204b32bf05f19b7&smart=true&width=1920&height=1280"
-  },
-  {
-   "id": "06fab1b1a7",
-   "sector": "coyuntura",
-   "titulo": "Resultados de La Tinka del domingo 1 de noviembre: mira los números ganadores del Sí o Sí",
-   "resumen": "Resultados de La Tinka EN VIVO: Conoce aquí los resultados del sorteo que juega el miércoles 28 de octubre, que tiene un Pozo Millonario de S/ 9'506,888.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/loterias/resultados-de-la-tinka-hoy-1-de-noviembre-en-vivo-ultimo-sorteo-del-domingo-ver-numeros-y-jugada-ganadora-pozo-millonario-resultado-si-o-si-boliyapa-intralot-lbposting-noticia/",
-   "fecha": "2026-11-02T14:38:44Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://elcomercio.pe/resizer/v2/654VTNGL45CG5NGT4TQAYXNXYA.jpg?auth=349d7fdf061bea379b7b23dd891c57bff3487a6a5c58d28afa91562cf82e7093&smart=true&width=1200&height=700"
-  },
-  {
-   "id": "a1a7eac79f",
-   "sector": "coyuntura",
-   "titulo": "La Tinka del domingo 1 de noviembre: mira los números ganadores y premios del último sorteo",
-   "resumen": "La Tinka EN VIVO: resultados y sorteo del domingo 1 de noviembre que tiene un Pozo Millonario de S/ 9'506,888. Revisa también la bolilla del Sí o Sí.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/loterias/la-tinka-hoy-domingo-1-de-noviembre-en-vivo-resultados-del-ultimo-sorteo-y-jugada-ganadora-tinkanet-pozo-millonario-loteria-si-o-si-boliyapa-intralot-lbposting-noticia/",
-   "fecha": "2026-11-02T14:38:43Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://elcomercio.pe/resizer/v2/ULVLHD5QSRGTFNBBTEFZV6MBIY.jpg?auth=255cf59a7bc23454e447ab9d632e67ab5c500dd38a9e948bea6ec7b159f6b8ba&smart=true&width=1200&height=700"
   },
   {
    "id": "7ad3fa39e9",
@@ -305,30 +545,6 @@
    "imagen": "https://www.infobae.com/resizer/v2/NAN4IMPRMVGDZATBBWOH6NRWRA.png?auth=97a2ad41a02743858a44c9a0e01dab5842a1d84d3169be357dfc566be6a6b500&smart=true&width=1920&height=1080"
   },
   {
-   "id": "2a4e6e97e1",
-   "sector": "coyuntura",
-   "titulo": "Corte de luz programado en Lima hoy, 2 de noviembre: estos son los distritos que no tendrán servicio",
-   "resumen": "La suspensión temporal del servicio eléctrico afectará a diversos sectores de Lima. Conoce qué distritos serán afectados, cuáles son los horarios programados y cuánto durarán los cortes de luz.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/a-que-hora/corte-de-luz-programado-en-lima-para-hoy-estos-son-los-distritos-que-no-tendran-servicio-y-horarios-tdpe-noticia/",
-   "fecha": "2026-11-02T14:34:26Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://elcomercio.pe/resizer/v2/GV6BSKBVJVHJVPKLSNJQP3K2LU.png?auth=829cfc1fa07cae90816de342f3903935b34cb0584f7c1663f6e5727c7e186aa4&smart=true&width=1300&height=800"
-  },
-  {
-   "id": "60f952b1f3",
-   "sector": "coyuntura",
-   "titulo": "Polo, un Fórmula 1; Lapadula, el 9 soñado, y Alzugaray es un as bajo la manga: ¿Cómo hizo Bustos para recuperar la memoria del Tricampeón en menos de 1 mes?",
-   "resumen": "La ‘U’ es líder del Clausura con 30 puntos tras remontar a Atlético Grau en Trujillo. Polo, el mejor de la era Bustos, Lapadula y Alzugaray anotaron en el 3-1. Solo faltan 3 fechas para el final del torneo y le lleva 2 puntos de ventaja a Cristal, Huancayo y Alianza Atlético.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/deporte-total/futbol-peruano/universitario-andy-polo-un-formula-1-gianluca-lapadula-el-9-sonado-y-lisandro-alzugaray-es-un-as-bajo-la-manga-como-hizo-fabian-bustos-para-recuperar-la-memoria-del-tricampeon-en-menos-de-1-mes-apuesplan-noticia/",
-   "fecha": "2026-11-02T14:33:22Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://elcomercio.pe/resizer/v2/IMW2H4UGKFAVJBIAMSOJM37CGQ.jpg?auth=fb451e05daddc5d491f765faec5b38290b821aaf3d8e0ed7055c0d2ce3040a15&smart=true&width=1200&height=800"
-  },
-  {
    "id": "adffbac4f3",
    "sector": "coyuntura",
    "titulo": "Irán afirma que si EE. UU. acepta sus condiciones podría reabrir el estrecho de Ormuz en dos días",
@@ -363,30 +579,6 @@
    "tipo": "comercial",
    "ambito": "peru",
    "imagen": "https://elcomercio.pe/resizer/v2/GI3DCNJNGEYC2MJUKQZTIORSGY.jpg?auth=39771834edd524a10039fe743785df2c850c104f0ca8c0f5028fa24a732a40e6&smart=true&width=1200&height=800"
-  },
-  {
-   "id": "d49045d1ca",
-   "sector": "nino",
-   "titulo": "Lluvias en el norte y otras regiones del Perú EN VIVO: pronósticos del Senamhi y reportes por Fenómeno El Niño 2026",
-   "resumen": "Lluvias en el norte y otras regiones del Perú EN VIVO: pronósticos del Senamhi y reportes por El Niño 2026",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/peru/lluvias-en-piura-tumbes-lambayeque-y-otras-regiones-del-peru-en-vivo-pronosticos-del-senamhi-reportes-y-cambios-en-el-clima-por-el-nino-2026-lbposting-noticia/",
-   "fecha": "2026-11-02T14:29:02Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://elcomercio.pe/resizer/v2/ZUVXKPQ6QRGLVGVFKR2SVWIWV4.jpg?auth=983c121b12d05df3453bbcb2edafa85b9b77c72b86f48374a7ddf4f4c5f53cba&smart=true&width=1212&height=641"
-  },
-  {
-   "id": "307faa0bf6",
-   "sector": "coyuntura",
-   "titulo": "Temblor en EE.UU. EN VIVO hoy, 2 de noviembre 2026: hora exacta, magnitud y dónde fue el epicentro del último sismo vía USGS",
-   "resumen": "Consulta el informe del USGS sobre la actividad sísmica más reciente del 2 de noviembre en Estados Unidos, con reportes desde California, Nueva York, Oregón, Hawái, Texas, Alaska y otros estados.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/mag/usa/local-us/temblor-en-eeuu-en-vivo-hoy-2-de-noviembre-2026-hora-exacta-magnitud-y-donde-fue-el-epicentro-del-ultimo-sismo-segun-el-usgs-california-nnda-nnrt-noticia/",
-   "fecha": "2026-11-02T14:28:57Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://elcomercio.pe/resizer/v2/NKN7EYQBPFFDDLDHPCUBRH2FTI.jpg?auth=aba1f9d61cefd43c3245c06b8ca2c4725855870bd3b1246db7f1fc156b80757a&smart=true&width=2400&height=1620"
   },
   {
    "id": "7609d1811e",
@@ -495,18 +687,6 @@
    "tipo": "comercial",
    "ambito": "peru",
    "imagen": "https://gestion.pe/resizer/v2/FEHAWQ3LKFCDRGKRDEXK2IVGA4.jpg?auth=d80c0f0b4b5572dcaa985dfeede73eef0a32d81eda7792068482b91a72300fa4&smart=true&width=1200&height=800"
-  },
-  {
-   "id": "d432dd30ee",
-   "sector": "mundo",
-   "titulo": "Foro World in Progress 2026 de Barcelona, en directo | Saiz afirma que el Gobierno trabaja ya en el desmontaje de centros de migrantes en Ceuta ante los miles de retornos",
-   "resumen": "Albares: “La disuasión europea tiene que estar más en nuestras manos” | Sánchez pide defender el progreso frente a quienes “tienen la involución como proyecto político”",
-   "fuente": "El País América",
-   "url": "https://elpais.com/internacional/2026-11-02/foro-world-in-progress-de-barcelona-en-directo.html",
-   "fecha": "2026-11-02T14:23:26Z",
-   "tipo": "internacional",
-   "ambito": "mundo",
-   "imagen": "https://imagenes.elpais.com/resizer/v2/H6DTGPBH4NEJPGFDKF5UOAMVJQ.jpg?auth=5d5e939fb3f84602a59a4b7bb779c8136e4c280378f1e336d9c1b94c2bba4923"
   },
   {
    "id": "23a25f1393",
@@ -639,6 +819,18 @@
    "tipo": "internacional",
    "ambito": "mundo",
    "imagen": "https://s.france24.com/media/display/d39e8884-d6c5-11f1-840d-d18c5759e759/w:1024/p:16x9/ES-20261102-072531-072921-CS.jpg"
+  },
+  {
+   "id": "6d8a8ef84a",
+   "sector": "economia",
+   "titulo": "Comunicado de la SNCI: El Perú necesita acelerar las inversiones en gas natural para garantizar su seguridad energética y promover el desarrollo descentralizado",
+   "resumen": "La Sociedad Nacional de Construcción e Infraestructura (SNCI) expresa su firme posición institucional respecto de la necesidad de garantizar la continuidad, ampliación y ejecución oportuna de las inversiones destinadas a la exploración, producción, transporte y distribución del…",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/comunicados/comunicado-de-la-snc-el-peru-necesita-acelerar-las-inversiones-en-gas-natural-para-garantizar-su-seguridad-energetica-y-promover-el-desarrollo-descentralizado-clone-noticia/",
+   "fecha": "2026-11-02T14:05:00Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://elcomercio.pe/pf/resources/dist/elcomercio/images/default-md.png"
   },
   {
    "id": "0e9c55eaa7",
@@ -833,18 +1025,6 @@
    "imagen": "https://gestion.pe/resizer/v2/P3TIQABIMZEH3AGBK2B5OXB2JI.jpg?auth=f89fd145e7fabfab79da64dd7455f246335a387a4547361ee961e9d5a550ee3f&smart=true&width=620&height=358"
   },
   {
-   "id": "5d032b6bac",
-   "sector": "economia",
-   "titulo": "¿A qué hora juega y en qué canal transmiten FC Barcelona vs. Real Madrid por LaLiga 2026 en EE.UU. y México?",
-   "resumen": "Revisa la hora de inicio para ver el Clásico y en qué canal transmiten FC Barcelona vs. Real Madrid EN VIVO HOY domingo 25 de octubre, desde las 21:00 horas peninsular, por la décima jornada de LaLiga EA Sports.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/mix/sports/en-que-canales-tv-transmiten-fc-barcelona-vs-real-madrid-en-vivo-hoy-por-el-clasico-de-laliga-de-espana-2026-guia-television-tv-online-nnda-nnrt-noticia/",
-   "fecha": "2026-11-02T13:43:01Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://gestion.pe/resizer/v2/KD7VCHT5RFHD7IB7KIC3UDESJM.jpg?auth=d1921d966d3cc0c360f5ccd96d235b67fc745efd3d4f0a593293d0f8c77272af&smart=true&width=2320&height=1320"
-  },
-  {
    "id": "1e96d5ac03",
    "sector": "politica",
    "titulo": "Villa El Salvador: Detonan explosivo en vivienda de alcalde electo Marcelino Huamán",
@@ -881,18 +1061,6 @@
    "imagen": "https://elcomercio.pe/resizer/v2/5ACNU5SPEFFBTHHMFWTEK6D4ZA.jpg?auth=68254af8b9477098bfc6e0d16b40027942b2142b193ef098058c732894f08ee4&smart=true&width=1200&height=937"
   },
   {
-   "id": "c3375728a2",
-   "sector": "economia",
-   "titulo": "Temblor en Estados Unidos EN VIVO hoy, 2 de noviembre 2026: hora exacta, magnitud y dónde fue el epicentro del último sismo vía USGS",
-   "resumen": "Revisa el reporte oficial del USGS EN VIVO y EN DIRECTO sobre los últimos temblores registrados en Estados Unidos este lunes 2 de noviembre desde los estados de California, Hawái, Texas, Alaska, Nueva York, entre otros.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/mix/usa/temblor-en-estados-unidos-en-vivo-hoy-1-y-2-de-noviembre-2026-hora-exacta-magnitud-y-donde-fue-el-epicentro-del-ultimo-sismo-via-usgs-california-nnda-nnrt-noticia/",
-   "fecha": "2026-11-02T13:37:41Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://gestion.pe/resizer/v2/RVRWUABQDFHLVHIXSMHPBCZ3TQ.png?auth=a71c6d4eceb561c5d78ff028ba93aa24afc50cf53fe7a6370062324bbb705041&smart=true&width=2320&height=1320"
-  },
-  {
    "id": "6941fbceab",
    "sector": "politica",
    "titulo": "Impresionante video capta el momento del accidente de un avión ejecutivo en Florida: hay 9 muertos",
@@ -903,30 +1071,6 @@
    "tipo": "comercial",
    "ambito": "peru",
    "imagen": "https://elcomercio.pe/resizer/v2/FUTPZU3YKVAK5OYMFHWCEKJTHQ.jpg?auth=0cc283d454adb847f6d2e3bd54b104f516b03b5b294bd60fbdd233e548c2284b&smart=true&width=1149&height=761"
-  },
-  {
-   "id": "7a961217b2",
-   "sector": "coyuntura",
-   "titulo": "Temblor en México EN VIVO hoy, 2 de noviembre 2026: hora exacta, magnitud y dónde fue el epicentro del último sismo vía SSN",
-   "resumen": "Conoce el reporte oficial del Servicio Sismológico Nacional (SSN) EN VIVO y ONLINE sobre los últimos sismos registrados en México este lunes 2 de noviembre, desde CDMX, Michoacán, Oaxaca, Jalisco, Guerrero, Chiapas, entre otros estados.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/mix/respuestas/temblor-en-mexico-en-vivo-hoy-1-y-2-de-noviembre-2026-hora-exacta-magnitud-y-donde-fue-el-epicentro-del-ultimo-sismo-via-ssn-cdmx-oaxaca-nnda-nnrt-noticia/",
-   "fecha": "2026-11-02T13:36:04Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://gestion.pe/resizer/v2/OKG6YF42HRAVZFHTEYNQGX3QN4.png?auth=479d1e2efda68829a2d7508e66437e6fae189f0fff3bc6b58b2cd1e390e0b284&smart=true&width=2320&height=1320"
-  },
-  {
-   "id": "a2115ca6d2",
-   "sector": "economia",
-   "titulo": "Bayer: de fabricar para el Perú a producir para el mundo",
-   "resumen": "Conoce la historia de Bayer y su negocio en el Perú: de sus antiguas plantas industriales a la producción de semillas en Ica para mercados internacionales. La multinacional alemana llegó a nuestro mercado en 1947, y va a cumplir 80 años de operaciones.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/g-de-gestion/reportaje/bayer-de-fabricar-para-el-peru-a-producir-para-el-mundo-noticia/",
-   "fecha": "2026-11-02T13:32:08Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://gestion.pe/resizer/v2/2Y5XF4UEQ5CGLGSAUD7AJMKPNA.jpg?auth=58fb385cafbd7aa23473d2b8349c51da3b636aacf283cf0c63077e081367a9d3&smart=true&width=1200&height=596"
   },
   {
    "id": "6f083f5a72",
@@ -941,30 +1085,6 @@
    "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/443c/live/a722bca0-d3bc-11f1-a62f-fd53d503ac8d.jpg"
   },
   {
-   "id": "fdade44dd0",
-   "sector": "economia",
-   "titulo": "Horóscopo de hoy, lunes 2 de noviembre: predicciones según tu signo zodiacal",
-   "resumen": "Horóscopo hoy, lunes 2 de octubre del 2026: Conoce lo que te deparan las estrellas en el trabajo, negocio y amor, según los signos del zodiaco.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/luces/vida-social/horoscopo-de-hoy-en-vivo-y-predicciones-gratis-lunes-2-de-noviembre-2026-segun-tu-signo-zodiacal-aries-tauro-geminis-cancer-leo-virgo-libra-escorpio-sagitario-capricornio-acuario-piscis-lbposting-noticia/",
-   "fecha": "2026-11-02T13:30:54Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://elcomercio.pe/resizer/v2/ZL2OP2WIMFDHBCCS67HBMRYBLY.jpeg?auth=9f0db9a1896f18892dafbdcf1f1cfc64e51ef3274b180040bdc1b11cd759a4c9&smart=true&width=1200&height=700"
-  },
-  {
-   "id": "8cfe61b3b7",
-   "sector": "economia",
-   "titulo": "A menos de dos meses del cierre del Reinfo, Minem agiliza autorizaciones para mineros informales vía revisión de documentos desde oficinas",
-   "resumen": "El Gobierno cambia la forma en que el Minem comprobará que los mineros informales cumplan los requisitos para obtener autorizaciones de explotación. La verificación previa se hará en oficina para reducir tiempos y costos.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/economia/economia/a-menos-de-dos-meses-del-cierre-del-reinfo-minem-agiliza-autorizaciones-para-mineros-informales-via-revision-de-documentos-desde-oficinas-noticia-1715542",
-   "fecha": "2026-11-02T13:30:37Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://f.rpp-noticias.io/2026/11/02/142214_1924900.jpg?imgdimension=look"
-  },
-  {
    "id": "7757474bca",
    "sector": "deporte",
    "titulo": "Sigue, Tabla Acumulada y Clausura 2026, EN VIVO: Universitario es puntero tras vencer a Atlético Grau en la fecha 15",
@@ -977,18 +1097,6 @@
    "imagen": "https://elcomercio.pe/resizer/v2/IDZJELM3OREVJLYAEX7F7I2BRA.png?auth=9610a6f336cd8b6a4c86d500632d06a91555a38964a438d717f00ed4a2227b51&smart=true&width=1547&height=867"
   },
   {
-   "id": "333f58a97b",
-   "sector": "economia",
-   "titulo": "Peruanos se abastecen de agua y alimentos por el FEN: las categorías de rápida recuperación en 2027",
-   "resumen": "El consumo este año se culminará con un crecimiento en volumen de 1.5% y de alrededor de 3% en valor, en línea con el avance que mostró en los últimos tres años.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/economia/empresas/peruanos-se-abastecen-ante-el-fenomeno-el-nino-nuevamente-agotaran-estantes-de-agua-y-alimentos-noticia/",
-   "fecha": "2026-11-02T13:27:06Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://gestion.pe/resizer/v2/KCXMOFWCEZG3RBTACFHCGTCGYY.jpg?auth=4fe37979363f818e4b04af8fdcb56c36be9cf723424382bd93b14ce743b3b39d&smart=true&width=1600&height=1067"
-  },
-  {
    "id": "ca1d818e86",
    "sector": "tecnologia",
    "titulo": "Hackean los frigoríficos de decenas de supermercados en Bélgica y Luxemburgo",
@@ -999,18 +1107,6 @@
    "tipo": "comercial",
    "ambito": "peru",
    "imagen": "https://f.rpp-noticias.io/2026/11/02/143914_1924911.jpg?imgdimension=look"
-  },
-  {
-   "id": "6989a2f20c",
-   "sector": "coyuntura",
-   "titulo": "Piura tendrá hasta 34 ℃ este 2 de noviembre y lluvias: conoce el pronóstico completo para hoy",
-   "resumen": "La jornada del lunes combinará cielo nublado, vientos ligeros o moderados en sectores costeros y precipitaciones aisladas en varios distritos",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/02/pronostico-del-clima-en-piura-este-domingo-2-de-noviembre-temperatura-lluvias-y-viento/",
-   "fecha": "2026-11-02T13:23:12Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://www.infobae.com/resizer/v2/ULSSFBQ33ZCIDLJUHUUXDPMMQE.jpg?auth=dee39ceeefd18ff36065cd8f13ca3e2ee37a93552361abd4064eec4fa1b386d8&smart=true&width=1800&height=1350"
   },
   {
    "id": "ee13558706",
@@ -1178,7 +1274,7 @@
    "fecha": "2026-11-02T12:19:19Z",
    "tipo": "internacional",
    "ambito": "mundo",
-   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/03e5/live/df9393e0-d64e-11f1-93e1-3b657b665bcf.jpg"
+   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/dcbe/live/2ee3b230-d6cd-11f1-a701-fddedf244c16.jpg"
   },
   {
    "id": "c861af76f7",
@@ -1253,18 +1349,6 @@
    "imagen": "https://elcomercio.pe/resizer/v2/UFOFX2YYJFGLRBQMLLYP7RP2ME.jpg?auth=afe0e1ea5654103f1ddc265d44126cd28131d2621c12cf1c0de23e2592f6fc88&smart=true&width=1200&height=800"
   },
   {
-   "id": "d4fd269df0",
-   "sector": "mundo",
-   "titulo": "El emotivo regreso a casa de Karl Bushby, el aventurero británico que recorrió el mundo a pie tras partir de Chile hace 28 años",
-   "resumen": "El aventurero británico culmina este lunes su travesía por el mundo. Un viaje que emprendió hace 28 años desde Chile para regresar a su hogar en Reino Unido.",
-   "fuente": "BBC Mundo",
-   "url": "https://www.bbc.com/mundo/articles/c8wy941ee4rzo?at_medium=RSS&at_campaign=rss",
-   "fecha": "2026-11-02T11:40:12Z",
-   "tipo": "internacional",
-   "ambito": "mundo",
-   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/078d/live/8dc45e30-d6b4-11f1-aacc-5b5f23abff4b.jpg"
-  },
-  {
    "id": "96eb29307d",
    "sector": "mundo",
    "titulo": "Leer, ¿un acto revolucionario contra las pantallas?",
@@ -1325,30 +1409,6 @@
    "imagen": "https://www.infobae.com/resizer/v2/FB44XOXZ7RCWNFWAHCUPNIDE4I.png?auth=84c8adc4345686dcf43748399f9f0d7a48e4cea0d79e833d2edc6ed30393dbb5&smart=true&width=1920&height=1080"
   },
   {
-   "id": "da529a36b0",
-   "sector": "deporte",
-   "titulo": "El sincero sentir de Mr Peet sobre Hernán Barcos tras conflicto con Pablo Guede: “Puede hacer lo que le dé la gana”",
-   "resumen": "El periodista deportivo se refirió a la polémica entre el ‘Pirata’ y el DT argentino durante el partido entre Sporting Cristal y Alianza Lima, y le dejó un mensaje al entrenador",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/deportes/2026/11/01/el-sincero-sentir-de-mr-peet-sobre-hernan-barcos-tras-conflicto-con-pablo-guede-puede-hacer-lo-que-le-de-la-gana/",
-   "fecha": "2026-11-02T11:13:34Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://www.infobae.com/resizer/v2/VGZJWUHUNJFEFNDABVWFZPRJ5I.png?auth=290523bbe75b3d5f4118d917fb27dcb4d308823426d784ec3b8034db5d2dc0c3&smart=true&width=1920&height=1080"
-  },
-  {
-   "id": "2b365c3433",
-   "sector": "deporte",
-   "titulo": "Sport Huancayo vs Melgar en vivo: hora, canal tv y dónde ver la fecha 15 del Torneo Clausura",
-   "resumen": "Sport Huancayo vs Melgar EN DIRECTO: No te pierdas el encuentro entre Melgar y Sport Huancayo. Sigue la previa, el horario y los detalles de la transmisión de la Liga 1.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/deporte-total/futbol-peruano/sport-huancayo-vs-melgar-en-vivo-hora-canal-tv-y-donde-ver-la-fecha-15-del-torneo-clausura-l1max-l1play-resumen-y-goles-tdpe-noticia/",
-   "fecha": "2026-11-02T11:00:01Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://elcomercio.pe/resizer/v2/UGHWV3O2BZAJVOAGJPDR4LPAXA.png?auth=c0c66d54fc6108076f3e64e6516991844a24fb23f3e5e04db1c8e0cad3b3f9ee&smart=true&width=1300&height=800"
-  },
-  {
    "id": "d421aff6c7",
    "sector": "investigacion",
    "titulo": "Kjolle por dentro: Pía León, favorita en los 50 Best, y los secretos detrás de una experiencia gastronómica que recorre todo el Perú",
@@ -1359,18 +1419,6 @@
    "tipo": "comercial",
    "ambito": "peru",
    "imagen": "https://elcomercio.pe/resizer/v2/ENVP5F4FCZCUVAVUGX7ZGK7ZKU.jpg?auth=e3ad32070ac8f5111403d525b5600d49b0bbe55e3d913a22edfb5d985a2361b3&smart=true&width=1600&height=1067"
-  },
-  {
-   "id": "864de045f1",
-   "sector": "deporte",
-   "titulo": "A qué hora juega Sporting Cristal vs FC Cajamarca HOY: partido en el Gallardo por Torneo Clausura de Liga 1 2026",
-   "resumen": "Dos equipos en extremos opuestos de la tabla se verán las caras en el Alberto Gallardo. Uno pelea por el campeonato; el otro, por no perder la categoría. El resultado puede cambiar el rumbo de ambos",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/deportes/2026/11/02/a-que-hora-juega-sporting-cristal-vs-fc-cajamarca-hoy-partido-fecha-15-torneo-clausura-liga-1-2026-horario/",
-   "fecha": "2026-11-02T11:00:01Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://www.infobae.com/resizer/v2/PBS4RXTZWJHNLBX3TVBLRKCZKI.png?auth=4aa027bb7d3b438ad8a1123a1b6ff7a7c18d8434e1d42a74b8b7264c1c006766&smart=true&width=1920&height=1074"
   },
   {
    "id": "42f300c8bc",
@@ -1395,18 +1443,6 @@
    "tipo": "internacional",
    "ambito": "mundo",
    "imagen": "https://imagenes.elpais.com/resizer/v2/M2Y6BOQY4RAGTAH2G2IVXFVFHE.jpg?auth=0d37e3fc9311f74f1fb26faa5dea85fb16b68504ca5edc00b6702b4319bc26d4"
-  },
-  {
-   "id": "5a98f4b4aa",
-   "sector": "deporte",
-   "titulo": "Jean Deza debutó con Domingo Dianderas y así fue su especial festejo por la clasificación en la Copa Perú [VIDEO]",
-   "resumen": "Domingo Dianderas venció 3-1 a Torino y clasificó a los octavos de final de la Etapa Nacional de la Copa Perú 2026.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/futbol/copa-peru/video-jean-deza-debuto-con-domingo-dianderas-y-asi-fue-su-especial-festejo-por-clasificacion-en-copa-peru-noticia-1715500",
-   "fecha": "2026-11-02T10:50:56Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://f.rpp-noticias.io/2026/11/01/083508_1924835.jpg?imgdimension=look"
   },
   {
    "id": "132ec85509",
@@ -1443,6 +1479,18 @@
    "tipo": "internacional",
    "ambito": "mundo",
    "imagen": null
+  },
+  {
+   "id": "00c31fa013",
+   "sector": "coyuntura",
+   "titulo": "Corte de agua en Lima hoy 02 de noviembre: Distritos y horarios afectados",
+   "resumen": "EN VIVO Consulta aquí los distritos de Lima y horarios afectados por el corte de agua programado por el Servicio de Agua Potable y Alcantarillado de Lima (Sedapal) para hoy.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/lima/obras/corte-de-agua-en-lima-hoy-02-de-noviembre-distritos-y-horarios-afectados-noticia-1715518",
+   "fecha": "2026-11-02T10:00:38Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://f.rpp-noticias.io/2025/03/06/121812_1714100.jpg?imgdimension=look"
   },
   {
    "id": "6a63e6ee30",
@@ -1493,16 +1541,28 @@
    "imagen": null
   },
   {
-   "id": "e4154ff40a",
-   "sector": "mundo",
-   "titulo": "La tensa relación entre la Iglesia y el Gobierno de Milei que el Papa encontrará en su visita a Argentina",
-   "resumen": "León XIV iniciará el próximo viernes su gira latinoamericana y el domingo llegará a Buenos Aires, donde la jerarquía católica encarna una de las principales voces contra la ultraderecha",
-   "fuente": "El País América",
-   "url": "https://elpais.com/argentina/2026-11-02/la-tensa-relacion-entre-la-iglesia-y-el-gobierno-de-milei-que-el-papa-encontrara-en-su-visita-a-argentina.html",
-   "fecha": "2026-11-02T09:30:00Z",
-   "tipo": "internacional",
-   "ambito": "mundo",
-   "imagen": "https://imagenes.elpais.com/resizer/v2/FV6BWRGBONKLBE2WOVDVH65KUE.jpg?auth=66e6d47a31dac7180d9b027708f944a002c214ca32158aecc69e280008eff5b2"
+   "id": "9eb86a167f",
+   "sector": "coyuntura",
+   "titulo": "SENAMHI: Pronóstico del clima hoy lunes 02 de noviembre 2026",
+   "resumen": "Consulta el pronóstico del clima hoy en Lima y ciudades del Perú: temperatura actual, sensación térmica, radiación UV, probabilidad de lluvia y reporte oficial del Senamhi actualizado.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/peru/actualidad/senamhi-pronostico-del-clima-hoy-lunes-02-de-noviembre-2026-noticia-1715516",
+   "fecha": "2026-11-02T09:00:45Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://f.rpp-noticias.io/2025/12/03/482948_1818081.jpg?imgdimension=look"
+  },
+  {
+   "id": "3f2dd788f4",
+   "sector": "coyuntura",
+   "titulo": "San Martín de Porres: madre busca a adolescente de 16 años desaparecida desde el viernes 30 de octubre",
+   "resumen": "Rotafono de RPP | Marilyn Rodríguez contó que al promediar las siete de la noche, su hija salió de su vivienda ubicada en la avenida Santa Rosa, en el distrito de San Martín de Porres, sin indicar algún rumbo exacto y que desde entonces no saben de ella.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/rotafono/servicios-a-la-comunidad/san-martin-de-porres-madre-busca-a-16-anos-desaparecida-desde-el-viernes-30-de-octubre-noticia-1715545",
+   "fecha": "2026-11-02T08:55:30Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://f.rpp-noticias.io/2026/11/02/430043_1924914.jpg?imgdimension=look"
   },
   {
    "id": "39e8ca7abe",
@@ -1539,6 +1599,18 @@
    "tipo": "comercial",
    "ambito": "peru",
    "imagen": "https://caretas.pe/wp-content/uploads/2026/08/a-1-1-1.jpg"
+  },
+  {
+   "id": "0d3e314fda",
+   "sector": "coyuntura",
+   "titulo": "Keiko Fujimori afirma que no viajará a España para encuentro con jefes de Estado tras incremento de lluvias en el norte del país",
+   "resumen": "Keiko Fujimori anunció que permanecerá en el Perú y no asistirá a la Cumbre Iberoamericana de Jefas y Jefes de Estado y… The post Keiko Fujimori afirma que no viajará a España para encuentro con jefes de Estado tras incremento de lluvias en el norte del país appeared first on…",
+   "fuente": "Caretas",
+   "url": "https://caretas.pe/politica/keiko-fujimori-afirma-que-no-viajara-a-espana-para-encuentro-con-jefes-de-estado-tras-incremento-de-lluvias-en-el-norte-del-pais/",
+   "fecha": "2026-11-02T01:09:13Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": "https://caretas.pe/wp-content/uploads/2026/11/1-13.jpg"
   },
   {
    "id": "b07f615235",
@@ -1599,18 +1671,6 @@
    "tipo": "comercial",
    "ambito": "peru",
    "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/COP17-dibersidad-biologica-armenia-pueblos-indigenas-investiga.webp"
-  },
-  {
-   "id": "52a4b3df90",
-   "sector": "deporte",
-   "titulo": "Universitario vs Atlético Grau: resumen y resultado por la fecha 15 del Torneo Clausura",
-   "resumen": "Universitario y Atlético Grau jugaron por la fecha 15 del Torneo Clausura. Conoce a qué hora es el partido y dónde verlo EN VIVO.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/futbol/descentralizado/universitario-vs-atletico-grau-en-vivo-a-que-hora-juegan-y-donde-ver-fecha-15-torneo-clausura-2026-via-l1max-partidos-de-hoy-noticia-1715280",
-   "fecha": "2026-11-01T22:45:32Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://f.rpp-noticias.io/2026/11/02/041004_1924858.jpg?imgdimension=look"
   },
   {
    "id": "aea0da80c4",
@@ -1685,6 +1745,18 @@
    "imagen": null
   },
   {
+   "id": "814b492570",
+   "sector": "nino",
+   "titulo": "El Niño Costero continuará hasta fines de otoño de 2027: ENFEN advierte lluvias intensas y temperaturas récord",
+   "resumen": "",
+   "fuente": "La Razón",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNSXN2NHRia08yWXZraWp4ZUwxeF8zU3JDTmxNb0NFZXhVcnlwSXc4ZVFINHpXSUt4OVp2enY5U21RazFieEk4S1U2eTZiREVkd2g5NHFiM0tFOXZRY1VGRWx2QXNiUW1MazdXVC1sV09nVllJN2hJckh0bm0wUXZNelMyMWgwb2xWSDdYTHpydHBkRkFSVDIxeE5SRkxfNjBPQnVFMExxaDE5UlU4UExZY0d1akxjdi10eEplV2RMaE1EazhMMzJJRg?oc=5",
+   "fecha": "2026-10-31T18:35:17Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "imagen": null
+  },
+  {
    "id": "a90130a0c9",
    "sector": "nino",
    "titulo": "Enfen prevé que El Niño Costero continuará hasta fines de otoño de 2027",
@@ -1695,18 +1767,6 @@
    "tipo": "comercial",
    "ambito": "peru",
    "imagen": null
-  },
-  {
-   "id": "bcbd8bcd36",
-   "sector": "politica",
-   "titulo": "Ministro Vinelli dice que El Niño actual es \"mucho más peligroso\" que los de 1982 y 1997: ¿qué medidas alista el Gobierno?",
-   "resumen": "En Enfoque de los Sábados, el titular del Midagri señaló que el Ejecutivo ha distribuido a los ministros a distintas regiones para atender las emergencias. Se prevé destinar dinero para la culminación de obras, limpieza de canales de riego y otorgar créditos a agricultores.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/politica/gobierno/marco-vinelli-dice-que-el-nino-actual-es-mucho-mas-peligroso-que-los-de-1982-y-1997-que-medidas-alista-el-gobierno-noticia-1715341",
-   "fecha": "2026-10-31T18:00:51Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": "https://f.rpp-noticias.io/2026/10/31/26-10-31-10-08-53-3118-1924437mp4_1924438.jpg?width=860&quality=80"
   },
   {
    "id": "7d717f9da5",
@@ -1971,6 +2031,18 @@
    "tipo": "independiente",
    "ambito": "peru",
    "imagen": "https://lamula.pe/media/uploads/t/f0c087197728eb25e10956987476174e.jpg"
+  },
+  {
+   "id": "a5390fcf82",
+   "sector": "ia",
+   "titulo": "Google presenta una nueva inteligencia artificial especializada en ciberseguridad",
+   "resumen": "",
+   "fuente": "https://inteligenciaargentina.ar/",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOXzVpZnNPWGNtc3prVzZaZ2p5dnYyUERaM29SVUVjV2hzMUFDb0NWTm9YQUd2dzEzZXY0VjNnd29ibDYyTDFJQzZVVDZmRG9BNThIUzdjbXBzUlQ2NE9WcmNjbEFwdEFrUi1TWG5lVkdMRWpmSWQ2ZVp6enVjdGJfVlROcEtBb0E3Vlh1UXVOSmNjbEJkTlJVSDB0UXZKMGFWSVJabGNEWHBCNU15aFVKdzFGV19neVEyV0hDS0d5MVhIa2Z0ekV1M0l5WENqTnVmMll4Tg?oc=5",
+   "fecha": "2026-10-30T12:34:45Z",
+   "tipo": "internacional",
+   "ambito": "mundo",
+   "imagen": null
   },
   {
    "id": "5386bb427e",
@@ -2369,30 +2441,6 @@
    "imagen": null
   },
   {
-   "id": "f7f433a709",
-   "sector": "ia",
-   "titulo": "OpenAI y Anthropic firman el pacto de IA de la Casa Blanca",
-   "resumen": "",
-   "fuente": "El Ecosistema Startup",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQcENxWHRabjRkNF9xcl91bHdOTHJpX0NSWWIwbkJXUFJESGJkOS1VU3MxeGdTVUJzNld0UFFhNkdaOFhYNlU4VVdReUlqWU1qWmVNdWlzWkZfNG1nN1QwTWxDalFtMDhfTmRuZjdZMF9KVkV3NlZxazludDBDX21zbUZrZm5wZXpRRFBaQzh4U1VIRzQ?oc=5",
-   "fecha": "2026-10-26T15:36:48Z",
-   "tipo": "internacional",
-   "ambito": "mundo",
-   "imagen": null
-  },
-  {
-   "id": "066fa7df3f",
-   "sector": "ia",
-   "titulo": "Compañías de inteligencia artificial van camino a lucrativos debuts bursátiles",
-   "resumen": "",
-   "fuente": "AOL.com",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZ21lV0hXY09wNWhTTFIwUEJ2ZE0wYlBlTkUxXzJzREpXLWRrX3l4WEpCbjZXMU53Y3E3QURyNElmRjJYQWFpTDR3M1dIdW1MUEpfMlhNc1BWNnBjb0tHOEpzZVdWMzlEc3pfTzBvbVhMSThRdzdpRGFmRFJxZUY3dGFJRGl1UVVqYmEtcHhqSXZsdEZsWXRybXFKOUc0eHZmb2N0WFk5ZmU?oc=5",
-   "fecha": "2026-10-26T15:35:42Z",
-   "tipo": "internacional",
-   "ambito": "mundo",
-   "imagen": null
-  },
-  {
    "id": "49f9237503",
    "sector": "salud",
    "titulo": "El informe que CultiVida quiere retirar y el Midagri intenta desacreditar",
@@ -2415,18 +2463,6 @@
    "tipo": "independiente",
    "ambito": "peru",
    "imagen": "https://www.idl-reporteros.pe/wp-content/uploads/2026/10/1400x788.png"
-  },
-  {
-   "id": "5229b60bad",
-   "sector": "nino",
-   "titulo": "ENFEN ADVIERTE QUE EL NIÑO SUPERA NIVELES HISTÓRICOS: CAJAMARCA Y LA SIERRA NORTE EN RIESGO POR LLUVIAS INTENSAS",
-   "resumen": "",
-   "fuente": "RCR Peru",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNeFN3MlVscXhtblo1VXpPcWtadWtIcEVBUS1JN1U5enlFbVV1M3BxUVY0Y01Qb0lUaUs5eEM1SHhuaWhfR3dJN0FfRHNjUnpvSU5iR3NZZWVjWlBLTVNISGZ2Yi1KMll0MmxVNlVkQ1laTkVUQ2duNnBodEJJZ0JPT1o0bTFjLXpCUzExWXVOZ2phLWhnVVloLWg5ZC1pY1V4ZWJsQ29jNUR0dUtocy1HaEVlNDFWcHJiVTVlc3RDb3FxeXQxcjhOSHhwTHVNRzRZT2c?oc=5",
-   "fecha": "2026-10-23T07:00:00Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "imagen": null
   },
   {
    "id": "82c206c4a5",
@@ -2715,9 +2751,9 @@
    "enlace": "https://www.iebschool.com/hub/ai-act-2026-la-ue-retrasa-el-cumplimiento-de-la-ia-de-alto-riesgo-a-diciembre-de-2027/"
   },
   "ia-infra": {
-   "url": "https://i0.wp.com/fourweekmba.com/wp-content/uploads/2026/10/daily-roundup-12-oct-2026-ai-chips-racks-large-loads.png?fit=2400%2C1260&ssl=1",
-   "fuente": "FourWeekMBA",
-   "enlace": "https://fourweekmba.com/ai-daily-roundup-12-oct-2026-ai-chips-racks-large-loads/"
+   "url": "https://news-api.bgov.com/v1/resize-image?url=https%3A%2F%2Fbloomberg-bna-brightspot.s3.us-east-1.amazonaws.com%2F67%2F3a%2F4b4b047c4c0ea9ceab449d6ec699%2F446274991.jpg&width=1200&height=630&fit=cover&removeAnimation=true&crop=3994x1539%2B3%2B188",
+   "fuente": "Bloomberg Government",
+   "enlace": "https://news.bgov.com/bloomberg-government-news/ai-regulation-chip-exports-data-centers-form-2026-tech-fights"
   },
   "deporte": {
    "url": "https://www.infobae.com/resizer/v2/W6XQTQ5TXRAFRCAAPQUSMH2EOE.png?auth=a6d1474aa5efde4b988e04e13a9177f91f5a8ce0e815d138b9ce80329746b2df&smart=true&width=1024&height=512&quality=85",
@@ -2745,6 +2781,530 @@
    ],
    "fuente": "Referencial · open.er-api.com",
    "nota": "Valor de mercado referencial; el oficial está en el BCRP."
+  }
+ },
+ "datos_bm": {
+  "SP.POP.TOTL": {
+   "nombre": "Población total",
+   "unidad": "personas",
+   "serie": [
+    {
+     "a": 2006,
+     "v": 28324491.0
+    },
+    {
+     "a": 2007,
+     "v": 28530699.0
+    },
+    {
+     "a": 2008,
+     "v": 28719041.0
+    },
+    {
+     "a": 2009,
+     "v": 28896811.0
+    },
+    {
+     "a": 2010,
+     "v": 29086019.0
+    },
+    {
+     "a": 2011,
+     "v": 29304086.0
+    },
+    {
+     "a": 2012,
+     "v": 29550366.0
+    },
+    {
+     "a": 2013,
+     "v": 29817919.0
+    },
+    {
+     "a": 2014,
+     "v": 30115826.0
+    },
+    {
+     "a": 2015,
+     "v": 30457600.0
+    },
+    {
+     "a": 2016,
+     "v": 30866494.0
+    },
+    {
+     "a": 2017,
+     "v": 31324637.0
+    },
+    {
+     "a": 2018,
+     "v": 31897584.0
+    },
+    {
+     "a": 2019,
+     "v": 32449303.0
+    },
+    {
+     "a": 2020,
+     "v": 32838579.0
+    },
+    {
+     "a": 2021,
+     "v": 33155882.0
+    },
+    {
+     "a": 2022,
+     "v": 33475438.0
+    },
+    {
+     "a": 2023,
+     "v": 33845617.0
+    },
+    {
+     "a": 2024,
+     "v": 34217848.0
+    },
+    {
+     "a": 2025,
+     "v": 34576665.0
+    }
+   ],
+   "fuente": "Banco Mundial"
+  },
+  "SL.UEM.TOTL.ZS": {
+   "nombre": "Desempleo (estimación OIT, % de la fuerza laboral)",
+   "unidad": "%",
+   "serie": [
+    {
+     "a": 2006,
+     "v": 4.17
+    },
+    {
+     "a": 2007,
+     "v": 4.08
+    },
+    {
+     "a": 2008,
+     "v": 4.03
+    },
+    {
+     "a": 2009,
+     "v": 3.96
+    },
+    {
+     "a": 2010,
+     "v": 3.6
+    },
+    {
+     "a": 2011,
+     "v": 3.477
+    },
+    {
+     "a": 2012,
+     "v": 3.238
+    },
+    {
+     "a": 2013,
+     "v": 3.575
+    },
+    {
+     "a": 2014,
+     "v": 3.208
+    },
+    {
+     "a": 2015,
+     "v": 3.272
+    },
+    {
+     "a": 2016,
+     "v": 3.741
+    },
+    {
+     "a": 2017,
+     "v": 3.691
+    },
+    {
+     "a": 2018,
+     "v": 3.492
+    },
+    {
+     "a": 2019,
+     "v": 3.379
+    },
+    {
+     "a": 2020,
+     "v": 7.179
+    },
+    {
+     "a": 2021,
+     "v": 5.097
+    },
+    {
+     "a": 2022,
+     "v": 4.291
+    },
+    {
+     "a": 2023,
+     "v": 4.899
+    },
+    {
+     "a": 2024,
+     "v": 5.199
+    },
+    {
+     "a": 2025,
+     "v": 5.117
+    }
+   ],
+   "fuente": "Banco Mundial"
+  },
+  "IT.NET.USER.ZS": {
+   "nombre": "Personas que usan internet (% de la población)",
+   "unidad": "%",
+   "serie": [
+    {
+     "a": 2005,
+     "v": 17.10000038
+    },
+    {
+     "a": 2006,
+     "v": 20.70000076
+    },
+    {
+     "a": 2007,
+     "v": 25.20000076
+    },
+    {
+     "a": 2008,
+     "v": 30.57
+    },
+    {
+     "a": 2009,
+     "v": 31.4
+    },
+    {
+     "a": 2010,
+     "v": 34.77
+    },
+    {
+     "a": 2011,
+     "v": 36.01
+    },
+    {
+     "a": 2012,
+     "v": 38.2
+    },
+    {
+     "a": 2013,
+     "v": 39.2
+    },
+    {
+     "a": 2014,
+     "v": 40.2446560091704
+    },
+    {
+     "a": 2015,
+     "v": 40.8526009090468
+    },
+    {
+     "a": 2016,
+     "v": 45.4617406869459
+    },
+    {
+     "a": 2017,
+     "v": 50.4504121848143
+    },
+    {
+     "a": 2018,
+     "v": 55.0543342443197
+    },
+    {
+     "a": 2019,
+     "v": 59.9505036049006
+    },
+    {
+     "a": 2020,
+     "v": 65.25179796
+    },
+    {
+     "a": 2021,
+     "v": 71.10782643
+    },
+    {
+     "a": 2022,
+     "v": 74.67495213
+    },
+    {
+     "a": 2023,
+     "v": 79.48484477
+    },
+    {
+     "a": 2024,
+     "v": 81.95705992
+    }
+   ],
+   "fuente": "Banco Mundial"
+  },
+  "NY.GDP.MKTP.KD.ZG": {
+   "nombre": "Crecimiento del PBI (% anual)",
+   "unidad": "%",
+   "serie": [
+    {
+     "a": 2006,
+     "v": 7.5288990440594
+    },
+    {
+     "a": 2007,
+     "v": 8.5183877690955
+    },
+    {
+     "a": 2008,
+     "v": 9.1265683014642
+    },
+    {
+     "a": 2009,
+     "v": 1.0958236592427
+    },
+    {
+     "a": 2010,
+     "v": 8.33245910749577
+    },
+    {
+     "a": 2011,
+     "v": 6.32719240161117
+    },
+    {
+     "a": 2012,
+     "v": 6.13972470560435
+    },
+    {
+     "a": 2013,
+     "v": 5.85251821084928
+    },
+    {
+     "a": 2014,
+     "v": 2.38215737180541
+    },
+    {
+     "a": 2015,
+     "v": 3.25224477218451
+    },
+    {
+     "a": 2016,
+     "v": 3.95331871520767
+    },
+    {
+     "a": 2017,
+     "v": 2.51883544233135
+    },
+    {
+     "a": 2018,
+     "v": 3.969351341365
+    },
+    {
+     "a": 2019,
+     "v": 2.24063176875049
+    },
+    {
+     "a": 2020,
+     "v": -10.9333065010382
+    },
+    {
+     "a": 2021,
+     "v": 13.4166456126513
+    },
+    {
+     "a": 2022,
+     "v": 2.81819976419922
+    },
+    {
+     "a": 2023,
+     "v": -0.350699814345759
+    },
+    {
+     "a": 2024,
+     "v": 3.5152749274832
+    },
+    {
+     "a": 2025,
+     "v": 3.43056395124466
+    }
+   ],
+   "fuente": "Banco Mundial"
+  },
+  "FP.CPI.TOTL.ZG": {
+   "nombre": "Inflación (precios al consumidor, % anual)",
+   "unidad": "%",
+   "serie": [
+    {
+     "a": 2006,
+     "v": 2.00225801248818
+    },
+    {
+     "a": 2007,
+     "v": 1.77998644680371
+    },
+    {
+     "a": 2008,
+     "v": 5.78587598206755
+    },
+    {
+     "a": 2009,
+     "v": 2.93623153596699
+    },
+    {
+     "a": 2010,
+     "v": 1.52832059732901
+    },
+    {
+     "a": 2011,
+     "v": 3.36931095333853
+    },
+    {
+     "a": 2012,
+     "v": 3.61121294940163
+    },
+    {
+     "a": 2013,
+     "v": 2.76789666082001
+    },
+    {
+     "a": 2014,
+     "v": 3.41194579807464
+    },
+    {
+     "a": 2015,
+     "v": 3.39809194746307
+    },
+    {
+     "a": 2016,
+     "v": 3.55717663556278
+    },
+    {
+     "a": 2017,
+     "v": 2.99490045809442
+    },
+    {
+     "a": 2018,
+     "v": 1.50915423024741
+    },
+    {
+     "a": 2019,
+     "v": 2.25212191358027
+    },
+    {
+     "a": 2020,
+     "v": 2.00241205759291
+    },
+    {
+     "a": 2021,
+     "v": 4.27166381536797
+    },
+    {
+     "a": 2022,
+     "v": 8.3337063009623
+    },
+    {
+     "a": 2023,
+     "v": 6.45561348369586
+    },
+    {
+     "a": 2024,
+     "v": 2.00770739412712
+    },
+    {
+     "a": 2025,
+     "v": 1.53125450314272
+    }
+   ],
+   "fuente": "Banco Mundial"
+  },
+  "SP.DYN.LE00.IN": {
+   "nombre": "Esperanza de vida al nacer",
+   "unidad": "años",
+   "serie": [
+    {
+     "a": 2005,
+     "v": 71.988
+    },
+    {
+     "a": 2006,
+     "v": 72.337
+    },
+    {
+     "a": 2007,
+     "v": 72.746
+    },
+    {
+     "a": 2008,
+     "v": 72.743
+    },
+    {
+     "a": 2009,
+     "v": 72.631
+    },
+    {
+     "a": 2010,
+     "v": 72.886
+    },
+    {
+     "a": 2011,
+     "v": 73.327
+    },
+    {
+     "a": 2012,
+     "v": 73.979
+    },
+    {
+     "a": 2013,
+     "v": 74.591
+    },
+    {
+     "a": 2014,
+     "v": 75.26
+    },
+    {
+     "a": 2015,
+     "v": 75.732
+    },
+    {
+     "a": 2016,
+     "v": 75.951
+    },
+    {
+     "a": 2017,
+     "v": 75.958
+    },
+    {
+     "a": 2018,
+     "v": 76.018
+    },
+    {
+     "a": 2019,
+     "v": 76.275
+    },
+    {
+     "a": 2020,
+     "v": 73.832
+    },
+    {
+     "a": 2021,
+     "v": 71.596
+    },
+    {
+     "a": 2022,
+     "v": 76.834
+    },
+    {
+     "a": 2023,
+     "v": 77.74
+    },
+    {
+     "a": 2024,
+     "v": 77.941
+    }
+   ],
+   "fuente": "Banco Mundial"
   }
  }
 }
