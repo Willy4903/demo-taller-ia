@@ -3,7 +3,7 @@
 const http = require("http"), fs = require("fs"), path = require("path");
 let pw; try { pw = require("playwright"); } catch (e) { pw = require("@playwright/test"); }
 const RAIZ = path.resolve(__dirname, "..");
-const MIME = { ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".css": "text/css", ".json": "application/json", ".png": "image/png", ".webmanifest": "application/manifest+json" };
+const MIME = { ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".css": "text/css", ".json": "application/json", ".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".webmanifest": "application/manifest+json" };
 const srv = http.createServer((req, res) => {
   const u = decodeURIComponent(req.url.split("?")[0]); let f = path.join(RAIZ, u === "/" ? "index.html" : u);
   if (!f.startsWith(RAIZ) || !fs.existsSync(f) || fs.statSync(f).isDirectory()) { res.writeHead(404); return res.end("no"); }
@@ -54,6 +54,17 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
     ok(["noticias-congreso.jpg","datos-bcrp.jpg","nino-piura.jpg"].every((name,i) =>
       photos.cards[i].includes("photos/"+name)), `[${w}] las tarjetas no muestran fotos reales`);
     ok(photos.credit, `[${w}] faltan atribuciones fotográficas`);
+    const decoded = await p.evaluate(async () => {
+      const names = ["hero-lima.jpg","noticias-congreso.jpg","datos-bcrp.jpg","nino-piura.jpg"];
+      return await Promise.all(names.map(name => new Promise(resolve => {
+        const img = new Image();
+        img.onload = () => resolve(img.naturalWidth > 400 && img.naturalHeight > 150);
+        img.onerror = () => resolve(false);
+        img.src = "assets/photos/" + name;
+      })));
+    });
+    ok(decoded.every(Boolean), `[${w}] una o más fotografías JPEG no se pudieron decodificar en el navegador`);
+
 
     const tit = await p.locator(".qs .q h2").allInnerTexts();
     ok(/pasando/.test(tit[0]) && /datos/.test(tit[1]) && /Niño/.test(tit[2]), `[${w}] portada: títulos de las tres preguntas (${tit.join(" / ")})`);
