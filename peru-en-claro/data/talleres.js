@@ -38,13 +38,39 @@ window.TALLERES = {
     tiktok: "https://www.tiktok.com/@luwiuni",
     web: "https://wgia-formacion.luisito4903.chatgpt.site/"
   },
+  /* "sector" indica en qué sección de Contexto Perú se muestra además de la página de talleres y el pie. */
   paginas: [
     {
-      id: "liga1",
+      id: "ia-radar",
+      icono: "🤖",
+      n: "IA Radar",
+      d: "Observatorio de IA en español: noticias con contexto, comparaciones de modelos y microlecciones.",
+      u: "https://willy4903.github.io/taller-estadistica-garrita/",
+      sector: "ia"
+    },
+    {
+      id: "liga1-calculadora",
       icono: "⚽",
+      n: "Calculadora Liga 1 2026",
+      d: "Tabla acumulada, Apertura y Clausura, calculadora de resultados y pronósticos con foco en Universitario.",
+      u: "https://willy4903.github.io/taller-estadistica-garrita/liga1/#hist",
+      sector: "deporte"
+    },
+    {
+      id: "liga1-simulador",
+      icono: "🏆",
       n: "Simulador Liga 1",
       d: "Tabla, calculadora y escenarios del Torneo Clausura 2026.",
-      u: "https://willy4903.github.io/demo-taller-ia/"
+      u: "https://willy4903.github.io/demo-taller-ia/",
+      sector: "deporte"
+    },
+    {
+      id: "observatorio-nino",
+      icono: "🌊",
+      n: "El Niño Perú: observatorio",
+      d: "Datos del mar, pronóstico del tiempo por distrito, estado de El Niño según ENFEN y zonas de riesgo.",
+      u: "https://willy4903.github.io/observatorio-elnino-peru/#meteo",
+      sector: "nino"
     }
   ]
 };
