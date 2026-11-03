@@ -289,23 +289,53 @@
     h+='<details class="mas-rec"><summary>Más recursos: formación, glosario, estadísticas y talleres</summary><div class="mas-g"><a href="#/ruta">La Ruta (aprende jugando)</a><a href="#/glosario">Glosario</a><a href="#/estadisticas">Estadísticas del sitio</a><a href="#/historial">Historial de notas</a><a href="#/talleres">Talleres de IA</a><a href="#/fuentes">Fuentes y su estado</a></div></details></div>';
     return h;
   }
-  var nF = { sector: "todos", tipo: "todas", genero: "todos" }, nMax = 15;
+  var nF = { sector: "todos", tipo: "todas", genero: "todos" }, nMax = 15, nQuery = "";
   function vistaNoticias() {
-    var h = '<div class="fade"><div class="shead" style="--c:var(--gold)"><h1>Noticias</h1><p>Lo publicado por medios independientes, comerciales e internacionales. Cada nota enlaza al medio original y muestra su fecha de publicación.</p></div>';
-    h += '<details class="filtros"><summary>Filtrar por tema, tipo de medio o género</summary><div class="filtros-in"><div><span class="fl">Tema</span><div class="chips" id="n-sec"></div></div><div><span class="fl">Tipo de medio</span><div class="chips" id="n-tipo"></div></div><div><span class="fl">Género</span><div class="chips" id="n-gen"></div></div></div></details>';
-    h += '<div id="n-lista" aria-live="polite"></div><p style="text-align:center;margin-top:14px" id="n-mas"></p><p class="nota-pie">' + (ultimaNota() ? "La nota más reciente indexada es del " + esc(fechaHora(ultimaNota())) + "." : "") + " Los titulares y resúmenes pertenecen a cada medio. Las notas marcadas «vía Google Noticias» no llegaron por el feed del medio.</p></div>";
+    var abierto = window.innerWidth >= 720 ? " open" : "";
+    var h = '<div class="fade noticias-page"><div class="shead noticias-intro" style="--c:var(--gold)"><h1>Noticias</h1><p>Lo publicado por medios independientes, comerciales e internacionales. Cada nota enlaza al medio original y muestra su fecha de publicación.</p></div>';
+    h += '<details class="filtros filtros-noticias"' + abierto + '><summary>Filtrar por tema, tipo de medio o género</summary><div class="filtros-in">' +
+      '<div class="nf-grupo nf-tema"><span class="fl">Tema</span><div class="chips" id="n-sec" aria-label="Filtrar por tema"></div></div>' +
+      '<div class="nf-grupo"><span class="fl">Tipo de medio</span><div class="chips" id="n-tipo" aria-label="Filtrar por tipo de medio"></div></div>' +
+      '<div class="nf-grupo"><span class="fl">Género</span><div class="chips" id="n-gen" aria-label="Filtrar por género"></div></div></div></details>';
+    h += '<div class="n-herramientas"><label class="n-busca" for="n-query"><span class="n-search-icon" aria-hidden="true">⌕</span><input type="search" id="n-query" placeholder="Buscar dentro de noticias" value="' + esc(nQuery) + '" autocomplete="off" aria-label="Buscar dentro de noticias"></label><span id="n-count" class="n-total" role="status"></span><button type="button" id="n-clear" class="n-clear" hidden>Limpiar filtros</button></div>';
+    h += '<div id="n-lista" aria-live="polite"></div><p class="n-ver-mas" id="n-mas"></p><p class="nota-pie">' + (ultimaNota() ? "La nota más reciente indexada es del " + esc(fechaHora(ultimaNota())) + "." : "") + " Los titulares y resúmenes pertenecen a cada medio. Las notas marcadas «vía Google Noticias» no llegaron por el feed del medio.</p></div>";
     setTimeout(pintarNoticias, 0);
     return h;
   }
   function pintarNoticias() {
     var a = $("#n-sec"); if (!a) return;
-    function chips(el, arr, clave) { el.innerHTML = arr.map(function (o) { return '<button class="chip' + (o[0] === nF[clave] ? " on" : "") + '" data-nf="' + clave + ":" + o[0] + '" aria-pressed="' + (o[0] === nF[clave]) + '">' + esc(o[1]) + "</button>"; }).join(""); }
+    function chips(el, arr, clave) {
+      if (!el) return;
+      el.innerHTML = arr.map(function (o) {
+        var on = o[0] === nF[clave];
+        return '<button type="button" class="chip' + (on ? " on" : "") + '" data-nf="' + clave + ":" + o[0] + '" aria-pressed="' + on + '">' + esc(o[1]) + "</button>";
+      }).join("");
+    }
     chips(a, [["todos", "Todos"]].concat(ED.sectores.map(function (x) { return [x.id, x.nombre]; })), "sector");
     chips($("#n-tipo"), [["todas", "Todos"], ["independiente", "Independientes"], ["comercial", "Comerciales"], ["internacional", "Internacionales"], ["estatal", "Oficiales"]], "tipo");
     chips($("#n-gen"), [["todos", "Todos"], ["noticia", "Noticias"], ["opinion", "Opinión"]], "genero");
-    var l = FEED.filter(function (x) { return (nF.sector === "todos" ? x.sector !== "deporte" : x.sector === nF.sector) && (nF.tipo === "todas" || x.tipo === nF.tipo || (nF.tipo === "estatal" && x.tipo === "oficial")) && (nF.genero === "todos" || x.genero === nF.genero); });
-    $("#n-lista").innerHTML = l.length ? '<div class="lista2">' + l.slice(0, nMax).map(row).join("") + "</div>" : '<div class="vacio">No hay notas con estos filtros. Prueba con otros o espera la próxima actualización.</div>';
-    $("#n-mas").innerHTML = l.length > nMax ? '<button class="btn o" id="n-b">Ver más notas (' + (l.length - nMax) + ")</button>" : "";
+    var q = $("#n-query");
+    if (q && !q.dataset.escuchando) {
+      q.dataset.escuchando = "1";
+      q.addEventListener("input", function () {
+        nQuery = this.value; nMax = 15; pintarNoticias();
+      });
+    }
+    var bus = norm(nQuery.trim());
+    var l = FEED.filter(function (x) {
+      var coincide = (nF.sector === "todos" || x.sector === nF.sector) &&
+        (nF.tipo === "todas" || x.tipo === nF.tipo || (nF.tipo === "estatal" && x.tipo === "oficial")) &&
+        (nF.genero === "todos" || x.genero === nF.genero);
+      if (!coincide || !bus) return coincide;
+      var sector = SECT[x.sector] || {};
+      return norm([x.titulo, x.resumen, x.fuente, sector.nombre || ""].join(" ")).indexOf(bus) >= 0;
+    });
+    var n = $("#n-count");
+    if (n) n.textContent = l.length ? "Mostrando " + Math.min(nMax, l.length) + " de " + l.length + " noticias" : "0 noticias encontradas";
+    var limpiar = $("#n-clear");
+    if (limpiar) limpiar.hidden = nF.sector === "todos" && nF.tipo === "todas" && nF.genero === "todos" && !nQuery.trim();
+    $("#n-lista").innerHTML = l.length ? '<div class="lista2">' + l.slice(0, nMax).map(row).join("") + "</div>" : '<div class="vacio">No hay noticias que coincidan. Modifica la búsqueda o limpia los filtros.</div>';
+    $("#n-mas").innerHTML = l.length > nMax ? '<button class="btn o" id="n-b" type="button">Ver más noticias (' + (l.length - nMax) + ")</button>" : "";
     var b = $("#n-b"); if (b) b.onclick = function () { nMax += 15; pintarNoticias(); };
   }
   function proxima() {
@@ -672,6 +702,7 @@
     if (t.id === "veil" || c("[data-x]")) { cerrarHojas(); return; }
     if (c("[data-buscar]")) { abrirBuscar(); return; }
     var df = c("[data-df]"); if (df) { dFil = df.getAttribute("data-df"); pintarDatos(); return; }
+    var limpiarNoticias = c("#n-clear"); if (limpiarNoticias) { nF = { sector: "todos", tipo: "todas", genero: "todos" }; nQuery = ""; nMax = 15; var campo = $("#n-query"); if (campo) campo.value = ""; pintarNoticias(); return; }
     var nf = c("[data-nf]"); if (nf) { var kv = nf.getAttribute("data-nf").split(":"); nF[kv[0]] = kv[1]; nMax = 15; pintarNoticias(); return; }
     var fl = c(".flip,.fc"); if (fl && !c("a") && window.matchMedia && matchMedia("(hover: none)").matches) { var ya = fl.classList.contains("on"); $$(".flip.on,.fc.on").forEach(function (x) { x.classList.remove("on"); }); if (!ya) fl.classList.add("on"); return; }
     var mi = c("[data-m]"); if (mi) { abrirMision(mi.getAttribute("data-m")); return; }
