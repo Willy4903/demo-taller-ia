@@ -118,7 +118,15 @@
     return '<article class="lead-card"><a href="' + esc(s.url) + '" aria-hidden="true" tabindex="-1">' + thumb(s, true) + "</a>" + kicker(s) + '<span class="kick" style="margin-left:8px;color:var(--red-t)">· ANÁLISIS</span><h2><a href="' + esc(s.url) + '">' + esc(s.titulo) + '</a></h2><p class="res">' + esc(sin(primera(s.resumen), 260)) + "</p>" + meta(s) +
       '<div class="acc"><a class="btn" href="' + esc(s.url) + '">Leer el análisis →</a>' + (fu ? '<a class="lk" href="' + safeUrl(fu.u) + '" target="_blank" rel="noopener noreferrer">Leer fuente original ↗</a>' : "") + "</div>" + "</article>";
   }
-  function row(s) { var f = thumb(s); return '<a class="s row' + (f ? "" : " nofoto") + '" ' + attrs(s) + "><div>" + kicker(s) + "<h3>" + esc(s.titulo) + "</h3>" + (s.resumen ? "<p>" + esc(sin(primera(s.resumen), 160)) + "</p>" : "") + meta(s) + "</div>" + f + "</a>"; }
+  function row(s) {
+    var f=thumb(s), resumen=s.resumen?sin(primera(s.resumen),160):"";
+    if (!externo(s)) return '<a class="s row'+(f?"":" nofoto")+'" '+attrs(s)+'><div>'+kicker(s)+'<h3>'+esc(s.titulo)+'</h3>'+(resumen?'<p>'+esc(resumen)+'</p>':"")+meta(s)+'</div>'+f+'</a>';
+    var extracto=s.resumen?sin(s.resumen,550):"El índice solo dispone del titular: no hay un extracto adicional para explicar esta publicación.";
+    var lectura=s.genero==="opinion"?"Es una pieza de opinión: distingue argumentos, valoración del autor y hechos comprobables.":"Es una noticia: distingue los hechos citados de las conclusiones que todavía necesitan contraste.";
+    var fecha=s.fecha?corta(s.fecha):"Fecha no confirmada";
+    return '<details class="pe-story"><summary class="s row'+(f?"":" nofoto")+'"><div>'+kicker(s)+'<h3>'+esc(s.titulo)+'</h3>'+(resumen?'<p>'+esc(resumen)+'</p>':"")+meta(s)+'<span class="pe-read-label">Comprender esta nota aquí <span aria-hidden="true">+</span></span></div>'+f+'</summary>'+
+      '<div class="pe-story-body"><span class="pe-story-kicker">EXTRACTO DEL MEDIO · NO VERIFICACIÓN INDEPENDIENTE</span><p>'+esc(extracto)+'</p><p class="pe-story-lesson">'+esc(lectura)+'</p><div class="pe-story-actions"><span>Publicado por '+esc(s.fuente)+' · '+esc(fecha)+'</span><a href="'+safeUrl(s.url)+'" target="_blank" rel="noopener noreferrer">Leer fuente original ↗</a></div></div></details>';
+  }
   function card(s) { return '<a class="s card" ' + attrs(s) + ">" + thumb(s) + "<div>" + kicker(s) + "<h3>" + esc(s.titulo) + "</h3><p>" + esc(sin(primera(s.resumen), 150)) + "</p>" + meta(s) + "</div></a>"; }
   function sh(titulo, color, enlace, txt) { return '<div class="sh" style="--c:' + color + '"><h2>' + esc(titulo) + "</h2>" + (enlace ? '<a href="' + enlace + '">' + esc(txt || "Ver todo") + " →</a>" : "") + "</div>"; }
 
@@ -177,7 +185,7 @@
   }
   function ninoTres() {
     var n = ED.nino; if (!n || !n.tres) return "";
-    return '<div class="n3">' + n.tres.map(function (x, i) { return '<article class="n3-i n3-' + (i + 1) + '"><h3>' + esc(x.k) + '</h3><p class="n3-v">' + esc(x.v) + "</p><p>" + esc(x.d) + '</p><small>Fuente: ' + esc(x.f) + "</small></article>"; }).join("") + "</div>";
+    return '<div class="n3">' + n.tres.map(function (x, i) { return '<details class="n3-i n3-' + (i + 1) + '"><summary><h3>' + esc(x.k) + '</h3><p class="n3-v">' + esc(x.v) + '</p><span class="pe-nino-hint">Entender este estado <span aria-hidden="true">+</span></span></summary><p>' + esc(x.d) + '</p><small>Fuente: ' + esc(x.f) + "</small></details>"; }).join("") + "</div>";
   }
   function numEnfen(x) { var m = /^(\d+)-(\d{4})$/.exec(x || ""); return m ? +m[2] * 1000 + +m[1] : 0; }
   function avisoEnfen() {
@@ -227,7 +235,7 @@
   }
   function dataCard(d, compacta) {
     return '<article class="dc' + (compacta ? " dc-c" : "") + '"><header><span class="tag">' + esc(d.fp) + "</span><h3>" + esc(d.k) + '</h3></header><p class="dc-v"><span class="cifra">' + esc(d.v) + '</span> <span class="un">' + esc(d.un) + "</span></p>" + (d.n && !compacta ? '<p class="dc-n">' + esc(d.n) + "</p>" : "") + (d.spark || "") +
-      '<p class="dc-c"><b>Qué significa:</b> ' + esc(d.c) + "</p>" + (compacta ? "" : '<p class="dc-e"><b>Ejemplo:</b> ' + esc(d.e) + "</p>") +
+      '<details class="pe-data-explain"><summary>Qué significa este número</summary><p>' + esc(d.c || "Revisa el periodo, la unidad y el ámbito de la medición.") + "</p>" + (compacta || !d.e ? "" : '<p><b>Ejemplo:</b> ' + esc(d.e) + "</p>") + "</details>" +
       '<p class="dc-m"><span>Fecha de corte: <b>' + esc(d.corte) + '</b></span><a href="' + safeUrl(d.u) + '" target="_blank" rel="noopener noreferrer">Fuente: ' + esc(d.f || d.fp) + " ↗</a></p></article>";
   }
   function tarjetaPregunta(num_, id, titulo, cuerpo, pie) {
@@ -292,7 +300,7 @@
   var nF = { sector: "todos", tipo: "todas", genero: "todos" }, nMax = 15, nQuery = "";
   function vistaNoticias() {
     var abierto = window.innerWidth >= 720 ? " open" : "";
-    var h = '<div class="fade noticias-page"><div class="shead noticias-intro" style="--c:var(--gold)"><h1>Noticias</h1><p>Lo publicado por medios independientes, comerciales e internacionales. Cada nota enlaza al medio original y muestra su fecha de publicación.</p></div>';
+    var h = '<div class="fade noticias-page"><div class="shead noticias-intro" style="--c:var(--gold)"><h1>Noticias</h1><p>Entiende primero el extracto disponible aquí. Si quieres leer el artículo completo, encontrarás el enlace al medio y la fecha de publicación.</p></div><div class="pe-reading-guide"><div><span>01 · IDENTIFICA</span><strong>¿Quién publica?</strong><p>Distingue noticias de opinión y revisa el medio.</p></div><div><span>02 · COMPRENDE</span><strong>¿Qué afirma?</strong><p>Abre una tarjeta para leer el extracto en el portal.</p></div><div><span>03 · VERIFICA</span><strong>¿Con qué evidencia?</strong><p>Contrasta la fecha y la fuente antes de compartir.</p></div></div>';
     h += '<details class="filtros filtros-noticias"' + abierto + '><summary>Filtrar por tema, tipo de medio o género</summary><div class="filtros-in">' +
       '<div class="nf-grupo nf-tema"><span class="fl">Tema</span><div class="chips" id="n-sec" aria-label="Filtrar por tema"></div></div>' +
       '<div class="nf-grupo"><span class="fl">Tipo de medio</span><div class="chips" id="n-tipo" aria-label="Filtrar por tipo de medio"></div></div>' +
@@ -555,7 +563,7 @@
   }
   function vistaDatos() {
     var D = ED.datos; if (!D) return vistaHome();
-    var h = '<div class="fade"><div class="shead" style="--c:#38BDF8"><p class="po-eye">Datos del Perú</p><h1>Datos y cifras clave</h1><p>' + esc(D.intro) + "</p></div>";
+    var h = '<div class="fade"><div class="shead" style="--c:#38BDF8"><p class="po-eye">DATOS DEL PERÚ</p><h1>Datos y cifras clave</h1><p>' + esc(D.intro) + '</p></div><div class="pe-data-intro"><strong>Primero, entiende la cifra.</strong><p>Selecciona «Qué significa este número» para ver su interpretación y un ejemplo. Las fechas de corte siempre permanecen visibles; la fuente original es el último nivel de consulta.</p></div>';
     h += '<details class="filtros"><summary>Filtrar por tema</summary><div class="chips" id="d-chips" aria-label="Categorías"></div></details><div class="dp-b" id="d-grid" aria-live="polite"></div>';
     h += sh("Dónde buscar más datos", "#94A3B8") + D.enlaces.map(function (e) { return '<a class="fr" href="' + safeUrl(e.u) + '" target="_blank" rel="noopener noreferrer"><div><b>' + esc(e.n) + "</b><p>" + esc(e.d) + "</p></div><span>↗</span></a>"; }).join("");
     h += '<div class="box" style="margin-top:20px"><h3>Cómo leer estas cifras</h3><p>Cada dato indica su unidad, su fecha de corte y quién lo publicó. Compara solo cifras del mismo periodo y de la misma población: el desempleo de Lima Metropolitana no es el desempleo nacional, y un trimestre móvil no equivale a un año. Los datos del INEI se cargan con corte editorial al ' + esc(fechaLarga(D.corte)) + "; el tipo de cambio y las series del Banco Mundial se actualizan solos.</p></div>" + frescura();
