@@ -249,7 +249,12 @@
     }).join("");
   }
   function visualCard(num_,id,title,summary,body,route,action,icono){
-    return '<section class="q q'+num_+'" aria-labelledby="'+id+'"><header><span class="q-n" aria-hidden="true">'+ic(icono)+'</span><h2 id="'+id+'">'+esc(title)+'</h2></header><p class="q-lead">'+esc(summary)+'</p>'+body+'<footer><a class="q-go" href="'+route+'">'+esc(action)+' →</a></footer></section>';
+    // Imágenes locales visibles, independientes de los fondos CSS y sin texto incrustado.
+    var images={1:"card-actualidad.jpg",2:"card-datos.jpg",3:"card-elnino.jpg"};
+    var illustration='<img class="q-visual" src="assets/'+images[num_]+'" alt="" aria-hidden="true" loading="eager" decoding="async" width="512" height="352">';
+    return '<section class="q q'+num_+'" aria-labelledby="'+id+'">'+illustration+
+      '<header><span class="q-n" aria-hidden="true">'+ic(icono)+'</span><h2 id="'+id+'">'+esc(title)+'</h2></header>'+
+      '<p class="q-lead">'+esc(summary)+'</p>'+body+'<footer><a class="q-go" href="'+route+'">'+esc(action)+' →</a></footer></section>';
   }
   function vistaHome() {
     // Los datos y noticias completas permanecen en las vistas enlazadas.

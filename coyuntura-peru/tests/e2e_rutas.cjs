@@ -53,14 +53,27 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
     }
     const photos = await p.evaluate(() => {
       const hero = getComputedStyle(document.querySelector(".hero")).backgroundImage;
-      const cards = [...document.querySelectorAll(".qs .q")].map(el => getComputedStyle(el).backgroundImage);
-      return {hero, cards,
+      const cards = [...document.querySelectorAll(".qs .q")].map(el => {
+        const img = el.querySelector(".q-visual");
+        if (!img) return null;
+        const b = img.getBoundingClientRect();
+        const c = el.getBoundingClientRect();
+        const st = getComputedStyle(img);
+        return {src:img.getAttribute("src"),loaded:img.complete && img.naturalWidth > 400,
+          rendered:st.display !== "none" && st.visibility !== "hidden" && Number(st.opacity) > .95,
+          full:b.width >= c.width - 2 && b.height >= c.height - 2,
+          noClickBlock:st.pointerEvents === "none"};
+      });
+      return {hero,cards,
         noVisibleCredits: !document.querySelector(".hero-photo-credit") && !document.querySelector(".photo-sources")};
     });
     ok(photos.hero.includes("hero-peru-en-claro-aprobado.jpg"),
        `[${w}] la portada no utiliza el fondo aprobado`);
     ok(["card-actualidad.jpg","card-datos.jpg","card-elnino.jpg"].every((name,i) =>
-      photos.cards[i].includes(name)), `[${w}] no se muestran las imágenes de las tres preguntas`);
+      photos.cards[i] && photos.cards[i].src === "assets/"+name &&
+      photos.cards[i].loaded && photos.cards[i].rendered &&
+      photos.cards[i].full && photos.cards[i].noClickBlock),
+      `[${w}] las tres imágenes de preguntas no se muestran a tamaño completo: ${JSON.stringify(photos.cards)}`);
     ok(photos.noVisibleCredits, `[${w}] siguen apareciendo créditos fotográficos en la portada`);
     ok(await p.locator(".q2 .q-go").getAttribute("href") === "#/datos", `[${w}] enlace Indicadores incorrecto`);
     ok(await p.locator(".q3 .q-go").getAttribute("href") === "#/s/nino", `[${w}] enlace El Niño incorrecto`);
