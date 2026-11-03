@@ -106,3 +106,67 @@ body:has(.home)>.ticker{display:none}
 @media(max-width:640px){
   .home .hero{background-position:center,63% center}
 }
+
+/* Tarjetas inferiores — composición aprobada: imagen visible a la derecha,
+   texto real y accesible independiente de los recursos gráficos. */
+.home .qs {
+  position:relative; z-index:3;
+  max-width:calc(var(--home-width) + 24px);
+  margin-top:-14px;
+  padding:16px;
+  border-radius:25px;
+  background:#fff;
+  box-shadow:0 19px 48px -30px rgba(7,24,48,.28);
+  gap:16px;
+}
+.home .q{
+  min-height:350px; padding:25px 23px;
+  border-radius:18px; box-shadow:none;
+  background-size:cover; background-position:center center;
+  background-repeat:no-repeat;
+}
+.home .q1{
+  background-image:linear-gradient(90deg,rgba(116,17,36,.54),rgba(132,20,40,.19) 56%,transparent 78%),url("card-actualidad.jpg");
+}
+.home .q2{
+  background-image:linear-gradient(90deg,rgba(3,63,133,.44),rgba(4,87,159,.19) 54%,transparent 80%),url("card-datos.jpg");
+}
+.home .q3{
+  background-image:linear-gradient(90deg,rgba(0,65,47,.54),rgba(0,66,49,.28) 57%,transparent 87%),url("card-elnino.jpg");
+}
+.home .q header{
+  display:flex; flex-direction:column; align-items:flex-start;
+  gap:13px; margin-bottom:12px;
+}
+.home .q-n{
+  display:grid; place-items:center;
+  width:45px;height:45px;
+  background:rgba(255,255,255,.11);
+  border:1px solid rgba(255,255,255,.6);
+}
+.home .q h2{
+  color:#fff;font-size:clamp(1.2rem,1.7vw,1.6rem);
+  max-width:16ch;line-height:1.2;
+}
+.home .q .q-lead{
+  max-width:23ch;
+  font-size:.94rem; line-height:1.55;
+  color:#fff; text-shadow:0 1px 2px rgba(0,0,0,.12);
+}
+.home .q footer { margin-top:auto; z-index:2 }
+.home .q .q-go{min-height:44px;padding:11px 18px;box-shadow:0 6px 18px rgba(0,0,0,.16)}
+.home .q:before,.home .q:after{display:none}
+:root[data-theme="dark"] .home .qs{background:#182534}
+@media(max-width:950px){
+  .home .qs{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:0}
+  .home .q3{grid-column:1/-1}
+}
+@media(max-width:640px){
+  .home .qs{grid-template-columns:1fr;gap:12px;padding:11px;margin:-4px 10px 14px;max-width:none;border-radius:19px}
+  .home .q,.home .q3{grid-column:auto;min-height:315px;padding:20px;border-radius:15px}
+  .home .q h2{font-size:1.32rem}
+  .home .q .q-lead{font-size:.9rem;max-width:22ch}
+  .home .q1{background-position:center center}
+  .home .q2{background-position:center center}
+  .home .q3{background-position:center center}
+}
