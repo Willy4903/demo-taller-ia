@@ -70,6 +70,8 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
         fs.readFileSync(file).subarray(0,3).equals(Buffer.from([0xff,0xd8,0xff])),
         `[${w}] imagen local de tarjeta válida: ${name}`);
     }
+    // Medir la cara frontal en reposo; el giro es una interacción voluntaria.
+    await p.mouse.move(2, 2); await p.waitForTimeout(750);
     const photos = await p.evaluate(() => {
       const hero = getComputedStyle(document.querySelector(".hero")).backgroundImage;
       const cards = [...document.querySelectorAll(".qs .q")].map(el => {
