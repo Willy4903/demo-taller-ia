@@ -5,6 +5,7 @@
   var app=document.getElementById("app");
   if(!app) return;
   var reduced=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var desktopHover=window.matchMedia&&matchMedia("(hover: hover) and (pointer: fine)").matches;
   var topics=[
     {id:"actualidad",label:"Noticias",eyebrow:"HECHOS Y CONTEXTO",title:"¿Qué está pasando en el Perú?",
      short:"Un titular es el comienzo de una historia, no toda la explicación.",
@@ -101,7 +102,7 @@
         selectTopic(lab,t.id,true);flip(q,false,false);
         lab.scrollIntoView({behavior:reduced?"instant":"smooth",block:"start"});
       });
-      q.addEventListener("pointerenter",function(e){if(e.pointerType==="mouse"&&!reduced)flip(q,true,false);});
+      q.addEventListener("pointerenter",function(e){if(e.pointerType==="mouse"&&desktopHover&&!reduced)flip(q,true,false);});
       q.addEventListener("pointerleave",function(e){if(e.pointerType==="mouse"&&!q.contains(document.activeElement))flip(q,false,false);});
       q.addEventListener("focusout",function(e){if(!q.contains(e.relatedTarget)&&!q.matches(":hover"))flip(q,false,false);});
     });
