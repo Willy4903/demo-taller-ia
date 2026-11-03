@@ -39,31 +39,44 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
     ok(await p.locator(".hero-content h1").innerText() === "El Perú, explicado con claridad", `[${w}] portada: título editorial no renderizado`);
     ok(await p.locator(".home-topics a").count() === 4, `[${w}] portada: accesos temáticos incompletos`);
     ok(await p.locator(".hero-updated").count() === 1, `[${w}] portada: no aparece fecha de comprobación`);
-    for (const name of ["hero-lima.jpg","noticias-congreso.jpg","datos-bcrp.jpg","nino-piura.jpg"]) {
+    const imgApproved = path.join(RAIZ, "assets", "hero-peru-en-claro-aprobado.jpg");
+    const sourceBytes = fs.readFileSync(imgApproved);
+    ok(sourceBytes.length === 243558 &&
+      require("crypto").createHash("sha256").update(sourceBytes).digest("hex") ===
+      "d30d7e29ceae393c4bf6ce3270524285e3f3b0dfc8eac9c05370a71b0db991eb",
+      `[${w}] el fondo no coincide con la imagen exacta aprobada`);
+    for (const name of ["noticias-congreso.jpg","datos-bcrp.jpg","nino-piura.jpg"]) {
       const file = path.join(RAIZ,"assets","photos",name);
       ok(fs.existsSync(file) && fs.statSync(file).size > 20000 &&
         fs.readFileSync(file).subarray(0,3).equals(Buffer.from([0xff,0xd8,0xff])),
-        `[${w}] foto real verificada: ${name}`);
+        `[${w}] fotografía documental verificada: ${name}`);
     }
     const photos = await p.evaluate(() => {
       const hero = getComputedStyle(document.querySelector(".hero")).backgroundImage;
       const cards = [...document.querySelectorAll(".qs .q")].map(el => getComputedStyle(el).backgroundImage);
-      return {hero, cards, credit: !!document.querySelector(".photo-sources")};
+      return {hero, cards,
+        noVisibleCredits: !document.querySelector(".hero-photo-credit") && !document.querySelector(".photo-sources")};
     });
-    ok(photos.hero.includes("photos/hero-lima.jpg"), `[${w}] la portada no usa foto real`);
+    ok(photos.hero.includes("hero-peru-en-claro-aprobado.jpg"),
+       `[${w}] la portada no utiliza el fondo aprobado`);
     ok(["noticias-congreso.jpg","datos-bcrp.jpg","nino-piura.jpg"].every((name,i) =>
-      photos.cards[i].includes("photos/"+name)), `[${w}] las tarjetas no muestran fotos reales`);
-    ok(photos.credit, `[${w}] faltan atribuciones fotográficas`);
+      photos.cards[i].includes("photos/"+name)), `[${w}] no se muestran fotografías de las tarjetas`);
+    ok(photos.noVisibleCredits, `[${w}] siguen apareciendo créditos fotográficos en la portada`);
     const decoded = await p.evaluate(async () => {
-      const names = ["hero-lima.jpg","noticias-congreso.jpg","datos-bcrp.jpg","nino-piura.jpg"];
-      return await Promise.all(names.map(name => new Promise(resolve => {
+      const files = [
+        "assets/hero-peru-en-claro-aprobado.jpg",
+        "assets/photos/noticias-congreso.jpg",
+        "assets/photos/datos-bcrp.jpg",
+        "assets/photos/nino-piura.jpg"
+      ];
+      return await Promise.all(files.map(file => new Promise(resolve => {
         const img = new Image();
         img.onload = () => resolve(img.naturalWidth > 400 && img.naturalHeight > 150);
         img.onerror = () => resolve(false);
-        img.src = "assets/photos/" + name;
+        img.src = file;
       })));
     });
-    ok(decoded.every(Boolean), `[${w}] una o más fotografías JPEG no se pudieron decodificar en el navegador`);
+    ok(decoded.every(Boolean), `[${w}] una o más imágenes JPEG no se pudieron abrir en el navegador`);
 
 
     const tit = await p.locator(".qs .q h2").allInnerTexts();

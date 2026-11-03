@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Obtiene fotos documentales reales y valida que sean JPEG antes de publicar.
+"""Obtiene fotografías de las tres tarjetas temáticas y valida que sean JPEG.
 
 Se ejecuta en GitHub Actions; los binarios se alojan en gh-pages para evitar
 dependencias de imágenes externas en los navegadores de los visitantes.
@@ -13,7 +13,6 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 PHOTOS = {
-    "hero-lima.jpg": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Peru_-_Lima_004_-_sunset_light_over_the_coastal_cliffs_%286999152559%29.jpg/1280px-Peru_-_Lima_004_-_sunset_light_over_the_coastal_cliffs_%286999152559%29.jpg",
     "noticias-congreso.jpg": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Congreso_de_la_Rep%C3%BAblica_del_Per%C3%BA.jpg/1280px-Congreso_de_la_Rep%C3%BAblica_del_Per%C3%BA.jpg",
     "datos-bcrp.jpg": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Edificio_del_BCRP_en_Lima_01.jpg/1280px-Edificio_del_BCRP_en_Lima_01.jpg",
     "nino-piura.jpg": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MINISTRO_DE_DEFENSA_LLEV%C3%93_AYUDA_HUMANITARIA_A_PIURA_Y_COORDIN%C3%93_ACCIONES_PARA_ENFRENTAR_EFECTOS_DEL_FEN%C3%93MENO_DEL_NI%C3%91O_COSTERO.jpg/1280px-MINISTRO_DE_DEFENSA_LLEV%C3%93_AYUDA_HUMANITARIA_A_PIURA_Y_COORDIN%C3%93_ACCIONES_PARA_ENFRENTAR_EFECTOS_DEL_FEN%C3%93MENO_DEL_NI%C3%91O_COSTERO.jpg",
@@ -65,7 +64,7 @@ def main():
         fetch_jpeg(url, path)
         if not valid_jpeg(path):
             raise ValueError(f"JPEG ilegible: {path}")
-    assert len(list(args.dest.glob("*.jpg"))) >= 4
+    assert all(valid_jpeg(args.dest / name) for name in PHOTOS)
     print("Fotografías verificadas y listas para publicación.")
 
 
