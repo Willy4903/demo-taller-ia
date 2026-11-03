@@ -1,15 +1,15 @@
 {
- "generado": "2026-11-03T03:46:42Z",
+ "generado": "2026-11-03T09:11:36Z",
  "modo": "automatico",
  "estado_fuentes": {
   "IDL-Reporteros": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.idl-reporteros.pe/feed/",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 2,
    "ultima_nota": "2026-10-24T01:18:47Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   },
   "OjoPúblico": {
    "ok": true,
@@ -17,10 +17,10 @@
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:ojo-publico.com+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 8,
-   "ultima_nota": "2026-11-02T23:43:33Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultima_nota": "2026-11-02T03:11:10Z",
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   },
   "Convoca": {
    "ok": true,
@@ -28,10 +28,10 @@
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:convoca.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 4,
    "ultima_nota": "2026-10-30T21:38:31Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   },
   "Hildebrandt en sus trece": {
    "ok": true,
@@ -39,73 +39,73 @@
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:hildebrandtensustrece.com+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 15,
    "ultima_nota": "2026-11-03T00:12:33Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   },
   "Wayka": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://wayka.pe/feed/",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 5,
    "ultima_nota": "2026-10-23T21:14:25Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   },
   "La Mula": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.lamula.pe/feed/",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 15,
-   "ultima_nota": "2026-11-02T22:37:04Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultima_nota": "2026-11-03T04:26:00Z",
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   },
   "Salud con Lupa": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://saludconlupa.com/feed/",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 13,
    "ultima_nota": "2026-11-02T21:14:00Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   },
   "Mongabay Latam": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://es.mongabay.com/feed/",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 15,
    "ultima_nota": "2026-11-02T21:48:26Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   },
   "Caretas": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://caretas.pe/feed/",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 15,
    "ultima_nota": "2026-11-03T02:25:02Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   },
   "El Comercio": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 15,
-   "ultima_nota": "2026-11-03T03:41:00Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultima_nota": "2026-11-03T09:00:00Z",
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   },
   "Gestión": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://gestion.pe/arc/outboundfeeds/rss/?outputType=xml",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 15,
-   "ultima_nota": "2026-11-03T03:34:00Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultima_nota": "2026-11-03T09:00:00Z",
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   },
   "La República": {
    "ok": true,
@@ -113,28 +113,28 @@
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:larepublica.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 15,
    "ultima_nota": "2026-11-03T00:19:20Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   },
   "RPP": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://rpp.pe/feed",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 15,
-   "ultima_nota": "2026-11-03T03:45:27Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultima_nota": "2026-11-03T09:00:45Z",
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   },
   "Infobae Perú": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/category/peru/",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 15,
    "ultima_nota": "2026-11-03T02:50:02Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   },
   "Expreso": {
    "ok": true,
@@ -142,94 +142,717 @@
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:expreso.com.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 403: Forbidden",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 15,
-   "ultima_nota": "2026-11-03T02:45:16Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultima_nota": "2026-11-03T09:01:14Z",
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   },
   "El Búho": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://elbuho.pe/feed/",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 15,
    "ultima_nota": "2026-11-02T21:17:26Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   },
   "BBC Mundo": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://feeds.bbci.co.uk/mundo/rss.xml",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 15,
-   "ultima_nota": "2026-11-03T03:31:48Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultima_nota": "2026-11-03T07:47:39Z",
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   },
   "DW Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://rss.dw.com/xml/rss-sp-all",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 15,
-   "ultima_nota": "2026-11-03T02:13:00Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultima_nota": "2026-11-03T04:01:00Z",
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   },
   "El País América": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 15,
-   "ultima_nota": "2026-11-02T23:20:42Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultima_nota": "2026-11-03T09:09:32Z",
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   },
   "France 24 Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.france24.com/es/rss",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 15,
-   "ultima_nota": "2026-11-03T03:39:46Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultima_nota": "2026-11-03T04:03:50Z",
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   },
   "ONU Noticias": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.un.org/feed/subscribe/es/news/all/rss.xml",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 15,
-   "ultima_nota": "2026-11-01T12:00:00Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultima_nota": "2026-11-02T12:00:00Z",
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   },
   "Google Noticias · IA en el Perú": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22inteligencia+artificial%22+Per%C3%BA+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 15,
-   "ultima_nota": "2026-11-03T00:54:55Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultima_nota": "2026-11-03T00:02:02Z",
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   },
   "Google Noticias · El Niño": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22Fen%C3%B3meno+El+Ni%C3%B1o%22+OR+%22Ni%C3%B1o+costero%22+ENFEN+when:14d&hl=es-419&gl=PE&ceid=PE:es-419",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 15,
    "ultima_nota": "2026-10-31T22:01:06Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   },
   "Google Noticias · IA en el mundo": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22inteligencia+artificial%22+(OpenAI+OR+Anthropic+OR+Google+OR+regulaci%C3%B3n+OR+NVIDIA)+when:7d&hl=es-419&gl=US&ceid=US:es-419",
-   "comprobado": "2026-11-03T03:46:42Z",
+   "comprobado": "2026-11-03T09:11:36Z",
    "n": 15,
    "ultima_nota": "2026-11-03T01:55:04Z",
-   "ultimo_ok": "2026-11-03T03:46:42Z"
+   "ultimo_ok": "2026-11-03T09:11:36Z"
   }
  },
  "items": [
+  {
+   "id": "57857e2966",
+   "sector": "mundo",
+   "titulo": "Foro World in Progress 2026 de Barcelona, en directo | Calviño: “El multilateralismo está vivo y funciona”",
+   "resumen": "La presidenta del Banco Europeo de Inversiones inaugura la segunda jornada del foro en Barcelona y reivindica que Europa debe mantenerse en el “núcleo duro” de la gobernanza global | Tabernero (CaixaResearch Institute): “La IA bien aplicada va a facilitar mucho las cosas en el…",
+   "fuente": "El País América",
+   "url": "https://elpais.com/internacional/2026-11-03/foro-world-in-progress-de-barcelona-en-directo.html",
+   "fecha": "2026-11-03T09:09:32Z",
+   "tipo": "internacional",
+   "ambito": "mundo",
+   "genero": "noticia",
+   "imagen": "https://imagenes.elpais.com/resizer/v2/PP37YTZKXBEK5LETONOD3BSVE4.jpg?auth=18711306327a9a035068ede748d2ec5f4f3e19e8cb4922b39890b63d1a7f259a",
+   "procedencia": "directa"
+  },
+  {
+   "id": "be42e921cc",
+   "sector": "coyuntura",
+   "titulo": "Hacinamiento en Perú: seis cárceles en construcción y 50 mil presos por encima de la capacidad",
+   "resumen": "",
+   "fuente": "Expreso",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQOW91VDR1Q1RNTEUzSUxTVnhBbFBOZ3RrNGx6eWdzSnZtWDAyUUVsUUtCaUdROHJjc0JnSUxXU3g0RnhuNGlvN2xkWS16d2lZLWhlLWNlclE4MzU2ak9FRS1GcWI3c1VQMFE0VmxBbi03anlRMksyWmlwMDBCSmNOY193a0xLSXZYVUJrckk3UVQ5cG5OVTkxbHVKWDB6ODl0N2VacmE4UHlJUkxDVUtoVnc4MjFSa3Y2Mk1UOW41VmJxQk96dG9udHp6QlRFbk5uSUdGa191MHcxSExCZEF5dUxn?oc=5",
+   "fecha": "2026-11-03T09:01:14Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": null,
+   "procedencia": "agregador",
+   "via": "Google Noticias"
+  },
+  {
+   "id": "1041042a9e",
+   "sector": "coyuntura",
+   "titulo": "SENAMHI: Pronóstico del clima hoy martes 03 de noviembre 2026",
+   "resumen": "Consulta el pronóstico del clima hoy en Lima y ciudades del Perú: temperatura actual, sensación térmica, radiación UV, probabilidad de lluvia y reporte oficial del Senamhi actualizado.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/peru/actualidad/senamhi-pronostico-del-clima-hoy-martes-03-de-noviembre-2026-noticia-1715682",
+   "fecha": "2026-11-03T09:00:45Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2025/12/03/093109_1818084.jpg?imgdimension=look",
+   "procedencia": "directa"
+  },
+  {
+   "id": "e228b162f9",
+   "sector": "coyuntura",
+   "titulo": "¿Puedo votar sin ID en California el 3 de noviembre de 2026?",
+   "resumen": "Conoce si necesitas identificación para votar en California en 2026, qué documentos se aceptan y cómo solicitar una boleta provisional si no tienes ID.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/mag/usa/california/puedo-votar-sin-id-en-california-el-3-de-noviembre-de-2026-nnda-nnrt-noticia/",
+   "fecha": "2026-11-03T09:00:00Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/YVSVY73MQJHR3KMLKLVX6UIDWY.jpg?auth=e01e91fff326ffe35b29645a488471946df7c812af478b1b2973b75e5e654fe7&smart=true&width=2400&height=1620",
+   "procedencia": "directa"
+  },
+  {
+   "id": "33241ebffa",
+   "sector": "economia",
+   "titulo": "Ópera, ballet y el teatro: la otra economía que se mueve en el Centro Histórico de Lima",
+   "resumen": "Centro histórico de Lima. Con seis temporadas de ópera y cuatro de ballet solo este año, los restaurantes del jirón Ica y Huancavelica registran incrementos de entre 35% y 50% en sus ventas durante los días de función. La Municipalidad de Lima evalúa nuevas oportunidades de…",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/g-de-gestion/reportaje/centro-historico-de-lima-teatro-municipal-teatro-segura-opera-ballet-y-teatro-la-economia-y-negocios-que-mueve-noticia/",
+   "fecha": "2026-11-03T09:00:00Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/FUX3NU7TRBDFTFRDBVAIW4PGYQ.jpeg?auth=d65f244c189b9249e07e5c1837b04f9047df976c9214c803b7490afe0cc1c5aa&smart=true&width=1280&height=736",
+   "procedencia": "directa"
+  },
+  {
+   "id": "4fa2119d70",
+   "sector": "coyuntura",
+   "titulo": "¿Qué pasa con los institutos Confucio?",
+   "resumen": "",
+   "fuente": "Expreso",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4zeHB6SG92THh3S3JnQXRnRHY5QzZkYmF0SmtkZmlxeGRCYl8xbjFmUUlsOTlIVHNnZDluenBVR0g4ajNRdkdGdjNwVXpNOVNtVkFFMnpCUlZzSnpOemRHZmR0RkQ2UnlXeVVnb0lXLXV0bDZzT2pVSlN1bjM?oc=5",
+   "fecha": "2026-11-03T08:54:24Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": null,
+   "procedencia": "agregador",
+   "via": "Google Noticias"
+  },
+  {
+   "id": "462e249506",
+   "sector": "coyuntura",
+   "titulo": "Transportistas de carga pesada anuncian paro de 72 horas por alza del precio del diésel",
+   "resumen": "Un sector de transportistas de carga pesada anunció que realizará un paro de 72 horas para el 16, 17 y 18 de noviembre en Lima y otras regiones, por el alza del diésel y la falta de medidas del Gobierno contra la informalidad.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/peru/politica/transportistas-de-carga-pesada-anuncian-paro-de-72-horas-por-alza-del-precio-del-diesel-noticia/",
+   "fecha": "2026-11-03T08:00:00Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/PYCVKUR3PBG3LIKAIFACW7XMOQ.jpeg?auth=4cabfe408db2cbdb1e087a9b7fa73acb526d67d6f97a64e2d5de26c8309f9f97&smart=true&width=1920&height=1080",
+   "procedencia": "directa"
+  },
+  {
+   "id": "23715123c7",
+   "sector": "coyuntura",
+   "titulo": "2,000 colegios: soluciones inteligentes",
+   "resumen": "",
+   "fuente": "Expreso",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE8tcU5WT25KQTl5bTRxcEY3elRQNEJ5MGNWQ3RtNkRXd2pzbVJuS3ozZXNmeEJCR2tuUVdOR2pfZXdGRGRCZkZvaHNnbjRiYkVMdnRqMHc2SWdrQVJxcWI3ZVo2WDFGcE0tWENYUk1xcGI4VFp1YU12M25naVpCZw?oc=5",
+   "fecha": "2026-11-03T07:53:48Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": null,
+   "procedencia": "agregador",
+   "via": "Google Noticias"
+  },
+  {
+   "id": "64501d5829",
+   "sector": "coyuntura",
+   "titulo": "Lima: una ciudad atascada entre la ineficiencia del Estado y la falta de autoridad",
+   "resumen": "",
+   "fuente": "Expreso",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxONV9lQk43T1ZFXy11eDlJTkV1RUNkdDktdUplM0ZzRWxCcHFHdlRwc3hFb01vOHdFLXJjQ2ZGajBYSEV3Tk1EOXhXNGZvd1dHQ2wwRDMyOTRlcUFvMUVPemtrS3YwdUZGYmYxTjl0SmRkYzJwN3gtSHFNRHJBZTRjc1dVaGhZWUhkLVRTc1NWZ0RXTEo1aWZwZkNLWHppZW5vb1l0bjhSdTVYT1p0azNZb2UxU2RjQzZK?oc=5",
+   "fecha": "2026-11-03T07:52:38Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": null,
+   "procedencia": "agregador",
+   "via": "Google Noticias"
+  },
+  {
+   "id": "830005206c",
+   "sector": "mundo",
+   "titulo": "EE.UU. lanza \"ataques defensivos\" contra Irán antes de las elecciones de medio mandato",
+   "resumen": "Funcionarios estadounidenses describieron los ataques en la isla de Qeshm como limitados y defensivos, según la CBS, socio de la BBC en Estados Unidos.",
+   "fuente": "BBC Mundo",
+   "url": "https://www.bbc.com/mundo/articles/cvp8gx0p2elno?at_medium=RSS&at_campaign=rss",
+   "fecha": "2026-11-03T07:47:39Z",
+   "tipo": "internacional",
+   "ambito": "mundo",
+   "genero": "noticia",
+   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/935d/live/479e54b0-d745-11f1-b441-2b33b063138f.jpg",
+   "procedencia": "directa"
+  },
+  {
+   "id": "52361ff870",
+   "sector": "coyuntura",
+   "titulo": "La gran automatización está aquí",
+   "resumen": "",
+   "fuente": "Expreso",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5pYV9leHlZLUVwakFOSGJHUWdLdy1RNUFsRTBELUtJa3FqZm5NUWdEWXZTQUlyWlVDUFpRSjRuODZNeFVTSzBObnJQRDM2Z1lFUjRTcFZQa3M0dlV5eHJjZm1YOEZ1S2JMQWw2SXlUWFR2NkxVcWtB?oc=5",
+   "fecha": "2026-11-03T07:27:15Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": null,
+   "procedencia": "agregador",
+   "via": "Google Noticias"
+  },
+  {
+   "id": "d49045d1ca",
+   "sector": "nino",
+   "titulo": "Lluvias Perú EN VIVO: pronósticos y alertas del SENAMHI por Fenómeno El Niño 2026",
+   "resumen": "Lluvias en el norte y otras regiones del Perú EN VIVO: pronósticos del Senamhi y reportes por El Niño 2026",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/peru/lluvias-en-piura-tumbes-lambayeque-y-otras-regiones-del-peru-en-vivo-pronosticos-del-senamhi-reportes-y-cambios-en-el-clima-por-el-nino-2026-lbposting-noticia/",
+   "fecha": "2026-11-03T07:22:03Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/ZUVXKPQ6QRGLVGVFKR2SVWIWV4.jpg?auth=983c121b12d05df3453bbcb2edafa85b9b77c72b86f48374a7ddf4f4c5f53cba&smart=true&width=1212&height=641",
+   "procedencia": "directa"
+  },
+  {
+   "id": "765cbbdf8d",
+   "sector": "coyuntura",
+   "titulo": "Las cuatro formas de gastar el dinero",
+   "resumen": "",
+   "fuente": "Expreso",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE96Y2NTUHFVRjBXQS1vQ2pxbWxWX2N0Zk5OcU1vUTR5RnpUVDVKWUxjTEdLcThFY0xsZ0JCakR3ZXA4cmtYaDFWdzRIZ2ZEQkRCU0RBQTRnSFhDTUhYQkZIN2JhV1FJUjl6b1JpbExUQjlBWGlTTm9Rdmlvd1dPZw?oc=5",
+   "fecha": "2026-11-03T07:13:21Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": null,
+   "procedencia": "agregador",
+   "via": "Google Noticias"
+  },
+  {
+   "id": "ba07db4adf",
+   "sector": "coyuntura",
+   "titulo": "DP World Callao registra el mayor movimiento mensual de su historia: 200 mil TEU en octubre",
+   "resumen": "Puerto del Callao ante El Niño: APM Terminals alista ruta por mar y busca extender concesión DP World Callao movilizó 200 mil TEU, unidades equivalentes a un contenedor de 20 pies, en octubre de 2026, el mayor volumen mensual registrado en su historia , marcando así un récord…",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/peru/dp-world-callao-registra-el-mayor-movimiento-mensual-de-su-historia-noticia/",
+   "fecha": "2026-11-03T07:00:00Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/LKKCQASN6ZBUBBFE3HXMA3VW5Q.jpg?auth=e6ff084c8adf3820414701aba889d6a1c75c32c9bb84daa6a7a58524c43e1b5e&smart=true&width=1800&height=1350",
+   "procedencia": "directa"
+  },
+  {
+   "id": "b8b1c3013a",
+   "sector": "politica",
+   "titulo": "Diputados y senadores de Renovación Popular rechazan nueva ampliación del Reinfo",
+   "resumen": "",
+   "fuente": "Expreso",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQdXZqb0xwUC1JNXppdTQtcF9ILTRRMmxiTldyX3NpMmo3b1pwdHFUMm0zd3JPcHRMLTYxbC1idElQdUQ1RjZaU1JoQkdkcDN4Z2N4M01iM2xibWJTSEhnRThuWmxEX1VaeVN3SzVvcHFrdnRCSHpOSTJoa1REbnhTZU5JVUpQTFBrZDVQemVSUWRBQ3AzT0RSV1VON2diZ1dkYjNzWmRwZjdwMFIwTUktdXNTQUtCU0xwUUJVcTc4Yi12Rnh1Um5tQ2kyOEY3Zw?oc=5",
+   "fecha": "2026-11-03T06:12:33Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": null,
+   "procedencia": "agregador",
+   "via": "Google Noticias"
+  },
+  {
+   "id": "cbf7087267",
+   "sector": "coyuntura",
+   "titulo": "Temblor en Colombia hoy, martes 3 de noviembre: magnitud y epicentro según reporte SGC",
+   "resumen": "Temblor en Colombia EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Servicio Geológico Colombiano (SGC).",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/colombia/temblor-en-colombia-hoy-ultimos-sismos-reportados-en-noviembre-en-vivo-cual-fue-el-epicentro-y-magnitud-segun-sgc-servicio-geologico-colombiano-bogota-co-lbposting-noticia/",
+   "fecha": "2026-11-03T06:06:49Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/NEFRXMZ2MBBDNAOLLYKQUATF2Y.png?auth=5d1198d4d8520e3c9b3262d77ee7415850ab120efe74fe0112d23d9257fbbd3f&smart=true&width=1200&height=700",
+   "procedencia": "directa"
+  },
+  {
+   "id": "426ff9f52c",
+   "sector": "economia",
+   "titulo": "Estados Unidos mediará negociaciones entre Ucrania y Rusia la próxima semana en Abu Dabi",
+   "resumen": "Estados Unidos mediará en una nueva ronda de negociaciones técnicas entre Ucrania y Rusia los próximos 10 y 11 de noviembre en Abu Dabi, centrada en los acuerdos de seguridad de posguerra, la desescalada del conflicto y la ayuda humanitaria, según anunció el enviado especial…",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/mundo/internacional/estados-unidos-mediara-negociaciones-entre-ucrania-y-rusia-la-proxima-semana-en-abu-dabi-noticia/",
+   "fecha": "2026-11-03T06:01:00Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/S3WAZJR75RGZ7JJIEDGJY4DZHI.jpg?auth=f8ce0a3d9c51873c291bfc1284cc5b139725a956734d42cdbb27c8f31d333b1c&smart=true&width=3200&height=2400",
+   "procedencia": "directa"
+  },
+  {
+   "id": "f72f61ab4e",
+   "sector": "economia",
+   "titulo": "Horóscopo de hoy y predicciones para este martes 3 de noviembre, según tu signo zodiacal",
+   "resumen": "Horóscopo hoy, martes 3 de noviembre del 2026: Conoce lo que te deparan las estrellas en el trabajo, negocio y amor, según los signos del zodiaco.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/luces/vida-social/horoscopo-en-vivo-hoy-martes-3-de-noviembre-ver-predicciones-gratis-segun-tu-signo-zodiacal-aries-tauro-geminis-cancer-leo-virgo-libra-escorpio-sagitario-capricornio-acuario-piscis-lbposting-noticia/",
+   "fecha": "2026-11-03T05:48:45Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/FXB4TR3V4RB4LOEGUCPUFKJQOI.jpg?auth=21edb0ef89d993fc8bd6d66bd0f7adcda251abd204ab7a345a006413880ec6f7&smart=true&width=1200&height=700",
+   "procedencia": "directa"
+  },
+  {
+   "id": "0bc41d9e48",
+   "sector": "coyuntura",
+   "titulo": "Feriados 2026 en Perú: conoce las últimas fechas de descanso en noviembre",
+   "resumen": "Feriados 2026: Estamos cada vez más cerca de terminar el año 2026. En la siguiente nota te contamos qué feriados están pendientes antes del cierre del año en Perú.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/cuando/ultimos-feriados-del-2026-en-peru-cuantos-feriados-quedan-y-que-dias-feriados-noviembre-tdpe-noticia/",
+   "fecha": "2026-11-03T05:45:39Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/ELXVU64ZUVBANK65YK3WTZPKU4.png?auth=7418600e465ef82dede15414f8afe8e6d391f733e9c11ff13740e87250b400a2&smart=true&width=1300&height=800",
+   "procedencia": "directa"
+  },
+  {
+   "id": "058cc4a579",
+   "sector": "economia",
+   "titulo": "Tasa del dólar BCV hoy, martes 3 de noviembre: cotización del dólar en Venezuela",
+   "resumen": "El Banco Central de Venezuela (BCV) dio a conocer la tasa oficial del dólar correspondiente al 2 de noviembre. Revisa a cuánto se cotiza la divisa estadounidense y conoce el tipo de cambio vigente para las operaciones en el país.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/venezuela/consulta-el-precio-del-dolar-bcv-hoy-cotizacion-y-tasa-oficial-en-venezuela-segun-el-banco-central-tdpe-noticia/",
+   "fecha": "2026-11-03T05:43:56Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/F36R66JQBBHYJE4AKE7H6BUUDU.png?auth=c0e3c169212a414df6fc78945cae4e6bd3b0e8559323879f02daa6a54f7d58f0&smart=true&width=1300&height=800",
+   "procedencia": "directa"
+  },
+  {
+   "id": "e0d8975fc0",
+   "sector": "coyuntura",
+   "titulo": "¿A qué hora inicia y dónde ver Magaly TV La Firme EN VIVO?",
+   "resumen": "Magaly TV La Firme EN VIVO: No te pierdas el programa de Magaly Medina. Consulta el horario, señal tv y avance de este lunes 2 de noviembre.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/farandula/magaly-tv-la-firme-en-vivo-avance-de-hoy-hora-y-donde-ver-la-transmision-online-youtube-atv-tdpe-noticia/",
+   "fecha": "2026-11-03T05:42:22Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/DA7M2DA6QJDN5LPVAQRNG3IV2Q.png?auth=bf24330617395f631d601bb58d02852112f05e674e2189cd2cbc20461971d83b&smart=true&width=1300&height=800",
+   "procedencia": "directa"
+  },
+  {
+   "id": "a6617d1652",
+   "sector": "economia",
+   "titulo": "¿Quiénes son los jubilados que cobran su pensión este 6 de noviembre?",
+   "resumen": "¡Atención! Conoce el cronograma de la ONP por apellido, las fechas para otros regímenes y los bancos habilitados de los jubilados",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/tramites/quienes-son-los-jubilados-que-cobran-su-pension-desde-este-6-de-noviembre-via-banco-de-la-nacion-tdpe-noticia/",
+   "fecha": "2026-11-03T05:40:21Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/AGBZGMB4ZRBNBKG5FQPIW4AP3M.jpg?auth=dffbcadc6b0277a45f29f9fee2e90b6ec65b299bff6d63754810a11a206e5774&smart=true&width=1200&height=675",
+   "procedencia": "directa"
+  },
+  {
+   "id": "0ac69efa24",
+   "sector": "coyuntura",
+   "titulo": "Sorteo de Kábala: conoce el Pozo Buenazo del martes 3 de noviembre y cómo jugar",
+   "resumen": "Kábala EN VIVO: Conoce aquí los resultados de la Kábala del martes 3 de noviembre, que tiene un pozo acumulado de S/1′734,209. Además, puedes seguir el sorteo de Chau Chamba.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/loterias/kabala-ultimo-sorteo-en-vivo-hoy-martes-3-de-noviembre-ver-resultados-numeros-y-jugada-ganadora-pozo-buenazo-la-tinka-chau-chamba-intralot-tinkanet-loteria-lbposting-noticia/",
+   "fecha": "2026-11-03T05:30:33Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/BTEMW2O2RVHYRF3VTXZD5O2A7Y.png?auth=32ecb60f91d71c990fc677a80c14133e0d4ccba55052bb19c8cf196237e4b7e7&smart=true&width=1200&height=700",
+   "procedencia": "directa"
+  },
+  {
+   "id": "b883939273",
+   "sector": "deporte",
+   "titulo": "Tabla Acumulada y Clausura 2026 de la Liga 1, EN VIVO | Sporting Cristal es el nuevo líder del torneo tras golear a FC Cajamarca",
+   "resumen": "Tabla Acumulada y Clausura 2026 de la Liga 1, EN VIVO | Sporting Cristal golea a FC Cajamarca y es nuevo líder del torneo",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/deporte-total/futbol-peruano/sigue-tabla-acumulada-y-clausura-2026-en-vivo-resultados-y-partidos-en-directo-de-la-fecha-15-via-liga-1-max-video-tdpe-noticia/",
+   "fecha": "2026-11-03T05:29:20Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/FZJAQGTDMRESTPQGSYJJVH7WZ4.jpg?auth=fbab567818a534d3d279d863355066625a82594c91a8a86255a94e4f792f9474&smart=true&width=1300&height=800",
+   "procedencia": "directa"
+  },
+  {
+   "id": "f3dd6c973f",
+   "sector": "economia",
+   "titulo": "CTS de noviembre 2026: monto y quiénes reciben el beneficio",
+   "resumen": "Conoce quiénes tienen derecho a recibir este beneficio laboral, cuáles son los requisitos y cómo calcular el monto que te corresponde según tu sueldo y tiempo laborado.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/pago-de-cts-en-noviembre-2026-recibes-el-beneficio-calcula-aqui-el-monto-que-te-corresponde-tdpe-noticia/",
+   "fecha": "2026-11-03T05:28:13Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/6R5I6O7MWNC63BBN5LWU4ZIJKU.jpg?auth=ebaf92b951cc6e096782a03ecf9e2eeac6ab129aff2b5b308e11dd12a77ea56a&smart=true&width=1200&height=720",
+   "procedencia": "directa"
+  },
+  {
+   "id": "58bc0768b7",
+   "sector": "nino",
+   "titulo": "Senamhi prevé que lluvias de gran intensidad se prolonguen en Tumbes y otras regiones del norte hasta el 7 de noviembre",
+   "resumen": "Angie Flores, especialista del Senamhi advirtió que las lluvias extremas podrían extenderse en la macronorte hasta el 7 de noviembre en el marco de 'El Niño'. Además previó lloviznas en Lima en las próximas horas.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/peru/actualidad/senamhi-preve-que-lluvias-de-gran-intensidad-se-prolonguen-en-tumbes-y-otras-regiones-del-norte-hasta-el-7-de-noviembre-noticia-1715679",
+   "fecha": "2026-11-03T05:20:17Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/03/253725_1925188.jpg?imgdimension=look",
+   "procedencia": "directa"
+  },
+  {
+   "id": "7d7f591875",
+   "sector": "coyuntura",
+   "titulo": "Temblor en México: últimos sismos reportados hoy, martes 3 de noviembre",
+   "resumen": "Temblor en México EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Servicio Sismológico Nacional (SSN).",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/mexico/temblor-en-mexico-en-vivo-epicentro-intensidad-profundidad-y-magnitud-del-ultimo-sismo-reportado-el-3-y-4-de-noviembre-2026-segun-el-ssn-servicio-sismologico-nacional-mexico-cdmx-mx-lbposting-noticia/",
+   "fecha": "2026-11-03T05:14:28Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/XZSZFW2IDNGRXDSQDGHRML7VTU.jpg?auth=2fc60935d8c57c3ec8fae6cf52d4a29dc05abee6113874b5656de442345d04f3&smart=true&width=1200&height=700",
+   "procedencia": "directa"
+  },
+  {
+   "id": "c9837825cf",
+   "sector": "politica",
+   "titulo": "Trump aseguró que EE. UU. tiene \"control total\" sobre Venezuela y 50 % del petróleo mundial",
+   "resumen": "Las declaraciones de Trump se producen en un contexto de malestar por el encarecimiento de la vida y las elecciones de medio mandato en Estados Unidos.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/mundo/estados-unidos/trump-aseguro-que-ee-uu-tiene-control-total-sobre-venezuela-y-50-del-petroleo-mundial-noticia-1715678",
+   "fecha": "2026-11-03T05:11:39Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/02/005400_1925187.jpg?imgdimension=look",
+   "procedencia": "directa"
+  },
+  {
+   "id": "1e68994d3e",
+   "sector": "politica",
+   "titulo": "Netanyahu insta a Trump a lanzar nuevos ataques contra Irán, según funcionarios regionales",
+   "resumen": "El primer ministro israelí Benjamin Netanyahu está exhortando al gobierno del presidente estadounidense Donald Trump a llevar a cabo otra ola de ataques contra Irán, según dos funcionarios regionales.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/mundo/internacional/netanyahu-insta-a-trump-a-lanzar-nuevos-ataques-contra-iran-segun-funcionarios-regionales-noticia/",
+   "fecha": "2026-11-03T04:45:00Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/ESLKHLDKBVDUDGSHISRVNDHH4M.jpg?auth=84aa0ff7f039bd7b7d31991a6f5a75d3f06b7d7adbc44590dc11acf3e1c06432&smart=true&width=1200&height=800",
+   "procedencia": "directa"
+  },
+  {
+   "id": "450a7b941f",
+   "sector": "mundo",
+   "titulo": "8 gráficos que muestran por qué las elecciones de medio mandato llegan en mal momento para Trump y qué hay en juego",
+   "resumen": "Este es un análisis exhaustivo de las encuestas clave, las contiendas electorales más disputadas y los temas más importantes de cara a unos comicios que definirán los dos últimos años de Trump como presidente.",
+   "fuente": "BBC Mundo",
+   "url": "https://www.bbc.com/mundo/articles/cq5ynzzkxeymo?at_medium=RSS&at_campaign=rss",
+   "fecha": "2026-11-03T04:41:52Z",
+   "tipo": "internacional",
+   "ambito": "mundo",
+   "genero": "noticia",
+   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/f64c/live/4e58ab20-c552-11f1-bc2e-018d645d8d21.jpg",
+   "procedencia": "directa"
+  },
+  {
+   "id": "bd3132cc29",
+   "sector": "coyuntura",
+   "titulo": "Lluvias en Lima: 20 bypasses están en riesgo de inundación, ¿cuáles son?",
+   "resumen": "Un total de 20 de los 33 bypasses identificados en Lima Metropolitana y el Callao presentan riesgo de inundación ante la ocurrencia de lluvias intensas, según un estudio del Centro Nacional de Estimación, Prevención y Reducción del Riesgo de Desastres (Cenepred).",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/peru/lluvias-en-lima-20-bypasses-estan-en-riesgo-de-inundacion-cuales-son-noticia/",
+   "fecha": "2026-11-03T04:36:00Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/JLUBLLP2ZZETXJJPF5TR5O5XMI.jpg?auth=dec5e8cf78a68b79e61e1f0085a2dd894dc752dda6447000b83e4fae3dadd621&smart=true&width=1200&height=789",
+   "procedencia": "directa"
+  },
+  {
+   "id": "a0da6b08c2",
+   "sector": "coyuntura",
+   "titulo": "Alcalde de Tumbes solicita al Gobierno “ir en auxilio” de distritos afectados por lluvias",
+   "resumen": "Ante el incremento de las emergencias en Tumbes, la autoridad edil del municipio provincial hizo un llamado directo a las autoridades nacionales para canalizar ayuda.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/peru/tumbes/lluvias-en-tumbes-alcalde-provincial-solicita-al-gobierno-ir-en-auxilio-de-distritos-afectados-apuesplan-ultimas-noticia/",
+   "fecha": "2026-11-03T04:33:17Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/AIJFW7I7IVAW5P65FHMLGQUWPU.jpeg?auth=05f0b1bb49a01f8dbcdf00d3ca3e4aa9c0d50714d77fc3312f1d017550e0a68a&smart=true&width=1280&height=720",
+   "procedencia": "directa"
+  },
+  {
+   "id": "fbc02f85b3",
+   "sector": "economia",
+   "titulo": "Jesús María restringe zonas por visita del papa León hasta el 16 de noviembre: revisa aquí cuáles son",
+   "resumen": "La Municipalidad de Jesús María anunció el cierre temporal de varios espacios públicos del distrito como parte de los preparativos para las actividades del papa León XIV.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/peru/jesus-maria-restringe-zonas-por-visita-del-papa-leon-xiv-hasta-el-16-de-noviembre-revisa-aqui-cuales-son-noticia/",
+   "fecha": "2026-11-03T04:32:42Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/ZD37CLHBM5GNNOPKJZ6NRKBKAM.jpg?auth=2254aa16a7ee38db19afef6ef476f5c5d13411c861764035041703d854a1ab64&smart=true&width=1214&height=697",
+   "procedencia": "directa"
+  },
+  {
+   "id": "f1f71b6487",
+   "sector": "coyuntura",
+   "titulo": "San Juan de Lurigancho: adulto que perdió su casa tras incendio pide ayuda a autoridades [VIDEO]",
+   "resumen": "Rotafono de RPP | Cinco familias se quedaron sin todas sus pertenencias esta mañana al registrarse un incendio en el asentamiento humano 10 de Marzo, en San Juan de Lurigancho.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/rotafono/servicios-a-la-comunidad/san-juan-de-lurigancho-adulto-que-perdio-su-casa-tras-incendio-pide-ayuda-a-autoridades-video-noticia-1715677",
+   "fecha": "2026-11-03T04:28:05Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/02/atsapp-video-2026-11-02-at-33111-pm-2-1-1925179mp4_1925180.jpg?width=860&quality=80",
+   "procedencia": "directa"
+  },
+  {
+   "id": "8e2b58210a",
+   "sector": "deporte",
+   "titulo": "COP17: los fondos son insuficientes para salvar a la biodiversidad del planeta y las metas para 2030 están atrasadas",
+   "resumen": "El informe mundial de balance advierte que “si la implementación colectiva no se acelera rápidamente, no se alcanzarán las metas ni se cumplirá la misión para 2030”. Sin embargo, los países parte no lograron establecer criter",
+   "fuente": "La Mula",
+   "url": "https://mongabay-latam.lamula.pe/2026/11/02/cop17-los-fondos-son-insuficientes-para-salvar-a-la-biodiversidad-del-planeta-y-las-metas-para-2030-estan-atrasadas/mongabaylatam/",
+   "fecha": "2026-11-03T04:26:00Z",
+   "tipo": "independiente",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://lamula.pe/media/uploads/t/db3be1cfbdf3fdbd82967b345a827e2e.jpg",
+   "procedencia": "directa"
+  },
+  {
+   "id": "05f7dde803",
+   "sector": "coyuntura",
+   "titulo": "Xertica.ai explora nuevos negocios en Perú y su llegada a Europa: ¿qué prepara para 2027?",
+   "resumen": "La empresa de tecnología busca ampliar su presencia en nuevas industrias, mientras avanza en su expansión internacional. ¿Qué otros planes tienen la compañía?",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/economia/empresas/xerticaai-explora-nuevos-negocios-en-peru-y-su-llegada-a-europa-que-prepara-para-2027-noticia/",
+   "fecha": "2026-11-03T04:16:00Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/3JFJDU4CSVDCHNPH4WEEBBYBZI.JPG?auth=f5d9b4e610603f4c42f7d557e88952519f89a512c7ab8f0ff2c4baf6a3b198c3&smart=true&width=1088&height=581",
+   "procedencia": "directa"
+  },
+  {
+   "id": "7609d1811e",
+   "sector": "nino",
+   "titulo": "Claro y El Niño: el plan para blindar su red y crecer a doble dígito en nube e IA",
+   "resumen": "Claro Empresas alista su red ante El Niño con un plan de tres frentes. Además, apunta a crecer a doble dígito en 2027. ¿En qué servicios?",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/economia/empresas/claro-alista-su-red-ante-el-nino-y-apuesta-por-nube-e-ia-para-crecer-a-doble-digito-noticia/",
+   "fecha": "2026-11-03T04:15:00Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/R32XE5BVV5G5FPH6HVL3B6OTZ4.jpg?auth=33841f47618d397da2833831226c03744a7ce4d5d02befb519257ad918a74902&smart=true&width=1600&height=1067",
+   "procedencia": "directa"
+  },
+  {
+   "id": "8bf4c72834",
+   "sector": "mundo",
+   "titulo": "Midterms: el peso del voto musulmán en Michigan",
+   "resumen": "Puede Michigan cambiar el rumbo del Senado? La comunidad árabe y musulmana del estado, con cientos de miles de votantes registrados, fue clave en el castigo electoral a los demócratas por el respaldo de la administración Biden a Israel durante la guerra en Gaza..Ahora, los…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/video/20261103-midterms-el-peso-del-voto-musulm%C3%A1n-en-michigan",
+   "fecha": "2026-11-03T04:03:50Z",
+   "tipo": "internacional",
+   "ambito": "mundo",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/a8e32314-d73a-11f1-a9db-d18c5759e759/w:1024/p:16x9/MIDTERMS-ALE-16.png",
+   "procedencia": "directa"
+  },
+  {
+   "id": "d6bee97a85",
+   "sector": "deporte",
+   "titulo": "Comisión de Disciplina abrió expediente a Pablo Guede tras confrontación con Hernán Barcos",
+   "resumen": "El entrenador de Alianza Lima tiene tres días para enviar su descargo y luego la comisión decidirá si lo suspende.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/videos/vamos-al-var/pablo-guede-comision-de-disciplina-abrio-expediente-tras-confrontacion-con-hernan-barcos-noticia-1715676",
+   "fecha": "2026-11-03T04:03:48Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/02/ede-1925177mp4_1925178.jpg?width=860&quality=80",
+   "procedencia": "directa"
+  },
+  {
+   "id": "25982a0536",
+   "sector": "mundo",
+   "titulo": "Ciberataque a refrigeradores afecta a supermercados de nueve países de Europa",
+   "resumen": "Tiendas en Bélgica, Estonia, Finlandia, Irlanda, Italia, Luxemburgo, Países Bajos, Portugal y Suecia reportaron problemas de refrigeración que obligaron a algunos minoristas a desechar alimentos.",
+   "fuente": "DW Español",
+   "url": "https://www.dw.com/es/ciberataque-a-refrigeradores-afecta-a-supermercados-de-nueve-países-de-europa/a-79835074?maca=spa-rss-sp-all-1122-xml-mrss",
+   "fecha": "2026-11-03T04:01:00Z",
+   "tipo": "internacional",
+   "ambito": "mundo",
+   "genero": "noticia",
+   "imagen": null,
+   "procedencia": "directa"
+  },
+  {
+   "id": "a2115ca6d2",
+   "sector": "economia",
+   "titulo": "Bayer: de fabricar para el Perú a producir para el mundo",
+   "resumen": "Conoce la historia de Bayer y su negocio en el Perú: de sus antiguas plantas industriales a la producción de semillas en Ica para mercados internacionales. La multinacional alemana llegó a nuestro mercado en 1947, y va a cumplir 80 años de operaciones.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/g-de-gestion/reportaje/bayer-de-fabricar-para-el-peru-a-producir-para-el-mundo-noticia/",
+   "fecha": "2026-11-03T04:00:00Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/2Y5XF4UEQ5CGLGSAUD7AJMKPNA.jpg?auth=58fb385cafbd7aa23473d2b8349c51da3b636aacf283cf0c63077e081367a9d3&smart=true&width=1200&height=596",
+   "procedencia": "directa"
+  },
+  {
+   "id": "0b03647cf7",
+   "sector": "politica",
+   "titulo": "\"Cada vez que llueve se inundan las ciudades\": ministro Belaúnde advierte que Tumbes y Piura carecen de sistema de drenaje completo y eficiente",
+   "resumen": "En una entrevista con RPP, el ministro de Defensa brindó un balance sobre la inspección realizada en el norte peruano ante el incremento de las precipitaciones por el fenómeno de El Niño.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/politica/gobierno/fenomeno-de-el-nino-ministro-belaunde-advierte-que-tumbes-y-piura-carecen-de-un-sistema-de-drenaje-completo-y-eficiente-noticia-1715675",
+   "fecha": "2026-11-03T03:51:05Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/02/nis2-2026-11-02-22-47-38-19365-1925175mp4_1925176.jpg?width=860&quality=80",
+   "procedencia": "directa"
+  },
+  {
+   "id": "28b073d6a2",
+   "sector": "mundo",
+   "titulo": "Quiénes son las 9 víctimas del fatal accidente del avión privado que se estrelló en Florida",
+   "resumen": "El accidente del domingo acabó con la vida de las nueve personas que iban a bordo, entre ellas un empresario tecnológico, su esposa y sus dos pequeños hijos.",
+   "fuente": "BBC Mundo",
+   "url": "https://www.bbc.com/mundo/articles/cx054q17vvezo?at_medium=RSS&at_campaign=rss",
+   "fecha": "2026-11-03T03:49:51Z",
+   "tipo": "internacional",
+   "ambito": "mundo",
+   "genero": "noticia",
+   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/c344/live/65462e20-d736-11f1-b306-c3f1b394ab8d.jpg",
+   "procedencia": "directa"
+  },
+  {
+   "id": "32e5566a35",
+   "sector": "economia",
+   "titulo": "El Niño: los productos podrían subir de precio en los mercados ante menor oferta",
+   "resumen": "El Niño podría reducir la oferta de alimentos y elevar sus precios. Daños en cultivos y bloqueos de vías también amenazan el presupuesto de las familias peruanas.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/economia/el-nino-en-peru-los-productos-podrian-subir-de-precio-en-los-mercados-ante-escasez-por-menor-oferta-noticia/",
+   "fecha": "2026-11-03T03:46:00Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/MMUIFCL6NJCAFAGLIFWI2SWUJQ.jpg?auth=95335be80f42bec2a973655938a66cf5b9a354461788bb13350662e42886e82a&smart=true&width=1600&height=1200",
+   "procedencia": "directa"
+  },
   {
    "id": "8de084be14",
    "sector": "politica",
@@ -245,76 +868,6 @@
    "procedencia": "directa"
   },
   {
-   "id": "8c8e67700f",
-   "sector": "coyuntura",
-   "titulo": "Sismos en Perú hoy, lunes 2 de noviembre: conoce el epicentro y magnitud según IGP",
-   "resumen": "El Instituto Geofísico del Perú (IGP) informa sobre los últimos movimientos sísmicos registrados en el país. Revisa dónde ocurrieron, cuál fue su magnitud y qué zonas reportaron actividad sísmica.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/peru/igp-reporta-nuevos-sismos-en-peru-hoy-conoce-donde-fue-el-epicentro-y-que-magnitud-tuvieron-el-temblor-tdpe-noticia/",
-   "fecha": "2026-11-03T03:41:00Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/6MWS6WUMUZELJL5TRVJDUXIWM4.png?auth=3bb321d434c5ed63fa0d6ef5090f5442e6186419228910bf4ef9f9ecce299999&smart=true&width=1300&height=800",
-   "procedencia": "directa"
-  },
-  {
-   "id": "8824559853",
-   "sector": "coyuntura",
-   "titulo": "¿Cuándo inicia la Semana Cultural del Japón en el Perú? Así se celebrará con talleres y actividades gratis",
-   "resumen": "¿Cuándo inicia la Semana Cultural del Japón en el Perú? Así se celebrará con talleres y actividades gratis.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/cuando/cuando-inicia-la-semana-cultural-del-japon-en-el-peru-asi-se-celebrara-con-talleres-y-actividades-gratis-tdpe-noticia/",
-   "fecha": "2026-11-03T03:40:00Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/NDVFW3LI6BA5LLYQ62P6XEARNA.jpg?auth=dc9edece93a82550ba9cc504f0cac75dc18528ee3b5aa60f2efdc7c01db5d027&smart=true&width=1200&height=800",
-   "procedencia": "directa"
-  },
-  {
-   "id": "be3bbebc32",
-   "sector": "economia",
-   "titulo": "Precio del dólar en Perú: cuál fue el tipo de cambio del lunes 2 de noviembre",
-   "resumen": "Precio del dólar hoy EN VIVO: cotización en compra y venta del dólar en el Perú en la jornada de hoy, lunes 2 de noviembre. Revisa los movimientos de la moneda estadounidense en el mercado nacional.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/economia/mercados/precio-del-dolar-en-peru-2026-hoy-lunes-2-de-noviembre-tipo-de-cambio-segun-el-bcrp-tasa-cotizacion-compra-y-venta-segun-bcrp-dolares-a-soles-sbs-ocona-lbposting-noticia/",
-   "fecha": "2026-11-03T03:39:55Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/T2XAH3YFGVDT5ONDUIIWRTZMYY.jpg?auth=359de91890d28fd8836b57058cf9b251ba893174042802b1fa9880c2f2bde440&smart=true&width=1200&height=700",
-   "procedencia": "directa"
-  },
-  {
-   "id": "d49045d1ca",
-   "sector": "nino",
-   "titulo": "Lluvias en el norte y otras regiones del Perú EN VIVO: pronósticos del Senamhi y reportes por Fenómeno El Niño 2026",
-   "resumen": "Lluvias en el norte y otras regiones del Perú EN VIVO: pronósticos del Senamhi y reportes por El Niño 2026",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/peru/lluvias-en-piura-tumbes-lambayeque-y-otras-regiones-del-peru-en-vivo-pronosticos-del-senamhi-reportes-y-cambios-en-el-clima-por-el-nino-2026-lbposting-noticia/",
-   "fecha": "2026-11-03T03:39:52Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/ZUVXKPQ6QRGLVGVFKR2SVWIWV4.jpg?auth=983c121b12d05df3453bbcb2edafa85b9b77c72b86f48374a7ddf4f4c5f53cba&smart=true&width=1212&height=641",
-   "procedencia": "directa"
-  },
-  {
-   "id": "fc5c075fbe",
-   "sector": "coyuntura",
-   "titulo": "Temblor en Venezuela hoy, 2 de noviembre: epicentro y magnitud según reporte FUNVISIS",
-   "resumen": "Temblor en Venezuela HOY EN VIVO: último sismo de agosto, lugar del epicentro y magnitud según el Fundación Venezolana de Investigaciones Sismológicas (FUNVISIS).",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/venezuela/temblor-en-venezuela-hoy-en-vivo-hora-exacta-epicentro-y-magnitud-proteccion-civil-lbposting-noticia/",
-   "fecha": "2026-11-03T03:39:48Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/VCI22MU7MVHLFAEKZJXUUY4UTU.jpg?auth=88e8e822121854e3b3f858fbc64f3056857b044df01e5c9830e7f47cbd873571&smart=true&width=1200&height=700",
-   "procedencia": "directa"
-  },
-  {
    "id": "edb332e679",
    "sector": "mundo",
    "titulo": "¿Qué tan probable es que los pastores demócratas consigan el apoyo de los cristianos republicanos?",
@@ -326,34 +879,6 @@
    "ambito": "mundo",
    "genero": "noticia",
    "imagen": "https://s.france24.com/media/display/5ed147ea-d737-11f1-867f-695cb59fade5/w:1024/p:16x9/ES-20261102-200335-200654-CS-01.jpg",
-   "procedencia": "directa"
-  },
-  {
-   "id": "f97398f382",
-   "sector": "coyuntura",
-   "titulo": "Temblor en Perú hoy, lunes 2 de noviembre: epicentro y magnitud según reporte IGP",
-   "resumen": "Temblor en Perú EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Instituto Geofísico del Perú (IGP).",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/temblor-en-peru-en-vivo-magnitud-lugar-y-hora-del-ultimo-sismo-reportado-hoy-lunes-2-de-noviembre-por-el-igp-instituto-geofisico-del-peru-lbposting-noticia/",
-   "fecha": "2026-11-03T03:39:44Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/CQLUAJVOYRAXJFB763PSZ63DRI.jpeg?auth=8fbfc5ff2f55b3d348246d65f944fe361296fdda1d22e7bac3ae99c2c7d5e05c&smart=true&width=1200&height=700",
-   "procedencia": "directa"
-  },
-  {
-   "id": "26ddb55351",
-   "sector": "coyuntura",
-   "titulo": "Temblor en Chile hoy, lunes 2 de noviembre: epicentro y magnitud según reporte CSN",
-   "resumen": "Temblor en Chile EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Centro Sismológico Nacional (CSN).",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/chile/temblor-en-chile-epicentro-y-magnitud-reportados-hoy-por-el-csn-centro-sismologico-nacional-santiago-lbposting-noticia/",
-   "fecha": "2026-11-03T03:39:38Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/KAE5CEFPCJHMLLSEKJ4OZHAXPY.webp?auth=af3005ec2470577442bcd4ec65b2b7cc6c56472e347fc5262bb1e0ebbc280d15&smart=true&width=1200&height=700",
    "procedencia": "directa"
   },
   {
@@ -385,6 +910,20 @@
    "procedencia": "directa"
   },
   {
+   "id": "eed23996e2",
+   "sector": "coyuntura",
+   "titulo": "Se inaugura exposición “Uchināmoon: un sueño bajo la luz de la luna”",
+   "resumen": "Muestra colectiva se presenta en el Centro Cultural Peruano Japonés.",
+   "fuente": "La Mula",
+   "url": "https://tvrobles.lamula.pe/2026/11/02/se-inaugura-exposicion-uchinamoon-un-sueno-bajo-la-luz-de-la-luna/tvrobles/",
+   "fecha": "2026-11-03T03:38:17Z",
+   "tipo": "independiente",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://lamula.pe/media/uploads/t/c3864564dd9039af95b9ace48b3e60e3.jpg",
+   "procedencia": "directa"
+  },
+  {
    "id": "ca3c5537dc",
    "sector": "economia",
    "titulo": "Corea del Nore tacha de \"absurda\" la acusación del FBI por el histórico robo a Binance",
@@ -413,20 +952,6 @@
    "procedencia": "directa"
   },
   {
-   "id": "6b9af61258",
-   "sector": "coyuntura",
-   "titulo": "Tingo María: huaico bloquea vía que conecta con Pucallpa y daña viviendas y camiones",
-   "resumen": "La caída de un huaico debido a las intensas lluvias que se vienen registrando provocó el bloqueo de la carretera que conecta las ciudades de Tingo María con Pucallpa y dañó viviendas y camiones.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/peru/huanuco/tingo-maria-huaico-bloquea-via-que-conecta-con-pucallpa-y-dana-viviendas-y-camiones-apuesplan-ultimas-noticia/",
-   "fecha": "2026-11-03T03:31:53Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/5P3BBITDXRFPXIDF3C4XV22XLE.jpg?auth=23f2733cc84d432996a69ea562a64bb761dfc80d551db18a48ce9736897cc750&smart=true&width=1200&height=800",
-   "procedencia": "directa"
-  },
-  {
    "id": "e31b70874d",
    "sector": "mundo",
    "titulo": "Qué se sabe de la dramática caída de un avión privado en Florida que dejó 9 muertos",
@@ -452,6 +977,20 @@
    "ambito": "mundo",
    "genero": "noticia",
    "imagen": "https://s.france24.com/media/display/e98f3ff0-d731-11f1-8bff-bf1914cabd52/w:1024/p:16x9/ES-20261102-190405-190734-CS.jpg",
+   "procedencia": "directa"
+  },
+  {
+   "id": "b3fbb74a47",
+   "sector": "mundo",
+   "titulo": "EEUU lanza ataque contra isla iraní de Qeshm, según medios",
+   "resumen": "Funcionarios estadounidenses dijeron que la operación \"defensiva\", busca limitar la capacidad iraní para amenazar el tráfico marítimo en el estrecho de Ormuz, según WSJ.",
+   "fuente": "DW Español",
+   "url": "https://www.dw.com/es/eeuu-lanza-ataque-contra-isla-iraní-de-qeshm-según-medios/a-79835060?maca=spa-rss-sp-all-1122-xml-mrss",
+   "fecha": "2026-11-03T03:31:00Z",
+   "tipo": "internacional",
+   "ambito": "mundo",
+   "genero": "noticia",
+   "imagen": null,
    "procedencia": "directa"
   },
   {
@@ -497,20 +1036,6 @@
    "procedencia": "directa"
   },
   {
-   "id": "59f718ac09",
-   "sector": "coyuntura",
-   "titulo": "Los expertos en longevidad coinciden: “Las personas que viven más, no son las que hacen ejercicios, sino las que viven en zonas donde cada desplazamiento es como un paseo”",
-   "resumen": "Es una advertencia para todas las personas que entran a la tercera edad que será de gran utilidad tanto a corto como a largo plazo",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/que/los-expertos-en-longevidad-coinciden-las-personas-que-viven-mas-no-son-las-que-hacen-ejercicios-sino-las-que-viven-en-zonas-donde-cada-desplazamiento-es-como-un-paseo-tdpe-noticia/",
-   "fecha": "2026-11-03T03:29:00Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/TYCNYRS5BZH4HOB7NITGC36UBU.jpg?auth=81e62d5bab7ac5669eb2bf6d94a21da9779381010e23c05b254028a31aeb7c33&smart=true&width=1024&height=687",
-   "procedencia": "directa"
-  },
-  {
    "id": "fd3523c535",
    "sector": "mundo",
    "titulo": "Abdul El-Sayed busca conquistar el voto musulmán desencantado en Michigan",
@@ -539,45 +1064,17 @@
    "procedencia": "directa"
   },
   {
-   "id": "19c536f317",
+   "id": "014e5385e1",
    "sector": "coyuntura",
-   "titulo": "Universal+ y sus estrenos para noviembre 2026",
-   "resumen": "Universal+ definió su parrilla de programación para el mes de noviembre de 2026. Entre los lanzamientos se encuentran algunas series favoritas del público como las de la franquicia One Chicago (Chicago MED, Fire y PD), además de las judiciales “ La ley y el orden ”, Víctimas…",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/universal-y-sus-estrenos-para-noviembre-2026-streaming-one-chicago-law-order-tdpe-noticia/",
-   "fecha": "2026-11-03T03:24:42Z",
-   "tipo": "comercial",
+   "titulo": "Inauguran exposición “Uchināmoon: un sueño bajo la luz de la luna”",
+   "resumen": "Muestra colectiva se presenta en el Centro Cultural Peruano Japonés.",
+   "fuente": "La Mula",
+   "url": "https://tvrobles.lamula.pe/2026/11/02/inauguran-exposicion-uchinamoon-un-sueno-bajo-la-luz-de-la-luna/tvrobles/",
+   "fecha": "2026-11-03T03:25:17Z",
+   "tipo": "independiente",
    "ambito": "peru",
    "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/DPPEAEQHD5EN5DVPCQFPZFMSNM.jpg?auth=7036793f4fde56b3dfce3dfb64ade6c70dd2fc632f7177276c61ff05297bf1b9&smart=true&width=980&height=653",
-   "procedencia": "directa"
-  },
-  {
-   "id": "1e5e180f06",
-   "sector": "coyuntura",
-   "titulo": "“La mangosta”: dónde y desde cuándo ver la nueva película de acción con Liam Neeson | VIDEO",
-   "resumen": "“La mangosta”: cuándo y dónde estrenan la nueva película de acción de Liam Neeson",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/la-mangosta-cuando-y-donde-estrenan-la-nueva-pelicula-de-accion-de-liam-neeson-video-streaming-tdpe-noticia/",
-   "fecha": "2026-11-03T03:24:37Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/SZF5XHRSGRCLDAFG2NUZUAPZDU.jpg?auth=109d30c858cc1baa0d74e5b3732e36009c8dd80cb6a9a9f05bc21d566058aaf1&smart=true&width=1113&height=653",
-   "procedencia": "directa"
-  },
-  {
-   "id": "ba07db4adf",
-   "sector": "coyuntura",
-   "titulo": "DP World Callao registra el mayor movimiento mensual de su historia: 200 mil TEU en octubre",
-   "resumen": "Puerto del Callao ante El Niño: APM Terminals alista ruta por mar y busca extender concesión DP World Callao movilizó 200 mil TEU, unidades equivalentes a un contenedor de 20 pies, en octubre de 2026, el mayor volumen mensual registrado en su historia , marcando así un récord…",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/peru/dp-world-callao-registra-el-mayor-movimiento-mensual-de-su-historia-noticia/",
-   "fecha": "2026-11-03T03:22:37Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/LKKCQASN6ZBUBBFE3HXMA3VW5Q.jpg?auth=e6ff084c8adf3820414701aba889d6a1c75c32c9bb84daa6a7a58524c43e1b5e&smart=true&width=1800&height=1350",
+   "imagen": "https://lamula.pe/media/uploads/t/ad3a38aeeaf0c2d09921133f32832aaa.jpg",
    "procedencia": "directa"
   },
   {
@@ -623,20 +1120,6 @@
    "procedencia": "directa"
   },
   {
-   "id": "9c95b5f00f",
-   "sector": "economia",
-   "titulo": "Perspectivas del tipo de cambio para noviembre del 2026",
-   "resumen": "Octubre comenzó retando el escenario anterior, donde se esperaba una fluctuación del dólar entre S/3,32 y S/3,39, pero septiembre cerró en S/3,433, tras una subida de 1,8%, la mayor en seis meses, y hasta el momento octubre marca una tendencia al 3.4. La recuperación del dólar…",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/opinion/perspectivas-del-tipo-de-cambio-para-noviembre-del-2026-noticia/",
-   "fecha": "2026-11-03T03:01:00Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "opinion",
-   "imagen": "https://gestion.pe/resizer/v2/AV37Y4TE6ZACDNBGRHJJ3FDPMQ.jpg?auth=702509fead28df357c9dfb92152866f05bc896feb26dfba2d43264ab285a775c&smart=true&width=1200&height=800",
-   "procedencia": "directa"
-  },
-  {
    "id": "b96e2ddf64",
    "sector": "coyuntura",
    "titulo": "Luciana Fuster cuestiona edición de su entrevista en ‘Magaly TV La Firme’: “Todo lo que yo diga siempre es sacado de contexto”",
@@ -662,34 +1145,6 @@
    "ambito": "peru",
    "genero": "noticia",
    "imagen": "https://www.infobae.com/resizer/v2/XJF2EUJADZABVMZLN67BFQNRBE.png?auth=428c710481c50d4bd946d215991d6145305dc89e8e8296ab9d5f4fd5f5214558&smart=true&width=1920&height=1080",
-   "procedencia": "directa"
-  },
-  {
-   "id": "d15d50b73a",
-   "sector": "nino",
-   "titulo": "La desastrosa prevención",
-   "resumen": "El paquete contracíclico de S/ 18,000 millones anunciado por el Gobierno busca enfrentar una situación excepcional, el Fenómeno El Niño (FEN). La comisión multisectorial ENFEN prevé un evento de magnitud extraordinaria, posiblemente superior al de 1997-1998. El Centro Nacional…",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/opinion/la-desastrosa-prevencion-noticia/",
-   "fecha": "2026-11-03T02:46:00Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "opinion",
-   "imagen": "https://gestion.pe/resizer/v2/MJN7B3YESZFB7IOCDR2TIJU5IA.jpg?auth=2edd2442fbe2f4c5a0645684bdf5489deca97f805df78ea6ff78871627b3ad7f&smart=true&width=1203&height=800",
-   "procedencia": "directa"
-  },
-  {
-   "id": "426ff9f52c",
-   "sector": "economia",
-   "titulo": "Estados Unidos mediará negociaciones entre Ucrania y Rusia la próxima semana en Abu Dabi",
-   "resumen": "Estados Unidos mediará en una nueva ronda de negociaciones técnicas entre Ucrania y Rusia los próximos 10 y 11 de noviembre en Abu Dabi, centrada en los acuerdos de seguridad de posguerra, la desescalada del conflicto y la ayuda humanitaria, según anunció el enviado especial…",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/mundo/internacional/estados-unidos-mediara-negociaciones-entre-ucrania-y-rusia-la-proxima-semana-en-abu-dabi-noticia/",
-   "fecha": "2026-11-03T02:45:17Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/S3WAZJR75RGZ7JJIEDGJY4DZHI.jpg?auth=f8ce0a3d9c51873c291bfc1284cc5b139725a956734d42cdbb27c8f31d333b1c&smart=true&width=3200&height=2400",
    "procedencia": "directa"
   },
   {
@@ -722,20 +1177,6 @@
    "procedencia": "directa"
   },
   {
-   "id": "646e932ed5",
-   "sector": "coyuntura",
-   "titulo": "Una alteración en el vórtice polar amenaza con cambiar el clima: ¿cuándo llegará el frío a EE. UU.?",
-   "resumen": "El vórtice polar comienza a alterarse sobre el Ártico. Conoce qué regiones podrían recibir el frío y qué temperaturas se esperan en EE. UU. durante noviembre.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/mix/usa/una-alteracion-en-el-vortice-polar-amenaza-con-cambiar-el-clima-cuando-llegara-el-frio-a-ee-uu-nnda-nnrt-noticia/",
-   "fecha": "2026-11-03T02:42:53Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/ZPS5S7QWDREDLHJIPA65N3W7DY.jpg?auth=1373f3631b130e253ff1c315a4eb10c13e3df39a772e1ebf2c9da9b4ff6fe594&smart=true&width=1200&height=750",
-   "procedencia": "directa"
-  },
-  {
    "id": "61396c8fac",
    "sector": "politica",
    "titulo": "EE. UU. lanzó ataque contra isla iraní a unas horas de elecciones, según WSJ",
@@ -747,20 +1188,6 @@
    "ambito": "peru",
    "genero": "noticia",
    "imagen": "https://f.rpp-noticias.io/2026/11/02/033203_1925172.jpg?imgdimension=look",
-   "procedencia": "directa"
-  },
-  {
-   "id": "bd3132cc29",
-   "sector": "coyuntura",
-   "titulo": "Lluvias en Lima: 20 bypasses están en riesgo de inundación, ¿cuáles son?",
-   "resumen": "Un total de 20 de los 33 bypasses identificados en Lima Metropolitana y el Callao presentan riesgo de inundación ante la ocurrencia de lluvias intensas, según un estudio del Centro Nacional de Estimación, Prevención y Reducción del Riesgo de Desastres (Cenepred).",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/peru/lluvias-en-lima-20-bypasses-estan-en-riesgo-de-inundacion-cuales-son-noticia/",
-   "fecha": "2026-11-03T02:36:05Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/JLUBLLP2ZZETXJJPF5TR5O5XMI.jpg?auth=dec5e8cf78a68b79e61e1f0085a2dd894dc752dda6447000b83e4fae3dadd621&smart=true&width=1200&height=789",
    "procedencia": "directa"
   },
   {
@@ -817,34 +1244,6 @@
    "ambito": "peru",
    "genero": "noticia",
    "imagen": "https://www.infobae.com/resizer/v2/5XX2253DTNEVPBK5OHQ4PTIZME.jpg?auth=ab683bc884b7fd47032e58c23516ed29b7e8c257d7790eb1bea7b9bd150e2417&smart=true&width=1920&height=1133",
-   "procedencia": "directa"
-  },
-  {
-   "id": "a2289b6f5f",
-   "sector": "nino",
-   "titulo": "Verano 2027: El Niño condiciona reservas y planes de negocio en los balnearios del norte del país, ¿cómo van las expectativas?",
-   "resumen": "Hoteles y alquileres de playa preparan el verano 2027 ante El Niño. Conoce sus perspectivas de reservas, tarifas e inversiones y su impacto en los negocios locales.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/economia/dia-1/el-verano-2027-pone-a-prueba-las-expectativas-de-negocio-en-los-balnearios-del-norte-noticia/",
-   "fecha": "2026-11-03T02:27:55Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/J2HJKAZLSRCK3ASYWVSWYIW2WI.jpg?auth=e556cbac3a998f8a5c56aeb8425244e1e54d824be9c46e1c47794d522cc4e271&smart=true&width=1200&height=800",
-   "procedencia": "directa"
-  },
-  {
-   "id": "1e68994d3e",
-   "sector": "politica",
-   "titulo": "Netanyahu insta a Trump a lanzar nuevos ataques contra Irán, según funcionarios regionales",
-   "resumen": "El primer ministro israelí Benjamin Netanyahu está exhortando al gobierno del presidente estadounidense Donald Trump a llevar a cabo otra ola de ataques contra Irán, según dos funcionarios regionales.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/mundo/internacional/netanyahu-insta-a-trump-a-lanzar-nuevos-ataques-contra-iran-segun-funcionarios-regionales-noticia/",
-   "fecha": "2026-11-03T02:27:47Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/ESLKHLDKBVDUDGSHISRVNDHH4M.jpg?auth=84aa0ff7f039bd7b7d31991a6f5a75d3f06b7d7adbc44590dc11acf3e1c06432&smart=true&width=1200&height=800",
    "procedencia": "directa"
   },
   {
@@ -946,20 +1345,6 @@
    "procedencia": "directa"
   },
   {
-   "id": "c966beadc2",
-   "sector": "economia",
-   "titulo": "Comexperú: interrupción de los sistemas del Reniec afecta a diversas actividades económicas",
-   "resumen": "COMEXPERÚ: interrupción de los sistemas del RENIEC afecta a diversas actividades económicas . “Es inaceptable que una institución que administra información crítica para el funcionamiento del país no cuente con mecanismos de contingencia”, sostiene COMEXPERÚ.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/peru/comexperu-interrupcion-de-los-sistemas-del-reniec-afecta-a-diversas-actividades-economicas-noticia/",
-   "fecha": "2026-11-03T02:15:00Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/GHNNMOWI7BFCPBZDPQMADOUZ2Q.png?auth=fd88d27cff2824076ae52dd4af3c402cac88ca0b35e809e3edf5d36c7444f9c3&smart=true&width=1400&height=800",
-   "procedencia": "directa"
-  },
-  {
    "id": "85b8e6a97d",
    "sector": "mundo",
    "titulo": "Corte Suprema de Estados Unidos rechaza nuevo intento de Trump de invalidar 20.000 votos en California",
@@ -985,20 +1370,6 @@
    "ambito": "peru",
    "genero": "noticia",
    "imagen": "https://f.rpp-noticias.io/2026/11/02/311031_1925166.jpg?imgdimension=look",
-   "procedencia": "directa"
-  },
-  {
-   "id": "93625413f9",
-   "sector": "politica",
-   "titulo": "Ángel Meneses es el nuevo vocero de Ahora Nación tras renuncia de César Holguín",
-   "resumen": "La Comisión Política de Ahora Nación designó al diputado Ángel Meneses como nuevo vocero titular de su grupo parlamentario, tras la renuncia de César Holguín a dicha responsabilidad. Así lo anunció la agrupación política a través de un comunicado publicado en su cuenta oficial…",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/peru/politica/angel-meneses-es-el-nuevo-vocero-de-ahora-nacion-tras-renuncia-de-cesar-holguin-noticia/",
-   "fecha": "2026-11-03T02:00:00Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/4NMF32CJ25EJBBZAE4CPJ7RH6Q.jpeg?auth=a12b6523294d8cde84dba836af738d6e1e36c402d7ef0f5266190202af2a984a&smart=true&width=1600&height=1066",
    "procedencia": "directa"
   },
   {
@@ -1058,34 +1429,6 @@
    "procedencia": "directa"
   },
   {
-   "id": "929d1b89ff",
-   "sector": "coyuntura",
-   "titulo": "Resultados Gana Diario: números ganadores de este 1 de noviembre del 2026",
-   "resumen": "Esta lotería peruana realiza un sorteo todos los días a las 20:30 horas. Conozca si fue el afortunado ganador del premio mayor",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/03/resultados-gana-diario-numeros-ganadores-de-este-1-de-noviembre-del-2026/",
-   "fecha": "2026-11-03T01:45:56Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/NXBHX5RW6JB7TLMKRX4ISRHIDU.jpg?auth=3daf0ba4a72853b0f321d074af21cd18a1323e5ba988137f9235131da4d5bd12&smart=true&width=1920&height=1080",
-   "procedencia": "directa"
-  },
-  {
-   "id": "b883939273",
-   "sector": "deporte",
-   "titulo": "Tabla Acumulada y Clausura 2026 de la Liga 1, EN VIVO | Sporting Cristal golea a FC Cajamarca y es nuevo líder del torneo",
-   "resumen": "",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/deporte-total/futbol-peruano/sigue-tabla-acumulada-y-clausura-2026-en-vivo-resultados-y-partidos-en-directo-de-la-fecha-15-via-liga-1-max-video-tdpe-noticia/",
-   "fecha": "2026-11-03T01:40:29Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/FZJAQGTDMRESTPQGSYJJVH7WZ4.jpg?auth=fbab567818a534d3d279d863355066625a82594c91a8a86255a94e4f792f9474&smart=true&width=1300&height=800",
-   "procedencia": "directa"
-  },
-  {
    "id": "a3213408ec",
    "sector": "politica",
    "titulo": "Diputada Jacqueline Tapullima podría ser investigada en Ética por peritaje que detectó falsificación de firma y huella de su inscripción",
@@ -1142,34 +1485,6 @@
    "procedencia": "directa"
   },
   {
-   "id": "c161b077d6",
-   "sector": "coyuntura",
-   "titulo": "EE. UU. mediará negociaciones entre Ucrania y Rusia la próxima semana en Abu Dabi",
-   "resumen": "El enviado especial estadounidense Steve Witkoff adelantó que los negociadores estadounidenses se reunirán esta semana en Bruselas con representantes de Francia, Alemania, el Reino Unido, la Unión Europea y la OTAN para abordar las garantías de seguridad para Ucrania y la…",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/mundo/europa/ee-uu-mediara-negociaciones-entre-ucrania-y-rusia-la-proxima-semana-en-abu-dabi-noticia-1715666",
-   "fecha": "2026-11-03T01:14:07Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/02/145714_1925159.jpg?imgdimension=look",
-   "procedencia": "directa"
-  },
-  {
-   "id": "2c45fe5ee7",
-   "sector": "coyuntura",
-   "titulo": "Transportistas de carga pesada se alistan para un paro nacional de tres días por precio de combustibles",
-   "resumen": "El dirigente Martín Ojeda anunció que se prevé paralizar el 16, 17 y 18 de noviembre ante el alza del diésel, aunque esperan una apertura de diálogo desde el Ministerio de Transportes.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/peru/actualidad/paro-nacional-de-transportistas-de-carga-pesada-en-peru-fechas-y-reclamos-noticia-1715667",
-   "fecha": "2026-11-03T01:11:00Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/02/205020_1925153.jpg?imgdimension=look",
-   "procedencia": "directa"
-  },
-  {
    "id": "d0c8999b8f",
    "sector": "mundo",
    "titulo": "'Mano dura' contra la migración, los efectos de la agresiva estrategia de Trump",
@@ -1181,34 +1496,6 @@
    "ambito": "mundo",
    "genero": "noticia",
    "imagen": "https://s.france24.com/media/display/1f47fdfe-c6e3-11f0-9c44-005056bf30b7/w:1024/p:16x9/IVS-DESINFO-21NOV-PORTADA-WEB-00474.png",
-   "procedencia": "directa"
-  },
-  {
-   "id": "96a876496a",
-   "sector": "politica",
-   "titulo": "Reelección encubierta: dos alcaldes en funciones son proclamados para un nuevo periodo en Amazonas y San Martín",
-   "resumen": "Los JEE de Bagua y Moyobamba proclamaron a Hermógenes Lozano Trigoso y Carlos Francois Hidalgo Reátegui, respectivamente, como alcaldes para el periodo 2027-2030. Ambas autoridades fueron elegidas en 2022 y postularon como primeros regidores en listas cuyos candidatos a alcalde…",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/politica/elecciones/reeleccion-encubierta-dos-alcaldes-en-funciones-son-proclamados-para-un-nuevo-periodo-en-amazonas-y-san-martin-noticia-1715665",
-   "fecha": "2026-11-03T01:05:32Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/02/105710_1925158.jpg?imgdimension=look",
-   "procedencia": "directa"
-  },
-  {
-   "id": "174ce56705",
-   "sector": "coyuntura",
-   "titulo": "Reniec restablece sus servicios tras permanecer suspendidos por incendio en su servidor: ¿qué pasó?",
-   "resumen": "El Registro Nacional de Identificación y Estado Civil (Reniec) restableció todos sus servicios a nivel nacional durante la tarde de este lunes… The post Reniec restablece sus servicios tras permanecer suspendidos por incendio en su servidor: ¿qué pasó? appeared first on Caretas .",
-   "fuente": "Caretas",
-   "url": "https://caretas.pe/sociedad/reniec-restablece-sus-servicios-tras-permanecer-suspendidos-por-incendio-en-su-servidor-que-paso/",
-   "fecha": "2026-11-03T01:00:26Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://caretas.pe/wp-content/uploads/2026/11/image-2026-11-02T195945.268-1280x720.jpg",
    "procedencia": "directa"
   },
   {
@@ -1237,20 +1524,6 @@
    "ambito": "peru",
    "genero": "noticia",
    "imagen": null,
-   "procedencia": "directa"
-  },
-  {
-   "id": "4bc2df99ef",
-   "sector": "coyuntura",
-   "titulo": "Movistar mejora sus resultados: ganancias operativas crecen 19% y avanza en su reestructuración",
-   "resumen": "Integratel alcanzó S/294 millones en eficiencias a setiembre y reportó una mejora de S/52 millones en su resultado operativo frente al 2025.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/economia/economia/movistar-mejora-sus-resultados-ganancias-operativas-crecen-19-y-avanza-en-su-reestructuracion-noticia-1715668",
-   "fecha": "2026-11-03T00:53:43Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/02/405840_1925161.jpg?imgdimension=look",
    "procedencia": "directa"
   },
   {
@@ -1296,34 +1569,6 @@
    "procedencia": "directa"
   },
   {
-   "id": "80fdb38d29",
-   "sector": "coyuntura",
-   "titulo": "Comando Unificado detiene a alias Goku durante operativo en Pataz: reincidente sería pieza clave de La Gran Alianza",
-   "resumen": "El Comando Unificado Pataz, mediante un operativo conjunto con la Policía Nacional del Perú (PNP) y las Fuerzas Armadas, detuvo a 20… The post Comando Unificado detiene a alias Goku durante operativo en Pataz: reincidente sería pieza clave de La Gran Alianza appeared first on…",
-   "fuente": "Caretas",
-   "url": "https://caretas.pe/nacional/comando-unificado-detiene-a-alias-goku-durante-operativo-en-pataz-reincidente-seria-pieza-clave-de-la-gran-alianza-mininter/",
-   "fecha": "2026-11-03T00:37:42Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://caretas.pe/wp-content/uploads/2026/11/image-2026-11-02T193528.907-1280x720.jpg",
-   "procedencia": "directa"
-  },
-  {
-   "id": "7d88a49f7b",
-   "sector": "coyuntura",
-   "titulo": "Piura: fuertes lluvias se registran en Máncora y alertan por posible activación de quebradas [VIDEO]",
-   "resumen": "La preocupación se concentra en una posible activación de las quebradas Fernández y Cabo Blanco, identificadas como puntos de riesgo durante anteriores temporadas de lluvias.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/peru/actualidad/piura-fuertes-lluvias-se-registran-en-mancora-y-alertan-por-posible-activacion-de-quebradas-video-noticia-1715664",
-   "fecha": "2026-11-03T00:37:21Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/02/atsapp-video-2026-11-02-at-60852-pm-20261102181022-1925147mp4_1925148.jpg?width=860&quality=80",
-   "procedencia": "directa"
-  },
-  {
    "id": "ce3c6779d6",
    "sector": "mundo",
    "titulo": "Ucrania: al menos 26 muertos en un ataque ruso durante una distribución de ayuda en Zaporizhia",
@@ -1336,49 +1581,6 @@
    "genero": "noticia",
    "imagen": "https://s.france24.com/media/display/239cd19c-d71b-11f1-90e9-695cb59fade5/w:1024/p:16x9/2026-11-02T213053Z-3438278-RC2RFOA2ZCQZ-RTRMADP-3-UKRAINE-CRISIS-ATTACK-ZAPORIZHZHIA-REGION.jpg",
    "procedencia": "directa"
-  },
-  {
-   "id": "a8af46f0cc",
-   "sector": "mundo",
-   "titulo": "Midterms: agricultores de Carolina del Norte, asfixiados por la inflación",
-   "resumen": "En vísperas de las elecciones de medio mandato, la impopularidad del presidente estadounidense Donald Trump está afectando a los republicanos en general. Muchos estados que antes eran bastiones republicanos se encuentran ahora en una situación precaria. Uno de ellos es Carolina…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/programas/en-foco/20261103-midterms-agricultores-de-carolina-del-norte-asfixiados-por-la-inflaci%C3%B3n",
-   "fecha": "2026-11-03T00:32:29Z",
-   "tipo": "internacional",
-   "ambito": "mundo",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/2bde3aee-d71b-11f1-b322-d18c5759e759/w:1024/p:16x9/EnFoco.jpeg",
-   "procedencia": "directa"
-  },
-  {
-   "id": "21438a5380",
-   "sector": "mundo",
-   "titulo": "EEUU mediará en negociaciones entre Rusia y Ucrania en Abu Dabi la próxima semana",
-   "resumen": "El enviado especial Steve Witkoff dijo que las pláticas abarcarán \"acuerdos de seguridad para la posguerra, la desescalada, medidas humanitarias y el fin de la guerra\".",
-   "fuente": "DW Español",
-   "url": "https://www.dw.com/es/eeuu-mediará-en-negociaciones-entre-rusia-y-ucrania-en-abu-dabi-la-próxima-semana/a-79834962?maca=spa-rss-sp-all-1122-xml-mrss",
-   "fecha": "2026-11-03T00:21:00Z",
-   "tipo": "internacional",
-   "ambito": "mundo",
-   "genero": "noticia",
-   "imagen": null,
-   "procedencia": "directa"
-  },
-  {
-   "id": "5333898b01",
-   "sector": "coyuntura",
-   "titulo": "Carlos Basombrío cuestiona registros del Sinadef y exige responsabilidades por presunto encubrimiento de asesinatos",
-   "resumen": "",
-   "fuente": "La República",
-   "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQY1JpazB5RDVhcGtCelFkd1RzLWpSQlJwMnhmVnhLS28wLVdQYzdYODhtMFdsVUhyUHVaNm93OE03SUJaLXctSWNsMTUxWC00cGl3X3F0UDhhZ2xwTlY2M3EwcUtlZDMwd1kzV2QweXN1SzVneTZiQldFWmZSNExZVXNsTFI0Y2tvZ0lJbXB0SmhvQWRwZExKRGhLbUJzWk9kUWJjcXdXTWpCVV9hMC0zcDVBeE10Z2t0dGUycGFoQjJkRGloYXE2NWhqQWZScXU0Z0hGdTcxTTc2b3ZGNl9UVmQ2Z1NZa0VaMDJnRFVtcmNacExNZ0oybU1DR2dFeFNX0gGGAkFVX3lxTFB1VzBKQ2lic2FESmhpcDROREpKdGlrdXYxbjBUTjVNa2dwVXYwYl9YU2I0RWFYQnZsR0dhVi1MRmxnOGpOM0RKd1BZWmJCWUZCbmszcTdGVEtyTFpYM3l6bTJyWDBWdlpzZzI0bUw1cGZHTzlpUVktalgxMThjdk5rUmwwWUNzT1NQR2ZVTXYzWjVlREZIcjRwS2hNMGVYRGROdUZQUnZNeDE0Mk8wbDd1THRlMDlnVWhhZXhPWWp3STh1ZlpQZjdCR1UtUDRXOUlvZFFXYkxVb3V5bEJSN3k3RlVTeU83cjV3cndWNTM5bVVnOWFqRkdfOGQwSU1BVjgyV0VlQmc?oc=5",
-   "fecha": "2026-11-03T00:19:20Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": null,
-   "procedencia": "agregador",
-   "via": "Google Noticias"
   },
   {
    "id": "83fff2744b",
@@ -1410,34 +1612,18 @@
    "via": "Google Noticias"
   },
   {
-   "id": "a2423d66e0",
-   "sector": "politica",
-   "titulo": "Ahora van por Diputados",
+   "id": "0afd321998",
+   "sector": "ia",
+   "titulo": "Congreso impulsa el uso de la inteligencia artificial para modernizar la gestión del Estado",
    "resumen": "",
-   "fuente": "Hildebrandt en sus trece",
-   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBlcmp3cWJxdkwta1JqeFdLZElNa2c5cERPbnh0Z1BEamgyZ3h2Y29WaVZ1WkZlV2pwMzF2ZFgwSDlJcUNjbmg5cWoxa0NJWXlwVWZ6cmZoQThTOFY4dnRycjRIYmI5SC1JX1JyZ1FR?oc=5",
-   "fecha": "2026-11-03T00:12:33Z",
-   "tipo": "independiente",
+   "fuente": "Congreso",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOWEkyMlFUaVN1a3hJWURoNUtXck5ta1RHTFMxdENYN3p2bEo3YXNsTV9zVHNLcEZLenJJTWt3N0VwS2toZTFXZ0RkcUNDSUNCRU1QWVp2TzNUanNzdlZ4VkVXQWJyNFF6VHpKUDFWRzA1ZEo4djRlVWstZW4waXREemliNklKSnl2alJSVWlQcHJtNDZsY1k3QVJqMzlSOGdyMndwOG5QdnRqV1BMSktfdFhlb3dzZDZPYUpqdGdkU0Z1Qm9wNjdMSTdic2s2cERsbVF2OTZmcw?oc=5",
+   "fecha": "2026-11-03T00:02:02Z",
+   "tipo": "comercial",
    "ambito": "peru",
    "genero": "noticia",
    "imagen": null,
-   "procedencia": "agregador",
-   "via": "Google Noticias"
-  },
-  {
-   "id": "916a0a0356",
-   "sector": "coyuntura",
-   "titulo": "Travel Keiko",
-   "resumen": "",
-   "fuente": "Hildebrandt en sus trece",
-   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5UQXZhdUhfLThkMnFocnBWdl9WODMtVjZqSmpuWWxjbDUwSjhPS21IcUt1TU0tb0puQjlpNW01LUpXZkh5TFl0OW9jVm9NUlNuQ3poR19RNU9WVFh0R0g0R1NVMUdTNkJTS0xTbFRn?oc=5",
-   "fecha": "2026-11-03T00:12:33Z",
-   "tipo": "independiente",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": null,
-   "procedencia": "agregador",
-   "via": "Google Noticias"
+   "procedencia": "directa"
   },
   {
    "id": "4abf27cc13",
@@ -1468,35 +1654,6 @@
    "procedencia": "directa"
   },
   {
-   "id": "4936eb15da",
-   "sector": "investigacion",
-   "titulo": "- Ojo-Público",
-   "resumen": "",
-   "fuente": "OjoPúblico",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQRWMweVEyb3hmbUdsdWtvMGg5dWxUb25BSExMdFQtaWl4R1loemVOdTBNN1kxQ1RzVHlzV3hURUpkSDlnUlFTaFN0QzdIV19wMWNfcm94OVVDVXUwNFBDVlBvLUQxejhfZlh1MXVhNHdaRlJIOVNrZENOc0ZNcUEtR1BPM2dlNmJKSVNXYlpn?oc=5",
-   "fecha": "2026-11-02T23:43:33Z",
-   "tipo": "independiente",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": null,
-   "procedencia": "agregador",
-   "via": "Google Noticias"
-  },
-  {
-   "id": "a32f1c1cbf",
-   "sector": "mundo",
-   "titulo": "Trump abre la puerta a indultos para favorecer a sus aliados ante posible triunfo demócrata",
-   "resumen": "\"Ni siquiera me lo pensaría (...) Lo haría\", aseguró el mandatario en una entrevista al diario New York Post.",
-   "fuente": "DW Español",
-   "url": "https://www.dw.com/es/trump-abre-la-puerta-a-indultos-para-favorecer-a-sus-aliados-ante-posible-triunfo-demócrata/a-79834954?maca=spa-rss-sp-all-1122-xml-mrss",
-   "fecha": "2026-11-02T23:40:00Z",
-   "tipo": "internacional",
-   "ambito": "mundo",
-   "genero": "noticia",
-   "imagen": null,
-   "procedencia": "directa"
-  },
-  {
    "id": "542b3ab215",
    "sector": "politica",
    "titulo": "Congreso: Diputado Ángel Meneses asume la vocería de Ahora Nación tras renuncia de César Holguín",
@@ -1510,48 +1667,6 @@
    "imagen": null,
    "procedencia": "agregador",
    "via": "Google Noticias"
-  },
-  {
-   "id": "283943eee6",
-   "sector": "mundo",
-   "titulo": "El Tribunal Supremo rechaza apartar unas 20.000 boletas en California en vísperas de las ‘midterms’",
-   "resumen": "La Administración republicana argumentaba en su solicitud que no se deben contar esas papeletas hasta que se corrobore si los votantes son ciudadanos estadounidenses",
-   "fuente": "El País América",
-   "url": "https://elpais.com/us/2026-11-02/el-tribunal-supremo-rechaza-apartar-unas-20000-boletas-en-california-en-visperas-de-las-midterms.html",
-   "fecha": "2026-11-02T23:20:42Z",
-   "tipo": "internacional",
-   "ambito": "mundo",
-   "genero": "noticia",
-   "imagen": "https://imagenes.elpais.com/resizer/v2/YXMON46ZGZNL5HLVY3WYMLPNVA.jpg?auth=805a18c5ab257758664e058ded87e52c7218a986f965fab17ead24c463881dad",
-   "procedencia": "directa"
-  },
-  {
-   "id": "e94c399094",
-   "sector": "mundo",
-   "titulo": "Midterms 2026: Trump se aleja del foco electoral a horas de unos decisivos comicios",
-   "resumen": "En la víspera de las midterms, Donald Trump regresó a Washington para dar un discurso en el que dio prioridad a hablar de las renovaciones físicas hechas en su mandato, como la del estanque del Monumento a Abraham Lincoln. Luego se refirió a las elecciones de mitad de mandato,…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/ee-uu-y-canad%C3%A1/20261102-midterms-2026-trump-se-aleja-del-foco-electoral-a-horas-de-unos-decisivos-comicios",
-   "fecha": "2026-11-02T23:13:10Z",
-   "tipo": "internacional",
-   "ambito": "mundo",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/9dc37b90-d70e-11f1-8126-d18c5759e759/w:1024/p:16x9/FOTO-PORTADA-EEUU-MIDTERMS-TRUMP-LINCOLN.jpg",
-   "procedencia": "directa"
-  },
-  {
-   "id": "f8458019f1",
-   "sector": "mundo",
-   "titulo": "¿Qué tan precisas son las encuestas sobre las midterms en Estados Unidos?",
-   "resumen": "Las encuestas vuelven a estar bajo escrutinio en Estados Unidos de cara a las midterms. Tras lo ocurrido en procesos anteriores, especialmente en las elecciones presidenciales en las que el apoyo a Donald Trump fue subestimado por numerosos sondeos, surge una pregunta clave:…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/video/20261102-qu%C3%A9-tan-precisas-son-las-encuestas-para-estas-elecciones-en-estados-unidos",
-   "fecha": "2026-11-02T23:13:00Z",
-   "tipo": "internacional",
-   "ambito": "mundo",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/10241716-d710-11f1-896d-695cb59fade5/w:1024/p:16x9/ES-20261102-131714-132522-CS.jpg",
-   "procedencia": "directa"
   },
   {
    "id": "2e7d939af6",
@@ -1594,6 +1709,21 @@
    "genero": "noticia",
    "imagen": "https://www.infobae.com/resizer/v2/MOLZHKCIRZDGZLAYNLS5ZZ52TI.png?auth=d9063e04e9029b082f060fec13adc7f52e306e5827aff31d723e6162b7bbdf09&smart=true&width=1920&height=1080",
    "procedencia": "directa"
+  },
+  {
+   "id": "df6720f697",
+   "sector": "politica",
+   "titulo": "Senador Figallo critica que el oficialismo agende la votación de Presupuesto 2027 en semana de representación",
+   "resumen": "",
+   "fuente": "La República",
+   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNS0MwaEpsalhPRnRESkRFeURrQ1otbGh5amo3RFdDNzREYmJDUWllMmV3bW1RMVdaS1B5ejhSWTlFT2ZqRVYxaG5jMWlaSWo1bFp1ZGpjV2J5V3oxRWNQa2ZQVWZONG91cFd6Um9xOGNJTndQYV93TEZsRUdZcTJTaVRNYkJfQ3ZOTnluUjRZbHljd1NzeERaSzVONExGcHc4dWF2ZXlGSGVOdkpNNkRTUldJTjhUVUM3QUJWZF9sazBWSzVnYmVFWkdydjhrU2FvODVLNGZGYTZUNzliVWNfRjc0OTBZT3ZrYjZFWDI1N2JHSFlwcnZTMdIB_gFBVV95cUxObDEtZkpiZmJmNFREQ0N3Z1VIb05mRE9KREhjMmxyOXphSGx6cks0N05TOF9Gdi1JdXRDYnVIM09iUGVud0xYd0pNV0ItRHJhX3VEN2xkYndzeDFUUU5sOGttMG1ncHNkcEd2aVg1Nk1TWFZEejRnYW1Ed0RSSXhvOExhY21VcEJtX24yQTAxWFJnQ2JkZGRFb2tDRndWWFdQN0xKb2ROOVNVVk5DUTFpMHBmZ0FKZU5vOGNMUGVyTXY0X0o2YTEzTGlYSEJ1cXlYMzVIUXFlZW5rOVphTTlrMWJ6ZGl4dzRsYVRJeWJCVHBuM2xIakE0Z3N1SzRWdw?oc=5",
+   "fecha": "2026-11-02T23:01:53Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": null,
+   "procedencia": "agregador",
+   "via": "Google Noticias"
   },
   {
    "id": "f49cd004d5",
@@ -1779,20 +1909,6 @@
    "procedencia": "directa"
   },
   {
-   "id": "b6c1de059c",
-   "sector": "mundo",
-   "titulo": "Las 7 elecciones clave que tienes que mirar para saber si los demócratas recuperan el control del Senado en EE.UU.",
-   "resumen": "Todas las miradas están puestas en un puñado de elecciones al Senado que decidirán el control de la codiciada Cámara Alta. Aquí tienes una breve guía.",
-   "fuente": "BBC Mundo",
-   "url": "https://www.bbc.com/mundo/articles/c9ly0x3jr86eo?at_medium=RSS&at_campaign=rss",
-   "fecha": "2026-11-02T22:06:33Z",
-   "tipo": "internacional",
-   "ambito": "mundo",
-   "genero": "noticia",
-   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/d352/live/f9439fd0-d6fb-11f1-b983-c357054e4d1e.png",
-   "procedencia": "directa"
-  },
-  {
    "id": "1980c29c15",
    "sector": "deporte",
    "titulo": "LaLiga EA Sports: Deportivo logra remontada y gana 2-1 a Osasuna con un gol agónico",
@@ -1819,21 +1935,6 @@
    "genero": "noticia",
    "imagen": "https://lamula.pe/media/uploads/t/ed2b4fd944e1e0cd34dea932c0283c0a.jpg",
    "procedencia": "directa"
-  },
-  {
-   "id": "df6720f697",
-   "sector": "politica",
-   "titulo": "Senador Figallo critica que el oficialismo agende la votación de Presupuesto 2027 en semana de representación",
-   "resumen": "",
-   "fuente": "La República",
-   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNS0MwaEpsalhPRnRESkRFeURrQ1otbGh5amo3RFdDNzREYmJDUWllMmV3bW1RMVdaS1B5ejhSWTlFT2ZqRVYxaG5jMWlaSWo1bFp1ZGpjV2J5V3oxRWNQa2ZQVWZONG91cFd6Um9xOGNJTndQYV93TEZsRUdZcTJTaVRNYkJfQ3ZOTnluUjRZbHljd1NzeERaSzVONExGcHc4dWF2ZXlGSGVOdkpNNkRTUldJTjhUVUM3QUJWZF9sazBWSzVnYmVFWkdydjhrU2FvODVLNGZGYTZUNzliVWNfRjc0OTBZT3ZrYjZFWDI1N2JHSFlwcnZTMdIB_gFBVV95cUxObDEtZkpiZmJmNFREQ0N3Z1VIb05mRE9KREhjMmxyOXphSGx6cks0N05TOF9Gdi1JdXRDYnVIM09iUGVud0xYd0pNV0ItRHJhX3VEN2xkYndzeDFUUU5sOGttMG1ncHNkcEd2aVg1Nk1TWFZEejRnYW1Ed0RSSXhvOExhY21VcEJtX24yQTAxWFJnQ2JkZGRFb2tDRndWWFdQN0xKb2ROOVNVVk5DUTFpMHBmZ0FKZU5vOGNMUGVyTXY0X0o2YTEzTGlYSEJ1cXlYMzVIUXFlZW5rOVphTTlrMWJ6ZGl4dzRsYVRJeWJCVHBuM2xIakE0Z3N1SzRWdw?oc=5",
-   "fecha": "2026-11-02T21:55:04Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": null,
-   "procedencia": "agregador",
-   "via": "Google Noticias"
   },
   {
    "id": "108d958f5d",
@@ -1990,20 +2091,6 @@
    "procedencia": "directa"
   },
   {
-   "id": "1334f8fe8b",
-   "sector": "deporte",
-   "titulo": "Erick Noriega reivindica su polifuncionalidad en la recuperación de Gremio con el que anotó en Copa Brasil: “Donde quiera el técnico daré el 100%”",
-   "resumen": "El futbolista peruano no solo se conforma con ofrecer equilibrio en el centro del campo, también acude al ataque con determinación para dejar su huella goleadora. “He entrenado bastante para jugar en las distintas posiciones”, admitió",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/deportes/2026/11/02/erick-noriega-reivindica-su-polifuncionalidad-en-la-recuperacion-de-gremio-con-el-que-anoto-en-copa-brasil-donde-quiera-el-tecnico-dare-el-100/",
-   "fecha": "2026-11-02T20:46:13Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/O4YTJX7TONA3PP4K2ZADTU6UVU.jpg?auth=d7f60ca2dda1151ad5189225148a758b27d3ef910a95b87d46478c3031c29302&smart=true&width=1920&height=1080",
-   "procedencia": "directa"
-  },
-  {
    "id": "d4fd97f7ce",
    "sector": "tecnologia",
    "titulo": "Rusia y Ucrania alertan de ataques informáticos masivos en sus aplicaciones de emergencias",
@@ -2085,20 +2172,6 @@
    "ambito": "peru",
    "genero": "noticia",
    "imagen": "https://caretas.pe/wp-content/uploads/2026/11/image-2026-11-02T144233.249-1280x720.jpg",
-   "procedencia": "directa"
-  },
-  {
-   "id": "d0621052be",
-   "sector": "deporte",
-   "titulo": "Serie A: Tras un gol agónico, Sassuolo no pudo con Fiorentina pese al doblete de Armand Laurienté",
-   "resumen": "Sassuolo vs Fiorentina se enfrentaron por la Italia - Serie A. Aquí todos los detalles y resumen del encuentro.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/futbol/ligas-internacionales/serie-a-sassuolo-quiere-cortar-su-racha-negativa-frente-a-fiorentina-noticia-1715429",
-   "fecha": "2026-11-02T19:35:04Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/02/1925039.jpg?imgdimension=look",
    "procedencia": "directa"
   },
   {
@@ -2217,20 +2290,6 @@
    "via": "Google Noticias"
   },
   {
-   "id": "40624f79cb",
-   "sector": "politica",
-   "titulo": "Refinería Talara: se paraliza operaciones por interrupción del suministro eléctrico en el norte del Perú",
-   "resumen": "La Refinería Talara, operada por Petro-Perú, registró una interrupción de sus operaciones el domingo 1 de noviembre, debido a una falla en el suministro eléctrico que afectó diversas zonas del norte del país.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/economia/peru/refineria-talara-se-paraliza-operaciones-por-interrupcion-del-suministro-electrico-en-el-norte-del-peru-l-ultimas-noticia/",
-   "fecha": "2026-11-02T17:05:11Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/3NYR73AHSZAD3BP2TCPM3K6BEM.jpg?auth=3c849d780080f524133c1f142afcc2ae894b12700b5ddb93a8a2ad3451595544&smart=true&width=1800&height=1199",
-   "procedencia": "directa"
-  },
-  {
    "id": "649ad6cab8",
    "sector": "politica",
    "titulo": "Senador Nilson Flores defiende voto por facultades y acepta posible sanción de Buen Gobierno",
@@ -2238,6 +2297,21 @@
    "fuente": "Expreso",
    "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxORkxDMk5XclJlb080ZWkxMU5nakYwOHlYeXJxTks5U21xM1N4dGlidEptVmRqNUFlR21EUDY4bWw2YjZDWW83MVg1VGNhM1RlN3NyNzAyX3NFcTl0bmxGYXp6b0hTMDBNQ0lFOHdHTi11U1lPVUlPUE5yM2pHM1ZLTFppcnFBWGx0cHdrMXpxV0tHODRpa29Ia0FONlVRN1J3MXBTQTA0VkhYTFpYbnhZbG9mcE1SUFJ3dWR1TG9CUTlpTlZ3cWtZTjNBUEFSc0taTlNrTkotRTcxMXM5dVlaSmotX3YyUEVQc0x6azczZmt6VDJieV9vRGt4bmhHZHZoUWF3LXVLYVJEQUcwVnc?oc=5",
    "fecha": "2026-11-02T17:02:03Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": null,
+   "procedencia": "agregador",
+   "via": "Google Noticias"
+  },
+  {
+   "id": "1dfd3f70bc",
+   "sector": "politica",
+   "titulo": "Tucker Carlson advierte posible ataque nuclear de EE.UU. contra Irán a un día de las elecciones de medio término",
+   "resumen": "",
+   "fuente": "La República",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPOXdGSEI2RER6VndsWWo2X2ZRREZUaU5zV2pPRS1tbk9kYXN6WTlUcFNmMDAyTFFxUVhIaDhUcnc4aHk0WENnSkxFQjYydFlobGVsQzVsUGZnbXZkYTYyUWZ4SEVVTlZySkNXOWtFSC1LM2xIUU1kWktrVGJjbE5qUlRGcTZjbWhBQjZtaWNlV2xoZnlONVNnWW5LeTVPUHZGU00wV1ZCQjdMNGEtVTZyY1U0cEtTb2hKMlFnRzdZdDM0b3ZZdlhVRzNPeWxYY2tXS29oQnREYU95R0g4bFFfanlMYU9RQnI2bFBjOXJrSDc3VHRENG840gH8AUFVX3lxTE81OG0yUDVZUFZGMmg3eW1qMEZoc0xZYWZDMk14M3d6d042QjNkZ3d4MGRkNS1WUm5JanFCN055bTJiOTVzTm1UeERoc0lnOUNadXZzTmxNVkZRMVpYMXJDUnBvdWZmNHF5Nks5SjljQTBkRWk5UFhmNi0tNF9Xa0E5alNoZVg1Y2F4NUE4NEVPVWtvOHBmS1lJMGlBVDcxVkV3c2tIT0JtcllaY3UxQ1RFOHBBUmU0Y2RiTGlaY01EYlppZlFuNjd0Tk53bW1tTUpCTW82TERJUDdoVmRucWw4Qmk1VmY2Q2RGWWdWc29OOHdENGdXa1ZUaWE0OQ?oc=5",
+   "fecha": "2026-11-02T16:57:35Z",
    "tipo": "comercial",
    "ambito": "peru",
    "genero": "noticia",
@@ -2258,21 +2332,6 @@
    "genero": "noticia",
    "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/2-11-Mas-de-50-distritos-de-Ayacucho-enfrentan-estres-hidrico-y-proxima-gestion-debera-atender-la-crisis.jpg",
    "procedencia": "directa"
-  },
-  {
-   "id": "a604190007",
-   "sector": "economia",
-   "titulo": "Empresas ajustan inversión por el avance de la IA",
-   "resumen": "",
-   "fuente": "Expreso",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMUo3QmdOVTA2dWFILTdpNTVKNmc5QTB5aG8zTjM5WEdFTEdiOE9pWmhSRTZwZWJwM1VJRDc2M3RUTjBwR3BMZHNRSkx4Y3BWcmFJcUNoeENkbWYwM2lYSU5OalJWLTZPSkJwWmZIYmVXM0VfblVtS3FQZmFwOTBLV1FVN2VJTXZtdGdibTFwYVdZTWFjbkI4YTFFZmJualJjUDlKSE4zZi0zOVE?oc=5",
-   "fecha": "2026-11-02T16:27:38Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": null,
-   "procedencia": "agregador",
-   "via": "Google Noticias"
   },
   {
    "id": "91afe78580",
@@ -2401,20 +2460,6 @@
    "via": "Google Noticias"
   },
   {
-   "id": "7482036138",
-   "sector": "economia",
-   "titulo": "El petróleo brent baja casi un 3%, hasta los 110 dólares, pendiente de la situación en Medio Oriente",
-   "resumen": "El precio del petróleo brent para entrega en enero cae este lunes casi el 3%, hasta situarse en los 110 dólares, pendiente de la situación en Oriente Medio, mientras los inversores mantienen el optimismo acerca de posibles avances en las relaciones diplomáticas entre Estados…",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/economia/mercados/el-petroleo-brent-baja-casi-un-3-hasta-los-110-dolares-pendiente-de-la-situacion-en-medio-oriente-l-ultimas-noticia/",
-   "fecha": "2026-11-02T14:25:03Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/JD5ZZKDC4NG6DGXCRNR2AZINZI.jpg?auth=b427ce42ee37fc2b89a28c3e3b3d13c53b2abc704b7c0383de9dc8bc8cd39ac0&smart=true&width=1200&height=600",
-   "procedencia": "directa"
-  },
-  {
    "id": "7d47b33403",
    "sector": "salud",
    "titulo": "Dengue: muertes de niños en Perú ya superan las registradas durante todo el 2025, según registros del Minsa",
@@ -2494,36 +2539,6 @@
    "procedencia": "directa"
   },
   {
-   "id": "f26732633f",
-   "sector": "politica",
-   "titulo": "Deber del Ejecutivo y los radiodifusores",
-   "resumen": "",
-   "fuente": "Expreso",
-   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPSC1yTDM1Rkt4Q1o3UnFCSkd0bDZSYzBxWnBHUzdpLU5RakRUZDFoS05tOTlGMEl3RVR6aHVVN0plQUNMTXZyVlQ2NmpCbG8zbDNDOHYzYU9VRjlMM1hybW5HejRLS21lakVtenRQay1CdmFwejlBcFZjZ2R4SHNaZXpB?oc=5",
-   "fecha": "2026-11-02T07:23:56Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": null,
-   "procedencia": "agregador",
-   "via": "Google Noticias"
-  },
-  {
-   "id": "ed315ba826",
-   "sector": "politica",
-   "titulo": "El IX Congreso Nacional de Derecho Procesal Constitucional",
-   "resumen": "",
-   "fuente": "Expreso",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVXpNNDdhS0I3Y0tHdW5JY2d6Z1dFcW1iblJiMjFXZHJwYjBTTVViVjFFcVlmaHFnT1BfSUJPWmZ6RG9KR2NzdVlKcEVFMDBfSXU5TVlBQVM0elVqY1BhcnZKVXhYSU1OZldDeEQ4eEJ3T1hBMXNkX0JBNG04ZzRnWXhaekxvYkJua21qb3lidi0za1NPX3JQUGJ3?oc=5",
-   "fecha": "2026-11-02T06:43:01Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": null,
-   "procedencia": "agregador",
-   "via": "Google Noticias"
-  },
-  {
    "id": "5c544b58d5",
    "sector": "politica",
    "titulo": "Congreso: falso asesor de Harvey Colchado ofrecía puestos en su despacho a cambio de dinero",
@@ -2539,28 +2554,14 @@
    "via": "Google Noticias"
   },
   {
-   "id": "ae7fcb1e06",
-   "sector": "economia",
-   "titulo": "Inflación en Lima Metropolitana alcanza el 5,25% anual en octubre, el nivel más alto en más de tres años",
-   "resumen": "La inflación en Lima Metropolitana continúa acelerándose. El Índice de Precios al Consumidor (IPC) registró una variación anual de 5,25% a octubre del 2026, su nivel más elevado desde agosto del 2023, cuando alcanzó el 5,58%, de acuerdo con información del Instituto Nacional de…",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/economia/inflacion-en-lima-metropolitana-alcanza-el-525-anual-en-octubre-su-nivel-mas-alto-en-mas-de-tres-anos-ultimas-noticia/",
-   "fecha": "2026-11-01T23:49:47Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/ZQ4NX75DXVF4RCXHUP5NK745JE.jpeg?auth=f3eb1b3c939b0aa06ee922b65765a24045b75f6447eb5fc6d3cb3dc5eaa5dbac&smart=true&width=500&height=333",
-   "procedencia": "directa"
-  },
-  {
-   "id": "92f1f8dc49",
-   "sector": "economia",
-   "titulo": "Las ‘mulas’ que transportan mercurio son clave para la minería ilegal",
+   "id": "3a13e0bf35",
+   "sector": "investigacion",
+   "titulo": "- Ojo-Público",
    "resumen": "",
-   "fuente": "La República",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNbHpfYldvdFJWY0lmRmVfZ3c4aEZ2VnhZR2xuQ2kxazE4OUVUX1p3eGNtTkVhWjByZGNCbE9KSzRqU0FVQjhvUUVxVUNiNXN1MXQ1THFlYWpzbjJTQ21jSmJLdGNZOFUxRDRiUTBXclFjVW9rQk1GUVJQTGdVa1FxYnY4d3M2Y2lRcWVkc3h1MUJScHlRNzhJMkZUYncwOGN3ekdpT21NbENiQnFTR0ZCOXhGUjlsNnpqNUJtZjBjekUxM0NTWnhIVlBJR0ROemvSAdQBQVVfeXFMT19KdU9uMlBvYURiSG9qSVB6eTdnY2dNOXdTUG1WZkVsbTZVb2xSUmt2Tnd4TDhtNkZaLUw3aVFrNWozbmk2Z3VSdUNRUnE2N0czY1gyY1dxNTVxUERiaTB5bVJpbDlmRmU5cFhZc0d3cXJvS3RxSDNMekVCTTNyWU5keG5rbFlhbW9oRGljT3ptWWppZjBlejZEUDRaMGNUTVpHeEJvdDV0bkdJRjkxNUJVZGpwRkdnU2ZkelNqX3JIUHhVZXlDenJ6ZUlFTm1mSUlCZ2Y?oc=5",
-   "fecha": "2026-11-01T23:34:13Z",
-   "tipo": "comercial",
+   "fuente": "OjoPúblico",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdUV5SHBFb3hCQUZ0OFVmYnBiLTdwbXR6am5HYkROcG11dW9hVkpQOTVxQTFlak1RbE1ndDVvaWg5MjV4am1lX2ZjVGdpaGwxRDlxdHREWWFVelVCX1FoU2t1ZUtYdFpDbjBYZHFMek5kN2FkUk9tNHY0TTJ3LXVReHpoRjQ0SWlwOFhXR2J3?oc=5",
+   "fecha": "2026-11-02T03:11:10Z",
+   "tipo": "independiente",
    "ambito": "peru",
    "genero": "noticia",
    "imagen": null,
@@ -2597,14 +2598,14 @@
    "via": "Google Noticias"
   },
   {
-   "id": "5d60bb2830",
-   "sector": "investigacion",
-   "titulo": "De Venezuela y Colombia al Perú: las rutas de la trata y la explotación sexual de migrantes",
+   "id": "b27bdb8931",
+   "sector": "politica",
+   "titulo": "Villa El Salvador: Detonan explosivo en la casa del electo alcalde Marcelino Huamán",
    "resumen": "",
-   "fuente": "OjoPúblico",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNVl9tSkFLaWl0VHFoalZwT2lvSTlmd2pCWUgyZFJSZG54Qy0zNXIxTDhXejFRdXlVSFdQNTdmX2hxZ3Q4Q2VkNy00Rk1pRS0tcmdXVTRGbUJIZjBjZ09paXlMZFg4THg1MjZ3bTVyZUVnUjdpS0lZUlRIZXlveDdGdHZ1bW1obkpoZV9GNWZFakQ?oc=5",
-   "fecha": "2026-11-01T05:00:00Z",
-   "tipo": "independiente",
+   "fuente": "La República",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOSU54czh1b1JYaHJrUVNDaVY3QXZubWlhYUx0QTZuMFQzbzRvSDNnUjhGT2tGc1hMYnUzNUpqQkJfUnNMYlVJTmFvNHNpLWpzSWVTRDJseEhFSkNkSjFEUVkzOWp5Szg1Q08zeDU4ajNOY1lkS3AtVnR4bWxldnhWdlRJaG9sU3o1YTh2ZW91NWticncyRmE5WmRkZmFIU2Y5VC1KVm5SRzU4X1dJR3dzNE9zRG9uUXpuUlVGRkc0bFlDRU8zYWtfbDVkdE54Qkp6Y0tR0gHYAUFVX3lxTFBlbGVOX2JuMGQ0TVlheHpFNTVOb1k3ZmdUOE4weWI5SWd0RUM3X1dvRlNFV1ZqQ01fbUhQYTNiVUhPYmRWZ2cxODVGSUMzSHRWNzN3WlFld0RXV044c3hoZGJDcmVUZjVJS0NUU1A0VGU5c2tXak5pRGd4bHotWXk1NGhVZzlXMkVqa2I3V0Q1YUk5LUN5QU1qZzNQZ1VlMkcxVmhTamxNM3RwY2lzcHhKSDNYOWpwNHAxTXQ5MGZrMFE1bVA1bTBFT0I1aXZGU0QzOEZvUE9Jaw?oc=5",
+   "fecha": "2026-11-01T07:00:00Z",
+   "tipo": "comercial",
    "ambito": "peru",
    "genero": "noticia",
    "imagen": null,
@@ -2627,6 +2628,21 @@
    "via": "Google Noticias"
   },
   {
+   "id": "5d60bb2830",
+   "sector": "investigacion",
+   "titulo": "De Venezuela y Colombia al Perú: las rutas de la trata y la explotación sexual de migrantes",
+   "resumen": "",
+   "fuente": "OjoPúblico",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNVl9tSkFLaWl0VHFoalZwT2lvSTlmd2pCWUgyZFJSZG54Qy0zNXIxTDhXejFRdXlVSFdQNTdmX2hxZ3Q4Q2VkNy00Rk1pRS0tcmdXVTRGbUJIZjBjZ09paXlMZFg4THg1MjZ3bTVyZUVnUjdpS0lZUlRIZXlveDdGdHZ1bW1obkpoZV9GNWZFakQ?oc=5",
+   "fecha": "2026-11-01T05:00:00Z",
+   "tipo": "independiente",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": null,
+   "procedencia": "agregador",
+   "via": "Google Noticias"
+  },
+  {
    "id": "e147746a10",
    "sector": "ia",
    "titulo": "Peruanos confían más en la inteligencia...",
@@ -2638,20 +2654,6 @@
    "ambito": "peru",
    "genero": "noticia",
    "imagen": null,
-   "procedencia": "directa"
-  },
-  {
-   "id": "0fe05ddab0",
-   "sector": "nino",
-   "titulo": "La Bistecca con dos nuevos puntos en Lima y apunta a nuevos distritos",
-   "resumen": "La Bistecca amplía su presencia en Lima, prepara la renovación de sus restaurantes y evalúa nuevas ubicaciones mientras enfrenta el alza de costos por el Fenómeno El Niño.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/economia/empresas/la-bistecca-se-expande-en-lima-y-pone-la-mira-en-miraflores-y-barranco-noticia/",
-   "fecha": "2026-10-31T22:44:15Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/IL6B2PF5MBAVJAQ5O2IMD7I674.png?auth=4c50e42681f2c9382e3d4f96b784c3c7ca09bc168abce9aa4282d46c1ecdee5b&smart=true&width=1536&height=1024",
    "procedencia": "directa"
   },
   {
@@ -2680,6 +2682,34 @@
    "ambito": "peru",
    "genero": "noticia",
    "imagen": null,
+   "procedencia": "directa"
+  },
+  {
+   "id": "a90130a0c9",
+   "sector": "nino",
+   "titulo": "Enfen prevé que El Niño Costero continuará hasta fines de otoño de 2027",
+   "resumen": "",
+   "fuente": "Radio Yaraví Arequipa",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQak85U21aMFgzbDAtTmNaLUlIWVkwb3F4RVhwUTJRMnV6S0Z6RDZ1SkJZVXl0am5ES08tZzRPRjFGZGoxV3Ezd3BRRk5zZ0xsUDFtV2RibGdtTnlJZWJFWlQwbTBJU0dfT3d6eUhZdmw5b3Y5U2htampfcUZjUXRPbWZEd1pOdmdIVU10RFlSRE1tYUE1M3VEOVczSm9LZi1ZYXhYc0dLRTRaUmk2bGpaT0dicw?oc=5",
+   "fecha": "2026-10-31T18:04:32Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": null,
+   "procedencia": "directa"
+  },
+  {
+   "id": "7d717f9da5",
+   "sector": "politica",
+   "titulo": "JURADO ELECTORAL ESPECIAL DE HUANCAYO: “NO A LA REELECCIÓN INMEDIATA DE ALCALDE EN SAN JERÓNIMO DE TUNÁN”",
+   "resumen": "No proclaman Alcalde debido a que el candidato renunció en agosto, y el primer regidor es actual Alcalde del distrito; advierten riesgo de fraude a la ley.",
+   "fuente": "La Mula",
+   "url": "https://luissanchez.lamula.pe/2026/10/31/jurado-electoral-especial-de-huancayo-no-a-la-reeleccion-inmediata-de-alcalde-en-san-jeronimo-de-tunan/luisanchezcorrales/",
+   "fecha": "2026-10-31T17:59:50Z",
+   "tipo": "independiente",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://lamula.pe/media/uploads/t/cc7f8c1677118f85d1a5363a1d281841.jpg",
    "procedencia": "directa"
   },
   {
@@ -2921,20 +2951,6 @@
    "procedencia": "directa"
   },
   {
-   "id": "48f32d48d5",
-   "sector": "economia",
-   "titulo": "De la Espriella revocó una resolución que protegía a la Amazonía de la megaminería y la explotación de hidrocarburos",
-   "resumen": "El gobierno de Abelardo De la Espriella derogó en los últimos días la Resolución 961, que prohibía la megaminería y la explotación de hidrocarburos en la Amazonía, abriendo nuevamente la puerta a las concesiones extractivas en la selva. La medida coincide con un acuerdo…",
-   "fuente": "Mongabay Latam",
-   "url": "https://es.mongabay.com/short-article/2026/10/de-la-espriella-megamineria-explotacion-hidrocarburos-amazonia/",
-   "fecha": "2026-10-30T21:58:57Z",
-   "tipo": "independiente",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://imgs.mongabay.com/wp-content/uploads/sites/25/2026/10/30195517/de-la-espriella-reserva-amazonia-colombia-768x512.jpg",
-   "procedencia": "directa"
-  },
-  {
    "id": "c4e9147790",
    "sector": "investigacion",
    "titulo": "Convoca en vivo: El Niño sin precedentes y la amenaza de impunidad para las víctimas de esterilizaciones forzadas",
@@ -3170,18 +3186,6 @@
    "imagen": null
   },
   {
-   "id": "7440bb670e",
-   "sector": "ia",
-   "titulo": "Google tiene una herramienta para detectar contenido generado con inteligencia artificial",
-   "resumen": "",
-   "fuente": "Telemundo Sacramento",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOVzVEX3pmcHZXSkJoTUkxVVBIaGZtVWp6blp2REZPTVoxNW82QW9vT1dRMU9mdF9OMHV0QmVzZkJXejRIaFk0ZnBoZkVXZ2czUWxYT3F2TW9LSkZVTzJHblRTQ2UwUEN3SmY3R01LVktxSk1wQzF1dWRGODAzTVJkaHVudjNxYVc5QkoxT09yZm1TcEVTeVpWRHVKQXFKZjFieU5Kb0NiSWFNWWVxNUJDSEpBZ9IBuwFBVV95cUxOWVhfamhxUjl5QVc5dGNERTNCdGVOOGRRRmhkNW5OYXVBeDFoZGdqZmZqODJ3bWlScVZKdEQyT05EU2hrYlNUVWplYlVEcGNVd01leHNDVUhlUURJazVrMHNGNmtudTlJMkdFSUNQOVhyTEtkMkdDT0VVOHZuWXhFU2NjNlJNZXR0ekhoVlJQVHVSbENVMFhOTzc2X21xS1JDNGVNanQ3Qm9tZUtIR19jRXFxUjNxb3NGQ2E0?oc=5",
-   "fecha": "2026-10-30T00:29:34Z",
-   "tipo": "internacional",
-   "ambito": "mundo",
-   "imagen": null
-  },
-  {
    "id": "6457b67391",
    "sector": "ia",
    "titulo": "Trabajo, desigualdad y desafíos de la inteligencia artificial centran reflexión sobre la dignidad humana en el Seminario Internacional en Perú",
@@ -3191,34 +3195,6 @@
    "fecha": "2026-10-30T00:10:54Z",
    "tipo": "comercial",
    "ambito": "peru",
-   "genero": "noticia",
-   "imagen": null,
-   "procedencia": "directa"
-  },
-  {
-   "id": "ee4bef4575",
-   "sector": "investigacion",
-   "titulo": "Víctimas de esterilizaciones forzadas rechazan archivo fiscal: \"No perdonamos el daño irreparable que nos hicieron\"",
-   "resumen": "María Elena Carbajal, presidenta de la Asociación de Víctimas de Esterilizaciones Forzadas de Lima-Callao, calificó de «catastrófica» la decisión de la Fiscalía de archivar la investigación contra 52 personas mediante la apli",
-   "fuente": "La Mula",
-   "url": "https://redaccion.lamula.pe/2026/10/29/esterilizaciones-forzadas-victimas-rechazan-archivo-fiscal-ley-impunidad/jorgepaucar/",
-   "fecha": "2026-10-29T23:56:00Z",
-   "tipo": "independiente",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://lamula.pe/media/uploads/t/d37dc38d59c14c444525e320252d69e5.jpg",
-   "procedencia": "directa"
-  },
-  {
-   "id": "f20dba337f",
-   "sector": "ia",
-   "titulo": "Pánico por la inteligencia artificial: Google perdió US$ 480.000 millones y protagonizó una de las peores caídas de la historia",
-   "resumen": "",
-   "fuente": "Yahoo",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQnh5VkcydzY5R2JvQVEwM2NaZldKdFlSOFpGZHZYWnB5QTZXb29sVEE2YVFKUFVuSXJaX05yV0Z4SEl1eEF2TkhTbXNSbzNKQnQ1S3oxQzQ5RU16Y21TOFRmMXBHM25VQVBKZWZ3TFFwNllrbzFIc1lSQjRISk5SZzdsd1A0X1NHb3RqQ0p1cWEtdExMUE5FbjllbjJSZ09Xa0hxSA?oc=5",
-   "fecha": "2026-10-29T20:00:00Z",
-   "tipo": "internacional",
-   "ambito": "mundo",
    "genero": "noticia",
    "imagen": null,
    "procedencia": "directa"
@@ -3281,20 +3257,6 @@
    "procedencia": "directa"
   },
   {
-   "id": "fe54e26862",
-   "sector": "ia",
-   "titulo": "OpenAI asegura que su inteligencia artificial logró resolver tres problemas científicos que llevaban décadas sin solución. Ahora necesita convencer a los expertos de que es verdad",
-   "resumen": "",
-   "fuente": "Gizmodo en Español",
-   "url": "https://news.google.com/rss/articles/CBMitwJBVV95cUxOWVkwa3NVTWtYOUdNX0pkamxlSVNFQTlVYzhSNk5rcEZFRGdVeDN3REREOW9mUC0xTDBKTG1UV0s1T1BKSUM4M2txUDJJeDVkcFFqRTBUWHp2c0xGR1hDaDVNMkVPR3RsbG9UVlVfcjcwQWtPYVN6QnRqOW5DSHlkMVNsMno4WFQxdzdCN3RYZHg0VXpDSzJ2ZXZPenN2blR6S0pwU2hQQndmaFp4a2loUmQ2YWpxSmY0dXJsVDFMa1d5R2V2TEVNODMwTThzTXRjdjBCYUYzZGhHc09PTzJDNWxuRXJBVFZxZ1FRODhJWk9aODl4a1IxeXloSUt2SzVicEQ2VEdhQ2FlUUxXcHphOW5rcmdRRHNvbWs2SEVPRjEzZ3V5THFSNHA2c1M2el9FRGNwdlRtOA?oc=5",
-   "fecha": "2026-10-29T09:16:32Z",
-   "tipo": "internacional",
-   "ambito": "mundo",
-   "genero": "noticia",
-   "imagen": null,
-   "procedencia": "directa"
-  },
-  {
    "id": "79ef332f45",
    "sector": "salud",
    "titulo": "El calor, las sequías y el dengue exponen los crecientes daños del cambio climático a la salud",
@@ -3352,6 +3314,20 @@
    "procedencia": "directa"
   },
   {
+   "id": "0d45cf1d0d",
+   "sector": "ia",
+   "titulo": "Anthropic ha diseñado un peculiar sistema de poder para evitar que sus accionistas la controlen después de su salida a bolsa",
+   "resumen": "",
+   "fuente": "Xataka",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPNXU2VEwzd2J6Q1pPQzU5Q2tVNkhta1VrTE5ESTJQVDJWUWMxWDNKRjNEdmpZSi1yczdDVmFRdHo3aUZEMy1vZzlyYVBpWVJuS3ljT21HUWxRdDJJbWlNdXgxa0tjaDVGbTRKMW5DRDhKSDU1ZE5sMUVyYVBoOWtlUE5sUkg1a0dVdlYxT0VCRG1FTlhxZm5PdTR5LWR0c2p1aVR5cjZrUWhQd0h0VFVER2RIUzVxSmlESkIzdjU0VDltWjR4Y3Fwczd4WVAxN0Jlbk9XakhfdE1fX3B3Y3EtaUFVUQ?oc=5",
+   "fecha": "2026-10-28T17:01:26Z",
+   "tipo": "internacional",
+   "ambito": "mundo",
+   "genero": "noticia",
+   "imagen": null,
+   "procedencia": "directa"
+  },
+  {
    "id": "7881e4565b",
    "sector": "ia",
    "titulo": "Anthropic advirtió a los inversores que su IA es un riesgo para la humanidad: cuatro de sus modelos ya se escaparon de una prueba",
@@ -3381,6 +3357,20 @@
    "via": "Google Noticias"
   },
   {
+   "id": "2159d948b7",
+   "sector": "ia",
+   "titulo": "California Debate el Futuro de la Inteligencia Artificial y la Regulación Tecnológica",
+   "resumen": "",
+   "fuente": "N+",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOYWo5dm41MFpEY2ZXbVpULU4tS2FTVjRaTEFJbVI5TzlfN3Bna2ZHMVVBblY5YWhtdm9pVURNX2EzcWF4N0owT0ozUExWMnhkaEhESnJJSHpCN0RfaWlOLWY5dmQtYmpxVkZ0akFrSmlMc0RFOExHNFZKYjREbmJIcVZkeDBtcjM3aE1hVFN0OFczSEtVM2lSUmtfbkNGWC01ZHJURUJUdkhfQUt1TnZlZTJYeHgwZ0EwZXhkUENiOUlJXzZOeVdsdXB3MjBjbHpXeVVtTw?oc=5",
+   "fecha": "2026-10-28T02:28:00Z",
+   "tipo": "internacional",
+   "ambito": "mundo",
+   "genero": "noticia",
+   "imagen": null,
+   "procedencia": "directa"
+  },
+  {
    "id": "efa8065d64",
    "sector": "investigacion",
    "titulo": "Esterilizaciones forzadas: víctimas acudirán a la Corte IDH tras archivo fiscal por ley de impunidad",
@@ -3394,6 +3384,20 @@
    "imagen": null,
    "procedencia": "agregador",
    "via": "Google Noticias"
+  },
+  {
+   "id": "0fd1a10adf",
+   "sector": "ia",
+   "titulo": "Trump promete prohibir el término ‘inteligencia artificial’",
+   "resumen": "",
+   "fuente": "Forbes Perú",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQOUpOd2dMUnR3SzFubUZ0MGc0YmpkUzBIUXRVRXBnbDRyd2RWUWZZR3N1ZTZ6U1BGLXhEOEc4dUVmNGFWMURQTWY4UU9TX1hJS3JsRHFZdDVSV0h4ZVhXNmh3dFotTGdVY1dISlJjQ3l3TkQxMzNrNFhzdk9sZEZZODZJRzRBTTdhMUxFX0h2dl9MOGExX09FSVUtNWVaNEE?oc=5",
+   "fecha": "2026-10-27T23:00:12Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": null,
+   "procedencia": "directa"
   },
   {
    "id": "6e1af1a1ce",
@@ -3447,20 +3451,6 @@
    "fuente": "Infobae",
    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZnlIZXBxMEJQeHB4OFg0WmV1a0w2TFB0OVhncmRMelZJTHk0S3hwN1FqaG1nbzg1cnE2S1d6ckxsenZtbEdsck9UdVE2aFJVd3lMWkpDN0NKX2ZsMEhRUjdoMXI1TDZyS1pIYnE1Yl91U2oyNDJwUk9DN3JicGYtU0g1N2taN3lhOW0xenZELUZTWFhTZERRbEFtZklZTE9OWHFoVjFSbmZBZk5wRGxnbkJOejJuSExIeF9UVFBaNk5ybWFLNDZ6cXR6MVUzSEZjMlHSAewBQVVfeXFMT1l4NEhiS2xQRHdnTHBjUi13SGlTRXl3OENGSGdmLWVOd3FsVDJrTG8wbDhna2pFcnh2Q05LUGNYRnNnWDgySHNBVGE2WFRJLWF0SWRYdG9oa0dJbmw4ODRteURpZU5QMC1Ia0YtdF9iOGI3LVpvdTVicjllVC10QTR5ZXdHeW1sTWxpZEdkQktEbFF3SjEyaEpLNTRqQlE2X0dyWDJjdnBWTDRIc21BRjBiWjlsRjc2SnRkaFZYZUdKb1NuUThSS2htZk5FMkNVZm1FRVJKZ3ZQVXZDamVnVVlTczJrcHNtdk5yNng?oc=5",
    "fecha": "2026-10-27T17:56:32Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": null,
-   "procedencia": "directa"
-  },
-  {
-   "id": "28c1a890e9",
-   "sector": "ia",
-   "titulo": "Muyu Education llega a Perú con una plataforma de Inteligencia Artificial para el acompañamiento docente continuo",
-   "resumen": "",
-   "fuente": "Business Empresarial",
-   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOMDdvREU0UWRBbW5BV3hoaTlzdEI0ZmI5MVI5SVBUZWdOeVRxQU5RbGpCeXFNWWhUb2pQNEczNm8yMXo2aW1LM2oxaXhBV09vUVo4dGdKblNFTThJdmtYdTJKenJqVFV1bk5XVFl2OENCUkpMMERuQlJJdWtVUmd4REItQzZUY0FkNWxval9Sdk5mekE4ZC1TdTlaRXE1cjkwWnVWRU5GbEhQOVh6ZGZPaU1UNU5RWGhLdlIwRV8tblhqYUNOS0RBOTBocGxkZjRKZHdLckliTXFPTy1JWHZIcFNpeWlsTDZv?oc=5",
-   "fecha": "2026-10-27T03:42:03Z",
    "tipo": "comercial",
    "ambito": "peru",
    "genero": "noticia",
@@ -3636,6 +3626,21 @@
    "procedencia": "directa"
   },
   {
+   "id": "4834ad5337",
+   "sector": "investigacion",
+   "titulo": "Sección",
+   "resumen": "",
+   "fuente": "OjoPúblico",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE42S2JHV3JLV2gtQ2o1Q2FJU2VkaEpFeTJLYmRXeS1XaEV3NU0tVmdYeXVGa2M4WUkwSlJYVGhySXBuRWlobURTbFgzWGRycXF5ckpxUFBPc3J1dw?oc=5",
+   "fecha": "2026-10-07T16:54:12Z",
+   "tipo": "independiente",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": null,
+   "procedencia": "agregador",
+   "via": "Google Noticias"
+  },
+  {
    "id": "s12",
    "sector": "tecnologia",
    "titulo": "Ciberataques con IA y ransomware aumentan en el Perú, advierte un estudio",
@@ -3692,14 +3697,14 @@
    "enlace": "https://www.iebschool.com/hub/ai-act-2026-la-ue-retrasa-el-cumplimiento-de-la-ia-de-alto-riesgo-a-diciembre-de-2027/"
   },
   "ia-infra": {
-   "url": "https://i0.wp.com/fourweekmba.com/wp-content/uploads/2026/10/daily-roundup-12-oct-2026-ai-chips-racks-large-loads.png?fit=2400%2C1260&ssl=1",
-   "fuente": "FourWeekMBA",
-   "enlace": "https://fourweekmba.com/ai-daily-roundup-12-oct-2026-ai-chips-racks-large-loads/"
+   "url": "https://news-api.bgov.com/v1/resize-image?url=https%3A%2F%2Fbloomberg-bna-brightspot.s3.us-east-1.amazonaws.com%2F67%2F3a%2F4b4b047c4c0ea9ceab449d6ec699%2F446274991.jpg&width=1200&height=630&fit=cover&removeAnimation=true&crop=3994x1539%2B3%2B188",
+   "fuente": "Bloomberg Government",
+   "enlace": "https://news.bgov.com/bloomberg-government-news/ai-regulation-chip-exports-data-centers-form-2026-tech-fights"
   },
   "deporte": {
-   "url": "https://imgmedia.larepublica.pe/1200x735/larepublica/original/2026/10/08/6ac7c909f6daf0dda50fdcf4.jpg",
-   "fuente": "La República",
-   "enlace": "https://larepublica.pe/deportes/2026/10/08/tabla-de-posiciones-torneo-clausura-y-acumulado-de-la-liga-1-2026-683392"
+   "url": "https://www.infobae.com/resizer/v2/W6XQTQ5TXRAFRCAAPQUSMH2EOE.png?auth=a6d1474aa5efde4b988e04e13a9177f91f5a8ce0e815d138b9ce80329746b2df&smart=true&width=1024&height=512&quality=85",
+   "fuente": "Infobae",
+   "enlace": "https://www.infobae.com/peru/deportes/2026/08/15/tabla-de-posiciones-liga-1-peru-2026-en-vivo-hoy-partidos-fecha-5-torneo-clausura-acumulada-alianza-lima-universitario-sporting-cristal-melgar-cienciano-sport-boys/"
   },
   "investigacion": {
    "url": "https://cpj.org/wp-content/uploads/2021/11/000_14M7IR.jpg?resize=1200,814&strip=all&quality=80",
@@ -3715,10 +3720,6 @@
  "indicadores": {
   "tipo_cambio": {
    "serie": [
-    {
-     "f": "2026-09-18",
-     "v": 3.3585
-    },
     {
      "f": "2026-09-21",
      "v": 3.3551
@@ -4368,7 +4369,7 @@
   "numero": "19-2026",
   "fecha": "2026-10-16",
   "url": "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen",
-  "comprobado": "2026-11-03T03:47:19Z",
+  "comprobado": "2026-11-03T09:12:16Z",
   "ok": true
  },
  "registro": [
@@ -4443,6 +4444,22 @@
   },
   {
    "t": "2026-11-03T03:46:42Z",
+   "fuentes_ok": 24,
+   "fuentes": 24,
+   "nuevas": 317,
+   "notas": 244,
+   "descartes": {},
+   "agregador": [
+    "OjoPúblico",
+    "Convoca",
+    "Hildebrandt en sus trece",
+    "La República",
+    "Expreso"
+   ],
+   "sin_datos": []
+  },
+  {
+   "t": "2026-11-03T09:11:36Z",
    "fuentes_ok": 24,
    "fuentes": 24,
    "nuevas": 317,
