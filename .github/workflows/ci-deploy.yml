@@ -25,6 +25,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - run: node --check coyuntura-peru/assets/app.js && node --check coyuntura-peru/assets/civic-experience.js
+      - run: node --test coyuntura-peru/tests/identidad_ciudadana.cjs
       - run: npm run lint
       - run: npm run typecheck
       - run: npm test
