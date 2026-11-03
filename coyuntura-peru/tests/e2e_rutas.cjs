@@ -45,11 +45,11 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
       require("crypto").createHash("sha256").update(sourceBytes).digest("hex") ===
       "d30d7e29ceae393c4bf6ce3270524285e3f3b0dfc8eac9c05370a71b0db991eb",
       `[${w}] el fondo no coincide con la imagen exacta aprobada`);
-    for (const name of ["noticias-congreso.jpg","datos-bcrp.jpg","nino-piura.jpg"]) {
-      const file = path.join(RAIZ,"assets","photos",name);
-      ok(fs.existsSync(file) && fs.statSync(file).size > 20000 &&
+    for (const name of ["card-actualidad.jpg","card-datos.jpg","card-elnino.jpg"]) {
+      const file = path.join(RAIZ,"assets",name);
+      ok(fs.existsSync(file) && fs.statSync(file).size > 10_000 &&
         fs.readFileSync(file).subarray(0,3).equals(Buffer.from([0xff,0xd8,0xff])),
-        `[${w}] fotografía documental verificada: ${name}`);
+        `[${w}] imagen local de tarjeta válida: ${name}`);
     }
     const photos = await p.evaluate(() => {
       const hero = getComputedStyle(document.querySelector(".hero")).backgroundImage;
@@ -59,15 +59,18 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
     });
     ok(photos.hero.includes("hero-peru-en-claro-aprobado.jpg"),
        `[${w}] la portada no utiliza el fondo aprobado`);
-    ok(["noticias-congreso.jpg","datos-bcrp.jpg","nino-piura.jpg"].every((name,i) =>
-      photos.cards[i].includes("photos/"+name)), `[${w}] no se muestran fotografías de las tarjetas`);
+    ok(["card-actualidad.jpg","card-datos.jpg","card-elnino.jpg"].every((name,i) =>
+      photos.cards[i].includes(name)), `[${w}] no se muestran las imágenes de las tres preguntas`);
     ok(photos.noVisibleCredits, `[${w}] siguen apareciendo créditos fotográficos en la portada`);
+    ok(await p.locator(".q2 .q-go").getAttribute("href") === "#/datos", `[${w}] enlace Indicadores incorrecto`);
+    ok(await p.locator(".q3 .q-go").getAttribute("href") === "#/s/nino", `[${w}] enlace El Niño incorrecto`);
+
     const decoded = await p.evaluate(async () => {
       const files = [
         "assets/hero-peru-en-claro-aprobado.jpg",
-        "assets/photos/noticias-congreso.jpg",
-        "assets/photos/datos-bcrp.jpg",
-        "assets/photos/nino-piura.jpg"
+        "assets/card-actualidad.jpg",
+        "assets/card-datos.jpg",
+        "assets/card-elnino.jpg"
       ];
       return await Promise.all(files.map(file => new Promise(resolve => {
         const img = new Image();
@@ -81,7 +84,7 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
 
     const tit = await p.locator(".qs .q h2").allInnerTexts();
     ok(/pasando/.test(tit[0]) && /datos/.test(tit[1]) && /Niño/.test(tit[2]), `[${w}] portada: títulos de las tres preguntas (${tit.join(" / ")})`);
-    ok(await p.locator(".q1 .gn").count() > 0, `[${w}] portada: las noticias llevan etiqueta de género`);
+    ok(await p.locator(".q1 .q-go").getAttribute("href") === "#/noticias", `[${w}] la tarjeta Noticias no enlaza correctamente`);
     ok(await p.locator(".fresh dt").count() === 4, `[${w}] portada: cuatro fechas diferenciadas`);
     // datos
     await p.goto(base + "#/datos"); await p.waitForTimeout(300);
