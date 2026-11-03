@@ -84,7 +84,7 @@ jobs:
           python-version: "3.12"
       - name: Validar contenido antes de publicar
         run: python fuente/coyuntura-peru/scripts/validar_contenido.py
-      - name: Descargar fotografías documentales reales y validar JPEG
+      - name: Descargar fotografías documentales de tarjetas y validar JPEG
         run: python fuente/coyuntura-peru/scripts/fetch_visual_photos.py --dest fuente/coyuntura-peru/assets/photos
       - name: Copiar Perú en Claro a gh-pages/peru-en-claro/
         run: |
