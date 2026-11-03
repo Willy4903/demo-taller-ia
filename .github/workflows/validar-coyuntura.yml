@@ -36,7 +36,7 @@ jobs:
           node-version: 22
           cache: npm
 
-      - name: Comprobar fotografías reales de portada y tarjetas
+      - name: Comprobar fotografías reales de las tres tarjetas
         run: python coyuntura-peru/scripts/fetch_visual_photos.py --dest coyuntura-peru/assets/photos
 
       - name: Sintaxis de JavaScript
