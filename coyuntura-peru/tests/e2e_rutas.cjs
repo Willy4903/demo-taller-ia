@@ -45,6 +45,12 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
     ok(await p.locator("#n-lista .vacio").count() === 1, `[${w}] noticias: búsqueda sin resultados incorrecta`);
     await p.locator("#n-clear").click();
     ok(await p.locator("#n-lista .row").count() > 0 && await p.locator("#n-query").inputValue() === "", `[${w}] noticias: limpiar filtros no restaura resultados`);
+    // Noticias: el contenido disponible debe poder consultarse dentro del portal.
+    ok(await p.locator("#n-lista .pe-story").count() > 0, `[${w}] noticias: faltan las síntesis locales`);
+    await p.locator("#n-lista .pe-story").first().locator("summary").click();
+    ok(await p.locator("#n-lista .pe-story[open]").count() > 0 &&
+       await p.locator("#n-lista .pe-story[open] .pe-story-actions a").count() > 0,
+       `[${w}] noticias: extracto y fuente secundaria no funcionan`);
     // portada
     await p.goto(base + "#/"); await p.waitForTimeout(250);
     ok(await p.locator(".qs .q").count() === 3, `[${w}] portada: deben verse 3 tarjetas de preguntas`);
@@ -64,6 +70,8 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
         fs.readFileSync(file).subarray(0,3).equals(Buffer.from([0xff,0xd8,0xff])),
         `[${w}] imagen local de tarjeta válida: ${name}`);
     }
+    // Medir la cara frontal en reposo; el giro es una interacción voluntaria.
+    await p.mouse.move(2, 2); await p.waitForTimeout(750);
     const photos = await p.evaluate(() => {
       const hero = getComputedStyle(document.querySelector(".hero")).backgroundImage;
       const cards = [...document.querySelectorAll(".qs .q")].map(el => {
@@ -90,6 +98,22 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
     ok(photos.noVisibleCredits, `[${w}] siguen apareciendo créditos fotográficos en la portada`);
     ok(await p.locator(".q2 .q-go").getAttribute("href") === "#/datos", `[${w}] enlace Indicadores incorrecto`);
     ok(await p.locator(".q3 .q-go").getAttribute("href") === "#/s/nino", `[${w}] enlace El Niño incorrecto`);
+    ok(await p.locator(".qs .pe-card-3d").count() === 3, `[${w}] portada: faltan tarjetas giratorias`);
+    ok(await p.locator("#pe-lab [role=tab]").count() === 3, `[${w}] portada: falta la síntesis interactiva`);
+    if (touch) await p.locator(".q1 .pe-flip-trigger").click();
+    else await p.locator(".q1").hover();
+    ok(await p.locator(".q1.pe-flipped").count() === 1, `[${w}] portada: no se voltea tarjeta Noticias`);
+    await p.locator('.q1 [data-pe-open="actualidad"]').click();
+    ok(await p.locator('[data-pe-tab="actualidad"][aria-selected=true]').count() === 1,
+       `[${w}] portada: síntesis de actualidad no activa`);
+    await p.locator('[data-pe-tab="datos"]').click();
+    ok(await p.locator('[data-pe-tab="datos"][aria-selected=true]').count() === 1 &&
+       (await p.locator("#pe-data-note").innerText()).length > 10,
+       `[${w}] portada: explicación de indicadores ausente`);
+    await p.locator('[data-pe-tab="nino"]').click();
+    ok((await p.locator("#pe-data-title").innerText()).includes("ENFEN"),
+       `[${w}] portada: síntesis ENFEN sin trazabilidad`);
+
 
     const decoded = await p.evaluate(async () => {
       const files = [
@@ -117,9 +141,16 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
     const nd = await p.locator(".dc").count(); ok(nd >= 15, `[${w}] datos: pocas tarjetas (${nd})`);
     const sinCorte = await p.locator(".dc:not(:has(.dc-m b))").count(); ok(sinCorte === 0, `[${w}] datos: ${sinCorte} tarjetas sin fecha de corte`);
     const sinUn = await p.locator(".dc .un:empty").count(); ok(sinUn === 0, `[${w}] datos: ${sinUn} cifras sin unidad`);
+    ok(await p.locator(".dc .pe-data-explain").count() === nd, `[${w}] datos: faltan interpretaciones desplegables`);
+    await p.locator(".dc .pe-data-explain").first().locator("summary").click();
+    ok(await p.locator(".dc .pe-data-explain[open]").count() === 1, `[${w}] datos: no abre explicación local`);
+
     // El Niño
     await p.goto(base + "#/nino"); await p.waitForTimeout(300);
     ok(await p.locator(".n3-i").count() === 3, `[${w}] El Niño: estado, pronóstico y riesgo`);
+    await p.locator(".n3-i").first().locator("summary").click();
+    ok(await p.locator(".n3-i[open]").count() === 1, `[${w}] El Niño: el concepto no se despliega`);
+
     ok(/Último comunicado oficial del ENFEN/.test(await p.locator("#app").innerText()), `[${w}] El Niño: falta el último comunicado oficial`);
     const datosNoticias = JSON.parse(fs.readFileSync(path.join(RAIZ, "data", "noticias.json"), "utf-8"));
     const nEnf = datosNoticias.enfen && datosNoticias.enfen.numero ? datosNoticias.enfen.numero.split("-").reduce((a, b) => +b * 1000 + +a) : 0;
