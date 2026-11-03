@@ -40,10 +40,14 @@ jobs:
       - name: Sintaxis de JavaScript
         run: |
           node --check coyuntura-peru/assets/app.js
+          node --check coyuntura-peru/assets/civic-experience.js
           node --check coyuntura-peru/sw.js
           node --check coyuntura-peru/data/editorial.js
           node --check coyuntura-peru/data/talleres.js
           node --check coyuntura-peru/tests/e2e_rutas.cjs
+
+      - name: Probar identidad visual y lectura ciudadana
+        run: node --test coyuntura-peru/tests/identidad_ciudadana.cjs
 
       - name: Pruebas del actualizador (Python)
         run: python -m unittest discover -s coyuntura-peru/scripts -p "test_*.py" -v
