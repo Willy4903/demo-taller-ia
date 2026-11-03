@@ -281,7 +281,10 @@
       '<a href="#/s/economia"><strong>Economía</strong><span>Actividad, precios y empleo</span></a>'+
       '<a href="#/s/salud"><strong>Sociedad</strong><span>Salud y servicios públicos</span></a>'+
       '<a href="#/s/nino"><strong>Ambiente</strong><span>Clima, pronóstico y riesgos</span></a></nav>';
-    if(principal)h+='<section class="dest" aria-labelledby="dest-h"><h2 id="dest-h">Análisis destacado</h2>'+leadCard(principal)+'<p class="why"><b>Por qué importa:</b> '+esc((principal.raw||{}).paraTi||"")+'</p></section>';
+    var PE=/per[uú]|peruan|\blima\b|\bjne\b|bcrp|\bmef\b|sunat|inei|minsa|\bsbs\b|indecopi|osinergmin|diputad|\bpnp\b|ministerio p[uú]blico|fiscal[ií]a|poder judicial|contralor[ií]a|presidenta|keiko|fujimori|castillo|boluarte|soles\b/i;
+    var ultimas=FEED.filter(function(i){return (i.sector==="politica"||i.sector==="economia")&&i.tipo!=="internacional"&&i.genero!=="opinion"&&PE.test(i.titulo+" "+(i.resumen||""))&&!/concierto|entradas|estados unidos|eeuu|trump/i.test(i.titulo);}).slice(0,4);
+    if(ultimas.length)h+='<section class="dest ultimas" aria-labelledby="ult-h"><h2 id="ult-h">Últimas noticias de política y economía</h2><p class="ult-sub">Se renuevan solas, siete veces al día. Última lectura: '+esc(fechaSistema)+'.</p><div class="ult-l">'+ultimas.map(row).join("")+'</div><p class="ult-mas"><a href="#/noticias">Ver todas las noticias →</a></p></section>';
+    if(principal)h+='<section class="dest" aria-labelledby="dest-h"><h2 id="dest-h">Análisis de fondo</h2>'+leadCard(principal)+'<p class="why"><b>Por qué importa:</b> '+esc((principal.raw||{}).paraTi||"")+'</p></section>';
     h+=frescura();
     h+='<details class="mas-rec"><summary>Más recursos: formación, glosario, estadísticas y talleres</summary><div class="mas-g"><a href="#/ruta">La Ruta (aprende jugando)</a><a href="#/glosario">Glosario</a><a href="#/estadisticas">Estadísticas del sitio</a><a href="#/historial">Historial de notas</a><a href="#/talleres">Talleres de IA</a><a href="#/fuentes">Fuentes y su estado</a></div></details></div>';
     return h;

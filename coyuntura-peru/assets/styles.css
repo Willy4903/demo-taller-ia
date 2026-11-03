@@ -864,3 +864,8 @@ body:not([data-v="inicio"]) .ticker{display:none}
 @media (max-width:420px){.mas-b span{display:none}.mas-b{padding:0 12px}}
 @media (min-width:1000px){.hero h1{max-width:26ch}.hero-sub{max-width:64ch}}
 .n-aviso{margin:0 0 14px;padding:12px 14px;border-radius:var(--r);border:1px solid #B45309;background:rgba(245,158,11,.12);color:var(--tx);font-size:.92rem;line-height:1.45}.n-aviso b{color:var(--gold-t)}
+
+.ultimas .ult-sub{margin:-4px 0 12px;color:var(--tx3);font-size:.85rem}
+.ultimas .ult-l{display:grid;gap:10px}
+.ultimas .ult-mas{margin:12px 0 0;font-weight:700}
+.ultimas .ult-mas a{color:var(--gold-t)}
