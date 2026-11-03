@@ -103,7 +103,13 @@
         lab.scrollIntoView({behavior:reduced?"instant":"smooth",block:"start"});
       });
       q.addEventListener("pointerenter",function(e){if(e.pointerType==="mouse"&&desktopHover&&!reduced)flip(q,true,false);});
-      q.addEventListener("pointerleave",function(e){if(e.pointerType==="mouse"&&!q.contains(document.activeElement))flip(q,false,false);});
+      q.addEventListener("pointerleave",function(e){
+        if(e.pointerType!=="mouse"||!desktopHover)return;
+        var bounds=q.getBoundingClientRect();
+        // El cambio de cara puede producir un leave sintético dentro de los límites de la tarjeta.
+        if(e.clientX>=bounds.left&&e.clientX<=bounds.right&&e.clientY>=bounds.top&&e.clientY<=bounds.bottom)return;
+        if(!q.contains(document.activeElement))flip(q,false,false);
+      });
       q.addEventListener("focusout",function(e){if(!q.contains(e.relatedTarget)&&!q.matches(":hover"))flip(q,false,false);});
     });
     var tabs=Array.prototype.slice.call(lab.querySelectorAll("[data-pe-tab]"));
