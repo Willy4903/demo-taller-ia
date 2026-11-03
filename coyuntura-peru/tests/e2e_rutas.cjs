@@ -32,6 +32,19 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
       ok(info.len > 80 && info.h, `[${w}] #/${r}: contenido vacío o sin título`);
       ok(errs.length === 0, `[${w}] #/${r}: errores de consola: ${errs.join(" | ")}`);
     }
+    // Noticias: filtros completos, conteo, búsqueda y ausencia de recorte en chips.
+    await p.goto(base + "#/noticias"); await p.waitForTimeout(300);
+    const filtros = p.locator(".filtros-noticias");
+    if (w < 720) await filtros.locator("summary").click();
+    ok(await p.locator("#n-count").innerText() !== "", `[${w}] noticias: falta el contador de resultados`);
+    const chipLayout = await p.locator(".filtros-noticias .chips").evaluateAll(els => els.length === 3 && els.every(el => el.scrollWidth <= el.clientWidth + 2));
+    ok(chipLayout, `[${w}] noticias: filtros recortados o desbordados`);
+    await p.locator('[data-nf="sector:economia"]').click();
+    ok(await p.locator('[data-nf="sector:economia"]').getAttribute("aria-pressed") === "true", `[${w}] noticias: filtro de Economía no se activa`);
+    await p.locator("#n-query").fill("___noticia_inexistente_987654___");
+    ok(await p.locator("#n-lista .vacio").count() === 1, `[${w}] noticias: búsqueda sin resultados incorrecta`);
+    await p.locator("#n-clear").click();
+    ok(await p.locator("#n-lista .row").count() > 0 && await p.locator("#n-query").inputValue() === "", `[${w}] noticias: limpiar filtros no restaura resultados`);
     // portada
     await p.goto(base + "#/"); await p.waitForTimeout(250);
     ok(await p.locator(".qs .q").count() === 3, `[${w}] portada: deben verse 3 tarjetas de preguntas`);
