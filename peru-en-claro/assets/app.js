@@ -75,7 +75,7 @@
   function xpChip() { var nv = NIVELES[nivelDe(S.xp)], c = $("#xpchip"), n = $("#xpnum"); if (c) c.title = "Nivel: " + nv.n; if (n) n.textContent = S.xp + " XP"; }
 
   /* ───── fotos reales: si una imagen falla, se quita (nunca se sustituye por ilustraciones) ───── */
-  window.cpImg = function (im) { var d = im.parentNode; if (!d) return; var r = d.closest && d.closest(".row"); if (r) r.classList.add("nofoto"); d.remove(); };
+  window.cpImg = function (im) { var d = im.parentNode; if (!d) return; var r = d.closest && d.closest(".row"), noticia = d.closest && d.closest(".pe-news-card"); if (r) r.classList.add("nofoto"); if (noticia) noticia.classList.add("no-photo"); d.remove(); };
 
   /* ───── modelo de historias ───── */
   var ITEMS = (NOT.items || []).filter(function (it) {
@@ -145,10 +145,10 @@
     var badges=facts.length?'<div class="pe-news-metrics" aria-label="Cifras mencionadas por el medio">'+facts.map(function(x){return '<span class="pe-news-metric">'+esc(x)+'</span>';}).join("")+'</div>':"";
     var fd=s.fecha?corta(s.fecha):"Fecha no disponible";
     return '<article class="pe-news-card'+(imageInfo?"":" no-photo")+'"><div class="pe-news-main">'+
-      '<span class="pe-news-topic">'+esc(label)+'</span><h3><a href="'+safeUrl(s.url)+'" target="_blank" rel="noopener noreferrer">'+esc(s.titulo)+'</a></h3>'+
+      '<div class="pe-news-card-top"><span class="pe-news-topic">'+esc(label)+'</span>'+badgeGenero(s.genero)+'</div><h3><a href="'+safeUrl(s.url)+'" target="_blank" rel="noopener noreferrer" aria-label="'+esc(s.titulo)+' (abre en una pestaña nueva)">'+esc(s.titulo)+'</a></h3>'+
       (sum?'<p class="pe-news-summary">'+esc(sum)+'</p>':"")+badges+
       '<div class="pe-news-meta"><b>'+esc(s.fuente)+'</b><time datetime="'+esc(s.fecha||"")+'">'+esc(fd)+'</time>'+(s.via?'<span>Vía '+esc(s.via)+'</span>':"")+'</div>'+
-      '<a class="pe-news-go" href="'+safeUrl(s.url)+'" target="_blank" rel="noopener noreferrer">Leer nota original ↗</a>'+
+      '<a class="pe-news-go" href="'+safeUrl(s.url)+'" target="_blank" rel="noopener noreferrer" aria-label="Leer nota original: '+esc(s.titulo)+' (abre en una pestaña nueva)">Leer nota original <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M10 14 21 3M21 14v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h6"/></svg></a>'+
       '</div>'+image+'</article>';
   }
   function card(s) { return '<a class="s card" ' + attrs(s) + ">" + thumb(s) + "<div>" + kicker(s) + "<h3>" + esc(s.titulo) + "</h3><p>" + esc(sin(primera(s.resumen), 150)) + "</p>" + meta(s) + "</div></a>"; }
@@ -321,66 +321,106 @@
     h+='<details class="mas-rec"><summary>Más recursos: formación, glosario, estadísticas y talleres</summary><div class="mas-g"><a href="#/ruta">La Ruta (aprende jugando)</a><a href="#/glosario">Glosario</a><a href="#/estadisticas">Estadísticas del sitio</a><a href="#/historial">Historial de notas</a><a href="#/talleres">Talleres de IA</a><a href="#/fuentes">Fuentes y su estado</a></div></details></div>';
     return h;
   }
-  var nF = { ambito: "todos", sector: "todos", tipo: "todas", genero: "todos" }, nMax = 12, nQuery = "";
+  var nF = { ambito: "todos", sector: "todos", tipo: "todas", genero: "todos", fuente: "todas" }, nLimites = { peru: 6, mundo: 6 }, nQuery = "", nOrden = "recientes";
   var PE_TEMAS=[["todos","Todas"],["politica","Política"],["economia","Economía"],["sociedad","Sociedad"],["salud","Salud"],["nino","El Niño y clima"],["deporte","Deportes"],["tecnologia","Tecnología"],["ia","IA"],["cultura","Cultura"],["ambiente","Ambiente"],["investigacion","Investigación"],["internacional","Internacional"]];
+  var PE_TIPOS=[["todas","Todos"],["independiente","Independientes"],["comercial","Comerciales"],["internacional","Internacionales"],["estatal","Oficiales"]];
+  var PE_GENEROS=[["todos","Todos"],["noticia","Noticias"],["opinion","Opinión"],["analisis","Análisis"]];
+  function reiniciarNoticias() { nLimites = { peru: 6, mundo: 6 }; }
+  function limpiarNoticias() {
+    nF = { ambito: "todos", sector: "todos", tipo: "todas", genero: "todos", fuente: "todas" };
+    nQuery = ""; nOrden = "recientes"; reiniciarNoticias();
+    var campo = $("#n-query"); if (campo) campo.value = "";
+    pintarNoticias();
+    if (campo) campo.focus();
+  }
   function vistaNoticias() {
-    var abierto = "";
-    var h = '<div class="fade noticias-page"><div class="shead noticias-intro" style="--c:var(--red-t)"><h1>Noticias de Perú e Internacional</h1><p>Actualidad organizada por territorio y tema. Titulares, extractos, fechas y cifras publicados por los medios; accede al artículo original para conocer todos los detalles.</p></div>';
+    var h = '<div class="fade noticias-page"><div class="shead noticias-intro" style="--c:var(--red-t)"><span class="pe-news-eyebrow">ACTUALIDAD, CON FUENTES</span><h1>Noticias de Perú y el mundo</h1><p>Titulares, contexto y fechas de cada medio. Encuentra lo que te interesa y consulta siempre la fuente original.</p></div>';
     h += '<nav class="pe-news-nav" aria-label="Secciones de noticias"><div class="pe-news-nav-primary" id="pe-news-territory"></div><div class="pe-news-nav-topics" id="pe-news-topics" aria-label="Temas periodísticos"></div></nav>';
-    h += '<details class="filtros filtros-noticias"' + abierto + '><summary>Más filtros: tipo de medio y género</summary><div class="filtros-in">' +
+    h += '<div class="n-herramientas"><label class="n-busca" for="n-query"><span class="n-search-icon" aria-hidden="true">⌕</span><input type="search" id="n-query" placeholder="Buscar un tema, un titular…" value="' + esc(nQuery) + '" autocomplete="off" aria-label="Buscar dentro de noticias"></label>' +
+      '<label class="n-select" for="n-source"><span>Fuente</span><select id="n-source"></select></label>' +
+      '<label class="n-select" for="n-sort"><span>Ordenar por</span><select id="n-sort"><option value="recientes">Más recientes</option><option value="antiguas">Más antiguas</option></select></label></div>';
+    h += '<details class="filtros filtros-noticias"><summary>Más filtros: tipo de medio y género</summary><div class="filtros-in">' +
       '<div class="nf-grupo"><span class="fl">Tipo de medio</span><div class="chips" id="n-tipo" aria-label="Filtrar por tipo de medio"></div></div>' +
       '<div class="nf-grupo"><span class="fl">Género</span><div class="chips" id="n-gen" aria-label="Filtrar por género"></div></div></div></details>';
-    h += '<div class="n-herramientas"><label class="n-busca" for="n-query"><span class="n-search-icon" aria-hidden="true">⌕</span><input type="search" id="n-query" placeholder="Buscar noticias por título, fuente o contenido" value="' + esc(nQuery) + '" autocomplete="off" aria-label="Buscar dentro de noticias"></label><span id="n-count" class="n-total" role="status"></span><button type="button" id="n-clear" class="n-clear" hidden>Limpiar filtros</button></div>';
-    h += '<div id="n-lista" aria-live="polite"></div><p class="n-ver-mas" id="n-mas"></p><p class="pe-news-footnote">Los extractos y cifras proceden de los títulos o resúmenes que publican los medios. No constituyen verificación independiente. Las notas se actualizan automáticamente y cada enlace dirige a la fuente original.</p></div>';
+    h += '<div class="n-results-bar"><span id="n-count" class="n-total" role="status" aria-atomic="true"></span><button type="button" id="n-clear" class="n-clear" hidden>Limpiar filtros</button></div><p id="n-active" class="pe-news-active" hidden></p>';
+    h += '<div id="n-lista"></div><p class="n-ver-mas" id="n-mas"></p><p class="pe-news-footnote">Los extractos y cifras proceden de los títulos o resúmenes que publican los medios. No constituyen verificación independiente. Las notas se actualizan automáticamente y cada enlace dirige a la fuente original.</p></div>';
     setTimeout(pintarNoticias,0);
     return h;
   }
+  function prepararNoticias() {
+    var temas = $("#pe-news-topics");
+    if (temas.dataset.preparado) return;
+    temas.dataset.preparado = "1";
+    function chips(el, arr, clave) {
+      el.innerHTML=arr.map(function(o){return '<button type="button" class="chip" data-nf="'+clave+':'+o[0]+'" aria-pressed="false">'+esc(o[1])+'</button>';}).join("");
+    }
+    chips($("#n-tipo"),PE_TIPOS,"tipo");
+    chips($("#n-gen"),PE_GENEROS,"genero");
+    $("#pe-news-territory").innerHTML=[["todos","Portada"],["peru","Perú"],["mundo","Internacional"]].map(function(o){
+      return '<button type="button" data-news-amb="'+o[0]+'" aria-pressed="false">'+esc(o[1])+'</button>';
+    }).join("");
+    temas.innerHTML=PE_TEMAS.map(function(o){
+      return '<button type="button" data-nf="sector:'+o[0]+'" aria-pressed="false">'+esc(o[1])+'</button>';
+    }).join("");
+    var fuentes=[];
+    FEED.forEach(function(x){if(x.fuente&&fuentes.indexOf(x.fuente)<0)fuentes.push(x.fuente);});
+    fuentes.sort(function(a,b){return a.localeCompare(b,"es");});
+    $("#n-source").innerHTML='<option value="todas">Todas las fuentes</option>'+fuentes.map(function(f){return '<option value="'+esc(f)+'">'+esc(f)+'</option>';}).join("");
+    $("#n-query").addEventListener("input",function(){nQuery=this.value;reiniciarNoticias();pintarNoticias();});
+    $("#n-source").addEventListener("change",function(){nF.fuente=this.value;reiniciarNoticias();pintarNoticias();});
+    $("#n-sort").addEventListener("change",function(){nOrden=this.value;reiniciarNoticias();pintarNoticias();});
+  }
   function pintarNoticias() {
     if(!$("#pe-news-topics"))return;
-    function chips(el, arr, clave) {
-      if (!el) return;
-      el.innerHTML=arr.map(function(o){
-        var on=o[0]===nF[clave];
-        return '<button type="button" class="chip'+(on?' on':'')+'" data-nf="'+clave+':'+o[0]+'" aria-pressed="'+on+'">'+esc(o[1])+'</button>';
-      }).join("");
-    }
-    chips($("#n-tipo"),[["todas","Todos"],["independiente","Independientes"],["comercial","Comerciales"],["internacional","Internacionales"],["estatal","Oficiales"]],"tipo");
-    chips($("#n-gen"),[["todos","Todos"],["noticia","Noticias"],["opinion","Opinión"]],"genero");
-    $("#pe-news-territory").innerHTML=[["todos","Portada"],["peru","Perú"],["mundo","Internacional"]].map(function(o){
-      var on=nF.ambito===o[0];return '<button type="button" data-news-amb="'+o[0]+'" aria-pressed="'+on+'">'+esc(o[1])+'</button>';
-    }).join("");
-    $("#pe-news-topics").innerHTML=PE_TEMAS.map(function(o){
-      var on=nF.sector===o[0];return '<button type="button" data-nf="sector:'+o[0]+'" aria-pressed="'+on+'">'+esc(o[1])+'</button>';
-    }).join("");
-    var q=$("#n-query");
-    if(q&&!q.dataset.escuchando){
-      q.dataset.escuchando="1";
-      q.addEventListener("input",function(){nQuery=this.value;nMax=12;pintarNoticias();});
-    }
+    prepararNoticias();
+    $$(".noticias-page [data-nf]").forEach(function(b){
+      var kv=b.getAttribute("data-nf").split(":"),on=nF[kv[0]]===kv[1];
+      b.setAttribute("aria-pressed",String(on));b.classList.toggle("on",on);
+    });
+    $$("[data-news-amb]").forEach(function(b){b.setAttribute("aria-pressed",String(nF.ambito===b.getAttribute("data-news-amb")));});
+    $("#n-source").value=nF.fuente;$("#n-sort").value=nOrden;
     var bus=norm(nQuery.trim());
     var lista=FEED.filter(function(x){
       var c=(nF.sector==="todos"||x.tema===nF.sector) &&
         (nF.tipo==="todas"||x.tipo===nF.tipo||(nF.tipo==="estatal"&&x.tipo==="oficial")) &&
-        (nF.genero==="todos"||x.genero===nF.genero);
+        (nF.genero==="todos"||x.genero===nF.genero) &&
+        (nF.fuente==="todas"||x.fuente===nF.fuente);
       if(!c||!bus)return c;
-      return norm([x.titulo,x.resumen,x.fuente,(window.PERU_NEWS.nombres[x.tema]||"")].join(" ")).indexOf(bus)>=0;
+      return norm([x.titulo,x.resumen,x.fuente,((window.PERU_NEWS||{}).nombres||{})[x.tema]||""].join(" ")).indexOf(bus)>=0;
+    });
+    lista.sort(function(a,b){
+      var da=Date.parse(a.fecha),db=Date.parse(b.fecha);
+      if(isNaN(da))return isNaN(db)?0:1;
+      if(isNaN(db))return -1;
+      return nOrden==="antiguas"?da-db:db-da;
     });
     var solo=nF.ambito==="todos"?lista:lista.filter(function(x){return ambitoDe(x)===nF.ambito;});
-    var total=solo.length;
-    $("#n-count").textContent=total+" "+(total===1?"noticia":"noticias")+" encontradas";
+    var total=solo.length,mostradas=0;
     var clear=$("#n-clear");
-    if(clear)clear.hidden=nF.ambito==="todos"&&nF.sector==="todos"&&nF.tipo==="todas"&&nF.genero==="todos"&&!nQuery.trim();
+    if(clear)clear.hidden=nF.ambito==="todos"&&nF.sector==="todos"&&nF.tipo==="todas"&&nF.genero==="todos"&&nF.fuente==="todas"&&nOrden==="recientes"&&!nQuery.trim();
+    var activos=[];
+    if(nF.ambito!=="todos")activos.push(nF.ambito==="peru"?"Perú":"Internacional");
+    [[PE_TEMAS,"sector","todos"],[PE_TIPOS,"tipo","todas"],[PE_GENEROS,"genero","todos"]].forEach(function(grupo){
+      if(nF[grupo[1]]!==grupo[2])grupo[0].forEach(function(o){if(o[0]===nF[grupo[1]])activos.push(o[1]);});
+    });
+    if(nF.fuente!=="todas")activos.push(nF.fuente);
+    if(nQuery.trim())activos.push('“'+nQuery.trim()+'”');
+    if(nOrden==="antiguas")activos.push("Más antiguas primero");
+    var resumen=$("#n-active");resumen.hidden=!activos.length;resumen.textContent=activos.length?"Tu selección: "+activos.join(" · "):"";
     var g=[];
     [["peru","Perú","Actualidad nacional y regional"],["mundo","Internacional","Noticias del mundo"]].forEach(function(x){
       if(nF.ambito!=="todos"&&nF.ambito!==x[0])return;
       var items=lista.filter(function(z){return ambitoDe(z)===x[0];});
-      g.push('<section class="pe-news-section" aria-label="Noticias de '+x[1]+'"><div class="pe-news-section-header"><h2>'+x[1]+'</h2><span>'+items.length+' noticias · '+x[2]+'</span></div>'+
-        (items.length?'<div class="pe-news-grid">'+items.slice(0,nMax).map(row).join("")+'</div>':'<p class="pe-news-empty">No hay noticias para los filtros seleccionados en esta sección.</p>')+'</section>');
+      if(!items.length)return;
+      var visibles=items.slice(0,nLimites[x[0]]),restantes=items.length-visibles.length;
+      mostradas+=visibles.length;
+      g.push('<section class="pe-news-section" data-news-section="'+x[0]+'" aria-label="Noticias de '+x[1]+'"><div class="pe-news-section-header"><h2>'+x[1]+'</h2><span>'+visibles.length+' de '+items.length+' noticias · '+x[2]+'</span></div>'+
+        '<div class="pe-news-grid">'+visibles.map(row).join("")+'</div>'+
+        (restantes?'<button class="pe-news-more" data-news-more="'+x[0]+'" type="button">Ver más de '+x[1]+' <span>('+restantes+' pendientes)</span></button>':"")+'</section>');
     });
-    $("#n-lista").innerHTML=g.join("");
-    var restantes=nF.ambito==="todos"?Math.max(0,lista.filter(function(x){return ambitoDe(x)==="peru";}).length-nMax)+Math.max(0,lista.filter(function(x){return ambitoDe(x)==="mundo";}).length-nMax):Math.max(0,solo.length-nMax);
-    $("#n-mas").innerHTML=restantes?'<button class="pe-news-more" id="n-b" type="button">Ver más noticias ('+restantes+')</button>':"";
-    var more=$("#n-b");if(more)more.onclick=function(){nMax+=12;pintarNoticias();};
+    $("#n-count").textContent=total+" "+(total===1?"noticia encontrada":"noticias encontradas")+(total?" · "+mostradas+" visibles":"");
+    $("#n-lista").innerHTML=g.length?g.join(""):'<div class="pe-news-empty"><h2>No encontramos noticias con esta selección</h2><p>Prueba con otra palabra o restablece los filtros para volver a explorar todas las fuentes.</p><button class="n-clear" type="button" data-news-clear>Ver todas las noticias</button></div>';
+    $("#n-mas").innerHTML="";
   }
   function proxima() {
     var now = Date.now(), off = -5 * 3600e3, l = new Date(now + off), y = l.getUTCFullYear(), m = l.getUTCMonth(), d = l.getUTCDate();
@@ -746,9 +786,17 @@
     if (t.id === "veil" || c("[data-x]")) { cerrarHojas(); return; }
     if (c("[data-buscar]")) { abrirBuscar(); return; }
     var df = c("[data-df]"); if (df) { dFil = df.getAttribute("data-df"); pintarDatos(); return; }
-    var limpiarNoticias = c("#n-clear"); if (limpiarNoticias) { nF = { ambito: "todos", sector: "todos", tipo: "todas", genero: "todos" }; nQuery = ""; nMax = 12; var campo = $("#n-query"); if (campo) campo.value = ""; pintarNoticias(); return; }
-    var ambNews = c("[data-news-amb]"); if (ambNews) { nF.ambito = ambNews.getAttribute("data-news-amb"); nMax = 12; pintarNoticias(); return; }
-    var nf = c("[data-nf]"); if (nf) { var kv = nf.getAttribute("data-nf").split(":"); nF[kv[0]] = kv[1]; nMax = 12; pintarNoticias(); return; }
+    if (c("#n-clear,[data-news-clear]")) { limpiarNoticias(); return; }
+    var masNoticias = c("[data-news-more]"); if (masNoticias) {
+      var territorio = masNoticias.getAttribute("data-news-more"), previo = nLimites[territorio];
+      if (previo == null) return;
+      nLimites[territorio] += 6; pintarNoticias();
+      var nuevas = $$('.pe-news-section[data-news-section="' + territorio + '"] .pe-news-card h3 a');
+      if (nuevas[previo]) nuevas[previo].focus();
+      return;
+    }
+    var ambNews = c("[data-news-amb]"); if (ambNews) { nF.ambito = ambNews.getAttribute("data-news-amb"); reiniciarNoticias(); pintarNoticias(); return; }
+    var nf = c("[data-nf]"); if (nf) { var kv = nf.getAttribute("data-nf").split(":"); nF[kv[0]] = kv[1]; reiniciarNoticias(); pintarNoticias(); return; }
     var fl = c(".flip,.fc"); if (fl && !c("a") && window.matchMedia && matchMedia("(hover: none)").matches) { var ya = fl.classList.contains("on"); $$(".flip.on,.fc.on").forEach(function (x) { x.classList.remove("on"); }); if (!ya) fl.classList.add("on"); return; }
     var mi = c("[data-m]"); if (mi) { abrirMision(mi.getAttribute("data-m")); return; }
     var o = c("[data-o]"); if (o && M) { responder(+o.getAttribute("data-o")); return; }
