@@ -328,7 +328,6 @@
     var h = '<div class="fade noticias-page"><div class="shead noticias-intro" style="--c:var(--red-t)"><h1>Noticias de Perú e Internacional</h1><p>Actualidad organizada por territorio y tema. Titulares, extractos, fechas y cifras publicados por los medios; accede al artículo original para conocer todos los detalles.</p></div>';
     h += '<nav class="pe-news-nav" aria-label="Secciones de noticias"><div class="pe-news-nav-primary" id="pe-news-territory"></div><div class="pe-news-nav-topics" id="pe-news-topics" aria-label="Temas periodísticos"></div></nav>';
     h += '<details class="filtros filtros-noticias"' + abierto + '><summary>Más filtros: tipo de medio y género</summary><div class="filtros-in">' +
-      '<div class="nf-grupo nf-tema" hidden><span class="fl">Tema</span><div class="chips" id="n-sec" aria-label="Filtrar por tema"></div></div>' +
       '<div class="nf-grupo"><span class="fl">Tipo de medio</span><div class="chips" id="n-tipo" aria-label="Filtrar por tipo de medio"></div></div>' +
       '<div class="nf-grupo"><span class="fl">Género</span><div class="chips" id="n-gen" aria-label="Filtrar por género"></div></div></div></details>';
     h += '<div class="n-herramientas"><label class="n-busca" for="n-query"><span class="n-search-icon" aria-hidden="true">⌕</span><input type="search" id="n-query" placeholder="Buscar noticias por título, fuente o contenido" value="' + esc(nQuery) + '" autocomplete="off" aria-label="Buscar dentro de noticias"></label><span id="n-count" class="n-total" role="status"></span><button type="button" id="n-clear" class="n-clear" hidden>Limpiar filtros</button></div>';
@@ -337,7 +336,7 @@
     return h;
   }
   function pintarNoticias() {
-    var a=$("#n-sec"); if(!a)return;
+    if(!$("#pe-news-topics"))return;
     function chips(el, arr, clave) {
       if (!el) return;
       el.innerHTML=arr.map(function(o){
@@ -345,7 +344,6 @@
         return '<button type="button" class="chip'+(on?' on':'')+'" data-nf="'+clave+':'+o[0]+'" aria-pressed="'+on+'">'+esc(o[1])+'</button>';
       }).join("");
     }
-    chips(a,PE_TEMAS,"sector");
     chips($("#n-tipo"),[["todas","Todos"],["independiente","Independientes"],["comercial","Comerciales"],["internacional","Internacionales"],["estatal","Oficiales"]],"tipo");
     chips($("#n-gen"),[["todos","Todos"],["noticia","Noticias"],["opinion","Opinión"]],"genero");
     $("#pe-news-territory").innerHTML=[["todos","Portada"],["peru","Perú"],["mundo","Internacional"]].map(function(o){
