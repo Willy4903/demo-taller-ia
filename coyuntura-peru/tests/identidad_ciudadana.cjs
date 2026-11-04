@@ -62,9 +62,11 @@ test("accesibilidad, caché y CSS consistente",()=>{
   assert.match(css,/:focus-visible/);
   assert.match(exp,/aria-selected/);
   assert.match(exp,/aria-expanded/);
-  assert.match(sw,/cp-v15-ciudadania-identidad-20261103/);
+  assert.match(sw,/cp-v16-lectura-critica-20261104/);
   assert.match(sw,/assets\/civic-theme.css/);
   assert.match(sw,/assets\/civic-experience.js/);
+  assert.match(sw,/assets\/critical-reading.js/);
+  assert.match(sw,/assets\/critical-reading.css/);
   assert.equal((css.match(/\{/g)||[]).length,(css.match(/\}/g)||[]).length);
 });
 
