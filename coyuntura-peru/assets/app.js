@@ -293,8 +293,8 @@
     var principal=INS.filter(function(i){return i.id==="politica";})[0]||INS[0];
     var fechaSistema=NOT.generado?fechaHora(NOT.generado)+" (hora de Lima)":"sin fecha confirmada";
     var h='<div class="home fade"><section class="hero" aria-labelledby="h1"><div class="hero-content">'+
-      '<p class="hero-kicker">ACTUALIDAD · DATOS · ANÁLISIS</p><h1 id="h1">El Perú, explicado con claridad</h1>'+
-      '<p class="hero-sub">Noticias con fuentes enlazadas, cifras con su fecha de corte y análisis para entender lo que sucede en el país.</p>'+
+      '<p class="hero-kicker">NOTICIAS · DATOS · ACTUALIDAD</p><h1 id="h1">PERÚ INFORMADO</h1>'+
+      '<p class="hero-sub">Noticias de Perú y del mundo con fuentes identificadas, fecha de publicación y cifras cuando están disponibles.</p>'+
       '<p class="hero-updated"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></svg>Última comprobación: '+esc(fechaSistema)+'</p></div>'+
       '<div class="hero-stats" aria-label="Indicadores y sus periodos">'+visualStats()+'</div></section>';
     h+='<div class="qs">';

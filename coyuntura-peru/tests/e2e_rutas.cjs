@@ -61,7 +61,7 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
     await p.goto(base + "#/"); await p.waitForTimeout(250);
     ok(await p.locator(".qs .q").count() === 3, `[${w}] portada: deben verse 3 tarjetas de preguntas`);
     ok(await p.locator(".hero-stats .hero-stat").count() >= 3, `[${w}] portada: faltan indicadores dinámicos`);
-    ok(await p.locator(".hero-content h1").innerText() === "El Perú, explicado con claridad", `[${w}] portada: título editorial no renderizado`);
+    ok(await p.locator(".hero-content h1").innerText() === "PERÚ INFORMADO", `[${w}] portada: título editorial no renderizado`);
     ok(await p.locator(".home-topics a").count() === 4, `[${w}] portada: accesos temáticos incompletos`);
     ok(await p.locator(".hero-updated").count() === 1, `[${w}] portada: no aparece fecha de comprobación`);
     const imgApproved = path.join(RAIZ, "assets", "hero-peru-en-claro-aprobado.jpg");
