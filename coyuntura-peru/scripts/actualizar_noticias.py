@@ -446,10 +446,10 @@ def es_deporte(titulo):
     """Prioriza los eventos deportivos: 'partido' no siempre significa partido político."""
     t = norm(titulo or "")
     return bool(re.search(
-        r"\\b(?:champions league|masters? 1000|liga 1|max en vivo|"
+        r"\b(?:champions league|masters? 1000|liga 1|max en vivo|"
         r"partido de futbol|partido de tenis|copa libertadores|"
         r"transmision espn|real madrid|universitario vs|alianza lima vs|"
-        r"seleccion peruana vs|tenista|tenis|voley|volleyball)\\b",
+        r"seleccion peruana vs|tenista|tenis|voley|volleyball)\b",
         t,
     ))
 
