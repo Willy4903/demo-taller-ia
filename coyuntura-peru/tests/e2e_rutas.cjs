@@ -16,7 +16,7 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
 (async () => {
   await new Promise(r => srv.listen(0, "127.0.0.1", r));
   const base = "http://127.0.0.1:" + srv.address().port + "/index.html";
-  const b = await pw.chromium.launch();
+  const b = await pw.chromium.launch({ executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || undefined });
   for (const [w, h, touch] of ANCHOS) {
     const ctx = await b.newContext({ viewport: { width: w, height: h }, hasTouch: touch, isMobile: touch, serviceWorkers: "block" });
     await ctx.route(url => !/^http:\/\/127\.0\.0\.1/.test(url.toString()), r => r.abort());

@@ -44,7 +44,7 @@ jobs:
           node --check coyuntura-peru/tests/e2e_rutas.cjs
 
       - name: Probar identidad visual y lectura ciudadana
-        run: node --test coyuntura-peru/tests/identidad_ciudadana.cjs
+        run: node --test coyuntura-peru/tests/identidad_ciudadana.cjs coyuntura-peru/tests/newsroom.test.cjs
 
       - name: Pruebas del actualizador (Python)
         run: python -m unittest discover -s coyuntura-peru/scripts -p "test_*.py" -v
@@ -63,4 +63,6 @@ jobs:
         run: npx playwright install --with-deps chromium
 
       - name: Pruebas de navegador (rutas, errores y desbordes)
-        run: node coyuntura-peru/tests/e2e_rutas.cjs
+        run: |
+          node coyuntura-peru/tests/e2e_rutas.cjs
+          node coyuntura-peru/tests/newsroom.e2e.cjs

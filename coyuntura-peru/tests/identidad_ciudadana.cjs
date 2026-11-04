@@ -62,7 +62,7 @@ test("accesibilidad, caché y CSS consistente",()=>{
   assert.match(css,/:focus-visible/);
   assert.match(exp,/aria-selected/);
   assert.match(exp,/aria-expanded/);
-  assert.match(sw,/cp-v18-peru-informado-20261104/);
+  assert.match(sw,/cp-v19-noticias-20261104/);
   assert.match(sw,/assets\/civic-theme.css/);
   assert.match(sw,/assets\/civic-experience.js/);
   assert.match(sw,/assets\/newsroom.js/);

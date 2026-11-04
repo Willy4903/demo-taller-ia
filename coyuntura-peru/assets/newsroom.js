@@ -54,10 +54,18 @@
     return t.length > 220 ? t.slice(0,220).replace(/\s+\S*$/, "")+"…" : t;
   }
   function cifras(item) {
-    var t = String(item.titulo || "")+" "+String(item.resumen || "");
-    var re = /(?:S\/\s*|US\$\s*|\$\s*)\d[\d.,]*(?:\s*(?:mil|millones?|soles|dolares))?|\b\d[\d.,]*\s*(?:%|°C|km\/h|km|millones?|mil\s+(?:personas?|internos?|casos?|hogares?|dolares|soles)|personas?|internos?|fallecidos?|heridos?|contagios|vacunas?)\b/gi;
-    var items=t.match(re)||[],seen={},out=[];
-    items.forEach(function(v){var key=normal(v).replace(/\s+/g," ").trim();if(!seen[key]&&out.length<3){seen[key]=1;out.push(v.trim());}});
+    // Keep the literal number and its complete unit: "millones" must never become "mil".
+    var numero = "[+-]?\\b\\d+(?:[.,]\\d+)*";
+    var escala = "(?:mil\\s+millones|millones|mill[oó]n|mil)\\b";
+    var moneda = "(?:soles|d[oó]lares)\\b";
+    var unidad = "(?:personas?|internos?|casos?|hogares?|fallecidos?|heridos?|contagios|vacunas?|soles|d[oó]lares)\\b";
+    var re = new RegExp("(?:S/\\s*|US\\$\\s*|\\$\\s*)" + numero + "(?:\\s*" + escala + "(?:\\s+(?:de\\s+)?" + moneda + ")?|\\s+" + moneda + ")?|" + numero + "\\s*(?:%|°\\s*C\\b|km(?:/h)?\\b|" + escala + "(?:\\s+(?:de\\s+)?" + unidad + ")?|" + unidad + ")", "gi");
+    var seen={},out=[];
+    // Scan each source field separately; do not join a title's number to a summary's unit.
+    [item.titulo,item.resumen].forEach(function(text){
+      var items=String(text||"").match(re)||[];
+      items.forEach(function(v){var key=normal(v).replace(/\s+/g," ").trim();if(!seen[key]&&out.length<3){seen[key]=1;out.push(v.trim());}});
+    });
     return out;
   }
   global.PERU_NEWS={excluir:excluir,categoria:categoria,ambito:ambito,extracto:extracto,cifras:cifras,nombres:nombres};

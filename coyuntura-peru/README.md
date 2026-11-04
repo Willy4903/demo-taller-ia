@@ -59,6 +59,8 @@ python3 scripts/actualizar_noticias.py   # prueba el actualizador (requiere inte
 - `scripts/validar_contenido.py`: revisa noticias (fechas, duplicados, sector, dirección), estado de fuentes, indicadores del contenido editorial (unidad, fecha de corte y fuente primaria), enlaces con https y estructura de `index.html`. Sale con error si algo grave falla.
 - `scripts/verificar_enlaces.py`: comprueba que respondan los enlaces de las fuentes (informativo).
 - `tests/e2e_rutas.cjs`: Playwright. Recorre todas las rutas `#/` en 390, 430, 768, 1024 y 1440 px y revisa errores de consola, desplazamiento horizontal, tarjetas de la portada, datos con fecha de corte y unidad, navegación, búsqueda y menú.
+- `tests/newsroom.test.cjs`: pruebas de cifras publicadas (unidades monetarias, porcentajes y temperaturas), sin truncar escalas ni combinar números de campos distintos. `node --test coyuntura-peru/tests/newsroom.test.cjs`.
+- `tests/newsroom.e2e.cjs`: comprueba filtros por fuente y género, orden por fecha, paginación independiente, búsqueda, foco de teclado, fotografías fallidas y temas claro/oscuro con datos controlados. `node coyuntura-peru/tests/newsroom.e2e.cjs`. Ambos runners de navegador admiten `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` para usar un Chromium ya instalado.
 - Flujos: `Validar Contenido Perú` corre todo lo anterior en cada pull request; `Actualizar Contexto Perú` prueba, actualiza, valida y solo entonces guarda y publica.
 
 ## Fuentes de noticias que fallan
