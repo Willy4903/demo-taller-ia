@@ -35,22 +35,28 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
     // Noticias: filtros completos, conteo, búsqueda y ausencia de recorte en chips.
     await p.goto(base + "#/noticias"); await p.waitForTimeout(300);
     const filtros = p.locator(".filtros-noticias");
+    ok(await p.locator(".pe-news-nav-primary button").count() === 3, `[${w}] noticias: faltan Perú e Internacional`);
     if (w < 720) await filtros.locator("summary").click();
     ok(await p.locator("#n-count").innerText() !== "", `[${w}] noticias: falta el contador de resultados`);
-    const chipLayout = await p.locator(".filtros-noticias .chips").evaluateAll(els => els.length === 3 && els.every(el => el.scrollWidth <= el.clientWidth + 2));
+    const chipLayout = await p.locator(".filtros-noticias .chips").evaluateAll(els => els.length === 2 && els.every(el => el.scrollWidth <= el.clientWidth + 2));
     ok(chipLayout, `[${w}] noticias: filtros recortados o desbordados`);
-    await p.locator('[data-nf="sector:economia"]').click();
-    ok(await p.locator('[data-nf="sector:economia"]').getAttribute("aria-pressed") === "true", `[${w}] noticias: filtro de Economía no se activa`);
+    await p.locator('#pe-news-topics [data-nf="sector:economia"]').click();
+    ok(await p.locator('#pe-news-topics [data-nf="sector:economia"]').getAttribute("aria-pressed") === "true", `[${w}] noticias: filtro de Economía no se activa`);
     await p.locator("#n-query").fill("___noticia_inexistente_987654___");
-    ok(await p.locator("#n-lista .vacio").count() === 1, `[${w}] noticias: búsqueda sin resultados incorrecta`);
+    ok(await p.locator("#n-lista .pe-news-empty").count() >= 1, `[${w}] noticias: búsqueda sin resultados incorrecta`);
     await p.locator("#n-clear").click();
-    ok(await p.locator("#n-lista .row").count() > 0 && await p.locator("#n-query").inputValue() === "", `[${w}] noticias: limpiar filtros no restaura resultados`);
-    // Noticias: el contenido disponible debe poder consultarse dentro del portal.
-    ok(await p.locator("#n-lista .pe-story").count() > 0, `[${w}] noticias: faltan las síntesis locales`);
-    await p.locator("#n-lista .pe-story").first().locator("summary").click();
-    ok(await p.locator("#n-lista .pe-story[open]").count() > 0 &&
-       await p.locator("#n-lista .pe-story[open] .pe-story-actions a").count() > 0,
-       `[${w}] noticias: extracto y fuente secundaria no funcionan`);
+    ok(await p.locator("#n-lista .pe-news-card").count() > 0 && await p.locator("#n-query").inputValue() === "", `[${w}] noticias: limpiar filtros no restaura resultados`);
+    // Orden de secciones, fichas de fuente y ausencia de análisis repetidos.
+    const newsHeadings=await p.locator(".pe-news-section-header h2").allInnerTexts();
+    ok(newsHeadings[0]==="Perú" && newsHeadings[1]==="Internacional", `[${w}] noticias: orden Perú/Internacional incorrecto`);
+    ok(await p.locator("#n-lista .pe-news-card a.pe-news-go").count() > 0,
+       `[${w}] noticias: faltan enlaces a las fuentes originales`);
+    ok(await p.locator("#n-lista .pe-story").count() === 0,
+       `[${w}] noticias: reaparecieron paneles de opinión repetitivos`);
+    await p.locator('[data-news-amb="mundo"]').click();
+    ok(await p.locator(".pe-news-section-header h2").allInnerTexts().then(x=>x.length===1&&x[0]==="Internacional"),
+       `[${w}] noticias: filtro de Internacional no funciona`);
+    await p.locator('[data-news-amb="todos"]').click();
     // portada
     await p.goto(base + "#/"); await p.waitForTimeout(250);
     ok(await p.locator(".qs .q").count() === 3, `[${w}] portada: deben verse 3 tarjetas de preguntas`);
