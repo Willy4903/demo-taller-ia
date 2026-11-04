@@ -46,23 +46,23 @@ test("las síntesis usan datos actuales del portal y no generan cifras",()=>{
   assert.match(exp,/Comunicado ENFEN indexado/);
   assert.doesNotMatch(exp,/fetch\(/);
 });
-test("noticias, indicadores y El Niño tienen explicaciones internas",()=>{
-  assert.match(app,/<details class="pe-story">/);
-  assert.match(app,/ANÁLISIS CRÍTICO/);
-  assert.match(app,/LA PREGUNTA INCÓMODA/);
-  assert.doesNotMatch(app,/EXTRACTO DEL MEDIO/);
-  assert.match(app,/Leer fuente original/);
+test("noticias con ficha de fuente y datos, sin opinión repetitiva",()=>{
+  assert.match(app,/pe-news-card/);
+  assert.match(app,/pe-news-section/);
+  assert.match(app,/Leer nota original/);
+  assert.match(app,/pe-news-metrics/);
+  assert.doesNotMatch(app,/LA PREGUNTA INCÓMODA/);
+  assert.doesNotMatch(app,/ANÁLISIS CRÍTICO/);
   assert.match(app,/pe-data-explain/);
   assert.match(app,/Qué significa este número/);
   assert.match(app,/pe-nino-hint/);
-  assert.match(app,/pe-reading-guide/);
 });
 test("accesibilidad, caché y CSS consistente",()=>{
   assert.match(css,/prefers-reduced-motion:reduce/);
   assert.match(css,/:focus-visible/);
   assert.match(exp,/aria-selected/);
   assert.match(exp,/aria-expanded/);
-  assert.match(sw,/cp-v16-lectura-critica-20261104/);
+  assert.match(sw,/cp-v17-peru-informate-noticias-20261104/);
   assert.match(sw,/assets\/civic-theme.css/);
   assert.match(sw,/assets\/civic-experience.js/);
   assert.match(sw,/assets\/critical-reading.js/);
@@ -70,20 +70,21 @@ test("accesibilidad, caché y CSS consistente",()=>{
   assert.equal((css.match(/\{/g)||[]).length,(css.match(/\}/g)||[]).length);
 });
 
-test("lectura crítica editorial sin horóscopos en todas las noticias",()=>{
+test("clasificación, territorios, identidad y filtro editorial",()=>{
   const vm=require("node:vm");
-  const code=read("assets/critical-reading.js");
   const context={window:{}};
-  vm.runInNewContext(code,context);
-  const crit=context.window.PE_LECTURA;
-  assert.equal(typeof crit.analizar,"function");
-  assert.equal(typeof crit.excluir,"function");
-  assert.equal(crit.excluir({titulo:"Horóscopo de hoy, 4 de noviembre",sector:"economia"}),true);
-  assert.equal(crit.excluir({titulo:"Senamhi informa lluvias en Piura",sector:"nino"}),false);
-  const opinion=crit.analizar({titulo:"¿Qué dejaron los cien días de gobierno de Keiko Fujimori para las regiones?",sector:"politica",resumen:"Balance regional"});
-  assert.match(opinion.postura,/gira regional/);
-  assert.match(opinion.pregunta,/presupuesto/);
-  assert.match(app,/PE_LECTURA\.excluir/);
-  assert.match(html,/assets\/critical-reading\.js\?v=__V__/);
-  assert.match(html,/assets\/critical-reading\.css\?v=__V__/);
+  vm.runInNewContext(read("assets/newsroom.js"),context);
+  const q=context.window.PERU_NEWS;
+  assert.equal(q.excluir({titulo:"Horóscopo de hoy, miércoles 4 de noviembre"}),true);
+  assert.equal(q.excluir({titulo:"Reporte del INEI sobre inflación"}),false);
+  assert.equal(q.categoria({titulo:"Transmisión ESPN: Real Madrid vs. AEK Atenas por Champions League",sector:"politica"}),"deporte");
+  assert.equal(q.categoria({titulo:"Ignacio Buse vs. Daniil Medvédev en Masters 1000",sector:"politica"}),"deporte");
+  assert.equal(q.ambito({titulo:"Real Madrid vs. AEK Atenas",ambito:"peru",tipo:"comercial"}),"mundo");
+  assert.equal(q.ambito({titulo:"Lluvias intensas en Piura",ambito:"peru",tipo:"comercial"}),"peru");
+  assert.ok(q.cifras({titulo:"Dos penales para 24 mil internos"}).some(x=>x.includes("24 mil")));
+  assert.match(app,/PERU_NEWS/);
+  assert.match(app,/Perú Infórmate!/);
+  assert.match(html,/PERÚ <b>INFÓRMATE!<\/b>/);
+  assert.match(html,/assets\/newsroom.js\?v=__V__/);
+  assert.match(html,/assets\/newsroom.css\?v=__V__/);
 });
