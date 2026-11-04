@@ -1,4 +1,4 @@
-name: Validar Contexto Perú
+name: Validar PERÚ INFORMADO
 
 # Pruebas del proyecto coyuntura-peru. No toca los otros proyectos del repositorio.
 on:
@@ -7,10 +7,6 @@ on:
       - "coyuntura-peru/**"
       - ".github/workflows/*coyuntura*.yml"
       - ".github/workflows/ci-deploy.yml"
-  push:
-    branches: [main]
-    paths:
-      - "coyuntura-peru/**"
   workflow_dispatch:
 
 permissions:
@@ -39,6 +35,7 @@ jobs:
 
       - name: Sintaxis de JavaScript
         run: |
+          node --check coyuntura-peru/assets/newsroom.js
           node --check coyuntura-peru/assets/app.js
           node --check coyuntura-peru/assets/civic-experience.js
           node --check coyuntura-peru/sw.js

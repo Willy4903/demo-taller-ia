@@ -37,11 +37,11 @@ window.TALLERES = {
   ],
   contacto: {
     whatsapp: "51991878834",
-    mensaje: "Hola Willy, vi Perú Infórmate! y quiero información de tus talleres de IA.",
+    mensaje: "Hola Willy, vi PERÚ INFORMADO y quiero información de tus talleres de IA.",
     tiktok: "https://www.tiktok.com/@luwiuni",
     web: "https://wgia-formacion.luisito4903.chatgpt.site/"
   },
-  /* "sector" indica en qué sección de Perú Infórmate! se muestra además de la página de talleres y el pie. */
+  /* "sector" indica en qué sección de PERÚ INFORMADO se muestra además de la página de talleres y el pie. */
   paginas: [
     {
       id: "ia-radar",

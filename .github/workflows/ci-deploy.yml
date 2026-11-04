@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   test:
-    # La actualización automática de Perú en Claro lo invoca con workflow_dispatch y no necesita repetir las pruebas.
+    # La actualización automática de PERÚ INFORMADO lo invoca con workflow_dispatch y no necesita repetir las pruebas.
     if: github.event_name != 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
@@ -25,7 +25,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: node --check coyuntura-peru/assets/app.js && node --check coyuntura-peru/assets/civic-experience.js
+      - run: node --check coyuntura-peru/assets/newsroom.js && node --check coyuntura-peru/assets/app.js && node --check coyuntura-peru/assets/civic-experience.js
       - run: node --test coyuntura-peru/tests/identidad_ciudadana.cjs
       - run: npm run lint
       - run: npm run typecheck
@@ -53,7 +53,7 @@ jobs:
       - run: npm run build
         env:
           BASE_PATH: /${{ github.event.repository.name }}/
-      - name: Incluir Perú en Claro en /peru-en-claro/
+      - name: Incluir PERÚ INFORMADO en /peru-en-claro/
         run: |
           mkdir -p dist/peru-en-claro
           cp -r coyuntura-peru/. dist/peru-en-claro/
@@ -63,7 +63,7 @@ jobs:
           path: dist
 
   # El sitio de GitHub Pages de este repositorio se sirve desde la rama gh-pages (origen "Deploy from a branch").
-  # Este job publica Perú en Claro en gh-pages/peru-en-claro/ sin tocar el resto de la rama.
+  # Este job publica PERÚ INFORMADO en gh-pages/peru-en-claro/ sin tocar el resto de la rama.
   publicar-peru:
     needs: test
     if: ${{ !cancelled() && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main' && (needs.test.result == 'success' || needs.test.result == 'skipped') }}
@@ -86,7 +86,7 @@ jobs:
           python-version: "3.12"
       - name: Validar contenido antes de publicar
         run: python fuente/coyuntura-peru/scripts/validar_contenido.py
-      - name: Copiar Perú en Claro a gh-pages/peru-en-claro/
+      - name: Copiar PERÚ INFORMADO a gh-pages/peru-en-claro/
         run: |
           rm -rf sitio/peru-en-claro
           mkdir -p sitio/peru-en-claro
@@ -104,22 +104,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "gh-pages ya está al día."
           else
-            git commit -m "Publicar Perú en Claro ($(TZ=America/Lima date '+%Y-%m-%d %H:%M') hora de Lima)"
+            git commit -m "Publicar PERÚ INFORMADO ($(TZ=America/Lima date '+%Y-%m-%d %H:%M') hora de Lima)"
             git push origin gh-pages
           fi
-
-  # Solo aplica si el origen de Pages se cambia a "GitHub Actions". Con origen en gh-pages falla sin afectar la publicación anterior.
-  deploy:
-    needs: build
-    if: ${{ !cancelled() && needs.build.result == 'success' }}
-    continue-on-error: true
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4

@@ -1,4 +1,4 @@
-/* Perú Infórmate! · lectura ciudadana, sin consultas externas adicionales ni datos ficticios.
+/* PERÚ INFORMADO · lectura ciudadana, sin consultas externas adicionales ni datos ficticios.
    Mejora progresiva: si este archivo no carga, las tarjetas y sus enlaces originales permanecen operativos. */
 (function(){
   "use strict";
@@ -47,7 +47,7 @@
   }
   function buildLab(){
     var section=el("section","pe-lab");section.id="pe-lab";section.setAttribute("aria-labelledby","pe-lab-title");
-    section.innerHTML='<div class="pe-lab-head"><div><span class="pe-kicker">APRENDE SIN ABANDONAR PERÚ INFÓRMATE!</span><h2 id="pe-lab-title">Entiende la noticia, la cifra o el riesgo</h2><p>Elige un tema para leer su síntesis aquí. El contenido se apoya en los datos y explicaciones disponibles; las fuentes originales se consultan después, si deseas profundizar.</p></div><span class="pe-lab-count" aria-hidden="true">01 / 03</span></div>'+
+    section.innerHTML='<div class="pe-lab-head"><div><span class="pe-kicker">APRENDE SIN ABANDONAR PERÚ INFORMADO</span><h2 id="pe-lab-title">Entiende la noticia, la cifra o el riesgo</h2><p>Elige un tema para leer su síntesis aquí. El contenido se apoya en los datos y explicaciones disponibles; las fuentes originales se consultan después, si deseas profundizar.</p></div><span class="pe-lab-count" aria-hidden="true">01 / 03</span></div>'+
       '<div class="pe-lab-tabs" role="tablist" aria-label="Tema para comprender">'+topics.map(function(t,i){return '<button type="button" role="tab" id="pe-tab-'+t.id+'" aria-controls="pe-panel" aria-selected="'+(i===0)+'" tabindex="'+(i===0?0:-1)+'" data-pe-tab="'+t.id+'">'+t.label+'</button>';}).join("")+'</div>'+
       '<div class="pe-lab-panel" id="pe-panel" role="tabpanel" aria-labelledby="pe-tab-actualidad" tabindex="0">'+
       '<div class="pe-lab-copy"><span class="pe-lab-eyebrow" id="pe-eyebrow"></span><h3 id="pe-title"></h3><p id="pe-explain"></p><p class="pe-lab-example" id="pe-example"></p><div class="pe-lab-data"><small>DATO O REFERENCIA DISPONIBLE</small><strong id="pe-data-title"></strong><p id="pe-data-note"></p></div><div class="pe-lab-actions"><a class="pe-lab-main" id="pe-route" href="#/noticias">Ir al detalle dentro del portal</a><a class="pe-lab-secondary" href="#/fuentes">Consultar las fuentes y sus fechas →</a></div></div>'+

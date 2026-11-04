@@ -1,4 +1,4 @@
-/* Perú Infórmate! · clasificación editorial y fichas de noticias.
+/* PERÚ INFORMADO · clasificación editorial y fichas de noticias.
  * Solo utiliza campos publicados por las fuentes RSS; nunca inventa datos.
  */
 (function (global) {

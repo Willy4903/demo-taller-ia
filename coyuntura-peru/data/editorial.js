@@ -1,4 +1,4 @@
-/* Contenido editorial de "Perú Infórmate!".
+/* Contenido editorial de "PERÚ INFORMADO".
    Los datos con cifras llevan fuente enlazada y fecha de corte. Contrástalos siempre en la fuente primaria. */
 window.EDITORIAL = {
   corte: "2026-11-02",
@@ -83,7 +83,7 @@ window.EDITORIAL = {
     tres: [
       { k: "Estado observado", v: "Alerta de El Niño costero", d: "Es la condición que el ENFEN ve hoy en el mar frente a la costa: más cálido de lo normal.", f: "ENFEN" },
       { k: "Pronóstico", v: "Extraordinaria entre setiembre de 2026 y enero de 2027 (comunicado N.° 16)", d: "Para el verano de 2027 el ENFEN daba 48 % de probabilidad a magnitud extraordinaria y 45 % a fuerte, con el evento hasta mediados del otoño de 2027. Comunicados posteriores pueden haberlo cambiado: una nota de RPP cita magnitud moderada para el verano de 2027.", f: "ENFEN, comunicado N.° 16-2026 (14 de septiembre de 2026), vía Canal N; y RPP" },
-      { k: "Riesgo", v: "Lluvias intensas, pesca, agro y salud", d: "Lo que podría afectar si el evento es fuerte: lluvias y huaicos en la costa norte, pesca, agricultura y dengue. No es un pronóstico oficial de daños: consulta Indeci y Senamhi.", f: "Perú Infórmate!, a partir de ENFEN" }
+      { k: "Riesgo", v: "Lluvias intensas, pesca, agro y salud", d: "Lo que podría afectar si el evento es fuerte: lluvias y huaicos en la costa norte, pesca, agricultura y dengue. No es un pronóstico oficial de daños: consulta Indeci y Senamhi.", f: "PERÚ INFORMADO, a partir de ENFEN" }
     ],
     estado: [
       { k: "Estado ENFEN", v: "Alerta", n: "Alerta de El Niño costero" },
@@ -643,7 +643,7 @@ window.EDITORIAL.portal = {
   investigacion: { c: "Periodismo que revisa documentos y datos para destapar casos de poder y corrupción.", e: "Una denuncia no es una condena: rige la presunción de inocencia hasta que haya sentencia firme.", f: "Ministerio Público", u: "https://www.mpfn.gob.pe" },
   coyuntura: { c: "Lo que ocurre ahora en el país y por qué importa hoy.", e: "Con un Congreso sin mayoría propia, las leyes salen adelante con alianzas entre bancadas.", f: "INEI", u: "https://www.gob.pe/inei" },
   mundo: { c: "Hechos internacionales que terminan llegando al Perú.", e: "Si EE. UU. sube aranceles, pueden cambiar el precio de los metales y el tipo de cambio.", f: "ONU Noticias", u: "https://news.un.org/es/" },
-  ruta: { c: "Un camino de misiones cortas para aprender a leer la coyuntura y ganar puntos.", e: "Respondes 3 preguntas, sumas XP y subes de nivel, de Viajero a Apu.", f: "Perú Infórmate!", u: "#/ruta" },
+  ruta: { c: "Un camino de misiones cortas para aprender a leer la coyuntura y ganar puntos.", e: "Respondes 3 preguntas, sumas XP y subes de nivel, de Viajero a Apu.", f: "PERÚ INFORMADO", u: "#/ruta" },
   datos: { c: "Cifras oficiales del Perú, cada una con su periodo y su fuente.", e: "Con 34 157 732 habitantes (Censo 2025), casi 3 de cada 10 peruanos viven en Lima Metropolitana.", f: "INEI", u: "https://www.gob.pe/inei" },
-  talleres: { c: "Talleres prácticos para aprender a usar la inteligencia artificial en el estudio y el trabajo.", e: "Aprendes a usar ChatGPT, Claude y Gemini para redactar mejor, sin saber programar.", f: "Perú Infórmate!", u: "#/talleres" }
+  talleres: { c: "Talleres prácticos para aprender a usar la inteligencia artificial en el estudio y el trabajo.", e: "Aprendes a usar ChatGPT, Claude y Gemini para redactar mejor, sin saber programar.", f: "PERÚ INFORMADO", u: "#/talleres" }
 };

@@ -62,7 +62,7 @@ test("accesibilidad, caché y CSS consistente",()=>{
   assert.match(css,/:focus-visible/);
   assert.match(exp,/aria-selected/);
   assert.match(exp,/aria-expanded/);
-  assert.match(sw,/cp-v17-peru-informate-noticias-20261104/);
+  assert.match(sw,/cp-v18-peru-informado-20261104/);
   assert.match(sw,/assets\/civic-theme.css/);
   assert.match(sw,/assets\/civic-experience.js/);
   assert.match(sw,/assets\/newsroom.js/);
@@ -83,8 +83,8 @@ test("clasificación, territorios, identidad y filtro editorial",()=>{
   assert.equal(q.ambito({titulo:"Lluvias intensas en Piura",ambito:"peru",tipo:"comercial"}),"peru");
   assert.ok(q.cifras({titulo:"Dos penales para 24 mil internos"}).some(x=>x.includes("24 mil")));
   assert.match(app,/PERU_NEWS/);
-  assert.match(app,/Perú Infórmate!/);
-  assert.match(html,/PERÚ <b>INFÓRMATE!<\/b>/);
+  assert.match(app,/PERÚ INFORMADO/);
+  assert.match(html,/PERÚ <b>INFORMADO<\/b>/);
   assert.match(html,/assets\/newsroom.js\?v=__V__/);
   assert.match(html,/assets\/newsroom.css\?v=__V__/);
 });
