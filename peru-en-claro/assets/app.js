@@ -78,7 +78,7 @@
   window.cpImg = function (im) { var d = im.parentNode; if (!d) return; var r = d.closest && d.closest(".row"); if (r) r.classList.add("nofoto"); d.remove(); };
 
   /* ───── modelo de historias ───── */
-  var ITEMS = (NOT.items || []).slice().sort(function (a, b) { return (Date.parse(b.fecha) || 0) - (Date.parse(a.fecha) || 0); });
+  var ITEMS = (NOT.items || []).filter(function (it) { return !(window.PE_LECTURA && window.PE_LECTURA.excluir && window.PE_LECTURA.excluir(it)); }).sort(function (a, b) { return (Date.parse(b.fecha) || 0) - (Date.parse(a.fecha) || 0); });
   var HILO = ED.hilo ? { kind: "hilo", sector: "coyuntura", id: "hilo", titulo: ED.hilo.titulo, resumen: ED.hilo.puntos.map(function (p) { return p.k + ": " + p.t; }).join(" · "), url: "#/a/hilo", badge: "Análisis" } : null;
   var INS = ED.insights.map(function (c) { return { kind: "insight", sector: c.sector, id: c.id || c.sector, titulo: c.titulo, resumen: c.resumen, url: "#/a/" + (c.id || c.sector), badge: "Análisis", nivel: c.nivel, raw: c }; });
   function porSector(id) { return ITEMS.filter(function (i) { return i.sector === id; }); }
@@ -119,13 +119,25 @@
       '<div class="acc"><a class="btn" href="' + esc(s.url) + '">Leer el análisis →</a>' + (fu ? '<a class="lk" href="' + safeUrl(fu.u) + '" target="_blank" rel="noopener noreferrer">Leer fuente original ↗</a>' : "") + "</div>" + "</article>";
   }
   function row(s) {
-    var f=thumb(s), resumen=s.resumen?sin(primera(s.resumen),160):"";
-    if (!externo(s)) return '<a class="s row'+(f?"":" nofoto")+'" '+attrs(s)+'><div>'+kicker(s)+'<h3>'+esc(s.titulo)+'</h3>'+(resumen?'<p>'+esc(resumen)+'</p>':"")+meta(s)+'</div>'+f+'</a>';
-    var extracto=s.resumen?sin(s.resumen,550):"El índice solo dispone del titular: no hay un extracto adicional para explicar esta publicación.";
-    var lectura=s.genero==="opinion"?"Es una pieza de opinión: distingue argumentos, valoración del autor y hechos comprobables.":"Es una noticia: distingue los hechos citados de las conclusiones que todavía necesitan contraste.";
-    var fecha=s.fecha?corta(s.fecha):"Fecha no confirmada";
-    return '<details class="pe-story"><summary class="s row'+(f?"":" nofoto")+'"><div>'+kicker(s)+'<h3>'+esc(s.titulo)+'</h3>'+(resumen?'<p>'+esc(resumen)+'</p>':"")+meta(s)+'<span class="pe-read-label">Comprender esta nota aquí <span aria-hidden="true">+</span></span></div>'+f+'</summary>'+
-      '<div class="pe-story-body"><span class="pe-story-kicker">EXTRACTO DEL MEDIO · NO VERIFICACIÓN INDEPENDIENTE</span><p>'+esc(extracto)+'</p><p class="pe-story-lesson">'+esc(lectura)+'</p><div class="pe-story-actions"><span>Publicado por '+esc(s.fuente)+' · '+esc(fecha)+'</span><a href="'+safeUrl(s.url)+'" target="_blank" rel="noopener noreferrer">Leer fuente original ↗</a></div></div></details>';
+    var f = thumb(s), resumen = s.resumen ? sin(primera(s.resumen), 160) : "";
+    if (!externo(s)) return '<a class="s row' + (f ? "" : " nofoto") + '" ' + attrs(s) + '><div>' + kicker(s) + '<h3>' + esc(s.titulo) + '</h3>' + (resumen ? '<p>' + esc(resumen) + '</p>' : "") + meta(s) + '</div>' + f + '</a>';
+    var a = window.PE_LECTURA && window.PE_LECTURA.analizar ? window.PE_LECTURA.analizar(s) : {
+      postura: "El titular no es una prueba suficiente. Un análisis serio distingue afirmaciones, evidencia y consecuencias.",
+      alcance: "La lectura exige conocer la fuente, la fecha y el alcance de lo publicado.",
+      pregunta: "¿Qué documento independiente permite contrastar esta afirmación?",
+      limitada: !s.resumen
+    };
+    var fecha = s.fecha ? corta(s.fecha) : "Fecha no confirmada";
+    return '<details class="pe-story"><summary class="s row' + (f ? "" : " nofoto") + '"><div>' +
+      kicker(s) + '<h3>' + esc(s.titulo) + '</h3>' + (resumen ? '<p>' + esc(resumen) + '</p>' : "") + meta(s) +
+      '<span class="pe-read-label">Leer análisis crítico <span aria-hidden="true">+</span></span></div>' + f + '</summary>' +
+      '<div class="pe-story-body"><span class="pe-story-kicker">ANÁLISIS CRÍTICO · ELABORACIÓN ORIGINAL DE PERÚ EN CLARO</span>' +
+      '<p class="pe-story-verdict">' + esc(a.postura) + '</p>' +
+      '<div class="pe-story-analysis"><section><h4>LO QUE REALMENTE IMPORTA</h4><p>' + esc(a.alcance) + '</p></section>' +
+      '<section class="pe-story-check"><h4>LA PREGUNTA INCÓMODA</h4><p>' + esc(a.pregunta) + '</p></section></div>' +
+      (a.limitada ? '<p class="pe-story-limitation">Este medio solo proporciona el titular en el índice: la lectura no presupone acceso al artículo completo.</p>' : '') +
+      '<p class="pe-story-disclaimer">Lectura editorial independiente basada en el titular y el extracto del medio. No representa una cita ni la opinión de su autor. Comprueba los hechos en la fuente original.</p>' +
+      '<div class="pe-story-actions"><span>Fuente: ' + esc(s.fuente) + ' · ' + esc(fecha) + '</span><a href="' + safeUrl(s.url) + '" target="_blank" rel="noopener noreferrer">Leer fuente original ↗</a></div></div></details>';
   }
   function card(s) { return '<a class="s card" ' + attrs(s) + ">" + thumb(s) + "<div>" + kicker(s) + "<h3>" + esc(s.titulo) + "</h3><p>" + esc(sin(primera(s.resumen), 150)) + "</p>" + meta(s) + "</div></a>"; }
   function sh(titulo, color, enlace, txt) { return '<div class="sh" style="--c:' + color + '"><h2>' + esc(titulo) + "</h2>" + (enlace ? '<a href="' + enlace + '">' + esc(txt || "Ver todo") + " →</a>" : "") + "</div>"; }
@@ -300,13 +312,13 @@
   var nF = { sector: "todos", tipo: "todas", genero: "todos" }, nMax = 15, nQuery = "";
   function vistaNoticias() {
     var abierto = window.innerWidth >= 720 ? " open" : "";
-    var h = '<div class="fade noticias-page"><div class="shead noticias-intro" style="--c:var(--gold)"><h1>Noticias</h1><p>Entiende primero el extracto disponible aquí. Si quieres leer el artículo completo, encontrarás el enlace al medio y la fecha de publicación.</p></div><div class="pe-reading-guide"><div><span>01 · IDENTIFICA</span><strong>¿Quién publica?</strong><p>Distingue noticias de opinión y revisa el medio.</p></div><div><span>02 · COMPRENDE</span><strong>¿Qué afirma?</strong><p>Abre una tarjeta para leer el extracto en el portal.</p></div><div><span>03 · VERIFICA</span><strong>¿Con qué evidencia?</strong><p>Contrasta la fecha y la fuente antes de compartir.</p></div></div>';
+    var h = '<div class="fade noticias-page"><div class="shead noticias-intro" style="--c:var(--gold)"><h1>Noticias</h1><p>Abre cada noticia para una lectura crítica original: consecuencias, evidencia pendiente y enlace a la publicación. El análisis no sustituye la fuente.</p></div><div class="pe-reading-guide"><div><span>01 · IDENTIFICA</span><strong>¿Quién publica?</strong><p>Distingue noticias de opinión y revisa el medio.</p></div><div><span>02 · COMPRENDE</span><strong>¿Qué afirma?</strong><p>Abre una tarjeta para examinar el ángulo crítico y sus implicancias.</p></div><div><span>03 · VERIFICA</span><strong>¿Con qué evidencia?</strong><p>Contrasta la fecha y la fuente antes de compartir.</p></div></div>';
     h += '<details class="filtros filtros-noticias"' + abierto + '><summary>Filtrar por tema, tipo de medio o género</summary><div class="filtros-in">' +
       '<div class="nf-grupo nf-tema"><span class="fl">Tema</span><div class="chips" id="n-sec" aria-label="Filtrar por tema"></div></div>' +
       '<div class="nf-grupo"><span class="fl">Tipo de medio</span><div class="chips" id="n-tipo" aria-label="Filtrar por tipo de medio"></div></div>' +
       '<div class="nf-grupo"><span class="fl">Género</span><div class="chips" id="n-gen" aria-label="Filtrar por género"></div></div></div></details>';
     h += '<div class="n-herramientas"><label class="n-busca" for="n-query"><span class="n-search-icon" aria-hidden="true">⌕</span><input type="search" id="n-query" placeholder="Buscar dentro de noticias" value="' + esc(nQuery) + '" autocomplete="off" aria-label="Buscar dentro de noticias"></label><span id="n-count" class="n-total" role="status"></span><button type="button" id="n-clear" class="n-clear" hidden>Limpiar filtros</button></div>';
-    h += '<div id="n-lista" aria-live="polite"></div><p class="n-ver-mas" id="n-mas"></p><p class="nota-pie">' + (ultimaNota() ? "La nota más reciente indexada es del " + esc(fechaHora(ultimaNota())) + "." : "") + " Los titulares y resúmenes pertenecen a cada medio. Las notas marcadas «vía Google Noticias» no llegaron por el feed del medio.</p></div>";
+    h += '<div id="n-lista" aria-live="polite"></div><p class="n-ver-mas" id="n-mas"></p><p class="nota-pie">' + (ultimaNota() ? "La nota más reciente indexada es del " + esc(fechaHora(ultimaNota())) + "." : "") + " Los titulares y extractos provienen de cada medio; la lectura crítica es elaboración original del portal y no se atribuye a los periodistas citados. Las notas marcadas «vía Google Noticias» no llegaron por el feed del medio.</p></div>";
     setTimeout(pintarNoticias, 0);
     return h;
   }
