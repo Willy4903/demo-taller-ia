@@ -10,15 +10,15 @@
   function excluir(item) { return ruido.test(normal(item.titulo)); }
 
   var temas = [
-    ["deporte", /\b(?:champions league|espn|masters? 1000|atp|wta|medvedev|tenis|tenista|futbol|futbolista|liga 1|liga1|mundial de clubes|torneo clausura|partido(?:s)? de (?:futbol|tenis)|real madrid|barcelona|universitario vs|sport boys|sporting cristal|alianza lima|voley|voleibol|goleador|marcador|cienciano|seleccion peruana.*(?:futbol|partido)|deporte|deportivo|entrenador)\b/i],
+    ["deporte", /\b(?:champions league|espn|masters? 1000|atp|wta|medvedev|tenis|tenista|futbol|futbolista|jugador de futbol|arquero|club deportivo|tenerife|balompie|buse|liga 1|liga1|mundial de clubes|torneo clausura|partido(?:s)? de (?:futbol|tenis)|real madrid|barcelona|universitario vs|sport boys|sporting cristal|alianza lima|voley|voleibol|goleador|marcador|cienciano|seleccion peruana.*(?:futbol|partido)|deporte|deportivo|entrenador)\b/i],
     ["salud", /\b(?:hospital|vacuna|dengue|essalud|inen|enfermedad|pacientes?|salud publica|minsa|epidemi|contagios|tratamiento medico|clinica|vph|medicamentos)\b/i],
     ["nino", /\b(?:senamhi|enfen|el nino|nino costero|lluvias intensas|inundaciones?|huaicos?|llovizna|pronostico meteorologico|alerta meteorologica|temperatura del mar)\b/i],
-    ["ia", /\b(?:inteligencia artificial|chatgpt|openai|anthropic|gemini|deepseek|copilot|llm|modelos? de lenguaje|ia generativa|algoritmos? de ia)\b/i],
+    ["ia", /\b(?:inteligencia artificial|\bia\b|chatgpt|openai|anthropic|gemini|deepseek|copilot|llm|modelos? de lenguaje|ia generativa|algoritmos? de ia)\b/i],
     ["tecnologia", /\b(?:ciberataque|ciberseguridad|malware|ransomware|hackeo|filtracion de datos|internet|telecomunicaciones|software|recarga.*qr|tecnologia|digital|satelite|celular|smartphone|startup)\b/i],
     ["economia", /\b(?:economia|inflacion|bcrp|pbi|finanzas|cts|gratificacion|pension 65|mef|sunat|empleo|salarios?|remuneracion|inversion|exportacion|importacion|combustibles?|glp|gasolina|petroleo|precio(?:s)?|dolar|tipo de cambio|credito|bancos?|mineria|agroexportacion|aranceles?)\b/i],
     ["investigacion", /\b(?:contraloria|corrupcion|cohecho|colusion|presunta irregularidad|investigacion fiscal|denuncia|sobornos?|licitacion amañada|fiscalia|caso odebrecht|lavado de activos)\b/i],
-    ["politica", /\b(?:president[ae]|congreso|senado|diputad[oa]s?|ministro|premier|gobierno|elecciones|partido politico|parlament|gabinete|alcalde|gobernador|junta nacional de justicia|poder judicial|fujimori|campana electoral|ley|reforma|protesta)\b/i],
-    ["cultura", /\b(?:gastronomia|restaurantes?|50 best|chef|cociner[oa]|pelicula|cine|series? de television|estreno|oscar|concierto|festival|musica|cantante|actor|actriz|museo|literatura|arte|cultura)\b/i],
+    ["politica", /\b(?:president[ae]|congreso|senado|senador|diputad[oa]s?|ministro|premier|gobierno|elecciones|partido politico|parlament|gabinete|alcalde|gobernador|junta nacional de justicia|poder judicial|fujimori|campana electoral|ley|reforma|protesta|democrata|republicano|midterms|votacion|electoral)\b/i],
+    ["cultura", /\b(?:gastronomia|restaurantes?|50 best|chef|cociner[oa]|pelicula|cine|series? de television|estreno|oscar|concierto|festival|musica|cantante|actor|actriz|museo|literatura|arte|cultura|johnny depp|jack sparrow|godzilla|piratas del caribe|spider.man|laika|netflix|amazon prime|disney)\b/i],
     ["ambiente", /\b(?:biodiversidad|deforestacion|bosques?|amazonia|antartida|kril|contaminacion|conservacion|medio ambiente|cambio climatico|pesca industrial|especies amenazadas)\b/i]
   ];
   function categoria(item) {
@@ -27,20 +27,17 @@
       if (temas[i][1].test(title)) return temas[i][0];
     }
     if ((item.sector === "mundo" || item.tipo === "internacional") && !item.sectorOriginal) return "internacional";
-    if (item.sector === "deporte") return "deporte";
-    if (item.sector === "nino") return "nino";
-    if (item.sector === "ia") return "ia";
-    if (item.sector === "salud") return "salud";
-    if (item.sector === "economia") return "economia";
-    if (item.sector === "investigacion") return "investigacion";
+    if (normal(item.fuente).includes("salud con lupa")) return "salud";
+    if (normal(item.fuente).includes("mongabay")) return "ambiente";
     return "sociedad";
   }
-  var extranjero = /\b(?:real madrid|aek atenas|champions league|medvedev|masters? 1000|donald trump|trump|estados unidos|ee\.?\s?uu\.?|israel|gaza|iran|espana|alemania|francia|ucrania|rusia|china|japon|tennessee|tennesse|texas|netanyahu)\b/i;
-  var peruano = /\b(?:peru|lima|arequipa|piura|cusco|puno|trujillo|tacna|chiclayo|iquitos|junin|cajamarca|callao)\b/i;
+  var extranjero = /\b(?:real madrid|aek atenas|champions league|medvedev|masters? 1000|donald trump|trump|estados unidos|ee\.?\s?uu\.?|israel|gaza|iran|espana|alemania|francia|ucrania|rusia|china|japon|tennessee|tennesse|texas|netanyahu|tenerife|godzilla|johnny depp|jack sparrow|spider.man|cop17|antartida|paris jackson|hollywood|oscar|toronto|singapur|bolsonaro|brasil|georgia|estonia|suiza)\b/i;
+  var peruano = /\b(?:peru|lima|arequipa|piura|cusco|puno|trujillo|tacna|chiclayo|iquitos|junin|cajamarca|callao|ignacio buse|buse)\b/i;
   function ambito(item) {
     if (item.tipo === "internacional" || item.ambito === "mundo") return "mundo";
     var t=normal(item.titulo);
-    if (extranjero.test(t) && !peruano.test(t)) return "mundo";
+    if (peruano.test(t)) return "peru";
+    if (extranjero.test(t)) return "mundo";
     return "peru";
   }
   var nombres = {
