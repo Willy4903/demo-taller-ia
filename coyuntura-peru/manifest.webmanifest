@@ -1,6 +1,6 @@
 {
-  "name": "Contexto Perú",
-  "short_name": "Contexto Perú",
+  "name": "Perú Infórmate!",
+  "short_name": "Perú Infórmate!",
   "description": "La coyuntura peruana explicada para cualquiera. Se actualiza 7 veces al día (hora de Lima).",
   "lang": "es-PE",
   "start_url": "./index.html#/",
