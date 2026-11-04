@@ -65,8 +65,8 @@ test("accesibilidad, caché y CSS consistente",()=>{
   assert.match(sw,/cp-v17-peru-informate-noticias-20261104/);
   assert.match(sw,/assets\/civic-theme.css/);
   assert.match(sw,/assets\/civic-experience.js/);
-  assert.match(sw,/assets\/critical-reading.js/);
-  assert.match(sw,/assets\/critical-reading.css/);
+  assert.match(sw,/assets\/newsroom.js/);
+  assert.match(sw,/assets\/newsroom.css/);
   assert.equal((css.match(/\{/g)||[]).length,(css.match(/\}/g)||[]).length);
 });
 
