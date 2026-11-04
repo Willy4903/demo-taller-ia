@@ -90,6 +90,20 @@ RESPALDO_DOMINIO = {
 }
 GENERO_OPINION = re.compile(r"/(opinion|opinión|columna|columnas|columnistas|editorial|blog|blogs|tribuna)(/|-|$)", re.I)
 
+# Control de relevancia: no se publican horóscopos, tarot o predicciones astrológicas.
+# Se aplica también a los registros heredados de actualizaciones anteriores.
+PATRON_CONTENIDO_IRRELEVANTE = re.compile(
+    r"\\b(?:horoscopos?|zodiaco|zodiacal(?:es)?|signos? zodiacales?|carta astral|"
+    r"astrologia|tarot|numerologia|predicciones? astrales?|"
+    r"compatibilidad amorosa segun tu signo|lectura de cartas)\\b",
+    re.I,
+)
+
+
+def es_irrelevante(titulo):
+    return bool(PATRON_CONTENIDO_IRRELEVANTE.search(norm(titulo or "")))
+
+
 
 def url_respaldo(dominio):
     return ("https://news.google.com/rss/search?q=site:" + dominio + "+when:7d&hl=es-419&gl=PE&ceid=PE:es-419")
@@ -396,7 +410,7 @@ def parsear_feed(datos, nombre, tipo, sector_def):
                 if etiqueta(h.tag) == "link" and h.get("href"):
                     url = h.get("href")
                     break
-        if not titulo or not url.startswith("http"):
+        if not titulo or not url.startswith("http") or es_irrelevante(titulo):
             continue
         fecha = parsear_fecha(hijo_texto(e, "pubDate", "published", "updated", "date"))
         if fecha and fecha < limite:
@@ -473,7 +487,8 @@ def es_antiguo(it, ahora=None):
 
 def fusionar(nuevos, previos):
     vistos_url, vistos_tit, todos = set(), set(), []
-    previos = [i for i in previos if not es_antiguo(i)]
+    previos = [i for i in previos if not es_antiguo(i) and not es_irrelevante(i.get("titulo"))]
+    nuevos = [i for i in nuevos if not es_irrelevante(i.get("titulo"))]
     for it in sorted(nuevos, key=clave_orden, reverse=True) + sorted(previos, key=clave_orden, reverse=True):
         u, t = url_canonica(it["url"]), norm(it["titulo"])[:90]
         if u in vistos_url or t in vistos_tit:
@@ -542,6 +557,8 @@ def validar_item(it):
     """Devuelve un motivo de descarte o None si el registro es válido."""
     if not it.get("titulo") or not str(it.get("url", "")).startswith("http"):
         return "sin título o dirección válida"
+    if es_irrelevante(it.get("titulo")):
+        return "contenido sin relevancia informativa"
     if it.get("sector") not in SECTORES:
         return "sector desconocido"
     f = it.get("fecha")
