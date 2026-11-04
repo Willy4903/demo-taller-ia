@@ -93,9 +93,9 @@ GENERO_OPINION = re.compile(r"/(opinion|opinión|columna|columnas|columnistas|ed
 # Control de relevancia: no se publican horóscopos, tarot o predicciones astrológicas.
 # Se aplica también a los registros heredados de actualizaciones anteriores.
 PATRON_CONTENIDO_IRRELEVANTE = re.compile(
-    r"\\b(?:horoscopos?|zodiaco|zodiacal(?:es)?|signos? zodiacales?|carta astral|"
+    r"\b(?:horoscopos?|zodiaco|zodiacal(?:es)?|signos? zodiacales?|carta astral|"
     r"astrologia|tarot|numerologia|predicciones? astrales?|"
-    r"compatibilidad amorosa segun tu signo|lectura de cartas)\\b",
+    r"compatibilidad amorosa segun tu signo|lectura de cartas)\b",
     re.I,
 )
 
