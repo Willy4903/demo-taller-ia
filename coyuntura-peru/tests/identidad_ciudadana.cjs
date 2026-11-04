@@ -48,7 +48,9 @@ test("las síntesis usan datos actuales del portal y no generan cifras",()=>{
 });
 test("noticias, indicadores y El Niño tienen explicaciones internas",()=>{
   assert.match(app,/<details class="pe-story">/);
-  assert.match(app,/EXTRACTO DEL MEDIO/);
+  assert.match(app,/ANÁLISIS CRÍTICO/);
+  assert.match(app,/LA PREGUNTA INCÓMODA/);
+  assert.doesNotMatch(app,/EXTRACTO DEL MEDIO/);
   assert.match(app,/Leer fuente original/);
   assert.match(app,/pe-data-explain/);
   assert.match(app,/Qué significa este número/);
@@ -64,4 +66,22 @@ test("accesibilidad, caché y CSS consistente",()=>{
   assert.match(sw,/assets\/civic-theme.css/);
   assert.match(sw,/assets\/civic-experience.js/);
   assert.equal((css.match(/\{/g)||[]).length,(css.match(/\}/g)||[]).length);
+});
+
+test("lectura crítica editorial sin horóscopos en todas las noticias",()=>{
+  const vm=require("node:vm");
+  const code=read("assets/critical-reading.js");
+  const context={window:{}};
+  vm.runInNewContext(code,context);
+  const crit=context.window.PE_LECTURA;
+  assert.equal(typeof crit.analizar,"function");
+  assert.equal(typeof crit.excluir,"function");
+  assert.equal(crit.excluir({titulo:"Horóscopo de hoy, 4 de noviembre",sector:"economia"}),true);
+  assert.equal(crit.excluir({titulo:"Senamhi informa lluvias en Piura",sector:"nino"}),false);
+  const opinion=crit.analizar({titulo:"¿Qué dejaron los cien días de gobierno de Keiko Fujimori para las regiones?",sector:"politica",resumen:"Balance regional"});
+  assert.match(opinion.postura,/gira regional/);
+  assert.match(opinion.pregunta,/presupuesto/);
+  assert.match(app,/PE_LECTURA\.excluir/);
+  assert.match(html,/assets\/critical-reading\.js\?v=__V__/);
+  assert.match(html,/assets\/critical-reading\.css\?v=__V__/);
 });
