@@ -442,7 +442,21 @@ def parsear_feed(datos, nombre, tipo, sector_def):
     return salida
 
 
+def es_deporte(titulo):
+    """Prioriza los eventos deportivos: 'partido' no siempre significa partido político."""
+    t = norm(titulo or "")
+    return bool(re.search(
+        r"\\b(?:champions league|masters? 1000|liga 1|max en vivo|"
+        r"partido de futbol|partido de tenis|copa libertadores|"
+        r"transmision espn|real madrid|universitario vs|alianza lima vs|"
+        r"seleccion peruana vs|tenista|tenis|voley|volleyball)\\b",
+        t,
+    ))
+
+
 def clasificar(titulo, resumen, sector_def):
+    if es_deporte(titulo):
+        return "deporte"
     if sector_def in ("mundo", "ia", "nino"):
         return sector_def
     t = " " + norm(titulo + " " + resumen) + " "
@@ -490,6 +504,8 @@ def fusionar(nuevos, previos):
     previos = [i for i in previos if not es_antiguo(i) and not es_irrelevante(i.get("titulo"))]
     nuevos = [i for i in nuevos if not es_irrelevante(i.get("titulo"))]
     for it in sorted(nuevos, key=clave_orden, reverse=True) + sorted(previos, key=clave_orden, reverse=True):
+        if es_deporte(it.get("titulo")):
+            it["sector"] = "deporte"
         u, t = url_canonica(it["url"]), norm(it["titulo"])[:90]
         if u in vistos_url or t in vistos_tit:
             continue
