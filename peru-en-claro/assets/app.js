@@ -420,7 +420,7 @@
   }
   function vistaNoticias() {
     var hoy = ""; try { hoy = new Intl.DateTimeFormat("es-PE", { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: "America/Lima" }).format(new Date()); } catch (e) {}
-    var h = '<div class="fade noticias-page"><header class="np-mast"><div class="np-date">' + esc(hoy) + '</div><h1>Noticias</h1><p>La prensa peruana e internacional, en español. Gestión, La República, El Comercio, RPP, BBC Mundo, The New York Times, The Guardian y The New Yorker, con análisis en cada nota.</p></header>';
+    var h = '<div class="fade noticias-page"><header class="np-mast"><div class="np-date">' + esc(hoy) + '</div><h1>Noticias</h1><p>La prensa peruana e internacional, en español, con análisis en cada nota.</p></header>';
     h += '<nav class="pe-news-nav" aria-label="Secciones de noticias"><div class="pe-news-nav-primary" id="pe-news-territory"></div><div class="pe-news-nav-topics" id="pe-news-topics" aria-label="Temas periodísticos"></div></nav>';
     h += '<div class="n-herramientas"><label class="n-busca" for="n-query"><span class="n-search-icon" aria-hidden="true">⌕</span><input type="search" id="n-query" placeholder="Buscar un tema, un titular…" value="' + esc(nQuery) + '" autocomplete="off" aria-label="Buscar dentro de noticias"></label>' +
       '<label class="n-select" for="n-source"><span>Fuente</span><select id="n-source"></select></label>' +
@@ -444,7 +444,7 @@
     chips($("#n-gen"),PE_GENEROS,"genero");
     $("#pe-news-territory").innerHTML=[["todos","Portada"],["peru","Perú"],["latam","América Latina"],["mundo","Internacional"]].map(function(o){
       return '<button type="button" data-news-amb="'+o[0]+'" aria-pressed="false">'+esc(o[1])+'</button>';
-    }).join("");
+    }).join("")+'<a class="np-fuentes" href="#/fuentes">Fuentes</a>';
     temas.innerHTML=PE_TEMAS.map(function(o){
       return '<button type="button" data-nf="sector:'+o[0]+'" aria-pressed="false">'+esc(o[1])+'</button>';
     }).join("");
@@ -514,7 +514,7 @@
     var portada=nF.ambito==="todos"&&nF.sector==="todos"&&nF.tipo==="todas"&&nF.genero==="todos"&&nF.fuente==="todas"&&!bus&&nOrden==="recientes";
     var usados={},frente="";
     if(portada){var fr=frentePortada(lista);frente=fr.html;usados=fr.usados;}
-    [["peru","Perú","Los medios peruanos: El Comercio, Gestión, La República, RPP y más"],["latam","América Latina","La región vista por la prensa de habla hispana"],["mundo","Internacional","BBC Mundo, The New York Times, The Guardian, The New Yorker y más, en español"]].forEach(function(x){
+    [["peru","Perú","Actualidad nacional y regional"],["latam","América Latina","Lo que pasa en la región"],["mundo","Internacional","Noticias del mundo, en español"]].forEach(function(x){
       if(nF.ambito!=="todos"&&nF.ambito!==x[0])return;
       var items=lista.filter(function(z){return zonaDe(z)===x[0]&&!usados[z.url];});
       if(!items.length)return;
