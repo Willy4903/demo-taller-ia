@@ -210,7 +210,7 @@ def enriquecer_imagenes(items, previos):
 
 
 # ───────────── síntesis y cifras clave por noticia ─────────────
-MAX_SINTESIS_POR_EJECUCION = 60
+MAX_SINTESIS_POR_EJECUCION = 160
 RE_DESC = [
     re.compile(r'<meta[^>]+(?:property|name)=["\'](?:og:description|twitter:description|description)["\'][^>]*content=["\']([^"\']+)["\']', re.I),
     re.compile(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]*(?:property|name)=["\'](?:og:description|twitter:description|description)["\']', re.I),
