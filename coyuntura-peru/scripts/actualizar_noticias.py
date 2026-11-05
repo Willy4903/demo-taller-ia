@@ -209,6 +209,163 @@ def enriquecer_imagenes(items, previos):
     print(f"Imágenes de portada: {sum(1 for i in items if i.get('imagen'))}/{len(items)} notas")
 
 
+# ───────────── síntesis y cifras clave por noticia ─────────────
+MAX_SINTESIS_POR_EJECUCION = 60
+RE_DESC = [
+    re.compile(r'<meta[^>]+(?:property|name)=["\'](?:og:description|twitter:description|description)["\'][^>]*content=["\']([^"\']+)["\']', re.I),
+    re.compile(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]*(?:property|name)=["\'](?:og:description|twitter:description|description)["\']', re.I),
+]
+RE_PARRAFO = re.compile(r"<p[^>]*>(.*?)</p>", re.I | re.S)
+RE_ORACION = re.compile(r"(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÑ¿¡\"“«0-9])")
+RUIDO_ORACION = re.compile(
+    r"lee tambi[eé]n|te puede interesar|suscr[ií]b|s[ií]guenos|foto:|imagen:|©|cookies|newsletter|whatsapp|publicidad|"
+    r"todos los derechos|inicia sesi[oó]n|reg[ií]strate|haz clic|más informaci[oó]n en|the post", re.I)
+MESES_TXT = "enero|febrero|marzo|abril|mayo|junio|julio|agosto|setiembre|septiembre|octubre|noviembre|diciembre"
+_NUM = r"\d{1,3}(?:[ .]\d{3})+(?:,\d+)?|\d+(?:[.,]\d+)?"
+PATRONES_DATOS = [
+    ("monto", re.compile(rf"(?:S/|US\$|\$)\s?(?:{_NUM})(?:\s?(?:mil millones|millones|mil))?", re.I)),
+    ("porcentaje", re.compile(rf"(?:{_NUM})\s?%")),
+    ("escala", re.compile(rf"(?:{_NUM})\s(?:mil millones|millones|mill[oó]n)(?:\s+de\s+\w+)?", re.I)),
+    ("temperatura", re.compile(r"\d{1,2}(?:[.,]\d)?\s?°\s?C")),
+    ("cantidad", re.compile(rf"(?:{_NUM})\s(?:personas|casos|fallecidos|heridos|hogares|kil[oó]metros|km|d[ií]as|a[ñn]os|puntos|votos|esca[ñn]os|diputados|senadores|empresas|colegios|hospitales|detenidos|v[ií]ctimas|intervenciones|toneladas|hect[aá]reas|soles|d[oó]lares)\b", re.I)),
+    ("marcador", re.compile(r"\b\d{1,2}\s?-\s?\d{1,2}\b")),
+    ("fecha", re.compile(rf"\b\d{{1,2}} de (?:{MESES_TXT})(?: de \d{{4}})?", re.I)),
+]
+
+
+def oraciones_de(texto):
+    texto = re.sub(r"\s+", " ", texto or "").strip()
+    return [o.strip() for o in RE_ORACION.split(texto) if o.strip()]
+
+
+def descripcion_html(html_txt):
+    for rx in RE_DESC:
+        m = rx.search(html_txt)
+        if m:
+            return limpiar(html.unescape(m.group(1)), 600)
+    return ""
+
+
+def parrafos_html(html_txt, maximo=8):
+    html_txt = re.sub(r"<(script|style|nav|footer|aside|figure)[^>]*>.*?</\1>", " ", html_txt, flags=re.I | re.S)
+    out = []
+    for m in RE_PARRAFO.finditer(html_txt):
+        t = limpiar(m.group(1), 700)
+        if len(t) >= 70 and not RUIDO_ORACION.search(t):
+            out.append(t)
+        if len(out) >= maximo:
+            break
+    return out
+
+
+def contexto_cifra(texto, ini, fin):
+    """La oración donde aparece la cifra; si es muy larga, una ventana alrededor de ella."""
+    pos, ctx = 0, texto
+    for o in RE_ORACION.split(texto):
+        i = texto.find(o, pos)
+        if i <= ini < i + len(o):
+            ctx, ini, fin = o, ini - i, fin - i
+            break
+        pos = i + len(o)
+    if len(ctx) > 140:
+        a, b = max(0, ini - 60), min(len(ctx), fin + 60)
+        frag = ctx[a:b]
+        if a > 0:
+            frag = frag.split(" ", 1)[-1]
+        if b < len(ctx):
+            frag = frag.rsplit(" ", 1)[0]
+        ctx = ("…" if a > 0 else "") + frag.strip(" ,;") + ("…" if b < len(ctx) else "")
+    return ctx.strip()
+
+
+def cifras_clave(texto, maximo=5):
+    """Extrae cifras con su contexto inmediato. Solo reporta lo que el texto dice, nunca calcula ni estima."""
+    texto = re.sub(r"\s+", " ", texto or "")
+    vistos, out = set(), []
+    for tipo, rx in PATRONES_DATOS:
+        for m in rx.finditer(texto):
+            v = m.group(0).strip(" .,;")
+            clave = norm(v)
+            if clave in vistos or any(clave in x or x in clave for x in vistos):
+                continue
+            if tipo == "marcador" and not re.search(r"\b(?:vs|gano|derrot\w*|empat\w*|venci\w*|goles?|partido|marcador)\b", norm(texto)):
+                continue
+            ctx = contexto_cifra(texto, m.start(), m.end())
+            vistos.add(clave)
+            out.append({"v": v, "t": tipo, "c": ctx.strip(" ,;")})
+            if len(out) >= maximo:
+                return out
+    return out
+
+
+def elegir_oraciones(titulo, descripcion, parrafos, maximo=3, limite=520):
+    base = norm(titulo)
+    cand, vistos = [], []
+    for o in oraciones_de(descripcion) + [x for p in parrafos for x in oraciones_de(p)]:
+        o = o.strip()
+        n = norm(o)
+        if len(o) < 40 or len(o) > 380 or RUIDO_ORACION.search(o):
+            continue
+        if n[:60] == base[:60] or base in n or n in base:
+            continue
+        pal = set(n.split())
+        if any(n[:50] == v[:50] or len(pal & set(v.split())) / max(1, min(len(pal), len(v.split()))) > 0.6 for v in vistos):
+            continue
+        vistos.append(n)
+        cand.append(o)
+        if len(cand) >= maximo or sum(len(c) for c in cand) >= limite:
+            break
+    return cand
+
+
+def sintetizar(it, descripcion="", parrafos=None):
+    """Arma la síntesis de una nota con el texto publicado por el medio: primeras oraciones relevantes y cifras clave."""
+    parrafos = parrafos or []
+    base_desc = descripcion or it.get("resumen") or ""
+    oraciones = elegir_oraciones(it.get("titulo", ""), base_desc, parrafos)
+    texto_cifras = ". ".join([it.get("titulo", "").rstrip(".:"), base_desc] + parrafos[:6])
+    res = {}
+    if oraciones:
+        res["sintesis"] = " ".join(oraciones[:2])
+        res["puntos"] = oraciones[:3]
+    datos = cifras_clave(texto_cifras)
+    if datos:
+        res["datos"] = datos
+    return res
+
+
+def sintesis_de_pagina(it):
+    if urlsplit(it["url"]).netloc.endswith("news.google.com"):
+        return sintetizar(it)  # el agregador no expone el texto del medio: se usa solo el extracto del feed
+    try:
+        pagina = descargar_parcial(it["url"])
+    except Exception:  # noqa: BLE001
+        return sintetizar(it)
+    return sintetizar(it, descripcion_html(pagina), parrafos_html(pagina))
+
+
+def enriquecer_sintesis(items, previos):
+    """Hereda síntesis ya generadas y crea las de las notas nuevas (máximo por ejecución, en paralelo)."""
+    conocidas = {url_canonica(i["url"]): i for i in previos if i.get("sintesis") or i.get("datos")}
+    pendientes = []
+    for it in items:
+        if it.get("sintesis") or it.get("datos"):
+            continue
+        k = url_canonica(it["url"])
+        if k in conocidas:
+            for campo in ("sintesis", "puntos", "datos"):
+                if conocidas[k].get(campo):
+                    it[campo] = conocidas[k][campo]
+        else:
+            pendientes.append(it)
+    pendientes = sorted(pendientes, key=clave_orden, reverse=True)[:MAX_SINTESIS_POR_EJECUCION]
+    if pendientes:
+        with ThreadPoolExecutor(max_workers=6) as ex:
+            for it, res in zip(pendientes, ex.map(sintesis_de_pagina, pendientes)):
+                it.update(res)
+    print(f"Síntesis: {sum(1 for i in items if i.get('sintesis'))}/{len(items)} notas · con cifras: {sum(1 for i in items if i.get('datos'))}")
+
+
 def fuentes_editoriales():
     """Lee data/editorial.js y devuelve {id_del_análisis: [(medio, url), ...]} (solo enlaces https de los insights)."""
     try:
@@ -699,7 +856,9 @@ def main(feeds=None):
         resumen_ejecucion("Actualización sin cambios", ["Ningún feed respondió; se conservaron los datos anteriores."])
         return 1
     enriquecer_imagenes(nuevos, previo.get("items", []))
+    enriquecer_sintesis(nuevos, previo.get("items", []))
     combinados = fusionar(nuevos, previo.get("items", []))
+    enriquecer_sintesis(combinados, previo.get("items", []))
     items, descartes, errores = validar_datos(combinados, previo.get("items", []))
     if errores:
         print("Validación fallida, no se publica: " + "; ".join(errores), file=sys.stderr)

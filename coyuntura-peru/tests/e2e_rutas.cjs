@@ -45,11 +45,11 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
     await p.locator("#n-query").fill("___noticia_inexistente_987654___");
     ok(await p.locator("#n-lista .pe-news-empty").count() >= 1, `[${w}] noticias: búsqueda sin resultados incorrecta`);
     await p.locator("#n-clear").click();
-    ok(await p.locator("#n-lista .pe-news-card").count() > 0 && await p.locator("#n-query").inputValue() === "", `[${w}] noticias: limpiar filtros no restaura resultados`);
+    ok(await p.locator("#n-lista .pe-ficha").count() > 0 && await p.locator("#n-query").inputValue() === "", `[${w}] noticias: limpiar filtros no restaura resultados`);
     // Orden de secciones, fichas de fuente y ausencia de análisis repetidos.
     const newsHeadings=await p.locator(".pe-news-section-header h2").allInnerTexts();
     ok(newsHeadings[0]==="Perú" && newsHeadings[1]==="Internacional", `[${w}] noticias: orden Perú/Internacional incorrecto`);
-    ok(await p.locator("#n-lista .pe-news-card a.pe-news-go").count() > 0,
+    ok(await p.locator("#n-lista .pe-ficha .ps-src a").count() > 0,
        `[${w}] noticias: faltan enlaces a las fuentes originales`);
     ok(await p.locator("#n-lista .pe-story").count() === 0,
        `[${w}] noticias: reaparecieron paneles de opinión repetitivos`);
