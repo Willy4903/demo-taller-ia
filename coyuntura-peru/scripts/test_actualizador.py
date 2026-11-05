@@ -252,5 +252,44 @@ class Integracion(unittest.TestCase):
         self.assertIn("Vieja pero válida", [i["titulo"] for i in d["items"]])
 
 
+class Sintesis(unittest.TestCase):
+    HTML = (
+        '<meta property="og:description" content="El precio de la gasolina de 90 octanos sube a S/ 17,90 por galón en Lima, un 2,5 % más que la semana pasada. '
+        'La plataforma Facilito de Osinergmin permite comparar 1 250 grifos.">'
+        "<p>La plataforma Facilito de Osinergmin permite consultar precios en 1 250 grifos de todo el país desde el 3 de noviembre de 2026.</p>"
+        "<p>Lee también: otra nota que no debe entrar en la síntesis de ninguna manera posible.</p>")
+
+    def test_sintesis_y_cifras_desde_la_pagina(self):
+        it = {"titulo": "Precio de la gasolina en Lima hoy", "resumen": "", "url": "https://x.pe/a", "sector": "economia"}
+        r = a.sintetizar(it, a.descripcion_html(self.HTML), a.parrafos_html(self.HTML))
+        self.assertIn("S/ 17,90", r["sintesis"])
+        self.assertLessEqual(len(r["puntos"]), 3)
+        self.assertNotIn("Lee también", " ".join(r["puntos"]))
+        valores = [d["v"] for d in r["datos"]]
+        self.assertIn("S/ 17,90", valores)
+        self.assertIn("2,5 %", valores)
+
+    def test_no_repite_el_titular_ni_inventa_cifras(self):
+        it = {"titulo": "El Congreso aprobó la ley de presupuesto del año", "resumen": "El Congreso aprobó la ley de presupuesto del año", "url": "https://x.pe/b"}
+        r = a.sintetizar(it)
+        self.assertNotIn("sintesis", r)
+        self.assertNotIn("datos", r)
+
+    def test_marcador_solo_en_contexto_deportivo(self):
+        self.assertEqual([d["v"] for d in a.cifras_clave("Universitario empató 2-2 con Sport Boys")], ["2-2"])
+        self.assertEqual(a.cifras_clave("Ley 30-12 publicada en el diario oficial"), [])
+
+    def test_hereda_sintesis_previa_sin_descargar(self):
+        previos = [{"url": "https://x.pe/a", "titulo": "t", "sintesis": "Texto previo.", "datos": [{"v": "5 %", "t": "porcentaje", "c": "x"}]}]
+        nuevos = [{"url": "https://x.pe/a", "titulo": "t"}]
+        original = a.sintesis_de_pagina
+        a.sintesis_de_pagina = lambda it: (_ for _ in ()).throw(AssertionError("no debe descargar"))
+        try:
+            a.enriquecer_sintesis(nuevos, previos)
+        finally:
+            a.sintesis_de_pagina = original
+        self.assertEqual(nuevos[0]["sintesis"], "Texto previo.")
+
+
 if __name__ == "__main__":
     unittest.main()

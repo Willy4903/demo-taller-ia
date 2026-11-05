@@ -75,7 +75,7 @@
   function xpChip() { var nv = NIVELES[nivelDe(S.xp)], c = $("#xpchip"), n = $("#xpnum"); if (c) c.title = "Nivel: " + nv.n; if (n) n.textContent = S.xp + " XP"; }
 
   /* ───── fotos reales: si una imagen falla, se quita (nunca se sustituye por ilustraciones) ───── */
-  window.cpImg = function (im) { var d = im.parentNode; if (!d) return; var r = d.closest && d.closest(".row"), noticia = d.closest && d.closest(".pe-news-card"); if (r) r.classList.add("nofoto"); if (noticia) noticia.classList.add("no-photo"); d.remove(); };
+  window.cpImg = function (im) { var d = im.parentNode; if (!d) return; var r = d.closest && d.closest(".row"), noticia = d.closest && d.closest(".pe-news-card,.pe-story"); if (r) r.classList.add("nofoto"); if (noticia) noticia.classList.add("no-photo"); d.remove(); };
 
   /* ───── modelo de historias ───── */
   var ITEMS = (NOT.items || []).filter(function (it) {
@@ -97,7 +97,7 @@
   function insDe(id) { return INS.filter(function (i) { return i.sector === id; })[0]; }
   function externo(s) { return s.kind === "feed"; }
   function ambitoDe(it) { return it.ambito || (it.tipo === "internacional" ? "mundo" : "peru"); }
-  function asFeed(it) { return { kind: "feed", ambito: it.ambito, tema: it.tema, sector: it.sector, titulo: it.titulo, resumen: it.resumen || "", url: it.url, fuente: it.fuente, tipo: it.tipo || "comercial", fecha: it.fecha, nota: it.nota, imagen: it.imagen, genero: it.genero || "noticia", procedencia: it.procedencia, via: it.via }; }
+  function asFeed(it) { return { kind: "feed", ambito: it.ambito, tema: it.tema, sector: it.sector, titulo: it.titulo, resumen: it.resumen || "", url: it.url, fuente: it.fuente, tipo: it.tipo || "comercial", fecha: it.fecha, nota: it.nota, imagen: it.imagen, genero: it.genero || "noticia", procedencia: it.procedencia, via: it.via, sintesis: it.sintesis, puntos: it.puntos, datos: it.datos }; }
   var FEED = ITEMS.map(asFeed);
 
   var EI = NOT.imagenes_editorial || {};
@@ -135,22 +135,76 @@
       var image=thumb(s), teaser=s.resumen?sin(primera(s.resumen),160):"";
       return '<a class="s row'+(image?"":" nofoto")+'" '+attrs(s)+'><div>'+kicker(s)+'<h3>'+esc(s.titulo)+'</h3>'+(teaser?'<p>'+esc(teaser)+'</p>':"")+meta(s)+'</div>'+image+'</a>';
     }
-    var news=window.PERU_NEWS || {};
-    var sum=news.extracto?news.extracto(s):sin(s.resumen||"",210);
-    var facts=news.cifras?news.cifras(s):[];
-    var category=s.tema || (news.categoria?news.categoria(s):s.sector);
-    var label=(news.nombres&&news.nombres[category])||((SECT[category]||{}).nombre)||"Actualidad";
-    var imageInfo=fotoInfo(s);
-    var image=imageInfo ? '<a href="'+safeUrl(s.url)+'" target="_blank" rel="noopener noreferrer" class="pe-news-image" tabindex="-1" aria-hidden="true"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" alt="" src="'+safeUrl(imageInfo.u)+'" onerror="cpImg(this)"></a>' : "";
-    var badges=facts.length?'<div class="pe-news-metrics" aria-label="Cifras mencionadas por el medio">'+facts.map(function(x){return '<span class="pe-news-metric">'+esc(x)+'</span>';}).join("")+'</div>':"";
-    var fd=s.fecha?corta(s.fecha):"Fecha no disponible";
-    return '<article class="pe-news-card'+(imageInfo?"":" no-photo")+'"><div class="pe-news-main">'+
-      '<div class="pe-news-card-top"><span class="pe-news-topic">'+esc(label)+'</span>'+badgeGenero(s.genero)+'</div><h3><a href="'+safeUrl(s.url)+'" target="_blank" rel="noopener noreferrer" aria-label="'+esc(s.titulo)+' (abre en una pestaña nueva)">'+esc(s.titulo)+'</a></h3>'+
-      (sum?'<p class="pe-news-summary">'+esc(sum)+'</p>':"")+badges+
-      '<div class="pe-news-meta"><b>'+esc(s.fuente)+'</b><time datetime="'+esc(s.fecha||"")+'">'+esc(fd)+'</time>'+(s.via?'<span>Vía '+esc(s.via)+'</span>':"")+'</div>'+
-      '<a class="pe-news-go" href="'+safeUrl(s.url)+'" target="_blank" rel="noopener noreferrer" aria-label="Leer nota original: '+esc(s.titulo)+' (abre en una pestaña nueva)">Leer nota original <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M10 14 21 3M21 14v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h6"/></svg></a>'+
-      '</div>'+image+'</article>';
+    return story(s);
   }
+  /* ───── ficha de noticia al estilo consultora: titular, síntesis, cifras clave, lectura crítica y cobertura ───── */
+  var TIPO_CIFRA = { monto: "Monto", porcentaje: "Porcentaje", escala: "Magnitud", temperatura: "Temperatura", cantidad: "Cantidad", marcador: "Marcador", fecha: "Fecha" };
+  var STOP_COB = "para como pero esta este estos estas desde entre sobre tras hasta cuando donde aunque porque ante bajo contra segun sino todo toda todos todas otro otra otros mas menos muy cada tambien durante fueron sera seran puede pueden tiene tienen hace hacen luego antes despues ahora nuevo nueva nuevos nuevas primer primera anos dias dia semana mes meses peru lima".split(" ");
+  function tokens(t) { var v = {}, out = []; norm(t || "").replace(/[^a-z0-9ñ\s]/g, " ").split(/\s+/).forEach(function (w) { if (w.length < 5 || STOP_COB.indexOf(w) >= 0 || /^\d+$/.test(w) || v[w]) return; v[w] = 1; out.push(w); }); return out; }
+  function cobertura(s) {
+    var base = tokens(s.titulo), t0 = Date.parse(s.fecha) || 0, vistos = {}, out = [];
+    if (base.length < 3) return out;
+    vistos[s.fuente] = 1;
+    ITEMS.forEach(function (o) {
+      if (o.url === s.url || vistos[o.fuente]) return;
+      if (t0 && Math.abs((Date.parse(o.fecha) || 0) - t0) > 3 * 864e5) return;
+      var tk = tokens(o.titulo), com = tk.filter(function (w) { return base.indexOf(w) >= 0; }).length;
+      if (com >= 3 || (com >= 2 && com / Math.min(base.length, tk.length) >= .5)) { vistos[o.fuente] = 1; out.push(o); }
+    });
+    return out.slice(0, 5);
+  }
+  function fmtCifra(c) { return '<b>' + esc(c.v) + '</b>'; }
+  function barraPct(c) { if (c.t !== "porcentaje") return ""; var n = parseFloat(String(c.v).replace(/\s/g, "").replace(",", ".")); return n >= 0 && n <= 100 ? '<span class="ps-bar" aria-hidden="true"><i style="width:' + n + '%"></i></span>' : ""; }
+  var story_n = 0;
+  function story(s) {
+    var news = window.PERU_NEWS || {}, id = "st" + (++story_n);
+    var datos = (s.datos && s.datos.length ? s.datos : (news.cifras ? news.cifras(s).map(function (v) { return { v: v, t: "monto", c: "" }; }) : [])).slice(0, 5);
+    var puntos = s.puntos && s.puntos.length ? s.puntos : (s.sintesis ? [s.sintesis] : []);
+    var ext = news.extracto ? news.extracto(s) : sin(s.resumen || "", 210);
+    var resumen = s.sintesis || ext, cob = cobertura(s);
+    var category = s.tema || (news.categoria ? news.categoria(s) : s.sector);
+    var label = (news.nombres && news.nombres[category]) || ((SECT[category] || {}).nombre) || "Actualidad";
+    var lec = window.PE_LECTURA ? window.PE_LECTURA.analizar(s) : null;
+    var kp = datos.filter(function (c) { return c.t !== "fecha" || datos.length === 1 && false; }).slice(0, 3).map(function (c) { return '<div class="ps-k" data-k="' + esc(c.v) + '"><b class="ps-num">' + esc(c.v) + '</b><span>' + esc(TIPO_CIFRA[c.t] || "Dato") + "</span>" + barraPct(c) + "</div>"; }).join("");
+    var tabs = [["sin", "Síntesis"]].concat(datos.length ? [["cif", "Cifras (" + datos.length + ")"]] : []).concat(lec ? [["lec", "Lectura crítica"]] : []).concat(cob.length ? [["cob", "Cobertura (" + cob.length + ")"]] : []);
+    var paneSin = '<ul class="ps-pts">' + (puntos.length ? puntos.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") : "<li>La síntesis de esta nota se completa en la próxima lectura automática. Mientras tanto, esto es lo que informa el titular.</li>") + '</ul><p class="ps-note">Síntesis automática elaborada con lo publicado por ' + esc(s.fuente) + ". Puede omitir matices.</p>";
+    var paneCif = datos.length ? '<div class="ps-cifras">' + datos.map(function (c) { return '<div class="ps-c"><span class="ps-ct">' + esc(TIPO_CIFRA[c.t] || "Dato") + "</span>" + '<b class="ps-num">' + esc(c.v) + "</b>" + barraPct(c) + (c.c ? "<p>" + esc(c.c) + "</p>" : "") + "</div>"; }).join("") + '</div><p class="ps-note">Cifras tal como las publica el medio, con la frase donde aparecen; no se recalculan.</p>' : "";
+    var paneLec = lec ? '<dl class="ps-lec"><div><dt>Qué hay detrás</dt><dd>' + esc(lec.postura) + "</dd></div><div><dt>Qué observar</dt><dd>" + esc(lec.alcance) + "</dd></div><div><dt>Pregunta clave</dt><dd>" + esc(lec.pregunta) + "</dd></div></dl>" : "";
+    var paneCob = cob.length ? '<ul class="ps-cob">' + cob.map(function (o) { return "<li><b>" + esc(o.fuente) + "</b><span>" + esc(sin(o.titulo, 120)) + "</span><time>" + esc(corta(o.fecha)) + "</time></li>"; }).join("") + '</ul><p class="ps-note">Otros medios que tratan el mismo tema en los últimos 3 días.</p>' : "";
+    var panes = { sin: paneSin, cif: paneCif, lec: paneLec, cob: paneCob };
+    var fd = s.fecha ? corta(s.fecha) : "Fecha no disponible";
+    return '<article class="pe-story" id="' + id + '" data-open="0"><div class="ps-top"><span class="pe-news-topic">' + esc(label) + "</span>" + badgeGenero(s.genero) + (cob.length ? '<span class="ps-cov" title="Otros medios que cubren el tema">+' + cob.length + " medios</span>" : "") + "</div>" +
+      '<h3 class="ps-title"><button type="button" class="ps-toggle" aria-expanded="false" aria-controls="' + id + '-p">' + esc(s.titulo) + "</button></h3>" +
+      (resumen ? '<p class="ps-sum">' + esc(sin(resumen, 300)) + "</p>" : '<p class="ps-sum ps-empty">Síntesis en preparación: se completa en la próxima lectura automática.</p>') +
+      (kp ? '<div class="ps-kpis" aria-label="Cifras clave">' + kp + "</div>" : "") +
+      '<div class="ps-meta"><b>' + esc(s.fuente) + '</b><time datetime="' + esc(s.fecha || "") + '">' + esc(fd) + "</time>" + (s.via ? "<span>Vía " + esc(s.via) + "</span>" : "") + "</div>" +
+      '<button type="button" class="ps-more" aria-expanded="false" aria-controls="' + id + '-p"><span>Ver síntesis, cifras y lectura</span><i aria-hidden="true">▾</i></button>' +
+      '<div class="ps-panel" id="' + id + '-p"><div class="ps-in"><div class="ps-tabs" role="tablist" aria-label="Detalle de la noticia">' + tabs.map(function (t, i) { return '<button type="button" role="tab" aria-selected="' + (i === 0) + '" data-pt="' + t[0] + '">' + esc(t[1]) + "</button>"; }).join("") + "</div>" +
+      tabs.map(function (t, i) { return '<div class="ps-pane" role="tabpanel" data-pp="' + t[0] + '"' + (i ? " hidden" : "") + ">" + panes[t[0]] + "</div>"; }).join("") +
+      '<p class="ps-src">Fuente citada: <a href="' + safeUrl(s.url) + '" target="_blank" rel="noopener noreferrer">' + esc(s.fuente) + " ↗</a></p></div></div></article>";
+  }
+  function contar(el) {
+    var n = el.textContent, m = /^(\D*?)(\d[\d.,\s]*)(.*)$/.exec(n); if (!m || (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches)) return;
+    var num = parseFloat(m[2].replace(/\s/g, "").replace(/\.(?=\d{3}(\D|$))/g, "").replace(",", ".")); if (!isFinite(num) || num <= 0 || num > 1e12) return;
+    var dec = (m[2].split(/[.,]/).pop() || "").length, esDec = /[.,]\d{1,2}$/.test(m[2].trim()), t0 = null;
+    function paso(t) { if (t0 === null) t0 = t; var k = Math.min(1, (t - t0) / 700), e = 1 - Math.pow(1 - k, 3), v = num * e;
+      el.textContent = k >= 1 ? n : m[1] + (esDec ? v.toFixed(dec).replace(".", ",") : Math.round(v).toLocaleString("es-PE")) + m[3]; if (k < 1) requestAnimationFrame(paso); }
+    requestAnimationFrame(paso);
+  }
+  document.addEventListener("click", function (e) {
+    var st = e.target.closest && e.target.closest(".pe-story"); if (!st) return;
+    var tg = e.target.closest(".ps-toggle,.ps-more,.ps-sum"), tab = e.target.closest("[data-pt]");
+    if (tab) {
+      st.querySelectorAll("[data-pt]").forEach(function (b) { b.setAttribute("aria-selected", String(b === tab)); });
+      st.querySelectorAll("[data-pp]").forEach(function (p) { p.hidden = p.getAttribute("data-pp") !== tab.getAttribute("data-pt"); if (!p.hidden) p.querySelectorAll(".ps-num").forEach(contar); });
+      return;
+    }
+    if (!tg) return;
+    var abre = st.getAttribute("data-open") !== "1"; st.setAttribute("data-open", abre ? "1" : "0");
+    st.querySelectorAll(".ps-toggle,.ps-more").forEach(function (b) { b.setAttribute("aria-expanded", String(abre)); });
+    var lbl = st.querySelector(".ps-more span"); if (lbl) lbl.textContent = abre ? "Ocultar detalle" : "Ver síntesis, cifras y lectura";
+    if (abre) st.querySelectorAll(".ps-kpis .ps-num").forEach(contar);
+  });
   function card(s) { return '<a class="s card" ' + attrs(s) + ">" + thumb(s) + "<div>" + kicker(s) + "<h3>" + esc(s.titulo) + "</h3><p>" + esc(sin(primera(s.resumen), 150)) + "</p>" + meta(s) + "</div></a>"; }
   function sh(titulo, color, enlace, txt) { return '<div class="sh" style="--c:' + color + '"><h2>' + esc(titulo) + "</h2>" + (enlace ? '<a href="' + enlace + '">' + esc(txt || "Ver todo") + " →</a>" : "") + "</div>"; }
 
@@ -316,8 +370,9 @@
     var PE=/per[uú]|peruan|\blima\b|\bjne\b|bcrp|\bmef\b|sunat|inei|minsa|\bsbs\b|indecopi|osinergmin|diputad|\bpnp\b|ministerio p[uú]blico|fiscal[ií]a|poder judicial|contralor[ií]a|presidenta|keiko|fujimori|castillo|boluarte|soles\b/i;
     var ultimas=FEED.filter(function(i){return (i.sector==="politica"||i.sector==="economia")&&i.tipo!=="internacional"&&i.genero!=="opinion"&&PE.test(i.titulo+" "+(i.resumen||""))&&!/concierto|entradas|estados unidos|eeuu|trump/i.test(i.titulo);}).slice(0,4);
     if(ultimas.length)h+='<section class="dest ultimas" aria-labelledby="ult-h"><h2 id="ult-h">Últimas noticias de política y economía</h2><p class="ult-sub">Se renuevan solas, siete veces al día. Última lectura: '+esc(fechaSistema)+'.</p><div class="ult-l">'+ultimas.map(row).join("")+'</div><p class="ult-mas"><a href="#/noticias">Ver todas las noticias →</a></p></section>';
-    if(principal)h+='<section class="dest" aria-labelledby="dest-h"><h2 id="dest-h">Análisis de fondo</h2>'+leadCard(principal)+'<p class="why"><b>Por qué importa:</b> '+esc((principal.raw||{}).paraTi||"")+'</p></section>';
+
     h+=frescura();
+    if(principal)h+='<details class="dest fondo" aria-labelledby="dest-h"><summary id="dest-h">Análisis de fondo <span class="fondo-corte">· corte editorial '+esc(corta(ED.corte+"T12:00:00Z"))+' · puede estar desfasado</span></summary>'+leadCard(principal)+'<p class="why"><b>Por qué importa:</b> '+esc((principal.raw||{}).paraTi||"")+'</p></details>';
     h+='<details class="mas-rec"><summary>Más recursos: formación, glosario, estadísticas y talleres</summary><div class="mas-g"><a href="#/ruta">La Ruta (aprende jugando)</a><a href="#/glosario">Glosario</a><a href="#/estadisticas">Estadísticas del sitio</a><a href="#/historial">Historial de notas</a><a href="#/talleres">Talleres de IA</a><a href="#/fuentes">Fuentes y su estado</a></div></details></div>';
     return h;
   }
