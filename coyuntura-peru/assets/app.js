@@ -75,7 +75,7 @@
   function xpChip() { var nv = NIVELES[nivelDe(S.xp)], c = $("#xpchip"), n = $("#xpnum"); if (c) c.title = "Nivel: " + nv.n; if (n) n.textContent = S.xp + " XP"; }
 
   /* ───── fotos reales: si una imagen falla, se quita (nunca se sustituye por ilustraciones) ───── */
-  window.cpImg = function (im) { var d = im.parentNode; if (!d) return; var r = d.closest && d.closest(".row"), noticia = d.closest && d.closest(".pe-news-card,.pe-ficha"); if (r) r.classList.add("nofoto"); if (noticia) noticia.classList.add("no-photo"); d.remove(); };
+  window.cpImg = function (im) { var d = im.parentNode; if (!d) return; var r = d.closest && d.closest(".row"), noticia = d.closest && d.closest(".pe-news-card,.pe-ficha"); if (r) r.classList.add("nofoto"); if (noticia && noticia.classList.contains("pe-ficha")) { d.className = "ph ps-ph"; d.innerHTML = "<span>" + (noticia.getAttribute("data-tema") || "") + "</span><b>" + (noticia.getAttribute("data-fuente") || "") + "</b>"; return; } if (noticia) noticia.classList.add("no-photo"); d.remove(); };
 
   /* ───── modelo de historias ───── */
   var ITEMS = (NOT.items || []).filter(function (it) {
@@ -179,7 +179,9 @@
     var paneCob = cob.length ? '<ul class="ps-cob">' + cob.map(function (o) { return "<li><b>" + esc(o.fuente) + "</b><span>" + esc(sin(o.titulo, 120)) + "</span><time>" + esc(corta(o.fecha)) + "</time></li>"; }).join("") + '</ul><p class="ps-note">Otros medios que tratan el mismo tema en los últimos 3 días.</p>' : "";
     var panes = { sin: paneSin, cif: paneCif, lec: paneLec, cob: paneCob, ctx: paneCtx };
     var fd = s.fecha ? corta(s.fecha) : "Fecha no disponible";
-    return '<article class="pe-ficha" id="' + id + '" data-open="0"><div class="ps-top"><span class="pe-news-topic">' + esc(label) + "</span>" + badgeGenero(s.genero) + (cob.length ? '<span class="ps-cov" title="Otros medios que cubren el tema">+' + cob.length + " medios</span>" : "") + "</div>" +
+    var colorTema = (SECT[category] || SECT[s.sector] || {}).color || "#38BDF8";
+    var foto = thumb(s) || '<div class="ph ps-ph"><span>' + esc(label) + "</span><b>" + esc(s.fuente) + "</b></div>";
+    return '<article class="pe-ficha" id="' + id + '" data-open="0" data-tema="' + esc(label) + '" data-fuente="' + esc(s.fuente) + '" style="--c:' + colorTema + '"><a class="ps-foto" href="' + safeUrl(s.url) + '" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">' + foto + '</a><div class="ps-top"><span class="pe-news-topic">' + esc(label) + "</span>" + badgeGenero(s.genero) + (cob.length ? '<span class="ps-cov" title="Otros medios que cubren el tema">+' + cob.length + " medios</span>" : "") + "</div>" +
       '<h3 class="ps-title"><button type="button" class="ps-toggle" aria-expanded="false" aria-controls="' + id + '-p">' + esc(s.titulo) + "</button></h3>" +
       (resumen ? '<p class="ps-sum">' + esc(sin(resumen, 300)) + "</p>" : '<p class="ps-sum ps-empty">Síntesis en preparación: se completa en la próxima lectura automática.</p>') +
       (kp ? '<div class="ps-kpis" aria-label="Cifras clave">' + kp + "</div>" : "") +
@@ -446,7 +448,7 @@
       cuenta[z]++; usados[x.url] = 1; lado.push(x);
     });
     var nombre = function (x) { var n = (window.PERU_NEWS || {}).nombres || {}; return n[x.tema] || "Actualidad"; };
-    var html = '<section class="np-front" aria-label="Portada"><div class="np-lead"><div class="np-lead-img"><a href="' + safeUrl(lead.url) + '" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">' + thumb(lead, true) + "</a></div>" + story(lead) + '</div><aside class="np-side" aria-label="Más noticias"><h2>Más noticias</h2><ol>' +
+    var html = '<section class="np-front" aria-label="Portada"><div class="np-lead">' + story(lead) + '</div><aside class="np-side" aria-label="Más noticias"><h2>Más noticias</h2><ol>' +
       lado.map(function (x) { return '<li><span class="np-k">' + esc(nombre(x)) + '</span><a href="' + safeUrl(x.url) + '" target="_blank" rel="noopener noreferrer">' + esc(x.titulo) + '</a><span class="np-m">' + esc(x.fuente) + (x.traducido ? " · traducido" : "") + (x.fecha ? " · " + esc(corta(x.fecha)) : "") + "</span></li>"; }).join("") + "</ol></aside></section>";
     return { html: html, usados: usados };
   }
