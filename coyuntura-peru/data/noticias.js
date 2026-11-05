@@ -3886,11 +3886,6 @@ window.NOTICIAS = {
    "url": "https://cpj.org/wp-content/uploads/2021/11/000_14M7IR.jpg?resize=1200,814&strip=all&quality=80",
    "fuente": "CPJ",
    "enlace": "https://cpj.org/es/2021/11/las-autoridades-peruanas-abren-investigacion-penal-contra-el-periodista-ernesto-cabral-de-ojo-publico-por-sus-investigaciones-sobre-la-corrupcion/"
-  },
-  "nino-peru": {
-   "url": "https://www.gob.pe/assets/escudo-rojo-200-f4bf73f7.png",
-   "fuente": "ENFEN",
-   "enlace": "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen"
   }
  },
  "indicadores": {

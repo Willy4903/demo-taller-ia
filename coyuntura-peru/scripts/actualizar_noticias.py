@@ -238,8 +238,8 @@ def imagenes_editoriales(previas):
     for clave, fuentes in fuentes_editoriales().items():
         for nombre, url in fuentes:
             host = urlsplit(url).netloc
-            if host.endswith("bcrp.gob.pe") or host.endswith("dge.gob.pe"):
-                continue
+            if host.endswith(("bcrp.gob.pe", "dge.gob.pe", "gob.pe", "noaa.gov", "wmo.int")):
+                continue  # portales institucionales: su og:image es un escudo o logotipo, no una foto de la nota
             img = imagen_og(url)
             if img:
                 res[clave] = {"url": img, "fuente": re.split(r" · ", nombre)[0], "enlace": url}

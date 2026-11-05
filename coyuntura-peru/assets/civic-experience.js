@@ -42,7 +42,7 @@
     }
     var e=not.enfen;
     return e&&e.numero?{title:"Comunicado ENFEN indexado: N.° "+e.numero,
-      note:"Fecha del documento: "+(e.fecha||"no confirmada")+". El índice puede estar pendiente de una nueva comprobación; verifica la fecha y la vigencia en la sección El Niño."}:
+      note:"Fecha del documento: "+((((window.EDITORIAL||{}).nino||{}).ultimo||{}).numero===e.numero?window.EDITORIAL.nino.ultimo.fecha:e.fecha||"no confirmada")+". El índice puede estar pendiente de una nueva comprobación; verifica la fecha y la vigencia en la sección El Niño."}:
       {title:"Comunicado ENFEN sin confirmación automática",note:"Revisa la situación oficial y la fecha del documento antes de tomar decisiones."};
   }
   function buildLab(){
