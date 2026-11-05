@@ -11,17 +11,17 @@
      short:"Un titular es el comienzo de una historia, no toda la explicación.",
      explain:"Las noticias informan sobre hechos publicados por distintos medios. Antes de sacar conclusiones, identifica quién lo dice, de qué fecha es, si se trata de una noticia o una opinión y qué documentación la respalda.",
      example:"Si dos medios presentan un mismo tema de manera diferente, compara las fechas, las declaraciones citadas y los hechos verificables; no confundas opinión con noticia.",
-     takeaway:"TITULAR ≠ HECHO COMPLETAMENTE VERIFICADO",route:"#/noticias",routeLabel:"Explorar noticias aquí"},
+     concept:"Un titular es el inicio de la historia, no la verificación del hecho.",takeaway:"TITULAR ≠ HECHO COMPLETAMENTE VERIFICADO",route:"#/noticias",routeLabel:"Explorar noticias aquí"},
     {id:"datos",label:"Datos del Perú",eyebrow:"LAS CIFRAS EN CONTEXTO",title:"¿Qué dicen los datos?",
      short:"Una cifra tiene sentido solo cuando conocemos su fecha, unidad y población.",
      explain:"Los indicadores describen situaciones concretas: empleo, precios, población o acceso a servicios. Un número puede corresponder a Lima, a todo el país, a un mes o a un año; nunca compares periodos y ámbitos distintos como si fueran equivalentes.",
      example:"Si ves una tasa de desempleo, revisa si representa a Lima Metropolitana o a todo el Perú y el periodo de medición. Un porcentaje no equivale a la cantidad de personas.",
-     takeaway:"CIFRA ≠ CONTEXTO COMPLETO",route:"#/datos",routeLabel:"Explorar indicadores aquí"},
+     concept:"Una cifra solo dice algo con su unidad, su periodo y su población.",takeaway:"CIFRA ≠ CONTEXTO COMPLETO",route:"#/datos",routeLabel:"Explorar indicadores aquí"},
     {id:"nino",label:"El Niño",eyebrow:"RIESGOS Y PREPARACIÓN",title:"¿Qué ocurre con El Niño?",
      short:"La alerta del fenómeno, el pronóstico del tiempo y el riesgo local son distintos.",
      explain:"ENFEN comunica la situación oficial del fenómeno; el pronóstico estima condiciones futuras y los mapas de riesgo muestran zonas que podrían sufrir daños. Una alerta no significa que hoy exista una inundación en tu distrito.",
      example:"Una previsión de lluvia para una localidad no significa que lloverá en cada calle. Para actuar, revisa la fecha del pronóstico y los avisos de las autoridades de tu zona.",
-     takeaway:"ALERTA ≠ EMERGENCIA ACTUAL",route:"#/s/nino",routeLabel:"Entender El Niño aquí"}
+     concept:"Alerta, pronóstico y daño son cosas distintas: se mide cada una por separado.",takeaway:"ALERTA ≠ EMERGENCIA ACTUAL",route:"#/s/nino",routeLabel:"Entender El Niño aquí"}
   ];
   var current="actualidad";
   function el(tag,cls){var n=document.createElement(tag);if(cls)n.className=cls;return n;}
@@ -44,6 +44,41 @@
     return e&&e.numero?{title:"Comunicado ENFEN indexado: N.° "+e.numero,
       note:"Fecha del documento: "+((((window.EDITORIAL||{}).nino||{}).ultimo||{}).numero===e.numero?window.EDITORIAL.nino.ultimo.fecha:e.fecha||"no confirmada")+". El índice puede estar pendiente de una nueva comprobación; verifica la fecha y la vigencia en la sección El Niño."}:
       {title:"Comunicado ENFEN sin confirmación automática",note:"Revisa la situación oficial y la fecha del documento antes de tomar decisiones."};
+  }
+
+  function limaDia(d){try{return new Intl.DateTimeFormat("en-CA",{timeZone:"America/Lima"}).format(d);}catch(e){return "";}}
+  function tcUltimo(){var t=(window.NOTICIAS&&window.NOTICIAS.indicadores||{}).tipo_cambio,s=t&&t.serie;return s&&s.length?s[s.length-1]:null;}
+  function tile(v,l){return '<div class="pe-bt"><b>'+v+'</b><span>'+l+'</span></div>';}
+  function cut(t,n){t=String(t||"");return t.length>n?t.slice(0,n-1).replace(/\s+\S*$/,"")+"…":t;}
+  function escH(t){return String(t==null?"":t).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+  /* Reverso de cada tarjeta: concepto, datos reales de hoy y un ejemplo. No repite la pregunta del frente. */
+  function backData(id){
+    var ed=window.EDITORIAL||{},not=window.NOTICIAS||{};
+    if(id==="actualidad"){
+      var items=Array.isArray(not.items)?not.items:[],hoy=limaDia(new Date()),hoyIt=items.filter(function(i){return i.fecha&&limaDia(new Date(i.fecha))===hoy;});
+      var medios={};hoyIt.forEach(function(i){medios[i.fuente]=1;});
+      var conCifras=items.filter(function(i){return i.datos&&i.datos.length;});
+      var util=function(d){return /^(monto|porcentaje|escala|cantidad)$/.test(d.t);},ej=conCifras.filter(function(i){return i.datos.some(util);})[0]||conCifras[0],dj=ej&&(ej.datos.filter(util)[0]||ej.datos[0]);
+      return {tiles:[tile(hoyIt.length,"notas leídas hoy"),tile(Object.keys(medios).length,"medios distintos"),tile(conCifras.length,"con cifras citadas")],
+        ejemplo:ej?'«'+escH(cut(ej.titulo,90))+'» ('+escH(ej.fuente)+') cita <b>'+escH(dj.v)+'</b>. Antes de compartirla, confirma qué mide esa cifra y de cuándo es.':
+          "Si dos medios cuentan el mismo hecho con cifras distintas, compara fecha, fuente y qué mide cada número."};
+    }
+    if(id==="datos"){
+      var groups=ed.datos&&ed.datos.grupos||[],all=[];groups.forEach(function(g){(g.items||[]).forEach(function(i){all.push(i);});});
+      var pob=all.filter(function(i){return i.id==="pob";})[0],des=all.filter(function(i){return i.id==="desemp";})[0],tc=tcUltimo();
+      var tiles=[];
+      if(pob)tiles.push(tile(escH(pob.v),"habitantes · "+escH(pob.corte||"")));
+      if(tc)tiles.push(tile("S/ "+Number(tc.v).toFixed(3).replace(".",","),"dólar · "+escH(tc.f)));
+      if(des)tiles.push(tile(escH(des.v),escH(des.k)));
+      var ej=(des&&des.e)||(pob&&pob.e);
+      return {tiles:tiles.slice(0,3),ejemplo:ej?escH(ej):"Compara solo cifras del mismo periodo y del mismo ámbito."};
+    }
+    var e=not.enfen||{},tres=(ed.nino&&ed.nino.tres)||[],est=tres[0],pro=tres[1];
+    var t=[];
+    if(est)t.push(tile(escH(est.v.replace("Alerta de El Niño costero","Alerta")),"estado ENFEN"));
+    t.push(tile("48 %","prob. magnitud extraordinaria (com. N.° 16)"));
+    if(e.numero)t.push(tile("N.° "+escH(e.numero),"último comunicado · "+escH(e.fecha||"")));
+    return {tiles:t.slice(0,3),ejemplo:"Si el evento fuera fuerte, podría haber lluvias intensas y huaicos en la costa norte; eso es un riesgo posible, no un daño ya ocurrido. Revisa siempre el comunicado más reciente."};
   }
   function buildLab(){
     var section=el("section","pe-lab");section.id="pe-lab";section.setAttribute("aria-labelledby","pe-lab-title");
@@ -92,7 +127,8 @@
       trigger.setAttribute("aria-label","Voltear tarjeta y explicar: "+t.title);
       trigger.setAttribute("aria-expanded","false");
       front.insertBefore(trigger,front.querySelector("footer"));
-      back.innerHTML='<span class="pe-back-label">'+t.eyebrow+'</span><h3>'+t.title+'</h3><p>'+t.short+'</p><p class="pe-back-idea">'+t.takeaway+'</p>'+
+      var bd=backData(t.id);
+      back.innerHTML='<span class="pe-back-label">'+t.eyebrow+'</span><p class="pe-back-concept">'+t.concept+'</p><div class="pe-back-tiles">'+bd.tiles.join("")+'</div><p class="pe-back-ex"><b>Ejemplo:</b> '+bd.ejemplo+'</p><p class="pe-back-idea">'+t.takeaway+'</p>'+
         '<div class="pe-back-actions"><button class="pe-read-more" type="button" data-pe-open="'+t.id+'">Leer síntesis aquí →</button><button class="pe-back-return" type="button">Volver ↻</button></div>';
       inner.appendChild(front);inner.appendChild(back);q.appendChild(inner);q.classList.add("pe-card-3d");back.inert=true;
       trigger.addEventListener("click",function(){flip(q,true,true);});
