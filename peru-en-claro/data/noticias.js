@@ -1,16 +1,16 @@
 /* Generado por scripts/actualizar_noticias.py (GitHub Actions, 7 veces al día, hora de Lima). No editar a mano. */
 window.NOTICIAS = {
- "generado": "2026-11-05T20:26:55Z",
+ "generado": "2026-11-05T20:36:02Z",
  "modo": "automatico",
  "estado_fuentes": {
   "IDL-Reporteros": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.idl-reporteros.pe/feed/",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 2,
    "ultima_nota": "2026-10-24T01:18:47Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "OjoPúblico": {
    "ok": true,
@@ -18,10 +18,10 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:ojo-publico.com+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 5,
    "ultima_nota": "2026-11-02T03:11:10Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "Convoca": {
    "ok": true,
@@ -29,10 +29,10 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:convoca.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 5,
    "ultima_nota": "2026-11-03T17:30:33Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "Hildebrandt en sus trece": {
    "ok": true,
@@ -40,73 +40,73 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:hildebrandtensustrece.com+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 15,
    "ultima_nota": "2026-11-03T08:48:42Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "Wayka": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://wayka.pe/feed/",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 5,
    "ultima_nota": "2026-10-23T21:14:25Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "La Mula": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.lamula.pe/feed/",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 15,
    "ultima_nota": "2026-11-04T23:06:30Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "Salud con Lupa": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://saludconlupa.com/feed/",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 15,
    "ultima_nota": "2026-11-04T20:00:00Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "Mongabay Latam": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://es.mongabay.com/feed/",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 15,
    "ultima_nota": "2026-11-05T14:00:40Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "Caretas": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://caretas.pe/feed/",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 15,
    "ultima_nota": "2026-11-05T19:54:34Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "El Comercio": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 15,
-   "ultima_nota": "2026-11-05T20:22:59Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultima_nota": "2026-11-05T20:29:45Z",
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "Gestión": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://gestion.pe/arc/outboundfeeds/rss/?outputType=xml",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 15,
-   "ultima_nota": "2026-11-05T20:15:00Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultima_nota": "2026-11-05T20:30:00Z",
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "La República": {
    "ok": true,
@@ -114,28 +114,28 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:larepublica.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 15,
    "ultima_nota": "2026-11-05T19:24:31Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "RPP": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://rpp.pe/feed",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 15,
-   "ultima_nota": "2026-11-05T20:09:40Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultima_nota": "2026-11-05T20:27:11Z",
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "Infobae Perú": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/category/peru/",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 15,
-   "ultima_nota": "2026-11-05T20:24:31Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultima_nota": "2026-11-05T20:30:12Z",
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "Expreso": {
    "ok": true,
@@ -143,61 +143,61 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:expreso.com.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 403: Forbidden",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 15,
-   "ultima_nota": "2026-11-05T18:24:17Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultima_nota": "2026-11-05T20:07:22Z",
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "El Búho": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://elbuho.pe/feed/",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 15,
    "ultima_nota": "2026-11-05T20:26:26Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "BBC Mundo": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://feeds.bbci.co.uk/mundo/rss.xml",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 15,
    "ultima_nota": "2026-11-05T20:03:18Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "DW Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://rss.dw.com/xml/rss-sp-all",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 15,
    "ultima_nota": "2026-11-05T19:32:00Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "El País América": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 15,
    "ultima_nota": "2026-11-05T19:57:31Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "France 24 Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.france24.com/es/rss",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 15,
    "ultima_nota": "2026-11-05T20:05:16Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "ONU Noticias": {
    "ok": false,
    "procedencia": "sin datos",
    "error": "ParseError: not well-formed (invalid token): line 1, column 0",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "ultimo_ok": "2026-11-05T18:38:04Z",
    "ultima_nota": "2026-11-04T12:00:00Z"
   },
@@ -205,58 +205,286 @@ window.NOTICIAS = {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=site:nytimes.com/es+when:7d&hl=es-419&gl=US&ceid=US:es-419",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 15,
    "ultima_nota": "2026-11-05T10:10:04Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "The Guardian": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.theguardian.com/world/rss",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 15,
    "ultima_nota": "2026-11-05T18:48:07Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "The New Yorker": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.newyorker.com/feed/everything",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 15,
    "ultima_nota": "2026-11-05T19:41:18Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "Google Noticias · IA en el Perú": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22inteligencia+artificial%22+Per%C3%BA+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 15,
    "ultima_nota": "2026-11-05T17:57:31Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "Google Noticias · El Niño": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22Fen%C3%B3meno+El+Ni%C3%B1o%22+OR+%22Ni%C3%B1o+costero%22+ENFEN+when:14d&hl=es-419&gl=PE&ceid=PE:es-419",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 15,
    "ultima_nota": "2026-10-31T22:01:06Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   },
   "Google Noticias · IA en el mundo": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22inteligencia+artificial%22+(OpenAI+OR+Anthropic+OR+Google+OR+regulaci%C3%B3n+OR+NVIDIA)+when:7d&hl=es-419&gl=US&ceid=US:es-419",
-   "comprobado": "2026-11-05T20:26:55Z",
+   "comprobado": "2026-11-05T20:36:02Z",
    "n": 15,
    "ultima_nota": "2026-11-05T19:21:57Z",
-   "ultimo_ok": "2026-11-05T20:26:55Z"
+   "ultimo_ok": "2026-11-05T20:36:02Z"
   }
  },
  "items": [
+  {
+   "id": "fe698e3ba6",
+   "sector": "politica",
+   "titulo": "Papa León XIV será condecorado con la máxima distinción de la MML durante su visita al Palacio Municipal",
+   "resumen": "El alcalde Renzo Reggiardo destacó el carácter histórico de la visita y anunció que la PNP liderará el operativo de seguridad, con el apoyo de más de mil cámaras de videovigilancia municipales",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/05/papa-leon-xiv-sera-condecorado-por-la-municipalidad-de-lima-durante-su-visita-al-palacio-municipal/",
+   "fecha": "2026-11-05T20:30:12Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/FWOQBDRIJBGDPEGVKK6FKX4Y5A.JPG?auth=e2ddcd7d9bbed1a45d2843c8793bbc4c91665ebb1c839356d0bc241d06e57ce7&smart=true&width=2416&height=1616",
+   "procedencia": "directa",
+   "sintesis": "El alcalde Renzo Reggiardo destacó el carácter histórico de la visita y anunció que la PNP liderará el operativo de seguridad, con el apoyo de más de mil cámaras de videovigilancia municipales Seguir Escuchar Puntos clave Resumen El alcalde de Lima, Renzo Reggiardo, anunció que el papa León XIV recibirá la Orden al Mérito en el Grado de Gran Cruz, máxima distinción de la Municipalidad Metropolitana 05 Nov, 2026 03:24 p. m.",
+   "puntos": [
+    "El alcalde Renzo Reggiardo destacó el carácter histórico de la visita y anunció que la PNP liderará el operativo de seguridad, con el apoyo de más de mil cámaras de videovigilancia municipales",
+    "Seguir Escuchar Puntos clave Resumen El alcalde de Lima, Renzo Reggiardo, anunció que el papa León XIV recibirá la Orden al Mérito en el Grado de Gran Cruz, máxima distinción de la Municipalidad Metropolitana 05 Nov, 2026 03:24 p. m.",
+    "EST Guardar El alcalde de Lima, Renzo Reggiardo, anunció este jueves que el papa León XIV recibirá la Orden al Mérito en el Grado de Gran Cruz , la máxima distinción que otorga la comuna metropolitana durante su visita al Palacio Municipal, prevista para el próximo 12 de noviembre."
+   ],
+   "datos": [
+    {
+     "v": "12 de noviembre",
+     "t": "fecha",
+     "c": "…su visita al Palacio Municipal, prevista para el próximo 12 de noviembre.."
+    }
+   ]
+  },
+  {
+   "id": "a9ec0dd02b",
+   "sector": "economia",
+   "titulo": "Tarifas eléctricas para usuarios domiciliarios en el SEIN se reducirán en noviembre",
+   "resumen": "Sin embargo, tendrán un incremento las facturas de luz en los sistemas aislados.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/economia/tarifas-electricas-para-usuarios-domiciliarios-se-reduciran-en-noviembre-noticia/",
+   "fecha": "2026-11-05T20:30:00Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/BHGP4FAJNRA65KE42MVYBTU4FA.jpg?auth=cee22e432ac727e33828e4f450e8ed4b0b129a5851fd2918249fb48e0bb3e733&smart=true&width=1200&height=800",
+   "procedencia": "directa",
+   "sintesis": "Sin embargo, tendrán un incremento las facturas de luz en los sistemas aislados. El Organismo Supervisor de la Inversión en Energía y Minería (Osinergmin) dio a conocer ajustes en las tarifas eléctricas correspondientes a noviembre del 2026, y que tendrán reducciones en el Sistema Eléctrico Interconectado Nacional (SEIN), pero alzas en sistemas aislados.",
+   "puntos": [
+    "Sin embargo, tendrán un incremento las facturas de luz en los sistemas aislados.",
+    "El Organismo Supervisor de la Inversión en Energía y Minería (Osinergmin) dio a conocer ajustes en las tarifas eléctricas correspondientes a noviembre del 2026, y que tendrán reducciones en el Sistema Eléctrico Interconectado Nacional (SEIN), pero alzas en sistemas aislados.",
+    "En el caso del SEIN, indicó que esas tarifas para consumidores domésticos tendrán una rebaja de -2.99%, mientras que las de los usuarios comerciales e industriales bajarán en promedio en -4.21%, a partir del 4 de noviembre de 2026."
+   ],
+   "datos": [
+    {
+     "v": "2.99%",
+     "t": "porcentaje",
+     "c": "…para consumidores domésticos tendrán una rebaja de -2.99%, mientras que las de los usuarios comerciales e…"
+    },
+    {
+     "v": "4.21%",
+     "t": "porcentaje",
+     "c": "…comerciales e industriales bajarán en promedio en -4.21%, a partir del 4 de noviembre de 2026.."
+    },
+    {
+     "v": "4 de noviembre de 2026",
+     "t": "fecha",
+     "c": "…e industriales bajarán en promedio en -4.21%, a partir del 4 de noviembre de 2026.."
+    }
+   ]
+  },
+  {
+   "id": "17e0717c80",
+   "sector": "coyuntura",
+   "titulo": "Temblor en Perú hoy, 5 de noviembre: epicentro del sismo y magnitud según IGP",
+   "resumen": "El Instituto Geofísico del Perú (IGP) informó sobre los últimos movimientos sísmicos registrados en el país. Conoce dónde se ubicaron los epicentros, qué magnitudes alcanzaron y cuáles fueron las zonas donde se sintieron los temblores.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/peru/sismos-de-hoy-en-peru-revisa-los-reportes-del-igp-y-donde-se-localizaron-los-epicentros-magnitud-y-mas-tdpe-noticia/",
+   "fecha": "2026-11-05T20:29:45Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/LVH3J54KH5ANJDIYWKLAVPXPJY.png?auth=52f0b246578e858d07e5b6c835d5702a44224430aa32f01e10d8391b928ee4e8&smart=true&width=1300&height=800",
+   "procedencia": "directa",
+   "sintesis": "El Instituto Geofísico del Perú (IGP) informó sobre los últimos movimientos sísmicos registrados en el país. Conoce dónde se ubicaron los epicentros, qué magnitudes alcanzaron y cuáles fueron las zonas donde se sintieron los temblores.",
+   "puntos": [
+    "El Instituto Geofísico del Perú (IGP) informó sobre los últimos movimientos sísmicos registrados en el país.",
+    "Conoce dónde se ubicaron los epicentros, qué magnitudes alcanzaron y cuáles fueron las zonas donde se sintieron los temblores.",
+    "Consulta los últimos sismos registrados en el Perú según reportes del IGP."
+   ],
+   "datos": [
+    {
+     "v": "15 km",
+     "t": "cantidad",
+     "c": "…Hora Local: 03/11/2026,23:15:52 Magnitud: 3.5 Profundidad: 15 km Latitud: -5.51 Longitud: -78.90 Intensidad: II-III Jaén…"
+    },
+    {
+     "v": "24 km",
+     "t": "cantidad",
+     "c": "…-5.51 Longitud: -78.90 Intensidad: II-III Jaén Referencia: 24 km al NO de Jaén, Jaén - Cajamarca https://t.co/kTgIm3Skuc."
+    },
+    {
+     "v": "30 km",
+     "t": "cantidad",
+     "c": "…y Hora UTC: 02/11/2026,15:28:08 Magnitud: 5.0 Profundidad: 30 km Latitud: -10.26 Longitud: -78.79 Intensidad: III-IV…"
+    },
+    {
+     "v": "73 km",
+     "t": "cantidad",
+     "c": "…Longitud: -78.79 Intensidad: III-IV Huarmey Referencia: 73 km al O de Huarmey, Huarmey - Áncash https://t.co/mUyQw5I2yd…"
+    },
+    {
+     "v": "13 km",
+     "t": "cantidad",
+     "c": "…Hora Local: 01/11/2026,08:50:41 Magnitud: 3.6 Profundidad: 13 km Latitud: -6.59 Longitud: -79.33 Intensidad: II Santa Cruz…"
+    }
+   ]
+  },
+  {
+   "id": "ee7d215a2e",
+   "sector": "coyuntura",
+   "titulo": "Papa León XIV en Perú: Ticketmaster habilita entradas gratis desde HOY para misa en Las Palmas",
+   "resumen": "Papa León XIV en Perú: Ticketmaster habilita entradas gratis desde el jueves 5 para misa en Las Palmas.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/lima/entradas-gratis-hoy-misa-papa-leon-xiv-en-base-las-palmas-por-ticketmaster-este-5-de-noviembre-apuesplan-ultimas-noticia/",
+   "fecha": "2026-11-05T20:28:03Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/HEW6CAFNYZDPXLAY2U7AY5CTBY.jpg?auth=532c2c5c0a84d4da9664d2a5cab8cc842f036f7f8c1a1f87cedff46f449a456a&smart=true&width=800&height=450",
+   "procedencia": "directa",
+   "sintesis": "Desde este jueves 5 de noviembre, se habilitarán en la plataforma de Ticketmaster , las entradas de manera gratuita para la misa que llevará a cabo el papa León XIV en la Base Aérea Las Palmas, el lunes 16 de noviembre, en el último día de su recorrido por territorio nacional. Los boletos serán digitales y estarán disponibles para el público en general hasta el domingo 8 de noviembre.",
+   "puntos": [
+    "Desde este jueves 5 de noviembre, se habilitarán en la plataforma de Ticketmaster , las entradas de manera gratuita para la misa que llevará a cabo el papa León XIV en la Base Aérea Las Palmas, el lunes 16 de noviembre, en el último día de su recorrido por territorio nacional.",
+    "Los boletos serán digitales y estarán disponibles para el público en general hasta el domingo 8 de noviembre.",
+    "El recinto, ubicado en el distrito de Surco, prevé congregar a más de 1.2 millones de personas."
+   ],
+   "datos": [
+    {
+     "v": "1.2 millones de personas",
+     "t": "escala",
+     "c": "El recinto, ubicado en el distrito de Surco, prevé congregar a más de 1.2 millones de personas.."
+    },
+    {
+     "v": "5 de noviembre",
+     "t": "fecha",
+     "c": "Desde este jueves 5 de noviembre, se habilitarán en la plataforma de Ticketmaster , las…"
+    },
+    {
+     "v": "16 de noviembre",
+     "t": "fecha",
+     "c": "…el papa León XIV en la Base Aérea Las Palmas, el lunes 16 de noviembre, en el último día de su recorrido por territorio nacional.."
+    },
+    {
+     "v": "8 de noviembre",
+     "t": "fecha",
+     "c": "Los boletos serán digitales y estarán disponibles para el público en general hasta el domingo 8 de noviembre."
+    },
+    {
+     "v": "9 de noviembre",
+     "t": "fecha",
+     "c": "…con entradas gratis que se podrán adquirir desde el lunes 9 de noviembre disponibles en Teleticket y serán personales, gratuitas e…"
+    }
+   ]
+  },
+  {
+   "id": "9c48d379e0",
+   "sector": "investigacion",
+   "titulo": "Ecuador: José Serrano, exministro correísta, irá a juicio como presunto autor intelectual del asesinato de Fernando Villavicencio",
+   "resumen": "La Fiscalía de Ecuador acusa a José Serrano y a otras seis personas de ser presuntos autores intelectuales del asesinato de Fernando Villavicencio, crimen cometido en agosto del 2023",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/mundo/latinoamerica/ecuador-jose-serrano-exministro-correista-ira-a-juicio-como-presunto-autor-intelectual-del-asesinato-de-fernando-villavicencio-noticia/",
+   "fecha": "2026-11-05T20:27:22Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/HM7ACIWUGNEZ3OOQLLULI7NE3Y.jpg?auth=a15b002326206ea825b79ffb665d9577e4e3427b8f7aa53ad15317a8ec9a164e&smart=true&width=1200&height=800",
+   "procedencia": "directa",
+   "sintesis": "La Fiscalía de Ecuador acusa a José Serrano y a otras seis personas de ser presuntos autores intelectuales del asesinato de Fernando Villavicencio, crimen cometido en agosto del 2023 Este resumen es generado por inteligencia artificial y revisado por la redacción.",
+   "puntos": [
+    "La Fiscalía de Ecuador acusa a José Serrano y a otras seis personas de ser presuntos autores intelectuales del asesinato de Fernando Villavicencio, crimen cometido en agosto del 2023",
+    "Este resumen es generado por inteligencia artificial y revisado por la redacción.",
+    "El exministro correísta José Serrano y otras seis personas fueron llamados a juicio como presuntos autores intelectuales del asesinato , en 2023, del entonces candidato presidencial Fernando Villavicencio , informó este jueves la Fiscalía."
+   ]
+  },
+  {
+   "id": "9890344498",
+   "sector": "politica",
+   "titulo": "Renuncia de Santiago Peña EN VIVO: Diputados de Paraguay votan por unanimidad someterlo a juicio político",
+   "resumen": "La sesión extraordinaria en el Congreso se realiza en medio de la crisis financiera y política desatada por el cierre de Ueno Bank, entidad vinculada al presidente Santiago Peña y cuyos problemas de solvencia afectaron a cerca de 2,94 millones de clientes en Paraguay",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/mundo/latinoamerica/juicio-politico-a-santiago-pena-por-ueno-bank-en-paraguay-en-vivo-congreso-debate-su-destitucion-por-el-caso-ueno-bank-noticia/",
+   "fecha": "2026-11-05T20:27:16Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/M7AIG53NMBDMDGF5YH6D7PQTCE.jpg?auth=e5502646192ec9ba043518146d68ae7cf42d219453d86dfdc013af9b2f5cc2d3&smart=true&width=6994&height=4663",
+   "procedencia": "directa",
+   "sintesis": "La sesión extraordinaria en el Congreso se realiza en medio de la crisis financiera y política desatada por el cierre de Ueno Bank, entidad vinculada al presidente Santiago Peña y cuyos problemas de solvencia afectaron a cerca de 2,94 millones de clientes en Paraguay Este resumen es generado por inteligencia artificial y revisado por la redacción.",
+   "puntos": [
+    "La sesión extraordinaria en el Congreso se realiza en medio de la crisis financiera y política desatada por el cierre de Ueno Bank, entidad vinculada al presidente Santiago Peña y cuyos problemas de solvencia afectaron a cerca de 2,94 millones de clientes en Paraguay",
+    "Este resumen es generado por inteligencia artificial y revisado por la redacción.",
+    "La Cámara de Diputados de Paraguay aprobó este jueves por unanimidad la acusación para someter a juicio político a Santiago Peña , quien horas antes renunció a la Presidencia en medio de la crisis desatada por la intervención de Ueno bank, aunque el proceso aún debe recibir el aval del Senado, que actúa como juez."
+   ],
+   "datos": [
+    {
+     "v": "2,94 millones de clientes",
+     "t": "escala",
+     "c": "…Peña y cuyos problemas de solvencia afectaron a cerca de 2,94 millones de clientes en Paraguay."
+    },
+    {
+     "v": "78 diputados",
+     "t": "cantidad",
+     "c": "Los 78 diputados presentes en la sesión aprobaron la acusación contra Peña…"
+    }
+   ]
+  },
+  {
+   "id": "46c59a5f14",
+   "sector": "deporte",
+   "titulo": "Sin Valera ni Tapia: conoce las ausencias de Perú que anunció Mano Menezes para enfrentar a Bolivia",
+   "resumen": "El entrenador Mano Menezes no consideró a un grupo de referentes para el choque de la Selección Peruana por la fecha FIFA de noviembre.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/futbol/seleccion-peruana/seleccion-peruana-sin-alex-valera-ni-renato-tapia-conoce-las-ausencias-de-peru-que-anuncio-mano-menezes-para-enfrentar-a-bolivia-noticia-1716148",
+   "fecha": "2026-11-05T20:27:11Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/05/portada_1437403.jpg?width=860&quality=80",
+   "procedencia": "directa",
+   "sintesis": "El entrenador Mano Menezes no consideró a un grupo de referentes para el choque de la Selección Peruana por la fecha FIFA de noviembre.",
+   "puntos": [
+    "El entrenador Mano Menezes no consideró a un grupo de referentes para el choque de la Selección Peruana por la fecha FIFA de noviembre."
+   ]
+  },
   {
    "id": "be13a83fca",
    "sector": "nino",
@@ -286,33 +514,6 @@ window.NOTICIAS = {
      "v": "26 de Noviembre",
      "t": "fecha",
      "c": "…ubicado en el cruce de las avenidas Pachacútec y 26 de Noviembre, sufrió una impresionante inundación este jueves, tras la…"
-    }
-   ]
-  },
-  {
-   "id": "fe698e3ba6",
-   "sector": "politica",
-   "titulo": "Papa León XIV será condecorado con la máxima distinción de la MML durante su visita al Palacio Municipal",
-   "resumen": "El alcalde Renzo Reggiardo destacó el carácter histórico de la visita y anunció que la PNP liderará el operativo de seguridad, con el apoyo de más de mil cámaras de videovigilancia municipales",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/05/papa-leon-xiv-sera-condecorado-por-la-municipalidad-de-lima-durante-su-visita-al-palacio-municipal/",
-   "fecha": "2026-11-05T20:24:31Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/FWOQBDRIJBGDPEGVKK6FKX4Y5A.JPG?auth=e2ddcd7d9bbed1a45d2843c8793bbc4c91665ebb1c839356d0bc241d06e57ce7&smart=true&width=2416&height=1616",
-   "procedencia": "directa",
-   "sintesis": "El alcalde Renzo Reggiardo destacó el carácter histórico de la visita y anunció que la PNP liderará el operativo de seguridad, con el apoyo de más de mil cámaras de videovigilancia municipales Seguir Escuchar Puntos clave Resumen El alcalde de Lima, Renzo Reggiardo, anunció que el papa León XIV recibirá la Orden al Mérito en el Grado de Gran Cruz, máxima distinción de la Municipalidad Metropolitana 05 Nov, 2026 03:24 p. m.",
-   "puntos": [
-    "El alcalde Renzo Reggiardo destacó el carácter histórico de la visita y anunció que la PNP liderará el operativo de seguridad, con el apoyo de más de mil cámaras de videovigilancia municipales",
-    "Seguir Escuchar Puntos clave Resumen El alcalde de Lima, Renzo Reggiardo, anunció que el papa León XIV recibirá la Orden al Mérito en el Grado de Gran Cruz, máxima distinción de la Municipalidad Metropolitana 05 Nov, 2026 03:24 p. m.",
-    "EST Guardar El alcalde de Lima, Renzo Reggiardo, anunció este jueves que el papa León XIV recibirá la Orden al Mérito en el Grado de Gran Cruz , la máxima distinción que otorga la comuna metropolitana durante su visita al Palacio Municipal, prevista para el próximo 12 de noviembre."
-   ],
-   "datos": [
-    {
-     "v": "12 de noviembre",
-     "t": "fecha",
-     "c": "…su visita al Palacio Municipal, prevista para el próximo 12 de noviembre.."
     }
    ]
   },
@@ -361,26 +562,6 @@ window.NOTICIAS = {
      "t": "porcentaje",
      "c": "…el sector residencial –que viene más dinámico– representó 30,7% del mercado total en valores CIF de importación, mientras…"
     }
-   ]
-  },
-  {
-   "id": "9c48d379e0",
-   "sector": "investigacion",
-   "titulo": "Ecuador: José Serrano, exministro correísta, irá a juicio como presunto autor intelectual del asesinato de Fernando Villavicencio",
-   "resumen": "La Fiscalía de Ecuador acusa a José Serrano y a otras seis personas de ser presuntos autores intelectuales del asesinato de Fernando Villavicencio, crimen cometido en agosto del 2023",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/mundo/latinoamerica/ecuador-jose-serrano-exministro-correista-ira-a-juicio-como-presunto-autor-intelectual-del-asesinato-de-fernando-villavicencio-noticia/",
-   "fecha": "2026-11-05T20:21:58Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/HM7ACIWUGNEZ3OOQLLULI7NE3Y.jpg?auth=a15b002326206ea825b79ffb665d9577e4e3427b8f7aa53ad15317a8ec9a164e&smart=true&width=1200&height=800",
-   "procedencia": "directa",
-   "sintesis": "La Fiscalía de Ecuador acusa a José Serrano y a otras seis personas de ser presuntos autores intelectuales del asesinato de Fernando Villavicencio, crimen cometido en agosto del 2023 Este resumen es generado por inteligencia artificial y revisado por la redacción.",
-   "puntos": [
-    "La Fiscalía de Ecuador acusa a José Serrano y a otras seis personas de ser presuntos autores intelectuales del asesinato de Fernando Villavicencio, crimen cometido en agosto del 2023",
-    "Este resumen es generado por inteligencia artificial y revisado por la redacción.",
-    "El exministro correísta José Serrano y otras seis personas fueron llamados a juicio como presuntos autores intelectuales del asesinato , en 2023, del entonces candidato presidencial Fernando Villavicencio , informó este jueves la Fiscalía."
    ]
   },
   {
@@ -493,95 +674,6 @@ window.NOTICIAS = {
      "v": "10.69%",
      "t": "porcentaje",
      "c": "…agosto, la actividad constructora sumó un crecimiento de 10.69%, impulsada tanto por el consumo interno de cemento como…"
-    }
-   ]
-  },
-  {
-   "id": "6393e05140",
-   "sector": "coyuntura",
-   "titulo": "Tarifas eléctricas para usuarios domiciliarios se reducirán en noviembre",
-   "resumen": "Las tarifas eléctricas de los usuarios del Sistema Eléctrico Interconectado Nacional (SEIN) tendrán una reducción promedio de -2,99%, mientras que las tarifas de los usuarios comerciales e industriales bajarán en promedio en -4,21%, a partir del 4 de noviembre de 2026. Así lo…",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/economia/peru/tarifas-electricas-para-usuarios-domiciliarios-se-reduciran-en-noviembre-l-ultimas-noticia/",
-   "fecha": "2026-11-05T20:13:59Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/DMWMW6CY3JAJPHIDT2ZLFVDM7E.jpg?auth=05b63a66f7e7cb2e728128a20399af490af44a43724b59e382250f1b48adda7e&smart=true&width=1200&height=800",
-   "procedencia": "directa",
-   "sintesis": "Las tarifas eléctricas de los usuarios del Sistema Eléctrico Interconectado Nacional (SEIN) tendrán una reducción promedio de -2,99%, mientras que las tarifas de los usuarios comerciales e industriales bajarán en promedio en -4,21%, a partir del 4 de noviembre de 2026. Así lo informa Osinergmin tras realizar la revisión mensual establecida por la normativa vigente.",
-   "puntos": [
-    "Las tarifas eléctricas de los usuarios del Sistema Eléctrico Interconectado Nacional (SEIN) tendrán una reducción promedio de -2,99%, mientras que las tarifas de los usuarios comerciales e industriales bajarán en promedio en -4,21%, a partir del 4 de noviembre de 2026.",
-    "Así lo informa Osinergmin tras realizar la revisión mensual establecida por la normativa vigente.",
-    "Cabe recordar que, la tarifa que pagan los usuarios por la electricidad considera los costos eficientes asociados a las actividades de generación, transmisión y distribución de la energía eléctrica."
-   ],
-   "datos": [
-    {
-     "v": "2,99%",
-     "t": "porcentaje",
-     "c": "…Nacional (SEIN) tendrán una reducción promedio de -2,99%, mientras que las tarifas de los usuarios comerciales e…"
-    },
-    {
-     "v": "4,21%",
-     "t": "porcentaje",
-     "c": "…comerciales e industriales bajarán en promedio en -4,21%, a partir del 4 de noviembre de 2026."
-    },
-    {
-     "v": "1,49%",
-     "t": "porcentaje",
-     "c": "…Eléctricos Aislados tendrán una variación promedio de 1,49% para los usuarios domiciliarios y de 0,99% para los…"
-    },
-    {
-     "v": "0,99%",
-     "t": "porcentaje",
-     "c": "…promedio de 1,49% para los usuarios domiciliarios y de 0,99% para los usuarios comerciales e industriales.."
-    },
-    {
-     "v": "4 de noviembre de 2026",
-     "t": "fecha",
-     "c": "…e industriales bajarán en promedio en -4,21%, a partir del 4 de noviembre de 2026."
-    }
-   ]
-  },
-  {
-   "id": "10f002dd81",
-   "sector": "coyuntura",
-   "titulo": "Elencos Nacionales participarán en actividades de la visita del papa León XIV al Perú",
-   "resumen": "Los Elencos Nacionales del Ministerio de Cultura participarán en distintas actividades de la visita apostólica del papa León XIV al Perú, del 11 al 16 de noviembre.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/lima/sucesos/papa-leon-xiv-en-peru-elencos-nacionales-participaran-en-actividades-de-la-visita-del-sumo-pontifice-apuesplan-ultimas-noticia/",
-   "fecha": "2026-11-05T20:12:45Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/2F7CYVI6ERGRPNXUKMOGFNN2WI.jpg?auth=d440c69137c92df2c943cabe1990f1295f846c333fc6c796857092ab7d3a5fba&smart=true&width=1214&height=800",
-   "procedencia": "directa",
-   "sintesis": "Los Elencos Nacionales del Ministerio de Cultura participarán en distintas actividades de la visita apostólica del papa León XIV al Perú, del 11 al 16 de noviembre. Las agrupaciones ofrecerán presentaciones musicales, corales y de danza en Lima, Lambayeque y Pucallpa .",
-   "puntos": [
-    "Los Elencos Nacionales del Ministerio de Cultura participarán en distintas actividades de la visita apostólica del papa León XIV al Perú, del 11 al 16 de noviembre.",
-    "Las agrupaciones ofrecerán presentaciones musicales, corales y de danza en Lima, Lambayeque y Pucallpa .",
-    "El miércoles 11 de noviembre, el Coro Nacional de Niños participará en la ceremonia de bienvenida al pontífice, que se realizará en Palacio de Gobierno ."
-   ],
-   "datos": [
-    {
-     "v": "86 años",
-     "t": "cantidad",
-     "c": "Esta actividad marcará el retorno de la Orquesta Sinfónica Nacional a tierras chiclayanas después de 86 años."
-    },
-    {
-     "v": "16 de noviembre",
-     "t": "fecha",
-     "c": "…la visita apostólica del papa León XIV al Perú, del 11 al 16 de noviembre.."
-    },
-    {
-     "v": "11 de noviembre",
-     "t": "fecha",
-     "c": "El miércoles 11 de noviembre, el Coro Nacional de Niños participará en la ceremonia de…"
-    },
-    {
-     "v": "13 de noviembre",
-     "t": "fecha",
-     "c": "Por otro lado, el viernes 13 de noviembre, la Orquesta Sinfónica Nacional del Perú participará en la…"
     }
    ]
   },
@@ -737,6 +829,21 @@ window.NOTICIAS = {
      "c": "El viernes 6 de noviembre, la programación se diversifica con sedes como el CCPNA Teatro y el CCPNA Auditorio."
     }
    ]
+  },
+  {
+   "id": "a4abb62579",
+   "sector": "salud",
+   "titulo": "¡Oportunidades para trabajar! EsSalud ofrecerá más de 100 puestos laborales para personas con discapacidad",
+   "resumen": "",
+   "fuente": "Expreso",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOMlY4RllmR2ZJT2prd2l6UHpkYnhuUUFkUTMzcWQzRnpJcE9tRmxJSTlxRWNSTnlldDVYWW80aldNZ1ptUm9ITkhFek8xWnJid2t0bjk0ai1ScXhpRnBGUDBmWGdGNGJmRmFUMGN0OWRwMHFtSGZoTzhPNkJ0WF80bkxtcmZmRnJfLUNXRmFBTklYLVFib1JIaWUwQ1JvMXdlRGZfYVRNRjAxXzg0MXVXcElSSldmc2Y1bGVQOFVXU1VlRG9LZThDZ1BWdWJ1a2UzZUplTjktMEN2T2tFZFVOdjgtN1ZzclI4UHg3RVBTRHg?oc=5",
+   "fecha": "2026-11-05T20:07:22Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": null,
+   "procedencia": "agregador",
+   "via": "Google Noticias"
   },
   {
    "id": "e8c202e8a2",
@@ -1292,38 +1399,6 @@ window.NOTICIAS = {
    "sintesis": "La aspirante demócrata, nacida en India, vence a su compañera de partido, que la ha llamado para felicitarla y otorgarle la victoria",
    "puntos": [
     "La aspirante demócrata, nacida en India, vence a su compañera de partido, que la ha llamado para felicitarla y otorgarle la victoria"
-   ]
-  },
-  {
-   "id": "9f9af6e6fe",
-   "sector": "coyuntura",
-   "titulo": "Europa League: Jagiellonia no pudo con Levski Sofia y cayó 1-0",
-   "resumen": "Levski Sofia vs Jagiellonia se enfrentaron por la UEFA Europa League. Aquí todos los detalles y resumen del encuentro.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/futbol/ligas-internacionales/europa-league-por-la-fecha-4-levski-sofia-recibira-a-jagiellonia-noticia-1715869",
-   "fecha": "2026-11-05T19:50:06Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/05/1926080.jpg?imgdimension=look",
-   "procedencia": "directa",
-   "sintesis": "Levski Sofia vs Jagiellonia se enfrentaron por la UEFA Europa League. Aquí todos los detalles y resumen del encuentro.",
-   "puntos": [
-    "Levski Sofia vs Jagiellonia se enfrentaron por la UEFA Europa League.",
-    "Aquí todos los detalles y resumen del encuentro.",
-    "Jagiellonia no tuvo una buena presentación y perdió 1-0 en condición de visitante en el Estadio Georgi Asparuhov."
-   ],
-   "datos": [
-    {
-     "v": "1-0",
-     "t": "marcador",
-     "c": "Europa League: Jagiellonia no pudo con Levski Sofia y cayó 1-0."
-    },
-    {
-     "v": "4-3",
-     "t": "marcador",
-     "c": "…de Levski Sofia, Julio Velázquez, propuso una formación 4-3-3 con Svetoslav Vutsov en el arco; Aldair, Kristian…"
-    }
    ]
   },
   {
@@ -2302,38 +2377,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "599a5b8157",
-   "sector": "economia",
-   "titulo": "Papa León XIV en el Centro de Lima: ¿cómo ingresar y qué calles estarán cerradas?",
-   "resumen": "La llegada del papa León XIV al Centro de Lima estará acompañada de un amplio operativo de seguridad y tránsito durante el 11 y 12 de noviembre. La Municipalidad de Lima informó sobre los accesos habilitados para el público autorizado, los horarios de ingreso y las calles que…",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/peru/papa-leon-xiv-en-el-centro-de-lima-como-ingresar-y-que-calles-estaran-cerradas-noticia/",
-   "fecha": "2026-11-05T18:53:07Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/FMDQV6P65FBS3GFVOLUS3QWOHQ.jpg?auth=64083a49be5ad50285ece1f0ee7867b7dd6526cc061a2d64df59a7036e006af5&smart=true&width=1200&height=790",
-   "procedencia": "directa",
-   "sintesis": "La llegada del papa León XIV al Centro de Lima estará acompañada de un amplio operativo de seguridad y tránsito durante el 11 y 12 de noviembre. La Municipalidad de Lima informó sobre los accesos habilitados para el público autorizado, los horarios de ingreso y las calles que permanecerán cerradas por las actividades del pontífice.",
-   "puntos": [
-    "La llegada del papa León XIV al Centro de Lima estará acompañada de un amplio operativo de seguridad y tránsito durante el 11 y 12 de noviembre.",
-    "La Municipalidad de Lima informó sobre los accesos habilitados para el público autorizado, los horarios de ingreso y las calles que permanecerán cerradas por las actividades del pontífice.",
-    "El miércoles 11 de noviembre, el papa arribará a la Base Aérea del Callao a las 17:30 horas y posteriormente se trasladará al Palacio de Gobierno, donde se realizará la ceremonia de bienvenida y una visita oficial a la presidenta Keiko Fujimori."
-   ],
-   "datos": [
-    {
-     "v": "12 de noviembre",
-     "t": "fecha",
-     "c": "…amplio operativo de seguridad y tránsito durante el 11 y 12 de noviembre."
-    },
-    {
-     "v": "11 de noviembre",
-     "t": "fecha",
-     "c": "El miércoles 11 de noviembre, el papa arribará a la Base Aérea del Callao a las 17:30…"
-    }
-   ]
-  },
-  {
    "id": "48ac03767c",
    "sector": "coyuntura",
    "titulo": "Protestas por falta de agua son reprimidas y comunero muere tras incendio forestal (VIDEO)",
@@ -2643,6 +2686,38 @@ window.NOTICIAS = {
      "v": "19 años",
      "t": "cantidad",
      "c": "El futbolista de Como, de 19 años, aspira a estar una Copa del Mundo con la Selección…"
+    }
+   ]
+  },
+  {
+   "id": "7a57c3ece9",
+   "sector": "politica",
+   "titulo": "Reelección encubierta: ¿quiénes son los segundos regidores detrás de las listas ganadoras?",
+   "resumen": "Los Jurados Electorales Especiales han adoptado distintos criterios al proclamar a las autoridades en casos de posible reelección encubierta. Mientras el conteo en Lima Metropolitana aún no concluye, conoce quiénes son los segundos regidores de las listas ganadoras y qué…",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/politica/elecciones/reeleccion-encubierta-quienes-son-los-segundos-regidores-detras-de-las-listas-ganadoras-noticia-1713643",
+   "fecha": "2026-11-05T18:28:40Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/10/20/200420_1920836.jpg?imgdimension=look",
+   "procedencia": "directa",
+   "sintesis": "Los Jurados Electorales Especiales han adoptado distintos criterios al proclamar a las autoridades en casos de posible reelección encubierta. Mientras el conteo en Lima Metropolitana aún no concluye, conoce quiénes son los segundos regidores de las listas ganadoras y qué resolvieron los JEE.",
+   "puntos": [
+    "Los Jurados Electorales Especiales han adoptado distintos criterios al proclamar a las autoridades en casos de posible reelección encubierta.",
+    "Mientras el conteo en Lima Metropolitana aún no concluye, conoce quiénes son los segundos regidores de las listas ganadoras y qué resolvieron los JEE.",
+    "¿Pueden los alcaldes que postularon como primeros regidores volver a dirigir sus municipios?"
+   ],
+   "datos": [
+    {
+     "v": "100 %",
+     "t": "porcentaje",
+     "c": "De ellas, 19 tienen el 100 % de actas contabilizadas por la ONPE."
+    },
+    {
+     "v": "19 casos",
+     "t": "cantidad",
+     "c": "Los 19 casos se distribuyen en seis municipalidades provinciales y 13 distritales."
     }
    ]
   },
@@ -3040,6 +3115,43 @@ window.NOTICIAS = {
      "v": "903 millones de dólares",
      "t": "escala",
      "c": "La aerolínea emiratí registró un beneficio neto de 903 millones de dólares durante el primer semestre, un 66% menos que en el mismo…"
+    }
+   ]
+  },
+  {
+   "id": "6af807dba1",
+   "sector": "coyuntura",
+   "titulo": "Lima no soporta las lluvias y Villa El Salvador es el primero en inundarse (VIDEO)",
+   "resumen": "Lloviznas en Lima alcanzaron los 5,5 mm. Villa El Salvador y Villa María del Triunfo sufren por aniegos y colapso del sistema de alcantarillado.",
+   "fuente": "El Búho",
+   "url": "https://elbuho.pe/2026/11/lima-no-soporta-las-lluvias-y-villa-el-salvador-es-el-primero-en-inundarse-video/",
+   "fecha": "2026-11-05T17:42:56Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/lluvias-lima-noticias-peru-villa-el-salvador-fenomeno-del-nino-inundacion.webp",
+   "procedencia": "directa",
+   "sintesis": "Lloviznas en Lima alcanzaron los 5,5 mm. Villa El Salvador y Villa María del Triunfo sufren por aniegos y colapso del sistema de alcantarillado.",
+   "puntos": [
+    "Lloviznas en Lima alcanzaron los 5,5 mm.",
+    "Villa El Salvador y Villa María del Triunfo sufren por aniegos y colapso del sistema de alcantarillado.",
+    "Lima padece los estragos de las primeras lluvias asociadas al Fenómeno El Niño."
+   ],
+   "datos": [
+    {
+     "v": "50 %",
+     "t": "porcentaje",
+     "c": "…las obras de un colector que permitiría aliviar cerca del 50 % de la carga del sistema de alcantarillado."
+    },
+    {
+     "v": "26 de Noviembre",
+     "t": "fecha",
+     "c": "…de peatones y vehículos, especialmente en la avenida 26 de Noviembre."
+    },
+    {
+     "v": "4 de noviembre",
+     "t": "fecha",
+     "c": "El Senamhi registró hasta 5,5 milímetros de precipitación en ese distrito durante la noche del miércoles 4 de noviembre."
     }
    ]
   },
@@ -4268,28 +4380,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "1874eece61",
-   "sector": "politica",
-   "titulo": "Ley de pensión de S/3.500 para maestros: TC admite a trámite demanda de inconstitucionalidad",
-   "resumen": "",
-   "fuente": "La República",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPNzM3OExiVDlaaUpoTGVsY1BrR1VodWtmdVhoWVNYU1J2VHhWYVpOV21YZ2R0NjBNRG10bF9EZjYzSkhveFFNNTh2SjR5d241blFiQV96cTAxUGhyNUVkTW5rRVVMaDdXb1BKRXdIUEIyNzZGLWtreEhLVkNTOVh1b0p0VjFkWGpsUVQwMGc2aDk2ampDNE9EWlhqalJJYS1zWjU5cHp5aXlTSkw5VmFhOFVZY1lMX2xweTZSaUdQU2xKZ2lpVkxtQk02M1NZLXpEVmpMNmZ2Ul9OZUJnUXfSAeMBQVVfeXFMTU80QjdjdnBjRlBlX0dnRFhtaHNoRVNMMnBkRy0tSFVmUmlOdzg4ZU8xRkI0R05MLTZCU01XNnFNU1I4dndZOU9xOWZZM0M2amp3V2U1dFZSd05JSjJLVWFpLU5WNGNTOEw0VHk0NUdldV9kVHc4VWNqZHRLTXl0S0ctb3FWRVlhRWNRaVdQTTZ5Q1l6LTN4WTBhN1E1TGdWRjEtZTRKckxOLWFBYWRVT0hLdzJZMUxjclYza3poQjZmcjdNaUVGa2dUOFRMNHZGMGp2U25TdXhsT0lqMGVzMmZkRGs?oc=5",
-   "fecha": "2026-11-05T14:46:22Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": null,
-   "procedencia": "agregador",
-   "via": "Google Noticias",
-   "datos": [
-    {
-     "v": "S/3.500",
-     "t": "monto",
-     "c": "Ley de pensión de S/3.500 para maestros: TC admite a trámite demanda de inconstitucionalidad."
-    }
-   ]
-  },
-  {
    "id": "da3cd725fe",
    "sector": "mundo",
    "titulo": "Milei homologa el socialismo con el fascismo pero evita el ataque personal contra Pedro Sánchez",
@@ -4890,28 +4980,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "107b678f23",
-   "sector": "politica",
-   "titulo": "Cristiano Ronaldo anuncia su retiro de la selección de Portugal tras más de 22 años: \"Llegó el día de devolver la camiseta número 7\"",
-   "resumen": "",
-   "fuente": "La República",
-   "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQc2pMQkhsM1R6WWZNNEJVTllZTU91VklkNWVJWGNiZkxuZlB1aXdTWjZRT2ZIaHNDeUplRDZqcVNmVWc0NlBRY3VWSnNpS3h1alUwckZPWjJXRGgzMWNFaHBqX05vak10UGItYlZEMl9XNmo0dVdla24zY1diZHEwcU9BWTY3dWxESzFGSGI1czU5OVdoMTBfWTRoSGpqd1Z5eTRYeDNIUV9RZFV0YzlpVTNDbnR5al9yVDlwYXF1ZXJudWZhVldfd1AyamRDSnh1MXhDbWFBa3dhVUZ6R011YWpDVFJoZDRHUEVMMzdDWDFzRmJtSHVYNHhjN1RMZ09VUWE3NUFMSFdiMHlfT2fSAZMCQVVfeXFMUE5yRkx5Nks1SDRTY0djRmplZWRNSjFYWE45Vl9VWXVjcGJaMkNoQVpva2JNa21PSTVmVThfLTZYMmNqNVZ5V2ZUUS02YzRtRzloblZ3c0JXV0RRck96WU1qOEFZNnlyZEpETjZJb3FSTG5aWFVJdHM4S2p0RGRHVXh0UFd0a2FCS0JidkNIN1BXT3ZkX0ItLWgzdkVTZk5mNWhfb29JUldHS3M3QllVNGFsTDNlT0xzbHVPQjJIZWxNc0FxVHZYMDFsSDN0M0V0VnNFTGNScmdrQVlGcFBVV2xSd2JiOXJLcHI3enBEUzRUS2d2ZHZ4bHFDQzdZRzIyUFNrXzlnbjlpSDdrVnl2aVhoVUk?oc=5",
-   "fecha": "2026-11-05T11:12:59Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": null,
-   "procedencia": "agregador",
-   "via": "Google Noticias",
-   "datos": [
-    {
-     "v": "22 años",
-     "t": "cantidad",
-     "c": "Cristiano Ronaldo anuncia su retiro de la selección de Portugal tras más de 22 años: \"Llegó el día de devolver la camiseta número 7\"."
-    }
-   ]
-  },
-  {
    "id": "94019253a4",
    "sector": "economia",
    "titulo": "Precio del dólar Perú y tipo de cambio hoy 05 de noviembre del 2026",
@@ -4966,26 +5034,6 @@ window.NOTICIAS = {
    "sintesis": "Older voters praised for helping tip balance in leftwing president’s favour against far-right Flávio Bolsonaro in runoff",
    "puntos": [
     "Older voters praised for helping tip balance in leftwing president’s favour against far-right Flávio Bolsonaro in runoff"
-   ]
-  },
-  {
-   "id": "fe46ac56ee",
-   "sector": "mundo",
-   "titulo": "El acogedor conservadurismo de la “Edad Dorada”",
-   "resumen": "Ahora en su cuarta temporada, el drama de época de Julian Fellowes suaviza las luchas de clases y las tensiones sociales de la ciudad de Nueva York de los años ochenta, ofreciendo un cuento de hadas del progreso estadounidense.",
-   "fuente": "The New Yorker",
-   "url": "https://www.newyorker.com/podcast/critics-at-large/the-cozy-conservatism-of-the-gilded-age",
-   "fecha": "2026-11-05T11:00:00Z",
-   "tipo": "internacional",
-   "ambito": "mundo",
-   "genero": "noticia",
-   "imagen": "https://media.newyorker.com/photos/650b59e2f49b447c4924fa7b/master/pass/CAL-WEB.png",
-   "procedencia": "directa",
-   "titulo_original": "The Cozy Conservatism of “The Gilded Age”",
-   "traducido": true,
-   "sintesis": "Now in its fourth season, Julian Fellowes’s period drama smoothes out the class struggles and social tensions of eighteen-eighties New York City, offering a fairytale of American progress.",
-   "puntos": [
-    "Now in its fourth season, Julian Fellowes’s period drama smoothes out the class struggles and social tensions of eighteen-eighties New York City, offering a fairytale of American progress."
    ]
   },
   {
@@ -5047,6 +5095,26 @@ window.NOTICIAS = {
    "puntos": [
     "Anthony Lane writes about the history of the oil painting “Rome, from Mount Aventine,” by J.",
     "Turner, now on view at Sotheby’s, on Madison Avenue."
+   ]
+  },
+  {
+   "id": "fe46ac56ee",
+   "sector": "mundo",
+   "titulo": "El acogedor conservadurismo de la “Edad Dorada”",
+   "resumen": "Ahora en su cuarta temporada, el drama de época de Julian Fellowes suaviza las luchas de clases y las tensiones sociales de la ciudad de Nueva York de los años ochenta, ofreciendo un cuento de hadas del progreso estadounidense.",
+   "fuente": "The New Yorker",
+   "url": "https://www.newyorker.com/podcast/critics-at-large/the-cozy-conservatism-of-the-gilded-age",
+   "fecha": "2026-11-05T11:00:00Z",
+   "tipo": "internacional",
+   "ambito": "mundo",
+   "genero": "noticia",
+   "imagen": "https://media.newyorker.com/photos/650b59e2f49b447c4924fa7b/master/pass/CAL-WEB.png",
+   "procedencia": "directa",
+   "titulo_original": "The Cozy Conservatism of “The Gilded Age”",
+   "traducido": true,
+   "sintesis": "Now in its fourth season, Julian Fellowes’s period drama smoothes out the class struggles and social tensions of eighteen-eighties New York City, offering a fairytale of American progress.",
+   "puntos": [
+    "Now in its fourth season, Julian Fellowes’s period drama smoothes out the class struggles and social tensions of eighteen-eighties New York City, offering a fairytale of American progress."
    ]
   },
   {
@@ -5168,7 +5236,7 @@ window.NOTICIAS = {
    "tipo": "internacional",
    "ambito": "mundo",
    "genero": "noticia",
-   "imagen": null,
+   "imagen": "https://imagenes.elpais.com/resizer/v2/WBPIVZ4Q4VF65EALWS6YTTRGLU.jpg?auth=e7dd2c1c2374cffcc3baec29281379503d4c33a215079f56b8e8c27bf2368394&width=1200",
    "procedencia": "directa",
    "sintesis": "Los candidatos demócratas ganan o van por delante en todos los distritos de la Cámara de Representantes que son limítrofes con el vecino del sur",
    "puntos": [
@@ -5302,33 +5370,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "e2ff354f9d",
-   "sector": "salud",
-   "titulo": "Susy Díaz recibe preocupante noticia sobre Florcita desde España: habría sido agredida y trasladada a una clínica",
-   "resumen": "Magaly Medina contó que la excongresista fue informada por su hermana sobre la presunta agresión contra su hija. La noticia llegó después de que se difundieran imágenes de Florcita llorando en un establecimiento de Pachacámac",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/05/florcita-polo-susy-diaz-recibe-preocupante-noticia-sobre-florcita-desde-espana-habria-sido-agredida-y-trasladada-a-una-clinica/",
-   "fecha": "2026-11-05T07:26:53Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/DA6ESSZNNFFJJNMVRA7J6ILP4Q.jpg?auth=0e34b0698565d9f0dc67b492ff370c2f33e667cecc460e506cd4c2508fc68bb1&smart=true&width=1074&height=573",
-   "procedencia": "directa",
-   "sintesis": "Magaly Medina contó que la excongresista fue informada por su hermana sobre la presunta agresión contra su hija. La noticia llegó después de que se difundieran imágenes de Florcita llorando en un establecimiento de Pachacámac",
-   "puntos": [
-    "Magaly Medina contó que la excongresista fue informada por su hermana sobre la presunta agresión contra su hija.",
-    "La noticia llegó después de que se difundieran imágenes de Florcita llorando en un establecimiento de Pachacámac",
-    "Seguir Escuchar Puntos clave Resumen La periodista reveló que la familia de la hija de Susy Díaz le comunicó sobre una presunta agresión."
-   ],
-   "datos": [
-    {
-     "v": "4 de noviembre",
-     "t": "fecha",
-     "c": "…al inicio de su programa Magaly TV La Firme , este 4 de noviembre, que la hija de Susy Díaz habría sido víctima de una…"
-    }
-   ]
-  },
-  {
    "id": "351ad38175",
    "sector": "mundo",
    "titulo": "Irán afirma que tres navíos se incendian en el estrecho de Ormuz",
@@ -5344,38 +5385,6 @@ window.NOTICIAS = {
    "sintesis": "Los Guardianes de la Revolución indicaron que las naves afectadas son dos buques petroleros y un remolcador.",
    "puntos": [
     "Los Guardianes de la Revolución indicaron que las naves afectadas son dos buques petroleros y un remolcador."
-   ]
-  },
-  {
-   "id": "1e3408cb86",
-   "sector": "deporte",
-   "titulo": "“La posibilidad de aeropuertos cerrados por huaicos debería abrir las puertas a un fixture flexible en la Liga 1”: Pedro Ortiz Bisso y por qué es importante que “El Niño no nos gane el partido”",
-   "resumen": "Nuestro columnista apunta al inminente Fenómeno del Niño que azotará las costas peruanas en los próximos meses y las repercusiones que tendría en el desarrollo de la Liga 1.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/deporte-total/futbol-peruano/fenomeno-del-nino-la-posibilidad-de-aeropuertos-cerrados-por-huaicos-deberia-abrir-las-puertas-a-un-fixture-flexible-en-la-liga-1-pedro-ortiz-bisso-y-por-que-es-importante-que-el-nino-no-nos-gane-el-partido-noticia/",
-   "fecha": "2026-11-05T06:29:04Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/OWMD3VZZBZEIROCDGEZJA32VSM.png?auth=a7213d86b8f8c0dee55a40e54a179cc5664ea204e8754ec0edd88724424fbffb&smart=true&width=2550&height=1445",
-   "procedencia": "directa",
-   "sintesis": "Nuestro columnista apunta al inminente Fenómeno del Niño que azotará las costas peruanas en los próximos meses y las repercusiones que tendría en el desarrollo de la Liga 1. Este resumen es generado por inteligencia artificial y revisado por la redacción.",
-   "puntos": [
-    "Nuestro columnista apunta al inminente Fenómeno del Niño que azotará las costas peruanas en los próximos meses y las repercusiones que tendría en el desarrollo de la Liga 1.",
-    "Este resumen es generado por inteligencia artificial y revisado por la redacción.",
-    "“El Niño estaría en franca retirada”, anunciaba el diario “El Tiempo” de Piura el 24 de marzo de 1998, pese a que el sol atacaba con fuerza y las lluvias dejaban los caminos anegados."
-   ],
-   "datos": [
-    {
-     "v": "3,500 millones de dólares",
-     "t": "escala",
-     "c": "…dejaron más de 350 muertos, unos 500 mil damnificados, 3,500 millones de dólares en pérdidas y una laguna nacida en pleno desierto…"
-    },
-    {
-     "v": "24 de marzo de 1998",
-     "t": "fecha",
-     "c": "…retirada”, anunciaba el diario “El Tiempo” de Piura el 24 de marzo de 1998, pese a que el sol atacaba con fuerza y las lluvias…"
-    }
    ]
   },
   {
@@ -8827,7 +8836,7 @@ window.NOTICIAS = {
   "numero": "19-2026",
   "fecha": "2026-10-16",
   "url": "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen",
-  "comprobado": "2026-11-05T20:28:10Z",
+  "comprobado": "2026-11-05T20:36:39Z",
   "ok": true
  },
  "registro": [
@@ -9253,6 +9262,24 @@ window.NOTICIAS = {
   },
   {
    "t": "2026-11-05T20:26:55Z",
+   "fuentes_ok": 26,
+   "fuentes": 27,
+   "nuevas": 347,
+   "notas": 322,
+   "descartes": {},
+   "agregador": [
+    "OjoPúblico",
+    "Convoca",
+    "Hildebrandt en sus trece",
+    "La República",
+    "Expreso"
+   ],
+   "sin_datos": [
+    "ONU Noticias"
+   ]
+  },
+  {
+   "t": "2026-11-05T20:36:02Z",
    "fuentes_ok": 26,
    "fuentes": 27,
    "nuevas": 347,
