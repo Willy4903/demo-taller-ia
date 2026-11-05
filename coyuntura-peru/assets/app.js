@@ -75,7 +75,7 @@
   function xpChip() { var nv = NIVELES[nivelDe(S.xp)], c = $("#xpchip"), n = $("#xpnum"); if (c) c.title = "Nivel: " + nv.n; if (n) n.textContent = S.xp + " XP"; }
 
   /* ───── fotos reales: si una imagen falla, se quita (nunca se sustituye por ilustraciones) ───── */
-  window.cpImg = function (im) { var d = im.parentNode; if (!d) return; var r = d.closest && d.closest(".row"), noticia = d.closest && d.closest(".pe-news-card,.pe-story"); if (r) r.classList.add("nofoto"); if (noticia) noticia.classList.add("no-photo"); d.remove(); };
+  window.cpImg = function (im) { var d = im.parentNode; if (!d) return; var r = d.closest && d.closest(".row"), noticia = d.closest && d.closest(".pe-news-card,.pe-ficha"); if (r) r.classList.add("nofoto"); if (noticia) noticia.classList.add("no-photo"); d.remove(); };
 
   /* ───── modelo de historias ───── */
   var ITEMS = (NOT.items || []).filter(function (it) {
@@ -173,7 +173,7 @@
     var paneCob = cob.length ? '<ul class="ps-cob">' + cob.map(function (o) { return "<li><b>" + esc(o.fuente) + "</b><span>" + esc(sin(o.titulo, 120)) + "</span><time>" + esc(corta(o.fecha)) + "</time></li>"; }).join("") + '</ul><p class="ps-note">Otros medios que tratan el mismo tema en los últimos 3 días.</p>' : "";
     var panes = { sin: paneSin, cif: paneCif, lec: paneLec, cob: paneCob };
     var fd = s.fecha ? corta(s.fecha) : "Fecha no disponible";
-    return '<article class="pe-story" id="' + id + '" data-open="0"><div class="ps-top"><span class="pe-news-topic">' + esc(label) + "</span>" + badgeGenero(s.genero) + (cob.length ? '<span class="ps-cov" title="Otros medios que cubren el tema">+' + cob.length + " medios</span>" : "") + "</div>" +
+    return '<article class="pe-ficha" id="' + id + '" data-open="0"><div class="ps-top"><span class="pe-news-topic">' + esc(label) + "</span>" + badgeGenero(s.genero) + (cob.length ? '<span class="ps-cov" title="Otros medios que cubren el tema">+' + cob.length + " medios</span>" : "") + "</div>" +
       '<h3 class="ps-title"><button type="button" class="ps-toggle" aria-expanded="false" aria-controls="' + id + '-p">' + esc(s.titulo) + "</button></h3>" +
       (resumen ? '<p class="ps-sum">' + esc(sin(resumen, 300)) + "</p>" : '<p class="ps-sum ps-empty">Síntesis en preparación: se completa en la próxima lectura automática.</p>') +
       (kp ? '<div class="ps-kpis" aria-label="Cifras clave">' + kp + "</div>" : "") +
@@ -192,7 +192,7 @@
     requestAnimationFrame(paso);
   }
   document.addEventListener("click", function (e) {
-    var st = e.target.closest && e.target.closest(".pe-story"); if (!st) return;
+    var st = e.target.closest && e.target.closest(".pe-ficha"); if (!st) return;
     var tg = e.target.closest(".ps-toggle,.ps-more,.ps-sum"), tab = e.target.closest("[data-pt]");
     if (tab) {
       st.querySelectorAll("[data-pt]").forEach(function (b) { b.setAttribute("aria-selected", String(b === tab)); });
