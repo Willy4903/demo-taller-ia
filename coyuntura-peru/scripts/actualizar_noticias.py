@@ -35,7 +35,7 @@ DIAS_MAXIMOS = 30
 TIMEOUT = 20
 MAX_BYTES = 3 * 1024 * 1024
 MAX_BYTES_HTML = 250 * 1024
-MAX_IMAGENES_POR_EJECUCION = 40
+MAX_IMAGENES_POR_EJECUCION = 160
 UA = "PeruEnClaroBot/1.0 (+https://github.com/Willy4903/demo-taller-ia)"
 
 # nombre, [urls alternativas], tipo, sector por defecto (None = clasificar por palabras clave)
