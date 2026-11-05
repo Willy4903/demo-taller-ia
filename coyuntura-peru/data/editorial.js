@@ -1,7 +1,7 @@
 /* Contenido editorial de "PERÚ INFORMADO".
    Los datos con cifras llevan fuente enlazada y fecha de corte. Contrástalos siempre en la fuente primaria. */
 window.EDITORIAL = {
-  corte: "2026-11-02",
+  corte: "2026-11-05",
 
   hilo: {
     titulo: "Primer año de gobierno: poder fragmentado, economía más lenta y emergencias que no esperan",
@@ -15,7 +15,7 @@ window.EDITORIAL = {
 
   /* ───────────── DataPerú: estadísticas oficiales (INEI y otros). Cada cifra lleva periodo y fuente; contrastar en la fuente primaria ───────────── */
   datos: {
-    corte: "2026-11-02",
+    corte: "2026-11-05",
     intro: "Cifras oficiales del Perú con su periodo y su fuente. Los datos del INEI se cargan a mano con corte editorial; las series históricas del Banco Mundial se actualizan solas.",
     grupos: [
       { g: "Población", c: "#38BDF8", items: [
@@ -31,7 +31,7 @@ window.EDITORIAL = {
         { id: "intcel", un: "% de las personas usuarias de internet", corte: "I trimestre de 2026", fp: "INEI (ENAHO)", cat: "soc", tag: "INEI", c: "De las personas que usan internet, qué parte se conecta desde un teléfono celular.", e: "Con 90,7 %, casi 9 de cada 10 usuarios acceden por celular.", k: "Usuarios que acceden desde un celular", v: "90,7 %", n: "Población usuaria de 6 años a más, primer trimestre de 2026", f: "INEI (gob.pe)", u: "https://www.gob.pe/institucion/inei/noticias/1405641-se-incremento-el-uso-de-internet-en-mujeres-y-hombres-en-el-primer-trimestre-2026" }
       ]},
       { g: "Empleo", c: "#10B981", items: [
-        { id: "desemp", un: "% de la población económicamente activa", corte: "Trimestre móvil abril-junio de 2026", fp: "INEI", cat: "eco", tag: "INEI", c: "Tasa de desempleo: porcentaje de la población que quiere trabajar y busca empleo, pero no lo tiene. Un trimestre móvil promedia tres meses seguidos.", e: "Una tasa de 4,9 % equivale a unas 5 personas sin empleo por cada 100 que trabajan o buscan trabajo.", k: "Desempleo en Lima Metropolitana", v: "4,9 %", n: "Trimestre móvil abril-junio de 2026. Reportes posteriores citan 4,4 % para julio-setiembre: confirma en el INEI", f: "INEI vía El Peruano", u: "https://elperuano.pe/noticia/300485-desempleo-cayo-a-49-entre-abril-y-junio-de-2026", dest: true }
+        { id: "desemp", un: "% de la población económicamente activa", corte: "Trimestre móvil julio-setiembre de 2026", fp: "INEI", cat: "eco", tag: "INEI", c: "Tasa de desempleo: porcentaje de la población que quiere trabajar y busca empleo, pero no lo tiene. Un trimestre móvil promedia tres meses seguidos.", e: "Una tasa de 4,4 % equivale a unas 4 personas sin empleo por cada 100 que trabajan o buscan trabajo.", k: "Desempleo en Lima Metropolitana", v: "4,4 %", n: "Trimestre móvil julio-setiembre de 2026 (5,7 % un año antes). Cifra citada por prensa: confirma en el INEI", f: "Expreso, a partir del INEI", u: "https://www.expreso.com.pe/actualidad/empleo-en-lima-metropolitana-crecio-6-y-supero-los-seis-millones-de-trabajadores-que-revela-el-avance-del-mercado-laboral-mtpe-keiko-fujimori-juan-sheput-noticia/1322978/", dest: true }
       ]},
       { g: "Pobreza", c: "#F97316", items: [
         { id: "pobreza", un: "% de la población", corte: "Año 2025", fp: "INEI (ENAHO)", cat: "soc", tag: "INEI", c: "Pobreza monetaria: personas cuyo gasto por persona no alcanza para comprar una canasta básica de alimentos y otros bienes y servicios.", e: "Un 25,7 % de la población equivale a unos 8,8 millones de personas.", k: "Pobreza monetaria", v: "25,7 %", n: "Año 2025 (27,6 % en 2024); unos 8,8 millones de personas", f: "INEI vía El Peruano", u: "https://elperuano.pe/noticia/295035-inei-pobreza-se-redujo-en-19-en-el-2025-y-afecta-al-257-de-peruanos", dest: true },
@@ -44,18 +44,19 @@ window.EDITORIAL = {
       ]},
       { g: "Economía (BCRP)", c: "#F5B83D", items: [
         { id: "pbiproy", un: "% de variación anual (proyección)", corte: "Proyección para 2026", fp: "BCRP", cat: "eco", tag: "BCRP", k: "PBI 2026 · proyección BCRP", v: "3,2 %", n: "Recortada citando El Niño", c: "Proyección de crecimiento: lo que se espera que crezca la economía este año.", e: "Con 3,2 %, una economía que produce 100 produciría 103,2 al cerrar el año.", f: "BCRP", u: "https://www.bcrp.gob.pe" },
-        { id: "infl", un: "% anual (proyección)", corte: "Proyección para 2026", fp: "BCRP", cat: "eco", tag: "BCRP", k: "Inflación 2026 · proyección BCRP", v: "~4,2 %", n: "Meta 1 %-3 %; el BCP proyecta 4,7 %", c: "Aumento general de los precios. El BCRP busca mantenerlo entre 1 % y 3 % al año.", e: "Con 4,2 %, algo que hoy cuesta S/ 100 costaría unos S/ 104,20 dentro de un año.", f: "Forbes Perú", u: "https://forbes.pe/economia-y-finanzas/2026-09-10/bcp-elevo-su-proyeccion-de-inflacion-de-42-a-47-para-cierre-de-ano/" },
+        { id: "infl", un: "% anual (proyección)", corte: "Proyección para 2026", fp: "BCRP", cat: "eco", tag: "BCRP", k: "Inflación 2026 · proyección BCRP", v: "~4,2 %", n: "Meta 1 %-3 %; proyección previa a octubre: la inflación observada ya la supera (ver «Inflación anual · Lima Metropolitana»)", c: "Aumento general de los precios. El BCRP busca mantenerlo entre 1 % y 3 % al año.", e: "Con 4,2 %, algo que hoy cuesta S/ 100 costaría unos S/ 104,20 dentro de un año.", f: "Forbes Perú", u: "https://forbes.pe/economia-y-finanzas/2026-09-10/bcp-elevo-su-proyeccion-de-inflacion-de-42-a-47-para-cierre-de-ano/" },
+        { id: "inflobs", un: "% anual", corte: "Octubre de 2026", fp: "INEI", cat: "eco", tag: "INEI", k: "Inflación anual · Lima Metropolitana", v: "5,25 %", n: "Octubre de 2026: la más alta en 38 meses y octavo mes sobre la meta (1 %-3 %). A nivel nacional, 4,83 %", c: "Cuánto subieron los precios en Lima en los últimos 12 meses, según el INEI. La meta del BCRP es entre 1 % y 3 %.", e: "Con 5,25 %, lo que costaba S/ 100 hace un año cuesta hoy unos S/ 105,25.", f: "Infomercado, a partir del INEI", u: "https://infomercado.pe/inei-inflacion-en-lima-supera-el-5-por-el-nino-y-el-alza-de-combustibles/" },
         { id: "tasa", un: "% anual", corte: "Vigente (más de un año sin cambios)", fp: "BCRP", cat: "eco", tag: "BCRP", k: "Tasa de referencia BCRP", v: "4,25 %", n: "Más de un año sin cambios", c: "Tasa de interés que fija el BCRP. Sirve de guía para el costo del crédito en la economía.", e: "Ejemplo simplificado: 4,25 % anual sobre S/ 1 000 son S/ 42,50 al año; las tasas que cobran los bancos son mayores.", f: "Perú Retail", u: "https://www.peru-retail.com/bcrp-mantiene-la-tasa-de-referencia-en-425-por-mas-de-un-ano-que-factores-influyen-en-su-decision/" }
       ]},
       { g: "Clima y ENFEN", c: "#0EA5E9", items: [
-        { id: "nestado", un: "estado", corte: "Comunicado ENFEN N.° 16-2026 y notas de prensa posteriores", fp: "ENFEN", cat: "clima", tag: "ENFEN", k: "Estado ENFEN", v: "Alerta", n: "Alerta de El Niño costero; una nota de RPP confirma que se mantiene", c: "El ENFEN clasifica la situación del mar en tres estados: No activo, Vigilancia o Alerta.", e: "En enero de 2026 pasó de No activo a Vigilancia (comunicado N.° 01-2026); hoy figura en Alerta.", f: "ENFEN (gob.pe)", u: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" },
-        { id: "nmag", un: "magnitud", corte: "Comunicado ENFEN N.° 16-2026 (14 de septiembre de 2026)", fp: "ENFEN", cat: "clima", tag: "ENFEN", k: "Magnitud esperada (último pronóstico verificado)", v: "Extraordinaria", n: "Más probable entre setiembre de 2026 y enero de 2027. Comunicados posteriores (hasta el N.° 19-2026, del 16 de octubre) pueden haberlo cambiado: una nota de RPP cita magnitud moderada para el verano de 2027. Confirma en el ENFEN.", c: "Qué tan intenso se espera el calentamiento del mar: débil, moderado, fuerte o extraordinario.", e: "Para el verano de 2027, el N.° 16 daba 48 % a magnitud extraordinaria y 45 % a fuerte: juntas suman 93 %.", f: "Canal N sobre el comunicado N.° 16-2026", u: "https://canaln.pe/actualidad/enfen-nino-costero-se-extendera-hasta-mediados-otono-2027-n495035" },
-        { id: "nhor", un: "periodo", corte: "Comunicado ENFEN N.° 16-2026 (14 de septiembre de 2026)", fp: "ENFEN", cat: "clima", tag: "ENFEN", k: "Horizonte del evento", v: "Otoño 2027", n: "Según el N.° 16 se extendería hasta mediados del otoño de 2027; una nota posterior de RPP habla de febrero de 2027.", c: "Hasta cuándo se espera que dure el evento, según el último pronóstico.", e: "Cada comunicado del ENFEN puede cambiar el horizonte: conviene revisar siempre el más reciente.", f: "ENFEN (gob.pe)", u: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" },
-        { id: "nglobal", un: "estado global", corte: "Diagnóstico del 13 de agosto de 2026", fp: "NOAA CPC", cat: "clima", tag: "NOAA", k: "El Niño a escala global", v: "Advisory", n: "Diagnóstico del CPC del 13 de agosto de 2026", c: "El Niño Advisory es el aviso de la NOAA cuando El Niño está presente y se espera que continúe.", e: "La OMM lo describía en agosto como firmemente establecido, con persistencia probable hasta inicios de 2027.", f: "NOAA CPC", u: "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml" }
+        { id: "nestado", un: "estado", corte: "Comunicado ENFEN N.° 19-2026 (30 de octubre de 2026)", fp: "ENFEN", cat: "clima", tag: "ENFEN", k: "Estado ENFEN", v: "Alerta", n: "Alerta de El Niño costero, vigente según el comunicado N.° 19-2026", c: "El ENFEN clasifica la situación del mar en tres estados: No activo, Vigilancia o Alerta.", e: "En enero de 2026 pasó de No activo a Vigilancia (comunicado N.° 01-2026); hoy figura en Alerta.", f: "ENFEN (gob.pe)", u: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" },
+        { id: "nmag", un: "magnitud", corte: "Comunicado ENFEN N.° 19-2026 (30 de octubre de 2026), citado por prensa", fp: "ENFEN", cat: "clima", tag: "ENFEN", k: "Magnitud esperada (comunicado N.° 19-2026)", v: "Extraordinaria", n: "Extraordinaria hasta febrero de 2027, según la prensa que cita el N.° 19-2026. Confirma en el ENFEN.", c: "Qué tan intenso se espera el calentamiento del mar: débil, moderado, fuerte o extraordinario.", e: "Con magnitud extraordinaria se esperan lluvias por encima de lo normal entre noviembre de 2026 y enero de 2027 en la costa norte, la costa central y sectores occidentales de la sierra.", f: "Peru21 sobre el comunicado N.° 19-2026", u: "https://peru21.pe/peru/el-nino-costero-sera-extraordinario-hasta-febrero-de-2027-enfen-alerta-por-lluvias-intensas-y-crecida-de-rios/" },
+        { id: "nhor", un: "periodo", corte: "Comunicado ENFEN N.° 19-2026 (30 de octubre de 2026), citado por prensa", fp: "ENFEN", cat: "clima", tag: "ENFEN", k: "Horizonte del evento", v: "Otoño 2027", n: "Hasta fines del otoño de 2027, con descenso gradual hasta junio, según la prensa que cita el N.° 19-2026.", c: "Hasta cuándo se espera que dure el evento, según el último pronóstico.", e: "Cada comunicado del ENFEN puede cambiar el horizonte: conviene revisar siempre el más reciente.", f: "Infobae sobre el comunicado N.° 19-2026", u: "https://www.infobae.com/peru/2026/10/31/enfen-alerta-que-el-fenomeno-el-nino-costero-seguiria-hasta-fines-de-otono-de-2027-con-lluvias-y-temperaturas-elevadas/" },
+        { id: "nglobal", un: "estado global", corte: "Diagnóstico del 8 de octubre de 2026", fp: "NOAA CPC", cat: "clima", tag: "NOAA", k: "El Niño a escala global", v: "Advisory", n: "Diagnóstico del CPC del 8 de octubre de 2026: El Niño sigue fortaleciéndose", c: "El Niño Advisory es el aviso de la NOAA cuando El Niño está presente y se espera que continúe.", e: "El CPC da más de 83 % de probabilidad a un El Niño de fuerte a muy fuerte hasta enero-marzo de 2027. Próximo diagnóstico: 12 de noviembre.", f: "NOAA CPC", u: "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml" }
       ]},
       { g: "Salud (CDC-Minsa)", c: "#35E0D2", items: [
-        { id: "dengue", un: "fallecidos", corte: "Semana epidemiológica 40 de 2026", fp: "CDC-Minsa", cat: "salud", tag: "CDC-Minsa", k: "Dengue · fallecidos 2026", v: "75", n: "Semana epidemiológica 40 · 12 departamentos", c: "Fallecidos por dengue acumulados en el año, según la sala situacional del CDC-Minsa.", e: "Medios que citan al Minsa reportan que las muertes de 2026 ya superan las de todo 2025.", f: "CDC-Minsa", u: "https://www.dge.gob.pe/portalnuevo/?p=4861" },
-        { id: "dengpiura", un: "casos", corte: "Semana epidemiológica 40 de 2026", fp: "CDC-Minsa", cat: "salud", tag: "CDC-Minsa", k: "Dengue · casos en Piura", v: "13 025", n: "Región con más casos (semana epidemiológica 40)", c: "Casos acumulados en la región que concentra más contagios.", e: "Una semana epidemiológica agrupa 7 días: así se comparan los reportes entre semanas.", f: "CDC-Minsa", u: "https://www.dge.gob.pe/portalnuevo/?p=4861" }
+        { id: "dengue", un: "fallecidos", corte: "Semana epidemiológica 41 de 2026", fp: "CDC-Minsa", cat: "salud", tag: "CDC-Minsa", k: "Dengue · fallecidos 2026", v: "81", n: "Semana epidemiológica 41 (11 al 17 de octubre) · 76 784 casos", c: "Fallecidos por dengue acumulados en el año, según la sala situacional del CDC-Minsa.", e: "Los casos de 2026 superan en 137 % a los del mismo periodo de 2025, según reportes citados por la prensa.", f: "CDC-Minsa", u: "https://www.dge.gob.pe/portalnuevo/?p=4861" },
+        { id: "dengpiura", un: "casos", corte: "Fines de octubre de 2026 (prensa)", fp: "Prensa", cat: "salud", tag: "Prensa", k: "Dengue · casos en Piura", v: "Más de 14 000", n: "Fines de octubre; según prensa, La Libertad ya encabeza el ranking nacional", c: "Casos acumulados en una de las regiones con más contagios.", e: "Confirma la cifra vigente en la sala situacional del CDC-Minsa, que se actualiza cada semana.", f: "Latin Times; CDC-Minsa", u: "https://www.dge.gob.pe/portalnuevo/?p=4861" }
       ]}
     ],
     series: [
@@ -76,19 +77,20 @@ window.EDITORIAL = {
 
   /* Panel de la sección El Niño (cifras de comunicados ENFEN; verificar en el comunicado más reciente) */
   nino: {
-    corte: "El pronóstico resumido es el del comunicado N.° 16-2026 (14 de septiembre de 2026); el ENFEN ya publicó comunicados posteriores.",
-    comunicadoRef: "16-2026",
+    corte: "El pronóstico resumido es el del comunicado N.° 19-2026 (30 de octubre de 2026), según la prensa que lo cita. El próximo comunicado está previsto para el 13 de noviembre.",
+    comunicadoRef: "19-2026",
+    ultimo: { numero: "19-2026", fecha: "2026-10-30" },
     observatorio: { n: "El Niño Perú: observatorio", u: "https://willy4903.github.io/observatorio-elnino-peru/#meteo", d: "Datos del mar, pronóstico del tiempo por distrito y zonas de riesgo." },
     enfenUrl: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen",
     tres: [
       { k: "Estado observado", v: "Alerta de El Niño costero", d: "Es la condición que el ENFEN ve hoy en el mar frente a la costa: más cálido de lo normal.", f: "ENFEN" },
-      { k: "Pronóstico", v: "Extraordinaria entre setiembre de 2026 y enero de 2027 (comunicado N.° 16)", d: "Para el verano de 2027 el ENFEN daba 48 % de probabilidad a magnitud extraordinaria y 45 % a fuerte, con el evento hasta mediados del otoño de 2027. Comunicados posteriores pueden haberlo cambiado: una nota de RPP cita magnitud moderada para el verano de 2027.", f: "ENFEN, comunicado N.° 16-2026 (14 de septiembre de 2026), vía Canal N; y RPP" },
+      { k: "Pronóstico", v: "Extraordinaria hasta febrero de 2027 (comunicado N.° 19)", d: "El ENFEN mantiene la alerta y prevé magnitud extraordinaria hasta febrero de 2027, con un descenso gradual hasta fines del otoño de 2027. Para noviembre de 2026 a enero de 2027 se esperan lluvias por encima de lo normal en la costa norte, la costa central y sectores occidentales de la sierra.", f: "ENFEN, comunicado N.° 19-2026 (30 de octubre de 2026), vía Infobae y Peru21" },
       { k: "Riesgo", v: "Lluvias intensas, pesca, agro y salud", d: "Lo que podría afectar si el evento es fuerte: lluvias y huaicos en la costa norte, pesca, agricultura y dengue. No es un pronóstico oficial de daños: consulta Indeci y Senamhi.", f: "PERÚ INFORMADO, a partir de ENFEN" }
     ],
     estado: [
       { k: "Estado ENFEN", v: "Alerta", n: "Alerta de El Niño costero" },
-      { k: "Magnitud esperada", v: "Extraordinaria (N.° 16)", n: "Setiembre de 2026 a enero de 2027" },
-      { k: "Horizonte", v: "Otoño 2027", n: "Hasta mediados del otoño de 2027 (N.° 16)" }
+      { k: "Magnitud esperada", v: "Extraordinaria (N.° 19)", n: "Hasta febrero de 2027" },
+      { k: "Horizonte", v: "Otoño 2027", n: "Hasta fines del otoño de 2027 (N.° 19)" }
     ],
     linea: [
       { c: "N.° 01-2026", f: "15 de enero", x: "El ENFEN pasa de No activo a Vigilancia. Se esperaban condiciones cálidas débiles desde abril hasta al menos octubre.", u: "https://www.gob.pe/institucion/imarpe/informes-publicaciones/7624651-comunicado-oficial-enfen-n-01-2026" },
@@ -96,17 +98,17 @@ window.EDITORIAL = {
       { c: "N.° 11-2026", f: "", x: "Se eleva la proyección: magnitud fuerte entre junio y septiembre y evento prolongado hasta el verano de 2027.", u: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" },
       { c: "N.° 12-2026", f: "", x: "Magnitud fuerte hasta octubre y moderada desde noviembre. Para diciembre de 2026 a marzo de 2027 se preveía magnitud fuerte o moderada.", u: "https://opsaa.iica.int/en/resource-2820-enfen-official-communique-no-12-2026" },
       { c: "N.° 16-2026", f: "14 de septiembre", x: "Magnitud extraordinaria más probable entre setiembre de 2026 y enero de 2027. Para el verano, 48 % de probabilidad de magnitud extraordinaria y 45 % de fuerte. El evento se extendería hasta mediados del otoño de 2027.", u: "https://canaln.pe/actualidad/enfen-nino-costero-se-extendera-hasta-mediados-otono-2027-n495035" },
-      { c: "Comunicados posteriores (hasta el N.° 19-2026, del 16 de octubre)", f: "", x: "El ENFEN mantiene el estado de alerta. Una nota de RPP reporta magnitud moderada para el verano de 2027 y una prolongación hasta febrero de 2027. Lee el comunicado vigente: el pronóstico cambió respecto del N.° 16.", u: "https://rpp.pe/peru/actualidad/enfen-mantiene-el-estado-de-alerta-ante-fenomeno-el-nino-costero-y-estima-que-se-prolongaria-hasta-febrero-de-2027-noticia-1690813" }
+      { c: "N.° 19-2026", f: "30 de octubre", x: "El ENFEN mantiene la alerta de El Niño costero. Prevé magnitud extraordinaria hasta febrero de 2027 y un descenso gradual hasta fines del otoño de 2027, con lluvias por encima de lo normal de noviembre a enero en la costa norte, la costa central y la sierra occidental.", u: "https://www.infobae.com/peru/2026/10/31/enfen-alerta-que-el-fenomeno-el-nino-costero-seguiria-hasta-fines-de-otono-de-2027-con-lluvias-y-temperaturas-elevadas/" }
     ]
   },
 
   /* Indicadores con fuente (cifras citadas por la prensa o por el organismo; verificar en la fuente primaria) */
   indicadores: [
     { k: "PBI 2026 · proyección BCRP", un: "% de variación anual", corte: "Proyección para 2026", fp: "BCRP", v: "3,2 %", n: "Recortada citando El Niño", f: "BCRP", u: "https://www.bcrp.gob.pe" },
-    { k: "Inflación 2026 · proyección BCRP", un: "% anual", corte: "Proyección para 2026", fp: "BCRP", v: "~4,2 %", n: "Meta 1 %-3 %; BCP proyecta 4,7 %", f: "Forbes Perú", u: "https://forbes.pe/economia-y-finanzas/2026-09-10/bcp-elevo-su-proyeccion-de-inflacion-de-42-a-47-para-cierre-de-ano/" },
+    { k: "Inflación 2026 · proyección BCRP", un: "% anual", corte: "Proyección para 2026", fp: "BCRP", v: "~4,2 %", n: "Meta 1 %-3 %; proyección previa a octubre: la inflación observada (4,83 % nacional) ya la supera", f: "Forbes Perú", u: "https://forbes.pe/economia-y-finanzas/2026-09-10/bcp-elevo-su-proyeccion-de-inflacion-de-42-a-47-para-cierre-de-ano/" },
     { k: "Tasa de referencia BCRP", un: "% anual", corte: "Vigente", fp: "BCRP", v: "4,25 %", n: "Más de un año sin cambios", f: "Perú Retail", u: "https://www.peru-retail.com/bcrp-mantiene-la-tasa-de-referencia-en-425-por-mas-de-un-ano-que-factores-influyen-en-su-decision/" },
-    { k: "El Niño costero · estado ENFEN", un: "estado", corte: "Comunicado ENFEN N.° 16-2026 y notas de prensa posteriores", fp: "ENFEN", v: "Alerta", n: "El pronóstico cambia en cada comunicado; ver la sección El Niño", f: "ENFEN", u: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" },
-    { k: "Dengue · fallecidos 2026", un: "fallecidos", corte: "Semana epidemiológica 40 de 2026", fp: "CDC-Minsa", v: "75", n: "Corte semana epidemiológica 40", f: "CDC-Minsa", u: "https://www.dge.gob.pe/portalnuevo/?p=4861" },
+    { k: "El Niño costero · estado ENFEN", un: "estado", corte: "Comunicado ENFEN N.° 19-2026 (30 de octubre de 2026)", fp: "ENFEN", v: "Alerta", n: "Magnitud extraordinaria hasta febrero de 2027 (según prensa); ver la sección El Niño", f: "ENFEN", u: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" },
+    { k: "Dengue · fallecidos 2026", un: "fallecidos", corte: "Semana epidemiológica 41 de 2026", fp: "CDC-Minsa", v: "81", n: "Corte semana epidemiológica 41", f: "CDC-Minsa", u: "https://www.dge.gob.pe/portalnuevo/?p=4861" },
     { k: "Congreso bicameral", un: "senadores + diputados", corte: "Julio de 2026", fp: "Congreso", v: "60 + 130", n: "Senadores y diputados", f: "Diario Libre", u: "https://www.diariolibre.com/mundo/america-latina/2026/07/24/peru-establece-un-sistema-parlamentario-bicameral/3610006" }
   ],
 
@@ -175,7 +177,7 @@ window.EDITORIAL = {
       esencial: [
         "El {{el-nino-costero|Niño costero}} es un calentamiento anormal del mar frente a Perú y Ecuador (región {{nino-1-2|Niño 1+2}}). Forma parte del {{enso|ENOS}}: la fase cálida es El Niño y la fría es {{la-nina|La Niña}}.",
         "El {{enfen|ENFEN}} emite comunicados oficiales con un estado (No activo, Vigilancia o Alerta), la magnitud esperada (débil, moderada, fuerte) y el pronóstico. El {{senamhi|Senamhi}} informa sobre el clima e {{indeci|Indeci}} coordina la respuesta ante emergencias.",
-        "Según comunicados recientes del ENFEN, el evento de 2026 se extendería hasta el verano de 2027. La magnitud y las fechas cambian con cada comunicado: revisa siempre el más reciente.",
+        "Según comunicados recientes del ENFEN, el evento de 2026 se extendería hasta fines del otoño de 2027. La magnitud y las fechas cambian con cada comunicado: revisa siempre el más reciente.",
         "Puede afectar la costa con lluvias intensas, la pesca, la agricultura y la salud (por ejemplo, más agua estancada donde se cría el mosquito del dengue)."
       ],
       terminos: ["el-nino-costero","enfen","enso","tsm","nino-1-2","la-nina","senamhi","indeci","dengue"],
@@ -341,9 +343,11 @@ window.EDITORIAL = {
     {
       sector: "economia", nivel: "media",
       titulo: "Crece menos y los precios suben más de lo previsto",
-      resumen: "Según reportes de prensa económica, el BCRP recortó su proyección de crecimiento 2026 a 3,2 % (citando El Niño) y las proyecciones de inflación para 2026 se ubican por encima del rango meta de 1 %-3 % (BCRP ~4,2 %; BCP ~4,7 %). La tasa de referencia llevaría más de un año en 4,25 %.",
+      resumen: "Según el INEI, la inflación anual de Lima Metropolitana llegó a 5,25 % en octubre de 2026 (la más alta en 38 meses y el octavo mes sobre la meta de 1 %-3 %), con alzas en alimentos y combustibles; a nivel nacional fue de 4,83 %. Según reportes de prensa económica, el BCRP recortó su proyección de crecimiento 2026 a 3,2 % (citando El Niño) y mantuvo la tasa de referencia en 4,25 % en octubre.",
       paraTi: "Alimentos y servicios pueden seguir encareciéndose; los créditos no se abaratan pronto. Confirma cifras en la nota oficial del BCRP antes de decidir.",
       fuentes: [
+        { n: "Infomercado · inflación supera el 5 % (INEI)", u: "https://infomercado.pe/inei-inflacion-en-lima-supera-el-5-por-el-nino-y-el-alza-de-combustibles/" },
+        { n: "Forbes Perú · inflación de octubre", u: "https://forbes.pe/economia-y-finanzas/2026-11-01/inflacion-de-octubre-en-peru-sube-un-056-por-alzas-en-alimentos-y-transporte/" },
         { n: "Forbes Perú · inflación (10-sep-2026)", u: "https://forbes.pe/economia-y-finanzas/2026-09-10/bcp-elevo-su-proyeccion-de-inflacion-de-42-a-47-para-cierre-de-ano/" },
         { n: "Perú Retail · tasa 4,25 %", u: "https://www.peru-retail.com/bcrp-mantiene-la-tasa-de-referencia-en-425-por-mas-de-un-ano-que-factores-influyen-en-su-decision/" },
         { n: "BCRP · fuente oficial", u: "https://www.bcrp.gob.pe" }
@@ -351,33 +355,32 @@ window.EDITORIAL = {
     },
     {
       sector: "salud", nivel: "media",
-      titulo: "Dengue: casos y muertes se duplicaron entre las semanas 26 y 40",
-      resumen: "Una sala situacional del CDC-Minsa con corte a la semana epidemiológica 40 reporta 75 fallecidos en 12 departamentos; Piura concentra más casos (13 025). La alerta epidemiológica nacional sigue vigente y medios reportan que las muertes de 2026 ya superan las de todo 2025.",
+      titulo: "Dengue: 81 fallecidos y más de 76 mil casos hasta la semana 41",
+      resumen: "Según cifras del CDC-Minsa citadas por la prensa, hasta la semana epidemiológica 41 (11 al 17 de octubre) hubo 81 fallecidos y 76 784 casos de dengue, 59 % y 137 % más que en el mismo periodo de 2025. El 21 de octubre el CDC emitió la alerta epidemiológica N.° 008-2026, que advierte que El Niño 2026-2027 podría alimentar una segunda ola. Según la prensa, La Libertad ya encabeza el ranking de casos, por delante de Piura.",
       paraTi: "Elimina agua estancada, usa repelente y acude al establecimiento de salud ante fiebre. Cifras en dge.gob.pe (se actualizan cada semana).",
       fuentes: [
         { n: "CDC-Minsa · alerta epidemiológica", u: "https://www.dge.gob.pe/portalnuevo/?p=4861" },
-        { n: "Exitosa · récord de fallecidos", u: "https://www.exitosanoticias.pe/actualidad/peru-supera-ocho-meses-2026-record-fallecidos-dengue-todo-2025-n182564" },
+        { n: "Latin Times · segunda ola de dengue y El Niño", u: "https://www.latintimes.com/peru-dengue-cases-el-nino-second-wave-600565" },
         { n: "Expreso · Piura en emergencia", u: "https://www.expreso.com.pe/actualidad/piura-en-emergencia-casi-200-casos-semanales-de-dengue-alarman-a-todos-minsa-noticia/1269834/" }
       ]
     },
     {
       id: "nino-peru", sector: "nino", nivel: "media",
-      titulo: "El Niño costero sigue en alerta y el pronóstico cambia de un comunicado a otro",
-      resumen: "El ENFEN mantiene el estado de alerta de El Niño costero. Su comunicado N.° 16-2026 (14 de septiembre) hablaba de magnitud extraordinaria más probable entre setiembre de 2026 y enero de 2027, con 48 % de probabilidad de magnitud extraordinaria y 45 % de fuerte para el verano, y de una extensión hasta mediados del otoño de 2027. Después se publicaron más comunicados (el sistema detectó el N.° 19-2026, del 16 de octubre) y una nota de RPP cita magnitud moderada para el verano de 2027 y una prolongación hasta febrero de 2027: el pronóstico cambió y conviene leer el comunicado vigente.",
+      titulo: "El ENFEN mantiene la alerta: magnitud extraordinaria hasta febrero de 2027",
+      resumen: "Según el comunicado N.° 19-2026 del ENFEN (30 de octubre), citado por Infobae y Peru21, la alerta de El Niño costero continúa, con magnitud extraordinaria hasta febrero de 2027 y un descenso gradual hasta fines del otoño de 2027. Entre noviembre de 2026 y enero de 2027 se esperan lluvias por encima de lo normal en la costa norte, la costa central y sectores occidentales de la sierra. El siguiente comunicado está previsto para el 13 de noviembre.",
       paraTi: "Sigue las indicaciones de Indeci y de tu gobierno regional, evita el agua estancada (dengue) y revisa el comunicado ENFEN más reciente: el pronóstico cambia de un comunicado a otro.",
       fuentes: [
+        { n: "Infobae · fines del otoño de 2027 (N.° 19)", u: "https://www.infobae.com/peru/2026/10/31/enfen-alerta-que-el-fenomeno-el-nino-costero-seguiria-hasta-fines-de-otono-de-2027-con-lluvias-y-temperaturas-elevadas/" },
+        { n: "Peru21 · extraordinario hasta febrero de 2027", u: "https://peru21.pe/peru/el-nino-costero-sera-extraordinario-hasta-febrero-de-2027-enfen-alerta-por-lluvias-intensas-y-crecida-de-rios/" },
         { n: "ENFEN · comunicados oficiales (gob.pe)", u: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" },
-        { n: "RPP · alerta e impactos hasta 2027", u: "https://rpp.pe/peru/actualidad/enfen-mantiene-alerta-por-el-nino-costero-y-advierte-posibles-impactos-hasta-2027-noticia-1686644" },
-        { n: "Canal N · hasta mediados del otoño 2027 (N.° 16)", u: "https://canaln.pe/amp/actualidad/enfen-nino-costero-se-extendera-hasta-mediados-otono-2027-n495035" },
-        { n: "RPP · estado de alerta y verano 2027 (nota posterior)", u: "https://rpp.pe/peru/actualidad/enfen-mantiene-el-estado-de-alerta-ante-fenomeno-el-nino-costero-y-estima-que-se-prolongaria-hasta-febrero-de-2027-noticia-1690813" },
         { n: "Expreso · gremios exportadores y pesqueros", u: "https://www.expreso.com.pe/en-portada/fenomeno-el-nino-activa-vigilia-de-gremios-exportadores-y-pesqueros-lluvias-noticia/1260592/" }
       ]
     },
     {
       id: "nino-mundo", sector: "nino", nivel: "media",
-      titulo: "A escala global, El Niño está establecido y seguiría hasta inicios de 2027",
-      resumen: "El diagnóstico del Climate Prediction Center de EE. UU. del 13 de agosto de 2026 mantenía el estado de El Niño Advisory, con pronóstico de que siga intensificándose hasta fin de año. La OMM, en su actualización de agosto, lo describe como firmemente establecido y en fortalecimiento, con persistencia probable hasta comienzos de 2027.",
-      paraTi: "Un El Niño global altera lluvias y temperaturas en distintas regiones. Para el Perú importa sobre todo el comunicado del ENFEN, que mide el mar frente a la costa. No se encontró el diagnóstico más reciente: confirma en el sitio del CPC.",
+      titulo: "A escala global, El Niño se sigue fortaleciendo y podría ser fuerte a muy fuerte hasta inicios de 2027",
+      resumen: "El diagnóstico del Climate Prediction Center de EE. UU. del 8 de octubre de 2026 mantiene el estado de El Niño Advisory: El Niño sigue fortaleciéndose y hay más de 83 % de probabilidad de un evento de fuerte a muy fuerte hasta enero-marzo de 2027. Las anomalías son de +3,9 °C en la región Niño 1+2 (frente a Perú y Ecuador) y de +2,1 °C en la región Niño 3.4 (Pacífico central). El próximo diagnóstico está previsto para el 12 de noviembre.",
+      paraTi: "Un El Niño global altera lluvias y temperaturas en distintas regiones. Para el Perú importa sobre todo el comunicado del ENFEN, que mide el mar frente a la costa.",
       fuentes: [
         { n: "NOAA CPC · diagnóstico ENSO", u: "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml" },
         { n: "OMM · actualización ENSO (agosto 2026)", u: "https://wmo.int/sites/default/files/2026-08/Factsheet-ENSO-Update-August-2026-en.pdf" }
@@ -440,7 +443,7 @@ window.EDITORIAL = {
     {
       sector: "deporte", nivel: "media",
       titulo: "Liga 1: Clausura con tabla apretada (corte 8 de octubre)",
-      resumen: "Tras la fecha 11 del Clausura, Deportivo Garcilaso lideraba con 22 puntos, seguido de Universitario (20) y Sporting Cristal (19). En la tabla acumulada, varias notas ubican a Alianza Lima arriba, con Los Chankas como perseguidor.",
+      resumen: "Tras la fecha 11 del Clausura, Deportivo Garcilaso lideraba con 22 puntos, seguido de Universitario (20) y Sporting Cristal (19). En la tabla acumulada, varias notas ubican a Alianza Lima arriba, con Los Chankas como perseguidor. Es el último corte verificado: desde entonces se jugaron más fechas, así que consulta la tabla vigente antes de citarlo.",
       paraTi: "La tabla cambia cada jornada: confirma la posición actual en la web oficial de la Liga o en medios deportivos.",
       fuentes: [
         { n: "La República · tabla fecha 11", u: "https://larepublica.pe/deportes/2026/10/08/tabla-de-posiciones-torneo-clausura-y-acumulado-de-la-liga-1-2026-683392" },

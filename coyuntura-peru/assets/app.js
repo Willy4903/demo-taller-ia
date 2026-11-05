@@ -256,10 +256,11 @@
 
   /* ───── sección exclusiva: El Niño ───── */
   function fechaLarga(iso) { try { return new Intl.DateTimeFormat("es-PE", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(iso + "T12:00:00Z")); } catch (e) { return iso; } }
+  function enfenFecha(e) { var u = (ED.nino || {}).ultimo; return u && e && u.numero === e.numero && u.fecha ? u.fecha : (e && e.fecha); }
   function ultimoEnfen() {
     var e = NOT.enfen, n = ED.nino || {};
-    if (e && e.numero) return { txt: "N.° " + e.numero + (e.fecha ? " · " + fechaLarga(e.fecha) : " · fecha no detectada automáticamente"), auto: true, comprobado: e.comprobado, ok: e.ok !== false, url: e.url || n.enfenUrl };
-    return { txt: "N.° 12-2026 · fecha no verificada (el sistema aún no pudo leer la lista oficial)", auto: false, url: n.enfenUrl };
+    if (e && e.numero) return { txt: "N.° " + e.numero + (enfenFecha(e) ? " · " + fechaLarga(enfenFecha(e)) : " · fecha no detectada automáticamente"), auto: true, comprobado: e.comprobado, ok: e.ok !== false, url: e.url || n.enfenUrl };
+    return { txt: "no se pudo leer la lista oficial; consulta el ENFEN", auto: false, url: n.enfenUrl };
   }
   function ninoTres() {
     var n = ED.nino; if (!n || !n.tres) return "";
@@ -268,7 +269,7 @@
   function numEnfen(x) { var m = /^(\d+)-(\d{4})$/.exec(x || ""); return m ? +m[2] * 1000 + +m[1] : 0; }
   function avisoEnfen() {
     var e = NOT.enfen, ref = (ED.nino || {}).comunicadoRef; if (!e || !e.numero || !ref || numEnfen(e.numero) <= numEnfen(ref)) return "";
-    return '<p class="n-aviso" role="note"><b>Aviso:</b> el ENFEN ya publicó el comunicado N.° ' + esc(e.numero) + (e.fecha ? " (" + esc(fechaLarga(e.fecha)) + ")" : "") + ", posterior al N.° " + esc(ref) + " en que se basa el pronóstico resumido aquí. El pronóstico puede haber cambiado: léelo en el ENFEN antes de decidir.</p>";
+    return '<p class="n-aviso" role="note"><b>Aviso:</b> el ENFEN ya publicó el comunicado N.° ' + esc(e.numero) + (enfenFecha(e) ? " (" + esc(fechaLarga(enfenFecha(e))) + ")" : "") + ", posterior al N.° " + esc(ref) + " en que se basa el pronóstico resumido aquí. El pronóstico puede haber cambiado: léelo en el ENFEN antes de decidir.</p>";
   }
   function ninoLinks() {
     var n = ED.nino || {}, u = ultimoEnfen(), ob = n.observatorio;
@@ -328,7 +329,7 @@
     if(pob)arr.push({k:"Población del Perú",v:pob.v,fecha:pob.corte,ico:"salud",url:"#/datos"});
     if(tc)arr.push({k:"Tipo de cambio",v:tc.v,fecha:tc.corte,ico:"economia",url:"#/datos"});
     if(internet)arr.push({k:"Hogares con internet",v:internet.v,fecha:internet.corte,ico:"datos",url:"#/datos"});
-    if(e && e.auto && NOT.enfen && NOT.enfen.numero)arr.push({k:"Comunicado ENFEN",v:"N.° "+NOT.enfen.numero,fecha:NOT.enfen.fecha?fechaLarga(NOT.enfen.fecha):"Fecha no disponible",ico:"nino",url:"#/s/nino"});
+    if(e && e.auto && NOT.enfen && NOT.enfen.numero)arr.push({k:"Comunicado ENFEN",v:"N.° "+NOT.enfen.numero,fecha:enfenFecha(NOT.enfen)?fechaLarga(enfenFecha(NOT.enfen)):"Fecha no disponible",ico:"nino",url:"#/s/nino"});
     else arr.push({k:"Situación El Niño",v:"Consultar",fecha:"Estado oficial por verificar",ico:"nino",url:"#/s/nino"});
     return arr.slice(0,4).map(function(x){
       return '<a class="hero-stat" href="'+esc(x.url)+'"><span class="hs-ico">'+ic(x.ico)+'</span><span class="hs-copy"><strong>'+esc(x.v)+'</strong><span class="hs-label">'+esc(x.k)+'</span><small>'+esc(x.fecha)+'</small></span></a>';
