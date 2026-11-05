@@ -161,17 +161,21 @@
     var datos = (s.datos && s.datos.length ? s.datos : (news.cifras ? news.cifras(s).map(function (v) { return { v: v, t: "monto", c: "" }; }) : [])).slice(0, 5);
     var puntos = s.puntos && s.puntos.length ? s.puntos : (s.sintesis ? [s.sintesis] : []);
     var ext = news.extracto ? news.extracto(s) : sin(s.resumen || "", 210);
-    var resumen = s.sintesis || ext, cob = cobertura(s);
+    var resumen = s.sintesis || ext || sin(s.titulo || "", 210), cob = cobertura(s);
+    if (!puntos.length && resumen) puntos = [resumen];
     var category = s.tema || (news.categoria ? news.categoria(s) : s.sector);
     var label = (news.nombres && news.nombres[category]) || ((SECT[category] || {}).nombre) || "Actualidad";
     var lec = window.PE_LECTURA ? window.PE_LECTURA.analizar(s) : null;
+    var insCtx = INS.filter(function (i) { return i.sector === category; })[0] || INS.filter(function (i) { return i.sector === s.sector; })[0];
+    var paneCtx = insCtx ? '<p class="ps-ctx-t"><b>' + esc(insCtx.titulo) + '</b></p><p class="ps-ctx-r">' + esc(sin(insCtx.resumen, 420)) + '</p><p class="ps-ctx-l"><a href="' + insCtx.url + '">Leer el análisis completo →</a></p><p class="ps-note">Análisis de fondo de PERÚ INFORMADO con corte al ' + esc(fmtFecha(ED.corte + "T12:00:00Z")) + ". Contexto general del tema, no una verificación de esta nota.</p>"
+      : '<p class="ps-ctx-t"><b>' + esc(ED.hilo.titulo) + '</b></p><ul class="ps-pts">' + ED.hilo.puntos.map(function (p) { return "<li><b>" + esc(p.k) + ":</b> " + esc(p.t) + "</li>"; }).join("") + '</ul><p class="ps-ctx-l"><a href="#/a/hilo">Leer el análisis completo →</a></p>';
     var kp = datos.filter(function (c) { return c.t !== "fecha" || datos.length === 1 && false; }).slice(0, 3).map(function (c) { return '<div class="ps-k" data-k="' + esc(c.v) + '"><b class="ps-num">' + esc(c.v) + '</b><span>' + esc(TIPO_CIFRA[c.t] || "Dato") + "</span>" + barraPct(c) + "</div>"; }).join("");
-    var tabs = [["sin", "Síntesis"]].concat(datos.length ? [["cif", "Cifras (" + datos.length + ")"]] : []).concat(lec ? [["lec", "Lectura crítica"]] : []).concat(cob.length ? [["cob", "Cobertura (" + cob.length + ")"]] : []);
-    var paneSin = '<ul class="ps-pts">' + (puntos.length ? puntos.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") : "<li>La síntesis de esta nota se completa en la próxima lectura automática. Mientras tanto, esto es lo que informa el titular.</li>") + '</ul><p class="ps-note">Síntesis automática elaborada con lo publicado por ' + esc(s.fuente) + ". Puede omitir matices.</p>";
+    var tabs = [["sin", "Síntesis"]].concat(datos.length ? [["cif", "Cifras (" + datos.length + ")"]] : []).concat(lec ? [["lec", "Lectura crítica"]] : []).concat([["ctx", "Análisis de fondo"]]).concat(cob.length ? [["cob", "Cobertura (" + cob.length + ")"]] : []);
+    var paneSin = '<ul class="ps-pts">' + (puntos.length ? puntos.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") : "<li>" + esc(sin(s.titulo || "", 220)) + "</li>") + '</ul><p class="ps-note">' + (s.sintesis ? "Síntesis automática elaborada con lo publicado por " + esc(s.fuente) + ". Puede omitir matices." : "El medio no publicó más detalle en su extracto: se muestra su titular. Abre la fuente para leer la nota completa.") + "</p>";
     var paneCif = datos.length ? '<div class="ps-cifras">' + datos.map(function (c) { return '<div class="ps-c"><span class="ps-ct">' + esc(TIPO_CIFRA[c.t] || "Dato") + "</span>" + '<b class="ps-num">' + esc(c.v) + "</b>" + barraPct(c) + (c.c ? "<p>" + esc(c.c) + "</p>" : "") + "</div>"; }).join("") + '</div><p class="ps-note">Cifras tal como las publica el medio, con la frase donde aparecen; no se recalculan.</p>' : "";
     var paneLec = lec ? '<dl class="ps-lec"><div><dt>Qué hay detrás</dt><dd>' + esc(lec.postura) + "</dd></div><div><dt>Qué observar</dt><dd>" + esc(lec.alcance) + "</dd></div><div><dt>Pregunta clave</dt><dd>" + esc(lec.pregunta) + "</dd></div></dl>" : "";
     var paneCob = cob.length ? '<ul class="ps-cob">' + cob.map(function (o) { return "<li><b>" + esc(o.fuente) + "</b><span>" + esc(sin(o.titulo, 120)) + "</span><time>" + esc(corta(o.fecha)) + "</time></li>"; }).join("") + '</ul><p class="ps-note">Otros medios que tratan el mismo tema en los últimos 3 días.</p>' : "";
-    var panes = { sin: paneSin, cif: paneCif, lec: paneLec, cob: paneCob };
+    var panes = { sin: paneSin, cif: paneCif, lec: paneLec, cob: paneCob, ctx: paneCtx };
     var fd = s.fecha ? corta(s.fecha) : "Fecha no disponible";
     return '<article class="pe-ficha" id="' + id + '" data-open="0"><div class="ps-top"><span class="pe-news-topic">' + esc(label) + "</span>" + badgeGenero(s.genero) + (cob.length ? '<span class="ps-cov" title="Otros medios que cubren el tema">+' + cob.length + " medios</span>" : "") + "</div>" +
       '<h3 class="ps-title"><button type="button" class="ps-toggle" aria-expanded="false" aria-controls="' + id + '-p">' + esc(s.titulo) + "</button></h3>" +

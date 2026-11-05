@@ -31,7 +31,7 @@
     if (normal(item.fuente).includes("mongabay")) return "ambiente";
     return "sociedad";
   }
-  var extranjero = /\b(?:real madrid|aek atenas|champions league|medvedev|masters? 1000|donald trump|trump|estados unidos|ee\.?\s?uu\.?|israel|gaza|iran|espana|alemania|francia|ucrania|rusia|china|japon|tennessee|tennesse|texas|netanyahu|tenerife|godzilla|johnny depp|jack sparrow|spider.man|cop17|antartida|paris jackson|hollywood|oscar|toronto|singapur|bolsonaro|brasil|georgia|estonia|suiza)\b/i;
+  var extranjero = /\b(?:real madrid|aek atenas|champions league|medvedev|masters? 1000|donald trump|trump|estados unidos|ee\.?\s?uu\.?|israel|gaza|iran|espana|alemania|francia|ucrania|rusia|china|japon|tennessee|tennesse|texas|netanyahu|tenerife|godzilla|johnny depp|jack sparrow|spider.man|cop17|antartida|paris jackson|hollywood|oscar|toronto|singapur|bolsonaro|brasil|georgia|estonia|suiza|republica dominicana|dominicana|mexico|venezuela|cuba|argentina|colombia)\b/i;
   var peruano = /\b(?:peru|lima|arequipa|piura|cusco|puno|trujillo|tacna|chiclayo|iquitos|junin|cajamarca|callao|ignacio buse|buse)\b/i;
   function ambito(item) {
     if (item.tipo === "internacional" || item.ambito === "mundo") return "mundo";

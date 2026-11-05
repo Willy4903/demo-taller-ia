@@ -144,3 +144,7 @@
 .dest.fondo>summary::after{content:" ▾";color:var(--tx3)}
 .dest.fondo[open]>summary::after{content:" ▴"}
 .dest.fondo .fondo-corte{display:block;margin-top:2px;color:var(--tx3);font:500 .74rem/1.4 var(--sans)}
+
+.pe-ficha .ps-ctx-t{margin:0 0 6px;font:700 .92rem/1.45 var(--sans);color:var(--tx)}
+.pe-ficha .ps-ctx-r{margin:0 0 8px;color:var(--tx2);font:.88rem/1.6 var(--sans)}
+.pe-ficha .ps-ctx-l{margin:0 0 8px}.pe-ficha .ps-ctx-l a{color:var(--brand);font-weight:800}
