@@ -75,7 +75,28 @@
   function xpChip() { var nv = NIVELES[nivelDe(S.xp)], c = $("#xpchip"), n = $("#xpnum"); if (c) c.title = "Nivel: " + nv.n; if (n) n.textContent = S.xp + " XP"; }
 
   /* ───── fotos reales: si una imagen falla, se quita (nunca se sustituye por ilustraciones) ───── */
-  window.cpImg = function (im) { var d = im.parentNode; if (!d) return; var r = d.closest && d.closest(".row"), noticia = d.closest && d.closest(".pe-news-card,.pe-ficha"); if (r) r.classList.add("nofoto"); if (noticia && noticia.classList.contains("pe-ficha")) { d.className = "ph ps-ph"; d.innerHTML = "<span>" + (noticia.getAttribute("data-tema") || "") + "</span><b>" + (noticia.getAttribute("data-fuente") || "") + "</b>"; return; } if (noticia) noticia.classList.add("no-photo"); d.remove(); };
+  /* Iconos de tema (trazo, estilo Lucide) para las notas cuyo medio no publica foto */
+  var ICO_PATHS = {
+    politica: '<line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/>',
+    economia: '<polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>',
+    sociedad: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
+    salud: '<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/>',
+    nino: '<path d="M4 14.9A7 7 0 1 1 15.7 8h1.8a4.5 4.5 0 0 1 2.5 8.2"/><path d="M16 14v6M8 14v6M12 16v6"/>',
+    deporte: '<path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>',
+    tecnologia: '<rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/>',
+    ia: '<path d="M9.94 14.06 8 19l-1.94-4.94L1 12l5.06-2.06L8 5l1.94 4.94L15 12z"/><path d="M20 3v4M22 5h-4"/><path d="M19 17v4M21 19h-4"/>',
+    cultura: '<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>',
+    ambiente: '<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>',
+    investigacion: '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>',
+    internacional: '<circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',
+    general: '<path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8M15 18h-5M10 6h8v4h-8z"/>'
+  };
+  var ICO_COLOR = { politica: "#A78BFA", economia: "#F5B83D", sociedad: "#38BDF8", salud: "#35E0D2", nino: "#0EA5E9", deporte: "#34D399", tecnologia: "#7C5CFF", ia: "#C084FC", cultura: "#F472B6", ambiente: "#4ADE80", investigacion: "#FB7185", internacional: "#60A5FA", general: "#94A3B8" };
+  window.cpIcono = function (tema) {
+    var k = ICO_PATHS[tema] ? tema : (tema === "mundo" ? "internacional" : "general");
+    return { svg: '<svg class="ps-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICO_PATHS[k] + "</svg>", color: ICO_COLOR[k] };
+  };
+  window.cpImg = function (im) { var d = im.parentNode; if (!d) return; var r = d.closest && d.closest(".row"), noticia = d.closest && d.closest(".pe-news-card,.pe-ficha"); if (r) r.classList.add("nofoto"); if (noticia && noticia.classList.contains("pe-ficha")) { d.className = "ph ps-ph"; var ic = window.cpIcono(noticia.getAttribute("data-cat")); d.style.setProperty("--c", ic.color); d.innerHTML = ic.svg + "<span>" + (noticia.getAttribute("data-tema") || "") + "</span><b>" + (noticia.getAttribute("data-fuente") || "") + "</b>"; return; } if (noticia) noticia.classList.add("no-photo"); d.remove(); };
 
   /* ───── modelo de historias ───── */
   var ITEMS = (NOT.items || []).filter(function (it) {
@@ -179,9 +200,9 @@
     var paneCob = cob.length ? '<ul class="ps-cob">' + cob.map(function (o) { return "<li><b>" + esc(o.fuente) + "</b><span>" + esc(sin(o.titulo, 120)) + "</span><time>" + esc(corta(o.fecha)) + "</time></li>"; }).join("") + '</ul><p class="ps-note">Otros medios que tratan el mismo tema en los últimos 3 días.</p>' : "";
     var panes = { sin: paneSin, cif: paneCif, lec: paneLec, cob: paneCob, ctx: paneCtx };
     var fd = s.fecha ? corta(s.fecha) : "Fecha no disponible";
-    var colorTema = (SECT[category] || SECT[s.sector] || {}).color || "#38BDF8";
-    var foto = thumb(s) || '<div class="ph ps-ph"><span>' + esc(label) + "</span><b>" + esc(s.fuente) + "</b></div>";
-    return '<article class="pe-ficha" id="' + id + '" data-open="0" data-tema="' + esc(label) + '" data-fuente="' + esc(s.fuente) + '" style="--c:' + colorTema + '"><a class="ps-foto" href="' + safeUrl(s.url) + '" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">' + foto + '</a><div class="ps-top"><span class="pe-news-topic">' + esc(label) + "</span>" + badgeGenero(s.genero) + (cob.length ? '<span class="ps-cov" title="Otros medios que cubren el tema">+' + cob.length + " medios</span>" : "") + "</div>" +
+    var ico = window.cpIcono(category), colorTema = ico.color;
+    var foto = thumb(s) || '<div class="ph ps-ph" style="--c:' + ico.color + '">' + ico.svg + "<span>" + esc(label) + "</span><b>" + esc(s.fuente) + "</b></div>";
+    return '<article class="pe-ficha" id="' + id + '" data-open="0" data-tema="' + esc(label) + '" data-cat="' + esc(category) + '" data-fuente="' + esc(s.fuente) + '" style="--c:' + colorTema + '"><a class="ps-foto" href="' + safeUrl(s.url) + '" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">' + foto + '</a><div class="ps-top"><span class="pe-news-topic">' + esc(label) + "</span>" + badgeGenero(s.genero) + (cob.length ? '<span class="ps-cov" title="Otros medios que cubren el tema">+' + cob.length + " medios</span>" : "") + "</div>" +
       '<h3 class="ps-title"><button type="button" class="ps-toggle" aria-expanded="false" aria-controls="' + id + '-p">' + esc(s.titulo) + "</button></h3>" +
       (resumen ? '<p class="ps-sum">' + esc(sin(resumen, 300)) + "</p>" : '<p class="ps-sum ps-empty">Síntesis en preparación: se completa en la próxima lectura automática.</p>') +
       (kp ? '<div class="ps-kpis" aria-label="Cifras clave">' + kp + "</div>" : "") +

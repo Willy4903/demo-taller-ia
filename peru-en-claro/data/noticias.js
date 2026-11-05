@@ -1,16 +1,16 @@
 /* Generado por scripts/actualizar_noticias.py (GitHub Actions, 7 veces al día, hora de Lima). No editar a mano. */
 window.NOTICIAS = {
- "generado": "2026-11-05T20:36:02Z",
+ "generado": "2026-11-05T20:38:22Z",
  "modo": "automatico",
  "estado_fuentes": {
   "IDL-Reporteros": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.idl-reporteros.pe/feed/",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 2,
    "ultima_nota": "2026-10-24T01:18:47Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "OjoPúblico": {
    "ok": true,
@@ -18,10 +18,10 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:ojo-publico.com+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 5,
    "ultima_nota": "2026-11-02T03:11:10Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "Convoca": {
    "ok": true,
@@ -29,10 +29,10 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:convoca.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 5,
    "ultima_nota": "2026-11-03T17:30:33Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "Hildebrandt en sus trece": {
    "ok": true,
@@ -40,73 +40,73 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:hildebrandtensustrece.com+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 15,
    "ultima_nota": "2026-11-03T08:48:42Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "Wayka": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://wayka.pe/feed/",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 5,
    "ultima_nota": "2026-10-23T21:14:25Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "La Mula": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.lamula.pe/feed/",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 15,
    "ultima_nota": "2026-11-04T23:06:30Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "Salud con Lupa": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://saludconlupa.com/feed/",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 15,
    "ultima_nota": "2026-11-04T20:00:00Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "Mongabay Latam": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://es.mongabay.com/feed/",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 15,
    "ultima_nota": "2026-11-05T14:00:40Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "Caretas": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://caretas.pe/feed/",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 15,
    "ultima_nota": "2026-11-05T19:54:34Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "El Comercio": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 15,
-   "ultima_nota": "2026-11-05T20:29:45Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultima_nota": "2026-11-05T20:36:00Z",
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "Gestión": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://gestion.pe/arc/outboundfeeds/rss/?outputType=xml",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 15,
    "ultima_nota": "2026-11-05T20:30:00Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "La República": {
    "ok": true,
@@ -114,28 +114,28 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:larepublica.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 15,
    "ultima_nota": "2026-11-05T19:24:31Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "RPP": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://rpp.pe/feed",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 15,
    "ultima_nota": "2026-11-05T20:27:11Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "Infobae Perú": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/category/peru/",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 15,
-   "ultima_nota": "2026-11-05T20:30:12Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultima_nota": "2026-11-05T20:34:30Z",
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "Expreso": {
    "ok": true,
@@ -143,61 +143,61 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:expreso.com.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 403: Forbidden",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 15,
    "ultima_nota": "2026-11-05T20:07:22Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "El Búho": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://elbuho.pe/feed/",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 15,
    "ultima_nota": "2026-11-05T20:26:26Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "BBC Mundo": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://feeds.bbci.co.uk/mundo/rss.xml",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 15,
    "ultima_nota": "2026-11-05T20:03:18Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "DW Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://rss.dw.com/xml/rss-sp-all",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 15,
    "ultima_nota": "2026-11-05T19:32:00Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "El País América": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 15,
    "ultima_nota": "2026-11-05T19:57:31Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "France 24 Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.france24.com/es/rss",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 15,
    "ultima_nota": "2026-11-05T20:05:16Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "ONU Noticias": {
    "ok": false,
    "procedencia": "sin datos",
    "error": "ParseError: not well-formed (invalid token): line 1, column 0",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "ultimo_ok": "2026-11-05T18:38:04Z",
    "ultima_nota": "2026-11-04T12:00:00Z"
   },
@@ -205,58 +205,275 @@ window.NOTICIAS = {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=site:nytimes.com/es+when:7d&hl=es-419&gl=US&ceid=US:es-419",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 15,
    "ultima_nota": "2026-11-05T10:10:04Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "The Guardian": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.theguardian.com/world/rss",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 15,
    "ultima_nota": "2026-11-05T18:48:07Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "The New Yorker": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.newyorker.com/feed/everything",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 15,
    "ultima_nota": "2026-11-05T19:41:18Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "Google Noticias · IA en el Perú": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22inteligencia+artificial%22+Per%C3%BA+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 15,
    "ultima_nota": "2026-11-05T17:57:31Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "Google Noticias · El Niño": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22Fen%C3%B3meno+El+Ni%C3%B1o%22+OR+%22Ni%C3%B1o+costero%22+ENFEN+when:14d&hl=es-419&gl=PE&ceid=PE:es-419",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 15,
    "ultima_nota": "2026-10-31T22:01:06Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   },
   "Google Noticias · IA en el mundo": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22inteligencia+artificial%22+(OpenAI+OR+Anthropic+OR+Google+OR+regulaci%C3%B3n+OR+NVIDIA)+when:7d&hl=es-419&gl=US&ceid=US:es-419",
-   "comprobado": "2026-11-05T20:36:02Z",
+   "comprobado": "2026-11-05T20:38:22Z",
    "n": 15,
    "ultima_nota": "2026-11-05T19:21:57Z",
-   "ultimo_ok": "2026-11-05T20:36:02Z"
+   "ultimo_ok": "2026-11-05T20:38:22Z"
   }
  },
  "items": [
+  {
+   "id": "c12438573d",
+   "sector": "politica",
+   "titulo": "Rafael López Aliaga: ¿Cómo se han pronunciado los JEE sobre casos de presunta reelección encubierta?",
+   "resumen": "Los Jurados Electorales Especiales (JEE) de Áncash, Ica, Junín, La Libertad y Lima Norte proclamaron como regidores a seis candidatos que buscaban volver a ejercer como alcaldes, en casos que involucran una presunta reelección encubierta. En cambio, los JEE de San Martín y…",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/politica/elecciones/rafael-lopez-aliaga-como-se-han-pronunciado-los-jee-sobre-casos-de-presunta-reeleccion-encubierta-apuesplan-noticia/",
+   "fecha": "2026-11-05T20:36:00Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/56ODRB47R5F35A3YHQ7XXXRAZ4.jpg?auth=83a106f3b0612855f3391fbca41906e71a8fd7d0ccfa9686b88669aeec3cbcd8&smart=true&width=1200&height=800",
+   "procedencia": "directa",
+   "sintesis": "Los Jurados Electorales Especiales (JEE) de Áncash, Ica, Junín, La Libertad y Lima Norte proclamaron como regidores a seis candidatos que buscaban volver a ejercer como alcaldes, en casos que involucran una presunta reelección encubierta. En cambio, los JEE de San Martín y Amazonas optaron por proclamarlos como alcaldes en otros dos casos.",
+   "puntos": [
+    "Los Jurados Electorales Especiales (JEE) de Áncash, Ica, Junín, La Libertad y Lima Norte proclamaron como regidores a seis candidatos que buscaban volver a ejercer como alcaldes, en casos que involucran una presunta reelección encubierta.",
+    "En cambio, los JEE de San Martín y Amazonas optaron por proclamarlos como alcaldes en otros dos casos.",
+    "Las decisiones evidencian que no existe un criterio uniforme."
+   ],
+   "datos": [
+    {
+     "v": "12 casos",
+     "t": "cantidad",
+     "c": "Otros 12 casos permanecen pendientes de pronunciamiento, entre ellos el…"
+    }
+   ]
+  },
+  {
+   "id": "7d891345a1",
+   "sector": "politica",
+   "titulo": "Miguel Torres hace una autocrítica a 100 días del Congreso: “No haber podido ser lo más agiles posible para solucionar (los problemas)”",
+   "resumen": "El presidente del Congreso, Miguel Torres, reconoció dificultades en el funcionamiento del Parlamento durante sus primeros cien días de gestión y admitió que no se ha tenido la suficiente agilidad para resolver los problemas surgidos con la implementación de la bicameralidad.…",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/politica/congreso/miguel-torres-hace-una-autocritica-a-100-dias-del-congreso-no-haber-podido-ser-lo-mas-agiles-posible-para-solucionar-los-problemas-ultimas-apuesplan-noticia/",
+   "fecha": "2026-11-05T20:35:07Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/IBWXXQCH2ZHF7PG36JQWNNMVZU.jpg?auth=92f578cac9f8212407e51dc64bd30388d15346e5ab05ba5ac82c32627bc56984&smart=true&width=1200&height=800",
+   "procedencia": "directa",
+   "sintesis": "El presidente del Congreso, Miguel Torres, reconoció dificultades en el funcionamiento del Parlamento durante sus primeros cien días de gestión y admitió que no se ha tenido la suficiente agilidad para resolver los problemas surgidos con la implementación de la bicameralidad. No obstante, sostuvo que las tensiones entre diputados y senadores son parte de un proceso de adaptación institucional.",
+   "puntos": [
+    "El presidente del Congreso, Miguel Torres, reconoció dificultades en el funcionamiento del Parlamento durante sus primeros cien días de gestión y admitió que no se ha tenido la suficiente agilidad para resolver los problemas surgidos con la implementación de la bicameralidad.",
+    "No obstante, sostuvo que las tensiones entre diputados y senadores son parte de un proceso de adaptación institucional.",
+    "Durante sus declaraciones, el también presidente del Senado dijo que el retorno a un sistema bicameral, después de tres décadas, supone desafíos para el funcionamiento del Poder Legislativo y reconoció que la autocrítica debe centrarse en la capacidad de respuesta frente a las dificultades que se han presentado."
+   ],
+   "datos": [
+    {
+     "v": "100 días",
+     "t": "cantidad",
+     "c": "Miguel Torres hace una autocrítica a 100 días del Congreso: “No haber podido ser lo más agiles posible para solucionar (los problemas)”."
+    }
+   ]
+  },
+  {
+   "id": "0748a33e0c",
+   "sector": "politica",
+   "titulo": "Partido de Jorge Nieto abre proceso disciplinario a Jorge Gavidia: ¿puede ser expulsado pese a su renuncia?",
+   "resumen": "Los 100 días de Keiko Fujimori en el poder: los aciertos y errores del gobierno de Fuerza Popular Ministro Sheput sobre críticas por los primeros 100 días del Gobierno de Keiko Fujimori: “Tenemos una batahola en el Congreso de mala fe” Tal como lo adelantó El Comercio, el…",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/politica/partido-de-jorge-nieto-abre-proceso-disciplinario-a-renunciante-jorge-gavidia-puede-ser-expulsado-pese-a-su-renuncia-noticia/",
+   "fecha": "2026-11-05T20:35:00Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/3OIZOGG5QJAWBBNO24SUHBS5MM.jpg?auth=b5d3d8d9839ed965d3e5f490574ec2f4518d227dc0afe9191445fd63cdfeb580&smart=true&width=1200&height=647",
+   "procedencia": "directa",
+   "sintesis": "El grupo parlamentario decidió iniciarle un procedimiento por romper con el acuerdo de abstenerse en la votación sobre las facultades legislativas al Gobierno. Este resumen es generado por inteligencia artificial y revisado por la redacción.",
+   "puntos": [
+    "El grupo parlamentario decidió iniciarle un procedimiento por romper con el acuerdo de abstenerse en la votación sobre las facultades legislativas al Gobierno.",
+    "Este resumen es generado por inteligencia artificial y revisado por la redacción.",
+    "Tal como lo adelantó El Comercio, el Partido del Buen Gobierno abrió un proceso disciplinario al senador Jorge Gavidia por respaldar el otorgamiento de facultades al Ejecutivo en materia de seguridad ciudadana y fenómeno El Niño, cuando el bloque había acordado abstenerse, confirmó este miércoles Flavio Figallo, vocero de la bancada en la Cámara Alta."
+   ],
+   "datos": [
+    {
+     "v": "28 de octubre",
+     "t": "fecha",
+     "c": "En una publicación del 28 de octubre, Flavio Figallo, portavoz del grupo, adelantó que a la…"
+    }
+   ]
+  },
+  {
+   "id": "9298c8999e",
+   "sector": "deporte",
+   "titulo": "Emily Zinger abre la posibilidad de nacionalizarse y vestir la camiseta de Perú: “Me encantaría”",
+   "resumen": "Tras regresar al campeonato nacional, la jugadora estadounidense se refirió a la posibilidad de defender los colores de la selección y dejó abierta la puerta a esa alternativa",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/deportes/2026/11/05/emily-zinger-abre-la-posibilidad-de-nacionalizarse-y-vestir-la-camiseta-de-peru-me-encantaria/",
+   "fecha": "2026-11-05T20:34:30Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/OUOF3KDJNJH5VFBOY63AHSV7RY.jpg?auth=fb3c7623c08062e8d4f04903201f6fb5b9f585d0e301a17e634a2a3a6f2addc2&smart=true&width=2730&height=1536",
+   "procedencia": "directa",
+   "sintesis": "Tras regresar al campeonato nacional, la jugadora estadounidense se refirió a la posibilidad de defender los colores de la selección y dejó abierta la puerta a esa alternativa Seguir Escuchar Puntos clave Resumen Emily Zinger estaría dispuesta a nacionalizarse para defender a la selección peruana.",
+   "puntos": [
+    "Tras regresar al campeonato nacional, la jugadora estadounidense se refirió a la posibilidad de defender los colores de la selección y dejó abierta la puerta a esa alternativa",
+    "Seguir Escuchar Puntos clave Resumen Emily Zinger estaría dispuesta a nacionalizarse para defender a la selección peruana.",
+    "EST Guardar Emily Zinger atraviesa una nueva etapa en la Liga Peruana de Vóley con la Universidad San Martín , pero su futuro en el país podría abrirle otra posibilidad: defender los colores de la selección peruana ."
+   ]
+  },
+  {
+   "id": "51daf60aa7",
+   "sector": "nino",
+   "titulo": "Lluvias en Perú EN VIVO: distritos de Lima inundados, Regiones en alerta roja y pronóstico del Senamhi hoy",
+   "resumen": ":icon: 15:32 Intensas lloviznas en Lima Sur provocan aniegos y colapso de desagüe en Villa El Salvador | Fotos: Joel Alonzo/ @photo.gec :icon: 15:05 La jefa encargada del Senamhi, Grinia Ávalos, advirtió que las lloviznas previstas para esta noche y la madrugada serán más…",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/peru/lluvias-en-peru-por-el-nino-en-vivo-hoy-regiones-en-alerta-lluvias-y-pronostico-de-senamhi-lbposting-noticia/",
+   "fecha": "2026-11-05T20:32:58Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/6LJLYXCBXRFINAS4GB6ILA32WU.jpg?auth=710154100145ebab48755ffdb20d30bce625cb8e325ba9a8e7ced62d4acc418d&smart=true&width=1200&height=642",
+   "procedencia": "directa",
+   "sintesis": "Además, según el aviso N.° 208-2026 del COEN-Indeci en diversas provincias de Cajamarca, Lambayeque, Piura y Tumbes se presentará activación de quebradas. En Lima se registran lluvias casi de manera consecutiva, el Senamhi prevé nuevas lloviznas y ráfagas de viento en los próximos días.",
+   "puntos": [
+    "Además, según el aviso N.° 208-2026 del COEN-Indeci en diversas provincias de Cajamarca, Lambayeque, Piura y Tumbes se presentará activación de quebradas.",
+    "En Lima se registran lluvias casi de manera consecutiva, el Senamhi prevé nuevas lloviznas y ráfagas de viento en los próximos días.",
+    "Intensas lloviznas en Lima Sur provocan aniegos y colapso de desagüe en Villa El Salvador | Fotos: Joel Alonzo/ @photo.gec"
+   ]
+  },
+  {
+   "id": "a19291e0d1",
+   "sector": "coyuntura",
+   "titulo": "¡Atención! Corte de luz del 5 al 7 de noviembre: horarios y distritos afectados en Lima y Callao",
+   "resumen": "Corte de luz en Lima y Callao: ¿Tu hogar contará con luz? Revisa los informes de Pluz Energía con todos los detalles de las zonas afectadas de Lima y Callao.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/a-que-hora/corte-de-luz-programado-del-5-al-7-de-noviembre-zonas-afectadas-horarios-y-reportes-de-pluz-distritos-de-lima-y-callao-tdpe-noticia/",
+   "fecha": "2026-11-05T20:31:21Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/DS6U7SOQN5DVDLSNFZEFQZGQSY.png?auth=976044d761de2f426a65cf462709e2afccac266484d013621b05d3730d3a0843&smart=true&width=1300&height=800",
+   "procedencia": "directa",
+   "sintesis": "Corte de luz en Lima y Callao: ¿Tu hogar contará con luz? Revisa los informes de Pluz Energía con todos los detalles de las zonas afectadas de Lima y Callao.",
+   "puntos": [
+    "Corte de luz en Lima y Callao: ¿Tu hogar contará con luz?",
+    "Revisa los informes de Pluz Energía con todos los detalles de las zonas afectadas de Lima y Callao.",
+    "Pluz Energía anunció un nuevo listado de cortes programados de luz que afectarán a miles de ciudadanos."
+   ],
+   "datos": [
+    {
+     "v": "7 de noviembre",
+     "t": "fecha",
+     "c": "Corte de luz del 5 al 7 de noviembre: horarios y distritos afectados en Lima y Callao."
+    }
+   ]
+  },
+  {
+   "id": "8b17bec29f",
+   "sector": "politica",
+   "titulo": "“Un Trump acorralado puede volverse todavía más irracional en su política exterior, más agresivo”",
+   "resumen": "La derrota en el Congreso deja a Donald Trump con menos margen para gobernar y abre la puerta a investigaciones y a una mayor resistencia dentro de su propio partido. Analistas consultados por El Comercio advierten que el presidente podría pasar de ser el principal activo…",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/mundo/eeuu/donald-trump-pierde-el-control-del-congreso-de-estados-unidos-como-gobernara-en-los-dos-ultimos-anos-noticia/",
+   "fecha": "2026-11-05T20:30:55Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/7ZLSGRQ7H5FEFPUCZXGU7RYPSM.jpg?auth=83d5d43c67ca2a444dc54cc2b001037ceba9b3e065dce18f4620853ddfe01e12&smart=true&width=1492&height=994",
+   "procedencia": "directa",
+   "sintesis": "La derrota en el Congreso deja a Donald Trump con menos margen para gobernar y abre la puerta a investigaciones y a una mayor resistencia dentro de su propio partido. Analistas consultados por El Comercio advierten que el presidente podría pasar de ser el principal activo electoral de los republicanos a convertirse en un lastre de cara al 2028",
+   "puntos": [
+    "La derrota en el Congreso deja a Donald Trump con menos margen para gobernar y abre la puerta a investigaciones y a una mayor resistencia dentro de su propio partido.",
+    "Analistas consultados por El Comercio advierten que el presidente podría pasar de ser el principal activo electoral de los republicanos a convertirse en un lastre de cara al 2028",
+    "La contundente derrota del Partido Republicano en las elecciones de medio mandato en Estados Unidos abre un nuevo escenario político para Donald Trump ."
+   ],
+   "datos": [
+    {
+     "v": "220 escaños",
+     "t": "cantidad",
+     "c": "…los republicanos tenían la mayoría antes de los comicios (220 escaños frente a 212 demócratas y tres vacantes), los demócratas…"
+    },
+    {
+     "v": "435 escaños",
+     "t": "cantidad",
+     "c": "…representantes frente a 139 republicanos, con 370 de los 435 escaños contabilizados.."
+    },
+    {
+     "v": "53 senadores",
+     "t": "cantidad",
+     "c": "En el Senado , los republicanos partían con una mayoría de 53 senadores frente a 47 demócratas e independientes que votan con…"
+    },
+    {
+     "v": "54 escaños",
+     "t": "cantidad",
+     "c": "…que votan con ellos; ahora los demócratas sumaban 54 escaños frente a 44 republicanos, con dos contiendas todavía sin…"
+    }
+   ]
+  },
+  {
+   "id": "5e4ab86b49",
+   "sector": "economia",
+   "titulo": "Consulta, dólar BCV hoy, jueves 5 de noviembre en Venezuela",
+   "resumen": "Consulta el tipo de cambio oficial del dólar en Venezuela, publicado por el Banco Central de Venezuela (BCV), y conoce la cotización vigente de la divisa estadounidense.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/venezuela/dolar-bcv-hoy-en-venezuela-conoce-el-precio-oficial-de-la-divisa-segun-el-banco-central-tdpe-noticia/",
+   "fecha": "2026-11-05T20:30:34Z",
+   "tipo": "comercial",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/F36R66JQBBHYJE4AKE7H6BUUDU.png?auth=c0e3c169212a414df6fc78945cae4e6bd3b0e8559323879f02daa6a54f7d58f0&smart=true&width=1300&height=800",
+   "procedencia": "directa",
+   "sintesis": "Consulta el tipo de cambio oficial del dólar en Venezuela, publicado por el Banco Central de Venezuela (BCV), y conoce la cotización vigente de la divisa estadounidense. Dólar BCV en Venezuela hoy, jueves 5 de noviembre de 2026.",
+   "puntos": [
+    "Consulta el tipo de cambio oficial del dólar en Venezuela, publicado por el Banco Central de Venezuela (BCV), y conoce la cotización vigente de la divisa estadounidense.",
+    "Dólar BCV en Venezuela hoy, jueves 5 de noviembre de 2026.",
+    "¿Cuál es la cotización más reciente del dólar según el Banco Central de Venezuela (BCV)?"
+   ],
+   "datos": [
+    {
+     "v": "5 de noviembre",
+     "t": "fecha",
+     "c": "Consulta, dólar BCV hoy, jueves 5 de noviembre en Venezuela."
+    }
+   ]
+  },
   {
    "id": "fe698e3ba6",
    "sector": "politica",
@@ -2323,33 +2540,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "4102cbf32d",
-   "sector": "politica",
-   "titulo": "Partidos de hoy, jueves 5 de noviembre de 2026: programación, canales TV y resultados en vivo",
-   "resumen": "La jornada de este día está cargada con diversos encuentros en la Europa League, Conference League y otros certámenes con la posible participación de jugadores peruanos",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/deportes/2026/11/05/partidos-de-hoy-jueves-5-de-noviembre-de-2026-programacion-canales-tv-y-resultados-en-vivo/",
-   "fecha": "2026-11-05T18:53:31Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/E2IXUUZ4BJBD3C3I7RULTH3COY.png?auth=ca6f074d7c7ee9775a1d1cf7a540c52d3ea9cb03b65b3838f4bcba0c478d8d67&smart=true&width=1920&height=1080",
-   "procedencia": "directa",
-   "sintesis": "La jornada de este día está cargada con diversos encuentros en la Europa League, Conference League y otros certámenes con la posible participación de jugadores peruanos EST Guardar La programación de partidos de hoy jueves 5 de noviembre tendrá actividad en Europa y Sudamérica, con partidos de la UEFA Europa League , la Conference League , la Liga Profesional Argentina , el Brasileirao y más.",
-   "puntos": [
-    "La jornada de este día está cargada con diversos encuentros en la Europa League, Conference League y otros certámenes con la posible participación de jugadores peruanos",
-    "EST Guardar La programación de partidos de hoy jueves 5 de noviembre tendrá actividad en Europa y Sudamérica, con partidos de la UEFA Europa League , la Conference League , la Liga Profesional Argentina , el Brasileirao y más.",
-    "La jornada también puede ofrecer presencia peruana en clubes del exterior."
-   ],
-   "datos": [
-    {
-     "v": "5 de noviembre de 2026",
-     "t": "fecha",
-     "c": "Partidos de hoy, jueves 5 de noviembre de 2026: programación, canales TV y resultados en vivo."
-    }
-   ]
-  },
-  {
    "id": "5e28ec4118",
    "sector": "coyuntura",
    "titulo": "¿Cómo buscan ganar votos en segunda vuelta?: Jenry Huisa apuesta por las provincias mientras Zegarra suma nuevos respaldos",
@@ -3115,43 +3305,6 @@ window.NOTICIAS = {
      "v": "903 millones de dólares",
      "t": "escala",
      "c": "La aerolínea emiratí registró un beneficio neto de 903 millones de dólares durante el primer semestre, un 66% menos que en el mismo…"
-    }
-   ]
-  },
-  {
-   "id": "6af807dba1",
-   "sector": "coyuntura",
-   "titulo": "Lima no soporta las lluvias y Villa El Salvador es el primero en inundarse (VIDEO)",
-   "resumen": "Lloviznas en Lima alcanzaron los 5,5 mm. Villa El Salvador y Villa María del Triunfo sufren por aniegos y colapso del sistema de alcantarillado.",
-   "fuente": "El Búho",
-   "url": "https://elbuho.pe/2026/11/lima-no-soporta-las-lluvias-y-villa-el-salvador-es-el-primero-en-inundarse-video/",
-   "fecha": "2026-11-05T17:42:56Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/lluvias-lima-noticias-peru-villa-el-salvador-fenomeno-del-nino-inundacion.webp",
-   "procedencia": "directa",
-   "sintesis": "Lloviznas en Lima alcanzaron los 5,5 mm. Villa El Salvador y Villa María del Triunfo sufren por aniegos y colapso del sistema de alcantarillado.",
-   "puntos": [
-    "Lloviznas en Lima alcanzaron los 5,5 mm.",
-    "Villa El Salvador y Villa María del Triunfo sufren por aniegos y colapso del sistema de alcantarillado.",
-    "Lima padece los estragos de las primeras lluvias asociadas al Fenómeno El Niño."
-   ],
-   "datos": [
-    {
-     "v": "50 %",
-     "t": "porcentaje",
-     "c": "…las obras de un colector que permitiría aliviar cerca del 50 % de la carga del sistema de alcantarillado."
-    },
-    {
-     "v": "26 de Noviembre",
-     "t": "fecha",
-     "c": "…de peatones y vehículos, especialmente en la avenida 26 de Noviembre."
-    },
-    {
-     "v": "4 de noviembre",
-     "t": "fecha",
-     "c": "El Senamhi registró hasta 5,5 milímetros de precipitación en ese distrito durante la noche del miércoles 4 de noviembre."
     }
    ]
   },
@@ -4023,75 +4176,6 @@ window.NOTICIAS = {
    "via": "Google Noticias"
   },
   {
-   "id": "e9c06d6a3a",
-   "sector": "politica",
-   "titulo": "Comisión Bicameral de Presupuesto aprobó por mayoría el predictamen de la Ley de presupuesto 2027 pero con cambios, ¿cuáles son?",
-   "resumen": "La Comisión Bicameral de Presupuesto y de la Cuenta General de la República aprobó, con 29 votos a favor, 1 en contra y 4 abstenciones, el predictamen de la Ley de Presupuesto del sector público para el año fiscal 2027 este jueves 5 de noviembre.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/economia/peru/comision-bicameral-aprobo-por-mayoria-el-predictamen-de-la-ley-de-presupuesto-2027-pero-con-cambios-cuales-son-l-ultimas-noticia/",
-   "fecha": "2026-11-05T15:56:51Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/ADHABYZV3BH7XIVJ7DAFNJFOHE.jpg?auth=29c92acc0c10887276e29eefac1321f4fb632f18c9387cff324801046e6daff5&smart=true&width=2000&height=1333",
-   "procedencia": "directa",
-   "sintesis": "La Comisión Bicameral de Presupuesto y de la Cuenta General de la República aprobó, con 29 votos a favor, 1 en contra y 4 abstenciones, el predictamen de la Ley de Presupuesto del sector público para el año fiscal 2027 este jueves 5 de noviembre. La sesión estuvo encabezada por José Arista (Fuerza Popular), senador y presidente de la Comisión de Presupuesto y contó con la presencia de Elmer Cuba , titular del Ministerio de Economía y Finanzas ( MEF ).",
-   "puntos": [
-    "La Comisión Bicameral de Presupuesto y de la Cuenta General de la República aprobó, con 29 votos a favor, 1 en contra y 4 abstenciones, el predictamen de la Ley de Presupuesto del sector público para el año fiscal 2027 este jueves 5 de noviembre.",
-    "La sesión estuvo encabezada por José Arista (Fuerza Popular), senador y presidente de la Comisión de Presupuesto y contó con la presencia de Elmer Cuba , titular del Ministerio de Economía y Finanzas ( MEF ).",
-    "Tras la votación, el senador y presidente de la comisión en cuestión, José Arista (Fuerza Popular), señaló que el plazo para remitir el dictamen al trámite documentario es corto, por lo que el objetivo es llevar la iniciativa al pleno del Congreso el próximo 15 de noviembre."
-   ],
-   "datos": [
-    {
-     "v": "S/266 mil millones",
-     "t": "monto",
-     "c": "…los recursos públicos del próximo año en más de S/266 mil millones.."
-    },
-    {
-     "v": "29 votos",
-     "t": "cantidad",
-     "c": "…y de la Cuenta General de la República aprobó, con 29 votos a favor, 1 en contra y 4 abstenciones, el predictamen de…"
-    },
-    {
-     "v": "5 de noviembre",
-     "t": "fecha",
-     "c": "…del sector público para el año fiscal 2027 este jueves 5 de noviembre.."
-    }
-   ]
-  },
-  {
-   "id": "fa84b8f3df",
-   "sector": "politica",
-   "titulo": "Rafael López Aliaga vs Francis Allison: quién ganó las Elecciones Municipales 2026 en Lima, según los resultados ONPE",
-   "resumen": "Rafael López Aliaga y Francis Allison se debaten la alcaldía de Lima tras el avance del conteo total de las actas escrutadas… The post Rafael López Aliaga vs Francis Allison: quién ganó las Elecciones Municipales 2026 en Lima, según los resultados ONPE appeared first on Caretas .",
-   "fuente": "Caretas",
-   "url": "https://caretas.pe/politica/rafael-lopez-aliaga-vs-francis-allison-quien-gano-las-elecciones-municipales-2026-en-lima-segun-los-resultados-onpe/",
-   "fecha": "2026-11-05T15:42:28Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://caretas.pe/wp-content/uploads/2026/10/image-2026-10-30T122351.323-1280x720.jpg",
-   "procedencia": "directa",
-   "sintesis": "Consulta cómo va el conteo de votos en las elecciones por Lima y quién asumirá como alcalde. Rafael López Aliaga y Francis Allison se debaten la alcaldía de Lima tras el avance del conteo total de las actas escrutadas en torno a las Elecciones Regionales y Municipales 2026 .",
-   "puntos": [
-    "Consulta cómo va el conteo de votos en las elecciones por Lima y quién asumirá como alcalde.",
-    "Rafael López Aliaga y Francis Allison se debaten la alcaldía de Lima tras el avance del conteo total de las actas escrutadas en torno a las Elecciones Regionales y Municipales 2026 .",
-    "La Oficina Nacional de Procesos Electorales (ONPE) reporta al público en general cómo van los resultados por medio de su plataforma oficial."
-   ],
-   "datos": [
-    {
-     "v": "100%",
-     "t": "porcentaje",
-     "c": "A punto de llegar al 100% del conteo, se puede hablar de una victoria irreversible por uno de los candidatos."
-    },
-    {
-     "v": "99,989%",
-     "t": "porcentaje",
-     "c": "Al cierre de esta nota, el conteo de votos de la ONPE va al 99,989% del total de actas escrutadas."
-    }
-   ]
-  },
-  {
    "id": "6e0063ea74",
    "sector": "deporte",
    "titulo": "Cristiano Ronaldo se despide de su selección y Portugal reacciona: “Resonará por la eternidad”",
@@ -4218,21 +4302,6 @@ window.NOTICIAS = {
      "c": "A nivel regional, la firma elevó sus utilidades netas en 29,1% durante el tercer trimestre del 2026."
     }
    ]
-  },
-  {
-   "id": "a785597fc4",
-   "sector": "politica",
-   "titulo": "Proponen segunda vuelta electoral en municipios: esto señala iniciativa del Congreso",
-   "resumen": "",
-   "fuente": "Expreso",
-   "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQU2VVYklWYS03bVVsQWtkZE9sNTRGVW5yMGZ4NmxIUVA1alQwLXBuSXhJYjRnN1pud1JEM0pnalV4Z2tuQjlmakhwaU1HRC1EdTJtMURsdkEzcTFYUzcyOXBvWXBPdXhBVEdEZGgtVzVRS3VZX0h0QzlCUU4xb3oxdTFaYmhycDUxRkN0UWJjekpWd2pKZlBhOVRNRFpCblpfcENKMlpJSng2RVVrV21ac0UyR0s2NXczZnVtX2NaQ0pzcFJqUW9waXRod3A2LUZraTNCUHVQc0FWaDZmUVl6cGJocGNZeW1ZaTREZ0ZxWmtaSTFSZjNsUGk3cU1YOHZV?oc=5",
-   "fecha": "2026-11-05T15:26:55Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": null,
-   "procedencia": "agregador",
-   "via": "Google Noticias"
   },
   {
    "id": "6aaadcdab3",
@@ -4395,33 +4464,6 @@ window.NOTICIAS = {
    "sintesis": "El presidente argentino desoye la petición del Rey para “ceñirse a la partitura” y carga contra “las agendas progresistas que ganan terreno en Europa”",
    "puntos": [
     "El presidente argentino desoye la petición del Rey para “ceñirse a la partitura” y carga contra “las agendas progresistas que ganan terreno en Europa”"
-   ]
-  },
-  {
-   "id": "0d7d7671cf",
-   "sector": "economia",
-   "titulo": "El Comercio, América Multimedia y la SNI organizan foro sobre economía, inversión y reconstrucción tras El Niño",
-   "resumen": "El Comercio y América Multimedia realizarán el 9 de noviembre un foro sobre economía, inversión y reconstrucción tras El Niño en la SNI.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/economia/el-comercio-y-america-multimedia-organizan-foro-sobre-economia-inversion-y-reconstruccion-tras-el-nino-noticia/",
-   "fecha": "2026-11-05T14:34:29Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/XRGLXPR2LVH4ZLO7OSLHKBAZRQ.jpg?auth=a4aa4f3c29487520bad15b445eaa531909b807163c2d9751770855fd2941118b&smart=true&width=1200&height=800",
-   "procedencia": "directa",
-   "sintesis": "El Comercio y América Multimedia realizarán el 9 de noviembre un foro sobre economía, inversión y reconstrucción tras El Niño en la SNI. El Comercio y América Multimedia realizarán, junto con la Sociedad Nacional de Industrias (SNI) como coorganizadora, el lunes 9 de noviembre el foro “Panorama económico, promoción de la inversión y reconstrucción post fenómeno de El Niño”, en el auditorio 1 del gremio industrial.",
-   "puntos": [
-    "El Comercio y América Multimedia realizarán el 9 de noviembre un foro sobre economía, inversión y reconstrucción tras El Niño en la SNI.",
-    "El Comercio y América Multimedia realizarán, junto con la Sociedad Nacional de Industrias (SNI) como coorganizadora, el lunes 9 de noviembre el foro “Panorama económico, promoción de la inversión y reconstrucción post fenómeno de El Niño”, en el auditorio 1 del gremio industrial.",
-    "El encuentro tendrá tres bloques dedicados a la promoción de la inversión y la reconstrucción, la cooperación de Estados Unidos para enfrentar El Niño y el panorama económico."
-   ],
-   "datos": [
-    {
-     "v": "9 de noviembre",
-     "t": "fecha",
-     "c": "El Comercio y América Multimedia realizarán el 9 de noviembre un foro sobre economía, inversión y reconstrucción tras El Niño en la SNI.."
-    }
    ]
   },
   {
@@ -4779,26 +4821,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "0e9efa5324",
-   "sector": "deporte",
-   "titulo": "Asistente de Cienciano rechazó gestos de Horacio Melgarejo contra hinchada de Alianza Lima: “Ya es grande, tiene que responder por sus actos”",
-   "resumen": "Cristian Ruggeri, integrante del cuerpo técnico de Melgarejo en el ‘papá’, se refirió a la controversia ocurrida en Matute. Además, explicó el cambio de Gonzalo Aguirre",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/deportes/2026/11/04/asistente-de-cienciano-rechazo-gestos-de-horacio-melgarejo-ante-hinchada-de-alianza-lima-ya-es-grande-tiene-que-responder-por-sus-actos/",
-   "fecha": "2026-11-05T12:25:24Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/DX42LE2LAFGTZOA7RW5O3M6TBQ.png?auth=806a01554c7880f4381afb66b20205470cb616ae5254bb9be241afed3905796d&smart=true&width=1920&height=1080",
-   "procedencia": "directa",
-   "sintesis": "Cristian Ruggeri, integrante del cuerpo técnico de Melgarejo en el ‘papá’, se refirió a la controversia ocurrida en Matute. Además, explicó el cambio de Gonzalo Aguirre",
-   "puntos": [
-    "Cristian Ruggeri, integrante del cuerpo técnico de Melgarejo en el ‘papá’, se refirió a la controversia ocurrida en Matute.",
-    "Además, explicó el cambio de Gonzalo Aguirre",
-    "Seguir Escuchar Puntos clave Resumen El asistente del 'papá' se refirió a la controversia entre el técnico argentino y la hinchada 'blanquiazul' en Matute. (Video: Inka Digital TV) 05 Nov, 2026 07:25 a. m."
-   ]
-  },
-  {
    "id": "28b0e395b4",
    "sector": "mundo",
    "titulo": "Cristiano Ronaldo anuncia su retirada de la selección portuguesa",
@@ -4860,38 +4882,6 @@ window.NOTICIAS = {
      "v": "23 años",
      "t": "cantidad",
      "c": "“Ella tenía 23 años, yo tenía 25, 26 más o menos."
-    }
-   ]
-  },
-  {
-   "id": "0886e0cbc5",
-   "sector": "economia",
-   "titulo": "La privatización que faltó",
-   "resumen": "“Desde 2015 se intervinieron 19 EPS, pero solo cuatro han salido. Es como reparar un auto chocado y devolverle las llaves al mismo chofer”, escribe Víctor Fuentes, Gerente Central de Economía del Instituto Peruano de Economía.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/economia/opinion/la-privatizacion-que-falto-noticia/",
-   "fecha": "2026-11-05T12:00:00Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "opinion",
-   "imagen": "https://elcomercio.pe/resizer/v2/76E4S7Q7CBB5LKVV5RCVLWEXZA.jpg?auth=c40d2daccf11cb6d28571968327697f52bbd4933c22395ee01df716fe720a574&smart=true&width=1200&height=800",
-   "procedencia": "directa",
-   "sintesis": "“Desde 2015 se intervinieron 19 EPS, pero solo cuatro han salido. Es como reparar un auto chocado y devolverle las llaves al mismo chofer”, escribe Víctor Fuentes, Gerente Central de Economía del Instituto Peruano de Economía.",
-   "puntos": [
-    "“Desde 2015 se intervinieron 19 EPS, pero solo cuatro han salido.",
-    "Es como reparar un auto chocado y devolverle las llaves al mismo chofer”, escribe Víctor Fuentes, Gerente Central de Economía del Instituto Peruano de Economía.",
-    "Este resumen es generado por inteligencia artificial y revisado por la redacción."
-   ],
-   "datos": [
-    {
-     "v": "63%",
-     "t": "porcentaje",
-     "c": "La primera da agua unas 12 horas diarias y no factura el 63% de su producción."
-    },
-    {
-     "v": "15 años",
-     "t": "cantidad",
-     "c": "El régimen puede durar hasta 15 años y, al terminar, la empresa vuelve a manos municipales."
     }
    ]
   },
@@ -5741,38 +5731,6 @@ window.NOTICIAS = {
      "v": "14 años",
      "t": "cantidad",
      "c": "Luego de 14 años, el foro se organiza nuevamente en el país.."
-    }
-   ]
-  },
-  {
-   "id": "fec18b6f6e",
-   "sector": "economia",
-   "titulo": "Banco francés Crédit Mutuel Arkéa sufre un ciberataque por unos 118 millones de euros",
-   "resumen": "Este ataque ha ocurrido poco más de una semana después de que unos piratas informáticos (a los que las autoridades estadounidenses vinculan con Corea del Norte) consiguieran robar unos 6.340 millones de dólares en criptomonedas en la popular plataforma Binance.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/economia/mundo/banco-frances-credit-mutuel-arkea-sufre-un-ciberataque-por-unos-118-millones-de-euros-ultimas-noticia/",
-   "fecha": "2026-11-04T23:09:34Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/AZ5HQOBGJFE57HYEYUPMMLMTVI.jpg?auth=b75675d44390c5500a4063bf499a4c19cd58ba8bf15e989c253197f4df471464&smart=true&width=1024&height=681",
-   "procedencia": "directa",
-   "sintesis": "Este ataque ha ocurrido poco más de una semana después de que unos piratas informáticos (a los que las autoridades estadounidenses vinculan con Corea del Norte) consiguieran robar unos 6.340 millones de dólares en criptomonedas en la popular plataforma Binance. Este resumen es generado por inteligencia artificial y revisado por la redacción.",
-   "puntos": [
-    "Este ataque ha ocurrido poco más de una semana después de que unos piratas informáticos (a los que las autoridades estadounidenses vinculan con Corea del Norte) consiguieran robar unos 6.340 millones de dólares en criptomonedas en la popular plataforma Binance.",
-    "Este resumen es generado por inteligencia artificial y revisado por la redacción.",
-    "El grupo bancario y asegurador francés Crédit Mutuel Arkéa , una de las entidades afiliadas a Crédit Mutuel, sufrió un ataque en el que se lograron piratear unos 118 millones de euros y convertirlos en criptomonedas ."
-   ],
-   "datos": [
-    {
-     "v": "118 millones de euros",
-     "t": "escala",
-     "c": "Banco francés Crédit Mutuel Arkéa sufre un ciberataque por unos 118 millones de euros."
-    },
-    {
-     "v": "6.340 millones de dólares",
-     "t": "escala",
-     "c": "…vinculan con Corea del Norte) consiguieran robar unos 6.340 millones de dólares en criptomonedas en la popular plataforma Binance.."
     }
    ]
   },
@@ -6835,6 +6793,33 @@ window.NOTICIAS = {
    ]
   },
   {
+   "id": "e4e9d62f45",
+   "sector": "economia",
+   "titulo": "Construyen nidos artificiales para proteger a las cacatúas de cresta amarilla, una de las especies de loros más amenazadas del mundo",
+   "resumen": "En el paisaje urbano de Hong Kong, los nidos artificiales ofrecen refugio y oportunidades de investigación para una de las especies de loros más amenazadas del mundo: la cacatúa de cresta amarilla (Cacatua sulphurea). Esta especie se encuentra en peligro crítico de extinción:…",
+   "fuente": "Mongabay Latam",
+   "url": "https://es.mongabay.com/short-article/2026/11/construyen-nidos-artificiales-proteger-cacatuas-cresta-amarilla-especie-amenazada/",
+   "fecha": "2026-11-03T22:06:33Z",
+   "tipo": "independiente",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://imgs.mongabay.com/wp-content/uploads/sites/25/2026/11/03215200/WSK_20260509_1006-scaled-1-768x512.jpg",
+   "procedencia": "directa",
+   "sintesis": "En el paisaje urbano de Hong Kong, los nidos artificiales ofrecen refugio y oportunidades de investigación para una de las especies de loros más amenazadas del mundo: la cacatúa de cresta amarilla (Cacatua sulphurea). Esta especie se encuentra en peligro crítico de extinción: quedan menos de 2000 ejemplares en toda su área de distribución natural, que abarca el este de Indonesia y Timor Oriental.",
+   "puntos": [
+    "En el paisaje urbano de Hong Kong, los nidos artificiales ofrecen refugio y oportunidades de investigación para una de las especies de loros más amenazadas del mundo: la cacatúa de cresta amarilla (Cacatua sulphurea).",
+    "Esta especie se encuentra en peligro crítico de extinción: quedan menos de 2000 ejemplares en toda su área de distribución natural, que abarca el este de Indonesia y Timor Oriental.",
+    "Sin embargo, Hong Kong alberga cerca de 200 cacatúas en libertad que, según se cree, descienden de mascotas que escaparon o fueron liberadas, informa la periodista Yenni Kwok para Mongabay ."
+   ],
+   "datos": [
+    {
+     "v": "60 %",
+     "t": "porcentaje",
+     "c": "…tormentas y la poda de árboles han eliminado más del 60 % de las cavidades naturales en los árboles donde estas aves…"
+    }
+   ]
+  },
+  {
    "id": "4581357845",
    "sector": "tecnologia",
    "titulo": "Arequipa: investigan a policías por presunto intento de ingreso de objetos prohibidos al penal de Socabaya",
@@ -7573,20 +7558,6 @@ window.NOTICIAS = {
    "via": "Google Noticias"
   },
   {
-   "id": "92fd0ba247",
-   "sector": "nino",
-   "titulo": "ENFEN prevé que El Niño Costero mantendrá una magnitud \"extraordinaria\" frente al litoral hasta febrero 2027",
-   "resumen": "",
-   "fuente": "Exitosa Noticias",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNOEpTdnFmcWNfeEFVN1I1U0N1Wjc5MWU1bkpmT0gyZkVmRzBnSDE4d1Z4bVdsQTZsOWpoRGcxQ0xhcm9qb0xsRkloR245NFk2MjZxbWNmTzd2elNaTXJRcEszQUtERTVSMkdEWmh4V2FZM2lNb1RjQWVjaDlZTE5jRzhlaUQ3WDdpMUNKcTdDZWIxT0hHVGpUUkM2NFhTVVptVEk1VHU1bGpsbVZuWmVmbVlMUS15aFNCNF9LVFFjRzN1YTVEOFJoa1FMN3NFZzcwYi1adFlyRQ?oc=5",
-   "fecha": "2026-10-30T21:27:00Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": null,
-   "procedencia": "directa"
-  },
-  {
    "id": "1d8809031b",
    "sector": "ia",
    "titulo": "Keiko Fujimori evalúa incorporar inteligencia artificial en los colegios públicos del Perú",
@@ -7877,6 +7848,43 @@ window.NOTICIAS = {
      "v": "13 puntos",
      "t": "cantidad",
      "c": "…de Estudios Peruanos (IEP), que revela una caída de 13 puntos porcentuales en el rechazo a las diferencias económicas…"
+    }
+   ]
+  },
+  {
+   "id": "8f7440de6e",
+   "sector": "economia",
+   "titulo": "El costo invisible de los cuidados: cómo las mujeres subsidian la economía en América Latina",
+   "resumen": "Susana Reina/Latinoamérica21 A las cinco y media de la mañana, Carmen ya está despierta. Antes... La entrada El costo invisible de los cuidados: cómo las mujeres subsidian la economía en América Latina se publicó primero en Wayka.pe .",
+   "fuente": "Wayka",
+   "url": "https://wayka.pe/el-costo-invisible-de-los-cuidados-como-las-mujeres-subsidian-la-economia-en-america-latina/",
+   "fecha": "2026-10-22T15:48:25Z",
+   "tipo": "independiente",
+   "ambito": "peru",
+   "genero": "noticia",
+   "imagen": "https://wayka.pe/wp-content/uploads/2026/10/foto-de-portada-portada.jpg",
+   "procedencia": "directa",
+   "sintesis": "Susana Reina/Latinoamérica21 A las cinco y media de la mañana, Carmen ya está despierta. Antes de pensar en desayunar tiene que ayudar a su madre a levantarse, preparar sus medicamentos, dejar lista la comida y organizar quién podrá acompañarla durante el día.",
+   "puntos": [
+    "Susana Reina/Latinoamérica21 A las cinco y media de la mañana, Carmen ya está despierta.",
+    "Antes de pensar en desayunar tiene que ayudar a su madre a levantarse, preparar sus medicamentos, dejar lista la comida y organizar quién podrá acompañarla durante el día.",
+    "Después irá a trabajar y, si todo sale bien, regresará a casa a tiempo para volver a cuidar."
+   ],
+   "datos": [
+    {
+     "v": "25 millones de personas",
+     "t": "escala",
+     "c": "Actualmente, alrededor de 25 millones de personas mayores de 15 años realizan cuidados no remunerados a…"
+    },
+    {
+     "v": "65 años",
+     "t": "cantidad",
+     "c": "Actualmente, unos ocho millones de personas de 65 años o más necesitan apoyo para realizar actividades básicas en su vida diaria."
+    },
+    {
+     "v": "15 años",
+     "t": "cantidad",
+     "c": "…alrededor de 25 millones de personas mayores de 15 años realizan cuidados no remunerados a personas mayores en la…"
     }
    ]
   },
@@ -8836,7 +8844,7 @@ window.NOTICIAS = {
   "numero": "19-2026",
   "fecha": "2026-10-16",
   "url": "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen",
-  "comprobado": "2026-11-05T20:36:39Z",
+  "comprobado": "2026-11-05T20:39:09Z",
   "ok": true
  },
  "registro": [
@@ -9280,6 +9288,24 @@ window.NOTICIAS = {
   },
   {
    "t": "2026-11-05T20:36:02Z",
+   "fuentes_ok": 26,
+   "fuentes": 27,
+   "nuevas": 347,
+   "notas": 322,
+   "descartes": {},
+   "agregador": [
+    "OjoPúblico",
+    "Convoca",
+    "Hildebrandt en sus trece",
+    "La República",
+    "Expreso"
+   ],
+   "sin_datos": [
+    "ONU Noticias"
+   ]
+  },
+  {
+   "t": "2026-11-05T20:38:22Z",
    "fuentes_ok": 26,
    "fuentes": 27,
    "nuevas": 347,
