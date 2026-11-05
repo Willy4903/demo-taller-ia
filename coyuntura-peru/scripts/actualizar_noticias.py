@@ -17,7 +17,7 @@ import unicodedata
 import urllib.request
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
-from urllib.parse import urljoin, urlsplit, urlunsplit
+from urllib.parse import quote, urljoin, urlsplit, urlunsplit
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATOS = os.path.join(RAIZ, "data")
@@ -26,7 +26,7 @@ ARCHIVO_JSON = os.path.join(DATOS, "noticias.json")
 ARCHIVO_EDITORIAL = os.path.join(DATOS, "editorial.js")
 
 MAX_POR_SECTOR = 24
-MAX_POR_SECTOR_ESPECIAL = {"ia": 40}  # IA cubre Perú y mundo
+MAX_POR_SECTOR_ESPECIAL = {"ia": 40, "mundo": 90}  # IA cubre Perú y mundo
 MAX_POR_FEED = 15
 SECTORES = {"politica", "economia", "salud", "nino", "tecnologia", "ia", "deporte", "investigacion", "coyuntura", "mundo"}
 UMBRAL_REDUCCION = 0.5  # no se publica si las notas caen por debajo de esta fracción de las anteriores
@@ -64,6 +64,10 @@ FEEDS = [
     ("El País América", ["https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada"], "internacional", "mundo"),
     ("France 24 Español", ["https://www.france24.com/es/rss"], "internacional", "mundo"),
     ("ONU Noticias", ["https://news.un.org/feed/subscribe/es/news/all/rss.xml"], "internacional", "mundo"),
+    ("The New York Times en Español", ["https://news.google.com/rss/search?q=site:nytimes.com/es+when:7d&hl=es-419&gl=US&ceid=US:es-419"], "internacional", "mundo"),
+    # Medios en inglés: se traducen al español (traducción automática, marcada en cada nota)
+    ("The Guardian", ["https://www.theguardian.com/world/rss", "https://www.theguardian.com/international/rss"], "internacional", "mundo"),
+    ("The New Yorker", ["https://www.newyorker.com/feed/everything", "https://www.newyorker.com/feed/news"], "internacional", "mundo"),
     # Inteligencia artificial: Perú y mundo (Google Noticias agrega varios medios; la fuente real viene en <source>)
     ("Google Noticias · IA en el Perú", ["https://news.google.com/rss/search?q=%22inteligencia+artificial%22+Per%C3%BA+when:7d&hl=es-419&gl=PE&ceid=PE:es-419"], "comercial", "ia"),
     # El Niño costero (Perú)
@@ -103,6 +107,51 @@ PATRON_CONTENIDO_IRRELEVANTE = re.compile(
 def es_irrelevante(titulo):
     return bool(PATRON_CONTENIDO_IRRELEVANTE.search(norm(titulo or "")))
 
+
+
+FUENTES_EN = {"The Guardian", "The New Yorker"}
+URL_TRADUCCION = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=es&dt=t&q="
+
+
+def traducir_texto(texto):
+    """Traduce al español con el servicio público de Google Translate (sin clave). Devuelve None si falla."""
+    texto = (texto or "").strip()
+    if not texto:
+        return ""
+    try:
+        crudo = descargar(URL_TRADUCCION + quote(texto[:900]))
+        partes = json.loads(crudo.decode("utf-8", errors="replace"))[0]
+        out = "".join(p[0] for p in partes if p and p[0]).strip()
+        return out or None
+    except Exception as ex:  # noqa: BLE001
+        print(f"  ✗ traducción: {type(ex).__name__}: {str(ex)[:80]}")
+        return None
+
+
+def traducir_notas(items, previos, maximo=40):
+    """Traduce título y extracto de las notas en inglés. Reutiliza traducciones previas; descarta lo que no se pueda traducir."""
+    conocidas = {url_canonica(i["url"]): i for i in previos if i.get("traducido")}
+    salida, hechas = [], 0
+    for it in items:
+        if it.get("fuente") not in FUENTES_EN:
+            salida.append(it)
+            continue
+        previa = conocidas.get(url_canonica(it["url"]))
+        if previa:
+            it.update({k: previa[k] for k in ("titulo", "resumen", "titulo_original", "traducido") if k in previa})
+            salida.append(it)
+            continue
+        if hechas >= maximo:
+            continue  # se traducirá en la próxima ejecución; nunca se publica texto en inglés
+        t = traducir_texto(it["titulo"])
+        if not t:
+            continue
+        r = traducir_texto(it.get("resumen", ""))
+        it.update({"titulo_original": it["titulo"], "titulo": t, "resumen": r or "", "traducido": True})
+        salida.append(it)
+        hechas += 1
+    print(f"Traducciones nuevas: {hechas}")
+    return salida
 
 
 def url_respaldo(dominio):
@@ -855,6 +904,7 @@ def main(feeds=None):
         print("Ningún feed respondió: se conservan los datos actuales.", file=sys.stderr)
         resumen_ejecucion("Actualización sin cambios", ["Ningún feed respondió; se conservaron los datos anteriores."])
         return 1
+    nuevos = traducir_notas(nuevos, previo.get("items", []))
     enriquecer_imagenes(nuevos, previo.get("items", []))
     enriquecer_sintesis(nuevos, previo.get("items", []))
     combinados = fusionar(nuevos, previo.get("items", []))
