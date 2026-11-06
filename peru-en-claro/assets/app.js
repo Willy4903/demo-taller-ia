@@ -160,7 +160,7 @@
     }
     return story(s);
   }
-  /* ───── ficha de noticia al estilo consultora: titular, síntesis, cifras clave, lectura crítica y cobertura ───── */
+  /* ───── noticia: un solo texto de lectura, cifras y fuentes relacionadas ───── */
   var TIPO_CIFRA = { monto: "Monto", porcentaje: "Porcentaje", escala: "Magnitud", temperatura: "Temperatura", cantidad: "Cantidad", marcador: "Marcador", fecha: "Fecha" };
   var STOP_COB = "para como pero esta este estos estas desde entre sobre tras hasta cuando donde aunque porque ante bajo contra segun sino todo toda todos todas otro otra otros mas menos muy cada tambien durante fueron sera seran puede pueden tiene tienen hace hacen luego antes despues ahora nuevo nueva nuevos nuevas primer primera anos dias dia semana mes meses peru lima".split(" ");
   function tokens(t) { var v = {}, out = []; norm(t || "").replace(/[^a-z0-9ñ\s]/g, " ").split(/\s+/).forEach(function (w) { if (w.length < 5 || STOP_COB.indexOf(w) >= 0 || /^\d+$/.test(w) || v[w]) return; v[w] = 1; out.push(w); }); return out; }
@@ -179,38 +179,47 @@
   function fmtCifra(c) { return '<b>' + esc(c.v) + '</b>'; }
   function barraPct(c) { if (c.t !== "porcentaje") return ""; var n = parseFloat(String(c.v).replace(/\s/g, "").replace(",", ".")); return n >= 0 && n <= 100 ? '<span class="ps-bar" aria-hidden="true"><i style="width:' + n + '%"></i></span>' : ""; }
   var story_n = 0;
+  function claveTexto(t) { return norm(t || "").replace(/[^a-z0-9ñ]+/g, " ").trim(); }
+  function puntosNoticia(s) {
+    var candidatos = s.puntos && s.puntos.length ? s.puntos : [s.sintesis || s.resumen || ""], unicos = [];
+    function agregar(t) {
+      t = String(t || "").replace(/\s+/g, " ").trim();
+      var k = claveTexto(t);
+      if (!k || k === claveTexto(s.titulo)) return;
+      if (unicos.some(function (p) { return (" " + claveTexto(p) + " ").indexOf(" " + k + " ") >= 0; })) return;
+      unicos = unicos.filter(function (p) { return (" " + k + " ").indexOf(" " + claveTexto(p) + " ") < 0; });
+      unicos.push(t);
+    }
+    candidatos.forEach(agregar);
+    if (!unicos.length) agregar(s.sintesis);
+    if (!unicos.length) agregar(s.resumen);
+    return unicos;
+  }
   function story(s) {
     var news = window.PERU_NEWS || {}, id = "st" + (++story_n);
     var datos = (s.datos && s.datos.length ? s.datos : (news.cifras ? news.cifras(s).map(function (v) { return { v: v, t: "monto", c: "" }; }) : [])).slice(0, 5);
-    var puntos = s.puntos && s.puntos.length ? s.puntos : (s.sintesis ? [s.sintesis] : []);
-    var ext = news.extracto ? news.extracto(s) : sin(s.resumen || "", 210);
-    var resumen = s.sintesis || ext || sin(s.titulo || "", 210), cob = cobertura(s);
-    if (!puntos.length && resumen) puntos = [resumen];
+    var puntos = puntosNoticia(s);
+    var resumen = puntos.slice(0, 2).join(" "), cob = cobertura(s);
     var category = s.tema || (news.categoria ? news.categoria(s) : s.sector);
     var label = (news.nombres && news.nombres[category]) || ((SECT[category] || {}).nombre) || "Actualidad";
-    var lec = window.PE_LECTURA ? window.PE_LECTURA.analizar(s) : null;
-    var insCtx = INS.filter(function (i) { return i.sector === category; })[0] || INS.filter(function (i) { return i.sector === s.sector; })[0];
-    var paneCtx = insCtx ? '<p class="ps-ctx-t"><b>' + esc(insCtx.titulo) + '</b></p><p class="ps-ctx-r">' + esc(sin(insCtx.resumen, 420)) + '</p><p class="ps-ctx-l"><a href="' + insCtx.url + '">Leer el análisis completo →</a></p><p class="ps-note">Análisis de fondo de PERÚ INFORMADO con corte al ' + esc(fmtFecha(ED.corte + "T12:00:00Z")) + ". Contexto general del tema, no una verificación de esta nota.</p>"
-      : '<p class="ps-ctx-t"><b>' + esc(ED.hilo.titulo) + '</b></p><ul class="ps-pts">' + ED.hilo.puntos.map(function (p) { return "<li><b>" + esc(p.k) + ":</b> " + esc(p.t) + "</li>"; }).join("") + '</ul><p class="ps-ctx-l"><a href="#/a/hilo">Leer el análisis completo →</a></p>';
-    var kp = datos.filter(function (c) { return c.t !== "fecha" || datos.length === 1 && false; }).slice(0, 3).map(function (c) { return '<div class="ps-k" data-k="' + esc(c.v) + '"><b class="ps-num">' + esc(c.v) + '</b><span>' + esc(TIPO_CIFRA[c.t] || "Dato") + "</span>" + barraPct(c) + "</div>"; }).join("");
-    var tabs = [["sin", "Síntesis"]].concat(datos.length ? [["cif", "Cifras (" + datos.length + ")"]] : []).concat(lec ? [["lec", "Lectura crítica"]] : []).concat([["ctx", "Análisis de fondo"]]).concat(cob.length ? [["cob", "Cobertura (" + cob.length + ")"]] : []);
-    var paneSin = '<ul class="ps-pts">' + (puntos.length ? puntos.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") : "<li>" + esc(sin(s.titulo || "", 220)) + "</li>") + '</ul><p class="ps-note">' + (s.traducido ? "Texto traducido automáticamente del inglés; puede contener imprecisiones. Original: " + esc(s.titulo_original || "") + ". " : "") + (s.sintesis ? "Síntesis automática elaborada con lo publicado por " + esc(s.fuente) + ". Puede omitir matices." : "El medio no publicó más detalle en su extracto: se muestra su titular. Abre la fuente para leer la nota completa.") + "</p>";
+    var kp = datos.filter(function (c) { return c.t !== "fecha"; }).slice(0, 3).map(function (c) { return '<div class="ps-k" data-k="' + esc(c.v) + '"><b class="ps-num">' + esc(c.v) + '</b><span>' + esc(TIPO_CIFRA[c.t] || "Dato") + "</span>" + barraPct(c) + "</div>"; }).join("");
+    var tabs = [["sin", "Síntesis"]].concat(datos.length ? [["cif", "Cifras (" + datos.length + ")"]] : []).concat(cob.length ? [["cob", "Notas relacionadas (" + cob.length + ")"]] : []);
+    var paneSin = (puntos.length ? '<ul class="ps-pts">' + puntos.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + '</ul>' : '<p class="ps-empty">El medio solo ofrece el titular. Consulta la nota original para conocer el detalle.</p>') + '<p class="ps-note">' + (s.traducido ? "Traducción automática del inglés; puede contener imprecisiones. Original: " + esc(s.titulo_original || "") + ". " : "") + (puntos.length ? "Extracto de " + esc(s.fuente) + ". Puede omitir contexto; consulta la nota completa." : "") + "</p>";
     var paneCif = datos.length ? '<div class="ps-cifras">' + datos.map(function (c) { return '<div class="ps-c"><span class="ps-ct">' + esc(TIPO_CIFRA[c.t] || "Dato") + "</span>" + '<b class="ps-num">' + esc(c.v) + "</b>" + barraPct(c) + (c.c ? "<p>" + esc(c.c) + "</p>" : "") + "</div>"; }).join("") + '</div><p class="ps-note">Cifras tal como las publica el medio, con la frase donde aparecen; no se recalculan.</p>' : "";
-    var paneLec = lec ? '<dl class="ps-lec"><div><dt>Qué hay detrás</dt><dd>' + esc(lec.postura) + "</dd></div><div><dt>Qué observar</dt><dd>" + esc(lec.alcance) + "</dd></div><div><dt>Pregunta clave</dt><dd>" + esc(lec.pregunta) + "</dd></div></dl>" : "";
-    var paneCob = cob.length ? '<ul class="ps-cob">' + cob.map(function (o) { return "<li><b>" + esc(o.fuente) + "</b><span>" + esc(sin(o.titulo, 120)) + "</span><time>" + esc(corta(o.fecha)) + "</time></li>"; }).join("") + '</ul><p class="ps-note">Otros medios que tratan el mismo tema en los últimos 3 días.</p>' : "";
-    var panes = { sin: paneSin, cif: paneCif, lec: paneLec, cob: paneCob, ctx: paneCtx };
+    var paneCob = cob.length ? '<ul class="ps-cob">' + cob.map(function (o) { return "<li><b>" + esc(o.fuente) + '</b><a href="' + safeUrl(o.url) + '" target="_blank" rel="noopener noreferrer">' + esc(o.titulo) + " ↗</a><time>" + esc(corta(o.fecha)) + "</time></li>"; }).join("") + '</ul><p class="ps-note">Coincidencias automáticas de tema en un intervalo de tres días. Pueden referirse a hechos distintos.</p>' : "";
+    var panes = { sin: paneSin, cif: paneCif, cob: paneCob };
     var fd = s.fecha ? corta(s.fecha) : "Fecha no disponible";
     var ico = window.cpIcono(category), colorTema = ico.color;
     var foto = thumb(s) || '<div class="ph ps-ph" style="--c:' + ico.color + '">' + ico.svg + "<span>" + esc(label) + "</span><b>" + esc(s.fuente) + "</b></div>";
     return '<article class="pe-ficha" id="' + id + '" data-open="0" data-tema="' + esc(label) + '" data-cat="' + esc(category) + '" data-fuente="' + esc(s.fuente) + '" style="--c:' + colorTema + '"><a class="ps-foto" href="' + safeUrl(s.url) + '" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">' + foto + '</a><div class="ps-top"><span class="pe-news-topic">' + esc(label) + "</span>" + badgeGenero(s.genero) + (cob.length ? '<span class="ps-cov" title="Otros medios que cubren el tema">+' + cob.length + " medios</span>" : "") + "</div>" +
       '<h3 class="ps-title"><button type="button" class="ps-toggle" aria-expanded="false" aria-controls="' + id + '-p">' + esc(s.titulo) + "</button></h3>" +
-      (resumen ? '<p class="ps-sum">' + esc(sin(resumen, 300)) + "</p>" : '<p class="ps-sum ps-empty">Síntesis en preparación: se completa en la próxima lectura automática.</p>') +
+      (resumen ? '<p class="ps-sum">' + esc(sin(resumen, 300)) + "</p>" : "") +
       (kp ? '<div class="ps-kpis" aria-label="Cifras clave">' + kp + "</div>" : "") +
       '<div class="ps-meta"><b>' + esc(s.fuente) + '</b>' + (s.traducido ? '<span class="ps-trad" title="Traducción automática del inglés">Traducido</span>' : "") + '<time datetime="' + esc(s.fecha || "") + '">' + esc(fd) + "</time>" + (s.via ? "<span>Vía " + esc(s.via) + "</span>" : "") + "</div>" +
-      '<button type="button" class="ps-more" aria-expanded="false" aria-controls="' + id + '-p"><span>Ver síntesis, cifras y lectura</span><i aria-hidden="true">▾</i></button>' +
-      '<div class="ps-panel" id="' + id + '-p"><div class="ps-in"><div class="ps-tabs" role="tablist" aria-label="Detalle de la noticia">' + tabs.map(function (t, i) { return '<button type="button" role="tab" aria-selected="' + (i === 0) + '" data-pt="' + t[0] + '">' + esc(t[1]) + "</button>"; }).join("") + "</div>" +
-      tabs.map(function (t, i) { return '<div class="ps-pane" role="tabpanel" data-pp="' + t[0] + '"' + (i ? " hidden" : "") + ">" + panes[t[0]] + "</div>"; }).join("") +
-      '<p class="ps-src">Fuente citada: <a href="' + safeUrl(s.url) + '" target="_blank" rel="noopener noreferrer">' + esc(s.fuente) + " ↗</a></p></div></div></article>";
+      '<button type="button" class="ps-more" aria-expanded="false" aria-controls="' + id + '-p"><span>Ver detalle</span><i aria-hidden="true">▾</i></button>' +
+      '<div class="ps-panel" id="' + id + '-p" hidden><div class="ps-in"><div class="ps-tabs" role="tablist" aria-label="Detalle de la noticia">' + tabs.map(function (t, i) { return '<button type="button" role="tab" id="' + id + '-tab-' + t[0] + '" aria-controls="' + id + '-pane-' + t[0] + '" aria-selected="' + (i === 0) + '" tabindex="' + (i ? -1 : 0) + '" data-pt="' + t[0] + '">' + esc(t[1]) + "</button>"; }).join("") + "</div>" +
+      tabs.map(function (t, i) { return '<div class="ps-pane" role="tabpanel" id="' + id + '-pane-' + t[0] + '" aria-labelledby="' + id + '-tab-' + t[0] + '" tabindex="0" data-pp="' + t[0] + '"' + (i ? " hidden" : "") + ">" + panes[t[0]] + "</div>"; }).join("") +
+      '</div></div><p class="ps-src"><a href="' + safeUrl(s.url) + '" target="_blank" rel="noopener noreferrer">Leer nota original en ' + esc(s.fuente) + " ↗</a></p></article>";
   }
   function contar(el) {
     var n = el.textContent, m = /^(\D*?)(\d[\d.,\s]*)(.*)$/.exec(n); if (!m || (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches)) return;
@@ -222,17 +231,25 @@
   }
   document.addEventListener("click", function (e) {
     var st = e.target.closest && e.target.closest(".pe-ficha"); if (!st) return;
-    var tg = e.target.closest(".ps-toggle,.ps-more,.ps-sum"), tab = e.target.closest("[data-pt]");
+    var tg = e.target.closest(".ps-toggle,.ps-more"), tab = e.target.closest("[data-pt]");
     if (tab) {
-      st.querySelectorAll("[data-pt]").forEach(function (b) { b.setAttribute("aria-selected", String(b === tab)); });
+      st.querySelectorAll("[data-pt]").forEach(function (b) { b.setAttribute("aria-selected", String(b === tab)); b.tabIndex = b === tab ? 0 : -1; });
       st.querySelectorAll("[data-pp]").forEach(function (p) { p.hidden = p.getAttribute("data-pp") !== tab.getAttribute("data-pt"); if (!p.hidden) p.querySelectorAll(".ps-num").forEach(contar); });
       return;
     }
     if (!tg) return;
     var abre = st.getAttribute("data-open") !== "1"; st.setAttribute("data-open", abre ? "1" : "0");
+    st.querySelector(".ps-panel").hidden = !abre;
+    st.querySelectorAll(".ps-sum,.ps-kpis").forEach(function (p) { p.hidden = abre; });
     st.querySelectorAll(".ps-toggle,.ps-more").forEach(function (b) { b.setAttribute("aria-expanded", String(abre)); });
-    var lbl = st.querySelector(".ps-more span"); if (lbl) lbl.textContent = abre ? "Ocultar detalle" : "Ver síntesis, cifras y lectura";
-    if (abre) st.querySelectorAll(".ps-kpis .ps-num").forEach(contar);
+    var lbl = st.querySelector(".ps-more span"); if (lbl) lbl.textContent = abre ? "Ocultar detalle" : "Ver detalle";
+  });
+  document.addEventListener("keydown", function (e) {
+    var tab = e.target.closest && e.target.closest(".ps-tabs [role=tab]");
+    if (!tab || ["ArrowLeft", "ArrowRight", "Home", "End"].indexOf(e.key) < 0) return;
+    var tabs = Array.prototype.slice.call(tab.parentNode.querySelectorAll("[role=tab]")), i = tabs.indexOf(tab);
+    i = e.key === "Home" ? 0 : e.key === "End" ? tabs.length - 1 : (i + (e.key === "ArrowRight" ? 1 : -1) + tabs.length) % tabs.length;
+    e.preventDefault(); tabs[i].focus(); tabs[i].click();
   });
   function card(s) { return '<a class="s card" ' + attrs(s) + ">" + thumb(s) + "<div>" + kicker(s) + "<h3>" + esc(s.titulo) + "</h3><p>" + esc(sin(primera(s.resumen), 150)) + "</p>" + meta(s) + "</div></a>"; }
   function sh(titulo, color, enlace, txt) { return '<div class="sh" style="--c:' + color + '"><h2>' + esc(titulo) + "</h2>" + (enlace ? '<a href="' + enlace + '">' + esc(txt || "Ver todo") + " →</a>" : "") + "</div>"; }
@@ -420,7 +437,7 @@
   }
   function vistaNoticias() {
     var hoy = ""; try { hoy = new Intl.DateTimeFormat("es-PE", { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: "America/Lima" }).format(new Date()); } catch (e) {}
-    var h = '<div class="fade noticias-page"><header class="np-mast"><div class="np-date">' + esc(hoy) + '</div><h1>Noticias</h1><p>La prensa peruana e internacional, en español, con análisis en cada nota.</p></header>';
+    var h = '<div class="fade noticias-page"><header class="np-mast"><div class="np-date">' + esc(hoy) + '</div><h1>Noticias</h1><p>La prensa peruana e internacional, en español. Explora los extractos y consulta las fuentes originales.</p></header>';
     h += '<nav class="pe-news-nav" aria-label="Secciones de noticias"><div class="pe-news-nav-primary" id="pe-news-territory"></div><div class="pe-news-nav-topics" id="pe-news-topics" aria-label="Temas periodísticos"></div></nav>';
     h += '<div class="n-herramientas"><label class="n-busca" for="n-query"><span class="n-search-icon" aria-hidden="true">⌕</span><input type="search" id="n-query" placeholder="Buscar un tema, un titular…" value="' + esc(nQuery) + '" autocomplete="off" aria-label="Buscar dentro de noticias"></label>' +
       '<label class="n-select" for="n-source"><span>Fuente</span><select id="n-source"></select></label>' +
@@ -513,7 +530,7 @@
     var g=[];
     var portada=nF.ambito==="todos"&&nF.sector==="todos"&&nF.tipo==="todas"&&nF.genero==="todos"&&nF.fuente==="todas"&&!bus&&nOrden==="recientes";
     var usados={},frente="";
-    if(portada){var fr=frentePortada(lista);frente=fr.html;usados=fr.usados;}
+    if(portada){var fr=frentePortada(lista);frente=fr.html;usados=fr.usados;mostradas=Object.keys(usados).length;}
     [["peru","Perú","Actualidad nacional y regional"],["latam","América Latina","Lo que pasa en la región"],["mundo","Internacional","Noticias del mundo, en español"]].forEach(function(x){
       if(nF.ambito!=="todos"&&nF.ambito!==x[0])return;
       var items=lista.filter(function(z){return zonaDe(z)===x[0]&&!usados[z.url];});
@@ -525,7 +542,7 @@
         (restantes?'<button class="pe-news-more" data-news-more="'+x[0]+'" type="button">Ver más de '+x[1]+' <span>('+restantes+' pendientes)</span></button>':"")+'</section>');
     });
     $("#n-count").textContent=total+" "+(total===1?"noticia encontrada":"noticias encontradas")+(total?" · "+mostradas+" visibles":"");
-    $("#n-lista").innerHTML=g.length?frente+g.join(""):'<div class="pe-news-empty"><h2>No encontramos noticias con esta selección</h2><p>Prueba con otra palabra o restablece los filtros para volver a explorar todas las fuentes.</p><button class="n-clear" type="button" data-news-clear>Ver todas las noticias</button></div>';
+    $("#n-lista").innerHTML=frente||g.length?frente+g.join(""):'<div class="pe-news-empty"><h2>No encontramos noticias con esta selección</h2><p>Prueba con otra palabra o restablece los filtros para volver a explorar todas las fuentes.</p><button class="n-clear" type="button" data-news-clear>Ver todas las noticias</button></div>';
     $("#n-mas").innerHTML="";
   }
   function proxima() {
@@ -629,7 +646,7 @@
     if (!esHilo && !c) return vistaHome();
     var sid = esHilo ? "coyuntura" : c.sector, s = SECT[sid], a = ARTS[id] || ARTS[sid] || {};
     var titulo = esHilo ? ED.hilo.titulo : c.titulo, resumen = esHilo ? "Cuatro frentes explican el momento que vive el país tras el cambio de gobierno." : c.resumen;
-    var h = '<article class="art fade"><div class="crumb"><a href="#/">Inicio</a> › <a href="#/s/' + sid + '">' + esc(s.nombre) + "</a></div>" + kicker({ sector: sid }) + "<h1>" + esc(titulo) + '</h1><p class="stand">' + esc(esHilo ? resumen : primera(resumen)) + "</p>";
+    var h = '<article class="art fade"><div class="crumb"><a href="#/">Inicio</a> › <a href="#/s/' + sid + '">' + esc(s.nombre) + "</a></div>" + kicker({ sector: sid }) + "<h1>" + esc(titulo) + '</h1><p class="stand">' + esc(resumen) + "</p>";
     h += '<div class="by"><span><b>Redacción PERÚ INFORMADO</b></span><span>Corte ' + esc(fmtFecha(ED.corte + "T12:00:00Z")) + "</span>" + (esHilo ? "" : '<span class="conf ' + (c.nivel === "alta" ? "alta" : "media") + '" title="Alta: confirmado en fuente oficial. Media: se apoya en prensa; conviene verificar.">Confianza ' + (c.nivel === "alta" ? "alta" : "media · verifica") + "</span>") + '<button class="share" id="b-share">↗ Compartir</button></div>';
     var pf = esHilo ? HILO : INS.filter(function (i) { return i.id === id; })[0], fo = pf ? fotoInfo(pf) : null;
     if (fo) h += thumb(pf, false) + '<p class="cap">Foto: ' + esc(fo.c || "fuente enlazada") + ". Imagen tomada de la fuente citada; derechos de su autor. Las cifras provienen de las fuentes enlazadas al final.</p>";
@@ -638,7 +655,6 @@
       h += ED.hilo.puntos.map(function (p, i) { var t = mapa[p.k]; return '<a class="s hilo-li" href="#/a/' + t + '"><i>' + (i + 1) + "</i><div><b>" + esc(p.k) + "</b><p style=\"margin:2px 0 0;font-size:1rem\">" + esc(p.t) + ' <span style="color:var(--brand);font-weight:800">Leer más →</span></p></div></a>'; }).join("");
       h += '<h2>Qué puedes hacer</h2><p>Sigue estos cuatro frentes en las secciones de arriba y contrasta cada cifra en su fuente primaria. Si quieres aprender los conceptos clave, recorre la <a href="#/ruta" style="color:var(--brand);font-weight:800">Ruta del ciudadano informado</a>.</p>';
     } else {
-      h += "<p>" + esc(resumen) + "</p>";
       if (a.contexto) h += "<h2>Para entender el contexto</h2><p>" + esc(a.contexto) + "</p>";
       h += '<div class="box"><h3>Qué significa para ti</h3><p>' + esc(c.paraTi) + "</p></div>";
       if (a.terminos && a.terminos.length) h += "<h2>Términos clave</h2><div>" + a.terminos.filter(function (t) { return GLOS[t]; }).map(function (t) { return '<button class="term" data-gl="' + t + '">' + esc(GLOS[t].t) + "</button>"; }).join("") + "</div>";
@@ -694,7 +710,7 @@
   function vistaFuentes() {
     var grupos = [["Medios independientes y de investigación", function (f) { return /Independiente|Sin fines|Semanario|Programa|Análisis|Medio referente|Digital/.test(f.tipo) && !/Comercial/.test(f.tipo); }], ["Medios comerciales y semanarios", function (f) { return /Comercial|Semanario ?$/.test(f.tipo) && !/Independiente/.test(f.tipo); }], ["Internacionales", function (f) { return /Internacional/.test(f.tipo); }], ["Datos oficiales y Estado", function (f) { return /Dato oficial|Estatal/.test(f.tipo); }]], usados = {};
     var h = '<div class="fade"><div class="shead" style="--c:var(--brand)"><h1>🔗 Fuentes</h1><p>De dónde sale la información. “Independiente” no es sinónimo de neutral: lee varios medios y contrasta.</p></div>';
-    h += '<div class="tips"><div><b>1 · ¿Quién lo dice?</b><br>Identifica al medio y al autor. ¿Es noticia, análisis u opinión?</div><div><b>2 · ¿Con qué evidencia?</b><br>Busca documentos, datos y declaraciones verificables.</div><div><b>3 · ¿De cuándo es?</b><br>Una cifra vieja puede parecer actual. Mira la fecha de corte.</div><div><b>4 · ¿Quién más lo confirma?</b><br>Contrasta con una fuente distinta, idealmente oficial.</div></div>';
+    h += '<section aria-labelledby="guia-lectura"><h2 id="guia-lectura">Cómo leer y contrastar una noticia</h2><div class="tips"><div><b>1 · ¿Quién lo dice?</b><br>Identifica al medio y al autor. ¿Es noticia, análisis u opinión?</div><div><b>2 · ¿Con qué evidencia?</b><br>Busca documentos, datos y declaraciones verificables. Distingue anuncios de resultados.</div><div><b>3 · ¿De cuándo es?</b><br>Comprueba la fecha, el lugar y el periodo de cada cifra.</div><div><b>4 · ¿Quién más lo confirma?</b><br>Contrasta con una fuente distinta, idealmente primaria.</div></div></section>';
     grupos.forEach(function (g) {
       var l = ED.fuentes.filter(function (f) { var ok = !usados[f.n] && g[1](f); if (ok) usados[f.n] = 1; return ok; });
       if (l.length) h += '<section class="fg"><h2>' + g[0] + "</h2>" + l.map(function (f) { return '<a class="fr" href="' + safeUrl(f.u) + '" target="_blank" rel="noopener noreferrer"><div><b>' + esc(f.n) + "</b><small>" + esc(f.tipo) + "</small><p>" + esc(f.foco) + "</p></div><span>↗</span></a>"; }).join("") + "</section>";
@@ -897,7 +913,7 @@
       var territorio = masNoticias.getAttribute("data-news-more"), previo = nLimites[territorio];
       if (previo == null) return;
       nLimites[territorio] += 6; pintarNoticias();
-      var nuevas = $$('.pe-news-section[data-news-section="' + territorio + '"] .pe-news-card h3 a');
+      var nuevas = $$('.pe-news-section[data-news-section="' + territorio + '"] .pe-ficha .ps-toggle');
       if (nuevas[previo]) nuevas[previo].focus();
       return;
     }
