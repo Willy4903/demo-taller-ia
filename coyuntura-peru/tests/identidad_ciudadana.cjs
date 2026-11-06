@@ -47,10 +47,13 @@ test("las síntesis usan datos actuales del portal y no generan cifras",()=>{
   assert.doesNotMatch(exp,/fetch\(/);
 });
 test("noticias con ficha de fuente y datos, sin opinión repetitiva",()=>{
-  assert.match(app,/pe-news-card/);
+  assert.match(app,/class="pe-ficha"/);
   assert.match(app,/pe-news-section/);
   assert.match(app,/Leer nota original/);
-  assert.match(app,/pe-news-metrics/);
+  assert.match(app,/ps-cifras/);
+  assert.match(app,/Notas relacionadas/);
+  assert.doesNotMatch(app,/\["lec", "Lectura crítica"\]/);
+  assert.doesNotMatch(app,/\["ctx", "Análisis de fondo"\]/);
   assert.doesNotMatch(app,/LA PREGUNTA INCÓMODA/);
   assert.doesNotMatch(app,/ANÁLISIS CRÍTICO/);
   assert.match(app,/pe-data-explain/);
@@ -62,7 +65,7 @@ test("accesibilidad, caché y CSS consistente",()=>{
   assert.match(css,/:focus-visible/);
   assert.match(exp,/aria-selected/);
   assert.match(exp,/aria-expanded/);
-  assert.match(sw,/cp-v19-noticias-20261104/);
+  assert.match(sw,/const CACHE = "cp-v\d+-[^"]+"/);
   assert.match(sw,/assets\/civic-theme.css/);
   assert.match(sw,/assets\/civic-experience.js/);
   assert.match(sw,/assets\/newsroom.js/);

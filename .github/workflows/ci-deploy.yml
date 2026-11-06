@@ -26,11 +26,15 @@ jobs:
           cache: npm
       - run: npm ci
       - run: node --check coyuntura-peru/assets/newsroom.js && node --check coyuntura-peru/assets/app.js && node --check coyuntura-peru/assets/civic-experience.js
-      - run: node --test coyuntura-peru/tests/identidad_ciudadana.cjs
+      - run: node --test coyuntura-peru/tests/identidad_ciudadana.cjs coyuntura-peru/tests/newsroom.test.cjs
       - run: npm run lint
       - run: npm run typecheck
       - run: npm test
       - run: npx playwright install --with-deps chromium
+      - name: Comprobar lectura y navegación de PERÚ INFORMADO
+        run: |
+          node coyuntura-peru/tests/e2e_rutas.cjs
+          node coyuntura-peru/tests/newsroom.e2e.cjs
       - run: npm run test:e2e
       - uses: actions/upload-artifact@v4
         if: failure()

@@ -96,7 +96,7 @@
 .pe-ficha .ps-title{margin:0;font:760 1.12rem/1.42 var(--sans);letter-spacing:-.018em}
 .pe-ficha .ps-toggle{display:block;width:100%;padding:0;border:0;background:none;color:var(--tx);font:inherit;text-align:left;cursor:pointer;overflow-wrap:anywhere}
 .pe-ficha .ps-toggle:hover{color:var(--red-t)}
-.pe-ficha .ps-sum{margin:0;color:var(--tx2);font:.9rem/1.65 var(--sans);cursor:pointer;overflow-wrap:anywhere}
+.pe-ficha .ps-sum{margin:0;color:var(--tx2);font:.9rem/1.65 var(--sans);overflow-wrap:anywhere}
 .pe-ficha .ps-empty{color:var(--tx3);font-style:italic;cursor:default}
 .pe-ficha .ps-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}
 .pe-ficha .ps-k{padding:10px 12px;border:1px solid var(--border);border-left:3px solid var(--red-t);border-radius:8px;background:var(--card2);transition:transform .2s,border-color .2s}
@@ -112,6 +112,7 @@
 .pe-ficha .ps-more i{font-style:normal;transition:transform .25s}
 .pe-ficha[data-open="1"] .ps-more i{transform:rotate(180deg)}
 .pe-ficha .ps-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}
+.pe-ficha .ps-panel[hidden],.pe-ficha .ps-sum[hidden],.pe-ficha .ps-kpis[hidden]{display:none}
 .pe-ficha[data-open="1"] .ps-panel{grid-template-rows:1fr}
 .pe-ficha .ps-in{overflow:hidden;min-height:0}
 .pe-ficha .ps-tabs{display:flex;gap:4px;margin:6px 0 12px;border-bottom:1px solid var(--border);overflow-x:auto}
@@ -131,7 +132,7 @@
 .pe-ficha .ps-cob{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .pe-ficha .ps-cob li{display:grid;grid-template-columns:auto 1fr;gap:2px 12px;padding:9px 11px;border:1px solid var(--border);border-radius:8px;background:var(--card2)}
 .pe-ficha .ps-cob b{font:700 .8rem/1.4 var(--sans)}
-.pe-ficha .ps-cob span{grid-column:1/-1;color:var(--tx2);font:.8rem/1.5 var(--sans)}
+.pe-ficha .ps-cob a{grid-column:1/-1;color:var(--tx2);font:.8rem/1.5 var(--sans);text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
 .pe-ficha .ps-cob time{justify-self:end;color:var(--tx3);font:.7rem/1.4 var(--sans)}
 .pe-ficha .ps-src{margin:14px 0 4px;color:var(--tx3);font:.72rem/1.5 var(--sans)}
 .pe-ficha .ps-src a{color:var(--tx2);text-decoration:underline;text-underline-offset:3px}

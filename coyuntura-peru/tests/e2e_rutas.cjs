@@ -35,7 +35,7 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
     // Noticias: filtros completos, conteo, búsqueda y ausencia de recorte en chips.
     await p.goto(base + "#/noticias"); await p.waitForTimeout(300);
     const filtros = p.locator(".filtros-noticias");
-    ok(await p.locator(".pe-news-nav-primary button").count() === 3, `[${w}] noticias: faltan Perú e Internacional`);
+    ok(await p.locator(".pe-news-nav-primary button").count() === 4, `[${w}] noticias: faltan Portada, Perú, América Latina o Internacional`);
     if (w < 720) await filtros.locator("summary").click();
     ok(await p.locator("#n-count").innerText() !== "", `[${w}] noticias: falta el contador de resultados`);
     const chipLayout = await p.locator(".filtros-noticias .chips").evaluateAll(els => els.length === 2 && els.every(el => el.scrollWidth <= el.clientWidth + 2));
@@ -48,11 +48,11 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
     ok(await p.locator("#n-lista .pe-ficha").count() > 0 && await p.locator("#n-query").inputValue() === "", `[${w}] noticias: limpiar filtros no restaura resultados`);
     // Orden de secciones, fichas de fuente y ausencia de análisis repetidos.
     const newsHeadings=await p.locator(".pe-news-section-header h2").allInnerTexts();
-    ok(newsHeadings[0]==="Perú" && newsHeadings[1]==="Internacional", `[${w}] noticias: orden Perú/Internacional incorrecto`);
+    ok(JSON.stringify(newsHeadings)===JSON.stringify(["Perú","América Latina","Internacional"]), `[${w}] noticias: orden Perú/América Latina/Internacional incorrecto`);
     ok(await p.locator("#n-lista .pe-ficha .ps-src a").count() > 0,
        `[${w}] noticias: faltan enlaces a las fuentes originales`);
-    ok(await p.locator("#n-lista .pe-story").count() === 0,
-       `[${w}] noticias: reaparecieron paneles de opinión repetitivos`);
+    ok(await p.locator('#n-lista [data-pt="lec"], #n-lista [data-pt="ctx"]').count() === 0,
+       `[${w}] noticias: reaparecieron paneles de opinión o contexto repetitivos`);
     await p.locator('[data-news-amb="mundo"]').click();
     ok(await p.locator(".pe-news-section-header h2").allInnerTexts().then(x=>x.length===1&&x[0]==="Internacional"),
        `[${w}] noticias: filtro de Internacional no funciona`);
@@ -159,8 +159,10 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
 
     ok(/Último comunicado oficial del ENFEN/.test(await p.locator("#app").innerText()), `[${w}] El Niño: falta el último comunicado oficial`);
     const datosNoticias = JSON.parse(fs.readFileSync(path.join(RAIZ, "data", "noticias.json"), "utf-8"));
-    const nEnf = datosNoticias.enfen && datosNoticias.enfen.numero ? datosNoticias.enfen.numero.split("-").reduce((a, b) => +b * 1000 + +a) : 0;
-    if (nEnf > 2026016) ok(await p.locator(".n-aviso").count() === 1, `[${w}] El Niño: falta el aviso de comunicado más reciente que el del resumen`);
+    const referencia = await p.evaluate(() => (window.EDITORIAL.nino || {}).comunicadoRef);
+    const numeroComunicado = n => { const m = /^(\d+)-(\d{4})$/.exec(n || ""); return m ? +m[2] * 1000 + +m[1] : 0; };
+    const comunicadoPosterior = numeroComunicado(datosNoticias.enfen && datosNoticias.enfen.numero) > numeroComunicado(referencia);
+    ok(await p.locator(".n-aviso").count() === Number(comunicadoPosterior), `[${w}] El Niño: el aviso debe corresponder a un comunicado posterior al ${referencia}`);
     ok(await p.locator('#app a[href*="observatorio-elnino-peru"]').count() > 0, `[${w}] El Niño: falta el enlace al observatorio`);
     // navegación y tamaños táctiles
     if (w >= 1000) {
@@ -174,7 +176,7 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
     await p.click(w >= 1000 ? "#b-buscar" : "#t-bus"); await p.waitForTimeout(350);
     ok(await p.locator("#buscar.on").count() === 1, `[${w}] el buscador no abre`);
     await p.keyboard.type("dengue"); await p.waitForTimeout(250);
-    ok(await p.locator("#res .row, #res .gt").count() > 0, `[${w}] la búsqueda «dengue» no devuelve resultados`);
+    ok(await p.locator("#res .row, #res .pe-ficha, #res .gt").count() > 0, `[${w}] la búsqueda «dengue» no devuelve resultados`);
     await p.keyboard.press("Escape"); await p.waitForTimeout(250);
     await p.click("#b-mas"); await p.waitForTimeout(350);
     const mt = await p.locator("#menu.on").innerText(); ok(/Glosario/.test(mt) && /Talleres/.test(mt) && /Historial/.test(mt) && /Estad/.test(mt), `[${w}] el menú «Más» no lista los recursos secundarios`);
