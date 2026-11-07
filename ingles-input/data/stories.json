@@ -1,0 +1,174 @@
+[
+  {
+    "id": "s01", "situation": "presentarse", "difficulty": 1,
+    "title": "Hi, my name is Ana", "titleEs": "Hola, me llamo Ana",
+    "sentences": [
+      { "en": "Hi, my name is Ana.", "es": "Hola, me llamo Ana." },
+      { "en": "I am twenty-eight years old.", "es": "Tengo veintiocho años." },
+      { "en": "I am from Peru, but I live in Lima.", "es": "Soy de Perú, pero vivo en Lima." },
+      { "en": "I have a small family.", "es": "Tengo una familia pequeña." },
+      { "en": "I live with my mother and my brother.", "es": "Vivo con mi madre y mi hermano." },
+      { "en": "I like music and I like to cook.", "es": "Me gusta la música y me gusta cocinar." },
+      { "en": "Every weekend, I make dinner for my family.", "es": "Todos los fines de semana preparo la cena para mi familia." },
+      { "en": "I also study English because I want a better job.", "es": "También estudio inglés porque quiero un mejor trabajo." },
+      { "en": "English is not easy, but I practice every day.", "es": "El inglés no es fácil, pero practico todos los días." },
+      { "en": "My friends say my English is getting better.", "es": "Mis amigos dicen que mi inglés está mejorando." },
+      { "en": "Now I want to talk with people from other countries.", "es": "Ahora quiero hablar con personas de otros países." },
+      { "en": "Nice to meet you!", "es": "¡Mucho gusto!" }
+    ]
+  },
+  {
+    "id": "s02", "situation": "trabajo", "difficulty": 2,
+    "title": "A busy day at work", "titleEs": "Un día ocupado en el trabajo",
+    "sentences": [
+      { "en": "Tom works in an office in the city.", "es": "Tom trabaja en una oficina en la ciudad." },
+      { "en": "He starts work at nine o'clock.", "es": "Empieza a trabajar a las nueve en punto." },
+      { "en": "First, he checks his email and drinks a cup of coffee.", "es": "Primero revisa su correo y toma una taza de café." },
+      { "en": "At ten, he has a meeting with his team.", "es": "A las diez tiene una reunión con su equipo." },
+      { "en": "They talk about a new project and share ideas.", "es": "Hablan de un proyecto nuevo y comparten ideas." },
+      { "en": "Tom's boss, Mrs. Lee, is very kind.", "es": "La jefa de Tom, la señora Lee, es muy amable." },
+      { "en": "She always asks, “Do you need any help?”", "es": "Ella siempre pregunta: “¿Necesitas ayuda?”" },
+      { "en": "At noon, Tom eats lunch with his coworkers.", "es": "Al mediodía, Tom almuerza con sus compañeros de trabajo." },
+      { "en": "In the afternoon, he writes a report and calls two clients.", "es": "Por la tarde escribe un informe y llama a dos clientes." },
+      { "en": "He finishes work at six, but today he has to stay one more hour.", "es": "Termina de trabajar a las seis, pero hoy tiene que quedarse una hora más." },
+      { "en": "He is tired, but he is happy because the project is going well.", "es": "Está cansado, pero feliz porque el proyecto va bien." }
+    ]
+  },
+  {
+    "id": "s03", "situation": "comida", "difficulty": 1,
+    "title": "Lunch at a small restaurant", "titleEs": "Almuerzo en un restaurante pequeño",
+    "sentences": [
+      { "en": "Maria and her friend Jo go to a small restaurant for lunch.", "es": "María y su amigo Jo van a un restaurante pequeño a almorzar." },
+      { "en": "The waiter brings two menus and a glass of water.", "es": "El mesero trae dos cartas y un vaso de agua." },
+      { "en": "Maria wants chicken with rice.", "es": "María quiere pollo con arroz." },
+      { "en": "Jo does not eat meat, so he orders a vegetable soup and a salad.", "es": "Jo no come carne, así que pide una sopa de verduras y una ensalada." },
+      { "en": "“Would you like something to drink?” asks the waiter.", "es": "“¿Desean algo de beber?”, pregunta el mesero." },
+      { "en": "Maria asks for orange juice and Jo asks for tea.", "es": "María pide jugo de naranja y Jo pide té." },
+      { "en": "The food comes fast and it is very good.", "es": "La comida llega rápido y está muy buena." },
+      { "en": "Maria says the chicken is delicious.", "es": "María dice que el pollo está delicioso." },
+      { "en": "At the end, they ask for the bill.", "es": "Al final, piden la cuenta." },
+      { "en": "The meal is twenty dollars.", "es": "La comida cuesta veinte dólares." },
+      { "en": "They leave a small tip and say thank you.", "es": "Dejan una propina pequeña y dan las gracias." }
+    ]
+  },
+  {
+    "id": "s04", "situation": "viajes", "difficulty": 2,
+    "title": "At the airport", "titleEs": "En el aeropuerto",
+    "sentences": [
+      { "en": "Carlos is at the airport.", "es": "Carlos está en el aeropuerto." },
+      { "en": "His flight to Miami leaves at six thirty in the morning, so he arrives at four.", "es": "Su vuelo a Miami sale a las seis y media de la mañana, así que llega a las cuatro." },
+      { "en": "First, he goes to the check-in desk and shows his passport.", "es": "Primero va al mostrador de registro y muestra su pasaporte." },
+      { "en": "The woman gives him a boarding pass and says, “Your gate is number twelve.”", "es": "La mujer le da una tarjeta de embarque y dice: “Su puerta es la número doce”." },
+      { "en": "Then he puts his bag on the machine and walks through security.", "es": "Luego pone su maleta en la máquina y pasa por el control de seguridad." },
+      { "en": "He has a lot of time, so he buys a sandwich and sits near the window.", "es": "Tiene mucho tiempo, así que compra un sándwich y se sienta cerca de la ventana." },
+      { "en": "He sees planes arriving and leaving.", "es": "Ve aviones que llegan y salen." },
+      { "en": "A voice says, “Flight two oh four to Miami is now boarding.”", "es": "Una voz dice: “El vuelo doscientos cuatro a Miami está embarcando ahora”." },
+      { "en": "Carlos takes his bag, smiles, and walks to the gate.", "es": "Carlos toma su maleta, sonríe y camina hacia la puerta." },
+      { "en": "He is excited about his trip.", "es": "Está emocionado por su viaje." }
+    ]
+  },
+  {
+    "id": "s05", "situation": "compras", "difficulty": 1,
+    "title": "Buying a jacket", "titleEs": "Comprar una chaqueta",
+    "sentences": [
+      { "en": "Laura needs a new jacket for winter.", "es": "Laura necesita una chaqueta nueva para el invierno." },
+      { "en": "She goes to a clothing store in the mall.", "es": "Va a una tienda de ropa en el centro comercial." },
+      { "en": "She sees a black jacket and likes it.", "es": "Ve una chaqueta negra y le gusta." },
+      { "en": "“How much is it?” she asks the clerk.", "es": "“¿Cuánto cuesta?”, le pregunta al vendedor." },
+      { "en": "“It is sixty dollars,” he says.", "es": "“Cuesta sesenta dólares”, dice él." },
+      { "en": "Laura thinks it is too expensive.", "es": "Laura piensa que es demasiado caro." },
+      { "en": "Then the clerk shows her a blue jacket on sale.", "es": "Entonces el vendedor le muestra una chaqueta azul en oferta." },
+      { "en": "It is only forty dollars.", "es": "Cuesta solo cuarenta dólares." },
+      { "en": "Laura tries it on, but it is too big.", "es": "Laura se la prueba, pero le queda muy grande." },
+      { "en": "“Do you have a smaller size?” she asks.", "es": "“¿Tiene una talla más pequeña?”, pregunta." },
+      { "en": "He brings a small one, and it fits well.", "es": "Él trae una pequeña y le queda bien." },
+      { "en": "She pays with her card and leaves the store happy.", "es": "Paga con su tarjeta y sale de la tienda feliz." }
+    ]
+  },
+  {
+    "id": "s06", "situation": "salud", "difficulty": 3,
+    "title": "A visit to the doctor", "titleEs": "Una visita al médico",
+    "sentences": [
+      { "en": "Last week, Pedro felt sick.", "es": "La semana pasada, Pedro se sintió mal." },
+      { "en": "He had a headache, a sore throat, and a little fever.", "es": "Tenía dolor de cabeza, dolor de garganta y un poco de fiebre." },
+      { "en": "He did not go to work.", "es": "No fue a trabajar." },
+      { "en": "In the afternoon, he went to see the doctor.", "es": "Por la tarde fue a ver al médico." },
+      { "en": "The doctor looked at his throat and checked his temperature.", "es": "La doctora le miró la garganta y le tomó la temperatura." },
+      { "en": "“You have a cold,” she said.", "es": "“Tiene un resfriado”, dijo ella." },
+      { "en": "“You need to rest, drink a lot of water, and take this medicine twice a day.”", "es": "“Necesita descansar, beber mucha agua y tomar esta medicina dos veces al día”." },
+      { "en": "Pedro asked, “When can I go back to work?”", "es": "Pedro preguntó: “¿Cuándo puedo volver al trabajo?”" },
+      { "en": "The doctor answered, “Stay home for two days.”", "es": "La doctora respondió: “Quédese en casa dos días”." },
+      { "en": "Pedro followed her advice.", "es": "Pedro siguió su consejo." },
+      { "en": "He slept a lot, drank tea with honey, and ate soup.", "es": "Durmió mucho, tomó té con miel y comió sopa." },
+      { "en": "On Friday he felt much better.", "es": "El viernes se sintió mucho mejor." }
+    ]
+  },
+  {
+    "id": "s07", "situation": "ciudad", "difficulty": 2,
+    "title": "Lost in the city", "titleEs": "Perdida en la ciudad",
+    "sentences": [
+      { "en": "Sofia is new in the city and she is lost.", "es": "Sofía es nueva en la ciudad y está perdida." },
+      { "en": "She looks for the train station, but she cannot find it.", "es": "Busca la estación de tren, pero no la encuentra." },
+      { "en": "She sees a friendly man on the street and asks, “Excuse me, how do I get to the train station?”", "es": "Ve a un hombre amable en la calle y pregunta: “Disculpe, ¿cómo llego a la estación de tren?”" },
+      { "en": "The man smiles and says, “Go straight for two blocks.", "es": "El hombre sonríe y dice: “Siga recto dos cuadras." },
+      { "en": "Then turn left at the bank.", "es": "Luego gire a la izquierda en el banco." },
+      { "en": "The station is next to a big park.”", "es": "La estación está al lado de un parque grande”." },
+      { "en": "“Is it far?” Sofia asks.", "es": "“¿Está lejos?”, pregunta Sofía." },
+      { "en": "“No, it is about five minutes on foot.”", "es": "“No, está a unos cinco minutos a pie”." },
+      { "en": "Sofia says thank you and follows his directions.", "es": "Sofía da las gracias y sigue sus indicaciones." },
+      { "en": "She walks two blocks, turns left at the bank, and sees the park.", "es": "Camina dos cuadras, gira a la izquierda en el banco y ve el parque." },
+      { "en": "The train station is right there, and she feels relieved.", "es": "La estación de tren está justo ahí y se siente aliviada." }
+    ]
+  },
+  {
+    "id": "s08", "situation": "casa", "difficulty": 1,
+    "title": "My home", "titleEs": "Mi hogar",
+    "sentences": [
+      { "en": "I live in a small apartment with my sister.", "es": "Vivo en un departamento pequeño con mi hermana." },
+      { "en": "It has two bedrooms, a kitchen, a bathroom, and a living room.", "es": "Tiene dos dormitorios, una cocina, un baño y una sala." },
+      { "en": "My room is small, but it is bright.", "es": "Mi cuarto es pequeño, pero es luminoso." },
+      { "en": "There is a bed, a desk, and a big window.", "es": "Hay una cama, un escritorio y una ventana grande." },
+      { "en": "In the living room, there is a sofa and a television.", "es": "En la sala hay un sofá y un televisor." },
+      { "en": "We watch movies there on Friday nights.", "es": "Ahí vemos películas los viernes por la noche." },
+      { "en": "The kitchen is my favorite place.", "es": "La cocina es mi lugar favorito." },
+      { "en": "My sister and I cook together almost every evening.", "es": "Mi hermana y yo cocinamos juntas casi todas las noches." },
+      { "en": "Our neighbors are nice.", "es": "Nuestros vecinos son simpáticos." },
+      { "en": "There is a park near our building, and we walk there on Sundays.", "es": "Hay un parque cerca de nuestro edificio y caminamos ahí los domingos." },
+      { "en": "I love my home because it is warm and quiet.", "es": "Amo mi hogar porque es cálido y tranquilo." }
+    ]
+  },
+  {
+    "id": "s09", "situation": "tiempo-libre", "difficulty": 3,
+    "title": "A weekend in the mountains", "titleEs": "Un fin de semana en las montañas",
+    "sentences": [
+      { "en": "Last Saturday, the weather was perfect, so my friends and I went to the mountains.", "es": "El sábado pasado el clima estuvo perfecto, así que mis amigos y yo fuimos a las montañas." },
+      { "en": "We left early in the morning and took the bus.", "es": "Salimos temprano en la mañana y tomamos el autobús." },
+      { "en": "The sun was shining, and the air was fresh.", "es": "El sol brillaba y el aire era fresco." },
+      { "en": "We walked for three hours and took many photos.", "es": "Caminamos durante tres horas y tomamos muchas fotos." },
+      { "en": "At noon, we sat near a river and ate sandwiches.", "es": "Al mediodía nos sentamos cerca de un río y comimos sándwiches." },
+      { "en": "Then it started to rain, so we ran to a small cabin.", "es": "Entonces empezó a llover, así que corrimos a una cabaña pequeña." },
+      { "en": "We waited there and played cards.", "es": "Esperamos ahí y jugamos cartas." },
+      { "en": "An hour later, the rain stopped.", "es": "Una hora después, la lluvia paró." },
+      { "en": "On the way home, we were tired but very happy.", "es": "De regreso a casa estábamos cansados pero muy felices." },
+      { "en": "It was one of the best days of the year.", "es": "Fue uno de los mejores días del año." }
+    ]
+  },
+  {
+    "id": "s10", "situation": "hotel", "difficulty": 2,
+    "title": "Checking in at the hotel", "titleEs": "Registrarse en el hotel",
+    "sentences": [
+      { "en": "Mark arrives at a hotel after a long trip.", "es": "Mark llega a un hotel después de un viaje largo." },
+      { "en": "At the front desk, a young woman says, “Good evening. Do you have a reservation?”", "es": "En la recepción, una joven dice: “Buenas noches. ¿Tiene una reserva?”" },
+      { "en": "“Yes, it is under the name Mark Evans,” he answers.", "es": "“Sí, está a nombre de Mark Evans”, responde él." },
+      { "en": "She finds his name and asks for his passport.", "es": "Ella encuentra su nombre y le pide el pasaporte." },
+      { "en": "“You are in room three oh five, on the third floor. Breakfast is from seven to ten.”", "es": "“Está en la habitación trescientos cinco, en el tercer piso. El desayuno es de siete a diez”." },
+      { "en": "Mark asks, “Is there Wi-Fi in the room?”", "es": "Mark pregunta: “¿Hay wifi en la habitación?”" },
+      { "en": "“Yes, the password is on this card.”", "es": "“Sí, la contraseña está en esta tarjeta”." },
+      { "en": "She gives him the key and the card.", "es": "Ella le da la llave y la tarjeta." },
+      { "en": "“Do you need help with your bag?”", "es": "“¿Necesita ayuda con su maleta?”" },
+      { "en": "“No, thanks, I can carry it.”", "es": "“No, gracias, puedo llevarla”." },
+      { "en": "Mark takes the elevator, opens the door, and smiles.", "es": "Mark toma el ascensor, abre la puerta y sonríe." },
+      { "en": "The room is clean and comfortable.", "es": "La habitación está limpia y es cómoda." }
+    ]
+  }
+]

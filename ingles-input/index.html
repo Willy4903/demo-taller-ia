@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aprende inglés con input comprensible: historias con audio, shadowing, tarjetas con repetición espaciada y conversación guiada. Funciona sin cuenta y guarda todo en tu navegador.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#2457d6">
+  <title>Inglés con input</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232457d6'/%3E%3Cpath d='M16 22h32v18H30l-8 8v-8h-6z' fill='none' stroke='white' stroke-width='4' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <script>
+    // Aplica el tema guardado antes de pintar para evitar un destello.
+    try {
+      var s = JSON.parse(localStorage.getItem('ingles-input:v1') || '{}').settings || {};
+      if (s.theme === 'light' || s.theme === 'dark') document.documentElement.dataset.theme = s.theme;
+      if (typeof s.fontScale === 'number') document.documentElement.style.setProperty('--fs', s.fontScale);
+    } catch (e) { /* sin almacenamiento */ }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="#/" aria-label="Inglés con input, ir al inicio">
+        <span class="brand-mark" aria-hidden="true">EN</span>
+        <span class="brand-name">Inglés con input</span>
+      </a>
+      <div class="top-actions" id="top-actions"></div>
+    </header>
+    <nav class="nav" id="nav" aria-label="Principal"></nav>
+    <main id="main" tabindex="-1">
+      <p class="loading">Cargando…</p>
+      <noscript><p class="notice notice-warn">Esta app necesita JavaScript para funcionar.</p></noscript>
+    </main>
+  </div>
+  <div id="live" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
