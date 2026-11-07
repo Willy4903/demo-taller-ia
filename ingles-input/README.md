@@ -68,6 +68,7 @@ node --test tests/logica.mjs
 
 # Extremo a extremo (necesita Playwright y Chromium)
 node tests/e2e.cjs            # SHOTS=carpeta para guardar capturas
+node tests/responsive.cjs     # Navegación, tema oscuro y desbordamientos en 6 tamaños
 ```
 
 Las pruebas de contenido comprueban, entre otras cosas, que las historias tengan entre 80 y 150 palabras, que cada palabra de una historia tenga definición en el glosario, que cada diálogo sea un grafo sin nodos inalcanzables y que la respuesta modelo de cada rama pase su propia validación.
@@ -172,3 +173,9 @@ El texto de la respuesta se muestra siempre como texto plano. Si el servidor fal
 - Audio: navegadores con `speechSynthesis` (Chrome, Edge, Safari, Firefox). La calidad depende de las voces del dispositivo; puedes elegir otra en Ajustes. Si el navegador no emite eventos de palabra, el resaltado se estima por tiempo.
 - Reconocimiento de voz: Chrome y Edge (computadora y Android) y Safari reciente. Firefox no lo incluye; en ese caso la app muestra un aviso y ofrece escribir lo dicho. La comparación es una guía: el reconocedor corrige y puede fallar con acentos o ruido.
 - Traducciones y glosario: escritos para este proyecto; revísalos si los amplías. Los significados son orientativos y dependen del contexto.
+
+## Diseño adaptable
+
+La interfaz usa una cabecera editorial, navegación superior y tarjetas por actividad. En pantallas de hasta 600 px las tarjetas pasan a una columna y la navegación a dos filas con controles táctiles de al menos 44 px. El tema oscuro, el tamaño de letra y el progreso siguen disponibles.
+
+La prueba `tests/responsive.cjs` recorre diez rutas a 320, 375, 390, 430, 768 y 1440 px; comprueba navegación, ausencia de desbordamientos, enlace para saltar al contenido y cambio de tema. Es emulación en Chromium, no una prueba en un iPhone físico. Para usar un Chromium existente, define `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` con su ruta al ejecutar cualquiera de las pruebas de navegador.

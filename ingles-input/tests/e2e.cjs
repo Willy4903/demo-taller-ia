@@ -65,7 +65,7 @@ async function shot(page, name) {
 (async () => {
   const server = await serve();
   const base = `http://127.0.0.1:${server.address().port}/`;
-  const browser = await chromium.launch();
+  const browser = await chromium.launch({ executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || undefined });
   const errors = [];
   const watch = (page) => {
     page.on('pageerror', (e) => errors.push(`pageerror: ${e.message}`));
