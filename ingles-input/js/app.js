@@ -8,7 +8,7 @@ import { speak as ttsSpeak, cancelSpeech, onBusyChange } from './speech.js';
 import { applyRating, levelWord } from './adapt.js';
 import { recordFail, recordSuccess } from './grammar.js';
 
-import * as home from './views/home.js';
+import * as home from './views/home.js?v=studio-1';
 import * as stories from './views/stories.js';
 import * as shadowing from './views/shadowing.js';
 import * as vocab from './views/vocab.js';
@@ -56,7 +56,7 @@ function applySettings() {
   root.style.setProperty('--fs', String(s.fontScale));
   const dark = s.theme === 'dark' || (s.theme === 'auto' && window.matchMedia?.('(prefers-color-scheme: dark)').matches);
   const meta = document.querySelector('meta[name="theme-color"]');
-  if (meta) meta.setAttribute('content', dark ? '#11141b' : '#b32031');
+  if (meta) meta.setAttribute('content', dark ? '#111c1a' : '#f6f4ed');
 }
 
 function effectiveDark() {

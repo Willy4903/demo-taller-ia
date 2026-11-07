@@ -35,7 +35,7 @@ jobs:
           import subprocess
           import sys
 
-          for script in ('ingles-input/tests/e2e.cjs', 'ingles-input/tests/responsive.cjs'):
+          for script in ('ingles-input/tests/e2e.cjs', 'ingles-input/tests/responsive.cjs', 'ingles-input/tests/studio.cjs'):
               result = subprocess.run(['node', script], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
               print(result.stdout, flush=True)
               if result.returncode:

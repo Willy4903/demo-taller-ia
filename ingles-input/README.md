@@ -69,6 +69,7 @@ node --test tests/logica.mjs
 # Extremo a extremo (necesita Playwright y Chromium)
 node tests/e2e.cjs            # SHOTS=carpeta para guardar capturas
 node tests/responsive.cjs     # Navegación, tema oscuro y desbordamientos en 6 tamaños
+node tests/studio.cjs         # Explorador, reto breve y audio compartido de la portada
 ```
 
 Las pruebas de contenido comprueban, entre otras cosas, que las historias tengan entre 80 y 150 palabras, que cada palabra de una historia tenga definición en el glosario, que cada diálogo sea un grafo sin nodos inalcanzables y que la respuesta modelo de cada rama pase su propia validación.
@@ -174,8 +175,10 @@ El texto de la respuesta se muestra siempre como texto plano. Si el servidor fal
 - Reconocimiento de voz: Chrome y Edge (computadora y Android) y Safari reciente. Firefox no lo incluye; en ese caso la app muestra un aviso y ofrece escribir lo dicho. La comparación es una guía: el reconocedor corrige y puede fallar con acentos o ruido.
 - Traducciones y glosario: escritos para este proyecto; revísalos si los amplías. Los significados son orientativos y dependen del contexto.
 
-## Diseño adaptable
+## Experiencia interactiva y diseño adaptable
 
-La interfaz usa una cabecera editorial, navegación superior y tarjetas por actividad. En pantallas de hasta 600 px las tarjetas pasan a una columna y la navegación a dos filas con controles táctiles de al menos 44 px. El tema oscuro, el tamaño de letra y el progreso siguen disponibles.
+La portada incorpora una ilustración local, una frase con audio y traducción, un explorador de historias con búsqueda y filtro por tema, y una práctica breve de tres preguntas. Las respuestas muestran correcciones, permiten avanzar y repetir el reto, y el resultado no modifica el progreso guardado. El audio de la portada y del reto se coordina para que solo se reproduzca uno a la vez.
 
-La prueba `tests/responsive.cjs` recorre diez rutas a 320, 375, 390, 430, 768 y 1440 px; comprueba navegación, ausencia de desbordamientos, enlace para saltar al contenido y cambio de tema. Incluye letra al 140 % y una fuente de métricas más anchas para detectar recortes en móviles pequeños. Es emulación en Chromium, no una prueba en un iPhone físico. Para usar un Chromium existente, define `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` con su ruta al ejecutar cualquiera de las pruebas de navegador.
+La interfaz adapta tarjetas y controles a pantallas pequeñas y conserva el tema oscuro y el tamaño de letra. Las animaciones respetan `prefers-reduced-motion`. Los recursos visuales se sirven desde el propio sitio, sin servicios de imágenes ni fuentes externos.
+
+La prueba `tests/responsive.cjs` recorre diez rutas a 320, 375, 390, 430, 768 y 1440 px; comprueba navegación, ausencia de desbordamientos, enlace para saltar al contenido y cambio de tema. Incluye letra al 140 % y una fuente de métricas más anchas. `tests/studio.cjs` comprueba búsqueda, filtros, teclado, aciertos y errores, puntuación, reinicio y coordinación del audio. Las pruebas usan Chromium, no un iPhone físico. Para usar un Chromium existente, define `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` con su ruta.
