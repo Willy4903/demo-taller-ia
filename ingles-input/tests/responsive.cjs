@@ -21,7 +21,7 @@ const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css
   try {
     browser = await chromium.launch({ executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || undefined });
     const base = `http://127.0.0.1:${server.address().port}/`;
-    for (const [width, fontScale] of [[320, 1], [375, 1], [390, 1], [430, 1], [768, 1], [1440, 1], [320, 1.4], [390, 1.4]]) {
+    for (const [width, fontScale, fontFamily] of [[320, 1], [375, 1], [390, 1], [430, 1], [768, 1], [1440, 1], [320, 1.4], [390, 1.4], [320, 1.4, 'DejaVu Sans']]) {
       const context = await browser.newContext({ viewport: { width, height: 844 }, isMobile: width < 600, hasTouch: width < 600 });
       await context.addInitScript(scale => localStorage.setItem('ingles-input:v1', JSON.stringify({ v: 1, settings: { fontScale: scale } })), fontScale);
       const page = await context.newPage();
@@ -30,6 +30,7 @@ const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css
       for (const route of ['', '#/leer', '#/leer/s01', '#/shadowing', '#/tarjetas', '#/hablar', '#/progreso', '#/gramatica', '#/ajustes', '#/inexistente']) {
         await page.goto(base + route);
         await page.waitForSelector('h1');
+        if (fontFamily) await page.addStyleTag({ content: `:root { --font: '${fontFamily}', sans-serif; }` });
         assert.ok(await page.evaluate(expected => document.documentElement.scrollWidth <= expected, width), `${width}px ${route}: horizontal overflow`);
         assert.equal(await page.locator('h1').count(), 1);
         if (width < 600 && route === '#/leer/s01') {
@@ -58,7 +59,7 @@ const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css
       assert.ok(await page.evaluate(expected => document.documentElement.scrollWidth <= expected, width));
       assert.deepEqual(errors, []);
       await context.close();
-      console.log(`PASS ${width}px, font ${fontScale * 100}%: 10 routes, touch navigation, skip link, dark theme, no overflow or JS errors`);
+      console.log(`PASS ${width}px, font ${fontScale * 100}%${fontFamily ? ` ${fontFamily}` : ''}: 10 routes, touch navigation, skip link, dark theme, no overflow or JS errors`);
     }
   } finally {
     if (browser) await browser.close();

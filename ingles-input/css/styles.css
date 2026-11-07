@@ -215,6 +215,7 @@ main { padding: 1rem 1rem 6.5rem; max-width: 56rem; width: 100%; margin: 0 auto;
 .list-card .meta { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; font-size: 0.85rem; color: var(--muted); }
 
 .check-row { display: grid; grid-template-columns: auto 1fr auto; gap: 0.75rem; align-items: center; padding: 0.6rem 0; border-top: 1px solid var(--border); }
+.check-row > div { min-width: 0; overflow-wrap: anywhere; }
 .check-row:first-child { border-top: 0; }
 .check-row input[type='checkbox'] { width: 1.6rem; height: 1.6rem; accent-color: var(--primary); }
 .check-row .bar { margin-top: 0.3rem; }
@@ -439,7 +440,8 @@ input, select, textarea { max-width: 100%; min-width: 0; }
   .page-head { gap: .75rem; }
   .btn, .chip, .icon-btn { min-height: 44px; }
   input, select, textarea { font-size: max(16px, 1em); }
-  .check-row { gap: .5rem; }
+  .check-row { gap: .5rem; grid-template-columns: auto minmax(0, 1fr); }
+  .check-row > span:last-child { grid-column: 2; }
 }
 @media (max-width: 360px) {
   .hero-copy { padding: 1rem; }
