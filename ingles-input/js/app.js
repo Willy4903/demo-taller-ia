@@ -56,7 +56,7 @@ function applySettings() {
   root.style.setProperty('--fs', String(s.fontScale));
   const dark = s.theme === 'dark' || (s.theme === 'auto' && window.matchMedia?.('(prefers-color-scheme: dark)').matches);
   const meta = document.querySelector('meta[name="theme-color"]');
-  if (meta) meta.setAttribute('content', dark ? '#11141b' : '#1f4fc7');
+  if (meta) meta.setAttribute('content', dark ? '#11141b' : '#b32031');
 }
 
 function effectiveDark() {
@@ -172,9 +172,14 @@ async function route() {
   const path = currentPath();
   const match = ROUTES.map((r) => ({ r, m: r.re.exec(path) })).find((x) => x.m);
   clear(main);
+  main.classList.remove('home-page');
   if (!match) {
     main.append(h('h1', { id: 'page-title', tabindex: '-1', text: 'Página no encontrada' }), h('p', {}, h('a', { href: '#/', text: 'Volver al inicio' })));
+    timer.setCategory(null);
+    document.title = 'Página no encontrada · Inglés con input';
     markNav('');
+    document.getElementById('page-title')?.focus({ preventScroll: true });
+    announce('Página no encontrada');
     return;
   }
   const { r, m } = match;
@@ -196,6 +201,11 @@ async function route() {
 async function start() {
   applySettings();
   buildChrome();
+  document.querySelector('.skip-link')?.addEventListener('click', (event) => {
+    event.preventDefault();
+    main.focus({ preventScroll: true });
+    main.scrollIntoView({ block: 'start' });
+  });
   window.matchMedia?.('(prefers-color-scheme: dark)').addEventListener?.('change', () => { applySettings(); updateThemeButton(); });
   try {
     data = await loadData();
