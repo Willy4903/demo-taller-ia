@@ -1,0 +1,112 @@
+[
+  {
+    "id": "be",
+    "title": "Verbo to be: am, is, are",
+    "lines": [
+      "Usa am con I, is con he/she/it y are con you/we/they: I am, she is, they are.",
+      "Para preguntar, cambia el orden: Are you ready? Where is the bank?",
+      "Para negar, agrega not: He is not (isn't) here. Para contraer: I'm, it's, we're."
+    ],
+    "examples": ["She is a nurse.", "Are you from Peru?"]
+  },
+  {
+    "id": "present-simple",
+    "title": "Presente simple",
+    "lines": [
+      "Sirve para hábitos y hechos: I work every day. I live in Lima.",
+      "Con he, she e it, el verbo lleva -s: she works, he lives, it opens.",
+      "Con I, you, we y they el verbo no cambia: we eat, they study."
+    ],
+    "examples": ["She works in a hospital.", "I wake up at six."]
+  },
+  {
+    "id": "do-does",
+    "title": "Do y does en preguntas y negativas",
+    "lines": [
+      "Para preguntar en presente usa do o does y el verbo base: Do you have a fever?",
+      "Does va con he, she e it, y el verbo pierde la -s: Does she like tea?",
+      "Para negar usa don't o doesn't: I don't eat meat. He doesn't like it."
+    ],
+    "examples": ["Do you accept credit cards?", "My brother doesn't wash the dishes."]
+  },
+  {
+    "id": "modals",
+    "title": "Can, could y should",
+    "lines": [
+      "Can, could y should van seguidos del verbo base, sin to ni -s: She can help.",
+      "Could suena más amable para pedir favores: Could you speak slower, please?",
+      "Should da un consejo: You should drink water. Para negar: can't, shouldn't."
+    ],
+    "examples": ["Can I try it on?", "You should rest."]
+  },
+  {
+    "id": "would-like",
+    "title": "I'd like y would you like",
+    "lines": [
+      "I'd like significa quisiera. Es la forma cortés de pedir algo: I'd like a coffee.",
+      "Para ofrecer, pregunta: Would you like some water?",
+      "Si sigue un verbo, usa to: We would like to order now."
+    ],
+    "examples": ["I'd like a room for two nights.", "Would you like something to drink?"]
+  },
+  {
+    "id": "there-is",
+    "title": "There is y there are",
+    "lines": [
+      "Significan hay. Usa there is con una cosa y there are con varias.",
+      "Para preguntar, cambia el orden: Is there a pharmacy near here?",
+      "Para negar: There isn't a bank here. There aren't any seats."
+    ],
+    "examples": ["There are three bedrooms.", "Is there Wi-Fi in the room?"]
+  },
+  {
+    "id": "present-continuous",
+    "title": "Presente continuo",
+    "lines": [
+      "Se forma con am, is o are más el verbo con -ing: I am working.",
+      "Sirve para lo que pasa ahora o para algo temporal: She is cooking dinner.",
+      "Para preguntar, invierte el orden: What are you reading?"
+    ],
+    "examples": ["I'm learning English.", "We are staying here until Sunday."]
+  },
+  {
+    "id": "past-simple",
+    "title": "Pasado simple",
+    "lines": [
+      "Los verbos regulares terminan en -ed: worked, played, cleaned.",
+      "Muchos son irregulares y hay que aprenderlos: go, went; buy, bought; eat, ate.",
+      "Para preguntar o negar usa did y el verbo base: Did you go? I did not go."
+    ],
+    "examples": ["I bought these shoes last week.", "When did the pain start?"]
+  },
+  {
+    "id": "future",
+    "title": "Futuro: going to y will",
+    "lines": [
+      "Be going to más verbo expresa un plan: I'm going to visit my cousin.",
+      "Will más verbo expresa una decisión del momento: I'll take it.",
+      "Es igual para todas las personas: I'll call, she'll call, they'll call."
+    ],
+    "examples": ["It's going to rain tomorrow.", "I'll call the client."]
+  },
+  {
+    "id": "prepositions",
+    "title": "Preposiciones: at, on, in",
+    "lines": [
+      "Usa at para horas y puntos exactos: at eight, at the corner.",
+      "Usa on para días y superficies: on Monday, on the second floor.",
+      "Usa in para meses y lugares grandes: in May, in Lima. Para ubicar: next to, near, across from."
+    ],
+    "examples": ["I start work at eight.", "The station is next to the park."]
+  },
+  {
+    "id": "imperative",
+    "title": "Imperativo: dar instrucciones",
+    "lines": [
+      "Para dar una instrucción usa el verbo base, sin sujeto: Turn left. Take this medicine.",
+      "Para decir que no, usa don't: Don't worry. Don't turn right.",
+      "Let's más verbo es una invitación a hacer algo juntos: Let's go to the beach."
+    ],
+    "examples": ["Go straight for two blocks.", "Let's take a short break."]
+  }
+]

@@ -1,0 +1,260 @@
+[
+  {
+    "id": "d01", "situation": "presentarse", "difficulty": 1,
+    "title": "Meeting someone new", "titleEs": "Conocer a alguien",
+    "goal": "Di cómo te llamas, de dónde eres y qué te gusta hacer.",
+    "start": "a",
+    "nodes": {
+      "a": { "say": "Hi! I'm Sam. What's your name?", "es": "¡Hola! Soy Sam. ¿Cómo te llamas?", "grammar": "be", "starter": "My name is ...",
+        "branches": [ { "keys": [["name", "im", "i am", "call", "called"]], "model": "My name is Ana.", "modelEs": "Me llamo Ana.", "next": "b" } ] },
+      "b": { "say": "Nice to meet you! Where are you from?", "es": "¡Mucho gusto! ¿De dónde eres?", "grammar": "be", "starter": "I'm from ...",
+        "branches": [ { "keys": [["from", "live", "born"]], "model": "I'm from Peru.", "modelEs": "Soy de Perú.", "next": "c" } ] },
+      "c": { "say": "Cool! Do you work or study?", "es": "¡Genial! ¿Trabajas o estudias?", "grammar": "present-simple", "starter": "I work ... / I study ...",
+        "branches": [
+          { "keys": [["work", "job", "working", "worker"]], "model": "I work in an office.", "modelEs": "Trabajo en una oficina.", "next": "cw" },
+          { "keys": [["study", "student", "studying", "university", "school", "college"]], "model": "I'm a student.", "modelEs": "Soy estudiante.", "next": "cs" }
+        ] },
+      "cw": { "say": "Nice! Do you like your job?", "es": "¡Qué bien! ¿Te gusta tu trabajo?", "grammar": "do-does", "starter": "Yes, I ... / Not really, ...",
+        "branches": [
+          { "keys": [["yes", "like", "love", "great", "good", "yeah", "enjoy"]], "model": "Yes, I like it a lot.", "modelEs": "Sí, me gusta mucho.", "next": "d" },
+          { "keys": [["no", "not", "dont", "hard", "boring", "tired"]], "model": "Not really, it's a little hard.", "modelEs": "No mucho, es un poco difícil.", "next": "d" }
+        ] },
+      "cs": { "say": "Great! What do you study?", "es": "¡Genial! ¿Qué estudias?", "grammar": "present-simple", "starter": "I study ...",
+        "branches": [ { "keys": [["study", "studying", "learn", "major", "student"]], "model": "I study business.", "modelEs": "Estudio administración.", "next": "d" } ] },
+      "d": { "say": "What do you like to do in your free time?", "es": "¿Qué te gusta hacer en tu tiempo libre?", "grammar": "present-simple", "starter": "I like to ...",
+        "branches": [ { "keys": [["like", "love", "enjoy", "play", "watch", "read", "listen", "cook", "run", "walk", "travel", "music", "sports"]], "model": "I like to watch movies and play soccer.", "modelEs": "Me gusta ver películas y jugar fútbol.", "next": "end" } ] },
+      "end": { "end": true, "say": "That sounds fun! It was great to meet you. See you soon!", "es": "¡Suena divertido! Fue un gusto conocerte. ¡Hasta pronto!" }
+    }
+  },
+  {
+    "id": "d02", "situation": "trabajo", "difficulty": 2,
+    "title": "A short meeting with your boss", "titleEs": "Una reunión corta con tu jefa",
+    "goal": "Habla del avance de un proyecto y acuerda una fecha de entrega.",
+    "start": "a",
+    "nodes": {
+      "a": { "say": "Good morning! Do you have a minute to talk about the project?", "es": "¡Buenos días! ¿Tienes un minuto para hablar del proyecto?", "grammar": "do-does", "starter": "Sure, ... / Sorry, I'm busy ...",
+        "branches": [
+          { "keys": [["yes", "sure", "of course", "ok", "okay", "yeah", "minute"]], "model": "Sure, I have a minute.", "modelEs": "Claro, tengo un minuto.", "next": "b" },
+          { "keys": [["busy", "later", "meeting", "afternoon", "not now", "cant", "sorry", "after"]], "model": "Sorry, I'm busy now. Can we talk later?", "modelEs": "Lo siento, estoy ocupado ahora. ¿Podemos hablar más tarde?", "next": "later" }
+        ] },
+      "later": { "say": "No problem. Can we talk at three o'clock?", "es": "No hay problema. ¿Podemos hablar a las tres?", "grammar": "prepositions", "starter": "Yes, ... at three.",
+        "branches": [ { "keys": [["yes", "ok", "okay", "sure", "fine", "three", "good", "great", "perfect"]], "model": "Yes, three o'clock is fine.", "modelEs": "Sí, las tres está bien.", "next": "endLater" } ] },
+      "b": { "say": "Good. How is the project going?", "es": "Bien. ¿Cómo va el proyecto?", "grammar": "present-continuous", "starter": "It's going ... / We have a problem ...",
+        "branches": [
+          { "keys": [["well", "good", "great", "fine", "ok", "okay", "fast", "ready", "finished", "almost"]], "model": "It's going well. I'm almost finished.", "modelEs": "Va bien. Casi termino.", "next": "c" },
+          { "keys": [["problem", "late", "difficult", "hard", "delay", "behind", "need", "help", "time"]], "model": "We have a small problem. We need more time.", "modelEs": "Tenemos un pequeño problema. Necesitamos más tiempo.", "next": "cp" }
+        ] },
+      "c": { "say": "Excellent! When can you send me the report?", "es": "¡Excelente! ¿Cuándo puedes enviarme el informe?", "grammar": "modals", "starter": "I can send it ...",
+        "branches": [ { "keys": [["friday", "monday", "tuesday", "wednesday", "thursday", "tomorrow", "today", "tonight", "week", "afternoon", "morning", "send"]], "model": "I can send it by Friday.", "modelEs": "Puedo enviarlo para el viernes.", "next": "end" } ] },
+      "cp": { "say": "I see. How can I help?", "es": "Entiendo. ¿Cómo puedo ayudar?", "grammar": "modals", "starter": "I need ...",
+        "branches": [ { "keys": [["help", "need", "time", "people", "person", "more", "extra", "support", "days", "day"]], "model": "I need two more days, please.", "modelEs": "Necesito dos días más, por favor.", "next": "endHelp" } ] },
+      "end": { "end": true, "say": "Perfect. Thank you for your good work!", "es": "Perfecto. ¡Gracias por tu buen trabajo!" },
+      "endHelp": { "end": true, "say": "Okay, you can have two more days. Thank you for telling me.", "es": "Está bien, puedes tener dos días más. Gracias por avisarme." },
+      "endLater": { "end": true, "say": "Perfect. See you at three o'clock!", "es": "Perfecto. ¡Nos vemos a las tres!" }
+    }
+  },
+  {
+    "id": "d03", "situation": "comida", "difficulty": 1,
+    "title": "Ordering at a restaurant", "titleEs": "Pedir en un restaurante",
+    "goal": "Pide bebida, entrada y plato principal con amabilidad.",
+    "start": "a",
+    "nodes": {
+      "a": { "say": "Good evening! Are you ready to order?", "es": "¡Buenas noches! ¿Están listos para pedir?", "grammar": "would-like", "starter": "Yes, I'd like ... / Not yet, ...",
+        "branches": [
+          { "keys": [["yes", "ready", "like", "want", "please", "id", "order", "can i", "could i"]], "model": "Yes, I'd like to order, please.", "modelEs": "Sí, quisiera pedir, por favor.", "next": "b" },
+          { "keys": [["not", "minute", "wait", "moment", "more time", "second", "no"]], "model": "Not yet. I need a few more minutes.", "modelEs": "Todavía no. Necesito unos minutos más.", "next": "wait" }
+        ] },
+      "wait": { "say": "No problem, take your time. ... Are you ready now?", "es": "No hay problema, tómese su tiempo. ... ¿Ya está listo?", "grammar": "would-like", "starter": "Yes, I'd like ...",
+        "branches": [ { "keys": [["yes", "ready", "like", "want", "please", "id", "order", "now"]], "model": "Yes, I'm ready. I'd like to order.", "modelEs": "Sí, estoy listo. Quisiera pedir.", "next": "b" } ] },
+      "b": { "say": "Great. What would you like to drink?", "es": "Muy bien. ¿Qué le gustaría beber?", "grammar": "would-like", "starter": "I'd like ...",
+        "branches": [ { "keys": [["water", "juice", "tea", "coffee", "soda", "beer", "wine", "lemonade", "milk", "cola", "drink"]], "model": "I'd like orange juice, please.", "modelEs": "Quisiera jugo de naranja, por favor.", "next": "c" } ] },
+      "c": { "say": "Would you like soup or salad to start?", "es": "¿Desea sopa o ensalada de entrada?", "grammar": "would-like", "starter": "I'd like the ...",
+        "branches": [
+          { "keys": [["soup"]], "model": "I'd like the soup, please.", "modelEs": "Quisiera la sopa, por favor.", "next": "cs" },
+          { "keys": [["salad"]], "model": "I'd like the salad, please.", "modelEs": "Quisiera la ensalada, por favor.", "next": "ca" }
+        ] },
+      "cs": { "say": "Good choice. The soup is very hot today. And for the main dish?", "es": "Buena elección. La sopa está muy caliente hoy. ¿Y de plato principal?", "grammar": "would-like", "starter": "I'd like the ...",
+        "branches": [ { "keys": [["chicken", "fish", "pasta", "beef", "steak", "pizza", "rice", "burger", "vegetables", "vegetarian", "like", "want"]], "model": "I'd like the chicken with rice.", "modelEs": "Quisiera el pollo con arroz.", "next": "end" } ] },
+      "ca": { "say": "Nice. Our salad is fresh and light. And for the main dish?", "es": "Bien. Nuestra ensalada es fresca y ligera. ¿Y de plato principal?", "grammar": "would-like", "starter": "I'd like the ...",
+        "branches": [ { "keys": [["chicken", "fish", "pasta", "beef", "steak", "pizza", "rice", "burger", "vegetables", "vegetarian", "like", "want"]], "model": "I'd like the fish with vegetables.", "modelEs": "Quisiera el pescado con verduras.", "next": "end" } ] },
+      "end": { "end": true, "say": "Excellent. I'll bring your food soon. Enjoy your meal!", "es": "Excelente. Le traigo su comida enseguida. ¡Buen provecho!" }
+    }
+  },
+  {
+    "id": "d04", "situation": "viajes", "difficulty": 2,
+    "title": "At the check-in desk", "titleEs": "En el mostrador de registro",
+    "goal": "Di tu destino, tus maletas y elige tu asiento.",
+    "start": "a",
+    "nodes": {
+      "a": { "say": "Good morning. Passport, please. Where are you flying to?", "es": "Buenos días. Pasaporte, por favor. ¿A dónde viaja?", "grammar": "present-continuous", "starter": "I'm flying to ...",
+        "branches": [ { "keys": [["flying", "going", "fly", "travel", "traveling", "visit", "miami", "york", "madrid", "london", "chicago", "lima", "mexico"]], "model": "I'm flying to Miami.", "modelEs": "Viajo a Miami.", "next": "b" } ] },
+      "b": { "say": "Thank you. Do you have any bags to check?", "es": "Gracias. ¿Tiene maletas para despachar?", "grammar": "do-does", "starter": "Yes, I have ... / No, I only have ...",
+        "branches": [
+          { "keys": [["no", "none", "carry", "only", "dont"]], "model": "No, I only have a carry-on bag.", "modelEs": "No, solo tengo un equipaje de mano.", "next": "bn" },
+          { "keys": [["yes", "one", "two", "three", "bag", "suitcase", "luggage"]], "model": "Yes, I have one suitcase.", "modelEs": "Sí, tengo una maleta.", "next": "by" }
+        ] },
+      "by": { "say": "Please put it on the scale. It's twenty kilos, that's fine. Do you want a window or an aisle seat?", "es": "Póngala en la balanza, por favor. Pesa veinte kilos, está bien. ¿Quiere asiento de ventana o de pasillo?", "grammar": "would-like", "starter": "I'd like a ... seat.",
+        "branches": [
+          { "keys": [["window"]], "model": "I'd like a window seat, please.", "modelEs": "Quisiera un asiento de ventana, por favor.", "next": "ew" },
+          { "keys": [["aisle", "pasillo"]], "model": "I'd like an aisle seat, please.", "modelEs": "Quisiera un asiento de pasillo, por favor.", "next": "ea" }
+        ] },
+      "bn": { "say": "Great, you travel light! Do you want a window or an aisle seat?", "es": "¡Muy bien, viaja ligero! ¿Quiere asiento de ventana o de pasillo?", "grammar": "would-like", "starter": "I'd like a ... seat.",
+        "branches": [
+          { "keys": [["window"]], "model": "I'd like a window seat, please.", "modelEs": "Quisiera un asiento de ventana, por favor.", "next": "ew" },
+          { "keys": [["aisle", "pasillo"]], "model": "I'd like an aisle seat, please.", "modelEs": "Quisiera un asiento de pasillo, por favor.", "next": "ea" }
+        ] },
+      "ew": { "end": true, "say": "Window seat, fourteen A. Here is your boarding pass. Your gate is number twelve. Have a nice flight!", "es": "Asiento de ventana, catorce A. Aquí está su tarjeta de embarque. Su puerta es la número doce. ¡Buen viaje!" },
+      "ea": { "end": true, "say": "Aisle seat, fourteen C. Here is your boarding pass. Your gate is number twelve. Have a nice flight!", "es": "Asiento de pasillo, catorce C. Aquí está su tarjeta de embarque. Su puerta es la número doce. ¡Buen viaje!" }
+    }
+  },
+  {
+    "id": "d05", "situation": "compras", "difficulty": 1,
+    "title": "Buying shoes", "titleEs": "Comprar zapatos",
+    "goal": "Pide ayuda, di tu talla y paga.",
+    "start": "a",
+    "nodes": {
+      "a": { "say": "Hello! Can I help you?", "es": "¡Hola! ¿Puedo ayudarle?", "grammar": "modals", "starter": "Yes, I'm looking for ... / No, thanks, ...",
+        "branches": [
+          { "keys": [["shoes", "sneakers", "boots", "looking", "need", "want", "buy", "jacket", "shirt", "pants"]], "model": "Yes, I'm looking for black shoes.", "modelEs": "Sí, busco zapatos negros.", "next": "b" },
+          { "keys": [["just", "looking", "browsing", "no", "thanks"]], "model": "No, thanks. I'm just looking.", "modelEs": "No, gracias. Solo estoy mirando.", "next": "jl" }
+        ] },
+      "jl": { "say": "Sure! These shoes are on sale today. Do you like them?", "es": "¡Claro! Estos zapatos están en oferta hoy. ¿Le gustan?", "grammar": "do-does", "starter": "Yes, they're ... / No, ...",
+        "branches": [
+          { "keys": [["yes", "like", "nice", "beautiful", "great", "love", "good", "ok", "okay"]], "model": "Yes, they're nice. Can I try them on?", "modelEs": "Sí, están bonitos. ¿Puedo probármelos?", "next": "b" },
+          { "keys": [["no", "not", "dont", "expensive", "thanks"]], "model": "No, thank you. I'll come back later.", "modelEs": "No, gracias. Volveré más tarde.", "next": "endNo" }
+        ] },
+      "b": { "say": "What size do you wear?", "es": "¿Qué talla usa?", "grammar": "do-does", "starter": "I wear size ...",
+        "branches": [ { "keys": [["size", "wear", "seven", "eight", "nine", "ten", "medium", "small", "large", "forty", "thirty", "number"]], "model": "I wear size eight.", "modelEs": "Uso la talla ocho.", "next": "c" } ] },
+      "c": { "say": "Here you are. How do they feel?", "es": "Aquí tiene. ¿Cómo le quedan?", "grammar": "be", "starter": "They fit ... / They're too ...",
+        "branches": [
+          { "keys": [["fit", "fits", "comfortable", "good", "great", "perfect", "nice", "well"]], "model": "They fit well. I'll take them.", "modelEs": "Me quedan bien. Me los llevo.", "next": "pay" },
+          { "keys": [["tight", "small", "big", "large", "bigger", "smaller", "too", "size"]], "model": "They're too small. Do you have a bigger size?", "modelEs": "Me quedan chicos. ¿Tiene una talla más grande?", "next": "bigger" }
+        ] },
+      "bigger": { "say": "Let me check. Yes, here is a bigger size. Is that better?", "es": "Déjeme ver. Sí, aquí tiene una talla más grande. ¿Está mejor?", "grammar": "be", "starter": "Yes, it's ...",
+        "branches": [ { "keys": [["yes", "better", "good", "perfect", "fits", "great", "fine", "ok", "okay"]], "model": "Yes, it's perfect. I'll take them.", "modelEs": "Sí, es perfecto. Me los llevo.", "next": "pay" } ] },
+      "pay": { "say": "Wonderful! That's fifty dollars. How would you like to pay?", "es": "¡Excelente! Son cincuenta dólares. ¿Cómo desea pagar?", "grammar": "future", "starter": "I'll pay by ...",
+        "branches": [ { "keys": [["card", "cash", "credit", "debit", "pay"]], "model": "I'll pay by card.", "modelEs": "Pagaré con tarjeta.", "next": "end" } ] },
+      "end": { "end": true, "say": "Thank you! Here is your bag. Have a great day!", "es": "¡Gracias! Aquí tiene su bolsa. ¡Que tenga un gran día!" },
+      "endNo": { "end": true, "say": "No problem. Have a nice day!", "es": "No hay problema. ¡Que tenga un buen día!" }
+    }
+  },
+  {
+    "id": "d06", "situation": "salud", "difficulty": 3,
+    "title": "At the doctor's office", "titleEs": "En el consultorio médico",
+    "goal": "Explica tus síntomas, cuándo empezaron y haz una pregunta.",
+    "start": "a",
+    "nodes": {
+      "a": { "say": "Hello. What's the problem today?", "es": "Hola. ¿Cuál es el problema hoy?", "grammar": "present-simple", "starter": "I have ...",
+        "branches": [ { "keys": [["headache", "head", "throat", "stomach", "fever", "cough", "pain", "hurts", "sick", "cold", "back", "tired", "feel"]], "model": "I have a headache and a sore throat.", "modelEs": "Tengo dolor de cabeza y dolor de garganta.", "next": "b" } ] },
+      "b": { "say": "I see. When did it start?", "es": "Entiendo. ¿Cuándo empezó?", "grammar": "past-simple", "starter": "It started ...",
+        "branches": [ { "keys": [["yesterday", "days", "day", "ago", "morning", "night", "week", "monday", "since", "last", "started", "start"]], "model": "It started two days ago.", "modelEs": "Empezó hace dos días.", "next": "c" } ] },
+      "c": { "say": "Do you have a fever?", "es": "¿Tiene fiebre?", "grammar": "do-does", "starter": "Yes, I ... / No, I don't ...",
+        "branches": [
+          { "keys": [["no", "dont", "not", "without"]], "model": "No, I don't have a fever.", "modelEs": "No, no tengo fiebre.", "next": "cn" },
+          { "keys": [["yes", "fever", "yeah", "little", "high", "hot"]], "model": "Yes, I have a little fever.", "modelEs": "Sí, tengo un poco de fiebre.", "next": "cy" }
+        ] },
+      "cn": { "say": "Good. You have a cold. Rest and drink a lot of water. Do you have any questions?", "es": "Bien. Tiene un resfriado. Descanse y beba mucha agua. ¿Tiene alguna pregunta?", "grammar": "modals", "starter": "Yes, when can I ... / No, thank you.",
+        "branches": [
+          { "keys": [["when", "how", "can", "back", "work", "question", "medicine", "long"]], "model": "When can I go back to work?", "modelEs": "¿Cuándo puedo volver al trabajo?", "next": "end" },
+          { "keys": [["no", "nothing", "dont", "thanks", "thank"]], "model": "No, thank you very much.", "modelEs": "No, muchas gracias.", "next": "end" }
+        ] },
+      "cy": { "say": "Okay. You have the flu. Take this medicine twice a day. Do you have any questions?", "es": "Bien. Tiene gripe. Tome esta medicina dos veces al día. ¿Tiene alguna pregunta?", "grammar": "imperative", "starter": "Yes, when can I ... / No, thank you.",
+        "branches": [
+          { "keys": [["when", "how", "can", "back", "work", "question", "medicine", "long"]], "model": "When can I go back to work?", "modelEs": "¿Cuándo puedo volver al trabajo?", "next": "end" },
+          { "keys": [["no", "nothing", "dont", "thanks", "thank"]], "model": "No, thank you very much.", "modelEs": "No, muchas gracias.", "next": "end" }
+        ] },
+      "end": { "end": true, "say": "Stay home for two days and you will feel better. Take care!", "es": "Quédese en casa dos días y se sentirá mejor. ¡Cuídese!" }
+    }
+  },
+  {
+    "id": "d07", "situation": "ciudad", "difficulty": 2,
+    "title": "Asking for directions", "titleEs": "Pedir indicaciones",
+    "goal": "Pregunta cómo llegar al museo y repite las indicaciones.",
+    "start": "a",
+    "nodes": {
+      "a": { "say": "Hi! You look lost. Can I help you?", "es": "¡Hola! Parece perdido. ¿Puedo ayudarle?", "grammar": "be", "starter": "Yes, please. Where is ...?",
+        "branches": [ { "keys": [["yes", "please", "lost", "where", "looking", "find", "help", "need", "excuse"]], "model": "Yes, please. Where is the museum?", "modelEs": "Sí, por favor. ¿Dónde está el museo?", "next": "b" } ] },
+      "b": { "say": "The museum? It's not far. Do you want to walk or take the bus?", "es": "¿El museo? No está lejos. ¿Quiere caminar o tomar el autobús?", "grammar": "do-does", "starter": "I want to ...",
+        "branches": [
+          { "keys": [["walk", "foot", "walking"]], "model": "I want to walk.", "modelEs": "Quiero caminar.", "next": "w" },
+          { "keys": [["bus", "take"]], "model": "I want to take the bus.", "modelEs": "Quiero tomar el autobús.", "next": "bu" }
+        ] },
+      "w": { "say": "Okay. Go straight for two blocks, then turn left at the bank. The museum is next to the park. Can you repeat that?", "es": "Bien. Siga recto dos cuadras, luego gire a la izquierda en el banco. El museo está al lado del parque. ¿Puede repetirlo?", "grammar": "imperative", "starter": "Go straight ..., turn left ...",
+        "branches": [ { "keys": [["straight", "two"], ["left", "bank"], ["park", "next"]], "min": 0.6, "model": "Go straight for two blocks, turn left at the bank, and it's next to the park.", "modelEs": "Sigo recto dos cuadras, giro a la izquierda en el banco y está al lado del parque.", "next": "end" } ] },
+      "bu": { "say": "Okay. The bus stop is across from the bank. Take bus number ten. Where is the bus stop?", "es": "Bien. La parada está frente al banco. Tome el autobús número diez. ¿Dónde está la parada?", "grammar": "prepositions", "starter": "It's across from ...",
+        "branches": [ { "keys": [["across", "bank", "stop", "front", "opposite"]], "model": "It's across from the bank.", "modelEs": "Está frente al banco.", "next": "end" } ] },
+      "end": { "end": true, "say": "Perfect! You got it. Have a nice day!", "es": "¡Perfecto! Lo tiene claro. ¡Que tenga un buen día!" }
+    }
+  },
+  {
+    "id": "d08", "situation": "casa", "difficulty": 1,
+    "title": "Talking about your home", "titleEs": "Hablar de tu casa",
+    "goal": "Describe tu departamento, con quién vives y qué haces en casa.",
+    "start": "a",
+    "nodes": {
+      "a": { "say": "Your apartment is nice! How many bedrooms are there?", "es": "¡Tu departamento es bonito! ¿Cuántos dormitorios hay?", "grammar": "there-is", "starter": "There are ...",
+        "branches": [ { "keys": [["one", "two", "three", "four", "bedroom", "bedrooms", "room", "rooms"]], "model": "There are two bedrooms.", "modelEs": "Hay dos dormitorios.", "next": "b" } ] },
+      "b": { "say": "Nice. Who do you live with?", "es": "Qué bien. ¿Con quién vives?", "grammar": "present-simple", "starter": "I live with ... / I live alone.",
+        "branches": [
+          { "keys": [["alone", "myself", "by", "no one", "nobody"]], "model": "I live alone.", "modelEs": "Vivo solo.", "next": "ba" },
+          { "keys": [["with", "mother", "father", "parents", "sister", "brother", "wife", "husband", "friend", "family", "roommate", "dog", "cat"]], "model": "I live with my sister.", "modelEs": "Vivo con mi hermana.", "next": "bw" }
+        ] },
+      "ba": { "say": "That sounds peaceful. What is your favorite room in the apartment?", "es": "Suena tranquilo. ¿Cuál es tu cuarto favorito del departamento?", "grammar": "be", "starter": "My favorite room is ...",
+        "branches": [ { "keys": [["kitchen", "bedroom", "living", "bathroom", "room", "balcony", "favorite", "sofa"]], "model": "My favorite room is the kitchen.", "modelEs": "Mi cuarto favorito es la cocina.", "next": "d" } ] },
+      "bw": { "say": "That's nice! What is your favorite room in the apartment?", "es": "¡Qué lindo! ¿Cuál es tu cuarto favorito del departamento?", "grammar": "be", "starter": "My favorite room is ...",
+        "branches": [ { "keys": [["kitchen", "bedroom", "living", "bathroom", "room", "balcony", "favorite", "sofa"]], "model": "My favorite room is the living room.", "modelEs": "Mi cuarto favorito es la sala.", "next": "d" } ] },
+      "d": { "say": "What do you usually do there?", "es": "¿Qué sueles hacer ahí?", "grammar": "present-simple", "starter": "I usually ...",
+        "branches": [ { "keys": [["cook", "watch", "read", "sleep", "eat", "relax", "play", "work", "study", "listen", "usually"]], "model": "I usually cook dinner and watch TV.", "modelEs": "Normalmente preparo la cena y veo televisión.", "next": "end" } ] },
+      "end": { "end": true, "say": "That sounds very comfortable. I love cozy homes!", "es": "Suena muy cómodo. ¡Me encantan los hogares acogedores!" }
+    }
+  },
+  {
+    "id": "d09", "situation": "tiempo-libre", "difficulty": 3,
+    "title": "Plans for the weekend", "titleEs": "Planes para el fin de semana",
+    "goal": "Habla de lo que haces normalmente, de tus planes y de lo que hiciste.",
+    "start": "a",
+    "nodes": {
+      "a": { "say": "Hey! What do you usually do on weekends?", "es": "¡Hola! ¿Qué sueles hacer los fines de semana?", "grammar": "present-simple", "starter": "I usually ...",
+        "branches": [ { "keys": [["usually", "weekend", "watch", "play", "go", "read", "visit", "sleep", "cook", "friends", "family", "walk"]], "model": "I usually watch movies and meet my friends.", "modelEs": "Normalmente veo películas y me reúno con mis amigos.", "next": "b" } ] },
+      "b": { "say": "Sounds fun. What are you going to do this weekend?", "es": "Suena divertido. ¿Qué vas a hacer este fin de semana?", "grammar": "future", "starter": "I'm going to ...",
+        "branches": [
+          { "keys": [["beach", "park", "mountain", "mountains", "hike", "walk", "outside", "river", "trip", "camping", "bike"]], "model": "I'm going to go to the beach.", "modelEs": "Voy a ir a la playa.", "next": "bo" },
+          { "keys": [["home", "stay", "house", "rest", "sleep", "movie", "movies", "read", "cook", "series"]], "model": "I'm going to stay home and rest.", "modelEs": "Me voy a quedar en casa a descansar.", "next": "bh" }
+        ] },
+      "bo": { "say": "Great idea! It's going to be sunny on Saturday. What time do you want to leave?", "es": "¡Buena idea! El sábado va a estar soleado. ¿A qué hora quieres salir?", "grammar": "prepositions", "starter": "At ... in the morning.",
+        "branches": [ { "keys": [["morning", "afternoon", "oclock", "eight", "nine", "ten", "early", "at", "am", "pm"]], "model": "I want to leave at nine in the morning.", "modelEs": "Quiero salir a las nueve de la mañana.", "next": "c" } ] },
+      "bh": { "say": "That sounds relaxing. It's going to rain on Saturday, so it's a good plan. What do you want to watch?", "es": "Suena relajante. El sábado va a llover, así que es un buen plan. ¿Qué quieres ver?", "grammar": "do-does", "starter": "I want to watch ...",
+        "branches": [ { "keys": [["movie", "film", "comedy", "action", "series", "horror", "watch", "love", "romantic", "documentary"]], "model": "I want to watch a comedy.", "modelEs": "Quiero ver una comedia.", "next": "c" } ] },
+      "c": { "say": "By the way, what did you do last weekend?", "es": "Por cierto, ¿qué hiciste el fin de semana pasado?", "grammar": "past-simple", "starter": "I went to ... / I played ...",
+        "branches": [ { "keys": [["played", "watched", "went", "visited", "stayed", "cooked", "slept", "walked", "met", "last", "yesterday", "did", "was", "were"]], "model": "I went to a park and played soccer.", "modelEs": "Fui a un parque y jugué fútbol.", "next": "end" } ] },
+      "end": { "end": true, "say": "Great! Let's talk on Monday and tell each other about it. Have a good weekend!", "es": "¡Genial! Hablemos el lunes y contémonos todo. ¡Buen fin de semana!" }
+    }
+  },
+  {
+    "id": "d10", "situation": "hotel", "difficulty": 2,
+    "title": "Checking in at the hotel", "titleEs": "Registrarse en el hotel",
+    "goal": "Haz el registro, pregunta por un servicio y rechaza ayuda con tu maleta.",
+    "start": "a",
+    "nodes": {
+      "a": { "say": "Good evening. Welcome to the Sunrise Hotel. Do you have a reservation?", "es": "Buenas noches. Bienvenido al Hotel Sunrise. ¿Tiene una reserva?", "grammar": "present-simple", "starter": "Yes, I have ... / No, I don't ...",
+        "branches": [
+          { "keys": [["yes", "reservation", "reserved", "booked", "name", "under"]], "model": "Yes, I have a reservation under the name Rivera.", "modelEs": "Sí, tengo una reserva a nombre de Rivera.", "next": "b" },
+          { "keys": [["no", "dont", "not", "room", "need", "available", "night", "nights"]], "model": "No, I don't. Do you have a room for two nights?", "modelEs": "No. ¿Tienen una habitación para dos noches?", "next": "nr" }
+        ] },
+      "b": { "say": "Let me check. Yes, Mr. Rivera. A room for two nights. May I see your passport?", "es": "Déjeme ver. Sí, señor Rivera. Una habitación para dos noches. ¿Puedo ver su pasaporte?", "grammar": "be", "starter": "Sure, here is ...",
+        "branches": [ { "keys": [["passport", "here", "sure", "ok", "okay", "yes", "id"]], "model": "Sure, here is my passport.", "modelEs": "Claro, aquí está mi pasaporte.", "next": "c" } ] },
+      "nr": { "say": "Yes, we have a room for two nights. It's eighty dollars per night. Is that okay?", "es": "Sí, tenemos una habitación para dos noches. Son ochenta dólares por noche. ¿Está bien?", "grammar": "be", "starter": "Yes, that's ...",
+        "branches": [ { "keys": [["yes", "ok", "okay", "fine", "good", "sure", "perfect", "take"]], "model": "Yes, that's fine. I'll take it.", "modelEs": "Sí, está bien. La tomo.", "next": "c" } ] },
+      "c": { "say": "Thank you. You are in room three oh five, on the third floor. Breakfast is from seven to ten. Do you have any questions?", "es": "Gracias. Está en la habitación trescientos cinco, en el tercer piso. El desayuno es de siete a diez. ¿Tiene alguna pregunta?", "grammar": "there-is", "starter": "Is there ...? / Where is ...?",
+        "branches": [
+          { "keys": [["wifi", "wi fi", "internet", "password"]], "model": "Is there Wi-Fi in the room?", "modelEs": "¿Hay wifi en la habitación?", "next": "cw" },
+          { "keys": [["pool", "gym", "restaurant", "taxi", "luggage", "bag", "bags", "elevator", "where", "towel", "towels"]], "model": "Where is the elevator?", "modelEs": "¿Dónde está el ascensor?", "next": "cx" }
+        ] },
+      "cw": { "say": "Yes, the password is on your card. Do you need help with your bag?", "es": "Sí, la contraseña está en su tarjeta. ¿Necesita ayuda con su maleta?", "grammar": "modals", "starter": "No, thanks. I can ...",
+        "branches": [ { "keys": [["yes", "no", "thanks", "thank", "please", "help", "carry", "can"]], "model": "No, thanks. I can carry it.", "modelEs": "No, gracias. Puedo llevarla.", "next": "end" } ] },
+      "cx": { "say": "The elevator is on your right, next to the restaurant. Do you need help with your bag?", "es": "El ascensor está a su derecha, al lado del restaurante. ¿Necesita ayuda con su maleta?", "grammar": "modals", "starter": "No, thanks. I can ...",
+        "branches": [ { "keys": [["yes", "no", "thanks", "thank", "please", "help", "carry", "can"]], "model": "No, thanks. I can carry it.", "modelEs": "No, gracias. Puedo llevarla.", "next": "end" } ] },
+      "end": { "end": true, "say": "Enjoy your stay, and good night!", "es": "Disfrute su estadía. ¡Buenas noches!" }
+    }
+  }
+]

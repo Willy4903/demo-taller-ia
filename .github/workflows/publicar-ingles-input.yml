@@ -1,0 +1,66 @@
+name: Publicar Inglés con input
+
+# App estática de la carpeta ingles-input/. Se publica en gh-pages/ingles-input/ sin tocar el resto de la rama
+# (mismo patrón que PERÚ INFORMADO en ci-deploy.yml). Solo se publica desde main.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "ingles-input/**"
+      - ".github/workflows/publicar-ingles-input.yml"
+  pull_request:
+    paths:
+      - "ingles-input/**"
+      - ".github/workflows/publicar-ingles-input.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validar contenido y lógica
+        run: node --test ingles-input/tests/logica.mjs
+
+  publicar:
+    needs: probar
+    if: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: publicar-gh-pages
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: fuente
+      - uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: sitio
+      - name: Copiar la app a gh-pages/ingles-input/
+        run: |
+          rm -rf sitio/ingles-input
+          mkdir -p sitio/ingles-input
+          cp -r fuente/ingles-input/. sitio/ingles-input/
+          rm -rf sitio/ingles-input/tests sitio/ingles-input/docs sitio/ingles-input/README.md
+          touch sitio/.nojekyll
+      - name: Publicar en gh-pages
+        working-directory: sitio
+        run: |
+          git config user.name "ingles-input-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "gh-pages ya está al día."
+          else
+            git commit -m "Publicar Inglés con input"
+            git push origin gh-pages
+          fi

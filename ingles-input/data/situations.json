@@ -1,0 +1,12 @@
+[
+  { "id": "presentarse", "name": "Presentarse", "desc": "Decir quién eres, de dónde eres y qué te gusta", "icon": "user" },
+  { "id": "trabajo", "name": "En el trabajo", "desc": "Reuniones, horarios y compañeros", "icon": "briefcase" },
+  { "id": "comida", "name": "Comida y restaurantes", "desc": "Pedir, pagar y hablar de lo que comes", "icon": "utensils" },
+  { "id": "viajes", "name": "Viajes y aeropuerto", "desc": "Vuelos, pasaporte y puertas de embarque", "icon": "plane" },
+  { "id": "compras", "name": "De compras", "desc": "Precios, tallas y pagos", "icon": "bag" },
+  { "id": "salud", "name": "Salud y médico", "desc": "Síntomas, consejos y medicinas", "icon": "heart" },
+  { "id": "ciudad", "name": "Direcciones y ciudad", "desc": "Pedir y dar indicaciones", "icon": "map" },
+  { "id": "casa", "name": "Casa y familia", "desc": "Tu hogar, tu familia y tu rutina", "icon": "home" },
+  { "id": "tiempo-libre", "name": "Tiempo libre y clima", "desc": "Fines de semana, planes y el tiempo", "icon": "sun" },
+  { "id": "hotel", "name": "Hotel y alojamiento", "desc": "Reservas, llaves y servicios", "icon": "bed" }
+]
