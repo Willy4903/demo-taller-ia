@@ -5,6 +5,8 @@
 - Tolera feeds caídos: si ninguno responde no sobrescribe los datos existentes.
 - Pensado para correr en GitHub Actions 7 veces al día (hora de Lima).
 """
+from geografia import aplicar_geografia, generar_js
+from limpieza_noticias import limpiar_registro, limpiar_texto
 import datetime as dt
 import email.utils
 import hashlib
@@ -105,7 +107,13 @@ PATRON_CONTENIDO_IRRELEVANTE = re.compile(
 
 
 def es_irrelevante(titulo):
-    return bool(PATRON_CONTENIDO_IRRELEVANTE.search(norm(titulo or "")))
+    t = norm(titulo or "").strip()
+    servicios = {"seccion", "inicio", "portada", "sin titulo", "reportar un caso", "denuncia segura",
+                 "alertas de defensores en riesgo", "los resistentes del peru", "suscribete al newsletter",
+                 "ojo publico", "ojo-publico"}
+    return (bool(PATRON_CONTENIDO_IRRELEVANTE.search(t)) or t.strip(" -") in servicios
+            or bool(re.fullmatch(r"(?:reportar un caso|denuncia segura|alertas de defensores en riesgo)(?:\s*[·|–—].*)?", t)))
+
 
 
 
@@ -369,8 +377,8 @@ def elegir_oraciones(titulo, descripcion, parrafos, maximo=3, limite=520):
 
 def sintetizar(it, descripcion="", parrafos=None):
     """Arma la síntesis de una nota con el texto publicado por el medio: primeras oraciones relevantes y cifras clave."""
-    parrafos = parrafos or []
-    base_desc = descripcion or it.get("resumen") or ""
+    parrafos = [limpiar_texto(p) for p in (parrafos or [])]
+    base_desc = limpiar_texto(descripcion or it.get("resumen") or "")
     oraciones = elegir_oraciones(it.get("titulo", ""), base_desc, parrafos)
     texto_cifras = ". ".join([it.get("titulo", "").rstrip(".:"), base_desc] + parrafos[:6])
     res = {}
@@ -638,11 +646,11 @@ def parsear_feed(datos, nombre, tipo, sector_def):
             "url": url,
             "fecha": fecha.strftime("%Y-%m-%dT%H:%M:%SZ") if fecha else None,
             "tipo": tipo,
-            "ambito": "mundo" if tipo == "internacional" else "peru",
             "genero": genero_de(url, titulo),
             "imagen": extraer_imagen(e),
         }
-        salida.append(item)
+        if "/publirreportaje/" not in url.lower():
+            salida.append(aplicar_geografia(limpiar_registro(item)))
         if len(salida) >= MAX_POR_FEED:
             break
     return salida
@@ -707,11 +715,12 @@ def es_antiguo(it, ahora=None):
 
 def fusionar(nuevos, previos):
     vistos_url, vistos_tit, todos = set(), set(), []
-    previos = [i for i in previos if not es_antiguo(i) and not es_irrelevante(i.get("titulo"))]
-    nuevos = [i for i in nuevos if not es_irrelevante(i.get("titulo"))]
+    previos = [i for i in previos if not es_antiguo(i) and not es_irrelevante(i.get("titulo")) and "/publirreportaje/" not in i.get("url", "").lower()]
+    nuevos = [i for i in nuevos if not es_irrelevante(i.get("titulo")) and "/publirreportaje/" not in i.get("url", "").lower()]
     for it in sorted(nuevos, key=clave_orden, reverse=True) + sorted(previos, key=clave_orden, reverse=True):
         if es_deporte(it.get("titulo")):
             it["sector"] = "deporte"
+        it = aplicar_geografia(it)
         u, t = url_canonica(it["url"]), norm(it["titulo"])[:90]
         if u in vistos_url or t in vistos_tit:
             continue
@@ -854,6 +863,7 @@ def enfen_ultimo(previo=None):
 
 
 def escribir(datos):
+    generar_js()
     os.makedirs(DATOS, exist_ok=True)
     tmp_json, tmp_js = ARCHIVO_JSON + ".tmp", ARCHIVO_JS + ".tmp"
     with open(tmp_json, "w", encoding="utf-8") as f:
@@ -880,6 +890,7 @@ def resumen_ejecucion(titulo, lineas):
 def main(feeds=None):
     feeds = feeds or FEEDS
     previo = cargar_previo()
+    previo["items"] = [limpiar_registro(i) for i in previo.get("items", [])]
     previo_estado = previo.get("estado_fuentes") or {}
     ahora = ahora_iso()
     nuevos, estado, ok = [], {}, 0
@@ -909,6 +920,7 @@ def main(feeds=None):
     enriquecer_sintesis(nuevos, previo.get("items", []))
     combinados = fusionar(nuevos, previo.get("items", []))
     enriquecer_sintesis(combinados, previo.get("items", []))
+    combinados = [aplicar_geografia(limpiar_registro(i)) for i in combinados]
     items, descartes, errores = validar_datos(combinados, previo.get("items", []))
     if errores:
         print("Validación fallida, no se publica: " + "; ".join(errores), file=sys.stderr)

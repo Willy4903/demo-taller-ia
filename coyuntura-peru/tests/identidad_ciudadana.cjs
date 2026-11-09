@@ -75,7 +75,9 @@ test("accesibilidad, caché y CSS consistente",()=>{
 
 test("clasificación, territorios, identidad y filtro editorial",()=>{
   const vm=require("node:vm");
-  const context={window:{}};
+  const context={window:{},URL};
+  vm.runInNewContext(read("data/geografia.js"),context);
+  vm.runInNewContext(read("assets/geografia.js"),context);
   vm.runInNewContext(read("assets/newsroom.js"),context);
   const q=context.window.PERU_NEWS;
   assert.equal(q.excluir({titulo:"Horóscopo de hoy, miércoles 4 de noviembre"}),true);

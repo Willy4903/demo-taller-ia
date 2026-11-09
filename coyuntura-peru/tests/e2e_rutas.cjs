@@ -48,7 +48,7 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
     ok(await p.locator("#n-lista .pe-ficha").count() > 0 && await p.locator("#n-query").inputValue() === "", `[${w}] noticias: limpiar filtros no restaura resultados`);
     // Orden de secciones, fichas de fuente y ausencia de análisis repetidos.
     const newsHeadings=await p.locator(".pe-news-section-header h2").allInnerTexts();
-    ok(JSON.stringify(newsHeadings)===JSON.stringify(["Perú","América Latina","Internacional"]), `[${w}] noticias: orden Perú/América Latina/Internacional incorrecto`);
+    ok(JSON.stringify(newsHeadings.filter(x=>x!=="Ámbito por confirmar"))===JSON.stringify(["Perú","América Latina","Internacional"]), `[${w}] noticias: orden Perú/América Latina/Internacional incorrecto`);
     ok(await p.locator("#n-lista .pe-ficha .ps-src a").count() > 0,
        `[${w}] noticias: faltan enlaces a las fuentes originales`);
     ok(await p.locator('#n-lista [data-pt="lec"], #n-lista [data-pt="ctx"]').count() === 0,

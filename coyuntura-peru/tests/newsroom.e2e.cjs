@@ -46,7 +46,7 @@ Object.assign(fixture.items[0], {
 });
 fixture.items[2].resumen = fixture.items[2].titulo;
 Object.assign(fixture.items[3], { puntos: [fixture.items[3].titulo], sintesis: fixture.items[3].titulo, resumen: usefulFallback });
-fixture.items[5].titulo = "Inversión pública regional: presupuesto para nuevos proyectos";
+fixture.items[5].titulo = "Inversión pública regional en Perú: presupuesto para nuevos proyectos";
 
 const editorialContext = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(ROOT, "data/editorial.js"), "utf8"), editorialContext);
@@ -322,6 +322,25 @@ async function smallFrontPages(browser, base) {
     browser = await pw.chromium.launch({ executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || undefined });
     for (const [width, height] of [[390, 844], [1440, 1000]]) await runViewport(browser, base, width, height);
     await smallFrontPages(browser, base);
+    // Real geographic regressions: a Peruvian publisher does not make US news national.
+    const geoCases = JSON.parse(fs.readFileSync(path.join(__dirname, 'geografia-casos.json'), 'utf8'));
+    const selected = [geoCases[0], geoCases[1], geoCases.find(c => c.item.titulo.includes('esterilizaciones')), geoCases.find(c => c.item.titulo.includes('Guatemala')), geoCases.find(c => c.item.titulo.includes('Los expertos en psicología'))];
+    const geoData = { generado: fixture.generado, items: selected.map(c => Object.assign({}, fixture.items[4], c.item, { imagen: null })) };
+    const geoContext = await browser.newContext({ viewport: { width: 390, height: 844 }, serviceWorkers: 'block', reducedMotion: 'reduce' });
+    await geoContext.route(url => !url.toString().startsWith(base), r => r.abort());
+    await geoContext.route('**/data/noticias.js*', r => r.fulfill({ contentType: 'text/javascript', body: 'window.NOTICIAS = ' + JSON.stringify(geoData) + ';' }));
+    const geoPage = await geoContext.newPage();
+    await geoPage.goto(base + '#/noticias');
+    await geoPage.locator('.pe-ficha').first().waitFor();
+    equal(await geoPage.locator('[data-news-section="mundo"] .pe-ficha').count(), 2, 'ambas noticias del Pentágono van a Internacional');
+    equal(await geoPage.locator('[data-news-section="peru"] .pe-ficha').count(), 1, 'la BBC sobre esterilizaciones en Perú va a Perú');
+    match(await geoPage.locator('[data-news-section="peru"]').innerText(), /esterilizaciones/, 'Perú no depende del país del medio');
+    equal(await geoPage.locator('[data-news-section="latam"] .pe-ficha').count(), 1, 'Guatemala va a América Latina');
+    equal(await geoPage.locator('[data-news-section="pendiente"] .pe-ficha').count(), 1, 'sin evidencia no se inventa ubicación');
+    await geoPage.locator('[data-news-amb="peru"]').click();
+    equal(await geoPage.locator('.pe-ficha').count(), 1, 'filtro Perú excluye política estadounidense y notas ambiguas');
+    await geoContext.close();
+
     const live = await browser.newContext({ viewport: { width: 390, height: 844 }, serviceWorkers: "block", reducedMotion: "reduce" });
     await live.route(url => !url.toString().startsWith(base), route => route.abort());
     await live.route("**/data/noticias.js*", route => route.fulfill({ contentType: "text/javascript", body: "window.NOTICIAS = " + JSON.stringify(fixture) + ";" }));

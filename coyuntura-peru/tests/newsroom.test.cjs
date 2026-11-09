@@ -4,7 +4,9 @@ const fs = require("node:fs");
 const path = require("node:path");
 const vm = require("node:vm");
 
-const context = { window: {} };
+const context = { window: {}, URL };
+vm.runInNewContext(fs.readFileSync(path.join(__dirname,"../data/geografia.js"),"utf8"),context);
+vm.runInNewContext(fs.readFileSync(path.join(__dirname,"../assets/geografia.js"),"utf8"),context);
 vm.runInNewContext(fs.readFileSync(path.join(__dirname, "../assets/newsroom.js"), "utf8"), context);
 const cifras = item => Array.from(context.window.PERU_NEWS.cifras(item));
 
@@ -34,4 +36,17 @@ test("las cifras son fragmentos literales de un único campo de la fuente", () =
 test("se omiten números sin unidad, duplicados y cifras posteriores al límite", () => {
   assert.deepEqual(cifras({ titulo: "Reporte 2026: 3%, 2 personas y 4 casos", resumen: "3% y 2 personas; 9 hogares más" }), ["3%", "2 personas", "4 casos"]);
   assert.deepEqual(cifras({}), []);
+});
+
+const geoCases = JSON.parse(fs.readFileSync(path.join(__dirname, 'geografia-casos.json'), 'utf8'));
+test('la geografía identifica el contenido y no la nacionalidad del medio', () => {
+  for (const caso of geoCases) assert.equal(context.window.PERU_GEOGRAFIA.clasificar(caso.item).zona, caso.zona, caso.item.titulo);
+});
+test('Python y navegador clasifican igual todo el lote y las regresiones', () => {
+  const items = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/noticias.json'),'utf8')).items.concat(geoCases.map(c => c.item));
+  const {execFileSync} = require('node:child_process');
+  const python = "import sys,json;sys.path.insert(0,'coyuntura-peru/scripts');from geografia import clasificar_geografia;print(json.dumps([clasificar_geografia(i) for i in json.load(sys.stdin)]))";
+  const backend = JSON.parse(execFileSync('python3',['-c',python],{cwd:path.resolve(__dirname,'../..'),input:JSON.stringify(items),encoding:'utf8'}));
+  const web = items.map(i => JSON.parse(JSON.stringify(context.window.PERU_GEOGRAFIA.clasificar(i))));
+  assert.deepEqual(web,backend);
 });

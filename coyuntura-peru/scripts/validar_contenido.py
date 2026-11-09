@@ -4,6 +4,7 @@
 Revisa: noticias (fechas, duplicados, sectores, dirección), estado de las fuentes, indicadores del contenido
 editorial (unidad, fecha de corte y fuente primaria), enlaces de las fuentes (formato) y la estructura del HTML.
 """
+from geografia import clasificar_geografia
 import datetime as dt
 import json
 import os
@@ -56,6 +57,9 @@ def validar_noticias():
             continue
         if i.get("sector") not in SECTORES:
             err(f"sector desconocido en «{t[:50]}»: {i.get('sector')}")
+        esperado = clasificar_geografia(i)
+        if i.get("geografia") != esperado or i.get("ambito") != esperado["ambito"]:
+            err(f"geografía incoherente en «{t[:70]}»")
         f = i.get("fecha")
         if f:
             dd = fecha_ok(f)

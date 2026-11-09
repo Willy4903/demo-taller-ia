@@ -1,0 +1,26 @@
+/* Generado desde geografia.json; no editar a mano. */
+window.PERU_GEO_REGLAS = {
+  "version": 1,
+  "peru": "peru|peruan[oa]s?|lima|arequipa|piura|cusco|puno|trujillo|tacna|chiclayo|iquitos|junin|cajamarca|callao|huancayo|huanuco|huancavelica|loreto|andoas|tumbes|pucallpa|chimbote|moquegua|tarapoto|ayacucho|apurimac|ucayali|chorrillos|miraflores|la molina|barbadillo|ucv|universidad cesar vallejo|cesar acuna|fujimori|keiko|boluarte|canciller espa|carlos espa|senasa|emmsa|sunarp|utec|inpe|jne|onpe|bcrp|sunat|enfen|senamhi|essalud|minedu|indecopi|osiptel|contraloria peruana|ignacio buse|lapadula|alianza lima|sporting cristal|universitario de deportes|mef|pnp|midagri|minsa|emape|emmsa|senasa|la libertad|comas|rio tambo|ashaninkas|pedro castillo|andres hurtado|renovacion popular|fuerza popular|fujimorismo|osce|sunedu|sutran|pension 65|retiro de cts|las malvinas|la victoria|compensacion por tiempo de servicios|liga 1|liga1|usat|puente piedra|petroperu|talara|gein",
+  "latam": "america latina|latinoamerica|latinoamerican[oa]s?|mexico|mexican[oa]s?|argentina|argentin[oa]s?|chile|chilen[oa]s?|colombia|colombian[oa]s?|venezuela|venezolan[oa]s?|brasil|brasilen[oa]s?|ecuador|ecuatorian[oa]s?|bolivia|bolivian[oa]s?|paraguay|uruguay|uruguay[oa]s?|cuba|cuban[oa]s?|panama|costa rica|guatemala|honduras|nicaragua|el salvador|haiti|republica dominicana|puerto rico|milei|petro|maduro|lula|sheinbaum|boric|bukele|bolsonaro|insivumeh",
+  "mundo": "estados unidos|estadounidenses?|ee uu|eeuu|usa|pentagono|hegs[e]?th|trump|washington|nueva york|new york|rockefeller|las vegas|texas|tennessee|california|canada|toronto|espana|espanol[ae]s?|alemania|francia|reino unido|londres|italia|portugal|suiza|estonia|rusia|ucrania|israel|gaza|iran|china|japon|india|pakistan|singapur|australia|sudafrica|nigeria|kenia|netanyahu|real madrid|aek atenas|champions league|medvedev|tenerife|hollywood|james gunn|morgan fairchild|antartida|naciones unidas|onu|mundiales|global|mundial|georgia|union europea|polonia|dakar|senegal|bayern munich|munich|brighton|bangladesh|nepal|turquia|turquia|saudi|arabia saudita|afganistan|hong kong|taiwan|pekin|chinas|chinos|inter miami|mls|paris|cop31|cracovia|manchester",
+  "ignorar": "cebollita china|cebolla china|tinta china|caja china|cuento chino|adriana lima|elmer cuba|internacionalista peruano|analista peruano",
+  "secciones_extranjeras": "/(?:mundo|internacional(?:es)?|world|us|usa|eeuu|estados-unidos|espana|mexico|argentina|colombia|venezuela|chile|brasil|china|japon)(?:/|$)",
+  "secciones_nacionales": "/(?:politica|lima|regiones|peru/politica|peru/lima|peru/regiones)(?:/|$)",
+  "medios_nacionales": [
+    "elcomercio.pe",
+    "gestion.pe",
+    "rpp.pe",
+    "larepublica.pe",
+    "infobae.com",
+    "expreso.com.pe",
+    "ojo-publico.com",
+    "convoca.pe",
+    "wayka.pe",
+    "lamula.pe",
+    "saludconlupa.com",
+    "caretas.pe",
+    "elbuho.pe"
+  ],
+  "boilerplate": "(?:infobae peru|el comercio peru|noticias del peru y del mundo)"
+};

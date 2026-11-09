@@ -68,3 +68,11 @@ python3 scripts/actualizar_noticias.py   # prueba el actualizador (requiere inte
 El actualizador prueba varias direcciones por medio. Si ninguna funciona usa Google Noticias restringido al dominio del medio. Esas notas se marcan «vía Google Noticias» y nunca como directas. Si tampoco hay datos, se conservan las últimas notas válidas y la fuente figura «Sin datos» con la fecha de comprobación y el error (página Fuentes).
 
 Los horarios son previstos: GitHub Actions puede retrasarlos. Se usa el minuto 17 para evitar la congestión del inicio de hora. Una pestaña abierta comprueba cada cinco minutos si hay una publicación nueva, y al volver a ella o recuperar conexión, conservando los filtros de Noticias. Si no hay conexión, mantiene la última carga válida.
+
+## Ubicación de las noticias y control de extractos
+
+El ámbito se determina por referencias geográficas en el titular, el extracto y las secciones verificables de la URL. El país del medio y el campo heredado `ambito` no deciden la ubicación. Un medio peruano puede publicar una noticia internacional y un medio internacional puede informar sobre Perú. Los casos sin evidencia suficiente quedan en **Ámbito por confirmar**; no se asignan por defecto a Perú.
+
+`data/geografia.json` contiene las reglas compartidas. `scripts/geografia.py` y `assets/geografia.js` aplican la misma precedencia; las pruebas contrastan sus resultados sobre todos los registros y casos reales de regresión. El actualizador genera `data/geografia.js` desde el JSON para la web. Para regenerarlo tras editar reglas: `python3 -c "import sys; sys.path.insert(0, 'coyuntura-peru/scripts'); from geografia import generar_js; generar_js()"` desde la raíz del repositorio.
+
+Cada registro conserva `geografia.version`, `zona` y `motivo`. El validador impide publicar discrepancias entre esos campos y las reglas vigentes. La limpieza de extractos quita controles de lectura, promociones y solicitudes de donación; conserva cifras únicamente con evidencia textual. Las noticias sobre un mismo hecho en distintos medios se conservan como fuentes distintas, sin confundirlas con URLs duplicadas.
