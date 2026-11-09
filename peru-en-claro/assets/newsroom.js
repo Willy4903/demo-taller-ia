@@ -8,7 +8,7 @@
   }
   var ruido = /\b(?:horoscopos?|zodiaco|zodiacales?|astrologia|tarot|numerologia|carta astral|signos? zodiacales?|predicciones? astrales?)\b/i;
   var basura = /^\s*-\s*ojo.?publico|suscribete al newsletter|alertas de defensores en riesgo|reportar un caso|denuncia segura|los resistentes del peru|^\s*-\s*$/i;
-  function excluir(item) { var t = normal(item.titulo); return ruido.test(t) || basura.test(t); }
+  function excluir(item) { var t = normal(item.titulo); return ruido.test(t) || basura.test(t) || /^(?:seccion|inicio|portada|sin titulo)$/.test(t.trim()) || /\/publirreportaje\//i.test(item.url || ""); }
 
   /* Cada tema tiene una expresión. La nota se asigna al tema con más coincidencias: el título pesa más que el extracto.
      Las expresiones evitan palabras ambiguas sueltas (por ejemplo «ley» en el título de una serie). */
@@ -34,7 +34,7 @@
   }
   function categoria(item) {
     var title = normal(item.titulo), cuerpo = normal(item.resumen).slice(0, 260);
-    if (/\blas noticias d(?:el|e)\b/.test(title) && (item.tipo === "internacional" || item.sector === "mundo")) return "internacional";
+    if (/\blas noticias d(?:el|e)\b/.test(title) && (ambito(item) === "mundo")) return "internacional";
     if (DEPORTE.test(title)) return "deporte";
     var mejor = null, max = 0;
     for (var i = 0; i < temas.length; i++) {
@@ -44,18 +44,12 @@
     }
     if (mejor) return mejor;
     if (DEPORTE.test(cuerpo) && coincidencias(DEPORTE, cuerpo) >= 2) return "deporte";
-    if ((item.sector === "mundo" || item.tipo === "internacional") && !item.sectorOriginal) return "internacional";
+    if ((ambito(item) === "mundo") && !item.sectorOriginal) return "internacional";
     if (normal(item.fuente).includes("mongabay")) return "ambiente";
     return "sociedad";
   }
-  var extranjero = /\b(?:real madrid|aek atenas|champions league|medvedev|masters? 1000|donald trump|trump|estados unidos|ee\.?\s?uu\.?|israel|gaza|iran|espana|alemania|francia|ucrania|rusia|china|japon|tennessee|tennesse|texas|netanyahu|tenerife|godzilla|johnny depp|jack sparrow|spider.man|cop17|antartida|paris jackson|hollywood|oscar|toronto|singapur|bolsonaro|brasil|georgia|estonia|suiza|republica dominicana|dominicana|mexico|venezuela|cuba|argentina|colombia)\b/i;
-  var peruano = /\b(?:peru|lima|arequipa|piura|cusco|puno|trujillo|tacna|chiclayo|iquitos|junin|cajamarca|callao|ignacio buse|buse)\b/i;
   function ambito(item) {
-    if (item.tipo === "internacional" || item.ambito === "mundo") return "mundo";
-    var t=normal(item.titulo);
-    if (peruano.test(t)) return "peru";
-    if (extranjero.test(t)) return "mundo";
-    return "peru";
+    return global.PERU_GEOGRAFIA ? global.PERU_GEOGRAFIA.clasificar(item).ambito : "pendiente";
   }
   var nombres = {
     politica:"Política",economia:"Economía",salud:"Salud",deporte:"Deportes",

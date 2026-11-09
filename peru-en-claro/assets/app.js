@@ -107,7 +107,8 @@
     var item = Object.assign({}, it), news = window.PERU_NEWS;
     if (news) {
       item.tema = news.categoria(item);
-      item.ambito = news.ambito(item);
+      item.geografia = window.PERU_GEOGRAFIA.clasificar(item);
+      item.ambito = item.geografia.ambito;
       if (["politica","economia","salud","deporte","tecnologia","ia","nino","investigacion"].indexOf(item.tema) >= 0) item.sector = item.tema;
       else if (["cultura","sociedad","ambiente","seguridad","educacion"].indexOf(item.tema) >= 0) item.sector = "coyuntura";
       else if (item.tema === "internacional") item.sector = "mundo";
@@ -120,10 +121,9 @@
   function porSector(id) { return ITEMS.filter(function (i) { return i.sector === id; }); }
   function insDe(id) { return INS.filter(function (i) { return i.sector === id; })[0]; }
   function externo(s) { return s.kind === "feed"; }
-  var LATAM = /\b(?:america latina|latinoamerica|latinoamericano|mexic\w*|argentin\w*|chile\w*|colombi\w*|venezuel\w*|brasil\w*|ecuador\w*|bolivi\w*|paraguay\w*|uruguay\w*|cuba\w*|panama\w*|costa rica|guatemal\w*|hondure\w*|nicaragua\w*|salvador\w*|haiti\w*|dominican\w*|puerto rico|caribe\w*|milei|petro|maduro|lula|sheinbaum|boric|bukele)\b/i;
-  function zonaDe(it) { var a = ambitoDe(it); if (a !== "mundo") return a; return LATAM.test(norm((it.titulo || "") + " " + (it.resumen || ""))) ? "latam" : "mundo"; }
+  function zonaDe(it) { return (it.geografia || window.PERU_GEOGRAFIA.clasificar(it)).zona; }
   function ambitoDe(it) { return it.ambito || (it.tipo === "internacional" ? "mundo" : "peru"); }
-  function asFeed(it) { return { kind: "feed", ambito: it.ambito, tema: it.tema, sector: it.sector, titulo: it.titulo, resumen: it.resumen || "", url: it.url, fuente: it.fuente, tipo: it.tipo || "comercial", fecha: it.fecha, nota: it.nota, imagen: it.imagen, genero: it.genero || "noticia", procedencia: it.procedencia, via: it.via, sintesis: it.sintesis, puntos: it.puntos, datos: it.datos, traducido: it.traducido, titulo_original: it.titulo_original }; }
+  function asFeed(it) { return { kind: "feed", ambito: it.ambito, geografia: it.geografia, tema: it.tema, sector: it.sector, titulo: it.titulo, resumen: it.resumen || "", url: it.url, fuente: it.fuente, tipo: it.tipo || "comercial", fecha: it.fecha, nota: it.nota, imagen: it.imagen, genero: it.genero || "noticia", procedencia: it.procedencia, via: it.via, sintesis: it.sintesis, puntos: it.puntos, datos: it.datos, traducido: it.traducido, titulo_original: it.titulo_original }; }
   var FEED = ITEMS.map(asFeed);
 
   var EI = NOT.imagenes_editorial || {};
@@ -361,7 +361,7 @@
   }
   function noticiasRecientes(n) {
     var vistos = {}, r = [];
-    ITEMS.forEach(function (i) { if (r.length >= n || !i.fecha || i.sector === "deporte" || i.sector === "mundo" || i.tipo === "internacional" || vistos[i.fuente + i.sector]) return; vistos[i.fuente + i.sector] = 1; r.push(asFeed(i)); });
+    ITEMS.forEach(function (i) { if (r.length >= n || !i.fecha || i.sector === "deporte" || ambitoDe(i) !== "peru" || vistos[i.fuente + i.sector]) return; vistos[i.fuente + i.sector] = 1; r.push(asFeed(i)); });
     return r;
   }
   function indicadoresClave() {
@@ -433,7 +433,7 @@
       '<a href="#/s/salud"><strong>Sociedad</strong><span>Salud y servicios públicos</span></a>'+
       '<a href="#/s/nino"><strong>Ambiente</strong><span>Clima, pronóstico y riesgos</span></a></nav>';
     var PE=/per[uú]|peruan|\blima\b|\bjne\b|bcrp|\bmef\b|sunat|inei|minsa|\bsbs\b|indecopi|osinergmin|diputad|\bpnp\b|ministerio p[uú]blico|fiscal[ií]a|poder judicial|contralor[ií]a|presidenta|keiko|fujimori|castillo|boluarte|soles\b/i;
-    var ultimas=FEED.filter(function(i){return (i.sector==="politica"||i.sector==="economia")&&i.tipo!=="internacional"&&i.genero!=="opinion"&&PE.test(i.titulo+" "+(i.resumen||""))&&!/concierto|entradas|estados unidos|eeuu|trump/i.test(i.titulo);}).slice(0,4);
+    var ultimas=FEED.filter(function(i){return (i.sector==="politica"||i.sector==="economia")&&ambitoDe(i)==="peru"&&i.genero!=="opinion"&&PE.test(i.titulo+" "+(i.resumen||""))&&!/concierto|entradas|estados unidos|eeuu|trump/i.test(i.titulo);}).slice(0,4);
     if(ultimas.length)h+='<section class="dest ultimas" aria-labelledby="ult-h"><h2 id="ult-h">Últimas noticias de política y economía</h2><p class="ult-sub">Se renuevan solas, siete veces al día. Última lectura: '+esc(fechaSistema)+'.</p><div class="ult-l">'+ultimas.map(row).join("")+'</div><p class="ult-mas"><a href="#/noticias">Ver todas las noticias →</a></p></section>';
 
     h+=frescura();
@@ -441,11 +441,11 @@
     h+='<details class="mas-rec"><summary>Más recursos: formación, glosario, estadísticas y talleres</summary><div class="mas-g"><a href="#/ruta">La Ruta (aprende jugando)</a><a href="#/glosario">Glosario</a><a href="#/estadisticas">Estadísticas del sitio</a><a href="#/historial">Historial de notas</a><a href="#/talleres">Talleres de IA</a><a href="#/fuentes">Fuentes y su estado</a></div></details></div>';
     return h;
   }
-  var nF = { ambito: "todos", sector: "todos", tipo: "todas", genero: "todos", fuente: "todas" }, nLimites = { peru: 6, latam: 6, mundo: 6 }, nQuery = "", nOrden = "recientes";
+  var nF = { ambito: "todos", sector: "todos", tipo: "todas", genero: "todos", fuente: "todas" }, nLimites = { peru: 6, latam: 6, mundo: 6, pendiente: 6 }, nQuery = "", nOrden = "recientes";
   var PE_TEMAS=[["todos","Todas"],["politica","Política"],["economia","Economía"],["sociedad","Sociedad"],["seguridad","Seguridad"],["educacion","Educación"],["salud","Salud"],["nino","Clima y desastres"],["deporte","Deportes"],["tecnologia","Ciencia y tecnología"],["ia","IA"],["cultura","Cultura"],["ambiente","Ambiente"],["investigacion","Investigación"],["internacional","Internacional"]];
   var PE_TIPOS=[["todas","Todos"],["independiente","Independientes"],["comercial","Comerciales"],["internacional","Internacionales"],["estatal","Oficiales"]];
   var PE_GENEROS=[["todos","Todos"],["noticia","Noticias"],["opinion","Opinión"],["analisis","Análisis"]];
-  function reiniciarNoticias() { nLimites = { peru: 6, latam: 6, mundo: 6 }; }
+  function reiniciarNoticias() { nLimites = { peru: 6, latam: 6, mundo: 6, pendiente: 6 }; }
   function limpiarNoticias() {
     nF = { ambito: "todos", sector: "todos", tipo: "todas", genero: "todos", fuente: "todas" };
     nQuery = ""; nOrden = "recientes"; reiniciarNoticias();
@@ -495,12 +495,12 @@
   function frentePortada(lista) {
     var noDeporte = function (x) { return x.tema !== "deporte" && x.tema !== "cultura"; };
     var conFoto = lista.filter(function (x) { return noDeporte(x) && x.imagen && !x.via && zonaDe(x) === "peru" && MEDIOS_PORTADA.indexOf(x.fuente) >= 0; });
-    var lead = conFoto[0] || lista.filter(function (x) { return noDeporte(x) && x.imagen && !x.via; })[0];
+    var lead = conFoto[0] || lista.filter(function (x) { return noDeporte(x) && x.imagen && !x.via && zonaDe(x) !== "pendiente"; })[0];
     if (!lead) return { html: "", usados: {} };
     var usados = {}; usados[lead.url] = 1;
     var lado = [], cuenta = { peru: 0, latam: 0, mundo: 0 }, cupo = { peru: 3, latam: 1, mundo: 2 };
     lista.forEach(function (x) {
-      var z = zonaDe(x); if (usados[x.url] || lado.length >= 6 || cuenta[z] >= cupo[z] || x.genero === "opinion" || !noDeporte(x)) return;
+      var z = zonaDe(x); if (z === "pendiente" || usados[x.url] || lado.length >= 6 || cuenta[z] >= cupo[z] || x.genero === "opinion" || !noDeporte(x)) return;
       cuenta[z]++; usados[x.url] = 1; lado.push(x);
     });
     var nombre = function (x) { var n = (window.PERU_NEWS || {}).nombres || {}; return n[x.tema] || "Actualidad"; };
@@ -549,7 +549,7 @@
     var portada=nF.ambito==="todos"&&nF.sector==="todos"&&nF.tipo==="todas"&&nF.genero==="todos"&&nF.fuente==="todas"&&!bus&&nOrden==="recientes";
     var usados={},frente="";
     if(portada){var fr=frentePortada(lista);frente=fr.html;usados=fr.usados;mostradas=Object.keys(usados).length;}
-    [["peru","Perú","Actualidad nacional y regional"],["latam","América Latina","Lo que pasa en la región"],["mundo","Internacional","Noticias del mundo, en español"]].forEach(function(x){
+    [["peru","Perú","Actualidad nacional y regional"],["latam","América Latina","Lo que pasa en la región"],["mundo","Internacional","Noticias del mundo, en español"],["pendiente","Ámbito por confirmar","La fuente no aporta ubicación suficiente; no se asigna a Perú"]].forEach(function(x){
       if(nF.ambito!=="todos"&&nF.ambito!==x[0])return;
       var items=lista.filter(function(z){return zonaDe(z)===x[0]&&!usados[z.url];});
       if(!items.length)return;
@@ -654,6 +654,8 @@
     if (s.ambitos) {
       var enPeru = its.filter(function (i) { return ambitoDe(i) === "peru"; }), enMundo = its.filter(function (i) { return ambitoDe(i) === "mundo"; });
       h += sh("IA en el Perú", s.color) + listaCorta(enPeru, 6, vacio) + sh("IA en el mundo", s.color) + listaCorta(enMundo, 6, vacio);
+      var porConfirmar = its.filter(function (i) { return ambitoDe(i) === "pendiente"; });
+      if (porConfirmar.length) h += sh("Ámbito por confirmar", s.color) + listaCorta(porConfirmar, 6, vacio);
     } else h += sh("Últimas notas · " + s.nombre, s.color) + '<div class="lista2">' + (its.length ? its.map(row).join("") : vacio) + "</div>";
     h += '</div><aside class="rail"><section><h3 class="rt">Términos clave</h3>' + terms.map(function (t) { return '<button class="term" data-gl="' + t + '">' + esc(GLOS[t].t) + "</button>"; }).join("") + "</section>" + rail().split("</section>").slice(1).join("</section>") + "</aside></div></div>";
     return h;
