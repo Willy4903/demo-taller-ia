@@ -7,7 +7,7 @@ Portal de noticias sobre la coyuntura peruana: política, economía, salud, El N
 - Las fotos son reales: la `og:image` de cada nota y, para los análisis, la de la primera fuente citada que la tenga (con crédito). Si no hay foto, la nota se muestra sin imagen; no se usan ilustraciones generadas.
 - Una línea dinámica (de derecha a izquierda) muestra lo último: tipo de cambio, estado de El Niño, análisis y notas recientes. Se pausa al pasar el cursor o con el botón; con "reducir movimiento" queda estática.
 - El tipo de cambio (USD/PEN) se lee de la API pública del BCRP; si falla, se usa un valor referencial de una API pública sin clave y se acumula entre ejecuciones. Si ambas fallan, se conserva el último dato.
-- Se actualiza solo a las **7 veces al día** (00:00, 06:00, 10:00, 12:00, 15:00, 18:00 y 21:00, hora de Lima) mediante GitHub Actions.
+- Se actualiza automáticamente **7 veces al día** (00:17, 06:17, 10:17, 12:17, 15:17, 18:17 y 21:17, hora de Lima) mediante GitHub Actions.
 
 ## Publicación en GitHub Pages
 
@@ -28,7 +28,7 @@ El sitio se sirve desde la rama `gh-pages` (Settings → Pages → Deploy from a
 3. Conserva como máximo 24 notas por sector y descarta lo anterior a 30 días.
 4. Reescribe `data/noticias.js` y `data/noticias.json`. Si ningún feed responde, **no** toca los datos.
 
-El flujo `Actualizar Contexto Perú` corre 7 veces al día (00:00, 06:00, 10:00, 12:00, 15:00, 18:00 y 21:00, hora de Lima), hace commit de los datos en `main` e invoca `CI y despliegue` para republicar. Para agregar o quitar medios, edita `FEEDS`. También puede lanzarse a mano desde la pestaña *Actions*.
+El flujo `Actualizar PERÚ INFORMADO` corre 7 veces al día (00:17, 06:17, 10:17, 12:17, 15:17, 18:17 y 21:17, hora de Lima), hace commit de los datos en `main` e invoca `CI y despliegue` para republicar. Para agregar o quitar medios, edita `FEEDS`. También puede lanzarse a mano desde la pestaña *Actions*.
 
 ## Talleres de IA
 
@@ -61,8 +61,10 @@ python3 scripts/actualizar_noticias.py   # prueba el actualizador (requiere inte
 - `tests/e2e_rutas.cjs`: Playwright. Recorre todas las rutas `#/` en 390, 430, 768, 1024 y 1440 px y revisa errores de consola, desplazamiento horizontal, tarjetas de la portada, datos con fecha de corte y unidad, navegación, búsqueda y menú.
 - `tests/newsroom.test.cjs`: pruebas de cifras publicadas (unidades monetarias, porcentajes y temperaturas), sin truncar escalas ni combinar números de campos distintos. `node --test coyuntura-peru/tests/newsroom.test.cjs`.
 - `tests/newsroom.e2e.cjs`: comprueba filtros por fuente y género, orden por fecha, paginación independiente, búsqueda, foco de teclado, fotografías fallidas y temas claro/oscuro con datos controlados. `node coyuntura-peru/tests/newsroom.e2e.cjs`. Ambos runners de navegador admiten `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` para usar un Chromium ya instalado.
-- Flujos: `Validar Contenido Perú` corre todo lo anterior en cada pull request; `Actualizar Contexto Perú` prueba, actualiza, valida y solo entonces guarda y publica.
+- Flujos: `Validar Contenido Perú` corre todo lo anterior en cada pull request; `Actualizar PERÚ INFORMADO` prueba, actualiza, valida y solo entonces guarda y publica.
 
 ## Fuentes de noticias que fallan
 
 El actualizador prueba varias direcciones por medio. Si ninguna funciona usa Google Noticias restringido al dominio del medio. Esas notas se marcan «vía Google Noticias» y nunca como directas. Si tampoco hay datos, se conservan las últimas notas válidas y la fuente figura «Sin datos» con la fecha de comprobación y el error (página Fuentes).
+
+Los horarios son previstos: GitHub Actions puede retrasarlos. Se usa el minuto 17 para evitar la congestión del inicio de hora. Una pestaña abierta comprueba cada cinco minutos si hay una publicación nueva, y al volver a ella o recuperar conexión, conservando los filtros de Noticias. Si no hay conexión, mantiene la última carga válida.

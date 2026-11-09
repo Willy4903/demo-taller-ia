@@ -124,7 +124,7 @@ async function runViewport(browser, base, width, height) {
     const world = page.locator('[data-news-section="mundo"]');
     equal(await page.locator(".pe-news-nav-primary button").count(), 4, `[${width}] portada y tres ámbitos disponibles`);
     equal(await page.locator('.pe-news-nav-primary a[href="#/fuentes"]').count(), 1, `[${width}] fuentes con página propia`);
-    equal(await page.locator("#pe-news-topics button").count(), 13, `[${width}] temas completos`);
+    equal(await page.locator("#pe-news-topics button").count(), 15, `[${width}] temas completos, incluida ciencia e IA`);
     for (const section of [peru, latam, world]) equal(await section.locator(".pe-ficha").count(), 6, `[${width}] primera página de cada ámbito`);
     const firstCount = await page.locator("#n-count").innerText();
     check(firstCount.includes("18") && firstCount.includes("30"), `[${width}] contador distingue noticias visibles del total: ${firstCount}`);
@@ -142,7 +142,7 @@ async function runViewport(browser, base, width, height) {
     await uniqueReading(first, `[${width}] noticias`);
     await first.locator(".ps-more").click();
     const tabs = first.getByRole("tab");
-    equal(await tabs.allTextContents(), ["Síntesis", "Cifras (1)", "Notas relacionadas (1)"], `[${width}] solo pestañas con contenido propio`);
+    equal(await tabs.allTextContents(), ["Síntesis", "Datos citados (1)", "Notas relacionadas (1)"], `[${width}] solo pestañas con contenido propio`);
     for (let i = 0; i < await tabs.count(); i++) {
       const tab = tabs.nth(i);
       const tabId = await tab.getAttribute("id");
@@ -322,6 +322,28 @@ async function smallFrontPages(browser, base) {
     browser = await pw.chromium.launch({ executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || undefined });
     for (const [width, height] of [[390, 844], [1440, 1000]]) await runViewport(browser, base, width, height);
     await smallFrontPages(browser, base);
+    const live = await browser.newContext({ viewport: { width: 390, height: 844 }, serviceWorkers: "block", reducedMotion: "reduce" });
+    await live.route(url => !url.toString().startsWith(base), route => route.abort());
+    await live.route("**/data/noticias.js*", route => route.fulfill({ contentType: "text/javascript", body: "window.NOTICIAS = " + JSON.stringify(fixture) + ";" }));
+    let fresh = JSON.parse(JSON.stringify(fixture));
+    fresh.generado = "2026-11-09T05:00:00Z";
+    fresh.items[0].titulo = "Actualizacion comprobada del presupuesto regional del Perú";
+    await live.route("**/data/noticias.json", route => route.fulfill({ json: fresh }));
+    const livePage = await live.newPage();
+    await livePage.clock.install({ time: new Date("2026-11-09T04:59:00Z") });
+    await livePage.goto(base + "#/noticias");
+    await livePage.locator("#n-query").fill("Actualizacion comprobada");
+    equal(await livePage.locator(".pe-ficha").count(), 0, "la nota nueva aún no estaba publicada");
+    match(await livePage.locator("#status").textContent(), /00:17/, "próximo horario en Lima al cruzar medianoche");
+    await livePage.clock.fastForward(300001);
+    await livePage.waitForFunction(() => window.NOTICIAS.generado === "2026-11-09T05:00:00Z");
+    equal(await livePage.locator("#n-query").inputValue(), "Actualizacion comprobada", "actualizar conserva la búsqueda");
+    equal(await livePage.locator(".pe-ficha").count(), 1, "la pestaña abierta recibe la nota nueva");
+    fresh = { generado: "2026-11-10T05:00:00Z", items: null };
+    await livePage.clock.fastForward(300001);
+    equal(await livePage.evaluate(() => window.NOTICIAS.generado), "2026-11-09T05:00:00Z", "una respuesta inválida conserva los datos válidos");
+    await live.close();
+
     const narrow = await browser.newPage({ viewport: { width: 320, height: 740 }, serviceWorkers: "block", reducedMotion: "reduce" });
     await narrow.route(url => !url.toString().startsWith(base), route => route.abort());
     await narrow.goto(base + "#/noticias");
