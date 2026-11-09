@@ -34,7 +34,7 @@
   }
   function categoria(item) {
     var title = normal(item.titulo), cuerpo = normal(item.resumen).slice(0, 260);
-    if (/\blas noticias d(?:el|e)\b/.test(title) && (item.tipo === "internacional" || item.sector === "mundo")) return "internacional";
+    if (/\blas noticias d(?:el|e)\b/.test(title) && (ambito(item) === "mundo")) return "internacional";
     if (DEPORTE.test(title)) return "deporte";
     var mejor = null, max = 0;
     for (var i = 0; i < temas.length; i++) {
@@ -44,7 +44,7 @@
     }
     if (mejor) return mejor;
     if (DEPORTE.test(cuerpo) && coincidencias(DEPORTE, cuerpo) >= 2) return "deporte";
-    if ((item.sector === "mundo" || item.tipo === "internacional") && !item.sectorOriginal) return "internacional";
+    if ((ambito(item) === "mundo") && !item.sectorOriginal) return "internacional";
     if (normal(item.fuente).includes("mongabay")) return "ambiente";
     return "sociedad";
   }

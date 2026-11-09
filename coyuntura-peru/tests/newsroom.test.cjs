@@ -50,3 +50,7 @@ test('Python y navegador clasifican igual todo el lote y las regresiones', () =>
   const web = items.map(i => JSON.parse(JSON.stringify(context.window.PERU_GEOGRAFIA.clasificar(i))));
   assert.deepEqual(web,backend);
 });
+
+test('un medio internacional no convierte una noticia peruana en tema internacional', () => {
+  assert.equal(context.window.PERU_NEWS.categoria({titulo:'La vida cotidiana en Perú',tipo:'internacional',sector:'mundo'}),'sociedad');
+});
