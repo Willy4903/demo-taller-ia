@@ -101,7 +101,7 @@
   window.cpImg = function (im) { var d = im.parentNode; if (!d) return; var r = d.closest && d.closest(".row"), noticia = d.closest && d.closest(".pe-news-card,.pe-ficha"); if (r) r.classList.add("nofoto"); if (noticia && noticia.classList.contains("pe-ficha")) { d.className = "ph ps-ph"; var ic = window.cpIcono(noticia.getAttribute("data-cat")); d.style.setProperty("--c", ic.color); d.innerHTML = ic.svg + "<span>" + (noticia.getAttribute("data-tema") || "") + "</span><b>" + (noticia.getAttribute("data-fuente") || "") + "</b>"; return; } if (noticia) noticia.classList.add("no-photo"); d.remove(); };
 
   /* ───── modelo de historias ───── */
-  var ITEMS = (NOT.items || []).filter(function (it) {
+  function modelarNoticias(datos) { return (datos.items || []).filter(function (it) {
     return !(window.PERU_NEWS && window.PERU_NEWS.excluir(it));
   }).map(function (it) {
     var item = Object.assign({}, it), news = window.PERU_NEWS;
@@ -113,7 +113,8 @@
       else if (item.tema === "internacional") item.sector = "mundo";
     }
     return item;
-  }).sort(function (a, b) { return (Date.parse(b.fecha) || 0) - (Date.parse(a.fecha) || 0); });
+  }).sort(function (a, b) { return (Date.parse(b.fecha) || 0) - (Date.parse(a.fecha) || 0); }); }
+  var ITEMS = modelarNoticias(NOT);
   var HILO = ED.hilo ? { kind: "hilo", sector: "coyuntura", id: "hilo", titulo: ED.hilo.titulo, resumen: ED.hilo.puntos.map(function (p) { return p.k + ": " + p.t; }).join(" · "), url: "#/a/hilo", badge: "Análisis" } : null;
   var INS = ED.insights.map(function (c) { return { kind: "insight", sector: c.sector, id: c.id || c.sector, titulo: c.titulo, resumen: c.resumen, url: "#/a/" + (c.id || c.sector), badge: "Análisis", nivel: c.nivel, raw: c }; });
   function porSector(id) { return ITEMS.filter(function (i) { return i.sector === id; }); }
@@ -565,12 +566,12 @@
   function proxima() {
     var now = Date.now(), off = -5 * 3600e3, l = new Date(now + off), y = l.getUTCFullYear(), m = l.getUTCMonth(), d = l.getUTCDate();
     var c = proxHora(now, off, y, m, d);
-    var cl = new Date(c + off); return (cl.getUTCDate() === d ? "hoy " : "mañana ") + String(cl.getUTCHours()).padStart(2, "0") + ":00";
+    var cl = new Date(c + off); return (cl.getUTCDate() === d ? "hoy " : "mañana ") + String(cl.getUTCHours()).padStart(2, "0") + ":17";
   }
-  /* actualizaciones automáticas, hora de Lima (UTC-5): 00:00, 06:00, 10:00, 12:00, 15:00, 18:00 y 21:00 */
+  /* actualizaciones automáticas, hora de Lima (UTC-5): 00:17, 06:17, 10:17, 12:17, 15:17, 18:17 y 21:17 */
   var HORAS = [0, 6, 10, 12, 15, 18, 21];
   function proxHora(now, off, y, m, d) {
-    return HORAS.map(function (h) { return Date.UTC(y, m, d, h) - off; }).concat([Date.UTC(y, m, d + 1, HORAS[0]) - off]).filter(function (t) { return t > now; })[0];
+    return HORAS.map(function (h) { return Date.UTC(y, m, d, h, 17) - off; }).concat([Date.UTC(y, m, d + 1, HORAS[0], 17) - off]).filter(function (t) { return t > now; })[0];
   }
   /* ───── tarjetas que se voltean: al pasar el cursor (o tocar) la paleta se invierte y aparece el concepto ───── */
   function lum(h) { var m = /^#([0-9a-f]{6})$/i.exec(h || ""); if (!m) return 0; var n = parseInt(m[1], 16); return [n >> 16 & 255, n >> 8 & 255, n & 255].map(function (v) { v /= 255; return v <= .03928 ? v / 12.92 : Math.pow((v + .055) / 1.055, 2.4); }).reduce(function (a, v, k) { return a + v * [.2126, .7152, .0722][k]; }, 0); }
@@ -735,7 +736,7 @@
     var resto = ED.fuentes.filter(function (f) { return !usados[f.n]; });
     if (resto.length) h += '<section class="fg"><h2>Otras fuentes</h2>' + resto.map(function (f) { return '<a class="fr" href="' + safeUrl(f.u) + '" target="_blank" rel="noopener noreferrer"><div><b>' + esc(f.n) + "</b><small>" + esc(f.tipo) + "</small><p>" + esc(f.foco) + "</p></div><span>↗</span></a>"; }).join("") + "</section>";
     h += estadoFuentesHTML();
-    h += '<section class="fg"><h2>¿Cómo funciona y cada cuánto se actualiza?</h2><div class="box" style="margin:10px 0"><p style="font-size:.95rem">Un flujo automático de GitHub Actions lee los feeds RSS de estos medios <b>siete veces al día (00:00, 06:00, 10:00, 12:00, 15:00, 18:00 y 21:00, hora de Lima)</b>, clasifica las notas por sector y publica el sitio. Mostramos título, resumen breve y enlace; el contenido pertenece a cada medio. Los análisis llevan fecha de corte y nivel de confianza. La clasificación por sector es automática y puede equivocarse.</p></div></section></div>';
+    h += '<section class="fg"><h2>¿Cómo funciona y cada cuánto se actualiza?</h2><div class="box" style="margin:10px 0"><p style="font-size:.95rem">Un flujo automático de GitHub Actions lee los feeds RSS de estos medios <b>siete veces al día (00:17, 06:17, 10:17, 12:17, 15:17, 18:17 y 21:17, hora de Lima)</b>, clasifica las notas por sector y publica el sitio. Mostramos título, resumen breve y enlace; el contenido pertenece a cada medio. Los análisis llevan fecha de corte y nivel de confianza. La clasificación por sector es automática y puede equivocarse.</p></div></section></div>';
     return h;
   }
 
@@ -988,11 +989,35 @@
       var now = Date.now(), off = -5 * 3600e3, l = new Date(now + off), y = l.getUTCFullYear(), m = l.getUTCMonth(), d = l.getUTCDate();
       var c = proxHora(now, off, y, m, d);
       var mins = Math.round((c - now) / 60000), hh = Math.floor(mins / 60), mm = mins % 60, cl = new Date(c + off), hoy = cl.getUTCDate() === d;
-      $("#status").innerHTML = '<span class="live">Sistema</span><span>Última comprobación: ' + (NOT.generado ? esc(fechaHora(NOT.generado)) : "sin registro") + '</span><span class="nx">Próxima: ' + (hoy ? "hoy" : "mañana") + " " + String(cl.getUTCHours()).padStart(2, "0") + ":00 · en " + (hh ? hh + " h " : "") + mm + " min</span>";
+      $("#status").innerHTML = '<span class="live">Sistema</span><span>Última comprobación: ' + (NOT.generado ? esc(fechaHora(NOT.generado)) : "sin registro") + '</span><span class="nx">Próxima: ' + (hoy ? "hoy" : "mañana") + " " + String(cl.getUTCHours()).padStart(2, "0") + ":17 · horario previsto · en " + (hh ? hh + " h " : "") + mm + " min</span>";
     }
     pintar(); setInterval(pintar, 30000);
     $("#f-ult").textContent = NOT.generado ? fmtFecha(NOT.generado, true) : "—"; $("#f-corte").textContent = fmtFecha(ED.corte + "T12:00:00Z");
   }
+
+  // Las pestañas abiertas reciben las publicaciones nuevas sin perder filtros ni búsqueda.
+  var consultandoNoticias = false, ultimaConsultaNoticias = Date.now();
+  function consultarNoticias() {
+    if (document.visibilityState === "hidden" || navigator.onLine === false || consultandoNoticias || Date.now() - ultimaConsultaNoticias < 30000) return;
+    consultandoNoticias = true;
+    ultimaConsultaNoticias = Date.now();
+    fetch("data/noticias.json", { cache: "no-store" }).then(function (r) {
+      if (!r.ok) throw new Error("Noticias no disponibles");
+      return r.json();
+    }).then(function (datos) {
+      if (!datos || !Array.isArray(datos.items) || !datos.items.length || !Number.isFinite(Date.parse(datos.generado)) || !(Date.parse(datos.generado) > (Date.parse(NOT.generado) || 0))) return;
+      var items = modelarNoticias(datos);
+      NOT = datos; window.NOTICIAS = datos; ITEMS = items; FEED = ITEMS.map(asFeed); EI = NOT.imagenes_editorial || {};
+      var pie = $("#f-ult"); if (pie) pie.textContent = fmtFecha(NOT.generado, true);
+      if (ruta().v === "noticias") pintarNoticias();
+      else if (ruta().v === "inicio") { var y = window.scrollY; navegar(); window.scrollTo(0, y); }
+      ticker();
+    }).catch(function () { /* Sin conexión o respuesta inválida: conservar la última carga válida. */ })
+      .finally(function () { consultandoNoticias = false; });
+  }
+  setInterval(consultarNoticias, 5 * 60 * 1000);
+  document.addEventListener("visibilitychange", consultarNoticias);
+  addEventListener("online", consultarNoticias);
 
   /* ───── arranque ───── */
   function pintarPie() {
