@@ -195,6 +195,20 @@
     if (!unicos.length) agregar(s.resumen);
     return unicos;
   }
+  /* Una cifra suelta no se entiende: se muestra dentro de la frase del medio donde aparece. */
+  var TIPO_MEDIO = { independiente: "Medio independiente", comercial: "Medio comercial", internacional: "Medio internacional", estatal: "Medio oficial", oficial: "Medio oficial" };
+  var ORDEN_DATO = { monto: 0, porcentaje: 1, cantidad: 2, escala: 3, temperatura: 4, marcador: 5 };
+  function datoClave(datos, visible) {
+    // Solo se muestra si aporta algo que el resumen de la tarjeta todavía no dice.
+    var cand = datos.filter(function (c) { return c.t !== "fecha" && c.c && c.c.length >= 35 && c.c.indexOf(c.v) >= 0 && String(visible || "").indexOf(c.v) < 0; });
+    cand.sort(function (a, b) { return (ORDEN_DATO[a.t] == null ? 9 : ORDEN_DATO[a.t]) - (ORDEN_DATO[b.t] == null ? 9 : ORDEN_DATO[b.t]); });
+    return cand[0] || null;
+  }
+  function destacarCifra(c) {
+    var t = String(c.c || ""), i = t.indexOf(c.v);
+    if (i < 0) return esc(t);
+    return esc(t.slice(0, i)) + "<mark>" + esc(c.v) + "</mark>" + esc(t.slice(i + c.v.length));
+  }
   function story(s) {
     var news = window.PERU_NEWS || {}, id = "st" + (++story_n);
     var datos = (s.datos && s.datos.length ? s.datos : (news.cifras ? news.cifras(s).map(function (v) { return { v: v, t: "monto", c: "" }; }) : [])).slice(0, 5);
@@ -202,10 +216,11 @@
     var resumen = puntos.slice(0, 2).join(" "), cob = cobertura(s);
     var category = s.tema || (news.categoria ? news.categoria(s) : s.sector);
     var label = (news.nombres && news.nombres[category]) || ((SECT[category] || {}).nombre) || "Actualidad";
-    var kp = datos.filter(function (c) { return c.t !== "fecha"; }).slice(0, 3).map(function (c) { return '<div class="ps-k" data-k="' + esc(c.v) + '"><b class="ps-num">' + esc(c.v) + '</b><span>' + esc(TIPO_CIFRA[c.t] || "Dato") + "</span>" + barraPct(c) + "</div>"; }).join("");
-    var tabs = [["sin", "Síntesis"]].concat(datos.length ? [["cif", "Cifras (" + datos.length + ")"]] : []).concat(cob.length ? [["cob", "Notas relacionadas (" + cob.length + ")"]] : []);
+    var clave = datoClave(datos, sin(resumen, 300)), otros = cob.slice(0, 3).map(function (o) { return o.fuente; }).filter(function (f, k, a) { return a.indexOf(f) === k; });
+    var valor = (clave ? '<p class="ps-dato"><b>Dato clave</b>' + destacarCifra(clave) + "</p>" : "") + (otros.length ? '<p class="ps-tambien"><b>También lo cuentan</b>' + esc(otros.join(", ")) + (cob.length > otros.length ? " y " + (cob.length - otros.length) + " medio" + (cob.length - otros.length > 1 ? "s" : "") + " más" : "") + "</p>" : "");
+    var tabs = [["sin", "Síntesis"]].concat(datos.length ? [["cif", "Datos citados (" + datos.length + ")"]] : []).concat(cob.length ? [["cob", "Notas relacionadas (" + cob.length + ")"]] : []);
     var paneSin = (puntos.length ? '<ul class="ps-pts">' + puntos.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + '</ul>' : '<p class="ps-empty">El medio solo ofrece el titular. Consulta la nota original para conocer el detalle.</p>') + '<p class="ps-note">' + (s.traducido ? "Traducción automática del inglés; puede contener imprecisiones. Original: " + esc(s.titulo_original || "") + ". " : "") + (puntos.length ? "Extracto de " + esc(s.fuente) + ". Puede omitir contexto; consulta la nota completa." : "") + "</p>";
-    var paneCif = datos.length ? '<div class="ps-cifras">' + datos.map(function (c) { return '<div class="ps-c"><span class="ps-ct">' + esc(TIPO_CIFRA[c.t] || "Dato") + "</span>" + '<b class="ps-num">' + esc(c.v) + "</b>" + barraPct(c) + (c.c ? "<p>" + esc(c.c) + "</p>" : "") + "</div>"; }).join("") + '</div><p class="ps-note">Cifras tal como las publica el medio, con la frase donde aparecen; no se recalculan.</p>' : "";
+    var paneCif = datos.length ? '<ul class="ps-cifras">' + datos.map(function (c) { return "<li>" + (c.c ? destacarCifra(c) : "<mark>" + esc(c.v) + "</mark>") + "</li>"; }).join("") + '</ul><p class="ps-note">Cada dato aparece en la frase donde lo publica el medio; no se recalcula.</p>' : "";
     var paneCob = cob.length ? '<ul class="ps-cob">' + cob.map(function (o) { return "<li><b>" + esc(o.fuente) + '</b><a href="' + safeUrl(o.url) + '" target="_blank" rel="noopener noreferrer">' + esc(o.titulo) + " ↗</a><time>" + esc(corta(o.fecha)) + "</time></li>"; }).join("") + '</ul><p class="ps-note">Coincidencias automáticas de tema en un intervalo de tres días. Pueden referirse a hechos distintos.</p>' : "";
     var panes = { sin: paneSin, cif: paneCif, cob: paneCob };
     var fd = s.fecha ? corta(s.fecha) : "Fecha no disponible";
@@ -214,8 +229,8 @@
     return '<article class="pe-ficha" id="' + id + '" data-open="0" data-tema="' + esc(label) + '" data-cat="' + esc(category) + '" data-fuente="' + esc(s.fuente) + '" style="--c:' + colorTema + '"><a class="ps-foto" href="' + safeUrl(s.url) + '" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">' + foto + '</a><div class="ps-top"><span class="pe-news-topic">' + esc(label) + "</span>" + badgeGenero(s.genero) + (cob.length ? '<span class="ps-cov" title="Otros medios que cubren el tema">+' + cob.length + " medios</span>" : "") + "</div>" +
       '<h3 class="ps-title"><button type="button" class="ps-toggle" aria-expanded="false" aria-controls="' + id + '-p">' + esc(s.titulo) + "</button></h3>" +
       (resumen ? '<p class="ps-sum">' + esc(sin(resumen, 300)) + "</p>" : "") +
-      (kp ? '<div class="ps-kpis" aria-label="Cifras clave">' + kp + "</div>" : "") +
-      '<div class="ps-meta"><b>' + esc(s.fuente) + '</b>' + (s.traducido ? '<span class="ps-trad" title="Traducción automática del inglés">Traducido</span>' : "") + '<time datetime="' + esc(s.fecha || "") + '">' + esc(fd) + "</time>" + (s.via ? "<span>Vía " + esc(s.via) + "</span>" : "") + "</div>" +
+      (valor ? '<div class="ps-valor">' + valor + "</div>" : "") +
+      '<div class="ps-meta"><b>' + esc(s.fuente) + '</b>' + (TIPO_MEDIO[s.tipo] ? '<span class="ps-tipo">' + TIPO_MEDIO[s.tipo] + '</span>' : "") + + (s.traducido ? '<span class="ps-trad" title="Traducción automática del inglés">Traducido</span>' : "") + '<time datetime="' + esc(s.fecha || "") + '">' + esc(fd) + "</time>" + (s.via ? "<span>Vía " + esc(s.via) + "</span>" : "") + "</div>" +
       '<button type="button" class="ps-more" aria-expanded="false" aria-controls="' + id + '-p"><span>Ver detalle</span><i aria-hidden="true">▾</i></button>' +
       '<div class="ps-panel" id="' + id + '-p" hidden><div class="ps-in"><div class="ps-tabs" role="tablist" aria-label="Detalle de la noticia">' + tabs.map(function (t, i) { return '<button type="button" role="tab" id="' + id + '-tab-' + t[0] + '" aria-controls="' + id + '-pane-' + t[0] + '" aria-selected="' + (i === 0) + '" tabindex="' + (i ? -1 : 0) + '" data-pt="' + t[0] + '">' + esc(t[1]) + "</button>"; }).join("") + "</div>" +
       tabs.map(function (t, i) { return '<div class="ps-pane" role="tabpanel" id="' + id + '-pane-' + t[0] + '" aria-labelledby="' + id + '-tab-' + t[0] + '" tabindex="0" data-pp="' + t[0] + '"' + (i ? " hidden" : "") + ">" + panes[t[0]] + "</div>"; }).join("") +
@@ -240,7 +255,7 @@
     if (!tg) return;
     var abre = st.getAttribute("data-open") !== "1"; st.setAttribute("data-open", abre ? "1" : "0");
     st.querySelector(".ps-panel").hidden = !abre;
-    st.querySelectorAll(".ps-sum,.ps-kpis").forEach(function (p) { p.hidden = abre; });
+    st.querySelectorAll(".ps-sum,.ps-valor").forEach(function (p) { p.hidden = abre; });
     st.querySelectorAll(".ps-toggle,.ps-more").forEach(function (b) { b.setAttribute("aria-expanded", String(abre)); });
     var lbl = st.querySelector(".ps-more span"); if (lbl) lbl.textContent = abre ? "Ocultar detalle" : "Ver detalle";
   });
