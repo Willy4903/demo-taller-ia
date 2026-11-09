@@ -7,27 +7,44 @@
     return String(value || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   }
   var ruido = /\b(?:horoscopos?|zodiaco|zodiacales?|astrologia|tarot|numerologia|carta astral|signos? zodiacales?|predicciones? astrales?)\b/i;
-  function excluir(item) { return ruido.test(normal(item.titulo)); }
+  var basura = /^\s*-\s*ojo.?publico|suscribete al newsletter|alertas de defensores en riesgo|reportar un caso|denuncia segura|los resistentes del peru|^\s*-\s*$/i;
+  function excluir(item) { var t = normal(item.titulo); return ruido.test(t) || basura.test(t); }
 
+  /* Cada tema tiene una expresión. La nota se asigna al tema con más coincidencias: el título pesa más que el extracto.
+     Las expresiones evitan palabras ambiguas sueltas (por ejemplo «ley» en el título de una serie). */
+  var DEPORTE = /\b(?:nba|lakers|sixers|champions league|espn|masters? 1000|atp|wta|medvedev|tenis|tenista|futbol|futbolista|jugador de futbol|arquero|club deportivo|tenerife|balompie|buse|liga 1|liga1|mundial de clubes|torneo clausura|partido(?:s)? de (?:futbol|tenis)|real madrid|barcelona|universitario vs|sport boys|sporting cristal|alianza lima|voley|voleibol|goleador|marcador|cienciano|seleccion peruana.*(?:futbol|partido)|deporte|deportivo|entrenador|bundesliga|mls|playoffs?|maraton|atletismo|lapadula|bicampeonato|campeon(?:ato)?|universitario|cd moquegua|inter miami|melgar|cienciano|goleada|entrenador|selecciones?|copa libertadores|sudamericana)\b/i;
   var temas = [
-    ["deporte", /\b(?:champions league|espn|masters? 1000|atp|wta|medvedev|tenis|tenista|futbol|futbolista|jugador de futbol|arquero|club deportivo|tenerife|balompie|buse|liga 1|liga1|mundial de clubes|torneo clausura|partido(?:s)? de (?:futbol|tenis)|real madrid|barcelona|universitario vs|sport boys|sporting cristal|alianza lima|voley|voleibol|goleador|marcador|cienciano|seleccion peruana.*(?:futbol|partido)|deporte|deportivo|entrenador)\b/i],
-    ["salud", /\b(?:hospital|vacuna|dengue|essalud|inen|enfermedad|pacientes?|salud publica|minsa|epidemi|contagios|tratamiento medico|clinica|vph|medicamentos)\b/i],
-    ["nino", /\b(?:senamhi|enfen|el nino|nino costero|lluvias intensas|inundaciones?|huaicos?|llovizna|pronostico meteorologico|alerta meteorologica|temperatura del mar)\b/i],
-    ["ia", /\b(?:inteligencia artificial|\bia\b|chatgpt|openai|anthropic|gemini|deepseek|copilot|llm|modelos? de lenguaje|ia generativa|algoritmos? de ia)\b/i],
-    ["tecnologia", /\b(?:ciberataque|ciberseguridad|malware|ransomware|hackeo|filtracion de datos|internet|telecomunicaciones|software|recarga.*qr|tecnologia|digital|satelite|celular|smartphone|startup)\b/i],
-    ["economia", /\b(?:economia|inflacion|bcrp|pbi|finanzas|cts|gratificacion|pension 65|mef|sunat|empleo|salarios?|remuneracion|inversion|exportacion|importacion|combustibles?|glp|gasolina|petroleo|precio(?:s)?|dolar|tipo de cambio|credito|bancos?|mineria|agroexportacion|aranceles?)\b/i],
-    ["investigacion", /\b(?:contraloria|corrupcion|cohecho|colusion|presunta irregularidad|investigacion fiscal|denuncia|sobornos?|licitacion amañada|fiscalia|caso odebrecht|lavado de activos)\b/i],
-    ["politica", /\b(?:president[ae]|congreso|senado|senador|diputad[oa]s?|ministro|premier|gobierno|elecciones|partido politico|parlament|gabinete|alcalde|gobernador|junta nacional de justicia|poder judicial|fujimori|campana electoral|ley|reforma|protesta|democrata|republicano|midterms|votacion|electoral)\b/i],
-    ["cultura", /\b(?:gastronomia|restaurantes?|50 best|chef|cociner[oa]|pelicula|cine|series? de television|estreno|oscar|concierto|festival|musica|cantante|actor|actriz|museo|literatura|arte|cultura|johnny depp|jack sparrow|godzilla|piratas del caribe|spider.man|laika|netflix|amazon prime|disney)\b/i],
-    ["ambiente", /\b(?:biodiversidad|deforestacion|bosques?|amazonia|antartida|kril|contaminacion|conservacion|medio ambiente|cambio climatico|pesca industrial|especies amenazadas)\b/i]
+    ["salud", /\b(?:salud|hospital|vacuna|dengue|essalud|inen|enfermedad|pacientes?|minsa|epidemi\w*|contagios|tratamiento medico|clinica|vph|medicamentos|cancer|anemia|brote|varicela|atencion medica|infarto)\b/i],
+    ["nino", /\b(?:senamhi|enfen|el nino|un nino sin norte|nino costero|lluvias?|inundaciones?|inundars?e|huaicos?|llovizna|pronostico meteorologico|alerta meteorologica|temperatura del mar|sismo|temblor|indeci|torrenteras?|quebradas?|clima en|temperatura maxima)\b/i],
+    ["ia", /\b(?:inteligencia artificial|ia|chatgpt|openai|anthropic|gemini|deepseek|copilot|llm|modelos? de lenguaje|ia generativa)\b/i],
+    ["politica", /\b(?:(?:ex)?president\w*|congreso|congresistas?|fujimorista|senado|senador\w*|diputad[oa]s?|ministr\w+|premier|gobierno|elecciones|electoral(?:es)?|politica|politico|partido|parlament\w*|gabinete|alcald\w+|regidor\w*|gobernador|junta nacional de justicia|jne|jee|onpe|poder judicial|fujimori|campana electoral|proyectos? de ley|ley (?:del?|que|n[o°º]|\d+)|leyes|reformas?|democrata|republicano|midterms?|votacion|votos?|votantes|embajador|canciller|bancada|trump|renovacion popular|juntos por el peru|fuerza popular|peru libre|accion popular)\b/i],
+    ["seguridad", /\b(?:extorsion(?:es)?|extorsionad\w+|sicari\w+|crimen organizado|criminales?|delincuen\w+|inseguridad|asalto|robo|robados?|hurto|secuestro|homicidio|asesinat\w+|feminicidio|banda criminal|organizacion criminal|tren de aragua|penal(?:es)?|carcel\w*|policia|pnp|serenazgo|estado de emergencia|legitima defensa|balacera|atentado|narcotrafico|trafico ilicito|detenid[oa]s?|capturan?|prision|violacion(?:es)?|abuso sexual|condenas?|desaparece\w*|sin vida|inpe)\b/i],
+    ["educacion", /\b(?:colegios?|escolar(?:es)?|docentes?|universidad(?:es)?|estudiantes?|alumnos?|examen|educacion|minedu|maestros?|profesores?|cumbre academicos)\b/i],
+    ["tecnologia", /\b(?:ciberataque|ciberseguridad|malware|ransomware|hackeo|filtracion de datos|internet|telecomunicaciones|software|tecnologia|digital|satelite|celulares?|smartphone|startup|aplicacion|robot|nvidia|chips?|centros? de datos|tecnologicas?|semiconductores|apple|google|microsoft|tesla|baterias?)\b/i],
+    ["cultura", /\b(?:gastronomia|restaurantes?|50 best|chef|cociner[oa]|pelicula|cine|series?|telenovela|capitulos?|episodios?|temporada|estreno|streaming|oscar|grammy|concierto|festival|musica|cantante|cancion|actor|actriz|museo|literatura|libro|teatro|cultura|psicoanalista|filosofo|farandula|rompe su silencio|cultural|fans|escenario|artista|app de citas|separacion de|nueva imagen|influencer|k-pop|pop|johnny depp|jack sparrow|godzilla|piratas del caribe|spider.man|laika|netflix|amazon prime|disney)\b/i],
+    ["ambiente", /\b(?:mineria ilegal|tambopata|fauna|biodiversidad|deforestacion|bosques?|amazonia|antartida|kril|contaminacion|conservacion|medio ambiente|cambio climatico|pesca industrial|especies amenazadas)\b/i],
+    ["economia", /\b(?:economia|inflacion|bcrp|pbi|finanzas|cts|gratificacion|pension 65|mef|sunat|empleo|salarios?|remuneracion(?:es)?|inversion|exportacion|importacion|combustibles?|glp|gasolina|petroleo|precios?|dolar|tipo de cambio|credito|bancos?|bancaria|bancos?|mineria|agroexportacion|agro|productividad|cultivos?|aranceles?|bolsa|mercados?|empresas?|ahorros?|crowdfunding|vivienda|depa|panetones|produccion|ventas|negocios?|multas?|indecopi)\b/i],
+    ["investigacion", /\b(?:contraloria|corrupcion|cohecho|colusion|presunta irregularidad|investigacion fiscal|denuncia penal|denuncian|sobornos?|licitacion amanada|fiscalia|caso odebrecht|lavado de activos|reportaje|contratacion indebida)\b/i]
   ];
+  var MIN_CUERPO = { nino: 1, ambiente: 1 };
+  function coincidencias(re, texto) {
+    var m = texto.match(new RegExp(re.source, "gi")) || [], vistos = {};
+    m.forEach(function (x) { vistos[x] = 1; });
+    return Object.keys(vistos).length;
+  }
   function categoria(item) {
-    var title = normal(item.titulo);
+    var title = normal(item.titulo), cuerpo = normal(item.resumen).slice(0, 260);
+    if (/\blas noticias d(?:el|e)\b/.test(title) && (item.tipo === "internacional" || item.sector === "mundo")) return "internacional";
+    if (DEPORTE.test(title)) return "deporte";
+    var mejor = null, max = 0;
     for (var i = 0; i < temas.length; i++) {
-      if (temas[i][1].test(title)) return temas[i][0];
+      var t = coincidencias(temas[i][1], title), c = Math.min(3, coincidencias(temas[i][1], cuerpo)), puntos = t * 5 + c;
+      if (t === 0 && c < (MIN_CUERPO[temas[i][0]] || 2)) continue;
+      if (puntos > max) { max = puntos; mejor = temas[i][0]; }
     }
+    if (mejor) return mejor;
+    if (DEPORTE.test(cuerpo) && coincidencias(DEPORTE, cuerpo) >= 2) return "deporte";
     if ((item.sector === "mundo" || item.tipo === "internacional") && !item.sectorOriginal) return "internacional";
-    if (normal(item.fuente).includes("salud con lupa")) return "salud";
     if (normal(item.fuente).includes("mongabay")) return "ambiente";
     return "sociedad";
   }
@@ -42,9 +59,9 @@
   }
   var nombres = {
     politica:"Política",economia:"Economía",salud:"Salud",deporte:"Deportes",
-    tecnologia:"Tecnología",ia:"Inteligencia artificial",nino:"Clima y El Niño",
+    tecnologia:"Tecnología",ia:"Inteligencia artificial",nino:"Clima y desastres",
     investigacion:"Investigación",cultura:"Cultura",ambiente:"Ambiente",
-    sociedad:"Sociedad",internacional:"Internacional"
+    sociedad:"Sociedad",seguridad:"Seguridad",educacion:"Educación",internacional:"Internacional"
   };
   function extracto(item) {
     var t = String(item.resumen || "").replace(/\s+/g," ").trim();

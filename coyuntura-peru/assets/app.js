@@ -89,9 +89,11 @@
     ambiente: '<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>',
     investigacion: '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>',
     internacional: '<circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',
+    seguridad: '<path d="M12 3 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6l-8-3Z"/><path d="m9 12 2 2 4-4"/>',
+    educacion: '<path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/><path d="M22 9v6"/>',
     general: '<path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8M15 18h-5M10 6h8v4h-8z"/>'
   };
-  var ICO_COLOR = { politica: "#A78BFA", economia: "#F5B83D", sociedad: "#38BDF8", salud: "#35E0D2", nino: "#0EA5E9", deporte: "#34D399", tecnologia: "#7C5CFF", ia: "#C084FC", cultura: "#F472B6", ambiente: "#4ADE80", investigacion: "#FB7185", internacional: "#60A5FA", general: "#94A3B8" };
+  var ICO_COLOR = { politica: "#A78BFA", economia: "#F5B83D", sociedad: "#38BDF8", salud: "#35E0D2", nino: "#0EA5E9", deporte: "#34D399", tecnologia: "#7C5CFF", ia: "#C084FC", cultura: "#F472B6", ambiente: "#4ADE80", seguridad: "#F97316", educacion: "#FACC15", investigacion: "#FB7185", internacional: "#60A5FA", general: "#94A3B8" };
   window.cpIcono = function (tema) {
     var k = ICO_PATHS[tema] ? tema : (tema === "mundo" ? "internacional" : "general");
     return { svg: '<svg class="ps-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICO_PATHS[k] + "</svg>", color: ICO_COLOR[k] };
@@ -107,7 +109,7 @@
       item.tema = news.categoria(item);
       item.ambito = news.ambito(item);
       if (["politica","economia","salud","deporte","tecnologia","ia","nino","investigacion"].indexOf(item.tema) >= 0) item.sector = item.tema;
-      else if (item.tema === "cultura" || item.tema === "sociedad" || item.tema === "ambiente") item.sector = "coyuntura";
+      else if (["cultura","sociedad","ambiente","seguridad","educacion"].indexOf(item.tema) >= 0) item.sector = "coyuntura";
       else if (item.tema === "internacional") item.sector = "mundo";
     }
     return item;
@@ -230,7 +232,7 @@
       '<h3 class="ps-title"><button type="button" class="ps-toggle" aria-expanded="false" aria-controls="' + id + '-p">' + esc(s.titulo) + "</button></h3>" +
       (resumen ? '<p class="ps-sum">' + esc(sin(resumen, 300)) + "</p>" : "") +
       (valor ? '<div class="ps-valor">' + valor + "</div>" : "") +
-      '<div class="ps-meta"><b>' + esc(s.fuente) + '</b>' + (TIPO_MEDIO[s.tipo] ? '<span class="ps-tipo">' + TIPO_MEDIO[s.tipo] + '</span>' : "") + + (s.traducido ? '<span class="ps-trad" title="Traducción automática del inglés">Traducido</span>' : "") + '<time datetime="' + esc(s.fecha || "") + '">' + esc(fd) + "</time>" + (s.via ? "<span>Vía " + esc(s.via) + "</span>" : "") + "</div>" +
+      '<div class="ps-meta"><b>' + esc(s.fuente) + '</b>' + (TIPO_MEDIO[s.tipo] ? '<span class="ps-tipo">' + TIPO_MEDIO[s.tipo] + '</span>' : "") + (s.traducido ? '<span class="ps-trad" title="Traducción automática del inglés">Traducido</span>' : "") + '<time datetime="' + esc(s.fecha || "") + '">' + esc(fd) + "</time>" + (s.via ? "<span>Vía " + esc(s.via) + "</span>" : "") + "</div>" +
       '<button type="button" class="ps-more" aria-expanded="false" aria-controls="' + id + '-p"><span>Ver detalle</span><i aria-hidden="true">▾</i></button>' +
       '<div class="ps-panel" id="' + id + '-p" hidden><div class="ps-in"><div class="ps-tabs" role="tablist" aria-label="Detalle de la noticia">' + tabs.map(function (t, i) { return '<button type="button" role="tab" id="' + id + '-tab-' + t[0] + '" aria-controls="' + id + '-pane-' + t[0] + '" aria-selected="' + (i === 0) + '" tabindex="' + (i ? -1 : 0) + '" data-pt="' + t[0] + '">' + esc(t[1]) + "</button>"; }).join("") + "</div>" +
       tabs.map(function (t, i) { return '<div class="ps-pane" role="tabpanel" id="' + id + '-pane-' + t[0] + '" aria-labelledby="' + id + '-tab-' + t[0] + '" tabindex="0" data-pp="' + t[0] + '"' + (i ? " hidden" : "") + ">" + panes[t[0]] + "</div>"; }).join("") +
@@ -439,7 +441,7 @@
     return h;
   }
   var nF = { ambito: "todos", sector: "todos", tipo: "todas", genero: "todos", fuente: "todas" }, nLimites = { peru: 6, latam: 6, mundo: 6 }, nQuery = "", nOrden = "recientes";
-  var PE_TEMAS=[["todos","Todas"],["politica","Política"],["economia","Economía"],["sociedad","Sociedad"],["salud","Salud"],["nino","El Niño y clima"],["deporte","Deportes"],["tecnologia","Ciencia y tecnología"],["ia","IA"],["cultura","Cultura"],["ambiente","Ambiente"],["investigacion","Investigación"],["internacional","Internacional"]];
+  var PE_TEMAS=[["todos","Todas"],["politica","Política"],["economia","Economía"],["sociedad","Sociedad"],["seguridad","Seguridad"],["educacion","Educación"],["salud","Salud"],["nino","Clima y desastres"],["deporte","Deportes"],["tecnologia","Ciencia y tecnología"],["ia","IA"],["cultura","Cultura"],["ambiente","Ambiente"],["investigacion","Investigación"],["internacional","Internacional"]];
   var PE_TIPOS=[["todas","Todos"],["independiente","Independientes"],["comercial","Comerciales"],["internacional","Internacionales"],["estatal","Oficiales"]];
   var PE_GENEROS=[["todos","Todos"],["noticia","Noticias"],["opinion","Opinión"],["analisis","Análisis"]];
   function reiniciarNoticias() { nLimites = { peru: 6, latam: 6, mundo: 6 }; }
