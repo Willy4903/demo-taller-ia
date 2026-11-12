@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Salar Rojo</title>
+<meta name="description" content="Shooter original en tercera persona con coberturas, hecho con Three.js. Un nivel completo con jefe final." />
+<style>
+  :root {
+    --teal: #39e6d2;
+    --orange: #ff8a3c;
+    --red: #ff4a30;
+    --ink: #0b1114;
+    --paper: #eef3f2;
+    --font: "Bahnschrift", "DIN Alternate", "Roboto Condensed", "Segoe UI", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: #05080a; color: var(--paper); font-family: var(--font); overflow: hidden; }
+  #game { position: fixed; inset: 0; width: 100%; height: 100%; display: block; }
+  kbd {
+    display: inline-block; min-width: 1.7em; padding: 0.1em 0.45em; margin-right: 0.35em; border: 1px solid rgba(255,255,255,0.55);
+    border-radius: 4px; font: 600 0.82em var(--font); text-align: center; background: rgba(0,0,0,0.45); letter-spacing: 0.04em;
+  }
+
+  /* ---------- HUD ---------- */
+  #hud { position: fixed; inset: 0; pointer-events: none; opacity: 0; transition: opacity 0.4s; text-shadow: 0 1px 3px rgba(0,0,0,0.8); }
+  #vignette { position: absolute; inset: 0; opacity: 0; background: radial-gradient(ellipse at center, transparent 45%, rgba(190,20,10,0.75) 100%); transition: opacity 0.2s; }
+  #grain { position: absolute; inset: 0; background: radial-gradient(ellipse at center, transparent 62%, rgba(0,0,0,0.45) 100%); }
+
+  #objective { position: absolute; top: 22px; left: 26px; max-width: 420px; padding: 8px 14px 9px; border-left: 3px solid var(--teal); background: linear-gradient(90deg, rgba(0,0,0,0.5), transparent); }
+  #objective small { display: block; font-size: 11px; letter-spacing: 0.22em; color: var(--teal); }
+  #objective span { font-size: 18px; font-weight: 600; }
+  #objective.pulse { animation: pulse 0.9s ease-out; }
+  @keyframes pulse { 0% { background: linear-gradient(90deg, rgba(57,230,210,0.55), transparent); } 100% { background: linear-gradient(90deg, rgba(0,0,0,0.5), transparent); } }
+
+  #status { position: absolute; left: 26px; bottom: 26px; width: 250px; }
+  #status small { font-size: 11px; letter-spacing: 0.22em; opacity: 0.8; }
+  #health { height: 12px; margin-top: 5px; background: rgba(0,0,0,0.55); border: 1px solid rgba(255,255,255,0.3); transform: skewX(-18deg); }
+  #health-fill { height: 100%; width: 100%; background: linear-gradient(90deg, var(--teal), #a8fff3); transition: width 0.12s; }
+  #health.low #health-fill { background: linear-gradient(90deg, var(--red), var(--orange)); animation: blink 0.5s infinite alternate; }
+  @keyframes blink { to { opacity: 0.55; } }
+
+  #ammo { position: absolute; right: 26px; bottom: 22px; text-align: right; }
+  #weapon-name { font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal); }
+  #ammo-line { font-size: 46px; font-weight: 700; line-height: 1; }
+  #ammo-mag.low { color: var(--red); }
+  #ammo-res { font-size: 22px; font-weight: 500; opacity: 0.75; }
+  #grenades { font-size: 15px; letter-spacing: 0.25em; color: var(--orange); margin-top: 4px; }
+  #reload-tag { font-size: 12px; letter-spacing: 0.3em; color: var(--orange); opacity: 0; transition: opacity 0.1s; }
+
+  #crosshair { position: absolute; left: 50%; top: 50%; --gap: 8px; --c: rgba(255,255,255,0.92); transition: opacity 0.12s; }
+  #crosshair.enemy { --c: var(--red); }
+  #crosshair i { position: absolute; background: var(--c); box-shadow: 0 0 2px rgba(0,0,0,0.9); }
+  #crosshair i:nth-child(1) { width: 2px; height: 9px; left: -1px; top: calc(-9px - var(--gap)); }
+  #crosshair i:nth-child(2) { width: 2px; height: 9px; left: -1px; top: var(--gap); }
+  #crosshair i:nth-child(3) { width: 9px; height: 2px; top: -1px; left: calc(-9px - var(--gap)); }
+  #crosshair i:nth-child(4) { width: 9px; height: 2px; top: -1px; left: var(--gap); }
+  #crosshair i:nth-child(5) { width: 2px; height: 2px; left: -1px; top: -1px; }
+
+  #hitmarker { position: absolute; left: 50%; top: 50%; width: 26px; height: 26px; margin: -13px 0 0 -13px; opacity: 0; --h: #fff; }
+  #hitmarker::before, #hitmarker::after { content: ""; position: absolute; inset: 0; background:
+    linear-gradient(var(--h), var(--h)) 0 0 / 8px 2px no-repeat, linear-gradient(var(--h), var(--h)) 100% 100% / 8px 2px no-repeat; }
+  #hitmarker::before { transform: rotate(45deg); }
+  #hitmarker::after { transform: rotate(-45deg); }
+  #hitmarker.crit { --h: var(--teal); }
+  #hitmarker.kill { --h: var(--red); transform: scale(1.5); }
+  #hitmarker.armor { --h: #9aa3a8; }
+
+  #dmg-layer { position: absolute; left: 50%; top: 50%; }
+  .dmg { position: absolute; width: 340px; height: 340px; border-radius: 50%; animation: dmgfade 0.9s forwards;
+    background: conic-gradient(from -22deg, rgba(255,60,40,0.9) 0deg, rgba(255,60,40,0.9) 44deg, transparent 44deg);
+    -webkit-mask: radial-gradient(circle, transparent 62%, #000 63%, #000 68%, transparent 70%); mask: radial-gradient(circle, transparent 62%, #000 63%, #000 68%, transparent 70%); }
+  @keyframes dmgfade { from { opacity: 1; } to { opacity: 0; } }
+
+  #prompt { position: absolute; left: 50%; bottom: 23%; transform: translateX(-50%); padding: 7px 16px; font-size: 16px; background: rgba(0,0,0,0.55); border: 1px solid rgba(255,255,255,0.2); opacity: 0; transition: opacity 0.12s; white-space: nowrap; }
+  #hint { position: absolute; left: 50%; top: 17%; transform: translateX(-50%); padding: 6px 16px; font-size: 15px; color: #ffe2c8; background: rgba(0,0,0,0.5); border-bottom: 2px solid var(--orange); opacity: 0; transition: opacity 0.3s; white-space: nowrap; }
+  #subtitle { position: absolute; left: 50%; bottom: 11%; transform: translateX(-50%); max-width: 70%; padding: 8px 18px; font-size: 17px; text-align: center; background: rgba(0,0,0,0.6); opacity: 0; transition: opacity 0.3s; }
+  #subtitle b { color: var(--orange); letter-spacing: 0.12em; text-transform: uppercase; font-size: 13px; margin-right: 8px; }
+
+  #banner { position: absolute; left: 0; right: 0; top: 30%; text-align: center; opacity: 0; transform: translateY(8px); transition: opacity 0.6s, transform 0.6s; }
+  #banner.show { opacity: 1; transform: none; }
+  #banner h2 { margin: 0; font-size: 54px; letter-spacing: 0.3em; font-weight: 700; }
+  #banner p { margin: 6px 0 0; font-size: 16px; letter-spacing: 0.32em; color: var(--teal); text-transform: uppercase; }
+
+  #boss { position: absolute; left: 50%; top: 24px; width: min(46vw, 620px); transform: translateX(-50%); opacity: 0; transition: opacity 0.4s; text-align: center; }
+  #boss small { font-size: 13px; letter-spacing: 0.4em; color: var(--orange); }
+  #boss-bar { height: 10px; margin-top: 5px; background: rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.35); }
+  #boss-fill { height: 100%; width: 100%; background: linear-gradient(90deg, #c9981c, var(--orange)); }
+  #boss.vent #boss-fill { background: linear-gradient(90deg, var(--teal), #d8fffa); }
+  #boss.vent small { color: var(--teal); }
+
+  #waypoint { position: absolute; left: 0; top: 0; opacity: 0; }
+  #waypoint b { position: absolute; left: -7px; top: -7px; width: 14px; height: 14px; border: 2px solid var(--teal); transform: rotate(45deg); box-shadow: 0 0 6px rgba(0,0,0,0.8); }
+  #waypoint span { position: absolute; left: -30px; top: 13px; width: 60px; text-align: center; font-size: 12px; color: var(--teal); }
+
+  #fade { position: fixed; inset: 0; background: #05080a; opacity: 1; pointer-events: none; transition: opacity 1.2s; }
+
+  /* ---------- Pantallas ---------- */
+  .screen { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; padding: 16px; overflow: auto;
+    background: linear-gradient(180deg, rgba(5,10,12,0.35), rgba(5,10,12,0.7)); }
+  .screen.open { display: flex; }
+  .panel { width: min(760px, 100%); padding: 30px 34px; border: 1px solid rgba(255,255,255,0.14); border-top: 3px solid var(--teal); background: rgba(8,14,17,0.86); backdrop-filter: blur(6px); }
+  .panel h1 { margin: 0; font-size: clamp(40px, 8vw, 78px); letter-spacing: 0.22em; line-height: 1; font-weight: 700; }
+  .panel h1 em { font-style: normal; color: var(--orange); }
+  .panel h2 { margin: 0 0 6px; font-size: 34px; letter-spacing: 0.2em; }
+  .tag { margin: 8px 0 20px; font-size: 14px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--teal); }
+  .lead { margin: 0 0 18px; font-size: 16px; line-height: 1.5; color: #c7d3d2; max-width: 60ch; }
+  .keys { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 7px 22px; margin: 0 0 20px; padding: 0; list-style: none; font-size: 14.5px; color: #d5dedd; }
+  .row { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; }
+  .row label { font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #9fb0af; display: flex; align-items: center; gap: 8px; }
+  select, input[type=range] { accent-color: var(--teal); font: inherit; }
+  select { background: #0e181c; color: var(--paper); border: 1px solid rgba(255,255,255,0.25); padding: 4px 8px; }
+  button.go { font: 700 18px var(--font); letter-spacing: 0.3em; text-transform: uppercase; padding: 13px 34px; color: var(--ink); background: var(--teal); border: 0; cursor: pointer; }
+  button.go:hover, button.go:focus-visible { background: #8ffbee; outline: 2px solid #fff; outline-offset: 2px; }
+  button.alt { font: 600 14px var(--font); letter-spacing: 0.2em; text-transform: uppercase; padding: 12px 20px; color: var(--paper); background: transparent; border: 1px solid rgba(255,255,255,0.35); cursor: pointer; }
+  button.alt:hover { border-color: var(--teal); color: var(--teal); }
+  .note { margin: 18px 0 0; font-size: 12.5px; color: #8b9a99; line-height: 1.5; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; margin: 18px 0 22px; }
+  .stats div { padding: 10px 12px; border-left: 2px solid var(--orange); background: rgba(255,255,255,0.04); }
+  .stats b { display: block; font-size: 26px; }
+  .stats span { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #9fb0af; }
+  #dead .panel { border-top-color: var(--red); }
+  @media (max-width: 640px) { #banner h2 { font-size: 30px; } #ammo-line { font-size: 34px; } .panel { padding: 22px 18px; } }
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+
+<div id="hud">
+  <div id="vignette"></div>
+  <div id="grain"></div>
+  <div id="objective"><small>OBJETIVO</small><span id="objective-text"></span></div>
+  <div id="boss"><small>CAPATAZ · GRÚA PÓRTICO G-12</small><div id="boss-bar"><div id="boss-fill"></div></div></div>
+  <div id="status"><small>INTEGRIDAD DEL TRAJE</small><div id="health"><div id="health-fill"></div></div></div>
+  <div id="ammo">
+    <div id="reload-tag">RECARGANDO</div>
+    <div id="weapon-name"></div>
+    <div id="ammo-line"><span id="ammo-mag">0</span> <span id="ammo-res">0</span></div>
+    <div id="grenades"></div>
+  </div>
+  <div id="crosshair"><i></i><i></i><i></i><i></i><i></i></div>
+  <div id="hitmarker"></div>
+  <div id="dmg-layer"></div>
+  <div id="waypoint"><b></b><span id="waypoint-dist"></span></div>
+  <div id="hint"></div>
+  <div id="prompt"></div>
+  <div id="subtitle"></div>
+  <div id="banner"></div>
+</div>
+<div id="fade"></div>
+
+<section id="menu" class="screen open">
+  <div class="panel">
+    <h1>SALAR <em>ROJO</em></h1>
+    <p class="tag">Estación Salar Alto · cota 4800</p>
+    <p class="lead">Las máquinas de mantenimiento de la planta han dejado de obedecer. Eres la técnica de guardia: cruza el patio de carga, atraviesa la nave de proceso y transmite la orden de apagado desde la antena.</p>
+    <ul class="keys">
+      <li><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> Moverse</li>
+      <li><kbd>Ratón</kbd> Mirar y apuntar</li>
+      <li><kbd>Clic izq.</kbd> Disparar</li>
+      <li><kbd>Clic der.</kbd> Apuntar / asomarse</li>
+      <li><kbd>Espacio</kbd> Cubrirse, saltar, rodar</li>
+      <li><kbd>Mayús</kbd> Correr</li>
+      <li><kbd>R</kbd> Recargar</li>
+      <li><kbd>Q</kbd> / <kbd>1</kbd><kbd>2</kbd> Cambiar arma</li>
+      <li><kbd>G</kbd> Granada de pulso</li>
+      <li><kbd>F</kbd> Golpe</li>
+      <li><kbd>E</kbd> Interactuar</li>
+      <li><kbd>Esc</kbd> / <kbd>P</kbd> Pausa</li>
+    </ul>
+    <div class="row">
+      <button class="go" id="btn-play">Jugar</button>
+      <label>Calidad
+        <select id="opt-quality"><option value="2">Alta</option><option value="1" selected>Media</option><option value="0">Baja</option></select>
+      </label>
+      <label>Sensibilidad <input type="range" id="opt-sens" min="0.3" max="2.5" step="0.05" value="1" /></label>
+      <label>Volumen <input type="range" id="opt-vol" min="0" max="1" step="0.05" value="0.7" /></label>
+    </div>
+    <p class="note">Pensado para teclado y ratón en un navegador de escritorio con WebGL. Si el navegador no permite capturar el puntero, también puedes girar la cámara con las flechas del teclado.</p>
+  </div>
+</section>
+
+<section id="pause" class="screen">
+  <div class="panel">
+    <h2>PAUSA</h2>
+    <p class="tag">Estación Salar Alto</p>
+    <div class="row">
+      <button class="go" id="btn-resume">Continuar</button>
+      <button class="alt" id="btn-restart">Reiniciar nivel</button>
+      <label>Sensibilidad <input type="range" id="opt-sens2" min="0.3" max="2.5" step="0.05" value="1" /></label>
+      <label>Volumen <input type="range" id="opt-vol2" min="0" max="1" step="0.05" value="0.7" /></label>
+    </div>
+    <p class="note">Espacio junto a un muro o una barrera para cubrirte. Desde una cobertura baja, clic derecho para asomarte y disparar; sin apuntar disparas a ciegas. En una cobertura alta, ve al borde y apunta para asomarte.</p>
+  </div>
+</section>
+
+<section id="dead" class="screen">
+  <div class="panel">
+    <h2>TRAJE COMPROMETIDO</h2>
+    <p class="tag">Señal perdida</p>
+    <p class="lead">Las máquinas siguen activas. Vuelve al último punto de control.</p>
+    <div class="row"><button class="go" id="btn-retry">Reintentar</button></div>
+  </div>
+</section>
+
+<section id="win" class="screen">
+  <div class="panel">
+    <h2>ORDEN TRANSMITIDA</h2>
+    <p class="tag">Estación Salar Alto en silencio</p>
+    <p class="lead">La antena emite el apagado y las máquinas se detienen una a una sobre el salar.</p>
+    <div class="stats" id="stats"></div>
+    <div class="row"><button class="go" id="btn-again">Jugar de nuevo</button></div>
+  </div>
+</section>
+
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>
