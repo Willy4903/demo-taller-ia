@@ -1,0 +1,71 @@
+name: Publicar Salar Rojo
+
+# Juego estático de la carpeta shooter-cobertura/. Se publica en gh-pages/salar-rojo/ sin tocar el resto de la rama
+# (mismo patrón que Inglés con input y PERÚ INFORMADO). Solo se publica desde main.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "shooter-cobertura/**"
+      - ".github/workflows/publicar-salar-rojo.yml"
+  pull_request:
+    paths:
+      - "shooter-cobertura/**"
+      - ".github/workflows/publicar-salar-rojo.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Comprobar sintaxis
+        run: for f in shooter-cobertura/js/*.js; do node --check "$f"; done
+      - run: npx playwright install --with-deps chromium
+      - name: Prueba de humo en escritorio y táctil
+        run: node shooter-cobertura/tests/smoke.cjs
+
+  publicar:
+    needs: probar
+    if: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: publicar-gh-pages
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: fuente
+      - uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: sitio
+      - name: Copiar el juego a gh-pages/salar-rojo/
+        run: |
+          rm -rf sitio/salar-rojo
+          mkdir -p sitio/salar-rojo
+          cp -r fuente/shooter-cobertura/. sitio/salar-rojo/
+          rm -rf sitio/salar-rojo/tests sitio/salar-rojo/README.md sitio/salar-rojo/build-standalone.mjs
+          touch sitio/.nojekyll
+      - name: Publicar en gh-pages
+        working-directory: sitio
+        run: |
+          git config user.name "salar-rojo-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "gh-pages ya está al día."
+          else
+            git commit -m "Publicar Salar Rojo"
+            git push origin gh-pages
+          fi
