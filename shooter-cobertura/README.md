@@ -6,6 +6,7 @@ No es una recreación de ningún juego comercial. La ambientación (una planta d
 
 ## Cómo jugar
 
+- En línea: `https://willy4903.github.io/demo-taller-ia/salar-rojo/`, una vez que `.github/workflows/publicar-salar-rojo.yml` se ejecute en `main` (copia esta carpeta a `gh-pages/salar-rojo/`).
 - Opción rápida: abrir `salar-rojo.html` con doble clic. Es el juego entero en un solo archivo.
 - Desde el código fuente: servir la carpeta por HTTP, porque los módulos no cargan con `file://`.
 
@@ -70,6 +71,7 @@ js/audio.js             Sonido sintetizado con Web Audio
 js/touch.js             Controles táctiles
 js/hud.js, textures.js, util.js
 vendor/                 Three.js r187 minificado (licencia MIT)
+tests/smoke.cjs         Prueba de humo con Playwright (escritorio y táctil)
 ```
 
 Tras cambiar el código, regenerar el archivo único con `node shooter-cobertura/build-standalone.mjs`.
