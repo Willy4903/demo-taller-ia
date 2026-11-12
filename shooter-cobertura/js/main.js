@@ -8,6 +8,7 @@ import { Hud, showScreen } from './hud.js'
 import { Player, WEAPONS } from './player.js'
 import { Enemies } from './enemies.js'
 import { clamp, damp, lerp, rand } from './util.js'
+import { isTouchDevice, setupTouch } from './touch.js'
 
 const canvas = document.getElementById('game')
 const $ = (id) => document.getElementById(id)
@@ -25,7 +26,15 @@ class Input {
     this.wheel = 0
     this.locked = false
     this.freeLook = false
+    // Táctil: ejes analógicos del joystick virtual.
+    this.touch = false
+    this.tx = 0
+    this.tz = 0
+    this.lastTouch = -1e9
   }
+  axisX() { return clamp((this.keys.has('KeyD') ? 1 : 0) - (this.keys.has('KeyA') ? 1 : 0) + this.tx, -1, 1) }
+  axisZ() { return clamp((this.keys.has('KeyW') ? 1 : 0) - (this.keys.has('KeyS') ? 1 : 0) + this.tz, -1, 1) }
+  sprint() { return this.keys.has('ShiftLeft') || this.keys.has('ShiftRight') || this.tz > 0.9 }
   down(code) { return this.keys.has(code) }
   pressed(code) { return this.pressedKeys.has(code) }
   mouse(b) { return this.buttons[b] }
@@ -33,6 +42,7 @@ class Input {
   reset() {
     this.keys.clear()
     this.buttons.fill(false)
+    this.tx = this.tz = 0
   }
   endFrame() {
     this.pressedKeys.clear()
@@ -209,12 +219,19 @@ class Director {
     const g = this.g
     g.hud.banner('SALAR ROJO', 'Patio de carga · 18:42')
     this.say('Control', 'Las unidades de mantenimiento ya no responden. Llega a la antena y transmite el apagado.')
-    this.tips = [
-      [2.5, 'ESPACIO junto a una barrera o un muro para cubrirte'],
-      [9, 'Clic derecho para asomarte y apuntar; sin apuntar disparas a ciegas'],
-      [17, 'Los Peones se cubren: flanquéalos o lanza una granada de pulso con G'],
-      [26, 'El visor rojo de las máquinas es su punto débil'],
-    ]
+    this.tips = g.input.touch
+      ? [
+          [2.5, 'Toca CUBRIR junto a una barrera o un muro'],
+          [9, 'Activa APUNTAR para asomarte; sin apuntar disparas a ciegas'],
+          [17, 'Los Peones se cubren: flanquéalos o lanza una granada'],
+          [26, 'El visor rojo de las máquinas es su punto débil'],
+        ]
+      : [
+          [2.5, 'ESPACIO junto a una barrera o un muro para cubrirte'],
+          [9, 'Clic derecho para asomarte y apuntar; sin apuntar disparas a ciegas'],
+          [17, 'Los Peones se cubren: flanquéalos o lanza una granada de pulso con G'],
+          [26, 'El visor rojo de las máquinas es su punto débil'],
+        ]
     this.startStage('A')
   }
 
@@ -451,7 +468,7 @@ let lockFails = 0
 let unlockedT = 0
 
 function lock() {
-  if (game.input.freeLook || game.input.locked) return
+  if (game.input.touch || game.input.freeLook || game.input.locked) return
   try {
     const r = canvas.requestPointerLock()
     if (r && r.catch) r.catch(() => onLockError())
@@ -487,6 +504,7 @@ function pause() {
   if (game.state !== 'playing') return
   game.state = 'paused'
   game.input.reset()
+  if (touchUi) touchUi.releaseAll()
   showScreen('pause')
   game.audio.suspend(true)
   if (document.pointerLockElement) document.exitPointerLock()
@@ -566,15 +584,18 @@ window.addEventListener('keydown', (e) => {
 })
 window.addEventListener('keyup', (e) => inp.keys.delete(e.code))
 window.addEventListener('blur', () => { inp.reset(); if (game.state === 'playing') pause() })
+document.addEventListener('visibilitychange', () => { if (document.hidden && game.state === 'playing') pause() })
+// Tras un toque, el navegador emite eventos de ratón simulados: se ignoran.
+const fromTouch = () => performance.now() - inp.lastTouch < 900
 canvas.addEventListener('mousedown', (e) => {
-  if (game.state !== 'playing') return
+  if (game.state !== 'playing' || fromTouch()) return
   if (!inp.locked && !inp.freeLook) lock()
   if (e.button < 3) { inp.buttons[e.button] = true; inp.buttonsPressed[e.button] = true }
   e.preventDefault()
 })
 window.addEventListener('mouseup', (e) => { if (e.button < 3) inp.buttons[e.button] = false })
 window.addEventListener('mousemove', (e) => {
-  if (game.state !== 'playing') return
+  if (game.state !== 'playing' || fromTouch()) return
   if (inp.locked || inp.freeLook) { inp.dx += e.movementX || 0; inp.dy += e.movementY || 0 }
 })
 window.addEventListener('wheel', (e) => { if (game.state === 'playing') inp.wheel += Math.sign(e.deltaY) }, { passive: true })
@@ -648,6 +669,11 @@ function update(dt) {
   updateCamera(dt)
   updateSun()
   updateHud(dt)
+  if (touchUi) {
+    touchUi.sync()
+    // En vertical no caben los controles: se pausa hasta girar el teléfono.
+    if (window.innerHeight > window.innerWidth && game.state === 'playing') pause()
+  }
 
   const alive = game.enemies.aliveCount()
   const boss = game.enemies.boss
@@ -679,6 +705,7 @@ function idle(dt) {
 
 let last = performance.now()
 let slowFrames = 0
+let shownState = ''
 function frame(now) {
   requestAnimationFrame(frame)
   const raw = (now - last) / 1000
@@ -699,7 +726,17 @@ function frame(now) {
   } else if (game.state === 'menu' || game.state === 'won') idle(dt)
   renderer.render(scene, camera)
   inp.endFrame()
+  if (game.state !== shownState) {
+    shownState = game.state
+    document.body.classList.toggle('playing', shownState === 'playing')
+  }
 }
+
+// Los controles táctiles se activan en móviles y tabletas, o al primer toque en equipos híbridos.
+let touchUi = null
+const enableTouch = () => { if (!touchUi) touchUi = setupTouch(game, pause) }
+if (isTouchDevice()) enableTouch()
+else window.addEventListener('touchstart', enableTouch, { once: true, passive: true })
 
 setQuality(1)
 game.hud.setObjective('')

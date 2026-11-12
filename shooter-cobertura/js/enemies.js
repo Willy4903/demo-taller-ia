@@ -774,6 +774,23 @@ export class Enemies {
     return best
   }
 
+  // Esfera enemiga más alineada con la mirada, dentro de un cono estrecho (ayuda de puntería táctil).
+  assist(o, dir, cosMin) {
+    let best = null
+    let bc = cosMin
+    for (const e of this.list) {
+      if (!e.alive || e.spawnT > 0) continue
+      for (const s of e.spheres) {
+        const dx = s.x - o.x, dy = s.y - o.y, dz = s.z - o.z
+        const d = Math.hypot(dx, dy, dz)
+        if (d < 1 || d > 90) continue
+        const c = (dx * dir.x + dy * dir.y + dz * dir.z) / d
+        if (c > bc) { bc = c; best = s }
+      }
+    }
+    return best
+  }
+
   melee(pos, yaw, range, dmg) {
     const fx = -Math.sin(yaw), fz = -Math.cos(yaw)
     let hit = false

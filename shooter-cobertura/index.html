@@ -2,7 +2,9 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
 <title>Salar Rojo</title>
 <meta name="description" content="Shooter original en tercera persona con coberturas, hecho con Three.js. Un nivel completo con jefe final." />
 <style>
@@ -96,10 +98,10 @@
   #fade { position: fixed; inset: 0; background: #05080a; opacity: 1; pointer-events: none; transition: opacity 1.2s; }
 
   /* ---------- Pantallas ---------- */
-  .screen { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; padding: 16px; overflow: auto;
+  .screen { position: fixed; inset: 0; display: none; align-items: flex-start; justify-content: center; padding: 16px; overflow: auto; -webkit-overflow-scrolling: touch;
     background: linear-gradient(180deg, rgba(5,10,12,0.35), rgba(5,10,12,0.7)); }
   .screen.open { display: flex; }
-  .panel { width: min(760px, 100%); padding: 30px 34px; border: 1px solid rgba(255,255,255,0.14); border-top: 3px solid var(--teal); background: rgba(8,14,17,0.86); backdrop-filter: blur(6px); }
+  .panel { margin: auto; width: min(760px, 100%); padding: 30px 34px; border: 1px solid rgba(255,255,255,0.14); border-top: 3px solid var(--teal); background: rgba(8,14,17,0.86); backdrop-filter: blur(6px); }
   .panel h1 { margin: 0; font-size: clamp(40px, 8vw, 78px); letter-spacing: 0.22em; line-height: 1; font-weight: 700; }
   .panel h1 em { font-style: normal; color: var(--orange); }
   .panel h2 { margin: 0 0 6px; font-size: 34px; letter-spacing: 0.2em; }
@@ -121,6 +123,70 @@
   .stats span { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #9fb0af; }
   #dead .panel { border-top-color: var(--red); }
   @media (max-width: 640px) { #banner h2 { font-size: 30px; } #ammo-line { font-size: 34px; } .panel { padding: 22px 18px; } }
+
+  /* ---------- Controles táctiles ---------- */
+  :root { --sl: env(safe-area-inset-left, 0px); --sr: env(safe-area-inset-right, 0px); --sb: env(safe-area-inset-bottom, 0px); }
+  #touch, #rotate, .touch-only { display: none; }
+  body.touch { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; -webkit-tap-highlight-color: transparent; overscroll-behavior: none; }
+  body.touch #game, body.touch #touch { touch-action: none; }
+  body.touch #touch { display: block; position: fixed; inset: 0; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+  body.touch.playing #touch { opacity: 1; pointer-events: auto; }
+  body.touch .desk-only { display: none; }
+  body.touch .touch-only { display: revert; }
+  body.touch ul.touch-only { display: grid; }
+  #stick { position: absolute; width: 124px; height: 124px; margin: -62px 0 0 -62px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.35); background: rgba(0,0,0,0.25); opacity: 0; transition: opacity 0.15s; pointer-events: none; }
+  #stick.on { opacity: 1; }
+  #stick i { position: absolute; left: 50%; top: 50%; width: 54px; height: 54px; border-radius: 50%; background: rgba(57,230,210,0.55); border: 2px solid rgba(255,255,255,0.7); transform: translate(-50%, -50%); }
+  #stick-hint { position: absolute; left: calc(26px + var(--sl)); bottom: calc(34px + var(--sb)); width: 96px; height: 96px; border-radius: 50%; border: 2px dashed rgba(255,255,255,0.22); pointer-events: none; }
+  .tb { position: absolute; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 2px solid rgba(255,255,255,0.5); background: rgba(8,14,17,0.45);
+    color: #fff; font: 700 8.5px var(--font); letter-spacing: 0.04em; text-transform: uppercase; text-shadow: 0 1px 2px #000; }
+  .tb.held { background: rgba(57,230,210,0.45); border-color: #fff; }
+  .tb.on { background: rgba(255,138,60,0.6); border-color: #fff; }
+  .tb[data-act="fire"] { width: 86px; height: 86px; right: calc(20px + var(--sr)); bottom: calc(26px + var(--sb)); border-color: var(--red); background: rgba(255,74,48,0.3); font-size: 11px; }
+  .tb[data-act="aim"] { width: 60px; height: 60px; right: calc(24px + var(--sr)); bottom: calc(126px + var(--sb)); }
+  .tb[data-act="cover"] { width: 66px; height: 66px; right: calc(120px + var(--sr)); bottom: calc(22px + var(--sb)); border-color: var(--teal); }
+  .tb[data-act="reload"] { width: 50px; height: 50px; right: calc(104px + var(--sr)); bottom: calc(100px + var(--sb)); }
+  .tb[data-act="grenade"] { width: 50px; height: 50px; right: calc(98px + var(--sr)); bottom: calc(162px + var(--sb)); border-color: var(--orange); }
+  .tb[data-act="swap"] { width: 46px; height: 46px; right: calc(30px + var(--sr)); bottom: calc(198px + var(--sb)); }
+  .tb[data-act="melee"] { width: 50px; height: 50px; right: calc(198px + var(--sr)); bottom: calc(22px + var(--sb)); }
+  .tb[data-act="pause"] { width: 40px; height: 40px; right: calc(12px + var(--sr)); top: 10px; border-radius: 8px; font-size: 13px; }
+  body.touch #objective { top: 8px; left: calc(12px + var(--sl)); max-width: 44vw; padding: 5px 10px 6px; }
+  body.touch #objective small { font-size: 9px; }
+  body.touch #objective span { font-size: 13px; }
+  body.touch #status { top: 62px; bottom: auto; left: calc(14px + var(--sl)); width: 140px; }
+  body.touch #status small { display: none; }
+  body.touch #health { height: 9px; }
+  body.touch #ammo { top: 8px; bottom: auto; right: calc(64px + var(--sr)); }
+  body.touch #weapon-name { font-size: 10px; }
+  body.touch #ammo-line { font-size: 26px; }
+  body.touch #ammo-res { font-size: 14px; }
+  body.touch #grenades { font-size: 11px; margin-top: 1px; }
+  body.touch #reload-tag { font-size: 10px; }
+  body.touch #boss { top: 8px; width: 30vw; }
+  body.touch #boss small { font-size: 9px; letter-spacing: 0.2em; }
+  body.touch #hint { top: 24%; font-size: 12px; max-width: 70vw; white-space: normal; text-align: center; }
+  body.touch #subtitle { bottom: 3%; font-size: 12.5px; max-width: 46vw; padding: 5px 12px; }
+  body.touch #prompt { bottom: 34%; font-size: 15px; padding: 10px 18px; pointer-events: auto; border-color: var(--teal); }
+  body.touch #banner { top: 22%; }
+  body.touch #banner h2 { font-size: 30px; }
+  body.touch #banner p { font-size: 11px; }
+  @media (max-height: 520px) {
+    .panel { padding: 14px 18px; }
+    .panel h1 { font-size: 34px; }
+    .panel h2 { font-size: 24px; }
+    .tag { margin: 4px 0 8px; font-size: 11px; }
+    .lead { margin-bottom: 8px; font-size: 13px; line-height: 1.35; }
+    .keys { gap: 3px 14px; margin-bottom: 10px; font-size: 12px; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
+    .note { margin-top: 8px; font-size: 11px; }
+    button.go { padding: 10px 26px; font-size: 15px; }
+    .stats { margin: 8px 0 12px; }
+    .stats b { font-size: 20px; }
+  }
+  @media (orientation: portrait) {
+    body.touch #rotate { display: flex; position: fixed; inset: 0; z-index: 50; align-items: center; justify-content: center; flex-direction: column; gap: 14px; padding: 24px;
+      background: #05080a; text-align: center; font-size: 18px; letter-spacing: 0.12em; }
+    #rotate b { font-size: 46px; color: var(--teal); }
+  }
 </style>
 </head>
 <body>
@@ -149,12 +215,26 @@
 </div>
 <div id="fade"></div>
 
+<div id="touch">
+  <div id="stick-hint"></div>
+  <div id="stick"><i></i></div>
+  <div class="tb" data-act="pause">II</div>
+  <div class="tb" data-act="swap">Arma</div>
+  <div class="tb" data-act="grenade">Granada</div>
+  <div class="tb" data-act="aim">Apuntar</div>
+  <div class="tb" data-act="reload">Recarga</div>
+  <div class="tb" data-act="melee">Golpe</div>
+  <div class="tb" data-act="cover">Cubrir</div>
+  <div class="tb" data-act="fire">Fuego</div>
+</div>
+<div id="rotate"><b>⟳</b>Gira el teléfono en horizontal para jugar</div>
+
 <section id="menu" class="screen open">
   <div class="panel">
     <h1>SALAR <em>ROJO</em></h1>
     <p class="tag">Estación Salar Alto · cota 4800</p>
     <p class="lead">Las máquinas de mantenimiento de la planta han dejado de obedecer. Eres la técnica de guardia: cruza el patio de carga, atraviesa la nave de proceso y transmite la orden de apagado desde la antena.</p>
-    <ul class="keys">
+    <ul class="keys desk-only">
       <li><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> Moverse</li>
       <li><kbd>Ratón</kbd> Mirar y apuntar</li>
       <li><kbd>Clic izq.</kbd> Disparar</li>
@@ -168,6 +248,14 @@
       <li><kbd>E</kbd> Interactuar</li>
       <li><kbd>Esc</kbd> / <kbd>P</kbd> Pausa</li>
     </ul>
+    <ul class="keys touch-only">
+      <li><kbd>Pulgar izq.</kbd> Moverse; a fondo, correr</li>
+      <li><kbd>Arrastrar der.</kbd> Mirar y apuntar</li>
+      <li><kbd>Fuego</kbd> Disparar; arrastra para corregir</li>
+      <li><kbd>Apuntar</kbd> Asomarse (se queda activo)</li>
+      <li><kbd>Cubrir</kbd> Cubrirse, salir, saltar, rodar</li>
+      <li><kbd>Avisos</kbd> Tócalos para interactuar</li>
+    </ul>
     <div class="row">
       <button class="go" id="btn-play">Jugar</button>
       <label>Calidad
@@ -176,7 +264,7 @@
       <label>Sensibilidad <input type="range" id="opt-sens" min="0.3" max="2.5" step="0.05" value="1" /></label>
       <label>Volumen <input type="range" id="opt-vol" min="0" max="1" step="0.05" value="0.7" /></label>
     </div>
-    <p class="note">Pensado para teclado y ratón en un navegador de escritorio con WebGL. Si el navegador no permite capturar el puntero, también puedes girar la cámara con las flechas del teclado.</p>
+    <p class="note desk-only">Pensado para teclado y ratón en un navegador de escritorio con WebGL. Si el navegador no permite capturar el puntero, también puedes girar la cámara con las flechas del teclado.</p>
   </div>
 </section>
 
@@ -190,7 +278,8 @@
       <label>Sensibilidad <input type="range" id="opt-sens2" min="0.3" max="2.5" step="0.05" value="1" /></label>
       <label>Volumen <input type="range" id="opt-vol2" min="0" max="1" step="0.05" value="0.7" /></label>
     </div>
-    <p class="note">Espacio junto a un muro o una barrera para cubrirte. Desde una cobertura baja, clic derecho para asomarte y disparar; sin apuntar disparas a ciegas. En una cobertura alta, ve al borde y apunta para asomarte.</p>
+    <p class="note touch-only">Toca Cubrir junto a un muro o una barrera. Desde una cobertura baja, activa Apuntar para asomarte y disparar; sin apuntar disparas a ciegas. En una cobertura alta, ve al borde y apunta para asomarte.</p>
+    <p class="note desk-only">Espacio junto a un muro o una barrera para cubrirte. Desde una cobertura baja, clic derecho para asomarte y disparar; sin apuntar disparas a ciegas. En una cobertura alta, ve al borde y apunta para asomarte.</p>
   </div>
 </section>
 

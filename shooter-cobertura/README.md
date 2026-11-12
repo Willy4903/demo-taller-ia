@@ -14,7 +14,7 @@ cd shooter-cobertura
 python3 -m http.server 8000   # http://localhost:8000
 ```
 
-Requiere un navegador de escritorio con WebGL, teclado y ratón.
+Funciona en navegadores de escritorio con teclado y ratón, y en móviles y tabletas con controles táctiles (en horizontal). Requiere WebGL.
 
 | Control | Acción |
 | --- | --- |
@@ -32,6 +32,20 @@ Requiere un navegador de escritorio con WebGL, teclado y ratón.
 | Esc, P | Pausa |
 
 Si el navegador no permite capturar el puntero, el juego pasa a puntero libre y la cámara también gira con las flechas.
+
+En pantalla táctil los controles aparecen solos:
+
+| Control táctil | Acción |
+| --- | --- |
+| Pulgar izquierdo (joystick) | Moverse; empujado a fondo hacia delante, correr |
+| Arrastrar en la mitad derecha | Mirar y apuntar |
+| Fuego | Disparar mientras se mantiene; arrastrando el dedo se corrige la puntería |
+| Apuntar | Activa o desactiva el apuntado (asomarse en cobertura) |
+| Cubrir | Cubrirse, salir, saltar una cobertura baja, rodar |
+| Recarga, Granada, Arma, Golpe | Acciones directas |
+| Avisos en pantalla | Se tocan para cubrirse o interactuar |
+
+Con controles táctiles hay una ayuda de puntería ligera. En vertical el juego se pausa hasta girar el dispositivo.
 
 ## Contenido
 
@@ -53,6 +67,7 @@ js/level.js             Geometría, colisiones, coberturas y navegación (A*)
 js/characters.js        Modelos y animación por código
 js/fx.js                Partículas, trazadoras y explosiones
 js/audio.js             Sonido sintetizado con Web Audio
+js/touch.js             Controles táctiles
 js/hud.js, textures.js, util.js
 vendor/                 Three.js r187 minificado (licencia MIT)
 ```
@@ -62,5 +77,5 @@ Tras cambiar el código, regenerar el archivo único con `node shooter-cobertura
 ## Limitaciones
 
 - Gráficos con primitivas y texturas procedurales; no hay modelos, animaciones capturadas ni audio grabado.
-- Sin soporte para pantallas táctiles ni mando.
-- Probado de forma automática en Chromium (flujo completo del nivel y mecánicas); no se ha probado en Firefox ni Safari.
+- Sin soporte para mando.
+- Probado de forma automática en Chromium (flujo completo del nivel, mecánicas y controles táctiles con emulación de iPhone); no se ha probado en Firefox, en Safari ni en un teléfono real.

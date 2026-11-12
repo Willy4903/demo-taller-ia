@@ -168,6 +168,11 @@ export class Player {
     // Ayuda a quemarropa: si hay una máquina pegada delante, el disparo va hacia ella.
     const close = g.enemies.closest(muzzle, g.lookDir, 3.2)
     if (close) _d.set(close.x - muzzle.x, close.y - muzzle.y, close.z - muzzle.z).normalize()
+    else if (g.input.touch) {
+      // Con controles táctiles, una ayuda de puntería ligera compensa la falta de precisión del pulgar.
+      const s = g.enemies.assist(g.camera.position, g.lookDir, 0.9982)
+      if (s && g.level.clear(muzzle.x, muzzle.y, muzzle.z, s.x, s.y, s.z)) _d.set(s.x - muzzle.x, s.y - muzzle.y, s.z - muzzle.z).normalize()
+    }
     const spread = (this.aiming ? w.spreadAim : w.spreadHip) * (blind ? 2 : 1) * (this.speed > 5 ? 1.5 : 1) + this.bloom
     let hitAny = false
     for (let i = 0; i < w.pellets; i++) {
@@ -214,13 +219,13 @@ export class Player {
     const camYaw = g.camYaw
     const fx = -Math.sin(camYaw), fz = -Math.cos(camYaw)
     const rx = Math.cos(camYaw), rz = -Math.sin(camYaw)
-    const ix = (inp.down('KeyD') ? 1 : 0) - (inp.down('KeyA') ? 1 : 0)
-    const iz = (inp.down('KeyW') ? 1 : 0) - (inp.down('KeyS') ? 1 : 0)
+    const ix = inp.axisX()
+    const iz = inp.axisZ()
     let mx = fx * iz + rx * ix
     let mz = fz * iz + rz * ix
     const ml = Math.hypot(mx, mz)
-    if (ml > 0) { mx /= ml; mz /= ml }
-    const moving = ml > 0
+    if (ml > 1) { mx /= ml; mz /= ml }
+    const moving = ml > 0.12
     const busy = this.rollT >= 0 || this.vaultT >= 0
     let wantAim = inp.mouse(2) && !busy && this.meleeT < 0
     let prompt = null
@@ -333,7 +338,7 @@ export class Player {
     }
 
     if (this.state === 'normal' && this.rollT < 0 && this.vaultT < 0) {
-      this.sprinting = inp.down('ShiftLeft') && iz > 0 && !wantAim && this.faceT <= 0.2 && this.meleeT < 0
+      this.sprinting = inp.sprint() && iz > 0 && !wantAim && this.faceT <= 0.2 && this.meleeT < 0
       const sp = wantAim ? 2.5 : this.sprinting ? 7.4 : 4.7
       this.vel.x = damp(this.vel.x, mx * sp, 14, dt)
       this.vel.z = damp(this.vel.z, mz * sp, 14, dt)
@@ -348,8 +353,8 @@ export class Player {
         if (cand && !(moving && awayFromCand > 0.5)) this.enterCover(cand)
         else if (moving) {
           this.rollT = 0
-          this.rollDx = mx
-          this.rollDz = mz
+          this.rollDx = mx / ml
+          this.rollDz = mz / ml
           this.iframes = Math.max(this.iframes, 0.34)
           this.reloadT = this.reloadT > 0 ? this.reloadT : 0
           g.audio.play('roll')

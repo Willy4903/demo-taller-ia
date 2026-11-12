@@ -16,6 +16,7 @@ export class Hud {
     this.hitT = 0
     this.lastPrompt = null
     this.cache = {}
+    this.touch = false
   }
 
   set(key, el, prop, value) {
@@ -53,6 +54,11 @@ export class Hud {
   setPrompt(html) {
     if (html === this.lastPrompt) return
     this.lastPrompt = html
+    if (html && this.touch) {
+      // En pantalla táctil el aviso es un botón: al tocarlo se ejecuta la acción.
+      this.el.prompt.dataset.key = html.includes('ESPACIO') ? 'Space' : 'KeyE'
+      html = html.replace(/<kbd>.*?<\/kbd>/, '<kbd>TOCA</kbd>')
+    }
     this.el.prompt.innerHTML = html || ''
     this.el.prompt.style.opacity = html ? '1' : '0'
   }
