@@ -1,16 +1,16 @@
 /* Generado por scripts/actualizar_noticias.py (GitHub Actions, 7 veces al día, hora de Lima). No editar a mano. */
 window.NOTICIAS = {
- "generado": "2026-11-12T13:48:59Z",
+ "generado": "2026-11-12T18:55:52Z",
  "modo": "automatico",
  "estado_fuentes": {
   "IDL-Reporteros": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.idl-reporteros.pe/feed/",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 1,
    "ultima_nota": "2026-10-24T01:18:47Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "OjoPúblico": {
    "ok": true,
@@ -18,10 +18,10 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:ojo-publico.com+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-12T13:48:59Z",
-   "n": 6,
-   "ultima_nota": "2026-11-11T23:00:00Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "comprobado": "2026-11-12T18:55:52Z",
+   "n": 7,
+   "ultima_nota": "2026-11-12T14:54:10Z",
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "Convoca": {
    "ok": true,
@@ -29,10 +29,10 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:convoca.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 4,
    "ultima_nota": "2026-11-11T15:05:44Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "Hildebrandt en sus trece": {
    "ok": true,
@@ -40,73 +40,73 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:hildebrandtensustrece.com+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 15,
    "ultima_nota": "2026-11-11T00:54:48Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "Wayka": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://wayka.pe/feed/",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 5,
-   "ultima_nota": "2026-11-11T22:00:17Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultima_nota": "2026-11-12T16:37:06Z",
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "La Mula": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.lamula.pe/feed/",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 15,
-   "ultima_nota": "2026-11-12T05:31:56Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultima_nota": "2026-11-12T16:36:00Z",
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "Salud con Lupa": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://saludconlupa.com/feed/",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 15,
    "ultima_nota": "2026-11-10T23:44:00Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "Mongabay Latam": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://es.mongabay.com/feed/",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 15,
-   "ultima_nota": "2026-11-11T21:53:04Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultima_nota": "2026-11-12T17:08:50Z",
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "Caretas": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://caretas.pe/feed/",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 15,
-   "ultima_nota": "2026-11-12T12:51:33Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultima_nota": "2026-11-12T18:26:09Z",
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "El Comercio": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 15,
-   "ultima_nota": "2026-11-12T13:45:50Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultima_nota": "2026-11-12T18:48:21Z",
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "Gestión": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://gestion.pe/arc/outboundfeeds/rss/?outputType=xml",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 15,
-   "ultima_nota": "2026-11-12T13:38:03Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultima_nota": "2026-11-12T18:26:00Z",
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "La República": {
    "ok": true,
@@ -114,28 +114,28 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:larepublica.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 15,
    "ultima_nota": "2026-11-11T23:30:00Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "RPP": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://rpp.pe/feed",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 15,
-   "ultima_nota": "2026-11-12T13:20:38Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultima_nota": "2026-11-12T18:45:47Z",
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "Infobae Perú": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/category/peru/",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 15,
-   "ultima_nota": "2026-11-12T13:43:32Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultima_nota": "2026-11-12T18:52:46Z",
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "Expreso": {
    "ok": true,
@@ -143,132 +143,165 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:expreso.com.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 403: Forbidden",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 15,
-   "ultima_nota": "2026-11-12T07:27:21Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultima_nota": "2026-11-12T15:28:24Z",
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "El Búho": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://elbuho.pe/feed/",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 15,
-   "ultima_nota": "2026-11-12T13:13:23Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultima_nota": "2026-11-12T18:49:47Z",
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "BBC Mundo": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://feeds.bbci.co.uk/mundo/rss.xml",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 15,
-   "ultima_nota": "2026-11-12T13:37:10Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultima_nota": "2026-11-12T18:33:02Z",
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "DW Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://rss.dw.com/xml/rss-sp-all",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 15,
-   "ultima_nota": "2026-11-12T13:13:00Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultima_nota": "2026-11-12T18:50:00Z",
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "El País América": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 15,
-   "ultima_nota": "2026-11-12T10:44:26Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultima_nota": "2026-11-12T18:47:17Z",
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "France 24 Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.france24.com/es/rss",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 15,
-   "ultima_nota": "2026-11-12T13:31:07Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultima_nota": "2026-11-12T18:50:18Z",
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "ONU Noticias": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.un.org/feed/subscribe/es/news/all/rss.xml",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 15,
    "ultima_nota": "2026-11-11T12:00:00Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "The New York Times en Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=site:nytimes.com/es+when:7d&hl=es-419&gl=US&ceid=US:es-419",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 15,
    "ultima_nota": "2026-11-12T10:03:58Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "The Guardian": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.theguardian.com/world/rss",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 15,
    "ultima_nota": "2026-11-12T13:14:38Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "The New Yorker": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.newyorker.com/feed/everything",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 15,
-   "ultima_nota": "2026-11-12T11:00:00Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultima_nota": "2026-11-12T18:12:19Z",
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "Google Noticias · IA en el Perú": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22inteligencia+artificial%22+Per%C3%BA+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 15,
    "ultima_nota": "2026-11-12T02:30:00Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "Google Noticias · El Niño": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22Fen%C3%B3meno+El+Ni%C3%B1o%22+OR+%22Ni%C3%B1o+costero%22+ENFEN+when:14d&hl=es-419&gl=PE&ceid=PE:es-419",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 15,
    "ultima_nota": "2026-11-10T05:50:27Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   },
   "Google Noticias · IA en el mundo": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22inteligencia+artificial%22+(OpenAI+OR+Anthropic+OR+Google+OR+regulaci%C3%B3n+OR+NVIDIA)+when:7d&hl=es-419&gl=US&ceid=US:es-419",
-   "comprobado": "2026-11-12T13:48:59Z",
+   "comprobado": "2026-11-12T18:55:52Z",
    "n": 15,
-   "ultima_nota": "2026-11-12T12:52:31Z",
-   "ultimo_ok": "2026-11-12T13:48:59Z"
+   "ultima_nota": "2026-11-12T17:58:32Z",
+   "ultimo_ok": "2026-11-12T18:55:52Z"
   }
  },
  "items": [
   {
-   "id": "facad069d3",
-   "sector": "coyuntura",
-   "titulo": "¿Qué cosas le preguntan al Papa León XIV las niñas del Perú? Las expresiones de la fe en textos y dibujos",
-   "resumen": "Con motivo de la visita de León XIV al Perú, El Comercio y Somos realizaron una convocatoria en redes sociales para que los niños del país dibujaran al Papa y formularan preguntas. Sus inquietudes sobre la fe, la justicia y la vida mostraron dudas profundas que muchos adultos…",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/somos/que-cosas-le-preguntan-al-papa-leon-xiv-las-ninas-del-peru-las-expresiones-de-la-fe-en-textos-y-dibujos-apuesplan-noticia/",
-   "fecha": "2026-11-12T13:45:50Z",
+   "id": "8aa2447e78",
+   "sector": "politica",
+   "titulo": "Paracas: Congreso presenta proyecto para prohibir por ley la pesca industrial en todas las áreas naturales protegidas",
+   "resumen": "Histórico. Una iniciativa suscrita por representantes de seis bancadas plantea incorporar una restricción expresa en la Ley de ANP para resguardar los ecosistemas marinos y continentales. ¿De qué se trata?",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/12/paracas-congreso-presenta-proyecto-para-prohibir-por-ley-la-pesca-industrial-en-todas-las-areas-naturales-protegidas/",
+   "fecha": "2026-11-12T18:52:46Z",
    "tipo": "comercial",
    "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/PAXDHTKK55H4NCI455GLMQ2C2Q.jpg?auth=53c20b8de2d3904fe20f0e4339f45af0a166856a35cf803602b2c3cb4f61dba0&smart=true&width=1200&height=800",
+   "imagen": "https://www.infobae.com/resizer/v2/DV6CDPFW4NFCJPB3EJ5OEYU3FI.jpeg?auth=477d228dc6f533c3080533166c486e63c4b4ed2348a3514a9acf49e7e3a6df5e&smart=true&width=1232&height=676",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "Una iniciativa suscrita por representantes de seis bancadas plantea incorporar una restricción expresa en la Ley de ANP para resguardar los ecosistemas marinos y continentales. Cerca de 100 mil pescadores artesanales de distintas regiones del litoral respaldaron la iniciativa de protección marina.",
+   "puntos": [
+    "Una iniciativa suscrita por representantes de seis bancadas plantea incorporar una restricción expresa en la Ley de ANP para resguardar los ecosistemas marinos y continentales.",
+    "Cerca de 100 mil pescadores artesanales de distintas regiones del litoral respaldaron la iniciativa de protección marina.",
+    "EST Guardar Representantes de seis bancadas presentaron el Proyecto de Ley 0823-2026-2031-CD , que incorpora en la legislación una prohibición expresa de la pesca industrial dentro de todas las Áreas Naturales Protegidas (ANP) ."
+   ],
+   "datos": [
+    {
+     "v": "11 de noviembre",
+     "t": "fecha",
+     "c": "La propuesta fue presentada el 11 de noviembre y tiene como autora a la diputada Rossana Alayza Maccera , del Partido del Buen Gobierno."
+    }
+   ]
+  },
+  {
+   "id": "876f261f24",
+   "sector": "coyuntura",
+   "titulo": "“Formamos profesionales para el mundo”: universidad peruana analizó modelo de Oxford durante cumbre que reunió a sus 14 campus",
+   "resumen": "La VII Cumbre de Académicos de la Universidad César Vallejo reúne del 5 al 7 de noviembre a representantes de todas sus sedes y especialistas de la Universidad de Oxford",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/america/inhouse/2026/11/06/formamos-profesionales-para-el-mundo-universidad-peruana-analizo-modelo-de-oxford-durante-cumbre-que-reunio-a-sus-14-campus/",
+   "fecha": "2026-11-12T18:50:22Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/B3MLSM2KVVD3LG7NHEST3HRTRM.jpg?auth=82eb1514da21e1d6edaf2bda4f0912068720cbc8b4845b5658b6f2d876327cf3&smart=true&width=3000&height=2000",
    "geografia": {
     "version": 1,
     "ambito": "peru",
@@ -277,57 +310,31 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "sintesis": "Con motivo de la visita de León XIV al Perú, El Comercio y Somos realizaron una convocatoria en redes sociales para que los niños del país dibujaran al Papa y formularan preguntas. Sus inquietudes sobre la fe, la justicia y la vida mostraron dudas profundas que muchos adultos también compartimos.",
+   "sintesis": "La VII Cumbre de Académicos de la Universidad César Vallejo reúne del 5 al 7 de noviembre a representantes de todas sus sedes y especialistas de la Universidad de Oxford Durante tres días, el encuentro aborda modelos de enseñanza, el impacto de la inteligencia artificial y la elaboración de propuestas para la formación académica Por Martín Tumay Soto",
    "puntos": [
-    "Con motivo de la visita de León XIV al Perú, El Comercio y Somos realizaron una convocatoria en redes sociales para que los niños del país dibujaran al Papa y formularan preguntas.",
-    "Sus inquietudes sobre la fe, la justicia y la vida mostraron dudas profundas que muchos adultos también compartimos.",
-    "A veces, los adultos esperamos que las preguntas de los niños sean sencillas."
-   ]
-  },
-  {
-   "id": "96d483fa1a",
-   "sector": "coyuntura",
-   "titulo": "Temblor en Chile hoy, miércoles 11 de noviembre: epicentro según último reporte del CSN",
-   "resumen": "Temblor en Chile EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Centro Sismológico Nacional (CSN).",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/chile/temblor-en-chile-hoy-en-vivo-ultimos-sismos-11-y-12-de-noviembre-2026-magnitud-epicentro-profundidad-y-hora-reportados-centro-sismologico-nacional-santiago-socaire-ollague-lbposting-noticia/",
-   "fecha": "2026-11-12T13:45:49Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/J2RYN2MCQFFUFJUCEEPFCAGGQY.jpg?auth=7744e300754bf67ce2360fc75ae8c6a1ae8848d67bcee935c9dec66a39048941&smart=true&width=1200&height=700",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Temblor en Chile EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Centro Sismológico Nacional (CSN). Temblor en Chile: mira aquí la magnitud, el epicentro y los reportes del CSN sobre los últimos sismos en el país (Diseño: El Comercio).",
-   "puntos": [
-    "Temblor en Chile EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Centro Sismológico Nacional (CSN).",
-    "Temblor en Chile: mira aquí la magnitud, el epicentro y los reportes del CSN sobre los últimos sismos en el país (Diseño: El Comercio).",
-    "Momentos clave 2026-11-11 07:36:54 | Sigue en vivo los reportes de los últimos sismos en Chile registrados por el Centro Sismológico Nacional ."
+    "La VII Cumbre de Académicos de la Universidad César Vallejo reúne del 5 al 7 de noviembre a representantes de todas sus sedes y especialistas de la Universidad de Oxford",
+    "Durante tres días, el encuentro aborda modelos de enseñanza, el impacto de la inteligencia artificial y la elaboración de propuestas para la formación académica Por Martín Tumay Soto",
+    "El encuentro se desarrolla del 5 al 7 de noviembre en el campus Los Olivos bajo el lema “Universidad en transformación: gestión con propósito e impacto”."
    ],
    "datos": [
     {
-     "v": "11 de noviembre",
+     "v": "7 de noviembre",
      "t": "fecha",
-     "c": "Temblor en Chile hoy, miércoles 11 de noviembre: epicentro según último reporte del CSN."
+     "c": "…Académicos de la Universidad César Vallejo reúne del 5 al 7 de noviembre a representantes de todas sus sedes y especialistas de la…"
     }
    ]
   },
   {
-   "id": "23c98d6a2b",
-   "sector": "coyuntura",
-   "titulo": "Nueva York: al menos ocho muertos por el derrumbe de un edificio en Brooklyn",
-   "resumen": "Nueva York | El edificio residencial de tres pisos colapsó el miércoles en el barrio de Flatbush, mientras se realizaban trabajos de excavación en una construcción contigua. Unos 250 bomberos y rescatistas continúan las labores de búsqueda, mientras las autoridades investigan…",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/mundo/eeuu/nueva-york-sube-a-ocho-la-cifra-de-muertos-por-el-colapso-de-un-edificio-en-brooklyn-estados-unidos-flatbush-noticia/",
-   "fecha": "2026-11-12T13:45:47Z",
-   "tipo": "comercial",
+   "id": "cdc7eb38a1",
+   "sector": "mundo",
+   "titulo": "Seis palestinos mueren en el séptimo bombardeo de Israel contra el principal hospital del sur de Gaza",
+   "resumen": "El Hospital Nasser, en Khan Younis, volvió a ser blanco de un ataque israelí en la madrugada de este jueves, que mató a seis personas, incluidos un cirujano y un menor, e hirió a al menos 28. El Ejército israelí sostuvo que el bombardeo, realizado pese a la supuesta tregua en…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/medio-oriente/20261112-seis-palestinos-mueren-en-el-s%C3%A9ptimo-bombardeo-de-israel-contra-el-principal-hospital-del-sur-de-gaza",
+   "fecha": "2026-11-12T18:50:18Z",
+   "tipo": "internacional",
    "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/NSJX7PGIXBA7HM4QHDXSZEHPXA.jpg?auth=1b4e0df9f1c8c6b03b2c820aac3bc45d5484f7c117c70d060eb7f28393d4086b&smart=true&width=8192&height=5464",
+   "imagen": "https://s.france24.com/media/display/2915f31c-dead-11f1-ba4a-695cb59fade5/w:1024/p:16x9/2026-11-12T043325Z-1772503551-RC23MOA2UKYO-RTRMADP-3-ISRAEL-PALESTINIANS-GAZA.jpg",
    "geografia": {
     "version": 1,
     "ambito": "mundo",
@@ -336,57 +343,498 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "sintesis": "Nueva York | El edificio residencial de tres pisos colapsó el miércoles en el barrio de Flatbush, mientras se realizaban trabajos de excavación en una construcción contigua. Unos 250 bomberos y rescatistas continúan las labores de búsqueda, mientras las autoridades investigan las causas del derrumbe",
+   "sintesis": "El Hospital Nasser, en Khan Younis, volvió a ser blanco de un ataque israelí en la madrugada de este jueves, que mató a seis personas, incluidos un cirujano y un menor, e hirió a al menos 28.",
    "puntos": [
-    "Nueva York | El edificio residencial de tres pisos colapsó el miércoles en el barrio de Flatbush, mientras se realizaban trabajos de excavación en una construcción contigua.",
-    "Unos 250 bomberos y rescatistas continúan las labores de búsqueda, mientras las autoridades investigan las causas del derrumbe",
-    "Al menos ocho personas murieron y 19 resultaron heridas en el derrumbe de un edificio en Nueva York , informaron este jueves los bomberos de la ciudad, que proseguían las tareas de búsqueda un día después del colapso."
+    "El Hospital Nasser, en Khan Younis, volvió a ser blanco de un ataque israelí en la madrugada de este jueves, que mató a seis personas, incluidos un cirujano y un menor, e hirió a al menos 28."
    ]
   },
   {
-   "id": "91738c0a79",
-   "sector": "politica",
-   "titulo": "Asciende a ocho la cifra de muertos por derrumbe de edificio en Brooklyn",
-   "resumen": "NUEVA YORK.- Al menos ocho personas murieron después de que un edificio de tres pisos en Brooklyn se derrumbara al borde de una obra en construcción en el distrito neoyorquino de Brooklyn, informó el jueves el alcalde la ciudad. Los bomberos seguían excavando el jueves en la…",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/mag/usa/local-us/asciende-a-ocho-la-cifra-de-muertos-por-derrumbe-de-edificio-en-brooklyn-nnda-nnrt-noticia/",
-   "fecha": "2026-11-12T13:44:48Z",
+   "id": "481cf2d053",
+   "sector": "economia",
+   "titulo": "Quinua: exportadores piden eliminar IGV ante la amenaza de un nuevo competidor en el mundo",
+   "resumen": "La Asociación de Exportadores (ADEX) advirtió que la quinua peruana enfrenta una presión adicional por el arancel de 12,5% en Estados Unidos y el avance de un nuevo competidor que busca disputar mercados a Perú y Bolivia",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/12/quinua-exportadores-piden-eliminar-igv-ante-la-amenaza-de-un-nuevo-competidor-en-el-mundo/",
+   "fecha": "2026-11-12T18:50:02Z",
    "tipo": "comercial",
    "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/VVEF4YUZCRC7FIGLM6X6DETZ3I.jpg?auth=4b08d861f7bb810c270ad50e601a04b3b16026640c041f01287313fe5cfbdb75&smart=true&width=1920&height=1280",
+   "imagen": "https://www.infobae.com/resizer/v2/RPIM4OVXANA4FJZ5AY6H3W5XWY.jpg?auth=7ffaf1ed7b8d10c5b6d4c8ade931d4ccfe8fc5dc755bf19663231b79a9fa9c18&smart=true&width=1472&height=832",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "La Asociación de Exportadores (ADEX) advirtió que la quinua peruana enfrenta una presión adicional por el arancel de 12,5% en Estados Unidos y el avance de un nuevo competidor que busca disputar mercados a Perú y Bolivia La exoneración del IGV a la quinua reduciría su precio final en 18% y beneficiaría a unas 100 mil familias de la sierra peruana.",
+   "puntos": [
+    "La Asociación de Exportadores (ADEX) advirtió que la quinua peruana enfrenta una presión adicional por el arancel de 12,5% en Estados Unidos y el avance de un nuevo competidor que busca disputar mercados a Perú y Bolivia",
+    "La exoneración del IGV a la quinua reduciría su precio final en 18% y beneficiaría a unas 100 mil familias de la sierra peruana.",
+    "EST Guardar La Asociación de Exportadores (ADEX) propuso exonerar del Impuesto General a las Ventas (IGV) a la quinua para reducir el precio final del producto, aliviar la carga financiera de los exportadores y sostener la competitividad de una cadena que involucra a alrededor de 100 mil familias de la sierra peruana."
+   ],
+   "datos": [
+    {
+     "v": "12,5%",
+     "t": "porcentaje",
+     "c": "…peruana enfrenta una presión adicional por el arancel de 12,5% en Estados Unidos y el avance de un nuevo competidor que…"
+    },
+    {
+     "v": "18%",
+     "t": "porcentaje",
+     "c": "La exoneración del IGV a la quinua reduciría su precio final en 18% y beneficiaría a unas 100 mil familias de la sierra peruana."
+    },
+    {
+     "v": "130 millones",
+     "t": "escala",
+     "c": "Las exportaciones peruanas de quinua alcanzaron 130 millones 562 mil dólares entre enero y septiembre."
+    }
+   ]
+  },
+  {
+   "id": "192c98f1db",
+   "sector": "mundo",
+   "titulo": "EE.UU. entregó a Venezuela unos USD 12.000 millones por venta de recursos naturales",
+   "resumen": "Los fondos proceden también de negocios con oro y fertilizantes, y Caracas los ha utilizado principalmente para la compra de alimentos y medicinas, según un reporte.",
+   "fuente": "DW Español",
+   "url": "https://www.dw.com/es/ee-uu-entregó-a-venezuela-unos-usd-12-000-millones-por-venta-de-recursos-naturales/a-79935104?maca=spa-rss-sp-all-1122-xml-mrss",
+   "fecha": "2026-11-12T18:50:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Los fondos proceden también de negocios con oro y fertilizantes, y Caracas los ha utilizado principalmente para la compra de alimentos y medicinas, según un reporte.",
+   "puntos": [
+    "Los fondos proceden también de negocios con oro y fertilizantes, y Caracas los ha utilizado principalmente para la compra de alimentos y medicinas, según un reporte."
+   ],
+   "datos": [
+    {
+     "v": "12.000 millones",
+     "t": "escala",
+     "c": "EE.UU. entregó a Venezuela unos USD 12.000 millones por venta de recursos naturales."
+    }
+   ]
+  },
+  {
+   "id": "07dbc15950",
+   "sector": "economia",
+   "titulo": "«Fuga» llega a Arequipa: un viaje fílmico por las memorias silenciadas de la Amazonía, este viernes",
+   "resumen": "En el corazón de la selva peruana, Saor inicia un recorrido con un propósito íntimo y doloroso: dar sepultura a su amante.",
+   "fuente": "El Búho",
+   "url": "https://elbuho.pe/2026/11/fuga-llega-a-arequipa-un-viaje-filmico-por-las-memorias-silenciadas-de-la-amazonia-este-viernes/",
+   "fecha": "2026-11-12T18:49:47Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/fuga-pelicula-arequipa-1-1.jpeg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "En el corazón de la selva peruana, Saor inicia un recorrido con un propósito íntimo y doloroso: dar sepultura a su amante. ¿Qué ocurre cuando las memorias que la historia oficial dejó de lado encuentran una pantalla para manifestarse?",
+   "puntos": [
+    "En el corazón de la selva peruana, Saor inicia un recorrido con un propósito íntimo y doloroso: dar sepultura a su amante.",
+    "¿Qué ocurre cuando las memorias que la historia oficial dejó de lado encuentran una pantalla para manifestarse?",
+    "Esa es la pregunta que sostiene «Fuga», el filme que las directoras Mary Jiménez y Bénédicte Lienard traen a Arequipa."
+   ],
+   "datos": [
+    {
+     "v": "S/ 10",
+     "t": "monto",
+     "c": "La cita es en Cine Umbral, con entradas a S/ 10 o en la promoción de 2 por S/ 15 ."
+    },
+    {
+     "v": "S/ 15",
+     "t": "monto",
+     "c": "La cita es en Cine Umbral, con entradas a S/ 10 o en la promoción de 2 por S/ 15 ."
+    },
+    {
+     "v": "13 de noviembre",
+     "t": "fecha",
+     "c": "Una única función programada para las 7:00 p.m. de este viernes 13 de noviembre en Cine Umbral.."
+    }
+   ]
+  },
+  {
+   "id": "51ca524e5f",
+   "sector": "politica",
+   "titulo": "Rafael López Aliaga: JNE rechaza recursos de Renovación Popular contra Roberto Burneo y Gunther Gonzales",
+   "resumen": "El Pleno del Jurado Nacional de Elecciones (JNE) declaró improcedentes los pedidos de recusación presentados por Renovación Popular contra su presidente, Roberto Burneo, y el magistrado Gunther Gonzales Barrón, mediante los cuales la agrupación política buscaba apartarlos de…",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/politica/elecciones/rafael-lopez-aliaga-jne-rechaza-recursos-de-renovacion-popular-contra-roberto-burneo-y-gunther-gonzales-ultimas-apuesplan-noticia/",
+   "fecha": "2026-11-12T18:48:21Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/ML4TNTIFKNGJ3DCHTGK4MZUFRU.jpg?auth=227d635dceec7864ac15b79745256bdcf0358e365a88a2b5949b47353b340ae2&smart=true&width=1200&height=647",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Las decisiones fueron adoptadas mediante dos autos emitidos el 6 de noviembre, luego de que el personero legal titular de Renovación Popular, Fernando Sandoval Ruiz, solicitara que ambos magistrados se inhibieran de intervenir en los procedimientos vinculados con la situación electoral de López Aliaga. En el caso del presidente del JNE, Renovación Popular sustentó su solicitud en la denuncia penal que la Procuraduría Pública de dicho organismo presentó el 30 de octubre contra López Aliaga , por los presuntos delitos de acoso y coacción, en agravio del titular del máximo organismo electoral.",
+   "puntos": [
+    "Las decisiones fueron adoptadas mediante dos autos emitidos el 6 de noviembre, luego de que el personero legal titular de Renovación Popular, Fernando Sandoval Ruiz, solicitara que ambos magistrados se inhibieran de intervenir en los procedimientos vinculados con la situación electoral de López Aliaga.",
+    "En el caso del presidente del JNE, Renovación Popular sustentó su solicitud en la denuncia penal que la Procuraduría Pública de dicho organismo presentó el 30 de octubre contra López Aliaga , por los presuntos delitos de acoso y coacción, en agravio del titular del máximo organismo electoral."
+   ],
+   "datos": [
+    {
+     "v": "6 de noviembre",
+     "t": "fecha",
+     "c": "…decisiones fueron adoptadas mediante dos autos emitidos el 6 de noviembre, luego de que el personero legal titular de Renovación…"
+    },
+    {
+     "v": "30 de octubre",
+     "t": "fecha",
+     "c": "…que la Procuraduría Pública de dicho organismo presentó el 30 de octubre contra López Aliaga , por los presuntos delitos de acoso y…"
+    }
+   ]
+  },
+  {
+   "id": "de687b9257",
+   "sector": "politica",
+   "titulo": "Donald Trump propone que Tim Cook sustituya a Huang al frente de Nvidia tras su dimisión",
+   "resumen": "El presidente de Estados Unidos, Donald Trump, aseguró este jueves que el presidente ejecutivo de Apple, Tim Cook, debería sustituir a Jensen Huang, presidente de Nvidia, al frente de la compañía tras su dimisión.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/economia/mundo/donald-trump-propone-que-tim-cook-sustituya-a-huang-al-frente-de-nvidia-tras-su-dimision-l-ultimas-noticia/",
+   "fecha": "2026-11-12T18:48:08Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/BYRYEV6XJJAYZA5QYJKRS4OTFM.jpg?auth=2ac9c7213a9a9bf90ca8b8f68272cbb00a45517fea8b6d510082d32e5201e40a&smart=true&width=1200&height=628",
    "geografia": {
     "version": 1,
     "ambito": "mundo",
     "zona": "mundo",
-    "motivo": "contexto_internacional_resumen"
+    "motivo": "referencia_internacional_titulo"
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "sintesis": "Ocho personas murieron y al menos 17 resultaron heridas cuando un edificio de tres pisos se desplomó el miércoles junto a una obra en Brooklyn, Nueva York. Unos 250 bomberos seguían buscando sobrevivientes entre los escombros el jueves.",
+   "sintesis": "El presidente de Estados Unidos, Donald Trump, aseguró este jueves que el presidente ejecutivo de Apple, Tim Cook, debería sustituir a Jensen Huang, presidente de Nvidia, al frente de la compañía tras su dimisión. “ Una leyenda reemplaza a una leyenda ”, aseguró el mandatario en un mensaje en su red Truth Social tras la dimisión de Huang después de destaparse unas supuestas infidelidades.",
    "puntos": [
-    "Ocho personas murieron y al menos 17 resultaron heridas cuando un edificio de tres pisos se desplomó el miércoles junto a una obra en Brooklyn, Nueva York.",
-    "Unos 250 bomberos seguían buscando sobrevivientes entre los escombros el jueves.",
-    "Los bomberos seguían excavando el jueves en la mañana entre los escombros para encontrar a otros que pudieran estar atrapados bajo los restos."
+    "El presidente de Estados Unidos, Donald Trump, aseguró este jueves que el presidente ejecutivo de Apple, Tim Cook, debería sustituir a Jensen Huang, presidente de Nvidia, al frente de la compañía tras su dimisión.",
+    "“ Una leyenda reemplaza a una leyenda ”, aseguró el mandatario en un mensaje en su red Truth Social tras la dimisión de Huang después de destaparse unas supuestas infidelidades.",
+    "Trump aseguró que “ahora que el director ejecutivo de Nvidia, Jensen Huang, quien ha realizado un trabajo fantástico, ha renunciado, solo hay un hombre capaz de ocupar su lugar: Tim Cook, de Apple”."
+   ]
+  },
+  {
+   "id": "6b392fc111",
+   "sector": "mundo",
+   "titulo": "Sheinbaum y Pedro Sánchez repasan la Cumbre Iberoamericana y resaltan en una videollamada “la relevancia” de la relación bilateral",
+   "resumen": "La presidenta de México y su par español tenían programada una llamada días después del cónclave celebrado en Madrid",
+   "fuente": "El País América",
+   "url": "https://elpais.com/mexico/2026-11-12/sheinbaum-habla-con-pedro-sanchez-en-una-llamada-telefonica.html",
+   "fecha": "2026-11-12T18:47:17Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://imagenes.elpais.com/resizer/v2/HTLA3FM35VC3BGJV6I7RHX4USU.png?auth=8b95e60d9471a0a90f62c3c6edac258471da98358eceabb678f9d4ac31e70800",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "La presidenta de México y su par español tenían programada una llamada días después del cónclave celebrado en Madrid La presidenta mexicana, Claudia Sheinbaum, ha mantenido este jueves una conversación por videollamada con su par español Pedro Sánchez, unos días después de la Cumbre Iberoamericana en Madrid a la que envió al secretario de Relaciones Exteriores.",
+   "puntos": [
+    "La presidenta de México y su par español tenían programada una llamada días después del cónclave celebrado en Madrid",
+    "La presidenta mexicana, Claudia Sheinbaum, ha mantenido este jueves una conversación por videollamada con su par español Pedro Sánchez, unos días después de la Cumbre Iberoamericana en Madrid a la que envió al secretario de Relaciones Exteriores.",
+    "Ambos mandatarios han abordado los resultados del cónclave, en el que se adoptó una declaración conjunta y cinco acuerdos en materias comunes estratégicas como Protección Civil o Inteligencia Artificial."
    ],
    "datos": [
     {
-     "v": "17 personas",
+     "v": "50 años",
      "t": "cantidad",
-     "c": "Al menos 17 personas resultaron heridas, incluidos tres bomberos, dijo el alcalde, Zohran Mamdani.."
+     "c": "…español también han recordado que en 2027 se cumplen 50 años del restablecimiento de las relaciones diplomáticas entre…"
     }
+   ]
+  },
+  {
+   "id": "a92a92ac96",
+   "sector": "politica",
+   "titulo": "La MTA ha rediseñado la red de autobuses de Queens: los cambios en las diferentes líneas y los resultados hasta el momento",
+   "resumen": "Conoce qué cambió en los autobuses de Queens tras el rediseño de la MTA y qué revela su balance sobre los viajes y las conexiones con el metro.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/mag/usa/local-us/la-mta-ha-redisenado-la-red-de-autobuses-de-queens-los-cambios-en-las-diferentes-lineas-y-los-resultados-hasta-el-momento-nueva-york-nyc-estados-unidos-nnda-nnlt-noticia/",
+   "fecha": "2026-11-12T18:47:15Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/4FXOHO2KWVAW5HCBJSKSENLCVY.jpg?auth=6477285f88e78861d501d43a2a40bbecb2979a4e310802354b61f6c4d7b39728&smart=true&width=2400&height=1600",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "seccion_internacional_fuente"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Conoce qué cambió en los autobuses de Queens tras el rediseño de la MTA y qué revela su balance sobre los viajes y las conexiones con el metro. Para quienes dependen del bus en Queens para llegar al trabajo, asistir al college o conectar con el subway , unos minutos pueden marcar la diferencia en su rutina.",
+   "puntos": [
+    "Conoce qué cambió en los autobuses de Queens tras el rediseño de la MTA y qué revela su balance sobre los viajes y las conexiones con el metro.",
+    "Para quienes dependen del bus en Queens para llegar al trabajo, asistir al college o conectar con el subway , unos minutos pueden marcar la diferencia en su rutina.",
+    "Más de un año después de reorganizar el transporte del condado, la Autoridad Metropolitana de Transporte (MTA) presentó un balance : las unidades locales circulan un 1,7% más rápido durante los días laborables, mientras que determinadas conexiones permiten ahorrar hasta 18 minutos."
+   ],
+   "datos": [
+    {
+     "v": "1,7%",
+     "t": "porcentaje",
+     "c": "…presentó un balance : las unidades locales circulan un 1,7% más rápido durante los días laborables, mientras que…"
+    },
+    {
+     "v": "26 de octubre de 2026",
+     "t": "fecha",
+     "c": "Los resultados fueron presentados el 26 de octubre de 2026 ante los comités de la junta directiva."
+    }
+   ]
+  },
+  {
+   "id": "34bc5b9745",
+   "sector": "politica",
+   "titulo": "Iconic Terroirs llega con un beneficio exclusivo para los suscriptores de El Comercio",
+   "resumen": "El importador y distribuidor especializado en etiquetas de origen reúne una cuidada selección de vinos y espumantes internacionales, ofreciendo un descuento especial en su tienda online para los suscriptores.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/desde-la-redaccion/promociones/iconic-terroirs-llega-con-un-beneficio-exclusivo-para-los-suscriptores-de-el-comercio-noticia/",
+   "fecha": "2026-11-12T18:45:56Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/ACPOC6QM5NHF5KXYLQ4P42ABHE.jpeg?auth=dea8d03dcdfdbbba1e0263d530e0dbad9c220f2f3918ce24773a62d876ad5a27&smart=true&width=1200&height=810",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "El importador y distribuidor especializado en etiquetas de origen reúne una cuidada selección de vinos y espumantes internacionales, ofreciendo un descuento especial en su tienda online para los suscriptores. Para quienes buscan explorar etiquetas con carácter, identidad de origen y una alta exigencia en su elaboración, IconicTerroirs se consolida como una alternativa destacada en el mercado de vinos premium.",
+   "puntos": [
+    "El importador y distribuidor especializado en etiquetas de origen reúne una cuidada selección de vinos y espumantes internacionales, ofreciendo un descuento especial en su tienda online para los suscriptores.",
+    "Para quienes buscan explorar etiquetas con carácter, identidad de origen y una alta exigencia en su elaboración, IconicTerroirs se consolida como una alternativa destacada en el mercado de vinos premium.",
+    "La marca opera como importadora y distribuidora de alta gama, con una filosofía centrada en trabajar estrechamente con agricultores responsables —bajo prácticas biodinámicas, orgánicas y sustentables— y con fincas familiares alrededor del mundo."
+   ],
+   "datos": [
+    {
+     "v": "25%",
+     "t": "porcentaje",
+     "c": "La promoción otorga un 25% de descuento en toda la web de Iconic Terroirs, aplicable…"
+    }
+   ]
+  },
+  {
+   "id": "85a60ad8c5",
+   "sector": "coyuntura",
+   "titulo": "Camisetas, cuadros, llaveros y hasta peluches: los distintos artículos que se venden en Lima por la visita de León XIV [FOTOS]",
+   "resumen": "El ingenio de los comerciantes peruanos no tiene límites y muchos están aprovechando la llegada de León XIV para ofrecer distintos artículos alusivos al sumo pontífice.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/lima/actualidad/leon-xiv-en-lima-distintos-articulos-que-se-venden-por-la-visita-del-papa-fotos-noticia-1717469",
+   "fecha": "2026-11-12T18:45:47Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/12/portada_4500250.jpg?width=860&quality=80",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El ingenio de los comerciantes peruanos no tiene límites y muchos están aprovechando la llegada de León XIV para ofrecer distintos artículos alusivos al sumo pontífice.",
+   "puntos": [
+    "El ingenio de los comerciantes peruanos no tiene límites y muchos están aprovechando la llegada de León XIV para ofrecer distintos artículos alusivos al sumo pontífice."
+   ]
+  },
+  {
+   "id": "4773e170e9",
+   "sector": "coyuntura",
+   "titulo": "La Alcaldía de Moscú abre encuesta para poner nombre a mono ardilla boliviano en el zoológico",
+   "resumen": "La Alcaldía de Moscú lanza una encuesta para nombrar a una cría de mono ardilla boliviano en el zoológico, con más de 34 000 participantes. Conoce los nombres propuestos.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/mundo/rusia/la-alcaldia-de-moscu-abre-encuesta-para-poner-nombre-a-mono-ardilla-boliviano-en-el-zoologico-noticia-1717463",
+   "fecha": "2026-11-12T18:45:31Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/12/524352_1928450.jpg?imgdimension=look",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "La Alcaldía de Moscú lanza una encuesta para nombrar a una cría de mono ardilla boliviano en el zoológico, con más de 34 000 participantes. La convocatoria, publicada en el portal 'Ciudadano Activo' de la Administración capitalina, indicó que \"la hembra de mono nocturno boliviano, especie en riesgo de extinción, nació en el Zoológico de Moscú \".",
+   "puntos": [
+    "La Alcaldía de Moscú lanza una encuesta para nombrar a una cría de mono ardilla boliviano en el zoológico, con más de 34 000 participantes.",
+    "La convocatoria, publicada en el portal 'Ciudadano Activo' de la Administración capitalina, indicó que \"la hembra de mono nocturno boliviano, especie en riesgo de extinción, nació en el Zoológico de Moscú \".",
+    "La madre la rechazó desde sus primeros días, por lo que los empleados del departamento 'Primates' se ocuparon de cuidarla, alimentaron a la recién nacida con una mezcla láctea, señaló la Alcaldía."
+   ]
+  },
+  {
+   "id": "7aaa911b7e",
+   "sector": "deporte",
+   "titulo": "Barcelona vs Arsenal EN VIVO: juegan por la Champions League Femenina",
+   "resumen": "Barcelona vs Arsenal EN VIVO: sigue el partido en el Spotify Camp Nou, por la fecha 4 de la Champions League Femenina.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/futbol/futbol-mundial/barcelona-vs-arsenal-en-vivo-a-que-hora-juegan-canal-y-como-ver-fecha-4-champions-league-femenina-via-disney-partidos-de-hoy-noticia-1717232",
+   "fecha": "2026-11-12T18:45:20Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/12/024702_1928452.jpg?imgdimension=look",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Barcelona vs Arsenal EN VIVO: sigue el partido en el Spotify Camp Nou, por la fecha 4 de la Champions League Femenina. Arsenal será uno de los encuentros más atractivos de la cuarta jornada de la Champions League Femenina 2026-2027 .",
+   "puntos": [
+    "Barcelona vs Arsenal EN VIVO: sigue el partido en el Spotify Camp Nou, por la fecha 4 de la Champions League Femenina.",
+    "Arsenal será uno de los encuentros más atractivos de la cuarta jornada de la Champions League Femenina 2026-2027 .",
+    "El conjunto azulgrana recibirá al vigente campeón inglés en el Spotify Camp Nou, en un duelo que inicialmente estaba programado para el miércoles 11 de noviembre, pero fue reprogramado para el jueves 12 de noviembre debido a una huelga general en Barcelona."
+   ],
+   "datos": [
+    {
+     "v": "11 de noviembre",
+     "t": "fecha",
+     "c": "…duelo que inicialmente estaba programado para el miércoles 11 de noviembre, pero fue reprogramado para el jueves 12 de noviembre…"
+    },
+    {
+     "v": "12 de noviembre",
+     "t": "fecha",
+     "c": "…11 de noviembre, pero fue reprogramado para el jueves 12 de noviembre debido a una huelga general en Barcelona."
+    }
+   ]
+  },
+  {
+   "id": "6f544ab29b",
+   "sector": "politica",
+   "titulo": "La 1 RTVE en vivo: dónde ver España vs. República Checa hoy por Nations League",
+   "resumen": "La 1 RTVE EN VIVO y EN DIRECTO: mira el partido de España vs. República Checa por la jornada 5 del Grupo C de la UEFA Nations League.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/deporte-total/espana/la-1-rtve-en-vivo-gratis-donde-ver-espana-vs-republica-checa-hoy-online-via-movistar-plus-por-nations-league-video-noticia/",
+   "fecha": "2026-11-12T18:45:14Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/GD7XOVMW3RCGFKF6TQ4DMID4OY.jpg?auth=1f03a6fa0cd7daf51eb4960736226b043f1f5f079c2259c03b0002ec59d72d4c&smart=true&width=5808&height=3872",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "La 1 RTVE EN VIVO y EN DIRECTO: mira el partido de España vs. República Checa por la jornada 5 del Grupo C de la UEFA Nations League.",
+   "puntos": [
+    "La 1 RTVE EN VIVO y EN DIRECTO: mira el partido de España vs.",
+    "República Checa por la jornada 5 del Grupo C de la UEFA Nations League.",
+    "Por Joao Muñoz Tineo 12/11/2026, 01:45 p.m."
+   ]
+  },
+  {
+   "id": "9e27fba6a1",
+   "sector": "coyuntura",
+   "titulo": "Papa León XIV en Perú EN VIVO HOY minuto a minuto: en el día 2 visita la Basílica Catedral de Lima y encuentro con jóvenes en el Estadio Nacional",
+   "resumen": "Papa León XIV en Perú EN VIVO HOY: últimas noticias, cuándo llega, donde estará, rutas, agenda de su visita a Lima y más",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/peru/papa-leon-xiv-en-peru-en-vivo-hoy-minuto-a-minuto-actividades-rutas-agenda-de-su-visita-y-ultimas-noticias-del-sumo-pontifice-vaticano-lbposting-noticia/",
+   "fecha": "2026-11-12T18:44:27Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/5KZTNFUXVVD3VMSRV6K534PNTA.jpg?auth=bc82bfc9e9ff65d076bce05572fa7e06670cc812a09e328285d19df1f029a47b&smart=true&width=1200&height=641",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Papa León XIV en Perú EN VIVO HOY: últimas noticias, cuándo llega, donde estará, rutas, agenda de su visita a Lima y más Entre medio de aplausos, el Papa León XIV dio por finalizado su discurso y a continuación se da inicio al espectáculo \"Marinera Chiclayana\" en honor al Santo Padre.",
+   "puntos": [
+    "Papa León XIV en Perú EN VIVO HOY: últimas noticias, cuándo llega, donde estará, rutas, agenda de su visita a Lima y más",
+    "Entre medio de aplausos, el Papa León XIV dio por finalizado su discurso y a continuación se da inicio al espectáculo \"Marinera Chiclayana\" en honor al Santo Padre.",
+    "\"Para conocer las necesidades de quienes están lejos, es preciso comenzar por escucharlos Pienso en los jovenes para potenciar sus habilidades y ponerlas al servicio del bien\"."
+   ]
+  },
+  {
+   "id": "27b0f69112",
+   "sector": "deporte",
+   "titulo": "IPD inició los trabajos de remodelación en el estadio atlético de la VIDENA de cara a Lima 2027",
+   "resumen": "El Instituto Peruano del Deporte ya comenzó las reparaciones en lo que será el nuevo estadio atlético de la Villa Deportiva Nacional.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/multideportes/panamericanos/iniciaron-los-trabajos-de-remodelacion-en-el-estadio-atletico-de-la-videna-de-cara-a-lima-2027-noticia-1717455",
+   "fecha": "2026-11-12T18:43:59Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/12/293629_1928442.jpg?imgdimension=look",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El Instituto Peruano del Deporte ya comenzó las reparaciones en lo que será el nuevo estadio atlético de la Villa Deportiva Nacional. Este jueves, un grupo de trabajadores empezó la instalación de la nueva capa de material sintético en la recta secundaria del nuevo estadio atlético de la Villa Deportiva Nacional, reanudando así los trabajos en infraestructura que estaban ya programados de cara a los Juegos Panamericanos y Parapanamericanos de Lima 2027 .",
+   "puntos": [
+    "El Instituto Peruano del Deporte ya comenzó las reparaciones en lo que será el nuevo estadio atlético de la Villa Deportiva Nacional.",
+    "Este jueves, un grupo de trabajadores empezó la instalación de la nueva capa de material sintético en la recta secundaria del nuevo estadio atlético de la Villa Deportiva Nacional, reanudando así los trabajos en infraestructura que estaban ya programados de cara a los Juegos Panamericanos y Parapanamericanos de Lima 2027 .",
+    "Luego de siete años de uso, la pista dejará su tradicional color anaranjado para convertirse en azul, con lo que brindará una nuevo look a los aficionados del atletismo nacional."
+   ]
+  },
+  {
+   "id": "456846108a",
+   "sector": "economia",
+   "titulo": "Scott Bessent y otros altos funcionarios de Estados Unidos que han tenido que mudarse por motivos de seguridad",
+   "resumen": "Reportes de la prensa estadounidense indican que el Secretario del Tesoro tuvo que ser trasladado de su mansión a una base militar tras la publicación de imágenes aéreas de la residencia. Bessent se suma a una lista de varios altos cargos que fueron conducidos a instalaciones…",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/mundo/eeuu/scott-bessent-y-otros-altos-funcionarios-de-estados-unidos-que-han-tenido-que-mudarse-por-motivos-de-seguridad-noticia/",
+   "fecha": "2026-11-12T18:43:58Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/CS3I2O5MSFAHVEXFCHEBG6RPQA.jpg?auth=21cf48e2b7636eac8c93f0a4bbd3dacb867316bde456480ec4f0846f47052898&smart=true&width=1200&height=799",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Reportes de la prensa estadounidense indican que el Secretario del Tesoro tuvo que ser trasladado de su mansión a una base militar tras la publicación de imágenes aéreas de la residencia. Bessent se suma a una lista de varios altos cargos que fueron conducidos a instalaciones de las Fuerzas Armadas para su resguardo por presuntas amenazas iraníes",
+   "puntos": [
+    "Reportes de la prensa estadounidense indican que el Secretario del Tesoro tuvo que ser trasladado de su mansión a una base militar tras la publicación de imágenes aéreas de la residencia.",
+    "Bessent se suma a una lista de varios altos cargos que fueron conducidos a instalaciones de las Fuerzas Armadas para su resguardo por presuntas amenazas iraníes",
+    "El secretario del Tesoro de Estados Unidos, Scott Bessent, tuvo que trasladarse de su residencia a una base militar por el riesgo que corre, el cual los servicios de inteligencia del país han atribuido a su situación en medio del conflicto con Irán ."
    ]
   },
   {
    "id": "974f264b5f",
    "sector": "coyuntura",
-   "titulo": "Papa León XIV EN VIVO jornada 2 en Perú: minuto a minuto de sus actividades, recorridos y últimas noticias del Santo Padre",
-   "resumen": "La programación contempla una reunión con los obispos, una liturgia en la catedral, un discurso público y una vigilia juvenil en el Estadio Nacional, prevista para las 18:00 horas de este jueves",
+   "titulo": "Papa León XIV EN VIVO jornada 2 en Perú: pontífice asistirá a la vigilia juvenil por la tarde tras cumplir actividades matutinas",
+   "resumen": "El Santo Padre cumplió con sus actividades de la mañana, con una reunión con obispos, liturgia en la catedral y discurso público en la Plaza Mayor de Lima. Por la tarde, encabezará una vigilia juvenil en el Estadio Nacional",
    "fuente": "Infobae Perú",
    "url": "https://www.infobae.com/peru/2026/11/12/papa-leon-xiv-en-vivo-jornada-2-en-peru-minuto-a-minuto-de-sus-actividades-recorridos-y-ultimas-noticias-del-santo-padre/",
-   "fecha": "2026-11-12T13:43:32Z",
+   "fecha": "2026-11-12T18:43:19Z",
    "tipo": "comercial",
    "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/6CXELYY7KRA6PJAUJL4SDS5ZCI.jpg?auth=5b0b18b5defc128283cc0c2a43222f8de66c10a64558cb9d475402b2141aacab&smart=true&width=1920&height=1332",
+   "imagen": "https://www.infobae.com/resizer/v2/Z4KSJ5WFZZAE7K6YESILOFI2R4.JPG?auth=dbf892e53a353dd8479f43be7bb4c5ce4d0ba2ce0f1d1c6d6e1b42af052e7d45&smart=true&width=5000&height=3333",
    "geografia": {
     "version": 1,
     "ambito": "peru",
@@ -420,16 +868,16 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "c847c6bb9a",
+   "id": "8ec2b3ed44",
    "sector": "coyuntura",
-   "titulo": "Papa León XIV llegó al Perú: las mypes se llenan de fe y podrían dinamizarse hasta por S/1.200 millones, ¿qué productos del Santo Padre sorprenden?",
-   "resumen": "Lima, Cusco y Chiclayo ya tienen confirmadas sus sedes para recibir al Santo Padre; mientras que Canatur estima un retorno seis veces mayor de lo que pueda invertirse en esta visita.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/economia/peru/visita-del-papa-leon-xiv-podria-movilizar-hasta-s1200-millones-y-dinamizar-el-segmento-mype-noticia/",
-   "fecha": "2026-11-12T13:43:10Z",
+   "titulo": "⁠Papa León XIV emocionó a los peruanos en la Plaza Mayor al evocar famoso vals y cantar ‘Contigo Perú’",
+   "resumen": "El líder de la Iglesia Católica se sumó a la interpretación del vals criollo considerado el segundo himno nacional de los peruanos por evocar el amor, la identidad y el orgullo por la patria",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/12/papa-leon-xiv-emociono-a-los-peruanos-en-la-plaza-mayor-al-evocar-famoso-vals-y-cantar-contigo-peru/",
+   "fecha": "2026-11-12T18:43:03Z",
    "tipo": "comercial",
    "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/GQ4DCMJNGA3C2MJQKQ2DAORUHA.jpg?auth=ccde4f27c41f56aaac6dac009a58ebee8c09b728f41866d6a97a6720f351f3e9&smart=true&width=3072&height=2016",
+   "imagen": "https://www.infobae.com/resizer/v2/VASGIJ546FFGZCAY6QHRKMO2ZM.jpg?auth=3f25a9b699291a04db1213e4b925897bb9b6e230fb6a6fbecedd759fda11c6d6&smart=true&width=1920&height=1080",
    "geografia": {
     "version": 1,
     "ambito": "peru",
@@ -438,77 +886,114 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "sintesis": "Lima, Cusco y Chiclayo ya tienen confirmadas sus sedes para recibir al Santo Padre; mientras que Canatur estima un retorno seis veces mayor de lo que pueda invertirse en esta visita. La Santa Sede confirmó la visita del Santo Padre a las ciudades de Lima, Callao, Lambayeque, Cajamarca, Cusco y Ucayali.",
+   "sintesis": "El líder de la Iglesia Católica se sumó a la interpretación del vals criollo considerado el segundo himno nacional de los peruanos por evocar el amor, la identidad y el orgullo por la patria El momento estuvo acompañado de aplausos, lágrimas y muestras de cariño hacia el Santo Padre. | Vatican News 12 Nov, 2026 01:40 p. m.",
    "puntos": [
-    "Lima, Cusco y Chiclayo ya tienen confirmadas sus sedes para recibir al Santo Padre; mientras que Canatur estima un retorno seis veces mayor de lo que pueda invertirse en esta visita.",
-    "La Santa Sede confirmó la visita del Santo Padre a las ciudades de Lima, Callao, Lambayeque, Cajamarca, Cusco y Ucayali.",
-    "Visita del Papa León XIV al Perú podría atraer 50% más visitantes que la de Francisco: las cifras que “bendecirán” a nuestra economía Radiografía del viajero millennial peruano: una forma de viaje diferente entre escapadas, negocios y compras de último minuto Escuchar Leer resumen Seguir en Guardar 00:00 00:00 Resumen"
+    "El líder de la Iglesia Católica se sumó a la interpretación del vals criollo considerado el segundo himno nacional de los peruanos por evocar el amor, la identidad y el orgullo por la patria",
+    "El momento estuvo acompañado de aplausos, lágrimas y muestras de cariño hacia el Santo Padre. | Vatican News 12 Nov, 2026 01:40 p. m.",
+    "EST Guardar El papa León XIV protagonizó otro momento emotivo y de su encuentro con los fieles en la Plaza de Armas de Lima, este jueves 12 de noviembre."
    ],
    "datos": [
     {
-     "v": "S/1.200 millones",
-     "t": "monto",
-     "c": "…las mypes se llenan de fe y podrían dinamizarse hasta por S/1.200 millones, ¿qué productos del Santo Padre sorprenden?."
-    },
-    {
-     "v": "S/700 millones",
-     "t": "monto",
-     "c": "…comerciales, la visita del Papa podría movilizar entre S/700 millones y S/1.200 millones, con Lima y Chiclayo a la cabeza como…"
-    },
-    {
-     "v": "S/4.800 millones",
-     "t": "monto",
-     "c": "“Para tener una idea, la campaña del Día de la Madre movilizó este año alrededor de S/4.800 millones."
-    },
-    {
-     "v": "50%",
-     "t": "porcentaje",
-     "c": "Visita del Papa León XIV al Perú podría atraer 50% más visitantes que la de Francisco: las cifras que…"
-    },
-    {
-     "v": "28 de julio",
+     "v": "12 de noviembre",
      "t": "fecha",
-     "c": "…que otros han colocado más de 2.000 unidades desde el 28 de julio."
+     "c": "…con los fieles en la Plaza de Armas de Lima, este jueves 12 de noviembre."
     }
    ]
   },
   {
-   "id": "9e27fba6a1",
+   "id": "d8a575bb72",
    "sector": "coyuntura",
-   "titulo": "Papa León XIV en Perú EN VIVO HOY minuto a minuto: en el día 2 visita la Basílica Catedral de Lima y encuentro con jóvenes en el Estadio Nacional",
-   "resumen": "Papa León XIV en Perú EN VIVO HOY: últimas noticias, cuándo llega, donde estará, rutas, agenda de su visita a Lima y más",
+   "titulo": "Putin transmite a los mediadores de Trump que no quiere congelar el conflicto con Ucrania",
+   "resumen": "Vladímir Putin comunicó a los enviados de Donald Trump que Rusia busca un acuerdo definitivo con Ucrania y no una congelación del conflicto. El mandatario también planteó establecer fronteras claras y manifestó su disposición a negociar con representantes europeos.",
    "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/peru/papa-leon-xiv-en-peru-en-vivo-hoy-minuto-a-minuto-actividades-rutas-agenda-de-su-visita-y-ultimas-noticias-del-sumo-pontifice-vaticano-lbposting-noticia/",
-   "fecha": "2026-11-12T13:42:46Z",
+   "url": "https://elcomercio.pe/mundo/europa/vladimir-putin-transmite-a-los-mediadores-de-donald-trump-que-no-quiere-congelar-el-conflicto-con-ucrania-ultimas-noticia/",
+   "fecha": "2026-11-12T18:42:00Z",
    "tipo": "comercial",
    "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/EPIBQLZQEBDUDAV3E2Z7PZIIUM.jpg?auth=b5b7f8d8c477214dcd335c5fe5d64b0baef6b664daf3cf441ac14157dae319e4&smart=true&width=1200&height=634",
+   "imagen": "https://elcomercio.pe/resizer/v2/YSDJP2HQERCIFBBKTW73V5FS2Q.jpg?auth=12966d17f15521e3abe7bbfb81f153c67c9360ad71b1b138cdb1ab2a41242cca&smart=true&width=1200&height=800",
    "geografia": {
     "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
    },
-   "ambito": "peru",
+   "ambito": "mundo",
    "procedencia": "directa",
-   "sintesis": "Papa León XIV en Perú EN VIVO HOY: últimas noticias, cuándo llega, donde estará, rutas, agenda de su visita a Lima y más Entre medio de aplausos, el Papa León XIV dio por finalizado su discurso y a continuación se da inicio al espectáculo \"Marinera Chiclayana\" en honor al Santo Padre.",
+   "sintesis": "Vladímir Putin comunicó a los enviados de Donald Trump que Rusia busca un acuerdo definitivo con Ucrania y no una congelación del conflicto. El mandatario también planteó establecer fronteras claras y manifestó su disposición a negociar con representantes europeos.",
    "puntos": [
-    "Papa León XIV en Perú EN VIVO HOY: últimas noticias, cuándo llega, donde estará, rutas, agenda de su visita a Lima y más",
-    "Entre medio de aplausos, el Papa León XIV dio por finalizado su discurso y a continuación se da inicio al espectáculo \"Marinera Chiclayana\" en honor al Santo Padre.",
-    "\"Para conocer las necesidades de quienes están lejos, es preciso comenzar por escucharlos Pienso en los jovenes para potenciar sus habilidades y ponerlas al servicio del bien\"."
+    "Vladímir Putin comunicó a los enviados de Donald Trump que Rusia busca un acuerdo definitivo con Ucrania y no una congelación del conflicto.",
+    "El mandatario también planteó establecer fronteras claras y manifestó su disposición a negociar con representantes europeos.",
+    "El presidente ruso, Vladimir Putin , transmitió hoy a los emisarios de la Casa Blanca que no quiere congelar el conflicto en Ucrania , sino que quiere lograr lo que llamó una “paz eterna” con fronteras claras con su país vecino, al tiempo que se mostró dispuesto a aceptar la participación de los europeos en las futuras negociaciones."
    ]
   },
   {
-   "id": "663a03b070",
-   "sector": "coyuntura",
-   "titulo": "Andrea San Martín se quiebra por no poder ver a su hija menor: “No soy la misma persona ni me siento igual”",
-   "resumen": "La influencer contó que una situación reciente “le rompió el corazón” y afirmó que intenta retomar su rutina en medio del proceso familiar",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/11/andrea-san-martin-se-quiebra-por-no-poder-ver-a-su-hija-menor-no-soy-la-misma-persona-ni-me-siento-igual/",
-   "fecha": "2026-11-12T13:42:33Z",
+   "id": "1d32416680",
+   "sector": "mundo",
+   "titulo": "El DHS celebra que batió un récord histórico de deportaciones en el año fiscal 2026 al expulsar a 483.200 personas",
+   "resumen": "La publicación de los datos, que contradicen otras fuentes, llega después de que los ciudadanos rechazaran la política migratoria de Trump en las ‘midterms’",
+   "fuente": "El País América",
+   "url": "https://elpais.com/us/migracion/2026-11-12/el-dhs-celebra-que-batio-un-record-historico-de-deportaciones-en-el-ano-fiscal-2026-al-expulsar-a-483200-personas.html",
+   "fecha": "2026-11-12T18:42:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://imagenes.elpais.com/resizer/v2/DZMNNVNNVNMF5MWHVOLVCT5Q6U.jpg?auth=6bba060db0b038f5aa61c95231a5d2b0eec9296ff68abaa3245a585e53d9c19a",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "contexto_internacional_resumen"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "La publicación de los datos, que contradicen otras fuentes, llega después de que los ciudadanos rechazaran la política migratoria de Trump en las ‘midterms’",
+   "puntos": [
+    "La publicación de los datos, que contradicen otras fuentes, llega después de que los ciudadanos rechazaran la política migratoria de Trump en las ‘midterms’"
+   ],
+   "datos": [
+    {
+     "v": "483.200 personas",
+     "t": "cantidad",
+     "c": "El DHS celebra que batió un récord histórico de deportaciones en el año fiscal 2026 al expulsar a 483.200 personas."
+    }
+   ]
+  },
+  {
+   "id": "e1c3cce587",
+   "sector": "politica",
+   "titulo": "Colombia vs Chile: horarios y qué canal de TV transmite el amistoso por la fecha FIFA 2026",
+   "resumen": "Colombia vs Chile EN VIVO: sigue el partido amistoso en el estadio Pascual Guerrero por Fecha FIFA.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/futbol/futbol-mundial/colombia-vs-chile-en-vivo-gol-caracol-tv-horario-y-que-canal-transmite-amistoso-internacional-fecha-fifa-2026-partidos-de-hoy-noticia-1717457",
+   "fecha": "2026-11-12T18:41:25Z",
    "tipo": "comercial",
    "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/S4Q6NDAFX5GJJOPQ5AKKOHZ2P4.jpg?auth=621ac01bfa2dd083ce0b400de2bece8442ab3f9e2dfa12c1a74b4d92f184ae67&smart=true&width=1920&height=1080",
+   "imagen": "https://f.rpp-noticias.io/2026/11/12/293829_1928447.jpg?imgdimension=look",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Colombia vs Chile EN VIVO: sigue el partido amistoso en el estadio Pascual Guerrero por Fecha FIFA. En fecha FIFA las selecciones de Colombia y Chile jugarán este viernes un partido amistoso que, confían ambos equipos, les sirva para consolidar ideas con vistas a las eliminatorias del Mundial de 2030 y a la Copa América de 2028.",
+   "puntos": [
+    "Colombia vs Chile EN VIVO: sigue el partido amistoso en el estadio Pascual Guerrero por Fecha FIFA.",
+    "En fecha FIFA las selecciones de Colombia y Chile jugarán este viernes un partido amistoso que, confían ambos equipos, les sirva para consolidar ideas con vistas a las eliminatorias del Mundial de 2030 y a la Copa América de 2028.",
+    "El encuentro se disputará en el estadio Pascual Guerrero , en la ciudad colombiana de Cali, y las ganancias de la taquilla serán destinadas para ayudar a los damnificados del terremoto de magnitud 7,4 que devastó el centro-oeste del país andino."
+   ]
+  },
+  {
+   "id": "c9c6bccdef",
+   "sector": "coyuntura",
+   "titulo": "Marc Anthony, Fonseca, Manuel Turizo y Kapo juntos en “Happy Music Live”",
+   "resumen": "Las estrellas de la salsa, el pop latino y la música urbana compartirán escenario este 4 de diciembre en el Estadio Nacional en un espectáculo sin precedentes que celebrará la música en vivo.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/desde-la-redaccion/promociones/marc-anthony-fonseca-manuel-turizo-y-kapo-se-reunen-por-primera-vez-en-lima-para-el-festival-happy-music-live-noticia/",
+   "fecha": "2026-11-12T18:40:54Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/2JDLHQMENNHLJF6GN2QF7LQ65A.jpeg?auth=1b9ce9ca72a67710a793c59123347283c77fc75766fdfc1722699cbc1e5056ab&smart=true&width=1200&height=810",
    "geografia": {
     "version": 1,
     "ambito": "pendiente",
@@ -517,31 +1002,56 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "sintesis": "La influencer contó que una situación reciente “le rompió el corazón” y afirmó que intenta retomar su rutina en medio del proceso familiar La figura televisiva señaló que el conflicto con Juan Víctor Sánchez ha afectado su estado emocional y sus ingresos, aunque busca en el ejercicio una forma de sobrellevar la situación.",
+   "sintesis": "Las estrellas de la salsa, el pop latino y la música urbana compartirán escenario este 4 de diciembre en el Estadio Nacional en un espectáculo sin precedentes que celebrará la música en vivo. Bajo el concepto de que la música en vivo tiene el poder de hacernos felices, Happy Music Live apuesta por una experiencia única que reunirá a cuatro artistas que dominan los escenarios internacionales y que han conquistado a distintas generaciones con sus canciones.",
    "puntos": [
-    "La influencer contó que una situación reciente “le rompió el corazón” y afirmó que intenta retomar su rutina en medio del proceso familiar",
-    "La figura televisiva señaló que el conflicto con Juan Víctor Sánchez ha afectado su estado emocional y sus ingresos, aunque busca en el ejercicio una forma de sobrellevar la situación.",
-    "EST Guardar Andrea San Martín reapareció en redes sociales y reveló que atraviesa un momento emocional difícil por no poder ver a su hija menor."
+    "Las estrellas de la salsa, el pop latino y la música urbana compartirán escenario este 4 de diciembre en el Estadio Nacional en un espectáculo sin precedentes que celebrará la música en vivo.",
+    "Bajo el concepto de que la música en vivo tiene el poder de hacernos felices, Happy Music Live apuesta por una experiencia única que reunirá a cuatro artistas que dominan los escenarios internacionales y que han conquistado a distintas generaciones con sus canciones.",
+    "El gran protagonista de la noche será Marc Anthony, considerado una de las máximas estrellas latinas de todos los tiempos."
    ],
    "datos": [
     {
-     "v": "10 de noviembre",
+     "v": "4 de diciembre",
      "t": "fecha",
-     "c": "La noche del martes 10 de noviembre, San Martín compartió una serie de historias de Instagram…"
+     "c": "…pop latino y la música urbana compartirán escenario este 4 de diciembre en el Estadio Nacional en un espectáculo sin precedentes…"
     }
    ]
   },
   {
-   "id": "7d6d5c71eb",
-   "sector": "coyuntura",
-   "titulo": "Andrea Montenegro defiende su vida en Colombia y aclara que no dejó la actuación: “Es lamentable el poco respeto que se le tiene al artista”",
-   "resumen": "La actriz peruana afirmó que la pintura forma parte de su trayectoria desde hace tres décadas y cuestionó que su trabajo se presente como una actividad reciente",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/11/andrea-montenegro-defiende-su-vida-en-colombia-y-aclara-que-no-dejo-la-actuacion-es-lamentable-el-poco-respeto-que-se-le-tiene-al-artista/",
-   "fecha": "2026-11-12T13:42:23Z",
+   "id": "eb9f805b36",
+   "sector": "politica",
+   "titulo": "Vladímir Putin transmite a los mediadores de Donald Trump que no quiere congelar el conflicto con Ucrania",
+   "resumen": "El presidente ruso, Vladímir Putin, afirmó que busca una “paz eterna” con Ucrania y descartó congelar el conflicto, tras reunirse en el Kremlin con enviados del mandatario estadounidense Donald Trump.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/mundo/rusia/vladimir-putin-transmite-a-los-mediadores-de-donald-trump-que-no-quiere-congelar-el-conflicto-con-ucrania-noticia-1717458",
+   "fecha": "2026-11-12T18:40:50Z",
    "tipo": "comercial",
    "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/CNFXT22LOZBQBJTHTJQYWBBO3A.jpg?auth=b5a0859940943583df545aae56874c80f8c4a87abe7f09d41314449f8dba1849&smart=true&width=1920&height=1080",
+   "imagen": "https://f.rpp-noticias.io/2026/11/12/493349_1928434.jpg?imgdimension=look",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "El presidente ruso, Vladímir Putin, afirmó que busca una “paz eterna” con Ucrania y descartó congelar el conflicto, tras reunirse en el Kremlin con enviados del mandatario estadounidense Donald Trump. El presidente ruso, Vladímir Putin , transmitió hoy a los emisarios de la Casa Blanca que no quiere congelar el conflicto en Ucrania , sino que desea lograr lo que llamó una \"paz eterna\" con fronteras claras con su país vecino, al tiempo que se mostró dispuesto a aceptar la participación de los europeos en las futuras negociaciones.",
+   "puntos": [
+    "El presidente ruso, Vladímir Putin, afirmó que busca una “paz eterna” con Ucrania y descartó congelar el conflicto, tras reunirse en el Kremlin con enviados del mandatario estadounidense Donald Trump.",
+    "El presidente ruso, Vladímir Putin , transmitió hoy a los emisarios de la Casa Blanca que no quiere congelar el conflicto en Ucrania , sino que desea lograr lo que llamó una \"paz eterna\" con fronteras claras con su país vecino, al tiempo que se mostró dispuesto a aceptar la participación de los europeos en las futuras negociaciones."
+   ]
+  },
+  {
+   "id": "bff40236ee",
+   "sector": "coyuntura",
+   "titulo": "Edgard Rimaycuna: de monaguillo chiclayano a secretario y confidente del papa León XIV",
+   "resumen": "La nota habla sobre Edgard Rimaycuna, el monaguillo nacido en Chiclayo que hoy se encuentra en el Vaticano al lado del papa León XIV en calidad de secretario, amigo y confidente.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/lima/sucesos/edgard-rimaycuna-de-monaguillo-a-secretario-y-confidente-del-papa-leon-xiv-noticia/",
+   "fecha": "2026-11-12T18:40:34Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/OACQPTEGMNEJJEUD7FG72F6VTU.jpg?auth=a02ab05f7d1862a056e69c62911f5c991b4cabfb1af0ae59057d095c3200a090&smart=true&width=1200&height=800",
    "geografia": {
     "version": 1,
     "ambito": "peru",
@@ -550,22 +1060,3007 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "sintesis": "La actriz peruana afirmó que la pintura forma parte de su trayectoria desde hace tres décadas y cuestionó que su trabajo se presente como una actividad reciente Andrea Montenegro responde a las críticas: “Me honra cumplir 31 años ejerciendo mi profesión de artista” 12 Nov, 2026 08:42 a. m.",
+   "sintesis": "La nota habla sobre Edgard Rimaycuna, el monaguillo nacido en Chiclayo que hoy se encuentra en el Vaticano al lado del papa León XIV en calidad de secretario, amigo y confidente. Mientras León XIV pronunciaba sus primeras palabras como papa frente a la plaza San Pedro, tras las cortinas púrpuras del balcón se ocultaba un tímido peruano, Edgard Rimaycuna , el secretario personal de Robert Prevost desde que era obispo de Chiclayo y que ahora vuelve a su tierra como asesor del sumo pontífice.",
    "puntos": [
-    "La actriz peruana afirmó que la pintura forma parte de su trayectoria desde hace tres décadas y cuestionó que su trabajo se presente como una actividad reciente",
-    "Andrea Montenegro responde a las críticas: “Me honra cumplir 31 años ejerciendo mi profesión de artista” 12 Nov, 2026 08:42 a. m.",
-    "EST Guardar Andrea Montenegro respondió a las recientes publicaciones sobre su vida en Colombia y defendió su trayectoria como actriz y artista plástica."
+    "La nota habla sobre Edgard Rimaycuna, el monaguillo nacido en Chiclayo que hoy se encuentra en el Vaticano al lado del papa León XIV en calidad de secretario, amigo y confidente.",
+    "Mientras León XIV pronunciaba sus primeras palabras como papa frente a la plaza San Pedro, tras las cortinas púrpuras del balcón se ocultaba un tímido peruano, Edgard Rimaycuna , el secretario personal de Robert Prevost desde que era obispo de Chiclayo y que ahora vuelve a su tierra como asesor del sumo pontífice.",
+    "Rimaycuna (1989) nació y se crio en Chiclayo , donde el papa fue obispo durante ocho años, y gracias a una relación que se forjó hace más de una década en el norte de Perú, no se ha separado de León XIV ni en los viajes que ha realizado hasta ahora ni en su operación de cáncer de pulmón realizada en octubre."
+   ]
+  },
+  {
+   "id": "27428f9d91",
+   "sector": "coyuntura",
+   "titulo": "Visita del papa León XIV al Perú: recorrido del papamóvil, calles cerradas, desvío vehicular y actividades hoy",
+   "resumen": "Visita del papa León XIV en Perú: ciudades y horarios día a día de su visita",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/lima/visita-del-papa-leon-xiv-en-peru-hoy-11-de-noviembre-ultima-hora-fecha-agenda-ciudades-rutas-y-dia-a-dia-de-su-visita-a-del-santo-padre-vaticano-lbposting-noticia/",
+   "fecha": "2026-11-12T18:39:18Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/HT3XDKT2LVC47OAABF3FQ4ASG4.jpg?auth=24375c0e4002eb36a1cfead99f30de09ab9eaf5b9e6c7db00c3a5b0d058aa3b5&smart=true&width=1200&height=644",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Visita del papa León XIV en Perú: ciudades y horarios día a día de su visita En su segundo día de visita al Perú, el papa León XIV se traslada en el 'papamóvil' hacia la Iglesia Las Nazarenas, por la avenida Garcilazo de la Vega.",
+   "puntos": [
+    "Visita del papa León XIV en Perú: ciudades y horarios día a día de su visita",
+    "En su segundo día de visita al Perú, el papa León XIV se traslada en el 'papamóvil' hacia la Iglesia Las Nazarenas, por la avenida Garcilazo de la Vega.",
+    "Fotos: Antonio Melgarejo/ @photo.gec Seguir en Guardar Por Redacción EC 12/11/2026, 01:39 p.m."
+   ]
+  },
+  {
+   "id": "5e956061ac",
+   "sector": "economia",
+   "titulo": "Precio del dólar cae más hoy en Perú: Así cerró el tipo de cambio este 12 de diciembre",
+   "resumen": "Mira los valores de compra y venta de dólares en casas de cambio online y mercado paralelo. El Banco Central de Reserva (BCRP) y Bloomberg reportan los valores, mientras Sunat tiene su ‘tasa de cambio’ propia",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/11/dolar-hoy-en-peru-cotizacion-de-apertura-del-11-de-noviembre/",
+   "fecha": "2026-11-12T18:38:47Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/O7XXKEVHA5BUFFBP55TE6MX6GA.jpg?auth=268b22f883fdcb526bded8335514101ac787531d462a66a0f555005040145807&smart=true&width=1920&height=1080",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Mira los valores de compra y venta de dólares en casas de cambio online y mercado paralelo. El Banco Central de Reserva (BCRP) y Bloomberg reportan los valores, mientras Sunat tiene su ‘tasa de cambio’ propia",
+   "puntos": [
+    "Mira los valores de compra y venta de dólares en casas de cambio online y mercado paralelo.",
+    "El Banco Central de Reserva (BCRP) y Bloomberg reportan los valores, mientras Sunat tiene su ‘tasa de cambio’ propia",
+    "Revisa la tendencia del tipo de cambio y el valor del dólar en compra y venta en el mercado paralelo y casas de cambio digitales. - Crédito Andina 12 Nov, 2026 01:38 p. m."
    ],
    "datos": [
     {
-     "v": "31 años",
-     "t": "cantidad",
-     "c": "Andrea Montenegro responde a las críticas: “Me honra cumplir 31 años ejerciendo mi profesión de artista” 12 Nov, 2026 08:42 a. m."
+     "v": "S/3,4040",
+     "t": "monto",
+     "c": "El tipo de cambio ha cerrado con nueva baja a S/3,4040 , según la última sesión del Banco Central de Reserva del Perú ."
     },
     {
-     "v": "22 años",
+     "v": "S/ 3.408",
+     "t": "monto",
+     "c": "“En el mercado local, el tipo de cambio fluctuó entre S/ 3.408 y S/ 3.413, con un volumen negociado de US$ 262.7 millones."
+    },
+    {
+     "v": "S/ 3.413",
+     "t": "monto",
+     "c": "“En el mercado local, el tipo de cambio fluctuó entre S/ 3.408 y S/ 3.413, con un volumen negociado de US$ 262.7 millones."
+    },
+    {
+     "v": "US$ 262.7 millones",
+     "t": "monto",
+     "c": "“En el mercado local, el tipo de cambio fluctuó entre S/ 3.408 y S/ 3.413, con un volumen negociado de US$ 262.7 millones."
+    },
+    {
+     "v": "0.65%",
+     "t": "porcentaje",
+     "c": "…monedas internacionales, como el euro, que retrocedió 0.65%, la libra esterlina (-0.49%) y el yen japonés (-0.70%)“…"
+    }
+   ]
+  },
+  {
+   "id": "b5b838bf58",
+   "sector": "coyuntura",
+   "titulo": "Magaly Medina se emociona por la llegada del papa León XIV: “Todos estamos conmovidos”",
+   "resumen": "En la reciente emisión del programa \"Magaly TV, la firme”, la conductora se refirió a la llegada del Santo Padre al Perú.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/tvmas/farandula/papa-leon-xiv-en-peru-magaly-medina-se-emociona-por-la-llegada-del-santo-padre-todos-estamos-conmovidos-apuesplan-ultimas-noticia/",
+   "fecha": "2026-11-12T18:38:40Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/QPUS6FFIC5FTXFVKAOFVAJAIBY.jpg?auth=e688ccec018512fd6986e30da1d2077c6225e96641edd7da8c61e815b5654339&smart=true&width=1214&height=800",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "En la reciente emisión del programa \"Magaly TV, la firme”, la conductora se refirió a la llegada del Santo Padre al Perú. Magaly Medina se sumó a la lista de artistas que se han pronunciado sobre la llegada del papa León XIV al Perú .",
+   "puntos": [
+    "En la reciente emisión del programa \"Magaly TV, la firme”, la conductora se refirió a la llegada del Santo Padre al Perú.",
+    "Magaly Medina se sumó a la lista de artistas que se han pronunciado sobre la llegada del papa León XIV al Perú .",
+    "La conductora de espectáculos utilizó los primeros minutos de su espacio televisiv o para referirse al arribo del Sumo Pontífice el pasado 11 de noviembre."
+   ],
+   "datos": [
+    {
+     "v": "11 de noviembre",
+     "t": "fecha",
+     "c": "…o para referirse al arribo del Sumo Pontífice el pasado 11 de noviembre.."
+    }
+   ]
+  },
+  {
+   "id": "102b0ce20c",
+   "sector": "deporte",
+   "titulo": "Universitario habría fichado a jugador de Sport Boys para el 2027: el segundo refuerzo para la próxima temporada",
+   "resumen": "La ‘U’ continúa con la planificación de su plantel para la siguiente campaña, mientras mantiene la disputa por el título del Torneo Clausura 2026",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/deportes/2026/11/12/universitario-habria-fichado-jugador-de-sport-boys-para-el-2027-el-segundo-refuerzo-para-la-proxima-temporada/",
+   "fecha": "2026-11-12T18:38:30Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/H2PNH2WYDFH5RAODV37G37XODA.jpg?auth=0e706e0f707745b000b671b53b8195647e76e659695c1c421d0069335f7bf62a&smart=true&width=1201&height=629",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "La ‘U’ continúa con la planificación de su plantel para la siguiente campaña, mientras mantiene la disputa por el título del Torneo Clausura 2026 Universitario habría fichado jugador de Sport Boys para el 2027.",
+   "puntos": [
+    "La ‘U’ continúa con la planificación de su plantel para la siguiente campaña, mientras mantiene la disputa por el título del Torneo Clausura 2026",
+    "Universitario habría fichado jugador de Sport Boys para el 2027.",
+    "EST Guardar Universitario de Deportes continúa activo en el mercado de pases mientras disputa el Torneo Clausura 2026 ."
+   ]
+  },
+  {
+   "id": "dabede09de",
+   "sector": "investigacion",
+   "titulo": "Áncash: pobladores de Casca denuncian que no tienen agua desde hace cuatro meses [VIDEO]",
+   "resumen": "Rotafono de RPP | Todo el distrito de Casca, en Áncash no tiene agua hace cuatro meses y la población denuncia que todas las tuberías están rotas y ninguna autoridad se hace cargo de esta problemática.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/rotafono/servicios-publicos/ancash-pobladores-de-casca-denuncian-que-no-tienen-agua-desde-hace-cuatro-meses-tuberia-rota-video-noticia-1717460",
+   "fecha": "2026-11-12T18:38:26Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/12/atsapp-video-2026-11-11-at-44608-pm-1-1928421mp4_1928422.jpg?width=860&quality=80",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "Rotafono de RPP | Todo el distrito de Casca, en Áncash no tiene agua hace cuatro meses y la población denuncia que todas las tuberías están rotas y ninguna autoridad se hace cargo de esta problemática. Su hija Vilma Lavado Olortegui se comunicó con el Rotafono de RPP para dar a conocer esta situación, ya que no hay agua en todo el distrito desde hace cuatro meses.",
+   "puntos": [
+    "Rotafono de RPP | Todo el distrito de Casca, en Áncash no tiene agua hace cuatro meses y la población denuncia que todas las tuberías están rotas y ninguna autoridad se hace cargo de esta problemática.",
+    "Su hija Vilma Lavado Olortegui se comunicó con el Rotafono de RPP para dar a conocer esta situación, ya que no hay agua en todo el distrito desde hace cuatro meses.",
+    "Los pobladores no saben a quién recurrir ya que es un sitio alejado y carecen de los servicios básicos ."
+   ],
+   "datos": [
+    {
+     "v": "83 años",
      "t": "cantidad",
-     "c": "…es profeta en su tierra, dicen, y yo vengo de cumplir 22 años a salvo y en paz”, escribió la artista, quien reside en…"
+     "c": "…· 00:45 Antonia Olórtegui Villanueva es una señora de 83 años que viajó a la ciudad de Casca , ubicado en la provincia…"
+    }
+   ]
+  },
+  {
+   "id": "d0e314cee7",
+   "sector": "coyuntura",
+   "titulo": "Papa León XIV en Perú: Susana Baca rinde homenaje al Santo Padre en la Plaza Mayor de Lima",
+   "resumen": "La cantante nacional interpretó “Canción de fe” como parte de las actividades que se realizan durante la visita del Sumo Pontífice al país.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/luces/musica/papa-leon-xiv-en-peru-susana-baca-rinde-homenaje-al-santo-padre-en-la-plaza-mayor-de-lima-apuesplan-ultimas-noticia/",
+   "fecha": "2026-11-12T18:36:31Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/6QZ6K5CATVBG3PVEJ3F7NRHJDU.jpg?auth=543325a618e58d76edbeb8314660ef690e2bfa3a96974bea54794e43e059541d&smart=true&width=1214&height=800",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "La cantante nacional interpretó “Canción de fe” como parte de las actividades que se realizan durante la visita del Sumo Pontífice al país. Susana Baca se presentó ante el papa León XIV en la Plaza Mayor de Lima .",
+   "puntos": [
+    "La cantante nacional interpretó “Canción de fe” como parte de las actividades que se realizan durante la visita del Sumo Pontífice al país.",
+    "Susana Baca se presentó ante el papa León XIV en la Plaza Mayor de Lima .",
+    "La cantante fue una de las artistas invitadas al Encuentro sobre los desafíos y las esperanzas para el futuro del pueblo peruano , actividad que se realizó este jueves 12 de noviembre ."
+   ],
+   "datos": [
+    {
+     "v": "12 de noviembre",
+     "t": "fecha",
+     "c": "…del pueblo peruano , actividad que se realizó este jueves 12 de noviembre ."
+    }
+   ]
+  },
+  {
+   "id": "5b90079ca1",
+   "sector": "mundo",
+   "titulo": "SIlvia Cáceres: \"León XIV deja la tarea de escuchar a las mujeres víctimas de violencia en Perú\"",
+   "resumen": "Este jueves 12 de noviembre de 2026, ante unas 40.000 personas en la Plaza de Armas de Lima, el papa León XIV condenó la violencia contra las mujeres y la cultura machista en el Perú. El pontífice pidió respeto para las mujeres y las niñas, en un país en el que la violencia…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/video/20261112-silvia-c%C3%A1ceres-le%C3%B3n-xiv-deja-la-tarea-de-escuchar-a-las-mujeres-v%C3%ADctimas-de-violencia-en-per%C3%BA",
+   "fecha": "2026-11-12T18:35:39Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/84ff5122-dec7-11f1-8561-695cb59fade5/w:1024/p:16x9/ES-20261112-121647-121938-CS.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Este jueves 12 de noviembre de 2026, ante unas 40.000 personas en la Plaza de Armas de Lima, el papa León XIV condenó la violencia contra las mujeres y la cultura machista en el Perú.",
+   "puntos": [
+    "Este jueves 12 de noviembre de 2026, ante unas 40.000 personas en la Plaza de Armas de Lima, el papa León XIV condenó la violencia contra las mujeres y la cultura machista en el Perú."
+   ],
+   "datos": [
+    {
+     "v": "40.000 personas",
+     "t": "cantidad",
+     "c": "Este jueves 12 de noviembre de 2026, ante unas 40.000 personas en la Plaza de Armas de Lima, el papa León XIV condenó la…"
+    },
+    {
+     "v": "12 de noviembre de 2026",
+     "t": "fecha",
+     "c": "Este jueves 12 de noviembre de 2026, ante unas 40.000 personas en la Plaza de Armas de Lima…"
+    }
+   ]
+  },
+  {
+   "id": "32aac909de",
+   "sector": "coyuntura",
+   "titulo": "\"¡Es mi Perú!\": el papa León XIV sorprende al recordar emblemático vals criollo ante miles de fieles",
+   "resumen": "El pontífice recitó los versos de uno de los valses criollos más emblemáticos durante un encuentro en Lima. También destacó la diversidad cultural del país y llamó a construir un futuro basado en la dignidad humana y el bien común.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/lima/actualidad/es-mi-peru-el-papa-leon-xiv-sorprende-al-recordar-emblematico-vals-criollo-ante-miles-de-fieles-noticia-1717459",
+   "fecha": "2026-11-12T18:35:37Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/12/303030_1928418.jpg?imgdimension=look",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El pontífice recitó los versos de uno de los valses criollos más emblemáticos durante un encuentro en Lima. También destacó la diversidad cultural del país y llamó a construir un futuro basado en la dignidad humana y el bien común.",
+   "puntos": [
+    "El pontífice recitó los versos de uno de los valses criollos más emblemáticos durante un encuentro en Lima.",
+    "También destacó la diversidad cultural del país y llamó a construir un futuro basado en la dignidad humana y el bien común.",
+    "El papa León XIV protagonizó uno de los momentos más emocionantes de su visita a Lima al recordar los versos de Mi Perú , uno de los valses criollos más emblemáticos del cancionero peruano."
+   ],
+   "datos": [
+    {
+     "v": "12 de noviembre",
+     "t": "fecha",
+     "c": "Cerca de las 10:05 a. m. de este jueves 12 de noviembre, durante el Encuentro sobre los desafíos y las esperanzas…"
+    }
+   ]
+  },
+  {
+   "id": "506f8ba9c7",
+   "sector": "politica",
+   "titulo": "¿El fin del pasaporte? La IA y la biometría redefinen el futuro de los viajes",
+   "resumen": "La presidenta del WTTC, Gloria Guevara, plantea avanzar hacia un modelo de identidad digital que permita reducir las verificaciones repetidas en aeropuertos y fronteras. Durante la 26.ª Cumbre Global del organismo, celebrada en Malta, se identificaron prioridades para…",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/economia/dia-1/el-fin-del-pasaporte-la-ia-y-la-biometria-redefinen-el-futuro-de-los-viajes-wttc-noticia/",
+   "fecha": "2026-11-12T18:35:28Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/VCVP6XIN2NEPHB7IBNON36QVC4.jpg?auth=cba7dce9e61e5c5907d5dbb8ae4ec6dac0ecd45857fb3997d3695ea21492652f&smart=true&width=2400&height=1600",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "contexto_internacional_resumen"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "La presidenta del WTTC, Gloria Guevara, plantea avanzar hacia un modelo de identidad digital que permita reducir las verificaciones repetidas en aeropuertos y fronteras. Durante la 26.ª Cumbre Global del organismo, celebrada en Malta, se identificaron prioridades para transformar la industria.",
+   "puntos": [
+    "La presidenta del WTTC, Gloria Guevara, plantea avanzar hacia un modelo de identidad digital que permita reducir las verificaciones repetidas en aeropuertos y fronteras.",
+    "Durante la 26.ª Cumbre Global del organismo, celebrada en Malta, se identificaron prioridades para transformar la industria.",
+    "Mostrar el pasaporte en el mostrador de la aerolínea, volver a identificarse antes de abordar y pasar nuevamente por controles migratorios al llegar a otro país es un proceso engorroso al viajar."
+   ]
+  },
+  {
+   "id": "c45509d574",
+   "sector": "politica",
+   "titulo": "Inauguran Vía de Evitamiento 'papa León XIV' en Lambayeque que espera reducir el tránsito en el norte del país",
+   "resumen": "El ministro de Transportes y Comunicaciones indicó que esta infraestructura permitirá mejorar la conexión entre Chiclayo y Lambayeque.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/peru/actualidad/inauguran-via-de-evitamiento-papa-leon-xiv-en-lambayeque-que-espera-reducir-el-transito-en-el-norte-del-pais-noticia-1717434",
+   "fecha": "2026-11-12T18:33:57Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/12/392639_1928415.jpg?imgdimension=look",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El ministro de Transportes y Comunicaciones indicó que esta infraestructura permitirá mejorar la conexión entre Chiclayo y Lambayeque. Compartir Actualidad Share Papa León XIV Papa León XIV 00:00 · 00:57 La Vía de Evitamiento del papa León XIV fue inaugurada este jueves 12 de noviembre en Lambayeque.",
+   "puntos": [
+    "El ministro de Transportes y Comunicaciones indicó que esta infraestructura permitirá mejorar la conexión entre Chiclayo y Lambayeque.",
+    "Compartir Actualidad Share Papa León XIV Papa León XIV 00:00 · 00:57 La Vía de Evitamiento del papa León XIV fue inaugurada este jueves 12 de noviembre en Lambayeque.",
+    "Esta infraestructura que lleva el nombre del Santo Padre espera recibir al entonces obispo de Chiclayo al concluir su recorrido apostólico por Lima."
+   ],
+   "datos": [
+    {
+     "v": "1.3 millones de personas",
+     "t": "escala",
+     "c": "…de 40 a 14 minutos, beneficiando directamente a más de 1.3 millones de personas.."
+    },
+    {
+     "v": "12 de noviembre",
+     "t": "fecha",
+     "c": "…Evitamiento del papa León XIV fue inaugurada este jueves 12 de noviembre en Lambayeque."
+    },
+    {
+     "v": "13 de noviembre",
+     "t": "fecha",
+     "c": "…del Sumo Pontífice, la cual está pactada para este viernes 13 de noviembre.."
+    }
+   ]
+  },
+  {
+   "id": "96cebc7bfa",
+   "sector": "politica",
+   "titulo": "León XIV se emociona al citar parte de un vals criollo: “Ricas montañas, hermosas tierras, risueñas playas, fértiles tierras, ríos, quebradas es mi Perú“",
+   "resumen": "El pontífice destacó la diversidad cultural, histórica y regional que caracteriza al Perú. Los fieles reunidos en la plaza Mayor escucharon emocionados su mensaje sobre la fraternidad, el respeto y la convivencia",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/12/leon-xiv-se-emociona-al-citar-parte-de-un-vals-criollo-ricas-montanas-hermosas-tierras-risuenas-playas-fertiles-tierras-rios-quebradas-es-mi-peru/",
+   "fecha": "2026-11-12T18:33:42Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/T2TPOB56HJFBBAYBJ622PQHQIA.jpg?auth=d626545e462801d14380ba1301f71812d1204e46ca5db7beeea58d5f6536a8e7&smart=true&width=1920&height=1080",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El pontífice destacó la diversidad cultural, histórica y regional que caracteriza al Perú. Los fieles reunidos en la plaza Mayor escucharon emocionados su mensaje sobre la fraternidad, el respeto y la convivencia",
+   "puntos": [
+    "El pontífice destacó la diversidad cultural, histórica y regional que caracteriza al Perú.",
+    "Los fieles reunidos en la plaza Mayor escucharon emocionados su mensaje sobre la fraternidad, el respeto y la convivencia",
+    "Cobertura de un acto protocolar eclesiástico donde un orador con vestidura blanca lee un discurso oficial ante un atril con micrófono."
+   ]
+  },
+  {
+   "id": "af0de33786",
+   "sector": "mundo",
+   "titulo": "\"Le pedí al 'joven padre Robert' que fuera el padrino de mi hija en Perú. Treinta años después se convirtió en el papa León XIV\"",
+   "resumen": "Hace 30 años, el joven sacerdote Robert Prevost Martínez aceptó ser el padrino de bautismo de una niña en Chulucanas, en la región de Piura. Ahora ella espera con ansiedad su visita a Perú como el papa León XIV.",
+   "fuente": "BBC Mundo",
+   "url": "https://www.bbc.com/mundo/articles/cqly3jpmvvl9o?at_medium=RSS&at_campaign=rss",
+   "fecha": "2026-11-12T18:33:02Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/ded3/live/e35d1ff0-dbe9-11f1-a92c-571514c0deea.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Hace 30 años, el joven sacerdote Robert Prevost Martínez aceptó ser el padrino de bautismo de una niña en Chulucanas, en la región de Piura. Ahora ella espera con ansiedad su visita a Perú como el papa León XIV.",
+   "puntos": [
+    "Hace 30 años, el joven sacerdote Robert Prevost Martínez aceptó ser el padrino de bautismo de una niña en Chulucanas, en la región de Piura.",
+    "Ahora ella espera con ansiedad su visita a Perú como el papa León XIV.",
+    "Atiende a BBC Mundo en la previa del regreso del sucesor de San Pedro a Chiclayo, en el norte de Perú, ciudad de donde fue obispo entre 2015 y 2023 y zona donde desarrolló gran parte de su andar pastoral."
+   ],
+   "datos": [
+    {
+     "v": "30 años",
+     "t": "cantidad",
+     "c": "Hace 30 años, el joven sacerdote Robert Prevost Martínez aceptó ser el padrino de bautismo de una niña en Chulucanas, en la región de Piura."
+    }
+   ]
+  },
+  {
+   "id": "612f826537",
+   "sector": "mundo",
+   "titulo": "Informe desde Lima: el papa León XIV desata ovación al citar famosa canción peruana, ¿qué significa?",
+   "resumen": "Durante su visita apostólica a Lima el 12 de noviembre de 2026, el papa León XIV emocionó a los asistentes al citarestrofas de la canción \"Mi Perú\". El pontífice, nacionalizado peruano, recordó este tema emblemático para destacar la riqueza cultural del país y hacer un llamado…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/video/20261112-informe-desde-lima-el-papa-le%C3%B3n-xiv-desata-ovaci%C3%B3n-al-citar-famosa-canci%C3%B3n-peruana-qu%C3%A9-significa",
+   "fecha": "2026-11-12T18:32:34Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/431c0020-dec7-11f1-acc0-5f54d898a954/w:1024/p:16x9/capture-df7887a6.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Durante su visita apostólica a Lima el 12 de noviembre de 2026, el papa León XIV emocionó a los asistentes al citarestrofas de la canción \"Mi Perú\". El pontífice, nacionalizado peruano, recordó este…",
+   "puntos": [
+    "Durante su visita apostólica a Lima el 12 de noviembre de 2026, el papa León XIV emocionó a los asistentes al citarestrofas de la canción \"Mi Perú\".",
+    "El pontífice, nacionalizado peruano, recordó este…"
+   ],
+   "datos": [
+    {
+     "v": "12 de noviembre de 2026",
+     "t": "fecha",
+     "c": "Durante su visita apostólica a Lima el 12 de noviembre de 2026, el papa León XIV emocionó a los asistentes al…"
+    }
+   ]
+  },
+  {
+   "id": "1ce25cea99",
+   "sector": "mundo",
+   "titulo": "Jensen Huang renuncia a Nvidia y sacude los mercados en plena carrera de la IA",
+   "resumen": "El director ejecutivo de Nvidia, Jensen Huang, presentó su renuncia a la compañía tecnológica después de que trascendieran deliberaciones sobre su posible salida. La incertidumbre provocó que las acciones de la fabricante de chips llegaran a desplomarse más de un 10% en la…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/programas/econom%C3%ADa/20261112-jensen-huang-renuncia-a-nvidia-y-sacude-los-mercados-en-plena-carrera-de-la-ia",
+   "fecha": "2026-11-12T18:32:19Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/a13d6d38-debd-11f1-a5c4-3f371022a770/w:1024/p:16x9/AP26316465276155.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "El director ejecutivo de Nvidia, Jensen Huang, presentó su renuncia a la compañía tecnológica después de que trascendieran deliberaciones sobre su posible salida. La incertidumbre provocó que las acciones…",
+   "puntos": [
+    "El director ejecutivo de Nvidia, Jensen Huang, presentó su renuncia a la compañía tecnológica después de que trascendieran deliberaciones sobre su posible salida.",
+    "La incertidumbre provocó que las acciones…"
+   ]
+  },
+  {
+   "id": "9de4bcbb7a",
+   "sector": "politica",
+   "titulo": "Retiro AFP de S/22.000: Pescadores piden debate y aprobación pronta en carta al Congreso",
+   "resumen": "El retiro AFP ya recibió más opiniones a favor en el Congreso. Si bien el Congreso no muestra formalmente la posición del MEF, este ya se pronunció en contra",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/12/retiro-afp-de-s22000-pescadores-piden-debate-y-aprobacion-pronta-en-carta-al-congreso/",
+   "fecha": "2026-11-12T18:31:27Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/OUVPVTV7OBFNPNFYNQNKYCQQSY.jpg?auth=0679777801ef1b070d0639092ba0382a9ece122cc3f94440dae4e1cd64b7cdc7&smart=true&width=1920&height=1080",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El retiro AFP ya recibió más opiniones a favor en el Congreso. Si bien el Congreso no muestra formalmente la posición del MEF, este ya se pronunció en contra",
+   "puntos": [
+    "El retiro AFP ya recibió más opiniones a favor en el Congreso.",
+    "Si bien el Congreso no muestra formalmente la posición del MEF, este ya se pronunció en contra",
+    "Aún el retiro de AFP no se agenda para sustentarse en la Comisión de Economía de la Cámara de Diputados del Congreso, pero ya recibe sus primeras opiniones. - Crédito Congreso 12 Nov, 2026 01:31 p. m."
+   ],
+   "datos": [
+    {
+     "v": "S/22.000",
+     "t": "monto",
+     "c": "Retiro AFP de S/22.000: Pescadores piden debate y aprobación pronta en carta al Congreso."
+    }
+   ]
+  },
+  {
+   "id": "421179497f",
+   "sector": "coyuntura",
+   "titulo": "Papa León XIV a las familias heridas por el abandono, las adicciones y la violencia doméstica: “Dios los ama, no se rindan”",
+   "resumen": "El líder de la Iglesia Católica recordó que Dios ama especialmente a las familias que atraviesan momentos críticos y las exhortó a seguir el ejemplo de Jesús, María y José para afrontar las adversidades.",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/12/papa-leon-xiv-a-las-familias-heridas-por-el-abandono-las-adicciones-y-la-violencia-domestica-dios-los-ama-no-se-rindan/",
+   "fecha": "2026-11-12T18:29:08Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/GMU7D5XDWNEGNLFCNM5IQ3SP7I.jpg?auth=e963c41361311ce4a9088488c5adce9c19deae57acf6dd7e7b8363a6ea192e89&smart=true&width=1920&height=1080",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "El líder de la Iglesia Católica recordó que Dios ama especialmente a las familias que atraviesan momentos críticos y las exhortó a seguir el ejemplo de Jesús, María y José para afrontar las adversidades. El Papa León XIV se dirige a los fieles en Perú, compartiendo reflexiones sobre la familia, el trabajo, la condición de la mujer y la necesidad de unidad para afrontar los desafíos actuales.",
+   "puntos": [
+    "El líder de la Iglesia Católica recordó que Dios ama especialmente a las familias que atraviesan momentos críticos y las exhortó a seguir el ejemplo de Jesús, María y José para afrontar las adversidades.",
+    "El Papa León XIV se dirige a los fieles en Perú, compartiendo reflexiones sobre la familia, el trabajo, la condición de la mujer y la necesidad de unidad para afrontar los desafíos actuales.",
+    "EST Guardar El papa León XIV dedicó un mensaje a las familias que atraviesan situaciones difíciles durante su encuentro con los fieles en la Plaza de Armas de Lima , este jueves 12 de noviembre, tras celebrar la Hora Media en la Catedral."
+   ],
+   "datos": [
+    {
+     "v": "12 de noviembre",
+     "t": "fecha",
+     "c": "…con los fieles en la Plaza de Armas de Lima , este jueves 12 de noviembre, tras celebrar la Hora Media en la Catedral."
+    }
+   ]
+  },
+  {
+   "id": "bd8b7eec72",
+   "sector": "coyuntura",
+   "titulo": "Christian Cueva sorprende al presumir relojes de lujo que superarían los 640 mil soles",
+   "resumen": "Las historias del jugador incluyeron piezas con diseño cercano a la colección Santos de Cartier y un collage donde aparece abrazado con Pamela Franco",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/10/christian-cueva-sorprende-al-presumir-relojes-de-lujo-que-superarian-los-640-mil-soles/",
+   "fecha": "2026-11-12T18:28:37Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/SAZDEXPZEBCBDFEVTV473VEDWM.jpg?auth=e10518ea07af380b048bc2e88980bfc9038ff2d99caa3d7eabed8e218e873490&smart=true&width=1920&height=1080",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "Las historias del jugador incluyeron piezas con diseño cercano a la colección Santos de Cartier y un collage donde aparece abrazado con Pamela Franco Christian Cueva compartió una imagen de dos relojes con diseño similar a la colección Santos de Cartier, aunque no confirmó el modelo ni la autenticidad de las piezas.",
+   "puntos": [
+    "Las historias del jugador incluyeron piezas con diseño cercano a la colección Santos de Cartier y un collage donde aparece abrazado con Pamela Franco",
+    "Christian Cueva compartió una imagen de dos relojes con diseño similar a la colección Santos de Cartier, aunque no confirmó el modelo ni la autenticidad de las piezas.",
+    "EST Guardar Christian Cueva volvió a generar comentarios en redes sociales tras exhibir dos relojes con características similares a la colección Santos de Cartier , valorizados en conjunto en más de S/640 mil según precios de referencia."
+   ],
+   "datos": [
+    {
+     "v": "S/640 mil",
+     "t": "monto",
+     "c": "…Santos de Cartier , valorizados en conjunto en más de S/640 mil según precios de referencia.."
+    }
+   ]
+  },
+  {
+   "id": "cd1c8be6cb",
+   "sector": "mundo",
+   "titulo": "Trump retira a Vance de las conversaciones con Irán para acabar la guerra",
+   "resumen": "“No necesitamos un acuerdo”, ha escrito el presidente estadounidense, que quiere que su número dos se centre en descubrir supuestos casos de corrupción en los Estados bajo control demócrata",
+   "fuente": "El País América",
+   "url": "https://elpais.com/internacional/2026-11-12/trump-retira-a-vance-de-las-conversaciones-con-iran-para-acabar-la-guerra.html",
+   "fecha": "2026-11-12T18:28:12Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://imagenes.elpais.com/resizer/v2/3OPNORXBMFIWLOVEW62T3GEQYQ.jpg?auth=f66fd741cf306b3c440013aedd9ade03c1b5c9f90026d6c0aee20aef962b57c0",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "“No necesitamos un acuerdo”, ha escrito el presidente estadounidense, que quiere que su número dos se centre en descubrir supuestos casos de corrupción en los Estados bajo control demócrata",
+   "puntos": [
+    "“No necesitamos un acuerdo”, ha escrito el presidente estadounidense, que quiere que su número dos se centre en descubrir supuestos casos de corrupción en los Estados bajo control demócrata"
+   ]
+  },
+  {
+   "id": "9372a2eb52",
+   "sector": "mundo",
+   "titulo": "Preocupa a las comunidades el regreso del cólera en la República Democrática del Congo",
+   "resumen": "Se han notificado tres nuevos casos de cólera en las afueras de la capital, Kinsasa. En medio de la amenaza de un nuevo brote, los residentes están preocupados por cómo protegerse mejor a sí mismos y a sus comunidades.",
+   "fuente": "DW Español",
+   "url": "https://www.dw.com/es/preocupa-a-las-comunidades-el-regreso-del-cólera-en-la-república-democrática-del-congo/a-79934803?maca=spa-rss-sp-all-1122-xml-mrss",
+   "fecha": "2026-11-12T18:28:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "Se han notificado tres nuevos casos de cólera en las afueras de la capital, Kinsasa. En medio de la amenaza de un nuevo brote, los residentes están preocupados por cómo protegerse mejor a sí mismos y a sus comunidades.",
+   "puntos": [
+    "Se han notificado tres nuevos casos de cólera en las afueras de la capital, Kinsasa.",
+    "En medio de la amenaza de un nuevo brote, los residentes están preocupados por cómo protegerse mejor a sí mismos y a sus comunidades."
+   ]
+  },
+  {
+   "id": "49e039a834",
+   "sector": "economia",
+   "titulo": "Deyvis Orosco luce su renovada imagen en los Latin Grammy 2026 y revela sus planes para 2027",
+   "resumen": "Deyvis Orosco llegó a Las Vegas, Estados Unidos, para acercarse a una de las celebraciones más importantes de la música latina.",
+   "fuente": "Caretas",
+   "url": "https://caretas.pe/entretenimiento/deyvis-orosco-latin-grammy-2026-nueva-imagen/",
+   "fecha": "2026-11-12T18:26:09Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://caretas.pe/wp-content/uploads/2026/11/Gemini_Generated_Image_ba9qoqba9qoqba9q-1280x720.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "contexto_internacional_resumen"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Deyvis Orosco llegó a Las Vegas, Estados Unidos, para acercarse a una de las celebraciones más importantes de la música latina.",
+   "puntos": [
+    "Deyvis Orosco llegó a Las Vegas, Estados Unidos, para acercarse a una de las celebraciones más importantes de la música latina."
+   ]
+  },
+  {
+   "id": "632fda49ac",
+   "sector": "politica",
+   "titulo": "Confiep: preocupa respuesta frente a El Niño porque nuevos alcaldes llegarán tarde a enfrentarlo",
+   "resumen": "Con el fenómeno El Niño (FEN) ya atacando diversas zonas del país, Jorge Zapata, presidente de la Confiep, solicitó al Ejecutivo centralizar aún más la respuesta del Estado. El sector privado desconfía de que los nuevos alcaldes puedan ponerse al día rápidamente para atender la…",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/economia/confiep-sobre-el-nino-preocupa-respuesta-frente-al-fenomeno-porque-nuevos-alcaldes-llegaran-tarde-a-enfrentarlo-noticia/",
+   "fecha": "2026-11-12T18:26:00Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/TJ7HTWMYIBGXPHQNLP7Y74K4NU.png?auth=e8ef291bcce31835ae8adb7af48bb9bdb318691b6d6c9b93695d997322cdc7ed&smart=true&width=1200&height=800",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "Con el fenómeno El Niño (FEN) ya atacando diversas zonas del país, Jorge Zapata, presidente de la Confiep, solicitó al Ejecutivo centralizar aún más la respuesta del Estado. El sector privado desconfía de que los nuevos alcaldes puedan ponerse al día rápidamente para atender la emergencia.",
+   "puntos": [
+    "Con el fenómeno El Niño (FEN) ya atacando diversas zonas del país, Jorge Zapata, presidente de la Confiep, solicitó al Ejecutivo centralizar aún más la respuesta del Estado.",
+    "El sector privado desconfía de que los nuevos alcaldes puedan ponerse al día rápidamente para atender la emergencia.",
+    "Para la Confederación Nacional de Instituciones Empresariales Privadas (Confiep) el Gobierno de Keiko Fujimori ha dado las señales correctas para enfrentar los problemas más urgentes del Perú, hasta ahora."
+   ],
+   "datos": [
+    {
+     "v": "100 días",
+     "t": "cantidad",
+     "c": "…atender la emergencia.. -La presidenta Fujimori ya cumplió 100 días en el cargo, ¿qué balance hace la Confiep de su desempeño…"
+    }
+   ]
+  },
+  {
+   "id": "510a0c04ff",
+   "sector": "politica",
+   "titulo": "SJL: JEE desacata al JNE y no proclama a Margiori Mejía como alcaldesa ante impedimento de Jesús Maldonado",
+   "resumen": "Jurado Electoral Especial de Lima Este 2 decide no pronunciarse sobre la reelección encubierta del actual burgomaestre, pese a que el máximo tribunal electoral ya fijó el criterio a aplicar en estos casos",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/12/sjl-jee-desacata-al-jne-y-no-proclama-a-margiori-mejia-como-alcaldesa-ante-impedimento-de-jesus-maldonado/",
+   "fecha": "2026-11-12T18:25:45Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/OCLP5VT7IVDYZM2DDVQ7JPVYII.jpg?auth=eef2d446c4d01fb81434eb3f64947aa5a9b96f665410603038e7b04e2d6de88a&smart=true&width=1920&height=1080",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Jurado Electoral Especial de Lima Este 2 decide no pronunciarse sobre la reelección encubierta del actual burgomaestre, pese a que el máximo tribunal electoral ya fijó el criterio a aplicar en estos casos Jesús Maldonado y Margiori Mejía Alva figuran junto a la sede de la Municipalidad de San Juan de Lurigancho frente a un eventual relevo en el cargo. (Infobae Perú) 12 Nov, 2026 01:25 p. m.",
+   "puntos": [
+    "Jurado Electoral Especial de Lima Este 2 decide no pronunciarse sobre la reelección encubierta del actual burgomaestre, pese a que el máximo tribunal electoral ya fijó el criterio a aplicar en estos casos",
+    "Jesús Maldonado y Margiori Mejía Alva figuran junto a la sede de la Municipalidad de San Juan de Lurigancho frente a un eventual relevo en el cargo. (Infobae Perú) 12 Nov, 2026 01:25 p. m.",
+    "EST Guardar El Jurado Electoral Especial de Lima Este 2 proclamó a Somos Perú como la organización política ganadora de las elecciones municipales en San Juan de Lurigancho , pero dejó vacante el cargo de alcalde distrital."
+   ]
+  },
+  {
+   "id": "fe379a6e00",
+   "sector": "coyuntura",
+   "titulo": "¿Mejor me hago informal? Cerrar una pequeña empresa en Perú toma hasta 5.367 horas: dos años y medio de trabajo",
+   "resumen": "Los permisos municipales concentran casi la mitad de la carga para abrir un negocio, mientras la liquidación explica la mayor parte de trámites para cerrarlo, según la Universidad de Florida",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/12/mejor-me-hago-informal-cerrar-una-pequena-empresa-en-peru-toma-hasta-5367-horas-dos-anos-y-medio-de-trabajo/",
+   "fecha": "2026-11-12T18:23:42Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/P5OWH6MKQ5EYZON4MQ2TKWPHEY.png?auth=b18fac7ea3d8b147d953638266e48d6a2ca58e2184ea9e522c6995fec904c8e8&smart=true&width=2752&height=1536",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Los permisos municipales concentran casi la mitad de la carga para abrir un negocio, mientras la liquidación explica la mayor parte de trámites para cerrarlo, según la Universidad de Florida Agregar Infobae en ¿Mejor me hago informal?",
+   "puntos": [
+    "Los permisos municipales concentran casi la mitad de la carga para abrir un negocio, mientras la liquidación explica la mayor parte de trámites para cerrarlo, según la Universidad de Florida",
+    "Agregar Infobae en ¿Mejor me hago informal?",
+    "La Asociación de Contribuyentes del Perú propuso reemplazar las autorizaciones previas por mecanismos de fiscalización posterior.(Imagen Ilustrativa Infobae) 12 Nov, 2026 01:23 p. m."
+   ],
+   "datos": [
+    {
+     "v": "22 días",
+     "t": "cantidad",
+     "c": "Bajo una jornada de ocho horas diarias y 22 días laborables al mes, las 3.853 horas equivalen a cerca de 22…"
+    }
+   ]
+  },
+  {
+   "id": "ae74bdf3e9",
+   "sector": "salud",
+   "titulo": "Un Papa muy nuestro…",
+   "resumen": "El pontífice destacó la hospitalidad, la solidaridad y la labor de los peruanos, y afirmó que amar a un pueblo implica procurar que las personas puedan trabajar, cuidar a sus hijos y regresar con serenidad",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/12/un-papa-muy-nuestro/",
+   "fecha": "2026-11-12T18:23:22Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/T2TPOB56HJFBBAYBJ622PQHQIA.jpg?auth=d626545e462801d14380ba1301f71812d1204e46ca5db7beeea58d5f6536a8e7&smart=true&width=1920&height=1080",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El pontífice destacó la hospitalidad, la solidaridad y la labor de los peruanos, y afirmó que amar a un pueblo implica procurar que las personas puedan trabajar, cuidar a sus hijos y regresar con serenidad EST Guardar El testimonio de Robert Prevost en Perú es signo de una Iglesia viva y misionera .",
+   "puntos": [
+    "El pontífice destacó la hospitalidad, la solidaridad y la labor de los peruanos, y afirmó que amar a un pueblo implica procurar que las personas puedan trabajar, cuidar a sus hijos y regresar con serenidad",
+    "EST Guardar El testimonio de Robert Prevost en Perú es signo de una Iglesia viva y misionera .",
+    "Si bien es verdad que la primera evangelización —profunda y muy ardua— se la debemos a España, no son pocos los estadounidenses, italianos o polacos que han llegado a nuestra tierra y la han conocido y amado como nuestro Papa."
+   ]
+  },
+  {
+   "id": "8c7c99bc2e",
+   "sector": "mundo",
+   "titulo": "Dos niños, entre las víctimas del derrumbe de un edificio en Brooklyn, donde las fuertes lluvias dificultan el rescate",
+   "resumen": "La comunidad impactada exige respuestas por la muerte de ocho personas",
+   "fuente": "El País América",
+   "url": "https://elpais.com/us/2026-11-12/dos-ninos-entre-las-victimas-del-derrumbe-de-un-edificio-en-brooklyn-mientras-la-lluvia-dificulta-el-rescate.html",
+   "fecha": "2026-11-12T18:23:14Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://imagenes.elpais.com/resizer/v2/EYP4UOIPSVMR7JNK3SLBWUGHII.jpg?auth=aba45eb1045523f10e7ed939c31bef28e90b15e7cfcccb39799a88b37b252ee0",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "seccion_internacional_fuente"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "La comunidad impactada exige respuestas por la muerte de ocho personas",
+   "puntos": [
+    "La comunidad impactada exige respuestas por la muerte de ocho personas"
+   ]
+  },
+  {
+   "id": "5a4dfebe7c",
+   "sector": "mundo",
+   "titulo": "En Video: el momento del rescate con vida de un adolescente en Australia que estuvo 6 días perdido en un bosque",
+   "resumen": "La madre del joven de 17 años bromeó diciendo que está \"castigado de por vida\" y que \"nunca más saldrá de casa\".",
+   "fuente": "BBC Mundo",
+   "url": "https://www.bbc.com/mundo/articles/c60md00vxkj2o?at_medium=RSS&at_campaign=rss",
+   "fecha": "2026-11-12T18:21:28Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/c8eb/live/75ecf8a0-deb4-11f1-8fb5-a771a656a227.png",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "La madre del joven de 17 años bromeó diciendo que está \"castigado de por vida\" y que \"nunca más saldrá de casa\". William, cuyo apellido no ha sido revelado, desapareció el viernes pasado mientras estaba acampando con un amigo en una zona boscosa unos 180 kilómetros al este de Melbourne, Australia.",
+   "puntos": [
+    "La madre del joven de 17 años bromeó diciendo que está \"castigado de por vida\" y que \"nunca más saldrá de casa\".",
+    "William, cuyo apellido no ha sido revelado, desapareció el viernes pasado mientras estaba acampando con un amigo en una zona boscosa unos 180 kilómetros al este de Melbourne, Australia.",
+    "Las temperaturas extremadamente bajas registradas durante la noche habían generado preocupación entre las autoridades por el bienestar del muchacho, de 17 años."
+   ],
+   "datos": [
+    {
+     "v": "6 días",
+     "t": "cantidad",
+     "c": "En Video: el momento del rescate con vida de un adolescente en Australia que estuvo 6 días perdido en un bosque."
+    },
+    {
+     "v": "17 años",
+     "t": "cantidad",
+     "c": "La madre del joven de 17 años bromeó diciendo que está \"castigado de por vida\" y que \"nunca más saldrá de casa\".."
+    },
+    {
+     "v": "180 kilómetros",
+     "t": "cantidad",
+     "c": "…estaba acampando con un amigo en una zona boscosa unos 180 kilómetros al este de Melbourne, Australia.."
+    }
+   ]
+  },
+  {
+   "id": "d8e1709140",
+   "sector": "mundo",
+   "titulo": "Al menos un muerto y cuatro heridos tras un tiroteo en un concurrido barrio de Washington",
+   "resumen": "Al menos una persona murió después de que cinco personas fueran baleadas el jueves 12 de noviembre en un vecindario de Washington, D. C., a 1,6 kilómetros de la Casa Blanca, informó la policía. Un gran número de agentes acudió a un edificio de apartamentos cercano donde un…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/ee-uu-y-canad%C3%A1/20261112-al-menos-un-muerto-y-cuatro-heridos-tras-un-tiroteo-en-un-concurrido-barrio-de-washington",
+   "fecha": "2026-11-12T18:14:21Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/e0e7178a-deaa-11f1-a92b-5f54d898a954/w:1024/p:16x9/AP26316527860423.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Al menos una persona murió después de que cinco personas fueran baleadas el jueves 12 de noviembre en un vecindario de Washington, D. C., a 1,6 kilómetros de la Casa Blanca, informó la policía.",
+   "puntos": [
+    "Al menos una persona murió después de que cinco personas fueran baleadas el jueves 12 de noviembre en un vecindario de Washington, D.",
+    "C., a 1,6 kilómetros de la Casa Blanca, informó la policía."
+   ],
+   "datos": [
+    {
+     "v": "1,6 kilómetros",
+     "t": "cantidad",
+     "c": "C., a 1,6 kilómetros de la Casa Blanca, informó la policía."
+    },
+    {
+     "v": "12 de noviembre",
+     "t": "fecha",
+     "c": "Al menos una persona murió después de que cinco personas fueran baleadas el jueves 12 de noviembre en un vecindario de Washington, D."
+    }
+   ]
+  },
+  {
+   "id": "0dfc10b74c",
+   "sector": "mundo",
+   "titulo": "Cómo una improbable película biográfica de Charles de Gaulle conquistó Francia",
+   "resumen": "Llevar al general francés a la pantalla grande ha sido históricamente una empresa complicada. Antonin Baudry dice que su epopeya en dos partes tuvo éxito porque “logró resquebrajar al personaje”.",
+   "fuente": "The New Yorker",
+   "url": "https://www.newyorker.com/culture/the-current-cinema/how-an-unlikely-charles-de-gaulle-bio-pic-conquered-france",
+   "fecha": "2026-11-12T18:12:19Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://media.newyorker.com/photos/6af219c42ae5437a4afabf7a/master/pass/Collins-Charles-de-Gaulle.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "titulo_original": "How an Unlikely Charles de Gaulle Bio-Pic Conquered France",
+   "traducido": true,
+   "sintesis": "Lauren Collins writes about a new Charles de Gaulle Bio-Pic, and discusses its unexpected popularity in France.",
+   "puntos": [
+    "Lauren Collins writes about a new Charles de Gaulle Bio-Pic, and discusses its unexpected popularity in France."
+   ]
+  },
+  {
+   "id": "d65027f0ca",
+   "sector": "economia",
+   "titulo": "Vigilia del papa León XIV en Lima: fecha, horario, lugar y cómo participar",
+   "resumen": "Guía de la vigilia juvenil con el papa León XIV en Lima. Descubra la fecha, el horario, la ubicación exacta y los requisitos para participar en el evento.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/mix/respuestas/vigilia-del-papa-leon-xiv-en-lima-fecha-horario-lugar-y-como-participar-nnda-nnrt-noticia/",
+   "fecha": "2026-11-12T18:11:42Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/5WVL4W57ERFJRMKIZ5IMA6YMBI.png?auth=264a09bfd34c0845a6efff5545d2c53dabc3ab01d481c47b250867807d13cb8e&smart=true&width=2320&height=1320",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Guía de la vigilia juvenil con el papa León XIV en Lima. Descubra la fecha, el horario, la ubicación exacta y los requisitos para participar en el evento.",
+   "puntos": [
+    "Guía de la vigilia juvenil con el papa León XIV en Lima.",
+    "Descubra la fecha, el horario, la ubicación exacta y los requisitos para participar en el evento.",
+    "Para los miles de fieles en distintas regiones del Perú, así como feligreses provenientes del extranjero, Lima prepara un encuentro de oración con el papa León XIV ."
+   ],
+   "datos": [
+    {
+     "v": "35 años",
+     "t": "cantidad",
+     "c": "La convocatoria reúne a personas de 16 a 35 años, sin exigir pertenecer a una parroquia o comunidad religiosa del mencionado grupo etario."
+    },
+    {
+     "v": "12 de noviembre de 2026",
+     "t": "fecha",
+     "c": "La vigilia juvenil está anunciada para el jueves 12 de noviembre de 2026 en el Estadio Nacional, que cuenta con una capacidad para…"
+    },
+    {
+     "v": "9 de noviembre",
+     "t": "fecha",
+     "c": "El registro fue anunciado para el lunes 9 de noviembre desde el mediodía."
+    }
+   ]
+  },
+  {
+   "id": "03df24ed4b",
+   "sector": "economia",
+   "titulo": "Misa del papa León XIV en Pucallpa: fecha, horario, dónde es y cómo acudir",
+   "resumen": "El Papa León XIV estará en Pucallpa el domingo 15 de noviembre. A continuación, conoce a qué hora será la misa, en dónde estará ubicada, los accesos y cómo puedes asistir.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/mix/respuestas/misa-del-papa-leon-xiv-en-pucallpa-horario-ubicacion-accesos-y-como-participar-nnda-nnrt-noticia/",
+   "fecha": "2026-11-12T18:11:03Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/XWN3X7EKIVFGDL2DVJONCF7GL4.jpg?auth=4e633bf5412ab83d2a13223ee65d85ba92d3862e0e3169e45cfd8c0289607ab8&smart=true&width=2300&height=1320",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El Papa León XIV estará en Pucallpa el domingo 15 de noviembre. A continuación, conoce a qué hora será la misa, en dónde estará ubicada, los accesos y cómo puedes asistir.",
+   "puntos": [
+    "El Papa León XIV estará en Pucallpa el domingo 15 de noviembre.",
+    "A continuación, conoce a qué hora será la misa, en dónde estará ubicada, los accesos y cómo puedes asistir.",
+    "El Papa León XIV estará en Perú durante algunos días y, como suele suceder cuando el Santo Pontífice visita nuestro país, hará un recorrido por la selva."
+   ],
+   "datos": [
+    {
+     "v": "15 de noviembre",
+     "t": "fecha",
+     "c": "El Papa León XIV estará en Pucallpa el domingo 15 de noviembre."
+    }
+   ]
+  },
+  {
+   "id": "4ff0dd45b8",
+   "sector": "economia",
+   "titulo": "Misa del papa León XIV en Cajamarca: fecha, horario, dónde es y cómo acudir",
+   "resumen": "Conoce cuándo será la misa del papa León XIV en Cajamarca, a qué hora comenzará, dónde se realizará y cómo participar en este encuentro.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/mix/respuestas/misa-del-papa-leon-xiv-en-cajamarca-horario-ubicacion-y-como-participar-nnda-nnrt-noticia/",
+   "fecha": "2026-11-12T18:10:41Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/OB32ZHI4BZFMXAXUGKATZE2N24.jpg?auth=a5d219fe735d20a271be4104401897661e0296a404188f383840b4c810f5fc40&smart=true&width=2400&height=1620",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Conoce cuándo será la misa del papa León XIV en Cajamarca, a qué hora comenzará, dónde se realizará y cómo participar en este encuentro. La histórica ciudad de Cajamarca se prepara para vivir uno de los eventos espirituales más trascendentales de su historia: la visita del papa León XIV .",
+   "puntos": [
+    "Conoce cuándo será la misa del papa León XIV en Cajamarca, a qué hora comenzará, dónde se realizará y cómo participar en este encuentro.",
+    "La histórica ciudad de Cajamarca se prepara para vivir uno de los eventos espirituales más trascendentales de su historia: la visita del papa León XIV .",
+    "Este gran encuentro de fe y esperanza se llevará a cabo el sábado 14 de noviembre."
+   ],
+   "datos": [
+    {
+     "v": "14 de noviembre",
+     "t": "fecha",
+     "c": "Este gran encuentro de fe y esperanza se llevará a cabo el sábado 14 de noviembre."
+    }
+   ]
+  },
+  {
+   "id": "192c6bd324",
+   "sector": "economia",
+   "titulo": "Misa del papa León XIV en Pimentel: fecha, horario, dónde es y cómo acudir",
+   "resumen": "Revisa esta nota para que recibas la más completa información posible sobre la misa del papa León XIV en Pimentel. Aprovecha la oportunidad.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/mix/respuestas/misa-del-papa-leon-xiv-en-pimentel-horario-ubicacion-accesos-y-como-participar-nnda-nnrt-noticia/",
+   "fecha": "2026-11-12T18:10:19Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/N5QSKO4NIBBPDJOSS6MSJWKVSU.jpg?auth=3c0a9ee4c72098cc9fe329733c9613f474c1026113b075da979821c6382cf08a&smart=true&width=2400&height=1620",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "Revisa esta nota para que recibas la más completa información posible sobre la misa del papa León XIV en Pimentel. Este viernes 13 de noviembre, el papa León XIV (Robert Prevost) celebrará una misa multitudinaria en Pimentel, provincia de Chiclayo, en la región Lambayeque, como parte de su visita apostólica al Perú .",
+   "puntos": [
+    "Revisa esta nota para que recibas la más completa información posible sobre la misa del papa León XIV en Pimentel.",
+    "Este viernes 13 de noviembre, el papa León XIV (Robert Prevost) celebrará una misa multitudinaria en Pimentel, provincia de Chiclayo, en la región Lambayeque, como parte de su visita apostólica al Perú .",
+    "Ante la expectativa de miles de fieles que esperan participar en este encuentro religioso, descubre en esta nota cuál será el horario de la ceremonia, dónde estará ubicado el recinto, qué accesos estarán habilitados y cómo participar en la celebración."
+   ],
+   "datos": [
+    {
+     "v": "81 hectáreas",
+     "t": "cantidad",
+     "c": "El recinto comprende aproximadamente 81 hectáreas y ha sido acondicionado para recibir a una gran cantidad de peregrinos."
+    },
+    {
+     "v": "13 de noviembre",
+     "t": "fecha",
+     "c": "Este viernes 13 de noviembre, el papa León XIV (Robert Prevost) celebrará una misa…"
+    }
+   ]
+  },
+  {
+   "id": "82f2ce8089",
+   "sector": "economia",
+   "titulo": "Misas del papa León XIV en Perú: fechas, horarios y lugares de las celebraciones",
+   "resumen": "Conozca el calendario de misas del papa León XIV en Perú. Revise las fechas, horarios y ubicaciones oficiales de las celebraciones litúrgicas en el país.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/mix/respuestas/misas-del-papa-leon-xiv-en-peru-fechas-horarios-y-lugares-de-las-celebraciones-nnda-nnrt-noticia/",
+   "fecha": "2026-11-12T18:10:01Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/C3B5Y5VV2JFN7NS4A5445IRFHQ.png?auth=9e1e341a8f37908c74dee9ef863f681f0d76aef4e7158027f10da5b068deb0fc&smart=true&width=2320&height=1320",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Conozca el calendario de misas del papa León XIV en Perú. Revise las fechas, horarios y ubicaciones oficiales de las celebraciones litúrgicas en el país.",
+   "puntos": [
+    "Conozca el calendario de misas del papa León XIV en Perú.",
+    "Revise las fechas, horarios y ubicaciones oficiales de las celebraciones litúrgicas en el país.",
+    "A continuación, te detallamos las fechas, horarios y los lugares de las celebraciones que encabezará el santo padre en el territorio peruano."
+   ],
+   "datos": [
+    {
+     "v": "13 de noviembre",
+     "t": "fecha",
+     "c": "El viernes 13 de noviembre, la celebración está programada en las Pampas de Pimentel, en Chiclayo, a las 10:30 a. m. (hora peruana)."
+    },
+    {
+     "v": "14 de noviembre",
+     "t": "fecha",
+     "c": "El sábado 14 de noviembre, el Sumo Pontífice presidirá una misa en la explanada de Santa Cruz de Succhabamba, a las 11:00 a. m."
+    },
+    {
+     "v": "15 de noviembre",
+     "t": "fecha",
+     "c": "El domingo 15 de noviembre, la homilía tendrá lugar en la Villa Deportiva Regional de Pucallpa, a las 4:45 p. m."
+    },
+    {
+     "v": "16 de noviembre",
+     "t": "fecha",
+     "c": "El lunes 16 de noviembre, la Base Aérea Las Palmas, en Surco, Lima, será la sede de una misa multitudinaria prevista para las 10:30 a. m.."
+    }
+   ]
+  },
+  {
+   "id": "b3be01ed1e",
+   "sector": "economia",
+   "titulo": "Mapa de la visita del papa León XIV al Perú: ciudades, fechas y lugares del recorrido",
+   "resumen": "Consulte el mapa oficial de la visita del papa León XIV al Perú. Descubra las ciudades, fechas confirmadas y los lugares de su recorrido apostólico por el país.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/mix/respuestas/mapa-de-la-visita-del-papa-leon-xiv-al-peru-ciudades-fechas-y-lugares-del-recorrido-nnda-nnrt-noticia/",
+   "fecha": "2026-11-12T18:09:40Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/XG64CLTI2VCR3MTXD3JODOVDRQ.png?auth=288963b1f5a4340d4b8354d660ba90e7eb683245478cd53239d956d81da548f7&smart=true&width=2320&height=1320",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Consulte el mapa oficial de la visita del papa León XIV al Perú. Descubra las ciudades, fechas confirmadas y los lugares de su recorrido apostólico por el país.",
+   "puntos": [
+    "Consulte el mapa oficial de la visita del papa León XIV al Perú.",
+    "Descubra las ciudades, fechas confirmadas y los lugares de su recorrido apostólico por el país.",
+    "El Vaticano, junto a PROMPERÚ, compartió el itinerario oficial del Sumo Pontífice en territorio peruano que contempla actividades en Lima (incluida su llegada y despedida en Callao), Chiclayo, Cajamarca, Cusco y Pucallpa, antes de su retorno a Roma."
+   ],
+   "datos": [
+    {
+     "v": "16 de noviembre de 2026",
+     "t": "fecha",
+     "c": "…costa, los Andes y la Amazonía del miércoles 11 al lunes 16 de noviembre de 2026."
+    },
+    {
+     "v": "11 de noviembre",
+     "t": "fecha",
+     "c": "El recorrido comienza el miércoles 11 de noviembre con la llegada a la Base Aérea del Callao y actividades en Lima."
+    },
+    {
+     "v": "5 de agosto de 2026",
+     "t": "fecha",
+     "c": "La Santa Sede lo anunció el 5 de agosto de 2026."
+    }
+   ]
+  },
+  {
+   "id": "7c48b7b952",
+   "sector": "coyuntura",
+   "titulo": "Amistoso internacional: Argentina y Uruguay se encuentran en un amistoso",
+   "resumen": "Todo lo que tienes que saber en la previa de Argentina vs Uruguay. El duelo, a disputarse en la Bombonera mañana, comenzará a las 18:00 horas.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/futbol/ligas-internacionales/amistoso-internacional-argentina-y-uruguay-se-encuentran-en-un-amistoso-noticia-1717456",
+   "fecha": "2026-11-12T18:09:38Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/12/1928413.jpg?imgdimension=look",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Todo lo que tienes que saber en la previa de Argentina vs Uruguay. El duelo, a disputarse en la Bombonera mañana, comenzará a las 18:00 horas.",
+   "puntos": [
+    "Todo lo que tienes que saber en la previa de Argentina vs Uruguay.",
+    "El duelo, a disputarse en la Bombonera mañana, comenzará a las 18:00 horas.",
+    "En la Bombonera, Argentina y Uruguay medirán fuerzas mañana en un cotejo de carácter amistoso."
+   ],
+   "datos": [
+    {
+     "v": "18 de noviembre",
+     "t": "fecha",
+     "c": "El último compromiso entre ambos en este campeonato fue el 18 de noviembre, en Amistosos del torneo Amistosos Internacionales 2019, y…"
+    }
+   ]
+  },
+  {
+   "id": "62c29a96c3",
+   "sector": "economia",
+   "titulo": "¿Qué ciudades visitará el Papa León XIV en Perú 2026? Fechas y horarios del recorrido",
+   "resumen": "¿Qué ciudades visitará el papa León XIV en Perú del 11 al 16 de noviembre? Conoce el recorrido oficial, las fechas y los horarios.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/mix/respuestas/que-ciudades-visitara-el-papa-leon-xiv-en-peru-2026-fechas-y-horarios-del-recorrido-nnda-nnrt-noticia/",
+   "fecha": "2026-11-12T18:09:06Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/O4IQ4SQCOFBPJGAAGLONPPDZWM.jpg?auth=26e43402f2fbebe112ef2d29063022a1a22e3939383edba29a0e30d5b1a42b82&smart=true&width=2400&height=1620",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "¿Qué ciudades visitará el papa León XIV en Perú del 11 al 16 de noviembre? Conoce el recorrido oficial, las fechas y los horarios.",
+   "puntos": [
+    "¿Qué ciudades visitará el papa León XIV en Perú del 11 al 16 de noviembre?",
+    "Conoce el recorrido oficial, las fechas y los horarios.",
+    "El Callao también forma parte del itinerario, como punto de llegada, salida y conexión aérea."
+   ],
+   "datos": [
+    {
+     "v": "16 de noviembre",
+     "t": "fecha",
+     "c": "¿Qué ciudades visitará el papa León XIV en Perú del 11 al 16 de noviembre?"
+    },
+    {
+     "v": "17 de noviembre",
+     "t": "fecha",
+     "c": "La etapa peruana forma parte de su viaje apostólico a Uruguay, Argentina y Perú, que concluirá con su llegada a Roma el 17 de noviembre.."
+    },
+    {
+     "v": "13 de noviembre",
+     "t": "fecha",
+     "c": "León XIV llegará a la Base Aérea de Chiclayo a las 09:10 del viernes 13 de noviembre."
+    }
+   ]
+  },
+  {
+   "id": "dd3461e0d4",
+   "sector": "mundo",
+   "titulo": "La pesadilla tecnofeudalista de los planes de estudio K-12",
+   "resumen": "Las escuelas públicas están financiando la historia de amor del capital privado con la tecnología educativa y la inteligencia artificial. Los estudiantes están pagando el precio.",
+   "fuente": "The New Yorker",
+   "url": "https://www.newyorker.com/culture/progress-report/the-technofeudalist-nightmare-of-k-12-curricula",
+   "fecha": "2026-11-12T18:07:31Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://media.newyorker.com/photos/6af4d1faac1764752aed9f1c/master/pass/tech_in_schools.png",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "titulo_original": "The Technofeudalist Nightmare of K-12 Curricula",
+   "traducido": true,
+   "sintesis": "Public schools are financing private capital’s love affair with ed-tech and A.I. Students are paying the price, Jessica Winter writes.",
+   "puntos": [
+    "Public schools are financing private capital’s love affair with ed-tech and A.I.",
+    "Students are paying the price, Jessica Winter writes."
+   ]
+  },
+  {
+   "id": "af0b5e4c8d",
+   "sector": "coyuntura",
+   "titulo": "Grupo de entretenimiento y hoteles va por más casinos en 2027: compras en Lima y el norte",
+   "resumen": "Gladcon Group, de los tres mayores operadores de casinos del país, invirtió más de S/ 7 millones en renovar su hotel-casino en Chiclayo. Para 2027 alista compras de casinos en el norte y Lima, y apunta a crecer a doble dígito pese a El Niño.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/economia/empresas/gladcon-group-duena-de-win-win-hotel-casino-alista-compras-en-el-norte-y-lima-para-2027-noticia/",
+   "fecha": "2026-11-12T18:06:24Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/I2PIYLBDBZHYLD7GFBOHKFLNCE.webp?auth=62fe8daf6d3d81f246e465800686ae681cb26ee42cd83d7d207611c811c1e44c&smart=true&width=767&height=575",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Gladcon Group, de los tres mayores operadores de casinos del país, invirtió más de S/ 7 millones en renovar su hotel-casino en Chiclayo. Para 2027 alista compras de casinos en el norte y Lima, y apunta a crecer a doble dígito pese a El Niño.",
+   "puntos": [
+    "Gladcon Group, de los tres mayores operadores de casinos del país, invirtió más de S/ 7 millones en renovar su hotel-casino en Chiclayo.",
+    "Para 2027 alista compras de casinos en el norte y Lima, y apunta a crecer a doble dígito pese a El Niño.",
+    "Gladcon Group , el conglomerado de capitales peruanos que opera casinos presenciales , hoteles en el norte del país y la plataforma de casino online Somos Casino, prepara un 2027 de expansión apoyado en compras de otros operadores."
+   ],
+   "datos": [
+    {
+     "v": "S/ 7 millones",
+     "t": "monto",
+     "c": "Gladcon Group, de los tres mayores operadores de casinos del país, invirtió más de S/ 7 millones en renovar su hotel-casino en Chiclayo."
+    },
+    {
+     "v": "90%",
+     "t": "porcentaje",
+     "c": "El casino presencial representa el 90% de los ingresos del grupo."
+    },
+    {
+     "v": "35 años",
+     "t": "cantidad",
+     "c": "El grupo, que suma más de 35 años en el país a través de sus marcas, empezó con salas de juego."
+    }
+   ]
+  },
+  {
+   "id": "1207ae906e",
+   "sector": "economia",
+   "titulo": "Nuevo parque logístico en Lurín: LPA invertirá con socios tras vender Parque Lima Sur",
+   "resumen": "Logistic Properties of the Americas (LPA) elevó 45.1% sus ingresos en Perú en el tercer trimestre y cerró la venta de Parque Lima Sur a FIBRA Prime por US$ 145 millones. Parte de esos recursos irá a un nuevo parque logístico en Lurín, de US$ 85 millones, que desarrollará con…",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/economia/empresas/logistic-properties-tras-vender-parque-lima-sur-alista-parque-logistico-en-lurin-por-us-85-millones-noticia/",
+   "fecha": "2026-11-12T18:06:10Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/3L6MZDMQ3VFU5IKGFZROZASDLQ.jpg?auth=c50a025c2dbaf2a5791cfa1fffd5ef6fd41a55b9e6b184b5bf631202ce6af122&smart=true&width=1920&height=1162",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Logistic Properties of the Americas (LPA) elevó 45.1% sus ingresos en Perú en el tercer trimestre y cerró la venta de Parque Lima Sur a FIBRA Prime por US$ 145 millones. Parte de esos recursos irá a un nuevo parque logístico en Lurín, de US$ 85 millones, que desarrollará con inversionistas locales.",
+   "puntos": [
+    "Logistic Properties of the Americas (LPA) elevó 45.1% sus ingresos en Perú en el tercer trimestre y cerró la venta de Parque Lima Sur a FIBRA Prime por US$ 145 millones.",
+    "Parte de esos recursos irá a un nuevo parque logístico en Lurín, de US$ 85 millones, que desarrollará con inversionistas locales.",
+    "Entre julio y setiembre, los ingresos de LPA en Perú sumaron US$ 5.06 millones, un avance de 45.1% frente al mismo periodo de 2025."
+   ],
+   "datos": [
+    {
+     "v": "US$ 145 millones",
+     "t": "monto",
+     "c": "…y cerró la venta de Parque Lima Sur a FIBRA Prime por US$ 145 millones."
+    },
+    {
+     "v": "US$ 85 millones",
+     "t": "monto",
+     "c": "Parte de esos recursos irá a un nuevo parque logístico en Lurín, de US$ 85 millones, que desarrollará con inversionistas locales.."
+    },
+    {
+     "v": "US$ 5.06 millones",
+     "t": "monto",
+     "c": "Entre julio y setiembre, los ingresos de LPA en Perú sumaron US$ 5.06 millones, un avance de 45.1% frente al mismo periodo de 2025."
+    },
+    {
+     "v": "US$ 6.28 millones",
+     "t": "monto",
+     "c": "Con ello, el país se mantuvo como el segundo mercado de la compañía por ingresos , detrás de Costa Rica (US$ 6.28 millones).."
+    },
+    {
+     "v": "US$ 1.17 millones",
+     "t": "monto",
+     "c": "…de las propiedades en Perú subieron 80.7%, hasta US$ 1.17 millones, principalmente por la entrada en operación de nuevas…"
+    }
+   ]
+  },
+  {
+   "id": "c176ab697b",
+   "sector": "economia",
+   "titulo": "Christian Cueva luce relojes de lujo y Carlos Orozco cuestiona sus prioridades: “Pueden estar misios\"",
+   "resumen": "Christian Cueva volvió a llamar la atención en redes sociales, esta vez por dos relojes de apariencia lujosa que compartió en sus…",
+   "fuente": "Caretas",
+   "url": "https://caretas.pe/entretenimiento/christian-cueva-relojes-lujo-carlos-orozco-cuestiona-prioridades/",
+   "fecha": "2026-11-12T18:05:56Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://caretas.pe/wp-content/uploads/2026/11/image-2026-11-12T130113.522-1280x720.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "Christian Cueva volvió a llamar la atención en redes sociales, esta vez por dos relojes de apariencia lujosa que compartió en sus…",
+   "puntos": [
+    "Christian Cueva volvió a llamar la atención en redes sociales, esta vez por dos relojes de apariencia lujosa que compartió en sus…"
+   ]
+  },
+  {
+   "id": "b7a3bdf9d3",
+   "sector": "coyuntura",
+   "titulo": "Universidad de SJL elige construir y no comprar: pondrá US$ 10 millones en su nuevo campus",
+   "resumen": "La UMA, universidad que nació en SJL, alista un nuevo campus y una torre para carreras de salud. Además, apunta a 10,000 alumnos en 2027 y mantiene en carpeta su salto fuera de Lima.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/economia/empresas/universidad-maria-auxiliadora-alista-nuevo-campus-de-us-10-millones-y-torre-para-carreras-de-salud-noticia/",
+   "fecha": "2026-11-12T18:05:52Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/K3TD4YWJQJA2LP6M6IU5AKZDOY.jpg?auth=805ffafe366f522cb18b178e58a6ced2c22d358af1b6e1e8e527efb9de54ab63&smart=true&width=1200&height=800",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "La UMA, universidad que nació en SJL, alista un nuevo campus y una torre para carreras de salud. Además, apunta a 10,000 alumnos en 2027 y mantiene en carpeta su salto fuera de Lima.",
+   "puntos": [
+    "La UMA, universidad que nació en SJL, alista un nuevo campus y una torre para carreras de salud.",
+    "Además, apunta a 10,000 alumnos en 2027 y mantiene en carpeta su salto fuera de Lima.",
+    "Mientras la UPC, de Laureate Education, compró la UCAL por cerca de US$ 35 millones para sumar su campus de La Molina y ganar espacio en Lima, otra universidad privada opta por crecer con infraestructura propia."
+   ],
+   "datos": [
+    {
+     "v": "US$ 10 millones",
+     "t": "monto",
+     "c": "Universidad de SJL elige construir y no comprar: pondrá US$ 10 millones en su nuevo campus."
+    },
+    {
+     "v": "US$ 35 millones",
+     "t": "monto",
+     "c": "…la UPC, de Laureate Education, compró la UCAL por cerca de US$ 35 millones para sumar su campus de La Molina y ganar espacio en Lima…"
+    },
+    {
+     "v": "42%",
+     "t": "porcentaje",
+     "c": "Según recordó, eligieron SJL porque el 42% de los postulantes a universidades públicas provenía de…"
+    },
+    {
+     "v": "20%",
+     "t": "porcentaje",
+     "c": "…tenía el año pasado, lo que representa un crecimiento de 20%."
+    },
+    {
+     "v": "85%",
+     "t": "porcentaje",
+     "c": "El pregrado concentra el 85% de ese total."
+    }
+   ]
+  },
+  {
+   "id": "062dc5f271",
+   "sector": "economia",
+   "titulo": "Parque La Molina: así avanza el mall de Parque Arauco a casi dos años de su apertura",
+   "resumen": "Parque La Molina crece en ventas a casi dos años de su apertura, mientras algunas marcas peruanas replantean su permanencia en el mall. ¿Cómo se vive la maduración de un centro comercial lifestyle desde ambos lados?",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/economia/empresas/parque-la-molina-a-dos-anos-del-nuevo-larcomar-las-marcas-que-se-van-y-las-que-llegan-noticia/",
+   "fecha": "2026-11-12T18:05:35Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/2DLFZALMM5GZJLQPVIQBTI5PSM.jpg?auth=e98c0357d37be6bb52cc4fb2f07c48a4860b019332dfe5bfe39316dd788fd370&smart=true&width=1200&height=800",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Parque La Molina crece en ventas a casi dos años de su apertura, mientras algunas marcas peruanas replantean su permanencia en el mall. ¿Cómo se vive la maduración de un centro comercial lifestyle desde ambos lados?",
+   "puntos": [
+    "Parque La Molina crece en ventas a casi dos años de su apertura, mientras algunas marcas peruanas replantean su permanencia en el mall.",
+    "¿Cómo se vive la maduración de un centro comercial lifestyle desde ambos lados?",
+    "En diciembre de 2024, Parque Arauco , el operador chileno de Larcomar y otros malls (que incluye además outlets y strip centers ) a nivel nacional, llevó a La Molina su formato lifestyle , en un distrito que hasta hace pocos años no tenía malls de gran escala."
+   ],
+   "datos": [
+    {
+     "v": "30.5%",
+     "t": "porcentaje",
+     "c": "…de agosto Parque La Molina registró un crecimiento de 30.5% en ventas frente al mismo periodo del año anterior…"
+    },
+    {
+     "v": "85%",
+     "t": "porcentaje",
+     "c": "“Hoy tenemos una ocupación del 85%” , señaló Franco Chaparro, gerente comercial de Parque Arauco División Perú.."
+    },
+    {
+     "v": "93%",
+     "t": "porcentaje",
+     "c": "La meta es cerrar 2026 con alrededor de 93%, considerando marcas que están por firmar y anunciar."
+    },
+    {
+     "v": "51%",
+     "t": "porcentaje",
+     "c": "El 51% de sus visitantes proviene de La Molina, seguido de Ate (8%) y Surco (6%)."
+    },
+    {
+     "v": "8%",
+     "t": "porcentaje",
+     "c": "El 51% de sus visitantes proviene de La Molina, seguido de Ate (8%) y Surco (6%)."
+    }
+   ]
+  },
+  {
+   "id": "5d64eb7ad4",
+   "sector": "economia",
+   "titulo": "Entel se alista para vender su operación en Perú y sus acciones saltan casi 9% en Chile",
+   "resumen": "Entel contrató a un banco de inversión para desprenderse de su negocio peruano, mientras Millicom busca ampliar la ofensiva regional que inició con activos de Telefónica, según medios chilenos",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/12/entel-se-alista-para-vender-su-operacion-en-peru-y-sus-acciones-saltan-casi-9-en-chile/",
+   "fecha": "2026-11-12T18:04:42Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/4UZGFIVP6NBTPAA6S25AT756TM.jpg?auth=0bcb35197c000dd048b4eed1d9622005587a7dcf0f7995fd99ff33fc0a81fc84&smart=true&width=1472&height=832",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Entel contrató a un banco de inversión para desprenderse de su negocio peruano, mientras Millicom busca ampliar la ofensiva regional que inició con activos de Telefónica, según medios chilenos La operación en Perú aportó el 36,4% de los ingresos consolidados de Entel con una facturación de USD 923,8 millones hasta septiembre de 2026.",
+   "puntos": [
+    "Entel contrató a un banco de inversión para desprenderse de su negocio peruano, mientras Millicom busca ampliar la ofensiva regional que inició con activos de Telefónica, según medios chilenos",
+    "La operación en Perú aportó el 36,4% de los ingresos consolidados de Entel con una facturación de USD 923,8 millones hasta septiembre de 2026.",
+    "EST Guardar Entel inició la búsqueda de potenciales compradores para su filial peruana , una operación que despertó el interés de Millicom y llevó a las acciones de la empresa chilena a subir casi 9% en la Bolsa de Santiago."
+   ],
+   "datos": [
+    {
+     "v": "9%",
+     "t": "porcentaje",
+     "c": "Entel se alista para vender su operación en Perú y sus acciones saltan casi 9% en Chile."
+    },
+    {
+     "v": "36,4%",
+     "t": "porcentaje",
+     "c": "La operación en Perú aportó el 36,4% de los ingresos consolidados de Entel con una facturación…"
+    },
+    {
+     "v": "8,62%",
+     "t": "porcentaje",
+     "c": "…12 de noviembre, los papeles de Entel llegaron a avanzar 8,62% y lideraron las ganancias del Índice de Precio Selectivo…"
+    },
+    {
+     "v": "923,8 millones",
+     "t": "escala",
+     "c": "…ingresos consolidados de Entel con una facturación de USD 923,8 millones hasta septiembre de 2026."
+    },
+    {
+     "v": "10,5 millones de líneas",
+     "t": "escala",
+     "c": "La eventual transacción involucraría a una compañía con más de 10,5 millones de líneas móviles en Perú.."
+    }
+   ]
+  },
+  {
+   "id": "654ec5bd0c",
+   "sector": "economia",
+   "titulo": "¿Cuándo el papa León XIV regresa a Roma tras su visita al Perú?",
+   "resumen": "Papa León XIV llegó este miércoles 11 de noviembre al Perú. Revisa cuándo el santo padre regresará a Roma y sus actividades en el país.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/mix/respuestas/a-que-hora-aterriza-hoy-el-papa-leon-xiv-al-peru-y-cuando-regresa-a-roma-nnda-nnrt-noticia/",
+   "fecha": "2026-11-12T18:04:35Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/MNLR75C3Y5EU5OYPCXO3JJRZJM.jpg?auth=958d5a8b89fe6ca2396a861b717362eeb590e3bef3b7329918e7e535e557de3c&smart=true&width=2400&height=1620",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Papa León XIV llegó este miércoles 11 de noviembre al Perú. Revisa cuándo el santo padre regresará a Roma y sus actividades en el país.",
+   "puntos": [
+    "Papa León XIV llegó este miércoles 11 de noviembre al Perú.",
+    "Revisa cuándo el santo padre regresará a Roma y sus actividades en el país.",
+    "Ambos horarios corresponden a la hora peruana y figuran en el programa oficial publicado por el Vaticano."
+   ],
+   "datos": [
+    {
+     "v": "11 de noviembre",
+     "t": "fecha",
+     "c": "Papa León XIV llegó este miércoles 11 de noviembre al Perú."
+    },
+    {
+     "v": "16 de noviembre",
+     "t": "fecha",
+     "c": "El papa León XIV volvió al Perú este miércoles 11 de noviembre de 2026 y partirá hacia Roma el lunes 16 de noviembre a la 1:45 p. m ."
+    }
+   ]
+  },
+  {
+   "id": "f8d4904a13",
+   "sector": "coyuntura",
+   "titulo": "Calles cerradas en Lima por la visita del papa León XIV HOY 12 de noviembre: desvíos y cambios en el transporte",
+   "resumen": "¿Viajas por Lima? Revisa cuáles las calles cerradas por la visita del papa León XIV, los horarios de restricción y los desvíos antes de salir.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/mix/respuestas/calles-cerradas-en-lima-por-la-visita-del-papa-leon-xiv-horarios-desvios-y-cambios-en-el-transporte-nnda-nnrt-noticia/",
+   "fecha": "2026-11-12T18:00:36Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/PR3B57BRANFBLFKPOG2H4QRBKI.jpg?auth=20813a3271470ecc10a0e4989631968c578a3f7ec4a730f4ea9d958977240da3&smart=true&width=2320&height=1320",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Revisa cuáles las calles cerradas por la visita del papa León XIV, los horarios de restricción y los desvíos antes de salir. Su agenda para hoy jueves 12 de noviembre contempla una serie de actividades en el Centro Histórico de Lima, donde recibirá las llaves de la ciudad.",
+   "puntos": [
+    "Revisa cuáles las calles cerradas por la visita del papa León XIV, los horarios de restricción y los desvíos antes de salir.",
+    "Su agenda para hoy jueves 12 de noviembre contempla una serie de actividades en el Centro Histórico de Lima, donde recibirá las llaves de la ciudad.",
+    "Entre las medidas anunciadas figuran un perímetro sin ingreso vehicular en el centro."
+   ],
+   "datos": [
+    {
+     "v": "12 de noviembre",
+     "t": "fecha",
+     "c": "Calles cerradas en Lima por la visita del papa León XIV HOY 12 de noviembre: desvíos y cambios en el transporte."
+    },
+    {
+     "v": "10 de noviembre",
+     "t": "fecha",
+     "c": "El cierre preventivo de los alrededores de la Plaza de Armas comenzará a las 10:00 p. m. del martes 10 de noviembre ."
+    }
+   ]
+  },
+  {
+   "id": "cb32832e2a",
+   "sector": "mundo",
+   "titulo": "Pantuflas, té y no más de tres clics: así se prepara América Latina para los turistas chinos",
+   "resumen": "Un calentador de agua en la habitación puede valer más que la mejor cafetera. En la ITB Américas, expertos explican cómo conquistar a un viajero que no conoce Instagram ni TripAdvisor.",
+   "fuente": "DW Español",
+   "url": "https://www.dw.com/es/pantuflas-té-y-no-más-de-tres-clics-así-se-prepara-américa-latina-para-los-turistas-chinos/a-79934708?maca=spa-rss-sp-all-1122-xml-mrss",
+   "fecha": "2026-11-12T17:59:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Un calentador de agua en la habitación puede valer más que la mejor cafetera. En la ITB Américas, expertos explican cómo conquistar a un viajero que no conoce Instagram ni TripAdvisor.",
+   "puntos": [
+    "Un calentador de agua en la habitación puede valer más que la mejor cafetera.",
+    "En la ITB Américas, expertos explican cómo conquistar a un viajero que no conoce Instagram ni TripAdvisor."
+   ]
+  },
+  {
+   "id": "47592a3d27",
+   "sector": "mundo",
+   "titulo": "Santiago Andrés Sierra: \"León XIV no hubiese sido papa si no hubiese pasado por el Perú\"",
+   "resumen": "La historia del papa León XIV está profundamente ligada a Perú. Su camino sacerdotal en el país comenzó cuando llegó como misionero agustino, y durante décadas trabajó junto a diferentes comunidades. Con el tiempo se convirtió en obispo de Chiclayo y obtuvo la nacionalidad…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/video/20261112-santiago-andr%C3%A9s-sierra-le%C3%B3n-xiv-no-hubiese-sido-papa-si-no-hubiese-pasado-por-el-per%C3%BA",
+   "fecha": "2026-11-12T17:58:59Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/67b1e61e-deba-11f1-9e9c-695cb59fade5/w:1024/p:16x9/ES-20261112-113128-113337-CS.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "La historia del papa León XIV está profundamente ligada a Perú. Su camino sacerdotal en el país comenzó cuando llegó como misionero agustino, y durante décadas trabajó junto a diferentes comunidades.…",
+   "puntos": [
+    "La historia del papa León XIV está profundamente ligada a Perú.",
+    "Su camino sacerdotal en el país comenzó cuando llegó como misionero agustino, y durante décadas trabajó junto a diferentes comunidades.…"
+   ]
+  },
+  {
+   "id": "a32740e023",
+   "sector": "ia",
+   "titulo": "¿Qué implica la dimisión del CEO de Nvidia para el desarrollo de la inteligencia artificial en Oriente Medio?",
+   "resumen": "",
+   "fuente": "Al-Monitor",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQeWRYeFAwWjVELVNpYkRGek5GRjNrcDgtaVowN0RiUFdLai1zajRNZS1NNnNBWDQ2a3U5ckJUeDNLeFlKWWwzRmc0UFNDdU9fUzhUcHoyZlUtYm13NjB5SkhRRDBrclJrVGVWa2F2WG1lUzR4NkJEYXFiUEFyTHBZa0NjRW5rLXFCZF9SX2t4U0owWjF3ckI4QmVvQjcwVU1NeW10Ykl3Nm5TS2xSeXVUOHBlb2tkSVRVR1pWd3lqYXc0bHFqbkE?oc=5",
+   "fecha": "2026-11-12T17:58:32Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa"
+  },
+  {
+   "id": "fcebf73481",
+   "sector": "coyuntura",
+   "titulo": "León XIV aseguró que la violencia contra las mujeres \"sigue siendo una realidad que hiere a la humanidad entera\"",
+   "resumen": "\"El reconocimiento de la dignidad humana también exige promover efectivamente la presencia, el respeto y la participación de las mujeres\", exhortó el papa en su discurso en la Plaza de Armas de Lima.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/lima/actualidad/leon-xiv-aseguro-que-la-violencia-contra-las-mujeres-sigue-siendo-una-realidad-que-hiere-a-la-humanidad-entera-noticia-1717450",
+   "fecha": "2026-11-12T17:46:43Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/12/072407_1928414.jpg?imgdimension=look",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "\"El reconocimiento de la dignidad humana también exige promover efectivamente la presencia, el respeto y la participación de las mujeres\", exhortó el papa en su discurso en la Plaza de Armas de Lima. Su contribución en todos los ámbitos de la sociedad y de la Iglesia es indispensable”, señaló ante los fieles peruanos, que abarrotaron la Plaza Mayor.",
+   "puntos": [
+    "\"El reconocimiento de la dignidad humana también exige promover efectivamente la presencia, el respeto y la participación de las mujeres\", exhortó el papa en su discurso en la Plaza de Armas de Lima.",
+    "Su contribución en todos los ámbitos de la sociedad y de la Iglesia es indispensable”, señaló ante los fieles peruanos, que abarrotaron la Plaza Mayor.",
+    "“Es triste constatar que persiste una mentalidad machista que se manifiesta en la ausencia del padre en la vida familiar, con los abusos, la violencia hacia las mujeres, ignorando la novedad del cristianismo que reconoce y proclama que ambos poseen igual dignidad y responsabilidad”, manifestó."
+   ]
+  },
+  {
+   "id": "71575a75a3",
+   "sector": "coyuntura",
+   "titulo": "Seal anuncia cortes de luz en zonas de 7 distritos de Arequipa entre el 13 y el 15 de noviembre",
+   "resumen": "La empresa Sociedad Eléctrica del Sur Oeste (Seal) anunció cortes programados de luz entre el viernes 13 y el domingo 15 de noviembre en siete distritos de las provincias de Arequipa, Camaná e Islay. La suspensión obedece a trabajos de mantenimiento en redes de media tensión,…",
+   "fuente": "El Búho",
+   "url": "https://elbuho.pe/2026/11/seal-anuncia-cortes-de-luz-en-zonas-de-7-distritos-de-arequipa-entre-el-13-y-el-15-de-noviembre/",
+   "fecha": "2026-11-12T17:39:27Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/cortes-de-luz-programados-seal-arequipa-2026-11-12-referencial.webp",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Seal programó cortes de luz en 7 distritos de Arequipa, Camaná e Islay entre el 13 y el 15 de noviembre. La suspensión obedece a trabajos de mantenimiento en redes de media tensión, cambio de conectores y la instalación de nuevos equipos de maniobra.",
+   "puntos": [
+    "Seal programó cortes de luz en 7 distritos de Arequipa, Camaná e Islay entre el 13 y el 15 de noviembre.",
+    "La suspensión obedece a trabajos de mantenimiento en redes de media tensión, cambio de conectores y la instalación de nuevos equipos de maniobra.",
+    "Sociedad Eléctrica del Sur Oeste – Seal dio a conocer los cortes de luz en Arequipa que realizarán entre el viernes 13 y el domingo 15 de noviembre."
+   ],
+   "datos": [
+    {
+     "v": "15 de noviembre",
+     "t": "fecha",
+     "c": "Seal anuncia cortes de luz en zonas de 7 distritos de Arequipa entre el 13 y el 15 de noviembre."
+    },
+    {
+     "v": "2 de Mayo",
+     "t": "fecha",
+     "c": "Un corte temporal afecta a las urbanizaciones 2 de Mayo, Alto de La Luna, Bancarios, Casapia, Cooperativa…"
+    }
+   ]
+  },
+  {
+   "id": "90f51ea4a6",
+   "sector": "politica",
+   "titulo": "Municipalidad de Lima entrega al papa León XIV las llaves de la ciudad: \"Es muestra de cariño y reconocimiento\"",
+   "resumen": "El papa León XIV recibió este jueves 12 de noviembre las llaves de la ciudad de manos del alcalde metropolitano, Renzo Reggiardo,…",
+   "fuente": "Caretas",
+   "url": "https://caretas.pe/sociedad/municipalidad-de-lima-entrega-al-papa-leon-xiv-las-llaves-de-la-ciudad-es-muestra-de-carino-y-reconocimiento/",
+   "fecha": "2026-11-12T17:28:35Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://caretas.pe/wp-content/uploads/2026/11/1-18.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El papa León XIV recibió este jueves 12 de noviembre las llaves de la ciudad de manos del alcalde metropolitano, Renzo Reggiardo,…",
+   "puntos": [
+    "El papa León XIV recibió este jueves 12 de noviembre las llaves de la ciudad de manos del alcalde metropolitano, Renzo Reggiardo,…"
+   ],
+   "datos": [
+    {
+     "v": "12 de noviembre",
+     "t": "fecha",
+     "c": "El papa León XIV recibió este jueves 12 de noviembre las llaves de la ciudad de manos del alcalde metropolitano, Renzo Reggiardo,…"
+    }
+   ]
+  },
+  {
+   "id": "84c319d05e",
+   "sector": "coyuntura",
+   "titulo": "Susana Baca se quiebra tras cantar ante el papa León XIV en la Plaza de Armas de Lima",
+   "resumen": "La cantante peruana Susana Baca protagonizó uno de los momentos más emotivos del encuentro del papa León XIV con los fieles en…",
+   "fuente": "Caretas",
+   "url": "https://caretas.pe/entretenimiento/susana-baca-se-quiebra-tras-cantar-ante-el-papa-leon-xiv-en-la-plaza-de-armas-de-lima/",
+   "fecha": "2026-11-12T17:26:13Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://caretas.pe/wp-content/uploads/2026/11/image-54-1151x768.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "La cantante peruana Susana Baca protagonizó uno de los momentos más emotivos del encuentro del papa León XIV con los fieles en…",
+   "puntos": [
+    "La cantante peruana Susana Baca protagonizó uno de los momentos más emotivos del encuentro del papa León XIV con los fieles en…"
+   ]
+  },
+  {
+   "id": "a3a78a5525",
+   "sector": "coyuntura",
+   "titulo": "Papa León XIV a los Obispos del Perú: «No dejen de caminar con este pueblo y abrir el corazón a Dios»",
+   "resumen": "Sacerdotes, religiosas, seminaristas y consagrados abarrotaron la Catedral de Lima y miembros de organizaciones sociales acudieron a la Plaza Mayor para conversar con el Santo Padre",
+   "fuente": "El Búho",
+   "url": "https://elbuho.pe/2026/11/papa-leon-xiv-a-los-obispos-del-peru-no-dejen-de-caminar-con-este-pueblo-y-abrir-el-corazon-a-dios/",
+   "fecha": "2026-11-12T17:25:00Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/papa-leon-xiv-en-la-catedral-6af5e6a01ab31.webp",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Papa León XIV: Sacerdotes, religiosas, seminaristas y consagrados abarrotaron Catedral Lima y organizaciones sociales Plaza Mayor conversar El Papa León XIV fue recibido multitudinariamente por los sacerdotes, religiosas, seminaristas, equipos sinodales y consejos pastorales en la Basílica Catedral de San Juan Apóstol y Evangelista mientras algunos fieles católicos pernoctaron a las afueras de la Nunciatura y otros abarrotaron la Plaza Mayor de Lima.",
+   "puntos": [
+    "Papa León XIV: Sacerdotes, religiosas, seminaristas y consagrados abarrotaron Catedral Lima y organizaciones sociales Plaza Mayor conversar",
+    "El Papa León XIV fue recibido multitudinariamente por los sacerdotes, religiosas, seminaristas, equipos sinodales y consejos pastorales en la Basílica Catedral de San Juan Apóstol y Evangelista mientras algunos fieles católicos pernoctaron a las afueras de la Nunciatura y otros abarrotaron la Plaza Mayor de Lima.",
+    "En la reunión con los obispos del Perú, el Papa León XIV los llamó a «caminar con este pueblo y a no dejar de caminar juntos en comunicación episcopal como testigos de Dios y a no dejar de abrir el corazón a Dios para que renueve nuestra vocación y al pueblo para que encuentre en ustedes al padre valiente», dijo."
+   ]
+  },
+  {
+   "id": "4d16a1bfd5",
+   "sector": "mundo",
+   "titulo": "Informe desde Lima: Perú celebra al papa León XIV entre muestras de fe y emoción",
+   "resumen": "El regreso del papa León XIV a Perú ha estado marcado por escenas de emoción y un fuerte vínculo con el país donde desarrolló gran parte de su labor pastoral. Durante su llegada a Lima, el pontífice, nacido como Robert Francis Prevost, fue recibido por miles de fieles y…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/video/20261112-informe-desde-lima-per%C3%BA-celebra-al-papa-le%C3%B3n-xiv-entre-muestras-de-fe-y-emoci%C3%B3n",
+   "fecha": "2026-11-12T17:15:05Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/c32e0dd0-deb8-11f1-ba81-29048b396e03/w:1024/p:16x9/ES-20261112-111825-112330-CS.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El regreso del papa León XIV a Perú ha estado marcado por escenas de emoción y un fuerte vínculo con el país donde desarrolló gran parte de su labor pastoral. Durante su llegada a Lima, el pontífice,…",
+   "puntos": [
+    "El regreso del papa León XIV a Perú ha estado marcado por escenas de emoción y un fuerte vínculo con el país donde desarrolló gran parte de su labor pastoral.",
+    "Durante su llegada a Lima, el pontífice,…"
+   ]
+  },
+  {
+   "id": "c1516e70ea",
+   "sector": "politica",
+   "titulo": "COP31: senadores de California piden a Ecuador detener la nueva subasta de petróleo en la Amazonía",
+   "resumen": "En una declaración conjunta difundida durante la 31.ª Conferencia de las Partes de la Convención Marco de las Naciones Unidas sobre el Cambio Climático (COP31), tres senadores estatales de California pidieron detener la nueva subasta petrolera amazónica de Ecuador. Josh Becker,…",
+   "fuente": "Mongabay Latam",
+   "url": "https://es.mongabay.com/short-article/2026/11/cop31-senadores-california-piden-ecuador-detener-subasta-petroleo-amazonia/",
+   "fecha": "2026-11-12T17:08:50Z",
+   "tipo": "independiente",
+   "genero": "noticia",
+   "imagen": "https://imgs.mongabay.com/wp-content/uploads/sites/25/2026/11/12155246/organizaciones-sociales-e-indigenas-en-la-COP31-Turquia-foto-Naciones-Unidas-768x512.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "En una declaración conjunta difundida durante la 31.ª Conferencia de las Partes de la Convención Marco de las Naciones Unidas sobre el Cambio Climático ( COP31 ), tres senadores estatales de California pidieron detener la nueva subasta petrolera amazónica de Ecuador . Josh Becker, Henry Stern y Ben Allen presiden comités del Senado vinculados con recursos naturales, emergencias, energía y políticas climáticas.",
+   "puntos": [
+    "En una declaración conjunta difundida durante la 31.ª Conferencia de las Partes de la Convención Marco de las Naciones Unidas sobre el Cambio Climático ( COP31 ), tres senadores estatales de California pidieron detener la nueva subasta petrolera amazónica de Ecuador .",
+    "Josh Becker, Henry Stern y Ben Allen presiden comités del Senado vinculados con recursos naturales, emergencias, energía y políticas climáticas.",
+    "“Pedimos a Ecuador que cancele la ronda de licitación propuesta y respete las decisiones de los pueblos indígenas sobre sus territorios."
+   ],
+   "datos": [
+    {
+     "v": "50 %",
+     "t": "porcentaje",
+     "c": "Este documento concluyó que el estado recibió cerca del 50 % de las exportaciones de crudo extraído en tierra firme en la Amazonía.."
+    }
+   ]
+  },
+  {
+   "id": "1ff8557be7",
+   "sector": "mundo",
+   "titulo": "Ataques israelíes dejan al menos once muertos en distintos puntos de Gaza",
+   "resumen": "El bombardeo más letal afectó al hospital Naser, donde seis personas, entre ellas un niño y un médico, perdieron la vida. Israel afirmó que el objetivo era un líder de Hamás.",
+   "fuente": "DW Español",
+   "url": "https://www.dw.com/es/ataques-israelíes-dejan-al-menos-once-muertos-en-distintos-puntos-de-gaza/a-79934531?maca=spa-rss-sp-all-1122-xml-mrss",
+   "fecha": "2026-11-12T17:03:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "El bombardeo más letal afectó al hospital Naser, donde seis personas, entre ellas un niño y un médico, perdieron la vida. Israel afirmó que el objetivo era un líder de Hamás.",
+   "puntos": [
+    "El bombardeo más letal afectó al hospital Naser, donde seis personas, entre ellas un niño y un médico, perdieron la vida.",
+    "Israel afirmó que el objetivo era un líder de Hamás."
+   ]
+  },
+  {
+   "id": "5baf39b86d",
+   "sector": "mundo",
+   "titulo": "Lula viaja a Madrid para hacer campaña con Sánchez tras su remontada en Brasil",
+   "resumen": "Claudia Sheinbaum, presidenta de México, mantendrá una conversación telefónica con el candidato socialista esta tarde",
+   "fuente": "El País América",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-12/lula-viaja-a-madrid-para-hacer-campana-con-sanchez.html",
+   "fecha": "2026-11-12T17:02:52Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://imagenes.elpais.com/resizer/v2/VD4MX7DRCFBO5BEXD7PQCCHRUA.jpg?auth=d4c3834102649faa748dd81d2a2ae6d5b29e915538483290bfef9a6887dea054",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Claudia Sheinbaum, presidenta de México, mantendrá una conversación telefónica con el candidato socialista esta tarde",
+   "puntos": [
+    "Claudia Sheinbaum, presidenta de México, mantendrá una conversación telefónica con el candidato socialista esta tarde"
+   ]
+  },
+  {
+   "id": "97f38543b0",
+   "sector": "mundo",
+   "titulo": "León XIV llama a responder a los abusos del clero con “la verdad, la justicia, el perdón y la reparación”",
+   "resumen": "Las palabras del Papa en Lima aluden al mayor escándalo de la Iglesia en Perú por los delitos cometidos por la disuelta secta del Sodalicio, cuyas víctimas denuncian que sigue actuando",
+   "fuente": "El País América",
+   "url": "https://elpais.com/america/2026-11-12/leon-xiv-llama-a-responder-a-los-abusos-del-clero-con-la-verdad-la-justicia-el-perdon-y-la-reparacion.html",
+   "fecha": "2026-11-12T17:00:56Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://imagenes.elpais.com/resizer/v2/SVGOGDJNZFFYBD2IL35PDYDQ2M.jpg?auth=3621ceca9b97d7e841da9e7ce189bcaaff2319f1475e8cb071c5c5c866315dfd",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Las palabras del Papa en Lima aluden al mayor escándalo de la Iglesia en Perú por los delitos cometidos por la disuelta secta del Sodalicio, cuyas víctimas denuncian que sigue actuando",
+   "puntos": [
+    "Las palabras del Papa en Lima aluden al mayor escándalo de la Iglesia en Perú por los delitos cometidos por la disuelta secta del Sodalicio, cuyas víctimas denuncian que sigue actuando"
+   ]
+  },
+  {
+   "id": "60690fe222",
+   "sector": "mundo",
+   "titulo": "🔴 En directo: el papa León XIV encabeza un encuentro multitudinario con la sociedad civil en Lima",
+   "resumen": "",
+   "fuente": "France 24 Español",
+   "url": "https://f24.my/CHPV",
+   "fecha": "2026-11-12T16:58:37Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/e11bb8aa-deb9-11f1-b8ea-695cb59fade5/w:1280/p:16x9/FOTO-PORTADA-PERU-PAPA-ENCUENTRO-LIMA.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "En un encuentro multitudinario en la Plaza de Armas dirigido al futuro del pueblo peruano, el sumo pontífice reivindicó su visión de la familia tradicional, lamentó que persista una \"mentalidad machista\"…",
+   "puntos": [
+    "En un encuentro multitudinario en la Plaza de Armas dirigido al futuro del pueblo peruano, el sumo pontífice reivindicó su visión de la familia tradicional, lamentó que persista una \"mentalidad machista\"…"
+   ]
+  },
+  {
+   "id": "e18e4111d0",
+   "sector": "mundo",
+   "titulo": "Conversaciones a tres bandas entre Ucrania, Estados Unidos y Rusia en Abu Dabi: ¿han aportado realmente algo a Kiev?",
+   "resumen": "Las primeras conversaciones trilaterales entre Ucrania, Estados Unidos y Rusia en nueve meses terminaron con un acuerdo sobre el intercambio de prisioneros. ¿Se puede considerar un éxito y un paso hacia la paz?",
+   "fuente": "DW Español",
+   "url": "https://www.dw.com/es/conversaciones-a-tres-bandas-entre-ucrania-estados-unidos-y-rusia-en-abu-dabi-¿han-aportado-realmente-algo-a-kiev/a-79933391?maca=spa-rss-sp-all-1122-xml-mrss",
+   "fecha": "2026-11-12T16:45:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Las primeras conversaciones trilaterales entre Ucrania, Estados Unidos y Rusia en nueve meses terminaron con un acuerdo sobre el intercambio de prisioneros. ¿Se puede considerar un éxito y un paso hacia la paz?",
+   "puntos": [
+    "Las primeras conversaciones trilaterales entre Ucrania, Estados Unidos y Rusia en nueve meses terminaron con un acuerdo sobre el intercambio de prisioneros.",
+    "¿Se puede considerar un éxito y un paso hacia la paz?"
+   ]
+  },
+  {
+   "id": "501e21ac79",
+   "sector": "politica",
+   "titulo": "¿Qué hicieron los congresistas de Ayacucho en la semana de representación?",
+   "resumen": "Escribe: Roy Ayala Huaman. Del 2 al 6 de noviembre se dio la semana de representación de los parlamentarios representantes de nuestra región; así, los tres diputados recorrieron distintas zonas del país, desde el Valle de los Ríos Apurímac, Ene y Mantaro (VRAEM) hasta la selva…",
+   "fuente": "El Búho",
+   "url": "https://elbuho.pe/2026/11/que-hicieron-los-congresistas-de-ayacucho-en-la-semana-de-representacion/",
+   "fecha": "2026-11-12T16:32:47Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/11-11-Que-hicieron-los-congresistas-de-Ayacucho-en-la-semana-de-representacion.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Del 2 al 6 de noviembre se dio la semana de representación de los parlamentarios representantes de nuestra región; así, los tres diputados recorrieron distintas zonas del país, desde el Valle de los Ríos Apurímac, Ene y Mantaro (VRAEM) hasta la selva amazónica en defensa de población awajún y wampis. Además, realizó audiencias públicas en Apurímac.",
+   "puntos": [
+    "Del 2 al 6 de noviembre se dio la semana de representación de los parlamentarios representantes de nuestra región; así, los tres diputados recorrieron distintas zonas del país, desde el Valle de los Ríos Apurímac, Ene y Mantaro (VRAEM) hasta la selva amazónica en defensa de población awajún y wampis.",
+    "Además, realizó audiencias públicas en Apurímac.",
+    "El diputado por Ayacucho, Alejandro Manay, comenzó su semana de representación el 4 de noviembre, según su perfil oficial de Facebook, con una fiscalización inopinada a la UGEL-Huamanga para constatar si todos los funcionarios se encontraban laborando y, según su versión, para que respondan a acusaciones graves de…"
+   ],
+   "datos": [
+    {
+     "v": "6 de noviembre",
+     "t": "fecha",
+     "c": "Del 2 al 6 de noviembre se dio la semana de representación de los parlamentarios…"
+    },
+    {
+     "v": "4 de noviembre",
+     "t": "fecha",
+     "c": "…Alejandro Manay, comenzó su semana de representación el 4 de noviembre, según su perfil oficial de Facebook, con una…"
+    },
+    {
+     "v": "2 de noviembre",
+     "t": "fecha",
+     "c": "…el diputado Buitrón comenzó su semana de representación el 2 de noviembre , visitando a vecinos de San Juan de la Picota, quienes…"
+    },
+    {
+     "v": "1 de noviembre",
+     "t": "fecha",
+     "c": "…Sulca Castillo, inició su semana de representación el 1 de noviembre en el departamento de Amazonas, en Condorcanqui, donde se…"
+    },
+    {
+     "v": "3 de noviembre",
+     "t": "fecha",
+     "c": "…Ayacucho, Humberto Morales Ramírez, llegó a Ayacucho, el 3 de noviembre para participar en el conversatorio “ El sistema bicameral…"
+    }
+   ]
+  },
+  {
+   "id": "74f15463cb",
+   "sector": "politica",
+   "titulo": "Gobierno planea ejecutar la nueva Carretera Central con inversión privada pese a riesgo de aumentar su costo",
+   "resumen": "El ministro de Transportes, José Angello Tangherlini Casal, anunció que el túnel Pariachi se ejecutaría como obra pública, mientras que el resto de la carretera, valorizado en cerca de S/30 mil millones, se desarrollaría mediante asociaciones público-privadas y contemplaría el…",
+   "fuente": "El Búho",
+   "url": "https://elbuho.pe/2026/11/gobierno-planea-ejecutar-la-nueva-carretera-central-con-inversion-privada-pese-a-riesgo-de-aumentar-su-costo/",
+   "fecha": "2026-11-12T16:27:51Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/El-Ministro-de-Transportes-y-comunicaciones-Jose-Angello-Tangherlini-Casal-anuncio-que-solo-el-tunel-Pariachi-sera-asumido-por-el-Estado.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "El ministro de Transportes, José Angello Tangherlini Casal, anunció que el túnel Pariachi se ejecutaría como obra pública, mientras que el resto de la carretera, valorizado en cerca de S/30 mil millones, se desarrollaría mediante asociaciones público-privadas y contemplaría el cobro de peajes; en febrero, un análisis de la Cámara de Comercio de Huancayo advirtió […] El Gobierno plantea un cambio sustancial en el esquema de ejecución de la Nueva Carretera Central: el Estado asumiría directamente la construcción del túnel de Pariachi , pero recurriría a la inversión privada para desarrollar la mayor parte de la infraestructura.",
+   "puntos": [
+    "El ministro de Transportes, José Angello Tangherlini Casal, anunció que el túnel Pariachi se ejecutaría como obra pública, mientras que el resto de la carretera, valorizado en cerca de S/30 mil millones, se desarrollaría mediante asociaciones público-privadas y contemplaría el cobro de peajes; en febrero, un análisis de la Cámara de Comercio de Huancayo advirtió […]",
+    "El Gobierno plantea un cambio sustancial en el esquema de ejecución de la Nueva Carretera Central: el Estado asumiría directamente la construcción del túnel de Pariachi , pero recurriría a la inversión privada para desarrollar la mayor parte de la infraestructura."
+   ],
+   "datos": [
+    {
+     "v": "S/30 mil millones",
+     "t": "monto",
+     "c": "…que el resto de la carretera, valorizado en cerca de S/30 mil millones, se desarrollaría mediante asociaciones público-privadas y…"
+    },
+    {
+     "v": "S/70.000 millones",
+     "t": "monto",
+     "c": "…íntegra bajo ese modelo podría elevar el costo hasta S/70.000 millones .."
+    },
+    {
+     "v": "S/600 millones",
+     "t": "monto",
+     "c": "…Ministerio de Transportes y Comunicaciones (MTC) gestiona S/600 millones para iniciar en 2027 la ejecución del túnel de Pariachi…"
+    }
+   ]
+  },
+  {
+   "id": "5b0b8cb782",
+   "sector": "mundo",
+   "titulo": "\"Cómo Israel fabrica la 'crisis' invernal de Gaza\": 'Middle East Eye'",
+   "resumen": "Una vez más, la ya destruida Franja de Gaza hace frente a terribles inundaciones provocadas por las lluvias torrenciales. Con el 65 % de los gazatíes viviendo en tiendas de campaña —cerca de 1,4 millones de personas—, los refugios se han visto inundados o completamente…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/programas/revista-de-prensa/20261112-c%C3%B3mo-israel-fabrica-la-crisis-invernal-de-gaza-middle-east-eye",
+   "fecha": "2026-11-12T16:27:51Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/0004fe92-dea2-11f1-8683-f71d22e7fea9/w:1024/p:16x9/ES-20261112-081423-082132-CS.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Una vez más, la ya destruida Franja de Gaza hace frente a terribles inundaciones provocadas por las lluvias torrenciales. Con el 65 % de los gazatíes viviendo en tiendas de campaña —cerca de 1,4 millones…",
+   "puntos": [
+    "Una vez más, la ya destruida Franja de Gaza hace frente a terribles inundaciones provocadas por las lluvias torrenciales.",
+    "Con el 65 % de los gazatíes viviendo en tiendas de campaña —cerca de 1,4 millones…"
+   ],
+   "datos": [
+    {
+     "v": "65 %",
+     "t": "porcentaje",
+     "c": "Con el 65 % de los gazatíes viviendo en tiendas de campaña —cerca de 1,4 millones…"
+    },
+    {
+     "v": "1,4 millones",
+     "t": "escala",
+     "c": "Con el 65 % de los gazatíes viviendo en tiendas de campaña —cerca de 1,4 millones…"
+    }
+   ]
+  },
+  {
+   "id": "70b1bb126e",
+   "sector": "salud",
+   "titulo": "Elecciones en Puno: Víctimas del 9 de enero cuestionan tesis de candidata a vicegobernadora y exigen rectificación",
+   "resumen": "Familiares de las víctimas de las protestas del 9 de enero de 2023 realizaron una movilización en la plaza de Armas de Juliaca para cuestionar el contenido de la tesis de Morelia Apaza Mamani, candidata a vicegobernadora por ASI-Juntos por el Perú, y exigir que explique sus…",
+   "fuente": "El Búho",
+   "url": "https://elbuho.pe/2026/11/elecciones-en-puno-victimas-del-9-de-enero-cuestionan-tesis-de-candidata-a-vicegobernadora-y-exigen-rectificacion/",
+   "fecha": "2026-11-12T16:21:48Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/victimas-9-enero-tesis-candidata-rectificacion-IRCS.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Familiares de las víctimas de las protestas del 9 de enero de 2023 realizaron una movilización en la plaza de Armas de Juliaca para cuestionar el contenido de la tesis de Morelia Apaza Mamani, candidata a vicegobernadora por ASI-Juntos por el Perú, y exigir que explique sus afirmaciones sobre presuntos saqueos y actos vandálicos durante […] Durante la protesta, Mariela Cayo Sánchez, esposa de Manuel Quilla Ticona, fallecido en las movilizaciones, rompió una copia impresa de la tesis como expresión de rechazo al contenido que atribuyen a la investigación académica.",
+   "puntos": [
+    "Familiares de las víctimas de las protestas del 9 de enero de 2023 realizaron una movilización en la plaza de Armas de Juliaca para cuestionar el contenido de la tesis de Morelia Apaza Mamani, candidata a vicegobernadora por ASI-Juntos por el Perú, y exigir que explique sus afirmaciones sobre presuntos saqueos y actos vandálicos durante […]",
+    "Durante la protesta, Mariela Cayo Sánchez, esposa de Manuel Quilla Ticona, fallecido en las movilizaciones, rompió una copia impresa de la tesis como expresión de rechazo al contenido que atribuyen a la investigación académica."
+   ],
+   "datos": [
+    {
+     "v": "17 años",
+     "t": "cantidad",
+     "c": "…Dominga Ancco, madre de Yamilet Nataly Aroquipa Ancco, de 17 años, fallecida durante las manifestaciones cerca del…"
+    },
+    {
+     "v": "9 de enero",
+     "t": "fecha",
+     "c": "Elecciones en Puno: Víctimas del 9 de enero cuestionan tesis de candidata a vicegobernadora y exigen rectificación."
+    }
+   ]
+  },
+  {
+   "id": "de27a136fa",
+   "sector": "mundo",
+   "titulo": "En directo: en Lima, el papa León XIV llama a \"proteger a las mujeres\" y construir \"una sociedad justa\"",
+   "resumen": "En un encuentro multitudinario en la Plaza de Armas dirigido al futuro del pueblo peruano, el sumo pontífice reivindicó su visión de la familia tradicional, lamentó que persista una \"mentalidad machista\" y exigió \"valorar\" el rol de la mujer y \"proteger a las niñas\". También…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/am%C3%A9rica-latina/20261112-en-directo-el-papa-le%C3%B3n-xiv-pide-a-los-obispos-de-per%C3%BA-que-respondan-a-abusos-con-justicia-y-reparaci%C3%B3n",
+   "fecha": "2026-11-12T16:21:35Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/e11bb8aa-deb9-11f1-b8ea-695cb59fade5/w:1024/p:16x9/FOTO-PORTADA-PERU-PAPA-ENCUENTRO-LIMA.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "En un encuentro multitudinario en la Plaza de Armas dirigido al futuro del pueblo peruano, el sumo pontífice reivindicó su visión de la familia tradicional, lamentó que persista una \"mentalidad machista\"…",
+   "puntos": [
+    "En un encuentro multitudinario en la Plaza de Armas dirigido al futuro del pueblo peruano, el sumo pontífice reivindicó su visión de la familia tradicional, lamentó que persista una \"mentalidad machista\"…"
+   ]
+  },
+  {
+   "id": "fa2c33fed6",
+   "sector": "mundo",
+   "titulo": "La integración progresa, pero los planes del Gobierno podrían frenarla",
+   "resumen": "22 millones de personas en Alemania tienen trasfondo migratorio. Un nuevo informe muestra avances en la integración. Sin embargo, los planes de ahorro del gobierno están generando una disputa política.",
+   "fuente": "DW Español",
+   "url": "https://www.dw.com/es/la-integración-progresa-pero-los-planes-del-gobierno-podrían-frenarla/a-79933070?maca=spa-rss-sp-all-1122-xml-mrss",
+   "fecha": "2026-11-12T16:21:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "contexto_internacional_resumen"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "22 millones de personas en Alemania tienen trasfondo migratorio. Un nuevo informe muestra avances en la integración.",
+   "puntos": [
+    "22 millones de personas en Alemania tienen trasfondo migratorio.",
+    "Un nuevo informe muestra avances en la integración.",
+    "Sin embargo, los planes de ahorro del gobierno están generando una disputa política."
+   ],
+   "datos": [
+    {
+     "v": "22 millones de personas",
+     "t": "escala",
+     "c": "22 millones de personas en Alemania tienen trasfondo migratorio."
+    }
+   ]
+  },
+  {
+   "id": "59a15986aa",
+   "sector": "tecnologia",
+   "titulo": "Trujillo: Trabajadores del INPE piden suspender uso de escáneres en penal El Milagro",
+   "resumen": "La instalación de escáneres de seguridad en el penal El Milagro de Trujillo, impulsada por el Gobierno de Keiko Fujimori para impedir el ingreso de celulares, drogas y otros objetos prohibidos, enfrenta una nueva controversia. Esta vez, son los propios trabajadores del INPE…",
+   "fuente": "El Búho",
+   "url": "https://elbuho.pe/2026/11/trujillo-trabajadores-del-inpe-piden-suspender-uso-de-escaneres-en-penal-el-milagro/",
+   "fecha": "2026-11-12T16:18:47Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/ESCANERES-VALE.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "La instalación de escáneres de seguridad en el penal El Milagro de Trujillo, impulsada por el Gobierno de Keiko Fujimori para impedir el ingreso de celulares, drogas y otros objetos prohibidos, enfrenta una nueva controversia. Esta vez, son los propios trabajadores del INPE quienes argumentanpresuntos riesgos para su salud por la exposición reiterada a los […]",
+   "puntos": [
+    "La instalación de escáneres de seguridad en el penal El Milagro de Trujillo, impulsada por el Gobierno de Keiko Fujimori para impedir el ingreso de celulares, drogas y otros objetos prohibidos, enfrenta una nueva controversia.",
+    "Esta vez, son los propios trabajadores del INPE quienes argumentanpresuntos riesgos para su salud por la exposición reiterada a los […]",
+    "En un documento del 30 de octubre de 2026, servidores penitenciarios solicitaron la intervención urgente del Instituto Peruano de Energía Nuclear (IPEN)."
+   ],
+   "datos": [
+    {
+     "v": "30 de octubre de 2026",
+     "t": "fecha",
+     "c": "En un documento del 30 de octubre de 2026, servidores penitenciarios solicitaron la intervención…"
+    },
+    {
+     "v": "28 de septiembre",
+     "t": "fecha",
+     "c": "Denuncian que desde el 28 de septiembre son obligados a pasar por estos dispositivos al menos dos…"
+    }
+   ]
+  },
+  {
+   "id": "0c41a9c9ef",
+   "sector": "mundo",
+   "titulo": "Caricatura diaria: jueves 12 de noviembre",
+   "resumen": "Un dibujo que habla de las últimas noticias y acontecimientos.",
+   "fuente": "The New Yorker",
+   "url": "https://www.newyorker.com/cartoons/daily-cartoon/thursday-november-12th-nvidia",
+   "fecha": "2026-11-12T16:06:29Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://media.newyorker.com/cartoons/6af5e1b224f73e8edc2ad78b/master/pass/A62367.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "titulo_original": "Daily Cartoon: Thursday, November 12th",
+   "traducido": true,
+   "sintesis": "Brendan Loper’s Daily Cartoon riffs on A.I. job replacement and Jensen Huang’s resignation from Nvidia.",
+   "puntos": [
+    "Brendan Loper’s Daily Cartoon riffs on A.I. job replacement and Jensen Huang’s resignation from Nvidia."
+   ],
+   "datos": [
+    {
+     "v": "12 de noviembre",
+     "t": "fecha",
+     "c": "Caricatura diaria: jueves 12 de noviembre."
+    }
+   ]
+  },
+  {
+   "id": "7b7b66ce14",
+   "sector": "ia",
+   "titulo": "Demandan a empresas de inteligencia artificial, acusándolas de no poder detener daños",
+   "resumen": "",
+   "fuente": "San Antonio Express-News",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPYld5TVRpVzJFcUVMNFh6c0E4VGVROE1TZmpMOXN2REU1SldYdUhJMTJNdEZzb3JrMGt0bFI3aWpzQXR5cFVZSXR2Nng1a2ZZNzM2TWdBekpoVTl5VVFfdUYwd1ZIZDRtX1NDQ2RZZ0pCbm1MZVAxX2RLMW1sSmFuQU9KVl8ybUVBOWdEVzcwTERvNnV1M1JJWWtDVDBOYzUyRkY1WDlDZw?oc=5",
+   "fecha": "2026-11-12T16:01:30Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa"
+  },
+  {
+   "id": "0a60ba886e",
+   "sector": "mundo",
+   "titulo": "Jensen Huang renuncia como director ejecutivo de Nvidia tras conocerse su relación con una supuesta espía china",
+   "resumen": "El ejecutivo había admitido el domingo pasado haber sido \"infiel\" a su esposa y pidió disculpas por haber lastimado a su familia.",
+   "fuente": "BBC Mundo",
+   "url": "https://www.bbc.com/mundo/articles/cq2d9pg47052o?at_medium=RSS&at_campaign=rss",
+   "fecha": "2026-11-12T15:59:31Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/a88e/live/1c8f87c0-dea3-11f1-82bd-ab0398e9e082.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "El ejecutivo había admitido el domingo pasado haber sido \"infiel\" a su esposa y pidió disculpas por haber lastimado a su familia. Huang quedó en el ojo del huracán cuando se lo señaló por tener una relación sentimental con Alice Huang (ambos comparten apellido pero no tienen parentesco), exdirectora ejecutiva de una empresa de centros de datos con sede en Singapur.",
+   "puntos": [
+    "El ejecutivo había admitido el domingo pasado haber sido \"infiel\" a su esposa y pidió disculpas por haber lastimado a su familia.",
+    "Huang quedó en el ojo del huracán cuando se lo señaló por tener una relación sentimental con Alice Huang (ambos comparten apellido pero no tienen parentesco), exdirectora ejecutiva de una empresa de centros de datos con sede en Singapur.",
+    "Pekín advirtió a Estados Unidos que no utilice las acusaciones de espionaje como pretexto para restringir, una vez más, las ventas de tecnología a China."
+   ]
+  },
+  {
+   "id": "a03e69fa87",
+   "sector": "mundo",
+   "titulo": "Israel bombardea el hospital Nasser de Gaza y mata a 6 personas, entre ellas, civiles y un cirujano",
+   "resumen": "Un bombardeo israelí contra el Hospital Nasser, uno de los principales centros médicos del sur de Gaza, dejó al menos seis muertos, entre ellos civiles y un reconocido cirujano que trabajaba en el lugar. En tres años, este es el séptimo ataque israelí a las instalaciones de…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/video/20261112-israel-bombardea-el-hospital-nasser-de-gaza-y-mata-a-6-personas-entre-ellas-civiles-y-un-cirujano",
+   "fecha": "2026-11-12T15:59:29Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/0e66fb54-deaa-11f1-89fb-29048b396e03/w:1024/p:16x9/ES-20261112-080854-081219-CS.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Un bombardeo israelí contra el Hospital Nasser, uno de los principales centros médicos del sur de Gaza, dejó al menos seis muertos, entre ellos civiles y un reconocido cirujano que trabajaba en el lugar.…",
+   "puntos": [
+    "Un bombardeo israelí contra el Hospital Nasser, uno de los principales centros médicos del sur de Gaza, dejó al menos seis muertos, entre ellos civiles y un reconocido cirujano que trabajaba en el lugar.…"
+   ],
+   "datos": [
+    {
+     "v": "6 personas",
+     "t": "cantidad",
+     "c": "Israel bombardea el hospital Nasser de Gaza y mata a 6 personas, entre ellas, civiles y un cirujano."
+    }
+   ]
+  },
+  {
+   "id": "936da60bc9",
+   "sector": "mundo",
+   "titulo": "En gráficos: cómo funcionaba Ueno Bank y las razones detrás del colapso que desató una crisis en Paraguay",
+   "resumen": "Te contamos con gráficos cómo creció Ueno Bank, qué había detrás de sus operaciones y qué factores llevaron a su caída.",
+   "fuente": "BBC Mundo",
+   "url": "https://www.bbc.com/mundo/articles/cm4gneqkg3dno?at_medium=RSS&at_campaign=rss",
+   "fecha": "2026-11-12T15:54:39Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/7033/live/3b492280-de98-11f1-b441-2b33b063138f.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Te contamos con gráficos cómo creció Ueno Bank, qué había detrás de sus operaciones y qué factores llevaron a su caída. El impacto económico de la quiebra de una entidad que se presentaba como el gran éxito del sistema financiero paraguayo ya empieza a quedar en evidencia.",
+   "puntos": [
+    "Te contamos con gráficos cómo creció Ueno Bank, qué había detrás de sus operaciones y qué factores llevaron a su caída.",
+    "El impacto económico de la quiebra de una entidad que se presentaba como el gran éxito del sistema financiero paraguayo ya empieza a quedar en evidencia.",
+    "Esta semana, Fitch Ratings retiró la perspectiva positiva que mantenía sobre Paraguay, en medio de la crisis bancaria provocada por la resolución de Ueno Bank, la tormenta política y el deterioro de las cuentas fiscales del país."
+   ],
+   "datos": [
+    {
+     "v": "US$2.800 millones",
+     "t": "monto",
+     "c": "…en un país de 6,5 millones de habitantes y acumuló unos US$2.800 millones en depósitos, de los cuales alrededor de US$855 millones…"
+    },
+    {
+     "v": "US$855 millones",
+     "t": "monto",
+     "c": "…US$2.800 millones en depósitos, de los cuales alrededor de US$855 millones correspondían a dinero público."
+    },
+    {
+     "v": "6,5 millones de habitantes",
+     "t": "escala",
+     "c": "Llegó a tener casi tres millones de clientes en un país de 6,5 millones de habitantes y acumuló unos US$2.800 millones en depósitos, de los…"
+    }
+   ]
+  },
+  {
+   "id": "a023d8c4fe",
+   "sector": "mundo",
+   "titulo": "\"Actuar por Francia\": las escalofriantes declaraciones del autor del atentado racista de Trappes",
+   "resumen": "Kévin Tessier, principal sospechoso del ataque racista del 23 de octubre en el departamento de Yvelines, hizo revelaciones estremecedoras durante su detención en la Subdirección Antiterrorista (SDAT). Bajo custodia policial, declaró que actuó \"en nombre de Francia\" cuando abrió…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/francia/20261112-actuar-por-francia-las-escalofriantes-declaraciones-del-autor-del-atentado-racista-de-trappes",
+   "fecha": "2026-11-12T15:46:19Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/a69c99f4-d05b-11f1-b633-4b25c96ec90e/w:1024/p:16x9/000-D47R7WB.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Kévin Tessier, principal sospechoso del ataque racista del 23 de octubre en el departamento de Yvelines, hizo revelaciones estremecedoras durante su detención en la Subdirección Antiterrorista (SDAT).…",
+   "puntos": [
+    "Kévin Tessier, principal sospechoso del ataque racista del 23 de octubre en el departamento de Yvelines, hizo revelaciones estremecedoras durante su detención en la Subdirección Antiterrorista (SDAT).…"
+   ],
+   "datos": [
+    {
+     "v": "23 de octubre",
+     "t": "fecha",
+     "c": "Kévin Tessier, principal sospechoso del ataque racista del 23 de octubre en el departamento de Yvelines, hizo revelaciones…"
+    }
+   ]
+  },
+  {
+   "id": "22150ee034",
+   "sector": "deporte",
+   "titulo": "Falso: Perú no es el primer productor mundial de arándanos uvas y espárragos, como afirmó Keiko Fujimori",
+   "resumen": "China superó al Perú en la producción de arándanos y uvas el año pasado. En espárragos, el último ranking comparable es de 2024 y también sitúa primero a China.",
+   "fuente": "El Búho",
+   "url": "https://elbuho.pe/2026/11/falso-peru-no-es-el-primer-productor-mundial-de-arandanos-uvas-y-esparragos-como-afirmo-keiko-fujimori/",
+   "fecha": "2026-11-12T15:30:04Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/6af5be861e5e26eb840c2884.webp",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "China superó al Perú en la producción de arándanos y uvas el año pasado. En espárragos, el último ranking comparable es de 2024 y también sitúa primero a China.",
+   "puntos": [
+    "China superó al Perú en la producción de arándanos y uvas el año pasado.",
+    "En espárragos, el último ranking comparable es de 2024 y también sitúa primero a China.",
+    "Durante un encuentro empresarial en El Salvador, el 30 de octubre de 2026, la presidenta Keiko Fujimori atribuyó al Perú el primer puesto productor y exportador de arándanos, uvas y espárragos."
+   ],
+   "datos": [
+    {
+     "v": "30 de octubre de 2026",
+     "t": "fecha",
+     "c": "Durante un encuentro empresarial en El Salvador, el 30 de octubre de 2026, la presidenta Keiko Fujimori atribuyó al Perú el primer…"
+    }
+   ]
+  },
+  {
+   "id": "b723f53797",
+   "sector": "tecnologia",
+   "titulo": "Billeteras digitales: el reto de rastrear el dinero",
+   "resumen": "",
+   "fuente": "Expreso",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOTRFdkhqOEtndWNfLVZScXFFRk13d0IwSTJvSVJuZkUyR0dGVDBHeFItNkJsWUFYeENrdm05U21fTHl4SDhPV0NjS0dJc1M1ZWtGQTgwSkdaUzEtdWRIWW9oamFaZ0xQUUR2OVBlX2IxLUxjempXYTdEUW1scUlwTVJtTFVBcU9zUmNkXzNmd2U4a1RORnZMUlM1NzVYanpydFhvZk1yOGpvRUI0NkZRMzFaZw?oc=5",
+   "fecha": "2026-11-12T15:28:24Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "agregador",
+   "via": "Google Noticias"
+  },
+  {
+   "id": "82ab9795a3",
+   "sector": "mundo",
+   "titulo": "La islas claman en la COP31 por su supervivencia; Venezuela llama a \"potenciar\" su sistema petrolero",
+   "resumen": "El aumento de las temperaturas del océano Pacífico emerge como una de las grandes preocupaciones de la cumbre climática en Turquía, con múltiples estados insulares abogando por una reducción urgente de las emisiones de gases de efecto invernadero. Entretanto, el Gobierno de…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/medio-ambiente/20261112-la-islas-claman-en-la-cop31-por-su-supervivencia-venezuela-llama-a-potenciar-su-sistema-petrolero",
+   "fecha": "2026-11-12T15:24:03Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/eb6ea3d0-dea0-11f1-a0c4-3f371022a770/w:1024/p:16x9/a2d02ba7ef9c12bd310d64f4abc604c16b89aa3fw.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "El aumento de las temperaturas del océano Pacífico emerge como una de las grandes preocupaciones de la cumbre climática en Turquía, con múltiples estados insulares abogando por una reducción urgente…",
+   "puntos": [
+    "El aumento de las temperaturas del océano Pacífico emerge como una de las grandes preocupaciones de la cumbre climática en Turquía, con múltiples estados insulares abogando por una reducción urgente…"
+   ]
+  },
+  {
+   "id": "c2d5f01fc3",
+   "sector": "politica",
+   "titulo": "¿El futuro ya está en Videna? La ilusión de los nuevos rostros de la selección peruana",
+   "resumen": "Una nueva etapa comienza a tomar forma en la selección peruana. La convocatoria de Mano Menezes no solo trajo nombres conocidos, también… The post ¿El futuro ya está en Videna? La ilusión de los nuevos rostros de la selección peruana appeared first on Caretas .",
+   "fuente": "Caretas",
+   "url": "https://caretas.pe/deportes/el-futuro-ya-esta-en-videna-la-ilusion-de-los-nuevos-rostros-de-la-seleccion-peruana/",
+   "fecha": "2026-11-12T15:22:15Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://caretas.pe/wp-content/uploads/2026/11/Foto-3-5-959x768.jpeg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Francesco Andrealli, Erinson Ramírez y Fabio Gruber viven con ilusión su presente en la selección peruana. Una nueva etapa comienza a tomar forma en la selección peruana .",
+   "puntos": [
+    "Francesco Andrealli, Erinson Ramírez y Fabio Gruber viven con ilusión su presente en la selección peruana.",
+    "Una nueva etapa comienza a tomar forma en la selección peruana .",
+    "La convocatoria de Mano Menezes no solo trajo nombres conocidos, también abrió las puertas a futbolistas que buscan escribir sus primeras páginas con la camiseta nacional."
+   ]
+  },
+  {
+   "id": "22b71086fb",
+   "sector": "economia",
+   "titulo": "«Se dejó abrazar por los niños»: la conmovida reacción del papa León XIV ante el himno escolar en su honor (VIDEO)",
+   "resumen": "El papa León XIV protagonizó un conmovedor momento en la sede del Ministerio de Educación tras escuchar el himno oficial \"León, hermano del camino\", interpretado por coros de niños y jóvenes de la iniciativa Orquestando junto a la banda inclusiva del Conadis. Tras finalizar la…",
+   "fuente": "El Búho",
+   "url": "https://elbuho.pe/2026/11/se-dejo-abrazar-por-los-ninos-la-conmovida-reaccion-del-papa-leon-xiv-ante-el-himno-escolar-en-su-honor-video/",
+   "fecha": "2026-11-12T15:17:23Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/papa-leon-coro-ninos-noticias-peru-comovido-noticias-peru-vaticano-leon-xiv.webp",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "El papa León XIV rompió en emoción tras escuchar el himno \"León, hermano del camino\" interpretado por coros de niños y la banda inclusiva de Conadis. Tras finalizar la presentación, el pontífice se acercó rompiendo el protocolo para dejarse abrazar por los pequeños intérpretes.",
+   "puntos": [
+    "El papa León XIV rompió en emoción tras escuchar el himno \"León, hermano del camino\" interpretado por coros de niños y la banda inclusiva de Conadis.",
+    "Tras finalizar la presentación, el pontífice se acercó rompiendo el protocolo para dejarse abrazar por los pequeños intérpretes.",
+    "El papa León XIV quedó visiblemente emocionado tras el recibimiento que le realizaron diferentes coros de niños, quienes entonaron «León, hermano del camino», del compositor Jaime Montoya Ayala, canción ganadora para la visita del Santo Padre."
+   ],
+   "datos": [
+    {
+     "v": "15 años",
+     "t": "cantidad",
+     "c": "…iniciativa pedagógica del Ministerio de Educación, cumple 15 años promoviendo la formación musical gratuita de estudiantes…"
+    }
+   ]
+  },
+  {
+   "id": "c141e36b0e",
+   "sector": "mundo",
+   "titulo": "Al menos 1 muerto y 4 heridos en un tiroteo en un gimnasio en Washington DC",
+   "resumen": "Los equipos de emergencia se desplegaron en el barrio de Logan Circle, un par de kilómetros al norte de la Casa Blanca.",
+   "fuente": "BBC Mundo",
+   "url": "https://www.bbc.com/mundo/articles/cq8j47lw9nmwo?at_medium=RSS&at_campaign=rss",
+   "fecha": "2026-11-12T15:14:15Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/a1b1/live/b3a038d0-dea8-11f1-b441-2b33b063138f.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Los equipos de emergencia se desplegaron en el barrio de Logan Circle, un par de kilómetros al norte de la Casa Blanca. Un sospechoso presuntamente abrió fuego al interior del establecimiento y luego el tiroteo siguió en los alrededores, informó Jeffrey W.",
+   "puntos": [
+    "Los equipos de emergencia se desplegaron en el barrio de Logan Circle, un par de kilómetros al norte de la Casa Blanca.",
+    "Un sospechoso presuntamente abrió fuego al interior del establecimiento y luego el tiroteo siguió en los alrededores, informó Jeffrey W.",
+    "Carroll, el jefe interino del Departamento de Policía Metropolitana (MPD, por sus siglas en inglés)."
+   ],
+   "datos": [
+    {
+     "v": "4 heridos",
+     "t": "cantidad",
+     "c": "Al menos 1 muerto y 4 heridos en un tiroteo en un gimnasio en Washington DC."
+    }
+   ]
+  },
+  {
+   "id": "87f04a7c43",
+   "sector": "salud",
+   "titulo": "Papa León XIV visitó el Santuario de Las Nazarenas y rindió homenaje al Señor de los Milagros",
+   "resumen": "El Santo Padre hizo una parada en el Santuario de Las Nazarenas para saludar a los fieles y rendirle reverencia a la imagen del Cristo Moreno.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/lima/actualidad/papa-leon-xiv-bendice-imagen-del-senor-de-los-milagros-noticia-1717405",
+   "fecha": "2026-11-12T14:55:58Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/12/portada_3437813.jpg?width=860&quality=80",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "seccion_nacional_fuente"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El Santo Padre hizo una parada en el Santuario de Las Nazarenas para saludar a los fieles y rendirle reverencia a la imagen del Cristo Moreno. Compartir Actualidad Share papa León XIV papa León XIV 00:00 · 03:49 El papa León XIV llegó a bordo del papamóvil a los exteriores del Santuario de Las Nazarenas en la avenida Tacna este jueves 12 de noviembre, donde saludó a los miles de fieles que aguardaban su presencia previo a que se dirija hacia la capilla del Palacio Arzobispal.",
+   "puntos": [
+    "El Santo Padre hizo una parada en el Santuario de Las Nazarenas para saludar a los fieles y rendirle reverencia a la imagen del Cristo Moreno.",
+    "Compartir Actualidad Share papa León XIV papa León XIV 00:00 · 03:49 El papa León XIV llegó a bordo del papamóvil a los exteriores del Santuario de Las Nazarenas en la avenida Tacna este jueves 12 de noviembre, donde saludó a los miles de fieles que aguardaban su presencia previo a que se dirija hacia la capilla del Palacio Arzobispal.",
+    "Según se apreció en las imágenes, el Sumo Pontífice descendió del papamóvil y se acercó hasta la sagrada imagen del Señor de Los Milagros que estuvo colocada en el patio de Las Nazarenas."
+   ],
+   "datos": [
+    {
+     "v": "12 de noviembre",
+     "t": "fecha",
+     "c": "…Santuario de Las Nazarenas en la avenida Tacna este jueves 12 de noviembre, donde saludó a los miles de fieles que aguardaban su…"
+    }
+   ]
+  },
+  {
+   "id": "55d7ae05f8",
+   "sector": "investigacion",
+   "titulo": "Bahuaja Sonene: el viejo debate sobre la explotación de gas en áreas protegidas",
+   "resumen": "",
+   "fuente": "OjoPúblico",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdjZvRjZ2T0pIZ1p5LWlncFBnQ1pDUHV1amZpYTVNM0NPNkpLMGlfbW5RMFdvdlMwLUw3ZjFGeUYwZWFYeWx3c3ZpcEx3UGtaRE5TUXB6T0dpOG50TC1ma3M3T3lyTXY3aE5KWXEzaWMyVzU0YWF2YUZFbG9lNFhLLU9saWpkZU1udDJKbV9SNDBOSHBLRXVpNzZVQQ?oc=5",
+   "fecha": "2026-11-12T14:54:10Z",
+   "tipo": "independiente",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "agregador",
+   "via": "Google Noticias"
+  },
+  {
+   "id": "7ee895cd2a",
+   "sector": "mundo",
+   "titulo": "Trump amenaza con duplicar los aranceles a México si no endurece la frontera",
+   "resumen": "El presidente advierte, tras sufrir un revés electoral, que “enormes caravanas” de inmigrantes viajan hacia Estados Unidos para entrar ilegalmente en el país",
+   "fuente": "El País América",
+   "url": "https://elpais.com/us/2026-11-12/trump-amenaza-con-duplicar-los-aranceles-a-mexico-si-no-endurece-la-frontera.html",
+   "fecha": "2026-11-12T14:53:36Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://imagenes.elpais.com/resizer/v2/MV6ICCSCBRAJ3GHIDNI45ZG4RQ.JPG?auth=9de9e1a7daf05c88e0b7b44dde2ad810901e5c4434e42e2839ff6e76dd87645f",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "El presidente advierte, tras sufrir un revés electoral, que “enormes caravanas” de inmigrantes viajan hacia Estados Unidos para entrar ilegalmente en el país",
+   "puntos": [
+    "El presidente advierte, tras sufrir un revés electoral, que “enormes caravanas” de inmigrantes viajan hacia Estados Unidos para entrar ilegalmente en el país"
+   ]
+  },
+  {
+   "id": "ba03de2b4e",
+   "sector": "deporte",
+   "titulo": "¡Orgullo peruano en Pachuca! El “Nene” Cubillas y la “Patrulla” Barbadillo ya son eternos en el Salón de la Fama",
+   "resumen": "El fútbol peruano tuvo una noche para guardar en la memoria. En Pachuca, México, dos de sus máximos representantes recibieron el reconocimiento… The post ¡Orgullo peruano en Pachuca! El “Nene” Cubillas y la “Patrulla” Barbadillo ya son eternos en el Salón de la Fama appeared…",
+   "fuente": "Caretas",
+   "url": "https://caretas.pe/deportes/orgullo-peruano-en-pachuca-el-nene-cubillas-y-la-patrulla-barbadillo-ya-son-eternos-en-el-salon-de-la-fama/",
+   "fecha": "2026-11-12T14:49:57Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://caretas.pe/wp-content/uploads/2026/11/Foto-5-1-1208x768.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Teófilo Cubillas y Gerónimo Barbadillo ingresaron al Salón de la Fama del Fútbol Internacional en Pachuca. El fútbol peruano tuvo una noche para guardar en la memoria.",
+   "puntos": [
+    "Teófilo Cubillas y Gerónimo Barbadillo ingresaron al Salón de la Fama del Fútbol Internacional en Pachuca.",
+    "El fútbol peruano tuvo una noche para guardar en la memoria.",
+    "En Pachuca, México, dos de sus máximos representantes recibieron el reconocimiento que merece una vida dedicada al deporte rey."
+   ],
+   "datos": [
+    {
+     "v": "10 de noviembre",
+     "t": "fecha",
+     "c": "Teófilo Cubillas fue uno de los protagonistas de la ceremonia realizada el martes 10 de noviembre en el auditorio Gota de Plata."
+    }
+   ]
+  },
+  {
+   "id": "0914499dbd",
+   "sector": "salud",
+   "titulo": "León XIV en Perú: un llamado a fortalecer la salud pública y la atención de la salud mental",
+   "resumen": "Durante su primer día en el Perú, el pontífice llamó a las autoridades a fortalecer la medicina preventiva y respaldar a las familias que cuidan de personas enfermas, adultos mayores y personas con discapacidad. En su discurs",
+   "fuente": "La Mula",
+   "url": "https://redaccion.lamula.pe/2026/11/12/leon-xiv-peru-llamado-salud-publica-salud-mental-x-d-s-d/redaccionmulera/",
+   "fecha": "2026-11-12T14:36:00Z",
+   "tipo": "independiente",
+   "genero": "noticia",
+   "imagen": "https://lamula.pe/media/uploads/t/ce8ab991d5610f8737ab5dee66bc90fd.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Durante su primer día en el Perú, el pontífice llamó a las autoridades a fortalecer la medicina preventiva y respaldar a las familias que cuidan de personas enfermas, adultos mayores y personas con discapacidad. En su discurso ante la presidenta Keiko Fujimori, también recordó que quienes asumen estas responsabilidades necesitan recibir atención y apoyo.",
+   "puntos": [
+    "Durante su primer día en el Perú, el pontífice llamó a las autoridades a fortalecer la medicina preventiva y respaldar a las familias que cuidan de personas enfermas, adultos mayores y personas con discapacidad.",
+    "En su discurso ante la presidenta Keiko Fujimori, también recordó que quienes asumen estas responsabilidades necesitan recibir atención y apoyo.",
+    "El papa León XIV dedicó parte de su primer discurso oficial ante las autoridades peruanas a la salud pública , la atención de las personas en situación de vulnerabilidad y las responsabilidades de las familias que asumen labores de cuidado."
+   ],
+   "datos": [
+    {
+     "v": "11 de noviembre",
+     "t": "fecha",
+     "c": "Durante el encuentro celebrado el miércoles 11 de noviembre en el Gran Teatro Nacional, en Lima, el pontífice pidió al…"
+    }
+   ]
+  },
+  {
+   "id": "fdf06be197",
+   "sector": "deporte",
+   "titulo": "León XIV y el fútbol peruano: las pistas detrás de su cercanía con más de una camiseta y cómo nació su vínculo con Alianza Lima",
+   "resumen": "En su estadía por Perú a lo largo de 21 años, el papa León XIV no solo fue cercano a su diócesis o la comida, sino también al fútbol. El Comercio conversó con un exacólito y un biógrafo del Pontífice para conocer con qué equipo simpatizaba.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/deporte-total/futbol-peruano/alianza-lima-papa-leon-xiv-y-el-futbol-peruano-las-pistas-detras-de-su-cercania-con-mas-de-una-camiseta-y-como-nacio-su-vinculo-con-la-blanquiazul-apuesplan-noticia/",
+   "fecha": "2026-11-12T14:31:35Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/XPRRGXTRSZEOJDRWY3KOJDMGDI.jpg?auth=e45424703ef64cca9d71403f6241baf3242e6644bd7c85c4ef3098099a7e8097&smart=true&width=1080&height=1080",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "En su estadía por Perú a lo largo de 21 años, el papa León XIV no solo fue cercano a su diócesis o la comida, sino también al fútbol. El Comercio conversó con un exacólito y un biógrafo del Pontífice para conocer con qué equipo simpatizaba.",
+   "puntos": [
+    "En su estadía por Perú a lo largo de 21 años, el papa León XIV no solo fue cercano a su diócesis o la comida, sino también al fútbol.",
+    "El Comercio conversó con un exacólito y un biógrafo del Pontífice para conocer con qué equipo simpatizaba.",
+    "León XIV: las costumbres que aprendió en Chiclayo, la verdadera historia con Juan Aurich y el básquet, su otra afición después del tenis El Papa León XIV y su pasión por el deporte: del tenis en Chiclayo al béisbol en Chicago, la historia detrás del aficionado “que juega” como Federer Escuchar Leer…"
+   ],
+   "datos": [
+    {
+     "v": "21 años",
+     "t": "cantidad",
+     "c": "En su estadía por Perú a lo largo de 21 años, el papa León XIV no solo fue cercano a su diócesis o la comida, sino también al fútbol."
+    },
+    {
+     "v": "17 años",
+     "t": "cantidad",
+     "c": "Cuando José María Núñez tenía 17 años y fue nombrado acólito de Robert Prevost , entonces obispo…"
+    }
+   ]
+  },
+  {
+   "id": "4b241768b3",
+   "sector": "mundo",
+   "titulo": "Jensen Huang renuncia como director de Nvidia tras su romance extramatrimonial con una posible espía",
+   "resumen": "",
+   "fuente": "France 24 Español",
+   "url": "https://f24.my/CHNx",
+   "fecha": "2026-11-12T14:16:31Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/f7e5a9ba-dea0-11f1-b255-29048b396e03/w:1280/p:16x9/2026-11-12T115845Z-1141769569-RC2I6KAPBYZ3-RTRMADP-3-NVIDIA-CEO.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "Luego de que se conociera una relación extramatrimonial con una empresaria china sospechada de ser espía de Beijing, el gigante tecnológico Nvidia anunció la dimisión de Jensen Huang como director ejecutivo…",
+   "puntos": [
+    "Luego de que se conociera una relación extramatrimonial con una empresaria china sospechada de ser espía de Beijing, el gigante tecnológico Nvidia anunció la dimisión de Jensen Huang como director ejecutivo…"
+   ]
+  },
+  {
+   "id": "2c9f8e99a7",
+   "sector": "mundo",
+   "titulo": "Miriam González: \"La población inmigrante en España es un activo\"",
+   "resumen": "DW entrevistó a la líder del partido Democracia 21, una figura de trayectoria internacional que planta cara a los bloques políticos tradicionales en las elecciones del 29 de noviembre en España.",
+   "fuente": "DW Español",
+   "url": "https://www.dw.com/es/miriam-gonzález-la-población-inmigrante-en-españa-es-un-activo/a-79927366?maca=spa-rss-sp-all-1122-xml-mrss",
+   "fecha": "2026-11-12T14:14:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "DW entrevistó a la líder del partido Democracia 21, una figura de trayectoria internacional que planta cara a los bloques políticos tradicionales en las elecciones del 29 de noviembre en España.",
+   "puntos": [
+    "DW entrevistó a la líder del partido Democracia 21, una figura de trayectoria internacional que planta cara a los bloques políticos tradicionales en las elecciones del 29 de noviembre en España."
+   ],
+   "datos": [
+    {
+     "v": "29 de noviembre",
+     "t": "fecha",
+     "c": "…los bloques políticos tradicionales en las elecciones del 29 de noviembre en España."
+    }
+   ]
+  },
+  {
+   "id": "a3df8e7446",
+   "sector": "mundo",
+   "titulo": "Acorralado por el escándalo que puso en alerta a Washington, Jensen Huang renuncia como CEO de Nvidia",
+   "resumen": "Luego de que se conociera una relación extramatrimonial con una empresaria china sospechada de ser espía de Beijing, el gigante tecnológico Nvidia anunció la dimisión de Jensen Huang como director ejecutivo de la compañía. Su lugar será ocupado de forma interina por la actual…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/ee-uu-y-canad%C3%A1/20261112-acorralado-por-el-esc%C3%A1ndalo-que-puso-en-alerta-a-washington-jensen-huang-renuncia-a-nvidia",
+   "fecha": "2026-11-12T14:13:05Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/f7e5a9ba-dea0-11f1-b255-29048b396e03/w:1024/p:16x9/2026-11-12T115845Z-1141769569-RC2I6KAPBYZ3-RTRMADP-3-NVIDIA-CEO.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Luego de que se conociera una relación extramatrimonial con una empresaria china sospechada de ser espía de Beijing, el gigante tecnológico Nvidia anunció la dimisión de Jensen Huang como director ejecutivo…",
+   "puntos": [
+    "Luego de que se conociera una relación extramatrimonial con una empresaria china sospechada de ser espía de Beijing, el gigante tecnológico Nvidia anunció la dimisión de Jensen Huang como director ejecutivo…"
+   ]
+  },
+  {
+   "id": "2fdf9c9075",
+   "sector": "ia",
+   "titulo": "El director ejecutivo de Nvidia renuncia en medio del escándalo por su relación extramarital con una supuesta espía china",
+   "resumen": "",
+   "fuente": "Telemundo",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNTzNvSWR2TFdHeDR1ZVZ5TktwYnh5MFJvQUZKcUVZS2NpZUR4d2ZCV2dMcnRIeFlLeVdvUkdFVm16R0hGVTJMNEV6dWkxNlBiU0VyQXlOTk5fc3RvN0pUSzVEUlQwWVRlRl9KWUNJcUppV1hSMlpzbTl4MTJwdDdOODluODUxZ0hEWU81U3RUSmlTV0ZKRmZWZ18zMExXak1tRkE3aVBodjB3SkVMWjRHbllaV25PcUFHRVRpZlZBOUg4NUZLcjBhbTBfdGp3UDluSDhtcDU3T3ZPanByYTRod1NIQQ?oc=5",
+   "fecha": "2026-11-12T14:04:35Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa"
+  },
+  {
+   "id": "b4b91550f9",
+   "sector": "mundo",
+   "titulo": "Dimite Jensen Huang y sacude al gigante de la IA Nvidia",
+   "resumen": "La directora financiera, Colette Kress, asume como consejera delegada interina mientras la compañía busca un sucesor permanente.",
+   "fuente": "DW Español",
+   "url": "https://www.dw.com/es/dimite-jensen-huang-y-sacude-al-gigante-de-la-ia-nvidia/a-79931741?maca=spa-rss-sp-all-1122-xml-mrss",
+   "fecha": "2026-11-12T14:04:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://static.dw.com/image/79724049_6.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "La directora financiera, Colette Kress, asume como consejera delegada interina mientras la compañía busca un sucesor permanente. La directora financiera, Colette Kress, será consejera delegada interina hasta que se nombre un sucesor.",
+   "puntos": [
+    "La directora financiera, Colette Kress, asume como consejera delegada interina mientras la compañía busca un sucesor permanente.",
+    "La directora financiera, Colette Kress, será consejera delegada interina hasta que se nombre un sucesor.",
+    "Nvidia también designó a Harvey Jones, antiguo consejero delegado de Synopsys y miembro de su consejo, como primer presidente del consejo de administración de la compañía."
+   ],
+   "datos": [
+    {
+     "v": "3,61 %",
+     "t": "porcentaje",
+     "c": "Huang, que es el cuarto mayor accionista de Nvidia con alrededor del 3,61 %, abandonará asimismo el consejo.."
+    },
+    {
+     "v": "10 %",
+     "t": "porcentaje",
+     "c": "Las acciones de la compañía caían más de un 10 % antes de la apertura de Wall Street y arrastraban al conjunto del mercado.."
+    },
+    {
+     "v": "63 años",
+     "t": "cantidad",
+     "c": "La presión sobre Huang, de 63 años y casado, había aumentado en los últimos días tras…"
+    }
+   ]
+  },
+  {
+   "id": "0197e32f2b",
+   "sector": "mundo",
+   "titulo": "Trump amenaza con duplicar aranceles a México si no frena a migrantes",
+   "resumen": "Donald Trump amenazó con duplicar de inmediato los aranceles a México si el Gobierno mexicano no detiene nuevas caravanas de migrantes que, según el presidente estadounidense, se dirigen hacia la frontera.",
+   "fuente": "DW Español",
+   "url": "https://www.dw.com/es/trump-amenaza-con-duplicar-aranceles-a-méxico-si-no-frena-a-migrantes/a-79931643?maca=spa-rss-sp-all-1122-xml-mrss",
+   "fecha": "2026-11-12T14:00:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Donald Trump amenazó con duplicar de inmediato los aranceles a México si el Gobierno mexicano no detiene nuevas caravanas de migrantes que, según el presidente estadounidense, se dirigen hacia la frontera.",
+   "puntos": [
+    "Donald Trump amenazó con duplicar de inmediato los aranceles a México si el Gobierno mexicano no detiene nuevas caravanas de migrantes que, según el presidente estadounidense, se dirigen hacia la frontera."
+   ]
+  },
+  {
+   "id": "96420e4638",
+   "sector": "mundo",
+   "titulo": "Jensen Huang renuncia como consejero delegado de Nvidia forzado por el escándalo sobre sus infidelidades y el caso de espionaje",
+   "resumen": "La relación extramarital con una presunta espía china y con una subordinada de su empresa precipitó su salida",
+   "fuente": "El País América",
+   "url": "https://elpais.com/us/2026-11-12/jensen-huang-dimite-como-consejero-delegado-de-nvidia-tras-destaparse-el-escandalo-sobre-sus-infidelidades-y-el-caso-de-espionaje.html",
+   "fecha": "2026-11-12T13:59:47Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://imagenes.elpais.com/resizer/v2/ZF4PVFY7WZCSLPOGSUBB2HF4PQ.jpg?auth=807fdc148a72c15e4b7982e0d56c5113aac99361846992d5a924757b6a54bde6",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "contexto_internacional_resumen"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "La relación extramarital con una presunta espía china y con una subordinada de su empresa precipitó su salida",
+   "puntos": [
+    "La relación extramarital con una presunta espía china y con una subordinada de su empresa precipitó su salida"
+   ]
+  },
+  {
+   "id": "f9cb1cfdc9",
+   "sector": "economia",
+   "titulo": "El negocio de los relaves mineros en Chile: pagar a los municipios desincentiva limpiarlos y las lluvias extremas elevan el riesgo de derrames",
+   "resumen": "Durante la madrugada del 5 de noviembre de 2026, material de relave perteneciente a División Andina, una de las minas de cobre de la empresa estatal chilena Codelco, se derramó alcanzando el río Blanco, en la Cordillera de los Andes, en la Región de Valparaíso. El río Blanco…",
+   "fuente": "Mongabay Latam",
+   "url": "https://es.mongabay.com/2026/11/relaves-mineros-chile-municipios-reciben-dinero-desalienta-remediacion-lluvias-extremas-derrames/",
+   "fecha": "2026-11-12T13:45:24Z",
+   "tipo": "independiente",
+   "genero": "noticia",
+   "imagen": "https://imgs.mongabay.com/wp-content/uploads/sites/25/2026/11/11215653/Relaves-urbanos-cauces-de-agua-y-poblaciones-conviven-en-una-de-las-entradas-de-Illapel.-Foto-de_-Joaquin-Diaz-768x512.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Durante la madrugada del 5 de noviembre de 2026, material de relave perteneciente a División Andina , una de las minas de cobre de la empresa estatal chilena Codelco, se derramó alcanzando el río Blanco , en la Cordillera de los Andes, en la Región de Valparaíso. El río Blanco alimenta, a su vez, al río Aconcagua, cuyas aguas contribuyen al suministro de agua potable de más de un millón de personas y sostiene actividades agrícolas.",
+   "puntos": [
+    "Durante la madrugada del 5 de noviembre de 2026, material de relave perteneciente a División Andina , una de las minas de cobre de la empresa estatal chilena Codelco, se derramó alcanzando el río Blanco , en la Cordillera de los Andes, en la Región de Valparaíso.",
+    "El río Blanco alimenta, a su vez, al río Aconcagua, cuyas aguas contribuyen al suministro de agua potable de más de un millón de personas y sostiene actividades agrícolas.",
+    "Por lo mismo, tras la emergencia, se cerraron preventivamente compuertas de riego del Aconcagua y se suspendió temporalmente una captación de Esval, empresa de servicios sanitarios encargada de la producción y distribución de agua potable."
+   ],
+   "datos": [
+    {
+     "v": "5 de noviembre de 2026",
+     "t": "fecha",
+     "c": "Durante la madrugada del 5 de noviembre de 2026, material de relave perteneciente a División Andina , una…"
+    },
+    {
+     "v": "20 de julio",
+     "t": "fecha",
+     "c": "Entre el 15 y el 20 de julio pasado, la superposición del fenómeno de El Niño con la…"
     }
    ]
   },
@@ -656,115 +4151,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "f7427ae204",
-   "sector": "coyuntura",
-   "titulo": "Temblor en México EN VIVO hoy, 12 de noviembre 2026: hora exacta, magnitud y dónde fue el epicentro del último sismo vía SSN",
-   "resumen": "¿Dónde tembló hoy en México? Consulta los sismos del jueves 12 de noviembre: hora exacta, magnitud y epicentro, según el Servicio Sismológico Nacional (SSN) desde CDMX, Michoacán, Oaxaca, Jalisco, Guerrero, Chiapas, entre otros estados.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/mag/respuestas/mx/temblor-en-mexico-en-vivo-hoy-11-y-12-de-noviembre-2026-hora-exacta-magnitud-y-donde-fue-el-epicentro-del-ultimo-sismo-via-ssn-microsismo-cdmx-nnda-nnrt-noticia/",
-   "fecha": "2026-11-12T13:37:38Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/HJGEB6AKOJFHTNL2I46LAB5LGM.jpg?auth=21bab3209c23caa564ed1d767debcac2b92e234352008a40371563a43a2f338f&smart=true&width=2400&height=1620",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Consulta los sismos del jueves 12 de noviembre: hora exacta, magnitud y epicentro, según el Servicio Sismológico Nacional (SSN) desde CDMX, Michoacán, Oaxaca, Jalisco, Guerrero, Chiapas, entre otros estados. México es, por naturaleza, una de las regiones geológicamente más activas del planeta.",
-   "puntos": [
-    "Consulta los sismos del jueves 12 de noviembre: hora exacta, magnitud y epicentro, según el Servicio Sismológico Nacional (SSN) desde CDMX, Michoacán, Oaxaca, Jalisco, Guerrero, Chiapas, entre otros estados.",
-    "México es, por naturaleza, una de las regiones geológicamente más activas del planeta.",
-    "Para hacer frente a esta realidad, el país cuenta con un sistema de vigilancia continua capaz de registrar, procesar y analizar cada movimiento telúrico en tiempo real."
-   ],
-   "datos": [
-    {
-     "v": "100%",
-     "t": "porcentaje",
-     "c": "Ante cualquier evento reciente, la única fuente oficial y 100% confiable es el Servicio Sismológico Nacional (SSN)…"
-    },
-    {
-     "v": "12 de noviembre",
-     "t": "fecha",
-     "c": "Temblor en México EN VIVO hoy, 12 de noviembre 2026: hora exacta, magnitud y dónde fue el epicentro del último sismo vía SSN."
-    },
-    {
-     "v": "11 de noviembre de 2026",
-     "t": "fecha",
-     "c": "Temblor en México hoy, miércoles 11 de noviembre de 2026: sismo de magnitud 2 con epicentro en Baja California."
-    }
-   ]
-  },
-  {
-   "id": "af0de33786",
-   "sector": "mundo",
-   "titulo": "\"El papa León XIV es mi padrino de bautizo\": la insólita historia de Mildred Camacho, la joven peruana que es ahijada del Sumo Pontífice",
-   "resumen": "Hace 30 años, el joven sacerdote Robert Prevost Martínez aceptó ser el padrino de bautismo de una niña en Chulucanas, en la región de Piura. Ahora ella espera con ansiedad su visita a Perú como el papa León XIV.",
-   "fuente": "BBC Mundo",
-   "url": "https://www.bbc.com/mundo/articles/cqly3jpmvvl9o?at_medium=RSS&at_campaign=rss",
-   "fecha": "2026-11-12T13:37:10Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/ded3/live/e35d1ff0-dbe9-11f1-a92c-571514c0deea.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Hace 30 años, el joven sacerdote Robert Prevost Martínez aceptó ser el padrino de bautismo de una niña en Chulucanas, en la región de Piura. Ahora ella espera con ansiedad su visita a Perú como el papa León XIV.",
-   "puntos": [
-    "Hace 30 años, el joven sacerdote Robert Prevost Martínez aceptó ser el padrino de bautismo de una niña en Chulucanas, en la región de Piura.",
-    "Ahora ella espera con ansiedad su visita a Perú como el papa León XIV.",
-    "Atiende a BBC Mundo en la previa del regreso del sucesor de San Pedro a Chiclayo, en el norte de Perú, ciudad de donde fue obispo entre 2015 y 2023 y zona donde desarrolló gran parte de su andar pastoral."
-   ],
-   "datos": [
-    {
-     "v": "30 años",
-     "t": "cantidad",
-     "c": "Hace 30 años, el joven sacerdote Robert Prevost Martínez aceptó ser el padrino de bautismo de una niña en Chulucanas, en la región de Piura."
-    }
-   ]
-  },
-  {
-   "id": "316f8f4bc7",
-   "sector": "economia",
-   "titulo": "El Derby Nacional celebra 125 ediciones: La carrera hípica que mantiene viva una de las grandes tradiciones del deporte peruano",
-   "resumen": "La emblemática competencia reunirá a los mejores ejemplares de tres años, entre ellos Mr. Peggy quien buscará conquistar la triple corona este domingo 22 de noviembre en el Hipódromo de Monterrico. El ingreso será gratuito desde el mediodía.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/deporte-total/polideportivo/hipica-peruana-el-derby-nacional-celebra-125-ediciones-la-carrera-hipica-que-mantiene-viva-una-de-las-grandes-tradiciones-del-deporte-peruano-noticia/",
-   "fecha": "2026-11-12T13:36:51Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/S6K22FEU5JCUJJXDTB47VYEKSU.jpg?auth=29dee04cb95ccdc372bad0e2353aafb2da35d41fc63e6b18a8ac7964ed2d0dab&smart=true&width=1200&height=800",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "La emblemática competencia reunirá a los mejores ejemplares de tres años, entre ellos Mr. Peggy quien buscará conquistar la triple corona este domingo 22 de noviembre en el Hipódromo de Monterrico.",
-   "puntos": [
-    "La emblemática competencia reunirá a los mejores ejemplares de tres años, entre ellos Mr.",
-    "Peggy quien buscará conquistar la triple corona este domingo 22 de noviembre en el Hipódromo de Monterrico.",
-    "El ingreso será gratuito desde el mediodía."
-   ],
-   "datos": [
-    {
-     "v": "22 de noviembre",
-     "t": "fecha",
-     "c": "Peggy quien buscará conquistar la triple corona este domingo 22 de noviembre en el Hipódromo de Monterrico."
-    }
-   ]
-  },
-  {
    "id": "e5ac90bf6c",
    "sector": "tecnologia",
    "titulo": "Ucrania denuncia restricciones al servicio de internet Starshield de Elon Musk",
@@ -791,76 +4177,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "7b168c0c61",
-   "sector": "coyuntura",
-   "titulo": "Lluvias intensas en Perú EN VIVO: Pronóstico del clima actualizado por el Senamhi en regiones",
-   "resumen": "Lluvias, lloviznas y activación de quebradas en regiones del Perú HOY en vivo.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/peru/lluvias-lloviznas-y-activacion-de-quebradas-en-regiones-del-peru-hoy-ultimas-noticias-y-pronosticos-del-senamhi-lbposting-noticia/",
-   "fecha": "2026-11-12T13:34:15Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/2U3EF6UN6BFRNPEALYOZXD4AIQ.jpg?auth=80647c66241e39545e694049814e6a4bf835906f6089681802ab130f67182251&smart=true&width=1200&height=636",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Lluvias, lloviznas y activación de quebradas en regiones del Perú HOY en vivo. #Ahora #Minam #Senamhi | Se registra llovizna ligera y dispersa en Lurín, Pachacámac, Villa María del Triunfo y Villa El Salvador.",
-   "puntos": [
-    "Lluvias, lloviznas y activación de quebradas en regiones del Perú HOY en vivo.",
-    "#Ahora #Minam #Senamhi | Se registra llovizna ligera y dispersa en Lurín, Pachacámac, Villa María del Triunfo y Villa El Salvador.",
-    "Se prevé que estas condiciones persistan durante las próximas horas. #PerúResponde ante el fenómeno El Niño."
-   ],
-   "datos": [
-    {
-     "v": "100 días",
-     "t": "cantidad",
-     "c": "Durante los primeros 100 días de gestión, la ANA impulsa trabajo en campo y acciones concretas para proteger a la población ante el FEN. ?"
-    },
-    {
-     "v": "12 de noviembre",
-     "t": "fecha",
-     "c": "…#ElPapaVuelveACasa #Minam #Senamhi | Este jueves 12 de noviembre, el papa León XIV continúa su agenda de actividades en…"
-    }
-   ]
-  },
-  {
-   "id": "154bc8ae07",
-   "sector": "coyuntura",
-   "titulo": "Temblor en EE.UU. EN VIVO hoy, 12 de noviembre 2026: hora exacta, magnitud y dónde fue el epicentro del último sismo vía USGS",
-   "resumen": "Consulta el reporte oficial de USGS para saber la hora exacta, dónde fue el epicentro y magnitud del último temblor en EE.UU. hoy, jueves 12 de noviembre de 2026, con información sobre California, Nueva York, Texas, Hawái, Georgia, Alaska y otros estados.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/mag/usa/local-us/temblor-en-eeuu-en-vivo-hoy-11-y-12-de-noviembre-2026-hora-exacta-magnitud-y-donde-fue-el-epicentro-del-ultimo-sismo-via-usgs-california-nnda-nnrt-noticia/",
-   "fecha": "2026-11-12T13:33:16Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/HDTRX5Z3PVHQBCIKKPGLYWJXBI.jpg?auth=c216b394e33c9699b0125b01ed199117038ceb9e09cf6b373f406b050e80bb52&smart=true&width=2400&height=1620",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Consulta el reporte oficial de USGS para saber la hora exacta, dónde fue el epicentro y magnitud del último temblor en EE.UU. hoy, jueves 12 de noviembre de 2026, con información sobre California, Nueva York, Texas, Hawái, Georgia, Alaska y otros estados. La corteza terrestre en Estados Unidos experimenta una constante liberación de energía debido a la compleja interacción de sus límites tectónicos, un fenómeno que se extiende desde los sistemas de fallas continentales de California hasta las profundas zonas de subducción en Alaska y los complejos volcánicos activos de Hawái.",
-   "puntos": [
-    "Consulta el reporte oficial de USGS para saber la hora exacta, dónde fue el epicentro y magnitud del último temblor en EE.UU. hoy, jueves 12 de noviembre de 2026, con información sobre California, Nueva York, Texas, Hawái, Georgia, Alaska y otros estados.",
-    "La corteza terrestre en Estados Unidos experimenta una constante liberación de energía debido a la compleja interacción de sus límites tectónicos, un fenómeno que se extiende desde los sistemas de fallas continentales de California hasta las profundas zonas de subducción en Alaska y los complejos volcánicos activos de Hawái."
-   ],
-   "datos": [
-    {
-     "v": "12 de noviembre",
-     "t": "fecha",
-     "c": "EN VIVO hoy, 12 de noviembre 2026: hora exacta, magnitud y dónde fue el epicentro del último sismo vía USGS."
-    }
-   ]
-  },
-  {
    "id": "635d750fc5",
    "sector": "tecnologia",
    "titulo": "China pide a EE.UU. no usar el “espionaje” como pretexto para un bloqueo tecnológico",
@@ -883,104 +4199,6 @@ window.NOTICIAS = {
    "puntos": [
     "China pidió este jueves a Estados Unidos dejar de construir “narrativas de espionaje” para “buscar pretextos con los que imponer un bloqueo tecnológico”, en referencia al reciente caso que vincula sentimentalmente al consejero delegado de Nvidia, Jensen Huang, con la empresaria china Alice Huang, señalada como espía por la inteligencia estadounidense.",
     "La portavoz del Ministerio chino de Exteriores, Mao Ning, defendió en una rueda de prensa que el avance científico y tecnológico de China responde a “su propia innovación” y a la cooperación abierta."
-   ]
-  },
-  {
-   "id": "3122823d3a",
-   "sector": "coyuntura",
-   "titulo": "La ayuda humanitaria en Perú podría llegar por pesqueros y ferris: la otra ruta de El Niño",
-   "resumen": "El MTC autorizó que naves pesqueras, turísticas y navieras trasladen personas y suministros entre puertos nacionales cuando lluvias, huaicos u otros desastres bloqueen las pistas",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/12/la-ayuda-humanitaria-en-peru-podria-llegar-por-pesqueros-y-ferris-la-otra-ruta-de-el-nino/",
-   "fecha": "2026-11-12T13:31:41Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/U27DKXHXNJB75BARQR6NA5BG6Y.jpg?auth=f7a436ea6a79902a625f7345511113841d3855fe0f504eec6b1e630e40ba5adb&smart=true&width=1472&height=832",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "El MTC autorizó que naves pesqueras, turísticas y navieras trasladen personas y suministros entre puertos nacionales cuando lluvias, huaicos u otros desastres bloqueen las pistas La nueva resolución deroga la norma temporal de 2023 y fija un marco general permanente bajo los alcances de la Ley N.° 32049.",
-   "puntos": [
-    "El MTC autorizó que naves pesqueras, turísticas y navieras trasladen personas y suministros entre puertos nacionales cuando lluvias, huaicos u otros desastres bloqueen las pistas",
-    "La nueva resolución deroga la norma temporal de 2023 y fija un marco general permanente bajo los alcances de la Ley N.° 32049.",
-    "EST Guardar El Ministerio de Transportes y Comunicaciones (MTC) autorizó que embarcaciones navieras, pesqueras, turísticas y afines puedan trasladar pasajeros, alimentos y bienes de ayuda humanitaria entre puertos del país durante los estados de emergencia."
-   ]
-  },
-  {
-   "id": "1004c18251",
-   "sector": "mundo",
-   "titulo": "Escándalo de Nvidia: ¿cuál es el poder de los microchips que habrían terminado en China?",
-   "resumen": "China habría conseguido acceder a semiconductores avanzados de Nvidia, según reportes de inteligencia que apuntan a una presunta operación de adquisición y traslado de estos componentes al territorio chino. En el centro de las informaciones aparece Alice Huang, una empresaria…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/programas/ciencia-y-tecnolog%C3%ADa/20261112-esc%C3%A1ndalo-de-nvidia-cu%C3%A1l-es-el-poder-de-los-microchips-que-habr%C3%ADan-terminado-en-china",
-   "fecha": "2026-11-12T13:31:07Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/ba6fbefa-de4a-11f1-b366-695cb59fade5/w:1024/p:16x9/WEB-PORTADA-11NOV-CYT.png",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "China habría conseguido acceder a semiconductores avanzados de Nvidia, según reportes de inteligencia que apuntan a una presunta operación de adquisición y traslado de estos componentes al territorio…",
-   "puntos": [
-    "China habría conseguido acceder a semiconductores avanzados de Nvidia, según reportes de inteligencia que apuntan a una presunta operación de adquisición y traslado de estos componentes al territorio…"
-   ]
-  },
-  {
-   "id": "c9071a07ee",
-   "sector": "economia",
-   "titulo": "ONP: ¿qué sucede con tus aportes si dejaste de contribuir durante varios años?",
-   "resumen": "Si una persona estuvo afiliada al Sistema Nacional de Pensiones (SNP) y dejó de aportar durante varios años, sus aportes realizados no desaparecen. La Oficina de Normalización Previsional (ONP) informó que puede retomar sus pagos en cualquier momento y continuar acumulando…",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/tu-dinero/finanzas-personales/onp-que-sucede-con-tus-aportes-si-dejaste-de-contribuir-durante-varios-anos-noticia/",
-   "fecha": "2026-11-12T13:30:19Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/LDHYFNTPPBGMLEBYKQR2ZGXSHE.jpg?auth=fa50a8cb5b1ffaf96b002743c063cff41e764c002990fd4b0d11c03c572a97eb&smart=true&width=1200&height=800",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "Si una persona estuvo afiliada al Sistema Nacional de Pensiones (SNP) y dejó de aportar durante varios años, sus aportes realizados no desaparecen. La Oficina de Normalización Previsional (ONP) informó que puede retomar sus pagos en cualquier momento y continuar acumulando aportes para acceder a una pensión.",
-   "puntos": [
-    "Si una persona estuvo afiliada al Sistema Nacional de Pensiones (SNP) y dejó de aportar durante varios años, sus aportes realizados no desaparecen.",
-    "La Oficina de Normalización Previsional (ONP) informó que puede retomar sus pagos en cualquier momento y continuar acumulando aportes para acceder a una pensión.",
-    "La entidad, adscrita al Ministerio de Economía y Finanzas (MEF) , explicó que esta situación también alcanza a quienes dejaron de trabajar en planilla y actualmente se desempeñan como independientes."
-   ],
-   "datos": [
-    {
-     "v": "S/ 160",
-     "t": "monto",
-     "c": "…informó que los afiliados pueden realizar aportes desde S/ 160 mensuales."
-    },
-    {
-     "v": "13%",
-     "t": "porcentaje",
-     "c": "Este monto corresponde al 13% de la Remuneración Mínima Vital (RMV) vigente y, según la…"
-    },
-    {
-     "v": "13 %",
-     "t": "porcentaje",
-     "c": "El aporte mínimo es S/ 160, que es el 13 % de la Remuneración Mínima Vital (RMV) vigente” , indicó Velarde.."
-    },
-    {
-     "v": "30 de noviembre",
-     "t": "fecha",
-     "c": "Por ejemplo, el aporte de octubre puede pagarse hasta el 30 de noviembre."
-    }
    ]
   },
   {
@@ -1012,173 +4230,6 @@ window.NOTICIAS = {
      "v": "47 años",
      "t": "cantidad",
      "c": "…allanamientos a propiedades vinculadas al exmandatario, de 47 años, que está en prisión preventiva y acusado de utilizar su…"
-    }
-   ]
-  },
-  {
-   "id": "2af24a0bb1",
-   "sector": "politica",
-   "titulo": "Cómo avanza el proyecto del noveno retiro AFP al día de hoy, 12 de noviembre: todo lo que debes saber",
-   "resumen": "El ministro de Economía y Finanzas, Elmer Cuba, consideró carente de sustento una nueva liberación previsional, tras argumentar que perjudica severamente las futuras jubilaciones y desestabiliza las condiciones financieras del mercado local",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/09/como-va-el-proyecto-del-noveno-retiro-afp-al-dia-de-hoy-9-de-noviembre-lo-que-debes-saber/",
-   "fecha": "2026-11-12T13:29:08Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/ZEF5PJEXURCKLA5XDOD35EFN5U.jpg?auth=62475f65ab26ae2f240fa048aa6c7021af9b6fc7c42aff39cf7561769927b53b&smart=true&width=1920&height=1080",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "El ministro de Economía y Finanzas, Elmer Cuba, consideró carente de sustento una nueva liberación previsional, tras argumentar que perjudica severamente las futuras jubilaciones y desestabiliza las condiciones financieras del mercado local El procedimiento contempla solicitudes en un plazo de noventa días y permite a los afiliados desistir de los desembolsos mensuales por única vez. (Infobae) 12 Nov, 2026 08:29 a. m.",
-   "puntos": [
-    "El ministro de Economía y Finanzas, Elmer Cuba, consideró carente de sustento una nueva liberación previsional, tras argumentar que perjudica severamente las futuras jubilaciones y desestabiliza las condiciones financieras del mercado local",
-    "El procedimiento contempla solicitudes en un plazo de noventa días y permite a los afiliados desistir de los desembolsos mensuales por única vez. (Infobae) 12 Nov, 2026 08:29 a. m.",
-    "EST Guardar Al día de hoy, jueves 12 de noviembre, el proyecto para autorizar un noveno retiro de AFP aún se encuentra en debate y plantea que los afiliados al Sistema Privado de Pensiones puedan acceder de forma voluntaria y excepcional a parte de sus fondos ante los eventuales efectos económicos del fenómeno El Niño durante los próximos meses."
-   ],
-   "datos": [
-    {
-     "v": "12 de noviembre",
-     "t": "fecha",
-     "c": "Cómo avanza el proyecto del noveno retiro AFP al día de hoy, 12 de noviembre: todo lo que debes saber."
-    }
-   ]
-  },
-  {
-   "id": "8c12e79493",
-   "sector": "mundo",
-   "titulo": "España ante la huelga general: ¿vivienda digna o estrategia electoral antes del 29-N?",
-   "resumen": "España vive su primera huelga general desde 2012, una movilización que pretende la reivindicación el acceso a una vivienda digna. Convocada por el Sindicato de Inquilinas y respaldada por UGT y Comisiones Obreras, la protesta pone en el centro del debate la crisis habitacional.…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/programas/el-debate/20261112-espa%C3%B1a-ante-la-huelga-general-vivienda-digna-o-estrategia-electoral-antes-del-29-n",
-   "fecha": "2026-11-12T13:29:05Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/f5051782-ddd6-11f1-a4da-695cb59fade5/w:1024/p:16x9/AP26315416425491.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "España vive su primera huelga general desde 2012, una movilización que pretende la reivindicación el acceso a una vivienda digna. Convocada por el Sindicato de Inquilinas y respaldada por UGT y Comisiones…",
-   "puntos": [
-    "España vive su primera huelga general desde 2012, una movilización que pretende la reivindicación el acceso a una vivienda digna.",
-    "Convocada por el Sindicato de Inquilinas y respaldada por UGT y Comisiones…"
-   ]
-  },
-  {
-   "id": "16b270f572",
-   "sector": "coyuntura",
-   "titulo": "Carlos Alcántara revela que recurrió a la separación antes de caer en una infidelidad: “Estamos en el proceso de divorcio”",
-   "resumen": "El actor explicó que el final de su relación con Jossie Lindley fue una decisión meditada, tras más de un año de distancia dentro de su propia casa. También aseguró que prefirió terminar el matrimonio antes que traicionar la confianza de quien definió como “el amor de mi vida”",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/12/carlos-alcantara-revela-que-recurrio-a-la-separacion-antes-de-caer-en-una-infidelidad-estamos-en-el-proceso-de-divorcio/",
-   "fecha": "2026-11-12T13:28:30Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/FDAK2CPX35DV5MQS3EWX4PRU2Q.jpg?auth=0b8a51831ab81fd7803d86612cc77d95f581950c38f28510da9856e824e317ce&smart=true&width=1920&height=1080",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "El actor explicó que el final de su relación con Jossie Lindley fue una decisión meditada, tras más de un año de distancia dentro de su propia casa. También aseguró que prefirió terminar el matrimonio antes que traicionar la confianza de quien definió como “el amor de mi vida”",
-   "puntos": [
-    "El actor explicó que el final de su relación con Jossie Lindley fue una decisión meditada, tras más de un año de distancia dentro de su propia casa.",
-    "También aseguró que prefirió terminar el matrimonio antes que traicionar la confianza de quien definió como “el amor de mi vida”",
-    "Carlos Alcántara habló sobre el final de su relación de 31 años con Jossie Lindley y confirmó que ambos atraviesan el proceso de divorcio."
-   ],
-   "datos": [
-    {
-     "v": "31 años",
-     "t": "cantidad",
-     "c": "Carlos Alcántara habló sobre el final de su relación de 31 años con Jossie Lindley y confirmó que ambos atraviesan el proceso de divorcio."
-    }
-   ]
-  },
-  {
-   "id": "b958d85a4d",
-   "sector": "coyuntura",
-   "titulo": "Carlos Alcántara contó que invitó a mujeres a viajes al Caribe tras su separación: “Saben a qué van”",
-   "resumen": "Tras confirmar que atraviesa un proceso de divorcio, el intérprete habló de sus cuatro viajes con mujeres y sostuvo que plantea desde el inicio que no busca una relación formal. “Las cuentas claras desde el saque”, afirmó",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/12/carlos-alcantara-conto-que-invito-a-mujeres-a-viajes-al-caribe-tras-su-separacion-saben-a-que-van/",
-   "fecha": "2026-11-12T13:27:05Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/G3NPLQNXAVGVJFPKFDOK22EW2E.jpg?auth=6bce9ff559c0120da018fad740cf8c43fad2754fb730bc1963d656a39f49818c&smart=true&width=1920&height=1080",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "Tras confirmar que atraviesa un proceso de divorcio, el intérprete habló de sus cuatro viajes con mujeres y sostuvo que plantea desde el inicio que no busca una relación formal. “Las cuentas claras desde el saque”, afirmó",
-   "puntos": [
-    "Tras confirmar que atraviesa un proceso de divorcio, el intérprete habló de sus cuatro viajes con mujeres y sostuvo que plantea desde el inicio que no busca una relación formal.",
-    "“Las cuentas claras desde el saque”, afirmó",
-    "Carlos Alcántara contó que realizó cuatro viajes con mujeres después de su separación y dijo que dos experiencias fueron positivas y dos, complicadas."
-   ],
-   "datos": [
-    {
-     "v": "31 años",
-     "t": "cantidad",
-     "c": "Tras 31 años de relación, Alcántara señaló que intenta acostumbrarse a…"
-    }
-   ]
-  },
-  {
-   "id": "005c8ea739",
-   "sector": "coyuntura",
-   "titulo": "Papa León XIV en el Perú: calles cerradas, desvíos y rutas alternas para el miércoles 11 de noviembre",
-   "resumen": "El sumo pontífice arribó pasada las 5 de la tarde al Grupo Aéreo N.° 8, en el Callao, y en su primer día cumplió una agenda que afectó zonas próximas al aeropuerto, el Cercado de Lima y Jesús María",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/11/papa-leon-xiv-en-el-peru-calles-cerradas-desvios-y-rutas-alternas-para-hoy-miercoles-11-de-noviembre/",
-   "fecha": "2026-11-12T13:26:32Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/TRPKZBM5U5CSTFMNCA6NWCKOHM.jpg?auth=6d90a71681dd35a6ec6269c45c164b308b221aea1986f894aa1696f305eaeb77&smart=true&width=8256&height=5504",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "El sumo pontífice arribó pasada las 5 de la tarde al Grupo Aéreo N.° 8, en el Callao, y en su primer día cumplió una agenda que afectó zonas próximas al aeropuerto, el Cercado de Lima y Jesús María El papa León XIV llegará a Lima este miércoles 11 de noviembre y recorrerá parte de la capital en un vehículo cerrado antes de abordar el papamóvil (Créditos: TVPerú) 12 Nov, 2026 08:26 a. m.",
-   "puntos": [
-    "El sumo pontífice arribó pasada las 5 de la tarde al Grupo Aéreo N.° 8, en el Callao, y en su primer día cumplió una agenda que afectó zonas próximas al aeropuerto, el Cercado de Lima y Jesús María",
-    "El papa León XIV llegará a Lima este miércoles 11 de noviembre y recorrerá parte de la capital en un vehículo cerrado antes de abordar el papamóvil (Créditos: TVPerú) 12 Nov, 2026 08:26 a. m.",
-    "EST Guardar La llegada de papa León XIV al Perú la tarde del miércoles 11 de noviembre implicó el cierres de vías, restricciones de tránsito y cambios en los recorridos habituales en zonas próximas al aeropuerto Jorge Chávez , el Centro Histórico de Lima y la Nunciatura Apostólica (Jesús María)."
-   ],
-   "datos": [
-    {
-     "v": "11 de noviembre",
-     "t": "fecha",
-     "c": "Papa León XIV en el Perú: calles cerradas, desvíos y rutas alternas para el miércoles 11 de noviembre."
-    },
-    {
-     "v": "16 de noviembre",
-     "t": "fecha",
-     "c": "…con las actividades oficiales del pontífice hasta el 16 de noviembre.."
-    },
-    {
-     "v": "5 de octubre de 2025",
-     "t": "fecha",
-     "c": "…desde el papamóvil al finalizar una misa el domingo 5 de octubre de 2025 en la Plaza de San Pedro, en el Vaticano. (AP…"
     }
    ]
   },
@@ -1247,67 +4298,16 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "c49b3ce940",
+   "id": "2d5446f7d5",
    "sector": "mundo",
-   "titulo": "Jensen Huang: de líder de Nvidia a protagonista de un escándalo por infidelidad con presunta espía",
-   "resumen": "De migrante a líder de la revolución tecnológica: la historia de Jensen Huang. Nacido en Taiwán y trasladado a Estados Unidos en su infancia, el fundador y CEO de NVIDIA transformó una pequeña empresa creada en 1993 en uno de los gigantes mundiales de los semiconductores y la…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/video/20261112-jensen-huang-de-l%C3%ADder-de-nvidia-a-protagonista-de-un-esc%C3%A1ndalo-por-infidelidad-con-presunta-esp%C3%ADa",
-   "fecha": "2026-11-12T13:24:47Z",
+   "titulo": "Autor zimbabuense Simbarashe Kundizeza absuelto de utilizar IA para escribir una historia premiada",
+   "resumen": "Después de una investigación de un mes, se concluyó que la historia de Kundizeza, The Blue Fighter, que ganó el premio Caine de £ 10,000, fue \"escrita por humanos\". El autor zimbabuense Simbarashe Kundizeza ha sido absuelto de utilizar inteligencia artificial para escribir un cuento premiado, después del prestigioso...",
+   "fuente": "The Guardian",
+   "url": "https://www.theguardian.com/books/2026/nov/12/zimbabwean-author-simbarashe-kundizeza-cleared-ai-caine-prize-winning-story",
+   "fecha": "2026-11-12T13:14:38Z",
    "tipo": "internacional",
    "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/d360b58a-de96-11f1-9dc7-695cb59fade5/w:1024/p:16x9/ES-20261112-070232-070424-CS.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "contexto_internacional_resumen"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "De migrante a líder de la revolución tecnológica: la historia de Jensen Huang. Nacido en Taiwán y trasladado a Estados Unidos en su infancia, el fundador y CEO de NVIDIA transformó una pequeña empresa…",
-   "puntos": [
-    "De migrante a líder de la revolución tecnológica: la historia de Jensen Huang.",
-    "Nacido en Taiwán y trasladado a Estados Unidos en su infancia, el fundador y CEO de NVIDIA transformó una pequeña empresa…"
-   ]
-  },
-  {
-   "id": "0c51bad4ba",
-   "sector": "coyuntura",
-   "titulo": "¿Carlos Lampe se retira de Bolivia? Respondió sobre dejar 'La Verde' en la previa del amistoso contra Perú",
-   "resumen": "El portero de Bolivia habló a solo un día de visitar a Perú en el Estadio Alejandro Villanueva.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/futbol/futbol-mundial/peru-vs-bolivia-carlos-lampe-hablo-de-posible-retiro-previo-a-amistoso-internacional-fifa-2026-en-matute-noticia-1717390",
-   "fecha": "2026-11-12T13:20:38Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/12/020702_1928289.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "El portero de Bolivia habló a solo un día de visitar a Perú en el Estadio Alejandro Villanueva. Este viernes, Perú juega contra Bolivia en el Estadio Alejandro Villanueva en el marco de un amistoso internacional 2026 por la fecha FIFA de noviembre.",
-   "puntos": [
-    "El portero de Bolivia habló a solo un día de visitar a Perú en el Estadio Alejandro Villanueva.",
-    "Este viernes, Perú juega contra Bolivia en el Estadio Alejandro Villanueva en el marco de un amistoso internacional 2026 por la fecha FIFA de noviembre.",
-    "Carlos Lampe , por ejemplo, fue convocado en la Selección de Bolivia y apunta a ser titular frente a Perú en Matute."
-   ]
-  },
-  {
-   "id": "d921626156",
-   "sector": "economia",
-   "titulo": "Papa León XIV: Machu Picchu habilita 1.100 entradas adicionales al día por la visita del sumo pontífice",
-   "resumen": "El Ministerio de Cultura elevó el aforo de Machu Picchu a 5.600 visitantes diarios entre el 16 y el 19 de noviembre, debido al aumento de visitantes previsto tras el recorrido de León XIV",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/12/papa-leon-xiv-machu-picchu-habilitara-1100-entradas-adicionales-al-dia-por-la-visita-papal/",
-   "fecha": "2026-11-12T13:19:30Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/U7ZN34JFENAW5BY26DODDYPY6I.jpg?auth=0cf207a05bdcbfcb82beeb34796c2162bb875b927480b0f7e971e97ddb8c9e52&smart=true&width=2096&height=1184",
+   "imagen": "https://i.guim.co.uk/img/media/6487803463c6c4e3138642f657eeb1cd90cd5acc/0_111_1078_862/master/1078.jpg?width=140&quality=85&auto=format&fit=max&s=e825c93b0c4e49e69e380953e02995c6",
    "geografia": {
     "version": 1,
     "ambito": "pendiente",
@@ -1316,158 +4316,11 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "sintesis": "El Ministerio de Cultura elevó el aforo de Machu Picchu a 5.600 visitantes diarios entre el 16 y el 19 de noviembre, debido al aumento de visitantes previsto tras el recorrido de León XIV Las campanas de la Basílica Catedral y de la Compañía de Jesús resonaron en el centro histórico de Cusco tras la llegada del papa León XIV al Perú.",
+   "titulo_original": "Zimbabwean author Simbarashe Kundizeza cleared of using AI to write prize-winning story",
+   "traducido": true,
+   "sintesis": "After a month-long investigation it was concluded that Kundizeza’s story The Blue Fighter, which won the £10,000 Caine prize, was ‘human-written’",
    "puntos": [
-    "El Ministerio de Cultura elevó el aforo de Machu Picchu a 5.600 visitantes diarios entre el 16 y el 19 de noviembre, debido al aumento de visitantes previsto tras el recorrido de León XIV",
-    "Las campanas de la Basílica Catedral y de la Compañía de Jesús resonaron en el centro histórico de Cusco tras la llegada del papa León XIV al Perú.",
-    "El repique fue una muestra de \"esperanza y alegría\" por la próxima visita del santo padre a la ciudad imperial."
-   ],
-   "datos": [
-    {
-     "v": "19 de noviembre",
-     "t": "fecha",
-     "c": "…Machu Picchu a 5.600 visitantes diarios entre el 16 y el 19 de noviembre, debido al aumento de visitantes previsto tras el…"
-    },
-    {
-     "v": "10 de noviembre",
-     "t": "fecha",
-     "c": "…la Resolución Ministerial N° 000414-2026-MC, firmada el 10 de noviembre por el ministro de Cultura, Alberto Beingolea Delgado."
-    },
-    {
-     "v": "15 de noviembre",
-     "t": "fecha",
-     "c": "El pontífice tiene prevista una actividad en Cusco el domingo 15 de noviembre, antes de su traslado hacia la región amazónica de Ucayali.."
-    }
-   ]
-  },
-  {
-   "id": "7bd0d3697d",
-   "sector": "economia",
-   "titulo": "MIDAGRI: productores que inviertan en tractores, drones y fertilizantes podrán recuperar el IGV por sus compras",
-   "resumen": "Los agricultores y productores de frutas, hortalizas, leche cruda, ganado y caña de azúcar que vendan en Perú podrán pedir el reintegro del IGV previsto en la Ley N.° 32434, conocida como nueva Ley Chlimper",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/12/midagri-productores-que-inviertan-en-tractores-drones-y-fertilizantes-podran-recuperar-el-igv-por-sus-compras/",
-   "fecha": "2026-11-12T13:19:15Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/R6QUMXZEYBG3BAHTADCIGKXV5Q.jpg?auth=43273271b1cde543921fe1716bad25910aab1f2ec79d40acee6dd34f7add267b&smart=true&width=1472&height=832",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Los agricultores y productores de frutas, hortalizas, leche cruda, ganado y caña de azúcar que vendan en Perú podrán pedir el reintegro del IGV previsto en la Ley N.° 32434, conocida como nueva Ley Chlimper A diferencia de la Ley Chlimper original, que permitía recuperar el IGV antes de iniciar la producción, la Ley Chlimper 2.0 devuelve el impuesto a productores que ya elaboran y venden bienes agrarios exonerados en Perú.",
-   "puntos": [
-    "Los agricultores y productores de frutas, hortalizas, leche cruda, ganado y caña de azúcar que vendan en Perú podrán pedir el reintegro del IGV previsto en la Ley N.° 32434, conocida como nueva Ley Chlimper",
-    "A diferencia de la Ley Chlimper original, que permitía recuperar el IGV antes de iniciar la producción, la Ley Chlimper 2.0 devuelve el impuesto a productores que ya elaboran y venden bienes agrarios exonerados en Perú.",
-    "EST Guardar El Ministerio de Desarrollo Agrario y Riego (MIDAGRI) aprobó los lineamientos para atender las solicitudes del informe técnico legal que permitirá a pequeños productores y empresas agrarias pedir el reintegro del Impuesto General a las Ventas (IGV)."
-   ],
-   "datos": [
-    {
-     "v": "31 de diciembre de 2028",
-     "t": "fecha",
-     "c": "Las exoneraciones tributarias contempladas en la Ley del IGV permanecerán vigentes hasta el 31 de diciembre de 2028."
-    }
-   ]
-  },
-  {
-   "id": "2716f17f34",
-   "sector": "coyuntura",
-   "titulo": "Las 25 fotos que reflejan la emoción del papa León XIV a su llegada al Perú",
-   "resumen": "El sumo pontífice llegó la tarde de este miércoles 11 de noviembre a Lima desde Buenos Aires. Miles de fieles se concentraron en distintos puntos de la capital peruana para acompañar su recorrido previsto",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/11/las-25-fotos-que-muestran-la-emocion-del-papa-leon-xiv-a-su-llegada-al-peru/",
-   "fecha": "2026-11-12T13:15:49Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/5ZAWI42U7VGTPFUB3RJRHNR3GI.jpg?auth=f3ef3f497778e06c271bd10a2eb8b79723484b5f53ce3f81f0347a37aa8bed7d&smart=true&width=4198&height=2799",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "El sumo pontífice llegó la tarde de este miércoles 11 de noviembre a Lima desde Buenos Aires. Miles de fieles se concentraron en distintos puntos de la capital peruana para acompañar su recorrido previsto",
-   "puntos": [
-    "El sumo pontífice llegó la tarde de este miércoles 11 de noviembre a Lima desde Buenos Aires.",
-    "Miles de fieles se concentraron en distintos puntos de la capital peruana para acompañar su recorrido previsto",
-    "El pontífice abordará el papamóvil a la altura de la avenida Brasil tras iniciar su traslado en un vehículo cerrado por motivos de seguridad.(MARTIN BERNETTI / AFP) 12 Nov, 2026 08:15 a. m."
-   ],
-   "datos": [
-    {
-     "v": "3.100 kilómetros",
-     "t": "cantidad",
-     "c": "El vuelo papal de Aerolíneas Argentinas recorrió 3.100 kilómetros desde Buenos Aires sobre la cordillera de los Andes y el…"
-    },
-    {
-     "v": "11 de noviembre",
-     "t": "fecha",
-     "c": "El sumo pontífice llegó la tarde de este miércoles 11 de noviembre a Lima desde Buenos Aires."
-    }
-   ]
-  },
-  {
-   "id": "ea66acc70e",
-   "sector": "coyuntura",
-   "titulo": "Papa León XIV rindió reconocimiento al Señor de los Milagros por unir a los peruanos : “¡Yo mismo he visto a Roma vestirse de morado!”",
-   "resumen": "El papa mencionó que la devoción al Cristo Moreno trasciende las fronteras del Perú y se convierte en un punto de encuentro para los migrantes que buscan mantener vivas sus tradiciones",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/12/papa-leon-xiv-rindio-reconocimiento-al-senor-de-los-milagros-por-unir-a-los-peruanos-yo-mismo-he-visto-a-roma-vestirse-de-morado/",
-   "fecha": "2026-11-12T13:13:24Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/RXS4UJRWXNEQJCBLF6Y7BXHEFY.jpg?auth=298e3c60dadb75992c34cdf2f1024e9ecf0473e3b8a7e55733911782b398fef6&smart=true&width=1920&height=1080",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "El papa mencionó que la devoción al Cristo Moreno trasciende las fronteras del Perú y se convierte en un punto de encuentro para los migrantes que buscan mantener vivas sus tradiciones La referencia al Señor de los Milagros formó parte de un discurso sobre la identidad, la migración y los vínculos que los compatriotas mantienen con su tierra (Créditos: TVPerú/Canal N).",
-   "puntos": [
-    "El papa mencionó que la devoción al Cristo Moreno trasciende las fronteras del Perú y se convierte en un punto de encuentro para los migrantes que buscan mantener vivas sus tradiciones",
-    "La referencia al Señor de los Milagros formó parte de un discurso sobre la identidad, la migración y los vínculos que los compatriotas mantienen con su tierra (Créditos: TVPerú/Canal N).",
-    "EST Guardar El papa León XIV recordó la devoción al Señor de los Milagros como una expresión de identidad que mantiene unidos a los peruanos incluso cuando se encuentran lejos de su país."
-   ]
-  },
-  {
-   "id": "ebda2f3803",
-   "sector": "politica",
-   "titulo": "Juan Carbajal: «Eliminación de registros falsos sobre homicidios por parte de la Policía desbarata narrativa oficial»",
-   "resumen": "«Se confirma el espejismo estadístico» afirma analista de datos. «Inflaron el pasado para simular éxito en el presente». Borrado de datos es persistente desde abril a junio del 2025 cuando era presidenta Dina Boluarte",
-   "fuente": "El Búho",
-   "url": "https://elbuho.pe/2026/11/juan-carbajal-registros-falsos-sobre-homicidios-son-eliminados-en-silencio-por-la-policia-y-se-desbarata-narrativa-oficial/",
-   "fecha": "2026-11-12T13:13:23Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elbuho.pe/wp-content/uploads/2024/10/cade-2024-crimen-organizado-peru.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "contexto_peru_resumen"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Homicidios: «confirma espejismo estadístico» analista datos. «Inflaron pasado simular éxito presente».",
-   "puntos": [
-    "Homicidios: «confirma espejismo estadístico» analista datos.",
-    "«Inflaron pasado simular éxito presente».",
-    "Borrado de datos es persistente desde abril a junio del 2025 cuando era presidenta Dina Boluarte"
-   ],
-   "datos": [
-    {
-     "v": "31 de octubre",
-     "t": "fecha",
-     "c": "…en X., «el último reporte de la DIVCOP-PNP oficializado al 31 de octubre confirma que la eliminación retroactiva de registros…"
-    }
+    "After a month-long investigation it was concluded that Kundizeza’s story The Blue Fighter, which won the £10,000 Caine prize, was ‘human-written’"
    ]
   },
   {
@@ -1504,146 +4357,9 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "b4d341a390",
-   "sector": "economia",
-   "titulo": "La evolución de la chef peruana Arlette Eulert: “Hoy contrato más por actitud que por experiencia”",
-   "resumen": "Kjolle alcanza el séptimo puesto en The 50 Best: ¿qué prepara Pía León para lo que viene? Arlette Eulert es una cocinera camaleónica. Su estilo de cocina, su foco y su capacidad de adaptación, junto con su imagen, han dado varios giros desde que se inició en los fogones hace…",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/g-de-gestion/lifestyle/la-evolucion-de-la-chef-peruana-arlette-eulert-de-bruto-y-matria-hoy-contrato-cocineros-mas-por-actitud-noticia/",
-   "fecha": "2026-11-12T13:12:33Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/NJX67DNRBJBX7LUEGN6HX25XX4.jpeg?auth=ea66779bd98d35a2605b04ef32da8c3c7d68e83968c8670d3c53e822e60ae613&smart=true&width=1200&height=800",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "De Matria a Bruto, Arlette Eulert ha replanteado su propuesta gastronómica y su forma de gestionar restaurantes. En esta entrevista aborda la operación diaria, la contratación de personal y los desafíos de sostener un negocio en el sector.",
-   "puntos": [
-    "De Matria a Bruto, Arlette Eulert ha replanteado su propuesta gastronómica y su forma de gestionar restaurantes.",
-    "En esta entrevista aborda la operación diaria, la contratación de personal y los desafíos de sostener un negocio en el sector.",
-    "Arlette Eulert es una cocinera camaleónica."
-   ],
-   "datos": [
-    {
-     "v": "12 años",
-     "t": "cantidad",
-     "c": "…de su local Bruto en Miraflores; luego de un periplo de 12 años en Matria , su primer restaurante.."
-    }
-   ]
-  },
-  {
-   "id": "339bcf1bc7",
-   "sector": "politica",
-   "titulo": "Revelan que hijo del ministro Luis Dyer trabaja en Palacio: No registra títulos, pero se reúne con ministros",
-   "resumen": "Periodista Karla Ramírez revela que Allan Dyer Quiñones, de 22 años, integra la Oficina de Cumplimiento del Gobierno, aunque no fue designado formalmente",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/12/revelan-que-hijo-del-ministro-luis-dyer-trabaja-en-palacio-no-registra-titulos-pero-se-reune-con-ministros/",
-   "fecha": "2026-11-12T13:10:30Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/BJDAIEALCNBWDFZDSH7YHDNXDA.jpg?auth=8d53d3c09f2c12fd34e1851b4b15a49553ef038645de48f80c4e0f983951216c&smart=true&width=1920&height=1080",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "Periodista Karla Ramírez revela que Allan Dyer Quiñones, de 22 años, integra la Oficina de Cumplimiento del Gobierno, aunque no fue designado formalmente El ministro de Salud de Perú habla por un micrófono durante una conferencia institucional, junto a la fotografía de su hijo Allan Dyer ante una computadora portátil.",
-   "puntos": [
-    "Periodista Karla Ramírez revela que Allan Dyer Quiñones, de 22 años, integra la Oficina de Cumplimiento del Gobierno, aunque no fue designado formalmente",
-    "El ministro de Salud de Perú habla por un micrófono durante una conferencia institucional, junto a la fotografía de su hijo Allan Dyer ante una computadora portátil.",
-    "EST Guardar El hijo del ministro de Salud, Luis Dyer , trabajaría en el Despacho Presidencial a pesar de que no tiene grados ni títulos registrados en la Sunedu, según reveló la periodista Karla Ramírez en su programa Karla de Miércoles."
-   ],
-   "datos": [
-    {
-     "v": "22 años",
-     "t": "cantidad",
-     "c": "Periodista Karla Ramírez revela que Allan Dyer Quiñones, de 22 años, integra la Oficina de Cumplimiento del Gobierno, aunque…"
-    }
-   ]
-  },
-  {
-   "id": "9e1b08cd9d",
-   "sector": "coyuntura",
-   "titulo": "Temblor en Chile hoy 12 de noviembre: Epicentro del sismo según CSN",
-   "resumen": "¿Cuál fue el último Temblor en Chile hoy 12 de noviembre y registrado por el servicio Sismológico Nacional de Chile (CSN)? Consulta los últimos sismos: magnitud y epicentro del movimiento sísmico.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/mundo/chile/temblor-en-chile-hoy-12-de-noviembre-epicentro-del-sismo-segun-csn-live-3706",
-   "fecha": "2026-11-12T13:09:45Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2024/11/07/363236_1666477.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "¿Cuál fue el último Temblor en Chile hoy 12 de noviembre y registrado por el servicio Sismológico Nacional de Chile (CSN)? Consulta los últimos sismos: magnitud y epicentro del movimiento sísmico.",
-   "puntos": [
-    "¿Cuál fue el último Temblor en Chile hoy 12 de noviembre y registrado por el servicio Sismológico Nacional de Chile (CSN)?",
-    "Consulta los últimos sismos: magnitud y epicentro del movimiento sísmico.",
-    "Últimas Noticias del Temblor en Chile Consulta el registro oficial de los últimos sismos de hoy , mediante los reportes sísmicos del servicio Sismológico Nacional de Chile ( CSN ) sobre la magnitud, epicentro y cómo prevenir accidentes después del sismo."
-   ],
-   "datos": [
-    {
-     "v": "12 de noviembre",
-     "t": "fecha",
-     "c": "Temblor en Chile hoy 12 de noviembre: Epicentro del sismo según CSN."
-    }
-   ]
-  },
-  {
-   "id": "7d39e9fff0",
-   "sector": "coyuntura",
-   "titulo": "Perú es una fiesta de fe y esperanza por el papa León XIV: las imágenes de cómo viven los peruanos su visita",
-   "resumen": "La multitud acompañó el recorrido de Robert Prevost con banderas peruanas y vaticanas, vivas y expresiones de fe durante su desplazamiento por la capital limeña",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/12/peru-es-una-fiesta-de-fe-y-esperanza-por-el-papa-leon-xiv-las-imagenes-de-como-viven-los-peruanos-su-visita/",
-   "fecha": "2026-11-12T13:04:22Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/6CXELYY7KRA6PJAUJL4SDS5ZCI.jpg?auth=5b0b18b5defc128283cc0c2a43222f8de66c10a64558cb9d475402b2141aacab&smart=true&width=1920&height=1332",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "La multitud acompañó el recorrido de Robert Prevost con banderas peruanas y vaticanas, vivas y expresiones de fe durante su desplazamiento por la capital limeña Cerca de tres millones de personas se concentraron en la ruta entre el Callao y Lima para saludar al Pontífice. (EFE) 12 Nov, 2026 08:04 a. m.",
-   "puntos": [
-    "La multitud acompañó el recorrido de Robert Prevost con banderas peruanas y vaticanas, vivas y expresiones de fe durante su desplazamiento por la capital limeña",
-    "Cerca de tres millones de personas se concentraron en la ruta entre el Callao y Lima para saludar al Pontífice. (EFE) 12 Nov, 2026 08:04 a. m.",
-    "EST Guardar Las imágenes de la llegada del papa León XIV a Perú muestran el júbilo, la efervescencia y la fe católica de miles de peruanos que salieron a las calles para recibir a Robert Francis Prevost, el primer papa con nacionalidad peruana."
-   ],
-   "datos": [
-    {
-     "v": "3 millones de personas",
-     "t": "escala",
-     "c": "Se calcula que cerca de 3 millones de personas se concentraron en la ruta para saludar al Santo Padre .."
-    },
-    {
-     "v": "11 de noviembre",
-     "t": "fecha",
-     "c": "El sumo pontífice aterrizó el miércoles 11 de noviembre a las 17:10, hora local, en la Base Aérea del Callao , en…"
-    }
-   ]
-  },
-  {
    "id": "17af26ed78",
    "sector": "mundo",
-   "titulo": "El exintegrante de las Brigadas Rojas italianas detenido en Argentina que escapó por un balcón usando un arnés",
+   "titulo": "Quién es el exintegrante de las Brigadas Rojas italianas detenido en Argentina que escapó por un balcón usando un arnés",
    "resumen": "Leonardo Bertulazzi, antiguo miembro del grupo guerrillero marxista Brigadas Rojas, estaba a punto de ser extraditado a Italia, su país de origen.",
    "fuente": "BBC Mundo",
    "url": "https://www.bbc.com/mundo/articles/cmly7w7err0yo?at_medium=RSS&at_campaign=rss",
@@ -1679,137 +4395,24 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "1fc23bb4c3",
-   "sector": "economia",
-   "titulo": "La inteligencia artificial en el mundo de las inversiones",
-   "resumen": "¿La creación de asesores financieros virtuales reemplazará por completo a las personas? Escribe Bruno Ghio, CEO y fundador de Allié Family Office.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/g-de-gestion/columnistas/las-inversiones-y-la-inteligencia-artificial-asesores-financieros-acciones-capital-industria-noticia/",
-   "fecha": "2026-11-12T12:57:00Z",
-   "tipo": "comercial",
-   "genero": "opinion",
-   "imagen": "https://gestion.pe/resizer/v2/NH2GIB6YHRHDPN22IMCKN6JPD4.jpg?auth=fe7bfe990b94ddcb67077cd476328c5312b4b64043978f533a4a765bcf99c739&smart=true&width=1200&height=805",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "¿La creación de asesores financieros virtuales reemplazará por completo a las personas? Escribe Bruno Ghio, CEO y fundador de Allié Family Office.",
-   "puntos": [
-    "¿La creación de asesores financieros virtuales reemplazará por completo a las personas?",
-    "Escribe Bruno Ghio, CEO y fundador de Allié Family Office.",
-    "Esta columna no busca determinar si las acciones de las empresas ligadas a la inteligencia artificial están caras o baratas."
-   ],
-   "datos": [
-    {
-     "v": "90%",
-     "t": "porcentaje",
-     "c": "Hoy, la IA puede completar el 90% de este trabajo en minutos, integrando distintos métodos de valorización y comparables de mercado."
-    }
-   ]
-  },
-  {
-   "id": "cceabace66",
-   "sector": "coyuntura",
-   "titulo": "Multitud llegó al Santuario de Las Nazarenas para presenciar encuentro del papa León XIV con el Señor de los Milagros",
-   "resumen": "En su recorrido hacia la Plaza de Armas de Lima, el papa León XIV se detendrá unos minutos frente al Santuario de Las Nazarenas, para presentar sus respectos a la sagrada imagen del Señor de los Milagros.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/videos/la-rotativa-del-aire/multitud-llego-al-santuario-de-las-nazarenas-para-presenciar-encuentro-del-papa-leon-xiv-con-el-senor-de-los-milagros-noticia-1717391",
-   "fecha": "2026-11-12T12:55:48Z",
-   "tipo": "comercial",
+   "id": "ba683a6b72",
+   "sector": "ia",
+   "titulo": "Las empresas chinas de inteligencia artificial se apresuran a asegurar capacidad de Nvidia en el extranjero.",
+   "resumen": "",
+   "fuente": "Quartz",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYThOVVI3VVA4VTZaNVZ6UmxKamJybHptNTMxaUwweWs4cVN2SlllbDd3Vk1mNXBMaFRUSEttSDJVc2MtOGVWdVdwbnF3OGE0dWFxdE0zOFJkYmtleUw2Wk9hOXoxelB2eEphWXduOWdXU3B6RW1FMFpCRU9pV2dET3FnRUctZ1NxOUtsQlRHMGNvRC1hZ05BOFdfWVpKc2ZoOGc?oc=5",
+   "fecha": "2026-11-12T12:56:59Z",
+   "tipo": "internacional",
    "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/12/zarenas-2026-11-12-07-45-20-6080-1928287mp4_1928288.jpg?width=860&quality=80",
+   "imagen": null,
    "geografia": {
     "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "contexto_peru_resumen"
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
    },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "En su recorrido hacia la Plaza de Armas de Lima, el papa León XIV se detendrá unos minutos frente al Santuario de Las Nazarenas, para presentar sus respectos a la sagrada imagen del Señor de los Milagros.",
-   "puntos": [
-    "En su recorrido hacia la Plaza de Armas de Lima, el papa León XIV se detendrá unos minutos frente al Santuario de Las Nazarenas, para presentar sus respectos a la sagrada imagen del Señor de los Milagros."
-   ]
-  },
-  {
-   "id": "ad77bac1bc",
-   "sector": "politica",
-   "titulo": "Miguel Torres ingresó a la Nunciatura Apostólica para reunirse con el papa León XIV",
-   "resumen": "El presidente del Congreso fue recibido por el nuncio apostólico Paolo Rocco Gualtieri este jueves 12 de noviembre.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/lima/actualidad/miguel-torres-presidente-del-congreso-ingreso-a-nunciatura-apostolica-para-reunirse-con-leon-xiv-noticia-1717380",
-   "fecha": "2026-11-12T12:55:29Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/12/405040_1928286.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "seccion_nacional_fuente"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "El presidente del Congreso fue recibido por el nuncio apostólico Paolo Rocco Gualtieri este jueves 12 de noviembre. Decenas de fieles se congregaron en los exteriores de la Nunciatura Apostólica de Jesús María este jueves 12 de noviembre con la esperanza de ver al papa León XIV previo a que continúe con su recorrido apostólico en la capital.",
-   "puntos": [
-    "El presidente del Congreso fue recibido por el nuncio apostólico Paolo Rocco Gualtieri este jueves 12 de noviembre.",
-    "Decenas de fieles se congregaron en los exteriores de la Nunciatura Apostólica de Jesús María este jueves 12 de noviembre con la esperanza de ver al papa León XIV previo a que continúe con su recorrido apostólico en la capital.",
-    "La agenda oficial del sumo pontífice comenzará a las 9:30 a. m., en la que sostendrá un encuentro con obispos del Perú."
-   ],
-   "datos": [
-    {
-     "v": "12 de noviembre",
-     "t": "fecha",
-     "c": "El presidente del Congreso fue recibido por el nuncio apostólico Paolo Rocco Gualtieri este jueves 12 de noviembre.."
-    }
-   ]
-  },
-  {
-   "id": "07dbb9fb13",
-   "sector": "politica",
-   "titulo": "Perú vs Bolivia: ¿a qué hora juegan en Matute y dónde ver EN VIVO amistoso por fecha FIFA 2026?",
-   "resumen": "La Selección Peruana se midie ante Bolivia en un amistoso internacional. Conoce a qué hora es el partido y dónde verlo en EN VIVO.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/futbol/seleccion-peruana/peru-vs-bolivia-en-vivo-a-que-hora-juegan-en-matute-y-donde-ver-amistoso-fecha-fifa-2026-via-america-tv-partidos-de-hoy-noticia-1717214",
-   "fecha": "2026-11-12T12:53:12Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/11/173417_1927959.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "La Selección Peruana se midie ante Bolivia en un amistoso internacional. Conoce a qué hora es el partido y dónde verlo en EN VIVO.",
-   "puntos": [
-    "La Selección Peruana se midie ante Bolivia en un amistoso internacional.",
-    "Conoce a qué hora es el partido y dónde verlo en EN VIVO.",
-    "El equipo dirigido por Mano Menezes se medirá ante el combinado altiplánico este viernes 13 de noviembre, desde las 8:00 p. m. (hora peruana), en el estadio Alejandro Villanueva, Matute."
-   ],
-   "datos": [
-    {
-     "v": "2-0",
-     "t": "marcador",
-     "c": "La Selección Peruana viene de perder por 2-0 ante Colombia en partido disputado en Miami. la Selección…"
-    },
-    {
-     "v": "4-0",
-     "t": "marcador",
-     "c": "…en Miami. la Selección de Bolivia llega de caer por 4-0 ante Argentina.."
-    },
-    {
-     "v": "13 de noviembre",
-     "t": "fecha",
-     "c": "…se medirá ante el combinado altiplánico este viernes 13 de noviembre, desde las 8:00 p. m. (hora peruana), en el estadio…"
-    }
-   ]
+   "ambito": "mundo",
+   "procedencia": "directa"
   },
   {
    "id": "f2561e6166",
@@ -1832,60 +4435,27 @@ window.NOTICIAS = {
    "procedencia": "directa"
   },
   {
-   "id": "fc20ebb7f6",
-   "sector": "coyuntura",
-   "titulo": "Papa León XIV en Lima: agenda oficial de HOY, jueves 12 de noviembre",
-   "resumen": "El papa León XIV cumple este jueves su segundo día de actividades oficiales en Lima, con una agenda que incluye encuentros con…",
-   "fuente": "Caretas",
-   "url": "https://caretas.pe/sociedad/papa-leon-xiv-en-lima-agenda-oficial-de-hoy-jueves-12-de-noviembre/",
-   "fecha": "2026-11-12T12:51:33Z",
-   "tipo": "comercial",
+   "id": "8766af2e52",
+   "sector": "mundo",
+   "titulo": "El ascenso de los hijos de Huang en Nvidia aviva las dudas por la gobernanza: de chef y barman a ejecutivos de la mayor compañía del mundo",
+   "resumen": "El yerno, Nico Caprez, exmonitor de esquí en Suiza, ahora dirige una de las áreas más importantes del negocio",
+   "fuente": "El País América",
+   "url": "https://elpais.com/us/2026-11-12/el-ascenso-de-los-hijos-de-huang-en-nvidia-aviva-las-dudas-por-la-gobernanza-de-chef-y-barman-a-ejecutivos-de-la-mayor-compania-del-mundo.html",
+   "fecha": "2026-11-12T12:50:39Z",
+   "tipo": "internacional",
    "genero": "noticia",
-   "imagen": "https://caretas.pe/wp-content/uploads/2026/11/1-12.jpg",
+   "imagen": "https://imagenes.elpais.com/resizer/v2/XYQF4NEZKNCBTN7MWAZIVLJHMQ.jpg?auth=d0649ee79222f095b942e0c3d15642aa8a482f28fe3077c64c3979ce0bf842aa",
    "geografia": {
     "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "contexto_internacional_resumen"
    },
-   "ambito": "peru",
+   "ambito": "mundo",
    "procedencia": "directa",
-   "sintesis": "El papa León XIV cumple este jueves su segundo día de actividades oficiales en Lima, con una agenda que incluye encuentros con…",
+   "sintesis": "El yerno, Nico Caprez, exmonitor de esquí en Suiza, ahora dirige una de las áreas más importantes del negocio",
    "puntos": [
-    "El papa León XIV cumple este jueves su segundo día de actividades oficiales en Lima, con una agenda que incluye encuentros con…"
-   ],
-   "datos": [
-    {
-     "v": "12 de noviembre",
-     "t": "fecha",
-     "c": "Papa León XIV en Lima: agenda oficial de HOY, jueves 12 de noviembre."
-    }
-   ]
-  },
-  {
-   "id": "f0ed3b0c80",
-   "sector": "coyuntura",
-   "titulo": "ATU anuncia cierre de estaciones y desvíos del Metropolitano por actividades del papa León XIV en el Centro de Lima",
-   "resumen": "La medida contempla el cierre temporal de seis estaciones y desvíos en las rutas A y C del Metropolitano, debido al encuentro del pontífice con los fieles en la Plaza de Armas de Lima.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/lima/actualidad/atu-anuncia-cierre-de-estaciones-y-desvios-del-metropolitano-por-actividades-del-papa-leon-xiv-en-el-centro-de-lima-noticia-1717386",
-   "fecha": "2026-11-12T12:47:49Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/12/454145_1928282.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "La medida contempla el cierre temporal de seis estaciones y desvíos en las rutas A y C del Metropolitano, debido al encuentro del pontífice con los fieles en la Plaza de Armas de Lima. La Autoridad de Transporte Urbano para Lima y Callao (ATU) anunció el cierre de algunas estaciones del Metropolitano y desvíos debido al encuentro con los fieles que el papa León XIV mantendrá en la Plaza de Armas .",
-   "puntos": [
-    "La medida contempla el cierre temporal de seis estaciones y desvíos en las rutas A y C del Metropolitano, debido al encuentro del pontífice con los fieles en la Plaza de Armas de Lima.",
-    "La Autoridad de Transporte Urbano para Lima y Callao (ATU) anunció el cierre de algunas estaciones del Metropolitano y desvíos debido al encuentro con los fieles que el papa León XIV mantendrá en la Plaza de Armas .",
-    "A través de sus redes sociales, el organismo informó que las modificaciones se realizarán en las líneas que transitan el Centro de Lima."
+    "El yerno, Nico Caprez, exmonitor de esquí en Suiza, ahora dirige una de las áreas más importantes del negocio"
    ]
   },
   {
@@ -1948,80 +4518,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "68d665b960",
-   "sector": "coyuntura",
-   "titulo": "Conmovedora muestra de fe: fieles se congregan afuera de la Nunciatura para ver al papa León XIV [FOTOS]",
-   "resumen": "Muchos fieles pasaron la noche afuera de la Nunciatura, con la esperanza de que el papa León XIV salga por el balcón y les dé la bendición. “Es una gran bendición estar cerca de él”, comentó una mujer, visiblemente emocionada.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/lima/actualidad/leon-xiv-en-lima-decenas-de-fieles-se-congregan-afuera-de-la-nunciatura-para-ver-al-papa-fotos-noticia-1717385",
-   "fecha": "2026-11-12T12:30:39Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/12/portada_2734268.jpg?width=860&quality=80",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "seccion_nacional_fuente"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Decenas de fieles se congregaron desde muy temprano en la sede de la Nunciatura, en el distrito de Jesús María, para poder ver al papa León XIV.",
-   "puntos": [
-    "Decenas de fieles se congregaron desde muy temprano en la sede de la Nunciatura, en el distrito de Jesús María, para poder ver al papa León XIV."
-   ]
-  },
-  {
-   "id": "82873b0232",
-   "sector": "economia",
-   "titulo": "Peruanos adinerados arriesgan más que su generación anterior: ¿cuáles son sus 5 grandes apuestas?",
-   "resumen": "Los peruanos de alto patrimonio cambian sus intereses en el tiempo, y también su tolerancia a la volatilidad, ¿qué ha variado?",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/g-de-gestion/reportaje/peruanos-adinerados-arriesgan-mas-que-su-generacion-anterior-cuales-son-sus-5-grandes-apuestas-noticia/",
-   "fecha": "2026-11-12T12:30:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/LX3MWP2FYVC4RDDMY6DFOU44WE.jpg?auth=4a4e3f1863666255720741fd02747926266e9d788a14a633f23bf88b3f338156&smart=true&width=3600&height=2430",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Los peruanos de alto patrimonio cambian sus intereses en el tiempo, y también su tolerancia a la volatilidad, ¿qué ha variado? “Se suele ver (hoy) un gusto por el riesgo quizás un poco más alto que el de las generaciones anteriores“ , señaló Ignacio Aramburú, head de wealth management de Credicorp Capital .",
-   "puntos": [
-    "Los peruanos de alto patrimonio cambian sus intereses en el tiempo, y también su tolerancia a la volatilidad, ¿qué ha variado?",
-    "“Se suele ver (hoy) un gusto por el riesgo quizás un poco más alto que el de las generaciones anteriores“ , señaló Ignacio Aramburú, head de wealth management de Credicorp Capital .",
-    "“(Los peruanos de alto patrimonio) suelen arriesgarse un poquito más (que antes)."
-   ]
-  },
-  {
-   "id": "6d9628a226",
-   "sector": "mundo",
-   "titulo": "De las finanzas a las sospechas de espionaje: ¿quién es Alice Huang, la mujer en el centro del escándalo de Nvidia?",
-   "resumen": "",
-   "fuente": "France 24 Español",
-   "url": "https://f24.my/CHMd",
-   "fecha": "2026-11-12T12:22:10Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/72346862-de03-11f1-b9d6-3f371022a770/w:1280/p:16x9/2026-11-10T025315Z-781474958-RC2BKOASZBEJ-RTRMADP-3-NVIDIA-PROBE-CEO.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "Alice Huang, también conocida como Huang Le, ha pasado de mantener un perfil relativamente discreto en los círculos financieros y tecnológicos asiáticos a convertirse en una figura clave de la controversia…",
-   "puntos": [
-    "Alice Huang, también conocida como Huang Le, ha pasado de mantener un perfil relativamente discreto en los círculos financieros y tecnológicos asiáticos a convertirse en una figura clave de la controversia…"
-   ]
-  },
-  {
    "id": "b9298a2d2e",
    "sector": "mundo",
    "titulo": "Hallan con vida a un joven desaparecido seis días en Australia",
@@ -2050,193 +4546,6 @@ window.NOTICIAS = {
      "v": "17 años",
      "t": "cantidad",
      "c": "Un adolescente de 17 años con autismo fue hallado con vida tras pasar seis días desaparecido en una remota zona boscosa de Australia."
-    }
-   ]
-  },
-  {
-   "id": "19145ceb28",
-   "sector": "economia",
-   "titulo": "Inversión en viviendas en Lima se recupera cada vez más rápido: ¿qué distritos son más rentables?",
-   "resumen": "En la capital, propietarios arriendan su departamento 16.1 años para recuperar lo que pagaron por ese activo.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/tu-dinero/inversion-en-viviendas-en-lima-se-recupera-cada-vez-mas-rapido-que-distritos-son-mas-rentables-noticia/",
-   "fecha": "2026-11-12T12:10:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/PLLQEAQJBNAO3JBIPCDZYUULJY?auth=6f3c4ba4800754efde5ad86e8a8983e59fc65faf3cf41dc33cbe9db91bcc7025&smart=true&width=792&height=445",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "En la capital, propietarios arriendan su departamento 16.1 años para recuperar lo que pagaron por ese activo. El mercado de alquiler de viviendas en Lima muestra mayor dinamismo en los últimos años , lo que repercute en los inquilinos y en los propietarios de estos inmuebles.",
-   "puntos": [
-    "En la capital, propietarios arriendan su departamento 16.1 años para recuperar lo que pagaron por ese activo.",
-    "El mercado de alquiler de viviendas en Lima muestra mayor dinamismo en los últimos años , lo que repercute en los inquilinos y en los propietarios de estos inmuebles.",
-    "Así, el indicador de precio de venta de la propiedad respecto del ingreso recibido por alquiler anual (PER, por sus siglas en inglés) descendió a 16.1 años al segundo trimestre del 2026, de acuerdo con el Banco Central de Reserva (BCR)."
-   ],
-   "datos": [
-    {
-     "v": "16.1 años",
-     "t": "cantidad",
-     "c": "En la capital, propietarios arriendan su departamento 16.1 años para recuperar lo que pagaron por ese activo.."
-    },
-    {
-     "v": "18.5 años",
-     "t": "cantidad",
-     "c": "…en los últimos 12 meses se dieron en San Borja, de 19.7 a 18.5 años; Surco, de 16.7 a 15.5 años, y Jesús María, de 16 a 15…"
-    },
-    {
-     "v": "15.5 años",
-     "t": "cantidad",
-     "c": "…dieron en San Borja, de 19.7 a 18.5 años; Surco, de 16.7 a 15.5 años, y Jesús María, de 16 a 15 años.."
-    },
-    {
-     "v": "15 años",
-     "t": "cantidad",
-     "c": "…años; Surco, de 16.7 a 15.5 años, y Jesús María, de 16 a 15 años.."
-    },
-    {
-     "v": "13.7 años",
-     "t": "cantidad",
-     "c": "…en que se recupera más rápido la inversión son Lince (13.7 años), La Molina (14.6), Surquillo (14.9) y Jesús María (15).."
-    }
-   ]
-  },
-  {
-   "id": "3ffd0cdcee",
-   "sector": "economia",
-   "titulo": "El costo ambiental detrás del boom de la IA: los riesgos que enfrenta Perú",
-   "resumen": "Lima concentra cerca del 80% de los centros de datos del país y el valle de Lurín se perfila como una zona de expansión. Especialistas advierten sobre la presión que esta infraestructura puede ejercer sobre el agua y la electricidad, así como las brechas regulatorias para…",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/tecnologia/el-costo-ambiental-detras-del-boom-de-la-ia-los-riesgos-que-enfrenta-peru-noticia/",
-   "fecha": "2026-11-12T12:07:53Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/RLVA6F6T2ZB2ZIEQ7PHEWB5VBQ.jpg?auth=b0c4e7dd2250f5436eb317589bd7491de94286dac355d2daadbaefeccf87a7f7&smart=true&width=1280&height=720",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Lima concentra cerca del 80% de los centros de datos del país y el valle de Lurín se perfila como una zona de expansión. Especialistas advierten sobre la presión que esta infraestructura puede ejercer sobre el agua y la electricidad, así como las brechas regulatorias para controlar su impacto.",
-   "puntos": [
-    "Lima concentra cerca del 80% de los centros de datos del país y el valle de Lurín se perfila como una zona de expansión.",
-    "Especialistas advierten sobre la presión que esta infraestructura puede ejercer sobre el agua y la electricidad, así como las brechas regulatorias para controlar su impacto.",
-    "Citan el informe Energía e IA de la Agencia Internacional de Energía, en el que señalan que los centros de datos consumieron 560,000 millones de litros de agua en 2023, y que al 2030 pueden duplicar los 189 millones de toneladas de CO2."
-   ],
-   "datos": [
-    {
-     "v": "80%",
-     "t": "porcentaje",
-     "c": "Lima concentra cerca del 80% de los centros de datos del país y el valle de Lurín se perfila como una zona de expansión."
-    },
-    {
-     "v": "57%",
-     "t": "porcentaje",
-     "c": "La Defensoría subraya que el 57% del agua azul disponible, que proviene de fuentes…"
-    },
-    {
-     "v": "560,000 millones de litros",
-     "t": "escala",
-     "c": "…en el que señalan que los centros de datos consumieron 560,000 millones de litros de agua en 2023, y que al 2030 pueden duplicar los 189…"
-    },
-    {
-     "v": "189 millones de toneladas",
-     "t": "escala",
-     "c": "…litros de agua en 2023, y que al 2030 pueden duplicar los 189 millones de toneladas de CO2.."
-    }
-   ]
-  },
-  {
-   "id": "fe524b46cf",
-   "sector": "politica",
-   "titulo": "UNSA: Trabajadores administrativos acatarán paro de 48 horas en noviembre",
-   "resumen": "El sindicato también demanda el cumplimiento de convenios colectivos pendientes y advierte problemas vinculados a la falta de presupuesto y personal en la universidad.",
-   "fuente": "El Búho",
-   "url": "https://elbuho.pe/2026/11/unsa-trabajadores-administrativos-acataran-paro-de-48-horas-en-noviembre/",
-   "fecha": "2026-11-12T12:01:09Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/FOTOS-NOTAS-28.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "Los trabajadores administrativos de la Universidad Nacional de San Agustín (UNSA) acatarán un paro nacional de 48 horas La medida fue confirmada por el Sindicato de Trabajadores de la UNSA (Sutunsa), cuyos dirigentes cuestionan las modificaciones que el Ministerio de Economía y Finanzas busca incorporar en la próxima Ley de Presupuesto.",
-   "puntos": [
-    "Los trabajadores administrativos de la Universidad Nacional de San Agustín (UNSA) acatarán un paro nacional de 48 horas",
-    "La medida fue confirmada por el Sindicato de Trabajadores de la UNSA (Sutunsa), cuyos dirigentes cuestionan las modificaciones que el Ministerio de Economía y Finanzas busca incorporar en la próxima Ley de Presupuesto.",
-    "Según sostiene, afectarían la negociación colectiva en el sector público."
-   ],
-   "datos": [
-    {
-     "v": "18 de noviembre",
-     "t": "fecha",
-     "c": "…acatarán un paro nacional de 48 horas los próximos 17 y 18 de noviembre."
-    }
-   ]
-  },
-  {
-   "id": "505eb00d10",
-   "sector": "economia",
-   "titulo": "¿Por qué reestructurar Petroperú?",
-   "resumen": "1 La debacle de la petrolera estatal de los últimos cinco años no tiene precedentes. Entre el 2022 y el 2025, el Estado le otorgó US$ 5,000 millones a través de una serie de rescates financieros (“salvatajes”). A pesar de esta masiva transferencia de recursos, la pésima y opaca…",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/opinion/por-que-reestructurar-petroperu-noticia/",
-   "fecha": "2026-11-12T12:00:00Z",
-   "tipo": "comercial",
-   "genero": "opinion",
-   "imagen": "https://gestion.pe/resizer/v2/3R7EZ4RT2BCD7CBUUBFWELWXEA.jpg?auth=22268ac1504b039f2c6b59101cb8ad2f629cfb1bf3407589b3ca6aacfe5300c2&smart=true&width=1200&height=800",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "1 La debacle de la petrolera estatal de los últimos cinco años no tiene precedentes. Entre el 2022 y el 2025, el Estado le otorgó US$ 5,000 millones a través de una serie de rescates financieros (“salvatajes”).",
-   "puntos": [
-    "1 La debacle de la petrolera estatal de los últimos cinco años no tiene precedentes.",
-    "Entre el 2022 y el 2025, el Estado le otorgó US$ 5,000 millones a través de una serie de rescates financieros (“salvatajes”).",
-    "A pesar de esta masiva transferencia de recursos, la pésima y opaca gestión de la empresa llevó a que, a fines del año pasado, Petroperú estuviese al borde de dejar de operar por falta de liquidez."
-   ],
-   "datos": [
-    {
-     "v": "US$ 5,000 millones",
-     "t": "monto",
-     "c": "Entre el 2022 y el 2025, el Estado le otorgó US$ 5,000 millones a través de una serie de rescates financieros (“salvatajes”)."
-    },
-    {
-     "v": "US$ 2,300 millones",
-     "t": "monto",
-     "c": "A pesar de haber recibido un apoyo del fisco por US$ 5,000 millones, el déficit de capital de trabajo bordeaba los US$ 2,300 millones."
-    },
-    {
-     "v": "US$ 8,000 millones",
-     "t": "monto",
-     "c": "En un estudio reciente, estimamos que la Nueva Refinería Talara destruyó valor por no menos de US$ 8,000 millones."
-    },
-    {
-     "v": "64 hospitales",
-     "t": "cantidad",
-     "c": "Con este dinero pudimos construir y equipar unos 64 hospitales de alta complejidad o más de 250 colegios emblemáticos…"
-    },
-    {
-     "v": "250 colegios",
-     "t": "cantidad",
-     "c": "…y equipar unos 64 hospitales de alta complejidad o más de 250 colegios emblemáticos modernos (frente a los noventa y dos…"
     }
    ]
   },
@@ -2333,37 +4642,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "515eea7e62",
-   "sector": "mundo",
-   "titulo": "Paraguay: Santiago Peña se expone a 15 años de cárcel por el caso Ueno Bank; avanza la devolución de los ahorros",
-   "resumen": "El consejo de administración de Nvidia se reunió para evaluar la continuidad de Jensen Huang al frente de la compañía, después de que salieran a la luz informaciones sobre sus presuntas relaciones extramatrimoniales, una de ellas con una empresaria china investigada por sus…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/am%C3%A9rica-latina/20261112-paraguay-santiago-pe%C3%B1a-se-expone-a-15-a%C3%B1os-de-c%C3%A1rcel-por-el-caso-ueno-bank-avanza-la-devoluci%C3%B3n-de-los-ahorros",
-   "fecha": "2026-11-12T11:22:23Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/4f66ba82-de8b-11f1-b495-f71d22e7fea9/w:1024/p:16x9/000-D6GK463.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "El consejo de administración de Nvidia se reunió para evaluar la continuidad de Jensen Huang al frente de la compañía, después de que salieran a la luz informaciones sobre sus presuntas relaciones extramatrimoniales,…",
-   "puntos": [
-    "El consejo de administración de Nvidia se reunió para evaluar la continuidad de Jensen Huang al frente de la compañía, después de que salieran a la luz informaciones sobre sus presuntas relaciones extramatrimoniales,…"
-   ],
-   "datos": [
-    {
-     "v": "15 años",
-     "t": "cantidad",
-     "c": "Paraguay: Santiago Peña se expone a 15 años de cárcel por el caso Ueno Bank; avanza la devolución de los ahorros."
-    }
-   ]
-  },
-  {
    "id": "adaf9e2fba",
    "sector": "mundo",
    "titulo": "¿Por qué mi familia blanca nunca me dijo que yo era negra?",
@@ -2397,54 +4675,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "ba9a4373ce",
-   "sector": "economia",
-   "titulo": "Conozca la agenda de Keiko Fujimori en el foro APEC y Japón",
-   "resumen": "Conozca la genda de Keiko Fujimori en el foro APEC y Japón . La presidenta viajará a China y Japón del 15 al 21 de noviembre para cumplir actividades oficiales.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/peru/politica/la-presidenta-viajara-a-china-y-japon-del-15-al-21-de-noviembre-para-cumplir-actividades-oficiales-noticia/",
-   "fecha": "2026-11-12T11:15:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/IBGZ37X5SJGXDHUR4C3QQCW2MI.jpg?auth=370cfdd09db76d6e6b7360525b724309fc521d6ea6b77566437907a2c5ce842d&smart=true&width=1200&height=800",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Conozca la genda de Keiko Fujimori en el foro APEC y Japón . La presidenta viajará a China y Japón del 15 al 21 de noviembre para cumplir actividades oficiales.",
-   "puntos": [
-    "Conozca la genda de Keiko Fujimori en el foro APEC y Japón .",
-    "La presidenta viajará a China y Japón del 15 al 21 de noviembre para cumplir actividades oficiales.",
-    "Durante su estadía en China, del 17 al 19 de noviembre, la mandataria participará en la 33.ª Cumbre de Líderes Económicos de APEC, que se desarrollará en la ciudad de Shenzhen."
-   ],
-   "datos": [
-    {
-     "v": "44 votos",
-     "t": "cantidad",
-     "c": "El pleno del Senado aprobó, con 44 votos a favor, uno en contra y cinco abstenciones, la…"
-    },
-    {
-     "v": "21 de noviembre",
-     "t": "fecha",
-     "c": "La presidenta viajará a China y Japón del 15 al 21 de noviembre para cumplir actividades oficiales.."
-    },
-    {
-     "v": "19 de noviembre",
-     "t": "fecha",
-     "c": "Durante su estadía en China, del 17 al 19 de noviembre, la mandataria participará en la 33.ª Cumbre de Líderes…"
-    },
-    {
-     "v": "20 de noviembre",
-     "t": "fecha",
-     "c": "Posteriormente, el 20 de noviembre, Fujimori realizará una visita oficial a Japón, donde…"
-    }
-   ]
-  },
-  {
    "id": "af4063e24b",
    "sector": "nino",
    "titulo": "Gobierno despliega más de 2 mil maquinarias en todo el país para enfrentar el fenómeno El Niño más intenso de los últimos 100 años",
@@ -2472,16 +4702,42 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "287ebcdd7e",
-   "sector": "economia",
-   "titulo": "Mercados e indicadores – Hoy jueves 12 de noviembre",
-   "resumen": "Para tomar las decisiones más acertadas de inversión, manténgase diariamente bien informado sobre el desempeño de las acciones de la plaza bursátil, de la variación de las principales variables del mercado financiero, así como de la evolución de los precios de los commodities.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/economia/mercados/mercados-e-indicadores-hoy-jueves-12-de-noviembre-noticia/",
-   "fecha": "2026-11-12T11:00:17Z",
-   "tipo": "comercial",
+   "id": "52e25a149e",
+   "sector": "mundo",
+   "titulo": "Estimado experto en diferencias de edad",
+   "resumen": "Es común que los niveles de energía disminuyan a medida que las personas envejecen. Además, la Guerra Civil estadounidense fue particularmente agotadora.",
+   "fuente": "The New Yorker",
+   "url": "https://www.newyorker.com/humor/shouts-murmurs/dear-age-gap-expert",
+   "fecha": "2026-11-12T11:00:00Z",
+   "tipo": "internacional",
    "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/CKBJCXWQXVCTXHZN5ZAGTM66RE.jpg?auth=c935a9816683dbd514d89311dedaf60293df727aefbd90da56a9830e4813f2eb&smart=true&width=1280&height=720",
+   "imagen": "https://media.newyorker.com/photos/6aecf0379387b4aa46717994/master/pass/Shouts-Pellegrino.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "contexto_internacional_resumen"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "titulo_original": "Dear Age-Gap Expert",
+   "traducido": true,
+   "sintesis": "Claire Pellegrino imagines a humorous advice column where readers seek advice on dating partners from different historical eras.",
+   "puntos": [
+    "Claire Pellegrino imagines a humorous advice column where readers seek advice on dating partners from different historical eras."
+   ]
+  },
+  {
+   "id": "d9cdaedad0",
+   "sector": "mundo",
+   "titulo": "Los candidatos que derrotaron la política del agravio blanco",
+   "resumen": "¿El avance de los demócratas en el Sur transformará la visión de su partido sobre una campaña ganadora?",
+   "fuente": "The New Yorker",
+   "url": "https://www.newyorker.com/news/the-lede/the-candidates-who-defeated-the-politics-of-white-grievance",
+   "fecha": "2026-11-12T11:00:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://media.newyorker.com/photos/6af4e75a8427308af7e5a948/master/pass/midterm-dems-2.jpg",
    "geografia": {
     "version": 1,
     "ambito": "pendiente",
@@ -2490,18 +4746,63 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "sintesis": "Para tomar las decisiones más acertadas de inversión, manténgase diariamente bien informado sobre el desempeño de las acciones de la plaza bursátil, de la variación de las principales variables del mercado financiero, así como de la evolución de los precios de los commodities. En Gestión, valoramos profundamente la labor periodística que realizamos para mantenerlos informados.",
+   "titulo_original": "The Candidates Who Defeated the Politics of White Grievance",
+   "traducido": true,
+   "sintesis": "Keeanga-Yamahtta Taylor writes about the Democrats’ breakthrough in the South, and whether it will transform their party’s view of a winning campaign.",
    "puntos": [
-    "Para tomar las decisiones más acertadas de inversión, manténgase diariamente bien informado sobre el desempeño de las acciones de la plaza bursátil, de la variación de las principales variables del mercado financiero, así como de la evolución de los precios de los commodities.",
-    "En Gestión, valoramos profundamente la labor periodística que realizamos para mantenerlos informados.",
-    "Por ello, les recordamos que no está permitido, reproducir, comercializar, distribuir, copiar total o parcialmente los contenidos que publicamos en nuestra web, sin autorizacion previa y expresa de Empresa Editora El Comercio S.A."
-   ],
-   "datos": [
-    {
-     "v": "12 de noviembre",
-     "t": "fecha",
-     "c": "Mercados e indicadores – Hoy jueves 12 de noviembre."
-    }
+    "Keeanga-Yamahtta Taylor writes about the Democrats’ breakthrough in the South, and whether it will transform their party’s view of a winning campaign."
+   ]
+  },
+  {
+   "id": "5a96ab017c",
+   "sector": "mundo",
+   "titulo": "¿Qué tienen que ver la música rock y el fascismo?",
+   "resumen": "Un estudio reciente sobre los coqueteos de las estrellas del pop con las imágenes nazis plantea interrogantes sobre la moralidad, los medios y el espectáculo.",
+   "fuente": "The New Yorker",
+   "url": "https://www.newyorker.com/books/under-review/what-is-it-about-rock-music-and-fascism",
+   "fecha": "2026-11-12T11:00:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://media.newyorker.com/photos/6af36421f907edd75013e1bc/master/pass/RockFascism.gif",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "titulo_original": "What Is It About Rock Music and Fascism?",
+   "traducido": true,
+   "sintesis": "Alex Ross on “This Ain’t Rock ’n’ Roll: Pop Music, the Swastika, and the Third Reich,” by Daniel Rachel, which explores fascist flirtation by rock bands such as Joy Division and the Ramones.",
+   "puntos": [
+    "Alex Ross on “This Ain’t Rock ’n’ Roll: Pop Music, the Swastika, and the Third Reich,” by Daniel Rachel, which explores fascist flirtation by rock bands such as Joy Division and the Ramones."
+   ]
+  },
+  {
+   "id": "a3fafe2ffc",
+   "sector": "mundo",
+   "titulo": "“Club Kid” y la nueva paternidad",
+   "resumen": "El arquetipo del padre en pantalla ha recorrido un largo camino desde los patriarcas de la posguerra. La nueva película “Club Kid” se suma a una ola de trabajos recientes que interrogan lo que queremos de los papás hoy en día, en el arte y en la vida.",
+   "fuente": "The New Yorker",
+   "url": "https://www.newyorker.com/podcast/critics-at-large/club-kid-and-the-new-fatherhood",
+   "fecha": "2026-11-12T11:00:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://media.newyorker.com/photos/650b59e2f49b447c4924fa7b/master/pass/CAL-WEB.png",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "titulo_original": "“Club Kid” and the New Fatherhood",
+   "traducido": true,
+   "sintesis": "The new film “Club Kid” joins a wave of recent works that interrogate what we want from dads today—in art and in life.",
+   "puntos": [
+    "The new film “Club Kid” joins a wave of recent works that interrogate what we want from dads today—in art and in life."
    ]
   },
   {
@@ -2542,7 +4843,13 @@ window.NOTICIAS = {
     "motivo": "referencia_peru_titulo"
    },
    "ambito": "peru",
-   "procedencia": "directa"
+   "procedencia": "directa",
+   "sintesis": "Porcile ganó la categoría principal de la Copa Perú 2026, campeonato ecuestre que reunió a jinetes peruanos y delegaciones internacionales. EL Club Hípico Peruano vivió jornadas de altísimo nivel con la segunda edición del Campeonato Nacional e Internacional Ecuestre Copa Perú 2026, organizado bajo la presidencia de Cristopher Varas.",
+   "puntos": [
+    "Porcile ganó la categoría principal de la Copa Perú 2026, campeonato ecuestre que reunió a jinetes peruanos y delegaciones internacionales.",
+    "EL Club Hípico Peruano vivió jornadas de altísimo nivel con la segunda edición del Campeonato Nacional e Internacional Ecuestre Copa Perú 2026, organizado bajo la presidencia de Cristopher Varas.",
+    "Jinetes y amazonas peruanos, junto a delegaciones internacionales, demostraron precisión, potencia y mucha solvencia en la pista de salto, en un torneo que unió exigencia técnica y tradición."
+   ]
   },
   {
    "id": "888dfb65fd",
@@ -2562,112 +4869,10 @@ window.NOTICIAS = {
     "motivo": "sin_evidencia_geografica"
    },
    "ambito": "pendiente",
-   "procedencia": "directa"
-  },
-  {
-   "id": "d1f10ba89f",
-   "sector": "economia",
-   "titulo": "Demanda eléctrica crece más de 5%, pero la de minería cae, ¿qué “jala” ahora el aumento?",
-   "resumen": "Riesgo para el suministro de energía se mantiene en el norte, pero experto advierte de posible traba para resolver problemas de emergencia en la generación",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/economia/demanda-electrica-crece-mas-de-5-a-octubre-pero-la-de-mineria-cae-que-jala-ahora-el-aumento-noticia/",
-   "fecha": "2026-11-12T11:00:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/5DD3EHYU5FCRVPYEGJ55SHJY3Q.jpg?auth=2f4336dab02a74ecffb911708fb5b6431a9a7533b4a9efce435a6c36ddb81219&smart=true&width=1200&height=800",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
    "procedencia": "directa",
-   "sintesis": "Riesgo para el suministro de energía se mantiene en el norte, pero experto advierte de posible traba para resolver problemas de emergencia en la generación La demanda de electricidad -que es uno de los principales indicadores adelantados del PBI y permite conocer casi en tiempo real cómo evoluciona la economía-, a octubre último muestra cifras de una posible recuperación tras la desaceleración de los dos últimos años , según cifras oficiales.",
+   "sintesis": "Jely Reátegui, Ricky Trevitazo y otros famosos relatan cómo enfrentaron el dengue y un especialista explica sus señales de alarma.",
    "puntos": [
-    "Riesgo para el suministro de energía se mantiene en el norte, pero experto advierte de posible traba para resolver problemas de emergencia en la generación",
-    "La demanda de electricidad -que es uno de los principales indicadores adelantados del PBI y permite conocer casi en tiempo real cómo evoluciona la economía-, a octubre último muestra cifras de una posible recuperación tras la desaceleración de los dos últimos años , según cifras oficiales.",
-    "De acuerdo con el último reporte del Comité de Operación Económica del Sistema Eléctrico Interconectado Nacional (COES), en el décimo mes del 2026 la producción eléctrica (a la cual va aparejada la demanda), fue de 5,616.65 gigavatios por hora (GWh), mayor en 6.70% respecto a igual mes del 2025."
-   ],
-   "datos": [
-    {
-     "v": "US$ 100",
-     "t": "monto",
-     "c": "…la energía que en octubre se mantienen por encima de los US$ 100 por megavatio por hora (MW/h) por cuarto mes consecutivo…"
-    },
-    {
-     "v": "US$ 30",
-     "t": "monto",
-     "c": "…por cuarto mes consecutivo, cuando meses atrás estaban en US$ 30 por MW/h."
-    },
-    {
-     "v": "5%",
-     "t": "porcentaje",
-     "c": "Demanda eléctrica crece más de 5%, pero la de minería cae, ¿qué “jala” ahora el aumento?."
-    },
-    {
-     "v": "6.70%",
-     "t": "porcentaje",
-     "c": "…fue de 5,616.65 gigavatios por hora (GWh), mayor en 6.70% respecto a igual mes del 2025.."
-    },
-    {
-     "v": "5.47%",
-     "t": "porcentaje",
-     "c": "…Interconectado Nacional (SEIN), un alza acumulada de 5.47% con respecto a igual periodo del año pasado.."
-    }
-   ]
-  },
-  {
-   "id": "00e78cae02",
-   "sector": "economia",
-   "titulo": "Back to basics: cuando el banco y el supervisor fallan",
-   "resumen": "El Banco Central del Paraguay inició el procedimiento de resolución de Ueno Bank, tras constatar un índice de solvencia de 5,56% frente a un mínimo legal de 12%: el capital que el banco decía tener había desaparecido. El origen serían los créditos vinculados por unos US$ 146…",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/opinion/back-to-basics-cuando-el-banco-y-el-supervisor-fallan-noticia/",
-   "fecha": "2026-11-12T11:00:00Z",
-   "tipo": "comercial",
-   "genero": "opinion",
-   "imagen": "https://gestion.pe/resizer/v2/GM4TCOBNGEYS2MJQKQYDQORTHE.jpg?auth=24f675fcc9f8a5d9e94b56e5fc669234dc913784696271f001d3a18cb3463698&smart=true&width=1024&height=678",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "contexto_latinoamerica_resumen"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "El Banco Central del Paraguay inició el procedimiento de resolución de Ueno Bank, tras constatar un índice de solvencia de 5,56% frente a un mínimo legal de 12%: el capital que el banco decía tener había desaparecido. El origen serían los créditos vinculados por unos US$ 146 millones a empresas del propio grupo, en algunos casos por encima de los límites legales y sin garantías suficientes.",
-   "puntos": [
-    "El Banco Central del Paraguay inició el procedimiento de resolución de Ueno Bank, tras constatar un índice de solvencia de 5,56% frente a un mínimo legal de 12%: el capital que el banco decía tener había desaparecido.",
-    "El origen serían los créditos vinculados por unos US$ 146 millones a empresas del propio grupo, en algunos casos por encima de los límites legales y sin garantías suficientes.",
-    "Además, los fondos públicos llegaron a representar el 29% de sus depósitos."
-   ],
-   "datos": [
-    {
-     "v": "US$ 146 millones",
-     "t": "monto",
-     "c": "El origen serían los créditos vinculados por unos US$ 146 millones a empresas del propio grupo, en algunos casos por encima…"
-    },
-    {
-     "v": "5,56%",
-     "t": "porcentaje",
-     "c": "…de Ueno Bank, tras constatar un índice de solvencia de 5,56% frente a un mínimo legal de 12%: el capital que el banco…"
-    },
-    {
-     "v": "12%",
-     "t": "porcentaje",
-     "c": "…índice de solvencia de 5,56% frente a un mínimo legal de 12%: el capital que el banco decía tener había desaparecido."
-    },
-    {
-     "v": "29%",
-     "t": "porcentaje",
-     "c": "Además, los fondos públicos llegaron a representar el 29% de sus depósitos."
-    },
-    {
-     "v": "25%",
-     "t": "porcentaje",
-     "c": "…que los créditos a vinculados no pueden superar el 25% del capital de mayor calidad del banco (patrimonio…"
-    }
+    "Jely Reátegui, Ricky Trevitazo y otros famosos relatan cómo enfrentaron el dengue y un especialista explica sus señales de alarma."
    ]
   },
   {
@@ -2721,65 +4926,34 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "9485d9f115",
+   "id": "4348afe56f",
    "sector": "mundo",
-   "titulo": "Daddy Yankee, padre del reguetón, es honrado como persona del año por los Grammy Latinos: “El algoritmo no puede dictar el destino de nuestra cultura”",
-   "resumen": "El músico puertorriqueño, que abrió las puertas a un género entonces perseguido y hoy inmensamente escuchado, ha sido reconocido por la Academia Latina de Grabación en un gran homenaje en Las Vegas",
+   "titulo": "Un exterrorista italiano se fuga en Buenos Aires descolgándose de un quinto piso para evitar ser extraditado",
+   "resumen": "El exmiembro de las Brigadas Rojas Leonardo Bertulazzi, de 74 años y huido desde 1980, vivía como refugiado en Argentina hasta que Milei revocó la decisión",
    "fuente": "El País América",
-   "url": "https://elpais.com/us/entretenimiento/2026-11-12/daddy-yankee-padre-del-regueton-es-honrado-como-persona-del-ano-por-los-grammy-latinos-el-algoritmo-no-puede-dictar-el-destino-de-nuestra-cultura.html",
-   "fecha": "2026-11-12T10:44:26Z",
+   "url": "https://elpais.com/internacional/2026-11-12/un-exterrorista-italiano-se-fuga-en-buenos-aires-descolgandose-de-un-quinto-piso-para-evitar-ser-extraditado.html",
+   "fecha": "2026-11-12T10:32:43Z",
    "tipo": "internacional",
    "genero": "noticia",
-   "imagen": "https://imagenes.elpais.com/resizer/v2/GAONFNLCW5BFLBSGB7M5O3YGRA.jpg?auth=13d696dd0d50a405642dceb2a10bb09ea9946811487aa9366f57efd7ccaaf5ea",
+   "imagen": "https://imagenes.elpais.com/resizer/v2/TUK77BMO2REU7MWZMUSY6DVWJU.jpg?auth=ea55ad4d3525e84a2ef999c3b71bcc4cb5d3695ffef6c80a6f8d50297054cea0",
    "geografia": {
     "version": 1,
     "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "contexto_internacional_resumen"
+    "zona": "latam",
+    "motivo": "contexto_latinoamerica_resumen"
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "sintesis": "El músico puertorriqueño, que abrió las puertas a un género entonces perseguido y hoy inmensamente escuchado, ha sido reconocido por la Academia Latina de Grabación en un gran homenaje en Las Vegas “De nada le sirve al hombre ganar el mundo entero si pierde su alma”, proclamaba, tranquilo tras una noche de emociones y alegrías, Ramón Raymond Luis Ayala Rodríguez, mundialmente conocido como Daddy Yankee.",
+   "sintesis": "El exmiembro de las Brigadas Rojas Leonardo Bertulazzi, de 74 años y huido desde 1980, vivía como refugiado en Argentina hasta que Milei revocó la decisión",
    "puntos": [
-    "El músico puertorriqueño, que abrió las puertas a un género entonces perseguido y hoy inmensamente escuchado, ha sido reconocido por la Academia Latina de Grabación en un gran homenaje en Las Vegas",
-    "“De nada le sirve al hombre ganar el mundo entero si pierde su alma”, proclamaba, tranquilo tras una noche de emociones y alegrías, Ramón Raymond Luis Ayala Rodríguez, mundialmente conocido como Daddy Yankee.",
-    "Él ha ganado ese mundo, que se ha rendido a sus pies, pero también lo ha hecho, y no de manera fácil, con alma."
+    "El exmiembro de las Brigadas Rojas Leonardo Bertulazzi, de 74 años y huido desde 1980, vivía como refugiado en Argentina hasta que Milei revocó la decisión"
    ],
    "datos": [
     {
-     "v": "35 años",
+     "v": "74 años",
      "t": "cantidad",
-     "c": "Casi 35 años después de empezar en la música, el puertorriqueño, de ahora 50 años, vivía su gran noche."
-    },
-    {
-     "v": "50 años",
-     "t": "cantidad",
-     "c": "Casi 35 años después de empezar en la música, el puertorriqueño, de ahora 50 años, vivía su gran noche."
+     "c": "El exmiembro de las Brigadas Rojas Leonardo Bertulazzi, de 74 años y huido desde 1980, vivía como refugiado en Argentina…"
     }
-   ]
-  },
-  {
-   "id": "d0714889f1",
-   "sector": "mundo",
-   "titulo": "Nvidia y el futuro de Jensen Huang: ¿cómo su romance con una presunta espía china podría sacudir a Washington?",
-   "resumen": "El consejo de administración de Nvidia se reunió para evaluar la continuidad de Jensen Huang al frente de la compañía, después de que salieran a la luz informaciones sobre sus presuntas relaciones extramatrimoniales, una de ellas con una empresaria china investigada por sus…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/ee-uu-y-canad%C3%A1/20261112-nvidia-y-el-futuro-de-jensen-huang-c%C3%B3mo-su-romance-con-una-presunta-esp%C3%ADa-china-podr%C3%ADa-sacudir-a-washington",
-   "fecha": "2026-11-12T10:33:36Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/c8610aee-de83-11f1-9ca3-5f54d898a954/w:1024/p:16x9/2026-11-12T015243Z-784305986-RC27ZNASLEFR-RTRMADP-3-NVIDIA-PROBE-CEO-TRUMP.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "El consejo de administración de Nvidia se reunió para evaluar la continuidad de Jensen Huang al frente de la compañía, después de que salieran a la luz informaciones sobre sus presuntas relaciones extramatrimoniales,…",
-   "puntos": [
-    "El consejo de administración de Nvidia se reunió para evaluar la continuidad de Jensen Huang al frente de la compañía, después de que salieran a la luz informaciones sobre sus presuntas relaciones extramatrimoniales,…"
    ]
   },
   {
@@ -2804,30 +4978,6 @@ window.NOTICIAS = {
    "sintesis": "5 nutrientes que probablemente necesites consumir más The New York Times",
    "puntos": [
     "5 nutrientes que probablemente necesites consumir más The New York Times"
-   ]
-  },
-  {
-   "id": "f31d786c0b",
-   "sector": "mundo",
-   "titulo": "Las amenazas contra los medios colombianos suben de tono",
-   "resumen": "Las autoridades aún no han señalado quiénes son los responsables de la explosión de una granada frente al edificio de RCN en Cali y de amenazar con atentados a medios tanto públicos como privados",
-   "fuente": "El País América",
-   "url": "https://elpais.com/america-colombia/2026-11-12/las-amenazas-contra-los-medios-colombianos-suben-de-tono.html",
-   "fecha": "2026-11-12T09:30:00Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://imagenes.elpais.com/resizer/v2/2UELD3N5RRJVPFE7ST7DYCD2D4.jpg?auth=cebf6b0b5dee6abecbb6e49f41a2b9727a6e160ba2d39e1a0a84b2e8a89ac86e",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Las autoridades aún no han señalado quiénes son los responsables de la explosión de una granada frente al edificio de RCN en Cali y de amenazar con atentados a medios tanto públicos como privados",
-   "puntos": [
-    "Las autoridades aún no han señalado quiénes son los responsables de la explosión de una granada frente al edificio de RCN en Cali y de amenazar con atentados a medios tanto públicos como privados"
    ]
   },
   {
@@ -2856,16 +5006,16 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "63933303ad",
+   "id": "f31d786c0b",
    "sector": "mundo",
-   "titulo": "Los venezolanos nominados al Latin Grammy que cruzan el país por carretera para evitar al ICE",
-   "resumen": "Los tres artistas, con trámites de asilo en marcha, decidieron ir en auto a la ceremonia en Las Vegas por temor a las autoridades migratorias",
+   "titulo": "Las amenazas contra los medios colombianos suben de tono",
+   "resumen": "Las autoridades aún no han señalado quiénes son los responsables de la explosión de una granada frente al edificio de RCN en Cali y de amenazar con atentados a medios tanto públicos como privados",
    "fuente": "El País América",
-   "url": "https://elpais.com/us/migracion/2026-11-12/los-venezolanos-nominados-al-latin-grammy-que-cruzan-el-pais-por-carretera-para-evitar-al-ice.html",
+   "url": "https://elpais.com/america-colombia/2026-11-12/las-amenazas-contra-los-medios-colombianos-suben-de-tono.html",
    "fecha": "2026-11-12T09:30:00Z",
    "tipo": "internacional",
    "genero": "noticia",
-   "imagen": "https://imagenes.elpais.com/resizer/v2/C2CYCJKURJBH3KJHLSDV4TKF6Q.jpeg?auth=46e6df4216a3da4f78348d2de89d5f4411a9def93d5e148615b40dc0d3088068",
+   "imagen": "https://imagenes.elpais.com/resizer/v2/2UELD3N5RRJVPFE7ST7DYCD2D4.jpg?auth=cebf6b0b5dee6abecbb6e49f41a2b9727a6e160ba2d39e1a0a84b2e8a89ac86e",
    "geografia": {
     "version": 1,
     "ambito": "mundo",
@@ -2874,116 +5024,22 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "sintesis": "Los tres artistas, con trámites de asilo en marcha, decidieron ir en auto a la ceremonia en Las Vegas por temor a las autoridades migratorias",
+   "sintesis": "Las autoridades aún no han señalado quiénes son los responsables de la explosión de una granada frente al edificio de RCN en Cali y de amenazar con atentados a medios tanto públicos como privados",
    "puntos": [
-    "Los tres artistas, con trámites de asilo en marcha, decidieron ir en auto a la ceremonia en Las Vegas por temor a las autoridades migratorias"
+    "Las autoridades aún no han señalado quiénes son los responsables de la explosión de una granada frente al edificio de RCN en Cali y de amenazar con atentados a medios tanto públicos como privados"
    ]
   },
   {
-   "id": "f5c206d4fd",
-   "sector": "mundo",
-   "titulo": "Y la nave espacial aterrizó, para siempre, en Los Ángeles: el ‘Endeavour’, el primer transbordador en verse en un museo",
-   "resumen": "Desde el 13 de noviembre, tras casi 15 años de espera y con una inversión de 450 millones de dólares, el Centro de Ciencias de California acogerá la célebre reliquia aeroespacial",
-   "fuente": "El País América",
-   "url": "https://elpais.com/us/2026-11-12/y-la-nave-espacial-aterrizo-para-siempre-en-los-angeles-el-endeavour-el-primer-transbordador-en-verse-en-un-museo.html",
-   "fecha": "2026-11-12T09:30:00Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://imagenes.elpais.com/resizer/v2/Z77C2GEMBFD6TFRJWL4X3DTX6E.jpg?auth=cd0b1cef2049990a801646b124e14beda2ffc00bfc272b57136cb43f740c1056",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "contexto_internacional_resumen"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Desde el 13 de noviembre, tras casi 15 años de espera y con una inversión de 450 millones de dólares, el Centro de Ciencias de California acogerá la célebre reliquia aeroespacial",
-   "puntos": [
-    "Desde el 13 de noviembre, tras casi 15 años de espera y con una inversión de 450 millones de dólares, el Centro de Ciencias de California acogerá la célebre reliquia aeroespacial"
-   ],
-   "datos": [
-    {
-     "v": "450 millones de dólares",
-     "t": "escala",
-     "c": "…tras casi 15 años de espera y con una inversión de 450 millones de dólares, el Centro de Ciencias de California acogerá la célebre…"
-    },
-    {
-     "v": "15 años",
-     "t": "cantidad",
-     "c": "Desde el 13 de noviembre, tras casi 15 años de espera y con una inversión de 450 millones de dólares…"
-    },
-    {
-     "v": "13 de noviembre",
-     "t": "fecha",
-     "c": "Desde el 13 de noviembre, tras casi 15 años de espera y con una inversión de 450…"
-    }
-   ]
-  },
-  {
-   "id": "e03f1da5d5",
-   "sector": "economia",
-   "titulo": "Industria de acero latinoamericana alista inversiones para hacerle competencia a China",
-   "resumen": "La industria siderúrgica latinoamericana desempeña un papel estratégico en el desarrollo económico y productivo de la región, al ser uno de los principales motores de sectores como la construcción, la infraestructura, la automotriz y la manufactura.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/economia/china-vs-la-industria-del-acero-latinoamericana-se-alistan-inversiones-para-competir-con-pais-asiatico-noticia/",
-   "fecha": "2026-11-12T09:26:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/623XDYU4QJGZFFSSLDENXQDILQ.jpg?auth=f0cf7d50fdee7c3763128443806cceab84e8dc6129158c0ae544981e866936b7&smart=true&width=3000&height=2000",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "La industria siderúrgica latinoamericana desempeña un papel estratégico en el desarrollo económico y productivo de la región, al ser uno de los principales motores de sectores como la construcción, la infraestructura, la automotriz y la manufactura. Según la Asociación Latinoamericana del Acero (Alacero), entre enero y agosto del 2026 el consumo de acero laminado en la región creció 3.1% interanual, mientras que la producción regional apenas avanzó 1.7%.",
-   "puntos": [
-    "La industria siderúrgica latinoamericana desempeña un papel estratégico en el desarrollo económico y productivo de la región, al ser uno de los principales motores de sectores como la construcción, la infraestructura, la automotriz y la manufactura.",
-    "Según la Asociación Latinoamericana del Acero (Alacero), entre enero y agosto del 2026 el consumo de acero laminado en la región creció 3.1% interanual, mientras que la producción regional apenas avanzó 1.7%.",
-    "En tanto, las importaciones llegaron así al 43.5% del consumo, el nivel más alto registrado históricamente."
-   ],
-   "datos": [
-    {
-     "v": "3.1%",
-     "t": "porcentaje",
-     "c": "…del 2026 el consumo de acero laminado en la región creció 3.1% interanual, mientras que la producción regional apenas…"
-    },
-    {
-     "v": "1.7%",
-     "t": "porcentaje",
-     "c": "…mientras que la producción regional apenas avanzó 1.7%.."
-    },
-    {
-     "v": "43.5%",
-     "t": "porcentaje",
-     "c": "En tanto, las importaciones llegaron así al 43.5% del consumo, el nivel más alto registrado históricamente.."
-    },
-    {
-     "v": "35%",
-     "t": "porcentaje",
-     "c": "Actualmente, China genera el 35% de la manufactura global, es decir, que concentra más de un tercio de la fabricación mundial."
-    },
-    {
-     "v": "12%",
-     "t": "porcentaje",
-     "c": "No obstante, su consumo interno equivale apenas al 12% de la demanda global, lo que le obliga a canalizar el…"
-    }
-   ]
-  },
-  {
-   "id": "67cd3587a0",
-   "sector": "mundo",
+   "id": "1d9f99ac7c",
+   "sector": "ia",
    "titulo": "Jensen Huang, el rey de los chips de IA, al borde de ser destituido de Nvidia",
-   "resumen": "La junta de Nvidia debate la destitución de Jensen Huang tras el escándalo por sus relaciones extramatrimoniales y los presuntos vínculos de una de sus amantes con el espionaje chino.",
-   "fuente": "DW Español",
-   "url": "https://www.dw.com/es/jensen-huang-el-rey-de-los-chips-de-ia-al-borde-de-ser-destituido-de-nvidia/a-79926415?maca=spa-rss-sp-all-1122-xml-mrss",
-   "fecha": "2026-11-12T08:38:00Z",
+   "resumen": "",
+   "fuente": "Yahoo Finanzas",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNU1UtY2JMdDdUbnVsNldjcTJqcHZKRS1DZk5kaHJTNU9Zbm8ycmwxSmwwUDFrZVZCMEw3SmJEd1pldEdHUjhETjJpYXRMMVB1WjNmSnN4SW1HZHNaN3pfWmZBTWpQeERYTDhGdldZOHhjaHItQkRaM3J1NUNRUkVWODhzY1dxZU9WZEE?oc=5",
+   "fecha": "2026-11-12T08:12:46Z",
    "tipo": "internacional",
    "genero": "noticia",
-   "imagen": "https://static.dw.com/image/79905607_6.jpg",
+   "imagen": null,
    "geografia": {
     "version": 1,
     "ambito": "pendiente",
@@ -2991,32 +5047,19 @@ window.NOTICIAS = {
     "motivo": "sin_evidencia_geografica"
    },
    "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "La junta de Nvidia debate la destitución de Jensen Huang tras el escándalo por sus relaciones extramatrimoniales y los presuntos vínculos de una de sus amantes con el espionaje chino. Según informaciones publicadas por medios estadounidenses y Reuters, los directivos de la compañía debatieron la posible destitución de Huang, de 63 años.",
-   "puntos": [
-    "La junta de Nvidia debate la destitución de Jensen Huang tras el escándalo por sus relaciones extramatrimoniales y los presuntos vínculos de una de sus amantes con el espionaje chino.",
-    "Según informaciones publicadas por medios estadounidenses y Reuters, los directivos de la compañía debatieron la posible destitución de Huang, de 63 años.",
-    "Se trata de un giro drástico respecto al respaldo que el consejo le dio apenas unos días antes."
-   ],
-   "datos": [
-    {
-     "v": "63 años",
-     "t": "cantidad",
-     "c": "…la compañía debatieron la posible destitución de Huang, de 63 años."
-    }
-   ]
+   "procedencia": "directa"
   },
   {
-   "id": "30c0218d6d",
+   "id": "1b7192b731",
    "sector": "mundo",
-   "titulo": "¿El país más hackeado en Europa? ¿Por qué Francia es el objetivo de tantos ciberataques?",
-   "resumen": "Los ataques informáticos “sin precedentes” contra los sistemas de refrigeración de supermercados franceses constituyen el episodio más reciente de una serie de ciberataques de gran envergadura que, según algunos analistas, han convertido a Francia en el país más afectado por…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/francia/20261112-el-pa%C3%ADs-m%C3%A1s-hackeado-en-europa-por-qu%C3%A9-francia-es-el-objetivo-de-tantos-ciberataques",
-   "fecha": "2026-11-12T08:10:58Z",
+   "titulo": "Un tiroteo masivo en un gimnasio del centro de Washington deja un muerto y cuatro heridos",
+   "resumen": "El sospechoso, un vecino enfrentado con la gerencia del edificio en el que vivía, se ha suicidado tras una hora atrincherado en su apartamento. El incidente ha sucedido a unos dos kilómetros de la Casa Blanca",
+   "fuente": "El País América",
+   "url": "https://elpais.com/us/2026-11-12/un-tiroteo-en-el-centro-de-washington-deja-al-menos-cuatro-victimas.html",
+   "fecha": "2026-11-12T06:46:00Z",
    "tipo": "internacional",
    "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/bfa44840-dde7-11f1-9104-695cb59fade5/w:1024/p:16x9/2026-10-29T100233Z-802993939-RC282OALI9O2-RTRMADP-3-USA-MILITARY-FREEZERS.jpg",
+   "imagen": "https://imagenes.elpais.com/resizer/v2/YJM2LX6UJ5AYVDUWB22UAYUWD4.jpg?auth=3a87520e202cfc81bdcd2ab71576ca5281214863ca5090c8c0a796d9cc76f852",
    "geografia": {
     "version": 1,
     "ambito": "mundo",
@@ -3025,40 +5068,10 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "sintesis": "Los ataques informáticos “sin precedentes” contra los sistemas de refrigeración de supermercados franceses constituyen el episodio más reciente de una serie de ciberataques de gran envergadura que, según…",
+   "sintesis": "El sospechoso, un vecino enfrentado con la gerencia del edificio en el que vivía, se ha suicidado tras una hora atrincherado en su apartamento. El incidente ha sucedido a unos dos kilómetros de la Casa Blanca",
    "puntos": [
-    "Los ataques informáticos “sin precedentes” contra los sistemas de refrigeración de supermercados franceses constituyen el episodio más reciente de una serie de ciberataques de gran envergadura que, según…"
-   ]
-  },
-  {
-   "id": "6ce7028e74",
-   "sector": "mundo",
-   "titulo": "Multitudinarias manifestaciones y algunos disturbios: así transcurrió la primera huelga general en España en 14 años",
-   "resumen": "Millones de trabajadores secundaron una jornada de huelga general para exigir salarios dignos y medidas urgentes frente a la crisis de vivienda, en una movilización que paralizó parcialmente sectores estratégicos y reunió a miles de personas en las principales ciudades.",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/europa/20261112-multitudinarias-manifestaciones-y-algunos-disturbios-as%C3%AD-transcurri%C3%B3-la-primera-huelga-general-en-espa%C3%B1a-en-14-a%C3%B1os",
-   "fecha": "2026-11-12T07:14:45Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/61f3ad98-de6a-11f1-9f82-3f371022a770/w:1024/p:16x9/2026-11-11T175415Z-1087025508-RC2TLOA2H0F8-RTRMADP-3-SPAIN-STRIKE-MALAGA.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Millones de trabajadores secundaron una jornada de huelga general para exigir salarios dignos y medidas urgentes frente a la crisis de vivienda, en una movilización que paralizó parcialmente sectores…",
-   "puntos": [
-    "Millones de trabajadores secundaron una jornada de huelga general para exigir salarios dignos y medidas urgentes frente a la crisis de vivienda, en una movilización que paralizó parcialmente sectores…"
-   ],
-   "datos": [
-    {
-     "v": "14 años",
-     "t": "cantidad",
-     "c": "Multitudinarias manifestaciones y algunos disturbios: así transcurrió la primera huelga general en España en 14 años."
-    }
+    "El sospechoso, un vecino enfrentado con la gerencia del edificio en el que vivía, se ha suicidado tras una hora atrincherado en su apartamento.",
+    "El incidente ha sucedido a unos dos kilómetros de la Casa Blanca"
    ]
   },
   {
@@ -3082,112 +5095,6 @@ window.NOTICIAS = {
    "procedencia": "directa",
    "titulo_original": "Thursday briefing: What we do (and don’t) know about Alice Huang and the Nvidia affair",
    "traducido": true
-  },
-  {
-   "id": "42db7194e2",
-   "sector": "economia",
-   "titulo": "Cierre de agencias del Banco de la Nación: estas son las sedes sin atención por la visita del papa León XIV",
-   "resumen": "Oficinas de Lima y Lambayeque modificarán su atención los días 11, 12, 13 y 16 de noviembre por la visita de León XIV. La medida no implica un cierre nacional: revisa las sedes afectadas y las alternativas disponibles antes de salir de casa.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/tramites/banco-de-la-nacion-cambia-horarios-por-visita-del-papa-leon-xiv-conoce-que-agencias-cerraran-y-donde-no-habra-atencion-tdpe-noticia/",
-   "fecha": "2026-11-12T06:16:18Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/FBQSCFIOY5GALK6JSYD7XNYR7I.jpg?auth=4a3782138980d72d3685b017f7a12912337b5ae02732d1626a2a2e9d355e89b0&smart=true&width=482&height=274",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "contexto_peru_resumen"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Oficinas de Lima y Lambayeque modificarán su atención los días 11, 12, 13 y 16 de noviembre por la visita de León XIV. La medida no implica un cierre nacional: revisa las sedes afectadas y las alternativas disponibles antes de salir de casa.",
-   "puntos": [
-    "Oficinas de Lima y Lambayeque modificarán su atención los días 11, 12, 13 y 16 de noviembre por la visita de León XIV.",
-    "La medida no implica un cierre nacional: revisa las sedes afectadas y las alternativas disponibles antes de salir de casa.",
-    "La visita del papa León XIV al Perú no solo generará modificaciones en el tránsito y las actividades habituales de varias ciudades, sino también en la atención de algunas instituciones públicas y privadas."
-   ],
-   "datos": [
-    {
-     "v": "16 de noviembre",
-     "t": "fecha",
-     "c": "Oficinas de Lima y Lambayeque modificarán su atención los días 11, 12, 13 y 16 de noviembre por la visita de León XIV."
-    },
-    {
-     "v": "11 de noviembre",
-     "t": "fecha",
-     "c": "La primera modificación se aplicará este miércoles 11 de noviembre en la Oficina Principal del Banco de la Nación, ubicada en…"
-    },
-    {
-     "v": "12 de noviembre",
-     "t": "fecha",
-     "c": "El jueves 12 de noviembre también habrá restricciones en seis agencias de Lima Metropolitana."
-    },
-    {
-     "v": "28 de Julio",
-     "t": "fecha",
-     "c": "Las oficinas de Plaza Pizarro, 28 de Julio, Belén, Ate, Santa Anita y Las Alondras atenderán solamente hasta la 1:00 p. m."
-    },
-    {
-     "v": "13 de noviembre",
-     "t": "fecha",
-     "c": "…Periférica de Chiclayo no atenderán al público el viernes 13 de noviembre.."
-    }
-   ]
-  },
-  {
-   "id": "a7b64734ca",
-   "sector": "economia",
-   "titulo": "¿Quieres ver al papa León XIV? Conoce cuánto cuesta viajar a las ciudades donde estará",
-   "resumen": "Banco de la Nación cambia horarios por visita del papa León XIV: conoce qué agencias cerrarán y dónde no habrá atención ¿Cuántos años tiene realmente el papa León XIV? Este es un dato de su vida que debes conocer La próxima visita del papa León XIV al Perú viene despertando…",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/cuanto/viajar-para-ver-al-papa-leon-xiv-estos-son-los-precios-de-los-pasajes-a-chiclayo-pucallpa-cusco-y-cajamarca-tdpe-noticia/",
-   "fecha": "2026-11-12T06:14:50Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/HIMXI4UGSFF5LIS4F6YIFEMRG4.jpg?auth=687ee6a29cc35b9f063b7963f3101b3b6f8fe75642a27632d138bace8408f707&smart=true&width=1920&height=1080",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "contexto_peru_resumen"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "La visita del pontífice movilizará a miles de fieles que viajarán desde Lima y otras regiones para participar en sus actividades. Conoce cuánto cuesta llegar a las ciudades incluidas en su recorrido y qué debes tener en cuenta antes de comprar tu boleto.",
-   "puntos": [
-    "La visita del pontífice movilizará a miles de fieles que viajarán desde Lima y otras regiones para participar en sus actividades.",
-    "Conoce cuánto cuesta llegar a las ciudades incluidas en su recorrido y qué debes tener en cuenta antes de comprar tu boleto.",
-    "La próxima visita del papa León XIV al Perú viene despertando gran expectativa entre los creyentes, especialmente en las ciudades que recibirán al sumo pontífice durante noviembre."
-   ],
-   "datos": [
-    {
-     "v": "S/60",
-     "t": "monto",
-     "c": "…terrestres desde Lima hacia Chiclayo se encuentran entre S/60 y S/70, de acuerdo con los precios consultados en las…"
-    },
-    {
-     "v": "S/70",
-     "t": "monto",
-     "c": "…desde Lima hacia Chiclayo se encuentran entre S/60 y S/70, de acuerdo con los precios consultados en las agencias de…"
-    },
-    {
-     "v": "S/90",
-     "t": "monto",
-     "c": "Para quienes tienen previsto viajar a Pucallpa, los boletos de transporte terrestre cuestan actualmente entre S/70 y S/90."
-    },
-    {
-     "v": "S/200",
-     "t": "monto",
-     "c": "…desde Lima se ofrecen desde S/70 y pueden alcanzar los S/200, dependiendo de la empresa de transporte, la categoría del…"
-    },
-    {
-     "v": "28 de Julio",
-     "t": "fecha",
-     "c": "…revisión realizada en agencias de transporte de la avenida 28 de Julio, en Lima, permitió conocer las tarifas hacia Chiclayo…"
-    }
-   ]
   },
   {
    "id": "3be361a2bd",
@@ -3223,78 +5130,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "7ff7a4c0cb",
-   "sector": "economia",
-   "titulo": "Acción de Gracias en Estados Unidos: los minoristas que ofrecen ingredientes para la cena desde US$3.50 por persona",
-   "resumen": "Si buscas ahorrar en la cena del próximo 26 de noviembre, revisa estas ofertas. El precio total depende del paquete y de la cantidad de personas que puede alimentar.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/mag/usa/local-us/accion-de-gracias-en-estados-unidos-los-minoristas-que-ofrecen-ingredientes-para-la-cena-desde-us350-por-persona-thanksgiving-nnda-nnlt-noticia/",
-   "fecha": "2026-11-12T05:54:27Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/4R4ENADQLVBOZAZOHKFCAVFRSM.jpg?auth=4c3e8534e43d47b4255645694f2ac8ec936b2531f8be310789139a8ba2eb0861&smart=true&width=1200&height=810",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Si buscas ahorrar en la cena del próximo 26 de noviembre, revisa estas ofertas. El precio total depende del paquete y de la cantidad de personas que puede alimentar.",
-   "puntos": [
-    "Si buscas ahorrar en la cena del próximo 26 de noviembre, revisa estas ofertas.",
-    "El precio total depende del paquete y de la cantidad de personas que puede alimentar.",
-    "Como falta poco para el Día de Acción de Gracias en Estados Unidos , que se celebrará el próximo 26 de noviembre, muchas familias comienzan a planificar su cena ."
-   ],
-   "datos": [
-    {
-     "v": "US$3.50",
-     "t": "monto",
-     "c": "Acción de Gracias en Estados Unidos: los minoristas que ofrecen ingredientes para la cena desde US$3.50 por persona."
-    },
-    {
-     "v": "US$5",
-     "t": "monto",
-     "c": "…la cena de Acción de Gracias de 2026 por entre US$3.50 y US$5 por persona son: Walmart , Target, Aldi, Lidl y Wegmans.."
-    },
-    {
-     "v": "15 años",
-     "t": "cantidad",
-     "c": "Periodista con más de 15 años de experiencia, redacto información de interés general…"
-    },
-    {
-     "v": "26 de noviembre",
-     "t": "fecha",
-     "c": "Si buscas ahorrar en la cena del próximo 26 de noviembre, revisa estas ofertas."
-    }
-   ]
-  },
-  {
-   "id": "b00fe9c287",
-   "sector": "mundo",
-   "titulo": "Enviados de EE.UU. viajan a Moscú para mediar entre Rusia y Ucrania",
-   "resumen": "Jared Kushner y Steve Witkoff se reunirán con Vladimir Putin en Moscú y con Volodímir Zelenski en Dublín.",
-   "fuente": "DW Español",
-   "url": "https://www.dw.com/es/enviados-de-ee-uu-viajan-a-moscú-para-mediar-entre-rusia-y-ucrania/a-79925578?maca=spa-rss-sp-all-1122-xml-mrss",
-   "fecha": "2026-11-12T05:49:00Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Jared Kushner y Steve Witkoff se reunirán con Vladimir Putin en Moscú y con Volodímir Zelenski en Dublín.",
-   "puntos": [
-    "Jared Kushner y Steve Witkoff se reunirán con Vladimir Putin en Moscú y con Volodímir Zelenski en Dublín."
-   ]
-  },
-  {
    "id": "cfb3e9bb30",
    "sector": "ia",
    "titulo": "La presunta espía china del caso Nvidia está en Pekín, según Bloomberg",
@@ -3318,76 +5153,6 @@ window.NOTICIAS = {
     "Alice Huang, empresaria china vinculada a Nvidia, es investigada por posibles lazos con espionaje y desvío de tecnología hacia China.",
     "La empresaria china Alice Huang , señalada por informes de inteligencia estadounidenses como presunta agente de China y vinculada sentimentalmente al consejero delegado del fabricante de chips Nvidia, Jensen Huang, se encuentra en la capital china, informó Bloomberg citando a personas conocedoras del asunto.",
     "Alice Huang, también conocida como Huang Le, estaría viviendo en Beijing con conocimiento de funcionarios chinos, aunque no está claro cuándo ni por qué viajó a la ciudad ni qué contactos habría mantenido desde su llegada."
-   ]
-  },
-  {
-   "id": "43865ed3aa",
-   "sector": "mundo",
-   "titulo": "En directo: Putin propone misión humanitaria en Kostiantynivka en la reunión con enviados de EE. UU.",
-   "resumen": "Al inicio de la reunión con los enviados de Estados Unidos, Steve Witkoff y Jared Kushner, el presidente ruso Vladímir Putin sugirió un nuevo corredor humanitario para asistir a los cientos de civiles que permanecen en Konstiantynivka, en el este de Ucrania. También se mostró…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/europa/20261112-en-directo-enviados-de-ee-uu-se-re%C3%BAnen-con-putin-este-jueves-tras-nuevo-cruce-de-ataques-entre-rusia-y-ucrania",
-   "fecha": "2026-11-12T05:35:45Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/57f777f8-de8c-11f1-aac1-695cb59fade5/w:1024/p:16x9/2026-11-12T105052Z-1789019134-RC29MOAGLHC6-RTRMADP-3-UKRAINE-CRISIS-TALKS-MOSCOW.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Los enviados de Estados Unidos, Steve Witkoff y Jared Kushner, se reúnen este jueves 12 de noviembre con el mandatario ruso, Vladímir Putin, en Moscú. Y, posteriormente, con el presidente ucraniano,…",
-   "puntos": [
-    "Los enviados de Estados Unidos, Steve Witkoff y Jared Kushner, se reúnen este jueves 12 de noviembre con el mandatario ruso, Vladímir Putin, en Moscú.",
-    "Y, posteriormente, con el presidente ucraniano,…"
-   ],
-   "datos": [
-    {
-     "v": "12 de noviembre",
-     "t": "fecha",
-     "c": "…Steve Witkoff y Jared Kushner, se reúnen este jueves 12 de noviembre con el mandatario ruso, Vladímir Putin, en Moscú."
-    }
-   ]
-  },
-  {
-   "id": "fdf06be197",
-   "sector": "deporte",
-   "titulo": "León XIV y el fútbol peruano: las pistas detrás de su cercanía con más de una camiseta y cómo nació su vínculo con Alianza Lima",
-   "resumen": "En su estadía por Perú a lo largo de 21 años, el papa León XIV no solo fue cercano a su diócesis o la comida, sino también al fútbol. El Comercio conversó con un exacólito y un biógrafo del Pontífice para conocer con qué equipo simpatizaba.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/deporte-total/futbol-peruano/alianza-lima-papa-leon-xiv-y-el-futbol-peruano-las-pistas-detras-de-su-cercania-con-mas-de-una-camiseta-y-como-nacio-su-vinculo-con-la-blanquiazul-apuesplan-noticia/",
-   "fecha": "2026-11-12T05:04:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/PF5HFBHGFVGKLKRCCAGCFH2OBU.jpg?auth=db54c5b672c67d5b0c02e14867a4c658f650605a9bbfd44ac28eed4812e0a065&smart=true&width=4335&height=2890",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "En su estadía por Perú a lo largo de 21 años, el papa León XIV no solo fue cercano a su diócesis o la comida, sino también al fútbol. El Comercio conversó con un exacólito y un biógrafo del Pontífice para conocer con qué equipo simpatizaba.",
-   "puntos": [
-    "En su estadía por Perú a lo largo de 21 años, el papa León XIV no solo fue cercano a su diócesis o la comida, sino también al fútbol.",
-    "El Comercio conversó con un exacólito y un biógrafo del Pontífice para conocer con qué equipo simpatizaba.",
-    "León XIV: las costumbres que aprendió en Chiclayo, la verdadera historia con Juan Aurich y el básquet, su otra afición después del tenis El Papa León XIV y su pasión por el deporte: del tenis en Chiclayo al béisbol en Chicago, la historia detrás del aficionado “que juega” como Federer Escuchar Leer…"
-   ],
-   "datos": [
-    {
-     "v": "21 años",
-     "t": "cantidad",
-     "c": "En su estadía por Perú a lo largo de 21 años, el papa León XIV no solo fue cercano a su diócesis o la comida, sino también al fútbol."
-    },
-    {
-     "v": "17 años",
-     "t": "cantidad",
-     "c": "Cuando José María Núñez tenía 17 años y fue nombrado acólito de Robert Prevost , entonces obispo…"
-    }
    ]
   },
   {
@@ -3496,30 +5261,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "8bf2940fc9",
-   "sector": "mundo",
-   "titulo": "El Papa contra los gritos",
-   "resumen": "León XIV hace una defensa de las personas frente al discurso ultraliberal en la Argentina de Milei",
-   "fuente": "El País América",
-   "url": "https://elpais.com/opinion/2026-11-12/el-papa-contra-los-gritos.html",
-   "fecha": "2026-11-12T04:30:01Z",
-   "tipo": "internacional",
-   "genero": "opinion",
-   "imagen": "https://imagenes.elpais.com/resizer/v2/VWZPPNO5O5ARZITSNKNSBLI34U.jpg?auth=df8815d22365afc08195fe4f96c347817012719e3431c0413f9bdda1f85d7fd0",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "contexto_latinoamerica_resumen"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "León XIV hace una defensa de las personas frente al discurso ultraliberal en la Argentina de Milei",
-   "puntos": [
-    "León XIV hace una defensa de las personas frente al discurso ultraliberal en la Argentina de Milei"
-   ]
-  },
-  {
    "id": "5a76c296d9",
    "sector": "mundo",
    "titulo": "Curso exprés para ser congresista en Estados Unidos: veteranos, médicos, agricultores, bomberos y músicos aprenden en Washington",
@@ -3541,64 +5282,6 @@ window.NOTICIAS = {
    "sintesis": "Los legisladores elegidos en las ‘midterms’ reciben una orientación de dos semanas, desde cómo transitar por los laberínticos pasillos del Capitolio hasta cómo sacar provecho de su nueva ciudad",
    "puntos": [
     "Los legisladores elegidos en las ‘midterms’ reciben una orientación de dos semanas, desde cómo transitar por los laberínticos pasillos del Capitolio hasta cómo sacar provecho de su nueva ciudad"
-   ]
-  },
-  {
-   "id": "4dd93277c8",
-   "sector": "mundo",
-   "titulo": "Auge y caída de Russell Brand, el símbolo de la ‘cultura de los machotes’ del Reino Unido",
-   "resumen": "El actor ha sido condenado a 10 años y medio de prisión por sus agresiones sexuales a varias mujeres",
-   "fuente": "El País América",
-   "url": "https://elpais.com/sociedad/2026-11-12/auge-y-caida-de-russell-brand-el-simbolo-de-la-cultura-de-los-machotes-del-reino-unido.html",
-   "fecha": "2026-11-12T04:30:01Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://imagenes.elpais.com/resizer/v2/YXERJQUANFN5VNHLPIAD24RNJQ.jpg?auth=7b4af469fffc964471f0ead11b8792032cabf4569aa778d8745fee5895d2b035",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "El actor ha sido condenado a 10 años y medio de prisión por sus agresiones sexuales a varias mujeres Entre los centenares de encuentros sexuales que el actor e influencer Russell Brand relata en su autobiografía My Booky Wook: A Memoir of Sex, Drugs and Stand-Up ( Mi Libro-librito: unas memorias sobre sexo, drogas y monólogos de humor ), publicada en 2008 y de la que vendió más de medio millón de copias, está el episodio con la bailarina privada de un club de striptease .",
-   "puntos": [
-    "El actor ha sido condenado a 10 años y medio de prisión por sus agresiones sexuales a varias mujeres",
-    "Entre los centenares de encuentros sexuales que el actor e influencer Russell Brand relata en su autobiografía My Booky Wook: A Memoir of Sex, Drugs and Stand-Up ( Mi Libro-librito: unas memorias sobre sexo, drogas y monólogos de humor ), publicada en 2008 y de la que vendió más de medio millón de copias, está el episodio con la bailarina privada de un club de striptease .",
-    "Después de mantener relaciones en el apartamento de Brand, ambos se enzarzaron en una discusión en la que ella acabó abofeteándolo."
-   ],
-   "datos": [
-    {
-     "v": "10 años",
-     "t": "cantidad",
-     "c": "El actor ha sido condenado a 10 años y medio de prisión por sus agresiones sexuales a varias mujeres."
-    }
-   ]
-  },
-  {
-   "id": "69564fe261",
-   "sector": "mundo",
-   "titulo": "Maryanne Wolf, neurocientífica: “Por culpa de la pantalla, hemos aprendido otra forma de leer que cortocircuita el cerebro”",
-   "resumen": "La experta cree que estamos ante un cambio de paradigma similar al paso de una cultura oral a una escrita de la Grecia clásica: “Sócrates decía que la lectura sustituiría a la memoria. Es verdad que la desplaza, pero no la reemplaza del todo”",
-   "fuente": "El País América",
-   "url": "https://elpais.com/salud-y-bienestar/2026-11-12/maryanne-wolf-neurocientifica-por-culpa-de-la-pantalla-hemos-aprendido-otra-forma-de-leer-que-cortocircuita-el-cerebro.html",
-   "fecha": "2026-11-12T04:30:01Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://imagenes.elpais.com/resizer/v2/XHJW2DV47BA3ZERVAOO6XOH6RQ.jpg?auth=42f56cc200010a67e5f4a88c421f94ffd14aad517fd38f6122a6f8875db6b14e",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "La experta cree que estamos ante un cambio de paradigma similar al paso de una cultura oral a una escrita de la Grecia clásica: “Sócrates decía que la lectura sustituiría a la memoria. Es verdad que la desplaza, pero no la reemplaza del todo”",
-   "puntos": [
-    "La experta cree que estamos ante un cambio de paradigma similar al paso de una cultura oral a una escrita de la Grecia clásica: “Sócrates decía que la lectura sustituiría a la memoria.",
-    "Es verdad que la desplaza, pero no la reemplaza del todo”"
    ]
   },
   {
@@ -3713,30 +5396,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "0e27eefb7d",
-   "sector": "mundo",
-   "titulo": "Presunta espía china del caso Nvidia está en Pekín, según Bloomberg",
-   "resumen": "China asegura que las informaciones sobre la supuesta actividad de espionaje de Alice Huang son \"pura calumnia\".",
-   "fuente": "DW Español",
-   "url": "https://www.dw.com/es/presunta-espía-china-del-caso-nvidia-está-en-pekín-según-bloomberg/a-79925330?maca=spa-rss-sp-all-1122-xml-mrss",
-   "fecha": "2026-11-12T03:56:00Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "China asegura que las informaciones sobre la supuesta actividad de espionaje de Alice Huang son \"pura calumnia\".",
-   "puntos": [
-    "China asegura que las informaciones sobre la supuesta actividad de espionaje de Alice Huang son \"pura calumnia\"."
-   ]
-  },
-  {
    "id": "6780c4a8d5",
    "sector": "salud",
    "titulo": "¿Tu cerebro está en riesgo? Estos hábitos nocturnos podrían estar perjudicando tu salud sin que lo notes",
@@ -3796,152 +5455,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "9951623399",
-   "sector": "mundo",
-   "titulo": "Informe desde Bogotá: Santos defiende el acuerdo de paz con las FARC 10 años después",
-   "resumen": "10 años después de la firma del acuerdo de paz entre el Gobierno y la extinta guerrilla de las FARC, el expresidente Juan Manuel Santos defendió el pacto que logró en 2016 y criticó la gestión de sus predecesores por el rumbo que ha tomado la situación de violencia en el país.…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/video/20261112-informe-desde-bogot%C3%A1-santos-defiende-el-acuerdo-de-paz-con-las-farc-10-a%C3%B1os-despu%C3%A9s",
-   "fecha": "2026-11-12T03:40:45Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/d0374502-de48-11f1-a352-5f54d898a954/w:1024/p:16x9/ES-20261111-204251-204500-CS.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "10 años después de la firma del acuerdo de paz entre el Gobierno y la extinta guerrilla de las FARC, el expresidente Juan Manuel Santos defendió el pacto que logró en 2016 y criticó la gestión de sus…",
-   "puntos": [
-    "10 años después de la firma del acuerdo de paz entre el Gobierno y la extinta guerrilla de las FARC, el expresidente Juan Manuel Santos defendió el pacto que logró en 2016 y criticó la gestión de sus…"
-   ],
-   "datos": [
-    {
-     "v": "10 años",
-     "t": "cantidad",
-     "c": "Informe desde Bogotá: Santos defiende el acuerdo de paz con las FARC 10 años después."
-    }
-   ]
-  },
-  {
-   "id": "374616ab2b",
-   "sector": "mundo",
-   "titulo": "Chile: el Gobierno de Kast y su crisis con los transportistas",
-   "resumen": "Cuando parecía que las negociaciones estaban estancadas y que la protesta del gremio de conductores se mantendría sin avances, los representantes de la administración de José Antonio Kast presentaron algunas propuestas que estaban en el pliego de peticiones de los camioneros y…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/programas/econom%C3%ADa/20261112-economia-chile-paro-transporte-combustible",
-   "fecha": "2026-11-12T03:38:05Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/927829ec-de3f-11f1-b07d-f71d22e7fea9/w:1024/p:16x9/2026-11-11T213719Z-1819401537-RC2PLOAAH6LH-RTRMADP-3-CHILE-STRIKE-TRUCKERS.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Cuando parecía que las negociaciones estaban estancadas y que la protesta del gremio de conductores se mantendría sin avances, los representantes de la administración de José Antonio Kast presentaron…",
-   "puntos": [
-    "Cuando parecía que las negociaciones estaban estancadas y que la protesta del gremio de conductores se mantendría sin avances, los representantes de la administración de José Antonio Kast presentaron…"
-   ]
-  },
-  {
-   "id": "df7876aaa8",
-   "sector": "mundo",
-   "titulo": "Wang Yi pide a Marco Rubio preservar la estabilidad entre China y EE.UU.",
-   "resumen": "Ambos funcionarios tuvieron una comunicación telefónica \"positiva y constructiva\" antes de la cumbre APEC, reveló la Cancillería de Pekín.",
-   "fuente": "DW Español",
-   "url": "https://www.dw.com/es/wang-yi-pide-a-marco-rubio-preservar-la-estabilidad-entre-china-y-ee-uu/a-79925094?maca=spa-rss-sp-all-1122-xml-mrss",
-   "fecha": "2026-11-12T03:33:00Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://static.dw.com/image/75954872_6.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Ambos funcionarios tuvieron una comunicación telefónica \"positiva y constructiva\" antes de la cumbre APEC, reveló la Cancillería de Pekín. La llamada entre ambos fue \"positiva y constructiva\", según un comunicado difundido por la Cancillería china, que señaló que los funcionarios intercambiaron opiniones \"en profundidad\" sobre los vínculos bilaterales y los contactos entre sus gobernantes.",
-   "puntos": [
-    "Ambos funcionarios tuvieron una comunicación telefónica \"positiva y constructiva\" antes de la cumbre APEC, reveló la Cancillería de Pekín.",
-    "La llamada entre ambos fue \"positiva y constructiva\", según un comunicado difundido por la Cancillería china, que señaló que los funcionarios intercambiaron opiniones \"en profundidad\" sobre los vínculos bilaterales y los contactos entre sus gobernantes.",
-    "Wang destacó que la visita del presidente chino, Xi Jinping, a Estados Unidos en septiembre fue \"exitosa\" y que proporcionó a los presidentes una \"guía estratégica más clara\" para sus relaciones ."
-   ]
-  },
-  {
-   "id": "d9cf75b960",
-   "sector": "mundo",
-   "titulo": "Diego Da Rin: \"Alrededor de 1.5 millones de haitianos están desplazados por la violencia\"",
-   "resumen": "La ONU entregó este 11 de noviembre su informe trimestral sobre la situación en Haití, en el que reportó que al menos 1.167 personas murieron entre julio y septiembre de este año, la mayoría de ellas en operaciones contra las fuerzas armadas. Hablamos sobre la crisis de…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/video/20261112-diego-da-rin-alrededor-de-1-5-millones-de-haitianos-est%C3%A1n-desplazados-por-la-violencia",
-   "fecha": "2026-11-12T03:29:45Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/b989dd20-de47-11f1-b5c4-5f54d898a954/w:1024/p:16x9/ES-20261111-203725-204211-CS.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "contexto_latinoamerica_resumen"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "La ONU entregó este 11 de noviembre su informe trimestral sobre la situación en Haití, en el que reportó que al menos 1.167 personas murieron entre julio y septiembre de este año, la mayoría de ellas…",
-   "puntos": [
-    "La ONU entregó este 11 de noviembre su informe trimestral sobre la situación en Haití, en el que reportó que al menos 1.167 personas murieron entre julio y septiembre de este año, la mayoría de ellas…"
-   ],
-   "datos": [
-    {
-     "v": "1.5 millones de haitianos",
-     "t": "escala",
-     "c": "Diego Da Rin: \"Alrededor de 1.5 millones de haitianos están desplazados por la violencia\"."
-    },
-    {
-     "v": "1.167 personas",
-     "t": "cantidad",
-     "c": "…la situación en Haití, en el que reportó que al menos 1.167 personas murieron entre julio y septiembre de este año, la mayoría…"
-    },
-    {
-     "v": "11 de noviembre",
-     "t": "fecha",
-     "c": "La ONU entregó este 11 de noviembre su informe trimestral sobre la situación en Haití, en el…"
-    }
-   ]
-  },
-  {
-   "id": "2b2900b006",
-   "sector": "mundo",
-   "titulo": "Informe desde Ciudad de México: Nadia Beller recibe asilo político tras sobrevivir a atentado",
-   "resumen": "Tras casi tres meses de sobrevivir a un ataque armado que habría sido ordenado por su expareja y permanecer refugiada en la embajada de México en Bolivia, Nadia Beller recibió el asilo diplomático. La abogada fue atacada por dos sicarios que, según Beller, fueron enviados por…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/video/20261112-informe-desde-ciudad-de-m%C3%A9xico-nadia-beller-recibe-asilo-pol%C3%ADtico-tras-sobrevivir-a-atentado",
-   "fecha": "2026-11-12T03:24:20Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/6583a1e0-de45-11f1-bbb8-5f54d898a954/w:1024/p:16x9/ES-20261111-191232-191357-CS.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Tras casi tres meses de sobrevivir a un ataque armado que habría sido ordenado por su expareja y permanecer refugiada en la embajada de México en Bolivia, Nadia Beller recibió el asilo diplomático.",
-   "puntos": [
-    "Tras casi tres meses de sobrevivir a un ataque armado que habría sido ordenado por su expareja y permanecer refugiada en la embajada de México en Bolivia, Nadia Beller recibió el asilo diplomático."
-   ]
-  },
-  {
    "id": "3fb0fe1591",
    "sector": "mundo",
    "titulo": "El papa León XIV regresa a Perú y se encuentra con los fantasmas de su pasado - The New York Times",
@@ -3985,78 +5498,6 @@ window.NOTICIAS = {
     "El Papa regresa emocionado a Perú, donde vivió dos décadas, con una referencia a quienes luchan contra la impunidad: “Los sucesos del pasado merecen ser tratados con justicia”",
     "Sonriente y emocionado, el Papa regresó este miércoles a Perú, el país en el que forjó su misión a lo largo de veinte años, en el que se nacionalizó y el que considera su “patria”.",
     "En el camino desde el aeropuerto de Lima lo esperaban miles de personas con sus celulares para captar el instante en el que su coche negro pasaba por delante, en medio de gritos de alegría y saludos."
-   ]
-  },
-  {
-   "id": "35848dcd80",
-   "sector": "mundo",
-   "titulo": "Otro golpe a Trump: el demócrata Scott Colom gana una histórica carrera por el Senado en Mississippi",
-   "resumen": "El demócrata Scott Colom derrotó a la actual senadora republicana Cindy Hyde-Smith en Mississippi después de terminar el conteo de las elecciones de medio mandato en Estados Unidos. De este modo, se convertirá en el primer senador afroamericano de este estado en más de 100…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/ee-uu-y-canad%C3%A1/20261112-otro-golpe-a-trump-el-dem%C3%B3crata-scott-colom-gana-una-hist%C3%B3rica-carrera-por-el-senado-en-mississippi",
-   "fecha": "2026-11-12T03:16:29Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/e7807fc4-de27-11f1-b242-f71d22e7fea9/w:1024/p:16x9/AP26314768923953.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "El demócrata Scott Colom derrotó a la actual senadora republicana Cindy Hyde-Smith en Mississippi después de terminar el conteo de las elecciones de medio mandato en Estados Unidos.",
-   "puntos": [
-    "El demócrata Scott Colom derrotó a la actual senadora republicana Cindy Hyde-Smith en Mississippi después de terminar el conteo de las elecciones de medio mandato en Estados Unidos."
-   ]
-  },
-  {
-   "id": "effdf97fe6",
-   "sector": "mundo",
-   "titulo": "Guerra de pujas por la colección de 61 motos de Ryan Wedding, ‘el rey de la cocaína’",
-   "resumen": "El Instituto para Devolver al Pueblo lo Robado subasta un lote perteneciente al narco y que fue asegurado a finales de 2025, antes de su detención y extradición a Estados Unidos",
-   "fuente": "El País América",
-   "url": "https://elpais.com/mexico/2026-11-12/guerra-de-pujas-por-la-coleccion-de-61-motos-de-ryan-wedding-el-rey-de-la-cocaina.html",
-   "fecha": "2026-11-12T03:04:26Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://imagenes.elpais.com/resizer/v2/RXOHPNP4KVD5BMFAUMZPGV3RHM.jpg?auth=a73a8d8fedf66d8a1dc1f3c3cd6ecfd7588c5bf8d9647f5199bab613d52eddc1",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "contexto_internacional_resumen"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "El Instituto para Devolver al Pueblo lo Robado subasta un lote perteneciente al narco y que fue asegurado a finales de 2025, antes de su detención y extradición a Estados Unidos En el Salón Ambrosio, al sur de la capital mexicana, el espacio está casi lleno con más de un centenar de asistentes.",
-   "puntos": [
-    "El Instituto para Devolver al Pueblo lo Robado subasta un lote perteneciente al narco y que fue asegurado a finales de 2025, antes de su detención y extradición a Estados Unidos",
-    "En el Salón Ambrosio, al sur de la capital mexicana, el espacio está casi lleno con más de un centenar de asistentes.",
-    "La martillera, quien conduce la subasta del Instituto para Devolver al Pueblo lo Robado (Indep), lleva un ritmo frenético."
-   ],
-   "datos": [
-    {
-     "v": "40 millones de dólares",
-     "t": "escala",
-     "c": "…ver a más de 60 motocicletas de lujo, valuadas en al menos 40 millones de dólares, que fueron incautadas en Ciudad de México y el Estado de…"
-    },
-    {
-     "v": "2 millones",
-     "t": "escala",
-     "c": "…intentos y alcanzó a comprar una moto con un valor de 2 millones 360.000 pesos (poco más de 127.000 dólares), hasta una…"
-    },
-    {
-     "v": "127.000 dólares",
-     "t": "cantidad",
-     "c": "…moto con un valor de 2 millones 360.000 pesos (poco más de 127.000 dólares), hasta una reconocida empresa estadounidense de…."
-    },
-    {
-     "v": "12 de noviembre",
-     "t": "fecha",
-     "c": "Cada una de estas motocicletas fue incluida en una lista del Indep que ha salido a la venta del público en México este 11 y 12 de noviembre."
-    }
    ]
   },
   {
@@ -4323,61 +5764,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "1db86b6aab",
-   "sector": "mundo",
-   "titulo": "Un ataque israelí mata a seis personas en un hospital del sur de Gaza",
-   "resumen": "Los cuerpos de los fallecidos y a más de 20 heridos fueron recuperados de un edificio del hospital Nasser, dijo la defensa civil palestina.",
-   "fuente": "DW Español",
-   "url": "https://www.dw.com/es/un-ataque-israelí-mata-a-seis-personas-en-un-hospital-del-sur-de-gaza/a-79925101?maca=spa-rss-sp-all-1122-xml-mrss",
-   "fecha": "2026-11-12T02:01:00Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Los cuerpos de los fallecidos y a más de 20 heridos fueron recuperados de un edificio del hospital Nasser, dijo la defensa civil palestina.",
-   "puntos": [
-    "Los cuerpos de los fallecidos y a más de 20 heridos fueron recuperados de un edificio del hospital Nasser, dijo la defensa civil palestina."
-   ],
-   "datos": [
-    {
-     "v": "20 heridos",
-     "t": "cantidad",
-     "c": "Los cuerpos de los fallecidos y a más de 20 heridos fueron recuperados de un edificio del hospital Nasser, dijo la defensa civil palestina."
-    }
-   ]
-  },
-  {
-   "id": "511200c8b7",
-   "sector": "mundo",
-   "titulo": "Al menos ocho muertos y más de una decena de heridos tras derrumbarse un edificio residencial en Brooklyn",
-   "resumen": "Los rescatistas recuperan este jueves los cuerpos de otras seis personas fallecidas. Las labores de búsqueda continúan",
-   "fuente": "El País América",
-   "url": "https://elpais.com/us/2026-11-11/se-derrumba-un-edificio-en-brooklyn-y-deja-personas-atrapadas-entre-los-escombros.html",
-   "fecha": "2026-11-12T01:55:11Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://imagenes.elpais.com/resizer/v2/EJLDMTHKU5O4LLMWKRT4LT4SXU.jpg?auth=42e574ee411033d8f8cfafba92805e6c02abe44ef44c6077f517e8f36867e230",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "seccion_internacional_fuente"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Se desconoce cuántas personas hay bajo los escombros y los bomberos advierten de que la operación de rescate será “prolongada”",
-   "puntos": [
-    "Se desconoce cuántas personas hay bajo los escombros y los bomberos advierten de que la operación de rescate será “prolongada”"
-   ]
-  },
-  {
    "id": "60bd2b5f1f",
    "sector": "economia",
    "titulo": "Perú: comunidades del pueblo secoya reclaman la titulación integral de su territorio en medio de amenazas",
@@ -4552,37 +5938,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "7a47fc8e97",
-   "sector": "mundo",
-   "titulo": "Demócratas conquistan Misisipi y amplían mayoría en el Senado de Estados Unidos",
-   "resumen": "Scott Colom se convirtió en el primer senador negro por Misisipi en 145 años y en el primer demócrata desde 1982.",
-   "fuente": "DW Español",
-   "url": "https://www.dw.com/es/demócratas-conquistan-misisipi-y-amplían-mayoría-en-el-senado-de-estados-unidos/a-79925009?maca=spa-rss-sp-all-1122-xml-mrss",
-   "fecha": "2026-11-12T00:39:00Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Scott Colom se convirtió en el primer senador negro por Misisipi en 145 años y en el primer demócrata desde 1982.",
-   "puntos": [
-    "Scott Colom se convirtió en el primer senador negro por Misisipi en 145 años y en el primer demócrata desde 1982."
-   ],
-   "datos": [
-    {
-     "v": "145 años",
-     "t": "cantidad",
-     "c": "Scott Colom se convirtió en el primer senador negro por Misisipi en 145 años y en el primer demócrata desde 1982."
-    }
-   ]
-  },
-  {
    "id": "35d4543ccc",
    "sector": "ia",
    "titulo": "OpenAI presenta Businesses in ChatGPT para conectar empresas y clientes con inteligencia artificial",
@@ -4601,59 +5956,6 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa"
-  },
-  {
-   "id": "8d4bc1173f",
-   "sector": "politica",
-   "titulo": "Desaprobación de Keiko Fujimori alcanza el 53% y al parecer está en caída libre",
-   "resumen": "Y CB Global Data, empresa líder en encuestas de imagen sacó también este miércoles 11 el Ranking de Presidentes Latinoamericanos - Noviembre 2026, la ubica en el noveno puesto entre los jefes de Estado regulares",
-   "fuente": "El Búho",
-   "url": "https://elbuho.pe/2026/11/desaprobacion-de-keiko-fujimori-alcanza-el-53-y-al-parecer-esta-en-caida-libre/",
-   "fecha": "2026-11-12T00:21:01Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/keiko-triste-6af504d443f42.webp",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Keiko Fujimori: Y CB Global Data, empresa líder en encuestas Ranking de Presidentes Latinoamericanos - Noviembre 2026, noveno puesto De acuerdo con la última encuesta de Ipsos, la desaprobación de Keiko Fujimori alcanza el 53% cuando en octubre era del 49%.",
-   "puntos": [
-    "Keiko Fujimori: Y CB Global Data, empresa líder en encuestas Ranking de Presidentes Latinoamericanos - Noviembre 2026, noveno puesto",
-    "De acuerdo con la última encuesta de Ipsos, la desaprobación de Keiko Fujimori alcanza el 53% cuando en octubre era del 49%.",
-    "Su aprobación actual es del 37% y todo indica que la tendencia es a la baja."
-   ],
-   "datos": [
-    {
-     "v": "53%",
-     "t": "porcentaje",
-     "c": "Desaprobación de Keiko Fujimori alcanza el 53% y al parecer está en caída libre."
-    },
-    {
-     "v": "49%",
-     "t": "porcentaje",
-     "c": "De acuerdo con la última encuesta de Ipsos, la desaprobación de Keiko Fujimori alcanza el 53% cuando en octubre era del 49%."
-    },
-    {
-     "v": "37%",
-     "t": "porcentaje",
-     "c": "Su aprobación actual es del 37% y todo indica que la tendencia es a la baja.."
-    },
-    {
-     "v": "25%",
-     "t": "porcentaje",
-     "c": "En agosto era de 25%, en septiembre aumentó a 48%, en octubre llegó a 49% y ahora en noviembre es del 53%.."
-    },
-    {
-     "v": "48%",
-     "t": "porcentaje",
-     "c": "En agosto era de 25%, en septiembre aumentó a 48%, en octubre llegó a 49% y ahora en noviembre es del 53%.."
-    }
-   ]
   },
   {
    "id": "d869d9414d",
@@ -4767,77 +6069,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "61ab5f8e03",
-   "sector": "mundo",
-   "titulo": "El Canciller colombiano pide disculpas por sus insultos a los demócratas en Estados Unidos",
-   "resumen": "Omar Bula, quien llamó en el pasado al partido “una porquería”, dice que sus opiniones han cambiado",
-   "fuente": "El País América",
-   "url": "https://elpais.com/america-colombia/2026-11-11/el-canciller-colombiano-pide-disculpas-por-sus-insultos-pasados-a-los-democratas-en-estados-unidos.html",
-   "fecha": "2026-11-11T23:31:04Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://imagenes.elpais.com/resizer/v2/YHSFXLLFKVKTBPMQQEDIZTKSO4.jpg?auth=8b6172ad5c0e04a0121bc3ff06f5c1a99aed66f9200f1a95a9e02d963a5a8e3a",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Omar Bula, quien llamó en el pasado al partido “una porquería”, dice que sus opiniones han cambiado El canciller de Colombia Omar Bula ha enviado una carta a los miembros del partido Demócrata en Estados Unidos en la que les ofrece disculpas.",
-   "puntos": [
-    "Omar Bula, quien llamó en el pasado al partido “una porquería”, dice que sus opiniones han cambiado",
-    "El canciller de Colombia Omar Bula ha enviado una carta a los miembros del partido Demócrata en Estados Unidos en la que les ofrece disculpas.",
-    "“Quiero ofrecer mis disculpas sinceras por comentarios que hice en el pasado en redes sociales sobre los líderes del partido”, dice la carta con fecha del 10 de noviembre."
-   ],
-   "datos": [
-    {
-     "v": "10 de noviembre",
-     "t": "fecha",
-     "c": "…los líderes del partido”, dice la carta con fecha del 10 de noviembre."
-    }
-   ]
-  },
-  {
-   "id": "f1d7251ee9",
-   "sector": "mundo",
-   "titulo": "En imágenes: graves disturbios en Barcelona y decenas de detenidos en la primera huelga general en España en 14 años",
-   "resumen": "Con un seguimiento de la huelga dispar, los españoles protestaron este miércoles por la crisis de la vivienda y el alto costo de la vida en el país europeo.",
-   "fuente": "BBC Mundo",
-   "url": "https://www.bbc.com/mundo/articles/ckx28e5lj300o?at_medium=RSS&at_campaign=rss",
-   "fecha": "2026-11-11T23:30:52Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/7632/live/1b40cca0-de1f-11f1-9d68-c1daaffc01f2.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Con un seguimiento de la huelga dispar, los españoles protestan este miércoles por la crisis de la vivienda y el alto costo de la vida en el país europeo. El secretario general del sindicato UGT, Pepe Álvarez, dijo que la huelga fue un éxito, destacando una participación \"masiva\", mientras que Unai Sordo, líder del sindicato CC.OO., señaló que el seguimiento fue \"muy significativo\".",
-   "puntos": [
-    "Con un seguimiento de la huelga dispar, los españoles protestan este miércoles por la crisis de la vivienda y el alto costo de la vida en el país europeo.",
-    "El secretario general del sindicato UGT, Pepe Álvarez, dijo que la huelga fue un éxito, destacando una participación \"masiva\", mientras que Unai Sordo, líder del sindicato CC.OO., señaló que el seguimiento fue \"muy significativo\".",
-    "Por su parte, la Confederación Española de Organizaciones Empresariales (CEOE) afirmó que la participación fue \"baja y desigual\", variando según las zonas y los sectores afectados."
-   ],
-   "datos": [
-    {
-     "v": "14 años",
-     "t": "cantidad",
-     "c": "En imágenes: decenas de detenidos en la primera huelga general en España en 14 años."
-    },
-    {
-     "v": "87 años",
-     "t": "cantidad",
-     "c": "…asequible, tras el desahucio de Maricarmen Abascal, de 87 años, de un piso en Madrid en el que vivió durante siete…"
-    }
-   ]
-  },
-  {
    "id": "76b396cd39",
    "sector": "investigacion",
    "titulo": "Usuarios del Metropolitano se bajan de buses debido a congestión vehicular tras cierre de las vías [VIDEO]",
@@ -4864,75 +6095,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "0a02cd7efc",
-   "sector": "salud",
-   "titulo": "Papa León XIV y su primer acto de amor en Perú: saludó a niños que lo recibieron a su arribo a nuestro país [VIDEO]",
-   "resumen": "El papa León XIV saludó a diversos niños que llegaron al Grupo Aéreo N° 8 para recibirlo.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/peru/actualidad/papa-leon-xiv-saludo-a-ninos-que-lo-recibieron-a-su-arribo-a-nuestro-pais-video-noticia-1717316",
-   "fecha": "2026-11-11T23:10:19Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/11/074907_1928130.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "El papa León XIV saludó a diversos niños que llegaron al Grupo Aéreo N° 8 para recibirlo. León XIV llegó a nuestro país y, de inmediato, sorpendió a todos los fieles que se dieron cita al Grupo Aéreo N° 8.",
-   "puntos": [
-    "El papa León XIV saludó a diversos niños que llegaron al Grupo Aéreo N° 8 para recibirlo.",
-    "León XIV llegó a nuestro país y, de inmediato, sorpendió a todos los fieles que se dieron cita al Grupo Aéreo N° 8.",
-    "El sumo pontífice fue recibido por la presidenta Keiko Fujimori y por el canciller Carlos Espá."
-   ]
-  },
-  {
-   "id": "b54600aa6b",
-   "sector": "mundo",
-   "titulo": "El demócrata Scott Colom gana en Misisipi y será el primer senador negro por ese Estado desde el siglo XIX",
-   "resumen": "El triunfo frente a la republicana Cindy Hyde-Smith amplía la mayoría ‘azul’ en la Cámara alta a 55 escaños a falta de que se resuelva la contienda en Alaska",
-   "fuente": "El País América",
-   "url": "https://elpais.com/us/2026-11-11/scott-colom-gana-en-misisipi-el-primer-democrata-que-manda-el-estado-al-senado-en-casi-cuatro-decadas.html",
-   "fecha": "2026-11-11T23:08:25Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://imagenes.elpais.com/resizer/v2/NAOQFLNPTBBTZJ4TUKGSTJ6F3I.jpg?auth=a023ca2287eac609dd33cf3266194862493279fd29f87b2d1712c1f03d5cc155",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "seccion_internacional_fuente"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Le arrebata el escaño a la senadora republicana Cindy Hyde-Smith y amplía la mayoría demócrata a 55 a falta de que se defina la carrera en Alaska Por primera vez en casi 40 años, Misisipi enviará a un demócrata al Senado en Washington.",
-   "puntos": [
-    "Le arrebata el escaño a la senadora republicana Cindy Hyde-Smith y amplía la mayoría demócrata a 55 a falta de que se defina la carrera en Alaska",
-    "Por primera vez en casi 40 años, Misisipi enviará a un demócrata al Senado en Washington.",
-    "Tras una contienda muy reñida, Scott Colom se impuso a la actual senadora republicana, Cindy Hyde-Smith, y será el primer afroestadounidense en representación de ese Estado del Sur profundo en la Cámara Alta desde el período de la Reconstrucción, que vino tras la Guerra Civil."
-   ],
-   "datos": [
-    {
-     "v": "40 años",
-     "t": "cantidad",
-     "c": "Por primera vez en casi 40 años, Misisipi enviará a un demócrata al Senado en Washington."
-    },
-    {
-     "v": "43 años",
-     "t": "cantidad",
-     "c": "Colom, un fiscal de 43 años, hijo de un abogado republicano reconocido en Misisipi…"
-    },
-    {
-     "v": "55 escaños",
-     "t": "cantidad",
-     "c": "…en Misisipi, amplía la mayoría demócrata en el Senado a 55 escaños, y confirma el arrollador triunfo del partido en las…"
-    }
-   ]
-  },
-  {
    "id": "a9cba69c6b",
    "sector": "investigacion",
    "titulo": "OjoPúblico En Vivo: ¿Qué significa la llegada al Perú del papa León XIV?",
@@ -4952,44 +6114,6 @@ window.NOTICIAS = {
    "ambito": "peru",
    "procedencia": "agregador",
    "via": "Google Noticias"
-  },
-  {
-   "id": "a8deadc9eb",
-   "sector": "mundo",
-   "titulo": "Nvidia ultima la destitución de su consejero delegado tras la revelación de una relación con una ejecutiva de la compañía",
-   "resumen": "La junta directiva del mayor fabricante de chips del mundo se reunió ayer para abordar la situación de su fundador, Jensen Huang",
-   "fuente": "El País América",
-   "url": "https://elpais.com/us/2026-11-11/la-revelacion-de-una-nueva-relacion-extramarital-del-consejero-delegado-de-nvidia-compromete-su-futuro-en-la-compania.html",
-   "fecha": "2026-11-11T22:55:33Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://imagenes.elpais.com/resizer/v2/TF3VHBJNC5HY7DBNZ7ZNE3WA24.jpg?auth=6ef40828d8e38ebfc396e7714f909198a64000fbcc3f37f57117f27bd72a635b",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "seccion_internacional_fuente"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "La junta directiva del mayor fabricante de chips del mundo se reúne esta tarde para abordar el futuro de su fundador La junta directiva de Nvidia ha convocado este miércoles una reunión para tratar la destitución del consejero delegado, Jensen Huang, tras haber mantenido dos relaciones extramatrimoniales, una de ellas con una espía china, según adelanta The Wall Street Journal.",
-   "puntos": [
-    "La junta directiva del mayor fabricante de chips del mundo se reúne esta tarde para abordar el futuro de su fundador",
-    "La junta directiva de Nvidia ha convocado este miércoles una reunión para tratar la destitución del consejero delegado, Jensen Huang, tras haber mantenido dos relaciones extramatrimoniales, una de ellas con una espía china, según adelanta The Wall Street Journal.",
-    "El escándalo que salpica al consejero delegado de Nvidia, Jensen Huang, amenaza con enredarse aún más."
-   ],
-   "datos": [
-    {
-     "v": "63 años",
-     "t": "cantidad",
-     "c": "Huang, de 63 años y casado desde hace más de 40 años, es uno de los hombres…"
-    },
-    {
-     "v": "40 años",
-     "t": "cantidad",
-     "c": "Huang, de 63 años y casado desde hace más de 40 años, es uno de los hombres más ricos del mundo gracias a su…"
-    }
-   ]
   },
   {
    "id": "2f369d5082",
@@ -5232,32 +6356,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "01dd21084c",
-   "sector": "salud",
-   "titulo": "PNP: Saludpol anuncia reorganización y convenios con hospitales de las FF.AA.",
-   "resumen": "Saludpol anuncia Plan de Atención 2027 para los asegurados de la familia policial, como parte de la reorganización, alistan convenios con hospitales de las Fuerzas Armadas.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/peru/pnp-saludpol-anuncia-reorganizacion-y-convenios-con-hospitales-de-las-fuerzas-armadas-noticia/",
-   "fecha": "2026-11-11T21:35:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/5CIWYVMCXFFO5NCFINH435UNVY.jpg?auth=11c750fdc7a365d0e4a9afa8571e0f4de32fe5b472b3437880efe769643c6966&smart=true&width=1024&height=572",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Saludpol anuncia Plan de Atención 2027 para los asegurados de la familia policial, como parte de la reorganización, alistan convenios con hospitales de las Fuerzas Armadas. Con el objetivo de mejorar el servicio y tratamiento de los asegurados de la familia policial , el Fondo de Aseguramiento en Salud de la Policía Nacional del Perú (Saludpol) anunció que ejecutará el Plan de Atención 2027.",
-   "puntos": [
-    "Saludpol anuncia Plan de Atención 2027 para los asegurados de la familia policial, como parte de la reorganización, alistan convenios con hospitales de las Fuerzas Armadas.",
-    "Con el objetivo de mejorar el servicio y tratamiento de los asegurados de la familia policial , el Fondo de Aseguramiento en Salud de la Policía Nacional del Perú (Saludpol) anunció que ejecutará el Plan de Atención 2027.",
-    "Jorge Luis López Márquez, gerente general de Saludpol, mencionó que ello se da como parte de la reorganización de Saludpol, por lo cual evalúan la suscripción de convenios con los hospitales de las Fuerzas Armadas y establecimientos bases de las zonas populares de Lima."
-   ]
-  },
-  {
    "id": "1438f4e64d",
    "sector": "deporte",
    "titulo": "\"Es un entrenador fantástico\": Harry Kane aprueba a Pochettino como posible técnico del Manchester United",
@@ -5291,30 +6389,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "f1469be736",
-   "sector": "mundo",
-   "titulo": "OTAN asegura que Estados Unidos, Europa y Ucrania están \"completamente alineados y unidos\"",
-   "resumen": "Ahora habrá que ver si \"Rusia está dispuesta a participar en el juego\", expresó el jefe de la alianza militar.",
-   "fuente": "DW Español",
-   "url": "https://www.dw.com/es/otan-asegura-que-estados-unidos-europa-y-ucrania-están-completamente-alineados-y-unidos/a-79924342?maca=spa-rss-sp-all-1122-xml-mrss",
-   "fecha": "2026-11-11T21:18:00Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Ahora habrá que ver si \"Rusia está dispuesta a participar en el juego\", expresó el jefe de la alianza militar.",
-   "puntos": [
-    "Ahora habrá que ver si \"Rusia está dispuesta a participar en el juego\", expresó el jefe de la alianza militar."
-   ]
-  },
-  {
    "id": "9d730955b8",
    "sector": "deporte",
    "titulo": "Natalia Málaga reveló postura de Antonio Rizola para regresar a la Selección Peruana de Vóley: \"No me iba a convocar nunca\"",
@@ -5339,6 +6413,27 @@ window.NOTICIAS = {
     "Natalia Málaga , entrenadora del club Géminis, lamentó la actualidad de la Selección Peruana de Vóley de mayores, que es dirigido por el brasileño Antonio Rizola.",
     "\"Lo triste es que Perú tiene una historia de voleibol rica, muy rica."
    ]
+  },
+  {
+   "id": "699c65eebd",
+   "sector": "politica",
+   "titulo": "Keiko Fujimori agradece al Senado por autorizar su viaje oficial a China y Japón: ¿cuál será su agenda?",
+   "resumen": "",
+   "fuente": "Expreso",
+   "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPbjBHME9HSjE5U3h1eUZjVU1rOEJTeTJvN1RDQjdvRDY0SnJ5ajYwNWZ1UlUtU3ZzbFZYWTdpZnlfRGdjLUxkMHU5Q3JoNmpWejlqWFE1cTgwamdoS1J1QkQyWmxkalIwWTdZZDBxYWpobHU5Y0RrS2Y4TkdnUjRwTzAtRlhtSGplanJ0U2tYRjBMcDBtdG9mbXBWbnVTeUdUWFNoVWZ1ajRTeHdiUmVKUUdBdW5Mal92Zm0zdkJaa2FsYmdxSm51dW1Ibm5Fd2hHN0RVNkNsM3JJc1R3blZwdHVYMTBaRlNLT2dCeHhUakZYRnZpbzRNQ0gyZ3RIWXd6NDhLc0IyX1RRNXQ1MVcwRFZXdUxCVWVjWG0wcWRn?oc=5",
+   "fecha": "2026-11-11T20:49:18Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "agregador",
+   "via": "Google Noticias"
   },
   {
    "id": "c2519ebf9c",
@@ -5372,6 +6467,26 @@ window.NOTICIAS = {
    "fuente": "Quartz",
    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOR0Ezb21mbjZmVmkxd2ZhOF9RVGp0OWNfYnIxRnhNVmRMU1ctd0t5TWNIcUViMUZwZXloN2k4MExZaFhJcnkwSGFYTmcxMF95bWhMektUeEdodzUxS05iZW93MTM0Z2otdHRaQ01OZ29LRkllOHhycUR6RE02RmtqNGUwMEt6dmlQRTRLSjV6OEdNZkVTbnJ3MmRnenB5d0Fxaklva1djMkJNeWZDSVAzejY5V0IxdWRTUVdPemlXcW9OOGpqajZ0SmJ2T3BNc2kxa3otNHVDUVFWNU0?oc=5",
    "fecha": "2026-11-11T20:33:25Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa"
+  },
+  {
+   "id": "9919f71bae",
+   "sector": "ia",
+   "titulo": "HOY SE HABLA DE | El reto de regular la inteligencia artificial",
+   "resumen": "",
+   "fuente": "Telemundo Atlanta",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOR0pfNEpVVVl5YXEtd2RrYVoxRzVGOTV1SHlwUVZSQlN4bXNFRGhMTjRhNGljcXJwX3VNN0lrSk5aNzB6NVdpRjVFWnJUc2ZpYWdhU1dIejN2cFlyTXczMnU4S252U0RZeGFMSnRTYWI2ODNZTThYSjBWLVFlWkd1ZlhyNWt6aHlra05GQVdOcmVCaGh1OXZBZ29Lbk0xYUozWlFOOEJUeG5Pd9IBvgFBVV95cUxPVk1qUmozYm9UQVFSYUFCWlpVaDFPOUhFVzNyaXBndzhnT3NNNHpMRm83Yzk1T3dLMjM0TUpMZ1gtU3ZxMWR0bE14Y09kelR6LVcxa1p3bjhlanIwa0tFWHM0eHZHN1AtNDhiRWFHdF9IaUotTkNFcG5ZZFlKQUIzdkNFcDlwOGlZY1k5cWlCcFVlalpISEZsS2NPWnFHVnNVTVRPRF9iRC1zNmF2aGYwdVhwV1Frd2tpUjVKTVR3?oc=5",
+   "fecha": "2026-11-11T20:22:00Z",
    "tipo": "internacional",
    "genero": "noticia",
    "imagen": null,
@@ -5614,31 +6729,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "25470bdace",
-   "sector": "mundo",
-   "titulo": "Protestas de la Generación Z: ¿les va realmente mejor a los 'boomers' que los jóvenes?",
-   "resumen": "¿Deben los jóvenes en Alemania preocuparse más por su futuro que la generación del 'baby boom' en los años 80 y 90? ¿O deberían ambas generaciones protestar juntas? Un análisis de datos de DW.",
-   "fuente": "DW Español",
-   "url": "https://www.dw.com/es/protestas-de-la-generación-z-¿les-va-realmente-mejor-a-los-boomers-que-los-jóvenes/a-79922437?maca=spa-rss-sp-all-1122-xml-mrss",
-   "fecha": "2026-11-11T18:27:00Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "contexto_internacional_resumen"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "¿Deben los jóvenes en Alemania preocuparse más por su futuro que la generación del 'baby boom' en los años 80 y 90? ¿O deberían ambas generaciones protestar juntas?",
-   "puntos": [
-    "¿Deben los jóvenes en Alemania preocuparse más por su futuro que la generación del 'baby boom' en los años 80 y 90?",
-    "¿O deberían ambas generaciones protestar juntas?"
-   ]
-  },
-  {
    "id": "2409ce9fd3",
    "sector": "tecnologia",
    "titulo": "El escándalo de Nvidia sacude al mundo tecnológico en la Web Summit",
@@ -5763,34 +6853,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "11231e70f1",
-   "sector": "politica",
-   "titulo": "El 72% de peruanos desaprueba la labor del Congreso, según encuesta del IEP",
-   "resumen": "",
-   "fuente": "La República",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNa3pJalEyUWFDRHk3VzBZNENZcVJRcVZwc0NSYWYtY3p4UGNPSEoxY3NJSWRxS3RQWDRmbWJKTVBrdlFVUTNnOGR1MmFKZ1MwQ1JMamlYdjFRYnVNNlgtLVY3WTRrZ0NQNXNXRUZiSFBCM2NzWFlRTXNraE9YbWV0X3NrdTNNQ2lmbmNEd1Jhalo5MThRQTc3Yy1aN3EwSndPUzdMUFJpU3poUjJtS1NzX2R1NHE4Q0tlOFZxVUJzLTZoTndHWmN0cNIBzgFBVV95cUxQdU95dF85SnVicXl3UWdIMllaV092ZS1ocFgyUTZkRTVaQTQ5WkY1RE1DTlNRTm5nYmcwcmVmaUtSalotVkp3b1YwVmtYM0tWeVFEcFVkaWpXM0ppZTlKaUtaT3FFd3UtbHJsM2o1cU1KSEhuemxGQ3huZnRyNlkzbXFVVGliSjZzNGFLMFlKaElyT1pNYU5LX3RON0RiaS1PYzVaYnFZRnNONjFrb3FXTmN5T1NkSzFvRDRGMDR4djJLZ0JZQ0tyM3JHclRUQQ?oc=5",
-   "fecha": "2026-11-11T18:15:58Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "agregador",
-   "via": "Google Noticias",
-   "datos": [
-    {
-     "v": "72%",
-     "t": "porcentaje",
-     "c": "El 72% de peruanos desaprueba la labor del Congreso, según encuesta del IEP."
-    }
-   ]
-  },
-  {
    "id": "0f2f5b4d4f",
    "sector": "deporte",
    "titulo": "¿Se quedan en Sport Boys? Directiva rosada habló del futuro de Carlos Zambrano y Christian Cueva",
@@ -5824,44 +6886,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "3a9e7315ff",
-   "sector": "mundo",
-   "titulo": "Quién es Wilson \"Lanmò San Jou\" Joseph, el poderoso líder pandillero de Haití cuya casa Bukele dice haber destruido",
-   "resumen": "Dirigente de 400 Mawozo, ha sido acusado formalmente por las autoridades estadounidenses de secuestro. Además, el FBI ofrece una recompensa de hasta US$1 millón por información que conduzca a su captura.",
-   "fuente": "BBC Mundo",
-   "url": "https://www.bbc.com/mundo/articles/cmzx96kk0ly7o?at_medium=RSS&at_campaign=rss",
-   "fecha": "2026-11-11T18:10:57Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/ecc2/live/7ee16d20-ddc3-11f1-a50f-85eebf9e50e5.png",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Dirigente de 400 Mawozo, ha sido acusado formalmente por las autoridades estadounidenses de secuestro. Además, el FBI ofrece una recompensa de hasta US$1 millón por información que conduzca a su captura.",
-   "puntos": [
-    "Dirigente de 400 Mawozo, ha sido acusado formalmente por las autoridades estadounidenses de secuestro.",
-    "Además, el FBI ofrece una recompensa de hasta US$1 millón por información que conduzca a su captura.",
-    "Este fue el anuncio del presidente de El Salvador, Nayib Bukele, este martes en la red social X."
-   ],
-   "datos": [
-    {
-     "v": "1 millón",
-     "t": "escala",
-     "c": "Además, el FBI ofrece una recompensa de hasta US$1 millón por información que conduzca a su captura.."
-    },
-    {
-     "v": "18 de octubre",
-     "t": "fecha",
-     "c": "La banda habría emboscado y secuestrado el 18 de octubre a cuatro técnicos de aviación salvadoreños, integrantes de…"
-    }
-   ]
-  },
-  {
    "id": "b38eef74b1",
    "sector": "tecnologia",
    "titulo": "Documentos con los que León XIV obtuvo la nacionalidad peruana son declarados Patrimonio Cultural de la Nación",
@@ -5888,30 +6912,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "7c8e273db3",
-   "sector": "mundo",
-   "titulo": "Berlín reúne a disidentes para hallar respuestas ante las autocracias",
-   "resumen": "En la Conferencia de Libertad en Berlín, disidentes y líderes democráticos analizaron los retos que enfrentan las sociedades abiertas y defendieron la cooperación internacional como respuesta al auge de las autocracias.",
-   "fuente": "DW Español",
-   "url": "https://www.dw.com/es/berlín-reúne-a-disidentes-para-hallar-respuestas-ante-las-autocracias/a-79916089?maca=spa-rss-sp-all-1122-xml-mrss",
-   "fecha": "2026-11-11T17:31:00Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "En la Conferencia de Libertad en Berlín, disidentes y líderes democráticos analizaron los retos que enfrentan las sociedades abiertas y defendieron la cooperación internacional como respuesta al auge de las autocracias.",
-   "puntos": [
-    "En la Conferencia de Libertad en Berlín, disidentes y líderes democráticos analizaron los retos que enfrentan las sociedades abiertas y defendieron la cooperación internacional como respuesta al auge de las autocracias."
-   ]
-  },
-  {
    "id": "f7fbeb03cd",
    "sector": "mundo",
    "titulo": "¡Dylan se vuelve ecléctico!",
@@ -5935,44 +6935,6 @@ window.NOTICIAS = {
    "sintesis": "Barry Blitt humorously illustrates Bob Dylan accompanied by various spiritual leaders on his tour.",
    "puntos": [
     "Barry Blitt humorously illustrates Bob Dylan accompanied by various spiritual leaders on his tour."
-   ]
-  },
-  {
-   "id": "7aaa911b7e",
-   "sector": "deporte",
-   "titulo": "Barcelona vs Arsenal: ¿a qué hora juegan y en qué canal de TV ver la Champions League Femenina?",
-   "resumen": "Barcelona vs Arsenal EN VIVO: sigue el partido en el Spotify Camp Nou, por la fecha 4 de la Champions League Femenina.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/futbol/futbol-mundial/barcelona-vs-arsenal-en-vivo-a-que-hora-juegan-canal-y-como-ver-fecha-4-champions-league-femenina-via-disney-partidos-de-hoy-noticia-1717232",
-   "fecha": "2026-11-11T17:23:20Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/11/214821_1927988.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Barcelona vs Arsenal EN VIVO: sigue el partido en el Spotify Camp Nou, por la fecha 4 de la Champions League Femenina. Arsenal será uno de los encuentros más atractivos de la cuarta jornada de la Champions League Femenina 2026-2027 .",
-   "puntos": [
-    "Barcelona vs Arsenal EN VIVO: sigue el partido en el Spotify Camp Nou, por la fecha 4 de la Champions League Femenina.",
-    "Arsenal será uno de los encuentros más atractivos de la cuarta jornada de la Champions League Femenina 2026-2027 .",
-    "El conjunto azulgrana recibirá al vigente campeón inglés en el Spotify Camp Nou, en un duelo que inicialmente estaba programado para el miércoles 11 de noviembre, pero fue reprogramado para el jueves 12 de noviembre debido a una huelga general en Barcelona."
-   ],
-   "datos": [
-    {
-     "v": "11 de noviembre",
-     "t": "fecha",
-     "c": "…duelo que inicialmente estaba programado para el miércoles 11 de noviembre, pero fue reprogramado para el jueves 12 de noviembre…"
-    },
-    {
-     "v": "12 de noviembre",
-     "t": "fecha",
-     "c": "…11 de noviembre, pero fue reprogramado para el jueves 12 de noviembre debido a una huelga general en Barcelona."
-    }
    ]
   },
   {
@@ -6126,32 +7088,6 @@ window.NOTICIAS = {
    "via": "Google Noticias"
   },
   {
-   "id": "8b781fad04",
-   "sector": "mundo",
-   "titulo": "\"El capitalismo ya trataba mal a las personas; lo que ha cambiado ahora es que esa lógica se ha adoptado (…) en discursos sobre liderazgo\"",
-   "resumen": "La filósofa eslovena Renata Salecl lleva varias décadas preguntándose cómo se infiltra la ideología imperante en nuestras mentes. En su libro más reciente en español, Maleducados, aborda cómo la grosería se ha normalizado desde la televisión hasta la política pasando por lo que…",
-   "fuente": "BBC Mundo",
-   "url": "https://www.bbc.com/mundo/articles/ck868llen5lgo?at_medium=RSS&at_campaign=rss",
-   "fecha": "2026-11-11T14:54:07Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/9526/live/796df210-dd40-11f1-9ac0-6b8f7fc58221.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "seccion_internacional_fuente"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "La filósofa eslovena Renata Salecl lleva varias décadas preguntándose cómo se infiltra la ideología imperante en nuestras mentes. En su libro más reciente en español, Maleducados, aborda cómo la grosería se ha normalizado desde la televisión hasta la política pasando por lo que pasa en el lugar de trabajo.",
-   "puntos": [
-    "La filósofa eslovena Renata Salecl lleva varias décadas preguntándose cómo se infiltra la ideología imperante en nuestras mentes.",
-    "En su libro más reciente en español, Maleducados, aborda cómo la grosería se ha normalizado desde la televisión hasta la política pasando por lo que pasa en el lugar de trabajo.",
-    "En su más reciente libro en español, \"Maleducados\", describe cómo los comportamientos groseros y crueles han dejado de disimularse, y en cambio se han normalizado en ámbitos que van desde cómo tratamos a los repartidores de comida hasta la elección de presidentes."
-   ]
-  },
-  {
    "id": "244cf6f4ee",
    "sector": "mundo",
    "titulo": "Un nuevo estudio compara la eficacia a largo plazo de 21 antidepresivos - The New York Times",
@@ -6270,71 +7206,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "ba8bb9e8e7",
-   "sector": "politica",
-   "titulo": "Keiko Fujimori y el MTC se desdicen: no fueron ni 42 ni 48 antenas derribadas cerca de penales, como señaló la presidenta",
-   "resumen": "El MTC informó que fueron 33 antenas las desmontadas en el operativo del 26 de octubre. A lo largo de cinco días, siguió informando sobre lo sucedido y mantuvo la cifra siempre.",
-   "fuente": "El Búho",
-   "url": "https://elbuho.pe/2026/11/keiko-fujimori-y-el-mtc-se-desdicen-no-fueron-ni-42-ni-48-antenas-derribadas-cerca-de-penales-como-senalo-la-presidenta/",
-   "fecha": "2026-11-11T14:18:30Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/KEIKO-FUJIMORI-100-DIAS-NOTICIAS-TUMEBS-LIMA-VILLA-EL-SALVADOR-RECLAMOS.webp",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Keiko Fujimori, sin embargo, primero anunció que fueron 42 y luego 48, sin proporcionar evidencia. A lo largo de cinco días, siguió informando sobre lo sucedido y mantuvo la cifra siempre.",
-   "puntos": [
-    "Keiko Fujimori, sin embargo, primero anunció que fueron 42 y luego 48, sin proporcionar evidencia.",
-    "A lo largo de cinco días, siguió informando sobre lo sucedido y mantuvo la cifra siempre.",
-    "Luego de la intervención, el Ejecutivo se ha contradicho al menos cuatro veces sobre la cantidad de antenas que realmente desmontó."
-   ],
-   "datos": [
-    {
-     "v": "26 de octubre",
-     "t": "fecha",
-     "c": "…que fueron 33 antenas las desmontadas en el operativo del 26 de octubre."
-    }
-   ]
-  },
-  {
-   "id": "f80eafe795",
-   "sector": "politica",
-   "titulo": "Arequipa: Diputado pide intervención integral en la torrentera Chullo ante riesgo de nuevas acumulaciones",
-   "resumen": "La solicitud busca reforzar las labores de limpieza y descolmatación en toda la torrentera mediante acciones coordinadas entre AGRO RURAL y la Municipalidad Distrital de Sachaca.",
-   "fuente": "El Búho",
-   "url": "https://elbuho.pe/2026/11/arequipa-diputado-pide-intervencion-integral-en-la-torrentera-chullo-ante-riesgo-de-nuevas-acumulaciones/",
-   "fecha": "2026-11-11T14:12:57Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/NOTA-6.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "La solicitud busca reforzar las labores de limpieza y descolmatación en toda la torrentera mediante acciones coordinadas entre AGRO RURAL y la Municipalidad Distrital de Sachaca. El pedido se formuló mediante el Oficio N.º 203-2026-EDGP-CR, dirigido al director ejecutivo de AGRO RURAL, Óscar Olivera Cusilayme, y respalda la solicitud de los vecinos de las urbanizaciones Tahuaycani, Santa Fe y Residencial Santa Fe, quienes advirtieron que los trabajos deben continuar en todo el cauce y no limitarse al tramo actualmente intervenido.",
-   "puntos": [
-    "La solicitud busca reforzar las labores de limpieza y descolmatación en toda la torrentera mediante acciones coordinadas entre AGRO RURAL y la Municipalidad Distrital de Sachaca.",
-    "El pedido se formuló mediante el Oficio N.º 203-2026-EDGP-CR, dirigido al director ejecutivo de AGRO RURAL, Óscar Olivera Cusilayme, y respalda la solicitud de los vecinos de las urbanizaciones Tahuaycani, Santa Fe y Residencial Santa Fe, quienes advirtieron que los trabajos deben continuar en todo el cauce y no limitarse al tramo actualmente intervenido."
-   ],
-   "datos": [
-    {
-     "v": "4 de noviembre",
-     "t": "fecha",
-     "c": "La situación empeoró tras el ingreso de agua del 4 de noviembre, que hizo que parte del material retirado volviera a acumularse."
-    }
-   ]
-  },
-  {
    "id": "ef9e27d31c",
    "sector": "mundo",
    "titulo": "El asesinato de un periodista subraya el deterioro de las condiciones en Ecuador",
@@ -6358,98 +7229,6 @@ window.NOTICIAS = {
    "sintesis": "Tomás Beltrán was shot dead amid gang warfare that has turned Latin American country into one of its most violent",
    "puntos": [
     "Tomás Beltrán was shot dead amid gang warfare that has turned Latin American country into one of its most violent"
-   ]
-  },
-  {
-   "id": "eb71ce0ad3",
-   "sector": "politica",
-   "titulo": "Cámara de diputados aprueba derogar la ley Soto: La única abstención fue de fujimoristas (VIDEO)",
-   "resumen": "La norma, conocida como Ley Soto, fue cuestionada porque sus efectos podían beneficiar a investigados por delitos graves.",
-   "fuente": "El Búho",
-   "url": "https://elbuho.pe/2026/11/camara-de-diputados-aprueba-derogar-la-ley-soto-la-unica-abstencion-fue-de-fujimoristas-video/",
-   "fecha": "2026-11-11T13:37:43Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/ley-soto-indira-huilca-camara-de-diputados-leyes-procrimen-noticias-peru-lo-ultimo.jpeg",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "La norma, conocida como Ley Soto, fue cuestionada porque sus efectos podían beneficiar a investigados por delitos graves. SOLO FUJIMORISTAS SE ABSTUVIERON | La Cámara de Diputados aprobó derogar la controvertida Ley Soto, considerada procrimen, que prescribía los delitos y a cuyas disposiciones se acogieron excongresistas y autoridades para librarse de investigaciones.",
-   "puntos": [
-    "La norma, conocida como Ley Soto, fue cuestionada porque sus efectos podían beneficiar a investigados por delitos graves.",
-    "SOLO FUJIMORISTAS SE ABSTUVIERON | La Cámara de Diputados aprobó derogar la controvertida Ley Soto, considerada procrimen, que prescribía los delitos y a cuyas disposiciones se acogieron excongresistas y autoridades para librarse de investigaciones.",
-    "La bancada fujimorista fue la única que se opuso a la derogación, cuestionando las opiniones de las instituciones que recogió el predictamen."
-   ],
-   "datos": [
-    {
-     "v": "77 votos",
-     "t": "cantidad",
-     "c": "La votación en el Pleno terminó con 77 votos a favor, ninguno en contra y 25 abstenciones."
-    }
-   ]
-  },
-  {
-   "id": "7c57aab5a6",
-   "sector": "politica",
-   "titulo": "Cámara de diputados salva a Pedro Castillo y lo libra de denuncia por ascensos en FF.AA. (VIDEO)",
-   "resumen": "La Cámara de Diputados rechazó la denuncia contra Castillo con 54 votos a favor y 43 en contra, por lo que el informe pasó al archivo.",
-   "fuente": "El Búho",
-   "url": "https://elbuho.pe/2026/11/camara-de-diputados-salva-a-pedro-castillo-y-lo-libra-de-denuncia-por-ascensos-en-ff-aa-video/",
-   "fecha": "2026-11-11T13:24:34Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/pedRO-castillo-denuncia-constitucional-camara-de-diputados-noticias-peru-ultimas-noticias-urgente-WA-1.webp",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "La Cámara de Diputados rechazó la denuncia contra Castillo con 54 votos a favor y 43 en contra, por lo que el informe pasó al archivo. «CORRIJAN LO QUE HIZO EL OTRO Congreso » | El expresidente Pedro Castillo reapareció ante el Congreso bicameral para enfrentar una nueva denuncia en su contra por los presuntos ascensos irregulares en las Fuerzas Armadas durante su gobierno.",
-   "puntos": [
-    "La Cámara de Diputados rechazó la denuncia contra Castillo con 54 votos a favor y 43 en contra, por lo que el informe pasó al archivo.",
-    "«CORRIJAN LO QUE HIZO EL OTRO Congreso » | El expresidente Pedro Castillo reapareció ante el Congreso bicameral para enfrentar una nueva denuncia en su contra por los presuntos ascensos irregulares en las Fuerzas Armadas durante su gobierno.",
-    "Sin embargo, esta vez el exmandatario se mostró calmado y apeló a la buena voluntad de los diputados para que lo liberen de esta denuncia."
-   ],
-   "datos": [
-    {
-     "v": "54 votos",
-     "t": "cantidad",
-     "c": "La Cámara de Diputados rechazó la denuncia contra Castillo con 54 votos a favor y 43 en contra, por lo que el informe pasó al archivo.."
-    }
-   ]
-  },
-  {
-   "id": "2e70110932",
-   "sector": "politica",
-   "titulo": "Castillo es aplaudido por diputados tras pedir que corrijan lo que le hizo el Congreso anterior (VIDEO)",
-   "resumen": "Al expresidente y al exminsitro Waslter Ayala se le acusa de cobrar sumas de hasta 40 mil dólares para promover ascensos en las Fuerzas Armadas y la Policía Nacional.",
-   "fuente": "El Búho",
-   "url": "https://elbuho.pe/2026/11/castillo-es-aplaudido-por-diputados-tras-pedir-que-corrijan-lo-que-le-hizo-el-congreso-anterior-video/",
-   "fecha": "2026-11-11T13:01:17Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/pedRO-castillo-denuncia-constitucional-camara-de-diputados-noticias-peru-ultimas-noticias-urgente.webp",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "El expresidente Pedro Castillo reapareció ante el Congreso bicameral para enfrentar una nueva denuncia en su contra Sin embargo, esta vez el exmandatario se mostró calmado y apeló a la buena voluntad de los diputados para que lo liberen de esta denuncia.",
-   "puntos": [
-    "El expresidente Pedro Castillo reapareció ante el Congreso bicameral para enfrentar una nueva denuncia en su contra",
-    "Sin embargo, esta vez el exmandatario se mostró calmado y apeló a la buena voluntad de los diputados para que lo liberen de esta denuncia.",
-    "La bancada de Juntos por el Perú aplaudió su intervención y el presidente de la Cámara de Diputados, Óscar Retto, le agradeció por sus palabras."
    ]
   },
   {
@@ -6509,70 +7288,6 @@ window.NOTICIAS = {
     "Marcos Blanco se refirió a las críticas que recibe su compatriota por el inicio poco convincente de las ‘blanquiazules’ en la primera fase de la Liga Peruana de Vóley 2026/2027",
     "Agregar Infobae en “Alianza Lima está ganando.",
     "El entrenador de Circolo Sportivo Italiano se refirió a los duras críticas hacia su amigo Alejandro Schneider."
-   ]
-  },
-  {
-   "id": "db1ca9e273",
-   "sector": "deporte",
-   "titulo": "“Horacio Melgarejo ya no quiere dirigir más en Perú”: la tajante conclusión de Eddie Fleischman tras dura sanción de la FPF",
-   "resumen": "El periodista deportivo analizó el castigo contra el entrenador argentino de Cienciano tras lo ocurrido en Matute y recordó sus antecedentes",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/deportes/2026/11/11/horacio-melgarejo-ya-no-quiere-dirigir-mas-en-peru-la-tajante-conclusion-de-eddie-fleischman-tras-dura-sancion-de-la-fpf/",
-   "fecha": "2026-11-11T12:03:48Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/CHPDHS57HJFJVOVQP35PIC2HVQ.png?auth=3b1a1340ac903ab442d2e680aecfd35b58a6a7d1f5324a8e48edc6397a348b44&smart=true&width=1920&height=1080",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "El periodista deportivo analizó el castigo contra el entrenador argentino de Cienciano tras lo ocurrido en Matute y recordó sus antecedentes El periodista opinó acerca del duro castigo que la FPF le propinó al técnico argentino de Cienciano tras sus gestos en Matute. (Video: Juego Cruzado) 11 Nov, 2026 07:03 a. m.",
-   "puntos": [
-    "El periodista deportivo analizó el castigo contra el entrenador argentino de Cienciano tras lo ocurrido en Matute y recordó sus antecedentes",
-    "El periodista opinó acerca del duro castigo que la FPF le propinó al técnico argentino de Cienciano tras sus gestos en Matute. (Video: Juego Cruzado) 11 Nov, 2026 07:03 a. m.",
-    "EST Guardar Casi una semana después del partido ante Alianza Lima , la sanción a Horacio Melgarejo volvió a poner al técnico de Cienciano en el centro de la discusión."
-   ]
-  },
-  {
-   "id": "8c6bac6909",
-   "sector": "deporte",
-   "titulo": "Entradas para la fecha 5 de la Liga Peruana de vóley 2026/2027: precios y cómo comprar boletos para partidazos",
-   "resumen": "Se inicia la venta de boletos para los grandes duelos: Alianza Lima enfrentará a San Martín, Universitario hará lo suyo con Regatas Lima, y mucho más",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/deportes/2026/11/11/entradas-para-la-fecha-5-de-la-liga-peruana-de-voley-20262027-precios-y-como-comprar-boletos-para-partidazos/",
-   "fecha": "2026-11-11T12:03:28Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/KN5PSHMRHVBFPPJDC5MZBQ6CRQ.jpg?auth=abd31fdac27038e685100a67a1c33158609b0105aa00eef9bdded77f169d8082&smart=true&width=1920&height=1080",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Se inicia la venta de boletos para los grandes duelos: Alianza Lima enfrentará a San Martín, Universitario hará lo suyo con Regatas Lima, y mucho más EST Guardar Hoy, miércoles 11 de noviembre, arranca la venta de entradas para la fecha 5 de la Liga Peruano de vóley 2026/2027 .",
-   "puntos": [
-    "Se inicia la venta de boletos para los grandes duelos: Alianza Lima enfrentará a San Martín, Universitario hará lo suyo con Regatas Lima, y mucho más",
-    "EST Guardar Hoy, miércoles 11 de noviembre, arranca la venta de entradas para la fecha 5 de la Liga Peruano de vóley 2026/2027 .",
-    "La jornada presentará partidazos que nadie quiere perderse: Universitario de Deportes chocará con Regatas Lima, Alianza Lima se medirá con San Martín , y mucho más."
-   ],
-   "datos": [
-    {
-     "v": "11 de noviembre",
-     "t": "fecha",
-     "c": "EST Guardar Hoy, miércoles 11 de noviembre, arranca la venta de entradas para la fecha 5 de la Liga Peruano de vóley 2026/2027 ."
-    },
-    {
-     "v": "14 de noviembre",
-     "t": "fecha",
-     "c": "…la fecha 5 de la Liga Peruana de vóley 2026/2027 Sábado 14 de noviembre."
-    }
    ]
   },
   {
@@ -6751,119 +7466,25 @@ window.NOTICIAS = {
    "procedencia": "directa"
   },
   {
-   "id": "eb5f98ed3d",
-   "sector": "deporte",
-   "titulo": "Ciclista mexicana llegó a Chiclayo tras varios meses de viaje en bicicleta solo para conocer al papa León XIV durante su visita al Perú",
-   "resumen": "La mexicana emprendió su viaje después de conocer que el sumo pontífice visitaría el Perú. Su travesía estuvo dedicada a promover la paz mundial y estuvo motivada por su fe católica",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/11/ciclista-mexicana-llego-a-chiclayo-tras-varios-meses-de-viaje-en-bicicleta-solo-para-conocer-al-papa-leon-xiv-durante-su-visita-al-peru/",
-   "fecha": "2026-11-11T11:52:19Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/A3Q76DYDM5CLXL7ZSNPUTJIMDA.jpg?auth=691567856fd02ec7ab07b9218f16b420237bcaafa9f091591d2880d25e84d5a7&smart=true&width=1920&height=1080",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "La mexicana emprendió su viaje después de conocer que el sumo pontífice visitaría el Perú. Su travesía estuvo dedicada a promover la paz mundial y estuvo motivada por su fe católica",
-   "puntos": [
-    "La mexicana emprendió su viaje después de conocer que el sumo pontífice visitaría el Perú.",
-    "Su travesía estuvo dedicada a promover la paz mundial y estuvo motivada por su fe católica",
-    "La peregrina emprendió un viaje de varios meses por América luego de conocer que León XIV visitaría el Perú y presidiría una misa en las pampas de Pimentel (Créditos: TVPerú) 11 Nov, 2026 06:50 a. m."
-   ]
-  },
-  {
-   "id": "b2c99e078e",
-   "sector": "mundo",
-   "titulo": "Ruta 66: la historia poco conocida de la carretera más famosa de EE.UU.",
-   "resumen": "La Ruta 66, que se extiende desde Chicago hasta Santa Mónica, en California, atraviesa territorios ancestrales de numerosos pueblos indígenas. Sin embargo, durante mucho tiempo sus voces quedaron al margen de la narrativa de la histórica carretera.",
-   "fuente": "BBC Mundo",
-   "url": "https://www.bbc.com/mundo/articles/cj20vq3g51z1o?at_medium=RSS&at_campaign=rss",
-   "fecha": "2026-11-11T11:33:18Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/291a/live/c2a2f680-db81-11f1-ab1c-6b6075dcdfe1.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "La Ruta 66, que se extiende desde Chicago hasta Santa Mónica, en California, atraviesa territorios ancestrales de numerosos pueblos indígenas. Sin embargo, durante mucho tiempo sus voces quedaron al margen de la narrativa de la histórica carretera.",
-   "puntos": [
-    "La Ruta 66, que se extiende desde Chicago hasta Santa Mónica, en California, atraviesa territorios ancestrales de numerosos pueblos indígenas.",
-    "Sin embargo, durante mucho tiempo sus voces quedaron al margen de la narrativa de la histórica carretera.",
-    "En el interior de Nātv —un restaurante discretamente radical inaugurado en 2022—, las paredes de color gris pizarra están decoradas con manojos de hierbas autóctonas de las Grandes Llanuras, bayas de enebro y tupinambos (alcachofas de Jerusalén)."
-   ],
-   "datos": [
-    {
-     "v": "100 años",
-     "t": "cantidad",
-     "c": "…de las carreteras estadounidenses, que este año cumple 100 años."
-    }
-   ]
-  },
-  {
-   "id": "71ad757ef3",
-   "sector": "ia",
-   "titulo": "TSMC aprueba inversión de hasta 1,000 millones de dólares en Anthropic y OpenAI; ventas de octubre crecen 60%",
+   "id": "a530e9fd67",
+   "sector": "politica",
+   "titulo": "Reelección encubierta: JEE de Arequipa proclama como alcalde al segundo regidor de Ahora Nación",
    "resumen": "",
-   "fuente": "Revista ADVFN",
-   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNSkxZQ0g1a2hoZ2ZBZzVaalNSZmtKOC15TjU4dzBIXzlYdnVqQ3M4MnBxUDJfazhIYXBRQ0w4c1pqY0QxUEhDLXNKa0x6NzNDWUR2Y01xNFliSHhvWW9La1hDbEtKQnlLTHRGQmQ2X1VuWVJMd1lTQUh3cnlfY0RLWlFxeXJfMi1UYXRDc09qUlhQWHJDZ3A5dkxfTHpQSjVqd09jMmpYQmlYeW5oaWhBRHlJNEx1ZTlqQ3N2eVhVM0VJNllIbmZ6NU9YdVpLOF82NkhHVV9zT3NSVEVaY0JYMWVyVTAwU05ncXRsUkphM0RYdUk?oc=5",
-   "fecha": "2026-11-11T11:19:49Z",
-   "tipo": "internacional",
+   "fuente": "La República",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPZ2V5SUxKU1o2N0Nacm0wdU95dzJVd3VjMFBzMk5FZC1qZFJOcnlGRk5JVDg4OGpYbFVwQnlzNWFWOEZ4VTNGSG5ZdGE3bVR4V05CdjRNUEVRMWQtVmkyZFVNcTlxc1BqQmVMdWxsM29Za2xwblJmaDlkX1lMSkM3OFEtOXpFWDZDOG5rb0U0LUhRVllZRnpwazVJdkV3SDMteXkweW9fWjJTSkZadEhfU0ozcE0tNGgyQTE5NXBmc3RqakMwNnFCVlRnbHFIN3VJcDN2ckNKV1hsWXhHMk1uOGg5eW3SAeoBQVVfeXFMTk56Qlc5WVlXMUdYM1RuNzNZMzdhempRZ0J1X2VFWmczZUZPX3RXSEMzS0tXamg3ZkJWdnR5SkxpUEVBRGdRbTNwelVVV2dhcFU2cHhEdS00SldRLUtvcmoxZWJIeFpQVXRIR0wxZDFCQVZnRzVBQnVUbVZNTG5hN1cxR1BFck83dUlBbTc4bWl5U0ZDOFhrbHJiSEdUcWJiLTllSkFKbHdTZURaWm9QUGdDMk83VFk1czFRS1g2djdvSzk3WkdtbDVJdU1kcUpwaW1YY2ZGMWVkazNuWkc5VlRqeVBrcDFTbmlB?oc=5",
+   "fecha": "2026-11-11T11:51:29Z",
+   "tipo": "comercial",
    "genero": "noticia",
    "imagen": null,
    "geografia": {
     "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "datos": [
-    {
-     "v": "60%",
-     "t": "porcentaje",
-     "c": "TSMC aprueba inversión de hasta 1,000 millones de dólares en Anthropic y OpenAI; ventas de octubre crecen 60%."
-    },
-    {
-     "v": "1,000 millones de dólares",
-     "t": "escala",
-     "c": "TSMC aprueba inversión de hasta 1,000 millones de dólares en Anthropic y OpenAI; ventas de octubre crecen 60%."
-    }
-   ]
-  },
-  {
-   "id": "7565c5b9b2",
-   "sector": "deporte",
-   "titulo": "¡Orgullo peruano! Teófilo Cubillas ingresó al Salón de la Fama del Fútbol Internacional [FOTOS]",
-   "resumen": "El popular ‘Nene’ fue uno de los más ovacionados de la ceremonia, en la que también se homenajearon a otras leyendas del balompié, como el croata Davor Suker y el brasileño Bebeto.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/futbol/seleccion-peruana/teofilo-cubillas-ingreso-al-salon-de-la-fama-del-futbol-internacional-fotos-noticia-1717160",
-   "fecha": "2026-11-11T11:15:11Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/11/portada_2404450.jpg?width=860&quality=80",
-   "geografia": {
-    "version": 1,
     "ambito": "peru",
     "zona": "peru",
     "motivo": "referencia_peru_titulo"
    },
    "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Teófilo Cubillas, histórico representante de la Selección Peruana, ingresó al Salón de la Fama del Fútbol Internacional durante una ceremonia celebrada en Pachuca, México.",
-   "puntos": [
-    "Teófilo Cubillas, histórico representante de la Selección Peruana, ingresó al Salón de la Fama del Fútbol Internacional durante una ceremonia celebrada en Pachuca, México."
-   ]
+   "procedencia": "agregador",
+   "via": "Google Noticias"
   },
   {
    "id": "94cea53e99",
@@ -6978,32 +7599,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "45e1eae3e5",
-   "sector": "mundo",
-   "titulo": "Surge un “buen populismo” en Estados Unidos",
-   "resumen": "¿Puede ocurrir lo mismo en Europa?",
-   "fuente": "The New Yorker",
-   "url": "https://www.newyorker.com/news/global-notes/a-good-populism-rises-in-the-united-states",
-   "fecha": "2026-11-11T11:00:00Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://media.newyorker.com/photos/6af38709f907edd75013e260/master/pass/Tharoor-Populism.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "titulo_original": "A “Good Populism” Rises in the United States",
-   "traducido": true,
-   "sintesis": "Ishaan Tharoor writes about the current state of populist political movements in the United States and in Europe.",
-   "puntos": [
-    "Ishaan Tharoor writes about the current state of populist political movements in the United States and in Europe."
-   ]
-  },
-  {
    "id": "6fcb1372bf",
    "sector": "ia",
    "titulo": "OpenAI creó un sistema para frenar a sus modelos de IA si representan un riesgo: demora 35 segundos",
@@ -7060,26 +7655,6 @@ window.NOTICIAS = {
      "c": "La ilícita mercadería, valorizada en aproximadamente 18.6 millones de dólares , había sido distribuida en 556 paquetes tipo ladrillo…"
     }
    ]
-  },
-  {
-   "id": "2a9b7b7674",
-   "sector": "ia",
-   "titulo": "¡Bienvenido de vuelta a casa, su santidad! Papa León XIV regresa al Perú: fe, humanidad y desafíos de la inteligencia artificial",
-   "resumen": "",
-   "fuente": "Diario Expreso",
-   "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQN0ExQ05iYU1TcFRPRWZOa3lmWXlWby1LN1ZUQlNHV0V4ZWN4Qlp3SHRTODl5VHBVZHJTQ2puZnVfRm1CcE1YZHlFU25idTl5c1FvY0k4MzNZd0s1amoza1BZM2RMdF96Z2ZGc3NJTUtPcFZRN2FSRHNyMnc2eUZ0WV9XZTVZU1l3ajdLQnloMGpHbHd3bjZCVFlkQkU4OUN3QlFXWGpld0gxR2FScWtLLXJUSEVPem1fQlNPQlZZVzhGaXNGVGJuWmxKM2c3RUR2VXF0cHVocnlpWl8zdGc2Mmc2dko5WGFWTWNoUUgyT0ZTUDZSWE5PNnpXM2lUOWpTMHFNbzI1VmdVUQ?oc=5",
-   "fecha": "2026-11-11T07:02:40Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa"
   },
   {
    "id": "cea5a57d12",
@@ -7250,32 +7825,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "c7fa362826",
-   "sector": "ia",
-   "titulo": "Natalia Málaga busca impulsar el crecimiento de ‘Mapi’ Rodríguez: “Hay que trabajarla de una manera psicológica muy distinta”",
-   "resumen": "La entrenadora de Deportivo Géminis analizó el potencial de la atacante y explicó qué necesita para alcanzar su mejor versión",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/deportes/2026/11/11/natalia-malaga-busca-impulsar-el-crecimiento-de-mapi-rodriguez-hay-que-trabajarla-de-una-manera-psicologica-muy-distinta/",
-   "fecha": "2026-11-11T01:42:15Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/5US7OITULBAR5AVAXE73STL4RM.png?auth=e7881bfe044c96f3865c571a5ad14f58b505a8be337540535a76b0490e8698c9&smart=true&width=1920&height=1080",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "La entrenadora de Deportivo Géminis analizó el potencial de la atacante y explicó qué necesita para alcanzar su mejor versión La entrenadora de Géminis destacó las condiciones de la voleibolista, con quien ha trabajado en distintas etapas, y explicó por qué considera fundamental fortalecer su aspecto mental para que pueda explotar todo su potencial. (Video: La Cátedra Deportes) 10 Nov, 2026 08:42 p. m.",
-   "puntos": [
-    "La entrenadora de Deportivo Géminis analizó el potencial de la atacante y explicó qué necesita para alcanzar su mejor versión",
-    "La entrenadora de Géminis destacó las condiciones de la voleibolista, con quien ha trabajado en distintas etapas, y explicó por qué considera fundamental fortalecer su aspecto mental para que pueda explotar todo su potencial. (Video: La Cátedra Deportes) 10 Nov, 2026 08:42 p. m.",
-    "EST Guardar Natalia Málaga conoce a María Paula Rodríguez desde hace varios años y ha tenido la oportunidad de trabajar con ella en distintas etapas de su carrera."
-   ]
-  },
-  {
    "id": "5feff6c44b",
    "sector": "mundo",
    "titulo": "¿Quién es la mujer del escándalo de espionaje de China al CEO de Nvidia? - The New York Times",
@@ -7352,54 +7901,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "e33140fa73",
-   "sector": "investigacion",
-   "titulo": "Congreso rechaza denuncia contra Pedro Castillo por caso ascensos irregulares en FF.AA.",
-   "resumen": "Pedro Castillo: Congreso votará informe final de denuncia por ascensos irregulares en Fuerzas Armadas.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/peru/politica/pedro-castillo-congreso-votara-informe-final-de-denuncia-por-ascensos-irregulares-en-fuerzas-armadas-noticia/",
-   "fecha": "2026-11-11T00:14:41Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/SUAVLVSFAJFWJL6UHFRZKOHBTE.jpg?auth=00570a5deac59bb71cc43240a48ac7bc01b7255e24721b8bcd949490618be4cd&smart=true&width=1068&height=561",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Pedro Castillo: Congreso votará informe final de denuncia por ascensos irregulares en Fuerzas Armadas. Con 54 votos a favor y 43 en contra, la medida no recibió el respaldo requerido, por lo cual fue enviada al archivo por la presidencia de la Cámara Baja.",
-   "puntos": [
-    "Pedro Castillo: Congreso votará informe final de denuncia por ascensos irregulares en Fuerzas Armadas.",
-    "Con 54 votos a favor y 43 en contra, la medida no recibió el respaldo requerido, por lo cual fue enviada al archivo por la presidencia de la Cámara Baja.",
-    "Asimismo, tampoco prosperó la acusación contra el exministro de Defensa, Walter Ayala."
-   ],
-   "datos": [
-    {
-     "v": "US$ 40,000",
-     "t": "monto",
-     "c": "Tanto a Pedro Castillo como a Walter Ayala se les atribuye el supuesto cobro de hasta US$ 40,000 para promover a militares.."
-    },
-    {
-     "v": "54 votos",
-     "t": "cantidad",
-     "c": "Con 54 votos a favor y 43 en contra, la medida no recibió el respaldo…"
-    },
-    {
-     "v": "52 votos",
-     "t": "cantidad",
-     "c": "La Cámara de Diputados logró apenas 52 votos de los 66 requeridos.."
-    },
-    {
-     "v": "10 de noviembre",
-     "t": "fecha",
-     "c": "Este martes 10 de noviembre se debatió en la Cámara de Diputados del Congreso el…"
-    }
-   ]
-  },
-  {
    "id": "73f7ff4b2c",
    "sector": "investigacion",
    "titulo": "Papa León XIV: \"No quieren que nos escuche\", claman víctimas de la violencia política",
@@ -7469,23 +7970,23 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "77b4386a7e",
+   "id": "f4cb6d3b4a",
    "sector": "ia",
-   "titulo": "Australia exigirá notificar fallos de la IA tras la intrusión de OpenAI en su sistema de salud",
+   "titulo": "Crecen ataques cibernéticos a bancos y utilizan inteligencia artificial para robos online",
    "resumen": "",
-   "fuente": "Observatorio Blockchain",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOY09RcEpDTU9VcUlNaDlYQ29SVEtLMnpSbS1xU25abWZ6OXhrV1BoN1FfWmJJRlJQemY0cGI1akJkUEpTME8wYmoyWjUxY0NfcVlFMWtLdS15eFBVaDZheFVQUWhmeUZ1U2dPc1JTNWpBdmgtMWNHSGJvRGtwMUlPb1hEVk5lZUM2ZW4tbzhGSVgxODZVcXZSV0JEWmVPSlJsSVlRSWlRMkppcTlicDRlVi1yVXItNlRw?oc=5",
-   "fecha": "2026-11-10T22:09:37Z",
-   "tipo": "internacional",
+   "fuente": "El Peruano",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQczFDRXY0ZTFtRWFPQjdieUhPZnpRaFZZUWwtdkRhVno0Q1JpeEZWZU5aUFBfc0dTN3B2dXNkRzNFcUtFMDducm1mMDFabmtGWjlTcXhfNG5JUEFNRWNFX1NCLWJuRjRvd2thU05ZU2dOLXpZT0hfd0pMY0VtTDFGNHlLc1lrTUZTX01RZXFWZ0N5VFhPdENOR001OTYxeUFxSWphWG9aRDhZWnhKVXFpQVFxNl9GZE1rOTloR3AxanFISFU?oc=5",
+   "fecha": "2026-11-10T23:22:00Z",
+   "tipo": "comercial",
    "genero": "noticia",
    "imagen": null,
    "geografia": {
     "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
    },
-   "ambito": "mundo",
+   "ambito": "pendiente",
    "procedencia": "directa"
   },
   {
@@ -7611,39 +8112,13 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "200e32d9c6",
-   "sector": "mundo",
-   "titulo": "¿Es el asunto de Jensen Huang una crisis para la IA? ¿Auge?",
-   "resumen": "Aún no está claro qué sabía el director ejecutivo de Nvidia (o la administración Trump) sobre el presunto espía chino con el que estuvo involucrado.",
-   "fuente": "The New Yorker",
-   "url": "https://www.newyorker.com/news/the-lede/is-jensen-huangs-affair-a-crisis-for-the-ai-boom",
-   "fecha": "2026-11-10T19:49:27Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://media.newyorker.com/photos/6af24a72c59d0d344991032d/master/pass/Cassidy---Jensen-Huang--h_16526682.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "contexto_internacional_resumen"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "titulo_original": "Is Jensen Huang’s Affair a Crisis for the A.I. Boom?",
-   "traducido": true,
-   "sintesis": "John Cassidy writes about Jensen Huang admitting to an affair with an alleged Chinese spy, and the Trump Administration’s knowledge of the matter.",
-   "puntos": [
-    "John Cassidy writes about Jensen Huang admitting to an affair with an alleged Chinese spy, and the Trump Administration’s knowledge of the matter."
-   ]
-  },
-  {
-   "id": "d1d07d0df7",
+   "id": "e3adef3d8f",
    "sector": "ia",
-   "titulo": "Anthropic lanza herramientas de inteligencia artificial para el entorno laboral, incluida Claude Sheets",
+   "titulo": "La empresa de inteligencia artificial en la nube Nscale, respaldada por Nvidia, se plantea retrasar su salida a bolsa por valor de 35.000 millones de dólares, según informa The Telegraph. -…",
    "resumen": "",
-   "fuente": "MarketScreener España",
-   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPZlExNTFnZFhFSVhOd0dvV2ZYQUZFMUhnQllKWFRUcjc1LTY4LVBhOXRuVkE2NXlXTlNSd1ZXQ2djelBDQ3ZLNXRtajhHdkgtMkhMNVIxb2RvVG5XUzJhbnA3MDNKYmNMUzdtd1ptV3ZzRG5LX0d2X1RRWDV3cVZQNlM2bDZ3RzUxOFlBUkx1M2txbTZoVnRBREN2UGw5bl8xSTNkZmR0dXFlUi1oclQwakdiRU11emI3dzFLYjVsbFpJTXNIc2doN19vSXZ4Y3pUX1VtY3hFcU9sbkdGbmoyVmJKVHpKeEFoclJz?oc=5",
-   "fecha": "2026-11-10T19:32:14Z",
+   "fuente": "TradingView",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBWRW1Gd09FT1pzSU1oa1VNSnJVdk1IRVNiVF9oN3kzUkZHNjN0UUtUcUpGNWl0SktyeDhFU0ZxNW1fNWVqZFduclM1ZjZKOHlxX3k2eHdFQklWOWQtRkg3NXFQbURNb0FkTHNtdTRldjJqaTJITjNj?oc=5",
+   "fecha": "2026-11-10T20:13:45Z",
    "tipo": "internacional",
    "genero": "noticia",
    "imagen": null,
@@ -7654,32 +8129,13 @@ window.NOTICIAS = {
     "motivo": "sin_evidencia_geografica"
    },
    "ambito": "pendiente",
-   "procedencia": "directa"
-  },
-  {
-   "id": "1080ea75cd",
-   "sector": "mundo",
-   "titulo": "Los habitantes de las Islas Malvinas enfrentan “consecuencias devastadoras” si Argentina bloquea un proyecto petrolero, dice el Reino Unido",
-   "resumen": "Los países chocan por el proyecto Sea Lion mientras el tribunal de Hamburgo corre el riesgo de profundizar la disputa de soberanía El pueblo de las Islas Malvinas enfrenta \"consecuencias devastadoras\" si Argentina logra bloquear el desarrollo de su yacimiento petrolífero en alta mar, dijo el fiscal general de Inglaterra y...",
-   "fuente": "The Guardian",
-   "url": "https://www.theguardian.com/world/2026/nov/10/uk-and-argentina-clash-over-falklands-oil-project-as-hamburg-tribunal-starts",
-   "fecha": "2026-11-10T19:01:33Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://i.guim.co.uk/img/media/5d2b5e1b9e781a1b5a8dd0e647c4fd2a9b8b0afb/295_244_2470_1977/master/2470.jpg?width=140&quality=85&auto=format&fit=max&s=35f0b486f371c4981f8f6f278cadd89d",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
    "procedencia": "directa",
-   "titulo_original": "Falkland Islanders face ‘devastating consequences’ if Argentina blocks oil project, says UK",
-   "traducido": true,
-   "sintesis": "Countries clash over Sea Lion project as Hamburg tribunal risks deepening sovereignty dispute",
-   "puntos": [
-    "Countries clash over Sea Lion project as Hamburg tribunal risks deepening sovereignty dispute"
+   "datos": [
+    {
+     "v": "35.000 millones de dólares",
+     "t": "escala",
+     "c": "…Nvidia, se plantea retrasar su salida a bolsa por valor de 35.000 millones de dólares, según informa The Telegraph. -…."
+    }
    ]
   },
   {
@@ -7721,80 +8177,6 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa"
-  },
-  {
-   "id": "05345f774a",
-   "sector": "ia",
-   "titulo": "IA en la industria alimentaria: desafíos para 2030",
-   "resumen": "",
-   "fuente": "La República",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOcE9rU2hKOW42eW4yUzFqODVoVndwRG4zTHBtZ3Rja1V4NUZ2WS1hRHNNYUR3V3ozY2cwS0xsdUoyOHRoQmV3SUZ6UERkaWRHYkt1ajF0SnhBQVg3bGtiTXFtcmpsV0V2WWZHUnZiT2RDeHg0aEhENi1keUJIcVV0eVZnU0VDTkcya0lMVGNKU0RRZ1p1RTJkN2tzalBwd2luaExhWHcwVXUzOEdJZ2dLcmw3NTRTMzF5OGFIa0YyZHhENWtxdkVFbk1Iak9JQzZTd0Rz?oc=5",
-   "fecha": "2026-11-10T17:29:54Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa"
-  },
-  {
-   "id": "ea706bdc40",
-   "sector": "politica",
-   "titulo": "¡Cárcel para quienes presten sus cuentas bancarias a extorsionadores! advierte ministro del Interior, César Astudillo",
-   "resumen": "",
-   "fuente": "Expreso",
-   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPUFdSQXhNYkotZVFmNXZVSTRaQk9TY2lvRUlEUGtsZHBHYlZzMnpReEIwR3A5M2JzckV4UEZKVGZSZk1yNFNSUndzZ0RuX1NldzB5T2JDVXdseWM2X0N4RVZ3ZG40a3liTll5MFpIeFY1X2x1OHpQbEhYd0JSY0dBc0VvYzczVG9ZZU5vaDlmN0Z1OERtX1ZXQUlibUNCcFZfdlVSWjJvcFYtQ2lNOUlULTVvNHU5QjkzVFU0TGUyRnltX2xYdE16Z1pXLXdSSDVvUEJCZGpONDZYWkRkV3Radk5KWnc3Ylh0dDRxRHByaGJ4cU55T1Z4Yl9NNXI5NjBIMFZNMg?oc=5",
-   "fecha": "2026-11-10T17:09:31Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "agregador",
-   "via": "Google Noticias"
-  },
-  {
-   "id": "af611de5b0",
-   "sector": "mundo",
-   "titulo": "Caricatura diaria: martes 10 de noviembre",
-   "resumen": "Un dibujo que habla de las últimas noticias y acontecimientos.",
-   "fuente": "The New Yorker",
-   "url": "https://www.newyorker.com/cartoons/daily-cartoon/tuesday-november-10th-results-trickle",
-   "fecha": "2026-11-10T16:54:42Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://media.newyorker.com/cartoons/6af343881ada07cd1e920a32/master/pass/A62359.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "titulo_original": "Daily Cartoon: Tuesday, November 10th",
-   "traducido": true,
-   "sintesis": "Brendan Loper’s Daily Cartoon riffs on Donald Trump and the 2026 midterm election results.",
-   "puntos": [
-    "Brendan Loper’s Daily Cartoon riffs on Donald Trump and the 2026 midterm election results."
-   ],
-   "datos": [
-    {
-     "v": "10 de noviembre",
-     "t": "fecha",
-     "c": "Caricatura diaria: martes 10 de noviembre."
-    }
-   ]
   },
   {
    "id": "8e439e2652",
@@ -7864,190 +8246,6 @@ window.NOTICIAS = {
    "via": "Google Noticias"
   },
   {
-   "id": "1c7116566d",
-   "sector": "politica",
-   "titulo": "El Quiosco Mulero: paro de transportistas, reforma laboral de Keiko y el papa León XIV rumbo al Perú",
-   "resumen": "Los transportistas protestan por los atentados mientras el Gobierno pide paciencia y defiende su estrategia contra el crimen. El Ejecutivo explica los cambios a la legítima defensa y prepara reformas laborales y tributarias q",
-   "fuente": "La Mula",
-   "url": "https://redaccion.lamula.pe/2026/11/10/quiosco-mulero-keiko-fujimori-reforma-laboral-papa/redaccionmulera/",
-   "fecha": "2026-11-10T15:43:00Z",
-   "tipo": "independiente",
-   "genero": "noticia",
-   "imagen": "https://lamula.pe/media/uploads/t/362ed3b6e2c12978dcb9c2b08b82acef.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Los transportistas protestan por los atentados mientras el Gobierno pide paciencia y defiende su estrategia contra el crimen. El Ejecutivo explica los cambios a la legítima defensa y prepara reformas laborales y tributarias que incluyen menores aportes y nuevas reglas de despido.",
-   "puntos": [
-    "Los transportistas protestan por los atentados mientras el Gobierno pide paciencia y defiende su estrategia contra el crimen.",
-    "El Ejecutivo explica los cambios a la legítima defensa y prepara reformas laborales y tributarias que incluyen menores aportes y nuevas reglas de despido.",
-    "A un día de llegar al Perú, el papa León XIV reúne a miles de fieles en Argentina."
-   ],
-   "datos": [
-    {
-     "v": "10 de noviembre",
-     "t": "fecha",
-     "c": "Estas son las diez noticias de este martes 10 de noviembre.."
-    },
-    {
-     "v": "21 de noviembre",
-     "t": "fecha",
-     "c": "…Fujimori ha solicitado realizar a China y Japón del 15 al 21 de noviembre, pese a que coincidiría con la misa del papa León XIV en…"
-    }
-   ]
-  },
-  {
-   "id": "87cfd790ec",
-   "sector": "mundo",
-   "titulo": "Lewis Hamilton visita el cruce egipcio de Rafah y las instalaciones de ayuda en Gaza",
-   "resumen": "El siete veces campeón del mundo de F1 recorre la zona fronteriza y los almacenes logísticos operados por la Media Luna Roja Egipcia Lewis Hamilton visitó el cruce fronterizo de Rafah en Egipto con la Franja de Gaza para reunirse con organizaciones que envían ayuda humanitaria al territorio. El siete veces campeón de Fórmula Uno...",
-   "fuente": "The Guardian",
-   "url": "https://www.theguardian.com/world/2026/nov/10/lewis-hamilton-egypt-rafah-crossing-gaza-aid-facilities",
-   "fecha": "2026-11-10T15:39:26Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://i.guim.co.uk/img/media/27bf2d45265593f1960114929744b613770ef7b3/140_0_5118_4095/master/5118.jpg?width=140&quality=85&auto=format&fit=max&s=f83ced7697a40a5bc00073ea52aa6c8e",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "titulo_original": "Lewis Hamilton visits Egypt’s Rafah crossing and Gaza aid facilities",
-   "traducido": true,
-   "sintesis": "Seven-time F1 world champion tours border area and logistics warehouses operated by Egyptian Red Crescent",
-   "puntos": [
-    "Seven-time F1 world champion tours border area and logistics warehouses operated by Egyptian Red Crescent"
-   ]
-  },
-  {
-   "id": "f303b02234",
-   "sector": "mundo",
-   "titulo": "EE. UU. recibió 12.000 millones de dólares del petróleo de Venezuela - The New York Times",
-   "resumen": "UU. recibió 12.000 millones de dólares del petróleo de Venezuela The New York Times",
-   "fuente": "The New York Times en Español",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQY2FKQVhBUGc1aEt2aGxQZmFBa3JEQVd5ZDR0ZzZRNTJ0b190cmhrblpMY2tSQmdOSUIzRHg3dlJNenQ1SDZOZ0ZjQV9WWTNLYW90Mkh2ZEhJWDg2dUJmMkEtb2dua2pnTWhVNkJJeW5jQzBDU2tfb1pCckpvaHhfTGVWSGh3cXVvMHhzSS14QnJoRGtvNmRpWnZBOA?oc=5",
-   "fecha": "2026-11-10T15:24:12Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "UU. captó 12 millardos de dólares de ingresos petroleros de Venezuela, según un reporte The New York Times",
-   "puntos": [
-    "UU. captó 12 millardos de dólares de ingresos petroleros de Venezuela, según un reporte The New York Times"
-   ]
-  },
-  {
-   "id": "ef0a94b193",
-   "sector": "politica",
-   "titulo": "Viaje de Keiko Fujimori a China y Japón: premier Luis Galarreta responde a críticas por coincidencia con visita del papa León XIV",
-   "resumen": "",
-   "fuente": "Expreso",
-   "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPZjJ4TEhWZGtHRG5kb1RxbUozZS16TTFFMGJZQTdsRlhIQjdlck02eUJzTll0Z2xBLXZNaWliLVltdS1reUVXenRtUGJYc1FER0ZnSGNyNDZ6YkJVSXl1X0tIaUFkaE80OHRSSy1CeEhOTHFzUV9rVzJaYlU3a3p6OGJycExBVlduTXlmaVdhZENPTWpxTVZ5X1FyZEMySUp0VkJQeHp5aWZzUGt6QmpGRDRGM1VVQUpYMkdMald3NklzeVFZZFBSaFZfcGxJWTVfLVVGNE5HMGU4bm42UnRXREVqNjhDcmR4SmpzSHZBbmZMYkJrOTZYbi04aHAxMkVCTTlZZGtXVHJHTmNsZXo3a1JSdXdxUVhsZ2c?oc=5",
-   "fecha": "2026-11-10T15:14:01Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "agregador",
-   "via": "Google Noticias"
-  },
-  {
-   "id": "977d07c5a0",
-   "sector": "ia",
-   "titulo": "Anthropic protagoniza una de las mayores apuestas bursátiles de la era de la IA",
-   "resumen": "",
-   "fuente": "Yahoo",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQc2RuTU1FMmYyem9jWTNCekg0WHJPVkU3dk96T2MxVzk0NUlYajg2Vm55aVNwWmwxdHJPbEphM3liZ3kzQVgzWm1TU2E2TGdCT05WempDTml6UEhvcEZqTkxEQmdNNWQycHhuMUpJQkc2NjRDQV9WSW1pVlpZOVNjTnNxUnJFUVp1aV9Dc0x0UmFyaFF5TVIxbWotWXNFS01MalRnbw?oc=5",
-   "fecha": "2026-11-10T14:33:00Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa"
-  },
-  {
-   "id": "90f24266c2",
-   "sector": "ia",
-   "titulo": "Anthropic busca una valoración de unos $1,3 billones al salir a bolsa",
-   "resumen": "",
-   "fuente": "Audacy",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPMjF5ZTZsbzhiemZzclJvMlh5cFozV3RjNEFITnpxWXREVzBNTThncHg4ZEZKdkdfb0VIY3pVVHJyQWJOeGwwRC11bmY3RUxBdlBRdlA5T0ttV2RnNHBKWUNNQXc3UG5UWV9zSUN0LV8wMndxYkpIN1RJblJsbHpHU1JwZE9FdDMweWYxbDJ3V0J4WjVER04wZ05fYkVIeGpjSXlTdFhSd1VMVTdxNk5wX3JMQndXLVhRV1RYQzdJYkQxY2VMbndUSFJ3cDhZN1BhQUpNR1ZNc01NdjFDM2xvZVZ4UQ?oc=5",
-   "fecha": "2026-11-10T13:21:00Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "datos": [
-    {
-     "v": "$1,3",
-     "t": "monto",
-     "c": "Anthropic busca una valoración de unos $1,3 billones al salir a bolsa."
-    }
-   ]
-  },
-  {
-   "id": "3d8e3e8a52",
-   "sector": "politica",
-   "titulo": "Bancada de Juntos por el Perú paga S/ 14,700 a esposa de José Domingo Pérez y congresistas aseguran que no la conocen",
-   "resumen": "",
-   "fuente": "Expreso",
-   "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxPcEpUaG44QUo4Y0MtX1VkcjA1dFRnZE9BRDRScFdLSjY3T3dBSnBkRm4wVXowM2lkQ09NUkZvUnpHaUdmTDVvNTczVlpVMW1tU3VPanVZNURzc2RVNlBXMHNvVG4yWWJSaG5rM2xGYzN6RUdGUWJockN5NWIyb3FCMmUtRG1LLXNEUEF3dkRmSHRBLXBuUXd5ZFMzSV9yYlBPVHJjUWhidGx5TDhYdEYzWi1veGRiaGtfTVVCOGp3V3JfTnd5WXdhQUo3aG85T3dMeEtzQ2oxMS0yMHBvOHdReUVOeHVDRlFlZWRMRVp5SW1vM0s1QlBvVWJZQVJvb2ZQam5Xbm1MSjRhU1pGcnVDaVVOMHkyYWp6SVp5cDJjbzM?oc=5",
-   "fecha": "2026-11-10T12:53:30Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "agregador",
-   "via": "Google Noticias",
-   "datos": [
-    {
-     "v": "S/ 14,700",
-     "t": "monto",
-     "c": "Bancada de Juntos por el Perú paga S/ 14,700 a esposa de José Domingo Pérez y congresistas aseguran que no la conocen."
-    }
-   ]
-  },
-  {
    "id": "aa4efe40aa",
    "sector": "ia",
    "titulo": "Suplemento Jurídica: Papa León XIV insta a poner la inteligencia artificial al servicio de la persona",
@@ -8066,39 +8264,6 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa"
-  },
-  {
-   "id": "d6a69d0591",
-   "sector": "economia",
-   "titulo": "Perú: el cambio climático amenaza la pesca de especies clave para la economía a 2055 | ESTUDIO",
-   "resumen": "De todas las especies analizadas, la mayoría (17 en total) fueron clasificadas como de vulnerabilidad media: entre ellas el pulpo, algunas ostras, la pota, el jurel y el bonito. Los cambios en la temperatura del mar significa",
-   "fuente": "La Mula",
-   "url": "https://mongabay-latam.lamula.pe/2026/11/10/peru-el-cambio-climatico-amenaza-la-pesca-de-especies-clave-para-la-economia-a-2055-estudio/mongabaylatam/",
-   "fecha": "2026-11-10T12:14:00Z",
-   "tipo": "independiente",
-   "genero": "noticia",
-   "imagen": "https://lamula.pe/media/uploads/t/29d571cc5588a5ecc95778092cae46a7.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "De todas las especies analizadas, la mayoría (17 en total) fueron clasificadas como de vulnerabilidad media: entre ellas el pulpo, algunas ostras, la pota, el jurel y el bonito. Los cambios en la temperatura del mar significan un mayor riesgo para las especies que están adheridas al fondo del mar y no pueden migrar.",
-   "puntos": [
-    "De todas las especies analizadas, la mayoría (17 en total) fueron clasificadas como de vulnerabilidad media: entre ellas el pulpo, algunas ostras, la pota, el jurel y el bonito.",
-    "Los cambios en la temperatura del mar significan un mayor riesgo para las especies que están adheridas al fondo del mar y no pueden migrar.",
-    "Para estudiar estos riesgos se seleccionaron 35 recursos pesqueros –entre bentónicos, demersales y pelágicos– y se analizó lo que está sucediendo con cada uno de ellos como consecuencia del impacto en el mar de las emisiones de gases de efecto invernadero y el aumento de temperatura."
-   ],
-   "datos": [
-    {
-     "v": "350 kilómetros",
-     "t": "cantidad",
-     "c": "“Es una franja relativamente angosta, de aproximadamente 350 kilómetros, y bastante productiva que sostiene una gran diversidad y…"
-    }
-   ]
   },
   {
    "id": "cde8504b47",
@@ -8154,111 +8319,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "5e88919a5f",
-   "sector": "mundo",
-   "titulo": "Estados Unidos y el resto del mundo deben seguir el ejemplo de China en materia de energía verde, dice John Kerry",
-   "resumen": "El exsecretario de Estado de EE.UU. dice que la mayoría de las naciones están “a tropezones” mientras que Beijing ha “acelerado enormemente” la Cop31 en vivo – últimas actualizaciones China está liderando el alejamiento del mundo de los combustibles fósiles, y el resto del mundo –incluido EE.UU.- debe ahora seguirle el ejemplo, los ex EE.UU.…",
-   "fuente": "The Guardian",
-   "url": "https://www.theguardian.com/environment/2026/nov/10/china-green-energy-john-kerry-cop31",
-   "fecha": "2026-11-10T12:08:23Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://i.guim.co.uk/img/media/e9e70c1f9aafbf60fe3b65bb1b0c30528284d52f/0_747_2932_2345/master/2932.jpg?width=140&quality=85&auto=format&fit=max&s=d1785ffc68c0400a922125bfb198d09c",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "titulo_original": "US and rest of world must follow China’s lead on green energy, says John Kerry",
-   "traducido": true,
-   "sintesis": "Former US secretary of state says most nations are ‘stumbling along’ while Beijing has ‘hugely accelerated’",
-   "puntos": [
-    "Former US secretary of state says most nations are ‘stumbling along’ while Beijing has ‘hugely accelerated’"
-   ]
-  },
-  {
-   "id": "c6b9e70501",
-   "sector": "mundo",
-   "titulo": "COP31: la transición energética toma el protagonismo más allá de los combustibles fósiles",
-   "resumen": "La transición energética global tomó el protagonismo en el segundo día de la COP31, donde los países exploraron cómo alejarse de los combustibles fósiles, acelerar la energía limpia y superar las barreras financieras y de infraestructura que se interponen en el camino.",
-   "fuente": "ONU Noticias",
-   "url": "https://news.un.org/feed/view/es/story/2026/11/1542160",
-   "fecha": "2026-11-10T12:00:00Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/11/03-11-2026-Adobe-Stock-renewable-energy-01.jpg/image560x340cropped.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "La transición energética global tomó el protagonismo en el segundo día de la COP31, donde los países exploraron cómo alejarse de los combustibles fósiles, acelerar la energía limpia y superar las barreras financieras y de infraestructura que se interponen en el camino. El Día de la Energía y el Transporte en la COP31 comenzó este martes con un toque irónico.",
-   "puntos": [
-    "La transición energética global tomó el protagonismo en el segundo día de la COP31, donde los países exploraron cómo alejarse de los combustibles fósiles, acelerar la energía limpia y superar las barreras financieras y de infraestructura que se interponen en el camino.",
-    "El Día de la Energía y el Transporte en la COP31 comenzó este martes con un toque irónico.",
-    "Con los líderes mundiales llegando a Antalya y la seguridad reforzada, las carreteras se colapsaron, los autobuses iban abarrotados y los trayectos hasta el recinto se alargaron durante horas."
-   ]
-  },
-  {
-   "id": "8197fab114",
-   "sector": "mundo",
-   "titulo": "Desigualdad en la COP31, Sudán, ébola y Estados Unidos: las noticias del martes",
-   "resumen": "Unos 1500 millones de mujeres y niñas viven ya en zonas de alto riesgo climático, y la crisis podría empujar a 141 millones más a la pobreza extrema. En Sudán, UNICEF alerta de que 825.000 niños sufrirán desnutrición aguda debido a los ataques con drones a las centrales…",
-   "fuente": "ONU Noticias",
-   "url": "https://news.un.org/feed/view/es/story/2026/11/1542159",
-   "fecha": "2026-11-10T12:00:00Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/10/05-10-2026-UNICEF-Pakistan.jpg/image560x340cropped.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Unos 1500 millones de mujeres y niñas viven ya en zonas de alto riesgo climático, y la crisis podría empujar a 141 millones más a la pobreza extrema. En Sudán, UNICEF alerta de que 825.000 niños sufrirán desnutrición aguda debido a los ataques con drones a las centrales eléctricas que dejan al país sin agua ni electricidad.",
-   "puntos": [
-    "Unos 1500 millones de mujeres y niñas viven ya en zonas de alto riesgo climático, y la crisis podría empujar a 141 millones más a la pobreza extrema.",
-    "En Sudán, UNICEF alerta de que 825.000 niños sufrirán desnutrición aguda debido a los ataques con drones a las centrales eléctricas que dejan al país sin agua ni electricidad.",
-    "En la República Democrática del Congo, el 95 % de los casos transfronterizos de ébola se produjeron en pasos clandestinos, no en los controles oficiales."
-   ],
-   "datos": [
-    {
-     "v": "95 %",
-     "t": "porcentaje",
-     "c": "En la República Democrática del Congo, el 95 % de los casos transfronterizos de ébola se produjeron en…"
-    },
-    {
-     "v": "30 %",
-     "t": "porcentaje",
-     "c": "…recae principalmente sobre ellas, podría aumentar hasta un 30 % en 2050.."
-    },
-    {
-     "v": "1500 millones de mujeres",
-     "t": "escala",
-     "c": "Unos 1500 millones de mujeres y niñas viven ya en zonas de alto riesgo climático, y la…"
-    },
-    {
-     "v": "141 millones",
-     "t": "escala",
-     "c": "…de alto riesgo climático, y la crisis podría empujar a 141 millones más a la pobreza extrema."
-    },
-    {
-     "v": "1.500 millones",
-     "t": "escala",
-     "c": "Más de una de cada tres mujeres y niñas en el mundo, al menos 1.500 millones, vive ya en zonas de alto riesgo climático ."
-    }
-   ]
-  },
-  {
    "id": "5cbf8c0318",
    "sector": "tecnologia",
    "titulo": "Del ábaco al celular",
@@ -8283,26 +8343,6 @@ window.NOTICIAS = {
     "También transforman nuestra manera de comprender las empresas.",
     "La banca participa de esa evolución, que puede interpretarse como la acumulación de tres perspectivas: una predominantemente determinística, otra probabilística y una tercera centrada en la complejidad de los sistemas."
    ]
-  },
-  {
-   "id": "4a11d36dc7",
-   "sector": "ia",
-   "titulo": "Australia endurece las regulaciones sobre inteligencia artificial tras el acceso ilegal al sistema OpenAI.",
-   "resumen": "",
-   "fuente": "Vietnam.vn",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObDNQSmVoOXN2NkVUcWRZQ0VNeWJVb2JUMVlTOUM4cTNSMTBhNTdEUnFlWDNBbjFIS1daWG5URWE1X3hiQmpmOTN2ZTdla3NfNHN6aGtZMWVoS2k1ajFJT242azI5Qm9NWlpnWXhMUDRrdmhWSEVON09MY3lhV01rRWNyQ1puR0FGWGRPUlVCWQ?oc=5",
-   "fecha": "2026-11-10T09:53:42Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa"
   },
   {
    "id": "52b8961149",
@@ -8352,6 +8392,26 @@ window.NOTICIAS = {
    ]
   },
   {
+   "id": "240f907ff0",
+   "sector": "ia",
+   "titulo": "Australia introducirá un regulador de seguridad de IA tras brecha de OpenAI en portal del gobierno",
+   "resumen": "",
+   "fuente": "AP News",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNRVhmTnF4aEJqLVZURXlwWlo5ZDJxU0FsbnRaNE1qVUtwMUU1NDB0SnY4OG9FZzlveWl6QzZRYno5dUdDdEZva2dhMTJybGZtRTN6MXN1bTNzSWN2T0d1dHNNNFpXZktkU21uaVBwTEdFYWVjZWxpQlJNb0U3U2V4QXVCekdLMEdGWndmTjV2NWVyTEtGY3NR?oc=5",
+   "fecha": "2026-11-10T06:08:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa"
+  },
+  {
    "id": "b4ed97abd1",
    "sector": "nino",
    "titulo": "Enfen pronostica que el Niño Costero...",
@@ -8395,34 +8455,6 @@ window.NOTICIAS = {
     "El Ejecutivo oficializó dos decretos legislativos orientados a sancionar penalmente a quienes faciliten cuentas bancarias y billeteras digitales para extorsiones, así como a respaldar a los ciudadanos que actúan en legítima defensa frente a la delincuencia.",
     "Ambas disposiciones fueron publicadas en la edición extraordinaria del boletín de Normas Legales del Diario Oficial El Peruano.",
     "“La lucha contra la inseguridad es integral."
-   ]
-  },
-  {
-   "id": "a2f9ecb875",
-   "sector": "politica",
-   "titulo": "Congreso posterga debate sobre recorte presupuestal de más de S/ 400 millones: ¿cuándo se retomará?",
-   "resumen": "",
-   "fuente": "Expreso",
-   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNWHJ4c0VzQklCVlFNb3lzMTdRb1lhZ2hhTGdUeDlFVjJmQzdrTl96bXdXalVWSFlyalctSFJaOWFpcWVMWTVuX3ZNdHdVMTZLTGVlVHpOSlJQbHU0ZTk5N1JFTTVBYWl5UjkzM1l4ZGN6dXZaR0ptYThvc3JlTVlRaHVjb2JOLXpMY3JhamdnSjQxdGhITWgtZk9DZllUZ1pKS0JpOW90MWdHZUtTamQ4aHA0SGQwSkdoaG53aVQzOG02RUdteHBuWllReUR5a1JJQm5qanZUQWg1SDhVOXZwMzk1cGZ4eVJyNkZ4QThsRUF0elI2eEpnUHFhVQ?oc=5",
-   "fecha": "2026-11-10T02:10:41Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "agregador",
-   "via": "Google Noticias",
-   "datos": [
-    {
-     "v": "S/ 400 millones",
-     "t": "monto",
-     "c": "Congreso posterga debate sobre recorte presupuestal de más de S/ 400 millones: ¿cuándo se retomará?."
-    }
    ]
   },
   {
@@ -8477,54 +8509,6 @@ window.NOTICIAS = {
     "Jennie Dador, directora ejecutiva de Amnistía Internacional Perú, advierte que eliminar el enfoque de género de las políticas públicas debilita la prevención…",
     "E n diciembre de 2025 se promulgó la Ley 32535, que sustituye el enfoque de género por el de igualdad de oportunidades entre hombres y mujeres, una medida que cambia los derechos por una concepción biologicista y moralista.",
     "Al amparo de esta ley, en los últimos meses el Estado peruano ha desmantelado avances en materia de derechos de niñas y mujeres, como la eliminación de la educación sexual integral o recientemente el lenguaje inclusivo."
-   ]
-  },
-  {
-   "id": "41759ea32c",
-   "sector": "salud",
-   "titulo": "Menos agua, más enfermedades: la sequía provocada por el cambio climático aumenta el riesgo de infecciones y brotes",
-   "resumen": "La sequía provocada por el cambio climático está cambiando la forma en que se propagan algunas enfermedades infecciosas, según un artículo publicado en la revista Trends in Ecology & Evolution. El trabajo examinó 100 estudios previos sobre enfermedades acuáticas causadas por…",
-   "fuente": "Mongabay Latam",
-   "url": "https://es.mongabay.com/short-article/2026/11/menos-agua-mas-enfermedades-sequia-cambio-climatico-aumenta-riesgo-infecciones-brotes/",
-   "fecha": "2026-11-09T22:29:31Z",
-   "tipo": "independiente",
-   "genero": "noticia",
-   "imagen": "https://imgs.mongabay.com/wp-content/uploads/sites/25/2026/11/09212030/3-forest-dwelling-mosquitoes-1200x800-1-768x512.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "La sequía provocada por el cambio climático está cambiando la forma en que se propagan algunas enfermedades infecciosas, según un artículo publicado en la revista Trends in Ecology & Evolution . El trabajo examinó 100 estudios previos sobre enfermedades acuáticas causadas por parásitos y patógenos que dependen del agua, y describe la llamada paradoja sequía-enfermedad: aunque haya menos agua, el riesgo de ciertas infecciones puede aumentar.",
-   "puntos": [
-    "La sequía provocada por el cambio climático está cambiando la forma en que se propagan algunas enfermedades infecciosas, según un artículo publicado en la revista Trends in Ecology & Evolution .",
-    "El trabajo examinó 100 estudios previos sobre enfermedades acuáticas causadas por parásitos y patógenos que dependen del agua, y describe la llamada paradoja sequía-enfermedad: aunque haya menos agua, el riesgo de ciertas infecciones puede aumentar.",
-    "La explicación, según los autores, está en la cercanía."
-   ],
-   "datos": [
-    {
-     "v": "80 %",
-     "t": "porcentaje",
-     "c": "…(una enfermedad parasitaria), redujo en un 80 % la abundancia de caracoles infectados y las infecciones en…"
-    },
-    {
-     "v": "18 %",
-     "t": "porcentaje",
-     "c": "…de caracoles infectados y las infecciones en cerca de un 18 %."
-    },
-    {
-     "v": "16 %",
-     "t": "porcentaje",
-     "c": "…los mosquitos y las enfermedades que transmiten, aunque el 16 % de las especies de libélulas y caballitos del diablo está…"
-    },
-    {
-     "v": "2000 personas",
-     "t": "cantidad",
-     "c": "…urbano de fiebre amarilla de 2017, que infectó a más de 2000 personas y mató a 700.."
-    }
    ]
   },
   {
@@ -8635,38 +8619,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "e1c1fe6a47",
-   "sector": "investigacion",
-   "titulo": "Guatemala: caso de comunidades indígenas desalojadas por plantaciones de caña llega a la Corte IDH",
-   "resumen": "Quince años después de que comunidades indígenas de Guatemala fueron desalojadas a la fuerza de sus tierras ancestrales, el caso llega a la Corte Interamericana de Derechos Humanos (Corte IDH), que podría establecer la responsabilidad del Gobierno y ordenar medidas de…",
-   "fuente": "Mongabay Latam",
-   "url": "https://es.mongabay.com/short-article/2026/11/guatemala-caso-comunidades-indigenas-desalojadas-por-plantaciones-cana-llega-corte-idh/",
-   "fecha": "2026-11-09T21:02:40Z",
-   "tipo": "independiente",
-   "genero": "noticia",
-   "imagen": "https://imgs.mongabay.com/wp-content/uploads/sites/25/2026/11/09200947/Guatemala-la-CIDH-lleva-a-la-Corte-Interamericana-el-desalojo-de-14-comunidades-mongabay-768x512.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Quince años después de que comunidades indígenas de Guatemala fueron desalojadas a la fuerza de sus tierras ancestrales, el caso llega a la Corte Interamericana de Derechos Humanos (Corte IDH), que podría establecer la responsabilidad del Gobierno y ordenar medidas de reparación . El 28 de octubre, la Comisión Interamericana de Derechos Humanos (CIDH) informó haber tramitado la denuncia ante la Corte IDH, por este caso que involucra a 14 comunidades mayas Q’eqchi’ de Alta Verapaz, cuyos integrantes fueron desalojados de sus tierras para dar paso a plantaciones de caña de azúcar.",
-   "puntos": [
-    "Quince años después de que comunidades indígenas de Guatemala fueron desalojadas a la fuerza de sus tierras ancestrales, el caso llega a la Corte Interamericana de Derechos Humanos (Corte IDH), que podría establecer la responsabilidad del Gobierno y ordenar medidas de reparación .",
-    "El 28 de octubre, la Comisión Interamericana de Derechos Humanos (CIDH) informó haber tramitado la denuncia ante la Corte IDH, por este caso que involucra a 14 comunidades mayas Q’eqchi’ de Alta Verapaz, cuyos integrantes fueron desalojados de sus tierras para dar paso a plantaciones de caña de azúcar."
-   ],
-   "datos": [
-    {
-     "v": "28 de octubre",
-     "t": "fecha",
-     "c": "El 28 de octubre, la Comisión Interamericana de Derechos Humanos (CIDH)…"
-    }
-   ]
-  },
-  {
    "id": "aabe1cc259",
    "sector": "tecnologia",
    "titulo": "Francia señala a Irán como el autor de los ataques a los frigoríficos de la distribución",
@@ -8698,33 +8650,6 @@ window.NOTICIAS = {
     "zona": "mundo",
     "motivo": "referencia_internacional_titulo"
    }
-  },
-  {
-   "id": "26456a789c",
-   "sector": "ia",
-   "titulo": "¡Hasta 20 años de cárcel! Perú eleva penas por ciberdelitos, Inteligencia Artificial y «cuentas prestadas»",
-   "resumen": "",
-   "fuente": "Bolognesi Noticias",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE81WnZHWENDWk0temlhdGJWREx6V2FIU2xITWdNcEN3YUpqUzduZmxKN0JmaVdCbUJpN0dCQkhrUFBLbk9sOGktOWIxMDVSLTUwdExLLVkwSHJTZ2tlQktwVTNzRlJ2QjNxTzJKUWdhM2tHMHdManJtZkhGSQ?oc=5",
-   "fecha": "2026-11-09T19:35:57Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "datos": [
-    {
-     "v": "20 años",
-     "t": "cantidad",
-     "c": "¡Hasta 20 años de cárcel!"
-    }
-   ]
   },
   {
    "id": "1d8e0e26dd",
@@ -8812,27 +8737,6 @@ window.NOTICIAS = {
      "c": "¿Es legal exigir un 0% de inteligencia artificial en Turnitin para aprobar una tesis pese al riesgo de falsos positivos en el Perú?."
     }
    ]
-  },
-  {
-   "id": "82f904b5b5",
-   "sector": "politica",
-   "titulo": "Los viajes de la presidenta, por Oscar Vidarte",
-   "resumen": "",
-   "fuente": "La República",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWUhjWDZjNm5qN1Fna0JmUVZxcG4xZWxkLWF5UjUweTdOMS1IZWpnRlNxOG1COWc4ZHY3QWJvajllUUhMNnFoR0FtM2R1TVpRd1hOdll0T1MxSmhQQ3FpWFVMaTVLb0w2S2ZqNHp2aUthd1VUUU1mWHVjaUpNRHl3SW45b3hSd2xlT3lYcGZQd1g0Yks5NG8tTzZQcTRtRkdySFHSAacBQVVfeXFMT1g5T2twdTJCS0tmQ1N0cENEQk5UMnhoWVBTUXpYaTBZdW5Telc1MWlqTG1JWWtUMFBJX0xaLUh4cGhkeHNObjRMM0JuQi1PYkJLRWVoT2t4UVpfOUJuTVBLeHB0REtxaGdJN2ozVEl4VVpNQ19BTGlZRWo3NjM2bUVXbGlXdUh6MUZrdGtyWWFWLWNpTWJBUWVqZkRLUHk1bENwZ0pOSGs?oc=5",
-   "fecha": "2026-11-09T13:46:31Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "agregador",
-   "via": "Google Noticias"
   },
   {
    "id": "30613482d0",
@@ -8952,27 +8856,6 @@ window.NOTICIAS = {
      "c": "ChatGPT, Gemini y Copilot dominan el uso de IA en las áreas de RRHH en Perú, pero solo el 15% la integra a su plataforma."
     }
    ]
-  },
-  {
-   "id": "db4b63b443",
-   "sector": "politica",
-   "titulo": "Ni presidente, ni senador, ni alcalde, por Rosa María Palacios",
-   "resumen": "",
-   "fuente": "La República",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWmtGNnZ0V3BhblhJbEV5VDlVZUQ3d2JVVm1BNXR0TUV5dWJGYU5wcXBreG5CdlRmRV95TldvT29rYXBKNnJ6dUdLaGw4c2lFTnlacE9Vb1JxWEhuVXdSWWVFMnE3Z0trU3V6QVZhOE4wTTI0VHZ3d0NEdDJrejRQZklsUXkxVmNhRTFpUzYtWUNxd00xVzcyV2xuOXpDY0E3LUdxekFkWWZaUmRzUGN4U3BTX3LSAboBQVVfeXFMT3JTYmJRWGNlc3VPR1F4dFZMQmE4WnVsakc5N0tOMUk5WnE1bGoxUjVOMXctQlpJWFMxbVdIaUEzTkxtNGMtdDFEVjc0dUdITm1JN3ZVbUdNTy1OTzFCSkxicm85M081U0t0Q0J1Uk4zOTNrVDl3clh4R1hrMHJ0cl9LdWVRcTgtNE9DQVN0ZWVzWktEN2ZQd09uQXJDV0tFR2tOZDZ2czMxUV9paXA4QmFvNk92cGZYLW5R?oc=5",
-   "fecha": "2026-11-08T13:54:38Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "agregador",
-   "via": "Google Noticias"
   },
   {
    "id": "de7892a97e",
@@ -9128,70 +9011,6 @@ window.NOTICIAS = {
    }
   },
   {
-   "id": "ea2c6ad23f",
-   "sector": "tecnologia",
-   "titulo": "Keiko Fujimori firma nuevas reglas de disciplina escolar: ¿Qué faltas pueden provocar la expulsión de un alumno?",
-   "resumen": "El uso de celulares y otros dispositivos tecnológicos para actividades ajenas al aprendizaje, sin autorización, será considerado una falta grave",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/07/keiko-fujimori-firma-nuevas-reglas-de-disciplina-escolar-que-faltas-pueden-provocar-la-expulsion-de-un-alumno/",
-   "fecha": "2026-11-07T15:49:13Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/GRWJKT44ZBBTLJS5HKP74XFNTQ.jpg?auth=5409706b537d5d61f432ae71496b67e82f85d977b156cedf9ca44de7715e0c9f&smart=true&width=1920&height=1080",
-   "procedencia": "directa",
-   "sintesis": "El uso de celulares y otros dispositivos tecnológicos para actividades ajenas al aprendizaje, sin autorización, será considerado una falta grave Las nuevas disposiciones buscan precisar los mecanismos de intervención frente a comportamientos que afectan la convivencia en los establecimientos.",
-   "puntos": [
-    "El uso de celulares y otros dispositivos tecnológicos para actividades ajenas al aprendizaje, sin autorización, será considerado una falta grave",
-    "Las nuevas disposiciones buscan precisar los mecanismos de intervención frente a comportamientos que afectan la convivencia en los establecimientos.",
-    "Uno de los principales aspectos de la norma es el reconocimiento de la autoridad docente como una facultad legítima para orientar a los escolares, conducir las actividades académicas y mantener el orden en las aulas y otros espacios de aprendizaje."
-   ],
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   }
-  },
-  {
-   "id": "d4d15020e5",
-   "sector": "tecnologia",
-   "titulo": "Examen de Ascenso Docente 2026: consulta dónde rendir la prueba y a qué hora debes ingresar este domingo 8 de noviembre",
-   "resumen": "Examen de Ascenso Docente 2026: consulta dónde rendir la prueba y a qué hora debes ingresar este domingo 8 de noviembre. El Minedu habilitó una plataforma digital para que los docentes consulten su local de evaluación de la Prueba Nacional de Ascenso Docente 2026 con solo…",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/tramites/examen-de-ascenso-docente-2026-consulta-donde-rendir-la-prueba-y-a-que-hora-debes-ingresar-este-domingo-8-de-noviembre-tdpe-noticia/",
-   "fecha": "2026-11-07T11:00:01Z",
-   "tipo": "comercial",
-   "ambito": "peru",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/EQYWOFHMQZGUXPCZX65L3DNKCI.jpg?auth=15074a2ce30eb545e32d2f778c4dd79d5f9b793e25e4923b95a76cd85a5f3683&smart=true&width=1200&height=800",
-   "procedencia": "directa",
-   "sintesis": "El Minedu habilitó una plataforma digital para que los docentes consulten su local de evaluación de la Prueba Nacional de Ascenso Docente 2026 con solo ingresar su número de DNI o carné de extranjería. Con el propósito de que los maestros de Educación Básica Regular puedan formar parte de la Carrera Pública Magisterial ( CPM ) y, a la vez, mejorar sus condiciones laborales, el Ministerio de Educación anunció una nueva edición de la Prueba Nacional para el Ascenso Docente 2026 este 8 de noviembre .",
-   "puntos": [
-    "El Minedu habilitó una plataforma digital para que los docentes consulten su local de evaluación de la Prueba Nacional de Ascenso Docente 2026 con solo ingresar su número de DNI o carné de extranjería.",
-    "Con el propósito de que los maestros de Educación Básica Regular puedan formar parte de la Carrera Pública Magisterial ( CPM ) y, a la vez, mejorar sus condiciones laborales, el Ministerio de Educación anunció una nueva edición de la Prueba Nacional para el Ascenso Docente 2026 este 8 de noviembre .",
-    "De hecho, este proceso es muy importante para los educadores del país, ya que contribuirá de la mejor manera a su desarrollo profesional."
-   ],
-   "datos": [
-    {
-     "v": "8 de noviembre",
-     "t": "fecha",
-     "c": "Examen de Ascenso Docente 2026: consulta dónde rendir la prueba y a qué hora debes ingresar este domingo 8 de noviembre."
-    },
-    {
-     "v": "1 de marzo de 2027",
-     "t": "fecha",
-     "c": "…plaza asumirán su nueva escala magisterial a partir del 1 de marzo de 2027.."
-    }
-   ],
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "contexto_peru_resumen"
-   }
-  },
-  {
    "id": "d674b534a2",
    "sector": "ia",
    "titulo": "Sunarp presenta sus avances en inteligencia artificial aplicada a los Registros Públicos",
@@ -9212,13 +9031,13 @@ window.NOTICIAS = {
    "procedencia": "directa"
   },
   {
-   "id": "29514a5353",
+   "id": "0e06a97116",
    "sector": "ia",
-   "titulo": "Regulación de centros de datos: ¿se frena el auge de la IA?",
+   "titulo": "Inteligencia artificial y derecho: cómo está transformando la práctica jurídica",
    "resumen": "",
-   "fuente": "XTB.com",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPYjU1TjR0OW40RThMSVBZazRVS0VPZ2VmTnhBQkpIYkl2bEh3dk1HOFhVbGx5OFlPZHZxbFRGQUNhcWZiejd1N18wZDhWUDNyc2d1LWxVRnFTVk5BNlE3bHplRHZkb01ldXVuVWRiSkRxelVma3J6d0RLbGRJejNjVmdBYVRKRmVUWVB2c2N3R1JqWnY3UmdUbUZjYzBaMnNubnRzODlJUm9RQzUxNWNIaVdXNzNtc29oZ3J3eXVOZmZTOW1rTi16TWRVdW00NWNsbE94Sl9VaG9CSGkzRXNwRQ?oc=5",
-   "fecha": "2026-11-06T18:49:37Z",
+   "fuente": "Esade",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9Sd1BrbElrZ29kUGpwYWx0b0k1SkZ1Q3J0WWpLNmVac3hYQ3RxV21rZmJlbmYyRGc5Q3FYRS1CVE95b2UyTEVtbmZwUWI2U1RZd0o1c1Vyekg0R0dFeXU5czNaR2kxZmZfSkFEMXl2Q0NfQQ?oc=5",
+   "fecha": "2026-11-06T19:39:04Z",
    "tipo": "internacional",
    "genero": "noticia",
    "imagen": null,
@@ -9229,6 +9048,26 @@ window.NOTICIAS = {
     "motivo": "sin_evidencia_geografica"
    },
    "ambito": "pendiente",
+   "procedencia": "directa"
+  },
+  {
+   "id": "06ceef469a",
+   "sector": "ia",
+   "titulo": "Editorial Almadía concluye que escritor peruano David Silva Rojas NO usó inteligencia artificial en novela ganadora",
+   "resumen": "",
+   "fuente": "Perú 21",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVFN2OWRtQXJ2WlVGS3FmTHNQcFZNTFNaV1duUnRYUkN0Vm5TRnluTEtpNXZJRWlDcGYwRjIyeWNNTExFbzgxeHpuMlhIVWhYaEdUQXVHS3E0S212WXRlcmJ2Q2xJempseC0tRTI0dG1tVGhLWElNcEF5NEY4RXhqVzdpT0dUejRmS1NSRmV5NDhQZ1UwYkRLNFFXaVVYbzlNUFNRbEpjdnI3ZzBPazV3MHNyMmpwMHgxclp1U293?oc=5",
+   "fecha": "2026-11-06T16:31:58Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
    "procedencia": "directa"
   },
   {
@@ -9252,16 +9091,16 @@ window.NOTICIAS = {
    "procedencia": "directa"
   },
   {
-   "id": "c7979c25be",
-   "sector": "salud",
-   "titulo": "Río Tambo: exigen atención médica urgente ante aumento de casos de varicela en niños asháninkas",
-   "resumen": "La Central Asháninka del Río Tambo (CART) solicita un vuelo humanitario para trasladar personal de...",
-   "fuente": "Wayka",
-   "url": "https://wayka.pe/rio-tambo-exigen-atencion-medica-urgente-ante-aumento-de-casos-de-varicela-en-ninos-ashaninkas/",
-   "fecha": "2026-11-05T21:41:23Z",
-   "tipo": "independiente",
+   "id": "6a41e5d0b6",
+   "sector": "nino",
+   "titulo": "Sunass fiscaliza el alcantarillado de Lima ante un Niño costero extraordinario",
+   "resumen": "",
+   "fuente": "iAgua",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdHlLdWl6TllSSGswaU1JLWhYd19weEJjd2l3QW55YzBQMDJ1T1lzc1RYcFFKemdrZGVKSFVzSVZ1UXhRR3hSRlRjVklJclFrM0cyQWx0OVpWRjEwbVY2RmFtMUE3QWxaZHBtU19lOU55cHYwWlhyQWhNZE5KdmxrOEZvRFI5NXVxNnlGQ21GeEkwM183bFZGcHFmVmhkUXZfa1dleXdpR1lHQWxuNlUxcG84eVpWVE1VdFE?oc=5",
+   "fecha": "2026-11-05T09:20:43Z",
+   "tipo": "comercial",
    "genero": "noticia",
-   "imagen": "https://wayka.pe/wp-content/uploads/2026/11/PORTADA-NUEVA-Recuperado.jpg",
+   "imagen": null,
    "geografia": {
     "version": 1,
     "ambito": "peru",
@@ -9269,13 +9108,7 @@ window.NOTICIAS = {
     "motivo": "referencia_peru_titulo"
    },
    "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "La Central Asháninka del Río Tambo (CART) solicita un vuelo humanitario para trasladar personal de... La Central Asháninka del Río Tambo (CART) alertó sobre el aumento de casos de varicela entre niños y niñas de las comunidades nativas de Boca Matimpironi y Kintaroni, ubicadas en zonas de difícil acceso de la cuenca del río Tambo, en la provincia de Satipo, región Junín.",
-   "puntos": [
-    "La Central Asháninka del Río Tambo (CART) solicita un vuelo humanitario para trasladar personal de...",
-    "La Central Asháninka del Río Tambo (CART) alertó sobre el aumento de casos de varicela entre niños y niñas de las comunidades nativas de Boca Matimpironi y Kintaroni, ubicadas en zonas de difícil acceso de la cuenca del río Tambo, en la provincia de Satipo, región Junín.",
-    "La organización indígena advirtió que algunos menores presentarían condiciones de salud que requieren atención médica oportuna y pidió la intervención urgente de las autoridades sanitarias."
-   ]
+   "procedencia": "directa"
   },
   {
    "id": "ef6f4d4310",
@@ -9494,46 +9327,6 @@ window.NOTICIAS = {
    "procedencia": "directa"
   },
   {
-   "id": "814b492570",
-   "sector": "nino",
-   "titulo": "El Niño Costero continuará hasta fines de otoño de 2027: ENFEN advierte lluvias intensas y temperaturas récord",
-   "resumen": "",
-   "fuente": "La Razón",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNSXN2NHRia08yWXZraWp4ZUwxeF8zU3JDTmxNb0NFZXhVcnlwSXc4ZVFINHpXSUt4OVp2enY5U21RazFieEk4S1U2eTZiREVkd2g5NHFiM0tFOXZRY1VGRWx2QXNiUW1MazdXVC1sV09nVllJN2hJckh0bm0wUXZNelMyMWgwb2xWSDdYTHpydHBkRkFSVDIxeE5SRkxfNjBPQnVFMExxaDE5UlU4UExZY0d1akxjdi10eEplV2RMaE1EazhMMzJJRg?oc=5",
-   "fecha": "2026-10-31T07:00:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa"
-  },
-  {
-   "id": "a6e6a19c3e",
-   "sector": "nino",
-   "titulo": "El Niño será extraordinario hasta febrero del 2027: ¿qué regiones tendrán más lluvias?",
-   "resumen": "",
-   "fuente": "Gestión",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNYlJMeGx4blVaSlEtQ3NBd3NWc21yNjdBeHZtblhSdWtkcGxtdERaYXl2SzhUeWlHTEtHNVVKUWJjRklDeDE4blMtbGE0dlpuaHhpdEhXaHJ0RTdXZERnUnFtTURSNERxMUFYd0VKcTJIRnB4bHVlanVrV1FOeDEzTi13V3I0Sm80S3J3aS1OMGh6Nk5XeldwM240dTZ4R2ZWZmFudGdIWnN2NGdyanE2cEp0bVNBdWc?oc=5",
-   "fecha": "2026-10-31T07:00:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa"
-  },
-  {
    "id": "9211b5a28e",
    "sector": "nino",
    "titulo": "ENFEN advierte que El Niño Costero se extenderá hasta fines de otoño de 2027 -",
@@ -9640,6 +9433,26 @@ window.NOTICIAS = {
    "resumen": "",
    "fuente": "TVPerú",
    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQQkxmMVhfbnFERFMxOERKSGpmeHVmeWh6cmZRcy1ZRl9UR0c5WkgxTVBTbXUxYnpvN2ZvbE1sTS0wc1dxQXRHbGx5WDN1bDNfRFI0YVpOeHMxdzdRNW9mT2RLdnVScERjZlJ0SW82My1iSXUycmdKWjI2MllIRkNhY0tHZm5QM3BQMjRDUG9mT3JIbkxzdFRadVJGNjNNM2xkTDEzNlFfQzJ2LWZVc0ZZdlFBRVZWSklkQm9mdTluLWRyVW1abzFaTGktMkE?oc=5",
+   "fecha": "2026-10-30T07:00:00Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa"
+  },
+  {
+   "id": "379f0a8ee8",
+   "sector": "nino",
+   "titulo": "El Niño Costero seguirá hasta 2027: ENFEN alerta magnitud extraordinaria hasta febrero",
+   "resumen": "",
+   "fuente": "Diario Expreso",
+   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQMXFhdkpaWGVkTXhoUVdHV3BVSkFqRkF6SktESlo2Mm9SLWxha0R0TFVxS1FoMHNTYWhoZy05UmdRMHRMVEVSWmRNZGhNX2w5Yk9NempUV0l1elc2djNYcWl1ZEpRM1ZJUF9FUjh4X09lZjljQVRpVWNxS056RTBLZVJKNTRZRG03bWNxaG9od2NZUmtVRjN0RDBGZFVfQ3lvOTk1WXpaMUl4VHZ2Ri1tTUc4U3ZjRjN1Ync1a20yUU5HYzNWNGUzcktvcUNxT1hXaTlEOHVzekh6NFlyRTFxR2Q2WGpMTzVhQ0NSVGtyaFlINGtBbmxjT2JGeHNBaDlPd0ZfZg?oc=5",
    "fecha": "2026-10-30T07:00:00Z",
    "tipo": "comercial",
    "genero": "noticia",
@@ -10028,9 +9841,9 @@ window.NOTICIAS = {
    "enlace": "https://www.iebschool.com/hub/ai-act-2026-la-ue-retrasa-el-cumplimiento-de-la-ia-de-alto-riesgo-a-diciembre-de-2027/"
   },
   "ia-infra": {
-   "url": "https://i0.wp.com/fourweekmba.com/wp-content/uploads/2026/10/daily-roundup-12-oct-2026-ai-chips-racks-large-loads.png?fit=2400%2C1260&ssl=1",
-   "fuente": "FourWeekMBA",
-   "enlace": "https://fourweekmba.com/ai-daily-roundup-12-oct-2026-ai-chips-racks-large-loads/"
+   "url": "https://news-api.bgov.com/v1/resize-image?url=https%3A%2F%2Fbloomberg-bna-brightspot.s3.us-east-1.amazonaws.com%2F67%2F3a%2F4b4b047c4c0ea9ceab449d6ec699%2F446274991.jpg&width=1200&height=630&fit=cover&removeAnimation=true&crop=3994x1539%2B3%2B188",
+   "fuente": "Bloomberg Government",
+   "enlace": "https://news.bgov.com/bloomberg-government-news/ai-regulation-chip-exports-data-centers-form-2026-tech-fights"
   },
   "deporte": {
    "url": "https://www.infobae.com/resizer/v2/W6XQTQ5TXRAFRCAAPQUSMH2EOE.png?auth=a6d1474aa5efde4b988e04e13a9177f91f5a8ce0e815d138b9ce80329746b2df&smart=true&width=1024&height=512&quality=85",
@@ -10051,10 +9864,6 @@ window.NOTICIAS = {
  "indicadores": {
   "tipo_cambio": {
    "serie": [
-    {
-     "f": "2026-09-29",
-     "v": 3.4451
-    },
     {
      "f": "2026-09-30",
      "v": 3.432
@@ -10170,6 +9979,10 @@ window.NOTICIAS = {
     {
      "f": "2026-11-10",
      "v": 3.4162
+    },
+    {
+     "f": "2026-11-11",
+     "v": 3.4109
     }
    ],
    "fuente": "BCRP",
@@ -10704,26 +10517,10 @@ window.NOTICIAS = {
   "numero": "19-2026",
   "fecha": "2026-10-16",
   "url": "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen",
-  "comprobado": "2026-11-12T13:50:58Z",
+  "comprobado": "2026-11-12T18:57:01Z",
   "ok": true
  },
  "registro": [
-  {
-   "t": "2026-11-08T08:44:27Z",
-   "fuentes_ok": 27,
-   "fuentes": 27,
-   "nuevas": 360,
-   "notas": 322,
-   "descartes": {},
-   "agregador": [
-    "OjoPúblico",
-    "Convoca",
-    "Hildebrandt en sus trece",
-    "La República",
-    "Expreso"
-   ],
-   "sin_datos": []
-  },
   {
    "t": "2026-11-08T11:41:00Z",
    "fuentes_ok": 26,
@@ -11201,6 +10998,22 @@ window.NOTICIAS = {
    "fuentes_ok": 27,
    "fuentes": 27,
    "nuevas": 351,
+   "notas": 322,
+   "descartes": {},
+   "agregador": [
+    "OjoPúblico",
+    "Convoca",
+    "Hildebrandt en sus trece",
+    "La República",
+    "Expreso"
+   ],
+   "sin_datos": []
+  },
+  {
+   "t": "2026-11-12T18:55:52Z",
+   "fuentes_ok": 27,
+   "fuentes": 27,
+   "nuevas": 362,
    "notas": 322,
    "descartes": {},
    "agregador": [
