@@ -413,7 +413,9 @@ function updateCamera(dt) {
 
   const sh = game.fx.shakeAmt
   camera.rotation.set(cp + rand(-1, 1) * sh * 0.022, cy + rand(-1, 1) * sh * 0.022, rand(-1, 1) * sh * 0.015)
-  const fov = lerp(62, 47, aim) + (p.sprinting ? 5 : 0)
+  // En vertical se abre el campo de visión para no perder demasiada vista lateral.
+  const tall = camera.aspect < 1
+  const fov = lerp(tall ? 86 : 62, tall ? 66 : 47, aim) + (p.sprinting ? 5 : 0)
   if (Math.abs(camera.fov - fov) > 0.05) {
     camera.fov = damp(camera.fov, fov, 10, dt)
     camera.updateProjectionMatrix()
@@ -497,6 +499,7 @@ function start() {
   game.hud.show(true)
   game.hud.fade(false)
   game.director.begin()
+  if (game.input.touch && window.innerHeight > window.innerWidth) game.hud.hint('Si puedes girar el teléfono, en horizontal se ve más campo', 5)
   lock()
 }
 
@@ -669,11 +672,7 @@ function update(dt) {
   updateCamera(dt)
   updateSun()
   updateHud(dt)
-  if (touchUi) {
-    touchUi.sync()
-    // En vertical no caben los controles: se pausa hasta girar el teléfono.
-    if (window.innerHeight > window.innerWidth && game.state === 'playing') pause()
-  }
+  if (touchUi) touchUi.sync()
 
   const alive = game.enemies.aliveCount()
   const boss = game.enemies.boss

@@ -14,7 +14,7 @@ cd shooter-cobertura
 python3 -m http.server 8000   # http://localhost:8000
 ```
 
-Funciona en navegadores de escritorio con teclado y ratón, y en móviles y tabletas con controles táctiles (en horizontal). Requiere WebGL.
+Funciona en navegadores de escritorio con teclado y ratón, y en móviles y tabletas con controles táctiles. Requiere WebGL.
 
 | Control | Acción |
 | --- | --- |
@@ -45,7 +45,7 @@ En pantalla táctil los controles aparecen solos:
 | Recarga, Granada, Arma, Golpe | Acciones directas |
 | Avisos en pantalla | Se tocan para cubrirse o interactuar |
 
-Con controles táctiles hay una ayuda de puntería ligera. En vertical el juego se pausa hasta girar el dispositivo.
+Con controles táctiles hay una ayuda de puntería ligera. Se puede jugar en vertical, aunque en horizontal se ve más campo.
 
 ## Contenido
 

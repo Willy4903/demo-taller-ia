@@ -126,7 +126,7 @@
 
   /* ---------- Controles táctiles ---------- */
   :root { --sl: env(safe-area-inset-left, 0px); --sr: env(safe-area-inset-right, 0px); --sb: env(safe-area-inset-bottom, 0px); }
-  #touch, #rotate, .touch-only { display: none; }
+  #touch, .touch-only { display: none; }
   body.touch { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; -webkit-tap-highlight-color: transparent; overscroll-behavior: none; }
   body.touch #game, body.touch #touch { touch-action: none; }
   body.touch #touch { display: block; position: fixed; inset: 0; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
@@ -183,9 +183,13 @@
     .stats b { font-size: 20px; }
   }
   @media (orientation: portrait) {
-    body.touch #rotate { display: flex; position: fixed; inset: 0; z-index: 50; align-items: center; justify-content: center; flex-direction: column; gap: 14px; padding: 24px;
-      background: #05080a; text-align: center; font-size: 18px; letter-spacing: 0.12em; }
-    #rotate b { font-size: 46px; color: var(--teal); }
+    body.touch #objective { max-width: 52vw; }
+    body.touch #boss { top: 92px; width: 78vw; }
+    body.touch #hint { top: 128px; max-width: 88vw; }
+    body.touch #subtitle { top: 186px; bottom: auto; max-width: 88vw; }
+    body.touch #banner { top: 30%; }
+    body.touch #banner h2 { font-size: 26px; letter-spacing: 0.2em; }
+    body.touch #prompt { bottom: calc(290px + var(--sb)); }
   }
 </style>
 </head>
@@ -227,7 +231,6 @@
   <div class="tb" data-act="cover">Cubrir</div>
   <div class="tb" data-act="fire">Fuego</div>
 </div>
-<div id="rotate"><b>⟳</b>Gira el teléfono en horizontal para jugar</div>
 
 <section id="menu" class="screen open">
   <div class="panel">
