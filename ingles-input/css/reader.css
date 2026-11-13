@@ -173,10 +173,10 @@
 /* ------------------------------------------------------------------ Móvil */
 @media (max-width: 1100px) {
   .rd-layout { grid-template-columns: minmax(0, 1fr); }
-  .rd-aside { position: static; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+  .rd-aside { position: static; grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr)); }
 }
 @media (max-width: 700px) {
-  .rd-toolbar { flex-wrap: nowrap; gap: 0.4rem; padding: 0.4rem; border-radius: 999px; }
+  .rd-toolbar { flex-wrap: wrap; gap: 0.4rem; padding: 0.4rem; border-radius: 22px; }
   .rd-hint { display: none; }
   .rd-switch, .rd-pill { font-size: 0.8rem; gap: 0.4rem; padding-right: 0.8rem; white-space: nowrap; }
   .rd-pill { padding-left: 0.7rem; }
@@ -185,6 +185,7 @@
   .rd-switch[aria-checked='true'] .rd-switch-thumb { transform: translateX(16px); }
   .rd-card { border-radius: 20px; }
   .rd .sent-actions { padding-top: 0.35rem; }
+  .rd-mini { width: 44px; height: 44px; }
   .rd-text { font-size: 1.2rem; }
   .rd-player { grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: 'ctrl info speed' 'wave wave wave'; gap: 0.5rem 0.75rem; border-radius: 24px; }
   .rd-ctrl { grid-area: ctrl; gap: 0.2rem; }

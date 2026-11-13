@@ -27,14 +27,14 @@ const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css
       const page = await context.newPage();
       const errors = [];
       page.on('pageerror', error => errors.push(error.message));
-      for (const route of ['', '#/leer', '#/leer/s01', '#/shadowing', '#/tarjetas', '#/hablar', '#/progreso', '#/gramatica', '#/ajustes', '#/inexistente']) {
+      for (const route of ['', '#/leer', '#/leer/s01', '#/shadowing', '#/vocabulario', '#/tarjetas', '#/hablar', '#/progreso', '#/gramatica', '#/ajustes', '#/inexistente']) {
         await page.goto(base + route);
         await page.waitForSelector('h1');
         if (fontFamily) await page.addStyleTag({ content: `:root { --font: '${fontFamily}', sans-serif; }` });
         assert.ok(await page.evaluate(expected => document.documentElement.scrollWidth <= expected, width), `${width}px ${route}: horizontal overflow`);
         assert.equal(await page.locator('h1').count(), 1);
         if (width < 600 && route === '#/leer/s01') {
-          const targets = await page.locator('main .icon-btn.small').evaluateAll(elements =>
+          const targets = await page.locator('main .rd-mini, main .icon-btn.small').evaluateAll(elements =>
             elements.map(element => {
               const { width, height } = element.getBoundingClientRect();
               return { width, height };
@@ -50,16 +50,15 @@ const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css
       assert.equal(new URL(page.url()).hash, '#/leer', 'skip link preserves current lesson');
       assert.equal(await page.evaluate(() => document.activeElement.id), 'main');
       await page.goto(base);
-      await page.locator('.learning-path').first().click();
-      await page.waitForSelector('.list-card');
-      assert.equal(new URL(page.url()).hash, '#/leer', 'learning card opens stories');
+      await page.locator('.story-card').first().click();
+      await page.waitForSelector('.rd-card');
+      assert.match(new URL(page.url()).hash, /^#\/leer\/s\d+$/, 'story card opens the reader');
       await page.goto(base);
-      await page.locator('#theme-btn').click();
-      assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
+      assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark', 'dark design system');
       assert.ok(await page.evaluate(expected => document.documentElement.scrollWidth <= expected, width));
       assert.deepEqual(errors, []);
       await context.close();
-      console.log(`PASS ${width}px, font ${fontScale * 100}%${fontFamily ? ` ${fontFamily}` : ''}: 10 routes, touch navigation, skip link, dark theme, no overflow or JS errors`);
+      console.log(`PASS ${width}px, font ${fontScale * 100}%${fontFamily ? ` ${fontFamily}` : ''}: 11 routes, touch targets, skip link, story cards, dark theme, no overflow or JS errors`);
     }
   } finally {
     if (browser) await browser.close();
