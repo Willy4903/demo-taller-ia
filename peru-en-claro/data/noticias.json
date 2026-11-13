@@ -1,15 +1,15 @@
 {
- "generado": "2026-11-13T15:22:50Z",
+ "generado": "2026-11-13T15:24:30Z",
  "modo": "automatico",
  "estado_fuentes": {
   "IDL-Reporteros": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.idl-reporteros.pe/feed/",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 1,
    "ultima_nota": "2026-10-24T01:18:47Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "OjoPúblico": {
    "ok": true,
@@ -17,10 +17,10 @@
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:ojo-publico.com+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 8,
    "ultima_nota": "2026-11-12T22:45:50Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "Convoca": {
    "ok": true,
@@ -28,10 +28,10 @@
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:convoca.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 4,
    "ultima_nota": "2026-11-12T08:00:00Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "Hildebrandt en sus trece": {
    "ok": true,
@@ -39,73 +39,73 @@
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:hildebrandtensustrece.com+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 15,
    "ultima_nota": "2026-11-13T07:15:13Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "Wayka": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://wayka.pe/feed/",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 5,
    "ultima_nota": "2026-11-12T20:54:25Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "La Mula": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.lamula.pe/feed/",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 15,
    "ultima_nota": "2026-11-12T20:46:00Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "Salud con Lupa": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://saludconlupa.com/feed/",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 15,
    "ultima_nota": "2026-11-10T23:44:00Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "Mongabay Latam": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://es.mongabay.com/feed/",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 15,
    "ultima_nota": "2026-11-13T14:00:55Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "Caretas": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://caretas.pe/feed/",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 15,
    "ultima_nota": "2026-11-13T15:07:16Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "El Comercio": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 15,
    "ultima_nota": "2026-11-13T15:34:00Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "Gestión": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://gestion.pe/arc/outboundfeeds/rss/?outputType=xml",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 15,
    "ultima_nota": "2026-11-13T15:16:50Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "La República": {
    "ok": true,
@@ -113,28 +113,28 @@
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:larepublica.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 15,
    "ultima_nota": "2026-11-13T01:05:59Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "RPP": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://rpp.pe/feed",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 15,
    "ultima_nota": "2026-11-13T15:15:22Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "Infobae Perú": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/category/peru/",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 15,
    "ultima_nota": "2026-11-13T15:14:48Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "Expreso": {
    "ok": true,
@@ -142,118 +142,118 @@
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:expreso.com.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 403: Forbidden",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 15,
    "ultima_nota": "2026-11-13T09:03:07Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "El Búho": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://elbuho.pe/feed/",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 15,
    "ultima_nota": "2026-11-13T15:21:20Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "BBC Mundo": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://feeds.bbci.co.uk/mundo/rss.xml",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 15,
    "ultima_nota": "2026-11-13T15:16:21Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "DW Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://rss.dw.com/xml/rss-sp-all",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 15,
    "ultima_nota": "2026-11-13T14:41:00Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "El País América": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 15,
    "ultima_nota": "2026-11-13T15:16:25Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "France 24 Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.france24.com/es/rss",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 15,
    "ultima_nota": "2026-11-13T15:15:23Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "ONU Noticias": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.un.org/feed/subscribe/es/news/all/rss.xml",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 15,
    "ultima_nota": "2026-11-12T12:00:00Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "The New York Times en Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=site:nytimes.com/es+when:7d&hl=es-419&gl=US&ceid=US:es-419",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 15,
    "ultima_nota": "2026-11-13T10:04:44Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "The Guardian": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.theguardian.com/world/rss",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 15,
    "ultima_nota": "2026-11-13T09:41:22Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "The New Yorker": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.newyorker.com/feed/everything",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 15,
    "ultima_nota": "2026-11-13T15:02:20Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "Google Noticias · IA en el Perú": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22inteligencia+artificial%22+Per%C3%BA+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 15,
    "ultima_nota": "2026-11-12T21:12:26Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "Google Noticias · El Niño": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22Fen%C3%B3meno+El+Ni%C3%B1o%22+OR+%22Ni%C3%B1o+costero%22+ENFEN+when:14d&hl=es-419&gl=PE&ceid=PE:es-419",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 15,
    "ultima_nota": "2026-11-10T05:50:27Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   },
   "Google Noticias · IA en el mundo": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22inteligencia+artificial%22+(OpenAI+OR+Anthropic+OR+Google+OR+regulaci%C3%B3n+OR+NVIDIA)+when:7d&hl=es-419&gl=US&ceid=US:es-419",
-   "comprobado": "2026-11-13T15:22:50Z",
+   "comprobado": "2026-11-13T15:24:30Z",
    "n": 15,
    "ultima_nota": "2026-11-13T14:20:37Z",
-   "ultimo_ok": "2026-11-13T15:22:50Z"
+   "ultimo_ok": "2026-11-13T15:24:30Z"
   }
  },
  "items": [
@@ -2139,7 +2139,7 @@
    "fecha": "2026-11-13T14:41:00Z",
    "tipo": "internacional",
    "genero": "noticia",
-   "imagen": null,
+   "imagen": "https://static.dw.com/image/70880725_6.jpg",
    "geografia": {
     "version": 1,
     "ambito": "pendiente",
@@ -2151,8 +2151,7 @@
    "sintesis": "Hinchas se imponen y logran que el club de la Bundesliga finiquite un acuerdo comercial firmado en 2024.",
    "puntos": [
     "Hinchas se imponen y logran que el club de la Bundesliga finiquite un acuerdo comercial firmado en 2024."
-   ],
-   "imagen_intentos": 5
+   ]
   },
   {
    "id": "9bcf7bbbca",
@@ -3425,7 +3424,7 @@
    "fecha": "2026-11-13T12:13:00Z",
    "tipo": "internacional",
    "genero": "noticia",
-   "imagen": null,
+   "imagen": "https://static.dw.com/image/79938514_6.jpg",
    "geografia": {
     "version": 1,
     "ambito": "mundo",
@@ -3437,8 +3436,7 @@
    "sintesis": "La primera cumbre dedicada exclusivamente a la inteligencia artificial (IA) tiene lugar en Dublín.",
    "puntos": [
     "La primera cumbre dedicada exclusivamente a la inteligencia artificial (IA) tiene lugar en Dublín."
-   ],
-   "imagen_intentos": 5
+   ]
   },
   {
    "id": "f4957ddb5c",
@@ -3669,7 +3667,7 @@
    "fecha": "2026-11-13T10:09:00Z",
    "tipo": "internacional",
    "genero": "noticia",
-   "imagen": null,
+   "imagen": "https://static.dw.com/image/79938253_6.jpg",
    "geografia": {
     "version": 1,
     "ambito": "mundo",
@@ -3681,8 +3679,7 @@
    "sintesis": "Microsoft ha descartado que la caída mundial de su servicio de correo Outlook se deba a una acción maliciosa.",
    "puntos": [
     "Microsoft ha descartado que la caída mundial de su servicio de correo Outlook se deba a una acción maliciosa."
-   ],
-   "imagen_intentos": 5
+   ]
   },
   {
    "id": "5bde312ed2",
@@ -3703,7 +3700,6 @@
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "url_medio": "https://www.nytimes.com/es/2026/11/13/espanol/ciencia-y-tecnologia/vida-extraterrestre-acido-sulfurico.html",
    "sintesis": "Conocido sobre todo por su uso para disolver cadáveres en bañeras, el ácido sulfúrico podría ser el elixir de la vida en otros mundos. Today’s Paper Ciencia y Tecnología | ¿Podría prosperar la vida extraterrestre en ácido en lugar de en agua? https://www.nytimes.com/es/2026/11/13/espanol/ciencia-y-tecnologia/vida-extraterrestre-acido-sulfurico.html Compartir artículo completo Advertisement",
    "puntos": [
     "Conocido sobre todo por su uso para disolver cadáveres en bañeras, el ácido sulfúrico podría ser el elixir de la vida en otros mundos.",
@@ -3716,7 +3712,8 @@
      "t": "cantidad",
      "c": "…y sin trabajos de verano a la vista, Max Seager, de 17 años, se puso manos a la obra para recrear Venus en el porche…"
     }
-   ]
+   ],
+   "url_medio": "https://www.nytimes.com/es/2026/11/13/espanol/ciencia-y-tecnologia/vida-extraterrestre-acido-sulfurico.html"
   },
   {
    "id": "52ae317976",
@@ -3838,7 +3835,7 @@
    "fecha": "2026-11-13T09:22:00Z",
    "tipo": "internacional",
    "genero": "noticia",
-   "imagen": null,
+   "imagen": "https://static.dw.com/image/76972792_6.jpg",
    "geografia": {
     "version": 1,
     "ambito": "pendiente",
@@ -3851,8 +3848,7 @@
    "puntos": [
     "El fabricante alemán de drones Quantum Systems confirmó que sufrió un ciberataque a finales de octubre de 2026.",
     "La compañía asegura haber neutralizado la amenaza y que no existe riesgo para los usuarios de sus sistemas."
-   ],
-   "imagen_intentos": 5
+   ]
   },
   {
    "id": "1b8d3c471b",
@@ -3982,7 +3978,6 @@
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "url_medio": "https://es-us.finanzas.yahoo.com/noticias/congreso-eeuu-convoca-ceo-nvidia-085449415.html",
    "sintesis": "CST 4 min de lectura NVDA Jensen Huang, el exdirector general de Nvidia, hasta hace poco la compañía de chips para inteligencia artificial más valiosa del mundo, fue convocado en diciembre ante una comisión del Congreso de Estados Unidos para explicar su relación con una presunta espía china que forzó su dimisión. El caso ha restado casi medio billón de dólares a la capitalización bursátil de Nvidia, ha suscitado temores sobre la seguridad nacional estadounidense y ha sumido a la industria de la IA en la incertidumbre.",
    "puntos": [
     "CST 4 min de lectura NVDA Jensen Huang, el exdirector general de Nvidia, hasta hace poco la compañía de chips para inteligencia artificial más valiosa del mundo, fue convocado en diciembre ante una comisión del Congreso de Estados Unidos para explicar su relación con una presunta espía china que forzó su dimisión.",
@@ -4014,7 +4009,8 @@
      "t": "fecha",
      "c": "…para entrevistar a puerta cerrada a Huang, de 63 años el 1 de diciembre, bajo amenaza de citación judicial.."
     }
-   ]
+   ],
+   "url_medio": "https://es-us.finanzas.yahoo.com/noticias/congreso-eeuu-convoca-ceo-nvidia-085449415.html"
   },
   {
    "id": "6465765782",
@@ -4037,7 +4033,7 @@
    "procedencia": "agregador",
    "via": "Google Noticias",
    "url_medio": "https://www.expreso.com.pe/opinion/zelda-economia-moral-y-participacion-en-la-cultura/",
-   "imagen_intentos": 5
+   "imagen_intentos": 6
   },
   {
    "id": "bd58e23c18",
@@ -4385,7 +4381,7 @@
    "ambito": "pendiente",
    "procedencia": "directa",
    "url_medio": "https://www.univision.com/noticias/tecnologia/jensen-huang-se-va-de-nvidia-pero-que-implica-su-salida-para-la-industria-de-la-inteligencia-artificial",
-   "imagen_intentos": 5
+   "imagen_intentos": 6
   },
   {
    "id": "af7d1fa266",
@@ -4421,7 +4417,7 @@
    "fecha": "2026-11-13T04:51:00Z",
    "tipo": "internacional",
    "genero": "noticia",
-   "imagen": null,
+   "imagen": "https://static.dw.com/image/79686021_6.jpg",
    "geografia": {
     "version": 1,
     "ambito": "mundo",
@@ -4433,8 +4429,7 @@
    "sintesis": "Autoridades iraníes afirman que fue en respuesta a un ataque anterior por parte de EE.UU. contra una torre de telecomunicaciones al servicio de Teherán.",
    "puntos": [
     "Autoridades iraníes afirman que fue en respuesta a un ataque anterior por parte de EE.UU. contra una torre de telecomunicaciones al servicio de Teherán."
-   ],
-   "imagen_intentos": 5
+   ]
   },
   {
    "id": "73dcc9c0b4",
@@ -4684,7 +4679,7 @@
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "imagen_intentos": 5,
+   "imagen_intentos": 6,
    "url_medio": "https://www.tvperu.gob.pe/noticias/nacionales/inseguridad-ciudadana-como-la-inteligencia-artificial-podria-combatir-la"
   },
   {
@@ -4697,7 +4692,7 @@
    "fecha": "2026-11-13T03:56:00Z",
    "tipo": "internacional",
    "genero": "noticia",
-   "imagen": null,
+   "imagen": "https://static.dw.com/image/56357924_6.jpg",
    "geografia": {
     "version": 1,
     "ambito": "mundo",
@@ -4709,8 +4704,7 @@
    "sintesis": "La empresa atribuyó la interrupción a una “carga elevada” en su infraestructura, la cual afectó a los usuarios en todo el continente americano.",
    "puntos": [
     "La empresa atribuyó la interrupción a una “carga elevada” en su infraestructura, la cual afectó a los usuarios en todo el continente americano."
-   ],
-   "imagen_intentos": 5
+   ]
   },
   {
    "id": "974f264b5f",
@@ -4850,7 +4844,7 @@
    "fecha": "2026-11-13T02:27:00Z",
    "tipo": "internacional",
    "genero": "noticia",
-   "imagen": null,
+   "imagen": "https://static.dw.com/image/79883438_6.jpg",
    "geografia": {
     "version": 1,
     "ambito": "mundo",
@@ -4862,8 +4856,7 @@
    "sintesis": "El mandatario estadounidense dijo que los tiempos de negociación de la guerra que desató junto con Israel “ya quedaron atrás”.",
    "puntos": [
     "El mandatario estadounidense dijo que los tiempos de negociación de la guerra que desató junto con Israel “ya quedaron atrás”."
-   ],
-   "imagen_intentos": 5
+   ]
   },
   {
    "id": "f3ac294383",
@@ -5014,7 +5007,7 @@
    "fecha": "2026-11-13T01:25:00Z",
    "tipo": "internacional",
    "genero": "noticia",
-   "imagen": null,
+   "imagen": "https://static.dw.com/image/78176094_6.jpg",
    "geografia": {
     "version": 1,
     "ambito": "mundo",
@@ -5026,8 +5019,7 @@
    "sintesis": "El grupo armado proiraní de Yemen dijo que atacó con “éxito” un oleoducto, una terminal petrolera y una instalación en Riad.",
    "puntos": [
     "El grupo armado proiraní de Yemen dijo que atacó con “éxito” un oleoducto, una terminal petrolera y una instalación en Riad."
-   ],
-   "imagen_intentos": 5
+   ]
   },
   {
    "id": "24fbf7d630",
@@ -5157,7 +5149,7 @@
    "fecha": "2026-11-13T00:14:00Z",
    "tipo": "internacional",
    "genero": "noticia",
-   "imagen": null,
+   "imagen": "https://static.dw.com/image/79935761_6.jpg",
    "geografia": {
     "version": 1,
     "ambito": "mundo",
@@ -5169,8 +5161,7 @@
    "sintesis": "El mandatario ucraniano dijo que los europeos estarán en \"el equipo negociador\" de la próxima negociación con Moscú, que busca poner fin a la guerra desatada por la invasión rusa.",
    "puntos": [
     "El mandatario ucraniano dijo que los europeos estarán en \"el equipo negociador\" de la próxima negociación con Moscú, que busca poner fin a la guerra desatada por la invasión rusa."
-   ],
-   "imagen_intentos": 5
+   ]
   },
   {
    "id": "4b0246868c",
@@ -5332,13 +5323,13 @@
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "url_medio": "https://www.nytimes.com/es/2026/11/12/espanol/america-latina/zuany-portillo-fiscal-chihuahua-cia.html",
    "sintesis": "Guillermo Zuany Portillo, quien enfrenta una orden de detención en México tras permitir la entrada de agentes de la CIA a Chihuahua, está bajo protección del gobierno de EE. UU., según funcionarios mexicanos y estadounidenses.",
    "puntos": [
     "Guillermo Zuany Portillo, quien enfrenta una orden de detención en México tras permitir la entrada de agentes de la CIA a Chihuahua, está bajo protección del gobierno de EE.",
     "UU., según funcionarios mexicanos y estadounidenses.",
     "Un exfiscal mexicano que enfrenta una orden de detención tras haber permitido que agentes de la Agencia Central de Inteligencia (CIA, por su sigla en inglés) operaran en su estado, ha huido a Estados Unidos y se encuentra ahora bajo la protección del gobierno estadounidense, según funcionarios estadounidenses y mexicanos."
-   ]
+   ],
+   "url_medio": "https://www.nytimes.com/es/2026/11/12/espanol/america-latina/zuany-portillo-fiscal-chihuahua-cia.html"
   },
   {
    "id": "7d3ad4b921",
@@ -5409,13 +5400,13 @@
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "url_medio": "https://www.nytimes.com/es/2026/11/12/espanol/estados-unidos/victimas-edificio-nueva-york.html",
    "sintesis": "Al menos ocho personas han muerto después de que un edificio de tres pisos cayó sobre una obra vecina el miércoles por la tarde. Compartir artículo completo Por Andy Newman Ashley Southall y Chelsia Rose Marcius",
    "puntos": [
     "Al menos ocho personas han muerto después de que un edificio de tres pisos cayó sobre una obra vecina el miércoles por la tarde.",
     "Compartir artículo completo Por Andy Newman Ashley Southall y Chelsia Rose Marcius",
     "Las ocho personas que murieron cuando un edificio en Brooklyn se derrumbó sobre una obra de construcción el miércoles son una muestra representativa de Flatbush, un vecindario vibrante de rápido crecimiento."
-   ]
+   ],
+   "url_medio": "https://www.nytimes.com/es/2026/11/12/espanol/estados-unidos/victimas-edificio-nueva-york.html"
   },
   {
    "id": "61babb0b19",
@@ -5444,7 +5435,7 @@
     "Se ha especializado en gestión y políticas públicas orientadas al fortalecimiento de la institucionalidad ambiental en el país, legislación ambiental sectorial y regulación de proyectos de industrias extractivas e infraestructura, con énfasis en su desarrollo compatible con la conservación de los recursos naturales y las áreas naturales protegidas."
    ],
    "url_medio": "https://ojo-publico.com/autor/IsabelCalle",
-   "imagen_intentos": 5
+   "imagen_intentos": 6
   },
   {
    "id": "fdf06be197",
@@ -5546,7 +5537,7 @@
    "fecha": "2026-11-12T22:15:00Z",
    "tipo": "internacional",
    "genero": "noticia",
-   "imagen": null,
+   "imagen": "https://static.dw.com/image/70413142_6.jpg",
    "geografia": {
     "version": 1,
     "ambito": "mundo",
@@ -5558,8 +5549,7 @@
    "sintesis": "La firma enfrenta una caída de sus beneficios por el desplome de sus ventas en el mercado chino y el alto costo de producción en el país europeo.",
    "puntos": [
     "La firma enfrenta una caída de sus beneficios por el desplome de sus ventas en el mercado chino y el alto costo de producción en el país europeo."
-   ],
-   "imagen_intentos": 5
+   ]
   },
   {
    "id": "fd42d6aab1",
@@ -5621,7 +5611,7 @@
    "fecha": "2026-11-12T21:40:25Z",
    "tipo": "comercial",
    "genero": "noticia",
-   "imagen": null,
+   "imagen": "https://imgmedia.larepublica.pe/1200x735/larepublica/original/2026/11/12/6af61c5f1e5e26eb840c289f.jpg",
    "geografia": {
     "version": 1,
     "ambito": "peru",
@@ -5631,8 +5621,6 @@
    "ambito": "peru",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "url_medio": "https://larepublica.pe/politica/2026/11/12/jee-desconocen-acuerdo-del-jne-en-sjl-y-ferrenafe-dejan-vacante-el-cargo-de-alcalde-en-casos-de-reelecion-encubierta-hnews-853536",
-   "imagen_intentos": 5,
    "sintesis": "Jesús Maldonado y Polanski Carmona Cruz, ambos de Somos Perú y alcaldes en el periodo pasado, quedan como primeros regidores de sus localidades. El JNE señaló que debe proclamarse alcalde al primer regidor habilitado para serlo.",
    "puntos": [
     "Jesús Maldonado y Polanski Carmona Cruz, ambos de Somos Perú y alcaldes en el periodo pasado, quedan como primeros regidores de sus localidades.",
@@ -5650,7 +5638,8 @@
      "t": "fecha",
      "c": "…de Elecciones, mediante una resolución publicada el 2 de noviembre, estableció una distinción entre la posibilidad de…"
     }
-   ]
+   ],
+   "url_medio": "https://larepublica.pe/politica/2026/11/12/jee-desconocen-acuerdo-del-jne-en-sjl-y-ferrenafe-dejan-vacante-el-cargo-de-alcalde-en-casos-de-reelecion-encubierta-hnews-853536"
   },
   {
    "id": "6617fb9c84",
@@ -5925,7 +5914,7 @@
    "fecha": "2026-11-12T21:02:00Z",
    "tipo": "internacional",
    "genero": "noticia",
-   "imagen": null,
+   "imagen": "https://static.dw.com/image/79931930_6.jpg",
    "geografia": {
     "version": 1,
     "ambito": "mundo",
@@ -5937,8 +5926,7 @@
    "sintesis": "El dirigente del Kremlin aseguró desear una “paz eterna” con su vecino, al que invadió a gran escala en 2022, pero dijo a enviados estadounidenses que no renunciará a sus exigencias territoriales.",
    "puntos": [
     "El dirigente del Kremlin aseguró desear una “paz eterna” con su vecino, al que invadió a gran escala en 2022, pero dijo a enviados estadounidenses que no renunciará a sus exigencias territoriales."
-   ],
-   "imagen_intentos": 5
+   ]
   },
   {
    "id": "95436a873b",
@@ -5993,7 +5981,7 @@
    "fecha": "2026-11-12T20:48:00Z",
    "tipo": "internacional",
    "genero": "noticia",
-   "imagen": null,
+   "imagen": "https://static.dw.com/image/79929145_6.jpg",
    "geografia": {
     "version": 1,
     "ambito": "mundo",
@@ -6006,8 +5994,7 @@
    "puntos": [
     "En la Franja, azotada por la guerra, fuertes lluvias inundaron y dañaron miles de tiendas.",
     "¿Podría la presión de la Junta de Paz de Trump ayudar a aliviar la crisis humanitaria?"
-   ],
-   "imagen_intentos": 5
+   ]
   },
   {
    "id": "310ccd9b91",
@@ -6106,7 +6093,7 @@
    "fecha": "2026-11-12T20:40:00Z",
    "tipo": "internacional",
    "genero": "noticia",
-   "imagen": null,
+   "imagen": "https://static.dw.com/image/75665619_6.jpg",
    "geografia": {
     "version": 1,
     "ambito": "mundo",
@@ -6127,8 +6114,7 @@
      "t": "escala",
      "c": "22 millones de personas en Alemania tienen trasfondo migratorio."
     }
-   ],
-   "imagen_intentos": 5
+   ]
   },
   {
    "id": "ae2b3e7c29",
@@ -6158,7 +6144,7 @@
     }
    ],
    "url_medio": "https://www.expreso.com.pe/politica/congreso-debatira-proyectos-de-presupuesto-2027-desde-el-17-de-noviembre-conozca-el-cronograma-miguel-angel-torres-bicameral-economia-noticia/1331392/",
-   "imagen_intentos": 5
+   "imagen_intentos": 6
   },
   {
    "id": "af0de33786",
@@ -6262,7 +6248,7 @@
    "fecha": "2026-11-12T18:32:05Z",
    "tipo": "comercial",
    "genero": "noticia",
-   "imagen": null,
+   "imagen": "https://imgmedia.larepublica.pe/1200x735/larepublica/original/2026/11/12/6af60326487dc75cba084fef.jpg",
    "geografia": {
     "version": 1,
     "ambito": "peru",
@@ -6284,8 +6270,7 @@
      "c": "Psoriasis en Perú: tratamiento puede costar más de S/60.000 al año y reducir hasta 29,4% la productividad laboral."
     }
    ],
-   "url_medio": "https://larepublica.pe/economia/2026/11/12/psoriasis-en-peru-tratamiento-puede-costar-mas-de-s60000-al-ano-y-reducir-hasta-294-la-productividad-laboral-hnews-711132",
-   "imagen_intentos": 5
+   "url_medio": "https://larepublica.pe/economia/2026/11/12/psoriasis-en-peru-tratamiento-puede-costar-mas-de-s60000-al-ano-y-reducir-hasta-294-la-productividad-laboral-hnews-711132"
   },
   {
    "id": "0dfc10b74c",
@@ -6684,7 +6669,7 @@
    "procedencia": "agregador",
    "via": "Google Noticias",
    "url_medio": "https://www.expreso.com.pe/economia/billeteras-digitales-el-reto-de-rastrear-el-dinero-lima-noticia-peru/1331264/",
-   "imagen_intentos": 5
+   "imagen_intentos": 6
   },
   {
    "id": "0914499dbd",
@@ -6738,7 +6723,6 @@
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "url_medio": "https://www.nytimes.com/es/2026/11/12/espanol/negocios/jensen-huang-nvidia.html",
    "sintesis": "Huang ya enfrenta escrutinio por una aventura con una mujer que la inteligencia estadounidense determinó que era una espía de China. Jensen Huang, el líder de Nvidia que está bajo investigación por una aventura con una mujer que la inteligencia estadounidense determinó que es una espía china, también tuvo una relación extramarital con una ejecutiva que le rinde cuentas, según cinco personas que trabajaron en la empresa.",
    "puntos": [
     "Huang ya enfrenta escrutinio por una aventura con una mujer que la inteligencia estadounidense determinó que era una espía de China.",
@@ -6751,7 +6735,8 @@
      "t": "cantidad",
      "c": "Huang, de 63 años, y Powell, de 48, fueron captados en video mostrándose…"
     }
-   ]
+   ],
+   "url_medio": "https://www.nytimes.com/es/2026/11/12/espanol/negocios/jensen-huang-nvidia.html"
   },
   {
    "id": "d039e38dcf",
@@ -7040,7 +7025,7 @@
    "ambito": "pendiente",
    "procedencia": "directa",
    "url_medio": "https://sis.gov.eg/es/centro-de-informacion/noticias-exclusivas/el-ministro-de-inversi%C3%B3n-analiza-con-nvidia-oportunidades-de-cooperaci%C3%B3n-en-el-%C3%A1mbito-de-la-inteligencia-artificial/",
-   "imagen_intentos": 5
+   "imagen_intentos": 6
   },
   {
    "id": "84a8967326",
@@ -7407,8 +7392,8 @@
      "c": "Caso El Frontón lleva 40 años sin resolverse y enfrenta a Humberto Abanto y Carlos Rivera este jueves en el TC."
     }
    ],
-   "imagen_intentos": 5,
-   "url_medio": "https://www.expreso.com.pe/en-portada/record-de-justicia-peruana-caso-el-fronton-lleva-40-anos-sin-resolverse-y-enfrenta-a-humberto-abanto-y-carlos-rivera-este-jueves-en-el-tc-noticia/1331166/"
+   "url_medio": "https://www.expreso.com.pe/en-portada/record-de-justicia-peruana-caso-el-fronton-lleva-40-anos-sin-resolverse-y-enfrenta-a-humberto-abanto-y-carlos-rivera-este-jueves-en-el-tc-noticia/1331166/",
+   "imagen_intentos": 6
   },
   {
    "id": "2a840204f7",
@@ -7566,7 +7551,6 @@
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "url_medio": "https://www.nytimes.com/es/2026/11/11/espanol/america-latina/papa-leon-peru-fujimori.html",
    "sintesis": "Cuando el papa era un joven sacerdote en Trujillo, en el norte de Perú, Alberto Fujimori disolvió el Congreso y suspendió la Constitución. En ese entonces, ayudó a organizar protestas a favor de la democracia.",
    "puntos": [
     "Cuando el papa era un joven sacerdote en Trujillo, en el norte de Perú, Alberto Fujimori disolvió el Congreso y suspendió la Constitución.",
@@ -7579,7 +7563,8 @@
      "t": "cantidad",
      "c": "…por la tarde y llegó al último país de su gira de 12 días por Sudamérica."
     }
-   ]
+   ],
+   "url_medio": "https://www.nytimes.com/es/2026/11/11/espanol/america-latina/papa-leon-peru-fujimori.html"
   },
   {
    "id": "00405cc5e6",
@@ -7771,7 +7756,6 @@
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "url_medio": "https://www.nytimes.com/es/2026/11/11/espanol/negocios/nvidia-jensen-huang.html",
    "sintesis": "Huang ha estado bajo escrutinio por una aventura con una mujer que, se dice, es una espía china, así como por una relación con una ejecutiva de su empresa de chips de IA. La junta directiva de Nvidia estaba reunida el miércoles para discutir el futuro de Jensen Huang, el director ejecutivo de la empresa, según dos personas con conocimiento de la situación, tras las revelaciones de que tuvo un amorío con una ejecutiva que es su subordinada, así como con una mujer a la que la inteligencia de Estados Unidos ha identificado como una espía china.",
    "puntos": [
     "Huang ha estado bajo escrutinio por una aventura con una mujer que, se dice, es una espía china, así como por una relación con una ejecutiva de su empresa de chips de IA.",
@@ -7783,7 +7767,8 @@
      "t": "cantidad",
      "c": "…han sido tan sinónimos de sus empresas como Huang, de 63 años."
     }
-   ]
+   ],
+   "url_medio": "https://www.nytimes.com/es/2026/11/11/espanol/negocios/nvidia-jensen-huang.html"
   },
   {
    "id": "76b396cd39",
@@ -8111,13 +8096,13 @@
    "ambito": "pendiente",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "url_medio": "https://larepublica.pe/economia/2026/11/11/leon-xiv-la-economia-debe-estar-al-servicio-de-las-personas-y-las-empresas-generar-empleo-digno-hnews-605583",
    "sintesis": "El pontífice cuestionó que las ganancias sean el único criterio para medir el éxito empresarial y pidió que el capital contribuya al bienestar de los trabajadores. También advirtió que la inteligencia artificial y la automatización sin regulación pueden poner en riesgo puestos de trabajo.",
    "puntos": [
     "El pontífice cuestionó que las ganancias sean el único criterio para medir el éxito empresarial y pidió que el capital contribuya al bienestar de los trabajadores.",
     "También advirtió que la inteligencia artificial y la automatización sin regulación pueden poner en riesgo puestos de trabajo.",
     "\"El ser humano es el autor, el centro y el fin de toda la vida económico-social y por tanto la economía debe estar al servicio de la persona, y no la persona al servicio de la economía\", afirmó en la Universidad Católica Argentina, en Buenos Aires, durante su viaje apostólico por Sudamérica."
-   ]
+   ],
+   "url_medio": "https://larepublica.pe/economia/2026/11/11/leon-xiv-la-economia-debe-estar-al-servicio-de-las-personas-y-las-empresas-generar-empleo-digno-hnews-605583"
   },
   {
    "id": "2409ce9fd3",
@@ -8292,14 +8277,13 @@
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "url_medio": "https://www.nytimes.com/es/2026/11/11/espanol/estilos-de-vida/antidepresivos-fluoxetina-escitalopram.html",
    "sintesis": "Los nuevos datos pueden beneficiar a las personas que desean comenzar a tomar un antidepresivo y quieren reducir sus opciones. Today’s Paper Estilos de Vida | Un nuevo estudio compara la eficacia a largo plazo de 21 antidepresivos https://www.nytimes.com/es/2026/11/11/espanol/estilos-de-vida/antidepresivos-fluoxetina-escitalopram.html Compartir artículo completo Advertisement",
    "puntos": [
     "Los nuevos datos pueden beneficiar a las personas que desean comenzar a tomar un antidepresivo y quieren reducir sus opciones.",
     "Today’s Paper Estilos de Vida | Un nuevo estudio compara la eficacia a largo plazo de 21 antidepresivos https://www.nytimes.com/es/2026/11/11/espanol/estilos-de-vida/antidepresivos-fluoxetina-escitalopram.html Compartir artículo completo Advertisement",
     "Un nuevo metanálisis descubrió que ciertos antidepresivos funcionaban mejor en promedio que el Prozac para ayudar a las personas con depresión a sentirse mejor y seguir con su tratamiento a largo plazo."
    ],
-   "datos": []
+   "url_medio": "https://www.nytimes.com/es/2026/11/11/espanol/estilos-de-vida/antidepresivos-fluoxetina-escitalopram.html"
   },
   {
    "id": "2aa68bcac9",
@@ -8474,7 +8458,6 @@
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "url_medio": "https://elpais.com/us/2026-11-11/la-ventaja-estrategica-de-los-chips-de-nvidia-convirtio-a-su-primer-ejecutivo-en-un-objetivo-de-china.html",
    "sintesis": "El presidente estadounidense reconoce que el FBI investiga el caso que salpica al fundador de la tecnológica con una supuesta espía china. Jensen Huang no pudo imaginar en 1993, cuando se reunió en el restaurante Denny’s situado en el corazón de Silicon Valley con un par de amigos para charlar sobre cómo mejorar los videojuegos, que terminaría convertido en un influyente millonario salpicado por uno de los mayores escándalos de espionaje de las últimas décadas .",
    "puntos": [
     "El presidente estadounidense reconoce que el FBI investiga el caso que salpica al fundador de la tecnológica con una supuesta espía china.",
@@ -8497,7 +8480,8 @@
      "t": "escala",
      "c": "…artificial en términos de ingresos, generando más de 100.000 millones de dólares anuales para las GPU que emplean los servidores de los…"
     }
-   ]
+   ],
+   "url_medio": "https://elpais.com/us/2026-11-11/la-ventaja-estrategica-de-los-chips-de-nvidia-convirtio-a-su-primer-ejecutivo-en-un-objetivo-de-china.html"
   },
   {
    "id": "99b150ed1e",
@@ -8816,7 +8800,7 @@
    "ambito": "peru",
    "procedencia": "directa",
    "url_medio": "https://peru21.pe/tecnologia/peru-entra-al-top-3-de-america-latina-en-habilidades-de-inteligencia-artificial-y-pensamiento-critico/",
-   "imagen_intentos": 5
+   "imagen_intentos": 6
   },
   {
    "id": "8e439e2652",
@@ -8892,7 +8876,6 @@
    "ambito": "pendiente",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "url_medio": "https://larepublica.pe/opinion/2026/11/08/ni-presidente-ni-senador-ni-alcalde-por-rosa-maria-palacios-hnews-344584",
    "sintesis": "Esperemos que la dura derrota republicana les dé lecciones de enmienda y que, en el Perú, sus hinchas, como López Aliaga, se den cuenta de que no puedes vivir insultando al prójimo, mintiendo sobre amistades imaginarias e inventando enemigos para odiar, cuando las necesidades de la población son reales y concretas. López Aliaga perdió las elecciones presidenciales.",
    "puntos": [
     "Esperemos que la dura derrota republicana les dé lecciones de enmienda y que, en el Perú, sus hinchas, como López Aliaga, se den cuenta de que no puedes vivir insultando al prójimo, mintiendo sobre amistades imaginarias e inventando enemigos para odiar, cuando las necesidades de la población son reales y concretas.",
@@ -8920,7 +8903,8 @@
      "t": "fecha",
      "c": "El 4 de agosto, la lista de…."
     }
-   ]
+   ],
+   "url_medio": "https://larepublica.pe/opinion/2026/11/08/ni-presidente-ni-senador-ni-alcalde-por-rosa-maria-palacios-hnews-344584"
   },
   {
    "id": "977d07c5a0",
@@ -9667,7 +9651,7 @@
    "ambito": "peru",
    "procedencia": "directa",
    "url_medio": "https://peru21.pe/cultura/editorial-almadia-concluye-que-escritor-peruano-david-silva-rojas-no-uso-ia-en-novela-ganadora/",
-   "imagen_intentos": 5
+   "imagen_intentos": 6
   },
   {
    "id": "ba51e8b9c9",
@@ -9716,7 +9700,7 @@
    "ambito": "peru",
    "procedencia": "directa",
    "url_medio": "https://www.iagua.es/noticias/redaccion/sunass-fiscaliza-el-alcantarillado-de-lima-ante-un-nino-costero-extraordinario",
-   "imagen_intentos": 5
+   "imagen_intentos": 6
   },
   {
    "id": "ef6f4d4310",
@@ -9810,7 +9794,7 @@
    "ambito": "pendiente",
    "procedencia": "directa",
    "url_medio": "https://www.tvperu.gob.pe/noticias/nacionales/fenomeno-el-nino-reniec-recomienda-cuidar-tu-dni-ante-lluvias-e-inundaciones",
-   "imagen_intentos": 5
+   "imagen_intentos": 6
   },
   {
    "id": "0785f61406",
@@ -9931,7 +9915,7 @@
    "ambito": "peru",
    "procedencia": "directa",
    "url_medio": "https://peru21.pe/peru/el-nino-costero-sera-extraordinario-hasta-febrero-de-2027-enfen-alerta-por-lluvias-intensas-y-crecida-de-rios/",
-   "imagen_intentos": 5
+   "imagen_intentos": 6
   },
   {
    "id": "6f3eaeb656",
@@ -9980,7 +9964,7 @@
    "ambito": "peru",
    "procedencia": "directa",
    "url_medio": "https://radiorsd.pe/noticias/ancash-enfen-preve-lluvias-superiores-lo-normal-hasta-el-verano-de-2027",
-   "imagen_intentos": 5
+   "imagen_intentos": 6
   },
   {
    "id": "3ef45c8e05",
@@ -11207,26 +11191,10 @@
   "numero": "19-2026",
   "fecha": "2026-10-16",
   "url": "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen",
-  "comprobado": "2026-11-13T15:23:36Z",
+  "comprobado": "2026-11-13T15:25:16Z",
   "ok": true
  },
  "registro": [
-  {
-   "t": "2026-11-09T21:58:29Z",
-   "fuentes_ok": 27,
-   "fuentes": 27,
-   "nuevas": 358,
-   "notas": 321,
-   "descartes": {},
-   "agregador": [
-    "OjoPúblico",
-    "Convoca",
-    "Hildebrandt en sus trece",
-    "La República",
-    "Expreso"
-   ],
-   "sin_datos": []
-  },
   {
    "t": "2026-11-10T04:38:16Z",
    "fuentes_ok": 27,
@@ -11700,6 +11668,22 @@
   },
   {
    "t": "2026-11-13T15:22:50Z",
+   "fuentes_ok": 27,
+   "fuentes": 27,
+   "nuevas": 351,
+   "notas": 322,
+   "descartes": {},
+   "agregador": [
+    "OjoPúblico",
+    "Convoca",
+    "Hildebrandt en sus trece",
+    "La República",
+    "Expreso"
+   ],
+   "sin_datos": []
+  },
+  {
+   "t": "2026-11-13T15:24:30Z",
    "fuentes_ok": 27,
    "fuentes": 27,
    "nuevas": 351,
