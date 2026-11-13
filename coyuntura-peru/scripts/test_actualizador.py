@@ -324,6 +324,8 @@ class FotosOriginales(unittest.TestCase):
         self.assertEqual(a.buscar_foto(html_, "https://forbes.pe/n"), "https://forbes.pe/fotos/ia.jpg")
         self.assertEqual(a.buscar_foto('<script>{"image":{"url":"https:\\/\\/x.pe\\/f.jpg"}}</script>', "https://x.pe/n"), "https://x.pe/f.jpg")
         self.assertIsNone(a.buscar_foto('<meta property="og:image" content="https://x.pe/default-share.png">', "https://x.pe/n"))
+        self.assertIsNone(a.buscar_foto('<meta property="og:image" content="https://gestion.pe/pf/resources/dist/gestion/images/default-md.png">', "https://gestion.pe/n"))
+        self.assertEqual(a.buscar_foto('<meta property="og:image" content="http://static.dw.com/image/1_6.jpg">', "https://dw.com/n"), "https://static.dw.com/image/1_6.jpg")
 
     def test_google_news_resuelve_medio_y_toma_su_foto(self):
         a.resolver_google_news = lambda u: "https://forbes.pe/ia/nota"

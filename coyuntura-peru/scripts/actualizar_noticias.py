@@ -346,7 +346,7 @@ RE_OG = [
     re.compile(r'"image"\s*:\s*(?:\[\s*)?(?:\{[^{}]*?"url"\s*:\s*)?"(https:[^"]+)"', re.I),
 ]
 # Logotipos, íconos y comodines del sitio: no son la foto de la nota.
-RE_NO_FOTO = re.compile(r"(logo|favicon|apple-touch|sprite|placeholder|default[-_]?(?:image|img|share|og|thumb)|"
+RE_NO_FOTO = re.compile(r"(logo|favicon|apple-touch|sprite|placeholder|(?:^|[/_-])default(?:[-_.]|$)|"
                         r"no[-_]?image|sin[-_]?imagen|blank\.|pixel\.|1x1|\.svg(?:\?|$)|\.gif(?:\?|$))", re.I)
 
 
@@ -358,6 +358,8 @@ def buscar_foto(cabecera, base):
     for rx in RE_OG:
         for m in rx.finditer(cabecera):
             img = urljoin(base, html.unescape(m.group(1)).strip().replace("\\/", "/"))
+            if img.startswith("http://"):
+                img = "https://" + img[7:]
             if es_foto_valida(img):
                 return img
     return None
@@ -367,14 +369,21 @@ def imagen_og(url):
     """Foto de portada de la nota (og:image, twitter:image o JSON-LD), nunca un logotipo."""
     if not url or es_google_news(url):
         return None
+    dominio = urlsplit(url).netloc.lower().removeprefix("www.")
     try:
-        cabecera = descargar_parcial(url)
-    except Exception:  # noqa: BLE001
+        cabecera = descargar_parcial(url, MAX_BYTES_META)
+    except Exception as ex:  # noqa: BLE001
+        IMG_DIAG[f"{dominio}: {type(ex).__name__} {getattr(ex, 'code', '')}".strip()] += 1
         return None
-    return buscar_foto(cabecera, url)
+    img = buscar_foto(cabecera, url)
+    if not img:
+        IMG_DIAG[f"{dominio}: sin foto en la página ({len(cabecera)} caracteres)"] += 1
+    return img
 
 
 MAX_INTENTOS_IMAGEN = 6
+MAX_BYTES_META = 1024 * 1024  # algunos medios ponen las etiquetas <meta> tras mucho CSS en línea
+IMG_DIAG = collections.Counter()
 
 
 def enriquecer_imagenes(items, previos):
@@ -424,6 +433,8 @@ def enriquecer_imagenes(items, previos):
         print(f"  Google Noticias sin resolver: {motivo} ({n})")
     for k, v in GN_MUESTRA.items():
         print(f"  Muestra de respuesta ({k}): {v}")
+    for motivo, n in IMG_DIAG.most_common(15):
+        print(f"  Sin foto: {motivo} ({n})")
     return con
 
 
