@@ -285,7 +285,7 @@ async function runViewport(browser, base, width, height) {
     equal(await page.locator("#guia-lectura").count(), 1, `[${width}] guía de lectura general en un único lugar`);
     equal(await page.locator('[aria-labelledby="guia-lectura"] .tips > div').count(), 4, `[${width}] guía conserva cuatro criterios de contraste`);
     await page.locator("#b-tema").click();
-    equal(await page.locator("html").getAttribute("data-theme"), "light", `[${width}] modo claro disponible`);
+    equal(await page.locator("html").getAttribute("data-theme"), "dark", `[${width}] modo oscuro disponible desde el claro predeterminado`);
     await noOverflow(page, width);
     equal(errors, [], `[${width}] sin errores de JavaScript`);
     console.log(`Noticias y lectura ${width}px: OK`);

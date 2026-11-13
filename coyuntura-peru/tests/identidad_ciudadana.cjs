@@ -10,9 +10,15 @@ const exp=read("assets/civic-experience.js");
 const css=read("assets/civic-theme.css");
 const sw=read("sw.js");
 
-test("el tema cívico peruano es el predeterminado y mantiene el cambio de modo",()=>{
-  assert.match(html,/<html lang="es" data-theme="dark">/);
-  assert.match(html,/content="#071321"/);
+const editorial=read("assets/editorial.css");
+test("el modo claro editorial es el predeterminado y mantiene el cambio a modo oscuro",()=>{
+  assert.match(html,/<html lang="es" data-theme="light">/);
+  assert.match(html,/content="#F8FAFC"/);
+  assert.match(html,/assets\/editorial.css\?v=__V__/);
+  assert.match(editorial,/:root\[data-theme="light"\]\{\s*--bg:#F8FAFC;--card:#FFFFFF;--card2:#F1F5F9;--border:#E2E8F0/);
+  assert.match(editorial,/:root\[data-theme="dark"\]\{\s*--bg:#0B111E;--card:#111827/);
+  assert.match(editorial,/font-variant-numeric:tabular-nums/);
+  assert.match(sw,/assets\/editorial.css/);
   assert.match(html,/assets\/civic-theme.css\?v=__V__/);
   assert.match(html,/assets\/civic-experience.js\?v=__V__/);
   assert.match(css,/--bg:#071321/);
