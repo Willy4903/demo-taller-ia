@@ -17,6 +17,7 @@ import * as conversation from './views/conversation.js';
 import * as progress from './views/progress.js';
 import * as grammarView from './views/grammar.js';
 import * as settings from './views/settings.js';
+import * as method from './views/method.js';
 
 const ROUTES = [
   { re: /^\/?$/, view: home, title: 'Biblioteca', nav: '/' },
@@ -27,6 +28,7 @@ const ROUTES = [
   { re: /^\/progreso$/, view: progress, title: 'Progreso', nav: '/progreso' },
   { re: /^\/gramatica$/, view: grammarView, title: 'Gramática de apoyo', nav: '/gramatica' },
   { re: /^\/ajustes$/, view: settings, title: 'Ajustes y datos', nav: '/ajustes' },
+  { re: /^\/metodo$/, view: method, title: 'Cómo aprender', nav: '/metodo' },
 ];
 
 const NAV = [
@@ -37,6 +39,7 @@ const NAV = [
   { path: '/ajustes', label: 'Ajustes', icon: 'settings' },
 ];
 const MORE = [
+  { path: '/metodo', label: 'Cómo aprender', icon: 'sparkle' },
   { path: '/shadowing', label: 'Shadowing', icon: 'mic' },
   { path: '/hablar', label: 'Conversación', icon: 'chat' },
   { path: '/progreso', label: 'Progreso', icon: 'chart' },
@@ -174,9 +177,10 @@ function placeIndicator() {
   if (!ind) return;
   const active = document.querySelector(`.nav-pills > a[data-path="${currentNav}"]`) || (MORE.some((m) => m.path === currentNav) ? moreBtn : null);
   if (!active) { ind.style.opacity = '0'; return; }
+  const left = active.getBoundingClientRect().left - ind.parentElement.getBoundingClientRect().left - ind.parentElement.clientLeft;
   ind.style.opacity = '1';
   ind.style.width = `${active.offsetWidth}px`;
-  ind.style.transform = `translateX(${active.offsetLeft}px)`;
+  ind.style.transform = `translateX(${left + ind.parentElement.scrollLeft}px)`;
 }
 
 function markNav(path) {

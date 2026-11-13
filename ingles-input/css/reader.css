@@ -185,7 +185,7 @@
   .rd-switch[aria-checked='true'] .rd-switch-thumb { transform: translateX(16px); }
   .rd-card { border-radius: 20px; }
   .rd .sent-actions { padding-top: 0.35rem; }
-  .rd-mini { width: 44px; height: 44px; }
+  .rd-mini { width: 46px; height: 46px; }
   .rd-text { font-size: 1.2rem; }
   .rd-player { grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: 'ctrl info speed' 'wave wave wave'; gap: 0.5rem 0.75rem; border-radius: 24px; }
   .rd-ctrl { grid-area: ctrl; gap: 0.2rem; }
