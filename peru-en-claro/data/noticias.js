@@ -1,16 +1,16 @@
 /* Generado por scripts/actualizar_noticias.py (GitHub Actions, 7 veces al día, hora de Lima). No editar a mano. */
 window.NOTICIAS = {
- "generado": "2026-11-13T15:17:22Z",
+ "generado": "2026-11-13T15:18:23Z",
  "modo": "automatico",
  "estado_fuentes": {
   "IDL-Reporteros": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.idl-reporteros.pe/feed/",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 1,
    "ultima_nota": "2026-10-24T01:18:47Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "OjoPúblico": {
    "ok": true,
@@ -18,10 +18,10 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:ojo-publico.com+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 8,
    "ultima_nota": "2026-11-12T22:45:50Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "Convoca": {
    "ok": true,
@@ -29,10 +29,10 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:convoca.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 4,
    "ultima_nota": "2026-11-12T08:00:00Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "Hildebrandt en sus trece": {
    "ok": true,
@@ -40,73 +40,73 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:hildebrandtensustrece.com+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 15,
    "ultima_nota": "2026-11-13T07:15:13Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "Wayka": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://wayka.pe/feed/",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 5,
    "ultima_nota": "2026-11-12T20:54:25Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "La Mula": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.lamula.pe/feed/",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 15,
    "ultima_nota": "2026-11-12T20:46:00Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "Salud con Lupa": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://saludconlupa.com/feed/",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 15,
    "ultima_nota": "2026-11-10T23:44:00Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "Mongabay Latam": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://es.mongabay.com/feed/",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 15,
    "ultima_nota": "2026-11-13T14:00:55Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "Caretas": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://caretas.pe/feed/",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 15,
    "ultima_nota": "2026-11-13T15:07:16Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "El Comercio": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 15,
    "ultima_nota": "2026-11-13T15:13:15Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "Gestión": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://gestion.pe/arc/outboundfeeds/rss/?outputType=xml",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 15,
    "ultima_nota": "2026-11-13T15:11:00Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "La República": {
    "ok": true,
@@ -114,28 +114,28 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:larepublica.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 15,
    "ultima_nota": "2026-11-13T01:05:59Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "RPP": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://rpp.pe/feed",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 15,
    "ultima_nota": "2026-11-13T15:00:48Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "Infobae Perú": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/category/peru/",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 15,
    "ultima_nota": "2026-11-13T15:14:03Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "Expreso": {
    "ok": true,
@@ -143,118 +143,118 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:expreso.com.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 403: Forbidden",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 15,
    "ultima_nota": "2026-11-13T09:03:07Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "El Búho": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://elbuho.pe/feed/",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 15,
    "ultima_nota": "2026-11-13T15:15:34Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "BBC Mundo": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://feeds.bbci.co.uk/mundo/rss.xml",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 15,
-   "ultima_nota": "2026-11-13T12:51:27Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultima_nota": "2026-11-13T15:16:21Z",
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "DW Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://rss.dw.com/xml/rss-sp-all",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 15,
    "ultima_nota": "2026-11-13T14:41:00Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "El País América": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 15,
    "ultima_nota": "2026-11-13T15:16:25Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "France 24 Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.france24.com/es/rss",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 15,
    "ultima_nota": "2026-11-13T15:15:23Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "ONU Noticias": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.un.org/feed/subscribe/es/news/all/rss.xml",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 15,
    "ultima_nota": "2026-11-12T12:00:00Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "The New York Times en Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=site:nytimes.com/es+when:7d&hl=es-419&gl=US&ceid=US:es-419",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 15,
    "ultima_nota": "2026-11-13T10:04:44Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "The Guardian": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.theguardian.com/world/rss",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 15,
    "ultima_nota": "2026-11-13T09:41:22Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "The New Yorker": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.newyorker.com/feed/everything",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 15,
    "ultima_nota": "2026-11-13T15:02:20Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "Google Noticias · IA en el Perú": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22inteligencia+artificial%22+Per%C3%BA+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 15,
-   "ultima_nota": "2026-11-12T21:12:26Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultima_nota": "2026-11-13T04:00:00Z",
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "Google Noticias · El Niño": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22Fen%C3%B3meno+El+Ni%C3%B1o%22+OR+%22Ni%C3%B1o+costero%22+ENFEN+when:14d&hl=es-419&gl=PE&ceid=PE:es-419",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 15,
    "ultima_nota": "2026-11-10T05:50:27Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   },
   "Google Noticias · IA en el mundo": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22inteligencia+artificial%22+(OpenAI+OR+Anthropic+OR+Google+OR+regulaci%C3%B3n+OR+NVIDIA)+when:7d&hl=es-419&gl=US&ceid=US:es-419",
-   "comprobado": "2026-11-13T15:17:22Z",
+   "comprobado": "2026-11-13T15:18:23Z",
    "n": 15,
    "ultima_nota": "2026-11-13T14:20:37Z",
-   "ultimo_ok": "2026-11-13T15:17:22Z"
+   "ultimo_ok": "2026-11-13T15:18:23Z"
   }
  },
  "items": [
@@ -280,6 +280,59 @@ window.NOTICIAS = {
    "sintesis": "León XIV ofrecerá una misa multitudinaria en la ciudad peruana donde vivió ocho años y de la que fue obispo",
    "puntos": [
     "León XIV ofrecerá una misa multitudinaria en la ciudad peruana donde vivió ocho años y de la que fue obispo"
+   ]
+  },
+  {
+   "id": "608c1fd064",
+   "sector": "mundo",
+   "titulo": "EE.UU. afirma que transfirió a Venezuela más de US$12.000 millones por sus exportaciones petroleras y de otros recursos",
+   "resumen": "El posible manejo del dinero y la falta de transparencia generan críticas dentro y fuera del país.",
+   "fuente": "BBC Mundo",
+   "url": "https://www.bbc.com/mundo/articles/cq1438vzvj1eo?at_medium=RSS&at_campaign=rss",
+   "fecha": "2026-11-13T15:16:21Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/11b5/live/d3686f40-df5f-11f1-a8af-15d7a25dc0d1.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "El posible manejo del dinero y la falta de transparencia generan críticas dentro y fuera del país. El gobierno de EE.UU. asegura que transfirió a Venezuela más de US$12.000 millones procedentes de las exportaciones de petróleo y sus derivados, mientras que una pequeña parte de los ingresos provino de la venta de minerales y fertilizantes, según un informe del Departamento de Estado publicado este jueves.",
+   "puntos": [
+    "El posible manejo del dinero y la falta de transparencia generan críticas dentro y fuera del país.",
+    "El gobierno de EE.UU. asegura que transfirió a Venezuela más de US$12.000 millones procedentes de las exportaciones de petróleo y sus derivados, mientras que una pequeña parte de los ingresos provino de la venta de minerales y fertilizantes, según un informe del Departamento de Estado publicado este jueves.",
+    "Tras la captura de Nicolás Maduro en enero de este año, Washington anunció que asumiría el control de la comercialización del petróleo venezolano y de los ingresos obtenidos por sus exportaciones."
+   ],
+   "datos": [
+    {
+     "v": "US$12.000 millones",
+     "t": "monto",
+     "c": "EE.UU. afirma que transfirió a Venezuela más de US$12.000 millones por sus exportaciones petroleras y de otros recursos."
+    },
+    {
+     "v": "US$12.260 millones",
+     "t": "monto",
+     "c": "…militar estadounidense, y el 30 de septiembre, US$12.260 millones fueron depositados en la cuenta.."
+    },
+    {
+     "v": "US$170 millones",
+     "t": "monto",
+     "c": "Pero al 30 de septiembre, fecha de cierre del período analizado, la cuenta todavía tenía un saldo de cerca de US$170 millones."
+    },
+    {
+     "v": "3 de enero",
+     "t": "fecha",
+     "c": "Entre el 3 de enero, fecha de la intervención militar estadounidense, y el 30…"
+    },
+    {
+     "v": "30 de septiembre",
+     "t": "fecha",
+     "c": "…fecha de la intervención militar estadounidense, y el 30 de septiembre, US$12.260 millones fueron depositados en la cuenta.."
+    }
    ]
   },
   {
@@ -1749,7 +1802,7 @@ window.NOTICIAS = {
    "puntos": [
     "Hinchas se imponen y logran que el club de la Bundesliga finiquite un acuerdo comercial firmado en 2024."
    ],
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "9bcf7bbbca",
@@ -2094,7 +2147,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "d5993302c7",
@@ -3202,7 +3255,7 @@ window.NOTICIAS = {
    "puntos": [
     "La primera cumbre dedicada exclusivamente a la inteligencia artificial (IA) tiene lugar en Dublín."
    ],
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "f4957ddb5c",
@@ -3345,7 +3398,7 @@ window.NOTICIAS = {
    "ambito": "peru",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "daf3dda523",
@@ -3392,7 +3445,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "imagen_intentos": 1
+   "imagen_intentos": 2
   },
   {
    "id": "05ae7246a8",
@@ -3417,7 +3470,7 @@ window.NOTICIAS = {
    "puntos": [
     "Microsoft ha descartado que la caída mundial de su servicio de correo Outlook se deba a una acción maliciosa."
    ],
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "5bde312ed2",
@@ -3438,7 +3491,7 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "52ae317976",
@@ -3574,7 +3627,7 @@ window.NOTICIAS = {
     "El fabricante alemán de drones Quantum Systems confirmó que sufrió un ciberataque a finales de octubre de 2026.",
     "La compañía asegura haber neutralizado la amenaza y que no existe riesgo para los usuarios de sus sistemas."
    ],
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "1b8d3c471b",
@@ -3704,7 +3757,7 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "6465765782",
@@ -3726,7 +3779,7 @@ window.NOTICIAS = {
    "ambito": "pendiente",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "bd58e23c18",
@@ -3850,7 +3903,7 @@ window.NOTICIAS = {
    "ambito": "pendiente",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "4e74874451",
@@ -4067,7 +4120,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "af7d1fa266",
@@ -4116,7 +4169,7 @@ window.NOTICIAS = {
    "puntos": [
     "Autoridades iraníes afirman que fue en respuesta a un ataque anterior por parte de EE.UU. contra una torre de telecomunicaciones al servicio de Teherán."
    ],
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "73dcc9c0b4",
@@ -4299,7 +4352,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "65b4cb17e6",
@@ -4353,7 +4406,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "6ac56f4fff",
@@ -4378,7 +4431,7 @@ window.NOTICIAS = {
    "puntos": [
     "La empresa atribuyó la interrupción a una “carga elevada” en su infraestructura, la cual afectó a los usuarios en todo el continente americano."
    ],
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "974f264b5f",
@@ -4531,7 +4584,7 @@ window.NOTICIAS = {
    "puntos": [
     "El mandatario estadounidense dijo que los tiempos de negociación de la guerra que desató junto con Israel “ya quedaron atrás”."
    ],
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "f3ac294383",
@@ -4644,7 +4697,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "d79f288c40",
@@ -4695,7 +4748,7 @@ window.NOTICIAS = {
    "puntos": [
     "El grupo armado proiraní de Yemen dijo que atacó con “éxito” un oleoducto, una terminal petrolera y una instalación en Riad."
    ],
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "24fbf7d630",
@@ -4724,7 +4777,7 @@ window.NOTICIAS = {
      "c": "BCRP sube a 4,50% su tasa de referencia ante inflación en máximos de tres años."
     }
    ],
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "e66f0fafea",
@@ -4825,7 +4878,7 @@ window.NOTICIAS = {
    "puntos": [
     "Microsoft reporta falla mundial The New York Times"
    ],
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "e55c69a2d8",
@@ -4876,7 +4929,7 @@ window.NOTICIAS = {
    "puntos": [
     "El mandatario ucraniano dijo que los europeos estarán en \"el equipo negociador\" de la próxima negociación con Moscú, que busca poner fin a la guerra desatada por la invasión rusa."
    ],
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "4b0246868c",
@@ -5038,7 +5091,7 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "7d3ad4b921",
@@ -5109,7 +5162,7 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "61babb0b19",
@@ -5131,7 +5184,7 @@ window.NOTICIAS = {
    "ambito": "pendiente",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "fdf06be197",
@@ -5246,7 +5299,7 @@ window.NOTICIAS = {
    "puntos": [
     "La firma enfrenta una caída de sus beneficios por el desplome de sus ventas en el mercado chino y el alto costo de producción en el país europeo."
    ],
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "fd42d6aab1",
@@ -5344,7 +5397,7 @@ window.NOTICIAS = {
    "ambito": "peru",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "6617fb9c84",
@@ -5490,7 +5543,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "e226a661ec",
@@ -5535,7 +5588,7 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "6a50307ea5",
@@ -5608,7 +5661,7 @@ window.NOTICIAS = {
    "puntos": [
     "El dirigente del Kremlin aseguró desear una “paz eterna” con su vecino, al que invadió a gran escala en 2022, pero dijo a enviados estadounidenses que no renunciará a sus exigencias territoriales."
    ],
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "95436a873b",
@@ -5701,7 +5754,7 @@ window.NOTICIAS = {
     "En la Franja, azotada por la guerra, fuertes lluvias inundaron y dañaron miles de tiendas.",
     "¿Podría la presión de la Junta de Paz de Trump ayudar a aliviar la crisis humanitaria?"
    ],
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "310ccd9b91",
@@ -5775,7 +5828,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "e3cb534662",
@@ -5809,7 +5862,7 @@ window.NOTICIAS = {
      "c": "22 millones de personas en Alemania tienen trasfondo migratorio."
     }
    ],
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "ae2b3e7c29",
@@ -5838,7 +5891,7 @@ window.NOTICIAS = {
      "c": "Congreso debatirá proyectos de presupuesto 2027 desde el 17 de noviembre: conozca el cronograma."
     }
    ],
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "af0de33786",
@@ -5964,7 +6017,7 @@ window.NOTICIAS = {
      "c": "Psoriasis en Perú: tratamiento puede costar más de S/60.000 al año y reducir hasta 29,4% la productividad laboral."
     }
    ],
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "0dfc10b74c",
@@ -6038,7 +6091,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "312e41505a",
@@ -6060,7 +6113,7 @@ window.NOTICIAS = {
    "ambito": "peru",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "58f4b1052c",
@@ -6081,7 +6134,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "c1516e70ea",
@@ -6207,7 +6260,7 @@ window.NOTICIAS = {
    "ambito": "pendiente",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "78f14d5d13",
@@ -6228,7 +6281,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "936da60bc9",
@@ -6293,7 +6346,7 @@ window.NOTICIAS = {
    "ambito": "pendiente",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "0914499dbd",
@@ -6347,7 +6400,7 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "d039e38dcf",
@@ -6368,7 +6421,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 1
+   "imagen_intentos": 2
   },
   {
    "id": "f9cb1cfdc9",
@@ -6608,7 +6661,7 @@ window.NOTICIAS = {
    "ambito": "pendiente",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "f2561e6166",
@@ -6629,7 +6682,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "84a8967326",
@@ -6787,39 +6840,6 @@ window.NOTICIAS = {
     "El detenido, identificado como Luciano Pedro Mendoza, alias ‘Pedrito’, tenía una orden de detención preliminar por extorsión.",
     "Durante el operativo, realizado en un evento musical, se le incautó un arma de fuego, municiones y drogas.",
     "La intervención se realizó durante un evento musical en un local comunal situado en la intersección de las avenidas Pachacútec e Inca Roca, en el distrito limeño de Cieneguilla ."
-   ]
-  },
-  {
-   "id": "adaf9e2fba",
-   "sector": "mundo",
-   "titulo": "¿Por qué mi familia blanca nunca me dijo que yo era negra?",
-   "resumen": "Lacey Tezino fue criada como una niña blanca en un pueblo rural de Texas conocido por su pasado racista. Por eso, se sorprendió al descubrir que en realidad era negra.",
-   "fuente": "BBC Mundo",
-   "url": "https://www.bbc.com/mundo/articles/c6x2enpm544zo?at_medium=RSS&at_campaign=rss",
-   "fecha": "2026-11-12T11:19:20Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/77ab/live/369c8410-ddcc-11f1-93e1-3b657b665bcf.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "contexto_internacional_resumen"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Lacey Tezino fue criada como una niña blanca en un pueblo rural de Texas conocido por su pasado racista. Por eso, se sorprendió al descubrir que en realidad era negra.",
-   "puntos": [
-    "Lacey Tezino fue criada como una niña blanca en un pueblo rural de Texas conocido por su pasado racista.",
-    "Por eso, se sorprendió al descubrir que en realidad era negra.",
-    "La chica que hizo la pregunta pensó que era una broma."
-   ],
-   "datos": [
-    {
-     "v": "6 años",
-     "t": "cantidad",
-     "c": "Falleció cuando ella tenía 6 años."
-    }
    ]
   },
   {
@@ -7000,7 +7020,7 @@ window.NOTICIAS = {
    "puntos": [
     "5 nutrientes que probablemente necesites consumir más The New York Times"
    ],
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "6d0cdccad6",
@@ -7029,7 +7049,7 @@ window.NOTICIAS = {
      "c": "Caso El Frontón lleva 40 años sin resolverse y enfrenta a Humberto Abanto y Carlos Rivera este jueves en el TC."
     }
    ],
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "2a840204f7",
@@ -7051,7 +7071,7 @@ window.NOTICIAS = {
    "ambito": "peru",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "2d88c88109",
@@ -7120,7 +7140,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "3fb0fe1591",
@@ -7141,7 +7161,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "00405cc5e6",
@@ -7241,7 +7261,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "60bd2b5f1f",
@@ -7288,7 +7308,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "088231a155",
@@ -7309,7 +7329,7 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "76b396cd39",
@@ -7357,7 +7377,7 @@ window.NOTICIAS = {
    "ambito": "peru",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "2f369d5082",
@@ -7625,7 +7645,7 @@ window.NOTICIAS = {
    "ambito": "pendiente",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "2409ce9fd3",
@@ -7692,7 +7712,7 @@ window.NOTICIAS = {
      "c": "Fenómeno El Niño: Gobierno ejecutó solo el 17% de los S/2.512 millones transferidos por decreto."
     }
    ],
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "b38eef74b1",
@@ -7766,7 +7786,7 @@ window.NOTICIAS = {
    "ambito": "peru",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "244cf6f4ee",
@@ -7787,7 +7807,7 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "2aa68bcac9",
@@ -7935,7 +7955,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "2c0670db0d",
@@ -7956,7 +7976,7 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "99b150ed1e",
@@ -7977,7 +7997,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "f1cd164c5c",
@@ -8052,7 +8072,7 @@ window.NOTICIAS = {
    "ambito": "pendiente",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "f5c71628f4",
@@ -8243,7 +8263,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "8e439e2652",
@@ -8291,7 +8311,7 @@ window.NOTICIAS = {
    "ambito": "pendiente",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "db4b63b443",
@@ -8313,7 +8333,7 @@ window.NOTICIAS = {
    "ambito": "pendiente",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "977d07c5a0",
@@ -8334,7 +8354,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "imagen_intentos": 1
+   "imagen_intentos": 2
   },
   {
    "id": "aa4efe40aa",
@@ -8355,7 +8375,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "cde8504b47",
@@ -8455,7 +8475,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "e00718700a",
@@ -8510,7 +8530,7 @@ window.NOTICIAS = {
      "c": "A casi 10 años de El Niño Costero, ningún sistema de drenaje pluvial del norte está terminado, advierte Capeco."
     }
    ],
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "fa7ed1736a",
@@ -8664,7 +8684,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "c92bcc485a",
@@ -8685,7 +8705,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "bd4ed2fa6a",
@@ -8713,7 +8733,7 @@ window.NOTICIAS = {
      "c": "¿Es legal exigir un 0% de inteligencia artificial en Turnitin para aprobar una tesis pese al riesgo de falsos positivos en el Perú?."
     }
    ],
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "30613482d0",
@@ -8734,7 +8754,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "d6fb3e7b20",
@@ -8756,7 +8776,7 @@ window.NOTICIAS = {
    "ambito": "peru",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "a136a2a4b8",
@@ -8808,7 +8828,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "632298b1fc",
@@ -8836,7 +8856,7 @@ window.NOTICIAS = {
      "c": "ChatGPT, Gemini y Copilot dominan el uso de IA en las áreas de RRHH en Perú, pero solo el 15% la integra a su plataforma."
     }
    ],
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "ec3e825533",
@@ -8858,7 +8878,7 @@ window.NOTICIAS = {
    "ambito": "peru",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "27443a92d8",
@@ -8880,7 +8900,7 @@ window.NOTICIAS = {
    "ambito": "peru",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "d674b534a2",
@@ -8901,7 +8921,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "06ceef469a",
@@ -8922,7 +8942,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "ba51e8b9c9",
@@ -8943,7 +8963,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "6a41e5d0b6",
@@ -8964,7 +8984,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "ef6f4d4310",
@@ -9057,7 +9077,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "0785f61406",
@@ -9102,7 +9122,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "a90130a0c9",
@@ -9123,7 +9143,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "d12cb06c11",
@@ -9144,7 +9164,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "ef3f92dfe4",
@@ -9165,7 +9185,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "6f3eaeb656",
@@ -9186,7 +9206,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "0550398eec",
@@ -9207,7 +9227,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "3ef45c8e05",
@@ -9228,7 +9248,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "814b492570",
@@ -9249,7 +9269,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "65ceeb1640",
@@ -9270,7 +9290,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "9211b5a28e",
@@ -9291,7 +9311,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "92fd0ba247",
@@ -9312,7 +9332,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "79ef332f45",
@@ -10403,26 +10423,10 @@ window.NOTICIAS = {
   "numero": "19-2026",
   "fecha": "2026-10-16",
   "url": "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen",
-  "comprobado": "2026-11-13T15:18:11Z",
+  "comprobado": "2026-11-13T15:19:02Z",
   "ok": true
  },
  "registro": [
-  {
-   "t": "2026-11-09T14:11:14Z",
-   "fuentes_ok": 27,
-   "fuentes": 27,
-   "nuevas": 343,
-   "notas": 322,
-   "descartes": {},
-   "agregador": [
-    "OjoPúblico",
-    "Convoca",
-    "Hildebrandt en sus trece",
-    "La República",
-    "Expreso"
-   ],
-   "sin_datos": []
-  },
   {
    "t": "2026-11-09T15:11:07Z",
    "fuentes_ok": 27,
@@ -10896,6 +10900,22 @@ window.NOTICIAS = {
   },
   {
    "t": "2026-11-13T15:17:22Z",
+   "fuentes_ok": 27,
+   "fuentes": 27,
+   "nuevas": 351,
+   "notas": 322,
+   "descartes": {},
+   "agregador": [
+    "OjoPúblico",
+    "Convoca",
+    "Hildebrandt en sus trece",
+    "La República",
+    "Expreso"
+   ],
+   "sin_datos": []
+  },
+  {
+   "t": "2026-11-13T15:18:23Z",
    "fuentes_ok": 27,
    "fuentes": 27,
    "nuevas": 351,
