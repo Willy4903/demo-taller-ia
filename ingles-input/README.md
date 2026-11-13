@@ -12,6 +12,7 @@ App web estática para que un hispanohablante de nivel básico aprenda inglés c
 | Conversación guiada | Diálogos ramificados. La app dice una línea, respondes hablando o escribiendo, se valida con palabras clave y ves una respuesta modelo. Incluye un gancho opcional para una IA mediante tu propio backend. |
 | Progreso | Racha diaria, minutos estudiados, palabras aprendidas y plan de 40 minutos (15 input, 10 shadowing, 10 conversación, 5 repaso) con checklist. |
 | Gramática de apoyo | Explicaciones de 3 líneas que aparecen solo cuando fallas varias veces la misma estructura. |
+| Cómo aprender | Página `#/metodo` que explica el método en lenguaje sencillo: input comprensible, la rutina diaria de cuatro pasos, cómo leer una historia, cuándo aparece la gramática, qué hacen las valoraciones y qué cubre el contenido. |
 
 Principios de diseño:
 

@@ -98,6 +98,11 @@ export function render(root, ctx) {
         ['chart', 'Progreso', 'Tu racha y niveles', '#/progreso', '']].map(([ic, t, d, href, meta]) =>
         h('a', { class: 'qlink', href }, h('span', { class: 'qlink-ico' }, icon(ic, 18)), h('span', {}, h('strong', { text: t }), h('small', { text: meta ? `${d} · ${meta}` : d })), icon('chevR', 16)))));
 
+  const method = h('a', { class: 'method-card', href: '#/metodo' },
+    h('span', { class: 'method-ico', 'aria-hidden': 'true' }, icon('sparkle', 20)),
+    h('span', {}, h('strong', { text: '¿Cómo se aprende aquí?' }), h('small', { text: 'El método explicado en 3 minutos' })),
+    icon('chevR', 18));
+
   // --- Reto rápido
   const quick = createQuickPractice(ctx);
 
@@ -113,7 +118,7 @@ export function render(root, ctx) {
     support,
     h('div', { class: 'dash' },
       h('div', { class: 'dash-main' }, banner, libraryBrowser(ctx), quick.element),
-      h('aside', { class: 'dash-side', 'aria-label': 'Resumen de tu aprendizaje' }, activity, words, plan, practice)));
+      h('aside', { class: 'dash-side', 'aria-label': 'Resumen de tu aprendizaje' }, method, activity, words, plan, practice)));
 
   return () => quick.cleanup();
 }

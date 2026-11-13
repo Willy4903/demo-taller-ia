@@ -93,6 +93,16 @@ async function shot(page, name) {
   await page.fill('#lib-q', '');
   assert.match(await page.locator('.st-level').innerText(), /A1$/, 'insignia de nivel en la barra');
   await page.waitForSelector('.st-goal');
+  // Cómo aprender: accesible desde la biblioteca y desde el menú Más
+  await page.click('.method-card');
+  await page.waitForSelector('text=Cuatro pasos, siempre en este orden');
+  assert.equal(await page.locator('.mt-step').count(), 4, 'los cuatro pasos del plan');
+  assert.equal(await page.locator('.mt-tense').count(), 4, 'estructuras agrupadas por tiempo');
+  await page.click('.nav-more');
+  assert.equal(await page.locator('#more-menu a[aria-current="page"]').innerText(), 'Cómo aprender');
+  await page.keyboard.press('Escape');
+  await page.goto(base);
+  await page.waitForSelector('.story-card');
   await shot(page, '01-inicio');
   console.log('ok inicio');
 

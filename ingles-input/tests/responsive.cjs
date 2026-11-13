@@ -27,7 +27,7 @@ const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css
       const page = await context.newPage();
       const errors = [];
       page.on('pageerror', error => errors.push(error.message));
-      for (const route of ['', '#/leer', '#/leer/s01', '#/shadowing', '#/vocabulario', '#/tarjetas', '#/hablar', '#/progreso', '#/gramatica', '#/ajustes', '#/inexistente']) {
+      for (const route of ['', '#/leer', '#/leer/s01', '#/shadowing', '#/vocabulario', '#/tarjetas', '#/hablar', '#/progreso', '#/gramatica', '#/ajustes', '#/metodo', '#/inexistente']) {
         await page.goto(base + route);
         await page.waitForSelector('h1');
         if (fontFamily) await page.addStyleTag({ content: `:root { --font: '${fontFamily}', sans-serif; }` });
@@ -40,7 +40,7 @@ const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css
               return { width, height };
             }));
           assert.ok(targets.length > 0, 'reader has sentence controls');
-          assert.ok(targets.every(target => target.width >= 44 && target.height >= 44), 'reader controls have 44px touch targets');
+          assert.ok(targets.every(target => target.width >= 44 && target.height >= 44), 'reader controls have 44px touch targets: ' + JSON.stringify(targets.filter(t => t.width < 44 || t.height < 44)));
         }
       }
       await page.goto(base + '#/leer');
@@ -58,7 +58,7 @@ const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css
       assert.ok(await page.evaluate(expected => document.documentElement.scrollWidth <= expected, width));
       assert.deepEqual(errors, []);
       await context.close();
-      console.log(`PASS ${width}px, font ${fontScale * 100}%${fontFamily ? ` ${fontFamily}` : ''}: 11 routes, touch targets, skip link, story cards, dark theme, no overflow or JS errors`);
+      console.log(`PASS ${width}px, font ${fontScale * 100}%${fontFamily ? ` ${fontFamily}` : ''}: 12 routes, touch targets, skip link, story cards, dark theme, no overflow or JS errors`);
     }
   } finally {
     if (browser) await browser.close();
