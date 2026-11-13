@@ -16,7 +16,11 @@
       if (typeof s.fontScale === 'number') document.documentElement.style.setProperty('--fs', s.fontScale);
     } catch (e) { /* sin almacenamiento */ }
   </script>
-  <link rel="stylesheet" href="css/styles.css?v=studio-1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="css/styles.css?v=reader-1">
+  <link rel="stylesheet" href="css/reader.css?v=reader-1">
 </head>
 <body>
   <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -37,6 +41,6 @@
   </div>
   <div id="live" class="sr-only" aria-live="polite" aria-atomic="true"></div>
   <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
-  <script type="module" src="js/app.js?v=studio-1"></script>
+  <script type="module" src="js/app.js?v=reader-1"></script>
 </body>
 </html>

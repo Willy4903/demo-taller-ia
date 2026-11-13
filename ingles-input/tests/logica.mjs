@@ -2,7 +2,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { compareSpeech, matchBranch, words, plain, lookupWord, splitWords } from '../js/util.js';
+import { compareSpeech, matchBranch, words, plain, lookupWord, lookupPronunciation, splitWords } from '../js/util.js';
 import { sm2, newCard, QUALITY } from '../js/srs.js';
 import { nextLevel, rank } from '../js/adapt.js';
 import { recordFail, recordSuccess } from '../js/grammar.js';
@@ -15,6 +15,7 @@ const phrases = read('phrases.json');
 const situations = read('situations.json');
 const grammar = read('grammar.json');
 const glossary = read('glossary.json');
+const pronunciation = read('pronunciation.json');
 
 test('contenido: cantidades mínimas', () => {
   assert.ok(stories.length >= 10);
@@ -35,6 +36,17 @@ test('contenido: todas las palabras de las historias tienen definición local', 
   const missing = [];
   for (const s of stories) for (const x of s.sentences) for (const p of splitWords(x.en)) if (p.word && !lookupWord(glossary, p.text)) missing.push(p.text);
   assert.deepEqual(missing, []);
+});
+
+test('contenido: todas las palabras de las historias tienen pronunciación (IPA y aproximación en español)', () => {
+  const missing = [];
+  for (const s of stories) for (const x of s.sentences) for (const p of splitWords(x.en)) {
+    const pr = p.word && lookupPronunciation(pronunciation, p.text);
+    if (p.word && !(pr && /^\/.+\/$/.test(pr.ipa) && pr.es)) missing.push(p.text);
+  }
+  assert.deepEqual(missing, []);
+  assert.equal(lookupPronunciation(pronunciation, 'Restaurant').es, 'réstorant');
+  assert.equal(lookupPronunciation(pronunciation, 'Tom’s').ipa, '/tɑmz/');
 });
 
 test('contenido: frases con situación, dificultad y gramática válidas', () => {
@@ -219,7 +231,7 @@ test('almacenamiento: rechaza archivos ajenos o corruptos', () => {
 
 test('almacenamiento: sanitize descarta valores fuera de rango o con tipo incorrecto', () => {
   const d = sanitize({ settings: { speed: 9, theme: 'x', fontScale: 'a' }, level: { input: 99 }, cards: { a: { due: 'mañana' }, b: { due: '2026-01-01', ef: 0 } }, days: { hoy: {} } });
-  assert.equal(d.settings.speed, 1);
+  assert.equal(d.settings.speed, 1.25);
   assert.equal(d.settings.theme, 'auto');
   assert.equal(d.level.input, 3);
   assert.equal(d.cards.a, undefined);

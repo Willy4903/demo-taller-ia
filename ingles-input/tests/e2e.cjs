@@ -35,7 +35,7 @@ const SPEECH_MOCK = `
     addEventListener() {},
     cancel() { this._t.forEach(clearTimeout); this._t = []; this.speaking = false; },
     speak(u) {
-      window.__spoken.push(u.text); this.speaking = true;
+      window.__spoken.push(u.text); (window.__rates = window.__rates || []).push(u.rate); this.speaking = true;
       this._t.push(setTimeout(() => {
         u.onstart && u.onstart({});
         const re = /[\\w'’-]+/g; let m, i = 0;
@@ -68,6 +68,8 @@ async function shot(page, name) {
   const browser = await chromium.launch({ executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || undefined });
   const errors = [];
   const watch = (page) => {
+    // Las tipografías de Google Fonts no son necesarias para la prueba (y puede no haber red).
+    page.route(/fonts\.(googleapis|gstatic)\.com/, (r) => r.fulfill({ status: 200, contentType: 'text/css', body: '' }));
     page.on('pageerror', (e) => errors.push(`pageerror: ${e.message}`));
     page.on('console', (m) => { if (m.type() === 'error') errors.push(`console: ${m.text()}`); });
   };
@@ -88,16 +90,43 @@ async function shot(page, name) {
   await shot(page, '02-lista-historias');
   await page.click('text=Hi, my name is Ana');
   await page.waitForSelector('.story');
-  await page.click('text=Escuchar historia');
-  await page.waitForSelector('.w.is-current', { timeout: 3000 });
-  await page.waitForSelector('text=Escuchar historia', { timeout: 20000 });
+  await page.click('button[aria-label="Escuchar historia"]');
+  await page.waitForSelector('.word-token.is-current', { timeout: 3000 });
+  await page.waitForSelector('.rd-bar.done');
+  await page.waitForSelector('button[aria-label="Escuchar historia"]', { timeout: 20000 });
   assert.ok((await page.evaluate(() => window.__spoken.length)) >= 12, 'se leyeron todas las oraciones');
   await page.click('button[aria-label="Mostrar traducción de la oración 1"]');
   assert.equal(await page.locator('.sent-es').first().isVisible(), true);
-  await page.click('.w >> text=live');
-  await page.waitForSelector('.word-sheet:not([hidden])');
-  assert.match(await page.locator('.word-sheet').innerText(), /vivir/);
-  await page.click('text=Guardar palabra');
+  // Guía fonética: interruptor tipo píldora que se recuerda en localStorage
+  assert.equal(await page.locator('.word-token rt').first().isVisible(), false);
+  await page.click('[role="switch"]');
+  assert.equal(await page.locator('[role="switch"]').getAttribute('aria-checked'), 'true');
+  assert.equal(await page.locator('.word-token rt').first().isVisible(), true);
+  await page.waitForTimeout(400);
+  assert.equal(await page.evaluate(() => JSON.parse(localStorage.getItem('ingles-input:v1')).settings.phonetics), true);
+  // Tarjeta de pronunciación: IPA, aproximación en español, traducción, audio normal y lento
+  await page.click('.word-token[data-lemma="live"]');
+  await page.waitForSelector('.word-pop:not([hidden])');
+  const popText = await page.locator('.word-pop').innerText();
+  assert.match(popText, /vivir/);
+  assert.match(popText, /\/lɪv\//);
+  assert.equal(await page.locator('.wp-es').innerText(), 'liv');
+  await page.click('.wp-act >> text=Lento');
+  await page.waitForTimeout(50);
+  assert.equal(await page.evaluate(() => window.__rates.at(-1)), 0.65, 'audio lento a 0.65x');
+  await page.click('.wp-act >> text=Normal');
+  await page.waitForTimeout(50);
+  assert.equal(await page.evaluate(() => window.__rates.at(-1)), 1, 'audio normal a 1.0x');
+  await page.click('.wp-save');
+  await page.waitForSelector('.wp-save.is-saved');
+  assert.equal(await page.locator('.word-token[data-lemma="live"]').first().evaluate((e) => e.classList.contains('saved')), true);
+  await page.keyboard.press('Escape');
+  await page.waitForSelector('.word-pop', { state: 'hidden' });
+  // Selector de velocidad
+  await page.click('.rd-speed >> text=1.25x');
+  await page.click('button[aria-label="Escuchar la oración 1"]');
+  await page.waitForTimeout(50);
+  assert.equal(await page.evaluate(() => window.__rates.at(-1)), 1.25, 'velocidad 1.25x');
   await shot(page, '03-historia');
   await page.click('.rate-hard');
   await page.waitForSelector('text=lo más sencillo disponible');
@@ -235,6 +264,9 @@ async function shot(page, name) {
   await shot(m, '11-movil-shadowing-sin-mic');
   await m.goto(base + '#/leer/s01');
   await m.waitForSelector('.story');
+  await m.click('.word-token[data-lemma="music"]');
+  await m.waitForSelector('.word-pop.is-sheet:not([hidden])');
+  assert.equal(await m.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), true, 'tarjeta de pronunciación sin scroll horizontal');
   await shot(m, '12-movil-historia');
   assert.equal(await m.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), true, 'historia sin scroll horizontal');
   console.log('ok móvil y sin reconocimiento de voz');
@@ -248,9 +280,10 @@ async function shot(page, name) {
   watch(pn);
   await pn.goto(base + '#/leer/s08');
   await pn.waitForSelector('.story');
-  await pn.click('text=Escuchar historia');
-  await pn.waitForSelector('.w.is-current', { timeout: 4000 });
-  await pn.click('text=Detener');
+  await pn.click('button[aria-label="Escuchar historia"]');
+  await pn.waitForSelector('.word-token.is-current', { timeout: 4000 });
+  await pn.click('button[aria-label="Pausar"]');
+  await pn.waitForSelector('button[aria-label="Continuar historia"]');
   await nb.close();
   console.log('ok resaltado estimado');
 

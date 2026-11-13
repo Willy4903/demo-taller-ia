@@ -12,6 +12,9 @@ const ICONS = {
   settings: 'M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6',
   play: 'M7 4l13 8-13 8z',
   stop: 'M6 6h12v12H6z',
+  pause: 'M7 4h3.5v16H7zM13.5 4H17v16h-3.5z',
+  bookmark: 'M6 3h12v18l-6-4.5L6 21z',
+  slow: 'M12 3a9 9 0 1 0 9 9M12 7v5l-3 2M16 3.5l1.5 3.5M20.5 7.5L17 9',
   volume: 'M11 5L6 9H2v6h4l5 4zM15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14',
   eye: 'M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z',
   check: 'M5 12l5 5L20 7',
@@ -48,7 +51,7 @@ export function icon(name, size = 22) {
   svg.setAttribute('viewBox', '0 0 24 24');
   svg.setAttribute('width', size);
   svg.setAttribute('height', size);
-  svg.setAttribute('fill', name === 'play' || name === 'stop' ? 'currentColor' : 'none');
+  svg.setAttribute('fill', name === 'play' || name === 'stop' || name === 'pause' ? 'currentColor' : 'none');
   svg.setAttribute('stroke', 'currentColor');
   svg.setAttribute('stroke-width', '2');
   svg.setAttribute('stroke-linecap', 'round');

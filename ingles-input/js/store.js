@@ -10,7 +10,8 @@ export const DEFAULTS = () => ({
   settings: {
     theme: 'auto', // auto | light | dark
     fontScale: 1, // 0.9 a 1.4
-    speed: 0.85, // 0.7 a 1
+    speed: 0.85, // 0.65 a 1.25
+    phonetics: false, // guía de pronunciación sobre cada palabra en el lector
     voice: '', // voiceURI de la voz en inglés elegida ('' = automática)
     cardDirection: 'en-es', // en-es | es-en
     newPerDay: 8,
@@ -38,7 +39,8 @@ export function sanitize(raw) {
   const s = isObj(raw.settings) ? raw.settings : {};
   d.settings.theme = ['auto', 'light', 'dark'].includes(s.theme) ? s.theme : d.settings.theme;
   d.settings.fontScale = num(s.fontScale, d.settings.fontScale, 0.9, 1.4);
-  d.settings.speed = num(s.speed, d.settings.speed, 0.7, 1);
+  d.settings.speed = num(s.speed, d.settings.speed, 0.65, 1.25);
+  d.settings.phonetics = s.phonetics === true;
   d.settings.voice = typeof s.voice === 'string' ? s.voice.slice(0, 200) : '';
   d.settings.cardDirection = s.cardDirection === 'es-en' ? 'es-en' : 'en-es';
   d.settings.newPerDay = Math.round(num(s.newPerDay, d.settings.newPerDay, 0, 30));

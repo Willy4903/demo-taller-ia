@@ -6,7 +6,7 @@ App web estática para que un hispanohablante de nivel básico aprenda inglés c
 
 | Módulo | Qué hace |
 | --- | --- |
-| Escuchar y leer | Historias originales de 80 a 150 palabras. Audio con `speechSynthesis` (0.7x a 1x), resaltado palabra por palabra, traducción oculta que se muestra al tocar y significado de cualquier palabra con opción de guardarla. |
+| Escuchar y leer | Historias originales de 80 a 150 palabras en un lector inmersivo oscuro. Reproductor flotante con onda de progreso, velocidad 0.75x, 1.0x o 1.25x y resaltado palabra por palabra. Interruptor "Ver pronunciación" que muestra sobre cada palabra cómo suena escrita en español. Al tocar una palabra se abre una tarjeta con IPA, pronunciación aproximada, traducción, audio normal y lento (0.65x) y botón para guardarla. Traducción oculta por oración. |
 | Shadowing | Práctica frase por frase: escuchas, grabas con el micrófono y `SpeechRecognition` compara. Muestra el porcentaje de coincidencia y las palabras falladas. |
 | Vocabulario | Tarjetas con frases completas y repetición espaciada SM-2. Las palabras guardadas en las historias se convierten en tarjetas con su frase de origen. |
 | Conversación guiada | Diálogos ramificados. La app dice una línea, respondes hablando o escribiendo, se valida con palabras clave y ves una respuesta modelo. Incluye un gancho opcional para una IA mediante tu propio backend. |
@@ -40,6 +40,7 @@ ingles-input/
     views/              Una vista por módulo
   data/                 Contenido en JSON (aquí se amplía)
     situations.json  stories.json  dialogues.json  phrases.json  grammar.json  glossary.json
+    pronunciation.json   IPA y pronunciación aproximada en español de cada palabra de las historias
   tests/
     logica.mjs          Pruebas de lógica y de validez del contenido (node:test)
     e2e.cjs             Prueba de extremo a extremo con Playwright y voz simulada
@@ -101,6 +102,12 @@ Todo el contenido está en `data/`. Después de editar, ejecuta `node --test tes
 ```
 
 Las oraciones en inglés y español van alineadas (la traducción se muestra por oración). El conjunto debe sumar entre 80 y 150 palabras.
+
+`pronunciation.json`: cada palabra nueva de una historia, tal como aparece en el texto (en minúsculas), necesita su entrada con la transcripción IPA (inglés de Estados Unidos) y la pronunciación aproximada escrita en español, con tilde en la sílaba tónica. Las pruebas avisan si falta alguna.
+
+```json
+"restaurant": {"ipa": "/ˈrɛstərɑnt/", "es": "réstorant"}
+```
 
 `phrases.json`: frases para shadowing y tarjetas.
 

@@ -27,7 +27,7 @@ export function render(root, ctx) {
 
   // --- Estudio
   const speedOut = h('output', { for: 'speed', text: `${st().speed.toFixed(2)}x` });
-  const speed = h('input', { id: 'speed', type: 'range', min: '0.7', max: '1', step: '0.05', value: String(st().speed), onInput: (e) => { speedOut.textContent = `${Number(e.target.value).toFixed(2)}x`; set((s) => { s.speed = Number(e.target.value); }); } });
+  const speed = h('input', { id: 'speed', type: 'range', min: '0.7', max: '1.25', step: '0.05', value: String(st().speed), onInput: (e) => { speedOut.textContent = `${Number(e.target.value).toFixed(2)}x`; set((s) => { s.speed = Number(e.target.value); }); } });
   const voice = h('select', { id: 'voice', onChange: (e) => set((s) => { s.voice = e.target.value; }) }, h('option', { value: '', text: 'Automática' }));
   const fillVoices = () => {
     const keep = st().voice;
