@@ -221,11 +221,11 @@ def descargar(url):
     return datos
 
 
-def descargar_parcial(url):
+def descargar_parcial(url, limite=MAX_BYTES_HTML):
     """Lee solo el inicio de una página HTML (donde están las etiquetas <meta>)."""
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html,*/*"})
-    with urllib.request.urlopen(req, timeout=10) as r:
-        return r.read(MAX_BYTES_HTML).decode("utf-8", errors="replace")
+    with urllib.request.urlopen(req, timeout=15) as r:
+        return r.read(limite).decode("utf-8", errors="replace")
 
 
 # ───────────── enlaces de Google Noticias → nota original del medio ─────────────
@@ -289,7 +289,7 @@ def gn_decodificar_remoto(art_id):
     pagina = None
     for base in ("https://news.google.com/rss/articles/", "https://news.google.com/articles/"):
         try:
-            pagina = descargar_parcial(base + art_id + "?hl=es-419&gl=PE&ceid=PE:es-419")
+            pagina = descargar_parcial(base + art_id + "?hl=es-419&gl=PE&ceid=PE:es-419", MAX_BYTES)
         except Exception as ex:  # noqa: BLE001
             GN_DIAG["pagina: " + type(ex).__name__ + " " + str(getattr(ex, "code", ""))] += 1
             pagina = None
@@ -302,7 +302,9 @@ def gn_decodificar_remoto(art_id):
     ts = re.search(r'data-n-a-ts="([^"]+)"', pagina)
     if not sg or not ts:
         GN_DIAG["pagina sin firma"] += 1
-        GN_MUESTRA.setdefault("pagina", re.sub(r"\s+", " ", pagina[:300]))
+        i = max(pagina.find("data-n-a"), pagina.find("c-wiz"))
+        GN_MUESTRA.setdefault("pagina", f"{len(pagina)} caracteres; data-n-a={pagina.count('data-n-a')}; "
+                              f"c-wiz={pagina.count('<c-wiz')}; fragmento: " + re.sub(r"\s+", " ", pagina[max(i, 0):max(i, 0) + 400]))
         return None
     req_art = ["Fbv4je", '["garturlreq",[["X","X",["X","X"],null,null,1,1,"US:en",null,1,null,null,null,null,null,0,1],'
                '"X","X",1,[1,1,1],1,1,null,0,0,null,0],"%s",%s,"%s"]' % (art_id, ts.group(1), sg.group(1))]
