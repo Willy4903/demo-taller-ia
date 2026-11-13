@@ -30,6 +30,39 @@ El sitio se sirve desde la rama `gh-pages` (Settings → Pages → Deploy from a
 
 El flujo `Actualizar PERÚ INFORMADO` corre 7 veces al día (00:17, 06:17, 10:17, 12:17, 15:17, 18:17 y 21:17, hora de Lima), hace commit de los datos en `main` e invoca `CI y despliegue` para republicar. Para agregar o quitar medios, edita `FEEDS`. También puede lanzarse a mano desde la pestaña *Actions*.
 
+## Prensa del día (sección de #/datos)
+
+Cada día lee los PDF de diarios que se comparten en un grupo de Telegram y muestra en `#/datos`: síntesis (opcional), temas, tendencia de 7 días, palabras más repetidas (con ▲ en alza), regiones mencionadas, personas e instituciones, cifras citadas, agenda por diario y titulares con su página.
+
+Flujo `Actualizar prensa del día` (`.github/workflows/actualizar-medios.yml`, 12:47 y 15:47 hora de Lima):
+
+1. `scripts/medios_telegram.py descargar` baja los PDF nuevos del grupo (Telethon, sesión de usuario; un bot no puede leer grupos ajenos ni bajar archivos de más de 20 MB).
+2. `scripts/actualizar_medios.py` los lee con PyMuPDF: titulares por tamaño de letra, tema por palabras clave, palabras, lugares, entidades y cifras.
+3. Escribe `data/medios.json` (60 días) y `data/medios.js` (detalle de 7 días y serie liviana). Los PDF no se guardan.
+4. Valida, hace commit en `main` e invoca `CI y despliegue`.
+
+Qué se guarda y qué no: solo titulares breves (máximo 30 por diario, con página) y conteos. Nunca el texto de las notas ni los PDF, y `validar_contenido.py` lo exige. Las ediciones escaneadas (solo imagen) se registran como «sin texto»; leerlas requeriría OCR.
+
+### Configuración (una sola vez)
+
+1. En https://my.telegram.org entra a «API development tools» y crea una app: obtienes `api_id` y `api_hash`.
+2. En tu computadora: `pip install -r coyuntura-peru/scripts/requirements-medios.txt` y `python coyuntura-peru/scripts/medios_telegram.py login`. Pide tu teléfono y el código que llega a Telegram, e imprime la cadena de sesión.
+3. Con `TG_API_ID`, `TG_API_HASH` y `TG_SESSION` definidos en tu terminal, `python coyuntura-peru/scripts/medios_telegram.py listar` muestra los grupos y su id.
+4. En GitHub, Settings > Secrets and variables > Actions, crea: `TG_API_ID`, `TG_API_HASH`, `TG_SESSION`, `TG_GRUPO` (id o nombre exacto del grupo) y, si quieres la síntesis redactada con IA, `ANTHROPIC_API_KEY` (opcional; el modelo se cambia con la variable `MEDIOS_MODELO`).
+5. Lanza el flujo a mano desde Actions con «Run workflow» (parámetro `dias` para traer más historia).
+
+Seguridad: `TG_SESSION` da acceso completo a esa cuenta de Telegram. Solo va como secreto del repositorio, nunca en archivos. Considera usar una cuenta secundaria que sea miembro del grupo. Mientras falten los secretos, el flujo termina sin error y lo explica en su resumen; la web muestra «Todavía no hay lectura de prensa».
+
+### Derechos
+
+Las ediciones y los titulares pertenecen a cada diario. La web muestra solo titulares breves con su página y estadísticas propias; no publica notas ni PDF. Publicar o redistribuir las ediciones completas no es parte de este proyecto.
+
+### Ajustes frecuentes
+
+- Nombres de diarios: `parse_nombre` en `scripts/medios_analisis.py` toma el nombre y la fecha del archivo (`PERU 🇵🇪 EL COMERCIO 121126.pdf`). Para fijar un nombre, agrégalo a `CANONICOS`.
+- Temas y regiones: listas `TEMAS` y `REGIONES` en el mismo archivo; las pruebas están en `scripts/test_medios.py` y `tests/medios.test.cjs`.
+- Los titulares se detectan por tamaño de letra (≥1,8 veces el texto corrido). En diarios con diseño atípico conviene revisar el primer día publicado.
+
 ## Talleres de IA
 
 `data/talleres.js` controla la promoción de los talleres: autor, lista de talleres, enlaces de contacto (WhatsApp, TikTok, web) y "otras páginas". Se muestra en la franja del inicio, en la sección Inteligencia artificial, en la Ruta, en el pie y en la página `#/talleres`. Para agregar precios o fechas, completa el campo `detalle` de cada taller.
