@@ -298,6 +298,11 @@ class FotosOriginales(unittest.TestCase):
     def tearDown(self):
         a.descargar_parcial, a.resolver_google_news = self.orig
 
+    def test_url_con_tildes(self):
+        self.assertEqual(a.uri_ascii("https://www.dw.com/es/la-unión-europea/a-1?maca=spa"),
+                         "https://www.dw.com/es/la-uni%C3%B3n-europea/a-1?maca=spa")
+        self.assertEqual(a.uri_ascii("https://x.pe/a%20b?q=1"), "https://x.pe/a%20b?q=1")
+
     def test_id_de_google_news(self):
         self.assertEqual(a.gn_id("https://news.google.com/rss/articles/CBMiABC?oc=5"), "CBMiABC")
         self.assertIsNone(a.gn_id("https://forbes.pe/nota"))

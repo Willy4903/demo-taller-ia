@@ -221,8 +221,17 @@ def descargar(url):
     return datos
 
 
+def uri_ascii(url):
+    """Codifica tildes y otros caracteres no ASCII de la URL (p. ej. dw.com/es/la-unión-…)."""
+    p = urlsplit(url)
+    host = p.netloc if p.netloc.isascii() else p.netloc.encode("idna").decode("ascii")
+    return urlunsplit((p.scheme, host, quote(p.path, safe="/%:@!$&'()*+,;=~"),
+                       quote(p.query, safe="=&%+/:?@!$'()*,;~"), quote(p.fragment, safe="%")))
+
+
 def descargar_parcial(url, limite=MAX_BYTES_HTML):
     """Lee solo el inicio de una página HTML (donde están las etiquetas <meta>)."""
+    url = uri_ascii(url)
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html,*/*"})
     with urllib.request.urlopen(req, timeout=15) as r:
         return r.read(limite).decode("utf-8", errors="replace")
