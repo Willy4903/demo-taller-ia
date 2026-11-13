@@ -258,6 +258,13 @@ export function wordCandidates(raw) {
   return [...out];
 }
 
+/** Pronunciación de una palabra tal como aparece en el texto: { ipa, es } o null. */
+export function lookupPronunciation(dict, raw) {
+  if (!dict) return null;
+  const w = unifyQuotes(raw).replace(/^[^a-z0-9]+|[^a-z0-9]+$/g, '');
+  return Object.prototype.hasOwnProperty.call(dict, w) ? dict[w] : null;
+}
+
 export function lookupWord(glossary, raw) {
   for (const c of wordCandidates(raw)) {
     if (Object.prototype.hasOwnProperty.call(glossary, c)) return { word: c, es: glossary[c] };

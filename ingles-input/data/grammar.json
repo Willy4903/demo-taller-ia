@@ -7,7 +7,14 @@
       "Para preguntar, cambia el orden: Are you ready? Where is the bank?",
       "Para negar, agrega not: He is not (isn't) here. Para contraer: I'm, it's, we're."
     ],
-    "examples": ["She is a nurse.", "Are you from Peru?"]
+    "examples": [
+      "She is a nurse.",
+      "Are you from Peru?"
+    ],
+    "examplesEs": [
+      "Ella es enfermera.",
+      "¿Eres de Perú?"
+    ]
   },
   {
     "id": "present-simple",
@@ -17,7 +24,14 @@
       "Con he, she e it, el verbo lleva -s: she works, he lives, it opens.",
       "Con I, you, we y they el verbo no cambia: we eat, they study."
     ],
-    "examples": ["She works in a hospital.", "I wake up at six."]
+    "examples": [
+      "She works in a hospital.",
+      "I wake up at six."
+    ],
+    "examplesEs": [
+      "Ella trabaja en un hospital.",
+      "Me despierto a las seis."
+    ]
   },
   {
     "id": "do-does",
@@ -27,7 +41,14 @@
       "Does va con he, she e it, y el verbo pierde la -s: Does she like tea?",
       "Para negar usa don't o doesn't: I don't eat meat. He doesn't like it."
     ],
-    "examples": ["Do you accept credit cards?", "My brother doesn't wash the dishes."]
+    "examples": [
+      "Do you accept credit cards?",
+      "My brother doesn't wash the dishes."
+    ],
+    "examplesEs": [
+      "¿Aceptan tarjetas de crédito?",
+      "Mi hermano no lava los platos."
+    ]
   },
   {
     "id": "modals",
@@ -37,7 +58,14 @@
       "Could suena más amable para pedir favores: Could you speak slower, please?",
       "Should da un consejo: You should drink water. Para negar: can't, shouldn't."
     ],
-    "examples": ["Can I try it on?", "You should rest."]
+    "examples": [
+      "Can I try it on?",
+      "You should rest."
+    ],
+    "examplesEs": [
+      "¿Me lo puedo probar?",
+      "Deberías descansar."
+    ]
   },
   {
     "id": "would-like",
@@ -47,7 +75,14 @@
       "Para ofrecer, pregunta: Would you like some water?",
       "Si sigue un verbo, usa to: We would like to order now."
     ],
-    "examples": ["I'd like a room for two nights.", "Would you like something to drink?"]
+    "examples": [
+      "I'd like a room for two nights.",
+      "Would you like something to drink?"
+    ],
+    "examplesEs": [
+      "Quisiera una habitación para dos noches.",
+      "¿Te gustaría algo de tomar?"
+    ]
   },
   {
     "id": "there-is",
@@ -57,7 +92,14 @@
       "Para preguntar, cambia el orden: Is there a pharmacy near here?",
       "Para negar: There isn't a bank here. There aren't any seats."
     ],
-    "examples": ["There are three bedrooms.", "Is there Wi-Fi in the room?"]
+    "examples": [
+      "There are three bedrooms.",
+      "Is there Wi-Fi in the room?"
+    ],
+    "examplesEs": [
+      "Hay tres dormitorios.",
+      "¿Hay wifi en la habitación?"
+    ]
   },
   {
     "id": "present-continuous",
@@ -67,7 +109,14 @@
       "Sirve para lo que pasa ahora o para algo temporal: She is cooking dinner.",
       "Para preguntar, invierte el orden: What are you reading?"
     ],
-    "examples": ["I'm learning English.", "We are staying here until Sunday."]
+    "examples": [
+      "I'm learning English.",
+      "We are staying here until Sunday."
+    ],
+    "examplesEs": [
+      "Estoy aprendiendo inglés.",
+      "Nos quedamos aquí hasta el domingo."
+    ]
   },
   {
     "id": "past-simple",
@@ -77,7 +126,14 @@
       "Muchos son irregulares y hay que aprenderlos: go, went; buy, bought; eat, ate.",
       "Para preguntar o negar usa did y el verbo base: Did you go? I did not go."
     ],
-    "examples": ["I bought these shoes last week.", "When did the pain start?"]
+    "examples": [
+      "I bought these shoes last week.",
+      "When did the pain start?"
+    ],
+    "examplesEs": [
+      "Compré estos zapatos la semana pasada.",
+      "¿Cuándo empezó el dolor?"
+    ]
   },
   {
     "id": "future",
@@ -87,7 +143,14 @@
       "Will más verbo expresa una decisión del momento: I'll take it.",
       "Es igual para todas las personas: I'll call, she'll call, they'll call."
     ],
-    "examples": ["It's going to rain tomorrow.", "I'll call the client."]
+    "examples": [
+      "It's going to rain tomorrow.",
+      "I'll call the client."
+    ],
+    "examplesEs": [
+      "Va a llover mañana.",
+      "Llamaré al cliente."
+    ]
   },
   {
     "id": "prepositions",
@@ -97,7 +160,14 @@
       "Usa on para días y superficies: on Monday, on the second floor.",
       "Usa in para meses y lugares grandes: in May, in Lima. Para ubicar: next to, near, across from."
     ],
-    "examples": ["I start work at eight.", "The station is next to the park."]
+    "examples": [
+      "I start work at eight.",
+      "The station is next to the park."
+    ],
+    "examplesEs": [
+      "Empiezo a trabajar a las ocho.",
+      "La estación está al lado del parque."
+    ]
   },
   {
     "id": "imperative",
@@ -107,6 +177,13 @@
       "Para decir que no, usa don't: Don't worry. Don't turn right.",
       "Let's más verbo es una invitación a hacer algo juntos: Let's go to the beach."
     ],
-    "examples": ["Go straight for two blocks.", "Let's take a short break."]
+    "examples": [
+      "Go straight for two blocks.",
+      "Let's take a short break."
+    ],
+    "examplesEs": [
+      "Sigue recto dos cuadras.",
+      "Tomemos un descanso corto."
+    ]
   }
 ]

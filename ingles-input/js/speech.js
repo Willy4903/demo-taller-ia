@@ -76,7 +76,7 @@ export function speak(text, { rate = 0.9, voiceURI = '', onStart, onWord, onEnd 
   const id = ++currentId;
   const u = new win.SpeechSynthesisUtterance(text);
   u.lang = 'en-US';
-  u.rate = Math.min(1, Math.max(0.5, rate));
+  u.rate = Math.min(1.5, Math.max(0.5, rate));
   const voice = pickVoice(voiceURI);
   if (voice) { u.voice = voice; u.lang = voice.lang; }
   let gotBoundary = false;

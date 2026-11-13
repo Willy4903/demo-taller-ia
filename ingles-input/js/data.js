@@ -1,7 +1,7 @@
 // Carga el contenido desde los archivos JSON de la carpeta data/.
 // Las rutas son relativas a este módulo, por eso funcionan igual en localhost y en GitHub Pages.
 
-const FILES = ['situations', 'stories', 'dialogues', 'phrases', 'grammar', 'glossary'];
+const FILES = ['situations', 'stories', 'dialogues', 'phrases', 'grammar', 'glossary', 'pronunciation'];
 
 export async function loadData() {
   const entries = await Promise.all(
