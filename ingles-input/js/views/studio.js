@@ -1,73 +1,7 @@
-// Exploración y práctica breve sin cuenta ni cambios en el progreso guardado.
+// Reto rápido: práctica breve sin cuenta ni cambios en el progreso guardado.
 import { h, clear } from '../util.js';
-import { icon, difficultyDots } from '../ui.js';
+import { icon } from '../ui.js';
 import { ttsSupported } from '../speech.js';
-
-const normalize = value => String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
-
-export function createExplorer(ctx) {
-  const { data } = ctx;
-  const section = h('section', { class: 'discover-section', id: 'explorar', 'aria-labelledby': 'discover-title' });
-  const count = h('p', { class: 'discover-count', role: 'status', 'aria-live': 'polite', 'aria-atomic': 'true' });
-  const grid = h('div', { class: 'discover-grid', id: 'discover-results' });
-  let expanded = false;
-  const search = h('input', {
-    id: 'discover-search', type: 'search', placeholder: '¿Qué te gustaría aprender?', autocomplete: 'off',
-    'aria-controls': 'discover-results', onInput: reset,
-  });
-  const topic = h('select', { id: 'discover-topic', 'aria-controls': 'discover-results', onChange: reset },
-    h('option', { value: '', text: 'Todos los temas' }),
-    data.situations.map(item => h('option', { value: item.id, text: item.name })));
-  const more = h('button', {
-    type: 'button', class: 'btn btn-secondary discover-more', 'aria-controls': 'discover-results',
-    'aria-expanded': 'false', onClick: () => { expanded = !expanded; draw(); },
-  });
-  section.append(
-    h('div', { class: 'discover-heading' },
-      h('div', {}, h('p', { class: 'eyebrow', text: 'EL MUNDO ES TU AULA' }), h('h2', { id: 'discover-title', text: 'Una historia para cada momento.' })),
-      h('p', { text: 'Viajar, conocer a alguien, pedir un café. Empieza por lo que te mueve.' })),
-    h('div', { class: 'discover-controls' },
-      h('label', { class: 'discover-search', for: 'discover-search' }, h('span', { class: 'sr-only', text: 'Buscar historias' }), icon('book', 20), search),
-      h('label', { class: 'discover-topic', for: 'discover-topic' }, h('span', { class: 'sr-only', text: 'Filtrar historias por tema' }), topic)),
-    count, grid, more);
-
-  function reset() { expanded = false; draw(); }
-  function draw() {
-    const query = normalize(search.value);
-    const matches = data.stories.filter(story => {
-      const situation = data.situationById[story.situation];
-      const text = normalize([story.title, story.titleEs, situation?.name, situation?.desc].join(' '));
-      return (!topic.value || story.situation === topic.value) && (!query || text.includes(query));
-    });
-    clear(grid);
-    count.textContent = matches.length === 1 ? '1 historia para explorar' : `${matches.length} historias para explorar`;
-    const visible = expanded ? matches : matches.slice(0, 3);
-    for (const [index, story] of visible.entries()) {
-      const situation = data.situationById[story.situation];
-      grid.append(h('a', { class: 'discover-card', href: `#/leer/${story.id}` },
-        h('div', { class: `discover-art discover-tone-${index % 4}`, 'aria-hidden': 'true' },
-          icon(situation?.icon || 'book', 54), h('span', { class: 'discover-art-word', lang: 'en', text: ['Hello.', 'Let’s go.', 'Good day.', 'Explore.'][index % 4] })),
-        h('div', { class: 'discover-copy' },
-          h('p', { class: 'discover-category', text: situation?.name || 'Historias en inglés' }),
-          h('h3', { lang: 'en', text: story.title }),
-          h('p', { class: 'discover-description', text: story.titleEs }),
-          h('div', { class: 'discover-meta' }, difficultyDots(story.difficulty), h('span', {}, icon('volume', 16), 'Lectura con audio'), icon('arrow', 20)))));
-    }
-    if (!matches.length) {
-      grid.append(h('div', { class: 'discover-empty' }, icon('book', 32),
-        h('h3', { text: 'Hay más historias por descubrir.' }),
-        h('p', { text: 'Prueba otra palabra o vuelve a todos los temas.' }),
-        h('button', { type: 'button', class: 'btn btn-secondary', text: 'Limpiar filtros', onClick: () => {
-          search.value = ''; topic.value = ''; reset(); search.focus();
-        } })));
-    }
-    more.hidden = matches.length <= 3;
-    more.textContent = expanded ? 'Mostrar menos historias' : `Ver las ${matches.length} historias`;
-    more.setAttribute('aria-expanded', String(expanded));
-  }
-  draw();
-  return section;
-}
 
 const PRACTICE = [
   { phrase: 'p002', choices: ['p004', 'p002', 'p008'], explanation: '«I’m from» te ayuda a decir de dónde eres. «And you?» devuelve la pregunta.' },

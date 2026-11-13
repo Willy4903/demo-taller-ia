@@ -12,6 +12,7 @@ export const DEFAULTS = () => ({
     fontScale: 1, // 0.9 a 1.4
     speed: 0.85, // 0.65 a 1.25
     phonetics: false, // guía de pronunciación sobre cada palabra en el lector
+    dailyGoal: 15, // meta diaria de lectura en minutos (5 a 120)
     voice: '', // voiceURI de la voz en inglés elegida ('' = automática)
     cardDirection: 'en-es', // en-es | es-en
     newPerDay: 8,
@@ -25,7 +26,7 @@ export const DEFAULTS = () => ({
   saved: {}, // palabra -> { word, es, sentence, sentenceEs, storyId, at }
   shadow: {}, // id de frase -> { best, attempts, last }
   convo: {}, // id de diálogo -> { runs, last }
-  stories: {}, // id de historia -> { plays, last }
+  stories: {}, // id de historia -> { plays, last, pos, total, opened }
   grammar: { counts: {}, shown: {}, unlocked: [] },
 });
 
@@ -41,6 +42,7 @@ export function sanitize(raw) {
   d.settings.fontScale = num(s.fontScale, d.settings.fontScale, 0.9, 1.4);
   d.settings.speed = num(s.speed, d.settings.speed, 0.65, 1.25);
   d.settings.phonetics = s.phonetics === true;
+  d.settings.dailyGoal = Math.round(num(s.dailyGoal, d.settings.dailyGoal, 5, 120));
   d.settings.voice = typeof s.voice === 'string' ? s.voice.slice(0, 200) : '';
   d.settings.cardDirection = s.cardDirection === 'es-en' ? 'es-en' : 'en-es';
   d.settings.newPerDay = Math.round(num(s.newPerDay, d.settings.newPerDay, 0, 30));

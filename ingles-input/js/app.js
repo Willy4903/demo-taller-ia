@@ -1,14 +1,15 @@
 // Punto de entrada: carga datos, aplica ajustes, arma la navegación y el enrutador por hash.
-import { h, clear } from './util.js';
-import { createStore } from './store.js';
+import { h, clear, todayStr } from './util.js';
+import { createStore, computeStreak } from './store.js';
 import { loadData } from './data.js';
 import { createTimer } from './timer.js';
 import { icon, toast, announce, notice, grammarTip } from './ui.js';
+import { cefr, lastStoryId } from './views/common.js';
 import { speak as ttsSpeak, cancelSpeech, onBusyChange } from './speech.js';
 import { applyRating, levelWord } from './adapt.js';
 import { recordFail, recordSuccess } from './grammar.js';
 
-import * as home from './views/home.js?v=studio-1';
+import * as home from './views/home.js';
 import * as stories from './views/stories.js';
 import * as shadowing from './views/shadowing.js';
 import * as vocab from './views/vocab.js';
@@ -18,10 +19,10 @@ import * as grammarView from './views/grammar.js';
 import * as settings from './views/settings.js';
 
 const ROUTES = [
-  { re: /^\/?$/, view: home, title: 'Inicio', nav: '/' },
-  { re: /^\/leer(?:\/([\w-]+))?$/, view: stories, title: 'Escuchar y leer', nav: '/leer', cat: 'input' },
+  { re: /^\/?$/, view: home, title: 'Biblioteca', nav: '/' },
+  { re: /^\/leer(?:\/([\w-]+))?$/, view: stories, title: 'Lectura', nav: '/leer', cat: 'input' },
   { re: /^\/shadowing$/, view: shadowing, title: 'Shadowing', nav: '/shadowing', cat: 'shadowing' },
-  { re: /^\/tarjetas$/, view: vocab, title: 'Vocabulario', nav: '/tarjetas', cat: 'review' },
+  { re: /^\/(?:vocabulario|tarjetas)$/, view: vocab, title: 'Vocabulario', nav: '/vocabulario', cat: 'review' },
   { re: /^\/hablar(?:\/([\w-]+))?$/, view: conversation, title: 'Conversación', nav: '/hablar', cat: 'convo' },
   { re: /^\/progreso$/, view: progress, title: 'Progreso', nav: '/progreso' },
   { re: /^\/gramatica$/, view: grammarView, title: 'Gramática de apoyo', nav: '/gramatica' },
@@ -29,11 +30,15 @@ const ROUTES = [
 ];
 
 const NAV = [
-  { path: '/', label: 'Inicio', icon: 'home' },
-  { path: '/leer', label: 'Leer', icon: 'book' },
+  { path: '/', label: 'Biblioteca', icon: 'home' },
+  { path: '/leer', label: 'Lectura', icon: 'book' },
+  { path: '/vocabulario', label: 'Vocabulario', icon: 'cards' },
+  { path: '/gramatica', label: 'Gramática', icon: 'bulb' },
+  { path: '/ajustes', label: 'Ajustes', icon: 'settings' },
+];
+const MORE = [
   { path: '/shadowing', label: 'Shadowing', icon: 'mic' },
-  { path: '/tarjetas', label: 'Tarjetas', icon: 'cards' },
-  { path: '/hablar', label: 'Hablar', icon: 'chat' },
+  { path: '/hablar', label: 'Conversación', icon: 'chat' },
   { path: '/progreso', label: 'Progreso', icon: 'chart' },
 ];
 
@@ -51,17 +56,9 @@ const main = document.getElementById('main');
 function applySettings() {
   const s = store.get().settings;
   const root = document.documentElement;
-  if (s.theme === 'auto') delete root.dataset.theme;
-  else root.dataset.theme = s.theme;
+  root.dataset.theme = 'dark'; // el sistema de diseño es oscuro
   root.style.setProperty('--fs', String(s.fontScale));
-  const dark = s.theme === 'dark' || (s.theme === 'auto' && window.matchMedia?.('(prefers-color-scheme: dark)').matches);
-  const meta = document.querySelector('meta[name="theme-color"]');
-  if (meta) meta.setAttribute('content', dark ? '#111c1a' : '#f6f4ed');
-}
-
-function effectiveDark() {
-  const s = store.get().settings.theme;
-  return s === 'dark' || (s === 'auto' && window.matchMedia?.('(prefers-color-scheme: dark)').matches);
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#090D16');
 }
 
 // ---------------------------------------------------------------------------
@@ -115,49 +112,83 @@ const ctx = {
   /** Vuelve a dibujar la pantalla actual. */
   reload() { route(); },
   /** Reaplica tema y tamaño de letra tras cambiar ajustes o importar datos. */
-  refreshChrome() { applySettings(); updateThemeButton(); },
+  refreshChrome() { applySettings(); updateStatus(); },
 };
 
 // ---------------------------------------------------------------------------
 // Navegación y enrutador
 // ---------------------------------------------------------------------------
 
+let currentNav = '';
+let moreBtn = null;
+let moreMenu = null;
+
 function buildChrome() {
   const nav = document.getElementById('nav');
   clear(nav);
-  for (const item of NAV) nav.append(h('a', { href: `#${item.path}`, dataset: { path: item.path } }, icon(item.icon, 22), h('span', { text: item.label })));
-
-  const top = document.getElementById('top-actions');
-  clear(top);
-  top.append(
-    h('a', { class: 'icon-btn', href: '#/gramatica', 'aria-label': 'Gramática de apoyo', title: 'Gramática de apoyo', dataset: { path: '/gramatica' } }, icon('bulb', 22)),
-    h('button', { type: 'button', class: 'icon-btn', id: 'theme-btn', onClick: toggleTheme }),
-    h('a', { class: 'icon-btn', href: '#/ajustes', 'aria-label': 'Ajustes y datos', title: 'Ajustes y datos', dataset: { path: '/ajustes' } }, icon('settings', 22)),
-  );
-  updateThemeButton();
+  const list = h('div', { class: 'nav-pills' }, h('span', { class: 'nav-ind', 'aria-hidden': 'true' }));
+  for (const item of NAV) {
+    list.append(h('a', { href: `#${item.path}`, dataset: { path: item.path } }, icon(item.icon, 18), h('span', { text: item.label })));
+  }
+  moreMenu = h('div', { class: 'more-menu', id: 'more-menu', hidden: true },
+    MORE.map((item) => h('a', { href: `#${item.path}`, dataset: { path: item.path }, onClick: closeMore }, icon(item.icon, 18), h('span', { text: item.label }))));
+  moreBtn = h('button', { type: 'button', class: 'nav-more', 'aria-expanded': 'false', 'aria-controls': 'more-menu', onClick: () => (moreMenu.hidden ? openMore() : closeMore()) },
+    h('span', { text: 'Más' }), h('span', { class: 'chev', 'aria-hidden': 'true', text: '▾' }));
+  list.append(h('div', { class: 'nav-more-wrap' }, moreBtn, moreMenu));
+  nav.append(list);
+  document.addEventListener('pointerdown', (e) => { if (!moreMenu.hidden && !e.target.closest('.nav-more-wrap')) closeMore(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !moreMenu.hidden) { closeMore(); moreBtn.focus(); } });
+  window.addEventListener('resize', () => placeIndicator());
+  updateStatus();
+  let raf = 0;
+  store.subscribe(() => { cancelAnimationFrame(raf); raf = requestAnimationFrame(updateStatus); });
 }
 
-function updateThemeButton() {
-  const b = document.getElementById('theme-btn');
-  if (!b) return;
-  clear(b);
-  const dark = effectiveDark();
-  b.append(icon(dark ? 'sun' : 'moon', 22));
-  b.setAttribute('aria-label', dark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro');
-  b.title = b.getAttribute('aria-label');
+function openMore() { moreMenu.hidden = false; moreBtn.setAttribute('aria-expanded', 'true'); }
+function closeMore() { if (!moreMenu) return; moreMenu.hidden = true; moreBtn.setAttribute('aria-expanded', 'false'); }
+
+/** Panel de estado: racha, nivel y meta diaria de lectura. */
+function updateStatus() {
+  const box = document.getElementById('status');
+  if (!box) return;
+  const st = store.get();
+  const streak = computeStreak(st.days);
+  const read = (st.days[todayStr()]?.input || 0) / 60;
+  const goal = st.settings.dailyGoal;
+  const pct = Math.min(100, Math.round((read / goal) * 100));
+  const level = cefr(st.level.input);
+  clear(box).append(
+    h('span', { class: 'st-streak', title: 'Días seguidos estudiando' }, icon('flame', 16), h('strong', { text: String(streak) }), h('span', { class: 'st-unit', text: streak === 1 ? 'día' : 'días' })),
+    h('span', { class: `st-level lv-${level.toLowerCase()}`, title: 'Tu nivel de lectura actual' }, h('span', { class: 'sr-only', text: 'Nivel ' }), level),
+    h('a', { class: `st-goal${pct >= 100 ? ' met' : ''}`, href: '#/progreso', title: 'Meta diaria de lectura' },
+      h('span', { class: 'st-goal-top' }, h('span', { text: 'Meta diaria' }), h('strong', { text: `${pct}%` })),
+      h('span', { class: 'st-goal-bar', role: 'progressbar', 'aria-label': `Meta diaria de lectura: ${Math.floor(read)} de ${goal} minutos`, 'aria-valuemin': '0', 'aria-valuemax': '100', 'aria-valuenow': String(pct) },
+        h('span', { style: `width:${pct}%` }))));
+  const lect = document.querySelector('.nav-pills a[data-path="/leer"]');
+  const last = data ? lastStoryId(st, data) : null;
+  if (lect) lect.setAttribute('href', last ? `#/leer/${last}` : '#/leer');
 }
 
-function toggleTheme() {
-  store.update((s) => { s.settings.theme = effectiveDark() ? 'light' : 'dark'; });
-  applySettings();
-  updateThemeButton();
+function placeIndicator() {
+  const ind = document.querySelector('.nav-ind');
+  if (!ind) return;
+  const active = document.querySelector(`.nav-pills > a[data-path="${currentNav}"]`) || (MORE.some((m) => m.path === currentNav) ? moreBtn : null);
+  if (!active) { ind.style.opacity = '0'; return; }
+  ind.style.opacity = '1';
+  ind.style.width = `${active.offsetWidth}px`;
+  ind.style.transform = `translateX(${active.offsetLeft}px)`;
 }
 
 function markNav(path) {
+  currentNav = path;
   document.querySelectorAll('[data-path]').forEach((a) => {
     if (a.dataset.path === path) a.setAttribute('aria-current', 'page');
     else a.removeAttribute('aria-current');
   });
+  moreBtn?.classList.toggle('is-active', MORE.some((m) => m.path === path));
+  closeMore();
+  placeIndicator();
+  document.querySelector('.nav-pills > a[aria-current], .nav-more.is-active')?.scrollIntoView?.({ block: 'nearest', inline: 'nearest' });
 }
 
 function currentPath() {
@@ -172,7 +203,7 @@ async function route() {
   const path = currentPath();
   const match = ROUTES.map((r) => ({ r, m: r.re.exec(path) })).find((x) => x.m);
   clear(main);
-  main.classList.remove('home-page');
+  main.className = '';
   if (!match) {
     main.append(h('h1', { id: 'page-title', tabindex: '-1', text: 'Página no encontrada' }), h('p', {}, h('a', { href: '#/', text: 'Volver al inicio' })));
     timer.setCategory(null);
@@ -206,7 +237,6 @@ async function start() {
     main.focus({ preventScroll: true });
     main.scrollIntoView({ block: 'start' });
   });
-  window.matchMedia?.('(prefers-color-scheme: dark)').addEventListener?.('change', () => { applySettings(); updateThemeButton(); });
   try {
     data = await loadData();
   } catch (e) {
@@ -224,6 +254,8 @@ async function start() {
   timer.start();
   window.addEventListener('hashchange', route);
   window.addEventListener('beforeunload', () => { timer.flush(); store.flush(); });
+  updateStatus();
+  document.fonts?.ready.then(placeIndicator);
   route();
 }
 

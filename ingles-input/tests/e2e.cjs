@@ -81,11 +81,23 @@ async function shot(page, name) {
   watch(page);
   await page.goto(base);
   await page.waitForSelector('text=Tu plan de hoy');
+  // Biblioteca: banner, cuadrícula, filtros por nivel y búsqueda instantánea
+  await page.waitForSelector('.continue');
+  assert.equal(await page.locator('.story-card').count(), 10, 'todas las historias en la biblioteca');
+  await page.click('.pill >> text=A1 Básico');
+  assert.equal(await page.locator('.story-card').count(), 4, 'filtro por nivel A1');
+  assert.equal(await page.locator('.story-card .lvl b').evaluateAll((els) => els.every((e) => e.textContent === 'A1')), true);
+  await page.click('.pill >> text=Todos');
+  await page.fill('#lib-q', 'airport');
+  assert.equal(await page.locator('.story-card').count(), 1, 'búsqueda instantánea');
+  await page.fill('#lib-q', '');
+  assert.match(await page.locator('.st-level').innerText(), /A1$/, 'insignia de nivel en la barra');
+  await page.waitForSelector('.st-goal');
   await shot(page, '01-inicio');
   console.log('ok inicio');
 
   // Historia: audio con resaltado, traducción, palabra guardada y valoración
-  await page.click('nav >> text=Leer');
+  await page.click('nav >> text=Lectura');
   await page.waitForSelector('text=Hi, my name is Ana');
   await shot(page, '02-lista-historias');
   await page.click('text=Hi, my name is Ana');
@@ -134,8 +146,17 @@ async function shot(page, name) {
   console.log('ok historia');
 
   // Tarjetas
-  await page.click('nav >> text=Tarjetas');
+  await page.click('nav >> text=Vocabulario');
   await page.waitForSelector('text=Empezar repaso');
+  assert.match(page.url(), /#\/vocabulario$/);
+  const fc = page.locator('.fc-flip').first();
+  assert.match(await fc.innerText(), /live[\s\S]*\/lɪv\//);
+  await fc.click();
+  assert.equal(await fc.getAttribute('aria-pressed'), 'true', 'la tarjeta se voltea');
+  await page.click('.pill >> text=Aprendidas');
+  assert.equal(await page.locator('.fc').count(), 0);
+  await page.click('.pill >> text=Nuevas');
+  assert.equal(await page.locator('.fc').count(), 1);
   await page.click('text=Empezar repaso');
   await page.waitForSelector('text=Mostrar respuesta');
   await shot(page, '04-tarjeta');
@@ -151,7 +172,8 @@ async function shot(page, name) {
   console.log('ok tarjetas');
 
   // Shadowing: dice la frase correcta, luego algo incorrecto tres veces para desbloquear gramática
-  await page.click('nav >> text=Shadowing');
+  await page.click('.nav-more');
+  await page.click('#more-menu >> text=Shadowing');
   await page.click('text=Empezar sesión');
   await page.waitForSelector('.phrase-en');
   const phrase = await page.locator('.phrase-en').innerText();
@@ -173,7 +195,8 @@ async function shot(page, name) {
   console.log('ok shadowing y gramática');
 
   // Conversación: respuesta correcta, incorrecta y final
-  await page.click('nav >> text=Hablar');
+  await page.click('.nav-more');
+  await page.click('#more-menu >> text=Conversación');
   await page.click('text=Meeting someone new');
   await page.waitForSelector('.bubble.npc');
   await page.fill('#reply', 'banana');
@@ -204,12 +227,16 @@ async function shot(page, name) {
   console.log('ok conversación');
 
   // Progreso y exportación / importación
-  await page.click('nav >> text=Progreso');
+  await page.click('.nav-more');
+  await page.click('#more-menu >> text=Progreso');
   await page.waitForSelector('text=Plan diario de 40 minutos');
   await shot(page, '08-progreso');
   await page.click('#chk-input');
   assert.equal(await page.locator('#chk-input').isChecked(), true);
   await page.goto(base + '#/ajustes');
+  await page.fill('#goal', '30');
+  await page.locator('#goal').dispatchEvent('input');
+  await page.waitForSelector('.st-goal-bar[aria-label*="de 30 minutos"]');
   await page.waitForTimeout(400);
   const [download] = await Promise.all([page.waitForEvent('download'), page.click('text=Exportar progreso')]);
   const exported = fs.readFileSync(await download.path(), 'utf8');
@@ -240,7 +267,11 @@ async function shot(page, name) {
 
   // Gramática desbloqueada visible
   await page.goto(base + '#/gramatica');
-  await page.waitForSelector('.tip');
+  await page.waitForSelector('details.tip[open]');
+  assert.equal(await page.locator('.acc-item').count(), 11, 'todas las guías en acordeón');
+  const before = await page.evaluate(() => window.__spoken.length);
+  await page.locator('details.tip[open] .ex').first().click();
+  assert.equal(await page.evaluate(() => window.__spoken.length), before + 1, 'el ejemplo se escucha al tocarlo');
   await ctx.close();
   await ctx2.close();
 

@@ -18,14 +18,16 @@ Principios de diseño:
 - Sin niveles tradicionales. El contenido se organiza por 10 situaciones reales (presentarse, trabajo, comida, viajes, compras, salud, ciudad, casa, tiempo libre, hotel).
 - Cada contenido termina con tres botones: "Muy fácil", "Justo" y "Difícil". La app mueve internamente un valor de comodidad (de 1 a 3) por tipo de actividad y recomienda lo que queda más cerca. Lo que marcas como difícil vuelve más adelante para repasarlo.
 - Interfaz en español, contenido de aprendizaje en inglés.
-- Tipografía grande, modo oscuro (automático o manual), foco visible, navegación por teclado, etiquetas para lectores de pantalla y respeto de `prefers-reduced-motion`.
+- Sistema de diseño oscuro "Cyber-EdTech" (paneles de cristal, Plus Jakarta Sans e Inter), foco visible, navegación por teclado, etiquetas para lectores de pantalla y respeto de `prefers-reduced-motion`.
+- Biblioteca (`#/`) con "Continúa tu lectura", buscador, filtros por nivel (A1, A2, B1 según la dificultad del contenido) y temática, anillo de avance por historia, actividad semanal y palabras nuevas. Barra superior con racha, nivel y meta diaria de lectura (se configura en Ajustes).
 
 ## Estructura de carpetas
 
 ```
 ingles-input/
   index.html            Página única (la app usa rutas con #/)
-  css/styles.css        Estilos, temas claro y oscuro
+  css/app.css           Sistema de diseño: tokens, estructura y componentes
+  css/reader.css        Vista de lectura, tarjeta de pronunciación y reproductor
   js/
     app.js              Arranque, navegación, contexto compartido
     util.js             Utilidades puras: comparación de voz, palabras clave, glosario
@@ -37,7 +39,7 @@ ingles-input/
     timer.js            Minutos de estudio reales
     ai.js               Conexión opcional con tu backend de IA
     data.js, ui.js      Carga de JSON y componentes de interfaz
-    views/              Una vista por módulo
+    views/              Una vista por módulo (library.js: portadas, tarjetas y filtros de la biblioteca)
   data/                 Contenido en JSON (aquí se amplía)
     situations.json  stories.json  dialogues.json  phrases.json  grammar.json  glossary.json
     pronunciation.json   IPA y pronunciación aproximada en español de cada palabra de las historias

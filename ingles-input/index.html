@@ -4,43 +4,56 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="Aprende inglés con input comprensible: historias con audio, shadowing, tarjetas con repetición espaciada y conversación guiada. Funciona sin cuenta y guarda todo en tu navegador.">
-  <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#f6f4ed">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#090D16">
   <title>Inglés con input</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23b73f2d'/%3E%3Cpath d='M16 22h32v18H30l-8 8v-8h-6z' fill='none' stroke='white' stroke-width='4' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%238B5CF6'/%3E%3Cstop offset='1' stop-color='%2306B6D4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Cpath d='M16 22h32v18H30l-8 8v-8h-6z' fill='none' stroke='white' stroke-width='4' stroke-linejoin='round'/%3E%3C/svg%3E">
   <script>
-    // Aplica el tema guardado antes de pintar para evitar un destello.
+    // Aplica el tamaño de letra guardado antes de pintar para evitar un salto.
+    document.documentElement.dataset.theme = 'dark';
     try {
       var s = JSON.parse(localStorage.getItem('ingles-input:v1') || '{}').settings || {};
-      if (s.theme === 'light' || s.theme === 'dark') document.documentElement.dataset.theme = s.theme;
       if (typeof s.fontScale === 'number') document.documentElement.style.setProperty('--fs', s.fontScale);
     } catch (e) { /* sin almacenamiento */ }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
-  <link rel="stylesheet" href="css/styles.css?v=reader-1">
-  <link rel="stylesheet" href="css/reader.css?v=reader-1">
+  <link rel="stylesheet" href="css/app.css?v=cyber-1">
+  <link rel="stylesheet" href="css/reader.css?v=cyber-1">
 </head>
 <body>
   <a class="skip-link" href="#main">Saltar al contenido</a>
   <div class="shell">
     <header class="topbar">
-      <a class="brand" href="#/" aria-label="Inglés con input, ir al inicio">
-        <span class="brand-mark" aria-hidden="true">in<span>·</span></span>
-        <span class="brand-name">Inglés con input<small>Un idioma. Todo un mundo.</small></span>
-      </a>
-      <div class="top-actions" id="top-actions"></div>
+      <div class="topbar-in">
+        <a class="brand" href="#/" aria-label="Inglés con input, ir a la biblioteca">
+          <span class="brand-mark" aria-hidden="true">in<span>·</span></span>
+          <span class="brand-name">Inglés con input</span>
+        </a>
+        <nav class="nav" id="nav" aria-label="Principal"></nav>
+        <div class="status" id="status" aria-label="Tu avance de hoy"></div>
+      </div>
     </header>
-    <nav class="nav" id="nav" aria-label="Principal"></nav>
     <main id="main" tabindex="-1">
       <p class="loading">Cargando…</p>
       <noscript><p class="notice notice-warn">Esta app necesita JavaScript para funcionar.</p></noscript>
     </main>
-    <footer class="site-footer"><div><strong>El mundo empieza con un <em lang="en">hello.</em></strong><p>Inglés con input · Hecho para aprender a tu ritmo.</p></div><div class="footer-links"><a href="#/gramatica">Gramática de apoyo</a><a href="#/ajustes">Ajustes y tus datos</a><span>Tu progreso se guarda en este navegador.</span></div></footer>
+    <footer class="site-footer">
+      <div class="footer-in">
+        <div class="footer-brand">
+          <span class="brand-mark" aria-hidden="true">in<span>·</span></span>
+          <p class="footer-motto">El mundo empieza con un <em lang="en">hello.</em></p>
+        </div>
+        <nav class="footer-links" aria-label="Accesos rápidos">
+          <a href="#/">Biblioteca</a><a href="#/vocabulario">Vocabulario</a><a href="#/gramatica">Gramática</a><a href="#/progreso">Progreso</a><a href="#/ajustes">Ajustes y datos</a>
+        </nav>
+        <p class="footer-note">Tu progreso se guarda solo en este navegador.</p>
+      </div>
+    </footer>
   </div>
   <div id="live" class="sr-only" aria-live="polite" aria-atomic="true"></div>
   <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
-  <script type="module" src="js/app.js?v=reader-1"></script>
+  <script type="module" src="js/app.js?v=cyber-1"></script>
 </body>
 </html>

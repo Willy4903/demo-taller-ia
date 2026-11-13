@@ -9,20 +9,21 @@ export function render(root, ctx) {
   const st = () => store.get().settings;
   const set = (fn) => { store.update((s) => fn(s.settings)); ctx.refreshChrome(); };
 
-  root.append(pageHeader('Ajustes y datos'));
+  root.append(pageHeader('Ajustes y datos', 'Preferencias de lectura y audio, y una copia de tu progreso cuando la necesites.'));
 
   // --- Apariencia
-  const theme = h('select', { id: 'theme', onChange: (e) => set((s) => { s.theme = e.target.value; }) },
-    h('option', { value: 'auto', text: 'Automático (según tu dispositivo)' }),
-    h('option', { value: 'light', text: 'Claro' }),
-    h('option', { value: 'dark', text: 'Oscuro' }));
-  theme.value = st().theme;
   const fontOut = h('output', { for: 'font', text: `${Math.round(st().fontScale * 100)}%` });
   const font = h('input', { id: 'font', type: 'range', min: '0.9', max: '1.4', step: '0.05', value: String(st().fontScale), onInput: (e) => { fontOut.textContent = `${Math.round(e.target.value * 100)}%`; set((s) => { s.fontScale = Number(e.target.value); }); } });
 
+  const phon = h('input', { id: 'phon', type: 'checkbox', class: 'switch', role: 'switch', checked: st().phonetics || undefined, onChange: (e) => set((s) => { s.phonetics = e.target.checked; }) });
+  const goalOut = h('output', { for: 'goal', text: `${st().dailyGoal} min` });
+  const goal = h('input', { id: 'goal', type: 'range', min: '5', max: '60', step: '5', value: String(Math.min(60, st().dailyGoal)), onInput: (e) => { goalOut.textContent = `${e.target.value} min`; set((s) => { s.dailyGoal = Number(e.target.value); }); } });
+
   root.append(h('section', { class: 'card' },
-    h('h2', { text: 'Apariencia' }),
-    h('div', { class: 'field' }, h('label', { for: 'theme', text: 'Tema' }), theme),
+    h('h2', { text: 'Lectura' }),
+    h('div', { class: 'field' }, h('label', { for: 'goal', text: 'Meta diaria de lectura' }), h('div', { class: 'row' }, goal, goalOut),
+      h('span', { class: 'hint', text: 'Minutos de lectura al día. Se muestra en la barra superior.' })),
+    h('div', { class: 'switch-row' }, phon, h('label', { for: 'phon' }, h('span', { text: 'Activar la guía de pronunciación automáticamente' }), h('span', { class: 'hint', text: 'Muestra sobre cada palabra cómo suena, escrito en español. También puedes activarla en cada historia.' }))),
     h('div', { class: 'field' }, h('label', { for: 'font', text: 'Tamaño de letra' }), h('div', { class: 'row' }, font, fontOut))));
 
   // --- Estudio
@@ -40,7 +41,7 @@ export function render(root, ctx) {
   const perDay = h('input', { id: 'perday', type: 'number', min: '0', max: '30', value: String(st().newPerDay), onChange: (e) => { const v = Math.max(0, Math.min(30, Math.round(Number(e.target.value) || 0))); e.target.value = String(v); set((s) => { s.newPerDay = v; }); } });
 
   root.append(h('section', { class: 'card' },
-    h('h2', { text: 'Estudio' }),
+    h('h2', { text: 'Audio y tarjetas' }),
     h('div', { class: 'field' }, h('label', { for: 'speed', text: 'Velocidad del audio por defecto' }), h('div', { class: 'row' }, speed, speedOut)),
     ttsSupported ? h('div', { class: 'field' }, h('label', { for: 'voice', text: 'Voz en inglés' }), voice, h('span', { class: 'hint', text: 'Las voces disponibles dependen de tu dispositivo.' }),
       btn('Probar voz', { icon: 'volume', onClick: () => ctx.speak('Hello! This is how I sound.') })) : null,

@@ -77,25 +77,58 @@ export function render(root, ctx) {
 
   function savedWordsSection() {
     const st = store.get();
-    const list = Object.values(st.saved).sort((a, b) => b.at - a.at);
-    const sec = h('section', { class: 'card', 'aria-labelledby': 'saved-h' }, h('h2', { id: 'saved-h', text: `Palabras guardadas (${list.length})` }));
-    if (!list.length) {
-      sec.append(h('p', { class: 'muted', text: 'Cuando leas una historia, toca una palabra y pulsa "Guardar palabra". Aparecerá aquí como tarjeta con su frase de origen.' }));
+    const pron = data.pronunciation || {};
+    const all = Object.values(st.saved).sort((a, b) => b.at - a.at);
+    const learnedOf = (w) => isLearned(st.cards[`w:${w.word}`]);
+    let filter = 'all';
+    const grid = h('div', { class: 'fc-grid' });
+    const sec = h('section', { class: 'card', 'aria-labelledby': 'saved-h' },
+      h('div', { class: 'panel-head' }, h('h2', { id: 'saved-h', text: `Mis palabras (${all.length})` })));
+    if (!all.length) {
+      sec.append(h('p', { class: 'muted', text: 'Cuando leas una historia, toca una palabra y pulsa "Guardar". Aparecerá aquí como tarjeta con su pronunciación y su frase de origen.' }));
       return sec;
     }
-    const ul = h('ul', { class: 'saved-list' });
-    for (const w of list) {
-      const card = st.cards[`w:${w.word}`];
-      ul.append(h('li', {},
-        h('div', {}, h('strong', { lang: 'en', text: w.word }), h('span', { text: ` · ${w.es || 'sin definición'}` }),
-          h('div', { class: 'small muted', lang: 'en', text: w.sentence }),
-          card && isLearned(card) ? badge('Aprendida', 'good') : null),
-        h('button', { type: 'button', class: 'icon-btn small', 'aria-label': `Quitar la palabra ${w.word}`, onClick: () => {
-          store.update((x) => { delete x.saved[w.word]; delete x.cards[`w:${w.word}`]; });
-          showHome();
-        } }, icon('trash', 18))));
+    const counts = { all: all.length, new: all.filter((w) => !learnedOf(w)).length, learned: all.filter(learnedOf).length };
+    const pills = h('div', { class: 'pill-row', role: 'group', 'aria-label': 'Filtrar palabras por estado' });
+    const btns = [['all', 'Todas'], ['new', 'Nuevas'], ['learned', 'Aprendidas']].map(([v, t]) => h('button', {
+      type: 'button', class: 'pill', 'aria-pressed': String(v === filter), dataset: { v },
+      onClick: () => { filter = v; btns.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.v === v))); draw(); },
+    }, t, h('span', { class: 'pill-n', text: String(counts[v]) })));
+    pills.append(...btns);
+    sec.append(pills, grid);
+
+    function draw() {
+      clear(grid);
+      const list = all.filter((w) => filter === 'all' || (filter === 'learned') === learnedOf(w));
+      if (!list.length) grid.append(h('p', { class: 'muted', text: filter === 'learned' ? 'Aún no dominas ninguna palabra guardada. Repásalas en las tarjetas.' : 'Todas tus palabras están aprendidas.' }));
+      for (const w of list) {
+        const p = pron[w.word];
+        const learned = learnedOf(w);
+        const flip = h('button', { type: 'button', class: 'fc-flip', 'aria-pressed': 'false', 'aria-label': `Tarjeta de ${w.word}: toca para ver el significado`, onClick: () => {
+          const on = flip.getAttribute('aria-pressed') !== 'true';
+          flip.setAttribute('aria-pressed', String(on));
+        } },
+          h('span', { class: 'fc-inner' },
+            h('span', { class: 'fc-face fc-front' },
+              h('span', { class: 'fc-word', lang: 'en', text: w.word }),
+              p ? h('span', { class: 'fc-ipa', lang: 'en', text: p.ipa }) : null,
+              p ? h('span', { class: 'fc-es-pill', text: p.es }) : null,
+              h('span', { class: 'fc-hint', text: 'Toca para ver el significado' })),
+            h('span', { class: 'fc-face fc-back' },
+              h('span', { class: 'fc-mean', text: w.es || 'Sin definición local' }),
+              w.sentence ? h('span', { class: 'fc-sent', lang: 'en' }, highlighted(w.sentence, w.word)) : null,
+              w.sentenceEs ? h('span', { class: 'fc-sent-es', text: w.sentenceEs }) : null)));
+        grid.append(h('div', { class: `fc${learned ? ' is-learned' : ''}` }, flip,
+          h('div', { class: 'fc-actions' },
+            h('span', { class: `fc-state${learned ? ' learned' : ''}`, text: learned ? 'Aprendida' : 'Nueva' }),
+            ttsSupported ? h('button', { type: 'button', class: 'icon-btn small', 'aria-label': `Escuchar ${w.word}`, onClick: () => ctx.speak(w.word, { rate: 1 }) }, icon('volume', 18)) : null,
+            h('button', { type: 'button', class: 'icon-btn small', 'aria-label': `Quitar la palabra ${w.word}`, onClick: () => {
+              store.update((x) => { delete x.saved[w.word]; delete x.cards[`w:${w.word}`]; });
+              showHome();
+            } }, icon('trash', 18)))));
+      }
     }
-    sec.append(ul);
+    draw();
     return sec;
   }
 
@@ -146,7 +179,7 @@ export function render(root, ctx) {
 
     answerBox.append(
       enToEs ? esBlock() : enBlock(),
-      c.kind === 'word' ? h('p', {}, h('strong', { lang: 'en', text: c.word }), ` = ${c.wordEs || 'sin definición local'}`) : null,
+      c.kind === 'word' ? h('p', {}, h('strong', { lang: 'en', text: c.word }), data.pronunciation?.[c.word] ? h('span', { class: 'fc-ipa inline', lang: 'en', text: ` ${data.pronunciation[c.word].ipa}` }) : null, ` = ${c.wordEs || 'sin definición local'}`) : null,
       !enToEs && ttsSupported ? btn('Escuchar', { icon: 'volume', onClick: () => ctx.speak(c.en) }) : null);
 
     function reveal() {

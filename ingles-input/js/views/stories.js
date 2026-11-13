@@ -1,7 +1,8 @@
 // Módulo 1: Escuchar y leer. Historias con audio, resaltado palabra por palabra, traducción oculta y glosario.
 import { h, clear, splitWords, lookupWord, lookupPronunciation, todayStr } from '../util.js';
-import { icon, pageHeader, backLink, difficultyDots, badge, ratingBar, notice, situationIcon } from '../ui.js';
-import { situationChips, recommend, ratingLabel, speechNotices } from './common.js';
+import { icon, pageHeader, backLink, difficultyDots, ratingBar, notice, situationIcon } from '../ui.js';
+import { libraryBrowser, levelBadge } from './library.js';
+import { recommend, speechNotices } from './common.js';
 import { newCard } from '../srs.js';
 import { ttsSupported, cancelSpeech } from '../speech.js';
 
@@ -14,37 +15,9 @@ export function render(root, ctx, params) {
 // ---------------------------------------------------------------------------
 
 function renderList(root, ctx) {
-  const { data } = ctx;
-  let filter = '';
-  const listEl = h('div', { class: 'grid' });
-  const chipsHolder = h('div');
-
-  function draw() {
-    clear(chipsHolder).append(situationChips(data, filter, (id) => { filter = id; draw(); }));
-    clear(listEl);
-    const ranked = recommend(ctx, 'input', data.stories.filter((s) => !filter || s.situation === filter), 'story');
-    ranked.forEach(({ item, reason }, i) => {
-      const sit = data.situationById[item.situation];
-      const r = ctx.store.get().ratings[`story:${item.id}`];
-      const wordCount = item.sentences.map((x) => x.en).join(' ').split(/\s+/).length;
-      listEl.append(h('a', { class: 'card list-card', href: `#/leer/${item.id}` },
-        h('div', { class: 'row' },
-          h('span', { class: 'sit-icon' }, situationIcon(sit, 22)),
-          h('div', { style: 'flex:1' },
-            h('p', { class: 'small muted', text: sit?.name }),
-            h('h2', { lang: 'en', text: item.title }),
-            h('div', { class: 'meta' },
-              difficultyDots(item.difficulty), h('span', { text: `${wordCount} palabras` }),
-              i < 2 && !filter ? badge('Recomendada', 'primary') : null,
-              !r ? badge(reason === 'nuevo para ti' ? 'Nueva' : reason) : badge(`Tu valoración: ${ratingLabel(r.last)}`, r.last === 'hard' ? 'warn' : 'good'))))));
-    });
-    if (!ranked.length) listEl.append(h('p', { class: 'muted', text: 'No hay historias para esta situación todavía.' }));
-  }
-
-  root.append(pageHeader('Escuchar y leer', 'Historias cortas en inglés simple. Escucha primero, lee después y mira la traducción solo si la necesitas.'));
+  root.append(h('p', { class: 'page-kicker', text: 'Lectura' }), libraryBrowser(ctx, { title: 'Escuchar y leer', headingLevel: 'h1', id: 'page' }));
+  root.querySelector('h1').id = 'page-title';
   speechNotices().forEach((n) => root.append(n));
-  root.append(chipsHolder, listEl);
-  draw();
 }
 
 // ---------------------------------------------------------------------------
@@ -74,8 +47,11 @@ function renderReader(root, ctx, id) {
   // --- Estado
   let playing = false;
   let runToken = 0;
-  let resumeAt = 0; // oración desde la que se reanuda tras pausar
-  let paused = false;
+  const prev = store.get().stories[id] || {};
+  let resumeAt = prev.pos > 0 && prev.pos < sentences.length ? prev.pos : 0; // oración desde la que se reanuda
+  let paused = resumeAt > 0;
+  const session = { start: Date.now(), looked: new Set(), saved: new Set(), heard: new Set() };
+  store.update((x) => { x.stories[id] = { ...(x.stories[id] || { plays: 0 }), opened: Date.now(), total: sentences.length }; });
   let currentSentence = -1;
   let rate = nearestSpeed(store.get().settings.speed);
   let showAll = false;
@@ -94,6 +70,7 @@ function renderReader(root, ctx, id) {
     backLink('#/leer', 'Todas las historias'),
     h('div', { class: 'rd-kicker' },
       h('span', { class: 'rd-sit' }, situationIcon(sit, 16), h('span', { text: sit?.name || 'Historia' })),
+      levelBadge(story.difficulty),
       h('span', { class: 'rd-meta', text: `${wordCount} palabras · ${minutes} min` }),
       difficultyDots(story.difficulty)),
     h('h1', { id: 'page-title', tabindex: '-1', lang: 'en', text: story.title }),
@@ -102,7 +79,7 @@ function renderReader(root, ctx, id) {
   // --- Barra superior: guía fonética y traducción
   const phonSwitch = h('button', {
     type: 'button', class: 'rd-switch', role: 'switch', 'aria-checked': String(phonetics), onClick: togglePhonetics,
-  }, h('span', { class: 'rd-switch-track', 'aria-hidden': 'true' }, h('span', { class: 'rd-switch-thumb' })), h('span', { text: 'Ver pronunciación' }));
+  }, h('span', { class: 'rd-switch-track', 'aria-hidden': 'true' }, h('span', { class: 'rd-switch-thumb' })), h('span', { text: 'Guía de pronunciación' }));
   const transBtn = h('button', { type: 'button', class: 'rd-pill', 'aria-pressed': 'false', onClick: toggleAll }, icon('language', 18), h('span', { text: 'Traducción' }));
   const toolbar = h('div', { class: 'rd-toolbar', role: 'group', 'aria-label': 'Opciones de lectura' },
     phonSwitch, transBtn, h('span', { class: 'rd-hint', text: 'Toca una palabra para escucharla' }));
@@ -151,6 +128,15 @@ function renderReader(root, ctx, id) {
     textEl.append(el);
   });
   const card = h('article', { class: 'rd-card', 'aria-labelledby': 'page-title' }, textEl);
+  const savedList = h('ul', { class: 'rd-saved' });
+  const metricsEl = h('dl', { class: 'rd-metrics' });
+  const aside = h('aside', { class: 'rd-aside', 'aria-label': 'Apoyo de lectura' },
+    h('section', { class: 'panel', 'aria-labelledby': 'rd-saved-h' },
+      h('div', { class: 'panel-head' }, h('h2', { id: 'rd-saved-h', text: 'Palabras guardadas' }), h('a', { class: 'panel-link', href: '#/vocabulario', 'aria-label': 'Ir a vocabulario' }, icon('chevR', 18))),
+      savedList),
+    h('section', { class: 'panel', 'aria-labelledby': 'rd-ses-h' },
+      h('div', { class: 'panel-head' }, h('h2', { id: 'rd-ses-h', text: 'Esta sesión' })), metricsEl));
+  const sessionTimer = setInterval(drawMetrics, 15000);
 
   // --- Valoración final
   const doneBox = h('section', { class: 'rd-done', 'aria-labelledby': 'rate-h' }, h('h2', { id: 'rate-h', text: 'Cuando termines' }));
@@ -190,8 +176,10 @@ function renderReader(root, ctx, id) {
     speedGroup.append(b);
     return b;
   });
+  const prevBtn = h('button', { type: 'button', class: 'rd-step', 'aria-label': 'Oración anterior', onClick: () => step(-1) }, icon('chevL', 20));
+  const nextBtn = h('button', { type: 'button', class: 'rd-step', 'aria-label': 'Oración siguiente', onClick: () => step(1) }, icon('chevR', 20));
   const player = h('div', { class: 'rd-player', role: 'region', 'aria-label': 'Reproductor de la historia' },
-    playBtn,
+    h('div', { class: 'rd-ctrl' }, prevBtn, playBtn, nextBtn),
     h('div', { class: 'rd-info' }, h('p', { class: 'rd-ptitle', lang: 'en', text: story.title }), nowEl),
     wave, speedGroup);
 
@@ -199,12 +187,14 @@ function renderReader(root, ctx, id) {
   const pop = h('div', { class: ttsSupported ? 'word-pop' : 'word-pop no-player', role: 'dialog', 'aria-modal': 'false', hidden: true });
   let sel = null; // { el, text, lemma, es, sentenceIdx }
 
-  root.append(hero, ...speechNotices(), toolbar, card, doneBox, ttsSupported ? player : null);
+  root.append(hero, ...speechNotices(), toolbar, h('div', { class: 'rd-layout' }, h('div', { class: 'rd-col' }, card, doneBox), aside), ttsSupported ? player : null);
   document.body.append(pop);
   if (!ttsSupported) root.classList.add('rd-no-audio');
   applyPhonetics();
   setPlayingUi();
-  updateProgress(-1);
+  updateProgress(resumeAt > 0 ? wordEls[resumeAt][0]?.g ?? -1 : -1);
+  drawSaved();
+  drawMetrics();
 
   // ------------------------------------------------------------ Guía fonética y traducciones
   function applyPhonetics() {
@@ -246,7 +236,7 @@ function renderReader(root, ctx, id) {
       w.bar.classList.toggle('now', w.g === g);
     });
     const at = currentSentence >= 0 ? currentSentence : resumeAt;
-    nowEl.textContent = `Oración ${at + 1} de ${sentences.length}`;
+    clear(nowEl).append(h('span', { class: 'rd-now-l', text: 'Oración ' }), `${at + 1} de ${sentences.length}`);
     wave.setAttribute('aria-valuenow', String(at + 1));
     wave.setAttribute('aria-valuetext', `Oración ${at + 1} de ${sentences.length}`);
   }
@@ -258,6 +248,8 @@ function renderReader(root, ctx, id) {
     sentEls.forEach((s, k) => s.el.classList.toggle('is-playing', k === i));
     clearWordMark();
     if (i !== null && sentEls[i]) {
+      session.heard.add(i);
+      if (i > 0) store.update((x) => { x.stories[id] = { ...(x.stories[id] || { plays: 0 }), pos: i, total: sentences.length }; });
       updateProgress(wordEls[i][0]?.g ?? -1);
       sentEls[i].el.scrollIntoView({ block: 'center', behavior: reduceMotion() ? 'auto' : 'smooth' });
     }
@@ -315,6 +307,10 @@ function renderReader(root, ctx, id) {
       onEnd: () => { if (token === runToken) { markSentence(null); updateProgress(-1); } },
     });
   }
+  function step(d) {
+    const at = currentSentence >= 0 ? currentSentence : resumeAt;
+    seek(Math.min(sentences.length - 1, Math.max(0, at + d)));
+  }
   function seek(i) {
     if (i < 0) return;
     resumeAt = i;
@@ -337,8 +333,9 @@ function renderReader(root, ctx, id) {
     updateProgress(allWords.length);
     store.update((s) => {
       const p = s.stories[id] || { plays: 0 };
-      s.stories[id] = { plays: p.plays + 1, last: Date.now() };
+      s.stories[id] = { ...p, plays: (p.plays || 0) + 1, last: Date.now(), pos: 0, total: sentences.length };
     });
+    drawMetrics();
     ctx.announce('Terminaste de escuchar la historia. Cuéntanos qué tan difícil fue.');
     doneBox.scrollIntoView({ block: 'nearest', behavior: reduceMotion() ? 'auto' : 'smooth' });
   }
@@ -350,6 +347,8 @@ function renderReader(root, ctx, id) {
     const found = lookupWord(data.glossary, text);
     const lemma = found ? found.word : text.toLowerCase().replace(/[^a-z'-]/g, '');
     sel = { el, text, lemma, es: found ? found.es : '', sentenceIdx, p: lookupPronunciation(pron, text) };
+    session.looked.add(lemma);
+    drawMetrics();
     el.classList.add('is-selected');
     el.setAttribute('aria-expanded', 'true');
     drawPop();
@@ -428,6 +427,9 @@ function renderReader(root, ctx, id) {
       }
     });
     root.querySelectorAll('.word-token').forEach((e) => e.classList.toggle('saved', !!store.get().saved[e.dataset.lemma]));
+    if (isSaved) session.saved.delete(lemma); else session.saved.add(lemma);
+    drawSaved();
+    drawMetrics();
     clear(button).append(icon(isSaved ? 'bookmark' : 'check', 18), h('span', { text: isSaved ? 'Guardar' : 'Guardada' }));
     button.classList.toggle('is-saved', !isSaved);
     button.setAttribute('aria-pressed', String(!isSaved));
@@ -466,8 +468,27 @@ function renderReader(root, ctx, id) {
     }
   }
 
+  function drawSaved() {
+    const list = Object.values(store.get().saved).filter((w) => w.storyId === id).sort((a, b) => b.at - a.at);
+    clear(savedList);
+    if (!list.length) { savedList.append(h('li', { class: 'rd-empty', text: 'Toca una palabra y pulsa Guardar. Aparecerá aquí.' })); return; }
+    for (const w of list) {
+      const p = pron[w.word];
+      savedList.append(h('li', {},
+        ttsSupported ? h('button', { type: 'button', class: 'rd-mini', 'aria-label': `Escuchar ${w.word}`, onClick: () => { if (playing) pause(); ctx.speak(w.word, { rate: 1 }); } }, icon('volume', 16)) : null,
+        h('div', {}, h('strong', { lang: 'en', text: w.word }), p ? h('span', { class: 'rd-ipa', text: p.ipa }) : null, h('small', { text: w.es || 'sin traducción local' }))));
+    }
+  }
+  function drawMetrics() {
+    const mins = Math.floor((Date.now() - session.start) / 60000);
+    clear(metricsEl).append(
+      ...[[mins < 1 ? '<1' : String(mins), 'minutos en la sesión'], [String(session.heard.size), `oraciones escuchadas de ${sentences.length}`], [String(session.looked.size), 'palabras consultadas'], [String(session.saved.size), 'palabras guardadas']]
+        .map(([v, l]) => h('div', {}, h('dt', { text: l }), h('dd', { text: v }))));
+  }
+
   return () => {
     halt();
+    clearInterval(sessionTimer);
     pop.remove();
     document.removeEventListener('pointerdown', onDocDown);
     document.removeEventListener('keydown', onKey);
