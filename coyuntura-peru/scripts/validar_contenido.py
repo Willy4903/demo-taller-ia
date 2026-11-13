@@ -5,6 +5,7 @@ Revisa: noticias (fechas, duplicados, sectores, dirección), estado de las fuent
 editorial (unidad, fecha de corte y fuente primaria), enlaces de las fuentes (formato) y la estructura del HTML.
 """
 from geografia import clasificar_geografia
+import medios_analisis
 import datetime as dt
 import json
 import os
@@ -200,9 +201,37 @@ def validar_html():
             err(f"index.html: recurso inexistente {ref}")
 
 
+def validar_medios():
+    """Prensa del día: estructura, fechas y que solo haya titulares breves (nunca texto de las notas)."""
+    ruta = os.path.join(RAIZ, "data", "medios.json")
+    try:
+        with open(ruta, encoding="utf-8") as f:
+            d = json.load(f)
+    except (OSError, ValueError) as ex:
+        err(f"medios.json ilegible: {ex}")
+        return
+    errores_m, avisos_m = medios_analisis.validar_estado(d)
+    for e in errores_m:
+        err(e)
+    for a in avisos_m:
+        aviso(a)
+    try:
+        with open(os.path.join(RAIZ, "data", "medios.js"), encoding="utf-8") as f:
+            js = f.read()
+        if not js.rstrip().endswith(";") or "window.MEDIOS = " not in js:
+            err("medios.js: formato inesperado")
+        else:
+            esperado = json.dumps(medios_analisis.salida_js(d), ensure_ascii=False, separators=(",", ":"))
+            if esperado not in js:
+                err("medios.js no coincide con medios.json: vuelve a generarlo con actualizar_medios.py")
+    except OSError as ex:
+        err(f"medios.js ilegible: {ex}")
+
+
 def main():
     validar_noticias()
     validar_editorial()
+    validar_medios()
     validar_html()
     for a in avisos:
         print("AVISO:", a)

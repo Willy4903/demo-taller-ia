@@ -25,8 +25,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: node --check coyuntura-peru/assets/newsroom.js && node --check coyuntura-peru/assets/app.js && node --check coyuntura-peru/assets/civic-experience.js
-      - run: node --test coyuntura-peru/tests/identidad_ciudadana.cjs coyuntura-peru/tests/newsroom.test.cjs
+      - run: node --check coyuntura-peru/assets/newsroom.js && node --check coyuntura-peru/assets/app.js && node --check coyuntura-peru/assets/civic-experience.js && node --check coyuntura-peru/assets/medios.js
+      - run: node --test coyuntura-peru/tests/identidad_ciudadana.cjs coyuntura-peru/tests/newsroom.test.cjs coyuntura-peru/tests/medios.test.cjs
       - run: npm run lint
       - run: npm run typecheck
       - run: npm test

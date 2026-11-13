@@ -1,0 +1,128 @@
+name: Actualizar prensa del día
+
+# Lee los PDF nuevos de un grupo de Telegram, extrae titulares y estadísticas y publica coyuntura-peru/data/medios.*
+# (sección «Prensa del día» de #/datos). Hora de Lima = UTC-5.
+# Dos pasadas al día, a los 47 minutos para evitar la congestión de GitHub: 12:47 y 15:47 (Lima).
+# Si faltan los secretos de Telegram, el flujo termina sin error y explica qué falta (ver coyuntura-peru/README.md).
+on:
+  schedule:
+    - cron: "47 17 * * *"
+    - cron: "47 20 * * *"
+  workflow_dispatch:
+    inputs:
+      dias:
+        description: "Días hacia atrás que se revisan en el grupo"
+        default: "2"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: actualizar-medios
+  cancel-in-progress: false
+
+jobs:
+  prensa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TG_API_ID: ${{ secrets.TG_API_ID }}
+      TG_API_HASH: ${{ secrets.TG_API_HASH }}
+      TG_SESSION: ${{ secrets.TG_SESSION }}
+      TG_GRUPO: ${{ secrets.TG_GRUPO }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Comprobar configuración de Telegram
+        id: config
+        run: |
+          faltan=""
+          for v in TG_API_ID TG_API_HASH TG_SESSION TG_GRUPO; do
+            if [ -z "${!v}" ]; then faltan="$faltan $v"; fi
+          done
+          if [ -n "$faltan" ]; then
+            echo "listo=no" >> "$GITHUB_OUTPUT"
+            {
+              echo "### Prensa del día: falta configurar Telegram"
+              echo
+              echo "Faltan estos secretos del repositorio:$faltan"
+              echo
+              echo "Guía paso a paso: sección «Prensa del día» de coyuntura-peru/README.md."
+            } >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "listo=si" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-python@v5
+        if: steps.config.outputs.listo == 'si'
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: coyuntura-peru/scripts/requirements-medios.txt
+
+      - name: Instalar dependencias
+        if: steps.config.outputs.listo == 'si'
+        run: pip install -r coyuntura-peru/scripts/requirements-medios.txt
+
+      - name: Pruebas de la lectura de prensa
+        if: steps.config.outputs.listo == 'si'
+        run: python -m unittest discover -s coyuntura-peru/scripts -p "test_medios.py"
+
+      - name: Descargar los PDF nuevos del grupo
+        if: steps.config.outputs.listo == 'si'
+        env:
+          DIAS: ${{ inputs.dias || '2' }}
+        run: python coyuntura-peru/scripts/medios_telegram.py descargar --destino "$RUNNER_TEMP/prensa" --dias "$DIAS"
+
+      # Si un PDF falla se anota en «avisos» y se sigue con los demás. Sin PDF nuevos no se escribe nada.
+      - name: Leer los PDF y regenerar datos
+        if: steps.config.outputs.listo == 'si'
+        run: python coyuntura-peru/scripts/actualizar_medios.py --entrada "$RUNNER_TEMP/prensa"
+
+      - name: Validar contenido
+        if: steps.config.outputs.listo == 'si'
+        run: python coyuntura-peru/scripts/validar_contenido.py
+
+      - name: Guardar cambios en main
+        id: guardar
+        if: steps.config.outputs.listo == 'si'
+        run: |
+          git config user.name "peru-en-claro-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add coyuntura-peru/data/medios.json coyuntura-peru/data/medios.js
+          if git diff --cached --quiet; then
+            echo "cambios=no" >> "$GITHUB_OUTPUT"
+            echo "Sin cambios en la prensa del día."
+          else
+            git commit -m "chore(prensa): lectura automática $(TZ=America/Lima date '+%Y-%m-%d %H:%M') (hora de Lima)"
+            for intento in 1 2 3; do
+              git pull --rebase origin main && git push origin main && break
+              echo "Intento $intento fallido; se reintenta"; sleep 5
+            done
+            git diff --quiet origin/main HEAD || { echo "No se pudo guardar en main" >&2; exit 1; }
+            echo "cambios=si" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Un push hecho con GITHUB_TOKEN no dispara otros flujos, así que se invoca el despliegue de forma explícita.
+      - name: Publicar sitio (CI y despliegue)
+        if: steps.guardar.outputs.cambios == 'si'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run ci-deploy.yml --ref main
+
+      - name: Borrar los PDF descargados
+        if: always()
+        run: rm -rf "$RUNNER_TEMP/prensa"
+
+      - name: Registrar fallo
+        if: failure()
+        run: |
+          {
+            echo "### La lectura de prensa falló"
+            echo
+            echo "Se conservaron los datos anteriores. Revisa los pasos de arriba. Si el error dice que la sesión de Telegram no es válida, genera una nueva con «medios_telegram.py login» y actualiza TG_SESSION."
+          } >> "$GITHUB_STEP_SUMMARY"
