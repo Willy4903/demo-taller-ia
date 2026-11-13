@@ -1,0 +1,57 @@
+{
+ "version": 1,
+ "generado": null,
+ "catalogo_temas": [
+  {
+   "id": "politica",
+   "nombre": "Política"
+  },
+  {
+   "id": "economia",
+   "nombre": "Economía"
+  },
+  {
+   "id": "seguridad",
+   "nombre": "Seguridad y justicia"
+  },
+  {
+   "id": "salud",
+   "nombre": "Salud"
+  },
+  {
+   "id": "educacion",
+   "nombre": "Educación"
+  },
+  {
+   "id": "clima",
+   "nombre": "Clima y desastres"
+  },
+  {
+   "id": "deportes",
+   "nombre": "Deportes"
+  },
+  {
+   "id": "espectaculos",
+   "nombre": "Espectáculos"
+  },
+  {
+   "id": "internacional",
+   "nombre": "Internacional"
+  },
+  {
+   "id": "gestion",
+   "nombre": "Gestión pública y obras"
+  },
+  {
+   "id": "tecnologia",
+   "nombre": "Tecnología"
+  },
+  {
+   "id": "otros",
+   "nombre": "Otros"
+  }
+ ],
+ "procesados": [],
+ "avisos": [],
+ "dias": []
+}
