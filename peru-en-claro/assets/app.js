@@ -782,14 +782,17 @@
     var B = bloquesDatos().filter(function (b) { return dFil === "todos" || b.cat === dFil; });
     g.innerHTML = B.length ? B.map(function (d) { return dataCard(d); }).join("") : '<div class="vacio">No hay datos en esta categoría todavía.</div>';
   }
+  function pintarPrensa() { var r = $("#pm-root"); if (r && window.PeruMedios) { try { window.PeruMedios.pintar(r, window.MEDIOS); } catch (e) { r.innerHTML = ""; } } }
   function vistaDatos() {
     var D = ED.datos; if (!D) return vistaHome();
     var h = '<div class="fade"><div class="shead" style="--c:#38BDF8"><p class="po-eye">DATOS DEL PERÚ</p><h1>Datos y cifras clave</h1><p>' + esc(D.intro) + '</p></div><div class="pe-data-intro"><strong>Primero, entiende la cifra.</strong><p>Selecciona «Qué significa este número» para ver su interpretación y un ejemplo. Las fechas de corte siempre permanecen visibles; la fuente original es el último nivel de consulta.</p></div>';
+    h += '<div id="pm-root"></div>';
     h += '<details class="filtros"><summary>Filtrar por tema</summary><div class="chips" id="d-chips" aria-label="Categorías"></div></details><div class="dp-b" id="d-grid" aria-live="polite"></div>';
     h += sh("Dónde buscar más datos", "#94A3B8") + D.enlaces.map(function (e) { return '<a class="fr" href="' + safeUrl(e.u) + '" target="_blank" rel="noopener noreferrer"><div><b>' + esc(e.n) + "</b><p>" + esc(e.d) + "</p></div><span>↗</span></a>"; }).join("");
     h += '<div class="box" style="margin-top:20px"><h3>Cómo leer estas cifras</h3><p>Cada dato indica su unidad, su fecha de corte y quién lo publicó. Compara solo cifras del mismo periodo y de la misma población: el desempleo de Lima Metropolitana no es el desempleo nacional, y un trimestre móvil no equivale a un año. Los datos del INEI se cargan con corte editorial al ' + esc(fechaLarga(D.corte)) + "; el tipo de cambio y las series del Banco Mundial se actualizan solos.</p></div>" + frescura();
     h += '<p class="dp-aviso">* Cifras con fines informativos y educativos. Cada tarjeta enlaza a su fuente y no sustituye a la información oficial en tiempo real. Contrasta en: <a href="https://estadisticas.bcrp.gob.pe/estadisticas/series/" target="_blank" rel="noopener noreferrer">BCRP</a>, <a href="https://www.gob.pe/inei" target="_blank" rel="noopener noreferrer">INEI</a>, <a href="https://www.dge.gob.pe" target="_blank" rel="noopener noreferrer">CDC-Minsa</a> y <a href="https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" target="_blank" rel="noopener noreferrer">ENFEN</a>.</p></div>';
     setTimeout(pintarDatos, 0);
+    setTimeout(pintarPrensa, 0);
     return h;
   }
   var hSec = "todos", hMax = 30;
