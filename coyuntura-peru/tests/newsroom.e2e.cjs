@@ -30,7 +30,10 @@ const fixture = {
       genero: index === 1 ? "opinion" : index === 2 ? "analisis" : "noticia",
       fecha: new Date(Date.UTC(2026, 10, 6, 12) - index * 3600000).toISOString(),
       url: "https://noticias.invalid/reportaje/" + index,
-      imagen: null
+      // Toda nota publicada lleva su foto original; "LOCAL" se sustituye por una foto servida en la prueba.
+      imagen: "LOCAL",
+      // Como agregador no ocupa la gran foto de portada: así se prueban las secciones sin el frente.
+      via: "Google Noticias"
     };
   })
 };
@@ -40,10 +43,10 @@ Object.assign(fixture.items[0], {
   sintesis: intro + " " + continuation,
   puntos: ["Contexto singular para comprobar la búsqueda de información", intro, intro, continuation, "Inversión pública del Perú: presupuesto para proyectos regionales"],
   datos: [{ v: "S/ 20 millones", t: "monto", c: "El documento citado asigna S/ 20 millones a los proyectos." }],
-  imagen: "https://noticias.invalid/foto-no-disponible.jpg",
-  // Un agregador no debe convertirse en la gran foto de portada; sí prueba el fallo real de imagen.
   via: "Google Noticias"
 });
+// Foto original que no carga: la tarjeta se retira, nunca se sustituye por una ilustración.
+fixture.items[4].imagen = "https://noticias.invalid/foto-no-disponible.jpg";
 fixture.items[2].resumen = fixture.items[2].titulo;
 Object.assign(fixture.items[3], { puntos: [fixture.items[3].titulo], sintesis: fixture.items[3].titulo, resumen: usefulFallback });
 fixture.items[5].titulo = "Inversión pública regional en Perú: presupuesto para nuevos proyectos";
@@ -133,10 +136,13 @@ async function runViewport(browser, base, width, height) {
     equal(await peru.locator(".pe-ficha").nth(1).locator(".gn.opinion").textContent(), "Opinión", `[${width}] la opinión se identifica en su tarjeta`);
     equal(await peru.locator(".pe-ficha").nth(2).locator(".gn.analisis").textContent(), "Análisis", `[${width}] el análisis se identifica en su tarjeta`);
 
-    // La foto falla por una solicitud abortada y deja una ilustración temática legible.
-    await peru.locator(".pe-ficha").first().locator(".ps-ph").waitFor();
-    equal(await peru.locator(".pe-ficha").first().locator(".ps-foto img").count(), 0, `[${width}] se elimina la foto no disponible`);
-    match(await peru.locator(".pe-ficha").first().locator(".ps-ph").innerText(), /Economía.*Diario Andino/is, `[${width}] el reemplazo identifica tema y fuente`);
+    // La foto falla por una solicitud abortada: la tarjeta se retira y no aparece ninguna ilustración.
+    const sinFoto = peru.locator(".pe-ficha").nth(4);
+    await sinFoto.evaluate(el => el.scrollIntoView());
+    await sinFoto.waitFor({ state: "hidden" });
+    equal(await page.locator(".ps-ph").count(), 0, `[${width}] no se usan ilustraciones en lugar de fotos`);
+    const fotos = await page.locator(".pe-ficha:not([hidden]) .ps-foto img").count();
+    equal(fotos, await page.locator(".pe-ficha:not([hidden])").count(), `[${width}] cada noticia visible tiene su foto original`);
 
     const first = peru.locator(".pe-ficha").first();
     await uniqueReading(first, `[${width}] noticias`);
@@ -297,7 +303,7 @@ async function smallFrontPages(browser, base) {
   try {
     for (let size = 1; size <= 7; size++) {
       small = { generado: fixture.generado, items: fixture.items.slice(0, size).map((item, index) => ({
-        ...item, genero: "noticia", via: null, imagen: index === 0 ? base + "assets/card-actualidad.jpg" : null,
+        ...item, genero: "noticia", via: null, imagen: base + "assets/card-actualidad.jpg",
         fuente: index === 0 ? "El Comercio" : item.fuente
       })) };
       await page.goto(base + "?portada=" + size + "#/noticias");
@@ -319,13 +325,14 @@ async function smallFrontPages(browser, base) {
   try {
     await new Promise(resolve => server.listen(0, "127.0.0.1", resolve));
     const base = "http://127.0.0.1:" + server.address().port + "/";
+    fixture.items.forEach(item => { if (item.imagen === "LOCAL") item.imagen = base + "assets/card-actualidad.jpg"; });
     browser = await pw.chromium.launch({ executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || undefined });
     for (const [width, height] of [[390, 844], [1440, 1000]]) await runViewport(browser, base, width, height);
     await smallFrontPages(browser, base);
     // Real geographic regressions: a Peruvian publisher does not make US news national.
     const geoCases = JSON.parse(fs.readFileSync(path.join(__dirname, 'geografia-casos.json'), 'utf8'));
     const selected = [geoCases[0], geoCases[1], geoCases.find(c => c.item.titulo.includes('esterilizaciones')), geoCases.find(c => c.item.titulo.includes('Guatemala')), geoCases.find(c => c.item.titulo.includes('Los expertos en psicología'))];
-    const geoData = { generado: fixture.generado, items: selected.map(c => Object.assign({}, fixture.items[4], c.item, { imagen: null })) };
+    const geoData = { generado: fixture.generado, items: selected.map(c => Object.assign({}, fixture.items[4], c.item, { imagen: base + "assets/card-actualidad.jpg", via: "Google Noticias" })) };
     const geoContext = await browser.newContext({ viewport: { width: 390, height: 844 }, serviceWorkers: 'block', reducedMotion: 'reduce' });
     await geoContext.route(url => !url.toString().startsWith(base), r => r.abort());
     await geoContext.route('**/data/noticias.js*', r => r.fulfill({ contentType: 'text/javascript', body: 'window.NOTICIAS = ' + JSON.stringify(geoData) + ';' }));
@@ -364,7 +371,9 @@ async function smallFrontPages(browser, base) {
     await live.close();
 
     const narrow = await browser.newPage({ viewport: { width: 320, height: 740 }, serviceWorkers: "block", reducedMotion: "reduce" });
-    await narrow.route(url => !url.toString().startsWith(base), route => route.abort());
+    // Sin red: las fotos de los medios se sirven con una imagen local para no retirar las tarjetas.
+    await narrow.route(url => !url.toString().startsWith(base), route => route.request().resourceType() === "image"
+      ? route.fulfill({ path: path.join(ROOT, "assets/card-actualidad.jpg"), contentType: "image/jpeg" }) : route.abort());
     await narrow.goto(base + "#/noticias");
     await narrow.locator(".pe-ficha").first().waitFor();
     await noOverflow(narrow, 320);

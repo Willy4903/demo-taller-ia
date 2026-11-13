@@ -291,5 +291,65 @@ class Sintesis(unittest.TestCase):
         self.assertEqual(nuevos[0]["sintesis"], "Texto previo.")
 
 
+class FotosOriginales(unittest.TestCase):
+    def setUp(self):
+        self.orig = (a.descargar_parcial, a.resolver_google_news)
+
+    def tearDown(self):
+        a.descargar_parcial, a.resolver_google_news = self.orig
+
+    def test_id_de_google_news(self):
+        self.assertEqual(a.gn_id("https://news.google.com/rss/articles/CBMiABC?oc=5"), "CBMiABC")
+        self.assertIsNone(a.gn_id("https://forbes.pe/nota"))
+
+    def test_decodifica_formato_antiguo(self):
+        import base64
+        crudo = b"\x08\x13\x22\x1a" + b"https://forbes.pe/ia/nota-1" + b"\xd2\x01\x00"
+        art = base64.urlsafe_b64encode(crudo).decode().rstrip("=")
+        self.assertEqual(a.gn_decodificar_local(art), "https://forbes.pe/ia/nota-1")
+
+    def test_formato_firmado_no_se_decodifica_localmente(self):
+        import base64
+        art = base64.urlsafe_b64encode(b"\x08\x13\x22\x5fAU_yqLxyz").decode().rstrip("=")
+        self.assertIsNone(a.gn_decodificar_local(art))
+
+    def test_respuesta_de_google(self):
+        interno = json.dumps(["garturlres", "https://peru21.pe/ia/top-3", 1])
+        texto = ")]}'\n\n" + json.dumps([["wrb.fr", "Fbv4je", interno, None, None, None, "generic"]]) + "\n\n"
+        self.assertEqual(a.gn_extraer_respuesta(texto), "https://peru21.pe/ia/top-3")
+
+    def test_foto_og_y_rechazo_de_logotipos(self):
+        html_ = ('<meta property="og:image" content="https://forbes.pe/logo-forbes.png">'
+                 '<meta name="twitter:image" content="https://forbes.pe/fotos/ia.jpg">')
+        self.assertEqual(a.buscar_foto(html_, "https://forbes.pe/n"), "https://forbes.pe/fotos/ia.jpg")
+        self.assertEqual(a.buscar_foto('<script>{"image":{"url":"https:\\/\\/x.pe\\/f.jpg"}}</script>', "https://x.pe/n"), "https://x.pe/f.jpg")
+        self.assertIsNone(a.buscar_foto('<meta property="og:image" content="https://x.pe/default-share.png">', "https://x.pe/n"))
+
+    def test_google_news_resuelve_medio_y_toma_su_foto(self):
+        a.resolver_google_news = lambda u: "https://forbes.pe/ia/nota"
+        a.descargar_parcial = lambda u, *r: '<meta property="og:image" content="https://forbes.pe/f/ia.jpg">' if "forbes.pe" in u else ""
+        it = {"url": "https://news.google.com/rss/articles/CBMiX", "titulo": "t"}
+        a.enriquecer_imagenes([it], [])
+        self.assertEqual(it["url_medio"], "https://forbes.pe/ia/nota")
+        self.assertEqual(it["imagen"], "https://forbes.pe/f/ia.jpg")
+
+    def test_reintenta_notas_previas_sin_foto_y_hereda(self):
+        llamadas = []
+        a.resolver_google_news = lambda u: None
+        a.descargar_parcial = lambda u, *r: llamadas.append(u) or ""
+        previos = [{"url": "https://dw.com/a", "imagen_intentos": 2}, {"url": "https://dw.com/b", "imagen": "https://static.dw.com/b.jpg"}]
+        items = [{"url": "https://dw.com/a"}, {"url": "https://dw.com/b"}]
+        a.enriquecer_imagenes(items, previos)
+        self.assertEqual(llamadas, ["https://dw.com/a"])
+        self.assertEqual(items[0]["imagen_intentos"], 3)
+        self.assertEqual(items[1]["imagen"], "https://static.dw.com/b.jpg")
+
+    def test_deja_de_reintentar_tras_el_limite(self):
+        a.descargar_parcial = lambda u, *r: (_ for _ in ()).throw(AssertionError("no debe descargar"))
+        items = [{"url": "https://dw.com/a", "imagen_intentos": a.MAX_INTENTOS_IMAGEN}]
+        a.enriquecer_imagenes(items, [])
+        self.assertFalse(items[0].get("imagen"))
+
+
 if __name__ == "__main__":
     unittest.main()

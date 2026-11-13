@@ -82,6 +82,13 @@ def validar_noticias():
             err(f"nota de agregador sin etiqueta «via»: {t[:50]}")
     if antiguas:
         aviso(f"{antiguas} notas con más de 45 días")
+    for i in items:
+        img = i.get("imagen")
+        if img and not str(img).startswith("https://"):
+            err(f"foto sin https en «{i.get('titulo', '')[:50]}»: {img}")
+    sin_foto = sum(1 for i in items if not i.get("imagen"))
+    if sin_foto:
+        aviso(f"{sin_foto} notas aún sin foto original (no se publican hasta obtenerla)")
     gen = fecha_ok(d.get("generado", "")) if d.get("generado") else None
     if not gen:
         err("noticias.json sin fecha de generación válida")

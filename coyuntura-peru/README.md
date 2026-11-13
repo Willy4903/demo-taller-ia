@@ -4,7 +4,7 @@ Portal de noticias sobre la coyuntura peruana: política, economía, salud, El N
 
 - Sin dependencias de código: HTML + CSS + JavaScript puro (solo las tipografías vienen de Google Fonts). Se abre con doble clic en `index.html`.
 - Instalable como app: en iPhone, Safari → Compartir → *Añadir a pantalla de inicio*; en Android, menú → *Instalar app*. Funciona sin conexión con lo último que cargó (service worker, solo en https).
-- Las fotos son reales: la `og:image` de cada nota y, para los análisis, la de la primera fuente citada que la tenga (con crédito). Si no hay foto, la nota se muestra sin imagen; no se usan ilustraciones generadas.
+- Las fotos son reales: la `og:image` de cada nota (descartando logotipos e íconos del sitio) y, para los análisis, la de la primera fuente citada que la tenga (con crédito). Los enlaces de Google Noticias se resuelven a la nota original del medio (`url_medio`) para tomar su foto y enlazarla directamente. Una nota sin foto original no se publica: el actualizador la reintenta en las ejecuciones siguientes (hasta 6 veces) y, si la foto no carga en el navegador, la tarjeta se retira. Nunca se usan ilustraciones ni íconos de reemplazo.
 - Una línea dinámica (de derecha a izquierda) muestra lo último: tipo de cambio, estado de El Niño, análisis y notas recientes. Se pausa al pasar el cursor o con el botón; con "reducir movimiento" queda estática.
 - El tipo de cambio (USD/PEN) se lee de la API pública del BCRP; si falla, se usa un valor referencial de una API pública sin clave y se acumula entre ejecuciones. Si ambas fallan, se conserva el último dato.
 - Se actualiza automáticamente **7 veces al día** (00:17, 06:17, 10:17, 12:17, 15:17, 18:17 y 21:17, hora de Lima) mediante GitHub Actions.

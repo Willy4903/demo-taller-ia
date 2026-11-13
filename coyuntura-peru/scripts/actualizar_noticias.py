@@ -7,6 +7,7 @@
 """
 from geografia import aplicar_geografia, generar_js
 from limpieza_noticias import limpiar_registro, limpiar_texto
+import base64
 import datetime as dt
 import email.utils
 import hashlib
@@ -226,44 +227,175 @@ def descargar_parcial(url):
         return r.read(MAX_BYTES_HTML).decode("utf-8", errors="replace")
 
 
-RE_OG = [
-    re.compile(r'<meta[^>]+(?:property|name)=["\'](?:og:image(?::secure_url)?|twitter:image)["\'][^>]*content=["\']([^"\']+)["\']', re.I),
-    re.compile(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]*(?:property|name)=["\'](?:og:image(?::secure_url)?|twitter:image)["\']', re.I),
-]
+# ───────────── enlaces de Google Noticias → nota original del medio ─────────────
+GN_BATCH = "https://news.google.com/_/DotsSplashUi/data/batchexecute"
 
 
-def imagen_og(url):
+def es_google_news(url):
+    return urlsplit(url or "").netloc.lower().endswith("news.google.com")
+
+
+def gn_id(url):
+    """Identificador del artículo en un enlace de Google Noticias (…/articles/<id>)."""
+    if not es_google_news(url):
+        return None
+    partes = [p for p in urlsplit(url).path.split("/") if p]
+    for marca in ("articles", "read"):
+        if marca in partes and partes.index(marca) + 1 < len(partes):
+            return partes[partes.index(marca) + 1]
+    return None
+
+
+def gn_decodificar_local(art_id):
+    """Formato antiguo: la URL del medio va codificada en base64 dentro del identificador."""
     try:
-        cabecera = descargar_parcial(url)
+        crudo = base64.urlsafe_b64decode(art_id + "=" * (-len(art_id) % 4))
+    except (ValueError, TypeError):
+        return None
+    if b"AU_yqL" in crudo[:12]:
+        return None
+    m = re.search(rb"https?://[\x21-\x7e]+", crudo)
+    if not m:
+        return None
+    u = m.group(0).decode("ascii", "ignore")
+    return None if es_google_news(u) else u
+
+
+def gn_extraer_respuesta(texto):
+    """Extrae la URL del medio de la respuesta de Google Noticias."""
+    for bloque in texto.split("\n\n")[1:]:
+        try:
+            datos = json.loads(bloque)
+        except ValueError:
+            continue
+        for fila in datos if isinstance(datos, list) else []:
+            if isinstance(fila, list) and len(fila) > 2 and fila[1] == "Fbv4je" and isinstance(fila[2], str):
+                try:
+                    u = json.loads(fila[2])[1]
+                except (ValueError, IndexError, TypeError, KeyError):
+                    continue
+                if isinstance(u, str) and u.startswith("http") and not es_google_news(u):
+                    return u
+    return None
+
+
+def gn_decodificar_remoto(art_id):
+    """Formato actual: el identificador va firmado; se pide la URL con la firma que publica la propia página."""
+    try:
+        pagina = descargar_parcial("https://news.google.com/rss/articles/" + art_id)
     except Exception:  # noqa: BLE001
         return None
+    sg = re.search(r'data-n-a-sg="([^"]+)"', pagina)
+    ts = re.search(r'data-n-a-ts="([^"]+)"', pagina)
+    if not sg or not ts:
+        return None
+    req_art = ["Fbv4je", '["garturlreq",[["X","X",["X","X"],null,null,1,1,"US:en",null,1,null,null,null,null,null,0,1],'
+               '"X","X",1,[1,1,1],1,1,null,0,0,null,0],"%s",%s,"%s"]' % (art_id, ts.group(1), sg.group(1))]
+    cuerpo = ("f.req=" + quote(json.dumps([[req_art]]))).encode()
+    req = urllib.request.Request(GN_BATCH, data=cuerpo, headers={
+        "User-Agent": UA, "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"})
+    try:
+        with urllib.request.urlopen(req, timeout=10) as r:
+            return gn_extraer_respuesta(r.read(MAX_BYTES_HTML).decode("utf-8", errors="replace"))
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def resolver_google_news(url):
+    art_id = gn_id(url)
+    if not art_id:
+        return None
+    return gn_decodificar_local(art_id) or gn_decodificar_remoto(art_id)
+
+
+def url_del_medio(it):
+    """URL de la nota en el sitio del medio (la de Google Noticias solo redirige)."""
+    if it.get("url_medio"):
+        return it["url_medio"]
+    return None if es_google_news(it.get("url")) else it.get("url")
+
+
+# ───────────── foto original de la nota ─────────────
+RE_OG = [
+    re.compile(r'<meta[^>]+(?:property|name|itemprop)=["\'](?:og:image(?::secure_url|:url)?|twitter:image(?::src)?|image)["\'][^>]*content=["\']([^"\']+)["\']', re.I),
+    re.compile(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]*(?:property|name|itemprop)=["\'](?:og:image(?::secure_url|:url)?|twitter:image(?::src)?|image)["\']', re.I),
+    re.compile(r'<link[^>]+rel=["\']image_src["\'][^>]*href=["\']([^"\']+)["\']', re.I),
+    re.compile(r'"image"\s*:\s*(?:\[\s*)?(?:\{[^{}]*?"url"\s*:\s*)?"(https:[^"]+)"', re.I),
+]
+# Logotipos, íconos y comodines del sitio: no son la foto de la nota.
+RE_NO_FOTO = re.compile(r"(logo|favicon|apple-touch|sprite|placeholder|default[-_]?(?:image|img|share|og|thumb)|"
+                        r"no[-_]?image|sin[-_]?imagen|blank\.|pixel\.|1x1|\.svg(?:\?|$)|\.gif(?:\?|$))", re.I)
+
+
+def es_foto_valida(img):
+    return isinstance(img, str) and img.startswith("https://") and not RE_NO_FOTO.search(img)
+
+
+def buscar_foto(cabecera, base):
     for rx in RE_OG:
-        m = rx.search(cabecera)
-        if m:
-            img = urljoin(url, html.unescape(m.group(1)).strip())
-            if img.startswith("https://"):
+        for m in rx.finditer(cabecera):
+            img = urljoin(base, html.unescape(m.group(1)).strip().replace("\\/", "/"))
+            if es_foto_valida(img):
                 return img
     return None
 
 
+def imagen_og(url):
+    """Foto de portada de la nota (og:image, twitter:image o JSON-LD), nunca un logotipo."""
+    if not url or es_google_news(url):
+        return None
+    try:
+        cabecera = descargar_parcial(url)
+    except Exception:  # noqa: BLE001
+        return None
+    return buscar_foto(cabecera, url)
+
+
+MAX_INTENTOS_IMAGEN = 6
+
+
 def enriquecer_imagenes(items, previos):
-    """Hereda imágenes ya conocidas y busca la foto de portada (og:image) de las notas nuevas."""
-    conocidas = {url_canonica(i["url"]): i.get("imagen") for i in previos if i.get("imagen")}
+    """Busca la foto original de cada nota: resuelve el enlace real del medio y toma su og:image.
+
+    Hereda lo ya conocido y reintenta en ejecuciones siguientes las notas que aún no tienen foto
+    (hasta MAX_INTENTOS_IMAGEN veces). Nunca asigna ilustraciones ni logotipos."""
+    previos_por_url = {url_canonica(i["url"]): i for i in previos if i.get("url")}
     pendientes = []
     for it in items:
-        if it.get("imagen") or urlsplit(it["url"]).netloc.endswith("news.google.com"):
-            continue  # las páginas de Google Noticias no exponen la foto del medio
-        k = url_canonica(it["url"])
-        if k in conocidas:
-            it["imagen"] = conocidas[k]
-        else:
+        prev = previos_por_url.get(url_canonica(it["url"])) or {}
+        if not it.get("url_medio") and prev.get("url_medio"):
+            it["url_medio"] = prev["url_medio"]
+        if it.get("imagen") and not es_foto_valida(it["imagen"]):
+            it["imagen"] = None
+        if not it.get("imagen") and es_foto_valida(prev.get("imagen")):
+            it["imagen"] = prev["imagen"]
+        if it.get("imagen"):
+            it.pop("imagen_intentos", None)
+            continue
+        it["imagen_intentos"] = max(it.get("imagen_intentos") or 0, prev.get("imagen_intentos") or 0)
+        if it["imagen_intentos"] < MAX_INTENTOS_IMAGEN:
             pendientes.append(it)
     pendientes = pendientes[:MAX_IMAGENES_POR_EJECUCION]
+
+    def procesar(it):
+        if es_google_news(it["url"]) and not it.get("url_medio"):
+            real = resolver_google_news(it["url"])
+            if real:
+                it["url_medio"] = real
+        return imagen_og(url_del_medio(it))
+
     if pendientes:
-        with ThreadPoolExecutor(max_workers=6) as ex:
-            for it, img in zip(pendientes, ex.map(lambda i: imagen_og(i["url"]), pendientes)):
-                it["imagen"] = img
-    print(f"Imágenes de portada: {sum(1 for i in items if i.get('imagen'))}/{len(items)} notas")
+        with ThreadPoolExecutor(max_workers=4) as ex:  # pocas conexiones simultáneas con Google Noticias
+            for it, img in zip(pendientes, ex.map(procesar, pendientes)):
+                if img:
+                    it["imagen"] = img
+                    it.pop("imagen_intentos", None)
+                else:
+                    it["imagen"] = None
+                    it["imagen_intentos"] = it.get("imagen_intentos", 0) + 1
+    con = sum(1 for i in items if i.get("imagen"))
+    print(f"Imágenes de portada: {con}/{len(items)} notas")
+    return con
 
 
 # ───────────── síntesis y cifras clave por noticia ─────────────
@@ -392,10 +524,11 @@ def sintetizar(it, descripcion="", parrafos=None):
 
 
 def sintesis_de_pagina(it):
-    if urlsplit(it["url"]).netloc.endswith("news.google.com"):
+    url = url_del_medio(it)
+    if not url:
         return sintetizar(it)  # el agregador no expone el texto del medio: se usa solo el extracto del feed
     try:
-        pagina = descargar_parcial(it["url"])
+        pagina = descargar_parcial(url)
     except Exception:  # noqa: BLE001
         return sintetizar(it)
     return sintetizar(it, descripcion_html(pagina), parrafos_html(pagina))
@@ -916,9 +1049,9 @@ def main(feeds=None):
         resumen_ejecucion("Actualización sin cambios", ["Ningún feed respondió; se conservaron los datos anteriores."])
         return 1
     nuevos = traducir_notas(nuevos, previo.get("items", []))
-    enriquecer_imagenes(nuevos, previo.get("items", []))
     enriquecer_sintesis(nuevos, previo.get("items", []))
     combinados = fusionar(nuevos, previo.get("items", []))
+    enriquecer_imagenes(combinados, previo.get("items", []))
     enriquecer_sintesis(combinados, previo.get("items", []))
     combinados = [aplicar_geografia(limpiar_registro(i)) for i in combinados]
     items, descartes, errores = validar_datos(combinados, previo.get("items", []))
