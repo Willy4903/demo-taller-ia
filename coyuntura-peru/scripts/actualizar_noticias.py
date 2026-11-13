@@ -8,6 +8,7 @@
 from geografia import aplicar_geografia, generar_js
 from limpieza_noticias import limpiar_registro, limpiar_texto
 import base64
+import collections
 import datetime as dt
 import email.utils
 import hashlib
@@ -279,15 +280,29 @@ def gn_extraer_respuesta(texto):
     return None
 
 
+GN_DIAG = collections.Counter()  # motivos de fallo al resolver enlaces de Google Noticias (se imprimen en el registro)
+GN_MUESTRA = {}
+
+
 def gn_decodificar_remoto(art_id):
     """Formato actual: el identificador va firmado; se pide la URL con la firma que publica la propia página."""
-    try:
-        pagina = descargar_parcial("https://news.google.com/rss/articles/" + art_id)
-    except Exception:  # noqa: BLE001
+    pagina = None
+    for base in ("https://news.google.com/rss/articles/", "https://news.google.com/articles/"):
+        try:
+            pagina = descargar_parcial(base + art_id + "?hl=es-419&gl=PE&ceid=PE:es-419")
+        except Exception as ex:  # noqa: BLE001
+            GN_DIAG["pagina: " + type(ex).__name__ + " " + str(getattr(ex, "code", ""))] += 1
+            pagina = None
+            continue
+        if "data-n-a-sg" in pagina:
+            break
+    if not pagina:
         return None
     sg = re.search(r'data-n-a-sg="([^"]+)"', pagina)
     ts = re.search(r'data-n-a-ts="([^"]+)"', pagina)
     if not sg or not ts:
+        GN_DIAG["pagina sin firma"] += 1
+        GN_MUESTRA.setdefault("pagina", re.sub(r"\s+", " ", pagina[:300]))
         return None
     req_art = ["Fbv4je", '["garturlreq",[["X","X",["X","X"],null,null,1,1,"US:en",null,1,null,null,null,null,null,0,1],'
                '"X","X",1,[1,1,1],1,1,null,0,0,null,0],"%s",%s,"%s"]' % (art_id, ts.group(1), sg.group(1))]
@@ -296,9 +311,15 @@ def gn_decodificar_remoto(art_id):
         "User-Agent": UA, "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"})
     try:
         with urllib.request.urlopen(req, timeout=10) as r:
-            return gn_extraer_respuesta(r.read(MAX_BYTES_HTML).decode("utf-8", errors="replace"))
-    except Exception:  # noqa: BLE001
+            texto = r.read(MAX_BYTES_HTML).decode("utf-8", errors="replace")
+    except Exception as ex:  # noqa: BLE001
+        GN_DIAG["batch: " + type(ex).__name__ + " " + str(getattr(ex, "code", ""))] += 1
         return None
+    u = gn_extraer_respuesta(texto)
+    if not u:
+        GN_DIAG["batch sin URL"] += 1
+        GN_MUESTRA.setdefault("batch", re.sub(r"\s+", " ", texto[:300]))
+    return u
 
 
 def resolver_google_news(url):
@@ -394,7 +415,13 @@ def enriquecer_imagenes(items, previos):
                     it["imagen"] = None
                     it["imagen_intentos"] = it.get("imagen_intentos", 0) + 1
     con = sum(1 for i in items if i.get("imagen"))
-    print(f"Imágenes de portada: {con}/{len(items)} notas")
+    gn = [i for i in items if es_google_news(i["url"])]
+    print(f"Imágenes de portada: {con}/{len(items)} notas · Google Noticias resueltas: "
+          f"{sum(1 for i in gn if i.get('url_medio'))}/{len(gn)}")
+    for motivo, n in GN_DIAG.most_common():
+        print(f"  Google Noticias sin resolver: {motivo} ({n})")
+    for k, v in GN_MUESTRA.items():
+        print(f"  Muestra de respuesta ({k}): {v}")
     return con
 
 
