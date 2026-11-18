@@ -874,12 +874,10 @@
     h += '<div class="bento"><div class="panel b1"><h3 class="pt">Indicadores</h3>' + indicadores(true) + '</div><div class="panel"><h3 class="pt">Notas por sección</h3>' + ED.sectores.map(function (x) { var n = cnt[x.id] || 0; return '<div class="hbar" style="--c:' + x.color + '"><span>' + esc(x.nombre) + '</span><span><i style="width:' + Math.round(n / max * 100) + '%"></i></span><span>' + n + "</span></div>"; }).join("") + '</div><div class="panel"><h3 class="pt">Estado de las fuentes</h3>' + (nom.length ? nom.map(function (k) { return '<div class="fuente-i"><span>' + esc(k) + '</span><span class="' + (g[k].ok ? (g[k].procedencia === "agregador" ? "ag" : "ok") : "no") + '">' + esc(estadoTxt(g[k])) + "</span></div>"; }).join("") : '<div class="vacio">Aún no hay una carga automática registrada.</div>') + "</div></div></div>";
     return h;
   }
-  var DCATS = [["digital", "Internet e IA"], ["eco", "Bolsillo y empleo"], ["soc", "Población y servicios"], ["salud", "Salud"]];
   var dFil = "todos";
-  function bloquesDatos() {
-    var D = ED.datos, bm = NOT.datos_bm || {}, bloques = [], tc = bloqueTc();
-    D.grupos.forEach(function (grupo) { bloques.push.apply(bloques, grupo.items); });
-    if (tc) bloques.push(tc);
+  function indicadoresDinamicos() {
+    var D = ED.datos, bm = NOT.datos_bm || {}, tc = bloqueTc();
+    var bloques = tc ? [tc] : [];
     (D.series || []).forEach(function (x) {
       var b = bm[x.cod];
       if (!b || !b.serie || b.serie.length < 3) return;
@@ -899,13 +897,15 @@
       boton.classList.toggle("on", activo);
       boton.setAttribute("aria-pressed", String(activo));
     });
-    var datos = bloquesDatos(), total = 0;
-    g.innerHTML = DCATS.filter(function (x) { return dFil === "todos" || x[0] === dFil; }).map(function (x) {
-      var grupo = datos.filter(function (d) { return d.cat === x[0]; });
-      if (!grupo.length) return "";
-      total += grupo.length;
-      return '<section class="dato-grupo" aria-labelledby="d-' + x[0] + '"><h2 id="d-' + x[0] + '">' + esc(x[1]) +
-        '</h2><div class="dp-b">' + grupo.map(function (d) { return dataCard(d); }).join("") + "</div></section>";
+    var adicionales = indicadoresDinamicos(), total = 0;
+    g.innerHTML = ED.datos.grupos.filter(function (grupo) {
+      return dFil === "todos" || grupo.id === dFil;
+    }).map(function (grupo) {
+      var fichas = grupo.items.concat(adicionales.filter(function (d) { return d.cat === grupo.id; }));
+      if (!fichas.length) return "";
+      total += fichas.length;
+      return '<section class="dato-grupo" aria-labelledby="d-' + grupo.id + '"><h2 id="d-' + grupo.id + '">' + esc(grupo.g) +
+        '</h2><div class="dp-b">' + fichas.map(function (d) { return dataCard(d); }).join("") + "</div></section>";
     }).join("");
     $("#d-estado").textContent = total ? total + (total === 1 ? " indicador" : " indicadores") : "Todavía no hay cifras en este tema.";
   }
@@ -914,8 +914,8 @@
     var D = ED.datos; if (!D) return vistaHome();
     var h = '<div class="fade"><div class="shead" style="--c:#38BDF8"><h1>Datos del Perú</h1><p>' + esc(D.intro) + '</p></div>';
     h += '<div class="chips" id="d-chips" role="group" aria-label="Filtrar datos por tema">' +
-      [["todos", "Todo"]].concat(DCATS).map(function (x) {
-        return '<button type="button" class="chip" data-df="' + x[0] + '" aria-pressed="false">' + esc(x[1]) + "</button>";
+      [{ id: "todos", g: "Todo" }].concat(D.grupos).map(function (grupo) {
+        return '<button type="button" class="chip" data-df="' + grupo.id + '" aria-pressed="false">' + esc(grupo.g) + "</button>";
       }).join("") + '</div><p class="nota-pie" id="d-estado" role="status"></p><div id="d-grid"></div>';
     h += '<p class="nota-pie"><a class="lk" href="#/s/nino">Consultar el pronóstico y las alertas de El Niño →</a></p>';
     h += '<div id="pm-root"></div><details class="panel det"><summary>Dónde buscar más datos</summary>' +
