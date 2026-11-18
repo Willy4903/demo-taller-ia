@@ -3,7 +3,7 @@
 const http = require("http"), fs = require("fs"), path = require("path");
 let pw; try { pw = require("playwright"); } catch (e) { pw = require("@playwright/test"); }
 const RAIZ = path.resolve(__dirname, "..");
-const MIME = { ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".css": "text/css", ".json": "application/json", ".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".webmanifest": "application/manifest+json" };
+const MIME = { ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".css": "text/css", ".json": "application/json", ".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".webp": "image/webp", ".webmanifest": "application/manifest+json" };
 const srv = http.createServer((req, res) => {
   const u = decodeURIComponent(req.url.split("?")[0]); let f = path.join(RAIZ, u === "/" ? "index.html" : u);
   if (!f.startsWith(RAIZ) || !fs.existsSync(f) || fs.statSync(f).isDirectory()) { res.writeHead(404); return res.end("no"); }
@@ -75,6 +75,10 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
     await p.locator('.cine-card').first().waitFor();
     ok(await p.locator('#cine-titulo').innerText() === 'Cines' && await navCines.getAttribute("aria-current") === "page",
        `[${w}] Cines: visible y activo en la navegación principal`);
+    ok(await p.locator(".cine-logo").evaluate(async img => {
+      await img.decode();
+      return img.naturalWidth > 0 && img.getBoundingClientRect().right <= window.innerWidth;
+    }), `[${w}] Cines: logotipo visible y cargado`);
     await p.locator('#cine-origen').selectOption('Perú');
     ok(await p.locator('.cine-card').count() > 1 &&
        await p.locator('.cine-card:not(:has-text("Cine peruano"))').count() === 0, `[${w}] Cines: filtro nacional`);
@@ -181,8 +185,17 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
     await p.locator(".dc .pe-data-explain").first().locator("summary").click();
     ok(await p.locator(".dc .pe-data-explain[open]").count() === 1, `[${w}] datos: no abre explicación local`);
 
+    ok(await p.locator("#d-grid h2").allInnerTexts().then(x => x.join("|") === "Internet e IA|Bolsillo y empleo|Población y servicios|Salud"),
+       `[${w}] datos: orden de los temas`);
+    const filtroDigital = p.getByRole("button", { name: "Internet e IA", exact: true });
+    await filtroDigital.click();
+    ok(await filtroDigital.getAttribute("aria-pressed") === "true" && await p.locator("#d-grid h2").allInnerTexts().then(x => x.length === 1 && x[0] === "Internet e IA"),
+       `[${w}] datos: filtro digital activo`);
+    ok(await p.locator("#d-grid").getByRole("heading", { name: "IA integrada en recursos humanos" }).isVisible(),
+       `[${w}] datos: indicador de IA visible`);
+
     // El Niño
-    await p.goto(base + "#/nino"); await p.waitForTimeout(300);
+    await p.goto(base + "#/s/nino"); await p.waitForTimeout(300);
     ok(await p.locator(".n3-i").count() === 3, `[${w}] El Niño: estado, pronóstico y riesgo`);
     await p.locator(".n3-i").first().locator("summary").click();
     ok(await p.locator(".n3-i[open]").count() === 1, `[${w}] El Niño: el concepto no se despliega`);
@@ -194,6 +207,23 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
     const comunicadoPosterior = numeroComunicado(datosNoticias.enfen && datosNoticias.enfen.numero) > numeroComunicado(referencia);
     ok(await p.locator(".n-aviso").count() === Number(comunicadoPosterior), `[${w}] El Niño: el aviso debe corresponder a un comunicado posterior al ${referencia}`);
     ok(await p.locator('#app a[href*="observatorio-elnino-peru"]').count() > 0, `[${w}] El Niño: falta el enlace al observatorio`);
+    ok(await p.getByRole("link", { name: /Leer el comunicado oficial/ }).isVisible(),
+       `[${w}] El Niño: enlace al comunicado en el encabezado`);
+    if (w === 390) {
+      const nuevo = {
+        ...datosNoticias,
+        generado: new Date(Math.max(Date.now(), Date.parse(datosNoticias.generado)) + 1000).toISOString(),
+        enfen: { numero: "1-2099", alerta: "Vigilancia de prueba", fecha: "2099-01-02",
+          url: "https://enfen.imarpe.gob.pe/comunicados/", ok: true, comprobado: "2099-01-02T12:00:00Z" }
+      };
+      await p.route("**/data/noticias.json", route => route.fulfill({ json: nuevo }));
+      await p.clock.setFixedTime(new Date(Date.now() + 360000));
+      await p.evaluate(() => window.dispatchEvent(new Event("online")));
+      await p.getByText("Vigilancia de prueba", { exact: true }).waitFor();
+      ok(await p.locator(".n-aviso").innerText().then(x => x.includes("1-2099") && x.includes(referencia)),
+         `[${w}] El Niño: el boletín nuevo se muestra sin recargar y separa el pronóstico anterior`);
+      await p.clock.setFixedTime(new Date());
+    }
     // navegación y tamaños táctiles
     if (w >= 1000) {
       const etiquetas = await p.locator(".mnav a, .mnav .mn-b").allInnerTexts();

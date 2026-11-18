@@ -800,6 +800,9 @@ body:not([data-v="inicio"]) .ticker{display:none}
 .nota-pie{margin:18px 0 0;font-size:.82rem;color:var(--tx3)}
 
 /* datos: tarjetas siempre legibles, sin depender del giro */
+.dato-grupo{margin:24px 0}
+.dato-grupo h2{margin:0 0 12px;font:750 1.26rem/1.3 var(--serif)}
+#d-estado{margin-top:8px}
 .dp-b{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin:2px 0 6px}
 .dc{display:flex;flex-direction:column;gap:6px;min-width:0;padding:16px;border:1px solid var(--border);border-radius:var(--R);background:var(--card)}
 .dc header{display:flex;flex-direction:column;gap:6px;align-items:flex-start}

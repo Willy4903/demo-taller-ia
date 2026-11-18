@@ -180,7 +180,7 @@
       var f = s.fecha ? '<time datetime="' + esc(s.fecha) + '" title="' + esc(relativo(s.fecha) || "") + '">' + esc(corta(s.fecha)) + "</time>" : "<span>fecha no confirmada</span>";
       return '<div class="meta">' + badgeGenero(s.genero) + '<span class="fu">' + esc(s.fuente) + "</span>" + (s.via ? '<span class="via" title="Esta nota llegó por un agregador, no por el feed del medio">vía ' + esc(s.via) + "</span>" : "") + f + '<span class="ext" aria-hidden="true">↗</span></div>';
     }
-    return '<div class="meta">' + badgeGenero("analisis") + "<span>Corte editorial: " + esc(corta(ED.corte + "T12:00:00Z")) + "</span>" + (s.nivel ? '<span class="conf ' + (s.nivel === "alta" ? "alta" : "media") + '" title="Alta: confirmado en fuente oficial. Media: se apoya en prensa; conviene verificar.">Confianza ' + (s.nivel === "alta" ? "alta" : "media") + "</span>" : "") + "</div>";
+    return '<div class="meta">' + badgeGenero("analisis") + "<span>Corte editorial: " + esc(corta(((s.raw || {}).corte || ED.corte) + "T12:00:00Z")) + "</span>" + (s.nivel ? '<span class="conf ' + (s.nivel === "alta" ? "alta" : "media") + '" title="Alta: confirmado en fuente oficial. Media: se apoya en prensa; conviene verificar.">Confianza ' + (s.nivel === "alta" ? "alta" : "media") + "</span>" : "") + "</div>";
   }
   function leadCard(s) {
     var raw = s.raw || {}, fu = (raw.fuentes || [])[0];
@@ -352,28 +352,50 @@
 
   /* ───── sección exclusiva: El Niño ───── */
   function fechaLarga(iso) { try { return new Intl.DateTimeFormat("es-PE", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(iso + "T12:00:00Z")); } catch (e) { return iso; } }
-  function enfenFecha(e) { var u = (ED.nino || {}).ultimo; return u && e && u.numero === e.numero && u.fecha ? u.fecha : (e && e.fecha); }
-  function ultimoEnfen() {
-    var e = NOT.enfen, n = ED.nino || {};
-    if (e && e.numero) return { txt: "N.° " + e.numero + (enfenFecha(e) ? " · " + fechaLarga(enfenFecha(e)) : " · fecha no detectada automáticamente"), auto: true, comprobado: e.comprobado, ok: e.ok !== false, url: e.url || n.enfenUrl };
-    return { txt: "no se pudo leer la lista oficial; consulta el ENFEN", auto: false, url: n.enfenUrl };
-  }
-  function ninoTres() {
-    var n = ED.nino; if (!n || !n.tres) return "";
-    return '<div class="n3">' + n.tres.map(function (x, i) { return '<details class="n3-i n3-' + (i + 1) + '"><summary><h3>' + esc(x.k) + '</h3><p class="n3-v">' + esc(x.v) + '</p><span class="pe-nino-hint">Entender este estado <span aria-hidden="true">+</span></span></summary><p>' + esc(x.d) + '</p><small>Fuente: ' + esc(x.f) + "</small></details>"; }).join("") + "</div>";
-  }
   function numEnfen(x) { var m = /^(\d+)-(\d{4})$/.exec(x || ""); return m ? +m[2] * 1000 + +m[1] : 0; }
-  function avisoEnfen() {
-    var e = NOT.enfen, ref = (ED.nino || {}).comunicadoRef; if (!e || !e.numero || !ref || numEnfen(e.numero) <= numEnfen(ref)) return "";
-    return '<p class="n-aviso" role="note"><b>Aviso:</b> el ENFEN ya publicó el comunicado N.° ' + esc(e.numero) + (enfenFecha(e) ? " (" + esc(fechaLarga(enfenFecha(e))) + ")" : "") + ", posterior al N.° " + esc(ref) + " en que se basa el pronóstico resumido aquí. El pronóstico puede haber cambiado: léelo en el ENFEN antes de decidir.</p>";
+  function ultimoEnfen() {
+    var n = ED.nino || {}, referencia = n.ultimo || {}, e = NOT.enfen || {};
+    var numero = numEnfen(e.numero), ref = numEnfen(referencia.numero);
+    var parte = numero > ref ? e : referencia;
+    if (numero === ref && e.alerta) parte = e;
+    var etiqueta = parte.numero ? "N.° " + parte.numero : "sin boletín disponible";
+    if (parte.fecha) etiqueta += " · " + fechaLarga(parte.fecha);
+    return { txt: etiqueta, numero: parte.numero, fecha: parte.fecha, alerta: parte.alerta,
+      comprobado: e.comprobado, ok: e.ok !== false && numero >= ref, url: parte.url || n.enfenUrl };
   }
-  function ninoLinks() {
-    var n = ED.nino || {}, u = ultimoEnfen(), ob = n.observatorio;
-    return '<p class="n-ult"><b>Último comunicado oficial del ENFEN:</b> ' + esc(u.txt) + (u.auto && u.comprobado ? " <small>(leído de gob.pe el " + esc(corta(u.comprobado)) + ")</small>" : "") + '</p><div class="n-lk"><a class="btn" href="' + safeUrl(u.url) + '" target="_blank" rel="noopener noreferrer">Comunicados oficiales del ENFEN ↗</a>' + (ob ? '<a class="btn o" href="' + safeUrl(ob.u) + '" target="_blank" rel="noopener noreferrer">' + esc(ob.n) + " ↗</a>" : "") + "</div>";
+  function ninoTres(ultimo) {
+    var n = ED.nino; if (!n || !n.tres) return "";
+    return '<div class="n3">' + n.tres.map(function (x, i) {
+      var estadoNuevo = i === 0 && numEnfen(ultimo.numero) > numEnfen(n.comunicadoRef);
+      var valor = i === 0 ? ultimo.alerta || (estadoNuevo ? "Por confirmar en el boletín" : x.v) : x.v;
+      var detalle = estadoNuevo ? "Consulta el comunicado N.° " + ultimo.numero + " para leer el estado y su alcance." : x.d;
+      return '<details class="n3-i n3-' + (i + 1) + '"><summary><h3>' + esc(x.k) + '</h3><p class="n3-v">' +
+        esc(valor) + '</p><span class="pe-nino-hint">Ver explicación <span aria-hidden="true">+</span></span></summary><p>' +
+        esc(detalle) + '</p><small>Fuente: ' + esc(x.f) + "</small></details>";
+    }).join("") + "</div>";
+  }
+  function avisoEnfen(ultimo, referencia) {
+    if (numEnfen(ultimo.numero) <= numEnfen(referencia)) return "";
+    return '<p class="n-aviso" role="note">Ya está publicado el N.° ' + esc(ultimo.numero) +
+      '. El pronóstico resumido aquí corresponde al N.° ' + esc(referencia) + '. <a class="lk" href="' +
+      safeUrl(ultimo.url) + '" target="_blank" rel="noopener noreferrer">Consultar el boletín más reciente ↗</a></p>';
+  }
+  function ninoLinks(ultimo) {
+    var n = ED.nino || {}, ob = n.observatorio;
+    var revision = ultimo.comprobado ? ' <small>· ' + (ultimo.ok ? "Comprobado el " : "Sin confirmación automática el ") +
+      esc(fechaHora(ultimo.comprobado)) + '</small>' : "";
+    return '<p class="n-ult"><b>Último comunicado oficial del ENFEN:</b> ' + esc(ultimo.txt) + revision + '</p><div class="n-lk">' +
+      '<a class="btn" href="' + safeUrl(ultimo.url) + '" target="_blank" rel="noopener noreferrer">Leer el comunicado oficial ↗</a>' +
+      '<a class="btn o" href="https://www.senamhi.gob.pe/?p=aviso-meteorologico" target="_blank" rel="noopener noreferrer">Avisos regionales del Senamhi ↗</a>' +
+      '<a class="btn o" href="https://www.gob.pe/indeci" target="_blank" rel="noopener noreferrer">Indeci ↗</a>' +
+      (ob ? '<a class="btn o" href="' + safeUrl(ob.u) + '" target="_blank" rel="noopener noreferrer">' + esc(ob.n) + " ↗</a>" : "") + '</div>';
   }
   function ninoPanel() {
     var n = ED.nino; if (!n) return "";
-    var h = '<section class="panel nino-p" aria-labelledby="n-h"><h2 id="n-h" class="pt">Estado, pronóstico y riesgo</h2>' + avisoEnfen() + ninoTres() + ninoLinks() + '<p class="mono nota-corte">Contenido editorial con corte al ' + esc(corta(ED.corte + "T12:00:00Z")) + ". " + esc(n.corte) + "</p></section>";
+    var ultimo = ultimoEnfen();
+    var h = '<section class="panel nino-p" aria-labelledby="n-h"><h2 id="n-h" class="pt">Estado, pronóstico y riesgo</h2>' +
+      ninoLinks(ultimo) + avisoEnfen(ultimo, n.comunicadoRef) + ninoTres(ultimo) +
+      '<p class="mono nota-corte">Pronóstico resumido el ' + esc(fechaLarga(n.corte)) + '.</p></section>';
     h += '<details class="panel nino-p det"><summary>Cómo ha cambiado el pronóstico</summary><ol class="tl nl">' + n.linea.map(function (x) { return '<li class="hecho"><span class="nodo">●</span><div class="tx"><b>' + esc(x.c) + (x.f ? " · " + esc(x.f) : "") + "</b><p>" + esc(x.x) + '</p><a class="lk" href="' + safeUrl(x.u) + '" target="_blank" rel="noopener noreferrer">Ver comunicado o fuente ↗</a></div></li>'; }).join("") + "</ol></details>";
     return h;
   }
@@ -409,9 +431,15 @@
       n: ref ? "Valor de mercado referencial; el dato oficial está en el BCRP." : "Tipo de cambio interbancario venta.", c: "Cuántos soles cuesta comprar un dólar estadounidense. Si el número sube, el dólar se encarece; si baja, se abarata.", e: "Con S/ " + num(u, 3) + " por dólar, US$ 100 equivalen a S/ " + num(u * 100, 2) + ".", f: ref ? "BCRP (dato oficial)" : "BCRP", u: "https://estadisticas.bcrp.gob.pe/estadisticas/series/", spark: spark(v, false) };
   }
   function dataCard(d, compacta) {
-    return '<article class="dc' + (compacta ? " dc-c" : "") + '"><header><span class="tag">' + esc(d.fp) + "</span><h3>" + esc(d.k) + '</h3></header><p class="dc-v"><span class="cifra">' + esc(d.v) + '</span> <span class="un">' + esc(d.un) + "</span></p>" + (d.n && !compacta ? '<p class="dc-n">' + esc(d.n) + "</p>" : "") + (d.spark || "") +
-      '<details class="pe-data-explain"><summary>Qué significa este número</summary><p>' + esc(d.c || "Revisa el periodo, la unidad y el ámbito de la medición.") + "</p>" + (compacta || !d.e ? "" : '<p><b>Ejemplo:</b> ' + esc(d.e) + "</p>") + "</details>" +
-      '<p class="dc-m"><span>Fecha de corte: <b>' + esc(d.corte) + '</b></span><a href="' + safeUrl(d.u) + '" target="_blank" rel="noopener noreferrer">Fuente: ' + esc(d.f || d.fp) + " ↗</a></p></article>";
+    var porcentaje = /^%/.test(d.un), cifra = porcentaje && !/%/.test(d.v) ? d.v + " %" : d.v;
+    var unidad = porcentaje ? d.un.replace(/^%\s*/, "") : d.un;
+    return '<article class="dc' + (compacta ? " dc-c" : "") + '"><header>' +
+      (compacta ? '<span class="tag">' + esc(d.fp) + '</span>' : "") + '<h3>' + esc(d.k) + '</h3></header>' +
+      '<p class="dc-v"><span class="cifra">' + esc(cifra) + '</span> <span class="un">' + esc(unidad) + "</span></p>" +
+      (d.n && !compacta ? '<p class="dc-n">' + esc(d.n) + "</p>" : "") + (d.spark || "") +
+      '<details class="pe-data-explain"><summary>Qué significa este número</summary><p>' + esc(d.c || "Revisa el periodo, la unidad y el ámbito de la medición.") + "</p>" +
+      (compacta || !d.e ? "" : '<p><b>Ejemplo:</b> ' + esc(d.e) + "</p>") + "</details>" +
+      '<p class="dc-m"><span>Periodo: <b>' + esc(d.corte) + '</b></span><a href="' + safeUrl(d.u) + '" target="_blank" rel="noopener noreferrer">Fuente: ' + esc(d.f || d.fp) + " ↗</a></p></article>";
   }
   function tarjetaPregunta(num_, id, titulo, cuerpo, pie) {
     return '<section class="q q' + num_ + '" aria-labelledby="' + id + '"><header><span class="q-n" aria-hidden="true">' + num_ + '</span><h2 id="' + id + '">' + esc(titulo) + "</h2></header>" + cuerpo + '<footer>' + pie + "</footer></section>";
@@ -425,7 +453,7 @@
     if(pob)arr.push({k:"Población del Perú",v:pob.v,fecha:pob.corte,ico:"salud",url:"#/datos"});
     if(tc)arr.push({k:"Tipo de cambio",v:tc.v,fecha:tc.corte,ico:"economia",url:"#/datos"});
     if(internet)arr.push({k:"Hogares con internet",v:internet.v,fecha:internet.corte,ico:"datos",url:"#/datos"});
-    if(e && e.auto && NOT.enfen && NOT.enfen.numero)arr.push({k:"Comunicado ENFEN",v:"N.° "+NOT.enfen.numero,fecha:enfenFecha(NOT.enfen)?fechaLarga(enfenFecha(NOT.enfen)):"Fecha no disponible",ico:"nino",url:"#/s/nino"});
+    if(e.numero)arr.push({k:"Comunicado ENFEN",v:"N.° "+e.numero,fecha:e.fecha?fechaLarga(e.fecha):"Fecha no disponible",ico:"nino",url:"#/s/nino"});
     else arr.push({k:"Situación El Niño",v:"Consultar",fecha:"Estado oficial por verificar",ico:"nino",url:"#/s/nino"});
     return arr.slice(0,4).map(function(x){
       return '<a class="hero-stat" href="'+esc(x.url)+'"><span class="hs-ico">'+ic(x.ico)+'</span><span class="hs-copy"><strong>'+esc(x.v)+'</strong><span class="hs-label">'+esc(x.k)+'</span><small>'+esc(x.fecha)+'</small></span></a>';
@@ -517,11 +545,11 @@
     var grupos = ED.datos && ED.datos.grupos || [], todos = [];
     grupos.forEach(function (g) { (g.items || []).forEach(function (i) { todos.push(i); }); });
     function dato(id) { return todos.filter(function (i) { return i.id === id; })[0]; }
-    var tc = bloqueTc(), tasa = dato("tasa"), infl = dato("inflobs"), est = dato("nestado"), deng = dato("dengue"), e = ultimoEnfen();
+    var tc = bloqueTc(), tasa = dato("tasa"), infl = dato("inflobs"), deng = dato("dengue"), e = ultimoEnfen();
     var filas = [
       { inst: "BCRP", u: "https://www.bcrp.gob.pe", items: [tc ? { k: "Tipo de cambio", v: tc.v, c: tc.corte.split(" · ")[0], ref: /Referencial/.test(tc.fp) } : null, tasa ? { k: "Tasa de referencia", v: tasa.v, c: tasa.corte } : null] },
       { inst: "INEI", u: "https://www.inei.gob.pe", items: [infl ? { k: "Inflación anual, Lima", v: infl.v, c: infl.corte } : null] },
-      { inst: "ENFEN", u: e.url || "https://www.gob.pe/enfen", items: [est ? { k: "Estado del sistema de alerta", v: est.v, c: e.auto && NOT.enfen && NOT.enfen.numero ? "Último comunicado N.° " + NOT.enfen.numero : est.corte, warn: true } : null] },
+      { inst: "ENFEN", u: e.url || "https://www.gob.pe/enfen", items: [e.numero ? { k: "Estado del sistema de alerta", v: e.alerta || "Consultar boletín", c: e.txt, warn: true } : null] },
       { inst: "CDC-Minsa", u: "https://www.dge.gob.pe/portalnuevo/", items: [deng ? { k: "Dengue · fallecidos 2026", v: deng.v, c: deng.corte, warn: true } : null] }
     ];
     var h = '<section class="nx-mod" aria-labelledby="nx-cif-h"><h2 id="nx-cif-h" class="nx-mod-h">Cifras oficiales de referencia</h2><p class="nx-mod-sub">Último dato publicado por cada institución. Corte editorial: ' + esc(fechaLarga(ED.corte)) + ".</p><ul class=\"nx-cifras\">";
@@ -737,7 +765,7 @@
     var terms = (s.terminos || []).filter(function (t) { return GLOS[t]; });
     var h = '<div class="fade"><div class="shead" style="--c:' + s.color + '"><h1><span class="ic big">' + ic(id) + "</span> " + esc(s.nombre) + "</h1><p>" + esc(s.lema) + '</p></div><div class="cols sec-cols"><div>';
     var inss = INS.filter(function (i) { return i.sector === id; });
-    if (id === "nino") h += ninoPanel();
+    if (id === "nino") h += '<div id="n-enfen">' + ninoPanel() + "</div>";
     h += '<div class="panel">' + (ins ? leadCard(ins) : "") + "</div>";
     if (inss.length > 1) h += '<div class="minis">' + inss.slice(1).map(card).join("") + "</div>";
     h += '<div class="entender"><h2>Para entender ' + esc(nomFrase(s)) + '</h2><ul>' + s.esencial.map(function (e) { return "<li>" + gl(e) + "</li>"; }).join("") + "</ul></div>";
@@ -749,7 +777,8 @@
       h += sh("IA en el Perú", s.color) + listaCorta(enPeru, 6, vacio) + sh("IA en el mundo", s.color) + listaCorta(enMundo, 6, vacio);
       var porConfirmar = its.filter(function (i) { return ambitoDe(i) === "pendiente"; });
       if (porConfirmar.length) h += sh("Ámbito por confirmar", s.color) + listaCorta(porConfirmar, 6, vacio);
-    } else h += sh("Últimas notas · " + s.nombre, s.color) + '<div class="lista2">' + (its.length ? its.map(row).join("") : vacio) + "</div>";
+    } else h += sh("Últimas notas · " + s.nombre, s.color) + '<div class="lista2"' +
+      (id === "nino" ? ' id="n-notas"' : "") + ">" + (its.length ? its.map(row).join("") : vacio) + "</div>";
     h += '</div><aside class="rail"><section><h3 class="rt">Términos clave</h3>' + terms.map(function (t) { return '<button class="term" data-gl="' + t + '">' + esc(GLOS[t].t) + "</button>"; }).join("") + "</section>" + rail().split("</section>").slice(1).join("</section>") + "</aside></div></div>";
     return h;
   }
@@ -760,7 +789,7 @@
     var sid = esHilo ? "coyuntura" : c.sector, s = SECT[sid], a = ARTS[id] || ARTS[sid] || {};
     var titulo = esHilo ? ED.hilo.titulo : c.titulo, resumen = esHilo ? "Cuatro frentes explican el momento que vive el país tras el cambio de gobierno." : c.resumen;
     var h = '<article class="art fade"><div class="crumb"><a href="#/">Inicio</a> › <a href="#/s/' + sid + '">' + esc(s.nombre) + "</a></div>" + kicker({ sector: sid }) + "<h1>" + esc(titulo) + '</h1><p class="stand">' + esc(resumen) + "</p>";
-    h += '<div class="by"><span><b>Redacción PERÚ INFORMADO</b></span><span>Corte ' + esc(fmtFecha(ED.corte + "T12:00:00Z")) + "</span>" + (esHilo ? "" : '<span class="conf ' + (c.nivel === "alta" ? "alta" : "media") + '" title="Alta: confirmado en fuente oficial. Media: se apoya en prensa; conviene verificar.">Confianza ' + (c.nivel === "alta" ? "alta" : "media · verifica") + "</span>") + '<button class="share" id="b-share">↗ Compartir</button></div>';
+    h += '<div class="by"><span><b>Redacción PERÚ INFORMADO</b></span><span>Corte ' + esc(fmtFecha(((c && c.corte) || ED.corte) + "T12:00:00Z")) + "</span>" + (esHilo ? "" : '<span class="conf ' + (c.nivel === "alta" ? "alta" : "media") + '" title="Alta: confirmado en fuente oficial. Media: se apoya en prensa; conviene verificar.">Confianza ' + (c.nivel === "alta" ? "alta" : "media · verifica") + "</span>") + '<button class="share" id="b-share">↗ Compartir</button></div>';
     var pf = esHilo ? HILO : INS.filter(function (i) { return i.id === id; })[0], fo = pf ? fotoInfo(pf) : null;
     if (fo) h += thumb(pf, false) + '<p class="cap">Foto: ' + esc(fo.c || "fuente enlazada") + ". Imagen tomada de la fuente citada; derechos de su autor. Las cifras provienen de las fuentes enlazadas al final.</p>";
     if (esHilo) {
@@ -845,42 +874,53 @@
     h += '<div class="bento"><div class="panel b1"><h3 class="pt">Indicadores</h3>' + indicadores(true) + '</div><div class="panel"><h3 class="pt">Notas por sección</h3>' + ED.sectores.map(function (x) { var n = cnt[x.id] || 0; return '<div class="hbar" style="--c:' + x.color + '"><span>' + esc(x.nombre) + '</span><span><i style="width:' + Math.round(n / max * 100) + '%"></i></span><span>' + n + "</span></div>"; }).join("") + '</div><div class="panel"><h3 class="pt">Estado de las fuentes</h3>' + (nom.length ? nom.map(function (k) { return '<div class="fuente-i"><span>' + esc(k) + '</span><span class="' + (g[k].ok ? (g[k].procedencia === "agregador" ? "ag" : "ok") : "no") + '">' + esc(estadoTxt(g[k])) + "</span></div>"; }).join("") : '<div class="vacio">Aún no hay una carga automática registrada.</div>') + "</div></div></div>";
     return h;
   }
-  function fmtNum(v, dec) { return num(v, dec); }
-  function ejSerie(x, b) {
-    var a = b.serie[0], u = b.serie[b.serie.length - 1], d = u.v - a.v;
-    if (x.unidad === "personas") return "En " + a.a + " había " + fmtNum(a.v, 0) + " habitantes y en " + u.a + ", " + fmtNum(u.v, 0) + ": " + fmtNum(Math.abs(d / a.v * 100), 1) + " % " + (d >= 0 ? "más" : "menos") + ".";
-    if (x.unidad === "años") return "Un recién nacido en " + u.a + " viviría en promedio " + fmtNum(u.v, x.dec) + " años, " + fmtNum(Math.abs(d), x.dec) + " " + (d >= 0 ? "más" : "menos") + " que en " + a.a + ".";
-    return "En " + a.a + " fue " + fmtNum(a.v, x.dec) + " % y en " + u.a + ", " + fmtNum(u.v, x.dec) + " %: " + (d >= 0 ? "subió " : "bajó ") + fmtNum(Math.abs(d), x.dec) + " puntos porcentuales.";
-  }
-  var UNIDAD_BM = { "SP.POP.TOTL": "habitantes", "SL.UEM.TOTL.ZS": "% de la fuerza laboral", "IT.NET.USER.ZS": "% de la población", "NY.GDP.MKTP.KD.ZG": "% de variación anual", "FP.CPI.TOTL.ZG": "% anual", "SP.DYN.LE00.IN": "años" };
-  var DCATS = [["todos", "Todo"], ["eco", "Economía"], ["clima", "Clima / ENFEN"], ["soc", "Sociedad / INEI"], ["salud", "Salud / Minsa"]], dFil = "todos";
+  var DCATS = [["digital", "Internet e IA"], ["eco", "Bolsillo y empleo"], ["soc", "Población y servicios"], ["salud", "Salud"]];
+  var dFil = "todos";
   function bloquesDatos() {
-    var D = ED.datos, bm = NOT.datos_bm || {}, B = [], tc = bloqueTc();
-    if (tc) B.push(tc);
-    D.grupos.forEach(function (g) { g.items.forEach(function (i) { B.push(i); }); });
+    var D = ED.datos, bm = NOT.datos_bm || {}, bloques = [], tc = bloqueTc();
+    D.grupos.forEach(function (grupo) { bloques.push.apply(bloques, grupo.items); });
+    if (tc) bloques.push(tc);
     (D.series || []).forEach(function (x) {
-      var b = bm[x.cod]; if (!b || !b.serie || b.serie.length < 3) return;
-      var u = b.serie[b.serie.length - 1];
-      B.push({ cat: x.cat, fp: "Banco Mundial", k: x.k, v: fmtNum(u.v, x.dec), un: UNIDAD_BM[x.cod] || x.unidad, corte: "Año " + u.a + " (serie anual)", n: "", spark: spark(b.serie.map(function (p) { return p.v; }), false), c: x.c, e: ejSerie(x, b), f: "Banco Mundial", u: "https://data.worldbank.org/indicator/" + x.cod + "?locations=PE" });
+      var b = bm[x.cod];
+      if (!b || !b.serie || b.serie.length < 3) return;
+      var u = b.serie[b.serie.length - 1], a = b.serie[0];
+      var unidadCorta = x.unidad === "años" ? " años" : " %";
+      bloques.push({ cat: x.cat, fp: "Banco Mundial", k: x.k, v: num(u.v, x.dec), un: x.unidad,
+        corte: "Año " + u.a, spark: spark(b.serie.map(function (p) { return p.v; }), false), c: x.c,
+        e: "En " + a.a + " el indicador fue de " + num(a.v, x.dec) + unidadCorta + ".",
+        f: "Banco Mundial", u: "https://data.worldbank.org/indicator/" + x.cod + "?locations=PE" });
     });
-    var orden = { eco: 0, clima: 1, soc: 2, salud: 3 };
-    return B.map(function (x, i) { return { x: x, i: i }; }).sort(function (a, b) { return (orden[a.x.cat] - orden[b.x.cat]) || (a.i - b.i); }).map(function (o) { return o.x; });
+    return bloques;
   }
   function pintarDatos() {
-    var c = $("#d-chips"), g = $("#d-grid"); if (!c || !g) return;
-    c.innerHTML = DCATS.map(function (x) { return '<button class="chip' + (x[0] === dFil ? " on" : "") + '" data-df="' + x[0] + '" aria-pressed="' + (x[0] === dFil) + '">' + esc(x[1]) + "</button>"; }).join("");
-    var B = bloquesDatos().filter(function (b) { return dFil === "todos" || b.cat === dFil; });
-    g.innerHTML = B.length ? B.map(function (d) { return dataCard(d); }).join("") : '<div class="vacio">No hay datos en esta categoría todavía.</div>';
+    var g = $("#d-grid"); if (!g) return;
+    $$("#d-chips [data-df]").forEach(function (boton) {
+      var activo = boton.getAttribute("data-df") === dFil;
+      boton.classList.toggle("on", activo);
+      boton.setAttribute("aria-pressed", String(activo));
+    });
+    var datos = bloquesDatos(), total = 0;
+    g.innerHTML = DCATS.filter(function (x) { return dFil === "todos" || x[0] === dFil; }).map(function (x) {
+      var grupo = datos.filter(function (d) { return d.cat === x[0]; });
+      if (!grupo.length) return "";
+      total += grupo.length;
+      return '<section class="dato-grupo" aria-labelledby="d-' + x[0] + '"><h2 id="d-' + x[0] + '">' + esc(x[1]) +
+        '</h2><div class="dp-b">' + grupo.map(function (d) { return dataCard(d); }).join("") + "</div></section>";
+    }).join("");
+    $("#d-estado").textContent = total ? total + (total === 1 ? " indicador" : " indicadores") : "Todavía no hay cifras en este tema.";
   }
   function pintarPrensa() { var r = $("#pm-root"); if (r && window.PeruMedios) { try { window.PeruMedios.pintar(r, window.MEDIOS); } catch (e) { r.innerHTML = ""; } } }
   function vistaDatos() {
     var D = ED.datos; if (!D) return vistaHome();
-    var h = '<div class="fade"><div class="shead" style="--c:#38BDF8"><p class="po-eye">DATOS DEL PERÚ</p><h1>Datos y cifras clave</h1><p>' + esc(D.intro) + '</p></div><div class="pe-data-intro"><strong>Primero, entiende la cifra.</strong><p>Selecciona «Qué significa este número» para ver su interpretación y un ejemplo. Las fechas de corte siempre permanecen visibles; la fuente original es el último nivel de consulta.</p></div>';
-    h += '<div id="pm-root"></div>';
-    h += '<details class="filtros"><summary>Filtrar por tema</summary><div class="chips" id="d-chips" aria-label="Categorías"></div></details><div class="dp-b" id="d-grid" aria-live="polite"></div>';
-    h += sh("Dónde buscar más datos", "#94A3B8") + D.enlaces.map(function (e) { return '<a class="fr" href="' + safeUrl(e.u) + '" target="_blank" rel="noopener noreferrer"><div><b>' + esc(e.n) + "</b><p>" + esc(e.d) + "</p></div><span>↗</span></a>"; }).join("");
-    h += '<div class="box" style="margin-top:20px"><h3>Cómo leer estas cifras</h3><p>Cada dato indica su unidad, su fecha de corte y quién lo publicó. Compara solo cifras del mismo periodo y de la misma población: el desempleo de Lima Metropolitana no es el desempleo nacional, y un trimestre móvil no equivale a un año. Los datos del INEI se cargan con corte editorial al ' + esc(fechaLarga(D.corte)) + "; el tipo de cambio y las series del Banco Mundial se actualizan solos.</p></div>" + frescura();
-    h += '<p class="dp-aviso">* Cifras con fines informativos y educativos. Cada tarjeta enlaza a su fuente y no sustituye a la información oficial en tiempo real. Contrasta en: <a href="https://estadisticas.bcrp.gob.pe/estadisticas/series/" target="_blank" rel="noopener noreferrer">BCRP</a>, <a href="https://www.gob.pe/inei" target="_blank" rel="noopener noreferrer">INEI</a>, <a href="https://www.dge.gob.pe" target="_blank" rel="noopener noreferrer">CDC-Minsa</a> y <a href="https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" target="_blank" rel="noopener noreferrer">ENFEN</a>.</p></div>';
+    var h = '<div class="fade"><div class="shead" style="--c:#38BDF8"><h1>Datos del Perú</h1><p>' + esc(D.intro) + '</p></div>';
+    h += '<div class="chips" id="d-chips" role="group" aria-label="Filtrar datos por tema">' +
+      [["todos", "Todo"]].concat(DCATS).map(function (x) {
+        return '<button type="button" class="chip" data-df="' + x[0] + '" aria-pressed="false">' + esc(x[1]) + "</button>";
+      }).join("") + '</div><p class="nota-pie" id="d-estado" role="status"></p><div id="d-grid"></div>';
+    h += '<p class="nota-pie"><a class="lk" href="#/s/nino">Consultar el pronóstico y las alertas de El Niño →</a></p>';
+    h += '<div id="pm-root"></div><details class="panel det"><summary>Dónde buscar más datos</summary>' +
+      D.enlaces.map(function (e) { return '<a class="fr" href="' + safeUrl(e.u) + '" target="_blank" rel="noopener noreferrer"><div><b>' +
+        esc(e.n) + "</b><p>" + esc(e.d) + "</p></div><span>↗</span></a>"; }).join("") + "</details></div>";
     setTimeout(pintarDatos, 0);
     setTimeout(pintarPrensa, 0);
     return h;
@@ -926,6 +966,8 @@
     else if (r.v === "fuentes") { html = vistaFuentes(); nav = "fuentes"; tab = ""; t = "Fuentes · " + TITULO; }
     else { html = vistaHome(); }
     $("#app").innerHTML = html; document.title = t;
+    var corte = nav === "nino" ? ED.nino.corte : (nav === "datos" ? ED.datos.corte : ED.corte);
+    $("#f-corte").textContent = fmtFecha(corte + "T12:00:00Z");
     document.body.setAttribute("data-v", r.v);
     if (r.v === "cines") window.PERU_CINES.iniciar($(".cine-page"));
     $$(".mnav a").forEach(function (a) { var on = a.getAttribute("data-n") === nav; a.classList.toggle("on", on); if (on) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
@@ -1101,7 +1143,7 @@
       $("#status").innerHTML = '<span class="live">Sistema</span><span>Última comprobación: ' + (NOT.generado ? esc(fechaHora(NOT.generado)) : "sin registro") + '</span><span class="nx">Próxima: ' + (hoy ? "hoy" : "mañana") + " " + String(cl.getUTCHours()).padStart(2, "0") + ":17 · horario previsto · en " + (hh ? hh + " h " : "") + mm + " min</span>";
     }
     pintar(); setInterval(pintar, 30000);
-    $("#f-ult").textContent = NOT.generado ? fmtFecha(NOT.generado, true) : "—"; $("#f-corte").textContent = fmtFecha(ED.corte + "T12:00:00Z");
+    $("#f-ult").textContent = NOT.generado ? fmtFecha(NOT.generado, true) : "—";
   }
 
   // Las pestañas abiertas reciben las publicaciones nuevas sin perder filtros ni búsqueda.
@@ -1119,6 +1161,11 @@
       NOT = datos; window.NOTICIAS = datos; ITEMS = items; FEED = ITEMS.filter(conFoto).map(asFeed); EI = NOT.imagenes_editorial || {};
       var pie = $("#f-ult"); if (pie) pie.textContent = fmtFecha(NOT.generado, true);
       if (ruta().v === "noticias") pintarNoticias();
+      else if ($("#n-enfen")) {
+        $("#n-enfen").innerHTML = ninoPanel();
+        var notas = porSector("nino").map(asFeed);
+        $("#n-notas").innerHTML = notas.length ? notas.map(row).join("") : '<div class="vacio">Aún no hay nuevas notas sobre El Niño.</div>';
+      }
       else if (ruta().v === "inicio") { var y = window.scrollY; navegar(); window.scrollTo(0, y); }
       ticker();
     }).catch(function () { /* Sin conexión o respuesta inválida: conservar la última carga válida. */ })

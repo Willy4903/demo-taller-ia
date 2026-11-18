@@ -4,6 +4,7 @@ import json
 import os
 import sys
 import unittest
+from unittest.mock import patch
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import actualizar_noticias as a  # noqa: E402
@@ -160,6 +161,32 @@ class Enfen(unittest.TestCase):
 
     def test_sin_comunicados(self):
         self.assertIsNone(a.parsear_enfen("<p>nada</p>"))
+
+    def test_no_asocia_fecha_de_otro_comunicado(self):
+        lista = ("<li>Comunicado oficial ENFEN N.° 20-2026</li>"
+                 "<li>Comunicado oficial ENFEN N.° 19-2026 30 de octubre de 2026</li>")
+        self.assertEqual(a.parsear_enfen(lista), {"numero": "20-2026", "fecha": None})
+
+    def test_prefiere_el_pdf_con_fecha_y_estado(self):
+        pdf = "https://enfen.imarpe.gob.pe/download/comunicado-oficial-enfen-n-20-2026/?wpdmdl=2218"
+        datos = {"data": {"title": "Comunicado Oficial Enfen N° 20-2026",
+                           "published_date": "2026-11-13", "alert": "Alerta de El Niño Costero",
+                           "document_url": pdf}}
+        with patch.object(a, "descargar", return_value=json.dumps(datos)), patch.object(
+            a, "descargar_parcial", return_value="<li>Comunicado Oficial ENFEN N° 20-2026 30 de octubre de 2026</li>"
+        ):
+            ultimo = a.enfen_ultimo()
+        self.assertEqual((ultimo["fecha"], ultimo["url"], ultimo["alerta"]),
+                         ("2026-11-13", pdf, "Alerta de El Niño Costero"))
+
+    def test_conserva_un_comunicado_posterior_ya_verificado(self):
+        previo = {"numero": "21-2026", "fecha": "2026-11-21", "alerta": "Vigilancia"}
+        with patch.object(a, "leer_enfen_observatorio", side_effect=OSError), patch.object(
+            a, "descargar_parcial", return_value="<li>Comunicado Oficial ENFEN N° 20-2026</li>"
+        ):
+            ultimo = a.enfen_ultimo(previo)
+        self.assertEqual(ultimo["numero"], "21-2026")
+        self.assertFalse(ultimo["ok"])
 
 
 class Indicadores(unittest.TestCase):

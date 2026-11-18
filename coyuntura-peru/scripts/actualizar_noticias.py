@@ -1035,42 +1035,80 @@ MESES_ES = {"enero": 1, "febrero": 2, "marzo": 3, "abril": 4, "mayo": 5, "junio"
 URL_ENFEN = "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen"
 
 
+URL_ENFEN_OBSERVATORIO = "https://raw.githubusercontent.com/Willy4903/observatorio-elnino-peru/main/site/data/enfen.json"
+COMUNICADO_ENFEN = re.compile(r"Comunicado Oficial ENFEN\s*N\.?\s*[°º]?\s*(\d{1,3})\s*[-–]\s*(\d{4})", re.I)
+
+
+def clave_enfen(comunicado):
+    coincidencia = re.fullmatch(r"(\d{1,3})-(\d{4})", comunicado.get("numero") or "")
+    return (int(coincidencia[2]), int(coincidencia[1])) if coincidencia else (0, 0)
+
+
 def parsear_enfen(html_txt):
-    """Busca el comunicado ENFEN más reciente (mayor año y número) y, si aparece cerca, su fecha."""
-    txt = html.unescape(re.sub(r"<[^>]+>", " ", html_txt))
-    txt = re.sub(r"\s+", " ", txt)
-    mejor = None
-    for m in re.finditer(r"Comunicado Oficial ENFEN\s*N[°º.]?\s*(\d{1,3})\s*-\s*(\d{4})", txt, re.I):
-        clave = (int(m.group(2)), int(m.group(1)))
-        if mejor is None or clave > mejor[0]:
-            ventana = txt[m.end(): m.end() + 260]
-            fecha = None
-            f = re.search(r"(\d{1,2}) de ([a-záéíóú]+) de (\d{4})", ventana, re.I)
-            if f and MESES_ES.get(f.group(2).lower()):
-                try:
-                    fecha = dt.date(int(f.group(3)), MESES_ES[f.group(2).lower()], int(f.group(1))).isoformat()
-                except ValueError:
-                    fecha = None
-            mejor = (clave, {"numero": f"{m.group(1)}-{m.group(2)}", "fecha": fecha})
-    return mejor[1] if mejor else None
+    """En una lista, solo asocia fechas del mismo elemento o de texto inmediato."""
+    txt = re.sub(r"</(?:li|article|p)\s*>", " | ", html_txt, flags=re.I)
+    txt = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", txt)))
+    titulos = list(COMUNICADO_ENFEN.finditer(txt))
+    candidatos = []
+    for i, m in enumerate(titulos):
+        limite = titulos[i + 1].start() if i + 1 < len(titulos) else len(txt)
+        bloque = txt[m.end():min(limite, m.end() + 110)].split("|", 1)[0]
+        f = re.match(r"\s*(?:Publicad[oa] el\s+)?(\d{1,2}) de ([a-záéíóú]+) de (\d{4})", bloque, re.I)
+        fecha = None
+        if f and (mes := MESES_ES.get(f[2].lower())):
+            try:
+                fecha = dt.date(int(f[3]), mes, int(f[1])).isoformat()
+            except ValueError:
+                pass
+        candidatos.append({"numero": f"{m[1]}-{m[2]}", "fecha": fecha})
+    return max(candidatos, key=clave_enfen, default=None)
+
+
+def leer_enfen_observatorio():
+    """Lee los metadatos extraídos del PDF oficial por el Observatorio El Niño Perú."""
+    datos = json.loads(descargar(URL_ENFEN_OBSERVATORIO))
+    registro = datos["data"]
+    titulo = COMUNICADO_ENFEN.search(registro["title"])
+    url = registro["document_url"]
+    recurso = urlsplit(url)
+    if (not titulo or recurso.scheme != "https" or recurso.netloc != "enfen.imarpe.gob.pe"
+            or not recurso.path.startswith("/download/comunicado-oficial-enfen-")):
+        raise ValueError("el Observatorio no devolvió un comunicado oficial del ENFEN")
+    publicado = dt.date.fromisoformat(registro["published_date"])
+    alerta = registro.get("alert")
+    return {"numero": f"{titulo[1]}-{titulo[2]}", "fecha": publicado.isoformat(),
+            "url": url, "alerta": alerta if isinstance(alerta, str) else None}
 
 
 def enfen_ultimo(previo=None):
-    """Último comunicado oficial ENFEN publicado en gob.pe (lectura automática; la fecha puede no detectarse)."""
+    """Compara el PDF indexado por el Observatorio con la lista de gob.pe."""
+    candidatos = []
     try:
-        r = parsear_enfen(descargar_parcial(URL_ENFEN))
-        if r:
-            r.update({"url": URL_ENFEN, "comprobado": ahora_iso(), "ok": True})
-            print(f"ENFEN: último comunicado detectado N.° {r['numero']} ({r['fecha'] or 'fecha no detectada'})")
-            return r
-        print("  ✗ ENFEN: no se detectó ningún comunicado en la página")
-        err = "no se detectó ningún comunicado"
+        candidatos.append(leer_enfen_observatorio())
     except Exception as ex:  # noqa: BLE001
-        print(f"  ✗ ENFEN: {type(ex).__name__}: {str(ex)[:100]}")
-        err = f"{type(ex).__name__}: {str(ex)[:100]}"
-    previo = dict(previo or {})
-    previo.update({"ok": False, "comprobado": ahora_iso(), "error": err, "url": URL_ENFEN})
-    return previo
+        print(f"  ✗ ENFEN Observatorio: {type(ex).__name__}: {str(ex)[:100]}")
+    try:
+        registro = parsear_enfen(descargar_parcial(URL_ENFEN))
+        if registro:
+            candidatos.append({**registro, "url": URL_ENFEN})
+    except Exception as ex:  # noqa: BLE001
+        print(f"  ✗ ENFEN gob.pe: {type(ex).__name__}: {str(ex)[:100]}")
+    anterior = dict(previo or {})
+    comprobado = ahora_iso()
+    if candidatos:
+        # Si ambos registran el mismo número, conserva la ficha del PDF cuando exista.
+        ultimo = max(candidatos, key=clave_enfen)
+        if clave_enfen(anterior) > clave_enfen(ultimo):
+            return {**anterior, "comprobado": comprobado, "ok": False}
+        if (clave_enfen(anterior) == clave_enfen(ultimo) and anterior.get("alerta")
+                and not ultimo.get("alerta")):
+            ultimo = anterior
+        ultimo.update({"comprobado": comprobado, "ok": True})
+        print(f"ENFEN: comunicado N.° {ultimo['numero']} ({ultimo.get('fecha') or 'fecha sin confirmar'})")
+        return ultimo
+    anterior.setdefault("url", URL_ENFEN)
+    anterior.update({"ok": False, "comprobado": comprobado, "error": "sin respuesta de las fuentes del ENFEN"})
+    return anterior
 
 
 def escribir(datos):
