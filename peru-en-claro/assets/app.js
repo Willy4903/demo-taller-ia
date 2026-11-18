@@ -261,14 +261,15 @@
     var ico = window.cpIcono(category), colorTema = ico.color;
     var foto = thumb(s);
     return '<article class="pe-ficha" id="' + id + '" data-open="0" data-tema="' + esc(label) + '" data-cat="' + esc(category) + '" data-fuente="' + esc(s.fuente) + '" style="--c:' + colorTema + '"><a class="ps-foto" href="' + safeUrl(s.url) + '" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">' + foto + '</a><div class="ps-top"><span class="pe-news-topic">' + esc(label) + "</span>" + badgeGenero(s.genero) + (cob.length ? '<span class="ps-cov" title="Otros medios que cubren el tema">+' + cob.length + " medios</span>" : "") + "</div>" +
-      '<h3 class="ps-title"><button type="button" class="ps-toggle" aria-expanded="false" aria-controls="' + id + '-p">' + esc(s.titulo) + "</button></h3>" +
+      '<h3 class="ps-title"><a href="' + safeUrl(s.url) + '" target="_blank" rel="noopener noreferrer">' + esc(s.titulo) + "</a></h3>" +
       (resumen ? '<p class="ps-sum">' + esc(sin(resumen, 300)) + "</p>" : "") +
       (valor ? '<div class="ps-valor">' + valor + "</div>" : "") +
       '<div class="ps-meta"><b>' + esc(s.fuente) + '</b>' + (TIPO_MEDIO[s.tipo] ? '<span class="ps-tipo">' + TIPO_MEDIO[s.tipo] + '</span>' : "") + (s.traducido ? '<span class="ps-trad" title="Traducción automática del inglés">Traducido</span>' : "") + '<time datetime="' + esc(s.fecha || "") + '">' + esc(fd) + "</time>" + (s.fecha && relativo(s.fecha) ? '<span class="ps-rel">' + esc(relativo(s.fecha)) + "</span>" : "") + (s.via ? "<span>Vía " + esc(s.via) + "</span>" : "") + "</div>" +
+      '<p class="ps-src"><a href="' + safeUrl(s.url) + '" target="_blank" rel="noopener noreferrer">Leer nota original en ' + esc(s.fuente) + " ↗</a></p>" +
       '<button type="button" class="ps-more" aria-expanded="false" aria-controls="' + id + '-p"><span>Ver detalle</span><i aria-hidden="true">▾</i></button>' +
       '<div class="ps-panel" id="' + id + '-p" hidden><div class="ps-in"><div class="ps-tabs" role="tablist" aria-label="Detalle de la noticia">' + tabs.map(function (t, i) { return '<button type="button" role="tab" id="' + id + '-tab-' + t[0] + '" aria-controls="' + id + '-pane-' + t[0] + '" aria-selected="' + (i === 0) + '" tabindex="' + (i ? -1 : 0) + '" data-pt="' + t[0] + '">' + esc(t[1]) + "</button>"; }).join("") + "</div>" +
       tabs.map(function (t, i) { return '<div class="ps-pane" role="tabpanel" id="' + id + '-pane-' + t[0] + '" aria-labelledby="' + id + '-tab-' + t[0] + '" tabindex="0" data-pp="' + t[0] + '"' + (i ? " hidden" : "") + ">" + panes[t[0]] + "</div>"; }).join("") +
-      '</div></div><div class="ps-acts"><button type="button" class="ps-share" data-share="' + esc(s.url) + '" data-share-t="' + esc(s.titulo) + '" aria-label="Compartir: ' + esc(s.titulo) + '"><span aria-hidden="true">↗</span>Compartir</button>' + badgeContraste(category) + '</div><p class="ps-src"><a href="' + safeUrl(s.url) + '" target="_blank" rel="noopener noreferrer">Leer nota original completa en ' + esc(s.fuente) + " ↗</a></p></article>";
+      '</div></div><div class="ps-acts"><button type="button" class="ps-share" data-share="' + esc(s.url) + '" data-share-t="' + esc(s.titulo) + '" aria-label="Compartir: ' + esc(s.titulo) + '"><span aria-hidden="true">↗</span>Compartir</button>' + badgeContraste(category) + '</div></article>';
   }
   function contar(el) {
     var n = el.textContent, m = /^(\D*?)(\d[\d.,\s]*)(.*)$/.exec(n); if (!m || (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches)) return;
@@ -280,7 +281,7 @@
   }
   document.addEventListener("click", function (e) {
     var st = e.target.closest && e.target.closest(".pe-ficha"); if (!st) return;
-    var tg = e.target.closest(".ps-toggle,.ps-more"), tab = e.target.closest("[data-pt]");
+    var tg = e.target.closest(".ps-more"), tab = e.target.closest("[data-pt]");
     if (tab) {
       st.querySelectorAll("[data-pt]").forEach(function (b) { b.setAttribute("aria-selected", String(b === tab)); b.tabIndex = b === tab ? 0 : -1; });
       st.querySelectorAll("[data-pp]").forEach(function (p) { p.hidden = p.getAttribute("data-pp") !== tab.getAttribute("data-pt"); if (!p.hidden) p.querySelectorAll(".ps-num").forEach(contar); });
@@ -290,8 +291,8 @@
     var abre = st.getAttribute("data-open") !== "1"; st.setAttribute("data-open", abre ? "1" : "0");
     st.querySelector(".ps-panel").hidden = !abre;
     st.querySelectorAll(".ps-sum,.ps-valor").forEach(function (p) { p.hidden = abre; });
-    st.querySelectorAll(".ps-toggle,.ps-more").forEach(function (b) { b.setAttribute("aria-expanded", String(abre)); });
-    var lbl = st.querySelector(".ps-more span"); if (lbl) lbl.textContent = abre ? "Ocultar detalle" : "Ver detalle";
+    tg.setAttribute("aria-expanded", String(abre));
+    tg.querySelector("span").textContent = abre ? "Ocultar detalle" : "Ver detalle";
   });
   document.addEventListener("keydown", function (e) {
     var tab = e.target.closest && e.target.closest(".ps-tabs [role=tab]");
@@ -912,7 +913,7 @@
   function navegar() {
     var r = ruta(), html, tab = "inicio", nav = "inicio", t = TITULO;
     if (r.v === "noticias") { html = vistaNoticias(); nav = "noticias"; tab = "noticias"; t = "Noticias · " + TITULO; }
-    else if (r.v === "cines") { html = window.PERU_CINES.vista; nav = "noticias"; tab = "noticias"; t = "Cines · " + TITULO; }
+    else if (r.v === "cines") { html = window.PERU_CINES.vista; nav = "cines"; tab = "cines"; t = "Cines · " + TITULO; }
     else if (r.v === "nino") { html = vistaSector("nino"); nav = "nino"; tab = "nino"; t = "El Niño · " + TITULO; }
     else if (r.v === "s" && SECT[r.id] && r.id !== "brujula") { html = vistaSector(r.id); nav = r.id; tab = r.id === "nino" ? "nino" : ""; t = SECT[r.id].nombre + " · " + TITULO; }
     else if (r.v === "a") { html = vistaArticulo(r.id); var ar = ED.insights.filter(function (x) { return (x.id || x.sector) === r.id; })[0]; nav = r.id === "hilo" ? "inicio" : (ar ? ar.sector : "inicio"); t = (r.id === "hilo" ? ED.hilo.titulo : ar ? ar.titulo : TITULO) + " · " + TITULO; }
@@ -1036,7 +1037,7 @@
       var territorio = masNoticias.getAttribute("data-news-more"), previo = nLimites[territorio];
       if (previo == null) return;
       nLimites[territorio] += 6; pintarNoticias();
-      var nuevas = $$('.pe-news-section[data-news-section="' + territorio + '"] .pe-ficha .ps-toggle');
+      var nuevas = $$('.pe-news-section[data-news-section="' + territorio + '"] .pe-ficha .ps-title a');
       if (nuevas[previo]) nuevas[previo].focus();
       return;
     }
