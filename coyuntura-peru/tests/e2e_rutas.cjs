@@ -207,6 +207,11 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
         ok(await fichas.getByRole("heading", { name: "IA integrada en recursos humanos" }).isVisible() &&
            await fichas.getByRole("heading", { name: "Hogares con conexión a internet" }).count() === 0,
            `[${w}] datos: IA separada de Tecnología`);
+        const bancoMundial = fichas.filter({ has: p.getByRole("link", { name: /Banco Mundial y OIT/ }) });
+        ok(await bancoMundial.locator(".cifra").allInnerTexts().then(x => x.join("|") === "26–38 %|8–14 %|2–5 %"),
+           `[${w}] datos: estimaciones regionales de IA del Banco Mundial y la OIT`);
+        ok(await bancoMundial.locator('.dc-m a[href="https://doi.org/10.1596/1813-9450-10863"]').count() === 3,
+           `[${w}] datos: las estimaciones enlazan al estudio regional`);
       }
     }
     ok(totalFiltrado === nd, `[${w}] datos: cada indicador pertenece a un solo tema`);
