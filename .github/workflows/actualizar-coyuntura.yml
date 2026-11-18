@@ -1,18 +1,19 @@
 name: Actualizar PERÚ INFORMADO
 
-# Hora de Lima = UTC-5. Siete ejecuciones al día, al minuto 17 para evitar
+# Hora de Lima = UTC-5. Ocho ejecuciones al día, al minuto 17 para evitar
 # la congestión de GitHub al inicio de cada hora:
-# 00:17, 06:17, 10:17, 12:17, 15:17, 18:17 y 21:17 (Lima).
+# 05:17, 10:17, 12:17, 14:17, 16:17, 18:17, 20:17 y 22:17 (Lima).
 # GitHub puede retrasar las ejecuciones; estos horarios son programados.
 on:
   schedule:
-    - cron: "17 5 * * *"
-    - cron: "17 11 * * *"
+    - cron: "17 10 * * *"
     - cron: "17 15 * * *"
     - cron: "17 17 * * *"
-    - cron: "17 20 * * *"
+    - cron: "17 19 * * *"
+    - cron: "17 21 * * *"
     - cron: "17 23 * * *"
-    - cron: "17 2 * * *"
+    - cron: "17 1 * * *"
+    - cron: "17 3 * * *"
   workflow_dispatch:
   push:
     branches: [main]

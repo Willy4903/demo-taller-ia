@@ -298,7 +298,7 @@
       var k = ORDEN.indexOf(id), s = SECT[id], hecho = !!S.hechas[id], disp = !hecho && (k === 0 || !!S.hechas[ORDEN[k - 1]]), est = hecho ? "hecho" : disp ? "disp" : "bloq";
       return '<li class="' + est + '"><span class="nodo">' + (hecho ? "✓" : disp ? String(k + 1) : "🔒") + '</span><div class="tx"><b>' + String(k + 1).padStart(2, "0") + ". " + esc(id === "brujula" ? "Brújula: leer noticias" : s.nombre) + "</b><span>" + (hecho ? "Superada · " + S.hechas[id].ac + "/3" : "+50 XP") + "</span>" + (hecho || disp ? '<br><button class="go" data-m="' + id + '">' + (hecho ? "Repetir misión" : "Empezar misión →") + "</button>" : "") + "</div></li>";
     }).join("") + "</ol>";
-    h += '<div class="alerta"><b>Check actualización automática</b>' + (NOT.generado ? "Última carga: " + esc(fmtFecha(NOT.generado, true)).replace(/\.$/, "") + ". " : "Aún sin carga automática. ") + "Próxima: en las próximas horas (7 veces al día, hora de Lima)." + "</div>";
+    h += '<div class="alerta"><b>Check actualización automática</b>' + (NOT.generado ? "Última carga: " + esc(fmtFecha(NOT.generado, true)).replace(/\.$/, "") + ". " : "Aún sin carga automática. ") + "Próxima: en las próximas horas (8 veces al día, hora de Lima)." + "</div>";
     return h + '<p style="margin:14px 0 0"><a class="btn w" href="#/ruta">' + (hechas ? "Continuar la Ruta" : "Empezar la Ruta") + " →</a></p>" + (sig ? '<p class="mono" style="margin:10px 0 0;font-size:.72rem;color:var(--tx3)">' + S.xp + " / " + sig.min + " XP para " + sig.n + "</p>" : "") + "</div>";
   }
   function spark(pts, grande) {
@@ -437,7 +437,7 @@
       '<a href="#/s/nino"><strong>Ambiente</strong><span>Clima, pronóstico y riesgos</span></a></nav>';
     var PE=/per[uú]|peruan|\blima\b|\bjne\b|bcrp|\bmef\b|sunat|inei|minsa|\bsbs\b|indecopi|osinergmin|diputad|\bpnp\b|ministerio p[uú]blico|fiscal[ií]a|poder judicial|contralor[ií]a|presidenta|keiko|fujimori|castillo|boluarte|soles\b/i;
     var ultimas=FEED.filter(function(i){return (i.sector==="politica"||i.sector==="economia")&&ambitoDe(i)==="peru"&&i.genero!=="opinion"&&PE.test(i.titulo+" "+(i.resumen||""))&&!/concierto|entradas|estados unidos|eeuu|trump/i.test(i.titulo);}).slice(0,4);
-    if(ultimas.length)h+='<section class="dest ultimas" aria-labelledby="ult-h"><h2 id="ult-h">Últimas noticias de política y economía</h2><p class="ult-sub">Se renuevan solas, siete veces al día. Última lectura: '+esc(fechaSistema)+'.</p><div class="ult-l">'+ultimas.map(row).join("")+'</div><p class="ult-mas"><a href="#/noticias">Ver todas las noticias →</a></p></section>';
+    if(ultimas.length)h+='<section class="dest ultimas" aria-labelledby="ult-h"><h2 id="ult-h">Últimas noticias de política y economía</h2><p class="ult-sub">Se renuevan solas, ocho veces al día. Última lectura: '+esc(fechaSistema)+'.</p><div class="ult-l">'+ultimas.map(row).join("")+'</div><p class="ult-mas"><a href="#/noticias">Ver todas las noticias →</a></p></section>';
 
     h+=frescura();
     if(principal)h+='<details class="dest fondo" aria-labelledby="dest-h"><summary id="dest-h">Análisis de fondo <span class="fondo-corte">· corte editorial '+esc(corta(ED.corte+"T12:00:00Z"))+' · puede estar desfasado</span></summary>'+leadCard(principal)+'<p class="why"><b>Por qué importa:</b> '+esc((principal.raw||{}).paraTi||"")+'</p></details>';
@@ -632,8 +632,8 @@
     var c = proxHora(now, off, y, m, d);
     var cl = new Date(c + off); return (cl.getUTCDate() === d ? "hoy " : "mañana ") + String(cl.getUTCHours()).padStart(2, "0") + ":17";
   }
-  /* actualizaciones automáticas, hora de Lima (UTC-5): 00:17, 06:17, 10:17, 12:17, 15:17, 18:17 y 21:17 */
-  var HORAS = [0, 6, 10, 12, 15, 18, 21];
+  /* actualizaciones automáticas, hora de Lima (UTC-5): 05:17, 10:17, 12:17, 14:17, 16:17, 18:17, 20:17 y 22:17 */
+  var HORAS = [5, 10, 12, 14, 16, 18, 20, 22];
   function proxHora(now, off, y, m, d) {
     return HORAS.map(function (h) { return Date.UTC(y, m, d, h, 17) - off; }).concat([Date.UTC(y, m, d + 1, HORAS[0], 17) - off]).filter(function (t) { return t > now; })[0];
   }
@@ -714,7 +714,7 @@
     h += '<div class="entender"><h2>Para entender ' + esc(nomFrase(s)) + '</h2><ul>' + s.esencial.map(function (e) { return "<li>" + gl(e) + "</li>"; }).join("") + "</ul></div>";
     h += (id === "ia" ? bloqueIA() : "") + bloquesPagina(id);
     h += '<div class="cta-m" style="--c:' + s.color + '"><div><b>' + (hecho ? "✅ Misión superada" : "🎯 Misión: " + esc(s.nombre)) + "</b><small>" + (hecho ? "Puedes repetirla cuando quieras." : "3 preguntas · gana hasta 80 XP") + '</small></div><button class="btn" data-m="' + id + '">' + (hecho ? "Repetir" : "Empezar") + "</button></div>";
-    var vacio = '<div class="vacio">Aún no hay notas en esta sección. La próxima actualización automática (7 veces al día) las incorporará.</div>';
+    var vacio = '<div class="vacio">Aún no hay notas en esta sección. La próxima actualización automática (8 veces al día) las incorporará.</div>';
     if (s.ambitos) {
       var enPeru = its.filter(function (i) { return ambitoDe(i) === "peru"; }), enMundo = its.filter(function (i) { return ambitoDe(i) === "mundo"; });
       h += sh("IA en el Perú", s.color) + listaCorta(enPeru, 6, vacio) + sh("IA en el mundo", s.color) + listaCorta(enMundo, 6, vacio);
@@ -802,7 +802,7 @@
     var resto = ED.fuentes.filter(function (f) { return !usados[f.n]; });
     if (resto.length) h += '<section class="fg"><h2>Otras fuentes</h2>' + resto.map(function (f) { return '<a class="fr" href="' + safeUrl(f.u) + '" target="_blank" rel="noopener noreferrer"><div><b>' + esc(f.n) + "</b><small>" + esc(f.tipo) + "</small><p>" + esc(f.foco) + "</p></div><span>↗</span></a>"; }).join("") + "</section>";
     h += estadoFuentesHTML();
-    h += '<section class="fg"><h2>¿Cómo funciona y cada cuánto se actualiza?</h2><div class="box" style="margin:10px 0"><p style="font-size:.95rem">Un flujo automático de GitHub Actions lee los feeds RSS de estos medios <b>siete veces al día (00:17, 06:17, 10:17, 12:17, 15:17, 18:17 y 21:17, hora de Lima)</b>, clasifica las notas por sector y publica el sitio. Mostramos título, resumen breve y enlace; el contenido pertenece a cada medio. Los análisis llevan fecha de corte y nivel de confianza. La clasificación por sector es automática y puede equivocarse.</p></div></section></div>';
+    h += '<section class="fg"><h2>¿Cómo funciona y cada cuánto se actualiza?</h2><div class="box" style="margin:10px 0"><p style="font-size:.95rem">Un flujo automático de GitHub Actions lee los feeds RSS de estos medios <b>ocho veces al día (05:17, 10:17, 12:17, 14:17, 16:17, 18:17, 20:17 y 22:17, hora de Lima)</b>, clasifica las notas por sector y publica el sitio. Mostramos título, resumen breve y enlace; el contenido pertenece a cada medio. Los análisis llevan fecha de corte y nivel de confianza. La clasificación por sector es automática y puede equivocarse.</p></div></section></div>';
     return h;
   }
 

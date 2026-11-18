@@ -360,7 +360,7 @@ async function smallFrontPages(browser, base) {
     await livePage.goto(base + "#/noticias");
     await livePage.locator("#n-query").fill("Actualizacion comprobada");
     equal(await livePage.locator(".pe-ficha").count(), 0, "la nota nueva aún no estaba publicada");
-    match(await livePage.locator("#status").textContent(), /00:17/, "próximo horario en Lima al cruzar medianoche");
+    match(await livePage.locator("#status").textContent(), /05:17/, "próximo horario en Lima al cruzar medianoche");
     await livePage.clock.fastForward(300001);
     await livePage.waitForFunction(() => window.NOTICIAS.generado === "2026-11-09T05:00:00Z");
     equal(await livePage.locator("#n-query").inputValue(), "Actualizacion comprobada", "actualizar conserva la búsqueda");

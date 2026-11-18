@@ -8,7 +8,7 @@ Portal de noticias sobre la coyuntura peruana: política, economía, salud, El N
 - Las fotos son reales: la `og:image` de cada nota (descartando logotipos e íconos del sitio) y, para los análisis, la de la primera fuente citada que la tenga (con crédito). Los enlaces de Google Noticias se resuelven a la nota original del medio (`url_medio`) para tomar su foto y enlazarla directamente. Una nota sin foto original no se publica: el actualizador la reintenta en las ejecuciones siguientes (hasta 6 veces) y, si la foto no carga en el navegador, la tarjeta se retira. Nunca se usan ilustraciones ni íconos de reemplazo.
 - Una línea dinámica (de derecha a izquierda) muestra lo último: tipo de cambio, estado de El Niño, análisis y notas recientes. Se pausa al pasar el cursor o con el botón; con "reducir movimiento" queda estática.
 - El tipo de cambio (USD/PEN) se lee de la API pública del BCRP; si falla, se usa un valor referencial de una API pública sin clave y se acumula entre ejecuciones. Si ambas fallan, se conserva el último dato.
-- Se actualiza automáticamente **7 veces al día** (00:17, 06:17, 10:17, 12:17, 15:17, 18:17 y 21:17, hora de Lima) mediante GitHub Actions.
+- Se actualiza automáticamente **8 veces al día** (05:17, 10:17, 12:17, 14:17, 16:17, 18:17, 20:17 y 22:17, hora de Lima) mediante GitHub Actions.
 
 ## Publicación en GitHub Pages
 
@@ -29,7 +29,7 @@ El sitio se sirve desde la rama `gh-pages` (Settings → Pages → Deploy from a
 3. Conserva como máximo 24 notas por sector y descarta lo anterior a 30 días.
 4. Reescribe `data/noticias.js` y `data/noticias.json`. Si ningún feed responde, **no** toca los datos.
 
-El flujo `Actualizar PERÚ INFORMADO` corre 7 veces al día (00:17, 06:17, 10:17, 12:17, 15:17, 18:17 y 21:17, hora de Lima), hace commit de los datos en `main` e invoca `CI y despliegue` para republicar. Para agregar o quitar medios, edita `FEEDS`. También puede lanzarse a mano desde la pestaña *Actions*.
+El flujo `Actualizar PERÚ INFORMADO` corre 8 veces al día (05:17, 10:17, 12:17, 14:17, 16:17, 18:17, 20:17 y 22:17, hora de Lima), hace commit de los datos en `main` e invoca `CI y despliegue` para republicar. Para agregar o quitar medios, edita `FEEDS`. También puede lanzarse a mano desde la pestaña *Actions*.
 
 ## Prensa del día (sección de #/datos)
 

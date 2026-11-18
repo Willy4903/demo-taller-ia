@@ -1,7 +1,7 @@
 {
   "name": "PERÚ INFORMADO",
   "short_name": "PERÚ INFORMADO",
-  "description": "La coyuntura peruana explicada para cualquiera. Se actualiza 7 veces al día (hora de Lima).",
+  "description": "La coyuntura peruana explicada para cualquiera. Se actualiza 8 veces al día (hora de Lima).",
   "lang": "es-PE",
   "start_url": "./index.html#/",
   "scope": "./",

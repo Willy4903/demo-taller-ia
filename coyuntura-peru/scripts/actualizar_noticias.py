@@ -3,7 +3,7 @@
 
 - Solo usa la biblioteca estándar de Python.
 - Tolera feeds caídos: si ninguno responde no sobrescribe los datos existentes.
-- Pensado para correr en GitHub Actions 7 veces al día (hora de Lima).
+- Pensado para correr en GitHub Actions 8 veces al día (hora de Lima).
 """
 from geografia import aplicar_geografia, generar_js
 from limpieza_noticias import limpiar_registro, limpiar_texto
@@ -1051,7 +1051,7 @@ def escribir(datos):
     with open(tmp_json, "w", encoding="utf-8") as f:
         json.dump(datos, f, ensure_ascii=False, indent=1)
     with open(tmp_js, "w", encoding="utf-8") as f:
-        f.write("/* Generado por scripts/actualizar_noticias.py (GitHub Actions, 7 veces al día, hora de Lima). No editar a mano. */\n")
+        f.write("/* Generado por scripts/actualizar_noticias.py (GitHub Actions, 8 veces al día, hora de Lima). No editar a mano. */\n")
         f.write("window.NOTICIAS = " + json.dumps(datos, ensure_ascii=False, indent=1) + ";\n")
     os.replace(tmp_json, ARCHIVO_JSON)  # se escribe a un temporal y se reemplaza: nunca queda un archivo a medias
     os.replace(tmp_js, ARCHIVO_JS)
