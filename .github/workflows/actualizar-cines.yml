@@ -1,0 +1,45 @@
+name: Actualizar cartelera de Cines
+
+on:
+  schedule:
+    - cron: "35 11,19 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: actualizar-cines
+  cancel-in-progress: false
+
+jobs:
+  cartelera:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Preparar cartelera
+        env:
+          TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
+        run: python coyuntura-peru/scripts/actualizar_cines.py
+      - name: Guardar el corte y solicitar publicación
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git add coyuntura-peru/data/cines.json
+          git diff --cached --quiet && exit 0
+          git -c user.name=peru-en-claro-bot -c user.email=actions@users.noreply.github.com commit -m "chore(cines): actualizar cartelera"
+          for intento in 1 2 3; do
+            if git pull --rebase origin main && git push origin main; then
+              gh workflow run ci-deploy.yml --ref main
+              exit 0
+            fi
+            sleep 5
+          done
+          exit 1

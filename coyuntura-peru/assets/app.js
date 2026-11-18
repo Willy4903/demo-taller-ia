@@ -100,22 +100,50 @@
   };
   window.cpImg = function (im) { var d = im.parentNode; if (!d) return; var r = d.closest && d.closest(".row"), noticia = d.closest && d.closest(".pe-news-card,.pe-ficha"); if (noticia && noticia.classList.contains("pe-ficha")) { noticia.classList.add("sin-foto"); noticia.hidden = true; return; } if (r) r.classList.add("nofoto"); if (noticia) noticia.classList.add("no-photo"); d.remove(); };
 
+  // Compatibilidad con los cortes anteriores a la comprobación por artículo.
+  var FUENTES_ABIERTAS = ["andina.pe", "bbc.com", "bbc.co.uk", "convoca.pe", "dw.com",
+    "elbuho.pe", "france24.com", "gob.pe", "idl-reporteros.pe", "larepublica.pe", "mongabay.com",
+    "news.un.org", "ojo-publico.com", "rpp.pe", "saludconlupa.com", "theguardian.com", "wayka.pe"];
+  function destinoNoticia(item) {
+    try {
+      var url = new URL(item.url_medio || item.url);
+      if (url.protocol !== "https:" || url.username || url.password || !url.pathname.replace(/\//g, "") ||
+          url.hostname === "news.google.com" || url.hostname.endsWith(".news.google.com")) return null;
+      var abierta = item.acceso === "abierto" || (!item.acceso && FUENTES_ABIERTAS.some(function (dominio) {
+        return url.hostname === dominio || url.hostname.endsWith("." + dominio);
+      }));
+      if (!abierta) return null;
+      Array.from(url.searchParams.keys()).forEach(function (parametro) {
+        if (/^(utm_|fbclid$|gclid$|amp$)/i.test(parametro) ||
+          (parametro.toLowerCase() === "outputtype" && url.searchParams.get(parametro).toLowerCase() === "amp")) {
+          url.searchParams.delete(parametro);
+        }
+      });
+      url.pathname = url.pathname.replace(/\/amp\/?$/i, "/");
+      url.hash = "";
+      return url.href;
+    } catch (e) { return null; }
+  }
+
   /* ───── modelo de historias ───── */
-  function modelarNoticias(datos) { return (datos.items || []).filter(function (it) {
-    return !(window.PERU_NEWS && window.PERU_NEWS.excluir(it));
-  }).map(function (it) {
-    var item = Object.assign({}, it), news = window.PERU_NEWS;
-    if (item.url_medio && /^https:\/\//.test(item.url_medio)) item.url = item.url_medio;
-    if (news) {
-      item.tema = news.categoria(item);
-      item.geografia = window.PERU_GEOGRAFIA.clasificar(item);
-      item.ambito = item.geografia.ambito;
-      if (["politica","economia","salud","deporte","tecnologia","ia","nino","investigacion"].indexOf(item.tema) >= 0) item.sector = item.tema;
-      else if (["cultura","sociedad","ambiente","seguridad","educacion"].indexOf(item.tema) >= 0) item.sector = "coyuntura";
-      else if (item.tema === "internacional") item.sector = "mundo";
-    }
-    return item;
-  }).sort(function (a, b) { return (Date.parse(b.fecha) || 0) - (Date.parse(a.fecha) || 0); }); }
+  function modelarNoticias(datos) {
+    var news = window.PERU_NEWS, vistas = new Set();
+    return (datos.items || []).map(function (it) {
+      var url = destinoNoticia(it);
+      if (!url || vistas.has(url) || (news && news.excluir(it))) return null;
+      vistas.add(url);
+      var item = Object.assign({}, it, { url: url });
+      if (news) {
+        item.tema = news.categoria(item);
+        item.geografia = window.PERU_GEOGRAFIA.clasificar(item);
+        item.ambito = item.geografia.ambito;
+        if (["politica","economia","salud","deporte","tecnologia","ia","nino","investigacion"].indexOf(item.tema) >= 0) item.sector = item.tema;
+        else if (["cultura","sociedad","ambiente","seguridad","educacion"].indexOf(item.tema) >= 0) item.sector = "coyuntura";
+        else if (item.tema === "internacional") item.sector = "mundo";
+      }
+      return item;
+    }).filter(Boolean).sort(function (a, b) { return (Date.parse(b.fecha) || 0) - (Date.parse(a.fecha) || 0); });
+  }
   var ITEMS = modelarNoticias(NOT);
   var HILO = ED.hilo ? { kind: "hilo", sector: "coyuntura", id: "hilo", titulo: ED.hilo.titulo, resumen: ED.hilo.puntos.map(function (p) { return p.k + ": " + p.t; }).join(" · "), url: "#/a/hilo", badge: "Análisis" } : null;
   var INS = ED.insights.map(function (c) { return { kind: "insight", sector: c.sector, id: c.id || c.sector, titulo: c.titulo, resumen: c.resumen, url: "#/a/" + (c.id || c.sector), badge: "Análisis", nivel: c.nivel, raw: c }; });
@@ -215,9 +243,6 @@
     if (i < 0) return esc(t);
     return esc(t.slice(0, i)) + "<mark>" + esc(c.v) + "</mark>" + esc(t.slice(i + c.v.length));
   }
-  /* medios que suelen pedir registro o suscripción: el texto de la tarjeta es solo un extracto */
-  var MEDIDOR = { "Gestión": 1, "Infobae Perú": 1, "Infobae": 1, "El País América": 1, "The New York Times en Español": 1 };
-  function medidorNota(f) { return MEDIDOR[f] ? '<p class="ps-note">' + esc(f) + " puede pedir registro o suscripción para leer la nota completa. El texto de aquí es solo un extracto.</p>" : ""; }
   function story(s) {
     var news = window.PERU_NEWS || {}, id = "st" + (++story_n);
     var datos = (s.datos && s.datos.length ? s.datos : (news.cifras ? news.cifras(s).map(function (v) { return { v: v, t: "monto", c: "" }; }) : [])).slice(0, 5);
@@ -243,7 +268,7 @@
       '<button type="button" class="ps-more" aria-expanded="false" aria-controls="' + id + '-p"><span>Ver detalle</span><i aria-hidden="true">▾</i></button>' +
       '<div class="ps-panel" id="' + id + '-p" hidden><div class="ps-in"><div class="ps-tabs" role="tablist" aria-label="Detalle de la noticia">' + tabs.map(function (t, i) { return '<button type="button" role="tab" id="' + id + '-tab-' + t[0] + '" aria-controls="' + id + '-pane-' + t[0] + '" aria-selected="' + (i === 0) + '" tabindex="' + (i ? -1 : 0) + '" data-pt="' + t[0] + '">' + esc(t[1]) + "</button>"; }).join("") + "</div>" +
       tabs.map(function (t, i) { return '<div class="ps-pane" role="tabpanel" id="' + id + '-pane-' + t[0] + '" aria-labelledby="' + id + '-tab-' + t[0] + '" tabindex="0" data-pp="' + t[0] + '"' + (i ? " hidden" : "") + ">" + panes[t[0]] + "</div>"; }).join("") +
-      '</div></div><div class="ps-acts"><button type="button" class="ps-share" data-share="' + esc(s.url) + '" data-share-t="' + esc(s.titulo) + '" aria-label="Compartir: ' + esc(s.titulo) + '"><span aria-hidden="true">↗</span>Compartir</button>' + badgeContraste(category) + '</div><p class="ps-src"><a href="' + safeUrl(s.url) + '" target="_blank" rel="noopener noreferrer">Leer nota original en ' + esc(s.fuente) + " ↗</a></p>" + medidorNota(s.fuente) + "</article>";
+      '</div></div><div class="ps-acts"><button type="button" class="ps-share" data-share="' + esc(s.url) + '" data-share-t="' + esc(s.titulo) + '" aria-label="Compartir: ' + esc(s.titulo) + '"><span aria-hidden="true">↗</span>Compartir</button>' + badgeContraste(category) + '</div><p class="ps-src"><a href="' + safeUrl(s.url) + '" target="_blank" rel="noopener noreferrer">Leer nota original completa en ' + esc(s.fuente) + " ↗</a></p></article>";
   }
   function contar(el) {
     var n = el.textContent, m = /^(\D*?)(\d[\d.,\s]*)(.*)$/.exec(n); if (!m || (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches)) return;
@@ -485,7 +510,7 @@
       '<h2 class="nx-hero-t"><a href="' + safeUrl(s.url) + '" target="_blank" rel="noopener noreferrer">' + esc(s.titulo) + "</a></h2>" +
       (resumen ? '<p class="nx-hero-sum">' + esc(resumen) + "</p>" : "") +
       '<p class="nx-meta"><b>' + esc(s.fuente) + "</b>" + (TIPO_MEDIO[s.tipo] ? "<span>" + TIPO_MEDIO[s.tipo] + "</span>" : "") + (s.fecha ? '<time datetime="' + esc(s.fecha) + '">' + esc(fechaHora(s.fecha)) + "</time><span>" + esc(relativo(s.fecha) || "") + "</span>" : "") + "</p>" +
-      '<div class="nx-hero-act">' + badgeContraste(cat) + '<p class="ps-src"><a href="' + safeUrl(s.url) + '" target="_blank" rel="noopener noreferrer">Leer nota original en ' + esc(s.fuente) + " ↗</a></p></div></div></article>";
+      '<div class="nx-hero-act">' + badgeContraste(cat) + '<p class="ps-src"><a href="' + safeUrl(s.url) + '" target="_blank" rel="noopener noreferrer">Leer nota original completa en ' + esc(s.fuente) + " ↗</a></p></div></div></article>";
   }
   function radarOficial() {
     var grupos = ED.datos && ED.datos.grupos || [], todos = [];
@@ -518,7 +543,7 @@
   }
   function vistaNoticias() {
     var hoy = ""; try { hoy = new Intl.DateTimeFormat("es-PE", { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: "America/Lima" }).format(new Date()); } catch (e) {}
-    var h = '<div class="fade noticias-page nx"><header class="np-mast"><div class="np-date">' + esc(hoy) + '</div><h1>Noticias</h1><p>La prensa peruana e internacional, en español. Explora los extractos, contrasta las cifras y consulta siempre la fuente original.</p></header>';
+    var h = '<div class="fade noticias-page nx"><header class="np-mast"><div class="np-date">' + esc(hoy) + '</div><h1>Noticias</h1><p>La prensa peruana e internacional, en español. Explora los extractos, contrasta las cifras y consulta siempre la fuente original.</p><a class="cine-entry" href="#/cines">Cines · Ver cartelera en Perú →</a></header>';
     h += '<div class="nx-layout"><div class="nx-main">';
     h += '<div class="nx-tools"><div class="n-herramientas"><label class="n-busca" for="n-query"><span class="n-search-icon" aria-hidden="true">⌕</span><input type="search" id="n-query" placeholder="Buscar por palabra clave, tema o titular…" value="' + esc(nQuery) + '" autocomplete="off" aria-label="Buscar dentro de noticias"></label>' +
       '<label class="n-select" for="n-source"><span>Fuente</span><select id="n-source"></select></label>' +
@@ -887,6 +912,7 @@
   function navegar() {
     var r = ruta(), html, tab = "inicio", nav = "inicio", t = TITULO;
     if (r.v === "noticias") { html = vistaNoticias(); nav = "noticias"; tab = "noticias"; t = "Noticias · " + TITULO; }
+    else if (r.v === "cines") { html = window.PERU_CINES.vista; nav = "noticias"; tab = "noticias"; t = "Cines · " + TITULO; }
     else if (r.v === "nino") { html = vistaSector("nino"); nav = "nino"; tab = "nino"; t = "El Niño · " + TITULO; }
     else if (r.v === "s" && SECT[r.id] && r.id !== "brujula") { html = vistaSector(r.id); nav = r.id; tab = r.id === "nino" ? "nino" : ""; t = SECT[r.id].nombre + " · " + TITULO; }
     else if (r.v === "a") { html = vistaArticulo(r.id); var ar = ED.insights.filter(function (x) { return (x.id || x.sector) === r.id; })[0]; nav = r.id === "hilo" ? "inicio" : (ar ? ar.sector : "inicio"); t = (r.id === "hilo" ? ED.hilo.titulo : ar ? ar.titulo : TITULO) + " · " + TITULO; }
@@ -900,6 +926,7 @@
     else { html = vistaHome(); }
     $("#app").innerHTML = html; document.title = t;
     document.body.setAttribute("data-v", r.v);
+    if (r.v === "cines") window.PERU_CINES.iniciar($(".cine-page"));
     $$(".mnav a").forEach(function (a) { var on = a.getAttribute("data-n") === nav; a.classList.toggle("on", on); if (on) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
     $$("#tabbar [data-t]").forEach(function (a) { var on = a.getAttribute("data-t") === tab; a.classList.toggle("on", on); if (on) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
     if (primeraVez) primeraVez = false; else { try { $("#app").focus({ preventScroll: true }); } catch (e) {} }
@@ -973,7 +1000,7 @@
     var nv = NIVELES[nivelDe(S.xp)];
     $("#menu-in").innerHTML = '<button class="sx" aria-label="Cerrar" data-x="1">✕</button><h3 id="menu-t">Más opciones</h3>' +
       '<a class="xp xp-m" href="#/ruta" data-cerrar="1" id="xpchip" aria-label="Mi progreso en la Ruta"><span aria-hidden="true">🧭</span><span>Mi Ruta:</span><b id="xpnum">' + S.xp + " XP</b></a>" +
-      '<div class="paso">Formación</div><div class="menu-l"><a href="#/ruta" data-cerrar="1">La Ruta: aprende jugando</a><a href="#/glosario" data-cerrar="1">Glosario</a><a href="#/talleres" data-cerrar="1">Talleres de IA</a></div>' +
+      '<div class="paso">Formación</div><div class="menu-l"><a href="#/ruta" data-cerrar="1">La Ruta: aprende jugando</a><a href="#/glosario" data-cerrar="1">Glosario</a><a href="#/talleres" data-cerrar="1">Talleres de IA</a><a href="#/cines" data-cerrar="1">Cines: cartelera</a></div>' +
       '<div class="paso">Datos y archivo</div><div class="menu-l"><a href="#/estadisticas" data-cerrar="1">Estadísticas del sitio</a><a href="#/historial" data-cerrar="1">Historial de notas</a><a href="#/fuentes" data-cerrar="1">Fuentes y su estado</a></div>' +
       '<div class="paso">Temas</div><div class="menu-g">' + ED.sectores.map(function (x) { return '<a href="#/s/' + x.id + '" data-cerrar="1" style="--c:' + x.color + '"><span class="ic sm">' + ic(x.id) + "</span>" + esc(x.nombre) + "</a>"; }).join("") + "</div>";
     abrirHoja("#menu");

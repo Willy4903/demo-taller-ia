@@ -1,0 +1,408 @@
+{
+  "la gran sangre ojo x ojo": {
+    "titulo": "La Gran Sangre: Ojo x Ojo",
+    "origen": "Perú",
+    "reparto": [
+      "Carlos Alcántara",
+      "Pietro Sibille",
+      "Aldo Miyashiro"
+    ],
+    "sinopsis": "Dragón, Mandril y Tony Blades salen de prisión y se reúnen para enfrentarse a una red de extorsión que tiene en vilo a Lima.",
+    "recomendada": "Acción peruana para quienes quieren volver al universo de la serie."
+  },
+  "ellas": {
+    "titulo": "Ellas",
+    "origen": "Perú",
+    "generos": [
+      "Drama"
+    ],
+    "sinopsis": "Julia sigue los pasos de su madre como trabajadora del hogar en la casa donde creció. Los recuerdos compartidos con las hijas de la familia la enfrentan a las diferencias que marcaron sus vidas.",
+    "recomendada": "Un drama peruano sobre el trabajo del hogar, la memoria y las diferencias de clase."
+  },
+  "migrantes": {
+    "titulo": "Migrantes",
+    "origen": "Perú",
+    "generos": [
+      "Drama"
+    ],
+    "sinopsis": "Dos hombres dejan Venezuela rumbo a Perú. Durante el viaje conocen a Valentina y Eva y se enfrentan al costo de empezar de nuevo lejos de casa."
+  },
+  "los juegos del hambre amanecer en la cosecha": {
+    "titulo": "Los juegos del hambre: Amanecer en la cosecha",
+    "origen": "Internacional",
+    "reparto": [
+      "Joseph Zada",
+      "Whitney Peak",
+      "Mckenna Grace"
+    ],
+    "sinopsis": "Veinticuatro años antes de que Katniss llegue a la arena, el joven Haymitch es elegido para una edición de los Juegos del Hambre que duplica el número de tributos.",
+    "recomendada": "Para seguir la historia de Panem desde la perspectiva del joven Haymitch."
+  },
+  "wildwood el bosque salvaje": {
+    "titulo": "Wildwood: El bosque salvaje",
+    "origen": "Internacional",
+    "reparto": [
+      "Peyton Elizabeth Lee",
+      "Jacob Tremblay"
+    ],
+    "sinopsis": "Una bandada de cuervos se lleva al hermano pequeño de Prue. Para encontrarlo, ella y un compañero de clase cruzan un bosque encantado a las afueras de Portland.",
+    "recomendada": "Una aventura animada para quienes disfrutan los cuentos fantásticos."
+  },
+  "el gato con sombrero": {
+    "titulo": "El gato con sombrero",
+    "origen": "Internacional",
+    "reparto": [
+      "Bill Hader",
+      "Xochitl Gomez",
+      "Quinta Brunson"
+    ],
+    "sinopsis": "El Gato recibe la misión de animar a dos hermanos que acaban de mudarse. Sus métodos convierten una visita aparentemente sencilla en una aventura."
+  },
+  "ebenezer los fantasmas de la navidad": {
+    "titulo": "Ebenezer: Los fantasmas de la Navidad",
+    "origen": "Internacional",
+    "reparto": [
+      "Johnny Depp",
+      "Andrea Riseborough",
+      "Ian McKellen",
+      "Rupert Grint"
+    ],
+    "sinopsis": "El avaro Ebenezer Scrooge recibe la visita de espíritus que lo obligan a revisar su pasado y afrontar las consecuencias de sus decisiones."
+  },
+  "coyote vs acme": {
+    "titulo": "Coyote vs. Acme",
+    "origen": "Internacional",
+    "generos": [
+      "Animación",
+      "Comedia",
+      "Familiar"
+    ],
+    "reparto": [
+      "Will Forte",
+      "John Cena",
+      "Lana Condor"
+    ],
+    "sinopsis": "Cansado de que los artilugios de Acme fallen en sus intentos de atrapar al Correcaminos, el Coyote contrata a un abogado y lleva a la empresa a juicio."
+  },
+  "la nueva focker": {
+    "titulo": "La nueva Focker",
+    "origen": "Internacional",
+    "reparto": [
+      "Ben Stiller",
+      "Robert De Niro",
+      "Ariana Grande"
+    ],
+    "sinopsis": "Los Focker vuelven a poner a prueba su círculo de confianza cuando la familia recibe a una nueva integrante."
+  },
+  "akira": {
+    "titulo": "Akira",
+    "origen": "Internacional",
+    "reparto": [
+      "Mitsuo Iwata",
+      "Nozomu Sasaki"
+    ],
+    "sinopsis": "En Neo-Tokio, un accidente da poderes psíquicos a un joven motociclista. Su amigo Kaneda intenta encontrarlo mientras el ejército intenta controlarlo.",
+    "recomendada": "Un clásico de la animación japonesa que regresa a la pantalla grande."
+  },
+  "ju on el grito": {
+    "titulo": "Ju-on: El grito",
+    "origen": "Internacional",
+    "reparto": [
+      "Megumi Okina",
+      "Misaki Itō",
+      "Takako Fuji"
+    ],
+    "sinopsis": "Una voluntaria entra en una casa marcada por una muerte violenta y descubre que la maldición persigue a quienes cruzan su puerta."
+  },
+  "rocky": {
+    "titulo": "Rocky",
+    "origen": "Internacional",
+    "reparto": [
+      "Sylvester Stallone",
+      "Talia Shire",
+      "Carl Weathers"
+    ],
+    "sinopsis": "Un boxeador de Filadelfia acepta el desafío del campeón mundial. En el camino descubre cuánto puede cambiar su vida al tomarse en serio esa oportunidad."
+  },
+  "sensatez y sentimiento": {
+    "titulo": "Sensatez y sentimiento",
+    "origen": "Internacional",
+    "reparto": [
+      "Emma Thompson",
+      "Kate Winslet",
+      "Hugh Grant",
+      "Alan Rickman"
+    ],
+    "sinopsis": "Tras perder la casa familiar, las hermanas Dashwood buscan su lugar en una sociedad donde el dinero y la reputación condicionan sus relaciones."
+  },
+  "your name": {
+    "titulo": "Your Name",
+    "origen": "Internacional",
+    "generos": [
+      "Anime",
+      "Romance",
+      "Fantasía"
+    ],
+    "reparto": [
+      "Ryūnosuke Kamiki",
+      "Mone Kamishiraishi"
+    ],
+    "sinopsis": "Dos adolescentes empiezan a intercambiar cuerpos sin conocerse. Los mensajes que se dejan revelan una conexión que no se explica por la distancia."
+  },
+  "el poder de la red": {
+    "titulo": "El poder de la red",
+    "origen": "Internacional",
+    "reparto": [
+      "Mikey Madison",
+      "Jeremy Allen White"
+    ],
+    "sinopsis": "Una exempleada de Facebook recurre a un periodista para revelar lo que los documentos internos de la empresa dicen sobre los efectos de su plataforma."
+  },
+  "yo soy rocky": {
+    "titulo": "Yo soy Rocky",
+    "origen": "Internacional",
+    "generos": [
+      "Drama"
+    ],
+    "reparto": [
+      "Anthony Ippolito",
+      "Stephan James"
+    ],
+    "sinopsis": "Sylvester Stallone escribe el guion de Rocky cuando su carrera está estancada y lucha para que el estudio lo deje interpretar al protagonista."
+  },
+  "godzilla minus zero": {
+    "titulo": "Godzilla Minus Zero",
+    "origen": "Internacional"
+  },
+  "clayface": {
+    "titulo": "Clayface",
+    "origen": "Internacional",
+    "reparto": [
+      "Tom Rhys Harries",
+      "Naomi Ackie"
+    ]
+  },
+  "street fighter": {
+    "titulo": "Street Fighter",
+    "origen": "Internacional",
+    "reparto": [
+      "Andrew Koji",
+      "Noah Centineo",
+      "Callina Liang"
+    ]
+  },
+  "como robar un banco": {
+    "titulo": "Cómo robar un banco",
+    "origen": "Internacional",
+    "reparto": [
+      "Nicholas Hoult",
+      "Pete Davidson",
+      "Anna Sawai"
+    ]
+  },
+  "verity la sombra de un engano": {
+    "titulo": "Verity: La sombra de un engaño",
+    "origen": "Internacional",
+    "reparto": [
+      "Anne Hathaway",
+      "Dakota Johnson",
+      "Josh Hartnett"
+    ]
+  },
+  "gregorio": {
+    "origen": "Perú",
+    "generos": [
+      "Drama"
+    ],
+    "reparto": [
+      "Marino León",
+      "Vetzi Pérez Palma"
+    ],
+    "sinopsis": "Un niño llega a Lima con su familia desde los Andes y aprende a sobrevivir en una ciudad que le ofrece pocas oportunidades."
+  },
+  "juliana": {
+    "origen": "Perú",
+    "generos": [
+      "Drama"
+    ],
+    "reparto": [
+      "Rosa Isabel Morfino",
+      "Edward Centeno"
+    ],
+    "sinopsis": "Juliana abandona su casa y se hace pasar por un niño para unirse a un grupo que canta en los autobuses de Lima."
+  },
+  "la boca del lobo": {
+    "origen": "Perú",
+    "generos": [
+      "Drama"
+    ],
+    "reparto": [
+      "Gustavo Bueno",
+      "Toño Vega",
+      "José Tejada"
+    ],
+    "sinopsis": "Un joven policía destinado a una comunidad andina debe decidir cómo actuar cuando las órdenes de su superior ponen en peligro a los pobladores."
+  },
+  "la ciudad y los perros": {
+    "origen": "Perú",
+    "generos": [
+      "Drama"
+    ],
+    "reparto": [
+      "Pablo Serra",
+      "Gustavo Bueno",
+      "Luis Álvarez"
+    ],
+    "sinopsis": "El robo de un examen rompe los pactos entre los cadetes de un colegio militar y deja al descubierto los abusos de su formación."
+  },
+  "la muralla verde": {
+    "origen": "Perú",
+    "generos": [
+      "Drama"
+    ],
+    "reparto": [
+      "Julio Alemán",
+      "Sandra Riva",
+      "Raúl Martin"
+    ],
+    "sinopsis": "Un hombre deja Lima para instalarse con su familia en la selva. La burocracia y el aislamiento ponen a prueba su proyecto de vida."
+  },
+  "pantaleon y las visitadoras": {
+    "titulo": "Pantaleón y las visitadoras",
+    "origen": "Perú",
+    "generos": [
+      "Comedia",
+      "Drama"
+    ],
+    "reparto": [
+      "Salvador del Solar",
+      "Angie Cepeda",
+      "Mónica Sánchez"
+    ],
+    "sinopsis": "Un capitán recibe una misión secreta del Ejército en la Amazonía. Su empeño por cumplirla con exactitud acaba por poner en riesgo el secreto."
+  },
+  "cuentos inmorales": {
+    "origen": "Perú",
+    "generos": [
+      "Drama"
+    ],
+    "sinopsis": "Cuatro relatos de distintos directores retratan tensiones de la vida urbana y los códigos de conducta en el Perú de fines de los setenta."
+  },
+  "la fuga del chacal": {
+    "origen": "Perú",
+    "generos": [
+      "Acción",
+      "Drama"
+    ],
+    "reparto": [
+      "Miguel Ángel Rodríguez"
+    ],
+    "sinopsis": "La historia de un prófugo que intenta sobrevivir al cerco policial, inspirada en hechos de la crónica policial peruana."
+  },
+  "caballo salvaje nueve": {
+    "titulo": "Caballo salvaje nueve",
+    "origen": "Internacional",
+    "reparto": [
+      "John Malkovich",
+      "Sam Rockwell",
+      "Steve Buscemi"
+    ],
+    "sinopsis": "En vísperas del golpe de Estado chileno de 1973, dos agentes de la CIA reciben la orden de viajar desde Santiago a la Isla de Pascua."
+  },
+  "el corazon de la bestia": {
+    "titulo": "El corazón de la bestia",
+    "origen": "Internacional",
+    "reparto": [
+      "Brad Pitt"
+    ],
+    "sinopsis": "Un oficial y su perro de combate sobreviven a un accidente aéreo. Aislados en Alaska, los dos dependen el uno del otro para salir con vida."
+  },
+  "la caida de la ballena": {
+    "titulo": "La caída de la ballena",
+    "origen": "Internacional",
+    "reparto": [
+      "Austin Abrams",
+      "Josh Brolin"
+    ],
+    "sinopsis": "Un buzo busca los restos de su padre frente a la costa de California. Una ballena se lo traga y lo obliga a buscar una salida antes de que se agote el aire."
+  },
+  "resident evil noche cero": {
+    "titulo": "Resident Evil: Noche cero",
+    "origen": "Internacional",
+    "reparto": [
+      "Austin Abrams"
+    ],
+    "sinopsis": "Un mensajero llega a un hospital remoto con un paquete y queda atrapado en medio de un brote que transforma a las personas en criaturas violentas."
+  },
+  "bts world tour arirang in kaohsiung": {
+    "titulo": "BTS World Tour: Arirang en Kaohsiung",
+    "origen": "Internacional",
+    "generos": [
+      "Concierto"
+    ],
+    "reparto": [
+      "BTS"
+    ],
+    "sinopsis": "Transmisión en salas del concierto de la gira Arirang de BTS en Kaohsiung, Taiwán."
+  },
+  "nmixx episode 1 zero frontier live viewing": {
+    "titulo": "NMIXX: Episode 1 — Zero Frontier",
+    "origen": "Internacional",
+    "generos": [
+      "Concierto"
+    ],
+    "reparto": [
+      "Lily",
+      "Haewon",
+      "Sullyoon",
+      "Bae",
+      "Jiwoo",
+      "Kyujin"
+    ],
+    "sinopsis": "El grupo surcoreano NMIXX interpreta en Incheon canciones como «O.O» y «Dash» en un concierto transmitido a salas de cine."
+  },
+  "mrs green apple zenjin mito to in mutable": {
+    "titulo": "Mrs. Green Apple: Zenjin Mito to In/Mutable",
+    "origen": "Internacional",
+    "generos": [
+      "Concierto"
+    ],
+    "reparto": [
+      "Mrs. Green Apple"
+    ],
+    "sinopsis": "Proyección del concierto Zenjin Mito to In/Mutable del grupo japonés Mrs. Green Apple."
+  },
+  "pinocho sin cuerdas": {
+    "titulo": "Pinocho: Sin cuerdas",
+    "origen": "Internacional",
+    "reparto": [
+      "Richard Brake",
+      "Cameron Bell"
+    ],
+    "sinopsis": "Geppetto le regala a su nieto un muñeco que cobra vida. La amistad entre el niño y Pinocho toma un rumbo siniestro."
+  },
+  "ratoncitos en apuros": {
+    "titulo": "Ratoncitos en apuros",
+    "origen": "Internacional",
+    "generos": [
+      "Familiar",
+      "Comedia"
+    ],
+    "sinopsis": "Una familia se muda al campo sin saber que su nueva casa ya está ocupada. Los ratones que viven allí se organizan para defender su hogar."
+  },
+  "coquito la pelicula": {
+    "titulo": "Coquito: La película",
+    "origen": "Perú",
+    "generos": [
+      "Drama"
+    ],
+    "sinopsis": "En la Arequipa de los años cincuenta, el maestro rural Everardo Zapata busca una forma más cercana de enseñar a leer a sus alumnos."
+  },
+  "el camino del papa leon xiv": {
+    "titulo": "El camino del papa León XIV",
+    "generos": [
+      "Documental"
+    ],
+    "sinopsis": "Un repaso por la vida de Robert Prevost y su trayectoria entre Chiclayo y el Vaticano."
+  }
+}

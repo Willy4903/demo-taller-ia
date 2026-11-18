@@ -9,7 +9,7 @@ const srv = http.createServer((req, res) => {
   if (!f.startsWith(RAIZ) || !fs.existsSync(f) || fs.statSync(f).isDirectory()) { res.writeHead(404); return res.end("no"); }
   res.writeHead(200, { "Content-Type": MIME[path.extname(f)] || "application/octet-stream", "Cache-Control": "no-store" }); fs.createReadStream(f).pipe(res);
 });
-const RUTAS = ["", "noticias", "datos", "nino", "s/nino", "s/politica", "s/economia", "s/salud", "s/tecnologia", "s/ia", "s/deporte", "s/investigacion", "s/coyuntura", "s/mundo", "a/hilo", "a/politica", "a/nino-peru", "a/ia-peru", "ruta", "glosario", "estadisticas", "historial", "talleres", "fuentes"];
+const RUTAS = ["", "noticias", "cines", "datos", "nino", "s/nino", "s/politica", "s/economia", "s/salud", "s/tecnologia", "s/ia", "s/deporte", "s/investigacion", "s/coyuntura", "s/mundo", "a/hilo", "a/politica", "a/nino-peru", "a/ia-peru", "ruta", "glosario", "estadisticas", "historial", "talleres", "fuentes"];
 const ANCHOS = [[390, 844, true], [430, 932, true], [768, 1024, false], [1024, 768, false], [1440, 900, false]];
 const fallos = []; let comprobaciones = 0;
 function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); console.log("  ✗ " + msg); } }
@@ -57,6 +57,33 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
     ok(await p.locator(".pe-news-section-header h2").allInnerTexts().then(x=>x.length===1&&x[0]==="Internacional"),
        `[${w}] noticias: filtro de Internacional no funciona`);
     await p.locator('[data-news-amb="todos"]').click();
+    await p.clock.setFixedTime(new Date("2026-11-18T19:30:00Z"));
+    const estreno = "2026-11-18";
+    const cine = { cadena: "UVK", url: "https://uvk.pe/peliculas/prueba", dias: { [estreno]: ["Lima"] } };
+    await p.route("**/data/cines.json", route => route.fulfill({ json: {
+      corte: estreno + "T14:00:00-05:00",
+      peliculas: [
+        { titulo: "La Gran Sangre: Ojo x Ojo", origen: "Perú", generos: ["Acción"], reparto: ["Aldo Miyashiro"], sinopsis: "Un equipo se reúne en Lima.", cines: [cine], nueva_desde: estreno },
+        { titulo: "Drama peruano", origen: "Perú", generos: ["Drama"], reparto: [], sinopsis: "Una historia que transcurre en Perú.", cines: [cine] },
+        { titulo: "Animación internacional", origen: "Internacional", generos: ["Animación"], reparto: [], sinopsis: "Una aventura familiar.", cines: [cine] }
+      ]
+    } }));
+    await p.goto(base + "?cartelera-prueba#/noticias");
+    await p.locator('.cine-entry').click();
+    await p.locator('.cine-card').first().waitFor();
+    ok(await p.locator('#cine-titulo').innerText() === 'Cines', `[${w}] Cines: acceso desde Noticias`);
+    await p.locator('#cine-origen').selectOption('Perú');
+    ok(await p.locator('.cine-card').count() > 1 &&
+       await p.locator('.cine-card:not(:has-text("Cine peruano"))').count() === 0, `[${w}] Cines: filtro nacional`);
+    await p.locator('#cine-buscar').fill('miyashiro');
+    ok(await p.locator('.cine-card h2').allInnerTexts().then(x => x.length === 1 && x[0] === 'La Gran Sangre: Ojo x Ojo') &&
+       await p.locator('.cine-links a[href^="https://"]').count() > 0, `[${w}] Cines: búsqueda y enlace oficial`);
+    await p.locator('#cine-buscar').clear();
+    await p.locator('#cine-origen').selectOption('');
+    await p.locator('#cine-fecha').selectOption('estrenos');
+    ok(await p.locator('.cine-card').count() > 0 &&
+       await p.locator('.cine-card:not(:has-text("Novedad en la cartelera"))').count() === 0, `[${w}] Cines: novedades`);
+    await p.clock.setFixedTime(new Date());
     // portada
     await p.goto(base + "#/"); await p.waitForTimeout(250);
     ok(await p.locator(".qs .q").count() === 3, `[${w}] portada: deben verse 3 tarjetas de preguntas`);

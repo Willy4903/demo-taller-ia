@@ -110,3 +110,13 @@ El ámbito se determina por referencias geográficas en el titular, el extracto 
 `data/geografia.json` contiene las reglas compartidas. `scripts/geografia.py` y `assets/geografia.js` aplican la misma precedencia; las pruebas contrastan sus resultados sobre todos los registros y casos reales de regresión. El actualizador genera `data/geografia.js` desde el JSON para la web. Para regenerarlo tras editar reglas: `python3 -c "import sys; sys.path.insert(0, 'coyuntura-peru/scripts'); from geografia import generar_js; generar_js()"` desde la raíz del repositorio.
 
 Cada registro conserva `geografia.version`, `zona` y `motivo`. El validador impide publicar discrepancias entre esos campos y las reglas vigentes. La limpieza de extractos quita controles de lectura, promociones y solicitudes de donación; conserva cifras únicamente con evidencia textual. Las noticias sobre un mismo hecho en distintos medios se conservan como fuentes distintas, sin confundirlas con URLs duplicadas.
+
+## Cines y enlaces de Noticias
+
+La sección **Cines** está enlazada desde Noticias y el menú Más. El corte muestra las funciones registradas por [CineScope Perú](https://github.com/jhannfrank/cartelera-cine) para Cineplanet, Cinemark, Cinépolis, Movie Time, Cine Star y UVK. Cada ficha enlaza a las cadenas que registraron funciones. Las novedades comparan los dos últimos cortes. Los estrenos con fecha se basan en fichas de estreno en salas en Perú.
+
+- Ejecuta `python3 coyuntura-peru/scripts/actualizar_cines.py` desde la raíz para actualizar el corte. GitHub Actions ejecuta este comando dos veces al día y solicita la publicación cuando cambian los datos. Si la fuente no responde o el corte es anterior, se conserva el archivo existente.
+- `data/cines-editorial.json` contiene sinopsis propias, reparto confirmado y recomendaciones. La clave de cada ficha es el identificador normalizado en `data/cines.json`.
+- El secreto opcional de GitHub Actions `TMDB_READ_TOKEN` activa la búsqueda de fechas de estreno en Perú, reparto y origen para coincidencias exactas en TMDB. Sin esa integración se publican las funciones, los enlaces y los datos editoriales o informados por las cadenas que estén disponibles.
+
+En Noticias, las nuevas notas solo aparecen cuando el actualizador encuentra texto de artículo accesible en el enlace directo. Un enlace de Google Noticias sin resolver, una página que requiere suscripción y un destino con solo un extracto quedan fuera de la vista pública. Las notas de cortes antiguos pueden aparecer si ya tienen un enlace directo a un medio de acceso abierto. El botón de lectura abre el artículo en su medio.

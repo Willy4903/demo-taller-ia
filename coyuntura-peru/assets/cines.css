@@ -1,0 +1,40 @@
+.cine-page { max-width: 1180px; margin: 0 auto; padding: 22px 16px 40px; }
+.cine-portada {
+  padding: clamp(20px, 5vw, 52px);
+  border-radius: 18px;
+  background: linear-gradient(125deg, #20172c, #392542 65%, #663542);
+  color: #fff8ef;
+}
+.cine-portada a { color: #ffe0bd; text-decoration: underline; }
+.cine-portada h1 { margin: 12px 0 2px; font: 800 clamp(2.8rem, 7vw, 5rem)/1.02 var(--serif); }
+.cine-portada p { margin: 12px 0 0; color: #f4dce3; }
+.cine-entry { display: inline-flex; margin-top: 10px; font-weight: 700; color: var(--red-t); text-decoration: underline; }
+.cine-corte, .cine-estado { color: var(--tx2); font-size: .9rem; margin: 16px 0; }
+.cine-corte a { text-decoration: underline; }
+.cine-filtros { display: grid; grid-template-columns: 1.5fr repeat(4, 1fr); gap: 12px; }
+.cine-filtros[hidden] { display: none; }
+.cine-filtros label { font-weight: 700; font-size: .82rem; }
+.cine-filtros input, .cine-filtros select {
+  display: block; width: 100%; min-width: 0; min-height: 44px; margin-top: 5px;
+  font: inherit; padding: 8px; border: 1px solid var(--border);
+  border-radius: 8px; color: var(--tx); background: var(--card);
+}
+.cine-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); gap: 14px; }
+.cine-card {
+  display: flex; align-items: flex-start; gap: 14px; padding: 14px;
+  border: 1px solid var(--border); border-radius: 12px; background: var(--card);
+  overflow-wrap: anywhere;
+}
+.cine-poster { width: 27%; max-width: 100px; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 6px; }
+.cine-card-body { min-width: 0; }
+.cine-card h2 { font: 700 1.23rem/1.2 var(--serif); margin: 5px 0; }
+.cine-card p { margin: 6px 0; font-size: .9rem; }
+.cine-card .cine-meta { color: var(--tx2); font-size: .78rem; }
+.cine-card .cine-recomendacion { font-weight: 700; color: var(--red-t); }
+.cine-reparto { color: var(--tx2); }
+.cine-links { display: flex; flex-wrap: wrap; gap: 6px 12px; padding: 0; margin: 8px 0 0; list-style: none; }
+.cine-links a { display: inline-flex; align-items: center; min-height: 32px; font-weight: 700; font-size: .8rem; text-decoration: underline; }
+@media (max-width: 760px) {
+  .cine-filtros { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cine-filtros label:first-child { grid-column: 1 / -1; }
+}

@@ -191,11 +191,12 @@ class Integracion(unittest.TestCase):
     def setUp(self):
         import tempfile
         self.tmp = tempfile.mkdtemp()
-        self.guardado = {k: getattr(a, k) for k in ("DATOS", "ARCHIVO_JS", "ARCHIVO_JSON", "descargar", "descargar_parcial", "imagen_og", "tipo_cambio", "datos_bm", "imagenes_editoriales")}
+        self.guardado = {k: getattr(a, k) for k in ("DATOS", "ARCHIVO_JS", "ARCHIVO_JSON", "descargar", "descargar_parcial", "pagina_articulo", "imagen_og", "tipo_cambio", "datos_bm", "imagenes_editoriales")}
         a.DATOS = self.tmp
         a.ARCHIVO_JS = os.path.join(self.tmp, "noticias.js")
         a.ARCHIVO_JSON = os.path.join(self.tmp, "noticias.json")
         a.imagen_og = lambda u: None
+        a.pagina_articulo = lambda u: (u, "")
         a.tipo_cambio = lambda previo=None: previo
         a.datos_bm = lambda previo=None: previo or {}
         a.imagenes_editoriales = lambda previas=None: previas or {}
@@ -280,7 +281,7 @@ class Sintesis(unittest.TestCase):
         self.assertEqual(a.cifras_clave("Ley 30-12 publicada en el diario oficial"), [])
 
     def test_hereda_sintesis_previa_sin_descargar(self):
-        previos = [{"url": "https://x.pe/a", "titulo": "t", "sintesis": "Texto previo.", "datos": [{"v": "5 %", "t": "porcentaje", "c": "x"}]}]
+        previos = [{"url": "https://x.pe/a", "titulo": "t", "acceso": "abierto", "sintesis": "Texto previo.", "datos": [{"v": "5 %", "t": "porcentaje", "c": "x"}]}]
         nuevos = [{"url": "https://x.pe/a", "titulo": "t"}]
         original = a.sintesis_de_pagina
         a.sintesis_de_pagina = lambda it: (_ for _ in ()).throw(AssertionError("no debe descargar"))

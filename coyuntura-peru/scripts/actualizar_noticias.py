@@ -5,6 +5,7 @@
 - Tolera feeds caídos: si ninguno responde no sobrescribe los datos existentes.
 - Pensado para correr en GitHub Actions 8 veces al día (hora de Lima).
 """
+from acceso_noticias import comprobar, mismo_medio, original
 from geografia import aplicar_geografia, generar_js
 from limpieza_noticias import limpiar_registro, limpiar_texto
 import base64
@@ -54,6 +55,8 @@ FEEDS = [
     ("Salud con Lupa", ["https://saludconlupa.com/feed/"], "independiente", "salud"),
     ("Mongabay Latam", ["https://es.mongabay.com/feed/"], "independiente", "coyuntura"),
     ("Caretas", ["https://caretas.pe/feed/"], "comercial", None),
+    # Información pública
+    ("Agencia Andina", ["https://andina.pe/agencia/rss.aspx"], "estatal", None),
     # Comerciales
     ("El Comercio", ["https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml"], "comercial", None),
     ("Gestión", ["https://gestion.pe/arc/outboundfeeds/rss/?outputType=xml"], "comercial", "economia"),
@@ -412,6 +415,10 @@ def enriquecer_imagenes(items, previos):
             it["imagen"] = prev["imagen"]
         if it.get("imagen"):
             it.pop("imagen_intentos", None)
+            if es_google_news(it["url"]) and not it.get("url_medio"):
+                it["enlace_intentos"] = max(it.get("enlace_intentos", 0), prev.get("enlace_intentos", 0))
+                if it["enlace_intentos"] < MAX_INTENTOS_IMAGEN:
+                    pendientes.append(it)
             continue
         it["imagen_intentos"] = max(it.get("imagen_intentos") or 0, prev.get("imagen_intentos") or 0)
         if it["imagen_intentos"] < MAX_INTENTOS_IMAGEN:
@@ -423,7 +430,10 @@ def enriquecer_imagenes(items, previos):
             real = resolver_google_news(it["url"])
             if real:
                 it["url_medio"] = real
-        return imagen_og(url_del_medio(it))
+                it.pop("enlace_intentos", None)
+            elif it.get("imagen"):
+                it["enlace_intentos"] += 1
+        return it.get("imagen") or imagen_og(url_del_medio(it))
 
     if pendientes:
         with ThreadPoolExecutor(max_workers=4) as ex:  # pocas conexiones simultáneas con Google Noticias
@@ -572,37 +582,56 @@ def sintetizar(it, descripcion="", parrafos=None):
     return res
 
 
+def pagina_articulo(url):
+    req = urllib.request.Request(uri_ascii(url), headers={"User-Agent": UA, "Accept": "text/html,*/*"})
+    with urllib.request.urlopen(req, timeout=15) as r:
+        if r.headers.get_content_type() != "text/html":
+            return r.geturl(), ""
+        return r.geturl(), r.read(750 * 1024).decode("utf-8", errors="replace")
+
+
 def sintesis_de_pagina(it):
-    url = url_del_medio(it)
+    url = original(url_del_medio(it))
     if not url:
-        return sintetizar(it)  # el agregador no expone el texto del medio: se usa solo el extracto del feed
+        return {**sintetizar(it), "acceso": "sin_verificar"}
     try:
-        pagina = descargar_parcial(url)
+        destino, pagina = pagina_articulo(url)
+        acceso = comprobar(destino, pagina, parrafos_html) if mismo_medio(destino, url) else {"acceso": "sin_verificar"}
+        canonica = acceso.get("url_medio")
+        if acceso["acceso"] == "abierto" and canonica != original(destino):
+            # La versión canónica también debe abrir un artículo completo.
+            destino, pagina = pagina_articulo(canonica)
+            acceso = comprobar(destino, pagina, parrafos_html) if mismo_medio(destino, canonica) else {"acceso": "sin_verificar"}
     except Exception:  # noqa: BLE001
-        return sintetizar(it)
-    return sintetizar(it, descripcion_html(pagina), parrafos_html(pagina))
+        return {**sintetizar(it), "acceso": "sin_verificar"}
+    if acceso["acceso"] != "abierto":
+        return {**sintetizar(it), **acceso}
+    return {**sintetizar(it, descripcion_html(pagina), parrafos_html(pagina)), **acceso}
 
 
 def enriquecer_sintesis(items, previos):
-    """Hereda síntesis ya generadas y crea las de las notas nuevas (máximo por ejecución, en paralelo)."""
-    conocidas = {url_canonica(i["url"]): i for i in previos if i.get("sintesis") or i.get("datos")}
+    """Conserva la comprobación de artículos conocidos y verifica los nuevos."""
+    conocidas = {url_canonica(i["url"]): i for i in previos if i.get("acceso") in {"abierto", "restringido"}}
     pendientes = []
     for it in items:
-        if it.get("sintesis") or it.get("datos"):
+        if it.get("acceso") in {"abierto", "restringido"}:
             continue
-        k = url_canonica(it["url"])
-        if k in conocidas:
-            for campo in ("sintesis", "puntos", "datos"):
-                if conocidas[k].get(campo):
-                    it[campo] = conocidas[k][campo]
-        else:
+        anterior = conocidas.get(url_canonica(it["url"]))
+        if anterior:
+            for campo in ("sintesis", "puntos", "datos", "acceso", "url_medio"):
+                if campo in anterior:
+                    it[campo] = anterior[campo]
+        elif url_del_medio(it):
             pendientes.append(it)
-    pendientes = sorted(pendientes, key=clave_orden, reverse=True)[:MAX_SINTESIS_POR_EJECUCION]
+    pendientes.sort(key=lambda it: (
+        bool(it.get("imagen")), not bool(it.get("acceso")), clave_orden(it)
+    ), reverse=True)
+    pendientes = pendientes[:MAX_SINTESIS_POR_EJECUCION]
     if pendientes:
-        with ThreadPoolExecutor(max_workers=6) as ex:
+        with ThreadPoolExecutor(max_workers=8) as ex:
             for it, res in zip(pendientes, ex.map(sintesis_de_pagina, pendientes)):
                 it.update(res)
-    print(f"Síntesis: {sum(1 for i in items if i.get('sintesis'))}/{len(items)} notas · con cifras: {sum(1 for i in items if i.get('datos'))}")
+    print(f"Lectura abierta comprobada: {sum(it.get('acceso') == 'abierto' for it in items)}/{len(items)} notas")
 
 
 def fuentes_editoriales():
@@ -1098,7 +1127,6 @@ def main(feeds=None):
         resumen_ejecucion("Actualización sin cambios", ["Ningún feed respondió; se conservaron los datos anteriores."])
         return 1
     nuevos = traducir_notas(nuevos, previo.get("items", []))
-    enriquecer_sintesis(nuevos, previo.get("items", []))
     combinados = fusionar(nuevos, previo.get("items", []))
     enriquecer_imagenes(combinados, previo.get("items", []))
     enriquecer_sintesis(combinados, previo.get("items", []))

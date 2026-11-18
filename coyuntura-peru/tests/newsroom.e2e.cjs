@@ -30,6 +30,7 @@ const fixture = {
       genero: index === 1 ? "opinion" : index === 2 ? "analisis" : "noticia",
       fecha: new Date(Date.UTC(2026, 10, 6, 12) - index * 3600000).toISOString(),
       url: "https://noticias.invalid/reportaje/" + index,
+      acceso: "abierto",
       // Toda nota publicada lleva su foto original; "LOCAL" se sustituye por una foto servida en la prueba.
       imagen: "LOCAL",
       // Como agregador no ocupa la gran foto de portada: así se prueban las secciones sin el frente.
@@ -50,6 +51,10 @@ fixture.items[4].imagen = "https://noticias.invalid/foto-no-disponible.jpg";
 fixture.items[2].resumen = fixture.items[2].titulo;
 Object.assign(fixture.items[3], { puntos: [fixture.items[3].titulo], sintesis: fixture.items[3].titulo, resumen: usefulFallback });
 fixture.items[5].titulo = "Inversión pública regional en Perú: presupuesto para nuevos proyectos";
+const restricted = { ...fixture.items[0], titulo: "Solo para suscriptores", url: "https://noticias.invalid/reportaje/pago", acceso: "restringido" };
+const unresolved = { ...fixture.items[0], titulo: "Enlace sin resolver", url: "https://news.google.com/rss/articles/pending" };
+
+
 
 const editorialContext = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(ROOT, "data/editorial.js"), "utf8"), editorialContext);
@@ -305,7 +310,7 @@ async function smallFrontPages(browser, base) {
       small = { generado: fixture.generado, items: fixture.items.slice(0, size).map((item, index) => ({
         ...item, genero: "noticia", via: null, imagen: base + "assets/card-actualidad.jpg",
         fuente: index === 0 ? "El Comercio" : item.fuente
-      })) };
+      })).concat(restricted, unresolved) };
       await page.goto(base + "?portada=" + size + "#/noticias");
       await page.locator(".np-front").waitFor();
       equal(await page.locator(".pe-news-empty").count(), 0, `[portada ${size}] las noticias del frente evitan el falso vacío`);

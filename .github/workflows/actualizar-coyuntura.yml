@@ -20,6 +20,7 @@ on:
     paths:
       - ".github/workflows/actualizar-coyuntura.yml"
       - "coyuntura-peru/scripts/actualizar_noticias.py"
+      - "coyuntura-peru/scripts/acceso_noticias.py"
       - "coyuntura-peru/scripts/geografia.py"
       - "coyuntura-peru/scripts/limpieza_noticias.py"
       - "coyuntura-peru/data/geografia.json"
