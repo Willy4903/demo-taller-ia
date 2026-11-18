@@ -126,7 +126,7 @@ time,.mono,.cifra,.dc-v,.nx-c-v,.nx-cortes,.nx-sis dd,.ps-meta,.nx-meta,.n-total
 .nx .pe-news-grid .pe-ficha{border:1px solid var(--border)!important;border-radius:16px!important;background:var(--card)!important;box-shadow:var(--shadow)!important;padding:16px!important;transition:border-color .2s var(--ease),transform .2s var(--ease)}
 .nx .pe-news-grid .pe-ficha:hover{border-color:var(--border2)!important;transform:translateY(-2px)}
 .nx .pe-ficha .ps-foto{margin:-16px -16px 4px;border-radius:15px 15px 0 0;overflow:hidden}
-.nx .pe-ficha .ps-title,.nx .pe-ficha .ps-toggle{font:800 1.08rem/1.3 var(--serif)!important;color:var(--head)!important}
+.nx .pe-ficha .ps-title{font:800 1.08rem/1.3 var(--serif)!important;color:var(--head)!important}
 .nx .pe-ficha .pe-news-topic{color:var(--c,var(--crimson))}
 .nx .pe-ficha .ps-sum{color:var(--tx2)}
 .nx .pe-ficha[data-open="0"] .ps-sum{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}

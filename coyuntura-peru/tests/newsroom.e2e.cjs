@@ -104,7 +104,7 @@ async function uniqueReading(card, label) {
   equal(occurrences(await card.innerText(), continuation), 1, `${label}: se conserva el segundo párrafo`);
   equal(await card.locator('[data-pp="sin"] .ps-pts li').count(), 2, `${label}: se omiten puntos duplicados y el titular repetido`);
   equal(await card.getByRole("tab", { name: /Lectura crítica|Análisis de fondo/ }).count(), 0, `${label}: no hay análisis de plantilla repetido`);
-  equal(await card.locator(".ps-toggle").getAttribute("aria-expanded"), "true", `${label}: los dos controles comparten el estado`);
+  equal(await card.locator(".ps-title a").getAttribute("href"), await card.locator(".ps-src a").getAttribute("href"), `${label}: el titular enlaza al artículo original`);
   const panelId = await toggle.getAttribute("aria-controls");
   equal(await card.locator(".ps-panel").getAttribute("id"), panelId, `${label}: el botón controla el panel correcto`);
   await toggle.press("Enter");
@@ -150,6 +150,16 @@ async function runViewport(browser, base, width, height) {
     equal(fotos, await page.locator(".pe-ficha:not([hidden])").count(), `[${width}] cada noticia visible tiene su foto original`);
 
     const first = peru.locator(".pe-ficha").first();
+    const original = fixture.items[0].url;
+    await context.route(original, route => route.fulfill({ contentType: "text/html; charset=utf-8", body: "<h1>Artículo original de prueba</h1>" }));
+    const [originalPage] = await Promise.all([page.waitForEvent("popup"), first.locator(".ps-title a").click()]);
+    try {
+      await originalPage.waitForURL(original);
+      equal(await originalPage.locator("h1").innerText(), "Artículo original de prueba", `[${width}] el titular abre el medio`);
+      equal(await first.locator(".ps-more").getAttribute("aria-expanded"), "false", `[${width}] el titular conserva el detalle cerrado`);
+    } finally {
+      await originalPage.close();
+    }
     await uniqueReading(first, `[${width}] noticias`);
     await first.locator(".ps-more").click();
     const tabs = first.getByRole("tab");
@@ -193,7 +203,7 @@ async function runViewport(browser, base, width, height) {
     equal(await peru.locator(".pe-ficha").count(), 12, `[${width}] segunda página de Perú`);
     equal(await world.locator(".pe-ficha").count(), 6, `[${width}] internacional conserva su límite`);
     equal(await latam.locator(".pe-ficha").count(), 6, `[${width}] América Latina conserva su límite`);
-    check(await peru.locator(".pe-ficha").nth(6).locator(".ps-toggle").evaluate(el => el === document.activeElement), `[${width}] foco en primera noticia añadida`);
+    check(await peru.locator(".pe-ficha").nth(6).locator(".ps-title a").evaluate(el => el === document.activeElement), `[${width}] foco en primera noticia añadida`);
     check((await page.locator("#n-count").innerText()).includes("24"), `[${width}] contador después de ampliar`);
 
     const territory = page.locator('[data-news-amb="peru"]');

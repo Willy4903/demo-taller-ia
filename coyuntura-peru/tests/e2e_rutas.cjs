@@ -68,10 +68,13 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
         { titulo: "Animación internacional", origen: "Internacional", generos: ["Animación"], reparto: [], sinopsis: "Una aventura familiar.", cines: [cine] }
       ]
     } }));
-    await p.goto(base + "?cartelera-prueba#/noticias");
-    await p.locator('.cine-entry').click();
+    ok(await p.locator(".cine-entry").getAttribute("href") === "#/cines", `[${w}] Noticias enlaza a Cines`);
+    await p.goto(base + "?cartelera-prueba#/");
+    const navCines = p.locator(w >= 1000 ? '.mnav [data-n="cines"]' : '#tabbar [data-t="cines"]');
+    await navCines.click();
     await p.locator('.cine-card').first().waitFor();
-    ok(await p.locator('#cine-titulo').innerText() === 'Cines', `[${w}] Cines: acceso desde Noticias`);
+    ok(await p.locator('#cine-titulo').innerText() === 'Cines' && await navCines.getAttribute("aria-current") === "page",
+       `[${w}] Cines: visible y activo en la navegación principal`);
     await p.locator('#cine-origen').selectOption('Perú');
     ok(await p.locator('.cine-card').count() > 1 &&
        await p.locator('.cine-card:not(:has-text("Cine peruano"))').count() === 0, `[${w}] Cines: filtro nacional`);
@@ -194,10 +197,10 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
     // navegación y tamaños táctiles
     if (w >= 1000) {
       const etiquetas = await p.locator(".mnav a, .mnav .mn-b").allInnerTexts();
-      ok(["Inicio", "Noticias", "Datos del Perú", "El Niño", "Buscar"].every((e, i) => (etiquetas[i] || "").trim() === e), `[${w}] navegación principal: ${etiquetas.join(", ")}`);
+      ok(["Inicio", "Noticias", "Cines", "Datos del Perú", "El Niño", "Buscar"].every((e, i) => (etiquetas[i] || "").trim() === e), `[${w}] navegación principal: ${etiquetas.join(", ")}`);
     } else {
       const items = await p.locator("#tabbar a, #tabbar button").evaluateAll(els => els.map(e => { const r = e.getBoundingClientRect(); return [e.innerText.trim(), r.height, r.width]; }));
-      ok(items.length === 5 && items.every(i => i[1] >= 44 && i[2] >= 44), `[${w}] barra inferior: 5 botones de al menos 44 px (${JSON.stringify(items)})`);
+      ok(items.length === 6 && items.every(i => i[1] >= 44 && i[2] >= 44), `[${w}] barra inferior: 6 controles de al menos 44 px (${JSON.stringify(items)})`);
     }
     // buscar y menú «Más»
     await p.click(w >= 1000 ? "#b-buscar" : "#t-bus"); await p.waitForTimeout(350);

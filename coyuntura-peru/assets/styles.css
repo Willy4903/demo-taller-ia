@@ -371,7 +371,7 @@ a.s:hover h2,a.s:hover h3{color:var(--gold-t)}
 .foot p{margin:6px 0 0}
 .foot b{color:var(--tx2)}
 .tabbar{position:fixed;left:0;right:0;bottom:0;z-index:60;height:calc(var(--tab) + var(--safe-b));padding:0 env(safe-area-inset-right,0px) var(--safe-b) env(safe-area-inset-left,0px);
-  display:grid;grid-template-columns:repeat(5,1fr);background:var(--glass);-webkit-backdrop-filter:saturate(1.4) blur(16px);backdrop-filter:saturate(1.4) blur(16px);border-top:1px solid var(--border)}
+  display:grid;grid-template-columns:repeat(6,minmax(0,1fr));background:var(--glass);-webkit-backdrop-filter:saturate(1.4) blur(16px);backdrop-filter:saturate(1.4) blur(16px);border-top:1px solid var(--border)}
 .tabbar a,.tabbar button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-size:.66rem;font-weight:600;color:var(--tx3);min-width:0}
 .tabbar svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
 .tabbar .on{color:var(--gold-t)}
