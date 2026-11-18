@@ -1,15 +1,15 @@
 {
- "generado": "2026-11-18T02:19:24Z",
+ "generado": "2026-11-18T02:27:14Z",
  "modo": "automatico",
  "estado_fuentes": {
   "IDL-Reporteros": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.idl-reporteros.pe/feed/",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 8,
    "ultima_nota": "2026-11-17T14:50:47Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "OjoPúblico": {
    "ok": true,
@@ -17,10 +17,10 @@
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:ojo-publico.com+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 7,
    "ultima_nota": "2026-11-15T06:30:07Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "Convoca": {
    "ok": true,
@@ -28,10 +28,10 @@
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:convoca.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 7,
    "ultima_nota": "2026-11-17T23:20:41Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "Hildebrandt en sus trece": {
    "ok": true,
@@ -39,73 +39,73 @@
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:hildebrandtensustrece.com+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 15,
    "ultima_nota": "2026-11-17T10:03:25Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "Wayka": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://wayka.pe/feed/",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 5,
    "ultima_nota": "2026-11-17T21:48:41Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "La Mula": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.lamula.pe/feed/",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 15,
    "ultima_nota": "2026-11-17T17:23:51Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "Salud con Lupa": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://saludconlupa.com/feed/",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 15,
    "ultima_nota": "2026-11-16T16:00:00Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "Mongabay Latam": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://es.mongabay.com/feed/",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 15,
    "ultima_nota": "2026-11-18T01:36:56Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "Caretas": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://caretas.pe/feed/",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 15,
    "ultima_nota": "2026-11-18T00:52:21Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "El Comercio": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 15,
-   "ultima_nota": "2026-11-18T02:16:00Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultima_nota": "2026-11-18T02:19:00Z",
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "Gestión": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://gestion.pe/arc/outboundfeeds/rss/?outputType=xml",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 15,
-   "ultima_nota": "2026-11-18T02:10:03Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultima_nota": "2026-11-18T02:15:00Z",
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "La República": {
    "ok": true,
@@ -113,28 +113,28 @@
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:larepublica.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 15,
    "ultima_nota": "2026-11-17T23:32:15Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "RPP": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://rpp.pe/feed",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 15,
-   "ultima_nota": "2026-11-18T02:02:59Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultima_nota": "2026-11-18T02:15:46Z",
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "Infobae Perú": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/category/peru/",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 15,
-   "ultima_nota": "2026-11-18T02:03:04Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultima_nota": "2026-11-18T02:20:09Z",
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "Expreso": {
    "ok": true,
@@ -142,121 +142,288 @@
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:expreso.com.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 403: Forbidden",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 15,
    "ultima_nota": "2026-11-17T20:19:53Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "El Búho": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://elbuho.pe/feed/",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 15,
    "ultima_nota": "2026-11-17T23:16:13Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "BBC Mundo": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://feeds.bbci.co.uk/mundo/rss.xml",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 15,
    "ultima_nota": "2026-11-18T00:55:45Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "DW Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://rss.dw.com/xml/rss-sp-all",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 15,
    "ultima_nota": "2026-11-18T01:46:00Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "El País América": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 15,
    "ultima_nota": "2026-11-18T00:01:24Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "France 24 Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.france24.com/es/rss",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 15,
-   "ultima_nota": "2026-11-18T00:46:14Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultima_nota": "2026-11-18T02:20:59Z",
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "ONU Noticias": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.un.org/feed/subscribe/es/news/all/rss.xml",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 15,
    "ultima_nota": "2026-11-16T12:00:00Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "The New York Times en Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=site:nytimes.com/es+when:7d&hl=es-419&gl=US&ceid=US:es-419",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 15,
    "ultima_nota": "2026-11-17T16:58:17Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "The Guardian": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.theguardian.com/world/rss",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 15,
    "ultima_nota": "2026-11-18T02:03:27Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "The New Yorker": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.newyorker.com/feed/everything",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 15,
    "ultima_nota": "2026-11-17T21:49:03Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "Google Noticias · IA en el Perú": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22inteligencia+artificial%22+Per%C3%BA+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 15,
    "ultima_nota": "2026-11-18T01:23:00Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "Google Noticias · El Niño": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22Fen%C3%B3meno+El+Ni%C3%B1o%22+OR+%22Ni%C3%B1o+costero%22+ENFEN+when:14d&hl=es-419&gl=PE&ceid=PE:es-419",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 15,
    "ultima_nota": "2026-11-18T01:37:00Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   },
   "Google Noticias · IA en el mundo": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22inteligencia+artificial%22+(OpenAI+OR+Anthropic+OR+Google+OR+regulaci%C3%B3n+OR+NVIDIA)+when:7d&hl=es-419&gl=US&ceid=US:es-419",
-   "comprobado": "2026-11-18T02:19:24Z",
+   "comprobado": "2026-11-18T02:27:14Z",
    "n": 15,
    "ultima_nota": "2026-11-17T16:23:59Z",
-   "ultimo_ok": "2026-11-18T02:19:24Z"
+   "ultimo_ok": "2026-11-18T02:27:14Z"
   }
  },
  "items": [
+  {
+   "id": "72e6645d7e",
+   "sector": "mundo",
+   "titulo": "Informe desde Shenzhen: la APEC arranca con la mirada puesta en Trump, Xi y Putin",
+   "resumen": "La cumbre del Foro de Cooperación Económica Asia-Pacífico (APEC) reúne este año a 18 presidentes y primeros ministros de las 21 economías miembros en Shenzhen, China, para debatir asuntos que tendrán impacto global, como la inteligencia artificial, la productividad, el comercio…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/video/20261118-informe-desde-shenzhen-la-apec-arranca-con-la-mirada-puesta-en-trump-xi-y-putin",
+   "fecha": "2026-11-18T02:20:59Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/86fca6c8-e2f0-11f1-a5ad-ff16da94d1fe/w:1024/p:16x9/ES-20261117-190751-190936-CS.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "La cumbre del Foro de Cooperación Económica Asia-Pacífico (APEC) reúne este año a 18 presidentes y primeros ministros de las 21 economías miembros en Shenzhen, China, para debatir asuntos que tendrán…",
+   "puntos": [
+    "La cumbre del Foro de Cooperación Económica Asia-Pacífico (APEC) reúne este año a 18 presidentes y primeros ministros de las 21 economías miembros en Shenzhen, China, para debatir asuntos que tendrán…"
+   ]
+  },
+  {
+   "id": "d235ea937e",
+   "sector": "economia",
+   "titulo": "Cassandra Sánchez desmiente los rumores de ruptura con Deyvis Orosco y respalda su transformación física",
+   "resumen": "La empresaria negó que su matrimonio atraviese una crisis y celebró la disciplina del líder de Néctar, quien adoptó rutinas de ejercicio y meditación para convertirse en un ejemplo para su hijo.",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/18/cassandra-sanchez-desmiente-los-rumores-de-ruptura-con-deyvis-orosco-y-respalda-su-transformacion-fisica/",
+   "fecha": "2026-11-18T02:20:09Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/QZJPRQJRHZEK3FXM5MLLSY64TM.png?auth=2edb80e5f2352d0549d6bf2256b357176390d9389b4d01a46c69fef88f7a6dfc&smart=true&width=1280&height=720",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "La empresaria negó que su matrimonio atraviese una crisis y celebró la disciplina del líder de Néctar, quien adoptó rutinas de ejercicio y meditación para convertirse en un ejemplo para su hijo. Cassandra Sánchez desmintió las versiones sobre una ruptura matrimonial con el cantante Deyvis Orosco durante un evento oficial.",
+   "puntos": [
+    "La empresaria negó que su matrimonio atraviese una crisis y celebró la disciplina del líder de Néctar, quien adoptó rutinas de ejercicio y meditación para convertirse en un ejemplo para su hijo.",
+    "Cassandra Sánchez desmintió las versiones sobre una ruptura matrimonial con el cantante Deyvis Orosco durante un evento oficial.",
+    "EST Guardar Cassandra Sánchez rompió su silencio sobre los rumores que pusieron en duda la continuidad de su relación con Deyvis Orosco , luego de que la transformación física del cantante de cumbia generara una ola de comentarios en los últimos meses."
+   ]
+  },
+  {
+   "id": "b713b1435a",
+   "sector": "coyuntura",
+   "titulo": "¿Dónde fueron enterrados los papas? Así son los lugares de descanso de Francisco y otros pontífices",
+   "resumen": "¿Dónde fueron enterrados los papas? Así son los lugares de descanso de Francisco y otros pontífices. Los restos del querido papa Francisco descansan en uno de los lugares menos habituales para el entierro de un pontífice en Italia. Todos los detalles, en esta nota.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/donde/donde-fueron-enterrados-los-papas-asi-son-los-lugares-de-descanso-de-francisco-y-otros-pontifices-tdpe-noticia/",
+   "fecha": "2026-11-18T02:19:00Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/PTOSO22YQ5GD7BTFHOA7D7GWPI.jpg?auth=d47f7999679e958a34c7b4731d5ec676c573c315a0648674dea4e514a321adf4&smart=true&width=1200&height=800",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "contexto_internacional_resumen"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Así son los lugares de descanso de Francisco y otros pontífices. Los restos del querido papa Francisco descansan en uno de los lugares menos habituales para el entierro de un pontífice en Italia.",
+   "puntos": [
+    "Así son los lugares de descanso de Francisco y otros pontífices.",
+    "Los restos del querido papa Francisco descansan en uno de los lugares menos habituales para el entierro de un pontífice en Italia.",
+    "Como parte de la última etapa de su gira por Sudamérica, el papa León XIV recorrió por ciudades como, Lima, Chiclayo, Cusco y Pucallpa, donde transmitió un mensaje centrado en el reencuentro con su patria adoptiva, la reconciliación social, la justicia y la esperanza activa de la ciudadanía."
+   ]
+  },
+  {
+   "id": "d22349e0a2",
+   "sector": "salud",
+   "titulo": "León XIV hizo una revelación inesperada sobre su salud: así descubrieron su tumor de pulmón",
+   "resumen": "León XIV hizo una revelación inesperada sobre su salud: así descubrieron su tumor de pulmón. Durante una rueda de prensa a bordo del avión que lo trasladaba a Roma, el papa León XIV brindó detalles sobre el tumor pulmonar que le detectaron durante un chequeo médico de rutina.…",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/que/leon-xiv-hizo-una-revelacion-inesperada-sobre-su-salud-asi-descubrieron-su-tumor-de-pulmon-tdpe-noticia/",
+   "fecha": "2026-11-18T02:18:00Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/HRGWTYAVDFHJBGOA4MZ2HQEVV4.jpg?auth=8e2166e40456c8d264236e1fad96b4295a58d2eb15d74aba42a7ea653e84d836&smart=true&width=1200&height=800",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "Durante una rueda de prensa a bordo del avión que lo trasladaba a Roma, el papa León XIV brindó detalles sobre el tumor pulmonar que le detectaron durante un chequeo médico de rutina. Como parte de la última etapa de su gira por Sudamérica, el papa León XIV recorrió ciudades como Lima, Chiclayo, Cusco y Pucallpa, donde transmitió un mensaje centrado en el reencuentro con su patria adoptiva, la reconciliación social, la justicia y la esperanza activa de la ciudadanía.",
+   "puntos": [
+    "Durante una rueda de prensa a bordo del avión que lo trasladaba a Roma, el papa León XIV brindó detalles sobre el tumor pulmonar que le detectaron durante un chequeo médico de rutina.",
+    "Como parte de la última etapa de su gira por Sudamérica, el papa León XIV recorrió ciudades como Lima, Chiclayo, Cusco y Pucallpa, donde transmitió un mensaje centrado en el reencuentro con su patria adoptiva, la reconciliación social, la justicia y la esperanza activa de la ciudadanía.",
+    "Sin embargo, durante su vuelo de regreso de la capital peruana a Roma, el santo padre abordó un tema delicado relacionado con su salud, luego de que se conociera que fue diagnosticado con cáncer de pulmón antes de su viaje apostólico."
+   ],
+   "datos": [
+    {
+     "v": "100 %",
+     "t": "porcentaje",
+     "c": "“No estoy al 100 %, pero estoy bastante bien."
+    },
+    {
+     "v": "15 de noviembre",
+     "t": "fecha",
+     "c": "Durante las actividades previstas para el domingo 15 de noviembre, el capitán Rodríguez, piloto de la aeronave de LATAM y…"
+    }
+   ]
+  },
+  {
+   "id": "1945ad33c9",
+   "sector": "coyuntura",
+   "titulo": "Ola de calor en Lima: estos distritos soportaron temperaturas de hasta 33 °C en noviembre",
+   "resumen": "Este lunes 16 de noviembre la capital vivió una jornada de temperaturas inusuales con sensaciones térmicas hasta de 36 ° ¿Cómo será el verano?",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/donde/ola-de-calor-en-lima-estos-distritos-soportaron-temperaturas-de-hasta-33-c-en-noviembre-tdpe-noticia/",
+   "fecha": "2026-11-18T02:17:00Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/U2Q2TJPP25FMPOQEQVMVFBY3DQ.jpg?auth=e79cc29fb7ce83a1f44d6de4786231b3df5fbf9708a1d19632568839755c5c79&smart=true&width=1300&height=800",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Este lunes 16 de noviembre la capital vivió una jornada de temperaturas inusuales con sensaciones térmicas hasta de 36 ° ¿Cómo será el verano? Lima Metropolitana y el Callao atravesaron el lunes 16 una jornada marcada por el intenso calor , con temperaturas que sorprendieron a los habitantes de ambas jurisdicciones.",
+   "puntos": [
+    "Este lunes 16 de noviembre la capital vivió una jornada de temperaturas inusuales con sensaciones térmicas hasta de 36 ° ¿Cómo será el verano?",
+    "Lima Metropolitana y el Callao atravesaron el lunes 16 una jornada marcada por el intenso calor , con temperaturas que sorprendieron a los habitantes de ambas jurisdicciones.",
+    "En algunos puntos de la capital, los termómetros alcanzaron los 33 °C, mientras que el primer puerto también registró valores poco habituales para noviembre."
+   ],
+   "datos": [
+    {
+     "v": "33 °C",
+     "t": "temperatura",
+     "c": "Ola de calor en Lima: estos distritos soportaron temperaturas de hasta 33 °C en noviembre."
+    },
+    {
+     "v": "36 °C",
+     "t": "temperatura",
+     "c": "…con 33 °C, aunque la sensación térmica llegó hasta los 36 °C, intensificando el bochorno entre sus vecinos."
+    },
+    {
+     "v": "30,8 °C",
+     "t": "temperatura",
+     "c": "…del Aeropuerto Internacional Jorge Chávez marcó 30,8 °C."
+    },
+    {
+     "v": "30 °C",
+     "t": "temperatura",
+     "c": "Según ASISMET, fue el día más temprano del año en que el aeropuerto llegó a los 30 °C, superando el antecedente del 17 de diciembre de 1997."
+    },
+    {
+     "v": "23 °C",
+     "t": "temperatura",
+     "c": "Entre junio y septiembre, los valores más altos oscilaron principalmente entre los 23 °C y 26 °C."
+    }
+   ]
+  },
   {
    "id": "2980e2f032",
    "sector": "coyuntura",
@@ -345,6 +512,86 @@
      "v": "17 de noviembre",
      "t": "fecha",
      "c": "El recorrido de las ferias laborales comenzará este martes 17 de noviembre en Moquegua, donde los interesados podrán acercarse a la…"
+    }
+   ]
+  },
+  {
+   "id": "d87add28ac",
+   "sector": "coyuntura",
+   "titulo": "Ecuador ganó 2-0 a Bolivia en amistoso internacional por fecha FIFA",
+   "resumen": "Con el 'Muñeco' Gallardo, Ecuador sumó su segundo triunfo con goles de Jhon Mercado y Jordy Caicedo.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/futbol/futbol-mundial/ecuador-vs-bolivia-en-vivo-a-que-hora-juegan-y-donde-ver-amistoso-fecha-fifa-2026-via-teleamazonas-unitel-partidos-de-hoy-noticia-1718111",
+   "fecha": "2026-11-18T02:15:46Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/17/191219_1930354.jpg?imgdimension=look",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Con el 'Muñeco' Gallardo, Ecuador sumó su segundo triunfo con goles de Jhon Mercado y Jordy Caicedo. Ecuador ganó este martes por 2-0 a Bolivia y le propinó su séptima derrota consecutiva, en un partido disputado en la ciudad costera de Guayaquil.",
+   "puntos": [
+    "Con el 'Muñeco' Gallardo, Ecuador sumó su segundo triunfo con goles de Jhon Mercado y Jordy Caicedo.",
+    "Ecuador ganó este martes por 2-0 a Bolivia y le propinó su séptima derrota consecutiva, en un partido disputado en la ciudad costera de Guayaquil.",
+    "Jhon Mercado, en el minuto 20; y Jordy Caicedo, en el 45+3, anotaron para el segundo triunfo de Ecuador, dirigido desde el pasado mes de septiembre por el técnico argentino Marcelo Gallardo."
+   ],
+   "datos": [
+    {
+     "v": "2-0",
+     "t": "marcador",
+     "c": "Ecuador ganó 2-0 a Bolivia en amistoso internacional por fecha FIFA."
+    }
+   ]
+  },
+  {
+   "id": "798dd28ad7",
+   "sector": "economia",
+   "titulo": "Gobierno invita a empresas chinas a usar Puerto de Chancay como eje logístico hacia Sudamérica",
+   "resumen": "El Gobierno de Keiko Fujimori invitó a empresarios chinos a utilizar la infraestructura peruana, entre los que se encuentra el puerto de Chancay, como herramientas para expandir sus mercados hacia Sudamérica, durante un encuentro realizado el 17 de noviembre en la ciudad de…",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/peru/politica/gobierno-invita-a-empresas-chinas-a-usar-puerto-de-chancay-como-eje-logistico-hacia-sudamerica-noticia/",
+   "fecha": "2026-11-18T02:15:00Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/MLZ2O2X24ZDMXO5HJJTOFWRPBQ.jpeg?auth=8ee853712113b04e35797d13a9ced88ac25eb7edfd2d898ee8558f29be8f3ecc&smart=true&width=2000&height=1333",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El Gobierno de Keiko Fujimori invitó a empresarios chinos a utilizar la infraestructura peruana, entre los que se encuentra el puerto de Chancay, como herramientas para expandir sus mercados hacia Sudamérica, durante un encuentro realizado el 17 de noviembre en la ciudad de Shenzhen, en el marco del Foro de Cooperación Económica Asia-Pacífico (APEC). Ante más de 70 representantes empresariales chinos, Fujimori presentó oportunidades de inversión en el país, destacando la estabilidad económica, las garantías al capital extranjero y la infraestructura del Perú.",
+   "puntos": [
+    "El Gobierno de Keiko Fujimori invitó a empresarios chinos a utilizar la infraestructura peruana, entre los que se encuentra el puerto de Chancay, como herramientas para expandir sus mercados hacia Sudamérica, durante un encuentro realizado el 17 de noviembre en la ciudad de Shenzhen, en el marco del Foro de Cooperación Económica Asia-Pacífico (APEC).",
+    "Ante más de 70 representantes empresariales chinos, Fujimori presentó oportunidades de inversión en el país, destacando la estabilidad económica, las garantías al capital extranjero y la infraestructura del Perú."
+   ],
+   "datos": [
+    {
+     "v": "4%",
+     "t": "porcentaje",
+     "c": "…afirmó que el Perú creció a un promedio anual de 4% en lo que va del siglo, frente al 2,3% regional, y que la…"
+    },
+    {
+     "v": "2,3%",
+     "t": "porcentaje",
+     "c": "…un promedio anual de 4% en lo que va del siglo, frente al 2,3% regional, y que la economía del país se triplicó en 25…"
+    },
+    {
+     "v": "25 años",
+     "t": "cantidad",
+     "c": "…2,3% regional, y que la economía del país se triplicó en 25 años."
+    },
+    {
+     "v": "17 de noviembre",
+     "t": "fecha",
+     "c": "…hacia Sudamérica, durante un encuentro realizado el 17 de noviembre en la ciudad de Shenzhen, en el marco del Foro de…"
     }
    ]
   },
@@ -606,82 +853,6 @@
    ]
   },
   {
-   "id": "b7cc9d2e45",
-   "sector": "coyuntura",
-   "titulo": "Resultados Sorteo Mayor 4036 EN VIVO: ver el premio mayor de hoy, martes 17 de noviembre",
-   "resumen": "Resultados Sorteo Mayor 4036 EN VIVO: resultados y número ganador de la Lotería Nacional del martes 17 de noviembre que tiene un premio mayor de 21 millones de pesos.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/mexico/resultados-sorteo-mayor-4036-hoy-17-de-noviembre-en-vivo-premio-mayor-y-listo-de-ganadores-del-martes-loteria-de-mexico-mx-cdmx-estados-unidos-eeuu-revtli-lbposting-noticia/",
-   "fecha": "2026-11-18T02:11:08Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/HQFH5CZLMFAQPNSWCWNW4O3WOQ.png?auth=3938a347d9544e532274024f3f392e73622745f6fc9707abad725cf8d183aba6&smart=true&width=1200&height=700",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "seccion_internacional_fuente"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Resultados Sorteo Mayor 4036 EN VIVO: resultados y número ganador de la Lotería Nacional del martes 17 de noviembre que tiene un premio mayor de 21 millones de pesos. Revisa los resultados y ganadores en este minuto a minuto de la Lotería Nacional de México , que jugó una nueva edición del Sorteo Mayor , el cual tuvo un premio mayor de 21 millones de pesos.",
-   "puntos": [
-    "Resultados Sorteo Mayor 4036 EN VIVO: resultados y número ganador de la Lotería Nacional del martes 17 de noviembre que tiene un premio mayor de 21 millones de pesos.",
-    "Revisa los resultados y ganadores en este minuto a minuto de la Lotería Nacional de México , que jugó una nueva edición del Sorteo Mayor , el cual tuvo un premio mayor de 21 millones de pesos.",
-    "Puedes conseguir tus cachitos en puestos de lotería oficiales, expendios autorizados o directamente con los vendedores ambulantes que recorren las calles con su clásico portabilletes."
-   ],
-   "datos": [
-    {
-     "v": "21 millones de pesos",
-     "t": "escala",
-     "c": "…del martes 17 de noviembre que tiene un premio mayor de 21 millones de pesos.."
-    },
-    {
-     "v": "17 de noviembre",
-     "t": "fecha",
-     "c": "Resultados Sorteo Mayor: premio mayor de hoy, martes 17 de noviembre."
-    }
-   ]
-  },
-  {
-   "id": "bb8ec8b6d2",
-   "sector": "politica",
-   "titulo": "¿Cómo ver Argentina vs. Costa Rica por la fecha FIFA 2026 en TV abierta y Online?",
-   "resumen": "Revisa cómo ver el partido amistoso Argentina vs. Costa Rica, este martes 17 de noviembre, por la fecha FIFA 2026 que se realizará en el Mario Alberto Kempes de Córdoba.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/mag/usa/en-vivo-us/como-mirar-argentina-vs-costa-rica-en-vivo-gratis-por-la-fecha-fifa-2026-en-tv-abierta-transmision-y-donde-ver-online-en-directo-video-nnda-nnrt-noticia/",
-   "fecha": "2026-11-18T02:10:44Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/75LMLLPY5BCDNCATTAREIQHMBY.jpg?auth=c9516d5416151324e2819b65c5451e3e77bf44ee7aa81853f5daa171fc4f82cb&smart=true&width=2400&height=1620",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Revisa cómo ver el partido amistoso Argentina vs. Costa Rica, este martes 17 de noviembre, por la fecha FIFA 2026 que se realizará en el Mario Alberto Kempes de Córdoba.",
-   "puntos": [
-    "Revisa cómo ver el partido amistoso Argentina vs.",
-    "Costa Rica, este martes 17 de noviembre, por la fecha FIFA 2026 que se realizará en el Mario Alberto Kempes de Córdoba.",
-    "Costa Rica por TV y Online Telefe EN VIVO GRATIS — dónde ver partido Argentina vs."
-   ],
-   "datos": [
-    {
-     "v": "2-1",
-     "t": "marcador",
-     "c": "Cayeron 2-1 contra Uruguay en La Bombonera."
-    },
-    {
-     "v": "17 de noviembre",
-     "t": "fecha",
-     "c": "Costa Rica, este martes 17 de noviembre, por la fecha FIFA 2026 que se realizará en el Mario Alberto Kempes de Córdoba.."
-    }
-   ]
-  },
-  {
    "id": "59c5b631ff",
    "sector": "politica",
    "titulo": "🟢 TV Azteca EN VIVO (Canal 7 GRATIS) | Ver ahora juego México vs. Jamaica GRATIS en señal abierta y Online",
@@ -711,6 +882,42 @@
      "v": "3-2",
      "t": "marcador",
      "c": "Tras perder 3-2 en la ida de los cuartos de final, disputada en el Estadio…"
+    }
+   ]
+  },
+  {
+   "id": "2defaa3afe",
+   "sector": "mundo",
+   "titulo": "Nvidia duplicó sus ingresos y ganancias, superando las expectativas del mercado",
+   "resumen": "La compañía estadounidense de semiconductores registró ingresos por 115.800 millones de dólares en el tercer trimestre de 2026, un 103% más que en el mismo periodo del año anterior. Los resultados superaron las previsiones de los analistas en medio de la incertidumbre por la…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/programas/econom%C3%ADa/20261118-nvidia-duplic%C3%B3-sus-ingresos-y-ganancias-superando-las-expectativas-del-mercado",
+   "fecha": "2026-11-18T02:10:02Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/16444a2e-e2ed-11f1-ae1b-6d75ed565170/w:1024/p:16x9/AP25058558983313.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "contexto_internacional_resumen"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "La compañía estadounidense de semiconductores registró ingresos por 115.800 millones de dólares en el tercer trimestre de 2026, un 103% más que en el mismo periodo del año anterior.",
+   "puntos": [
+    "La compañía estadounidense de semiconductores registró ingresos por 115.800 millones de dólares en el tercer trimestre de 2026, un 103% más que en el mismo periodo del año anterior."
+   ],
+   "datos": [
+    {
+     "v": "103%",
+     "t": "porcentaje",
+     "c": "…millones de dólares en el tercer trimestre de 2026, un 103% más que en el mismo periodo del año anterior."
+    },
+    {
+     "v": "115.800 millones de dólares",
+     "t": "escala",
+     "c": "…estadounidense de semiconductores registró ingresos por 115.800 millones de dólares en el tercer trimestre de 2026, un 103% más que en el…"
     }
    ]
   },
@@ -759,54 +966,6 @@
      "v": "30 años",
      "t": "cantidad",
      "c": "…millones— , que permite obtener ahora financiamiento a 30 años “con tasas muy bajas”, como de 6.2%."
-    }
-   ]
-  },
-  {
-   "id": "2ea01f0523",
-   "sector": "politica",
-   "titulo": "¿En qué canal transmiten Argentina vs. Costa Rica por la fecha FIFA 2026?",
-   "resumen": "Conoce qué canal transmite hoy en vivo el partido Nicaragua vs. República Dominicana por la Concacaf Nations League 2026. Guía de señales de TV autorizadas y opciones para verlo por Internet.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/mag/usa/en-vivo-us/canales-que-transmiten-argentina-vs-costa-rica-en-vivo-gratis-por-la-fecha-fifa-2026-transmision-en-tv-abierta-y-streaming-video-nnda-nnrt-noticia/",
-   "fecha": "2026-11-18T02:09:43Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/G35MXWHCTRA3NMDAWLFETZEXDM.png?auth=dc6bfb6ab07c004146c69cf161dcc3ec84bbbc45d5d8153d50f0ab0ebf8b32ea&smart=true&width=3600&height=2430",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Conoce qué canal transmite hoy en vivo el partido Nicaragua vs. República Dominicana por la Concacaf Nations League 2026.",
-   "puntos": [
-    "Conoce qué canal transmite hoy en vivo el partido Nicaragua vs.",
-    "República Dominicana por la Concacaf Nations League 2026.",
-    "Guía de señales de TV autorizadas y opciones para verlo por Internet."
-   ],
-   "datos": [
-    {
-     "v": "2-1",
-     "t": "marcador",
-     "c": "La Albiceleste llega tras perder 2-1 ante Uruguay en La Bombonera, resultado que puso fin a una…"
-    },
-    {
-     "v": "2-0",
-     "t": "marcador",
-     "c": "Costa Rica , ahora dirigida por Bryan Ruiz , intentará cerrar el año con una mejor imagen después de caer 2-0 frente a Ecuador en Quito."
-    },
-    {
-     "v": "3-1",
-     "t": "marcador",
-     "c": "El antecedente más reciente se disputó en marzo de 2024 en Estados Unidos y terminó con triunfo argentino por 3-1 después de una remontada.."
-    },
-    {
-     "v": "17 de noviembre de 2026",
-     "t": "fecha",
-     "c": "Argentina y Costa Rica se enfrentan este martes 17 de noviembre de 2026 en el Estadio Mario Alberto Kempes de Córdoba, en el…"
     }
    ]
   },
@@ -887,44 +1046,6 @@
    ]
   },
   {
-   "id": "552a21b5b1",
-   "sector": "politica",
-   "titulo": "📺 Canal 4 y TCS GO EN VIVO GRATIS | Señal ver juego El Salvador vs. San Martín EN DIRECTO por TV abierta y Online",
-   "resumen": "Transmisión oficial vía Canal 4 y TCS GO EN VIVO GRATIS ONLINE para ver el partido de El Salvador vs. San Martín hoy por la vuelta del play in de la Copa Oro 2027 en el Estadio Nacional Jorge “Mágico” González.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/mag/usa/en-vivo-us/canal-4-y-tcs-go-en-vivo-gratis-como-ver-partido-el-salvador-vs-san-martin-en-directo-por-tv-abierta-y-futbol-online-nnda-nnrt-noticia/",
-   "fecha": "2026-11-18T02:08:40Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/XE6GNINSKJFITMFMLVPNI2YBF4.jpg?auth=5ce87d162f9d67015a1421bb798de9441437a6018d99dfaabe5ff50539bb74d8&smart=true&width=2400&height=1620",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Transmisión oficial vía Canal 4 y TCS GO EN VIVO GRATIS ONLINE para ver el partido de El Salvador vs. San Martín hoy por la vuelta del play in de la Copa Oro 2027 en el Estadio Nacional Jorge “Mágico” González.",
-   "puntos": [
-    "Transmisión oficial vía Canal 4 y TCS GO EN VIVO GRATIS ONLINE para ver el partido de El Salvador vs.",
-    "San Martín hoy por la vuelta del play in de la Copa Oro 2027 en el Estadio Nacional Jorge “Mágico” González.",
-    "El resultado favorable del primer encuentro no ha sido suficiente para acallar las críticas sobre la selección de El Salvador ."
-   ],
-   "datos": [
-    {
-     "v": "13 años",
-     "t": "cantidad",
-     "c": "Con 13 años de experiencia en medios digitales, se ha consolidado como…"
-    },
-    {
-     "v": "2-0",
-     "t": "marcador",
-     "c": "…Nacional Jorge «Mágico» González, donde defenderá el 2-0 conseguido en la ida y buscará avanzar a las preliminares…"
-    }
-   ]
-  },
-  {
    "id": "2ceca83e16",
    "sector": "coyuntura",
    "titulo": "Telefe televisó el partido Argentina 7-0 Costa Rica por la fecha FIFA (17/11/2026)",
@@ -964,6 +1085,44 @@
      "v": "17 de noviembre",
      "t": "fecha",
      "c": "…con una victoria cuando reciba a Costa Rica este martes 17 de noviembre en el estadio Mario Alberto Kempes de Córdoba."
+    }
+   ]
+  },
+  {
+   "id": "f4a778392c",
+   "sector": "coyuntura",
+   "titulo": "¿En qué canal transmiten Argentina vs. Costa Rica por la fecha FIFA 2026?",
+   "resumen": "Argentina y Costa Rica medirán fuerzas por un amistoso internacional correspondiente a fecha FIFA 2026. Para que mires el partido EN VIVO y EN DIRECTO, lee esta nota.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/mix/sports/en-que-canal-transmiten-argentina-vs-costa-rica-en-vivo-gratis-hoy-por-fecha-fifa-2026-horarios-y-canales-tv-online-video-nnda-nnrt-noticia/",
+   "fecha": "2026-11-18T02:06:10Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/QC5NJCKSMFBLFGKPRIK4YKTDZE.jpg?auth=614b812e99388839515e0bb88f9c272f722adae7e97d34d1e6334579c474e6bb&smart=true&width=2400&height=1620",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Argentina y Costa Rica medirán fuerzas por un amistoso internacional correspondiente a fecha FIFA 2026. Para que mires el partido EN VIVO y EN DIRECTO, lee esta nota.",
+   "puntos": [
+    "Argentina y Costa Rica medirán fuerzas por un amistoso internacional correspondiente a fecha FIFA 2026.",
+    "Para que mires el partido EN VIVO y EN DIRECTO, lee esta nota.",
+    "Como se trata de un partido imperdible, descubre a qué hora sonará el pitazo inicial y qué canales de TV transmitirán el compromiso EN VIVO y EN DIRECTO, según el país en el que estés."
+   ],
+   "datos": [
+    {
+     "v": "10 años",
+     "t": "cantidad",
+     "c": "Tengo casi 10 años de experiencia en investigación, análisis y coberturas en…"
+    },
+    {
+     "v": "17 de noviembre",
+     "t": "fecha",
+     "c": "Hay un vibrante partido este martes 17 de noviembre, pues chocarán Argentina y Costa Rica en el Estadio Mario…"
     }
    ]
   },
@@ -1827,32 +1986,6 @@
    ]
   },
   {
-   "id": "e239755b04",
-   "sector": "economia",
-   "titulo": "Nueva financiera solicita licencia para entrar al Perú: ¿quiénes están detrás?",
-   "resumen": "Una nueva sociedad presentó ante la Superintendencia de Banca, Seguros y AFP (SBS) una solicitud para obtener licencia de organización y así operar como financiera.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/tu-dinero/nueva-financiera-solicita-licencia-para-entrar-al-peru-quienes-estan-detras-noticia/",
-   "fecha": "2026-11-18T01:27:21Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/2YTQSINJU5HORIIHRO6A4DUEJ4.jpg?auth=56ca55161577bf61de1e305ebc18af62796c75df6c18aa44d2687a4b67d381a8&smart=true&width=1200&height=800",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Una nueva sociedad presentó ante la Superintendencia de Banca, Seguros y AFP (SBS) una solicitud para obtener licencia de organización y así operar como financiera. Se trata del primero de los dos permisos que debe conseguir cualquier empresa, por parte de la superintendencia, para ingresar al sistema financiero peruano.",
-   "puntos": [
-    "Una nueva sociedad presentó ante la Superintendencia de Banca, Seguros y AFP (SBS) una solicitud para obtener licencia de organización y así operar como financiera.",
-    "Se trata del primero de los dos permisos que debe conseguir cualquier empresa, por parte de la superintendencia, para ingresar al sistema financiero peruano.",
-    "La segunda licencia que se solicita, una vez aprobada la primera, es la de funcionamiento."
-   ]
-  },
-  {
    "id": "9a9638d9f3",
    "sector": "tecnologia",
    "titulo": "¿Compraste un celular y no está en la lista blanca? Conoce qué hacer para evitar su bloqueo",
@@ -1897,7 +2030,6 @@
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "url_medio": "https://www.elperuano.pe/noticia/309167-suplemento-juridica-inteligencia-artificial-en-la-justicia-que-tareas-puede-realizar-y-cuales-corresponden",
    "sintesis": "El proyecto Curia incorpora herramienta para agilizar procesos y fortalecer la gestion judicial. Fedatario informático juramentado con especialización en Informática.",
    "puntos": [
     "El proyecto Curia incorpora herramienta para agilizar procesos y fortalecer la gestion judicial.",
@@ -1910,7 +2042,8 @@
      "t": "fecha",
      "c": "…la Esperanza y el Fortalecimiento de la Democracia MARTES 17 de noviembre de 2026 Derecho DERECHO Suplemento Jurídica: Inteligencia…"
     }
-   ]
+   ],
+   "url_medio": "https://www.elperuano.pe/noticia/309167-suplemento-juridica-inteligencia-artificial-en-la-justicia-que-tareas-puede-realizar-y-cuales-corresponden"
   },
   {
    "id": "641e5ad490",
@@ -2129,6 +2262,30 @@
    ]
   },
   {
+   "id": "738e93f7e6",
+   "sector": "mundo",
+   "titulo": "Informe desde Guatemala: atentado contra fiscal encargada de investigar delitos electorales",
+   "resumen": "La fiscal de delitos electorales Liseth Mazariegos resultó herida de bala tras un ataque armado ocurrido en la Ciudad de Guatemala, cuando se dirigía a su lugar de trabajo. Según las autoridades, hombres que se movilizaban en motocicleta interceptaron su vehículo y abrieron…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/video/20261118-informe-desde-guatemala-atentado-contra-fiscal-encargada-de-investigar-delitos-electorales",
+   "fecha": "2026-11-18T01:01:49Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/c17466f4-e2e8-11f1-a715-c5c0357b2a0c/w:1024/p:16x9/ES-20261117-180530-180707-CS.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "La fiscal de delitos electorales Liseth Mazariegos resultó herida de bala tras un ataque armado ocurrido en la Ciudad de Guatemala, cuando se dirigía a su lugar de trabajo.",
+   "puntos": [
+    "La fiscal de delitos electorales Liseth Mazariegos resultó herida de bala tras un ataque armado ocurrido en la Ciudad de Guatemala, cuando se dirigía a su lugar de trabajo."
+   ]
+  },
+  {
    "id": "78f9f90e2d",
    "sector": "economia",
    "titulo": "Cristian Neira dejaría Alianza Lima para tener su primera aventura en el extranjero. ¿En qué equipo jugaría?",
@@ -2167,6 +2324,31 @@
    ]
   },
   {
+   "id": "9a0a3cd375",
+   "sector": "mundo",
+   "titulo": "Serbia: líderes de la Lista Estudiantil asumen sus escaños en el Parlamento",
+   "resumen": "La política serbia vive un cambio histórico. Este martes inició funciones el nuevo Parlamento de Serbia, dominado por la Lista Estudiantil, un movimiento surgido de las masivas protestas anticorrupción que logró una contundente victoria en las elecciones legislativas de…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/video/20261118-serbia-l%C3%ADderes-de-la-lista-estudiantil-asumen-sus-esca%C3%B1os-en-el-parlamento",
+   "fecha": "2026-11-18T01:00:41Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/db6febfc-e2e1-11f1-9ffd-7908c4e1a3c7/w:1024/p:16x9/ES-20261117-130649-130808-CS.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "La política serbia vive un cambio histórico. Este martes inició funciones el nuevo Parlamento de Serbia, dominado por la Lista Estudiantil, un movimiento surgido de las masivas protestas anticorrupción…",
+   "puntos": [
+    "La política serbia vive un cambio histórico.",
+    "Este martes inició funciones el nuevo Parlamento de Serbia, dominado por la Lista Estudiantil, un movimiento surgido de las masivas protestas anticorrupción…"
+   ]
+  },
+  {
    "id": "b22d2c23c5",
    "sector": "deporte",
    "titulo": "San Martín vs Olva Latino: día, hora y dónde ver partido por fecha 6 de fase 1 de la Liga Peruana de Vóley 2026/27",
@@ -2202,6 +2384,30 @@
      "t": "fecha",
      "c": "El partido se jugará el domingo 22 de noviembre desde las 16:30 horas de Perú, en el Polideportivo Lucha Fuentes de Villa El Salvador."
     }
+   ]
+  },
+  {
+   "id": "ce2f8b40c5",
+   "sector": "mundo",
+   "titulo": "¿Amenaza real? Trump reacciona a reportes sobre un posible ataque iraní",
+   "resumen": "Reportes de medios estadounidenses señalaron que Irán estaría evaluando escenarios para atacar Washington con una posible \"bomba\", una información que ha elevado la preocupación en materia de seguridad nacional. Consultado sobre estos reportes durante su gira por Asia, el…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/video/20261118-amenaza-real-trump-reacciona-a-reportes-sobre-un-posible-ataque-iran%C3%AD",
+   "fecha": "2026-11-18T00:56:08Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/6e56025e-e2e6-11f1-ac3c-c5c0357b2a0c/w:1024/p:16x9/ES-20261117-180252-180405-CS.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Reportes de medios estadounidenses señalaron que Irán estaría evaluando escenarios para atacar Washington con una posible \"bomba\", una información que ha elevado la preocupación en materia de seguridad…",
+   "puntos": [
+    "Reportes de medios estadounidenses señalaron que Irán estaría evaluando escenarios para atacar Washington con una posible \"bomba\", una información que ha elevado la preocupación en materia de seguridad…"
    ]
   },
   {
@@ -2281,103 +2487,53 @@
    ]
   },
   {
-   "id": "e5b2b04781",
-   "sector": "coyuntura",
-   "titulo": "La visita del papa León XIV al Perú llegará a la pantalla con imágenes inéditas de su cobertura: conoce cuándo se estrena el documental",
-   "resumen": "La visita del papa León XIV al Perú tendrá su propio documental. El Instituto Nacional de Radio y Televisión del Perú (IRTP)… The post La visita del papa León XIV al Perú llegará a la pantalla con imágenes inéditas de su cobertura: conoce cuándo se estrena el documental…",
-   "fuente": "Caretas",
-   "url": "https://caretas.pe/entretenimiento/la-visita-del-papa-leon-xiv-al-peru-llegara-a-la-pantalla-con-imagenes-ineditas-de-su-cobertura-conoce-cuando-se-estrena-el-documental/",
-   "fecha": "2026-11-18T00:52:21Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://caretas.pe/wp-content/uploads/2026/11/image-51-1-1280x720.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "La visita del papa León XIV al Perú tendrá su propio documental.",
-   "puntos": [
-    "La visita del papa León XIV al Perú tendrá su propio documental."
-   ]
-  },
-  {
-   "id": "fee2c09689",
-   "sector": "coyuntura",
-   "titulo": "La siembra de los principales cultivos como maíz y papa cayó 22%: ¿qué pasa con los otros productos y cuál es el impacto en los hogares?",
-   "resumen": "Perú-Petro y Pluspetrol cierran acuerdo que viabiliza tarifa promocional para la petroquímica: ¿que viene ahora? Entel vendió su operación peruana a Millicom, ¿cómo le iba en el país y qué decía su CEO hace pocos meses? Las anomalías de temperatura y precipitación asociadas al…",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/economia/la-siembra-de-los-principales-cultivos-como-maiz-y-papa-cayo-22-que-pasa-con-los-otros-productos-y-cual-es-el-impacto-en-los-hogares-apuesplan-noticia/",
-   "fecha": "2026-11-18T00:48:15Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/HN4VC4EKP5BZJPSGKGPQWPNVXA.jpg?auth=f5532a6e6df1316bbc56af66f0c50548888df0fbfe877e2762b4accafd92e23d&smart=true&width=1200&height=800",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "contexto_peru_resumen"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "El retroceso registrado en agosto y setiembre afectó sobre todo a los cultivos de maíz y papa, debido a las sequías. Los productos de agroexportación, como el arándano, no fueron ajenos a esta tendencia.",
-   "puntos": [
-    "El retroceso registrado en agosto y setiembre afectó sobre todo a los cultivos de maíz y papa, debido a las sequías.",
-    "Los productos de agroexportación, como el arándano, no fueron ajenos a esta tendencia.",
-    "Las anomalías de temperatura y precipitación asociadas al fenómeno de El Niño (FEN) afectan de forma distinta a cada región productora y tipo de cultivo."
-   ],
-   "datos": [
-    {
-     "v": "22%",
-     "t": "porcentaje",
-     "c": "La siembra de los principales cultivos como maíz y papa cayó 22%: ¿qué pasa con los otros productos y cuál es el impacto en los hogares?."
-    },
-    {
-     "v": "19%",
-     "t": "porcentaje",
-     "c": "Su producción cayó 19% en setiembre."
-    },
-    {
-     "v": "21%",
-     "t": "porcentaje",
-     "c": "Además, Proarándanos redujo su proyección y estima que el volumen exportado de esta campaña sería 21% menor que la anterior.."
-    }
-   ]
-  },
-  {
-   "id": "7e370df46c",
+   "id": "935e820a8a",
    "sector": "politica",
-   "titulo": "Congreso: Piden interpelar al canciller Carlos Espá por fallas en misa del papa León XIV en Las Palmas tras contrato de S/8 millones",
-   "resumen": "Legisladores de distintas bancadas cuestionaron la organización del evento y exigieron esclarecer las condiciones en que se adjudicaron los servicios audiovisuales",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/17/congreso-piden-interpelar-al-canciller-carlos-espa-por-fallas-en-misa-del-papa-leon-xiv-en-las-palmas-tras-contrato-de-s8-millones/",
-   "fecha": "2026-11-18T00:46:22Z",
+   "titulo": "Pescadores ecuatorianos que sobrevivieron a un ataque de Estados Unidos demandan al Gobierno Trump",
+   "resumen": "Un grupo de 17 pescadores ecuatorianos presentó una demanda en Estados Unidos contra el Gobierno del presidente Donald Trump, al que acusan de perpetrar un ataque con drones militares contra su barco y, posteriormente, secuestrarlos y torturarlos, según el escrito examinado por…",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/mundo/latinoamerica/pescadores-de-ecuador-que-sobrevivieron-a-un-ataque-de-estados-unidos-demandan-al-gobierno-donald-trump-pensilvania-centcom-ultimas-noticia/",
+   "fecha": "2026-11-18T00:48:27Z",
    "tipo": "comercial",
    "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/QSRFDMXS3FDXXMN7VNMSTNPPEM.jpg?auth=d38dc05cae66e5de2a91f2d6d833e478bead42e859f5dfe00fc896316cb44150&smart=true&width=7789&height=4945",
+   "imagen": "https://elcomercio.pe/resizer/v2/XRCQIRSINBEMZDUMPHJRLLRQLE.jpg?auth=8b43e753d5edefa07cfa732637fe5f4c3a4a2ea1e83432759e2a030ae359286c&smart=true&width=1200&height=800",
    "geografia": {
     "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
    },
-   "ambito": "peru",
+   "ambito": "mundo",
    "procedencia": "directa",
-   "sintesis": "Legisladores de distintas bancadas cuestionaron la organización del evento y exigieron esclarecer las condiciones en que se adjudicaron los servicios audiovisuales Parlamentarios cuestionaron al canciller Carlos Espá por las fallas de sonido y pantallas durante la misa del papa León XIV en la base aérea Las Palmas.",
+   "sintesis": "Un grupo de 17 pescadores ecuatorianos presentó una demanda en Estados Unidos contra el Gobierno del presidente Donald Trump, al que acusan de perpetrar un ataque con drones militares contra su barco y, posteriormente, secuestrarlos y torturarlos, según el escrito examinado por EFE este martes. La querella, presentada ante una corte federal en Pensilvania , acusa al Gobierno de causar intencionalmente angustia emocional, agresión y lesiones, detención ilegal y destrucción de la propiedad de los pescadores.",
    "puntos": [
-    "Legisladores de distintas bancadas cuestionaron la organización del evento y exigieron esclarecer las condiciones en que se adjudicaron los servicios audiovisuales",
-    "Parlamentarios cuestionaron al canciller Carlos Espá por las fallas de sonido y pantallas durante la misa del papa León XIV en la base aérea Las Palmas.",
-    "EFE/José Jácome 17 Nov, 2026 05:36 p. m."
-   ],
-   "datos": [
-    {
-     "v": "S/8 millones",
-     "t": "monto",
-     "c": "Congreso: Piden interpelar al canciller Carlos Espá por fallas en misa del papa León XIV en Las Palmas tras contrato de S/8 millones."
-    }
+    "Un grupo de 17 pescadores ecuatorianos presentó una demanda en Estados Unidos contra el Gobierno del presidente Donald Trump, al que acusan de perpetrar un ataque con drones militares contra su barco y, posteriormente, secuestrarlos y torturarlos, según el escrito examinado por EFE este martes.",
+    "La querella, presentada ante una corte federal en Pensilvania , acusa al Gobierno de causar intencionalmente angustia emocional, agresión y lesiones, detención ilegal y destrucción de la propiedad de los pescadores.",
+    "Los demandantes exigen una compensación por daños y piden a su vez a la corte que ordene al Gobierno poner fin a estos ataques en el Caribe y el Pacífico ."
+   ]
+  },
+  {
+   "id": "2b372b9f7d",
+   "sector": "mundo",
+   "titulo": "Diallo desafía a Infantino y confirma su candidatura a la presidencia de la FIFA",
+   "resumen": "Philippe Diallo, presidente de la Federación Francesa de Fútbol (FFF), confirmó su candidatura a la presidencia de la FIFA para las elecciones de 2027, con el respaldo unánime de la UEFA. El dirigente francés se presenta como una alternativa a la gestión y escándalos de Gianni…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/video/20261118-diallo-desaf%C3%ADa-a-infantino-y-confirma-su-candidatura-a-la-presidencia-de-la-fifa",
+   "fecha": "2026-11-18T00:48:03Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/64b800b0-e2e3-11f1-a99d-ff16da94d1fe/w:1024/p:16x9/ES-20261117-131506-131657-CS.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "Philippe Diallo, presidente de la Federación Francesa de Fútbol (FFF), confirmó su candidatura a la presidencia de la FIFA para las elecciones de 2027, con el respaldo unánime de la UEFA.",
+   "puntos": [
+    "Philippe Diallo, presidente de la Federación Francesa de Fútbol (FFF), confirmó su candidatura a la presidencia de la FIFA para las elecciones de 2027, con el respaldo unánime de la UEFA."
    ]
   },
   {
@@ -2745,61 +2901,6 @@
    ]
   },
   {
-   "id": "d98e676726",
-   "sector": "coyuntura",
-   "titulo": "Keiko Fujimori admite a China como el principal socio comercial de Perú",
-   "resumen": "",
-   "fuente": "La República",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPd0psblZEOXR2R0piYklhM21rY3JGZTZKMGR2VjBBSTR5a3VxQXZ5WXgwRUdxaEYxeVVLU0pfMG5sd0lwUEpQZFY5aE1teVo2VF80UEdZM1NPQkI0eUJ0UDlCVkI4MW10b1FZWHM0R01lcXBDMF9QbmFJLUhTWGtTY1dOQnFGODBvOVRTd0g2ZTNLcDVvVFI2cnplbktiaGlRTXhoQV9Za0pWVlA2ZEJiZTdKTzhOMVdQYjlmQWJlaWxJZ1czZDBXZNIBzgFBVV95cUxNSkhDNWNGSHZ6LU4xVkdKN2NJS2pBT3dmUHlDYUpXM3ZUUWZYbnBtaFNLMWYwejUyVzZqbEZTWDBFeUhoVzl4dGlTQ01lYjJKSTdOM1lDaEJNX0VLNEE0NEg3Y1ZNOGREemZDT0RPVi0yanUwdGRESDk3ZG9DeC15RmlxY1FHQXd1SkZBQmhnQlM5bXZ0eG1YcnBxeFhXVGhhTDE0TVJQVTZPM2R4ZWJrWk4yRjBQX010YmtXZXJ2eGV1NlRQYmtQMnB3emVRZw?oc=5",
-   "fecha": "2026-11-17T23:32:15Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://imgmedia.larepublica.pe/1200x735/larepublica/original/2026/11/17/6afb2fae1e47858cd401e047.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "agregador",
-   "via": "Google Noticias",
-   "url_medio": "https://larepublica.pe/politica/2026/11/17/keiko-fujimori-presenta-a-china-como-el-principal-socio-comercial-de-peru-hnews-370617",
-   "sintesis": "La mandataria sostuvo una reunión bilateral con su homólogo Xi Jinping en la ciudad de Shenzhen. Al término del encuentro, destacó a China como el primer socio comercial del Perú y anunció que el Gobierno chino donará $22.5 millones para enfrentar el Fenómeno El Niño.",
-   "puntos": [
-    "La mandataria sostuvo una reunión bilateral con su homólogo Xi Jinping en la ciudad de Shenzhen.",
-    "Al término del encuentro, destacó a China como el primer socio comercial del Perú y anunció que el Gobierno chino donará $22.5 millones para enfrentar el Fenómeno El Niño.",
-    "“La inversión China es nuestro aliado principal en términos comerciales y por eso es que para mí era muy importante participar de la Cumbre APEC y tener esta reunión bilateral con el presidente Xi Jinping”, declaró a la prensa."
-   ],
-   "datos": [
-    {
-     "v": "$22.5 millones",
-     "t": "monto",
-     "c": "…comercial del Perú y anunció que el Gobierno chino donará $22.5 millones para enfrentar el Fenómeno El Niño.."
-    },
-    {
-     "v": "$15 millones",
-     "t": "monto",
-     "c": "…por el Fenómeno El Niño y anunció que China donará $15 millones de forma no reembolsable y $7.5 millones en maquinaria…"
-    },
-    {
-     "v": "$7.5 millones",
-     "t": "monto",
-     "c": "…que China donará $15 millones de forma no reembolsable y $7.5 millones en maquinaria para acciones de mitigación.."
-    },
-    {
-     "v": "60%",
-     "t": "porcentaje",
-     "c": "Sobre todo porque el 60% del comercio peruano está dirigido a las economías que conforman la APEC.."
-    },
-    {
-     "v": "15 millones de forma",
-     "t": "escala",
-     "c": "…por el Fenómeno El Niño y anunció que China donará $15 millones de forma no reembolsable y $7.5 millones en maquinaria para…"
-    }
-   ]
-  },
-  {
    "id": "7a4dbc20f7",
    "sector": "deporte",
    "titulo": "Kiara Montes explicó por qué era tan importante vencer a Universitario: “Es una victoria que necesitábamos”",
@@ -2852,8 +2953,8 @@
      "c": "Cámara de Diputados aprueba presupuesto del Congreso de S/1.405 millones para 2027."
     }
    ],
-   "imagen_intentos": 1,
-   "url_medio": "https://larepublica.pe/economia/2026/11/17/camara-de-diputados-aprueba-presupuesto-del-congreso-para-2027-hnews-657832"
+   "url_medio": "https://larepublica.pe/economia/2026/11/17/camara-de-diputados-aprueba-presupuesto-del-congreso-para-2027-hnews-657832",
+   "imagen_intentos": 2
   },
   {
    "id": "a5eb749303",
@@ -3172,7 +3273,7 @@
    "ambito": "pendiente",
    "procedencia": "directa",
    "url_medio": "https://www.tvperu.gob.pe/noticias/nacionales/inteligencia-artificial-en-el-trabajo-por-que-el-criterio-humano-sigue-siendo",
-   "imagen_intentos": 3
+   "imagen_intentos": 4
   },
   {
    "id": "d1b179cc61",
@@ -3891,30 +3992,6 @@
    ]
   },
   {
-   "id": "84f4d0164e",
-   "sector": "mundo",
-   "titulo": "Panamá: Mulino evalúa volver a activar la mina de cobre a cielo abierto más grande de Centroamérica",
-   "resumen": "El presidente panameño, Raúl Mulino, anunció que su Gobierno iniciará las conversaciones con la filial canadiense First Quantum para reactivar los trabajos en la mina de cobre a cielo abierto más grande de Centroamérica. El complejo, en pausa desde 2023 luego de que la Justicia…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/video/20261117-panam%C3%A1-mulino-eval%C3%BAa-volver-a-activar-la-mina-de-cobre-a-cielo-abierto-m%C3%A1s-grande-de-centroam%C3%A9rica",
-   "fecha": "2026-11-17T21:41:18Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/bcbff302-e2c1-11f1-a043-6d75ed565170/w:1024/p:16x9/ES-20261117-074322-074512-CS.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "El presidente panameño, Raúl Mulino, anunció que su Gobierno iniciará las conversaciones con la filial canadiense First Quantum para reactivar los trabajos en la mina de cobre a cielo abierto más grande…",
-   "puntos": [
-    "El presidente panameño, Raúl Mulino, anunció que su Gobierno iniciará las conversaciones con la filial canadiense First Quantum para reactivar los trabajos en la mina de cobre a cielo abierto más grande…"
-   ]
-  },
-  {
    "id": "c2877c5e1c",
    "sector": "ia",
    "titulo": "Jensen Huang busca regresar a Nvidia tras su renuncia",
@@ -4184,30 +4261,6 @@
     }
    ],
    "url_medio": "https://www.agroperu.pe/untrm-desarrollara-tecnologia-con-inteligencia-artificial-para-optimizar-la-alimentacion-del-ganado/"
-  },
-  {
-   "id": "0ee11af06d",
-   "sector": "mundo",
-   "titulo": "Criptas, reliquias y ofrendas: la Catedral de Ciudad de México abre sus puertas de noche",
-   "resumen": "🇲🇽 La Catedral Metropolitana de Ciudad de México abrió sus puertas para ofrecer recorridos nocturnos que permiten a mexicanos y extranjeros visitar la capilla, el altar e incluso las criptas subterráneas, mientras conocen más sobre la historia del lugar.",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/video/20261117-criptas-reliquias-y-ofrendas-la-catedral-de-ciudad-de-m%C3%A9xico-abre-sus-puertas-de-noche",
-   "fecha": "2026-11-17T21:03:32Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/a382e200-e2c1-11f1-8422-7908c4e1a3c7/w:1024/p:16x9/Criptas-reliquias-y-ofrendas-la-Catedral-Metropolitana-abre-sus-puertas-de-noche.png",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "🇲🇽 La Catedral Metropolitana de Ciudad de México abrió sus puertas para ofrecer recorridos nocturnos que permiten a mexicanos y extranjeros visitar la capilla, el altar e incluso las criptas subterráneas,…",
-   "puntos": [
-    "🇲🇽 La Catedral Metropolitana de Ciudad de México abrió sus puertas para ofrecer recorridos nocturnos que permiten a mexicanos y extranjeros visitar la capilla, el altar e incluso las criptas subterráneas,…"
-   ]
   },
   {
    "id": "2e3654239e",
@@ -4482,30 +4535,6 @@
    ]
   },
   {
-   "id": "647c767c47",
-   "sector": "mundo",
-   "titulo": "Tus datos valen dinero, pero ¿quién se lo queda?",
-   "resumen": "Cada vez que usamos una aplicación, compramos por internet o compartimos una foto generamos información con un enorme valor económico. Google y Meta viven sobre todo de la publicidad dirigida con esos datos, y otras empresas los compran y los revenden. Pero que una plataforma…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/programas/en-5-minutos/20261117-tus-datos-valen-dinero-pero-qui%C3%A9n-se-lo-queda",
-   "fecha": "2026-11-17T20:10:11Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/af605f7c-df9b-11f1-a4b2-f71d22e7fea9/w:1024/p:16x9/WEB-PORTADA-11NOV-E5M.png",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "Cada vez que usamos una aplicación, compramos por internet o compartimos una foto generamos información con un enorme valor económico.",
-   "puntos": [
-    "Cada vez que usamos una aplicación, compramos por internet o compartimos una foto generamos información con un enorme valor económico."
-   ]
-  },
-  {
    "id": "4e0493867a",
    "sector": "mundo",
    "titulo": "Los hutíes ponen contra las cuerdas a Arabia Saudita en Yemen",
@@ -4585,7 +4614,6 @@
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "url_medio": "https://elcomercio.pe/tecnologia/inteligencia-artificial/podemos-confiar-en-lo-que-vemos-noticia/",
    "sintesis": "La posibilidad de fabricar imágenes, videos y voces con inteligencia artificial está generando un fenómeno inquietante: ahora también es posible desacreditar pruebas auténticas alegando que fueron manipuladas. En mayo del año pasado, uno de los abogados del expresidente Pedro Castillo, puso en duda el fallido golpe de Estado del 7 de diciembre del 2022.",
    "puntos": [
     "La posibilidad de fabricar imágenes, videos y voces con inteligencia artificial está generando un fenómeno inquietante: ahora también es posible desacreditar pruebas auténticas alegando que fueron manipuladas.",
@@ -4598,7 +4626,8 @@
      "t": "fecha",
      "c": "…Castillo, puso en duda el fallido golpe de Estado del 7 de diciembre del 2022."
     }
-   ]
+   ],
+   "url_medio": "https://elcomercio.pe/tecnologia/inteligencia-artificial/podemos-confiar-en-lo-que-vemos-noticia/"
   },
   {
    "id": "0ff24f3cef",
@@ -4938,37 +4967,6 @@
    ]
   },
   {
-   "id": "0717c891c6",
-   "sector": "mundo",
-   "titulo": "El fiscal general de Paraguay renuncia ante la advertencia de un juicio político por el caso Ueno Bank",
-   "resumen": "El fiscal general de Paraguay renunció este martes 17 de noviembre en medio de las gestiones de la Cámara de Diputados para someterlo a juicio político y de críticas por su actuación en la crisis bancaria, según una carta divulgada por medios.",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/am%C3%A9rica-latina/20261117-el-fiscal-general-de-paraguay-renuncia-ante-la-advertencia-de-un-juicio-pol%C3%ADtico-por-el-caso-ueno-bank",
-   "fecha": "2026-11-17T19:09:26Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/67ac17f8-e2ba-11f1-9f12-1ba7ddfab527/w:1024/p:16x9/ab25ccdb932268ef586c52484bce931358481fa1.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "El fiscal general de Paraguay renunció este martes 17 de noviembre en medio de las gestiones de la Cámara de Diputados para someterlo a juicio político y de críticas por su actuación en la crisis bancaria,…",
-   "puntos": [
-    "El fiscal general de Paraguay renunció este martes 17 de noviembre en medio de las gestiones de la Cámara de Diputados para someterlo a juicio político y de críticas por su actuación en la crisis bancaria,…"
-   ],
-   "datos": [
-    {
-     "v": "17 de noviembre",
-     "t": "fecha",
-     "c": "El fiscal general de Paraguay renunció este martes 17 de noviembre en medio de las gestiones de la Cámara de Diputados para…"
-    }
-   ]
-  },
-  {
    "id": "0bbedbe178",
    "sector": "deporte",
    "titulo": "Los motivos que complican la llegada de Renato Tapia a la Liga 1: “Su agente tuvo acercamientos con Alianza Lima y Universitario”",
@@ -5043,37 +5041,6 @@
      "v": "13 de noviembre",
      "t": "fecha",
      "c": "…de Rubéola Congénita (RVC), que se reunió del 10 al 13 de noviembre pasados.."
-    }
-   ]
-  },
-  {
-   "id": "8afa56394a",
-   "sector": "mundo",
-   "titulo": "Reuniones con aliados, acuerdos y una histórica cumbre: Trump busca alivio en su gira asiática",
-   "resumen": "El presidente Donald Trump inició este martes 17 de noviembre en Filipinas un recorrido de tres días por Asia, que incluye la firma de acuerdos comerciales, conversaciones con aliados clave de Estados Unidos y una esperada reunión tripartita con Xi Jinping y Vladímir Putin.…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/asia-pac%C3%ADfico/20261117-reuniones-con-aliados-acuerdos-y-una-hist%C3%B3rica-cumbre-trump-busca-alivio-en-su-gira-asi%C3%A1tica",
-   "fecha": "2026-11-17T19:06:27Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/5519fef0-e276-11f1-b22e-ff16da94d1fe/w:1024/p:16x9/AP26321377296646.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "El presidente Donald Trump inició este martes 17 de noviembre en Filipinas una recorrida de tres días por Asia, que incluye la firma de acuerdos comerciales, conversaciones con aliados clave de Estados…",
-   "puntos": [
-    "El presidente Donald Trump inició este martes 17 de noviembre en Filipinas una recorrida de tres días por Asia, que incluye la firma de acuerdos comerciales, conversaciones con aliados clave de Estados…"
-   ],
-   "datos": [
-    {
-     "v": "17 de noviembre",
-     "t": "fecha",
-     "c": "El presidente Donald Trump inició este martes 17 de noviembre en Filipinas una recorrida de tres días por Asia, que…"
     }
    ]
   },
@@ -5163,7 +5130,7 @@
    "ambito": "peru",
    "procedencia": "directa",
    "url_medio": "https://peru21.pe/peru21-responde/wall-street-vuelve-caer-y-arrastra-otras-bolsas-por-que-afecta-peru/",
-   "imagen_intentos": 5
+   "imagen_intentos": 6
   },
   {
    "id": "c37b952b4e",
@@ -5205,37 +5172,6 @@
      "v": "18 de noviembre",
      "t": "fecha",
      "c": "Deportivo Wanka EN VIVO: se enfrentan este miércoles 18 de noviembre en el Coliseo Lucha Fuentes de Villa El Salvador."
-    }
-   ]
-  },
-  {
-   "id": "bef8bff398",
-   "sector": "mundo",
-   "titulo": "Irán vuelve a atacar posiciones estadounidenses en Bahrein y reporta explosiones en la isla de Qeshm",
-   "resumen": "Este martes 17 de noviembre, Irán lanzó drones contra una instalación de radar estadounidense en Bahrein, siendo el tercer ataque a objetivos militares de Estados Unidos en ese país del Golfo en los últimos días. En paralelo, Teherán acusó a las fuerzas de la nación…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/medio-oriente/20261117-ir%C3%A1n-vuelve-a-atacar-posiciones-estadounidenses-en-bahrein-y-reporta-explosiones-en-la-isla-de-qeshm",
-   "fecha": "2026-11-17T18:38:08Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/c3f154dc-e2ac-11f1-bc30-c5c0357b2a0c/w:1024/p:16x9/2026-11-17T171352Z-450277371-RC2SPOAB868L-RTRMADP-3-IRAN-CRISIS-TANKER.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Este martes 17 de noviembre, Irán lanzó drones contra una instalación de radar estadounidense en Bahrein, siendo el tercer ataque a objetivos militares de Estados Unidos en ese país del Golfo en los…",
-   "puntos": [
-    "Este martes 17 de noviembre, Irán lanzó drones contra una instalación de radar estadounidense en Bahrein, siendo el tercer ataque a objetivos militares de Estados Unidos en ese país del Golfo en los…"
-   ],
-   "datos": [
-    {
-     "v": "17 de noviembre",
-     "t": "fecha",
-     "c": "Este martes 17 de noviembre, Irán lanzó drones contra una instalación de radar…"
     }
    ]
   },
@@ -5749,7 +5685,7 @@
    "ambito": "mundo",
    "procedencia": "directa",
    "url_medio": "https://www.nytimes.com/es/2026/11/17/espanol/estados-unidos/trump-china-chips-nvidia.html",
-   "imagen_intentos": 4
+   "imagen_intentos": 5
   },
   {
    "id": "a338769b15",
@@ -5827,7 +5763,7 @@
    "ambito": "mundo",
    "procedencia": "directa",
    "url_medio": "https://openai.com/es-419/index/introducing-openai-for-chile/",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "610bf2a623",
@@ -6718,6 +6654,29 @@
    "url_medio": "https://radiouno.pe/noticias/288379/padre-leonardo-gomez-destaca-mensaje-del-papa-leon-xiv-sobre-la-inteligencia-artificial-y-la-reconciliacion-entre-peruanos/"
   },
   {
+   "id": "fad223a6a1",
+   "sector": "politica",
+   "titulo": "Teletrabajo y salud: el vacío de la reforma que propone el gobierno",
+   "resumen": "",
+   "fuente": "Expreso",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNeEtQbzBoSXlCUTJtdVhFMjZIdGRaS3IzdDNoQldNaGZ0VEQxOTRQQ0Mzckh2RlRDTkhLOVNTWW9UZVdYeXJ5cUdhc1dZN280bldIV3c0d0ZlN3prUVhsczlRTFRaVUN5cVU1cHBZNlZ2MjN4YVhOSFVRQzVJUnZfaEpoSktqNkVLRnhIZ3JBRDZuWW43c1g3VUVYbHhsREhYUHpBeg?oc=5",
+   "fecha": "2026-11-17T09:34:36Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "agregador",
+   "via": "Google Noticias",
+   "imagen_intentos": 1,
+   "url_medio": "https://www.expreso.com.pe/opinion/teletrabajo-y-salud-el-vacio-de-la-reforma-que-propone-el-gobierno/"
+  },
+  {
    "id": "6f930e8b56",
    "sector": "mundo",
    "titulo": "Ingresos récord, más de 60 fallecidos y poco control: los demócratas ponen en la mira las cárceles migratorias de Trump",
@@ -6860,7 +6819,7 @@
    "procedencia": "agregador",
    "via": "Google Noticias",
    "url_medio": "https://www.expreso.com.pe/judicial/crimen-incrementa-debido-a-desacuerdos-entre-pj-y-fiscalia-advierte-exministro-del-interior-cluber-aliaga-noticia/1332536/",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "e44f1f28e9",
@@ -6958,6 +6917,59 @@
    "url_medio": "https://larepublica.pe/politica/2026/11/16/rosemary-pioc-el-caso-de-condorcanqui-es-critico-esperamos-acciones-a-partir-de-las-palabras-del-papa-leon-xiv-hnews-430912"
   },
   {
+   "id": "191dddde0e",
+   "sector": "politica",
+   "titulo": "El mundo gira a la izquierda: elecciones y movilizaciones",
+   "resumen": "Una mirada anticapitalista, más allá del progresismo.",
+   "fuente": "La Mula",
+   "url": "https://contraelcapital.lamula.pe/2026/11/16/el-mundo-gira-a-la-izquierda-elecciones-y-movilizaciones/losanticapitalistas/",
+   "fecha": "2026-11-17T04:33:54Z",
+   "tipo": "independiente",
+   "genero": "noticia",
+   "imagen": "https://lamula.pe/media/uploads/t/8a22bccdbd9b366f858a2a7f3270af93.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "Una mirada anticapitalista, más allá del progresismo. Después de una serie de derrotas la historia comienza a cambiar de rumbo.",
+   "puntos": [
+    "Una mirada anticapitalista, más allá del progresismo.",
+    "Después de una serie de derrotas la historia comienza a cambiar de rumbo.",
+    "Las elecciones en Brasil, el giro demócrata en Estados Unidos, las huelgas en España, Francia y Colombia, el gobierno estudiantil en Serbia, todo parece decirnos que algo está cambiando."
+   ],
+   "datos": [
+    {
+     "v": "53,01%",
+     "t": "porcentaje",
+     "c": "…ganó las elecciones parlamentarias anticipadas con 53,01% de los votos, frente a 38,98% de la lista oficialista."
+    },
+    {
+     "v": "38,98%",
+     "t": "porcentaje",
+     "c": "…anticipadas con 53,01% de los votos, frente a 38,98% de la lista oficialista."
+    },
+    {
+     "v": "14 años",
+     "t": "cantidad",
+     "c": "Aleksandar Vučić ha mantenido el poder más de 14 años."
+    },
+    {
+     "v": "16 personas",
+     "t": "cantidad",
+     "c": "…de Serbia, se desplomó a las 11.52 y causó la muerte de 16 personas que esperaban frente al edificio."
+    },
+    {
+     "v": "1 de noviembre de 2024",
+     "t": "fecha",
+     "c": "Comenzó el 1 de noviembre de 2024 cuando el techo de hormigón y metal de la entrada de la…"
+    }
+   ]
+  },
+  {
    "id": "165b05aaff",
    "sector": "mundo",
    "titulo": "El disco de oro de las ‘Voyager’: lo que Carl Sagan le quiso contar a una civilización alienígena",
@@ -7002,6 +7014,29 @@
    "procedencia": "directa",
    "url_medio": "https://www.tvperu.gob.pe/noticias/internacionales/ee-uu-busca-bloquear-el-acceso-de-china-chips-de-inteligencia-artificial",
    "imagen_intentos": 6
+  },
+  {
+   "id": "2d3e351f4f",
+   "sector": "politica",
+   "titulo": "Astudillo expone este martes su plan de reforma de la PNP ante la Comisión de Defensa",
+   "resumen": "",
+   "fuente": "La República",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNV0dnNXRzajk5ZG5yTjl6WjN6NVh3SF8zamVSdnpHODVqbWpaTzZJcXdNZld5VVNwLXc4S0M1VV9DcmJOa290VzgyTFFYYWNQQmZtejZlRktqc0VoR3BQaGpVdFplNFFXeVB0bEtxVzJkYlk3a0hKejhnS1UxcGdBckJJVVIxUGQxeU1aN0RLUG01SUVOdzZ4NnVRaHdxNTJHNkYxLUxMRjA2SlZOeGVBWXhsTm9BTWwxbEZXdDhlclc1ZkZqdHFyZkxTUW1LWm9fbTBaa2w5Z3rSAd4BQVVfeXFMT29Cdm5LY3NDNldzc1BHX3pIZUM3S0FsUjRaMlk4YUlYMnBXYnFkYzFEQzJ3S1JMbGFlWmdBamNrMFZoTzY5eHRGZVBtYXFBem1ZTV93V2tQMjBiYjFqNUVRcmFYUDVnNjlZYldIT2ZEaW4taFBUdUpIa1RhWUhIWGFFWjJ1YldRY3ZSS21WRTJjUXJ5QlY4S3hwQVJZeFpkR21HNmIxVUNFT1RuWHB2VzFXbjlvVmFQTGlIUWF5aVBTelJBS0xnYWpfSHZBY2xWRTFQdEU0ODl5ZEFVTUJn?oc=5",
+   "fecha": "2026-11-17T02:55:17Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "agregador",
+   "via": "Google Noticias",
+   "imagen_intentos": 1,
+   "url_medio": "https://larepublica.pe/politica/2026/11/16/astudillo-expone-este-martes-su-plan-de-reforma-de-la-pnp-ante-la-comision-de-defensa-hnews-677792"
   },
   {
    "id": "a2943b175d",
@@ -7493,12 +7528,12 @@
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "url_medio": "https://www.negocios.com/tecnologia/anthropic-amenaza-revolucionar-inteligencia-artificial-desafiar-nvidia-bolsa/20261116224102498162.html",
    "sintesis": "La crisis de liderazgo en Nvidia y la inminente salida a bolsa de Anthropic sacuden Wall Street. La empresa de Dario Amodei prepara una OPV que podría captar...",
    "puntos": [
     "La crisis de liderazgo en Nvidia y la inminente salida a bolsa de Anthropic sacuden Wall Street.",
     "La empresa de Dario Amodei prepara una OPV que podría captar..."
-   ]
+   ],
+   "url_medio": "https://www.negocios.com/tecnologia/anthropic-amenaza-revolucionar-inteligencia-artificial-desafiar-nvidia-bolsa/20261116224102498162.html"
   },
   {
    "id": "1addeed167",
@@ -7559,59 +7594,6 @@
    ]
   },
   {
-   "id": "a3405dd2a8",
-   "sector": "salud",
-   "titulo": "Presupuesto 2027: Minsa advierte que reducción de recursos afectaría compra de equipos para detectar y tratar el cáncer",
-   "resumen": "Ante esta situación, el Ministerio de Salud solicitará un crédito suplementario para el 2027, señaló a RPP Data Víctor Palacios, director de Prevención y Control del Cáncer del Minsa.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/peru/actualidad/presupuesto-2027-minsa-advierte-que-reduccion-de-recursos-afectaria-compra-de-equipos-para-detectar-y-tratar-el-cancer-noticia-1717509",
-   "fecha": "2026-11-16T19:51:45Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/13/050005_1928999.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Ante esta situación, el Ministerio de Salud solicitará un crédito suplementario para el 2027, señaló a RPP Data Víctor Palacios, director de Prevención y Control del Cáncer del Minsa. El cáncer avanza, pero los recursos públicos destinados a enfrentarlo disminuyen.",
-   "puntos": [
-    "Ante esta situación, el Ministerio de Salud solicitará un crédito suplementario para el 2027, señaló a RPP Data Víctor Palacios, director de Prevención y Control del Cáncer del Minsa.",
-    "El cáncer avanza, pero los recursos públicos destinados a enfrentarlo disminuyen.",
-    "El proyecto de presupuesto público para 2027 contempla asignar S/ 1113 millones al Programa de Prevención y Control del Cáncer del Ministerio de Salud (Minsa)."
-   ],
-   "datos": [
-    {
-     "v": "S/ 1113 millones",
-     "t": "monto",
-     "c": "…de presupuesto público para 2027 contempla asignar S/ 1113 millones al Programa de Prevención y Control del Cáncer del…"
-    },
-    {
-     "v": "S/ 55 millones",
-     "t": "monto",
-     "c": "Esta cifra representa S/ 55 millones menos que el presupuesto inicial asignado en 2026, que…"
-    },
-    {
-     "v": "S/ 1168 millones",
-     "t": "monto",
-     "c": "…el presupuesto inicial asignado en 2026, que ascendió a S/ 1168 millones, y si se compara con 2025, cuando se destinaron…"
-    },
-    {
-     "v": "S/ 1298 millones",
-     "t": "monto",
-     "c": "…si se compara con 2025, cuando se destinaron inicialmente S/ 1298 millones, la reducción alcanza…."
-    },
-    {
-     "v": "S/ 1500 millones",
-     "t": "monto",
-     "c": "…inicialmente solicitó un presupuesto de aproximadamente S/ 1500 millones para 2027, debido al incremento de la demanda de atención…"
-    }
-   ]
-  },
-  {
    "id": "d307d14a35",
    "sector": "ia",
    "titulo": "Trump dice que \"no le importaría\" que Jensen Huang volviera a liderar Nvidia",
@@ -7658,41 +7640,6 @@
    "procedencia": "directa",
    "url_medio": "https://www.agenzianova.com/es/news/California-demanda-al-gigante-de-la-inteligencia-artificial-Openai/",
    "imagen_intentos": 6
-  },
-  {
-   "id": "f8ee1543de",
-   "sector": "investigacion",
-   "titulo": "Panamá: Viejos negocios y nuevos contratos de Roberto Carretero, investigado por el caso Odebrecht",
-   "resumen": "",
-   "fuente": "Convoca",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSThrbWZGS2tRZ2U0Z014cG8yWk9mTk85eGZHYUI0YmJEcjhBa2NVZ3lFZVc0S280OXFXU3Z0OEJFU0llNGZoV241MTYzUUEzdG5fSUs3c3lHYXFuVlp5S2N5cHhYTWdMRVdaU0lNYU12M2RaVkYtd282eGp3a2t1TkJ5OXlkYTNscXJCeXdwTk9IaV9RQnJTeUJiUExxMmFuNVU0emdFSElVMzJSRF9fdE43VDg?oc=5",
-   "fecha": "2026-11-16T18:49:25Z",
-   "tipo": "independiente",
-   "genero": "noticia",
-   "imagen": "https://convoca.pe/sites/default/files/2026-11/Fachada%20del%20Sky%20Business_0.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "agregador",
-   "via": "Google Noticias",
-   "sintesis": "Esta es la nota en la que trabajaba el periodista Rolando Rodríguez cuando su residencia, en la ciudad de Panamá, fue objeto de un atentado con explosivos durante la madrugada del sábado 14 de noviembre, un ataque que puso en riesgo la vida de su esposa, Nadia. En solidaridad con Rolando Rodríguez, su familia y el diario La Prensa, 33 medios de comunicación de 15 países han decidido unir esfuerzos en una gran alianza para replicar y difundir la investigación que presentamos a continuación.",
-   "puntos": [
-    "Esta es la nota en la que trabajaba el periodista Rolando Rodríguez cuando su residencia, en la ciudad de Panamá, fue objeto de un atentado con explosivos durante la madrugada del sábado 14 de noviembre, un ataque que puso en riesgo la vida de su esposa, Nadia.",
-    "En solidaridad con Rolando Rodríguez, su familia y el diario La Prensa, 33 medios de comunicación de 15 países han decidido unir esfuerzos en una gran alianza para replicar y difundir la investigación que presentamos a continuación.",
-    "¿Qué tienen en común la construcción y modernización de torres y líneas de electricidad con la venta de instrumentos musicales al Estado?"
-   ],
-   "datos": [
-    {
-     "v": "14 de noviembre",
-     "t": "fecha",
-     "c": "…un atentado con explosivos durante la madrugada del sábado 14 de noviembre, un ataque que puso en riesgo la vida de su esposa, Nadia."
-    }
-   ],
-   "url_medio": "https://convoca.pe/investigacion/panama-viejos-negocios-y-nuevos-contratos-de-roberto-carretero-investigado-por-el"
   },
   {
    "id": "3cd64b9c52",
@@ -7795,6 +7742,68 @@
      "v": "15 de diciembre de 2026",
      "t": "fecha",
      "c": "…la fecha estimada de culminación oscila entre el 12 y el 15 de diciembre de 2026 ."
+    }
+   ]
+  },
+  {
+   "id": "a191d074bb",
+   "sector": "nino",
+   "titulo": "El Niño Costero se extendería hasta julio de 2027 y pone en alerta al agro de la costa norte",
+   "resumen": "",
+   "fuente": "Agraria.pe",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPUlo3SFkyMldjcUdjbUZRZGFvWk5WV2c0a0VoVTNHMDFHZ3pEejkzUmJDaG12SHhqb1Vod2RrLVBKRmhzUko2X2FzbTdmUmZ6eWtzSG83R240bEthTU5rd0FjdFZDTVRvWUJOWGhHTEZPZEdtOVVkdTRqeHMzajBzWHdKSEo2VVZDQnd1UkJwQ1U5UTYyY0ZiQS1PSXFnTjQ?oc=5",
+   "fecha": "2026-11-16T16:12:57Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.agraria.pe/imgs/a/l/el-nino-costero-se-extenderia-hasta-julio-de-2027-y-pone-en--43478.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "url_medio": "https://www.agraria.pe/noticias/el-nino-costero-se-extenderia-hasta-julio-de-2027-y-pone-en--43478",
+   "sintesis": "(Agraria.pe) El Comité Multisectorial Encargado del Estudio Nacional del Fenómeno El Niño (ENFEN) advirtió que El Niño Costero continuaría hasta julio de 2027. Las lluvias superarían lo normal y los ríos de la costa norte",
+   "puntos": [
+    "(Agraria.pe) El Comité Multisectorial Encargado del Estudio Nacional del Fenómeno El Niño (ENFEN) advirtió que El Niño Costero continuaría hasta julio de 2027.",
+    "Las lluvias superarían lo normal y los ríos de la costa norte",
+    "El escenario es de especial atención para el sector agrario, que depende del agua y del clima."
+   ]
+  },
+  {
+   "id": "6289875914",
+   "sector": "investigacion",
+   "titulo": "Panamá: empresario vinculado al caso Odebrecht gana millonarios contratos del Estado",
+   "resumen": "",
+   "fuente": "Convoca",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdEJJb1ZXbmlERjNNcV9vNE1tQzJUajNQM1RicVR2cUtmaEY2X0lvQVhFeHBZRFl0MFAxcDFPSmtHNkw1ZGxnX01TSnlGaUpTWmY3UC1sUDNncGhWakR4RFEzellMdmtMejZtd3ZaMmY2T3d1cHdoR3ZWV3dqMENST3dtaElxUDZHbHB4RVRzMVhfS0xqWFd1b3pYeUtlQThuSEp3blVTdGJkTUI1a2hIeXF2UzVJanc?oc=5",
+   "fecha": "2026-11-16T16:08:36Z",
+   "tipo": "independiente",
+   "genero": "noticia",
+   "imagen": "https://convoca.pe/sites/default/files/2026-11/Fachada%20del%20Sky%20Business_0.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "agregador",
+   "via": "Google Noticias",
+   "url_medio": "https://convoca.pe/investigacion/panama-empresario-vinculado-al-caso-odebrecht-gana-millonarios-contratos-del-estado",
+   "sintesis": "Esta es la nota en la que trabajaba el periodista Rolando Rodríguez cuando su residencia, en la ciudad de Panamá, fue objeto de un atentado con explosivos durante la madrugada del sábado 14 de noviembre, un ataque que puso en riesgo la vida de su esposa, Nadia. En solidaridad con Rolando Rodríguez, su familia y el diario La Prensa, 33 medios de comunicación de 15 países han decidido unir esfuerzos en una gran alianza para replicar y difundir la investigación que presentamos a continuación.",
+   "puntos": [
+    "Esta es la nota en la que trabajaba el periodista Rolando Rodríguez cuando su residencia, en la ciudad de Panamá, fue objeto de un atentado con explosivos durante la madrugada del sábado 14 de noviembre, un ataque que puso en riesgo la vida de su esposa, Nadia.",
+    "En solidaridad con Rolando Rodríguez, su familia y el diario La Prensa, 33 medios de comunicación de 15 países han decidido unir esfuerzos en una gran alianza para replicar y difundir la investigación que presentamos a continuación.",
+    "¿Qué tienen en común la construcción y modernización de torres y líneas de electricidad con la venta de instrumentos musicales al Estado?"
+   ],
+   "datos": [
+    {
+     "v": "14 de noviembre",
+     "t": "fecha",
+     "c": "…un atentado con explosivos durante la madrugada del sábado 14 de noviembre, un ataque que puso en riesgo la vida de su esposa, Nadia."
     }
    ]
   },
@@ -8116,49 +8125,6 @@
    ]
   },
   {
-   "id": "bc5eb2f57d",
-   "sector": "ia",
-   "titulo": "La IA está llegando a más peruanos. ¿Y ahora qué?",
-   "resumen": "“La próxima vez que hablemos de cuántos peruanos usan IA, ojalá podamos contar también cuántos hicieron crecer su negocio, mejoraron su trabajo o encontraron una nueva oportunidad”, escribe Mario Rodríguez, gerente general de Microsoft Perú.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/economia/dia-1/la-ia-esta-llegando-a-mas-peruanos-y-ahora-que-por-mario-rodriguez-opinion-microsoft-noticia/",
-   "fecha": "2026-11-16T11:53:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/RSBHZDAZ2VG5VL5RYIE3PNKLXI.jpg?auth=873faffd0f76ede0352334f1cb0548611774251efd8043d9044ae7ec5d733dc4&smart=true&width=1200&height=628",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "“La próxima vez que hablemos de cuántos peruanos usan IA, ojalá podamos contar también cuántos hicieron crecer su negocio, mejoraron su trabajo o encontraron una nueva oportunidad”, escribe Mario Rodríguez, gerente general de Microsoft Perú. Hay cifras que entusiasman y, al mismo tiempo, nos obligan a pensar.",
-   "puntos": [
-    "“La próxima vez que hablemos de cuántos peruanos usan IA, ojalá podamos contar también cuántos hicieron crecer su negocio, mejoraron su trabajo o encontraron una nueva oportunidad”, escribe Mario Rodríguez, gerente general de Microsoft Perú.",
-    "Hay cifras que entusiasman y, al mismo tiempo, nos obligan a pensar.",
-    "El último Global AI Diffusion Report de Microsoft muestra que, durante el segundo trimestre de 2026, el 17,3% de los peruanos en edad laboral utilizó herramientas de inteligencia artificial generativa."
-   ],
-   "datos": [
-    {
-     "v": "17,3%",
-     "t": "porcentaje",
-     "c": "…muestra que, durante el segundo trimestre de 2026, el 17,3% de los peruanos en edad laboral utilizó herramientas de…"
-    },
-    {
-     "v": "23%",
-     "t": "porcentaje",
-     "c": "…Defense Report 2026 revela que el ‘phishing’ representó el 23% de las intrusiones observadas globalmente este año, frente…"
-    },
-    {
-     "v": "7%",
-     "t": "porcentaje",
-     "c": "…las intrusiones observadas globalmente este año, frente al 7% en 2025."
-    }
-   ]
-  },
-  {
    "id": "949181446a",
    "sector": "economia",
    "titulo": "Chile: el ave marina yunco repobló la isla Choros cuando se erradicaron las especies invasoras",
@@ -8293,7 +8259,7 @@
     }
    ],
    "url_medio": "https://www.nytimes.com/es/2026/11/13/espanol/america-latina/argentina-fuga-bertulazzi.html",
-   "imagen_intentos": 3
+   "imagen_intentos": 4
   },
   {
    "id": "613adf3d90",
@@ -8343,8 +8309,8 @@
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "imagen_intentos": 1,
-   "url_medio": "https://www.nytimes.com/es/2026/11/16/espanol/mundo/estudiantes-serbia-gobierno.html"
+   "url_medio": "https://www.nytimes.com/es/2026/11/16/espanol/mundo/estudiantes-serbia-gobierno.html",
+   "imagen_intentos": 2
   },
   {
    "id": "0eda04cd74",
@@ -8539,8 +8505,8 @@
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 1,
-   "url_medio": "https://www.tvperu.gob.pe/noticias/nacionales/enfen-mantiene-alerta-por-el-nino-costero-y-advierte-que-continuara-hasta-el"
+   "url_medio": "https://www.tvperu.gob.pe/noticias/nacionales/enfen-mantiene-alerta-por-el-nino-costero-y-advierte-que-continuara-hasta-el",
+   "imagen_intentos": 2
   },
   {
    "id": "d5d60c9502",
@@ -8621,44 +8587,6 @@
     "Estados Unidos prohíbe las ventas a China de los chips de inteligencia artificial más avanzados, con el objetivo de superar a los chinos en la carrera por dominar la inteligencia artificial (IA)."
    ],
    "url_medio": "https://www.eluniverso.com/internacional/estados-unidos/ee-uu-exige-respuestas-a-nvidia-sobre-posible-desvio-de-sus-chips-de-inteligencia-artificial-a-china-nota/"
-  },
-  {
-   "id": "a1cce83455",
-   "sector": "economia",
-   "titulo": "Relaves mineros de Chile, el costo ambiental del auge del tequila en México y el amenazado territorio de la tangara inti en Bolivia | Lo más leído",
-   "resumen": "Esta semana presentamos una investigación sobre los relaves mineros de Chile. Encontramos que 455 de los 839 registrados están abandonados. Además, los recursos que reciben los municipios por mantenerlos podrían desincentivar su remediación. También tenemos un reportaje sobre…",
-   "fuente": "Mongabay Latam",
-   "url": "https://es.mongabay.com/2026/11/relaves-mineros-chile-costo-ambiental-auge-tequila-mexico-amenazada-tangara-inti-bolivia/",
-   "fecha": "2026-11-15T16:46:18Z",
-   "tipo": "independiente",
-   "genero": "noticia",
-   "imagen": "https://imgs.mongabay.com/wp-content/uploads/sites/25/2026/11/10050112/PHOTO-2026-07-02-15-31-04-768x512.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Esta semana presentamos una investigación sobre los relaves mineros de Chile. Encontramos que 455 de los 839 registrados están abandonados.",
-   "puntos": [
-    "Esta semana presentamos una investigación sobre los relaves mineros de Chile.",
-    "Encontramos que 455 de los 839 registrados están abandonados.",
-    "Además, los recursos que reciben los municipios por mantenerlos podrían desincentivar su remediación."
-   ],
-   "datos": [
-    {
-     "v": "218 %",
-     "t": "porcentaje",
-     "c": "…de la que se extrae la materia prima de ese licor, aumentó 218 %, una expansión que ha desplazado bosques, selvas y…"
-    },
-    {
-     "v": "9 de noviembre",
-     "t": "fecha",
-     "c": "La COP31 comenzó este lunes 9 de noviembre en Turquía con el desafío de convertir los compromisos climáticos en acciones concretas."
-    }
-   ]
   },
   {
    "id": "b4ed97abd1",
@@ -8760,41 +8688,6 @@
     }
    ],
    "url_medio": "https://www.hildebrandtensustrece.com/reportaje/articulo/3145"
-  },
-  {
-   "id": "df572cb58b",
-   "sector": "nino",
-   "titulo": "El Niño costero extraordinario se queda hasta 2027: las consecuencias que anticipa el Enfen y lo que viene",
-   "resumen": "",
-   "fuente": "Tu Diario Huánuco",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUEFpV25RWHAxN09uVHdtOFJneXliQnc3VjVvZk9wZXNzLVNSQXRnbjFaUDNTVUd1SFVueUJjbUMySlQ5Xzd1X1pPSURLSWlaMTZFSnZ4T2N4Mm94VnI0VmZkSzN3UlVaeFEtejFkOUQ0al9yTmZxdVNBLUhjbWFJdXdIRlNVWmhja3dDZG45UXBHVkl0dTNSN1VxRmIwVC1TOFFwN19ieGdQSlU?oc=5",
-   "fecha": "2026-11-15T13:08:25Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "La Comisión Multisectorial encargada del Estudio Nacional del Fenómeno El Niño (Enfen) cerró la semana con un mensaje que cambia el horizonte de planificación del país: el calentamiento frente a nuestra costa no está por terminar. En su Comunicado Oficial N.° 20-2026, del 13 de noviembre, mantuvo la alerta de El Niño costero y proyectó que el evento, iniciado en marzo de 2026, conservará una magnitud extraordinaria hasta febrero de 2027 y solo se irá debilitando de forma progresiva hasta julio de 2027.",
-   "puntos": [
-    "La Comisión Multisectorial encargada del Estudio Nacional del Fenómeno El Niño (Enfen) cerró la semana con un mensaje que cambia el horizonte de planificación del país: el calentamiento frente a nuestra costa no está por terminar.",
-    "En su Comunicado Oficial N.° 20-2026, del 13 de noviembre, mantuvo la alerta de El Niño costero y proyectó que el evento, iniciado en marzo de 2026, conservará una magnitud extraordinaria hasta febrero de 2027 y solo se irá debilitando de forma progresiva hasta julio de 2027.",
-    "Dicho de otra forma: el verano que viene llegará con el mar todavía muy caliente."
-   ],
-   "datos": [
-    {
-     "v": "13 de noviembre",
-     "t": "fecha",
-     "c": "En su Comunicado Oficial N.° 20-2026, del 13 de noviembre, mantuvo la alerta de El Niño costero y proyectó que el…"
-    }
-   ],
-   "url_medio": "https://tudiariohuanuco.pe/especiales/nino-costero-extraordinario-hasta-2027-consecuencias-enfen-que-viene/",
-   "imagen_intentos": 6
   },
   {
    "id": "3ef3859391",
@@ -9673,6 +9566,33 @@
    ]
   },
   {
+   "id": "ab09189172",
+   "sector": "ia",
+   "titulo": "Inteligencia artificial en las escuelas: las lecciones de Perú para mejorar la educación",
+   "resumen": "",
+   "fuente": "Mexico Social",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5nTGtmd3MxaGMyeTE2aUo3cFd1STZIRG5rdlFCU2tDYndrd2ZrZndxWGdZOUs0LWs3WGR4UDVnQm1fTlE4M01wVEVnaUxzYXExT0JyeWVOd3RZb2h6TUZxZWxlYkxwQQ?oc=5",
+   "fecha": "2026-11-13T14:48:45Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.mexicosocial.org/wp-content/uploads/2026/11/Inteligencia-artificial-en-las-escuelas.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "url_medio": "https://www.mexicosocial.org/inteligencia-artificial-2/",
+   "sintesis": "Una experiencia apoyada por el Banco Mundial en escuelas públicas peruanas explora cómo utilizar la inteligencia artificial para acompañar a estudiantes Escrito por mexico_social • 13 noviembre, 2026 • 3:30 am • Destacados , educación , En Portada , la IA , México Social / Redacción",
+   "puntos": [
+    "Una experiencia apoyada por el Banco Mundial en escuelas públicas peruanas explora cómo utilizar la inteligencia artificial para acompañar a estudiantes",
+    "Escrito por mexico_social • 13 noviembre, 2026 • 3:30 am • Destacados , educación , En Portada , la IA , México Social / Redacción",
+    "Los primeros resultados muestran avances en la adopción de estas herramientas, aunque todavía está en evaluación su efecto sobre el aprendizaje duradero."
+   ]
+  },
+  {
    "id": "4c2c5890bf",
    "sector": "mundo",
    "titulo": "COP31: Sin dinero suficiente, crecen las voces para que paguen más los que más contaminan",
@@ -10033,8 +9953,8 @@
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "imagen_intentos": 1,
-   "url_medio": "https://www.nytimes.com/es/2026/11/12/espanol/negocios/jensen-huang-nvidia.html"
+   "url_medio": "https://www.nytimes.com/es/2026/11/12/espanol/negocios/jensen-huang-nvidia.html",
+   "imagen_intentos": 2
   },
   {
    "id": "55d7ae05f8",
@@ -11625,28 +11545,10 @@
   "numero": "20-2026",
   "fecha": "2026-10-30",
   "url": "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen",
-  "comprobado": "2026-11-18T02:20:18Z",
+  "comprobado": "2026-11-18T02:29:36Z",
   "ok": true
  },
  "registro": [
-  {
-   "t": "2026-11-14T03:17:35Z",
-   "fuentes_ok": 26,
-   "fuentes": 27,
-   "nuevas": 350,
-   "notas": 322,
-   "descartes": {},
-   "agregador": [
-    "OjoPúblico",
-    "Convoca",
-    "Hildebrandt en sus trece",
-    "La República",
-    "Expreso"
-   ],
-   "sin_datos": [
-    "ONU Noticias"
-   ]
-  },
   {
    "t": "2026-11-14T08:59:51Z",
    "fuentes_ok": 27,
@@ -12113,6 +12015,22 @@
   },
   {
    "t": "2026-11-18T02:19:24Z",
+   "fuentes_ok": 27,
+   "fuentes": 27,
+   "nuevas": 342,
+   "notas": 322,
+   "descartes": {},
+   "agregador": [
+    "OjoPúblico",
+    "Convoca",
+    "Hildebrandt en sus trece",
+    "La República",
+    "Expreso"
+   ],
+   "sin_datos": []
+  },
+  {
+   "t": "2026-11-18T02:27:14Z",
    "fuentes_ok": 27,
    "fuentes": 27,
    "nuevas": 342,
