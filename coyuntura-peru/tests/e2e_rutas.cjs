@@ -178,21 +178,39 @@ function ok(cond, msg) { comprobaciones++; if (!cond) { fallos.push(msg); consol
     ok(await p.locator(".fresh dt").count() === 4, `[${w}] portada: cuatro fechas diferenciadas`);
     // datos
     await p.goto(base + "#/datos"); await p.waitForTimeout(300);
-    const nd = await p.locator(".dc").count(); ok(nd >= 15, `[${w}] datos: pocas tarjetas (${nd})`);
+    const nd = await p.locator(".dc").count(); ok(nd >= 17, `[${w}] datos: pocas tarjetas (${nd})`);
     const sinCorte = await p.locator(".dc:not(:has(.dc-m b))").count(); ok(sinCorte === 0, `[${w}] datos: ${sinCorte} tarjetas sin fecha de corte`);
     const sinUn = await p.locator(".dc .un:empty").count(); ok(sinUn === 0, `[${w}] datos: ${sinUn} cifras sin unidad`);
     ok(await p.locator(".dc .pe-data-explain").count() === nd, `[${w}] datos: faltan interpretaciones desplegables`);
     await p.locator(".dc .pe-data-explain").first().locator("summary").click();
     ok(await p.locator(".dc .pe-data-explain[open]").count() === 1, `[${w}] datos: no abre explicación local`);
 
-    ok(await p.locator("#d-grid h2").allInnerTexts().then(x => x.join("|") === "Internet e IA|Bolsillo y empleo|Población y servicios|Salud"),
-       `[${w}] datos: orden de los temas`);
-    const filtroDigital = p.getByRole("button", { name: "Internet e IA", exact: true });
-    await filtroDigital.click();
-    ok(await filtroDigital.getAttribute("aria-pressed") === "true" && await p.locator("#d-grid h2").allInnerTexts().then(x => x.length === 1 && x[0] === "Internet e IA"),
-       `[${w}] datos: filtro digital activo`);
-    ok(await p.locator("#d-grid").getByRole("heading", { name: "IA integrada en recursos humanos" }).isVisible(),
-       `[${w}] datos: indicador de IA visible`);
+    const temasDatos = ["IA", "Tecnología", "Deportes", "Economía", "Salud", "Ambiente", "Cultura", "Educación", "Otros"];
+    const filtrosDatos = p.locator("#d-chips");
+    const etiquetasDatos = await filtrosDatos.getByRole("button").allInnerTexts();
+    ok(etiquetasDatos.join("|") === ["Todo", ...temasDatos].join("|"), `[${w}] datos: nueve filtros en orden`);
+    ok(await p.locator("#d-grid h2").allInnerTexts().then(x => x.join("|") === temasDatos.join("|")),
+       `[${w}] datos: nueve grupos en la vista general`);
+    let totalFiltrado = 0;
+    for (const tema of temasDatos) {
+      const filtro = filtrosDatos.getByRole("button", { name: tema, exact: true });
+      await filtro.click();
+      const fichas = p.locator("#d-grid .dc");
+      const cantidad = await fichas.count();
+      totalFiltrado += cantidad;
+      ok(await filtro.getAttribute("aria-pressed") === "true" &&
+         await p.locator("#d-grid h2").allInnerTexts().then(x => x.length === 1 && x[0] === tema),
+         `[${w}] datos: filtro ${tema} activo`);
+      ok(cantidad > 0 && cantidad === await fichas.locator('.dc-m a[href^="https://"]').count(),
+         `[${w}] datos: indicadores con fuente en ${tema}`);
+      if (tema === "IA") {
+        ok(await fichas.getByRole("heading", { name: "IA integrada en recursos humanos" }).isVisible() &&
+           await fichas.getByRole("heading", { name: "Hogares con conexión a internet" }).count() === 0,
+           `[${w}] datos: IA separada de Tecnología`);
+      }
+    }
+    ok(totalFiltrado === nd, `[${w}] datos: cada indicador pertenece a un solo tema`);
+    await filtrosDatos.getByRole("button", { name: "Todo", exact: true }).click();
 
     // El Niño
     await p.goto(base + "#/s/nino"); await p.waitForTimeout(300);
