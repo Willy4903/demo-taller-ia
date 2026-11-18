@@ -32,6 +32,7 @@ jobs:
       TG_SESSION: ${{ secrets.TG_SESSION }}
       TG_GRUPO: ${{ secrets.TG_GRUPO }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      MEDIOS_MODELO: claude-haiku-5-5
     steps:
       - uses: actions/checkout@v4
         with:

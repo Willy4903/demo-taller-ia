@@ -49,7 +49,7 @@ def main():
 
     clave = None if a.sin_ia else os.environ.get("ANTHROPIC_API_KEY")
     if clave:
-        modelo = os.environ.get("MEDIOS_MODELO", "claude-sonnet-5-5")
+        modelo = os.environ.get("MEDIOS_MODELO", "claude-haiku-5-5")
         for d in estado["dias"]:
             if d["fecha"] in tocados:
                 s = ma.sintetizar(d, clave, modelo)

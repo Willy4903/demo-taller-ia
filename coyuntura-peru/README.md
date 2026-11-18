@@ -49,7 +49,7 @@ Qué se guarda y qué no: solo titulares breves (máximo 30 por diario, con pág
 1. En https://my.telegram.org entra a «API development tools» y crea una app: obtienes `api_id` y `api_hash`.
 2. En tu computadora: `pip install -r coyuntura-peru/scripts/requirements-medios.txt` y `python coyuntura-peru/scripts/medios_telegram.py login`. Pide tu teléfono y el código que llega a Telegram, e imprime la cadena de sesión.
 3. Con `TG_API_ID`, `TG_API_HASH` y `TG_SESSION` definidos en tu terminal, `python coyuntura-peru/scripts/medios_telegram.py listar` muestra los grupos y su id.
-4. En GitHub, Settings > Secrets and variables > Actions, crea: `TG_API_ID`, `TG_API_HASH`, `TG_SESSION`, `TG_GRUPO` (id o nombre exacto del grupo) y, si quieres la síntesis redactada con IA, `ANTHROPIC_API_KEY` (opcional; el modelo se cambia con la variable `MEDIOS_MODELO`).
+4. En GitHub, Settings > Secrets and variables > Actions, crea: `TG_API_ID`, `TG_API_HASH`, `TG_SESSION`, `TG_GRUPO` (id o nombre exacto del grupo) y, si quieres la síntesis redactada con IA, `ANTHROPIC_API_KEY` (opcional; el modelo es `claude-haiku-5-5` y se cambia con la variable `MEDIOS_MODELO`).
 5. Lanza el flujo a mano desde Actions con «Run workflow» (parámetro `dias` para traer más historia).
 
 Seguridad: `TG_SESSION` da acceso completo a esa cuenta de Telegram. Solo va como secreto del repositorio, nunca en archivos. Considera usar una cuenta secundaria que sea miembro del grupo. Mientras falten los secretos, el flujo termina sin error y lo explica en su resumen; la web muestra «Todavía no hay lectura de prensa».

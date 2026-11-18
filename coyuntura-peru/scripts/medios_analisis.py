@@ -494,7 +494,7 @@ def validar_estado(e):
 # ───────────────────────── síntesis opcional con IA ─────────────────────────
 
 
-def sintetizar(dia, clave, modelo="claude-sonnet-5-5", llamar=None):
+def sintetizar(dia, clave, modelo="claude-haiku-5-5", llamar=None):
     """Genera una síntesis breve a partir SOLO de los titulares y las estadísticas. Opcional: requiere ANTHROPIC_API_KEY."""
     if not clave and not llamar:
         return None
