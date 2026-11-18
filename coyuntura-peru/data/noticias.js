@@ -1,16 +1,16 @@
-/* Generado por scripts/actualizar_noticias.py (GitHub Actions, 7 veces al día, hora de Lima). No editar a mano. */
+/* Generado por scripts/actualizar_noticias.py (GitHub Actions, 8 veces al día, hora de Lima). No editar a mano. */
 window.NOTICIAS = {
- "generado": "2026-11-18T14:04:40Z",
+ "generado": "2026-11-18T14:06:45Z",
  "modo": "automatico",
  "estado_fuentes": {
   "IDL-Reporteros": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.idl-reporteros.pe/feed/",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 10,
    "ultima_nota": "2026-11-18T13:18:44Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "OjoPúblico": {
    "ok": true,
@@ -18,10 +18,10 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:ojo-publico.com+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 7,
    "ultima_nota": "2026-11-15T06:30:07Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "Convoca": {
    "ok": true,
@@ -29,10 +29,10 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:convoca.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 7,
    "ultima_nota": "2026-11-18T03:51:01Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "Hildebrandt en sus trece": {
    "ok": true,
@@ -40,72 +40,73 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:hildebrandtensustrece.com+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 15,
    "ultima_nota": "2026-11-18T03:44:37Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "Wayka": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://wayka.pe/feed/",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 5,
    "ultima_nota": "2026-11-17T21:48:41Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "La Mula": {
-   "ok": false,
-   "procedencia": "sin datos",
-   "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
-   "comprobado": "2026-11-18T14:04:40Z",
-   "ultimo_ok": "2026-11-18T13:58:20Z",
-   "ultima_nota": "2026-11-18T00:58:54Z"
+   "ok": true,
+   "procedencia": "directa",
+   "url": "https://www.lamula.pe/feed/",
+   "comprobado": "2026-11-18T14:06:45Z",
+   "n": 15,
+   "ultima_nota": "2026-11-18T00:58:54Z",
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "Salud con Lupa": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://saludconlupa.com/feed/",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 15,
    "ultima_nota": "2026-11-16T16:00:00Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "Mongabay Latam": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://es.mongabay.com/feed/",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 15,
    "ultima_nota": "2026-11-18T01:36:56Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "Caretas": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://caretas.pe/feed/",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 15,
    "ultima_nota": "2026-11-18T13:42:31Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "El Comercio": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 15,
    "ultima_nota": "2026-11-18T13:56:03Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "Gestión": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://gestion.pe/arc/outboundfeeds/rss/?outputType=xml",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 15,
    "ultima_nota": "2026-11-18T14:00:35Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "La República": {
    "ok": true,
@@ -113,28 +114,28 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:larepublica.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 15,
    "ultima_nota": "2026-11-17T23:32:15Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "RPP": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://rpp.pe/feed",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 15,
    "ultima_nota": "2026-11-18T13:59:25Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "Infobae Perú": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/category/peru/",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 15,
-   "ultima_nota": "2026-11-18T13:58:26Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultima_nota": "2026-11-18T14:02:59Z",
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "Expreso": {
    "ok": true,
@@ -142,121 +143,268 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:expreso.com.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 403: Forbidden",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 15,
    "ultima_nota": "2026-11-18T13:25:26Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "El Búho": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://elbuho.pe/feed/",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 15,
    "ultima_nota": "2026-11-17T23:16:13Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "BBC Mundo": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://feeds.bbci.co.uk/mundo/rss.xml",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 15,
    "ultima_nota": "2026-11-18T13:19:32Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "DW Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://rss.dw.com/xml/rss-sp-all",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 15,
    "ultima_nota": "2026-11-18T12:34:00Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "El País América": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 15,
    "ultima_nota": "2026-11-18T13:53:53Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "France 24 Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.france24.com/es/rss",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 15,
    "ultima_nota": "2026-11-18T13:57:10Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "ONU Noticias": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.un.org/feed/subscribe/es/news/all/rss.xml",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 15,
    "ultima_nota": "2026-11-17T12:00:00Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "The New York Times en Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=site:nytimes.com/es+when:7d&hl=es-419&gl=US&ceid=US:es-419",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 15,
    "ultima_nota": "2026-11-17T01:04:47Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "The Guardian": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.theguardian.com/world/rss",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 15,
    "ultima_nota": "2026-11-18T13:54:35Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "The New Yorker": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.newyorker.com/feed/everything",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 15,
    "ultima_nota": "2026-11-18T12:00:00Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "Google Noticias · IA en el Perú": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22inteligencia+artificial%22+Per%C3%BA+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 15,
    "ultima_nota": "2026-11-18T12:53:16Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "Google Noticias · El Niño": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22Fen%C3%B3meno+El+Ni%C3%B1o%22+OR+%22Ni%C3%B1o+costero%22+ENFEN+when:14d&hl=es-419&gl=PE&ceid=PE:es-419",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 15,
    "ultima_nota": "2026-11-18T04:10:38Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   },
   "Google Noticias · IA en el mundo": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22inteligencia+artificial%22+(OpenAI+OR+Anthropic+OR+Google+OR+regulaci%C3%B3n+OR+NVIDIA)+when:7d&hl=es-419&gl=US&ceid=US:es-419",
-   "comprobado": "2026-11-18T14:04:40Z",
+   "comprobado": "2026-11-18T14:06:45Z",
    "n": 15,
    "ultima_nota": "2026-11-18T13:04:08Z",
-   "ultimo_ok": "2026-11-18T14:04:40Z"
+   "ultimo_ok": "2026-11-18T14:06:45Z"
   }
  },
  "items": [
+  {
+   "id": "739bbd253f",
+   "sector": "economia",
+   "titulo": "Ricardo Gareca cerca de volver a dirigir tras un año de inactividad: su acuerdo en Peñarol y la condición para que se concrete",
+   "resumen": "Tras su etapa como youtuber y estar alejado de los bancos, el ‘Tigre’ tendría una nueva oportunidad para ser entrenador de uno de los equipos más grandes del continente",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/deportes/2026/11/18/ricardo-gareca-cerca-de-volver-a-dirigir-tras-un-ano-de-inactividad-su-acuerdo-en-penarol-y-la-condicion-para-que-se-concrete/",
+   "fecha": "2026-11-18T14:02:59Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/C2RH3G27INCI7PKACKK2CRVKRM.jpg?auth=fc7bb84cba5418bf20f8794f5c7df5fe922ee928a44b0971291bd5ea0e4fab4e&smart=true&width=1201&height=629",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "Tras su etapa como youtuber y estar alejado de los bancos, el ‘Tigre’ tendría una nueva oportunidad para ser entrenador de uno de los equipos más grandes del continente El 'Tigre' volvería a dirigir después de más de un año de inactividad.",
+   "puntos": [
+    "Tras su etapa como youtuber y estar alejado de los bancos, el ‘Tigre’ tendría una nueva oportunidad para ser entrenador de uno de los equipos más grandes del continente",
+    "El 'Tigre' volvería a dirigir después de más de un año de inactividad.",
+    "EST Guardar Ricardo Gareca tendría la posibilidad de volver a dirigir tras más de un año de inactividad."
+   ],
+   "datos": [
+    {
+     "v": "12 de diciembre",
+     "t": "fecha",
+     "c": "…cinco candidatos en las elecciones programadas para el 12 de diciembre.."
+    }
+   ]
+  },
+  {
+   "id": "a68c92648d",
+   "sector": "coyuntura",
+   "titulo": "La Tinka del 15 de noviembre: estos son los números ganadores y resultados del ‘Sí o Sí’",
+   "resumen": "El sorteo dominical puso en juego S/ 10,703,522. Descubre si tu boleto acertó la jugada principal, la Boliyapa o la bolilla ganadora del ‘Sí o Sí’",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/16/la-tinka-del-15-de-noviembre-estos-son-los-numeros-ganadores-y-resultados-del-si-o-si/",
+   "fecha": "2026-11-18T14:02:26Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/2A2ZHYNP4ZCLBCPLBR6G536QHU.png?auth=0d7c903542f63512bd4af84c708c61d2591076d857e3faea1b279416f098ab1b&smart=true&width=1536&height=1024",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "El sorteo dominical puso en juego S/ 10,703,522. Descubre si tu boleto acertó la jugada principal, la Boliyapa o la bolilla ganadora del ‘Sí o Sí’",
+   "puntos": [
+    "El sorteo dominical puso en juego S/ 10,703,522.",
+    "Descubre si tu boleto acertó la jugada principal, la Boliyapa o la bolilla ganadora del ‘Sí o Sí’",
+    "Revisa las seis bolillas ganadoras de la noche, el número de la Boliyapa que dejó un premio de S/ 100 mil y la bolilla del ‘Sí o Sí’ que benefició a cuatro jugadores."
+   ],
+   "datos": [
+    {
+     "v": "S/ 10,703",
+     "t": "monto",
+     "c": "El sorteo dominical puso en juego S/ 10,703,522."
+    },
+    {
+     "v": "S/ 100 mil",
+     "t": "monto",
+     "c": "…la noche, el número de la Boliyapa que dejó un premio de S/ 100 mil y la bolilla del ‘Sí o Sí’ que benefició a cuatro…"
+    },
+    {
+     "v": "S/ 100,000",
+     "t": "monto",
+     "c": "…5 aciertos más la boliyapa (quien se llevó un premio de S/ 100,000), además de 8 boletos premiados con 5 aciertos simples.."
+    },
+    {
+     "v": "15 de noviembre",
+     "t": "fecha",
+     "c": "La Tinka del 15 de noviembre: estos son los números ganadores y resultados del ‘Sí o Sí’."
+    }
+   ]
+  },
+  {
+   "id": "7895b9c8b4",
+   "sector": "deporte",
+   "titulo": "“Karla Ortiz nunca fue capitana”: Maricarmen Guerrero habla de la interna de Universitario en Liga Peruana de Vóley",
+   "resumen": "La atacante peruana fue vinculada a un supuesto altercado con Mirian Patiño en el vestuario de la ‘U’, después de la derrota ante Regatas Lima",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/deportes/2026/11/17/karla-ortiz-nunca-fue-capitana-maricarmen-guerrero-habla-de-la-interna-de-universitario-en-liga-peruana-de-voley/",
+   "fecha": "2026-11-18T14:02:22Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/TX6WFY2W7RFOLDQKRFD5LPV4TM.jpg?auth=6e73da2f19cc3d28d605d161420797b3ba261ad4b89dbce812ed94dc4dc3ee1f&smart=true&width=1201&height=629",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "La atacante peruana fue vinculada a un supuesto altercado con Mirian Patiño en el vestuario de la ‘U’, después de la derrota ante Regatas Lima Maricarmen Guerrero habla de la interna de Universitario en Liga Peruana de Vóley y aclara que Karla Ortiz nunca fue la capitana del equipo.",
+   "puntos": [
+    "La atacante peruana fue vinculada a un supuesto altercado con Mirian Patiño en el vestuario de la ‘U’, después de la derrota ante Regatas Lima",
+    "Maricarmen Guerrero habla de la interna de Universitario en Liga Peruana de Vóley y aclara que Karla Ortiz nunca fue la capitana del equipo.",
+    "EST Guardar Universitario de Deportes atravesó una jornada negativa el domingo."
+   ],
+   "datos": [
+    {
+     "v": "3-0",
+     "t": "marcador",
+     "c": "El equipo de Paco Hervás perdió 3-0 frente a Regatas Lima y dejó atrás su condición de invicto en la Liga Peruana de Vóley 2026/2027 ."
+    }
+   ]
+  },
+  {
+   "id": "87d5c43efc",
+   "sector": "coyuntura",
+   "titulo": "Cardenales que eligieron al papa León XIV en el cónclave desconocían que tenía nacionalidad peruana",
+   "resumen": "El arzobispo de Lima, cardenal Carlos Castillo, reveló que el perfil del pontífice tuvo una intervención breve durante las reuniones previas al cónclave",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/16/cardenales-que-eligieron-al-papa-leon-xiv-en-el-conclave-desconocian-que-tenia-nacionalidad-peruana/",
+   "fecha": "2026-11-18T14:01:08Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/RJMDABAVARFIXLEBAEDSJKRUYE.jpg?auth=0826b2cd1d02c004c1db40b7ffca11c87fcf48693617755b80c51fb6ba0dd026&smart=true&width=1920&height=1080",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El arzobispo de Lima, cardenal Carlos Castillo, reveló que el perfil del pontífice tuvo una intervención breve durante las reuniones previas al cónclave EST Guardar El papa León XIV concluyó el lunes su histórica gira por Perú , el país donde en varias ocasiones declaró sentirse en casa y al que calificó como su patria.",
+   "puntos": [
+    "El arzobispo de Lima, cardenal Carlos Castillo, reveló que el perfil del pontífice tuvo una intervención breve durante las reuniones previas al cónclave",
+    "EST Guardar El papa León XIV concluyó el lunes su histórica gira por Perú , el país donde en varias ocasiones declaró sentirse en casa y al que calificó como su patria.",
+    "Durante su visita, que se extendió del 11 al 16 de noviembre, el pontífice reiteró este vínculo en distintos discursos, incluido el que pronunció a su llegada a Lima , donde afirmó “puedo decirles, con profunda gratitud, que regreso también a mi patria”."
+   ],
+   "datos": [
+    {
+     "v": "16 de noviembre",
+     "t": "fecha",
+     "c": "Durante su visita, que se extendió del 11 al 16 de noviembre, el pontífice reiteró este vínculo en distintos discursos…"
+    }
+   ]
+  },
   {
    "id": "73ccd3ae9a",
    "sector": "economia",
@@ -287,6 +435,39 @@ window.NOTICIAS = {
      "v": "US$ 20,000",
      "t": "monto",
      "c": "…del robot D5, cuyo precio asciende al menos los US$ 20,000, figuran las labores de detección e inspección en fábricas…"
+    }
+   ]
+  },
+  {
+   "id": "661107e6b2",
+   "sector": "coyuntura",
+   "titulo": "Bono ONP de S/200 confirmado: Gobierno hará pago en diciembre 2026 para estos pensionistas",
+   "resumen": "El bono extraordinario ONP se pagará en diciembre, junto a las pensiones de los jubilados. Pero solo irá para el régimen general",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/18/gobierno-confirma-pago-de-bono-onp-de-s200-en-diciembre-para-que-pensionistas/",
+   "fecha": "2026-11-18T14:00:31Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/XTRTBY3PMJBJNHL5RKFLWENQCY.jpg?auth=ffc0964ff582610549d826a4dbb9265ab5e5110e6082a6dec2549f3e126e72bd&smart=true&width=1920&height=1080",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "El bono extraordinario ONP se pagará en diciembre, junto a las pensiones de los jubilados. Pero solo irá para el régimen general Por Edwin Montesinos Nolasco",
+   "puntos": [
+    "El bono extraordinario ONP se pagará en diciembre, junto a las pensiones de los jubilados.",
+    "Pero solo irá para el régimen general Por Edwin Montesinos Nolasco",
+    "Los jubilados de la ONP recibirán un bono de S/200 en sus pensiones, ha decretado el Gobierno. - Créditos Andina 18 Nov, 2026 09:00 a. m."
+   ],
+   "datos": [
+    {
+     "v": "S/200",
+     "t": "monto",
+     "c": "Bono ONP de S/200 confirmado: Gobierno hará pago en diciembre 2026 para estos pensionistas."
     }
    ]
   },
@@ -1091,39 +1272,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "739bbd253f",
-   "sector": "economia",
-   "titulo": "Ricardo Gareca cerca de volver a dirigir tras un año de inactividad: su acuerdo en Peñarol y la condición para que se concrete",
-   "resumen": "Tras su etapa como youtuber y estar alejado de los bancos, el ‘Tigre’ tendría una nueva oportunidad para ser entrenador de uno de los equipos más grandes del continente",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/deportes/2026/11/18/ricardo-gareca-cerca-de-volver-a-dirigir-tras-un-ano-de-inactividad-su-acuerdo-en-penarol-y-la-condicion-para-que-se-concrete/",
-   "fecha": "2026-11-18T13:50:48Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/C2RH3G27INCI7PKACKK2CRVKRM.jpg?auth=fc7bb84cba5418bf20f8794f5c7df5fe922ee928a44b0971291bd5ea0e4fab4e&smart=true&width=1201&height=629",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "Tras su etapa como youtuber y estar alejado de los bancos, el ‘Tigre’ tendría una nueva oportunidad para ser entrenador de uno de los equipos más grandes del continente El 'Tigre' volvería a dirigir después de más de un año de inactividad.",
-   "puntos": [
-    "Tras su etapa como youtuber y estar alejado de los bancos, el ‘Tigre’ tendría una nueva oportunidad para ser entrenador de uno de los equipos más grandes del continente",
-    "El 'Tigre' volvería a dirigir después de más de un año de inactividad.",
-    "EST Guardar Ricardo Gareca tendría la posibilidad de volver a dirigir tras más de un año de inactividad."
-   ],
-   "datos": [
-    {
-     "v": "12 de diciembre",
-     "t": "fecha",
-     "c": "…cinco candidatos en las elecciones programadas para el 12 de diciembre.."
-    }
-   ]
-  },
-  {
    "id": "7d5e58b7e1",
    "sector": "economia",
    "titulo": "Precio del dólar en Perú: cotización en compra y venta del miércoles 18 de noviembre",
@@ -1516,44 +1664,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "bb2ef7a41b",
-   "sector": "coyuntura",
-   "titulo": "Hermanos Yaipén posterga concierto de aniversario tras la descompensación sufrida por Walter Yaipén",
-   "resumen": "La orquesta suspendió la fiesta prevista para el 21 de noviembre en El Huaralino y anunciará una nueva fecha cuando su fundador pueda recuperarse y volver a compartir escenario.",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/17/hermanos-yaipen-posterga-concierto-de-aniversario-tras-la-descompensacion-sufrida-por-walter-yaipen/",
-   "fecha": "2026-11-18T13:43:19Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/B7FN7AHZJJBJJKIOX6H7DI36UA.png?auth=c4e98d0ba3f77ef00b4121f05524f41a0aa0a4d2646a66b5aa196422a974c559&smart=true&width=1280&height=720",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "La orquesta suspendió la fiesta prevista para el 21 de noviembre en El Huaralino y anunciará una nueva fecha cuando su fundador pueda recuperarse y volver a compartir escenario. La agrupación Hermanos Yaipén anunció la postergación de su concierto de vigésimo sexto aniversario debido al estado de salud de su cofundador Walter Yaipén.",
-   "puntos": [
-    "La orquesta suspendió la fiesta prevista para el 21 de noviembre en El Huaralino y anunciará una nueva fecha cuando su fundador pueda recuperarse y volver a compartir escenario.",
-    "La agrupación Hermanos Yaipén anunció la postergación de su concierto de vigésimo sexto aniversario debido al estado de salud de su cofundador Walter Yaipén.",
-    "EST Guardar Durante 26 años, los Hermanos Yaipén construyeron una de las trayectorias más sólidas de la cumbia peruana, con giras internacionales, decenas de temas convertidos en himnos populares y una base de seguidores que crece generación tras generación."
-   ],
-   "datos": [
-    {
-     "v": "26 años",
-     "t": "cantidad",
-     "c": "EST Guardar Durante 26 años, los Hermanos Yaipén construyeron una de las trayectorias…"
-    },
-    {
-     "v": "21 de noviembre",
-     "t": "fecha",
-     "c": "La orquesta suspendió la fiesta prevista para el 21 de noviembre en El Huaralino y anunciará una nueva fecha cuando su…"
-    }
-   ]
-  },
-  {
    "id": "25f4315d41",
    "sector": "economia",
    "titulo": "El 34% de empresarios peruanos teme quebrar: los errores que amenazan su continuidad",
@@ -1746,87 +1856,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "020f13e518",
-   "sector": "coyuntura",
-   "titulo": "Everardo Zapata, creador de Coquito, recibirá Medalla de Honor de la Cultura a sus 100 años de edad",
-   "resumen": "El libro que ayudó a leer a varias generaciones llegó a distintos países. Su creador recibirá una distinción por su trayectoria de más de siete décadas como educador, autor y editor",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/18/everardo-zapata-creador-de-coquito-recibira-medalla-de-honor-de-la-cultura-a-sus-100-anos-de-edad/",
-   "fecha": "2026-11-18T13:37:07Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/UX5D7IHWXBERRMEUOI3YNDAV5I.jpg?auth=518fafe5f38f59c3b388291471b75d27b1d96d7bc966c2ce6e597ac9fd9ee96d&smart=true&width=1920&height=1080",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "El libro que ayudó a leer a varias generaciones llegó a distintos países. Su creador recibirá una distinción por su trayectoria de más de siete décadas como educador, autor y editor",
-   "puntos": [
-    "El libro que ayudó a leer a varias generaciones llegó a distintos países.",
-    "Su creador recibirá una distinción por su trayectoria de más de siete décadas como educador, autor y editor",
-    "“Coquito” ya tiene una estatua de dos metros: Everardo Zapata fue homenajeado en Arequipa 18 Nov, 2026 08:37 a. m."
-   ],
-   "datos": [
-    {
-     "v": "100 años",
-     "t": "cantidad",
-     "c": "Everardo Zapata, creador de Coquito, recibirá Medalla de Honor de la Cultura a sus 100 años de edad."
-    },
-    {
-     "v": "18 de noviembre",
-     "t": "fecha",
-     "c": "…publicada en el diario oficial El Peruano el 18 de noviembre."
-    }
-   ]
-  },
-  {
-   "id": "1450fc48f6",
-   "sector": "economia",
-   "titulo": "¿Cómo juzgar una nueva emisión de deuda?",
-   "resumen": "La colocación soberana superó en 120 puntos básicos al referente de Estados Unidos, un diferencial atribuido a la solvencia fiscal peruana y a una estrategia de prefinanciamiento en condiciones favorables de mercado",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/18/como-juzgar-una-nueva-emision-de-deuda/",
-   "fecha": "2026-11-18T13:36:45Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/Z5UAVKIOUFGTBOV7XVNUFH7IVQ.jpg?auth=3c225f8de0a0221cf43f5d24b260e32a217c966ad6b8dfc08d0ec19dfd20b05f&smart=true&width=5000&height=3333",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "contexto_peru_resumen"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "La colocación soberana superó en 120 puntos básicos al referente de Estados Unidos, un diferencial atribuido a la solvencia fiscal peruana y a una estrategia de prefinanciamiento en condiciones favorables de mercado Fotografía de billetes de dólar, en una fotografía de archivo.",
-   "puntos": [
-    "La colocación soberana superó en 120 puntos básicos al referente de Estados Unidos, un diferencial atribuido a la solvencia fiscal peruana y a una estrategia de prefinanciamiento en condiciones favorables de mercado",
-    "Fotografía de billetes de dólar, en una fotografía de archivo.",
-    "EFE/Rayner Peña 18 Nov, 2026 08:36 a. m."
-   ],
-   "datos": [
-    {
-     "v": "4.000 millones de dólares",
-     "t": "escala",
-     "c": "…como la reapertura del Bono Global 2031, por un total de 4.000 millones de dólares."
-    },
-    {
-     "v": "120 puntos",
-     "t": "cantidad",
-     "c": "La colocación soberana superó en 120 puntos básicos al referente de Estados Unidos, un diferencial…"
-    },
-    {
-     "v": "30 años",
-     "t": "cantidad",
-     "c": "El gobierno escogió un plazo largo 12 y 30 años, lo que reduce el riesgo de refinanciamiento ."
-    }
-   ]
-  },
-  {
    "id": "a06a30e47a",
    "sector": "deporte",
    "titulo": "Eliminatorias Sudamericanas 2030: ¿Será con formato de Liga de Naciones y beneficiará a Perú?",
@@ -1996,7 +2025,7 @@ window.NOTICIAS = {
    "procedencia": "agregador",
    "via": "Google Noticias",
    "url_medio": "https://www.expreso.com.pe/expreso-tv/%F0%9F%94%B4-renovacion-popular-presenta-denuncia-constitucional-contra-roberto-burneo/",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "d04a838eba",
@@ -2075,8 +2104,8 @@ window.NOTICIAS = {
      "c": "China entregará US$ 22 millones al Perú para construir centro tecnológico contra la inseguridad ciudadana."
     }
    ],
-   "imagen_intentos": 1,
-   "url_medio": "https://www.expreso.com.pe/politica/china-entregara-us-22-millones-al-peru-para-construir-centro-tecnologico-contra-la-inseguridad-ciudadana-shenzhen-noticia/1332885/"
+   "url_medio": "https://www.expreso.com.pe/politica/china-entregara-us-22-millones-al-peru-para-construir-centro-tecnologico-contra-la-inseguridad-ciudadana-shenzhen-noticia/1332885/",
+   "imagen_intentos": 2
   },
   {
    "id": "d8bc4cd7de",
@@ -2215,49 +2244,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "bc16eee3ed",
-   "sector": "coyuntura",
-   "titulo": "Exportadora Cultivemos cambia estrategia de envíos de mango ante riesgo de lluvias en Piura",
-   "resumen": "Cultivemos descarta exportar mango por vía marítima en la campaña 2026/2027 ante las lluvias en Piura y prioriza los envíos aéreos.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/economia/empresas/exportadora-peruana-de-mango-modifica-sus-operaciones-ante-riesgo-de-perdidas-por-lluvias-en-piura-noticia/",
-   "fecha": "2026-11-18T13:12:01Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/TFX3637ENNEQBLR2L3GQQ6ZGHM.png?auth=169256275a9a67526e8ace885e9632efc02adb8b192f41361b7e3c8c921d67d2&smart=true&width=1200&height=675",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Cultivemos descarta exportar mango por vía marítima en la campaña 2026/2027 ante las lluvias en Piura y prioriza los envíos aéreos. La campaña de mango peruano 2026/2027 enfrenta un escenario complejo por las condiciones climáticas en las principales zonas productoras.",
-   "puntos": [
-    "Cultivemos descarta exportar mango por vía marítima en la campaña 2026/2027 ante las lluvias en Piura y prioriza los envíos aéreos.",
-    "La campaña de mango peruano 2026/2027 enfrenta un escenario complejo por las condiciones climáticas en las principales zonas productoras.",
-    "Las altas temperaturas durante el desarrollo del fruto y las lluvias fuera de temporada elevan el riesgo de enfermedades que podrían afectar la calidad de la fruta y reducir el volumen exportable."
-   ],
-   "datos": [
-    {
-     "v": "85%",
-     "t": "porcentaje",
-     "c": "Además, al 16 de noviembre, entre el 85% y el 90% de la fruta todavía estaba pendiente de cosecha.."
-    },
-    {
-     "v": "90%",
-     "t": "porcentaje",
-     "c": "Además, al 16 de noviembre, entre el 85% y el 90% de la fruta todavía estaba pendiente de cosecha.."
-    },
-    {
-     "v": "16 de noviembre",
-     "t": "fecha",
-     "c": "Además, al 16 de noviembre, entre el 85% y el 90% de la fruta todavía estaba pendiente de cosecha.."
-    }
-   ]
-  },
-  {
    "id": "dda8d38e09",
    "sector": "politica",
    "titulo": "\"Tiene algo especial\": Jeff Bezos revela por qué eligieron a Robert Pattinson como James Bond",
@@ -2393,13 +2379,13 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "url_medio": "https://es.qz.com/informe-de-la-comisin-sobre-los-chips-de-ia-nvidia-en-china-y-el-ejrcito-de-liberacin-popular",
    "sintesis": "La Comisión de Revisión Económica y de Seguridad de EE. UU. y China dice que las empresas chinas también llegaron a los chips de Nvidia a través de centros de datos en Malasia.",
    "puntos": [
     "La Comisión de Revisión Económica y de Seguridad de EE.",
     "UU. y China dice que las empresas chinas también llegaron a los chips de Nvidia a través de centros de datos en Malasia.",
     "Menu Noticias de Negocios Aerolíneas Automóviles Alimentación Farmacéuticas Política y gobierno Comercio minorista y e-commerce Espacio y aeroespacial Resultados financieros Menu Tecnología I.A."
-   ]
+   ],
+   "url_medio": "https://es.qz.com/informe-de-la-comisin-sobre-los-chips-de-ia-nvidia-en-china-y-el-ejrcito-de-liberacin-popular"
   },
   {
    "id": "45ff1cf31f",
@@ -2935,7 +2921,7 @@ window.NOTICIAS = {
    "ambito": "pendiente",
    "procedencia": "directa",
    "url_medio": "https://mx.advfn.com/noticias-de-mercado/article/10318/opi-de-anthropic-genera-gran-interes-en-wall-street-pese-a-las-caidas-de-las-acciones-de-inteligencia-artificial",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "fe7908e262",
@@ -3272,7 +3258,7 @@ window.NOTICIAS = {
    "fecha": "2026-11-18T10:16:00Z",
    "tipo": "internacional",
    "genero": "noticia",
-   "imagen": null,
+   "imagen": "https://imagenes.elpais.com/resizer/v2/4J4JXHUQXVHJHFLLM46U3U52RU.png?auth=26d95177dd161171e81c9f015b0150553c3db09b5930262958d23b8c542bd532&width=1200",
    "geografia": {
     "version": 1,
     "ambito": "pendiente",
@@ -3292,8 +3278,7 @@ window.NOTICIAS = {
      "t": "cantidad",
      "c": "El desfase de más de 24 horas en las comunicaciones complica mantener el seguimiento tras 49 años de misión"
     }
-   ],
-   "imagen_intentos": 3
+   ]
   },
   {
    "id": "389c80e569",
@@ -3649,7 +3634,7 @@ window.NOTICIAS = {
    "procedencia": "agregador",
    "via": "Google Noticias",
    "url_medio": "https://www.expreso.com.pe/opinion/la-concepcion-cristiana-de-la-economia/",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "d000244f28",
@@ -4955,6 +4940,59 @@ window.NOTICIAS = {
    ]
   },
   {
+   "id": "b275948c52",
+   "sector": "politica",
+   "titulo": "El mundo gira a la izquierda: elecciones y movilizaciones.",
+   "resumen": "",
+   "fuente": "La Mula",
+   "url": "https://contraelcapital.lamula.pe/2026/11/17/el-mundo-gira-a-la-izquierda-elecciones-y-movilizaciones/losanticapitalistas/",
+   "fecha": "2026-11-18T00:58:54Z",
+   "tipo": "independiente",
+   "genero": "noticia",
+   "imagen": "https://lamula.pe/media/uploads/t/9db5ab687e246b276f5663d7a7a8c335.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "Los trabajadores y los pueblos están ganando poder. La movilizaciones en España, Francia, Colombia, son cada vez más fuertes.",
+   "puntos": [
+    "Los trabajadores y los pueblos están ganando poder.",
+    "La movilizaciones en España, Francia, Colombia, son cada vez más fuertes.",
+    "Está surgiendo un nuevo sujeto socio-político con conciencia de fuerza colectiva capaz de desafiar a todos los gobiernos."
+   ],
+   "datos": [
+    {
+     "v": "53,01%",
+     "t": "porcentaje",
+     "c": "…ganó las elecciones parlamentarias anticipadas con 53,01% de los votos, frente a 38,98% de la lista oficialista."
+    },
+    {
+     "v": "38,98%",
+     "t": "porcentaje",
+     "c": "…anticipadas con 53,01% de los votos, frente a 38,98% de la lista oficialista."
+    },
+    {
+     "v": "14 años",
+     "t": "cantidad",
+     "c": "Aleksandar Vučić y el Partido Progresista habían detentado el poder por 14 años."
+    },
+    {
+     "v": "16 personas",
+     "t": "cantidad",
+     "c": "…del techo de una estación de tren causó la muerte de 16 personas que esperaban frente al edificio."
+    },
+    {
+     "v": "25 de octubre",
+     "t": "fecha",
+     "c": "El 25 de octubre la llamada Lista de Estudiantes ganó las elecciones…"
+    }
+   ]
+  },
+  {
    "id": "b22d2c23c5",
    "sector": "deporte",
    "titulo": "San Martín vs Olva Latino: día, hora y dónde ver partido por fecha 6 de fase 1 de la Liga Peruana de Vóley 2026/27",
@@ -5026,6 +5064,44 @@ window.NOTICIAS = {
    ]
   },
   {
+   "id": "b2140ce3b2",
+   "sector": "salud",
+   "titulo": "Nueve años de la ley de cannabis para uso medicinal en Perú: el acceso sigue siendo una deuda pendiente",
+   "resumen": "A nueve años de la Ley 30681, cerca de dos tercios de los más de 55,000 pacientes registrados no acceden al cannabis mediante establecimientos autorizados. La paradoja es que las asociaciones de pacientes que impulsaron su le",
+   "fuente": "La Mula",
+   "url": "https://redaccion.lamula.pe/2026/11/17/nueve-anos-de-la-ley-de-cannabis-medicinal-en-peru-el-acceso-sigue-siendo-una-deuda-pendiente/jorgepaucar/",
+   "fecha": "2026-11-18T00:33:00Z",
+   "tipo": "independiente",
+   "genero": "noticia",
+   "imagen": "https://lamula.pe/media/uploads/t/01fbb863cb21c7c790b054bf871558ce.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "A nueve años de la Ley 30681, cerca de dos tercios de los más de 55,000 pacientes registrados no acceden al cannabis mediante establecimientos autorizados. La paradoja es que las asociaciones de pacientes que impulsaron su legalización siguen siendo las menos favorecidas: solo una tiene una licencia activa de producción artesanal con cultivo asociativo.",
+   "puntos": [
+    "A nueve años de la Ley 30681, cerca de dos tercios de los más de 55,000 pacientes registrados no acceden al cannabis mediante establecimientos autorizados.",
+    "La paradoja es que las asociaciones de pacientes que impulsaron su legalización siguen siendo las menos favorecidas: solo una tiene una licencia activa de producción artesanal con cultivo asociativo.",
+    "Mientras tanto, las barreras burocráticas y económicas continúan dificultando el acceso a tratamientos y la formalización de quienes hicieron posible esta ley."
+   ],
+   "datos": [
+    {
+     "v": "17 de noviembre",
+     "t": "fecha",
+     "c": "Este martes 17 de noviembre se cumplen nueve años de la publicación de la Ley N.º 30681 en el diario oficial El Peruano."
+    },
+    {
+     "v": "16 de noviembre de 2017",
+     "t": "fecha",
+     "c": "Promulgada el 16 de noviembre de 2017, fue la primera norma peruana que reconoció y reguló el…"
+    }
+   ]
+  },
+  {
    "id": "f16b42984a",
    "sector": "mundo",
    "titulo": "Gobierno de Donald Trump pide USD 50.100 millones para renovar infraestructura aérea",
@@ -5065,44 +5141,6 @@ window.NOTICIAS = {
      "v": "11 de septiembre de 2001",
      "t": "fecha",
      "c": "…fue la más larga en Estados Unidos desde los atentados del 11 de septiembre de 2001, y desató un caos en los aeropuertos que se extendió…"
-    }
-   ]
-  },
-  {
-   "id": "b2140ce3b2",
-   "sector": "salud",
-   "titulo": "Nueve años de la ley de cannabis para uso medicinal en Perú: el acceso sigue siendo una deuda pendiente",
-   "resumen": "A nueve años de la Ley 30681, cerca de dos tercios de los más de 55,000 pacientes registrados no acceden al cannabis mediante establecimientos autorizados. La paradoja es que las asociaciones de pacientes que impulsaron su le",
-   "fuente": "La Mula",
-   "url": "https://redaccion.lamula.pe/2026/11/17/nueve-anos-de-la-ley-de-cannabis-medicinal-en-peru-el-acceso-sigue-siendo-una-deuda-pendiente/jorgepaucar/",
-   "fecha": "2026-11-18T00:33:00Z",
-   "tipo": "independiente",
-   "genero": "noticia",
-   "imagen": "https://lamula.pe/media/uploads/t/01fbb863cb21c7c790b054bf871558ce.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "A nueve años de la Ley 30681, cerca de dos tercios de los más de 55,000 pacientes registrados no acceden al cannabis mediante establecimientos autorizados. La paradoja es que las asociaciones de pacientes que impulsaron su legalización siguen siendo las menos favorecidas: solo una tiene una licencia activa de producción artesanal con cultivo asociativo.",
-   "puntos": [
-    "A nueve años de la Ley 30681, cerca de dos tercios de los más de 55,000 pacientes registrados no acceden al cannabis mediante establecimientos autorizados.",
-    "La paradoja es que las asociaciones de pacientes que impulsaron su legalización siguen siendo las menos favorecidas: solo una tiene una licencia activa de producción artesanal con cultivo asociativo.",
-    "Mientras tanto, las barreras burocráticas y económicas continúan dificultando el acceso a tratamientos y la formalización de quienes hicieron posible esta ley."
-   ],
-   "datos": [
-    {
-     "v": "17 de noviembre",
-     "t": "fecha",
-     "c": "Este martes 17 de noviembre se cumplen nueve años de la publicación de la Ley N.º 30681 en el diario oficial El Peruano."
-    },
-    {
-     "v": "16 de noviembre de 2017",
-     "t": "fecha",
-     "c": "Promulgada el 16 de noviembre de 2017, fue la primera norma peruana que reconoció y reguló el…"
     }
    ]
   },
@@ -5245,35 +5283,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "caf7aff7e6",
-   "sector": "politica",
-   "titulo": "Congreso ratifica presupuesto de S/1.405 millones para sus dos cámaras en 2027",
-   "resumen": "",
-   "fuente": "La República",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNeVNXU294d0d6bFk1WTc2LVBzblJ4QmlRdzMzc2JGWEhqZGl4NGdqekdJd1VKcTV3OWFybzRzY08zaFJKZ2x5eUZ0dHYtTmR1NXR4X2I4b0ttcnBXdWx5enlQSTR6aW5VYS03VDdVOXZtSl9reFBtR25XMUQ1VlRWMS1zVUhiN2VFc01qZkpwRm1CR3NubER1ZmNldEtNZHpWd0pYeUg1N01OdG5tdXNWUWFEc1BlN0xjcGfSAb8BQVVfeXFMUGw1Z2dwLWppZjRFUlR4X3pLblB4RUkyNGpHZ28xUFB5TzM3YWJDeFAtX1RyOU9Tb1FqTU1NSFcwdC1aMjV3Q21MYW9zZjhlTWxWeXM0YXNWVkdFZGY2b0RtSkpHSXpoS1FBY2FlZXpHcWpaMzBacnNtd2NWeWFablUybFV0aWdTbERVTWJHYVAyOWpOS1YzOXRxcGkxZXZhcmFCVGp5d3NzUXU4a2gxSEZfR3Q2VDl4RVgtbldWN2M?oc=5",
-   "fecha": "2026-11-17T23:26:21Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://imgmedia.larepublica.pe/1200x735/larepublica/original/2026/11/17/6afc852d487dc75cba0850c7.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "agregador",
-   "via": "Google Noticias",
-   "datos": [
-    {
-     "v": "S/1.405 millones",
-     "t": "monto",
-     "c": "Cámara de Diputados aprueba presupuesto del Congreso de S/1.405 millones para 2027."
-    }
-   ],
-   "url_medio": "https://larepublica.pe/economia/2026/11/17/camara-de-diputados-aprueba-presupuesto-del-congreso-para-2027-hnews-657832"
-  },
-  {
    "id": "bed275b65e",
    "sector": "economia",
    "titulo": "Radicalizan el paro de transportistas: bloqueos y enfrentamientos en Huánuco, Huancavelica y Pasco (VIDEO)",
@@ -5297,59 +5306,6 @@ window.NOTICIAS = {
     "A las movilizaciones también se han sumado comerciantes y ciudadanos que cuestionan el incremento del costo de la canasta familiar, afectada por el encarecimiento de los combustibles y el gas",
     "La protesta de transportistas contra el alza del precio de los combustibles se ha radicalizado en su segundo día.",
     "En Huánuco, Huancavelica y Pasco se reportan bloqueos de carreteras que han dejado a cientos de pasajeros varados, obligados a caminar largas distancias para llegar a sus destinos."
-   ]
-  },
-  {
-   "id": "199573e9ed",
-   "sector": "nino",
-   "titulo": "Fenómeno El Niño ya impacta en Agroindustrias AIB: ¿qué pasó con sus cosechas y ventas?",
-   "resumen": "El impacto del fenómeno El Niño (FEN) ya se refleja en los resultados de Agroindustrias AIB. La compañía, que cultiva y procesa productos agrícolas en sus plantas de Chincha (Ica) y Motupe (Lambayeque), reportó menores cosechas de las previstas y cerró los primeros nueve meses…",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/economia/empresas/el-nino-golpea-a-agroindustrias-aib-menos-cosecha-y-perdida-de-s-104-millones-noticia/",
-   "fecha": "2026-11-17T23:15:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/RB5XQ6YITNBV3P3SKSCDLGEGRY.jpg?auth=932a9f2c8828b74c7180db5dedb6c164cc4c09b3fed7446b05a329537797cc4e&smart=true&width=800&height=523",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "El impacto del fenómeno El Niño (FEN) ya se refleja en los resultados de Agroindustrias AIB. La compañía, que cultiva y procesa productos agrícolas en sus plantas de Chincha (Ica) y Motupe (Lambayeque), reportó menores cosechas de las previstas y cerró los primeros nueve meses del año en pérdida.",
-   "puntos": [
-    "El impacto del fenómeno El Niño (FEN) ya se refleja en los resultados de Agroindustrias AIB.",
-    "La compañía, que cultiva y procesa productos agrícolas en sus plantas de Chincha (Ica) y Motupe (Lambayeque), reportó menores cosechas de las previstas y cerró los primeros nueve meses del año en pérdida.",
-    "En su informe de gerencia al tercer trimestre de 2026 , la empresa señaló que identificó una disminución en los volúmenes cosechados de sus cultivos frente a lo esperado, así como una menor calidad y aprovechamiento de la materia prima a nivel industrial."
-   ],
-   "datos": [
-    {
-     "v": "S/ 10.4 millones",
-     "t": "monto",
-     "c": "…a septiembre de 2026, AIB registró una pérdida neta de S/ 10.4 millones, frente a la utilidad de S/ 15.1 millones del mismo…"
-    },
-    {
-     "v": "S/ 15.1 millones",
-     "t": "monto",
-     "c": "…pérdida neta de S/ 10.4 millones, frente a la utilidad de S/ 15.1 millones del mismo periodo del 2025."
-    },
-    {
-     "v": "S/ 5.8 millones",
-     "t": "monto",
-     "c": "El resultado operativo también fue negativo, en S/ 5.8 millones.."
-    },
-    {
-     "v": "S/ 182.8 millones",
-     "t": "monto",
-     "c": "Las ventas acumuladas sumaron S/ 182.8 millones, 4.9% menos que los S/ 192.4 millones del año previo."
-    },
-    {
-     "v": "S/ 192.4 millones",
-     "t": "monto",
-     "c": "Las ventas acumuladas sumaron S/ 182.8 millones, 4.9% menos que los S/ 192.4 millones del año previo."
-    }
    ]
   },
   {
@@ -5518,32 +5474,6 @@ window.NOTICIAS = {
      "t": "cantidad",
      "c": "…Juan Pablo II consolidó esta práctica a nivel mundial: en 26 años realizó 250 viajes dentro y fuera de Italia y recorrió más…"
     }
-   ]
-  },
-  {
-   "id": "570e0cc5d8",
-   "sector": "deporte",
-   "titulo": "Cienciano da inicio a su plan de renovaciones: Cristian Souza amplió su contrato tras destacar en Liga 1 y Copa Sudamericana",
-   "resumen": "El entrañable ‘Cachito’, dueño de una habilidad singular con el balón dominado, ha llegado a un acuerdo para extender su vínculo contractual en el club ‘imperial’. Se quedará hasta el próximo año",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/deportes/2026/11/17/cienciano-da-inicio-a-su-plan-de-renovaciones-cristian-souza-amplio-su-contrato-tras-destacar-en-liga-1-y-copa-sudamericana/",
-   "fecha": "2026-11-17T22:55:03Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/2ONRJDAS3BG2DFENJQQDRBYOO4.jpg?auth=afb8bdd74ce053536a72e41ddf237dbe5d7667c89df6c9ab985e5d4b87990f72&smart=true&width=1920&height=1080",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "El entrañable ‘Cachito’, dueño de una habilidad singular con el balón dominado, ha llegado a un acuerdo para extender su vínculo contractual en el club ‘imperial’. Se quedará hasta el próximo año Por Renzo Galiano",
-   "puntos": [
-    "El entrañable ‘Cachito’, dueño de una habilidad singular con el balón dominado, ha llegado a un acuerdo para extender su vínculo contractual en el club ‘imperial’.",
-    "Se quedará hasta el próximo año Por Renzo Galiano",
-    "Cristian Souza se mantiene por una temporada más con Cienciano."
    ]
   },
   {
@@ -5721,59 +5651,6 @@ window.NOTICIAS = {
     "En una entrevista con la BBC, los cineastas israelíes Yuval Abraham y Rachel Szor, ganadores del Oscar, hablan sobre su aclamado documental \"Naza\".",
     "\"Este es el edificio que necesito bombardear.",
     "El Naza de ese ataque fue cuatro\", dice un hombre al que solo se le ve la silueta."
-   ]
-  },
-  {
-   "id": "d0be4ded45",
-   "sector": "deporte",
-   "titulo": "Víctor Rivera confía en la permanencia de ADT y se pronunció sobre el Alianza Lima vs FC Cajamarca",
-   "resumen": "Víctor Rivera se refirió a las posibilidades de FC Cajamarca de evitar el descenso y explicó por qué confía en permanecer en la Primera División.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/futbol/descentralizado/victor-rivera-confia-en-la-permanencia-de-adt-y-se-pronuncio-sobre-el-alianza-lima-vs-fc-cajamarca-noticia-1718260",
-   "fecha": "2026-11-17T22:12:03Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/17/035703_1930278.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Víctor Rivera se refirió a las posibilidades de FC Cajamarca de evitar el descenso y explicó por qué confía en permanecer en la Primera División. El entrenador de ADT, Víctor Rivera, se refirió a la definición por la permanencia en la Liga 1 2026 y al partido que disputarán Alianza Lima y FC Cajamarca por la última jornada del Torneo Clausura .",
-   "puntos": [
-    "Víctor Rivera se refirió a las posibilidades de FC Cajamarca de evitar el descenso y explicó por qué confía en permanecer en la Primera División.",
-    "El entrenador de ADT, Víctor Rivera, se refirió a la definición por la permanencia en la Liga 1 2026 y al partido que disputarán Alianza Lima y FC Cajamarca por la última jornada del Torneo Clausura .",
-    "El técnico considera que el conjunto tarmeño tiene prácticamente asegurada su continuidad en la máxima categoría del fútbol peruano."
-   ],
-   "datos": [
-    {
-     "v": "99.9%",
-     "t": "porcentaje",
-     "c": "En el fútbol puede pasar de todo, pero nosotros creemos que estamos en un 99.9% en Primera División el próximo año\", manifestó.."
-    },
-    {
-     "v": "32 puntos",
-     "t": "cantidad",
-     "c": "ADT consiguió un empate frente a Cusco FC y llegó a los 32 puntos en la tabla acumulada."
-    },
-    {
-     "v": "33 puntos",
-     "t": "cantidad",
-     "c": "…baja de la tabla acumulada, Deportivo Moquegua terminó con 33 puntos, ADT registra 32, FC Cajamarca tiene 29 y UTC quedó último…"
-    },
-    {
-     "v": "8-0",
-     "t": "marcador",
-     "c": "\"No hay que ver otros resultados porque ellos necesitarían ganar 8-0 y es contra Alianza Lima\", señaló a L1MAX.."
-    },
-    {
-     "v": "21 de noviembre",
-     "t": "fecha",
-     "c": "…entre Alianza Lima y FC Cajamarca se disputará este sábado 21 de noviembre, desde las 3:30 p. m. (hora peruana), en el estadio…"
-    }
    ]
   },
   {
@@ -6555,6 +6432,77 @@ window.NOTICIAS = {
    ]
   },
   {
+   "id": "4ca26f1933",
+   "sector": "politica",
+   "titulo": "El Quiosco Mulero: Keiko Fujimori se reúne con Xi Jinping en China y Cancillería investiga fallas en misa de León XIV",
+   "resumen": "La presidenta Keiko Fujimori sostuvo una reunión bilateral con Xi Jinping en Shenzhen, antes de la cumbre APEC 2026. Mientras tanto, la Cancillería anunció una investigación por las fallas de sonido y pantallas durante la últ",
+   "fuente": "La Mula",
+   "url": "https://redaccion.lamula.pe/2026/11/17/el-quiosco-mulero-keiko-fujimori-se-reune-con-xi-jinping-en-china-y-cancilleria-investiga-fallas-en-misa-de-leon-xiv/redaccionmulera/",
+   "fecha": "2026-11-17T17:23:51Z",
+   "tipo": "independiente",
+   "genero": "noticia",
+   "imagen": "https://lamula.pe/media/uploads/t/d506310198b61ec407f2a9f895881010.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "La presidenta Keiko Fujimori sostuvo una reunión bilateral con Xi Jinping en Shenzhen, antes de la cumbre APEC 2026. Mientras tanto, la Cancillería anunció una investigación por las fallas de sonido y pantallas durante la última misa del papa León XIV en Las Palmas, tras contrataciones por más de S/11 millones.",
+   "puntos": [
+    "La presidenta Keiko Fujimori sostuvo una reunión bilateral con Xi Jinping en Shenzhen, antes de la cumbre APEC 2026.",
+    "Mientras tanto, la Cancillería anunció una investigación por las fallas de sonido y pantallas durante la última misa del papa León XIV en Las Palmas, tras contrataciones por más de S/11 millones.",
+    "La jornada también está marcada por la disputa por la alcaldía de Lima y la propuesta del Gobierno para reactivar el Gasoducto Sur Peruano."
+   ],
+   "datos": [
+    {
+     "v": "S/11 millones",
+     "t": "monto",
+     "c": "…León XIV en Las Palmas, tras contrataciones por más de S/11 millones."
+    },
+    {
+     "v": "US$22,5 millones",
+     "t": "monto",
+     "c": "…la cita, Fujimori anunció compromisos de cooperación por US$22,5 millones, entre fondos no reembolsables y maquinaria, para atender…"
+    },
+    {
+     "v": "S/11.052.689",
+     "t": "monto",
+     "c": "Las contrataciones para los servicios audiovisuales y eléctricos ascendieron a S/11.052.689. [ Infobae ]."
+    }
+   ]
+  },
+  {
+   "id": "9bd64c7cd9",
+   "sector": "ia",
+   "titulo": "IA en las aulas: ¿qué competencias necesitan los docentes universitarios?",
+   "resumen": "",
+   "fuente": "La República",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQUmtzYkNtWmN4WDJ3YXFLSnRFa0t6MVdpb3VNdjEyUzRhTnhmcEJlaFNwMkJLOWVPOF92YUI0UmkzUHlyNHc4Vm9ZMGZaMUhRZ3lyWDRqN2lxakNIYUJVeklia1JUUG1Gbm1xcXJwbnQyNnpvYXJJLVVNU1hJeWlQUTJfX3ZVWVFtbnZYdUhPWkJlSXN6UXVoNHBicEtDSTJRUlhnTG1PMzdicGR3enpXaEFSSUZ2WTMxdElTLVY3aktZcEI2N0N2MVNCVXFDa2hBVE9KZ3JmWFY1QTJYRjM0bDVDR2VZT3FWVnFlVWtUbXBnUQ?oc=5",
+   "fecha": "2026-11-17T16:47:59Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://comercial.cronosmedia.glr.pe/original/2026/11/17/6afc7e431e5e26eb840c297a.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "agregador",
+   "via": "Google Noticias",
+   "url_medio": "https://especial.larepublica.pe/apunte-educativo/desarrollo-profesional/2026/11/17/ia-en-las-aulas-que-competencias-necesitan-los-docentes-universitarios-312307",
+   "sintesis": "La inteligencia artificial en las aulas universitarias transforma el acceso a la información y el desarrollo académico de los estudiantes, e impulsa un cambio en la enseñanza. Una experta resalta la necesidad de que los docentes diseñen experiencias de aprendizaje que fomenten el pensamiento crítico.",
+   "puntos": [
+    "La inteligencia artificial en las aulas universitarias transforma el acceso a la información y el desarrollo académico de los estudiantes, e impulsa un cambio en la enseñanza.",
+    "Una experta resalta la necesidad de que los docentes diseñen experiencias de aprendizaje que fomenten el pensamiento crítico.",
+    "La presencia de la inteligencia artificial en las aulas universitarias está cambiando la manera en que los estudiantes acceden a la información y desarrollan sus actividades académicas."
+   ]
+  },
+  {
    "id": "924bdec595",
    "sector": "tecnologia",
    "titulo": "¡Medio siglo de innovación! Luz impulsa una nueva generación de relojes que marca el futuro de la tecnología",
@@ -7069,84 +7017,6 @@ window.NOTICIAS = {
    "url_medio": "https://proactivo.com.pe/inteligencia-artificial-eleva-la-demanda-de-cobre/"
   },
   {
-   "id": "a50a1de5d1",
-   "sector": "economia",
-   "titulo": "APEC 2026: Keiko Fujimori y Xi Jinping se reunieron en Shenzhen antes del foro económico",
-   "resumen": "",
-   "fuente": "La República",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPeVZDWERVTExoSVpYSzlwRnNaUmNTelVmajVFZ0duT2NHQkZMZHpPWG9NRFEwU2RNa0ZEcFRFa29EZGNYUVo4dkU0ZHczRmJCVnhFZjVVMDJUcjBIdTBxMldabmlkdVAxY0VOTDFJclJKOHlINS1BcENlbFJsampFcFpCZl9FdlFsVjI1aVZ1Vk93dW1ZNmgyXzV5WDB3N0JVVVR3a0pqSHZkZU5NOThIbGs1b1lzcWtWWkJUOTA4a0JfeGdpZ1dqR2pBQTd3ZTdXTVVr0gHYAUFVX3lxTE9sU3ZYbE02RnpFN1IyaWpYMDdySUMtemJPcFIzQnlNejVVRWtTRzdKTXlHMW52TGFQZmxwam9OaWRFN0pxSWR6bVNMMU1FWTJZTFZPN3dvZUk1T0l0VENLYmVlOWxCN042WWgzRzBudzBUODlDVEFOUUtOU1E5Zjc2SlZfeWdyWkJEemlVMkIzU3JCbkd1VDhxcTgycTdkeWlCVXBZd3VYeTRrcXNWbFBYM1RiRFcyM3NLWkY0Tk5hRnhZbnZEdmpwZEQxOWJGVmR2SjFENG9IUA?oc=5",
-   "fecha": "2026-11-17T13:32:53Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://imgmedia.larepublica.pe/1200x735/larepublica/original/2026/11/17/6afc55cad3f1e107840d1a6d.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "agregador",
-   "via": "Google Noticias",
-   "sintesis": "Luego de dejar el país sin despedir al papa León XIV, la mandataria se reunió con su homólogo chino, Xi Jinping. El encuentro dejó un compromiso de US$ 22.5 millones en fondos y maquinaria para enfrentar el FEN.",
-   "puntos": [
-    "Luego de dejar el país sin despedir al papa León XIV, la mandataria se reunió con su homólogo chino, Xi Jinping.",
-    "El encuentro dejó un compromiso de US$ 22.5 millones en fondos y maquinaria para enfrentar el FEN.",
-    "Al término de la cita, en declaraciones a la prensa, detalló los compromisos anunciados por el Gobierno chino."
-   ],
-   "datos": [
-    {
-     "v": "US$ 22.5 millones",
-     "t": "monto",
-     "c": "El encuentro dejó un compromiso de US$ 22.5 millones en fondos y maquinaria para enfrentar el FEN.."
-    },
-    {
-     "v": "15 millones de dólares",
-     "t": "escala",
-     "c": "…una donación, una colaboración no reembolsable por 15 millones de dólares; adicionalmente también otra colaboración en maquinarias…"
-    },
-    {
-     "v": "7.5 millones de dólares",
-     "t": "escala",
-     "c": "…también otra colaboración en maquinarias por 7.5 millones de dólares, o sea, en total 22 millones y medio de dólares de apoyo…"
-    },
-    {
-     "v": "22 millones",
-     "t": "escala",
-     "c": "…maquinarias por 7.5 millones de dólares, o sea, en total 22 millones y medio de dólares de apoyo al proceso del fenómeno El…"
-    }
-   ],
-   "url_medio": "https://larepublica.pe/politica/2026/11/17/apec-2026-keiko-fujimori-y-xi-jinping-se-reunieron-en-shenzhen-antes-del-foro-economico-364463"
-  },
-  {
-   "id": "a915d97731",
-   "sector": "politica",
-   "titulo": "Segunda vuelta regional: ONPE trasladaría actas a Lima ante riesgo de lluvias por el fenómeno El Niño en el norte",
-   "resumen": "",
-   "fuente": "La República",
-   "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQT2VBcjNKVEYxRUNUZXIxamRHaEpTbTlFX1VCWWNfOG9yQnNWS0REeGlUOGdWVW9OeFljUWlzMEh0TS1EX0xEdno2LVd5WGRBRnhBVnRZSS1Kc1dNTGxKYUVrRUgtZTdQX0R2YmxBZHpDT0RpUkhMWUpqOV81d0djclRDclVHSlczREZwWTRxa25OU1FGNU4xNEVRdFhRSlFSZ09jbXNScmRyY3pQMTN4MHpNek96MHl6bnh0X25nZ25SY3VMS3puQUtrejVqLW1tcDF3MTlhS0N5LWhTOEFLeGhtYkxWLXdqSUNmNEc2VWppdlItejV1LTdSSkjSAYICQVVfeXFMUGZyRFZGUHZkM0l6clg3MXF3WWt4djJWeHRvcGExRnFxbEt3MnJGc0xTNmJDZl9mOGl3NGRNU2prR2pQcl9rRExxbF9YanI0RXJHeDNsYUxkRld1TGVnUVZWeFlFZmRaNkhYUy12YmhKcFV1NV9iclRFaC1QYS1aSzlOLUN0ZG13MkE4MnV6QWtrYUtyRzBQUmNiNUxTeG1VZHdBclZndUFMQ3RwbDJ1ZTg3dEpMeGZJeXJGcWVFOVd1RE9pQk9OczR5ejQtZkJkVjZkY0FYYTc0UWlqekg3cUdRckhZYlpKdTgxSWxMWmJaSXJUaDRIQ3czUmRtdXh2OTVR?oc=5",
-   "fecha": "2026-11-17T13:16:43Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://imgmedia.larepublica.pe/1200x735/larepublica/original/2026/11/17/6afc4f101e47858cd401e069.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "agregador",
-   "via": "Google Noticias",
-   "url_medio": "https://larepublica.pe/politica/2026/11/17/segunda-vuelta-regional-onpe-trasladaria-actas-a-lima-ante-riesgo-de-lluvias-por-el-fenomeno-el-nino-en-el-norte-hnews-184637",
-   "sintesis": "La ONPE detectó que 7 ODPE en Tumbes, Piura, Lambayeque, Loreto y Junín se encuentran en situación crítica debido a que su centro de cómputo funciona en el primer piso. La vulnerabilidad de las oficinas se debe a que el nivel del agua por lluvias alcanzaría los 1.5 metros de altura.",
-   "puntos": [
-    "La ONPE detectó que 7 ODPE en Tumbes, Piura, Lambayeque, Loreto y Junín se encuentran en situación crítica debido a que su centro de cómputo funciona en el primer piso.",
-    "La vulnerabilidad de las oficinas se debe a que el nivel del agua por lluvias alcanzaría los 1.5 metros de altura.",
-    "Se trata de las Oficinas Descentralizadas de Procesos Electorales ( ODPE ) de Tumbes ; Sullana , Paita y Castilla , en Piura ; y Chiclayo , en Lambayeque ."
-   ]
-  },
-  {
    "id": "b089381637",
    "sector": "investigacion",
    "titulo": "Inside Deutsche Bank: secretos, escándalos y dobles estándares del gigante financiero mundial",
@@ -7524,16 +7394,16 @@ window.NOTICIAS = {
    "url_medio": "https://radiouno.pe/noticias/288379/padre-leonardo-gomez-destaca-mensaje-del-papa-leon-xiv-sobre-la-inteligencia-artificial-y-la-reconciliacion-entre-peruanos/"
   },
   {
-   "id": "b4d8c104d7",
-   "sector": "investigacion",
-   "titulo": "Rosemary Pioc: \"El caso de Condorcanqui es crítico, esperamos acciones a partir de las palabras del papa\"",
-   "resumen": "",
-   "fuente": "La República",
-   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNNWZBZHF0NjRNb0ZPdUE4bHB0M3B0MWJqOFZKY0xrdFNPdjhDbG56QkNUeDVfQmptT0ZsUTctelZCemNEbHlEVk5sYjlyZmVTaTl1TE1zRnNPdmI5UDhvY3BZZEd0QkRCMG4teVZxcHpvdjBqUFdVSTlfa0poNEJVRlVHcDM1RjEzdk12Yk9OMHRkR1NsUEU4dFRsNDdINTBsSEdWR3FGdWlTYjFoVXhDdUREbi1vdkJ1MHVhZkRzVUF1QWdsT09fakxoVUFTZUF5N1BtODczTktKSG4zX2htU3pKUUVWb004c2Z5RWpFZDNhOUh4QVlVVkVB0gH_AUFVX3lxTE1zaUUzcXpYMDBDSlduUXJJQTlkcU0tM3BuS3FfeFV1Y2R1QUlRMmR5eV9nYkhEOXZDNFZNLThQTHBMZndKd1Q0dGctNDQ4VXZYMUY4THRES1VtRTRWQy1CWkFuTm4wVlFyRF83VWwtWnFFTGpiam5wSVpXc3otQVFTTEhzVTkwVzlGUHFCbDl5N2xHMzVGVjBIZGxuclVhcEpHcFk0WERBZVdTY3hjTFFobE5uTHZpbFlQdEE0MklvRUlnMmxhcVc2aGJXVHFtZXlpT3lQcEJaMXFybGFRWUZZQ3ctYldpd1daT2tTSV9fZ01hTzBrbVBQdFZvakpIaw?oc=5",
-   "fecha": "2026-11-17T05:12:11Z",
-   "tipo": "comercial",
+   "id": "191dddde0e",
+   "sector": "politica",
+   "titulo": "El mundo gira a la izquierda: elecciones y movilizaciones",
+   "resumen": "Una mirada anticapitalista, más allá del progresismo.",
+   "fuente": "La Mula",
+   "url": "https://contraelcapital.lamula.pe/2026/11/16/el-mundo-gira-a-la-izquierda-elecciones-y-movilizaciones/losanticapitalistas/",
+   "fecha": "2026-11-17T04:33:54Z",
+   "tipo": "independiente",
    "genero": "noticia",
-   "imagen": "https://imgmedia.larepublica.pe/1200x735/larepublica/original/2026/11/17/6afbc3ab487dc75cba0850bc.jpg",
+   "imagen": "https://lamula.pe/media/uploads/t/8a22bccdbd9b366f858a2a7f3270af93.jpg",
    "geografia": {
     "version": 1,
     "ambito": "pendiente",
@@ -7541,22 +7411,40 @@ window.NOTICIAS = {
     "motivo": "sin_evidencia_geografica"
    },
    "ambito": "pendiente",
-   "procedencia": "agregador",
-   "via": "Google Noticias",
-   "sintesis": "La lideresa del pueblo awajun denunció en 2024 los más de 500 casos de abuso sexual de menores en Condorcanqui. El papa León XIV, en su mensaje en Ucayali, alertó sobre el dolor y la impunidad alrededor de esta problemática.",
+   "procedencia": "directa",
+   "sintesis": "Una mirada anticapitalista, más allá del progresismo. Después de una serie de derrotas la historia comienza a cambiar de rumbo.",
    "puntos": [
-    "La lideresa del pueblo awajun denunció en 2024 los más de 500 casos de abuso sexual de menores en Condorcanqui.",
-    "El papa León XIV, en su mensaje en Ucayali, alertó sobre el dolor y la impunidad alrededor de esta problemática.",
-    "El mensaje del papa fue claro al demandar que estas situaciones son amparadas y ganan impunidad con complicidad de diversos actores."
+    "Una mirada anticapitalista, más allá del progresismo.",
+    "Después de una serie de derrotas la historia comienza a cambiar de rumbo.",
+    "Las elecciones en Brasil, el giro demócrata en Estados Unidos, las huelgas en España, Francia y Colombia, el gobierno estudiantil en Serbia, todo parece decirnos que algo está cambiando."
    ],
    "datos": [
     {
-     "v": "500 casos",
+     "v": "53,01%",
+     "t": "porcentaje",
+     "c": "…ganó las elecciones parlamentarias anticipadas con 53,01% de los votos, frente a 38,98% de la lista oficialista."
+    },
+    {
+     "v": "38,98%",
+     "t": "porcentaje",
+     "c": "…anticipadas con 53,01% de los votos, frente a 38,98% de la lista oficialista."
+    },
+    {
+     "v": "14 años",
      "t": "cantidad",
-     "c": "La lideresa del pueblo awajun denunció en 2024 los más de 500 casos de abuso sexual de menores en Condorcanqui."
+     "c": "Aleksandar Vučić ha mantenido el poder más de 14 años."
+    },
+    {
+     "v": "16 personas",
+     "t": "cantidad",
+     "c": "…de Serbia, se desplomó a las 11.52 y causó la muerte de 16 personas que esperaban frente al edificio."
+    },
+    {
+     "v": "1 de noviembre de 2024",
+     "t": "fecha",
+     "c": "Comenzó el 1 de noviembre de 2024 cuando el techo de hormigón y metal de la entrada de la…"
     }
-   ],
-   "url_medio": "https://larepublica.pe/politica/2026/11/16/rosemary-pioc-el-caso-de-condorcanqui-es-critico-esperamos-acciones-a-partir-de-las-palabras-del-papa-leon-xiv-hnews-430912"
+   ]
   },
   {
    "id": "83c8d160e2",
@@ -7579,34 +7467,6 @@ window.NOTICIAS = {
    "procedencia": "directa",
    "url_medio": "https://www.tvperu.gob.pe/noticias/internacionales/ee-uu-busca-bloquear-el-acceso-de-china-chips-de-inteligencia-artificial",
    "imagen_intentos": 6
-  },
-  {
-   "id": "2d3e351f4f",
-   "sector": "politica",
-   "titulo": "Astudillo expone este martes su plan de reforma de la PNP ante la Comisión de Defensa",
-   "resumen": "",
-   "fuente": "La República",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNV0dnNXRzajk5ZG5yTjl6WjN6NVh3SF8zamVSdnpHODVqbWpaTzZJcXdNZld5VVNwLXc4S0M1VV9DcmJOa290VzgyTFFYYWNQQmZtejZlRktqc0VoR3BQaGpVdFplNFFXeVB0bEtxVzJkYlk3a0hKejhnS1UxcGdBckJJVVIxUGQxeU1aN0RLUG01SUVOdzZ4NnVRaHdxNTJHNkYxLUxMRjA2SlZOeGVBWXhsTm9BTWwxbEZXdDhlclc1ZkZqdHFyZkxTUW1LWm9fbTBaa2w5Z3rSAd4BQVVfeXFMT29Cdm5LY3NDNldzc1BHX3pIZUM3S0FsUjRaMlk4YUlYMnBXYnFkYzFEQzJ3S1JMbGFlWmdBamNrMFZoTzY5eHRGZVBtYXFBem1ZTV93V2tQMjBiYjFqNUVRcmFYUDVnNjlZYldIT2ZEaW4taFBUdUpIa1RhWUhIWGFFWjJ1YldRY3ZSS21WRTJjUXJ5QlY4S3hwQVJZeFpkR21HNmIxVUNFT1RuWHB2VzFXbjlvVmFQTGlIUWF5aVBTelJBS0xnYWpfSHZBY2xWRTFQdEU0ODl5ZEFVTUJn?oc=5",
-   "fecha": "2026-11-17T02:55:17Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://imgmedia.larepublica.pe/1200x735/larepublica/original/2026/11/16/6abd986011bdb039f2040c34.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "agregador",
-   "via": "Google Noticias",
-   "sintesis": "El ministro del Interior sustentará desde las 10.00 a. m. la creación de un grupo de trabajo que recién elaborará la propuesta de reforma policial y la hoja de ruta del plan Mariano Santos al 2030. Lo que Astudillo va a informar ante el grupo de trabajo de Defensa es una resolución ministerial que crea un grupo de trabajo sectorial.",
-   "puntos": [
-    "El ministro del Interior sustentará desde las 10.00 a. m. la creación de un grupo de trabajo que recién elaborará la propuesta de reforma policial y la hoja de ruta del plan Mariano Santos al 2030.",
-    "Lo que Astudillo va a informar ante el grupo de trabajo de Defensa es una resolución ministerial que crea un grupo de trabajo sectorial.",
-    "Puedes ver Renovación Popular presenta recurso de reconsideración para que se reconozca a López Aliaga como alcalde"
-   ],
-   "url_medio": "https://larepublica.pe/politica/2026/11/16/astudillo-expone-este-martes-su-plan-de-reforma-de-la-pnp-ante-la-comision-de-defensa-hnews-677792"
   },
   {
    "id": "7b0c81cc29",
@@ -7640,35 +7500,6 @@ window.NOTICIAS = {
      "c": "…después de lanzar su invasión a gran escala de Ucrania el 24 de febrero de 2022, Vladimir Putin reunió a los hombres más ricos de Rusia en…"
     }
    ]
-  },
-  {
-   "id": "5edfb8bb8d",
-   "sector": "economia",
-   "titulo": "Pluriempleo en Perú: el 39% de trabajadores tiene más de una fuente de ingresos",
-   "resumen": "",
-   "fuente": "La República",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNOENqSUFuZkdlX0dTd0Yza0VWVlhSQTUxd1lpeDkycUJnd3hjS1ZGX2Y5WVJaeE40QzdIcklqbHVUVnBQMGVuei0zanpDaDZXMXNraExDN3U5czN4Yi1vX1pYemZmRGFKNENHV2tvWHd2clNFRlllX1lTdHhsMVpQZ2lVaEctOTR3V2pKbzExcktvVnF1SmZDTGJDN2I5NWlCSUN6d3ROdnhBNFdlMTBwTEdHUDFaRUlWX3BDcHB3SVJJTTNuMm5V0gHMAUFVX3lxTFAwUFhqUXFwUzNNUnU1VTdKcEJEQVN0S25UQ0g3ZkJFVFV0dmM2eG1mWEl2M2RQVjNJbW10TlZVbjVnRTBHX0EtMmpycWdINTVvdHE0NlhIdTgwUF94UGN4cC1iV3JRM0ZsQ0t6MzlTWWtRUko1TEt2Y3Q5V0RoWGU2MXUxMVRqdXNYem9WTE5xNDdoa2lnMzBlVHVlSXdiWkxWQTVtdDB5WXVTY2ptbmZHQTBaSXk4QjlaYndhRzA1Y3JRWUc1QzlxbHVsdA?oc=5",
-   "fecha": "2026-11-17T02:18:12Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://imgmedia.larepublica.pe/1200x735/larepublica/original/2026/11/16/6afb53aeadcc21c162087c87.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "agregador",
-   "via": "Google Noticias",
-   "datos": [
-    {
-     "v": "39%",
-     "t": "porcentaje",
-     "c": "Pluriempleo en Perú: el 39% de trabajadores tiene más de una fuente de ingresos."
-    }
-   ],
-   "url_medio": "https://larepublica.pe/economia/2026/11/16/pluriempleo-en-peru-el-71-de-trabajadores-con-posgrado-tiene-mas-de-un-empleo-1523296"
   },
   {
    "id": "e7af9a9f7b",
@@ -7896,6 +7727,32 @@ window.NOTICIAS = {
    "imagen_intentos": 6
   },
   {
+   "id": "1addeed167",
+   "sector": "economia",
+   "titulo": "León XIV en Pucallpa: defender la Amazonía también es defender la vida",
+   "resumen": "El papa peruano llegó al corazón de la Amazonía con un mensaje que fue más allá de la fe: denunció la deforestación, la minería ilegal, el narcotráfico y el abandono de los pueblos indígenas. Sus palabras también fueron un ll",
+   "fuente": "La Mula",
+   "url": "https://redaccion.lamula.pe/2026/11/16/leon-xiv-en-pucallpa-defender-la-amazonia-tambien-es-defender-la-vida/lumasap/",
+   "fecha": "2026-11-16T21:27:34Z",
+   "tipo": "independiente",
+   "genero": "noticia",
+   "imagen": "https://lamula.pe/media/uploads/t/268d85413d18c8f4b5ab9d9d1af01183.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El papa peruano llegó al corazón de la Amazonía con un mensaje que fue más allá de la fe: denunció la deforestación, la minería ilegal, el narcotráfico y el abandono de los pueblos indígenas. Sus palabras también fueron un llamado de atención a un Estado que sigue sin garantizarles justicia, educación y protección.",
+   "puntos": [
+    "El papa peruano llegó al corazón de la Amazonía con un mensaje que fue más allá de la fe: denunció la deforestación, la minería ilegal, el narcotráfico y el abandono de los pueblos indígenas.",
+    "Sus palabras también fueron un llamado de atención a un Estado que sigue sin garantizarles justicia, educación y protección.",
+    "Hay visitas que se recuerdan por las fotografías, los abrazos y las multitudes que salen a las calles."
+   ]
+  },
+  {
    "id": "963b1dbd32",
    "sector": "tecnologia",
    "titulo": "Papa León XIV en Perú: las frases que dejó en su recorrido por Lima, Callao, Chiclayo, Cajamarca, Cusco y Pucallpa [FOTOS]",
@@ -7925,6 +7782,34 @@ window.NOTICIAS = {
      "t": "fecha",
      "c": "…otras autoridades del Estado en el Gran Teatro Nacional, 11 de noviembre.."
     }
+   ]
+  },
+  {
+   "id": "1b83c750f7",
+   "sector": "nino",
+   "titulo": "Casas prefabricados de madera para familias afectadas por El Niño",
+   "resumen": "",
+   "fuente": "La República",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQd2N1b0FsZHZlWTBzck9CRDg3WWNXUGxaRUtmRHlJTE5YZ2ZKU2I3cWwxS0xWLTR1bDNPYUNYWHd0bTZqVUpseVBrWDRFX3hTSV91UnZ1TnpxeVBTbkZ4QzBpbXBWTjhDdDdSTThhdlB4WmtRLVY0ckppdERZMWtJOWR0bWNJbGxiVEhWeVBqZHdoUmk2bmRXbzJqTEJFNjNZdHljSl9URTA1WEtLbGhuT21QWmlvWUdxWHRUN2RYRDdtU3d4ODRqcnVWNmR6bV9WamtjU1lLdEdCSjZCOEZ2VUlWeEEtcDJ1V2c?oc=5",
+   "fecha": "2026-11-16T21:03:12Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://comercial.cronosmedia.glr.pe/original/2026/11/16/6afb6993487dc75cba0850b1.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "agregador",
+   "via": "Google Noticias",
+   "url_medio": "https://especial.larepublica.pe/metro-cuadrado/vivienda-y-construccion/2026/11/16/casas-prefabricados-de-madera-para-familias-afectadas-por-el-nino-856688",
+   "sintesis": "La articulación entre los sectores de Vivienda y Producción busca agilizar la asistencia humanitaria frente a posibles desastres naturales. Revisa todos los detalles sobre estas casas prefabricadas de madera y cómo su despliegue promete optimizar la atención ante el Fenómeno El Niño.",
+   "puntos": [
+    "La articulación entre los sectores de Vivienda y Producción busca agilizar la asistencia humanitaria frente a posibles desastres naturales.",
+    "Revisa todos los detalles sobre estas casas prefabricadas de madera y cómo su despliegue promete optimizar la atención ante el Fenómeno El Niño.",
+    "Cuando una emergencia climática golpea una localidad, el tiempo se convierte en el recurso más valioso para salvaguardar a la población."
    ]
   },
   {
@@ -8116,6 +8001,62 @@ window.NOTICIAS = {
    ]
   },
   {
+   "id": "f403419eef",
+   "sector": "deporte",
+   "titulo": "Papa León XIV: 10 frases que dedicó a los universitarios en Chiclayo",
+   "resumen": "",
+   "fuente": "La República",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPUy1UQndyVGZWSWFsWkJhSnU3MEJxeWFrQk5uSHpmcjZvWUZZS0lDekQyRi0yZ21HQXdqS1Q5NE9JU1ZVMFJPM3FKZFhwUFJnTnlpMkhXazh4Smp3MjREOF9GYzVkMjNhMEkwUGxpUXBMSlVwMjNaSlh6Qk1MWVhfRHY1MVpTYlFyVGU0U0s4NXcyd253Zzczd0NHbGtBQXJtaXBJZGhzbVJmbUxqZTFVVldXZ1pkS080Y1lBMi02VmVaWDVrN3lBS1RkYVZYOEZzbzAxajFxM3RmcmZw?oc=5",
+   "fecha": "2026-11-16T15:29:21Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://comercial.cronosmedia.glr.pe/original/2026/11/16/6afaf50396c1e97c3500e66a.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "agregador",
+   "via": "Google Noticias",
+   "url_medio": "https://especial.larepublica.pe/apunte-educativo/pregrado/2026/11/16/papa-leon-xiv-10-frases-que-dedico-a-los-universitarios-en-chiclayo-1461008",
+   "sintesis": "El papa León XIV se reunió en Chiclayo con estudiantes y docentes de la USAT, donde destacó el papel de la educación en la construcción de una sociedad más justa. Durante el encuentro del papa León XIV con el mundo universitario, realizado en la Universidad Santo Toribio de Mogrovejo (USAT), en Chiclayo, el papa León XIV dirigió un mensaje a estudiantes y docentes.",
+   "puntos": [
+    "El papa León XIV se reunió en Chiclayo con estudiantes y docentes de la USAT, donde destacó el papel de la educación en la construcción de una sociedad más justa.",
+    "Durante el encuentro del papa León XIV con el mundo universitario, realizado en la Universidad Santo Toribio de Mogrovejo (USAT), en Chiclayo, el papa León XIV dirigió un mensaje a estudiantes y docentes.",
+    "En su intervención, destacó el papel de la formación profesional en la construcción de una sociedad más justa y solidaria, además de recordar la importancia de mantener una mirada crítica frente a los cambios del mundo actual."
+   ]
+  },
+  {
+   "id": "6d3a7257b7",
+   "sector": "economia",
+   "titulo": "APEC 2026: los países que lo integran y su importancia para la economía peruana",
+   "resumen": "",
+   "fuente": "La República",
+   "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPSkVna2hfWTIyajFIdXpCSlNkeFpyVnVsVmYzLWw3cldiMDFDMENLRWdOZmhFc244ZEFyd3I0S3RndFNON0VacEo2c0Q3Vko1Q21KdV85T2JLblBScTUzVFJVRzk0Z0IyenpNTG9DSHRoR0xhc1F4VjNjSWVBS0JoUlZ2d1BlbzYxdllsZzNrSlJwUmt6QzAwc2tRZUJpQVh0M09lSmZwYk1BTDMtMDNqQlNjVTFQQTI3V3VRVTFvdE44SVo5ZjlPbjNqRlpqNERLbDRYOFBlekN2R1g3TEd6a3k3ZFIwT01zZFdaZ1M4MjFNcGRpNmRFZURqVzY?oc=5",
+   "fecha": "2026-11-16T15:28:53Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://comercial.cronosmedia.glr.pe/original/2026/11/16/6afb00bf1e5e26eb840c294e.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "agregador",
+   "via": "Google Noticias",
+   "url_medio": "https://especial.larepublica.pe/apunte-educativo/desarrollo-profesional/2026/11/16/apec-2026-los-paises-que-lo-integran-y-su-importancia-para-la-economia-peruana-618880",
+   "sintesis": "El comercio internacional se centrará en Shenzhen, China, en noviembre de 2026, donde representantes de la región Asia-Pacífico analizarán oportunidades y desafíos económicos. Para Perú, integrante de este mecanismo desde 1998, el encuentro representa una oportunidad para fortalecer sus relaciones comerciales, promover inversiones y ampliar el acceso de sus productos a mercados internacionales.",
+   "puntos": [
+    "El comercio internacional se centrará en Shenzhen, China, en noviembre de 2026, donde representantes de la región Asia-Pacífico analizarán oportunidades y desafíos económicos.",
+    "Para Perú, integrante de este mecanismo desde 1998, el encuentro representa una oportunidad para fortalecer sus relaciones comerciales, promover inversiones y ampliar el acceso de sus productos a mercados internacionales.",
+    "APEC corresponde a las siglas en inglés de Asia-Pacific Economic Cooperation, conocido en español como Foro de Cooperación Económica Asia-Pacífico ."
+   ]
+  },
+  {
    "id": "d3dafb3754",
    "sector": "investigacion",
    "titulo": "«Atentado terrorista» contra el periodista panameño Rolando Rodríguez",
@@ -8225,7 +8166,7 @@ window.NOTICIAS = {
    "ambito": "mundo",
    "procedencia": "directa",
    "url_medio": "https://www.nytimes.com/es/2026/11/16/espanol/america-latina/papa-gira-sudamerica.html",
-   "imagen_intentos": 4
+   "imagen_intentos": 5
   },
   {
    "id": "afb4004960",
@@ -8443,35 +8384,6 @@ window.NOTICIAS = {
    "imagen_intentos": 6
   },
   {
-   "id": "613adf3d90",
-   "sector": "economia",
-   "titulo": "La República, la vigorosa juventud de un diario que cumple 45 años",
-   "resumen": "",
-   "fuente": "La República",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNHdqRTNnakhNVXhLY3g5eXNqZDlJbUhNbklGS01qME9aa29JVnlMYll3R2RhM2lqdnZkTTZSNmxXWVM5NWthaVpvay1DUzd0NFc4b0JFajRvM0luZDhFMkRqYmJBa3FDMmJZeU96WXdOY0xlRms1dk90V3Y0cVhza0JLSy05WGdJZEJiWGZaUmd3dmhHeTBlRlB0enBGXzVLc3MtT28yLWFOQmdYbi1jYW5LZ2l0V3dwVDRKQTd6RdIBxAFBVV95cUxQZnRkRk40aldKY1ppd196MGc1V2xtWllQeVlCem5qa2xIdlZjUFItcU1xcGRWaGRoMlcwck9rS3cyTGh4OElvQjIxOGY3SnBYV0MxY24xZ09MbUpBUGdRbER6dUY1dEJONXRuNFpLOUZ4Uk1PbnhpeUZMUFQ0SVlwaXZDRlFIbjU0U0Y4ZmpyTUVrUjBITTdBNVo4T3QyRk9FN1VBMDNnVHdxcjhJWTkydjRjb0E4OG1WNEY3LUdhWmdXOExV?oc=5",
-   "fecha": "2026-11-16T07:24:02Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://imgmedia.larepublica.pe/1200x735/larepublica/original/2026/11/16/6afaae7546352736b20b4be9.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "agregador",
-   "via": "Google Noticias",
-   "datos": [
-    {
-     "v": "45 años",
-     "t": "cantidad",
-     "c": "La República, la vigorosa juventud de un diario que cumple 45 años."
-    }
-   ],
-   "url_medio": "https://larepublica.pe/politica/2026/11/16/la-republica-la-vigorosa-juventud-de-un-diario-que-cumple-45-anos-hnews-1154576"
-  },
-  {
    "id": "e3a0ceaa89",
    "sector": "mundo",
    "titulo": "Derrotaron a un hombre fuerte. Pero ¿pueden gobernar un país? - The New York Times",
@@ -8545,8 +8457,8 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 1,
-   "url_medio": "https://www.tvperu.gob.pe/noticias/nacionales/enfen-nino-costero-podria-alcanzar-una-magnitud-extraordinaria-hacia-finales-de"
+   "url_medio": "https://www.tvperu.gob.pe/noticias/nacionales/enfen-nino-costero-podria-alcanzar-una-magnitud-extraordinaria-hacia-finales-de",
+   "imagen_intentos": 2
   },
   {
    "id": "9a826e42a7",
@@ -8607,6 +8519,44 @@ window.NOTICIAS = {
     "El papa León XIV sigue cumpliendo sus actividades en Perú, donde le espera varias reuniones con miles de fieles en Lima, Lambayeque, Cajamarca, Cusco y Pucallpa."
    ],
    "url_medio": "https://elcomercio.pe/tecnologia/actualidad/papa-leon-xiv-en-peru-como-puede-la-inteligencia-artificial-ayudar-a-mejorar-la-seguridad-en-eventos-multitudinarios-lima-chiclayo-cajamarca-cusco-pucallpa-noticia/"
+  },
+  {
+   "id": "a1cce83455",
+   "sector": "economia",
+   "titulo": "Relaves mineros de Chile, el costo ambiental del auge del tequila en México y el amenazado territorio de la tangara inti en Bolivia | Lo más leído",
+   "resumen": "Esta semana presentamos una investigación sobre los relaves mineros de Chile. Encontramos que 455 de los 839 registrados están abandonados. Además, los recursos que reciben los municipios por mantenerlos podrían desincentivar su remediación. También tenemos un reportaje sobre…",
+   "fuente": "Mongabay Latam",
+   "url": "https://es.mongabay.com/2026/11/relaves-mineros-chile-costo-ambiental-auge-tequila-mexico-amenazada-tangara-inti-bolivia/",
+   "fecha": "2026-11-15T16:46:18Z",
+   "tipo": "independiente",
+   "genero": "noticia",
+   "imagen": "https://imgs.mongabay.com/wp-content/uploads/sites/25/2026/11/10050112/PHOTO-2026-07-02-15-31-04-768x512.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Esta semana presentamos una investigación sobre los relaves mineros de Chile. Encontramos que 455 de los 839 registrados están abandonados.",
+   "puntos": [
+    "Esta semana presentamos una investigación sobre los relaves mineros de Chile.",
+    "Encontramos que 455 de los 839 registrados están abandonados.",
+    "Además, los recursos que reciben los municipios por mantenerlos podrían desincentivar su remediación."
+   ],
+   "datos": [
+    {
+     "v": "218 %",
+     "t": "porcentaje",
+     "c": "…de la que se extrae la materia prima de ese licor, aumentó 218 %, una expansión que ha desplazado bosques, selvas y…"
+    },
+    {
+     "v": "9 de noviembre",
+     "t": "fecha",
+     "c": "La COP31 comenzó este lunes 9 de noviembre en Turquía con el desafío de convertir los compromisos climáticos en acciones concretas."
+    }
+   ]
   },
   {
    "id": "e6c965950f",
@@ -8703,7 +8653,7 @@ window.NOTICIAS = {
     }
    ],
    "url_medio": "https://tudiariohuanuco.pe/especiales/nino-costero-extraordinario-hasta-2027-consecuencias-enfen-que-viene/",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "3ef3859391",
@@ -8954,11 +8904,11 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "url_medio": "https://www.france24.com/es/ee-uu-y-canad%C3%A1/20261114-ee-uu-excluye-a-nvidia-de-la-agenda-de-trump-y-xi-mientras-empleados-presionan-por-el-regreso-de-jensen-huang",
    "sintesis": "La salida de Jensen Huang de la dirección del gigante de los semiconductores, tras las revelaciones sobre sus vínculos con una empresaria sospechosa de espionaje para Beijing, añade presión a una relación…",
    "puntos": [
     "La salida de Jensen Huang de la dirección del gigante de los semiconductores, tras las revelaciones sobre sus vínculos con una empresaria sospechosa de espionaje para Beijing, añade presión a una relación…"
-   ]
+   ],
+   "url_medio": "https://www.france24.com/es/ee-uu-y-canad%C3%A1/20261114-ee-uu-excluye-a-nvidia-de-la-agenda-de-trump-y-xi-mientras-empleados-presionan-por-el-regreso-de-jensen-huang"
   },
   {
    "id": "8bf626f23c",
@@ -9082,13 +9032,13 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "url_medio": "https://elcomercio.pe/respuestas/cuando/hasta-que-mes-se-extendera-el-nino-costero-enfen-lanza-advertencia-para-2027-tdpe-noticia/",
    "sintesis": "El fenómeno El Niño continuará generando condiciones climáticas inusuales en el Perú durante los próximos meses, con lluvias intensas , temperaturas por encima de los valores habituales y un mayor riesgo de inundaciones en distintas zonas del país. El panorama también incluye posibles oleajes anómalos que podrían afectar el litoral y provocar daños en las zonas costeras más vulnerables.",
    "puntos": [
     "El fenómeno El Niño continuará generando condiciones climáticas inusuales en el Perú durante los próximos meses, con lluvias intensas , temperaturas por encima de los valores habituales y un mayor riesgo de inundaciones en distintas zonas del país.",
     "El panorama también incluye posibles oleajes anómalos que podrían afectar el litoral y provocar daños en las zonas costeras más vulnerables.",
     "Frente a este escenario, el Comité Multisectorial Encargado del Estudio Nacional del Fenómeno El Niño (ENFEN) presentó sus proyecciones para los siguientes meses y advirtió que algunos de sus efectos podrían prolongarse durante buena parte de 2027."
-   ]
+   ],
+   "url_medio": "https://elcomercio.pe/respuestas/cuando/hasta-que-mes-se-extendera-el-nino-costero-enfen-lanza-advertencia-para-2027-tdpe-noticia/"
   },
   {
    "id": "0759ac37d8",
@@ -9112,6 +9062,59 @@ window.NOTICIAS = {
    "sintesis": "El papa León XIV lanzó desde Chiclayo una advertencia sobre los riesgos de un desarrollo tecnológico que avance sin principios éticos ni…",
    "puntos": [
     "El papa León XIV lanzó desde Chiclayo una advertencia sobre los riesgos de un desarrollo tecnológico que avance sin principios éticos ni…"
+   ]
+  },
+  {
+   "id": "72f50d2eb1",
+   "sector": "economia",
+   "titulo": "PC Moda prepara expansión de Pierre Cardin a tres países y prioriza remodelación de tiendas en Perú",
+   "resumen": "PC Moda llevará la colección de Pierre Cardin a Ecuador, Colombia y Venezuela desde 2027. Conoce sus planes de expansión, producción y remodelación de tiendas.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/economia/empresas/pc-moda-prepara-expansion-de-pierre-cardin-a-tres-paises-y-prioriza-remodelacion-de-tiendas-en-peru-noticia/",
+   "fecha": "2026-11-14T11:30:00Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/5MZIPMR3JRECHPA6CVC7KKONHU.jpeg?auth=9f5efff87cfdda8b80631065ce4b759224020637d21ecb285767e606f8893478&smart=true&width=1600&height=903",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "PC Moda llevará la colección de Pierre Cardin a Ecuador, Colombia y Venezuela desde 2027. Conoce sus planes de expansión, producción y remodelación de tiendas.",
+   "puntos": [
+    "PC Moda llevará la colección de Pierre Cardin a Ecuador, Colombia y Venezuela desde 2027.",
+    "Conoce sus planes de expansión, producción y remodelación de tiendas.",
+    "Los shorts y las camisas de manga corta ganan espacio en la oferta de PC Moda ante la expectativa de un verano más caluroso."
+   ],
+   "datos": [
+    {
+     "v": "8%",
+     "t": "porcentaje",
+     "c": "La marca había planificado sus compras con un año de anticipación y esperaba crecer entre 8% y 10% en ventas."
+    },
+    {
+     "v": "10%",
+     "t": "porcentaje",
+     "c": "La marca había planificado sus compras con un año de anticipación y esperaba crecer entre 8% y 10% en ventas."
+    },
+    {
+     "v": "50%",
+     "t": "porcentaje",
+     "c": "…abril e inicios de mayo, con descuentos que partieron de 50% y llegaron a entre 60% y 70% durante los meses de mayor…"
+    },
+    {
+     "v": "60%",
+     "t": "porcentaje",
+     "c": "…con descuentos que partieron de 50% y llegaron a entre 60% y 70% durante los meses de mayor liquidación."
+    },
+    {
+     "v": "70%",
+     "t": "porcentaje",
+     "c": "…descuentos que partieron de 50% y llegaron a entre 60% y 70% durante los meses de mayor liquidación."
+    }
    ]
   },
   {
@@ -9542,33 +9545,6 @@ window.NOTICIAS = {
    ]
   },
   {
-   "id": "ab09189172",
-   "sector": "ia",
-   "titulo": "Inteligencia artificial en las escuelas: las lecciones de Perú para mejorar la educación",
-   "resumen": "",
-   "fuente": "Mexico Social",
-   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5nTGtmd3MxaGMyeTE2aUo3cFd1STZIRG5rdlFCU2tDYndrd2ZrZndxWGdZOUs0LWs3WGR4UDVnQm1fTlE4M01wVEVnaUxzYXExT0JyeWVOd3RZb2h6TUZxZWxlYkxwQQ?oc=5",
-   "fecha": "2026-11-13T14:48:45Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.mexicosocial.org/wp-content/uploads/2026/11/Inteligencia-artificial-en-las-escuelas.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Una experiencia apoyada por el Banco Mundial en escuelas públicas peruanas explora cómo utilizar la inteligencia artificial para acompañar a estudiantes Escrito por mexico_social • 13 noviembre, 2026 • 3:30 am • Destacados , educación , En Portada , la IA , México Social / Redacción",
-   "puntos": [
-    "Una experiencia apoyada por el Banco Mundial en escuelas públicas peruanas explora cómo utilizar la inteligencia artificial para acompañar a estudiantes",
-    "Escrito por mexico_social • 13 noviembre, 2026 • 3:30 am • Destacados , educación , En Portada , la IA , México Social / Redacción",
-    "Los primeros resultados muestran avances en la adopción de estas herramientas, aunque todavía está en evaluación su efecto sobre el aprendizaje duradero."
-   ],
-   "url_medio": "https://www.mexicosocial.org/inteligencia-artificial-2/"
-  },
-  {
    "id": "4c2c5890bf",
    "sector": "mundo",
    "titulo": "COP31: Sin dinero suficiente, crecen las voces para que paguen más los que más contaminan",
@@ -9705,7 +9681,7 @@ window.NOTICIAS = {
     "Stephen Miller pone la mira en la frontera con México The New York Times"
    ],
    "url_medio": "https://www.nytimes.com/es/2026/11/13/espanol/america-latina/stephen-miller-migracion-mexico.html",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "5bde312ed2",
@@ -9727,7 +9703,7 @@ window.NOTICIAS = {
    "ambito": "mundo",
    "procedencia": "directa",
    "url_medio": "https://www.nytimes.com/es/2026/11/13/espanol/ciencia-y-tecnologia/vida-extraterrestre-acido-sulfurico.html",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "7f469fb7f5",
@@ -9809,14 +9785,14 @@ window.NOTICIAS = {
    "ambito": "pendiente",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "url_medio": "https://ojo-publico.com/autor/IsabelCalle",
-   "imagen_intentos": 2,
    "sintesis": "Directora ejecutiva de la Sociedad Peruana de Derecho Ambiental (SPDA). Abogada por la Pontificia Universidad Católica del Perú (PUCP), con segunda especialidad en Derecho Ambiental y de los Recursos Naturales.",
    "puntos": [
     "Directora ejecutiva de la Sociedad Peruana de Derecho Ambiental (SPDA).",
     "Abogada por la Pontificia Universidad Católica del Perú (PUCP), con segunda especialidad en Derecho Ambiental y de los Recursos Naturales.",
     "Se ha especializado en gestión y políticas públicas orientadas al fortalecimiento de la institucionalidad ambiental en el país, legislación ambiental sectorial y regulación de proyectos de industrias extractivas e infraestructura, con énfasis en su desarrollo compatible con la conservación de los recursos naturales y las áreas naturales protegidas."
-   ]
+   ],
+   "url_medio": "https://ojo-publico.com/autor/IsabelCalle",
+   "imagen_intentos": 3
   },
   {
    "id": "95436a873b",
@@ -10283,6 +10259,41 @@ window.NOTICIAS = {
    ]
   },
   {
+   "id": "29b1c7d90d",
+   "sector": "investigacion",
+   "titulo": "La otra agenda del papa León XIV en Perú: la omisión de las víctimas del Sodalicio, las protestas y la violencia política",
+   "resumen": "",
+   "fuente": "Convoca",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNR3JOd0ZleTBsaVdzbmdycS1yNnI2b2ZQV2ZESU5VSVJrYmlMN2VRQ2xoNGFDMk53X3lYRHlLTlV0NlpSd3NIUHZDcmZtRjVCWHRTb0ZrY1FLLWlNYXBuSDRpTDJDOU9OSzJFR3huMmFLUzJlMFdlZ1V5RkdpTTEwZlVsQVBoZm9QTE1JUDRiVFU4RGttMUNDakc5dndIYTBqQmdyaUt4NXZ3YXFKMk14eldxQU41UVJEV0E?oc=5",
+   "fecha": "2026-11-11T15:06:19Z",
+   "tipo": "independiente",
+   "genero": "noticia",
+   "imagen": "https://convoca.pe/sites/default/files/2026-11/Papa%20en%20Argentina%202026-2_0.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "agregador",
+   "via": "Google Noticias",
+   "url_medio": "https://convoca.pe/agenda-propia/la-otra-agenda-del-papa-leon-xiv-en-peru-la-omision-de-las-victimas-del-sodalicio-las",
+   "sintesis": "Conoce en este artículo de Convoca cómo se decidió la agenda del Papa y quiénes piden ser escuchados Con la llegada del papa León XIV al Cusco, los familiares de las víctimas de las protestas sociales de 2022 y 2023 reconocieron que el Pontífice tuvo \"un gesto de cercanía y solidaridad\" con ellos al referirse a la necesidad de justicia y reparación para las víctimas.",
+   "puntos": [
+    "Conoce en este artículo de Convoca cómo se decidió la agenda del Papa y quiénes piden ser escuchados",
+    "Con la llegada del papa León XIV al Cusco, los familiares de las víctimas de las protestas sociales de 2022 y 2023 reconocieron que el Pontífice tuvo \"un gesto de cercanía y solidaridad\" con ellos al referirse a la necesidad de justicia y reparación para las víctimas.",
+    "Lo esperaron en la calle El Sol, junto al local de la Municipalidad del Cusco, llevando fotos de los hombres y mujeres que perdieron la vida por la represión durante las manifestaciones contra Dina Boluarte, y clamaron su nombre a su paso."
+   ],
+   "datos": [
+    {
+     "v": "12 de noviembre",
+     "t": "fecha",
+     "c": "A las 4 y 30 de la tarde del jueves 12 de noviembre, en la recibió a seis personas que fueron afectadas y escuchó sus historias."
+    }
+   ]
+  },
+  {
    "id": "bd4ed2fa6a",
    "sector": "ia",
    "titulo": "¿Es legal exigir un 0% de inteligencia artificial en Turnitin para aprobar una tesis pese al riesgo de falsos positivos en el Perú?",
@@ -10414,7 +10425,7 @@ window.NOTICIAS = {
    "ambito": "peru",
    "procedencia": "directa",
    "url_medio": "https://www.iagua.es/noticias/redaccion/sunass-fiscaliza-el-alcantarillado-de-lima-ante-un-nino-costero-extraordinario",
-   "imagen_intentos": 2
+   "imagen_intentos": 3
   },
   {
    "id": "ef6f4d4310",
@@ -10775,9 +10786,9 @@ window.NOTICIAS = {
    "enlace": "https://news.bgov.com/bloomberg-government-news/ai-regulation-chip-exports-data-centers-form-2026-tech-fights"
   },
   "deporte": {
-   "url": "https://www.infobae.com/resizer/v2/W6XQTQ5TXRAFRCAAPQUSMH2EOE.png?auth=a6d1474aa5efde4b988e04e13a9177f91f5a8ce0e815d138b9ce80329746b2df&smart=true&width=1024&height=512&quality=85",
-   "fuente": "Infobae",
-   "enlace": "https://www.infobae.com/peru/deportes/2026/08/15/tabla-de-posiciones-liga-1-peru-2026-en-vivo-hoy-partidos-fecha-5-torneo-clausura-acumulada-alianza-lima-universitario-sporting-cristal-melgar-cienciano-sport-boys/"
+   "url": "https://imgmedia.larepublica.pe/1200x735/larepublica/original/2026/10/08/6ac7c909f6daf0dda50fdcf4.jpg",
+   "fuente": "La República",
+   "enlace": "https://larepublica.pe/deportes/2026/10/08/tabla-de-posiciones-torneo-clausura-y-acumulado-de-la-liga-1-2026-683392"
   },
   "investigacion": {
    "url": "https://cpj.org/wp-content/uploads/2021/11/000_14M7IR.jpg?resize=1200,814&strip=all&quality=80",
@@ -11446,26 +11457,10 @@ window.NOTICIAS = {
   "numero": "20-2026",
   "fecha": "2026-10-30",
   "url": "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen",
-  "comprobado": "2026-11-18T14:06:28Z",
+  "comprobado": "2026-11-18T14:08:02Z",
   "ok": true
  },
  "registro": [
-  {
-   "t": "2026-11-14T21:31:15Z",
-   "fuentes_ok": 27,
-   "fuentes": 27,
-   "nuevas": 364,
-   "notas": 322,
-   "descartes": {},
-   "agregador": [
-    "OjoPúblico",
-    "Convoca",
-    "Hildebrandt en sus trece",
-    "La República",
-    "Expreso"
-   ],
-   "sin_datos": []
-  },
   {
    "t": "2026-11-14T23:56:57Z",
    "fuentes_ok": 26,
@@ -11952,6 +11947,22 @@ window.NOTICIAS = {
    "sin_datos": [
     "La Mula"
    ]
+  },
+  {
+   "t": "2026-11-18T14:06:45Z",
+   "fuentes_ok": 27,
+   "fuentes": 27,
+   "nuevas": 344,
+   "notas": 322,
+   "descartes": {},
+   "agregador": [
+    "OjoPúblico",
+    "Convoca",
+    "Hildebrandt en sus trece",
+    "La República",
+    "Expreso"
+   ],
+   "sin_datos": []
   }
  ]
 };
