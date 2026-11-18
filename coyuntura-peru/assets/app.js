@@ -215,6 +215,9 @@
     if (i < 0) return esc(t);
     return esc(t.slice(0, i)) + "<mark>" + esc(c.v) + "</mark>" + esc(t.slice(i + c.v.length));
   }
+  /* medios que suelen pedir registro o suscripción: el texto de la tarjeta es solo un extracto */
+  var MEDIDOR = { "Gestión": 1, "Infobae Perú": 1, "Infobae": 1, "El País América": 1, "The New York Times en Español": 1 };
+  function medidorNota(f) { return MEDIDOR[f] ? '<p class="ps-note">' + esc(f) + " puede pedir registro o suscripción para leer la nota completa. El texto de aquí es solo un extracto.</p>" : ""; }
   function story(s) {
     var news = window.PERU_NEWS || {}, id = "st" + (++story_n);
     var datos = (s.datos && s.datos.length ? s.datos : (news.cifras ? news.cifras(s).map(function (v) { return { v: v, t: "monto", c: "" }; }) : [])).slice(0, 5);
@@ -240,7 +243,7 @@
       '<button type="button" class="ps-more" aria-expanded="false" aria-controls="' + id + '-p"><span>Ver detalle</span><i aria-hidden="true">▾</i></button>' +
       '<div class="ps-panel" id="' + id + '-p" hidden><div class="ps-in"><div class="ps-tabs" role="tablist" aria-label="Detalle de la noticia">' + tabs.map(function (t, i) { return '<button type="button" role="tab" id="' + id + '-tab-' + t[0] + '" aria-controls="' + id + '-pane-' + t[0] + '" aria-selected="' + (i === 0) + '" tabindex="' + (i ? -1 : 0) + '" data-pt="' + t[0] + '">' + esc(t[1]) + "</button>"; }).join("") + "</div>" +
       tabs.map(function (t, i) { return '<div class="ps-pane" role="tabpanel" id="' + id + '-pane-' + t[0] + '" aria-labelledby="' + id + '-tab-' + t[0] + '" tabindex="0" data-pp="' + t[0] + '"' + (i ? " hidden" : "") + ">" + panes[t[0]] + "</div>"; }).join("") +
-      '</div></div><div class="ps-acts"><button type="button" class="ps-share" data-share="' + esc(s.url) + '" data-share-t="' + esc(s.titulo) + '" aria-label="Compartir: ' + esc(s.titulo) + '"><span aria-hidden="true">↗</span>Compartir</button>' + badgeContraste(category) + '</div><p class="ps-src"><a href="' + safeUrl(s.url) + '" target="_blank" rel="noopener noreferrer">Leer nota original en ' + esc(s.fuente) + " ↗</a></p></article>";
+      '</div></div><div class="ps-acts"><button type="button" class="ps-share" data-share="' + esc(s.url) + '" data-share-t="' + esc(s.titulo) + '" aria-label="Compartir: ' + esc(s.titulo) + '"><span aria-hidden="true">↗</span>Compartir</button>' + badgeContraste(category) + '</div><p class="ps-src"><a href="' + safeUrl(s.url) + '" target="_blank" rel="noopener noreferrer">Leer nota original en ' + esc(s.fuente) + " ↗</a></p>" + medidorNota(s.fuente) + "</article>";
   }
   function contar(el) {
     var n = el.textContent, m = /^(\D*?)(\d[\d.,\s]*)(.*)$/.exec(n); if (!m || (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches)) return;
