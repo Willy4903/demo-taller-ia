@@ -1,10 +1,12 @@
 .cine-page { max-width: 1180px; margin: 0 auto; padding: 22px 16px 40px; }
 .cine-portada {
+  display: flex; align-items: center; justify-content: space-between; gap: clamp(12px, 3vw, 30px);
   padding: clamp(20px, 5vw, 52px);
   border-radius: 18px;
   background: linear-gradient(125deg, #20172c, #392542 65%, #663542);
   color: #fff8ef;
 }
+.cine-logo { flex: none; width: clamp(80px, 25vw, 270px); height: auto; }
 .cine-portada a { color: #ffe0bd; text-decoration: underline; }
 .cine-portada h1 { margin: 12px 0 2px; font: 800 clamp(2.8rem, 7vw, 5rem)/1.02 var(--serif); }
 .cine-portada p { margin: 12px 0 0; color: #f4dce3; }

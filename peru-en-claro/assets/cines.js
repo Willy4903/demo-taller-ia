@@ -148,7 +148,8 @@
 
   window.PERU_CINES = {
     vista: '<section class="cine-page" aria-labelledby="cine-titulo"><header class="cine-portada">' +
-      '<a href="#/noticias">← Noticias</a><h1 id="cine-titulo">Cines</h1><p>Cartelera, estrenos y recomendaciones en Perú</p></header>' +
+      '<div><a href="#/noticias">← Noticias</a><h1 id="cine-titulo">Cines</h1><p>Cartelera, estrenos y recomendaciones en Perú</p></div>' +
+      '<img class="cine-logo" src="assets/logo-cines.webp" alt="" width="540" height="360" decoding="async"></header>' +
       '<p id="cine-corte" class="cine-corte"></p><div class="cine-filtros" id="cine-filtros" hidden>' +
       '<label>Buscar película o actor<input type="search" id="cine-buscar"></label>' +
       '<label>Cartelera<select id="cine-fecha"><option value="">Todas las funciones</option><option value="hoy">Hoy</option><option value="estrenos">Estrenos y novedades</option><option value="recomendadas">Recomendadas</option></select></label>' +
