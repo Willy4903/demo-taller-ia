@@ -1,0 +1,3065 @@
+{
+ "corte": "2026-11-18T14:11:37-05:00",
+ "peliculas": [
+  {
+   "id": "akira",
+   "titulo": "Akira",
+   "generos": [
+    "Anime"
+   ],
+   "sinopsis": "En Neo-Tokio, un accidente da poderes psíquicos a un joven motociclista. Su amigo Kaneda intenta encontrarlo mientras el ejército intenta controlarlo.",
+   "reparto": [
+    "Mitsuo Iwata",
+    "Nozomu Sasaki"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/akira-[1988]",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Cusco",
+       "Lima",
+       "Piura"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/akira-1988",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003145?referenceScheme=HeadOffice&allowPlaceHolder=true",
+   "recomendada": "Un clásico de la animación japonesa que regresa a la pantalla grande."
+  },
+  {
+   "id": "aniquilacion",
+   "titulo": "Aniquilacion",
+   "generos": [
+    "Acción",
+    "Terror"
+   ],
+   "sinopsis": "Una madre que vive en un parque de casas rodantes usa sus habilidades para proteger a sus seres queridos de una amenaza que escapó de una base militar secreta, mientras unos mercenarios intentan contenerla.",
+   "reparto": [],
+   "origen": "",
+   "cines": [
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/aniquilacion",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Cusco",
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/aniquilacion",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/aniquilacion-dob",
+     "dias": {
+      "2026-11-18": [
+       "Iquitos"
+      ]
+     }
+    },
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/aniquilacion-dob",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1148",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003141?referenceScheme=HeadOffice&allowPlaceHolder=true",
+   "fuente_sinopsis": "Cineplanet"
+  },
+  {
+   "id": "bts world tour arirang in kaohsiung",
+   "titulo": "BTS World Tour: Arirang en Kaohsiung",
+   "generos": [
+    "Concierto"
+   ],
+   "sinopsis": "Transmisión en salas del concierto de la gira Arirang de BTS en Kaohsiung, Taiwán.",
+   "reparto": [
+    "BTS"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/bts-world-tour-arirang-in-kaohsiung-live-viewin",
+     "dias": {
+      "2026-11-21": [
+       "Arequipa",
+       "Cajamarca",
+       "Chiclayo",
+       "Cusco",
+       "Huancayo",
+       "Huánuco",
+       "Juliaca",
+       "Lima",
+       "Piura",
+       "Tacna",
+       "Trujillo"
+      ]
+     }
+    },
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/bts-world-tour-arirang-in-kaohsiung-live-viewing-r",
+     "dias": {
+      "2026-11-21": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-21": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/bts-world-tour-arirang-in-kaohsiung",
+     "dias": {
+      "2026-11-21": [
+       "Arequipa",
+       "Huancayo",
+       "Lima",
+       "Piura",
+       "Trujillo"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003155?referenceScheme=HeadOffice&allowPlaceHolder=true"
+  },
+  {
+   "id": "caballo salvaje nueve",
+   "titulo": "Caballo salvaje nueve",
+   "generos": [
+    "Suspenso"
+   ],
+   "sinopsis": "En vísperas del golpe de Estado chileno de 1973, dos agentes de la CIA reciben la orden de viajar desde Santiago a la Isla de Pascua.",
+   "reparto": [
+    "John Malkovich",
+    "Sam Rockwell",
+    "Steve Buscemi"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/caballo-salvaje-nueve",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/caballo-salvaje-nueve-sub",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00002981?referenceScheme=HeadOffice&allowPlaceHolder=true"
+  },
+  {
+   "id": "clayface",
+   "titulo": "Clayface",
+   "generos": [
+    "Suspenso",
+    "Terror"
+   ],
+   "sinopsis": "Relata el horroroso descenso de un hombre: de ser una estrella en ascenso en Hollywood a convertirse en un monstruo sediento de venganza, en una historia que explora la pérdida de la identidad y la humanidad, el amor…",
+   "reparto": [
+    "Tom Rhys Harries",
+    "Naomi Ackie"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/clayface",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Chiclayo",
+       "Cusco",
+       "Huancayo",
+       "Lima",
+       "Piura",
+       "Tacna",
+       "Trujillo"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/clayface",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Huancayo",
+       "Lima",
+       "Piura",
+       "Trujillo"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003078?referenceScheme=HeadOffice&allowPlaceHolder=true",
+   "fuente_sinopsis": "Cineplanet"
+  },
+  {
+   "id": "coquito la pelicula",
+   "titulo": "Coquito: La película",
+   "generos": [
+    "Drama"
+   ],
+   "sinopsis": "En la Arequipa de los años cincuenta, el maestro rural Everardo Zapata busca una forma más cercana de enseñar a leer a sus alumnos.",
+   "reparto": [],
+   "origen": "Perú",
+   "cines": [
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/coquito-la-pelicula",
+     "dias": {
+      "2026-11-26": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/coquito-la-pelicula",
+     "dias": {
+      "2026-11-26": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://www.movietime.com.pe/bucket/images/cine/7982521d-9b6e-4f60-9163-fb9346f69fe8.jpeg"
+  },
+  {
+   "id": "coyote vs acme",
+   "titulo": "Coyote vs. Acme",
+   "generos": [
+    "Animación",
+    "Comedia",
+    "Familiar"
+   ],
+   "sinopsis": "Cansado de que los artilugios de Acme fallen en sus intentos de atrapar al Correcaminos, el Coyote contrata a un abogado y lleva a la empresa a juicio.",
+   "reparto": [
+    "Will Forte",
+    "John Cena",
+    "Lana Condor"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/coyote-vs-acme",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Cusco",
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/coyote-vs-acme",
+     "dias": {
+      "2026-11-18": [
+       "Huancayo",
+       "Trujillo"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00002921?referenceScheme=HeadOffice&allowPlaceHolder=true"
+  },
+  {
+   "id": "cuentos inmorales",
+   "titulo": "Cuentos Inmorales",
+   "generos": [
+    "Drama"
+   ],
+   "sinopsis": "Cuatro relatos de distintos directores retratan tensiones de la vida urbana y los códigos de conducta en el Perú de fines de los setenta.",
+   "reparto": [],
+   "origen": "Perú",
+   "cines": [
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1145",
+     "dias": {
+      "2026-11-27": [
+       "Lima"
+      ],
+      "2026-12-01": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://uvk.pe/images/movie/1793985259.jpg"
+  },
+  {
+   "id": "como robar un banco",
+   "titulo": "Cómo robar un banco",
+   "generos": [
+    "Acción"
+   ],
+   "sinopsis": "Un grupo de astutos ladrones de bancos que documentan sus atracos en redes sociales, jugando al gato y al ratón con la policía.",
+   "reparto": [
+    "Nicholas Hoult",
+    "Pete Davidson",
+    "Anna Sawai"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/como-robar-un-banco",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Cusco",
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/como-robar-un-banco",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Huancayo",
+       "Lima",
+       "Piura",
+       "Trujillo"
+      ]
+     }
+    },
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/como-robar-un-banco-dob",
+     "dias": {
+      "2026-11-18": [
+       "Chincha",
+       "Huaral",
+       "Iquitos",
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/como-robar-un-banco-dob",
+     "dias": {
+      "2026-11-18": [
+       "Chimbote",
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1147",
+     "dias": {
+      "2026-11-18": [
+       "Lima",
+       "Tumbes"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003068?referenceScheme=HeadOffice&allowPlaceHolder=true",
+   "fuente_sinopsis": "Cineplanet"
+  },
+  {
+   "id": "ebenezer los fantasmas de la navidad",
+   "titulo": "Ebenezer: Los fantasmas de la Navidad",
+   "generos": [
+    "Comedia",
+    "Drama"
+   ],
+   "sinopsis": "El avaro Ebenezer Scrooge recibe la visita de espíritus que lo obligan a revisar su pasado y afrontar las consecuencias de sus decisiones.",
+   "reparto": [
+    "Johnny Depp",
+    "Andrea Riseborough",
+    "Ian McKellen",
+    "Rupert Grint"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/ebenezer-los-fantasmas-de-la-navidad",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Cajamarca",
+       "Chiclayo",
+       "Cusco",
+       "Huancayo",
+       "Huánuco",
+       "Juliaca",
+       "Lima",
+       "Piura",
+       "Pucallpa",
+       "Puno",
+       "Tacna",
+       "Trujillo"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/ebenezer-los-fantasmas-de-la-navidad",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Huancayo",
+       "Huanuco",
+       "Lima",
+       "Piura",
+       "Trujillo"
+      ]
+     }
+    },
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/ebenezer-los-fantasmas-de-la-navidad-dob",
+     "dias": {
+      "2026-11-18": [
+       "Barranca",
+       "Cajamarca",
+       "Cañete",
+       "Chincha",
+       "Huaral",
+       "Iquitos",
+       "Jaén",
+       "Lima",
+       "Pisco"
+      ]
+     }
+    },
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/ebenezer-los-fantasmas-de-la-navidad-dob",
+     "dias": {
+      "2026-11-18": [
+       "Callao",
+       "Chimbote",
+       "Ilo",
+       "Lima",
+       "Moquegua",
+       "Sullana",
+       "Tarapoto",
+       "Tingo María"
+      ],
+      "2026-11-19": [
+       "Ilo",
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1130",
+     "dias": {
+      "2026-11-18": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-19": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-20": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-21": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-22": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-23": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-24": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-25": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ],
+      "2026-11-19": [
+       "Lima"
+      ],
+      "2026-11-20": [
+       "Lima"
+      ],
+      "2026-11-21": [
+       "Lima"
+      ],
+      "2026-11-22": [
+       "Lima"
+      ],
+      "2026-11-23": [
+       "Lima"
+      ],
+      "2026-11-24": [
+       "Lima"
+      ],
+      "2026-11-25": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003070?referenceScheme=HeadOffice&allowPlaceHolder=true"
+  },
+  {
+   "id": "ekeko",
+   "titulo": "Ekeko",
+   "generos": [
+    "Terror"
+   ],
+   "sinopsis": "Un misterioso Ekeko llega a las vidas de Aníbal, Ofelia y Koko para cumplir sus deseos más profundos.",
+   "reparto": [],
+   "origen": "",
+   "cines": [
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/ekeko",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Cusco"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00002919?referenceScheme=HeadOffice&allowPlaceHolder=true",
+   "fuente_sinopsis": "Cineplanet"
+  },
+  {
+   "id": "el camino del papa leon xiv",
+   "titulo": "El camino del papa León XIV",
+   "generos": [
+    "Documental"
+   ],
+   "sinopsis": "Un repaso por la vida de Robert Prevost y su trayectoria entre Chiclayo y el Vaticano.",
+   "reparto": [],
+   "origen": "",
+   "cines": [
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1157",
+     "dias": {
+      "2026-11-19": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-20": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-21": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-22": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-23": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-24": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-25": [
+       "Lima",
+       "Tumbes"
+      ]
+     }
+    }
+   ],
+   "poster": "https://uvk.pe/images/movie/1795013617.png",
+   "nueva_desde": "2026-11-18"
+  },
+  {
+   "id": "el club de la seduccion",
+   "titulo": "EL CLUB DE LA SEDUCCIÓN",
+   "generos": [],
+   "sinopsis": "En un La historia entrelaza las vidas de dos hombres completamente opuestos que terminan envueltos en una cadena de situaciones inesperadas marcadas por fiestas de Halloween, romances peligrosos, una deuda absurda,…",
+   "reparto": [],
+   "origen": "",
+   "cines": [
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/el-club-de-la-seduccion",
+     "dias": {
+      "2026-11-18": [
+       "Iquitos"
+      ]
+     }
+    },
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/el-club-de-la-seduccion",
+     "dias": {
+      "2026-11-18": [
+       "Lima",
+       "Tarapoto"
+      ]
+     }
+    }
+   ],
+   "poster": "https://www.movietime.com.pe/bucket/images/cine/10455d64-4d0d-4b4e-ac1d-1c0c23505ea7.jpeg",
+   "fuente_sinopsis": "Movie Time"
+  },
+  {
+   "id": "el corazon de la bestia",
+   "titulo": "El corazón de la bestia",
+   "generos": [
+    "Acción",
+    "Drama"
+   ],
+   "sinopsis": "Un oficial y su perro de combate sobreviven a un accidente aéreo. Aislados en Alaska, los dos dependen el uno del otro para salir con vida.",
+   "reparto": [
+    "Brad Pitt"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/el-corazon-de-la-bestia",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Chiclayo",
+       "Cusco",
+       "Huancayo",
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/el-corazon-de-la-bestia",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Lima",
+       "Piura",
+       "Trujillo"
+      ]
+     }
+    },
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/el-corazon-de-la-bestia-sub",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/el-corazon-de-la-bestia-dob",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ],
+      "2026-11-19": [
+       "Lima"
+      ],
+      "2026-11-20": [
+       "Lima"
+      ],
+      "2026-11-21": [
+       "Lima"
+      ],
+      "2026-11-22": [
+       "Lima"
+      ],
+      "2026-11-23": [
+       "Lima"
+      ],
+      "2026-11-24": [
+       "Lima"
+      ],
+      "2026-11-25": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00002975?referenceScheme=HeadOffice&allowPlaceHolder=true"
+  },
+  {
+   "id": "el gato con sombrero",
+   "titulo": "El gato con sombrero",
+   "generos": [
+    "Animación"
+   ],
+   "sinopsis": "El Gato recibe la misión de animar a dos hermanos que acaban de mudarse. Sus métodos convierten una visita aparentemente sencilla en una aventura.",
+   "reparto": [
+    "Bill Hader",
+    "Xochitl Gomez",
+    "Quinta Brunson"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ],
+      "2026-11-19": [
+       "Lima"
+      ],
+      "2026-11-20": [
+       "Lima"
+      ],
+      "2026-11-21": [
+       "Lima"
+      ],
+      "2026-11-22": [
+       "Lima"
+      ],
+      "2026-11-23": [
+       "Lima"
+      ],
+      "2026-11-24": [
+       "Lima"
+      ],
+      "2026-11-25": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/el-gato-con-sombrero",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Cajamarca",
+       "Chiclayo",
+       "Cusco",
+       "Huancayo",
+       "Huánuco",
+       "Juliaca",
+       "Lima",
+       "Piura",
+       "Pucallpa",
+       "Puno",
+       "Tacna",
+       "Trujillo"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/el-gato-con-sombrero",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Huancayo",
+       "Huanuco",
+       "Lima",
+       "Piura",
+       "Trujillo"
+      ]
+     }
+    },
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/el-gato-con-sombrero-dob",
+     "dias": {
+      "2026-11-18": [
+       "Barranca",
+       "Cajamarca",
+       "Chincha",
+       "Huaral",
+       "Iquitos",
+       "Jaén",
+       "Lima",
+       "Pisco"
+      ]
+     }
+    },
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/el-gato-con-sombrero-dob",
+     "dias": {
+      "2026-11-18": [
+       "Callao",
+       "Ilo",
+       "Lima",
+       "Moquegua",
+       "Sullana",
+       "Tarapoto"
+      ],
+      "2026-11-19": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1079",
+     "dias": {
+      "2026-11-18": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-19": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-20": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-21": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-22": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-23": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-24": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-25": [
+       "Lima",
+       "Tumbes"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003089?referenceScheme=HeadOffice&allowPlaceHolder=true"
+  },
+  {
+   "id": "el heladero dulce sabor a muerte",
+   "titulo": "El Heladero, Dulce Sabor a Muerte",
+   "generos": [
+    "Terror"
+   ],
+   "sinopsis": "Un pueblo veraniego ideal cae en la locura cuando un heladero sirve a los niños dulces delicias con resultados terroríficos.",
+   "reparto": [],
+   "origen": "",
+   "cines": [
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/el-heladero-dulce-sabor-a-muerte",
+     "dias": {
+      "2026-11-18": [
+       "Chiclayo",
+       "Cusco",
+       "Lima",
+       "Piura",
+       "Pucallpa"
+      ]
+     }
+    },
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/el-heladero-dulce-sabor-a-muerte",
+     "dias": {
+      "2026-11-18": [
+       "Barranca",
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/el-heladero-dulce-sabor-a-muerte",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1125",
+     "dias": {
+      "2026-11-18": [
+       "Tumbes"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003140?referenceScheme=HeadOffice&allowPlaceHolder=true",
+   "fuente_sinopsis": "Cineplanet"
+  },
+  {
+   "id": "el pintor de los milagros",
+   "titulo": "El Pintor de los Milagros",
+   "generos": [
+    "Drama"
+   ],
+   "sinopsis": "Tras el accidente que deja a su hija en coma, Francisco, un periodista experimentado, intenta retomar su vida aceptando una investigación que parece menor: descubrir el origen del antiguo mural del Cristo Moreno, venerado…",
+   "reparto": [],
+   "origen": "",
+   "cines": [
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/el-pintor-de-los-milagros",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Huancayo",
+       "Lima",
+       "Piura"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/el-pintor-de-los-milagros",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/el-pintor-de-los-milagros",
+     "dias": {
+      "2026-11-18": [
+       "Chincha",
+       "Huaral"
+      ]
+     }
+    },
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/el-pintor-de-los-milagros",
+     "dias": {
+      "2026-11-18": [
+       "Chimbote",
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003098?referenceScheme=HeadOffice&allowPlaceHolder=true",
+   "fuente_sinopsis": "Cineplanet"
+  },
+  {
+   "id": "el poder de la red",
+   "titulo": "El poder de la red",
+   "generos": [
+    "Drama"
+   ],
+   "sinopsis": "Una exempleada de Facebook recurre a un periodista para revelar lo que los documentos internos de la empresa dicen sobre los efectos de su plataforma.",
+   "reparto": [
+    "Mikey Madison",
+    "Jeremy Allen White"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/el-poder-de-la-red",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00002987?referenceScheme=HeadOffice&allowPlaceHolder=true"
+  },
+  {
+   "id": "ellas",
+   "titulo": "Ellas",
+   "generos": [
+    "Drama"
+   ],
+   "sinopsis": "Julia sigue los pasos de su madre como trabajadora del hogar en la casa donde creció. Los recuerdos compartidos con las hijas de la familia la enfrentan a las diferencias que marcaron sus vidas.",
+   "reparto": [],
+   "origen": "Perú",
+   "cines": [
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1153",
+     "dias": {
+      "2026-11-19": [
+       "Lima"
+      ],
+      "2026-11-20": [
+       "Lima"
+      ],
+      "2026-11-21": [
+       "Lima"
+      ],
+      "2026-11-23": [
+       "Lima"
+      ],
+      "2026-11-24": [
+       "Lima"
+      ],
+      "2026-11-25": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://uvk.pe/images/movie/1794930092.png",
+   "recomendada": "Un drama peruano sobre el trabajo del hogar, la memoria y las diferencias de clase.",
+   "nueva_desde": "2026-11-18"
+  },
+  {
+   "id": "fiesta pagana",
+   "titulo": "Fiesta Pagäna",
+   "generos": [],
+   "sinopsis": "",
+   "reparto": [],
+   "origen": "",
+   "cines": [
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-19": [
+       "Lima"
+      ],
+      "2026-11-20": [
+       "Lima"
+      ],
+      "2026-11-21": [
+       "Lima"
+      ],
+      "2026-11-22": [
+       "Lima"
+      ],
+      "2026-11-23": [
+       "Lima"
+      ],
+      "2026-11-24": [
+       "Lima"
+      ],
+      "2026-11-25": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "nueva_desde": "2026-11-18"
+  },
+  {
+   "id": "godzilla minus zero",
+   "titulo": "Godzilla Minus Zero",
+   "generos": [
+    "Acción"
+   ],
+   "sinopsis": "En el Japón de la posguerra, un país devastado intenta reconstruirse desde las cenizas. Sin embargo, una nueva amenaza emerge desde el océano: Godzilla.",
+   "reparto": [],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ],
+      "2026-11-19": [
+       "Lima"
+      ],
+      "2026-11-20": [
+       "Lima"
+      ],
+      "2026-11-21": [
+       "Lima"
+      ],
+      "2026-11-22": [
+       "Lima"
+      ],
+      "2026-11-23": [
+       "Lima"
+      ],
+      "2026-11-24": [
+       "Lima"
+      ],
+      "2026-11-25": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/godzilla-minus-zero",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Cajamarca",
+       "Chiclayo",
+       "Cusco",
+       "Huancayo",
+       "Huánuco",
+       "Juliaca",
+       "Lima",
+       "Piura",
+       "Pucallpa",
+       "Puno",
+       "Tacna",
+       "Trujillo"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/godzilla-minus-zero",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Huancayo",
+       "Huanuco",
+       "Lima",
+       "Piura",
+       "Trujillo"
+      ]
+     }
+    },
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/godzilla-minus-zero-dob",
+     "dias": {
+      "2026-11-18": [
+       "Barranca",
+       "Cajamarca",
+       "Cañete",
+       "Chincha",
+       "Huaral",
+       "Iquitos",
+       "Jaén",
+       "Lima",
+       "Pisco"
+      ],
+      "2026-11-19": [
+       "Iquitos"
+      ]
+     }
+    },
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/godzilla-minus-zero-dob",
+     "dias": {
+      "2026-11-18": [
+       "Ayacucho",
+       "Callao",
+       "Chimbote",
+       "Ilo",
+       "Lima",
+       "Moquegua",
+       "Sullana",
+       "Tarapoto",
+       "Tingo María"
+      ],
+      "2026-11-19": [
+       "Ilo",
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1123",
+     "dias": {
+      "2026-11-18": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-19": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-20": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-21": [
+       "Ilo",
+       "Lima"
+      ],
+      "2026-11-22": [
+       "Ilo",
+       "Lima"
+      ],
+      "2026-11-23": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-24": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-25": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003060?referenceScheme=HeadOffice&allowPlaceHolder=true",
+   "fuente_sinopsis": "Cineplanet"
+  },
+  {
+   "id": "gregorio",
+   "titulo": "Gregorio",
+   "generos": [
+    "Drama"
+   ],
+   "sinopsis": "Un niño llega a Lima con su familia desde los Andes y aprende a sobrevivir en una ciudad que le ofrece pocas oportunidades.",
+   "reparto": [
+    "Marino León",
+    "Vetzi Pérez Palma"
+   ],
+   "origen": "Perú",
+   "cines": [
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1139",
+     "dias": {
+      "2026-11-26": [
+       "Lima"
+      ],
+      "2026-11-30": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://uvk.pe/images/movie/1793984117.jpg"
+  },
+  {
+   "id": "ju on el grito",
+   "titulo": "Ju-on: El grito",
+   "generos": [
+    "Terror"
+   ],
+   "sinopsis": "Una voluntaria entra en una casa marcada por una muerte violenta y descubre que la maldición persigue a quienes cruzan su puerta.",
+   "reparto": [
+    "Megumi Okina",
+    "Misaki Itō",
+    "Takako Fuji"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/ju-on-el-grito-2002",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/ju-on-el-grito-2002",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/ju-on-el-grito-[2002]",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/ju-on-el-grito-2002",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Huancayo",
+       "Lima",
+       "Piura"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://www.movietime.com.pe/bucket/images/cine/e58aed52-2144-4f65-b142-71c9367c68d2.jpeg"
+  },
+  {
+   "id": "juliana",
+   "titulo": "Juliana",
+   "generos": [
+    "Drama"
+   ],
+   "sinopsis": "Juliana abandona su casa y se hace pasar por un niño para unirse a un grupo que canta en los autobuses de Lima.",
+   "reparto": [
+    "Rosa Isabel Morfino",
+    "Edward Centeno"
+   ],
+   "origen": "Perú",
+   "cines": [
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1142",
+     "dias": {
+      "2026-11-28": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://uvk.pe/images/movie/1793984440.jpg"
+  },
+  {
+   "id": "la boca del lobo",
+   "titulo": "La boca del lobo",
+   "generos": [
+    "Drama"
+   ],
+   "sinopsis": "Un joven policía destinado a una comunidad andina debe decidir cómo actuar cuando las órdenes de su superior ponen en peligro a los pobladores.",
+   "reparto": [
+    "Gustavo Bueno",
+    "Toño Vega",
+    "José Tejada"
+   ],
+   "origen": "Perú",
+   "cines": [
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1138",
+     "dias": {
+      "2026-11-29": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://uvk.pe/images/movie/1793983797.jpg"
+  },
+  {
+   "id": "la casa de las galletas",
+   "titulo": "LA CASA DE LAS GALLETAS",
+   "generos": [],
+   "sinopsis": "Juliana ha descubierto el paradero de su madre biológica, por lo que ha ido en su búsqueda con la intención de conocerla y a la vez conocer su propio pasado.",
+   "reparto": [],
+   "origen": "",
+   "cines": [
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/la-casa-de-las-galletas",
+     "dias": {
+      "2026-11-18": [
+       "Barranca",
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/la-casa-de-las-galletas",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://www.movietime.com.pe/bucket/images/cine/5a5b88e5-50cd-44e1-bdbe-946eb89de0a9.png",
+   "fuente_sinopsis": "Movie Time"
+  },
+  {
+   "id": "la caida de la ballena",
+   "titulo": "La caída de la ballena",
+   "generos": [
+    "Acción"
+   ],
+   "sinopsis": "Un buzo busca los restos de su padre frente a la costa de California. Una ballena se lo traga y lo obliga a buscar una salida antes de que se agote el aire.",
+   "reparto": [
+    "Austin Abrams",
+    "Josh Brolin"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/la-caida-de-la-ballena",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00002980?referenceScheme=HeadOffice&allowPlaceHolder=true"
+  },
+  {
+   "id": "la ciudad y los perros",
+   "titulo": "La ciudad y los perros",
+   "generos": [
+    "Drama"
+   ],
+   "sinopsis": "El robo de un examen rompe los pactos entre los cadetes de un colegio militar y deja al descubierto los abusos de su formación.",
+   "reparto": [
+    "Pablo Serra",
+    "Gustavo Bueno",
+    "Luis Álvarez"
+   ],
+   "origen": "Perú",
+   "cines": [
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1143",
+     "dias": {
+      "2026-11-27": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://uvk.pe/images/movie/1793985001.jpg"
+  },
+  {
+   "id": "la fuga del chacal",
+   "titulo": "La fuga del chacal",
+   "generos": [
+    "Acción",
+    "Drama"
+   ],
+   "sinopsis": "La historia de un prófugo que intenta sobrevivir al cerco policial, inspirada en hechos de la crónica policial peruana.",
+   "reparto": [
+    "Miguel Ángel Rodríguez"
+   ],
+   "origen": "Perú",
+   "cines": [
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1144",
+     "dias": {
+      "2026-11-26": [
+       "Lima"
+      ],
+      "2026-12-01": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://uvk.pe/images/movie/1793985098.jpg"
+  },
+  {
+   "id": "la gran sangre ojo x ojo",
+   "titulo": "La Gran Sangre: Ojo x Ojo",
+   "generos": [
+    "Acción"
+   ],
+   "sinopsis": "Dragón, Mandril y Tony Blades salen de prisión y se reúnen para enfrentarse a una red de extorsión que tiene en vilo a Lima.",
+   "reparto": [
+    "Carlos Alcántara",
+    "Pietro Sibille",
+    "Aldo Miyashiro"
+   ],
+   "origen": "Perú",
+   "cines": [
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/la-gran-sangre-ojo-x-ojo",
+     "dias": {
+      "2026-11-18": [
+       "Cajamarca",
+       "Cañete",
+       "Chincha",
+       "Huaral",
+       "Iquitos",
+       "Jaén",
+       "Lima",
+       "Pisco"
+      ]
+     }
+    },
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/la-gran-sangre-ojo-x-ojo",
+     "dias": {
+      "2026-11-18": [
+       "Ayacucho",
+       "Callao",
+       "Chimbote",
+       "Ilo",
+       "Lima",
+       "Moquegua",
+       "Sullana",
+       "Tarapoto",
+       "Tingo María"
+      ],
+      "2026-11-19": [
+       "Ilo",
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ],
+      "2026-11-19": [
+       "Lima"
+      ],
+      "2026-11-20": [
+       "Lima"
+      ],
+      "2026-11-21": [
+       "Lima"
+      ],
+      "2026-11-22": [
+       "Lima"
+      ],
+      "2026-11-23": [
+       "Lima"
+      ],
+      "2026-11-24": [
+       "Lima"
+      ],
+      "2026-11-25": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/la-gran-sangre-ojo-x-ojo",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Cajamarca",
+       "Chiclayo",
+       "Cusco",
+       "Huancayo",
+       "Huánuco",
+       "Juliaca",
+       "Lima",
+       "Piura",
+       "Pucallpa",
+       "Puno",
+       "Tacna",
+       "Trujillo"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/la-gran-sangre-ojo-x-ojo",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Huancayo",
+       "Huanuco",
+       "Lima",
+       "Piura",
+       "Trujillo"
+      ]
+     }
+    },
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1146",
+     "dias": {
+      "2026-11-18": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-19": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-20": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-21": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-22": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-23": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-24": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-25": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ]
+     }
+    }
+   ],
+   "poster": "https://www.movietime.com.pe/bucket/images/cine/43679337-c6f0-49c3-a5da-29ca1b8f8565.jpeg",
+   "recomendada": "Acción peruana para quienes quieren volver al universo de la serie."
+  },
+  {
+   "id": "la isla olvidada",
+   "titulo": "La isla olvidada",
+   "generos": [],
+   "sinopsis": "",
+   "reparto": [],
+   "origen": "",
+   "cines": [
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-19": [
+       "Lima"
+      ],
+      "2026-11-20": [
+       "Lima"
+      ],
+      "2026-11-21": [
+       "Lima"
+      ],
+      "2026-11-22": [
+       "Lima"
+      ],
+      "2026-11-23": [
+       "Lima"
+      ],
+      "2026-11-24": [
+       "Lima"
+      ],
+      "2026-11-25": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "nueva_desde": "2026-11-18"
+  },
+  {
+   "id": "la muralla verde",
+   "titulo": "La muralla verde",
+   "generos": [
+    "Drama"
+   ],
+   "sinopsis": "Un hombre deja Lima para instalarse con su familia en la selva. La burocracia y el aislamiento ponen a prueba su proyecto de vida.",
+   "reparto": [
+    "Julio Alemán",
+    "Sandra Riva",
+    "Raúl Martin"
+   ],
+   "origen": "Perú",
+   "cines": [
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1141",
+     "dias": {
+      "2026-11-28": [
+       "Lima"
+      ],
+      "2026-11-30": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://uvk.pe/images/movie/1793984369.jpg"
+  },
+  {
+   "id": "la nueva focker",
+   "titulo": "La nueva Focker",
+   "generos": [
+    "Comedia"
+   ],
+   "sinopsis": "Los Focker vuelven a poner a prueba su círculo de confianza cuando la familia recibe a una nueva integrante.",
+   "reparto": [
+    "Ben Stiller",
+    "Robert De Niro",
+    "Ariana Grande"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-21": [
+       "Lima"
+      ],
+      "2026-11-22": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/la-nueva-focker",
+     "dias": {
+      "2026-11-21": [
+       "Arequipa",
+       "Lima"
+      ],
+      "2026-11-22": [
+       "Arequipa",
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/la-nueva-focker-sub",
+     "dias": {
+      "2026-11-21": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/la-nueva-focker-dob",
+     "dias": {
+      "2026-11-21": [
+       "Chimbote",
+       "Lima"
+      ],
+      "2026-11-22": [
+       "Chimbote"
+      ]
+     }
+    },
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1137",
+     "dias": {
+      "2026-11-21": [
+       "Tumbes"
+      ],
+      "2026-11-22": [
+       "Tumbes"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.cinemark-peru.com/content/posters/HO00010029.jpg",
+   "nueva_desde": "2026-11-18"
+  },
+  {
+   "id": "la tribu",
+   "titulo": "La Tribu",
+   "generos": [
+    "Comedia"
+   ],
+   "sinopsis": "Una reunión familiar donde todo sale mal… y luego empeora.",
+   "reparto": [],
+   "origen": "",
+   "cines": [
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/la-tribu",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/la-tribu",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1105",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003058?referenceScheme=HeadOffice&allowPlaceHolder=true",
+   "fuente_sinopsis": "Cineplanet"
+  },
+  {
+   "id": "los juegos del hambre amanecer en la cosecha",
+   "titulo": "Los juegos del hambre: Amanecer en la cosecha",
+   "generos": [
+    "Acción",
+    "Ciencia ficción"
+   ],
+   "sinopsis": "Veinticuatro años antes de que Katniss llegue a la arena, el joven Haymitch es elegido para una edición de los Juegos del Hambre que duplica el número de tributos.",
+   "reparto": [
+    "Joseph Zada",
+    "Whitney Peak",
+    "Mckenna Grace"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/juegos-del-hambre-amanecer-cosecha",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Huancayo",
+       "Huanuco",
+       "Lima",
+       "Piura",
+       "Trujillo"
+      ],
+      "2026-11-19": [
+       "Arequipa",
+       "Huancayo",
+       "Huanuco",
+       "Lima",
+       "Piura",
+       "Trujillo"
+      ],
+      "2026-11-20": [
+       "Huanuco",
+       "Lima",
+       "Piura",
+       "Trujillo"
+      ],
+      "2026-11-21": [
+       "Arequipa",
+       "Huancayo",
+       "Huanuco",
+       "Lima",
+       "Piura",
+       "Trujillo"
+      ],
+      "2026-11-22": [
+       "Arequipa",
+       "Huanuco",
+       "Lima",
+       "Piura",
+       "Trujillo"
+      ]
+     }
+    },
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1131",
+     "dias": {
+      "2026-11-18": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-19": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-20": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-21": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-22": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-23": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-24": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-25": [
+       "Lima",
+       "Tumbes"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ],
+      "2026-11-19": [
+       "Lima"
+      ],
+      "2026-11-20": [
+       "Lima"
+      ],
+      "2026-11-21": [
+       "Lima"
+      ],
+      "2026-11-22": [
+       "Lima"
+      ],
+      "2026-11-23": [
+       "Lima"
+      ],
+      "2026-11-24": [
+       "Lima"
+      ],
+      "2026-11-25": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/los-juegos-del-hambre-amanecer-en-la-cosecha",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Cajamarca",
+       "Chiclayo",
+       "Cusco",
+       "Huancayo",
+       "Huánuco",
+       "Juliaca",
+       "Lima",
+       "Piura",
+       "Pucallpa",
+       "Puno",
+       "Tacna",
+       "Trujillo"
+      ],
+      "2026-11-19": [
+       "Arequipa",
+       "Cajamarca",
+       "Chiclayo",
+       "Cusco",
+       "Huancayo",
+       "Huánuco",
+       "Juliaca",
+       "Lima",
+       "Piura",
+       "Pucallpa",
+       "Puno",
+       "Tacna",
+       "Trujillo"
+      ],
+      "2026-11-20": [
+       "Arequipa",
+       "Cajamarca",
+       "Chiclayo",
+       "Cusco",
+       "Huancayo",
+       "Huánuco",
+       "Juliaca",
+       "Lima",
+       "Piura",
+       "Pucallpa",
+       "Puno",
+       "Tacna",
+       "Trujillo"
+      ],
+      "2026-11-21": [
+       "Arequipa",
+       "Chiclayo",
+       "Cusco",
+       "Huancayo",
+       "Huánuco",
+       "Juliaca",
+       "Lima",
+       "Piura",
+       "Pucallpa",
+       "Puno",
+       "Tacna",
+       "Trujillo"
+      ],
+      "2026-11-22": [
+       "Arequipa",
+       "Cajamarca",
+       "Chiclayo",
+       "Cusco",
+       "Huancayo",
+       "Huánuco",
+       "Juliaca",
+       "Lima",
+       "Piura",
+       "Pucallpa",
+       "Puno",
+       "Tacna",
+       "Trujillo"
+      ]
+     }
+    },
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/los-juegos-del-hambre-amanecer-en-la-cosecha-dob-r",
+     "dias": {
+      "2026-11-18": [
+       "Barranca",
+       "Cajamarca",
+       "Cañete",
+       "Chincha",
+       "Huaral",
+       "Iquitos",
+       "Jaén",
+       "Lima",
+       "Pisco"
+      ],
+      "2026-11-19": [
+       "Barranca",
+       "Cajamarca",
+       "Cañete",
+       "Chincha",
+       "Huaral",
+       "Iquitos",
+       "Jaén",
+       "Lima",
+       "Pisco"
+      ]
+     }
+    },
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/los-juegos-del-hambre-amanecer-en-la-cosecha-dob-r",
+     "dias": {
+      "2026-11-18": [
+       "Ayacucho",
+       "Callao",
+       "Chimbote",
+       "Ilo",
+       "Lima",
+       "Moquegua",
+       "Sullana",
+       "Tarapoto",
+       "Tingo María"
+      ],
+      "2026-11-19": [
+       "Ayacucho",
+       "Callao",
+       "Chimbote",
+       "Ilo",
+       "Lima",
+       "Sullana",
+       "Tarapoto",
+       "Tingo María"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.cinemark-peru.com/content/posters/HO00009998.jpg",
+   "recomendada": "Para seguir la historia de Panem desde la perspectiva del joven Haymitch."
+  },
+  {
+   "id": "madre siniestra",
+   "titulo": "Madre Siniestra",
+   "generos": [
+    "Terror"
+   ],
+   "sinopsis": "La historia sigue a Bela, una joven que comienza a vincularse con una presencia oscura dentro de su hogar: una entidad siniestra que adopta la apariencia de su madre y la arrastra a un mundo donde el amor, el miedo y lo…",
+   "reparto": [],
+   "origen": "",
+   "cines": [
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/madre-siniestra",
+     "dias": {
+      "2026-11-18": [
+       "Chiclayo",
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/madre-siniestra",
+     "dias": {
+      "2026-11-18": [
+       "Lima",
+       "Trujillo"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003063?referenceScheme=HeadOffice&allowPlaceHolder=true",
+   "fuente_sinopsis": "Cineplanet"
+  },
+  {
+   "id": "migrantes",
+   "titulo": "Migrantes",
+   "generos": [
+    "Drama"
+   ],
+   "sinopsis": "Dos hombres dejan Venezuela rumbo a Perú. Durante el viaje conocen a Valentina y Eva y se enfrentan al costo de empezar de nuevo lejos de casa.",
+   "reparto": [],
+   "origen": "Perú",
+   "cines": [
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/migrantes",
+     "dias": {
+      "2026-11-19": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/migrantes",
+     "dias": {
+      "2026-11-19": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://www.movietime.com.pe/bucket/images/cine/c5c22d86-e58e-461a-a271-b6f988252f9c.jpeg"
+  },
+  {
+   "id": "monstruo infernal",
+   "titulo": "Monstruo infernal",
+   "generos": [
+    "Terror"
+   ],
+   "sinopsis": "En plena Segunda Guerra Mundial, soldados japoneses y prisioneros de guerra quedan atrapados en una mina maldita en Tailandia, donde una criatura ancestral desata una pesadilla sangrienta.",
+   "reparto": [],
+   "origen": "",
+   "cines": [
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/monstruo-infernal",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Chiclayo",
+       "Cusco",
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/monstruo-infernal",
+     "dias": {
+      "2026-11-18": [
+       "Huancayo",
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/monstruo-infernal-dob",
+     "dias": {
+      "2026-11-18": [
+       "Cajamarca",
+       "Chincha",
+       "Huaral",
+       "Iquitos",
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/monstruo-infernal-dob",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003161?referenceScheme=HeadOffice&allowPlaceHolder=true",
+   "fuente_sinopsis": "Cineplanet"
+  },
+  {
+   "id": "mrs green apple zenjin mito to in mutable",
+   "titulo": "Mrs. Green Apple: Zenjin Mito to In/Mutable",
+   "generos": [
+    "Concierto"
+   ],
+   "sinopsis": "Proyección del concierto Zenjin Mito to In/Mutable del grupo japonés Mrs. Green Apple.",
+   "reparto": [
+    "Mrs. Green Apple"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-20": [
+       "Lima"
+      ],
+      "2026-11-22": [
+       "Lima"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "nmixx episode 1 zero frontier live viewing",
+   "titulo": "NMIXX: Episode 1 — Zero Frontier",
+   "generos": [
+    "Concierto"
+   ],
+   "sinopsis": "El grupo surcoreano NMIXX interpreta en Incheon canciones como «O.O» y «Dash» en un concierto transmitido a salas de cine.",
+   "reparto": [
+    "Lily",
+    "Haewon",
+    "Sullyoon",
+    "Bae",
+    "Jiwoo",
+    "Kyujin"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/nmixx-episode-1-zero-frontier-live-viewing",
+     "dias": {
+      "2026-11-29": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/nmixx-episode-1-zero-frontier-live-viewing",
+     "dias": {
+      "2026-11-29": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/nmixx-episode-1-zero-frontier-live-viewingr",
+     "dias": {
+      "2026-11-29": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-29": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003163?referenceScheme=HeadOffice&allowPlaceHolder=true"
+  },
+  {
+   "id": "pantaleon y las visitadoras",
+   "titulo": "Pantaleón y las visitadoras",
+   "generos": [
+    "Comedia",
+    "Drama"
+   ],
+   "sinopsis": "Un capitán recibe una misión secreta del Ejército en la Amazonía. Su empeño por cumplirla con exactitud acaba por poner en riesgo el secreto.",
+   "reparto": [
+    "Salvador del Solar",
+    "Angie Cepeda",
+    "Mónica Sánchez"
+   ],
+   "origen": "Perú",
+   "cines": [
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1140",
+     "dias": {
+      "2026-11-29": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://uvk.pe/images/movie/1793984256.jpg"
+  },
+  {
+   "id": "papa oso",
+   "titulo": "PAPÁ OSO",
+   "generos": [],
+   "sinopsis": "Tras dos aventuras, el oso Mik-Mik desea finalmente vivir tranquilo con su familia y sus abejas.",
+   "reparto": [],
+   "origen": "",
+   "cines": [
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/papa-oso",
+     "dias": {
+      "2026-11-18": [
+       "Cajamarca"
+      ]
+     }
+    }
+   ],
+   "poster": "https://www.movietime.com.pe/bucket/images/cine/dd94ee97-2eb7-464d-a341-5314f758a6bf.jpeg",
+   "fuente_sinopsis": "Movie Time",
+   "nueva_desde": "2026-11-18"
+  },
+  {
+   "id": "pinocho",
+   "titulo": "Pinocho",
+   "generos": [],
+   "sinopsis": "Un viejo cuento de hadas de una nueva manera. La historia del héroe favorito de todos, Pinocho, su papá Carlo y sus amigos, contada con la ayuda de la tecnología moderna.",
+   "reparto": [],
+   "origen": "",
+   "cines": [
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/pinocho-dob",
+     "dias": {
+      "2026-11-18": [
+       "Iquitos"
+      ]
+     }
+    }
+   ],
+   "poster": "https://www.movietime.com.pe/bucket/images/cine/a2490d29-fc3d-463d-83fd-3e8f7a29fbfd.jpeg",
+   "fuente_sinopsis": "Movie Time"
+  },
+  {
+   "id": "pinocho sin cuerdas",
+   "titulo": "Pinocho: Sin cuerdas",
+   "generos": [
+    "Terror"
+   ],
+   "sinopsis": "Geppetto le regala a su nieto un muñeco que cobra vida. La amistad entre el niño y Pinocho toma un rumbo siniestro.",
+   "reparto": [
+    "Richard Brake",
+    "Cameron Bell"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/pinocho-sin-cuerdas",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Huancayo",
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/pinocho-sin-cuerdas",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Chiclayo",
+       "Cusco",
+       "Huancayo",
+       "Huánuco",
+       "Lima",
+       "Piura",
+       "Tacna"
+      ]
+     }
+    },
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/pinocho-sin-cuerdas-dob",
+     "dias": {
+      "2026-11-18": [
+       "Barranca",
+       "Chincha",
+       "Huaral",
+       "Iquitos",
+       "Jaén",
+       "Lima",
+       "Pisco"
+      ]
+     }
+    },
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/pinocho-sin-cuerdas-dob",
+     "dias": {
+      "2026-11-18": [
+       "Callao",
+       "Ilo",
+       "Lima",
+       "Moquegua",
+       "Sullana"
+      ],
+      "2026-11-19": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.cinemark-peru.com/content/posters/HO00009919.jpg"
+  },
+  {
+   "id": "ratoncitos en apuros",
+   "titulo": "Ratoncitos en apuros",
+   "generos": [
+    "Familiar",
+    "Comedia"
+   ],
+   "sinopsis": "Una familia se muda al campo sin saber que su nueva casa ya está ocupada. Los ratones que viven allí se organizan para defender su hogar.",
+   "reparto": [],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-19": [
+       "Lima"
+      ],
+      "2026-11-20": [
+       "Lima"
+      ],
+      "2026-11-21": [
+       "Lima"
+      ],
+      "2026-11-22": [
+       "Lima"
+      ],
+      "2026-11-23": [
+       "Lima"
+      ],
+      "2026-11-24": [
+       "Lima"
+      ],
+      "2026-11-25": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1156",
+     "dias": {
+      "2026-11-19": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-20": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-21": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-22": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-23": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-24": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-25": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ]
+     }
+    }
+   ],
+   "poster": "https://uvk.pe/images/movie/1795011720.png",
+   "nueva_desde": "2026-11-18"
+  },
+  {
+   "id": "resident evil noche cero",
+   "titulo": "Resident Evil: Noche cero",
+   "generos": [
+    "Terror"
+   ],
+   "sinopsis": "Un mensajero llega a un hospital remoto con un paquete y queda atrapado en medio de un brote que transforma a las personas en criaturas violentas.",
+   "reparto": [
+    "Austin Abrams"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/resident-evil-noche-cero",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003067?referenceScheme=HeadOffice&allowPlaceHolder=true"
+  },
+  {
+   "id": "rocky",
+   "titulo": "Rocky",
+   "generos": [
+    "Drama"
+   ],
+   "sinopsis": "Un boxeador de Filadelfia acepta el desafío del campeón mundial. En el camino descubre cuánto puede cambiar su vida al tomarse en serio esa oportunidad.",
+   "reparto": [
+    "Sylvester Stallone",
+    "Talia Shire",
+    "Carl Weathers"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/rocky-1976",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/rocky-[50-aniversario]",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Chiclayo",
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.cinemark-peru.com/content/posters/HO00010017.jpg"
+  },
+  {
+   "id": "sensatez y sentimiento",
+   "titulo": "Sensatez y sentimiento",
+   "generos": [
+    "Drama"
+   ],
+   "sinopsis": "Tras perder la casa familiar, las hermanas Dashwood buscan su lugar en una sociedad donde el dinero y la reputación condicionan sus relaciones.",
+   "reparto": [
+    "Emma Thompson",
+    "Kate Winslet",
+    "Hugh Grant",
+    "Alan Rickman"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/sensatez-y-sentimiento",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003065?referenceScheme=HeadOffice&allowPlaceHolder=true"
+  },
+  {
+   "id": "simon el gato testarudo",
+   "titulo": "SIMÓN: EL GATO TESTARUDO",
+   "generos": [],
+   "sinopsis": "Elías, un anciano recién viudo, malhumorado y cansado de la vida, cree que ya nada puede sorprenderlo… hasta que un gato callejero aparece en su puerta.",
+   "reparto": [],
+   "origen": "",
+   "cines": [
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/simon-el-gato-testarudo",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://www.cinestar.com.pe/bucket/images/cine/3d7a19f9-6d59-4974-90dd-059fecdc578e.jpeg",
+   "fuente_sinopsis": "Cine Star"
+  },
+  {
+   "id": "street fighter",
+   "titulo": "Street Fighter",
+   "generos": [
+    "Acción",
+    "Drama"
+   ],
+   "sinopsis": "Ambientada en 1993, los distanciados Street Fighters Ryu (Andrew Koji) y Ken Masters (Noah Centineo) vuelven al combate cuando la misteriosa Chun-Li (Callina Liang) los recluta para el próximo Torneo Mundial de Guerreros: un…",
+   "reparto": [
+    "Andrew Koji",
+    "Noah Centineo",
+    "Callina Liang"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/street-fighter",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/street-fighter",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003064?referenceScheme=HeadOffice&allowPlaceHolder=true",
+   "fuente_sinopsis": "Cineplanet"
+  },
+  {
+   "id": "verity la sombra de un engano",
+   "titulo": "Verity: La sombra de un engaño",
+   "generos": [
+    "Suspenso"
+   ],
+   "sinopsis": "Tras un inquietante accidente, la exitosa autora Verity Crawford no puede escribir. Lowen Ashleigh es contratada como su escritora fantasma, pero descubre verdades inquietantes sobre los Crawford mientras vive con ellos.",
+   "reparto": [
+    "Anne Hathaway",
+    "Dakota Johnson",
+    "Josh Hartnett"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/verity-la-sombra-de-un-engano",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003069?referenceScheme=HeadOffice&allowPlaceHolder=true",
+   "fuente_sinopsis": "Cineplanet"
+  },
+  {
+   "id": "vertigo 2 punto muerto",
+   "titulo": "Vértigo 2: Punto Muerto",
+   "generos": [
+    "Suspenso"
+   ],
+   "sinopsis": "Tras sobrevivir a una experiencia extrema, un nuevo grupo de jóvenes se enfrenta a un desafío aún más peligroso en un entorno remoto en Tailandia.",
+   "reparto": [],
+   "origen": "",
+   "cines": [
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/vertigo-2-punto-muerto",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00002977?referenceScheme=HeadOffice&allowPlaceHolder=true",
+   "fuente_sinopsis": "Cineplanet"
+  },
+  {
+   "id": "wildwood el bosque salvaje",
+   "titulo": "Wildwood: El bosque salvaje",
+   "generos": [
+    "Animación"
+   ],
+   "sinopsis": "Una bandada de cuervos se lleva al hermano pequeño de Prue. Para encontrarlo, ella y un compañero de clase cruzan un bosque encantado a las afueras de Portland.",
+   "reparto": [
+    "Peyton Elizabeth Lee",
+    "Jacob Tremblay"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/el-bosque-salvaje-wildwood",
+     "dias": {
+      "2026-11-18": [
+       "Arequipa",
+       "Chiclayo",
+       "Cusco",
+       "Huancayo",
+       "Lima",
+       "Puno",
+       "Tacna"
+      ]
+     }
+    },
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1124",
+     "dias": {
+      "2026-11-18": [
+       "Lima",
+       "Tumbes"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/wildwood-el-bosque-salvaje",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/wildwood-el-bosque-salvaje-dob",
+     "dias": {
+      "2026-11-18": [
+       "Iquitos",
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/wildwood-el-bosque-salvaje-dob",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003108?referenceScheme=HeadOffice&allowPlaceHolder=true",
+   "recomendada": "Una aventura animada para quienes disfrutan los cuentos fantásticos."
+  },
+  {
+   "id": "yo soy rocky",
+   "titulo": "Yo soy Rocky",
+   "generos": [
+    "Drama"
+   ],
+   "sinopsis": "Sylvester Stallone escribe el guion de Rocky cuando su carrera está estancada y lucha para que el estudio lo deje interpretar al protagonista.",
+   "reparto": [
+    "Anthony Ippolito",
+    "Stephan James"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ],
+      "2026-11-19": [
+       "Lima"
+      ],
+      "2026-11-20": [
+       "Lima"
+      ],
+      "2026-11-21": [
+       "Lima"
+      ],
+      "2026-11-22": [
+       "Lima"
+      ],
+      "2026-11-23": [
+       "Lima"
+      ],
+      "2026-11-24": [
+       "Lima"
+      ],
+      "2026-11-25": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Movie Time",
+     "url": "https://www.movietime.com.pe/peliculas/yo-soy-rocky-dob",
+     "dias": {
+      "2026-11-19": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/yo-soy-rocky-dob",
+     "dias": {
+      "2026-11-19": [
+       "Ilo",
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1152",
+     "dias": {
+      "2026-11-19": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-20": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-21": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-22": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-23": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-24": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-25": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ]
+     }
+    }
+   ],
+   "poster": "https://www.movietime.com.pe/bucket/images/cine/086dfe2c-d040-40bb-b8f4-56f800b88881.jpeg"
+  },
+  {
+   "id": "your name",
+   "titulo": "Your Name",
+   "generos": [
+    "Anime",
+    "Romance",
+    "Fantasía"
+   ],
+   "sinopsis": "Dos adolescentes empiezan a intercambiar cuerpos sin conocerse. Los mensajes que se dejan revelan una conexión que no se explica por la distancia.",
+   "reparto": [
+    "Ryūnosuke Kamiki",
+    "Mone Kamishiraishi"
+   ],
+   "origen": "Internacional",
+   "cines": [
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-18": [
+       "Lima"
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}
