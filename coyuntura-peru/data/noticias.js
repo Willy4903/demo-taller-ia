@@ -1,16 +1,16 @@
 /* Generado por scripts/actualizar_noticias.py (GitHub Actions, 8 veces al día, hora de Lima). No editar a mano. */
 window.NOTICIAS = {
- "generado": "2026-11-21T00:49:44Z",
+ "generado": "2026-11-21T02:11:35Z",
  "modo": "automatico",
  "estado_fuentes": {
   "IDL-Reporteros": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.idl-reporteros.pe/feed/",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 10,
    "ultima_nota": "2026-11-18T16:18:50Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "OjoPúblico": {
    "ok": true,
@@ -18,10 +18,10 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:ojo-publico.com+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 4,
    "ultima_nota": "2026-11-15T06:30:07Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "Convoca": {
    "ok": true,
@@ -29,10 +29,10 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:convoca.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-21T00:49:44Z",
-   "n": 5,
+   "comprobado": "2026-11-21T02:11:35Z",
+   "n": 6,
    "ultima_nota": "2026-11-20T17:07:02Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "Hildebrandt en sus trece": {
    "ok": true,
@@ -40,82 +40,82 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:hildebrandtensustrece.com+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 15,
    "ultima_nota": "2026-11-20T07:15:39Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "Wayka": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://wayka.pe/feed/",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 5,
    "ultima_nota": "2026-11-20T21:56:22Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "La Mula": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.lamula.pe/feed/",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 15,
    "ultima_nota": "2026-11-20T21:47:00Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "Salud con Lupa": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://saludconlupa.com/feed/",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 13,
    "ultima_nota": "2026-11-20T01:35:00Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "Mongabay Latam": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://es.mongabay.com/feed/",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 15,
    "ultima_nota": "2026-11-20T14:02:20Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "Caretas": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://caretas.pe/feed/",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 15,
-   "ultima_nota": "2026-11-20T23:31:40Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultima_nota": "2026-11-21T01:03:30Z",
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "Agencia Andina": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://andina.pe/agencia/rss.aspx",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 15,
-   "ultima_nota": "2026-11-21T00:48:45Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultima_nota": "2026-11-21T02:00:00Z",
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "El Comercio": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 15,
-   "ultima_nota": "2026-11-21T00:45:16Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultima_nota": "2026-11-21T02:08:05Z",
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "Gestión": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://gestion.pe/arc/outboundfeeds/rss/?outputType=xml",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 15,
-   "ultima_nota": "2026-11-21T00:41:48Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultima_nota": "2026-11-21T02:00:00Z",
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "La República": {
    "ok": true,
@@ -123,28 +123,28 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:larepublica.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 15,
-   "ultima_nota": "2026-11-20T19:46:58Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultima_nota": "2026-11-21T01:06:30Z",
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "RPP": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://rpp.pe/feed",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 15,
-   "ultima_nota": "2026-11-21T00:35:11Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultima_nota": "2026-11-21T01:34:59Z",
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "Infobae Perú": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/category/peru/",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 15,
-   "ultima_nota": "2026-11-21T00:44:00Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultima_nota": "2026-11-21T02:06:49Z",
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "Expreso": {
    "ok": true,
@@ -152,131 +152,131 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:expreso.com.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 403: Forbidden",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 15,
-   "ultima_nota": "2026-11-20T13:08:11Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultima_nota": "2026-11-20T13:45:47Z",
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "El Búho": {
-   "ok": true,
-   "procedencia": "directa",
-   "url": "https://elbuho.pe/feed/",
-   "comprobado": "2026-11-21T00:49:44Z",
-   "n": 15,
-   "ultima_nota": "2026-11-20T23:20:38Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ok": false,
+   "procedencia": "sin datos",
+   "error": "TimeoutError: The read operation timed out",
+   "comprobado": "2026-11-21T02:11:35Z",
+   "ultimo_ok": "2026-11-21T00:49:44Z",
+   "ultima_nota": "2026-11-20T23:20:38Z"
   },
   "BBC Mundo": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://feeds.bbci.co.uk/mundo/rss.xml",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 15,
-   "ultima_nota": "2026-11-20T23:15:44Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultima_nota": "2026-11-21T01:49:03Z",
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "DW Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://rss.dw.com/xml/rss-sp-all",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 15,
-   "ultima_nota": "2026-11-20T21:47:00Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultima_nota": "2026-11-21T00:57:00Z",
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "El País América": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 15,
    "ultima_nota": "2026-11-20T22:57:06Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "France 24 Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.france24.com/es/rss",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 15,
-   "ultima_nota": "2026-11-21T00:30:42Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultima_nota": "2026-11-21T01:07:07Z",
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "ONU Noticias": {
-   "ok": false,
-   "procedencia": "sin datos",
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0",
-   "comprobado": "2026-11-21T00:49:44Z",
-   "ultimo_ok": "2026-11-20T23:05:32Z",
-   "ultima_nota": "2026-11-20T12:00:00Z"
+   "ok": true,
+   "procedencia": "directa",
+   "url": "https://news.un.org/feed/subscribe/es/news/all/rss.xml",
+   "comprobado": "2026-11-21T02:11:35Z",
+   "n": 15,
+   "ultima_nota": "2026-11-20T12:00:00Z",
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "The New York Times en Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=site:nytimes.com/es+when:7d&hl=es-419&gl=US&ceid=US:es-419",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 15,
    "ultima_nota": "2026-11-20T17:24:43Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "The Guardian": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.theguardian.com/world/rss",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 15,
    "ultima_nota": "2026-11-20T21:47:41Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "The New Yorker": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.newyorker.com/feed/everything",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 15,
    "ultima_nota": "2026-11-20T23:07:15Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "Google Noticias · IA en el Perú": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22inteligencia+artificial%22+Per%C3%BA+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 15,
    "ultima_nota": "2026-11-20T20:23:59Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "Google Noticias · El Niño": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22Fen%C3%B3meno+El+Ni%C3%B1o%22+OR+%22Ni%C3%B1o+costero%22+ENFEN+when:14d&hl=es-419&gl=PE&ceid=PE:es-419",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 15,
    "ultima_nota": "2026-11-18T13:29:08Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   },
   "Google Noticias · IA en el mundo": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22inteligencia+artificial%22+(OpenAI+OR+Anthropic+OR+Google+OR+regulaci%C3%B3n+OR+NVIDIA)+when:7d&hl=es-419&gl=US&ceid=US:es-419",
-   "comprobado": "2026-11-21T00:49:44Z",
+   "comprobado": "2026-11-21T02:11:35Z",
    "n": 15,
    "ultima_nota": "2026-11-20T19:28:28Z",
-   "ultimo_ok": "2026-11-21T00:49:44Z"
+   "ultimo_ok": "2026-11-21T02:11:35Z"
   }
  },
  "items": [
   {
-   "id": "95887a81b6",
-   "sector": "politica",
-   "titulo": "Jesús María: inauguran mural para resaltar lazos de amistad entre los países andinos",
-   "resumen": "El Mural de la Integración Andina, obra pictórica impulsada por el Parlamento Andino, fue inaugurado este viernes en el distrito limeño de Jesús María, en una ceremonia cívica con participación de diversas autoridades.",
-   "fuente": "Agencia Andina",
-   "url": "https://andina.pe/agencia/noticia-jesus-maria-inauguran-mural-para-resaltar-lazos-amistad-entre-los-paises-andinos-1100886.aspx",
-   "fecha": "2026-11-21T00:48:45Z",
-   "tipo": "estatal",
+   "id": "4af1267fe5",
+   "sector": "coyuntura",
+   "titulo": "La psicología dice que quienes tardan en elegir qué comer en un restaurante muestran un alto nivel de autoexigencia",
+   "resumen": "Toma en cuenta lo que dice la psicología sobre este hábito.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/mag/respuestas/la-psicologia-dice-que-quienes-tardan-en-elegir-que-comer-en-un-restaurante-muestran-un-alto-nivel-de-autoexigencia-nnda-nnrt-noticia/",
+   "fecha": "2026-11-21T02:08:05Z",
+   "tipo": "comercial",
    "genero": "noticia",
-   "imagen": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2026/11/20/001333597W.webp",
+   "imagen": "https://elcomercio.pe/resizer/v2/WLKS43GBA5GMFFIQFA6JLRX7KI.jpg?auth=e6249885d1b3b2acc3612b238000287487511b71ac2fad1145dbe23b53e82dcd&smart=true&width=6097&height=4064",
    "geografia": {
     "version": 1,
     "ambito": "pendiente",
@@ -285,24 +285,54 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "sintesis": "El Mural de la Integración Andina, obra pictórica impulsada por el Parlamento Andino, fue inaugurado este viernes en el distrito limeño de Jesús María, en una ceremonia cívica con participación de diversas autoridades.",
+   "sintesis": "Toma en cuenta lo que dice la psicología sobre este hábito. Si bien existen personas que tienen bien definido qué platillo elegir en un restaurante, también hay unas cuantas que se saturan al decidir qué opción sería la más recomendable.",
    "puntos": [
-    "El Mural de la Integración Andina, obra pictórica impulsada por el Parlamento Andino, fue inaugurado este viernes en el distrito limeño de Jesús María, en una ceremonia cívica con participación de diversas autoridades."
+    "Toma en cuenta lo que dice la psicología sobre este hábito.",
+    "Si bien existen personas que tienen bien definido qué platillo elegir en un restaurante, también hay unas cuantas que se saturan al decidir qué opción sería la más recomendable.",
+    "Puede tratarse de un hábito sin importancia, pero los expertos en psicología tienen una postura interesante al respecto."
    ],
-   "acceso": "sin_verificar",
-   "url_medio": "https://andina.pe/agencia/noticia-jesus-maria-inauguran-mural-para-resaltar-lazos-amistad-entre-los-paises-andinos-1100886.aspx"
+   "acceso": "abierto",
+   "url_medio": "https://elcomercio.pe/mag/respuestas/la-psicologia-dice-que-quienes-tardan-en-elegir-que-comer-en-un-restaurante-muestran-un-alto-nivel-de-autoexigencia-nnda-nnrt-noticia/"
   },
   {
-   "id": "ed81b14f8c",
+   "id": "a1c592bc5f",
    "sector": "coyuntura",
-   "titulo": "Sismo en Junín de 6.7 de magnitud: epicentro y todo lo que se sabe hasta el momento",
-   "resumen": "La noche de este viernes se sintió un intenso movimiento telúrico de 6.7 grados, según el reporte sísmico oficial.",
+   "titulo": "¿Qué es una bomba sucia y por qué EE.UU. teme que Irán pueda utilizarla en Washington?",
+   "resumen": "La inteligencia de Estados Unidos alerta sobre posibles planes de Irán para usar una bomba sucia en Washington, aunque los analistas consideran poco probable un atentado. Roberto Heimovits advierte que una acción de ese tipo podría darle a Washington el pretexto para una…",
    "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/peru/junin/sismo-en-junin-de-67-de-magnitud-en-vivo-igp-epicentro-y-todo-lo-que-se-sabe-hasta-el-momento-lbposting-noticia/",
-   "fecha": "2026-11-21T00:45:16Z",
+   "url": "https://elcomercio.pe/mundo/eeuu/iran-que-es-una-bomba-sucia-y-por-que-estados-unidos-teme-que-iran-la-use-en-washington-donald-trump-arma-nuclear-guerra-noticia/",
+   "fecha": "2026-11-21T02:06:51Z",
    "tipo": "comercial",
    "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/73NP6FUNHNAUTLN7GUPGUR7CHM.jpg?auth=0a8ab9cabfbc8012c5c0ed85f4bfaa43902434a0a58034518377fda68b7bc532&smart=true&width=1254&height=836",
+   "imagen": "https://elcomercio.pe/resizer/v2/FRXBFOWOTBFQ7EE3Q23VTPYCSA.jpg?auth=117111572ff8f612cb65598eea082e165ec1ab0e9fb24cd9d7707129e4a0c763&smart=true&width=3963&height=2642",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "La inteligencia de Estados Unidos alerta sobre posibles planes de Irán para usar una bomba sucia en Washington, aunque los analistas consideran poco probable un atentado. Roberto Heimovits advierte que una acción de ese tipo podría darle a Washington el pretexto para una represalia nuclear contra Teherán",
+   "puntos": [
+    "La inteligencia de Estados Unidos alerta sobre posibles planes de Irán para usar una bomba sucia en Washington, aunque los analistas consideran poco probable un atentado.",
+    "Roberto Heimovits advierte que una acción de ese tipo podría darle a Washington el pretexto para una represalia nuclear contra Teherán",
+    "Las señales de distensión en un conflicto que entró en un callejón sin salida Leer resumen Seguir en Guardar Resumen Este…"
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://elcomercio.pe/mundo/eeuu/iran-que-es-una-bomba-sucia-y-por-que-estados-unidos-teme-que-iran-la-use-en-washington-donald-trump-arma-nuclear-guerra-noticia/"
+  },
+  {
+   "id": "b7302be399",
+   "sector": "politica",
+   "titulo": "Jimmy Chinchay y Carla Harada reaccionan en vivo al sismo de magnitud 6,7 en Junín: “Está muy fuerte”",
+   "resumen": "El reportero evacuó el hemiciclo del Congreso junto a su equipo, mientras la conductora de Radio Exitosa pidió mantener la calma y buscar zonas seguras.",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/21/jimmy-chinchay-y-carla-harada-reaccionan-en-vivo-al-sismo-de-magnitud-67-en-junin-esta-muy-fuerte/",
+   "fecha": "2026-11-21T02:06:49Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/SRSME5XYH5DAJELT43DKPQQEUQ.jpg?auth=7e038f8389e32f0a6733a0779234906cc210445880a474c1b8e3f4284e010cb0&smart=true&width=1920&height=1080",
    "geografia": {
     "version": 1,
     "ambito": "peru",
@@ -311,6 +341,214 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
+   "sintesis": "El reportero evacuó el hemiciclo del Congreso junto a su equipo, mientras la conductora de Radio Exitosa pidió mantener la calma y buscar zonas seguras. Momentos de tensión se vivieron en el Congreso cuando un temblor de gran magnitud interrumpió una sesión.",
+   "puntos": [
+    "El reportero evacuó el hemiciclo del Congreso junto a su equipo, mientras la conductora de Radio Exitosa pidió mantener la calma y buscar zonas seguras.",
+    "Momentos de tensión se vivieron en el Congreso cuando un temblor de gran magnitud interrumpió una sesión.",
+    "El periodista Jimmy Chinchay relató la experiencia en directo mientras los presentes evacuaban el Palacio Legislativo."
+   ],
+   "datos": [
+    {
+     "v": "20 de noviembre",
+     "t": "fecha",
+     "c": "El temblor se registró la noche del viernes 20 de noviembre y tuvo como epicentro una zona cercana a la ciudad de Junín."
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://www.infobae.com/peru/2026/11/21/jimmy-chinchay-y-carla-harada-reaccionan-en-vivo-al-sismo-de-magnitud-67-en-junin-esta-muy-fuerte/"
+  },
+  {
+   "id": "696cc18a57",
+   "sector": "coyuntura",
+   "titulo": "Costa Verde: registran caída de rocas desde los acantilados tras fuerte sismo de 6,7",
+   "resumen": "Un deslizamiento de tierra y rocas se registró en la Costa Verde tras el sismo de magnitud 6,7 con epicentro en Junín. El desprendimiento generó una nube de polvo y obligó a los conductores a evitar uno de los carriles de la vía.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/lima/sucesos/costa-verde-registran-caida-de-rocas-desde-los-acantilados-tras-fuerte-sismo-de-67-en-junin-ultimas-noticia/",
+   "fecha": "2026-11-21T02:02:26Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/PH7UMBLWAVGSVEOU3R6SR2RWBQ.jpg?auth=e1db53be24e930f9d222f3f7826d235f78637ad089050167ee20ce825636cf8c&smart=true&width=1200&height=800",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Un deslizamiento de tierra y rocas se registró en la Costa Verde tras el sismo de magnitud 6,7 con epicentro en Junín. El desprendimiento generó una nube de polvo y obligó a los conductores a evitar uno de los carriles de la vía.",
+   "puntos": [
+    "Un deslizamiento de tierra y rocas se registró en la Costa Verde tras el sismo de magnitud 6,7 con epicentro en Junín.",
+    "El desprendimiento generó una nube de polvo y obligó a los conductores a evitar uno de los carriles de la vía.",
+    "A través de las redes sociales, diversos usuarios reportaron el incidente y difundieron videos que muestran el momento en que tierra y rocas se desprenden de los acantilados y caen sobre la vía."
+   ],
+   "datos": [
+    {
+     "v": "129 kilómetros",
+     "t": "cantidad",
+     "c": "El movimiento telúrico tuvo una profundidad de 129 kilómetros y su epicentro fue localizado a 30 kilómetros al noroeste de Junín."
+    },
+    {
+     "v": "30 kilómetros",
+     "t": "cantidad",
+     "c": "El movimiento telúrico tuvo una profundidad de 129 kilómetros y su epicentro fue localizado a 30 kilómetros al noroeste de Junín."
+    },
+    {
+     "v": "20 de noviembre",
+     "t": "fecha",
+     "c": "…de tierra y rocas se registró la noche de este viernes 20 de noviembre en la Costa Verde , luego del sismo de magnitud 6,7 con…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://elcomercio.pe/lima/sucesos/costa-verde-registran-caida-de-rocas-desde-los-acantilados-tras-fuerte-sismo-de-67-en-junin-ultimas-noticia/"
+  },
+  {
+   "id": "a2c3616ef3",
+   "sector": "coyuntura",
+   "titulo": "Ministerio de Vivienda culmina construcción de cámaras de bombeo para prevenir aniegos",
+   "resumen": "El Ministerio de Vivienda, Construcción y Saneamiento (MVCS) culminó la construcción de dos cámaras de bombeo en la denominada “zona cero” de Villa El Salvador, infraestructura que permitirá evacuar las aguas de lluvia y reducir el riesgo de aniegos ante precipitaciones…",
+   "fuente": "Agencia Andina",
+   "url": "https://andina.pe/agencia/noticia-ministerio-vivienda-culmina-construccion-camaras-bombeo-para-prevenir-aniegos-1100895.aspx",
+   "fecha": "2026-11-21T02:00:00Z",
+   "tipo": "estatal",
+   "genero": "noticia",
+   "imagen": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2026/11/20/001333600W.webp",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "contexto_latinoamerica_resumen"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "El Ministerio de Vivienda, Construcción y Saneamiento (MVCS) culminó la construcción de dos cámaras de bombeo en la denominada “zona cero” de Villa El Salvador, infraestructura que permitirá evacuar las aguas de lluvia y reducir el riesgo de aniegos ante precipitaciones…",
+   "puntos": [
+    "El Ministerio de Vivienda, Construcción y Saneamiento (MVCS) culminó la construcción de dos cámaras de bombeo en la denominada “zona cero” de Villa El Salvador, infraestructura que permitirá evacuar las aguas de lluvia y reducir el riesgo de aniegos ante precipitaciones…"
+   ],
+   "acceso": "sin_verificar",
+   "url_medio": "https://andina.pe/agencia/noticia-ministerio-vivienda-culmina-construccion-camaras-bombeo-para-prevenir-aniegos-1100895.aspx"
+  },
+  {
+   "id": "33b57555c2",
+   "sector": "coyuntura",
+   "titulo": "Atención si sufres malestares con el cambio de clima: qué es la gripe barométrica y lo que hay detrás del término",
+   "resumen": "Si cada cambio de tiempo viene acompañado de molestias, evita sacar conclusiones apresuradas.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/mag/respuestas/gripe-barometrica-que-es-y-que-hay-detras-del-termino-salud-nnda-nnlt-noticia/",
+   "fecha": "2026-11-21T02:00:00Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/ZNW6J2GEENEVFOX6I2XT2NLTZY.jpg?auth=7db7ff0113a07d25fb25f6b7fd5b16d469659256aea53827a761edb34b15a917&smart=true&width=1200&height=809",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "Si cada cambio de tiempo viene acompañado de molestias, evita sacar conclusiones apresuradas. ¿Te duele la cabeza o sientes molestias cuando cambia el clima?",
+   "puntos": [
+    "Si cada cambio de tiempo viene acompañado de molestias, evita sacar conclusiones apresuradas.",
+    "¿Te duele la cabeza o sientes molestias cuando cambia el clima?",
+    "Si te ha pasado, quizá te preguntes por qué ocurre y si hay motivos para preocuparte."
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://elcomercio.pe/mag/respuestas/gripe-barometrica-que-es-y-que-hay-detras-del-termino-salud-nnda-nnlt-noticia/"
+  },
+  {
+   "id": "663642bcf5",
+   "sector": "coyuntura",
+   "titulo": "Gripe barométrica: qué hay detrás de este término y por qué se atribuye a sufrir malestares con el cambio de clima",
+   "resumen": "Antes de culpar al frío, la lluvia o los cambios de temperatura, conoce las posibles causas de tus malestares y las señales que no debes pasar por alto.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/mix/respuestas/gripe-barometrica-que-hay-detras-de-este-termino-y-por-que-se-atribuye-a-sufrir-malestares-con-el-cambio-de-clima-nnda-nnlt-noticia/",
+   "fecha": "2026-11-21T02:00:00Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/OA47ZDRL3RATLBNLOFRUF3VY3I.jpg?auth=525525d26e8870216a8dee77cd181005f9d7f9e9fe879701eef4f0f12a192c3b&smart=true&width=1740&height=990",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "Antes de culpar al frío, la lluvia o los cambios de temperatura, conoce las posibles causas de tus malestares y las señales que no debes pasar por alto. ¿Notas dolor de cabeza u otras molestias cada vez que cambia el clima?",
+   "puntos": [
+    "Antes de culpar al frío, la lluvia o los cambios de temperatura, conoce las posibles causas de tus malestares y las señales que no debes pasar por alto.",
+    "¿Notas dolor de cabeza u otras molestias cada vez que cambia el clima?",
+    "Es posible que te preguntes si existe una relación o si deberías prestar más atención a lo que sientes."
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://gestion.pe/mix/respuestas/gripe-barometrica-que-hay-detras-de-este-termino-y-por-que-se-atribuye-a-sufrir-malestares-con-el-cambio-de-clima-nnda-nnlt-noticia/"
+  },
+  {
+   "id": "a785ffb299",
+   "sector": "coyuntura",
+   "titulo": "Temblor en Junín de magnitud 6,7 se sintió también en Quito, la capital de Ecuador",
+   "resumen": "Un temblor de magnitud 6,7 tuvo como epicentro la región peruana de Junín y se sintió como un ligero remezón en edificios altos de Quito, Ecuador, a más de 1.000 kilómetros de distancia",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/mundo/latinoamerica/temblor-en-junin-peru-de-magnitud-67-se-sintio-tambien-en-quito-ecuador-igp-usgs-noticia/",
+   "fecha": "2026-11-21T01:59:44Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/EVQCSZDS7JFZVE2XHEGUKUBNGI.jpg?auth=eabf9b28284b18a308a484bf979544687e9a45ddb3bc129164fa4aa450071e11&smart=true&width=1051&height=656",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Un temblor de magnitud 6,7 tuvo como epicentro la región peruana de Junín y se sintió como un ligero remezón en edificios altos de Quito, Ecuador, a más de 1.000 kilómetros de distancia El temblor de magnitud 6,7 que sacudió este viernes la región peruana de Junín , limítrofe con el departamento de Lima, se sintió también en la capital de Ecuador, Quito.",
+   "puntos": [
+    "Un temblor de magnitud 6,7 tuvo como epicentro la región peruana de Junín y se sintió como un ligero remezón en edificios altos de Quito, Ecuador, a más de 1.000 kilómetros de distancia",
+    "El temblor de magnitud 6,7 que sacudió este viernes la región peruana de Junín , limítrofe con el departamento de Lima, se sintió también en la capital de Ecuador, Quito.",
+    "El movimiento telúrico se presentó a la 19:09 horas (00:09 hora GMT), con epicentro a 30 kilómetros al noroeste de la localidad de Junín , capital de la región del mismo nombre, y a una profundidad de 127 kilómetros, de acuerdo con los datos del Instituto Geofísico del Perú (IGP)."
+   ],
+   "datos": [
+    {
+     "v": "1.000 kilómetros",
+     "t": "cantidad",
+     "c": "…remezón en edificios altos de Quito, Ecuador, a más de 1.000 kilómetros de distancia. ."
+    },
+    {
+     "v": "30 kilómetros",
+     "t": "cantidad",
+     "c": "…a la 19:09 horas (00:09 hora GMT), con epicentro a 30 kilómetros al noroeste de la localidad de Junín , capital de la…"
+    },
+    {
+     "v": "127 kilómetros",
+     "t": "cantidad",
+     "c": "…de la región del mismo nombre, y a una profundidad de 127 kilómetros, de acuerdo con los datos del Instituto Geofísico del Perú…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://elcomercio.pe/mundo/latinoamerica/temblor-en-junin-peru-de-magnitud-67-se-sintio-tambien-en-quito-ecuador-igp-usgs-noticia/"
+  },
+  {
+   "id": "ed81b14f8c",
+   "sector": "coyuntura",
+   "titulo": "Sismo en Junín de 6.7 de magnitud: epicentro y todo lo que se sabe hasta el momento",
+   "resumen": "La noche de este viernes se sintió un intenso movimiento telúrico de 6.7 grados, según el reporte sísmico oficial.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/peru/junin/sismo-en-junin-de-67-de-magnitud-en-vivo-igp-epicentro-y-todo-lo-que-se-sabe-hasta-el-momento-lbposting-noticia/",
+   "fecha": "2026-11-21T01:59:33Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/LAJE27JADBEXFFIMWLG2H6OIDE.jpg?auth=f5a937407c1ea23c1e3b7a93d1b0f0d0303b755104f33a7d2bd5af51bdcb7a43&smart=true&width=1200&height=622",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "url_medio": "https://elcomercio.pe/peru/junin/sismo-en-junin-de-67-de-magnitud-en-vivo-igp-epicentro-y-todo-lo-que-se-sabe-hasta-el-momento-lbposting-noticia/",
    "sintesis": "La noche de este viernes se sintió un intenso movimiento telúrico de 6.7 grados, según el reporte sísmico oficial. COEN- Indeci informa en estos momentos: \"Sismo de magnitud 6.7 registrado hace instantes a 30 km al norte de Junín fue percibido entre moderado y fuerte por la población.",
    "puntos": [
     "La noche de este viernes se sintió un intenso movimiento telúrico de 6.7 grados, según el reporte sísmico oficial.",
@@ -334,20 +572,238 @@ window.NOTICIAS = {
      "c": "Un sismo de 6,7 grados de intensidad se registró este viernes 20 de noviembre."
     }
    ],
-   "acceso": "abierto",
-   "url_medio": "https://elcomercio.pe/peru/junin/sismo-en-junin-de-67-de-magnitud-en-vivo-igp-epicentro-y-todo-lo-que-se-sabe-hasta-el-momento-lbposting-noticia/"
+   "acceso": "abierto"
   },
   {
-   "id": "7a157072ff",
+   "id": "c13322efed",
    "sector": "coyuntura",
-   "titulo": "Falleció Mayu Hume, miembro del directorio de El Comercio",
-   "resumen": "Fue la primera mujer que ocupó un cargo viceministerial en la historia de nuestro país.",
+   "titulo": "Fuerte temblor de magnitud 6,7 en el Perú se sintió en Bogotá y varias ciudades de Colombia | VIDEOS",
+   "resumen": "El temblor, cuyo epicentro se localizó en Junín, también se sintió en varias ciudades de Colombia, incluida Bogotá, donde usuarios señalaron que el movimiento fue más perceptible en pisos altos",
    "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/economia/peru/fallecio-mayu-hume-miembro-del-directorio-de-el-comercio-pucp-noticia/",
-   "fecha": "2026-11-21T00:44:47Z",
+   "url": "https://elcomercio.pe/mundo/latinoamerica/temblor-en-junin-de-magnitud-67-se-sintio-en-bogota-y-varias-ciudades-de-colombia-videos-noticia/",
+   "fecha": "2026-11-21T01:59:29Z",
    "tipo": "comercial",
    "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/FJML3H4CCRCGZOJQGYCCNHFHYA.jpeg?auth=bd5ffdeb2c35ebb8b3b6225147ec0342f6fef62a0ab9045b45e61a3445c8500f&smart=true&width=1536&height=1024",
+   "imagen": "https://elcomercio.pe/resizer/v2/UGQY2XFA65DBDMFQM275LNGKXY.jpg?auth=41d7f91268d8905ebb4e70d2922270618249674793c11784a6a9350ca03929ba&smart=true&width=1188&height=793",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El temblor, cuyo epicentro se localizó en Junín, también se sintió en varias ciudades de Colombia, incluida Bogotá, donde usuarios señalaron que el movimiento fue más perceptible en pisos altos Un fuerte temblor de magnitud 6,7 sacudió este viernes 20 de noviembre la región peruana de Junín , limítrofe con el departamento de Lima donde también se sintió, sin que, hasta el momento, se reporten daños personales o materiales, informó el Instituto Nacional de Defensa Civil (Indeci).",
+   "puntos": [
+    "El temblor, cuyo epicentro se localizó en Junín, también se sintió en varias ciudades de Colombia, incluida Bogotá, donde usuarios señalaron que el movimiento fue más perceptible en pisos altos",
+    "Un fuerte temblor de magnitud 6,7 sacudió este viernes 20 de noviembre la región peruana de Junín , limítrofe con el departamento de Lima donde también se sintió, sin que, hasta el momento, se reporten daños personales o materiales, informó el Instituto Nacional de Defensa Civil (Indeci).",
+    "El Servicio Geólogico Colombiano entregó un primer registro del movimiento telúrico donde indicó que el temblor tuvo una magnitud de 6,9 con una profundidad de 142 kilómetros."
+   ],
+   "datos": [
+    {
+     "v": "142 kilómetros",
+     "t": "cantidad",
+     "c": "…el temblor tuvo una magnitud de 6,9 con una profundidad de 142 kilómetros."
+    },
+    {
+     "v": "129 kilómetros",
+     "t": "cantidad",
+     "c": "…que el sismo fue de magnitud 6,7 con una profundidad de 129 kilómetros.. #SismosColombiaSGC Evento Sísmico Internacional -…"
+    },
+    {
+     "v": "142 km",
+     "t": "cantidad",
+     "c": "Magnitud 6.9, profundidad 142 km, Ondores, Perú #NoticiaEnDesarrollo #Temblor #Sismo Más…"
+    },
+    {
+     "v": "20 de noviembre",
+     "t": "fecha",
+     "c": "Un fuerte temblor de magnitud 6,7 sacudió este viernes 20 de noviembre la región peruana de Junín , limítrofe con el departamento…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://elcomercio.pe/mundo/latinoamerica/temblor-en-junin-de-magnitud-67-se-sintio-en-bogota-y-varias-ciudades-de-colombia-videos-noticia/"
+  },
+  {
+   "id": "a00fcc338b",
+   "sector": "coyuntura",
+   "titulo": "Sorteo Especial 318: dónde ver en vivo y qué números caen hoy 20 de noviembre",
+   "resumen": "Resultados Sorteo Especial 318 EN VIVO: mira aquí la transmisión, los números y premio mayor de la Lotería Nacional que se juega este viernes 20 de noviembre del 2026.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/mexico/sorteo-especial-318-hoy-resultados-del-viernes-20-de-noviembre-en-vivo-ver-premio-mayor-y-lista-de-ganadores-loteria-de-mexico-mx-cdmx-estados-unidos-eeuu-lbposting-noticia/",
+   "fecha": "2026-11-21T01:58:41Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/YGX6DOPNGFEZPCD73MR5PQIJIA.png?auth=702f8d5f17b80ca07ae9b595c6d1a589858fb736127f7837f8c1c0b114504594&smart=true&width=1200&height=700",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "seccion_internacional_fuente"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Resultados Sorteo Especial 318 EN VIVO: mira aquí la transmisión, los números y premio mayor de la Lotería Nacional que se juega este viernes 20 de noviembre del 2026. El Sorteo Especial se celebra una vez al mes y este viernes 20 de noviembre de 2026 se realiza una nueva edición del popular juego de la Lotería Nacional de México .",
+   "puntos": [
+    "Resultados Sorteo Especial 318 EN VIVO: mira aquí la transmisión, los números y premio mayor de la Lotería Nacional que se juega este viernes 20 de noviembre del 2026.",
+    "El Sorteo Especial se celebra una vez al mes y este viernes 20 de noviembre de 2026 se realiza una nueva edición del popular juego de la Lotería Nacional de México .",
+    "Sigue aquí en vivo el sorteo, los resultados y ganadores."
+   ],
+   "datos": [
+    {
+     "v": "20 de noviembre",
+     "t": "fecha",
+     "c": "Sorteo Especial 318: dónde ver en vivo y qué números caen hoy 20 de noviembre."
+    },
+    {
+     "v": "17 de noviembre",
+     "t": "fecha",
+     "c": "01:41 • Sorteo Mayor: revisa los resultados del martes 17 de noviembre."
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://elcomercio.pe/respuestas/mexico/sorteo-especial-318-hoy-resultados-del-viernes-20-de-noviembre-en-vivo-ver-premio-mayor-y-lista-de-ganadores-loteria-de-mexico-mx-cdmx-estados-unidos-eeuu-lbposting-noticia/"
+  },
+  {
+   "id": "a87d60e3c6",
+   "sector": "coyuntura",
+   "titulo": "Resultados Sorteo Especial 318 EN VIVO: sigue la Lotería Nacional hoy viernes 20 de noviembre",
+   "resumen": "Sorteo Especial 318 EN VIVO: mira aquí la transmisión, resultados, números y premio mayor de la Lotería Nacional que se juega este viernes 20 de noviembre del 2026.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/mexico/resultados-sorteo-especial-318-hoy-20-de-noviembre-en-vivo-premio-mayor-y-lista-de-ganadores-del-viernes-lotenal-loteria-de-mexico-mx-cdmx-estados-unidos-eeuu-lbposting-noticia/",
+   "fecha": "2026-11-21T01:58:36Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/PATVT6GBIJCCHIMYQB5FLFW2P4.png?auth=26057e1873ecf2c3e54c7fb182e07c8459fe11abaf5f7f5ef24e7cf2d66664e3&smart=true&width=1200&height=700",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "seccion_internacional_fuente"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Sorteo Especial 318 EN VIVO: mira aquí la transmisión, resultados, números y premio mayor de la Lotería Nacional que se juega este viernes 20 de noviembre del 2026. El Sorteo Especial se celebra una vez al mes y este viernes 20 de noviembre del 2026 se realiza una nueva edición del popular juego de la Lotería Nacional de México .",
+   "puntos": [
+    "Sorteo Especial 318 EN VIVO: mira aquí la transmisión, resultados, números y premio mayor de la Lotería Nacional que se juega este viernes 20 de noviembre del 2026.",
+    "El Sorteo Especial se celebra una vez al mes y este viernes 20 de noviembre del 2026 se realiza una nueva edición del popular juego de la Lotería Nacional de México .",
+    "Sigue aquí en vivo el sorteo, los resultados y ganadores."
+   ],
+   "datos": [
+    {
+     "v": "20 de noviembre",
+     "t": "fecha",
+     "c": "Resultados Sorteo Especial 318 EN VIVO: sigue la Lotería Nacional hoy viernes 20 de noviembre."
+    },
+    {
+     "v": "17 de noviembre",
+     "t": "fecha",
+     "c": "01:41 • Sorteo Mayor: revisa los resultados del martes 17 de noviembre."
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://elcomercio.pe/respuestas/mexico/resultados-sorteo-especial-318-hoy-20-de-noviembre-en-vivo-premio-mayor-y-lista-de-ganadores-del-viernes-lotenal-loteria-de-mexico-mx-cdmx-estados-unidos-eeuu-lbposting-noticia/"
+  },
+  {
+   "id": "c6eb3b4844",
+   "sector": "coyuntura",
+   "titulo": "Temblor en Junín: reportan daños en viviendas, caída de rocas y corte de energía eléctrica",
+   "resumen": "El primer reporte preliminar del fuerte temblor de magnitud 6.7 registrado en Junín da cuenta de algunos daños en viviendas, caída de rocas sobre diversas vías, como la Carretera Central y corte del servicio eléctrico en diversas localidades de Junín, Pasco y Huánuco.",
+   "fuente": "Agencia Andina",
+   "url": "https://andina.pe/agencia/noticia-temblor-junin-reportan-danos-viviendas-caida-rocas-y-corte-energia-electrica-1100896.aspx",
+   "fecha": "2026-11-21T01:58:29Z",
+   "tipo": "estatal",
+   "genero": "noticia",
+   "imagen": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2026/11/20/001333603W.webp",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El primer reporte preliminar del fuerte temblor de magnitud 6.7 registrado en Junín da cuenta de algunos daños en viviendas, caída de rocas sobre diversas vías, como la Carretera Central y corte del servicio eléctrico en diversas localidades de Junín, Pasco y Huánuco.",
+   "puntos": [
+    "El primer reporte preliminar del fuerte temblor de magnitud 6.7 registrado en Junín da cuenta de algunos daños en viviendas, caída de rocas sobre diversas vías, como la Carretera Central y corte del servicio eléctrico en diversas localidades de Junín, Pasco y Huánuco."
+   ],
+   "acceso": "sin_verificar",
+   "url_medio": "https://andina.pe/agencia/noticia-temblor-junin-reportan-danos-viviendas-caida-rocas-y-corte-energia-electrica-1100896.aspx"
+  },
+  {
+   "id": "6d46ae5352",
+   "sector": "deporte",
+   "titulo": "“Alianza Lima no quiere jugar una nueva final con Universitario”: ‘Cuto’ Guadalupe opina sobre la definición del título de la Liga 1 2026",
+   "resumen": "El exdefensor de la ‘U’ analizó la última fecha del Torneo Clausura y las opciones del cuadro ‘crema’ de imponerse a Sport Huancayo en la altura",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/deportes/2026/11/21/alianza-lima-no-quiere-jugar-una-nueva-final-con-universitario-cuto-guadalupe-opina-sobre-la-definicion-del-titulo-de-la-liga-1-2026/",
+   "fecha": "2026-11-21T01:57:22Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/IOSZP2D5MZCABL7O22O232766Y.jpg?auth=fddbac54c599bbf99803810ad8191b20f86b282b0e18cc2737d2282b36f7e3e1&smart=true&width=1201&height=629",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El exdefensor de la ‘U’ analizó la última fecha del Torneo Clausura y las opciones del cuadro ‘crema’ de imponerse a Sport Huancayo en la altura 'Cuto' Guadalupe opinó de la definición del título de la Liga 1 2026 y afirmó que Alianza Lima tiene miedo de enfrentar a Universitario de Deportes.",
+   "puntos": [
+    "El exdefensor de la ‘U’ analizó la última fecha del Torneo Clausura y las opciones del cuadro ‘crema’ de imponerse a Sport Huancayo en la altura",
+    "'Cuto' Guadalupe opinó de la definición del título de la Liga 1 2026 y afirmó que Alianza Lima tiene miedo de enfrentar a Universitario de Deportes.",
+    "EST Guardar Luis ‘Cuto’ Guadalupe , referente de Universitario de Deportes y embajador de Inkabet, se refirió a la definición del Torneo Clausura y a las opciones del cuadro ‘crema’ para llegar a la final nacional."
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://www.infobae.com/peru/deportes/2026/11/21/alianza-lima-no-quiere-jugar-una-nueva-final-con-universitario-cuto-guadalupe-opina-sobre-la-definicion-del-titulo-de-la-liga-1-2026/"
+  },
+  {
+   "id": "081762282c",
+   "sector": "deporte",
+   "titulo": "Pablo Bengoechea fue presentado como nuevo DT de César Vallejo con el objetivo de ascender a la Liga 1: “Tengo un lindo reto”",
+   "resumen": "El estratega uruguayo asumió las riendas del conjunto trujillano de forma oficial. \"Es un club con infraestructura y potencial para estar en Primera\", consignó",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/21/pablo-bengoechea-fue-presentado-como-nuevo-dt-de-cesar-vallejo-con-el-objetivo-de-ascender-a-la-liga-1-tengo-un-lindo-reto/",
+   "fecha": "2026-11-21T01:55:05Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/BBR2MULAFJBYXEVGN64VA6VQLU.jpg?auth=c9e974ccf91c4dddddb969e57a3b37f280d925762982307931446b105087e1bb&smart=true&width=1920&height=1080",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El estratega uruguayo asumió las riendas del conjunto trujillano de forma oficial. \"Es un club con infraestructura y potencial para estar en Primera\", consignó",
+   "puntos": [
+    "El estratega uruguayo asumió las riendas del conjunto trujillano de forma oficial.",
+    "\"Es un club con infraestructura y potencial para estar en Primera\", consignó",
+    "Pablo Bengoechea fue presentado como nuevo entrenador de la Universidad César Vallejo para conseguir el ascenso a la Liga 1."
+   ],
+   "datos": [
+    {
+     "v": "61 años",
+     "t": "cantidad",
+     "c": "El entrenador uruguayo de 61 años fue presentado como director técnico de César Vallejo para…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://www.infobae.com/peru/2026/11/21/pablo-bengoechea-fue-presentado-como-nuevo-dt-de-cesar-vallejo-con-el-objetivo-de-ascender-a-la-liga-1-tengo-un-lindo-reto/"
+  },
+  {
+   "id": "801adfba55",
+   "sector": "coyuntura",
+   "titulo": "¿Qué hacer durante un sismo en un edificio? Bombero advierte los errores más comunes",
+   "resumen": "Durante un sismo, una decisión equivocada puede hacer la diferencia entre la vida y la muerte. Y si el movimiento sorprende a una persona en un edificio, la primera reacción será bajar rápidamente o buscar la salida, pero ¿eso es realmente lo más seguro? Un bombero USAR que…",
+   "fuente": "Agencia Andina",
+   "url": "https://andina.pe/agencia/noticia-que-hacer-durante-un-sismo-un-edificio-bombero-advierte-los-errores-mas-comunes-1087394.aspx",
+   "fecha": "2026-11-21T01:53:44Z",
+   "tipo": "estatal",
+   "genero": "noticia",
+   "imagen": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2026/08/11/001305422W.webp",
    "geografia": {
     "version": 1,
     "ambito": "pendiente",
@@ -356,21 +812,117 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "sintesis": "Fue la primera mujer que ocupó un cargo viceministerial en la historia de nuestro país. Empresa Editora El Comercio informa el sensible fallecimiento de María Jesús (Mayu) Hume Hurtado (78 años), quien formaba parte de su mesa directiva, así como también del directorio de Plural TV, holding conformado por América Televisión y Canal N.",
+   "sintesis": "Durante un sismo, una decisión equivocada puede hacer la diferencia entre la vida y la muerte. Y si el movimiento sorprende a una persona en un edificio, la primera reacción será bajar rápidamente o buscar la salida, pero ¿eso es realmente lo más seguro?",
    "puntos": [
-    "Fue la primera mujer que ocupó un cargo viceministerial en la historia de nuestro país.",
-    "Empresa Editora El Comercio informa el sensible fallecimiento de María Jesús (Mayu) Hume Hurtado (78 años), quien formaba parte de su mesa directiva, así como también del directorio de Plural TV, holding conformado por América Televisión y Canal N.",
-    "Durante su etapa en el sector público integró los directorios de Promperú y Enci , pero su mayor trayectoria la realizó en el sector privado, ocupando cargos de liderazgo como el de presidenta del directorio de AFP Integra durante más de una década."
+    "Durante un sismo, una decisión equivocada puede hacer la diferencia entre la vida y la muerte.",
+    "Y si el movimiento sorprende a una persona en un edificio, la primera reacción será bajar rápidamente o buscar la salida, pero ¿eso es realmente lo más seguro?"
+   ],
+   "acceso": "sin_verificar",
+   "url_medio": "https://andina.pe/agencia/noticia-que-hacer-durante-un-sismo-un-edificio-bombero-advierte-los-errores-mas-comunes-1087394.aspx"
+  },
+  {
+   "id": "6a04ff822f",
+   "sector": "coyuntura",
+   "titulo": "Temblor hoy en Perú EN VIVO: últimos sismos, epicentro y reporte del IGP del viernes 20 de noviembre de 2026",
+   "resumen": "Un sismo de magnitud 4.0 se registró a las 00:56 horas de este viernes 20 de noviembre frente a la costa de Ica, según el reporte del Instituto Geofísico del Perú",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/20/temblor-hoy-en-peru-en-vivo-ultimos-sismos-epicentro-y-reporte-del-igp-del-viernes-20-de-noviembre-de-2026/",
+   "fecha": "2026-11-21T01:51:38Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/25NUUN57ZFG2TDNNIUYMEEJCVE.png?auth=0cc09c86eee56560a7c2f50303261a0706b7dffee9959fe4f525cf50920e6ab3&smart=true&width=1536&height=1024",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "url_medio": "https://www.infobae.com/peru/2026/11/20/temblor-hoy-en-peru-en-vivo-ultimos-sismos-epicentro-y-reporte-del-igp-del-viernes-20-de-noviembre-de-2026/",
+   "sintesis": "Un sismo de magnitud 4.0 se registró a las 00:56 horas de este viernes 20 de noviembre frente a la costa de Ica, según el reporte del Instituto Geofísico del Perú El Instituto Geofísico del Perú ( IGP ) mantiene una vigilancia sísmica continua en todo el territorio nacional para entregar información técnica a la población y a las autoridades responsables de la gestión del riesgo.",
+   "puntos": [
+    "Un sismo de magnitud 4.0 se registró a las 00:56 horas de este viernes 20 de noviembre frente a la costa de Ica, según el reporte del Instituto Geofísico del Perú",
+    "El Instituto Geofísico del Perú ( IGP ) mantiene una vigilancia sísmica continua en todo el territorio nacional para entregar información técnica a la población y a las autoridades responsables de la gestión del riesgo.",
+    "Esta cobertura reúne los reportes oficiales más recientes sobre los movimientos telúricos registrados, con detalles de magnitud, profundidad, epicentro e intensidad en las zonas donde fueron percibidos."
    ],
    "datos": [
     {
-     "v": "78 años",
+     "v": "30 kilómetros",
      "t": "cantidad",
-     "c": "…sensible fallecimiento de María Jesús (Mayu) Hume Hurtado (78 años), quien formaba parte de su mesa directiva, así como…"
+     "c": "…se produjo a las 19:09:19 horas, con epicentro a 30 kilómetros al noroeste de la ciudad de Junín , en la provincia…"
+    },
+    {
+     "v": "129 kilómetros",
+     "t": "cantidad",
+     "c": "El hipocentro se ubicó a 129 kilómetros de profundidad, una de las características que explican la…"
+    },
+    {
+     "v": "20 de noviembre de 2026",
+     "t": "fecha",
+     "c": "Temblor hoy en Perú EN VIVO: últimos sismos, epicentro y reporte del IGP del viernes 20 de noviembre de 2026."
     }
    ],
-   "acceso": "abierto",
-   "url_medio": "https://elcomercio.pe/economia/peru/fallecio-mayu-hume-miembro-del-directorio-de-el-comercio-pucp-noticia/"
+   "acceso": "abierto"
+  },
+  {
+   "id": "1b5dd1e9c1",
+   "sector": "coyuntura",
+   "titulo": "Sismo en Junín: COEN monitorea zonas vulnerables junto a autoridades locales y regionales",
+   "resumen": "El Centro de Operaciones de Emergencia Nacional (COEN), en coordinación con autoridades de la región Junín, continúa el monitoreo en zonas vulnerables tras el sismo de magnitud 6.7 que este viernes por la noche sacudió la región central del Perú.",
+   "fuente": "Agencia Andina",
+   "url": "https://andina.pe/agencia/noticia-sismo-junin-coen-monitorea-zonas-vulnerables-junto-a-autoridades-locales-y-regionales-1100897.aspx",
+   "fecha": "2026-11-21T01:50:53Z",
+   "tipo": "estatal",
+   "genero": "noticia",
+   "imagen": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2026/11/20/001333602W.webp",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El Centro de Operaciones de Emergencia Nacional (COEN), en coordinación con autoridades de la región Junín, continúa el monitoreo en zonas vulnerables tras el sismo de magnitud 6.7 que este viernes por la noche sacudió la región central del Perú.",
+   "puntos": [
+    "El Centro de Operaciones de Emergencia Nacional (COEN), en coordinación con autoridades de la región Junín, continúa el monitoreo en zonas vulnerables tras el sismo de magnitud 6.7 que este viernes por la noche sacudió la región central del Perú."
+   ],
+   "acceso": "sin_verificar",
+   "url_medio": "https://andina.pe/agencia/noticia-sismo-junin-coen-monitorea-zonas-vulnerables-junto-a-autoridades-locales-y-regionales-1100897.aspx"
+  },
+  {
+   "id": "61c66376be",
+   "sector": "coyuntura",
+   "titulo": "Denuncian presunta sobrevaloración del 700% en logística de misa del papa León XIV",
+   "resumen": "Walter Dolorier, presidente de la Asociación de Empresarios Artísticos del Perú, denunció una presunta sobrevaloración del 700% en los contratos logísticos para la misa del papa León XIV en la Base Aérea Las Palmas.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/peru/politica/denuncian-presunta-sobrevaloracion-del-700-en-logistica-de-misa-del-papa-leon-xiv-noticia/",
+   "fecha": "2026-11-21T01:50:40Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/OG7TA7DEEVBBJKPQBMWNDCNXBY.jpeg?auth=b31d8f1cc7eb8b367d44050d3739766903f20b5f78c503b1c24e98918cc9e8ed&smart=true&width=1280&height=854",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Walter Dolorier, presidente de la Asociación de Empresarios Artísticos del Perú, denunció una presunta sobrevaloración del 700% en los contratos logísticos para la misa del papa León XIV en la Base Aérea Las Palmas.",
+   "puntos": [
+    "Walter Dolorier, presidente de la Asociación de Empresarios Artísticos del Perú, denunció una presunta sobrevaloración del 700% en los contratos logísticos para la misa del papa León XIV en la Base Aérea Las Palmas."
+   ],
+   "datos": [
+    {
+     "v": "700%",
+     "t": "porcentaje",
+     "c": "Denuncian presunta sobrevaloración del 700% en logística de misa del papa León XIV."
+    }
+   ],
+   "acceso": "restringido",
+   "url_medio": "https://gestion.pe/peru/politica/denuncian-presunta-sobrevaloracion-del-700-en-logistica-de-misa-del-papa-leon-xiv-noticia/"
   },
   {
    "id": "0ae6117a0b",
@@ -379,7 +931,7 @@ window.NOTICIAS = {
    "resumen": "De acuerdo al Instituto Geofísico del Perú (IGP), hasta el momento no se registran daños en ninguna región",
    "fuente": "Infobae Perú",
    "url": "https://www.infobae.com/peru/2026/11/21/fuerte-sismo-asusta-a-peruanos-temblor-de-67-en-junin-remecio-gran-parte-del-pais/",
-   "fecha": "2026-11-21T00:44:00Z",
+   "fecha": "2026-11-21T01:49:25Z",
    "tipo": "comercial",
    "genero": "noticia",
    "imagen": "https://www.infobae.com/resizer/v2/GTGRMUAKVFB6VDXH5AXIQ6I7JY.png?auth=53ec527d533c51e42dbad3c3b66da9b0c095efc4c2ee7beadf9cd9edb63b48b8&smart=true&width=753&height=482",
@@ -391,6 +943,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
+   "url_medio": "https://www.infobae.com/peru/2026/11/21/fuerte-sismo-asusta-a-peruanos-temblor-de-67-en-junin-remecio-gran-parte-del-pais/",
    "sintesis": "De acuerdo al Instituto Geofísico del Perú (IGP), hasta el momento no se registran daños en ninguna región Un mapa sísmico ubica el epicentro de un sismo de magnitud 6,7 a 30 kilómetros al noroeste de la localidad de Junín, en Perú. (IGP) 20 Nov, 2026 07:18 p. m.",
    "puntos": [
     "De acuerdo al Instituto Geofísico del Perú (IGP), hasta el momento no se registran daños en ninguna región",
@@ -414,96 +967,115 @@ window.NOTICIAS = {
      "c": "EST Guardar Un fuerte sismo remeció gran parte del Perú la tarde de este viernes 20 de noviembre."
     }
    ],
-   "acceso": "abierto",
-   "url_medio": "https://www.infobae.com/peru/2026/11/21/fuerte-sismo-asusta-a-peruanos-temblor-de-67-en-junin-remecio-gran-parte-del-pais/"
+   "acceso": "abierto"
   },
   {
-   "id": "223f77d768",
-   "sector": "coyuntura",
-   "titulo": "¿Cómo preparar la mochila de emergencia para enfrentar un sismo? Sigue estos consejos",
-   "resumen": "El Indeci recuerda que las emergencias no avisan y que siempre debemos tener a la mano la mochila de emergencia para enfrentar un evento de esa naturaleza.",
-   "fuente": "Agencia Andina",
-   "url": "https://andina.pe/agencia/noticia-como-preparar-mochila-emergencia-para-enfrentar-un-sismo-sigue-estos-consejos-836569.aspx",
-   "fecha": "2026-11-21T00:42:20Z",
-   "tipo": "estatal",
+   "id": "fa73027b6e",
+   "sector": "mundo",
+   "titulo": "Dos soldados salvadoreños mueren en un incidente con explosivos en Haití",
+   "resumen": "Los soldados \"fueron afectados por una detonación mientras trabajaban con material explosivo en uno de los campamentos\", informó la Fuerza Armada de El Salvador en un comunicado en la red social X.",
+   "fuente": "BBC Mundo",
+   "url": "https://www.bbc.com/mundo/articles/cmvg212k7lyko?at_medium=RSS&at_campaign=rss",
+   "fecha": "2026-11-21T01:49:03Z",
+   "tipo": "internacional",
    "genero": "noticia",
-   "imagen": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2019/08/15/000612582W.webp",
+   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/decd/live/47a81290-e544-11f1-a60d-674e1290cdc4.jpg",
    "geografia": {
     "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
    },
-   "ambito": "pendiente",
+   "ambito": "mundo",
    "procedencia": "directa",
-   "sintesis": "El Indeci recuerda que las emergencias no avisan y que siempre debemos tener a la mano la mochila de emergencia para enfrentar un evento de esa naturaleza.",
+   "sintesis": "Los soldados \"fueron afectados por una detonación mientras trabajaban con material explosivo en uno de los campamentos\", informó la Fuerza Armada de El Salvador en un comunicado en la red social X. Dos soldados salvadoreños murieron y otros dos resultaron heridos en un incidente con explosivos en Haití, informó este viernes el Ejército del país centroamericano.",
    "puntos": [
-    "El Indeci recuerda que las emergencias no avisan y que siempre debemos tener a la mano la mochila de emergencia para enfrentar un evento de esa naturaleza."
-   ],
-   "acceso": "sin_verificar",
-   "url_medio": "https://andina.pe/agencia/noticia-como-preparar-mochila-emergencia-para-enfrentar-un-sismo-sigue-estos-consejos-836569.aspx"
-  },
-  {
-   "id": "40269df2a0",
-   "sector": "coyuntura",
-   "titulo": "Terremoto de 6.7 hoy en Perú EN VIVO: el temblor tuvo epicentro en Junín y se sintió en varias regiones",
-   "resumen": "Sismo de 6.7 en Perú: el movimiento se sintió en Lima y otras regiones. Consulta la hora, epicentro, profundidad y reporte oficial.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/mag/respuestas/terremoto-de-67-hoy-en-peru-en-vivo-el-temblor-tuvo-epicentro-en-junin-y-se-sintio-en-varias-regiones-ultimo-sismo-nnda-nnrt-noticia/",
-   "fecha": "2026-11-21T00:42:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/GP47L5A6WBCWXDGMBRC7MHH75I.jpg?auth=b3291c49eb07e33e298ca811269f90a007d919f801a99efac454931564c24c95&smart=true&width=2400&height=1620",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Sismo de 6.7 en Perú: el movimiento se sintió en Lima y otras regiones. Consulta la hora, epicentro, profundidad y reporte oficial.",
-   "puntos": [
-    "Sismo de 6.7 en Perú: el movimiento se sintió en Lima y otras regiones.",
-    "Consulta la hora, epicentro, profundidad y reporte oficial.",
-    "Un fuerte movimiento sísmico se sintió en Lima y otras zonas del Perú la noche de este viernes 20 de noviembre."
+    "Los soldados \"fueron afectados por una detonación mientras trabajaban con material explosivo en uno de los campamentos\", informó la Fuerza Armada de El Salvador en un comunicado en la red social X.",
+    "Dos soldados salvadoreños murieron y otros dos resultaron heridos en un incidente con explosivos en Haití, informó este viernes el Ejército del país centroamericano.",
+    "El breve mensaje no ofreció más detalles sobre el incidente, salvo mencionar que los dos soldados heridos estaban recibiendo atención médica."
    ],
    "datos": [
     {
-     "v": "30 kilómetros",
-     "t": "cantidad",
-     "c": "El evento ocurrió a 30 kilómetros al noroeste de Junín y registró una profundidad de 129 kilómetros."
-    },
-    {
-     "v": "129 kilómetros",
-     "t": "cantidad",
-     "c": "El evento ocurrió a 30 kilómetros al noroeste de Junín y registró una profundidad de 129 kilómetros."
-    },
-    {
-     "v": "30 km",
-     "t": "cantidad",
-     "c": "…-10.97 Longitud: -76.19 Intensidad: V Junín Referencia: 30 km al NO de Junín, Junín - Junín https://t.co/9fFKemqYyH."
-    },
-    {
-     "v": "20 de noviembre",
+     "v": "18 de octubre",
      "t": "fecha",
-     "c": "Un fuerte movimiento sísmico se sintió en Lima y otras zonas del Perú la noche de este viernes 20 de noviembre."
+     "c": "…cuatro técnicos de aviación salvadoreños desaparecidos el 18 de octubre en una emboscada tras un ataque de pandillas en Puerto…"
     }
    ],
    "acceso": "abierto",
-   "url_medio": "https://elcomercio.pe/mag/respuestas/terremoto-de-67-hoy-en-peru-en-vivo-el-temblor-tuvo-epicentro-en-junin-y-se-sintio-en-varias-regiones-ultimo-sismo-nnda-nnrt-noticia/"
+   "url_medio": "https://www.bbc.com/mundo/articles/cmvg212k7lyko"
   },
   {
-   "id": "03e62b0fee",
-   "sector": "coyuntura",
-   "titulo": "Terremoto en Perú hoy, 20 de noviembre: fuerte sismo de magnitud 6.7 sacudió Junín esta noche",
-   "resumen": "¿Dónde fue el terremoto de hoy en Perú? El reporte indica que el sismo de magnitud 6.7 ocurrió a 30 km al noroeste de Junín.",
+   "id": "e8661dad12",
+   "sector": "nino",
+   "titulo": "Indeci reporta daños tras sismo de 6.7 que se sintió en varias regiones",
+   "resumen": "Luis Vásquez, jefe de Indeci, indicó que han identificado daños en Huánuco, Pasco, Chanchamayo, Tarma entre otras zonas, con derrumbes de rocas, corte de energía eléctrica y otros.",
    "fuente": "Gestión",
-   "url": "https://gestion.pe/mix/respuestas/terremoto-en-peru-hoy-20-de-noviembre-fuerte-sismo-de-magnitud-67-sacudio-junin-esta-noche-temblor-epicentro-nnda-nnrt-noticia/",
-   "fecha": "2026-11-21T00:41:48Z",
+   "url": "https://gestion.pe/videos/peru/temblor-en-junin-indeci-reporta-monitoreo-tras-sismo-de-magnitud-67-que-se-sintio-en-varias-regiones-noticia/",
+   "fecha": "2026-11-21T01:45:53Z",
    "tipo": "comercial",
    "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/CODXHGY3RJC73GAKI7DYMLFZI4.jpg?auth=dba1ff7e4a479b312b0569c102d585bc1a452dac83dce66e618532a8ef0299f5&smart=true&width=2400&height=1620",
+   "imagen": "https://gestion.pe/resizer/v2/4FIF7YH4RRCAXIA2YJQPAOEPBI.jpg?auth=551d0ea524fda054f79f1a1de409ca1c16bef1d550fb53fd6188a2f9304cce05&smart=true&width=2400&height=1620",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Luis Vásquez, jefe de Indeci, indicó que han identificado daños en Huánuco, Pasco, Chanchamayo, Tarma entre otras zonas, con derrumbes de rocas, corte de energía eléctrica y otros.",
+   "puntos": [
+    "Luis Vásquez, jefe de Indeci, indicó que han identificado daños en Huánuco, Pasco, Chanchamayo, Tarma entre otras zonas, con derrumbes de rocas, corte de energía eléctrica y otros."
+   ],
+   "acceso": "sin_verificar",
+   "url_medio": "https://gestion.pe/videos/peru/temblor-en-junin-indeci-reporta-monitoreo-tras-sismo-de-magnitud-67-que-se-sintio-en-varias-regiones-noticia/"
+  },
+  {
+   "id": "7bb4796430",
+   "sector": "coyuntura",
+   "titulo": "Reportan caída de piedras en distrito de Independencia tras remezón de sismo 6.7",
+   "resumen": "El sismo de magnitud 6.7 en Junín generó caída de piedras sobre una casa en Payet (Independencia) y reportes en Chaclacayo. Conoce el balance en Lima hoy.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/lima/sismo-67-junin-reportan-caida-de-piedras-en-independencia-tras-el-remezon-en-lima-ultimas-noticia/",
+   "fecha": "2026-11-21T01:45:43Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/Y7ZLAAIAIVDNNB3OJRUDKCXDWE.jpg?auth=e7c19be0bbe22f067c6757d1055922c284e08e5dc62e356ab3269442ed46dfe5&smart=true&width=1201&height=800",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El sismo de magnitud 6.7 en Junín generó caída de piedras sobre una casa en Payet (Independencia) y reportes en Chaclacayo. Tras el fuerte sismo de magnitud 6.7 registrado a las 19:09 horas de este viernes 20 de noviembre en Junín , vecinos de distintos puntos de Lima Metropolitana reportaron el desprendimiento y caída de piedras en zonas altas de los distritos de Independencia y Chaclacayo.",
+   "puntos": [
+    "El sismo de magnitud 6.7 en Junín generó caída de piedras sobre una casa en Payet (Independencia) y reportes en Chaclacayo.",
+    "Tras el fuerte sismo de magnitud 6.7 registrado a las 19:09 horas de este viernes 20 de noviembre en Junín , vecinos de distintos puntos de Lima Metropolitana reportaron el desprendimiento y caída de piedras en zonas altas de los distritos de Independencia y Chaclacayo.",
+    "En el distrito limeño de Independencia, vecinos del sector de Payet reportaron la caída de piedras directamente sobre el techo de una vivienda ."
+   ],
+   "datos": [
+    {
+     "v": "20 de noviembre",
+     "t": "fecha",
+     "c": "…magnitud 6.7 registrado a las 19:09 horas de este viernes 20 de noviembre en Junín , vecinos de distintos puntos de Lima…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://elcomercio.pe/lima/sismo-67-junin-reportan-caida-de-piedras-en-independencia-tras-el-remezon-en-lima-ultimas-noticia/"
+  },
+  {
+   "id": "46296887e2",
+   "sector": "coyuntura",
+   "titulo": "¿Estamos listos para un gran sismo en Lima? Cinco especialistas explican cómo prepararnos",
+   "resumen": "Reciente sismo de 6.7 de magnitud nos recuerda que el Perú vive expuesto a un peligro sísmico considerable, pero sus consecuencias también dependen de cuánto hagamos antes de una emergencia.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/somos/tendencias/estamos-listos-para-un-gran-sismo-en-lima-cinco-especialistas-explican-como-prepararnos-apuesplan-noticia/",
+   "fecha": "2026-11-21T01:45:37Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/YXZ3HYOO6VD7TJXZTG6ZJPBWOA.png?auth=968fd2cd73624489f99f8ed7986adb3e6242d11810941e9a86bd03453973ddc9&smart=true&width=1200&height=810",
    "geografia": {
     "version": 1,
     "ambito": "peru",
@@ -512,10 +1084,38 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "sintesis": "El reporte indica que el sismo de magnitud 6.7 ocurrió a 30 km al noroeste de Junín. JUNÍN (PERÚ), 20/11/2026.- Junín fue sacudido por un terremoto de magnitud 6.7 este viernes.",
+   "sintesis": "Reciente sismo de 6.7 de magnitud nos recuerda que el Perú vive expuesto a un peligro sísmico considerable, pero sus consecuencias también dependen de cuánto hagamos antes de una emergencia. El Perú convive con un peligro sísmico considerable, pero el impacto de un terremoto no depende únicamente de su magnitud.",
+   "puntos": [
+    "Reciente sismo de 6.7 de magnitud nos recuerda que el Perú vive expuesto a un peligro sísmico considerable, pero sus consecuencias también dependen de cuánto hagamos antes de una emergencia.",
+    "El Perú convive con un peligro sísmico considerable, pero el impacto de un terremoto no depende únicamente de su magnitud.",
+    "También influye cuánto hayamos hecho antes: cómo construimos nuestras viviendas, qué sabemos sobre el territorio, si reconocemos rutas de evacuación, si contamos con un plan familiar y si existen redes capaces de movilizar ayuda."
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://elcomercio.pe/somos/tendencias/estamos-listos-para-un-gran-sismo-en-lima-cinco-especialistas-explican-como-prepararnos-apuesplan-noticia/"
+  },
+  {
+   "id": "0c4d5af1c8",
+   "sector": "coyuntura",
+   "titulo": "Temblor en Perú hoy, 20 de noviembre: fuerte sismo de magnitud 6.7 sacudió Junín esta noche",
+   "resumen": "¿Dónde fue el temblor de hoy en Perú? El reporte indica que el sismo de magnitud 6.7 ocurrió a 30 km al noroeste de Junín.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/mix/respuestas/temblor-en-peru-hoy-20-de-noviembre-fuerte-sismo-de-magnitud-67-sacudio-junin-esta-noche-sismo-epicentro-nnda-nnrt-noticia/",
+   "fecha": "2026-11-21T01:44:12Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/LZDF6PV3QVAVVPAA5P7YUX3R24.jpg?auth=36542da717720c8017ab076bd6d115542ee26df2745beb18656bf10418958e62&smart=true&width=2400&height=1620",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El reporte indica que el sismo de magnitud 6.7 ocurrió a 30 km al noroeste de Junín. JUNÍN (PERÚ), 20/11/2026.- Junín fue sacudido por un sismo de magnitud 6.7 este viernes.",
    "puntos": [
     "El reporte indica que el sismo de magnitud 6.7 ocurrió a 30 km al noroeste de Junín.",
-    "JUNÍN (PERÚ), 20/11/2026.- Junín fue sacudido por un terremoto de magnitud 6.7 este viernes.",
+    "JUNÍN (PERÚ), 20/11/2026.- Junín fue sacudido por un sismo de magnitud 6.7 este viernes.",
     "Consulta los detalles del reporte IGP/CENSIS/RS 2026-0818."
    ],
    "datos": [
@@ -527,21 +1127,271 @@ window.NOTICIAS = {
     {
      "v": "129 kilómetros",
      "t": "cantidad",
-     "c": "El movimiento telúrico tuvo una profundidad de 129 kilómetros y su epicentro fue localizado a 30 kilómetros al noroeste de Junín.."
+     "c": "El movimiento telúrico tuvo una profundidad de 129 kilómetros y su epicentro se localizó a 30 kilómetros al noroeste de Junín.."
     },
     {
      "v": "30 kilómetros",
      "t": "cantidad",
-     "c": "El movimiento telúrico tuvo una profundidad de 129 kilómetros y su epicentro fue localizado a 30 kilómetros al noroeste de Junín.."
+     "c": "El movimiento telúrico tuvo una profundidad de 129 kilómetros y su epicentro se localizó a 30 kilómetros al noroeste de Junín.."
     },
     {
      "v": "20 de noviembre",
      "t": "fecha",
-     "c": "Terremoto en Perú hoy, 20 de noviembre: fuerte sismo de magnitud 6.7 sacudió Junín esta noche."
+     "c": "Temblor en Perú hoy, 20 de noviembre: fuerte sismo de magnitud 6.7 sacudió Junín esta noche."
     }
    ],
    "acceso": "abierto",
-   "url_medio": "https://gestion.pe/mix/respuestas/terremoto-en-peru-hoy-20-de-noviembre-fuerte-sismo-de-magnitud-67-sacudio-junin-esta-noche-temblor-epicentro-nnda-nnrt-noticia/"
+   "url_medio": "https://gestion.pe/mix/respuestas/temblor-en-peru-hoy-20-de-noviembre-fuerte-sismo-de-magnitud-67-sacudio-junin-esta-noche-sismo-epicentro-nnda-nnrt-noticia/"
+  },
+  {
+   "id": "a6a28f5909",
+   "sector": "coyuntura",
+   "titulo": "Vecina de Independencia pide ayuda urgente tras colapso de muro por sismo que afectó su vivienda",
+   "resumen": "Cecilia Martínez pide ayuda urgente al municipio y a Defensa Civil tras el colapso del muro de piedras de su vecino, cuya base quedó suspendida en el aire y amenaza con caer ante posibles réplicas.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/videos/peru/vecina-de-independencia-pide-ayuda-urgente-tras-colapso-de-muro-por-sismo-que-afecto-su-vivienda-noticia-1718931",
+   "fecha": "2026-11-21T01:34:59Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/20/sa-1931470mp4_1931471.jpg?width=860&quality=80",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "Cecilia Martínez pide ayuda urgente al municipio y a Defensa Civil tras el colapso del muro de piedras de su vecino, cuya base quedó suspendida en el aire y amenaza con caer ante posibles réplicas.",
+   "puntos": [
+    "Cecilia Martínez pide ayuda urgente al municipio y a Defensa Civil tras el colapso del muro de piedras de su vecino, cuya base quedó suspendida en el aire y amenaza con caer ante posibles réplicas."
+   ],
+   "acceso": "sin_verificar",
+   "url_medio": "https://rpp.pe/videos/peru/vecina-de-independencia-pide-ayuda-urgente-tras-colapso-de-muro-por-sismo-que-afecto-su-vivienda-noticia-1718931"
+  },
+  {
+   "id": "6c9322ea8b",
+   "sector": "coyuntura",
+   "titulo": "Fuerte sismo de magnitud 6.7 interrumpe un concurso escolar en Chaclacayo: estudiantes y padres pasaron susto",
+   "resumen": "La transmisión en directo captó los instantes en que varias familias buscaron resguardo ordenado tras el fuerte movimiento de magnitud seis coma siete, mientras los organizadores guiaban a todos hacia zonas seguras",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/21/fuerte-sismo-de-magnitud-67-interrumpe-un-concurso-escolar-en-chaclacayo-estudiantes-y-padres-pasaron-susto/",
+   "fecha": "2026-11-21T01:33:11Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/ALIA5FUOHFA6NCAVBXTCKNIK4Q.png?auth=537b2874dfc38b6625ec63c75cf5d3fa4efa9bb99e0f9604b177e0fd7712f425&smart=true&width=2752&height=1536",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "La transmisión en directo captó los instantes en que varias familias buscaron resguardo ordenado tras el fuerte movimiento de magnitud seis coma siete, mientras los organizadores guiaban a todos hacia zonas seguras Decenas de escolares, padres de familia y asistentes al concurso de danzas se llevaron el susto de su vida cuando en plena danza empezó a temblar el local del colegio 20 Nov, 2026 08:33 p. m.",
+   "puntos": [
+    "La transmisión en directo captó los instantes en que varias familias buscaron resguardo ordenado tras el fuerte movimiento de magnitud seis coma siete, mientras los organizadores guiaban a todos hacia zonas seguras",
+    "Decenas de escolares, padres de familia y asistentes al concurso de danzas se llevaron el susto de su vida cuando en plena danza empezó a temblar el local del colegio 20 Nov, 2026 08:33 p. m.",
+    "EST Guardar El concurso de danzas de la IEP San José de Chaclacayo quedó interrumpido la noche del viernes 20 de noviembre, cuando un sismo de magnitud 6,7 con epicentro en Junín se sintió en el distrito limeño y obligó a activar las indicaciones de seguridad ante escolares, padres de familia y demás asistentes."
+   ],
+   "datos": [
+    {
+     "v": "20 de noviembre",
+     "t": "fecha",
+     "c": "…José de Chaclacayo quedó interrumpido la noche del viernes 20 de noviembre, cuando un sismo de magnitud 6,7 con epicentro en Junín se…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://www.infobae.com/peru/2026/11/21/fuerte-sismo-de-magnitud-67-interrumpe-un-concurso-escolar-en-chaclacayo-estudiantes-y-padres-pasaron-susto/"
+  },
+  {
+   "id": "75ba45379d",
+   "sector": "coyuntura",
+   "titulo": "Kiko Milano, la gigante italiana de la belleza, llegó al Perú, ¿cuánto invertirá y qué otras tiendas planea abrir?",
+   "resumen": "La empresa europea desembarca de la mano de Empresas DBS con una estrategia que combina locales propios y espacios dentro de DBS Beauty Store. La meta es cerrar este 2026 con cinco puntos de venta y alcanzar alrededor de 30 tiendas hacia el 2030.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/economia/peru/kiko-milano-la-gigante-italiana-de-la-belleza-llego-al-peru-cuanto-invertira-y-que-otras-tiendas-planea-abrir-mercado-de-belleza-dbs-beauty-store-noticia/",
+   "fecha": "2026-11-21T01:32:55Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/3VH2MDAPWBAXJEU67E4D77KSOU.jpg?auth=f447b021dac17fc68a659252b85bdad73a93ac940ae953efb7926cebac0d9b92&smart=true&width=1303&height=869",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "La empresa europea desembarca de la mano de Empresas DBS con una estrategia que combina locales propios y espacios dentro de DBS Beauty Store. La meta es cerrar este 2026 con cinco puntos de venta y alcanzar alrededor de 30 tiendas hacia el 2030.",
+   "puntos": [
+    "La empresa europea desembarca de la mano de Empresas DBS con una estrategia que combina locales propios y espacios dentro de DBS Beauty Store.",
+    "La meta es cerrar este 2026 con cinco puntos de venta y alcanzar alrededor de 30 tiendas hacia el 2030.",
+    "Quienes siguen tutoriales de maquillaje en redes sociales probablemente se hayan cruzado alguna vez con un brillo labial 3D Hydra Lipgloss o el labial Unlimited Double Touch de Kiko Milano."
+   ],
+   "datos": [
+    {
+     "v": "60%",
+     "t": "porcentaje",
+     "c": "…mencionó que la distribución proyectada contempla que el 60% de los puntos de venta sean tiendas stand alone —locales…"
+    },
+    {
+     "v": "40%",
+     "t": "porcentaje",
+     "c": "…stand alone —locales exclusivos de Kiko Milano— y el 40% restante corresponda al formato shop in shop, dentro de…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://elcomercio.pe/economia/peru/kiko-milano-la-gigante-italiana-de-la-belleza-llego-al-peru-cuanto-invertira-y-que-otras-tiendas-planea-abrir-mercado-de-belleza-dbs-beauty-store-noticia/"
+  },
+  {
+   "id": "fd4e0d14c1",
+   "sector": "coyuntura",
+   "titulo": "Cámaras de seguridad captaron el preciso instante del sismo en Atalaya, región Ucayali [VIDEO]",
+   "resumen": "Las imágenes de videovigilancia muestran cómo el movimiento telúrico comenzó de manera leve y luego sacudió con mayor intensidad una de las cámaras. El temblor tuvo su epicentro en Junín y también fue percibido en Lima y otras regiones.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/peru/actualidad/sismo-en-ucayali-camaras-de-seguridad-captaron-momento-del-temblor-en-atalaya-video-noticia-1718930",
+   "fecha": "2026-11-21T01:31:11Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/20/atsapp-video-2026-11-20-at-82946-pm-1931468mp4_1931469.jpg?width=860&quality=80",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Las imágenes de videovigilancia muestran cómo el movimiento telúrico comenzó de manera leve y luego sacudió con mayor intensidad una de las cámaras. El temblor tuvo su epicentro en Junín y también fue percibido en Lima y otras regiones.",
+   "puntos": [
+    "Las imágenes de videovigilancia muestran cómo el movimiento telúrico comenzó de manera leve y luego sacudió con mayor intensidad una de las cámaras.",
+    "El temblor tuvo su epicentro en Junín y también fue percibido en Lima y otras regiones.",
+    "Cámaras de seguridad de Atalaya, en la región Ucayali, registraron el momento en que se sintió el sismo de magnitud 6.7 ocurrido la noche de este viernes 20 de noviembre, con epicentro en Junín."
+   ],
+   "datos": [
+    {
+     "v": "129 kilómetros",
+     "t": "cantidad",
+     "c": "El sismo se registró a las 7:09 p. m., con una profundidad de 129 kilómetros."
+    },
+    {
+     "v": "30 kilómetros",
+     "t": "cantidad",
+     "c": "Su epicentro fue localizado a 30 kilómetros al noroeste de Junín, de acuerdo con el reporte del Instituto Geofísico del Perú (IGP)."
+    },
+    {
+     "v": "20 de noviembre",
+     "t": "fecha",
+     "c": "…el sismo de magnitud 6.7 ocurrido la noche de este viernes 20 de noviembre, con epicentro en Junín.."
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://rpp.pe/peru/actualidad/sismo-en-ucayali-camaras-de-seguridad-captaron-momento-del-temblor-en-atalaya-video-noticia-1718930"
+  },
+  {
+   "id": "72309e56b9",
+   "sector": "economia",
+   "titulo": "Fotos y videos de cómo se sintió el sismo 6.7 en diferentes regiones del Perú",
+   "resumen": "El movimiento ocurrió a las 19.09 horas, tuvo su epicentro a 30 kilómetros al noroeste de Junín y fue percibido desde Piura hasta Arequipa.",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/21/fotos-y-videos-de-como-se-sintio-el-sismo-67-en-diferentes-regiones-del-peru/",
+   "fecha": "2026-11-21T01:28:25Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/IPFAU5RYABEUJLGN46XCCSOPJM.jpg?auth=8ec6b49b6243ccb44ae2ae31bf806db692ca3f6e73fe483defadfd51f034cc12&smart=true&width=1920&height=1080",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El movimiento ocurrió a las 19.09 horas, tuvo su epicentro a 30 kilómetros al noroeste de Junín y fue percibido desde Piura hasta Arequipa. Fotos y videos de cómo se sintió el de sismo 6.7 en diferentes regiones del Perú.",
+   "puntos": [
+    "El movimiento ocurrió a las 19.09 horas, tuvo su epicentro a 30 kilómetros al noroeste de Junín y fue percibido desde Piura hasta Arequipa.",
+    "Fotos y videos de cómo se sintió el de sismo 6.7 en diferentes regiones del Perú.",
+    "EST Guardar Un sismo de magnitud 6,7 remeció varias regiones del Perú la noche del viernes 20 de noviembre y generó preocupación entre ciudadanos de Junín, Pucallpa, Huánuco, Cañete, Huaral, Chancay, Piura y Arequipa ."
+   ],
+   "datos": [
+    {
+     "v": "30 kilómetros",
+     "t": "cantidad",
+     "c": "El movimiento ocurrió a las 19.09 horas, tuvo su epicentro a 30 kilómetros al noroeste de Junín y fue percibido desde Piura hasta Arequipa.."
+    },
+    {
+     "v": "129 kilómetros",
+     "t": "cantidad",
+     "c": "El movimiento se produjo a una profundidad de 129 kilómetros y alcanzó una intensidad V en la zona cercana al epicentro.."
+    },
+    {
+     "v": "20 de noviembre",
+     "t": "fecha",
+     "c": "…6,7 remeció varias regiones del Perú la noche del viernes 20 de noviembre y generó preocupación entre ciudadanos de Junín, Pucallpa…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://www.infobae.com/peru/2026/11/21/fotos-y-videos-de-como-se-sintio-el-sismo-67-en-diferentes-regiones-del-peru/"
+  },
+  {
+   "id": "b67ba98545",
+   "sector": "nino",
+   "titulo": "El Niño: negocios podrán reprogramar pago de créditos de Impulso Myperú hasta por 12 meses",
+   "resumen": "Fenómeno El Niño: MEF activa garantías por S/ 2,000 millones y amplía plazos de pago para las MYPE.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/economia/el-nino-negocios-podran-reprogramar-pago-de-creditos-de-impulso-myperu-hasta-por-12-meses-noticia/",
+   "fecha": "2026-11-21T01:24:39Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/EFF4NWWTPZEKRP45EYFP2UCQ2A.jpg?auth=024fcbace2b58595696a57daaf9ec6e6a917960276c66a4ca1de98eaa95fdfe3&smart=true&width=1376&height=768",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Fenómeno El Niño: MEF activa garantías por S/ 2,000 millones y amplía plazos de pago para las MYPE.",
+   "puntos": [
+    "Fenómeno El Niño: MEF activa garantías por S/ 2,000 millones y amplía plazos de pago para las MYPE."
+   ],
+   "datos": [
+    {
+     "v": "S/ 2,000 millones",
+     "t": "monto",
+     "c": "Fenómeno El Niño: MEF activa garantías por S/ 2,000 millones y amplía plazos de pago para las MYPE."
+    }
+   ],
+   "acceso": "restringido",
+   "url_medio": "https://gestion.pe/economia/el-nino-negocios-podran-reprogramar-pago-de-creditos-de-impulso-myperu-hasta-por-12-meses-noticia/"
+  },
+  {
+   "id": "029fb873fa",
+   "sector": "deporte",
+   "titulo": "Bonito gesto de Alianza Lima: jugadores apoyaron al equipo de futsal down de cara a torneo internacional",
+   "resumen": "El equipo de futsal down de Alianza Lima quedó listo para competir la Copa Sudamericana Chile 2026.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/futbol/descentralizado/alianza-lima-vs-fc-cajamarca-jugadores-blanquiazules-apoyaron-a-equipo-de-futsal-down-de-cara-a-torneo-internacional-noticia-1718926",
+   "fecha": "2026-11-21T01:20:48Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/20/portada_0346440.jpg?width=860&quality=80",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El equipo de futsal down de Alianza Lima quedó listo para competir la Copa Sudamericana Chile 2026.",
+   "puntos": [
+    "El equipo de futsal down de Alianza Lima quedó listo para competir la Copa Sudamericana Chile 2026."
+   ],
+   "acceso": "sin_verificar",
+   "url_medio": "https://rpp.pe/futbol/descentralizado/alianza-lima-vs-fc-cajamarca-jugadores-blanquiazules-apoyaron-a-equipo-de-futsal-down-de-cara-a-torneo-internacional-noticia-1718926"
   },
   {
    "id": "403c94987b",
@@ -550,7 +1400,7 @@ window.NOTICIAS = {
    "resumen": "El entrenador argentino se refirió a la salida del defensor de la ‘misilera’ luego de una gran temporada en la Liga 1 2026",
    "fuente": "Infobae Perú",
    "url": "https://www.infobae.com/peru/deportes/2026/11/20/carlos-desio-confirmo-que-mathias-llontop-ficho-por-universitario-los-detalles-de-la-llegada-del-jugador-de-sport-boys-a-ate/",
-   "fecha": "2026-11-21T00:41:27Z",
+   "fecha": "2026-11-21T01:17:05Z",
    "tipo": "comercial",
    "genero": "noticia",
    "imagen": "https://www.infobae.com/resizer/v2/C2VKD7XHMJEXXGIQRHKJAGYI4M.jpg?auth=de183b0060888a47b623aae1b88115d7d3cdb0411845d0e88af4ec685f2a7578&smart=true&width=1201&height=629",
@@ -562,14 +1412,421 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
+   "url_medio": "https://www.infobae.com/peru/deportes/2026/11/20/carlos-desio-confirmo-que-mathias-llontop-ficho-por-universitario-los-detalles-de-la-llegada-del-jugador-de-sport-boys-a-ate/",
    "sintesis": "El entrenador argentino se refirió a la salida del defensor de la ‘misilera’ luego de una gran temporada en la Liga 1 2026 EST Guardar El fichaje de Mathías Llontop por Universitario de Deportes es un hecho .",
    "puntos": [
     "El entrenador argentino se refirió a la salida del defensor de la ‘misilera’ luego de una gran temporada en la Liga 1 2026",
     "EST Guardar El fichaje de Mathías Llontop por Universitario de Deportes es un hecho .",
     "El entrenador de Sport Boys , Carlos Desio , lo confirmó en una reciente entrevista, cuando se refirió a la conformación de su plantel para la próxima temporada de la Liga 1 , luego de renovar su contrato con la ‘misilera’."
    ],
+   "acceso": "abierto"
+  },
+  {
+   "id": "1c8ed8a6ee",
+   "sector": "mundo",
+   "titulo": "\"Torturado hasta morir”: la ejecución de un cubano en Texas reabre el debate sobre la pena capital",
+   "resumen": "Menos de dos meses después de la fallida ejecución de Christa Pike en Tennessee, la pena capital volvió a quedar bajo la lupa el 19 de noviembre, cuando la aplicación de inyección letal a un condenado en Texas tomara más de una hora, mientras el hombre gritaba y se retorcía de…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/ee-uu-y-canad%C3%A1/20261121-torturado-hasta-morir-la-ejecuci%C3%B3n-de-un-cubano-en-texas-reabre-el-debate-sobre-la-pena-capital",
+   "fecha": "2026-11-21T01:07:07Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/1e1033ac-e546-11f1-b3ff-ebb478925cf0/w:1024/p:16x9/AP26160068122444.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Menos de dos meses después de la fallida ejecución de Christa Pike en Tennessee, la pena capital volvió a quedar bajo la lupa el 19 de noviembre, cuando la aplicación de inyección letal a un condenado… Una portavoz del sistema penitenciario del estado sugería que probablemente estaba fingiendo, pero los antecedentes de mal funcionamiento de los fármacos en este tipo de procedimientos arrojan dudas sobre el método.",
+   "puntos": [
+    "Menos de dos meses después de la fallida ejecución de Christa Pike en Tennessee, la pena capital volvió a quedar bajo la lupa el 19 de noviembre, cuando la aplicación de inyección letal a un condenado…",
+    "Una portavoz del sistema penitenciario del estado sugería que probablemente estaba fingiendo, pero los antecedentes de mal funcionamiento de los fármacos en este tipo de procedimientos arrojan dudas sobre el método.",
+    "Por: Eumar Esaá \"Reinaldo Dennes fue torturado."
+   ],
+   "datos": [
+    {
+     "v": "70 años",
+     "t": "cantidad",
+     "c": "…para la aplicación de la pena capital, el hombre de 70 años usó su derecho a una última declaración para celebrar que…"
+    },
+    {
+     "v": "19 de noviembre",
+     "t": "fecha",
+     "c": "…Tennessee, la pena capital volvió a quedar bajo la lupa el 19 de noviembre, cuando la aplicación de inyección letal a un condenado…."
+    }
+   ],
    "acceso": "abierto",
-   "url_medio": "https://www.infobae.com/peru/deportes/2026/11/20/carlos-desio-confirmo-que-mathias-llontop-ficho-por-universitario-los-detalles-de-la-llegada-del-jugador-de-sport-boys-a-ate/"
+   "url_medio": "https://www.france24.com/es/ee-uu-y-canad%C3%A1/20261121-torturado-hasta-morir-la-ejecuci%C3%B3n-de-un-cubano-en-texas-reabre-el-debate-sobre-la-pena-capital"
+  },
+  {
+   "id": "81353a544a",
+   "sector": "economia",
+   "titulo": "El 79% de los “pobres energéticos” está fuera de Lima: ¿qué más revela estudio de Promigas?",
+   "resumen": "Promigas lanzó el primer Índice Multidimensional de Pobreza Energética del Perú (IMPE Perú), un estudio que da luces sobre las brechas de acceso y buen uso de la energía en el país. Aquí un resumen de lo más resaltante.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/economia/el-79-de-los-pobres-energeticos-esta-fuera-de-lima-que-mas-revela-estudio-de-promigas-noticia/",
+   "fecha": "2026-11-21T01:07:00Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/5VTCFHVH6JCJZEQZ4NZYIHCD7Q.png?auth=206fd9d6d967e0e234b45e59e33d193bafd8d7558f5218cd98a426769a5597da&smart=true&width=1672&height=941",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "url_medio": "https://gestion.pe/economia/el-79-de-los-pobres-energeticos-esta-fuera-de-lima-que-mas-revela-estudio-de-promigas-noticia/",
+   "sintesis": "Promigas lanzó el primer Índice Multidimensional de Pobreza Energética del Perú (IMPE Perú), un estudio que da luces sobre las brechas de acceso y buen uso de la energía en el país. Promigas presentó ayer el primer Índice Multidimensional de Pobreza Energética del Perú (IMPE Perú), un estudio desarrollado por la empresa, junto a Apoyo Consultoría e Inclusión SAS.",
+   "puntos": [
+    "Promigas lanzó el primer Índice Multidimensional de Pobreza Energética del Perú (IMPE Perú), un estudio que da luces sobre las brechas de acceso y buen uso de la energía en el país.",
+    "Promigas presentó ayer el primer Índice Multidimensional de Pobreza Energética del Perú (IMPE Perú), un estudio desarrollado por la empresa, junto a Apoyo Consultoría e Inclusión SAS.",
+    "Este permite conocer cómo las brechas en el acceso y uso de la energía impactan en la calidad de vida de millones de peruanos."
+   ],
+   "datos": [
+    {
+     "v": "79%",
+     "t": "porcentaje",
+     "c": "El 79% de los “pobres energéticos” está fuera de Lima: ¿qué más revela estudio de Promigas?."
+    }
+   ],
+   "acceso": "abierto"
+  },
+  {
+   "id": "7b4e7a313a",
+   "sector": "investigacion",
+   "titulo": "Legisladores denuncian “terruqueo” tras detención de Pedro Mo y Brenda Jah y exigen pruebas a Fiscalía y Policía",
+   "resumen": "",
+   "fuente": "La República",
+   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOS2pzZ01Qd1piYWJqUkNKN3RVVHNQVXFpV0hzWG1Da244aldDVTROT3ItS2V5RVhuRDFYaHEwbkNqd0FyWkRMcFhRdm4taHdwZmxBWTRvdkVIanhSS2FrR0J3VVptbkpHUHJvUTZTVXdZbzNDZWR2SXEwNnF3azg0TGxwbkxLckY1bkFoWmxSZS1YRlgzVXZ2MjYyVlBwcmFpTU5vSFgxNVFJZzd3NWdiaXN2Z19xR2hRMnQ5WEJFa1hEZ0RfUWRyOU1GM0VrRFlBeVFPcUk5TzQ0dDdmb2FPMmFvVVJKZEVMNEVBeEpMWktHXzE1M2Vucm9PUdIBgAJBVV95cUxNY1YxWFNZQ0V3OUxPbVVFbGk2SUtqdzRMZk4xNXE1WVN2OEV6UjVFNVZ1RnR0ZzFYZ2szNlZ1ZWxfUlRQOENyVFRGeTNrYmc5SFktUHBxU2JXb2tkUWJ4RjNUQy1lWmhtNEp2MWI0NDVUUUx0ZWJ6QVNCczd4Q3ZIX1J3UVFoU1FZWXpVUXJ4YVg3S3RrcnJKVWhwdTJsSGZiVzNtZHo2alVSZWhzNzVNVXdPYjlNWjR4V2pmZFJXTnd1b2VtcFNQcmxJZTkzVHdMQ2lwaU1yVUx6NVBmbVNJQ3hyUU52S2FYRmd0OEJhcTNrT3AxZEowYlhpWmhacjNL?oc=5",
+   "fecha": "2026-11-21T01:06:30Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "agregador",
+   "via": "Google Noticias",
+   "imagen_intentos": 1,
+   "url_medio": "https://larepublica.pe/politica/2026/11/20/legisladores-denuncian-terruqueo-tras-detencion-de-pedro-mo-y-brenda-jah-y-exigen-pruebas-a-fiscalia-y-policia-hnews-1246960",
+   "acceso": "sin_verificar"
+  },
+  {
+   "id": "acb26cf9fe",
+   "sector": "investigacion",
+   "titulo": "Breña: dictan prisión preventiva contra policía acusado de exigir hasta S/8.000 para devolver una moto robada",
+   "resumen": "Un suboficial de tercera de la Policía Nacional del Perú (PNP) recibió nueve meses de prisión preventiva tras ser detenido en flagrancia…",
+   "fuente": "Caretas",
+   "url": "https://caretas.pe/sociedad/brena-dictan-prision-preventiva-contra-policia-acusado-de-exigir-hasta-s-8-000-para-devolver-una-moto-robada/",
+   "fecha": "2026-11-21T01:03:30Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://caretas.pe/wp-content/uploads/2026/11/image-2026-11-20T200239.506-1280x720.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Un suboficial de tercera de la Policía Nacional del Perú (PNP) recibió nueve meses de prisión preventiva tras ser detenido en flagrancia…",
+   "puntos": [
+    "Un suboficial de tercera de la Policía Nacional del Perú (PNP) recibió nueve meses de prisión preventiva tras ser detenido en flagrancia…"
+   ],
+   "datos": [
+    {
+     "v": "S/8.000",
+     "t": "monto",
+     "c": "Breña: dictan prisión preventiva contra policía acusado de exigir hasta S/8.000 para devolver una moto robada."
+    }
+   ],
+   "acceso": "sin_verificar",
+   "url_medio": "https://caretas.pe/sociedad/brena-dictan-prision-preventiva-contra-policia-acusado-de-exigir-hasta-s-8-000-para-devolver-una-moto-robada/"
+  },
+  {
+   "id": "f9ca5d9edc",
+   "sector": "investigacion",
+   "titulo": "OEFA y FAP firman convenio específico para fortalecer atención de emergencias ambientales",
+   "resumen": "El Organismo de Evaluación y Fiscalización Ambiental (OEFA), entidad adscrita al Ministerio del Ambiente (MINAM) y el Comando de Operaciones de la Fuerza Aérea del Perú (FAP), del Ministerio de Defensa, suscribieron un convenio específico de cooperación interinstitucional para…",
+   "fuente": "Agencia Andina",
+   "url": "https://andina.pe/agencia/noticia-oefa-y-fap-firman-convenio-especifico-para-fortalecer-atencion-emergencias-ambientales-1100893.aspx",
+   "fecha": "2026-11-21T01:00:51Z",
+   "tipo": "estatal",
+   "genero": "noticia",
+   "imagen": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2026/11/20/001333581W.webp",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "acceso": "sin_verificar",
+   "url_medio": "https://andina.pe/agencia/noticia-oefa-y-fap-firman-convenio-especifico-para-fortalecer-atencion-emergencias-ambientales-1100893.aspx"
+  },
+  {
+   "id": "1615a0f1ce",
+   "sector": "economia",
+   "titulo": "MEF aprueba endeudamiento por S/ 5,700 millones para financiar proyecto de la Fuerza Aérea",
+   "resumen": "El Ministerio de Economía y Finanzas (MEF) autorizó la emisión de bonos soberanos por hasta S/ 5,700 millones para financiar el segundo tramo de un proyecto de inversión a cargo del Ministerio de Defensa, a través de la Fuerza Aérea del Perú (FAP).",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/economia/empresas/mef-aprueba-endeudamiento-por-s-5700-millones-para-financiar-proyecto-de-la-fuerza-aerea-noticia/",
+   "fecha": "2026-11-21T01:00:06Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/RWSISBS4SNGZVPJZ5LAI5FY27I.png?auth=12829e0495237bace654a3fdf8b7ac885306eac1cd971eeed329f122d7cb66af&smart=true&width=1400&height=800",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El Ministerio de Economía y Finanzas (MEF) autorizó la emisión de bonos soberanos por hasta S/ 5,700 millones para financiar el segundo tramo de un proyecto de inversión a cargo del Ministerio de Defensa, a través de la Fuerza Aérea del Perú (FAP). La medida fue oficializada mediante el Decreto Supremo N° 262-2026-EF , publicado hoy en el diario oficial El Peruano, que aprueba una operación de endeudamiento interno para cubrir los recursos que demande la ejecución del proyecto.",
+   "puntos": [
+    "El Ministerio de Economía y Finanzas (MEF) autorizó la emisión de bonos soberanos por hasta S/ 5,700 millones para financiar el segundo tramo de un proyecto de inversión a cargo del Ministerio de Defensa, a través de la Fuerza Aérea del Perú (FAP).",
+    "La medida fue oficializada mediante el Decreto Supremo N° 262-2026-EF , publicado hoy en el diario oficial El Peruano, que aprueba una operación de endeudamiento interno para cubrir los recursos que demande la ejecución del proyecto.",
+    "Según la norma, la colocación de los bonos se realizará en soles, mediante una o más subastas, en el marco del Programa de Creadores de Mercado o del mecanismo que lo reemplace."
+   ],
+   "datos": [
+    {
+     "v": "S/ 5,700 millones",
+     "t": "monto",
+     "c": "MEF aprueba endeudamiento por S/ 5,700 millones para financiar proyecto de la Fuerza Aérea."
+    },
+    {
+     "v": "360 días",
+     "t": "cantidad",
+     "c": "Los títulos tendrán libre negociación y pagarán cupones de manera semestral, sobre la base de 30/360 días."
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://gestion.pe/economia/empresas/mef-aprueba-endeudamiento-por-s-5700-millones-para-financiar-proyecto-de-la-fuerza-aerea-noticia/"
+  },
+  {
+   "id": "d4e0349811",
+   "sector": "economia",
+   "titulo": "Evalúan financiamiento para proyectos de agua y saneamiento",
+   "resumen": "El Ministerio de Vivienda, Construcción y Saneamiento (MVCS) y el Banco Mundial (BM) coordinaron acciones para impulsar inversiones en proyectos de agua potable y saneamiento en el país, mediante alternativas de financiamiento y cooperación internacional orientadas a cerrar las…",
+   "fuente": "Agencia Andina",
+   "url": "https://andina.pe/agencia/noticia-evaluan-financiamiento-para-proyectos-agua-y-saneamiento-1100889.aspx",
+   "fecha": "2026-11-21T01:00:00Z",
+   "tipo": "estatal",
+   "genero": "noticia",
+   "imagen": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2026/11/20/001333598W.webp",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "contexto_internacional_resumen"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "El Ministerio de Vivienda, Construcción y Saneamiento (MVCS) y el Banco Mundial (BM) coordinaron acciones para impulsar inversiones en proyectos de agua potable y saneamiento en el país, mediante alternativas de financiamiento y cooperación internacional orientadas a cerrar las…",
+   "puntos": [
+    "El Ministerio de Vivienda, Construcción y Saneamiento (MVCS) y el Banco Mundial (BM) coordinaron acciones para impulsar inversiones en proyectos de agua potable y saneamiento en el país, mediante alternativas de financiamiento y cooperación internacional orientadas a cerrar las…"
+   ],
+   "acceso": "sin_verificar",
+   "url_medio": "https://andina.pe/agencia/noticia-evaluan-financiamiento-para-proyectos-agua-y-saneamiento-1100889.aspx"
+  },
+  {
+   "id": "eb8f6becba",
+   "sector": "mundo",
+   "titulo": "Declaran culpable a sospechoso de iniciar letal incendio en Los Angeles en 2025",
+   "resumen": "Jonathan Rinderknecht, de 30 años, podría recibir una condena de hasta 40 años de prisión por haber propiciado el siniestro, donde murieron decenas de personas.",
+   "fuente": "DW Español",
+   "url": "https://www.dw.com/es/declaran-culpable-a-sospechoso-de-iniciar-letal-incendio-en-los-angeles-en-2025/a-80007540?maca=spa-rss-sp-all-1122-xml-mrss",
+   "fecha": "2026-11-21T00:57:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://static.dw.com/image/71270780_6.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "Jonathan Rinderknecht, de 30 años, podría recibir una condena de hasta 40 años de prisión por haber propiciado el siniestro, donde murieron decenas de personas. Jonathan Rinderknecht, de 30 años, inició en Nochevieja el incendio que arrasó en enero de 2025 la lujosa comunidad de Pacific Palisades, en la costa de California.",
+   "puntos": [
+    "Jonathan Rinderknecht, de 30 años, podría recibir una condena de hasta 40 años de prisión por haber propiciado el siniestro, donde murieron decenas de personas.",
+    "Jonathan Rinderknecht, de 30 años, inició en Nochevieja el incendio que arrasó en enero de 2025 la lujosa comunidad de Pacific Palisades, en la costa de California.",
+    "Un total de 31 personas perdieron la vida en ese y en otro incendio, que destruyeron miles de viviendas en la segunda ciudad más grande de Estados Unidos."
+   ],
+   "datos": [
+    {
+     "v": "30 años",
+     "t": "cantidad",
+     "c": "Jonathan Rinderknecht, de 30 años, podría recibir una condena de hasta 40 años de prisión…"
+    },
+    {
+     "v": "40 años",
+     "t": "cantidad",
+     "c": "…de 30 años, podría recibir una condena de hasta 40 años de prisión por haber propiciado el siniestro, donde…"
+    },
+    {
+     "v": "31 personas",
+     "t": "cantidad",
+     "c": "Un total de 31 personas perdieron la vida en ese y en otro incendio, que…"
+    },
+    {
+     "v": "17 de marzo",
+     "t": "fecha",
+     "c": "…un exconductor de Uber, debe ser sentenciado el 17 de marzo y podría ser condenado a una pena de hasta 40 años de…"
+    },
+    {
+     "v": "31 de diciembre de 2024",
+     "t": "fecha",
+     "c": "…en la vegetación de estas montañas que bordean a Malibú el 31 de diciembre de 2024.."
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://www.dw.com/es/declaran-culpable-a-sospechoso-de-iniciar-letal-incendio-en-los-angeles-en-2025/a-80007540"
+  },
+  {
+   "id": "7d2a9d571c",
+   "sector": "nino",
+   "titulo": "El \"Combo de la Supervivencia\" que Indeci recomienda tener en casa tras el sismo de 6.7 registrado en Junín",
+   "resumen": "No se trata solo de una mochila: hay un segundo componente que cubre los días posteriores al desastre y que la mayoría de familias desconoce. Así funciona el sistema de preparación oficial",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/21/el-combo-de-la-supervivencia-que-indeci-recomienda-tener-en-casa-tras-el-sismo-de-67-registrado-en-junin/",
+   "fecha": "2026-11-21T00:54:56Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/TF3PQH66BVGUFEGGR7Z3W2PSU4.png?auth=63722060b162137f63328b8c6a5d20f860a6653369c86eacc5b51013470183f9&smart=true&width=2752&height=1536",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "No se trata solo de una mochila: hay un segundo componente que cubre los días posteriores al desastre y que la mayoría de familias desconoce. Así funciona el sistema de preparación oficial",
+   "puntos": [
+    "No se trata solo de una mochila: hay un segundo componente que cubre los días posteriores al desastre y que la mayoría de familias desconoce.",
+    "Así funciona el sistema de preparación oficial",
+    "Una mochila de emergencia equipada con víveres y artículos de primeros auxilios ilustra las pautas de preparación familiar ante sismos en Perú. (Imagen Ilustrativa Infobae) 20 Nov, 2026 07:54 p. m."
+   ],
+   "datos": [
+    {
+     "v": "30 kilómetros",
+     "t": "cantidad",
+     "c": "…dependiente del Estado peruano, que ubicó el epicentro a 30 kilómetros al noroeste de…."
+    },
+    {
+     "v": "129 kilómetros",
+     "t": "cantidad",
+     "c": "…2026-0818 precisó que el evento tuvo una profundidad de 129 kilómetros y alcanzó una intensidad V en Junín, considerada un…"
+    },
+    {
+     "v": "20 de noviembre",
+     "t": "fecha",
+     "c": "…6,7 que sacudió la región Junín la noche de este viernes 20 de noviembre y que también fue percibido en Lima y otras localidades…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://www.infobae.com/peru/2026/11/21/el-combo-de-la-supervivencia-que-indeci-recomienda-tener-en-casa-tras-el-sismo-de-67-registrado-en-junin/"
+  },
+  {
+   "id": "a742156c17",
+   "sector": "economia",
+   "titulo": "Pulso Bursátil: así se movieron las acciones y commodities esta semana",
+   "resumen": "VIDEO de Pulso Bursátil. Gestión y la Universidad de Lima presentan el Reporte del Mercado de Capitales al 20 de noviembre del 2026, un repaso de los movimientos más importantes entre acciones, commodities y divisas de la semana.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/videos/economia/pulso-bursatil-asi-se-movieron-las-acciones-y-commodities-esta-semana-noticia-5/",
+   "fecha": "2026-11-21T00:49:31Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/ORQ7GI3UK5ACHO4B4TX3MN23OE.jpg?auth=88d3a87a3c29e702d8bda86d776b8c4105b7ebdd1e605e7c3e20b3ef300275fd&smart=true&width=989&height=584",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Gestión y la Universidad de Lima presentan el Reporte del Mercado de Capitales al 20 de noviembre del 2026, un repaso de los movimientos más importantes entre acciones, commodities y divisas de la semana.",
+   "puntos": [
+    "Gestión y la Universidad de Lima presentan el Reporte del Mercado de Capitales al 20 de noviembre del 2026, un repaso de los movimientos más importantes entre acciones, commodities y divisas de la semana."
+   ],
+   "datos": [
+    {
+     "v": "20 de noviembre",
+     "t": "fecha",
+     "c": "…de Lima presentan el Reporte del Mercado de Capitales al 20 de noviembre del 2026, un repaso de los movimientos más importantes…"
+    }
+   ],
+   "acceso": "sin_verificar",
+   "url_medio": "https://gestion.pe/videos/economia/pulso-bursatil-asi-se-movieron-las-acciones-y-commodities-esta-semana-noticia-5/"
+  },
+  {
+   "id": "95887a81b6",
+   "sector": "politica",
+   "titulo": "Jesús María: inauguran mural para resaltar lazos de amistad entre los países andinos",
+   "resumen": "El Mural de la Integración Andina, obra pictórica impulsada por el Parlamento Andino, fue inaugurado este viernes en el distrito limeño de Jesús María, en una ceremonia cívica con participación de diversas autoridades.",
+   "fuente": "Agencia Andina",
+   "url": "https://andina.pe/agencia/noticia-jesus-maria-inauguran-mural-para-resaltar-lazos-amistad-entre-los-paises-andinos-1100886.aspx",
+   "fecha": "2026-11-21T00:48:45Z",
+   "tipo": "estatal",
+   "genero": "noticia",
+   "imagen": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2026/11/20/001333597W.webp",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "url_medio": "https://andina.pe/agencia/noticia-jesus-maria-inauguran-mural-para-resaltar-lazos-amistad-entre-los-paises-andinos-1100886.aspx",
+   "sintesis": "El Mural de la Integración Andina, obra pictórica impulsada por el Parlamento Andino, fue inaugurado este viernes en el distrito limeño de Jesús María, en una ceremonia cívica con participación de diversas autoridades.",
+   "puntos": [
+    "El Mural de la Integración Andina, obra pictórica impulsada por el Parlamento Andino, fue inaugurado este viernes en el distrito limeño de Jesús María, en una ceremonia cívica con participación de diversas autoridades."
+   ],
+   "acceso": "sin_verificar"
+  },
+  {
+   "id": "4484fc909b",
+   "sector": "investigacion",
+   "titulo": "Hermes y Prosegur responden a cuestionamientos y garantiza la continuidad de sus operaciones",
+   "resumen": "Los pronunciamientos se dan en medio de las investigaciones de la Fiscalía a funcionarios de la SBS en el caso ‘Los Herméticos del Caudal’.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/lima/policiales/hermes-responde-a-cuestionamientos-y-garantiza-la-continuidad-de-sus-operaciones-ultimas-noticia/",
+   "fecha": "2026-11-21T00:48:35Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/XBJ4NKQSXJDDPBVMAQC2H7P6CQ.jpg?auth=a7d1995625b9aebac3a5ce06411c04133fbbbbe99bfc29ad8360b8e7cd2a3ba8&smart=true&width=1200&height=800",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "seccion_nacional_fuente"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Los pronunciamientos se dan en medio de las investigaciones de la Fiscalía a funcionarios de la SBS en el caso ‘Los Herméticos del Caudal’. La empresa Hermes Transportes Blindados S.A. rechazó categóricamente los cuestionamientos y señalamientos difundidos en las últimas semanas contra la compañía y sus funcionarios, calificándolos como una campaña “sin fundamento jurídico” que busca dañar su reputación e integridad .",
+   "puntos": [
+    "Los pronunciamientos se dan en medio de las investigaciones de la Fiscalía a funcionarios de la SBS en el caso ‘Los Herméticos del Caudal’.",
+    "La empresa Hermes Transportes Blindados S.A. rechazó categóricamente los cuestionamientos y señalamientos difundidos en las últimas semanas contra la compañía y sus funcionarios, calificándolos como una campaña “sin fundamento jurídico” que busca dañar su reputación e integridad .",
+    "A través de un pronunciamiento oficial, la empresa sostuvo que las acusaciones y diligencias recientes responden a medidas “injustificadas y desproporcionadas” , al tiempo que alertó sobre presuntos intereses de terceros que pretenden operar en el rubro del traslado de valores sin cumplir con el marco normativo vigente ."
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://elcomercio.pe/lima/policiales/hermes-responde-a-cuestionamientos-y-garantiza-la-continuidad-de-sus-operaciones-ultimas-noticia/"
   },
   {
    "id": "d641657c42",
@@ -617,84 +1874,6 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
-   "id": "e6791ec8b5",
-   "sector": "coyuntura",
-   "titulo": "Temblor en California EN VIVO hoy, viernes 20 de noviembre 2026: hora exacta, magnitud y dónde fue el epicentro del último sismo vía el USGS",
-   "resumen": "Consulta el reporte oficial del USGS sobre los últimos temblores registrados en California este viernes 20 de noviembre, con información de sismos ocurridos cerca de Los Ángeles, San Diego, San Francisco y otras ciudades del estado.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/mag/usa/en-vivo-us/temblor-en-california-en-vivo-hoy-viernes-20-de-noviembre-2026-hora-exacta-magnitud-y-donde-fue-el-epicentro-del-ultimo-sismo-via-el-usgs-nnda-nnrt-noticia/",
-   "fecha": "2026-11-21T00:40:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/WHNH7LW7F5CNRIZC5I2QVKBBPQ.jpg?auth=ce4459f1c5cf757af97a4aae996a767416023f86f3f2804063aea2d3bb5b9da8&smart=true&width=2000&height=1350",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Consulta el reporte oficial del USGS sobre los últimos temblores registrados en California este viernes 20 de noviembre, con información de sismos ocurridos cerca de Los Ángeles, San Diego, San Francisco y otras ciudades del estado. La proximidad de California al límite entre las placas del Pacífico y Norteamérica explica por qué es uno de los estados con mayor actividad sísmica de Estados Unidos.",
-   "puntos": [
-    "Consulta el reporte oficial del USGS sobre los últimos temblores registrados en California este viernes 20 de noviembre, con información de sismos ocurridos cerca de Los Ángeles, San Diego, San Francisco y otras ciudades del estado.",
-    "La proximidad de California al límite entre las placas del Pacífico y Norteamérica explica por qué es uno de los estados con mayor actividad sísmica de Estados Unidos.",
-    "El desplazamiento constante de estas estructuras geológicas genera tensiones que pueden liberarse mediante terremotos en diferentes puntos del territorio, especialmente a lo largo de la falla de San Andrés y otros sistemas de fracturas."
-   ],
-   "datos": [
-    {
-     "v": "2.72 km",
-     "t": "cantidad",
-     "c": "…| Latitud, Longitud: 36.582N / 121.235W | Profundidad: 2.72 km | Epicentro: 19 km (12 mi) al NNE de Soledad, California"
-    },
-    {
-     "v": "19 km",
-     "t": "cantidad",
-     "c": "…36.582N / 121.235W | Profundidad: 2.72 km | Epicentro: 19 km (12 mi) al NNE de Soledad, California"
-    },
-    {
-     "v": "20 de noviembre",
-     "t": "fecha",
-     "c": "Temblor en California EN VIVO hoy, viernes 20 de noviembre 2026: hora exacta, magnitud y dónde fue el epicentro del…"
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://elcomercio.pe/mag/usa/en-vivo-us/temblor-en-california-en-vivo-hoy-viernes-20-de-noviembre-2026-hora-exacta-magnitud-y-donde-fue-el-epicentro-del-ultimo-sismo-via-el-usgs-nnda-nnrt-noticia/"
-  },
-  {
-   "id": "e794e3d9cd",
-   "sector": "coyuntura",
-   "titulo": "Temblor en Chile EN VIVO hoy, viernes 20 de noviembre 2026: hora exacta, magnitud y dónde fue el epicentro del último sismo, según el CSN",
-   "resumen": "Consulta cuál fue el último temblor en Chile HOY, 20 de noviembre de 2026, con la hora exacta, epicentro y magnitud del sismo registrado por el Centro Sismológico Nacional (CSN).",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/mag/respuestas/temblor-en-chile-en-vivo-hoy-viernes-20-de-noviembre-2026-hora-exacta-magnitud-y-donde-fue-el-epicentro-del-ultimo-sismo-segun-el-csn-nnda-nnrt-noticia/",
-   "fecha": "2026-11-21T00:40:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/GDT4M4L2DFGLVMPT2ZBXHCIMTA.jpg?auth=a082eb77e9fe2c4eafc6e67c16d116c5c8160e2bd7651e2316f9baf92d6bc9a6&smart=true&width=2400&height=1620",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Consulta cuál fue el último temblor en Chile HOY, 20 de noviembre de 2026, con la hora exacta, epicentro y magnitud del sismo registrado por el Centro Sismológico Nacional (CSN).",
-   "puntos": [
-    "Consulta cuál fue el último temblor en Chile HOY, 20 de noviembre de 2026, con la hora exacta, epicentro y magnitud del sismo registrado por el Centro Sismológico Nacional (CSN)."
-   ],
-   "datos": [
-    {
-     "v": "20 de noviembre",
-     "t": "fecha",
-     "c": "Temblor en Chile EN VIVO hoy, viernes 20 de noviembre 2026: hora exacta, magnitud y dónde fue el epicentro del último sismo, según el CSN."
-    }
-   ],
-   "acceso": "restringido",
-   "url_medio": "https://elcomercio.pe/mag/respuestas/temblor-en-chile-en-vivo-hoy-viernes-20-de-noviembre-2026-hora-exacta-magnitud-y-donde-fue-el-epicentro-del-ultimo-sismo-segun-el-csn-nnda-nnrt-noticia/"
-  },
-  {
    "id": "ad48e73886",
    "sector": "economia",
    "titulo": "Sismo de magnitud 6.7 en Junín: ¿qué significa la intensidad V y qué efectos puede provocar un movimiento telúrico de este nivel?",
@@ -713,6 +1892,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
+   "url_medio": "https://www.infobae.com/peru/2026/11/21/sismo-de-magnitud-67-en-junin-que-significa-la-intensidad-v-y-que-efectos-puede-provocar-un-movimiento-telurico-de-este-nivel/",
    "sintesis": "El evento registrado a las 19:09 tuvo su epicentro a 30 kilómetros al noroeste de la localidad y se originó a 129 kilómetros bajo la superficie, de acuerdo con el reporte Censis Una infografía del Instituto Geofísico del Perú detalla los datos de un sismo de magnitud 6,7 registrado a 129 kilómetros de profundidad en el departamento de Junín. (Imagen Ilustrativa Infobae) 20 Nov, 2026 07:39 p. m.",
    "puntos": [
     "El evento registrado a las 19:09 tuvo su epicentro a 30 kilómetros al noroeste de la localidad y se originó a 129 kilómetros bajo la superficie, de acuerdo con el reporte Censis",
@@ -736,230 +1916,7 @@ window.NOTICIAS = {
      "c": "…Un sismo de magnitud 6,7 registrado la noche del viernes 20 de noviembre en la región Junín alcanzó una intensidad V en la escala…"
     }
    ],
-   "acceso": "abierto",
-   "url_medio": "https://www.infobae.com/peru/2026/11/21/sismo-de-magnitud-67-en-junin-que-significa-la-intensidad-v-y-que-efectos-puede-provocar-un-movimiento-telurico-de-este-nivel/"
-  },
-  {
-   "id": "5d28a04d21",
-   "sector": "coyuntura",
-   "titulo": "Cita del día, Mario Benedetti, poeta: “En realidad, sólo existe la dirección que tomamos, lo que puede haber sido ya no vale”",
-   "resumen": "Descubre qué quiso transmitir Mario Benedetti con estas palabras.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/mag/respuestas/cita-del-dia-mario-benedetti-poeta-en-realidad-solo-existe-la-direccion-que-tomamos-lo-que-puede-haber-sido-ya-no-vale-nnda-nnrt-noticia-2/",
-   "fecha": "2026-11-21T00:36:12Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/CHTBRWJMLRE25NBSKHPYRMF4TM.jpg?auth=b4e95cd402a5b2deb591ac9726e42f3dde51beaf0a19a7dad1cee00b96358840&smart=true&width=2400&height=1600",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "Descubre qué quiso transmitir Mario Benedetti con estas palabras. Todo ser humano ha tenido que afrontar momentos donde se debía tomar una decisión; sin embargo, las propias emociones han tenido el peso suficiente para orientarnos hacia una alternativa que, a corto plazo, no era como se esperaba.",
-   "puntos": [
-    "Descubre qué quiso transmitir Mario Benedetti con estas palabras.",
-    "Todo ser humano ha tenido que afrontar momentos donde se debía tomar una decisión; sin embargo, las propias emociones han tenido el peso suficiente para orientarnos hacia una alternativa que, a corto plazo, no era como se esperaba.",
-    "En ese sentido, hay personas que desearían tener una segunda oportunidad, pero eso no será posible."
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://elcomercio.pe/mag/respuestas/cita-del-dia-mario-benedetti-poeta-en-realidad-solo-existe-la-direccion-que-tomamos-lo-que-puede-haber-sido-ya-no-vale-nnda-nnrt-noticia-2/"
-  },
-  {
-   "id": "4bfdf1951e",
-   "sector": "coyuntura",
-   "titulo": "Fuerte sismo sacude Lima este viernes 20 de noviembre: epicentro fue Junín",
-   "resumen": "Fuerte temblor sacude Lima este viernes 20 de noviembre. De acuerdo con el IGP, el epicentro fue en Junín y el sismo tuvo una intensidad de 6.7",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/peru/temblor-hoy-sismo-en-lima-se-sintio-este-viernes-20-de-noviembre-noticia/",
-   "fecha": "2026-11-21T00:35:32Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/RV5CHFOZMJH7VO7OQUURQO5ACQ.jpg?auth=f1f5f3148129d8227c6d55985b8e94ac05677d78f26f02c3852a9e035c1180f2&smart=true&width=3600&height=2430",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Fuerte temblor sacude Lima este viernes 20 de noviembre. De acuerdo con el IGP, el epicentro fue en Junín y el sismo tuvo una intensidad de 6.7",
-   "puntos": [
-    "Fuerte temblor sacude Lima este viernes 20 de noviembre.",
-    "De acuerdo con el IGP, el epicentro fue en Junín y el sismo tuvo una intensidad de 6.7"
-   ],
-   "datos": [
-    {
-     "v": "20 de noviembre",
-     "t": "fecha",
-     "c": "Fuerte sismo sacude Lima este viernes 20 de noviembre: epicentro fue Junín."
-    }
-   ],
-   "acceso": "restringido",
-   "url_medio": "https://gestion.pe/peru/temblor-hoy-sismo-en-lima-se-sintio-este-viernes-20-de-noviembre-noticia/"
-  },
-  {
-   "id": "00c4f6bfbe",
-   "sector": "coyuntura",
-   "titulo": "Temblor en México HOY, viernes 20 de noviembre: últimos sismos reportados por el SSN",
-   "resumen": "Temblor en México EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Servicio Sismológico Nacional (SSN).",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/mexico/temblor-en-mexico-hoy-en-vivo-ultimo-sismo-19-y-20-de-noviembre-2026-registrado-por-el-ssn-cual-fue-la-magnitud-epicentro-y-hora-servicio-sismologico-nacional-cdmx-mx-lbposting-noticia/",
-   "fecha": "2026-11-21T00:35:15Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/FJXKFQN7YVCWLHDUWLAZDGOCWE.webp?auth=4906f1e01f90f290916a74a443636eff90b5aaef08b434c10cdb344d26ad9c98&smart=true&width=1200&height=700",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Temblor en México EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Servicio Sismológico Nacional (SSN). Temblor en México: mira aquí la magnitud, el epicentro y los reportes sobre los últimos sismos en el país (Diseño: El Comercio).",
-   "puntos": [
-    "Temblor en México EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Servicio Sismológico Nacional (SSN).",
-    "Temblor en México: mira aquí la magnitud, el epicentro y los reportes sobre los últimos sismos en el país (Diseño: El Comercio).",
-    "Momentos clave 2026-11-19 08:51:21 | ¿De qué magnitud y en dónde fue el último temblor en México?"
-   ],
-   "datos": [
-    {
-     "v": "60%",
-     "t": "porcentaje",
-     "c": "…a 4 grados en la escala de Richter, lo que equivale a un 60% de todos los movimientos telúricos que se registran en el…"
-    },
-    {
-     "v": "20 de noviembre",
-     "t": "fecha",
-     "c": "Temblor en México HOY, viernes 20 de noviembre: últimos sismos reportados por el SSN."
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://elcomercio.pe/respuestas/mexico/temblor-en-mexico-hoy-en-vivo-ultimo-sismo-19-y-20-de-noviembre-2026-registrado-por-el-ssn-cual-fue-la-magnitud-epicentro-y-hora-servicio-sismologico-nacional-cdmx-mx-lbposting-noticia/"
-  },
-  {
-   "id": "dec2d50775",
-   "sector": "coyuntura",
-   "titulo": "Jefe del IGP tras sismo: \"Ha sido de profundidad intermedia, por lo que el sacudimiento fue grande\"",
-   "resumen": "Hernando Tavera dijo en RPP que toda la región centro del país se vio afectada; sin embargo, precisó que hasta el momento no se han reportado víctimas.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/lima/actualidad/sismo-en-junin-67-grados-se-sintio-en-lima-igp-profundidad-intermedia-sacudimiento-fue-grande-noticia-1718924",
-   "fecha": "2026-11-21T00:35:11Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/20/smo-2026-11-20-19-30-33-12358-1931447mp4_1931448.jpg?width=860&quality=80",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "seccion_nacional_fuente"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Hernando Tavera dijo en RPP que toda la región centro del país se vio afectada; sin embargo, precisó que hasta el momento no se han reportado víctimas. Hernando Tavera, jefe del IGP , explicó este viernes que el sismo de 6.7 se sintió con mucha fuerza en varios regiones del país debido a la profundidad de la misma que de 129 kilómetros.",
-   "puntos": [
-    "Hernando Tavera dijo en RPP que toda la región centro del país se vio afectada; sin embargo, precisó que hasta el momento no se han reportado víctimas.",
-    "Hernando Tavera, jefe del IGP , explicó este viernes que el sismo de 6.7 se sintió con mucha fuerza en varios regiones del país debido a la profundidad de la misma que de 129 kilómetros.",
-    "\"Es un sismo de profundidad intermedia, por lo que el rayo de percepción del sacudimiento ha sido bastante grande y la duración ha sido un poquito larga por el paso del mayor número de ondas que se genera por ese nivel de profundidad\", explicó en el programa Las Cosas como Son de RPP."
-   ],
-   "datos": [
-    {
-     "v": "129 kilómetros",
-     "t": "cantidad",
-     "c": "…del país debido a la profundidad de la misma que de 129 kilómetros.."
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://rpp.pe/lima/actualidad/sismo-en-junin-67-grados-se-sintio-en-lima-igp-profundidad-intermedia-sacudimiento-fue-grande-noticia-1718924"
-  },
-  {
-   "id": "eb0be28d0c",
-   "sector": "coyuntura",
-   "titulo": "Temblor en Colombia hoy, viernes 20 de noviembre: epicentro y magnitud según el SGC",
-   "resumen": "Temblor en Colombia EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Servicio Geológico Colombiano (SGC).",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/colombia/temblor-en-colombia-hoy-en-vivo-ultimo-sismos-19-y-20-de-noviembre-2026-reporte-de-magnitud-epicentro-y-hora-segun-sgc-servicio-geologico-colombiano-choco-co-lbposting-noticia/",
-   "fecha": "2026-11-21T00:33:45Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/BBRFSA7Q2VDKRDM6PP2F2MJMAU.jpeg?auth=5645876f75687e18ce315e297da70a81b386436dde1e5680c035f4106e29b23e&smart=true&width=1200&height=700",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Temblor en Colombia EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Servicio Geológico Colombiano (SGC). Temblor en Colombia: mira aquí la magnitud, el epicentro y los reportes sobre los últimos sismos en el país (Diseño: El Comercio).",
-   "puntos": [
-    "Temblor en Colombia EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Servicio Geológico Colombiano (SGC).",
-    "Temblor en Colombia: mira aquí la magnitud, el epicentro y los reportes sobre los últimos sismos en el país (Diseño: El Comercio).",
-    "Momentos clave 2026-11-19 08:48:47 | ¿De qué magnitud y en dónde fue el último temblor?"
-   ],
-   "datos": [
-    {
-     "v": "25%",
-     "t": "porcentaje",
-     "c": "El peso ideal no debe superar el 25% del peso corporal de la persona que la va a cargar, garantizando una evacuación rápida y ágil.."
-    },
-    {
-     "v": "11-19",
-     "t": "marcador",
-     "c": "Momentos clave 2026-11-19 08:48:47 | ¿De qué magnitud y en dónde fue el último temblor?"
-    },
-    {
-     "v": "20 de noviembre",
-     "t": "fecha",
-     "c": "Temblor en Colombia hoy, viernes 20 de noviembre: epicentro y magnitud según el SGC."
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://elcomercio.pe/respuestas/colombia/temblor-en-colombia-hoy-en-vivo-ultimo-sismos-19-y-20-de-noviembre-2026-reporte-de-magnitud-epicentro-y-hora-segun-sgc-servicio-geologico-colombiano-choco-co-lbposting-noticia/"
-  },
-  {
-   "id": "54a7b2cbac",
-   "sector": "coyuntura",
-   "titulo": "Temblor de magnitud 6.7 en Junín se siente en Lima y otras provincias",
-   "resumen": "Temblor en Perú EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Instituto Geofísico del Perú (IGP).",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/hoy-temblor-en-peru-en-vivo-ultimos-sismos-19-y-20-de-noviembre-2026-hora-magnitud-y-epicentro-del-reporte-segun-el-igp-instituto-geofisico-del-peru-lima-ica-nasca-lbposting-noticia/",
-   "fecha": "2026-11-21T00:32:07Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/ZAWDAVKGB5HFLPSHCNW2G7P3TA.jpeg?auth=dc74864785e1729a6cb6f55a12ac9ef1bd6a3d1f09ba39ebfc66c323544dce46&smart=true&width=1200&height=700",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Temblor en Perú EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Instituto Geofísico del Perú (IGP). Temblor en Perú: mira aquí la magnitud, el epicentro y los reportes del IGP sobre los últimos sismos en el país (Diseño: El Comercio).",
-   "puntos": [
-    "Temblor en Perú EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Instituto Geofísico del Perú (IGP).",
-    "Temblor en Perú: mira aquí la magnitud, el epicentro y los reportes del IGP sobre los últimos sismos en el país (Diseño: El Comercio).",
-    "Momentos clave 2026-11-19 08:54:54 | Consulta aquí los últimos registros del Instituto Geofísico del Perú sobre los movimientos sísmicos en el país."
-   ],
-   "datos": [
-    {
-     "v": "25%",
-     "t": "porcentaje",
-     "c": "El peso ideal no debe superar el 25% del peso corporal de la persona que la va a cargar, garantizando una evacuación rápida y ágil.."
-    },
-    {
-     "v": "11-19",
-     "t": "marcador",
-     "c": "Momentos clave 2026-11-19 08:54:54 | Consulta aquí los últimos registros del…"
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://elcomercio.pe/respuestas/hoy-temblor-en-peru-en-vivo-ultimos-sismos-19-y-20-de-noviembre-2026-hora-magnitud-y-epicentro-del-reporte-segun-el-igp-instituto-geofisico-del-peru-lima-ica-nasca-lbposting-noticia/"
+   "acceso": "abierto"
   },
   {
    "id": "6838feaed0",
@@ -980,6 +1937,7 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
+   "url_medio": "https://gestion.pe/mix/usa/trabajas-y-recibes-ssi-como-reportar-tus-ingresos-al-seguro-social-y-evitar-errores-en-el-pago-estados-unidos-nnda-nnlt-noticia/",
    "sintesis": "Lo que ganas en tu trabajo puede cambiar el monto de tu SSI. Te explicamos qué información debes presentar y cómo evitar errores que afecten tu pago.",
    "puntos": [
     "Lo que ganas en tu trabajo puede cambiar el monto de tu SSI.",
@@ -993,8 +1951,7 @@ window.NOTICIAS = {
      "c": "…o dejar de trabajar, deben notificarse dentro de los 10 días posteriores al final del mes en que ocurrieron”, se lee en…"
     }
    ],
-   "acceso": "abierto",
-   "url_medio": "https://gestion.pe/mix/usa/trabajas-y-recibes-ssi-como-reportar-tus-ingresos-al-seguro-social-y-evitar-errores-en-el-pago-estados-unidos-nnda-nnlt-noticia/"
+   "acceso": "abierto"
   },
   {
    "id": "84db06489b",
@@ -1015,6 +1972,7 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
+   "url_medio": "https://www.france24.com/es/deportes/20261121-alcaraz-alivia-las-preocupaciones-por-su-lesi%C3%B3n-y-medvedev-se-clasifica-para-semifinales-de-la-atp",
    "sintesis": "El español dejó atrás temores por una lesión y barrió al italiano Flavio Cobolli por 6-4 y 6-1. Clasificado como el mejor de su grupo, enfrentará en semifinales al estadounidense Ben Shelton, quien lo…",
    "puntos": [
     "El español dejó atrás temores por una lesión y barrió al italiano Flavio Cobolli por 6-4 y 6-1.",
@@ -1048,34 +2006,7 @@ window.NOTICIAS = {
      "c": "…ponerse 2-0 arriba y nuevamente para ampliar la ventaja a 4-1 antes de sellar una victoria en 65 minutos."
     }
    ],
-   "acceso": "abierto",
-   "url_medio": "https://www.france24.com/es/deportes/20261121-alcaraz-alivia-las-preocupaciones-por-su-lesi%C3%B3n-y-medvedev-se-clasifica-para-semifinales-de-la-atp"
-  },
-  {
-   "id": "f426f5364e",
-   "sector": "coyuntura",
-   "titulo": "Estos son los dispositivos tecnológicos que debes tener en mochila de emergencia",
-   "resumen": "En caso de un sismo, la mochila de emergencia es indispensable para cuidar de nuestra familia, la cual debe contener instrumentos tecnológicos que facilitarán la comunicación en un contexto adverso.",
-   "fuente": "Agencia Andina",
-   "url": "https://andina.pe/agencia/noticia-estos-son-los-dispositivos-tecnologicos-debes-tener-mochila-emergencia-852609.aspx",
-   "fecha": "2026-11-21T00:26:51Z",
-   "tipo": "estatal",
-   "genero": "noticia",
-   "imagen": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2023/05/30/000962663W.webp",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "En caso de un sismo, la mochila de emergencia es indispensable para cuidar de nuestra familia, la cual debe contener instrumentos tecnológicos que facilitarán la comunicación en un contexto adverso.",
-   "puntos": [
-    "En caso de un sismo, la mochila de emergencia es indispensable para cuidar de nuestra familia, la cual debe contener instrumentos tecnológicos que facilitarán la comunicación en un contexto adverso."
-   ],
-   "acceso": "sin_verificar",
-   "url_medio": "https://andina.pe/agencia/noticia-estos-son-los-dispositivos-tecnologicos-debes-tener-mochila-emergencia-852609.aspx"
+   "acceso": "abierto"
   },
   {
    "id": "79a83d85c8",
@@ -1096,6 +2027,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
+   "url_medio": "https://gestion.pe/economia/empresas/mia-beauty-bar-entra-al-jockey-plaza-la-apuesta-de-la-duena-de-inkafarma-en-belleza-noticia/",
    "sintesis": "MIA Beauty Bar, la cadena de belleza de Farmacias Peruanas (Intercorp), abrió en el Jockey Plaza y llegó a 10 tiendas a días de cumplir su primer año en el Perú. El local tiene 230 m² y más de 150 marcas, en un mercado de cosméticos que movió US$ 1,500 millones en el primer…",
    "puntos": [
     "MIA Beauty Bar, la cadena de belleza de Farmacias Peruanas (Intercorp), abrió en el Jockey Plaza y llegó a 10 tiendas a días de cumplir su primer año en el Perú.",
@@ -1108,8 +2040,7 @@ window.NOTICIAS = {
      "c": "El local tiene 230 m² y más de 150 marcas, en un mercado de cosméticos que movió US$ 1,500 millones en el primer…"
     }
    ],
-   "acceso": "restringido",
-   "url_medio": "https://gestion.pe/economia/empresas/mia-beauty-bar-entra-al-jockey-plaza-la-apuesta-de-la-duena-de-inkafarma-en-belleza-noticia/"
+   "acceso": "restringido"
   },
   {
    "id": "9af314a4e3",
@@ -1165,129 +2096,13 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
+   "url_medio": "https://gestion.pe/economia/empresas/deutsche-pharma-alista-almacen-al-sur-de-lima-y-va-por-mexico-argentina-y-medio-oriente-noticia/",
    "sintesis": "Deutsche Pharma, la farmacéutica familiar dueña de Hirudoid, alista un nuevo almacén al sur de Lima. Su tercera generación apunta a México, Medio Oriente y Argentina: ¿cuál es su plan?",
    "puntos": [
     "Deutsche Pharma, la farmacéutica familiar dueña de Hirudoid, alista un nuevo almacén al sur de Lima.",
     "Su tercera generación apunta a México, Medio Oriente y Argentina: ¿cuál es su plan?"
    ],
-   "acceso": "restringido",
-   "url_medio": "https://gestion.pe/economia/empresas/deutsche-pharma-alista-almacen-al-sur-de-lima-y-va-por-mexico-argentina-y-medio-oriente-noticia/"
-  },
-  {
-   "id": "65387eb5a1",
-   "sector": "coyuntura",
-   "titulo": "Temblor de magnitud 6.7 en Junín remeció casas y edificios de Lima y Callao",
-   "resumen": "Lima y Callao se vieron remecidos esta noche debido a un temblor de magnitud 6.7 ocurrido en Junín.",
-   "fuente": "Agencia Andina",
-   "url": "https://andina.pe/agencia/noticia-temblor-magnitud-67-junin-remecio-casas-y-edificios-lima-y-callao-1100887.aspx",
-   "fecha": "2026-11-21T00:18:34Z",
-   "tipo": "estatal",
-   "genero": "noticia",
-   "imagen": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2026/11/20/001333595W.webp",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Lima y Callao se vieron remecidos esta noche debido a un temblor de magnitud 6.7 ocurrido en Junín.",
-   "puntos": [
-    "Lima y Callao se vieron remecidos esta noche debido a un temblor de magnitud 6.7 ocurrido en Junín."
-   ],
-   "acceso": "sin_verificar",
-   "url_medio": "https://andina.pe/agencia/noticia-temblor-magnitud-67-junin-remecio-casas-y-edificios-lima-y-callao-1100887.aspx"
-  },
-  {
-   "id": "6a04ff822f",
-   "sector": "coyuntura",
-   "titulo": "Temblor hoy en Perú EN VIVO: últimos sismos, epicentro y reporte del IGP del viernes 20 de noviembre de 2026",
-   "resumen": "Un sismo de magnitud 4.0 se registró a las 00:56 horas de este viernes 20 de noviembre frente a la costa de Ica, según el reporte del Instituto Geofísico del Perú",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/20/temblor-hoy-en-peru-en-vivo-ultimos-sismos-epicentro-y-reporte-del-igp-del-viernes-20-de-noviembre-de-2026/",
-   "fecha": "2026-11-21T00:17:06Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/25NUUN57ZFG2TDNNIUYMEEJCVE.png?auth=0cc09c86eee56560a7c2f50303261a0706b7dffee9959fe4f525cf50920e6ab3&smart=true&width=1536&height=1024",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Un sismo de magnitud 4.0 se registró a las 00:56 horas de este viernes 20 de noviembre frente a la costa de Ica, según el reporte del Instituto Geofísico del Perú El Instituto Geofísico del Perú ( IGP ) mantiene una vigilancia sísmica continua en todo el territorio nacional para entregar información técnica a la población y a las autoridades responsables de la gestión del riesgo.",
-   "puntos": [
-    "Un sismo de magnitud 4.0 se registró a las 00:56 horas de este viernes 20 de noviembre frente a la costa de Ica, según el reporte del Instituto Geofísico del Perú",
-    "El Instituto Geofísico del Perú ( IGP ) mantiene una vigilancia sísmica continua en todo el territorio nacional para entregar información técnica a la población y a las autoridades responsables de la gestión del riesgo.",
-    "Esta cobertura reúne los reportes oficiales más recientes sobre los movimientos telúricos registrados, con detalles de magnitud, profundidad, epicentro e intensidad en las zonas donde fueron percibidos."
-   ],
-   "datos": [
-    {
-     "v": "30 kilómetros",
-     "t": "cantidad",
-     "c": "…se produjo a las 19:09:19 horas, con epicentro a 30 kilómetros al noroeste de la ciudad de Junín , en la provincia…"
-    },
-    {
-     "v": "129 kilómetros",
-     "t": "cantidad",
-     "c": "El hipocentro se ubicó a 129 kilómetros de profundidad, una de las características que explican la…"
-    },
-    {
-     "v": "20 de noviembre de 2026",
-     "t": "fecha",
-     "c": "Temblor hoy en Perú EN VIVO: últimos sismos, epicentro y reporte del IGP del viernes 20 de noviembre de 2026."
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://www.infobae.com/peru/2026/11/20/temblor-hoy-en-peru-en-vivo-ultimos-sismos-epicentro-y-reporte-del-igp-del-viernes-20-de-noviembre-de-2026/"
-  },
-  {
-   "id": "fe132c3ef9",
-   "sector": "coyuntura",
-   "titulo": "Fuerte sismo de magnitud 6.7 se registró esta noche en Junín",
-   "resumen": "El sismo, que también se sintió en Lima y otras partes, ocurrió este viernes 20 de noviembre a las 7:09 p. m. y tuvo una profundidad de 129 kilómetros. El epicentro fue localizado a 30 kilómetros al noroeste de Junín.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/peru/actualidad/fuerte-sismo-se-sintio-esta-noche-en-lima-noticia-1718923",
-   "fecha": "2026-11-21T00:11:06Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/20/411641_1931446.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "El sismo, que también se sintió en Lima y otras partes, ocurrió este viernes 20 de noviembre a las 7:09 p. m. y tuvo una profundidad de 129 kilómetros. El epicentro fue localizado a 30 kilómetros al noroeste de Junín.",
-   "puntos": [
-    "El sismo, que también se sintió en Lima y otras partes, ocurrió este viernes 20 de noviembre a las 7:09 p. m. y tuvo una profundidad de 129 kilómetros.",
-    "El epicentro fue localizado a 30 kilómetros al noroeste de Junín.",
-    "El Centro Sismológico Nacional del Instituto Geofísico del Perú (IGP) reportó un sismo de magnitud 6.7 en la región Junín, la noche de este viernes 20 de noviembre."
-   ],
-   "datos": [
-    {
-     "v": "129 kilómetros",
-     "t": "cantidad",
-     "c": "…20 de noviembre a las 7:09 p. m. y tuvo una profundidad de 129 kilómetros."
-    },
-    {
-     "v": "30 kilómetros",
-     "t": "cantidad",
-     "c": "El epicentro fue localizado a 30 kilómetros al noroeste de Junín.."
-    },
-    {
-     "v": "20 de noviembre",
-     "t": "fecha",
-     "c": "…se sintió en Lima y otras partes, ocurrió este viernes 20 de noviembre a las 7:09 p. m. y tuvo una profundidad de 129 kilómetros."
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://rpp.pe/peru/actualidad/fuerte-sismo-se-sintio-esta-noche-en-lima-noticia-1718923"
+   "acceso": "restringido"
   },
   {
    "id": "93646e5c44",
@@ -1308,14 +2123,14 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
+   "url_medio": "https://www.infobae.com/peru/2026/11/21/los-tres-jugadores-de-sport-boys-que-busca-fichar-alianza-lima-para-la-liga-1-2027-carlos-desio-revelo-el-interes/",
    "sintesis": "El entrenador ‘rosado’ resaltó cómo su comando técnico potencia futbolistas y señaló que desde La Victoria han consultado por la situación contractual de tres de sus dirigidos Carlos Desio reveló que Alianza Lima ha mostrado interés en tres futbolistas de Sport Boys.",
    "puntos": [
     "El entrenador ‘rosado’ resaltó cómo su comando técnico potencia futbolistas y señaló que desde La Victoria han consultado por la situación contractual de tres de sus dirigidos",
     "Carlos Desio reveló que Alianza Lima ha mostrado interés en tres futbolistas de Sport Boys.",
     "EST Guardar Sport Boys cerró una temporada con altibajos, pero cumplió con el objetivo de sostenerse en la Liga 1 sin sobresaltos."
    ],
-   "acceso": "abierto",
-   "url_medio": "https://www.infobae.com/peru/2026/11/21/los-tres-jugadores-de-sport-boys-que-busca-fichar-alianza-lima-para-la-liga-1-2027-carlos-desio-revelo-el-interes/"
+   "acceso": "abierto"
   },
   {
    "id": "58bceb36f4",
@@ -1336,67 +2151,12 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
+   "url_medio": "https://andina.pe/agencia/noticia-produce-facilita-creditos-y-amplia-plazos-pago-para-las-mype-ante-fenomeno-nino-1100885.aspx",
    "sintesis": "El Gobierno implementó dos medidas financieras para proteger la liquidez de las micro y pequeñas empresas (Mype) ubicadas en departamentos con zonas declaradas en emergencia por el fenómeno El Niño.",
    "puntos": [
     "El Gobierno implementó dos medidas financieras para proteger la liquidez de las micro y pequeñas empresas (Mype) ubicadas en departamentos con zonas declaradas en emergencia por el fenómeno El Niño."
    ],
-   "acceso": "sin_verificar",
-   "url_medio": "https://andina.pe/agencia/noticia-produce-facilita-creditos-y-amplia-plazos-pago-para-las-mype-ante-fenomeno-nino-1100885.aspx"
-  },
-  {
-   "id": "64a21763fb",
-   "sector": "coyuntura",
-   "titulo": "Violencia infantil en Perú: 6 de cada 10 niños y adolescentes sufrieron agresiones en casa y la mayoría no pide ayuda",
-   "resumen": "Un informe del MIMP, INEI y UNICEF revela que el castigo físico sigue siendo aceptado por parte de los propios menores. El estudio también advierte sobre la violencia sexual, el acoso escolar y las dificultades que enfrentan las víctimas para recibir protección",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/21/violencia-infantil-en-peru-6-de-cada-10-ninos-y-adolescentes-sufrieron-agresiones-en-casa-y-la-mayoria-no-pide-ayuda/",
-   "fecha": "2026-11-21T00:01:44Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/3JW4VK5U7VEQHNA3FF4ET6KQII.png?auth=eccda4a145d3deedb5bdda99d7ad917b826a3d8932c2627e6381bbbbb0f7d629&smart=true&width=2752&height=1536",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Un informe del MIMP, INEI y UNICEF revela que el castigo físico sigue siendo aceptado por parte de los propios menores. El estudio también advierte sobre la violencia sexual, el acoso escolar y las dificultades que enfrentan las víctimas para recibir protección",
-   "puntos": [
-    "Un informe del MIMP, INEI y UNICEF revela que el castigo físico sigue siendo aceptado por parte de los propios menores.",
-    "El estudio también advierte sobre la violencia sexual, el acoso escolar y las dificultades que enfrentan las víctimas para recibir protección",
-    "Violencia infantil (Imagen Ilustrativa Infobae) 20 Nov, 2026 07:01 p. m."
-   ],
-   "datos": [
-    {
-     "v": "64,7 %",
-     "t": "porcentaje",
-     "c": "El 64,7 % de los adolescentes y el 58,3 % de los niños de entre 9 y…"
-    },
-    {
-     "v": "58,3 %",
-     "t": "porcentaje",
-     "c": "El 64,7 % de los adolescentes y el 58,3 % de los niños de entre 9 y 11 años ha sufrido agresiones…"
-    },
-    {
-     "v": "95 %",
-     "t": "porcentaje",
-     "c": "…también revelan una situación preocupante: más del 95 % de quienes reportaron haber sufrido violencia alguna vez…"
-    },
-    {
-     "v": "40 %",
-     "t": "porcentaje",
-     "c": "…más del 95 %, no acudieron a servicios de atención Más del 40 % de los niños considera que sus padres tienen derecho a…"
-    },
-    {
-     "v": "11 años",
-     "t": "cantidad",
-     "c": "…de los adolescentes y el 58,3 % de los niños de entre 9 y 11 años ha sufrido agresiones psicológicas o físicas por parte de…"
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://www.infobae.com/peru/2026/11/21/violencia-infantil-en-peru-6-de-cada-10-ninos-y-adolescentes-sufrieron-agresiones-en-casa-y-la-mayoria-no-pide-ayuda/"
+   "acceso": "sin_verificar"
   },
   {
    "id": "19dd46f80d",
@@ -1417,6 +2177,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
+   "url_medio": "https://www.infobae.com/peru/2026/11/20/poder-judicial-programa-audiencia-para-evaluar-el-requerimiento-de-prision-preventiva-contra-cesar-chavez-fecha-y-hora/",
    "sintesis": "Cantante de cumbia afirmó que el requerimiento representa un avance, mientras la defensa del director musical niega que se haya cometido un delito. Poder Judicial evaluará el pedido de nueve meses de prisión preventiva contra César Sánchez tras la denuncia interpuesta por la cantante Naldy Saldaña por presunto acoso sexual y tocamientos indebidos.",
    "puntos": [
     "Cantante de cumbia afirmó que el requerimiento representa un avance, mientras la defensa del director musical niega que se haya cometido un delito.",
@@ -1430,8 +2191,7 @@ window.NOTICIAS = {
      "c": "EST Guardar El Poder Judicial programó para el 18 de diciembre de 2026 la audiencia en la que evaluará el pedido de nueve meses…"
     }
    ],
-   "acceso": "abierto",
-   "url_medio": "https://www.infobae.com/peru/2026/11/20/poder-judicial-programa-audiencia-para-evaluar-el-requerimiento-de-prision-preventiva-contra-cesar-chavez-fecha-y-hora/"
+   "acceso": "abierto"
   },
   {
    "id": "a8fb1039eb",
@@ -1452,12 +2212,12 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
+   "url_medio": "https://andina.pe/agencia/noticia-presidenta-fujimori-dialogo-the-nippon-foundation-sobre-apoyo-frente-al-nino-1100882.aspx",
    "sintesis": "Continuando con su agenda de actividades en Japón, la presidenta de la república, Keiko Fujimori, se reunió con el presidente ejecutivo de The Nippon Foundation, Jumpei Sasakawa y el presidente del Consejo Directivo, Takeju Ogata.",
    "puntos": [
     "Continuando con su agenda de actividades en Japón, la presidenta de la república, Keiko Fujimori, se reunió con el presidente ejecutivo de The Nippon Foundation, Jumpei Sasakawa y el presidente del Consejo Directivo, Takeju Ogata."
    ],
-   "acceso": "sin_verificar",
-   "url_medio": "https://andina.pe/agencia/noticia-presidenta-fujimori-dialogo-the-nippon-foundation-sobre-apoyo-frente-al-nino-1100882.aspx"
+   "acceso": "sin_verificar"
   },
   {
    "id": "03e783eb92",
@@ -1478,6 +2238,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
+   "url_medio": "https://www.infobae.com/peru/deportes/2026/11/20/horacio-bastit-dt-de-regatas-critico-el-reclamo-de-alianza-lima-por-puntos-en-liga-peruana-de-voley-202627-es-ridiculo/",
    "sintesis": "El entrenador argentino pidió que se mantenga el resultado de 3-2 y no se modifique por un 3-0, ya que la decisión afecta al club chorrillano en la tabla de posiciones de la primera fase El técnico argentino también se refirió al fallo de la FPV por alinear cuatro extranjeras en campo.",
    "puntos": [
     "El entrenador argentino pidió que se mantenga el resultado de 3-2 y no se modifique por un 3-0, ya que la decisión afecta al club chorrillano en la tabla de posiciones de la primera fase",
@@ -1491,62 +2252,7 @@ window.NOTICIAS = {
      "c": "EST Guardar El jueves 19 de noviembre, la Federación Peruana de Vóley (FPV) dio a conocer su…"
     }
    ],
-   "acceso": "abierto",
-   "url_medio": "https://www.infobae.com/peru/deportes/2026/11/20/horacio-bastit-dt-de-regatas-critico-el-reclamo-de-alianza-lima-por-puntos-en-liga-peruana-de-voley-202627-es-ridiculo/"
-  },
-  {
-   "id": "903c333887",
-   "sector": "coyuntura",
-   "titulo": "Sport Boys reveló cuál será el futuro de Carlos Zambrano: ¿se va o se queda para el Centenario?",
-   "resumen": "Mario Flores, gerente deportivo de Sport Boys, confirmó que Carlos Zambrano recibió una oferta para continuar en la 'Misilera'.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/futbol/descentralizado/carlos-zambrano-sport-boys-presento-propuesta-para-renovar-contrato-para-jugar-en-el-centenario-noticia-1718896",
-   "fecha": "2026-11-20T23:54:03Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/20/244124_1931437.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "Mario Flores, gerente deportivo de Sport Boys, confirmó que Carlos Zambrano recibió una oferta para continuar en la 'Misilera'. \"Él me ha pedido unos días para poder analizar lo que pueda venir para él también.",
-   "puntos": [
-    "Mario Flores, gerente deportivo de Sport Boys, confirmó que Carlos Zambrano recibió una oferta para continuar en la 'Misilera'.",
-    "\"Él me ha pedido unos días para poder analizar lo que pueda venir para él también.",
-    "Nosotros ya le presentamos una oferta, él estaba conforme\", señaló Flores."
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://rpp.pe/futbol/descentralizado/carlos-zambrano-sport-boys-presento-propuesta-para-renovar-contrato-para-jugar-en-el-centenario-noticia-1718896"
-  },
-  {
-   "id": "fabd3463c1",
-   "sector": "coyuntura",
-   "titulo": "Mera “sesión fotográfica”: cumbre Xi-Trump-Putin deja mucho simbolismo, poca sustancia",
-   "resumen": "La cumbre sin precedentes entre los presidentes de China, Estados Unidos y Rusia esta semana en Shenzhen tuvo una alta carga simbólica, pero no mucha sustancia, señalan los analistas.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/mundo/internacional/cumbre-xi-trump-putin-deja-mucho-simbolismo-poca-sustancia-noticia/",
-   "fecha": "2026-11-20T23:42:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/XTCCSSOTEZHZLAI7ASVDSZMRTE.jpg?auth=610f82aed4016c3b3d1653b1e43a8c96a6e8a09d2d57e2b373afbf352c9b68a9&smart=true&width=1200&height=801",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "La cumbre sin precedentes entre los presidentes de China, Estados Unidos y Rusia esta semana en Shenzhen tuvo una alta carga simbólica, pero no mucha sustancia, señalan los analistas.",
-   "puntos": [
-    "La cumbre sin precedentes entre los presidentes de China, Estados Unidos y Rusia esta semana en Shenzhen tuvo una alta carga simbólica, pero no mucha sustancia, señalan los analistas."
-   ],
-   "acceso": "restringido",
-   "url_medio": "https://gestion.pe/mundo/internacional/cumbre-xi-trump-putin-deja-mucho-simbolismo-poca-sustancia-noticia/"
+   "acceso": "abierto"
   },
   {
    "id": "cf1efa1d7d",
@@ -1567,6 +2273,7 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
+   "url_medio": "https://www.france24.com/es/video/20261120-informe-desde-londres-10-a%C3%B1os-despu%C3%A9s-del-brexit-burnham-y-bruselas-acercan-posiciones",
    "sintesis": "Una década después del Brexit, el primer ministro británico Andy Burnham y la presidenta de la Comisión Europea Ursula von der Leyen anunciaron un acuerdo para relanzar la relación entre Londres y Bruselas.… Una extensión de tu navegador parece estar bloqueando la carga del reproductor de video.",
    "puntos": [
     "Una década después del Brexit, el primer ministro británico Andy Burnham y la presidenta de la Comisión Europea Ursula von der Leyen anunciaron un acuerdo para relanzar la relación entre Londres y Bruselas.…",
@@ -1580,8 +2287,7 @@ window.NOTICIAS = {
      "c": "Informe desde Londres: 10 años después del Brexit, Burnham y Bruselas acercan posiciones."
     }
    ],
-   "acceso": "abierto",
-   "url_medio": "https://www.france24.com/es/video/20261120-informe-desde-londres-10-a%C3%B1os-despu%C3%A9s-del-brexit-burnham-y-bruselas-acercan-posiciones"
+   "acceso": "abierto"
   },
   {
    "id": "4ea8443edb",
@@ -1616,76 +2322,6 @@ window.NOTICIAS = {
    ],
    "acceso": "restringido",
    "url_medio": "https://gestion.pe/peru/camisea-reportan-fuga-de-gas-natural-en-ducto-que-dijo-el-osinergmin-noticia/"
-  },
-  {
-   "id": "af1e3b88dc",
-   "sector": "coyuntura",
-   "titulo": "Padre de Meghan Markle es declarado mentalmente competente para afrontar un juicio en EE.UU.",
-   "resumen": "El informe psiquiátrico concluyó que pese a sus dificultades cognitivas, Thomas Wayne Markle Sr. comprende la gravedad de los cargos que enfrenta y tiene capacidad para colaborar con su defensa.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/famosos/celebridades/thomas-markle-padre-de-meghan-markle-es-declarado-mentalmente-para-su-juicio-en-eeuu-noticia-1718909",
-   "fecha": "2026-11-20T23:39:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/20/120712_1931418.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "El informe psiquiátrico concluyó que pese a sus dificultades cognitivas, Thomas Wayne Markle Sr. comprende la gravedad de los cargos que enfrenta y tiene capacidad para colaborar con su defensa. Thomas Wayne Markle Sr. , padre de Meghan Markle , duquesa de Sussex, fue declarado mentalmente competente para comprender el proceso penal que enfrenta en Estados Unidos por presunta posesión de pornografía infantil , durante una audiencia celebrada el jueves en un tribunal federal de Tampa (Florida).",
-   "puntos": [
-    "El informe psiquiátrico concluyó que pese a sus dificultades cognitivas, Thomas Wayne Markle Sr. comprende la gravedad de los cargos que enfrenta y tiene capacidad para colaborar con su defensa.",
-    "Thomas Wayne Markle Sr. , padre de Meghan Markle , duquesa de Sussex, fue declarado mentalmente competente para comprender el proceso penal que enfrenta en Estados Unidos por presunta posesión de pornografía infantil , durante una audiencia celebrada el jueves en un tribunal federal de Tampa (Florida).",
-    "Una psiquiatra determinó durante la audiencia de \"competencia\", presidida por la magistrada Lindsay S."
-   ],
-   "datos": [
-    {
-     "v": "1 de diciembre",
-     "t": "fecha",
-     "c": "…de la corte, Markle tiene prevista para el próximo 1 de diciembre una audiencia preliminar en Florida, en la que el juez…"
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://rpp.pe/famosos/celebridades/thomas-markle-padre-de-meghan-markle-es-declarado-mentalmente-para-su-juicio-en-eeuu-noticia-1718909"
-  },
-  {
-   "id": "281b4fe262",
-   "sector": "coyuntura",
-   "titulo": "¿Trabajas y recibes SSI? Cuándo y cómo reportar tus salarios para evitar errores en el pago",
-   "resumen": "Para recibir el monto que te corresponde, es importante informar cuánto ganas al Seguro Social en EE.UU. Esta guía te ayuda a conocer los plazos y preparar tu reporte de salarios.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/mag/usa/local-us/atencion-para-prevenir-errores-con-el-pago-de-tu-seguro-social-cuando-y-como-reportar-tus-ganancias-si-trabajas-y-recibes-ssi-estados-unidos-nnda-nnlt-noticia/",
-   "fecha": "2026-11-20T23:38:26Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/RZNSAQJBINGHLO67RUUXDIV6GU.jpg?auth=5f8131f87f6daa14393389e0b1a172b3fc5fdd75453dfb50ee9017de355f5daf&smart=true&width=1200&height=809",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "contexto_internacional_resumen"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Para recibir el monto que te corresponde, es importante informar cuánto ganas al Seguro Social en EE.UU. Esta guía te ayuda a conocer los plazos y preparar tu reporte de salarios.",
-   "puntos": [
-    "Para recibir el monto que te corresponde, es importante informar cuánto ganas al Seguro Social en EE.UU.",
-    "Esta guía te ayuda a conocer los plazos y preparar tu reporte de salarios.",
-    "Si trabajas y recibes la Seguridad de Ingreso Suplementario (SSI) , hay una responsabilidad que no debes pasar por alto: informar al Seguro Social sobre tus ingresos."
-   ],
-   "datos": [
-    {
-     "v": "10 días",
-     "t": "cantidad",
-     "c": "…o dejar de trabajar, deben notificarse dentro de los 10 días posteriores al final del mes en que ocurrieron”, se lee en…"
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://elcomercio.pe/mag/usa/local-us/atencion-para-prevenir-errores-con-el-pago-de-tu-seguro-social-cuando-y-como-reportar-tus-ganancias-si-trabajas-y-recibes-ssi-estados-unidos-nnda-nnlt-noticia/"
   },
   {
    "id": "144bdd6bb1",
@@ -1759,32 +2395,6 @@ window.NOTICIAS = {
    "url_medio": "https://rpp.pe/politica/congreso/carlos-espa-presentan-mocion-de-interpelacion-contra-canciller-tras-las-irregularidades-en-la-misa-de-las-palmas-noticia-1718910"
   },
   {
-   "id": "6a3309d1ee",
-   "sector": "coyuntura",
-   "titulo": "Lyanno lanza “Estamos afuera”, su nuevo tema junto a DIA",
-   "resumen": "El cantante y compositor puertorriqueño Lyanno regresa a la escena urbana con “Estamos afuera”, su nuevo sencillo junto al artista emergente DIA.…",
-   "fuente": "Caretas",
-   "url": "https://caretas.pe/entretenimiento/lyanno-estamos-afuera-nuevo-sencillo-dia/",
-   "fecha": "2026-11-20T23:31:40Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://caretas.pe/wp-content/uploads/2026/11/image-2026-11-20T183111.126-1280x720.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "El cantante y compositor puertorriqueño Lyanno regresa a la escena urbana con “Estamos afuera”, su nuevo sencillo junto al artista emergente DIA.…",
-   "puntos": [
-    "El cantante y compositor puertorriqueño Lyanno regresa a la escena urbana con “Estamos afuera”, su nuevo sencillo junto al artista emergente DIA.…"
-   ],
-   "acceso": "sin_verificar",
-   "url_medio": "https://caretas.pe/entretenimiento/lyanno-estamos-afuera-nuevo-sencillo-dia/"
-  },
-  {
    "id": "dffecf8db6",
    "sector": "economia",
    "titulo": "Perú y Japón firmaron nueve acuerdos de cooperación para El Niño, inversiones y más: incluyen donaciones de más de US$3,5 millones",
@@ -1803,6 +2413,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
+   "url_medio": "https://caretas.pe/politica/peru-y-japon-firmaron-nueve-acuerdos-de-cooperacion-para-el-nino-inversiones-y-mas-incluyen-donaciones-de-mas-de-us35-millones/",
    "datos": [
     {
      "v": "US$3,5 millones",
@@ -1810,8 +2421,7 @@ window.NOTICIAS = {
      "c": "Perú y Japón firmaron nueve acuerdos de cooperación para El Niño, inversiones y más: incluyen donaciones de más de US$3,5 millones."
     }
    ],
-   "acceso": "sin_verificar",
-   "url_medio": "https://caretas.pe/politica/peru-y-japon-firmaron-nueve-acuerdos-de-cooperacion-para-el-nino-inversiones-y-mas-incluyen-donaciones-de-mas-de-us35-millones/"
+   "acceso": "sin_verificar"
   },
   {
    "id": "e3fea88853",
@@ -1898,6 +2508,7 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
+   "url_medio": "https://www.bbc.com/mundo/articles/cm8791vvwelno",
    "sintesis": "Las tecnológicas se han visto afectadas por la caída masiva del sector en los mercados bursátiles. Las acciones de Anthropic cayeron este viernes, un día después de su espectacular debut en bolsa, en medio de una venta masiva de acciones del sector tecnológico.",
    "puntos": [
     "Las tecnológicas se han visto afectadas por la caída masiva del sector en los mercados bursátiles.",
@@ -1921,8 +2532,7 @@ window.NOTICIAS = {
      "c": "…con un descenso del 5,3%, mientras el Dow Jones bajó un 1,9%."
     }
    ],
-   "acceso": "abierto",
-   "url_medio": "https://www.bbc.com/mundo/articles/cm8791vvwelno"
+   "acceso": "abierto"
   },
   {
    "id": "cf570bfbc2",
@@ -2006,41 +2616,6 @@ window.NOTICIAS = {
     }
    ],
    "acceso": "abierto"
-  },
-  {
-   "id": "81353a544a",
-   "sector": "economia",
-   "titulo": "El 79% de los “pobres energéticos” está fuera de Lima: ¿qué más revela estudio de Promigas?",
-   "resumen": "Promigas lanzó el primer Índice Multidimensional de Pobreza Energética del Perú (IMPE Perú), un estudio que da luces sobre las brechas de acceso y buen uso de la energía en el país. Aquí un resumen de lo más resaltante.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/economia/el-79-de-los-pobres-energeticos-esta-fuera-de-lima-que-mas-revela-estudio-de-promigas-noticia/",
-   "fecha": "2026-11-20T23:11:51Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/5VTCFHVH6JCJZEQZ4NZYIHCD7Q.png?auth=206fd9d6d967e0e234b45e59e33d193bafd8d7558f5218cd98a426769a5597da&smart=true&width=1672&height=941",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Promigas lanzó el primer Índice Multidimensional de Pobreza Energética del Perú (IMPE Perú), un estudio que da luces sobre las brechas de acceso y buen uso de la energía en el país. Promigas presentó ayer el primer Índice Multidimensional de Pobreza Energética del Perú (IMPE Perú), un estudio desarrollado por la empresa, junto a Apoyo Consultoría e Inclusión SAS.",
-   "puntos": [
-    "Promigas lanzó el primer Índice Multidimensional de Pobreza Energética del Perú (IMPE Perú), un estudio que da luces sobre las brechas de acceso y buen uso de la energía en el país.",
-    "Promigas presentó ayer el primer Índice Multidimensional de Pobreza Energética del Perú (IMPE Perú), un estudio desarrollado por la empresa, junto a Apoyo Consultoría e Inclusión SAS.",
-    "Este permite conocer cómo las brechas en el acceso y uso de la energía impactan en la calidad de vida de millones de peruanos."
-   ],
-   "datos": [
-    {
-     "v": "79%",
-     "t": "porcentaje",
-     "c": "El 79% de los “pobres energéticos” está fuera de Lima: ¿qué más revela estudio de Promigas?."
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://gestion.pe/economia/el-79-de-los-pobres-energeticos-esta-fuera-de-lima-que-mas-revela-estudio-de-promigas-noticia/"
   },
   {
    "id": "a5966b5e7e",
@@ -2159,14 +2734,14 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
+   "url_medio": "https://www.france24.com/es/programas/en-contexto/20261120-hist%C3%B3rico-fallo-para-los-rohingyas-tendr%C3%A1-efecto-en-otros-casos-de-genocidio",
    "sintesis": "En nuestra sección En Contexto, analizamos el histórico fallo por genocidio contra Myanmar y a favor del pueblo rohingya. Mientras líderes mundiales como Donald Trump critican a la Corte Internacional…",
    "puntos": [
     "En nuestra sección En Contexto, analizamos el histórico fallo por genocidio contra Myanmar y a favor del pueblo rohingya.",
     "Mientras líderes mundiales como Donald Trump critican a la Corte Internacional…",
     "Una extensión de tu navegador parece estar bloqueando la carga del reproductor de video."
    ],
-   "acceso": "abierto",
-   "url_medio": "https://www.france24.com/es/programas/en-contexto/20261120-hist%C3%B3rico-fallo-para-los-rohingyas-tendr%C3%A1-efecto-en-otros-casos-de-genocidio"
+   "acceso": "abierto"
   },
   {
    "id": "ee08b8093a",
@@ -2189,14 +2764,14 @@ window.NOTICIAS = {
    "procedencia": "directa",
    "titulo_original": "The Look-at-Me Spectacle of Actors Playing Actors in “Elsinore” and “I Play Rocky”",
    "traducido": true,
+   "url_medio": "https://www.newyorker.com/culture/the-current-cinema/the-look-at-me-spectacle-of-actors-playing-actors-in-elsinore-and-i-play-rocky",
    "sintesis": "Justin Chang reviews two new autobiographical films: “Elsinore,” starring Andrew Scott as Ian Charleson, and “I Play Rocky,” starring Anthony Ippolito as Sylvester Stallone. Search Search Open Navigation Menu Menu The Current Cinema The Look-at-Me Spectacle of Actors Playing Actors in “Elsinore” and “I Play Rocky” The lead performances outshine the cliché-ridden filmmaking in two new biographical dramas about actors defying the odds.",
    "puntos": [
     "Justin Chang reviews two new autobiographical films: “Elsinore,” starring Andrew Scott as Ian Charleson, and “I Play Rocky,” starring Anthony Ippolito as Sylvester Stallone.",
     "Search Search Open Navigation Menu Menu The Current Cinema The Look-at-Me Spectacle of Actors Playing Actors in “Elsinore” and “I Play Rocky” The lead performances outshine the cliché-ridden filmmaking in two new biographical dramas about actors defying the odds.",
     "By Justin Chang November 20, 2026 Save this story Save this story Save this story Save this story The bluest of peepers, framed in the tightest of closeups, can be found staring out at you from a movie screen."
    ],
-   "acceso": "abierto",
-   "url_medio": "https://www.newyorker.com/culture/the-current-cinema/the-look-at-me-spectacle-of-actors-playing-actors-in-elsinore-and-i-play-rocky"
+   "acceso": "abierto"
   },
   {
    "id": "13b5a5fefe",
@@ -2322,12 +2897,12 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
+   "url_medio": "https://caretas.pe/mundo/zelenski-responde-a-trump-putin-es-un-asesino/",
    "sintesis": "MADRID 20 Nov. (EUROPA PRESS) - El presidente de Ucrania, Volodimir Zelenski, reprochó a su homólogo estadounidense, Donald Trump, que describiera a…",
    "puntos": [
     "MADRID 20 Nov. (EUROPA PRESS) - El presidente de Ucrania, Volodimir Zelenski, reprochó a su homólogo estadounidense, Donald Trump, que describiera a…"
    ],
-   "acceso": "sin_verificar",
-   "url_medio": "https://caretas.pe/mundo/zelenski-responde-a-trump-putin-es-un-asesino/"
+   "acceso": "sin_verificar"
   },
   {
    "id": "897a15d9b8",
@@ -2529,12 +3104,12 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
+   "url_medio": "https://caretas.pe/mundo/senado-frances-presume-legal-el-uso-de-armas-policiales/",
    "sintesis": "MADRID, 20 Nov. (EUROPA PRESS) - El Senado de Francia aprobó este viernes con los votos del Gobierno, gran parte del bloque…",
    "puntos": [
     "MADRID, 20 Nov. (EUROPA PRESS) - El Senado de Francia aprobó este viernes con los votos del Gobierno, gran parte del bloque…"
    ],
-   "acceso": "sin_verificar",
-   "url_medio": "https://caretas.pe/mundo/senado-frances-presume-legal-el-uso-de-armas-policiales/"
+   "acceso": "sin_verificar"
   },
   {
    "id": "cbbe42a5fa",
@@ -2555,6 +3130,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
+   "url_medio": "https://caretas.pe/ellosellas/jefferson-farfan-cumple-su-promesa-y-sorprende-a-cuto-guadalupe-con-una-camioneta-de-lujo-por-sus-50-anos/",
    "sintesis": "Jefferson Farfán tuvo un gesto especial con su familia. El exfutbolista sorprendió a su tío Luis ‘Cuto’ Guadalupe con una camioneta de…",
    "puntos": [
     "Jefferson Farfán tuvo un gesto especial con su familia.",
@@ -2567,8 +3143,7 @@ window.NOTICIAS = {
      "c": "Jefferson Farfán cumple su promesa y sorprende a ‘Cuto’ Guadalupe con una camioneta de lujo por sus 50 años."
     }
    ],
-   "acceso": "sin_verificar",
-   "url_medio": "https://caretas.pe/ellosellas/jefferson-farfan-cumple-su-promesa-y-sorprende-a-cuto-guadalupe-con-una-camioneta-de-lujo-por-sus-50-anos/"
+   "acceso": "sin_verificar"
   },
   {
    "id": "467b07b87e",
@@ -2673,61 +3248,6 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
-   "id": "168ce53a76",
-   "sector": "politica",
-   "titulo": "Segunda vuelta regional 2026: JNE organizará debates del 24 de noviembre al 1 de diciembre",
-   "resumen": "Los encuentros se realizarán en las 15 regiones donde habrá segunda vuelta para elegir a los gobernadores regionales para el periodo 2027-2030. Los debates serán transmitidos en vivo por televisión y plataformas digitales.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/politica/elecciones/segunda-vuelta-regional-2026-jne-organizara-debates-del-24-de-noviembre-al-1-de-diciembre-noticia-1718907",
-   "fecha": "2026-11-20T22:42:39Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/20/380138_1931414.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Los encuentros se realizarán en las 15 regiones donde habrá segunda vuelta para elegir a los gobernadores regionales para el periodo 2027-2030. Los debates serán transmitidos en vivo por televisión y plataformas digitales.",
-   "puntos": [
-    "Los encuentros se realizarán en las 15 regiones donde habrá segunda vuelta para elegir a los gobernadores regionales para el periodo 2027-2030.",
-    "Los debates serán transmitidos en vivo por televisión y plataformas digitales.",
-    "El Jurado Nacional de Elecciones (JNE) anunció que, del martes 24 de noviembre al 1 de diciembre, se realizarán los debates electorales entre los 30 candidatos que disputarán la segunda vuelta regional del próximo 6 de diciembre ."
-   ],
-   "datos": [
-    {
-     "v": "30 %",
-     "t": "porcentaje",
-     "c": "…ninguna fórmula de gobernador y vicegobernador alcanzó el 30 % de los votos válidos en las elecciones regionales y…"
-    },
-    {
-     "v": "24 de noviembre",
-     "t": "fecha",
-     "c": "Segunda vuelta regional 2026: JNE organizará debates del 24 de noviembre al 1 de diciembre."
-    },
-    {
-     "v": "1 de diciembre",
-     "t": "fecha",
-     "c": "Segunda vuelta regional 2026: JNE organizará debates del 24 de noviembre al 1 de diciembre."
-    },
-    {
-     "v": "6 de diciembre",
-     "t": "fecha",
-     "c": "…que disputarán la segunda vuelta regional del próximo 6 de diciembre ."
-    },
-    {
-     "v": "4 de octubre",
-     "t": "fecha",
-     "c": "…en las elecciones regionales y municipales del pasado 4 de octubre.."
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://rpp.pe/politica/elecciones/segunda-vuelta-regional-2026-jne-organizara-debates-del-24-de-noviembre-al-1-de-diciembre-noticia-1718907"
-  },
-  {
    "id": "298e679bfb",
    "sector": "salud",
    "titulo": "Marlon Jackson, hermano de Michael Jackson, revela que padece cáncer de próstata en etapa 4",
@@ -2746,12 +3266,12 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
+   "url_medio": "https://caretas.pe/politica/marlon-jackson-hermano-de-michael-jackson-revela-que-padece-cancer-de-prostata-en-etapa-4/",
    "sintesis": "Marlon Jackson, hermano de Michael Jackson y exintegrante de los Jackson 5, reveló que padece cáncer de próstata en cuarta etapa.",
    "puntos": [
     "Marlon Jackson, hermano de Michael Jackson y exintegrante de los Jackson 5, reveló que padece cáncer de próstata en cuarta etapa."
    ],
-   "acceso": "sin_verificar",
-   "url_medio": "https://caretas.pe/politica/marlon-jackson-hermano-de-michael-jackson-revela-que-padece-cancer-de-prostata-en-etapa-4/"
+   "acceso": "sin_verificar"
   },
   {
    "id": "bcd5cce428",
@@ -2787,100 +3307,6 @@ window.NOTICIAS = {
     }
    ],
    "acceso": "abierto"
-  },
-  {
-   "id": "907b192af2",
-   "sector": "politica",
-   "titulo": "Capitán de Sport Huancayo confiesa su hinchaje por Universitario previo al duelo decisivo, pero advierte: “Nadie se acuerda del segundo”",
-   "resumen": "Ricardo Salcedo habló a dos días del partido ante la ‘U’, que definirá al campeón del Torneo Clausura 2026 y podría darle su primer título con el ‘rojo matador’",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/deportes/2026/11/20/capitan-de-sport-huancayo-confiesa-su-hinchaje-por-universitario-previo-al-duelo-decisivo-pero-advierte-nadie-se-acuerda-del-segundo/",
-   "fecha": "2026-11-20T22:37:49Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/QDXY56BAXVFNHNBHXA5RQYOLUE.jpg?auth=b351d78e04bf794c0eefe5762194fecb7386e7e4f5083602411e48047ce5bb17&smart=true&width=1201&height=629",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://www.infobae.com/peru/deportes/2026/11/20/capitan-de-sport-huancayo-confiesa-su-hinchaje-por-universitario-previo-al-duelo-decisivo-pero-advierte-nadie-se-acuerda-del-segundo/",
-   "sintesis": "Ricardo Salcedo habló a dos días del partido ante la ‘U’, que definirá al campeón del Torneo Clausura 2026 y podría darle su primer título con el ‘rojo matador’ EST Guardar Ricardo Salcedo , capitán de Sport Huancayo , habló en la previa del duelo decisivo ante Universitario de Deportes por la fecha 17 del Torneo Clausura de la Liga 1 2026 .",
-   "puntos": [
-    "Ricardo Salcedo habló a dos días del partido ante la ‘U’, que definirá al campeón del Torneo Clausura 2026 y podría darle su primer título con el ‘rojo matador’",
-    "EST Guardar Ricardo Salcedo , capitán de Sport Huancayo , habló en la previa del duelo decisivo ante Universitario de Deportes por la fecha 17 del Torneo Clausura de la Liga 1 2026 .",
-    "El encuentro, previsto para el domingo 22 de noviembre, definirá al ganador de la segunda fase del campeonato peruano."
-   ],
-   "datos": [
-    {
-     "v": "22 de noviembre",
-     "t": "fecha",
-     "c": "El encuentro, previsto para el domingo 22 de noviembre, definirá al ganador de la segunda fase del campeonato peruano.."
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "19d268eb0e",
-   "sector": "economia",
-   "titulo": "Gobierno aprueba penas de hasta 35 años para organizaciones criminales que utilicen armamentos",
-   "resumen": "El Gobierno aprobó un decreto legislativo que establece penas de hasta 35 años de prisión para los integrantes de organizaciones criminales que utilicen atentados con explosivos, armas y otras formas de violencia extrema para generar temor y obtener beneficios económicos…",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/peru/politica/gobierno-aprueba-penas-de-hasta-35-anos-para-organizaciones-criminales-que-utilicen-armamentos-noticia/",
-   "fecha": "2026-11-20T22:35:52Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/3XIHC3LMPVBZ3C4NHB3XTAOK5U.jpg?auth=d271f69fb20e96e21371a27704a3e4e8601f48cb79aebb37cf9f10fc1a922dac&smart=true&width=1199&height=800",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "seccion_nacional_fuente"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://gestion.pe/peru/politica/gobierno-aprueba-penas-de-hasta-35-anos-para-organizaciones-criminales-que-utilicen-armamentos-noticia/",
-   "sintesis": "El Gobierno aprobó un decreto legislativo que establece penas de hasta 35 años de prisión para los integrantes de organizaciones criminales que utilicen atentados con explosivos, armas y otras formas de violencia extrema para generar temor y obtener beneficios económicos…",
-   "puntos": [
-    "El Gobierno aprobó un decreto legislativo que establece penas de hasta 35 años de prisión para los integrantes de organizaciones criminales que utilicen atentados con explosivos, armas y otras formas de violencia extrema para generar temor y obtener beneficios económicos…"
-   ],
-   "datos": [
-    {
-     "v": "35 años",
-     "t": "cantidad",
-     "c": "Gobierno aprueba penas de hasta 35 años para organizaciones criminales que utilicen armamentos."
-    }
-   ],
-   "acceso": "restringido"
-  },
-  {
-   "id": "73b0bb9222",
-   "sector": "politica",
-   "titulo": "Paredes calienta la previa de la Sudamericana: \"Jugar una final con Boca es especial\"",
-   "resumen": "El argentino campeón del mundo Leandro Paredes, escudero de Lionel Messi en la Albiceleste, aseguró el viernes que se juega un partido \"especial\" en la final de la Copa Sudamericana 2026 como capitán de Boca Juniors.",
-   "fuente": "Agencia Andina",
-   "url": "https://andina.pe/agencia/noticia-paredes-calienta-previa-de-sudamericana-jugar-una-final-boca-es-especial-1100874.aspx",
-   "fecha": "2026-11-20T22:32:30Z",
-   "tipo": "estatal",
-   "genero": "noticia",
-   "imagen": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2026/11/20/001333562W.webp",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "contexto_latinoamerica_resumen"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "url_medio": "https://andina.pe/agencia/noticia-paredes-calienta-previa-de-sudamericana-jugar-una-final-boca-es-especial-1100874.aspx",
-   "sintesis": "El argentino campeón del mundo Leandro Paredes, escudero de Lionel Messi en la Albiceleste, aseguró el viernes que se juega un partido \"especial\" en la final de la Copa Sudamericana 2026 como capitán de Boca Juniors.",
-   "puntos": [
-    "El argentino campeón del mundo Leandro Paredes, escudero de Lionel Messi en la Albiceleste, aseguró el viernes que se juega un partido \"especial\" en la final de la Copa Sudamericana 2026 como capitán de Boca Juniors."
-   ],
-   "acceso": "sin_verificar"
   },
   {
    "id": "ca3903dfc6",
@@ -2934,12 +3360,12 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
+   "url_medio": "https://caretas.pe/deportes/pablo-bengoechea-nuevo-entrenador-cesar-vallejo/",
    "sintesis": "La Universidad César Vallejo busca recuperar protagonismo en el fútbol peruano y ya tiene definido a su nuevo entrenador.",
    "puntos": [
     "La Universidad César Vallejo busca recuperar protagonismo en el fútbol peruano y ya tiene definido a su nuevo entrenador."
    ],
-   "acceso": "sin_verificar",
-   "url_medio": "https://caretas.pe/deportes/pablo-bengoechea-nuevo-entrenador-cesar-vallejo/"
+   "acceso": "sin_verificar"
   },
   {
    "id": "17ce2eeff3",
@@ -2968,61 +3394,6 @@ window.NOTICIAS = {
    ],
    "acceso": "abierto",
    "url_medio": "https://elcomercio.pe/deporte-total/futbol-peruano/semillero-el-comercio-de-futbol-femenino-repsol-2026-gina-ancari-la-pequena-gigante-que-revivio-las-esperanzas-de-estrellas-rosadas-en-el-torneo-de-menores-noticia/"
-  },
-  {
-   "id": "d3c81ca44a",
-   "sector": "nino",
-   "titulo": "Senamhi advierte lluvias extremas en Piura y Tumbes durante las próximas dos horas",
-   "resumen": "El organismo meteorológico Senamhi detalló a través de sus canales oficiales las provincias de Piura y Tumbes concentrarán lluvias y descargas eléctricas durante el periodo de vigencia del reporte.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/peru/piura/senamhi-advierte-lluvias-extremas-en-piura-y-tumbes-durante-las-proximas-dos-horas-fenomeno-el-nino-apuesplan-ultimas-noticia/",
-   "fecha": "2026-11-20T22:09:36Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/FGDDSKN53VGJHLDTR7XT2RL3YY.jpg?auth=58a93c893e8d6ee9d381e7062cf711f3bc8a79fe997a4e9201c7472a474a004b&smart=true&width=1200&height=800",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "El organismo meteorológico Senamhi detalló a través de sus canales oficiales las provincias de Piura y Tumbes concentrarán lluvias y descargas eléctricas durante el periodo de vigencia del reporte. El Servicio Nacional de Meteorología e Hidrología del Perú (Senamhi) emitió un pronóstico a muy corto plazo en el que advierte sobre la continuidad de precipitaciones intensas durante las próximas dos horas en Piura y Tumbes .",
-   "puntos": [
-    "El organismo meteorológico Senamhi detalló a través de sus canales oficiales las provincias de Piura y Tumbes concentrarán lluvias y descargas eléctricas durante el periodo de vigencia del reporte.",
-    "El Servicio Nacional de Meteorología e Hidrología del Perú (Senamhi) emitió un pronóstico a muy corto plazo en el que advierte sobre la continuidad de precipitaciones intensas durante las próximas dos horas en Piura y Tumbes .",
-    "A través de su cuenta oficial en la red social X, el Senamhi precisó que en Piura, las precipitaciones se concentrarán principalmente en las provincias de Ayabaca , Morropón y Huancabamba ."
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://elcomercio.pe/peru/piura/senamhi-advierte-lluvias-extremas-en-piura-y-tumbes-durante-las-proximas-dos-horas-fenomeno-el-nino-apuesplan-ultimas-noticia/"
-  },
-  {
-   "id": "6fc7af4477",
-   "sector": "economia",
-   "titulo": "Banco Mundial: América Latina y el Caribe necesitan una respuesta integrada ante los efectos del fenómeno El Niño",
-   "resumen": "La vicepresidenta del Banco Mundial (BM) para la región, Susana Cordeiro Guerra, dijo que, además de los recursos económicos, es necesario fortalecer la disponibilidad de datos e información para anticipar el impacto de estos fenómenos, y aprovechar los sistemas y las…",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/mundo/latinoamerica/banco-mundial-america-latina-y-el-caribe-necesitan-una-respuesta-integrada-ante-los-efectos-del-fenomeno-de-el-nino-noticia-1718895",
-   "fecha": "2026-11-20T22:08:39Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/20/510751_1931405.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "url_medio": "https://rpp.pe/mundo/latinoamerica/banco-mundial-america-latina-y-el-caribe-necesitan-una-respuesta-integrada-ante-los-efectos-del-fenomeno-de-el-nino-noticia-1718895",
-   "sintesis": "La vicepresidenta del Banco Mundial (BM) para la región, Susana Cordeiro Guerra, dijo que, además de los recursos económicos, es necesario fortalecer la disponibilidad de datos e información para anticipar el impacto de estos fenómenos, y aprovechar los sistemas y las experiencias ya existentes en otros países. América Latina y el Caribe deben articular una respuesta regional conjunta que combine financiamiento, tecnología y sistemas de información para mitigar el impacto del fenómeno climático de El Niño y otros desastres naturales, afirmó este viernes en una entrevista la vicepresidenta del Banco Mundial ( BM ) para la región, Susana…",
-   "puntos": [
-    "La vicepresidenta del Banco Mundial (BM) para la región, Susana Cordeiro Guerra, dijo que, además de los recursos económicos, es necesario fortalecer la disponibilidad de datos e información para anticipar el impacto de estos fenómenos, y aprovechar los sistemas y las experiencias ya existentes en otros países.",
-    "América Latina y el Caribe deben articular una respuesta regional conjunta que combine financiamiento, tecnología y sistemas de información para mitigar el impacto del fenómeno climático de El Niño y otros desastres naturales, afirmó este viernes en una entrevista la vicepresidenta del Banco Mundial ( BM ) para la región, Susana…"
-   ],
-   "acceso": "abierto"
   },
   {
    "id": "fbf80dd08e",
@@ -3513,6 +3884,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
+   "url_medio": "https://redaccion.lamula.pe/2026/11/20/el-quiosco-mulero-solidaridad-con-pedro-mo-y-brenda-jah-mientras-galarreta-anuncia-decreto-contra-acciones-terroristas/redaccionmulera/",
    "sintesis": "La Escuela Saturnino Huilca rechaza las imputaciones contra Pedro Mo y Brenda Jah, mientras Luis Galarreta anuncia medidas contra ataques vinculados a extorsiones. La jornada también incluye el allanamiento de la SBS, las declaraciones sobre Fernando Cerimedo y la segunda vuelta electoral, y el fallecimiento de un paciente cuya familia denuncia un contagio de mpox en el Hospital Almenara.",
    "puntos": [
     "La Escuela Saturnino Huilca rechaza las imputaciones contra Pedro Mo y Brenda Jah, mientras Luis Galarreta anuncia medidas contra ataques vinculados a extorsiones.",
@@ -3526,8 +3898,7 @@ window.NOTICIAS = {
      "c": "Es viernes 20 de noviembre y El Quiosco Mulero reúne diez noticias para cerrar la semana antes de los programas de LaMulaStream."
     }
    ],
-   "acceso": "abierto",
-   "url_medio": "https://redaccion.lamula.pe/2026/11/20/el-quiosco-mulero-solidaridad-con-pedro-mo-y-brenda-jah-mientras-galarreta-anuncia-decreto-contra-acciones-terroristas/redaccionmulera/"
+   "acceso": "abierto"
   },
   {
    "id": "722a5b96a9",
@@ -3740,39 +4111,6 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
-   "id": "3192a621f6",
-   "sector": "politica",
-   "titulo": "Pedro Pablo Kuczynski viajó a EE. UU. tras fallo judicial para reunirse con su familia y someterse a tratamientos médicos",
-   "resumen": "El expresidente Pedro Pablo Kuczynski viajó a Estados Unidos este viernes 20 de noviembre, luego de que el Poder Judicial archivara definitivamente… The post Pedro Pablo Kuczynski viajó a EE. UU. tras fallo judicial para reunirse con su familia y someterse a tratamientos…",
-   "fuente": "Caretas",
-   "url": "https://caretas.pe/politica/pedro-pablo-kuczynski-viajo-a-ee-uu-tras-fallo-judicial-para-reunirse-con-su-familia-y-someterse-a-tratamientos-medicos/",
-   "fecha": "2026-11-20T21:36:41Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://caretas.pe/wp-content/uploads/2026/11/image-2026-11-20T163503.431-1280x720.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "url_medio": "https://caretas.pe/politica/pedro-pablo-kuczynski-viajo-a-ee-uu-tras-fallo-judicial-para-reunirse-con-su-familia-y-someterse-a-tratamientos-medicos/",
-   "sintesis": "UU. tras fallo judicial para reunirse con su familia y someterse a tratamientos…",
-   "puntos": [
-    "UU. tras fallo judicial para reunirse con su familia y someterse a tratamientos…"
-   ],
-   "datos": [
-    {
-     "v": "20 de noviembre",
-     "t": "fecha",
-     "c": "…Pedro Pablo Kuczynski viajó a Estados Unidos este viernes 20 de noviembre, luego de que el Poder Judicial archivara definitivamente……"
-    }
-   ],
-   "acceso": "sin_verificar"
-  },
-  {
    "id": "4e6f395be9",
    "sector": "deporte",
    "titulo": "Universitario vs Sport Huancayo: ¿a qué hora juegan y dónde ver por la última fecha del Torneo Clausura 2026?",
@@ -3811,32 +4149,6 @@ window.NOTICIAS = {
     }
    ],
    "acceso": "abierto"
-  },
-  {
-   "id": "f10b640aaa",
-   "sector": "nino",
-   "titulo": "Aprueban 13 medidas para proteger empleo ante fenómeno El Niño",
-   "resumen": "El Gobierno, los trabajadores y los empleadores aprobaron por unanimidad 13 medidas para proteger el empleo y afrontar los efectos del fenómeno El Niño, durante la 50.ª sesión extraordinaria del Consejo Nacional de Trabajo y Promoción del Empleo (CNTPE), liderada por el…",
-   "fuente": "Agencia Andina",
-   "url": "https://andina.pe/agencia/noticia-aprueban-13-medidas-para-proteger-empleo-ante-fenomeno-nino-1100862.aspx",
-   "fecha": "2026-11-20T21:30:00Z",
-   "tipo": "estatal",
-   "genero": "noticia",
-   "imagen": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2026/11/20/001333536W.webp",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "El Gobierno, los trabajadores y los empleadores aprobaron por unanimidad 13 medidas para proteger el empleo y afrontar los efectos del fenómeno El Niño, durante la 50.ª sesión extraordinaria del Consejo Nacional de Trabajo y Promoción del Empleo (CNTPE), liderada por el…",
-   "puntos": [
-    "El Gobierno, los trabajadores y los empleadores aprobaron por unanimidad 13 medidas para proteger el empleo y afrontar los efectos del fenómeno El Niño, durante la 50.ª sesión extraordinaria del Consejo Nacional de Trabajo y Promoción del Empleo (CNTPE), liderada por el…"
-   ],
-   "acceso": "sin_verificar",
-   "url_medio": "https://andina.pe/agencia/noticia-aprueban-13-medidas-para-proteger-empleo-ante-fenomeno-nino-1100862.aspx"
   },
   {
    "id": "c6a2b97bdc",
@@ -3987,46 +4299,6 @@ window.NOTICIAS = {
     "Cuando Claudia Sheinbaum llegó a la Presidencia de México en 2024, prometió combatir la violencia contra las mujeres.",
     "Sin embargo, los feminicidios siguen siendo una grave preocupación en el país.",
     "Una extensión de tu navegador parece estar bloqueando la carga del reproductor de video."
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "1a7de87f6e",
-   "sector": "investigacion",
-   "titulo": "SBS se pronuncia tras allanamiento de su sede principal por caso Los Herméticos del Caudal y califica la medida de \"desproporcionada\"",
-   "resumen": "La Superintendencia de Banca, Seguros y AFP (SBS) cuestionó el allanamiento de su sede principal, ubicada en San Isidro, durante el operativo… The post SBS se pronuncia tras allanamiento de su sede principal por caso Los Herméticos del Caudal y califica la medida de…",
-   "fuente": "Caretas",
-   "url": "https://caretas.pe/politica/sbs-se-pronuncia-tras-allanamiento-de-su-sede-principal-por-caso-los-hermeticos-del-caudal-y-califica-la-medida-de-desproporcionada/",
-   "fecha": "2026-11-20T21:00:47Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://caretas.pe/wp-content/uploads/2026/11/image-2026-11-20T155500.367-1280x720.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "seccion_nacional_fuente"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://caretas.pe/politica/sbs-se-pronuncia-tras-allanamiento-de-su-sede-principal-por-caso-los-hermeticos-del-caudal-y-califica-la-medida-de-desproporcionada/",
-   "sintesis": "La SBS rechazó las filtraciones de información reservada y reiteró que colaborará con las diligencias del Ministerio Público. La Superintendencia de Banca, Seguros y AFP ( SBS ) cuestionó el allanamiento de su sede principal, ubicada en San Isidro, durante el operativo fiscal por el caso Los Herméticos del Caudal .",
-   "puntos": [
-    "La SBS rechazó las filtraciones de información reservada y reiteró que colaborará con las diligencias del Ministerio Público.",
-    "La Superintendencia de Banca, Seguros y AFP ( SBS ) cuestionó el allanamiento de su sede principal, ubicada en San Isidro, durante el operativo fiscal por el caso Los Herméticos del Caudal .",
-    "A través de un comunicado difundido este viernes 20 de noviembre, calificó la medida judicial de \"desproporcionada\" y sostuvo que había atendido todos los requerimientos de información del Ministerio Público ."
-   ],
-   "datos": [
-    {
-     "v": "20 de noviembre",
-     "t": "fecha",
-     "c": "A través de un comunicado difundido este viernes 20 de noviembre, calificó la medida judicial de \"desproporcionada\" y…"
-    },
-    {
-     "v": "19 de noviembre",
-     "t": "fecha",
-     "c": "Según precisó, tomó conocimiento de esta decisión el jueves 19 de noviembre y ambos trabajadores colaboran con las autoridades…"
-    }
    ],
    "acceso": "abierto"
   },
@@ -4350,12 +4622,12 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
+   "url_medio": "https://gestion.pe/tecnologia/apple-desarrolla-su-propio-agente-de-ia-para-competir-con-openai-y-anthropic-noticia/",
    "sintesis": "Apple Inc. está desarrollando su propio agente autónomo de inteligencia artificial capaz de realizar tareas en nombre de los usuarios, con el objetivo de entrar en un mercado de rápido crecimiento en el que ya compiten OpenAI, Anthropic PBC, Meta Platforms Inc. y otras compañías.",
    "puntos": [
     "Apple Inc. está desarrollando su propio agente autónomo de inteligencia artificial capaz de realizar tareas en nombre de los usuarios, con el objetivo de entrar en un mercado de rápido crecimiento en el que ya compiten OpenAI, Anthropic PBC, Meta Platforms Inc. y otras compañías."
    ],
-   "acceso": "restringido",
-   "url_medio": "https://gestion.pe/tecnologia/apple-desarrolla-su-propio-agente-de-ia-para-competir-con-openai-y-anthropic-noticia/"
+   "acceso": "restringido"
   },
   {
    "id": "01dd2737a1",
@@ -4389,34 +4661,6 @@ window.NOTICIAS = {
      "t": "fecha",
      "c": "…cuatro soldados emboscados y desaparecidos desde el pasado 18 de octubre y cuyo paradero aún es desconocido."
     }
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "75661bcc9a",
-   "sector": "politica",
-   "titulo": "Operador Cerimedo participó en la segunda vuelta en Perú con infiltrado en ONPE",
-   "resumen": "\"Autoridades peruanas no inician investigación pese a que se acreditó la autenticidad de audio en el que menciona que tuvo a alguien dentro de organismo electoral\" afirma su expareja, Nadia Beller",
-   "fuente": "El Búho",
-   "url": "https://elbuho.pe/2026/11/operador-cerimedo-participo-en-la-segunda-vuelta-en-peru-con-infiltrado-en-onpe/",
-   "fecha": "2026-11-20T20:05:27Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/fujimori-cerimedo-beller-1-6b00a443e0dda.webp",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://elbuho.pe/2026/11/operador-cerimedo-participo-en-la-segunda-vuelta-en-peru-con-infiltrado-en-onpe/",
-   "sintesis": "Cerimedo: \"Autoridades peruanas no inician investigación pese a autenticidad audio menciona que tuvo alguien dentro de ONPE La abogada Nadia Beller, actualmente asilada en México, expareja de Fernando Cerimedo, declaró que el operador argentino participó activamente en la segunda vuelta electoral en Perú e incluso que tuvo una persona infiltrada en la Oficina Nacional de Procesos Electorales (ONPE), de acuerdo con un audio que ella entregó a la fiscalía de su país Bolivia.",
-   "puntos": [
-    "Cerimedo: \"Autoridades peruanas no inician investigación pese a autenticidad audio menciona que tuvo alguien dentro de ONPE",
-    "La abogada Nadia Beller, actualmente asilada en México, expareja de Fernando Cerimedo, declaró que el operador argentino participó activamente en la segunda vuelta electoral en Perú e incluso que tuvo una persona infiltrada en la Oficina Nacional de Procesos Electorales (ONPE), de acuerdo con un audio que ella entregó a la fiscalía de su país Bolivia.",
-    "Y refirió también que, pese a que las autoridades peruanas saben que ese audio ha sido acreditadoen su autenticidad, no están haciendo ninguna investigación al respecto."
    ],
    "acceso": "abierto"
   },
@@ -4469,62 +4713,12 @@ window.NOTICIAS = {
    "procedencia": "agregador",
    "via": "Google Noticias",
    "url_medio": "https://larepublica.pe/politica/2026/11/20/ppk-viaja-a-estados-unidos-tras-archivarse-su-investigacion-por-presunto-financiamiento-ilicito-en-su-campana-hnews-1710140",
-   "imagen_intentos": 3,
+   "imagen_intentos": 4,
    "sintesis": "Fuentes de La República confirmaron que el expresidente Pedro Pablo Kuczynski salió del país luego de que el Ministerio Público archivara la investigación relacionada con los presuntos aportes ilícitos a su campaña electoral. El viaje tiene como propósito reencontrarse con su familia después de ocho años sin poder salir del país.",
    "puntos": [
     "Fuentes de La República confirmaron que el expresidente Pedro Pablo Kuczynski salió del país luego de que el Ministerio Público archivara la investigación relacionada con los presuntos aportes ilícitos a su campaña electoral.",
     "El viaje tiene como propósito reencontrarse con su familia después de ocho años sin poder salir del país.",
     "Durante su estadía en Estados Unidos, Kuczynski podrá compartir tiempo con ellos."
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "1d54c90d97",
-   "sector": "politica",
-   "titulo": "Segunda vuelta en el norte: Lo que se juegan Piura y Cajamarca de cara al 6 de diciembre",
-   "resumen": "Especialistas de la Red de Medios Regionales analizaron las candidaturas que competirán el 6 de diciembre en Piura y Cajamarca, remarcando la necesidad de contar con perfiles técnicos y transparentes.",
-   "fuente": "El Búho",
-   "url": "https://elbuho.pe/2026/11/segunda-vuelta-en-el-norte-lo-que-se-juegan-piura-y-cajamarca-de-cara-al-6-de-diciembre/",
-   "fecha": "2026-11-20T19:32:44Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/segunda-eleccion-regional-cajamarca-piura-elecciones-2026-segunda-vuelta.webp",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://elbuho.pe/2026/11/segunda-vuelta-en-el-norte-lo-que-se-juegan-piura-y-cajamarca-de-cara-al-6-de-diciembre/",
-   "sintesis": "Piura y Cajamarca van a segunda vuelta este 6 de diciembre. Analistas analizan las propuestas, equipos técnicos y grandes retos de los candidatos.",
-   "puntos": [
-    "Piura y Cajamarca van a segunda vuelta este 6 de diciembre.",
-    "Analistas analizan las propuestas, equipos técnicos y grandes retos de los candidatos.",
-    "Especialistas en gestión pública y análisis político advirtieron que este escenario evidencia una marcada fragmentación electoral y una crisis de representatividad en ambas circunscripciones del norte del país."
-   ],
-   "datos": [
-    {
-     "v": "30 %",
-     "t": "porcentaje",
-     "c": "…de las listas participantes lograra superar el umbral del 30 % de los votos válidos en la primera jornada electoral."
-    },
-    {
-     "v": "29.7 %",
-     "t": "porcentaje",
-     "c": "…Alianza para el Progreso, tras haber obtenido un 29.7 % y 23.16 % de los votos, respectivamente."
-    },
-    {
-     "v": "23.16 %",
-     "t": "porcentaje",
-     "c": "…Alianza para el Progreso, tras haber obtenido un 29.7 % y 23.16 % de los votos, respectivamente."
-    },
-    {
-     "v": "6 de diciembre",
-     "t": "fecha",
-     "c": "Segunda vuelta en el norte: Lo que se juegan Piura y Cajamarca de cara al 6 de diciembre."
-    }
    ],
    "acceso": "abierto"
   },
@@ -4888,11 +5082,21 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "sintesis": "El presidente estadounidense dijo que los dos países están cerca de llegar a un acuerdo comercial",
+   "sintesis": "El presidente estadounidense dijo que los dos países están cerca de llegar a un acuerdo comercial Donald Trump esperó dos días para dar su versión de la breve reunión que mantuvo con Claudia Sheinbaum en China .",
    "puntos": [
-    "El presidente estadounidense dijo que los dos países están cerca de llegar a un acuerdo comercial"
+    "El presidente estadounidense dijo que los dos países están cerca de llegar a un acuerdo comercial",
+    "Donald Trump esperó dos días para dar su versión de la breve reunión que mantuvo con Claudia Sheinbaum en China .",
+    "El presidente estadounidense se ha referido este viernes al encuentro que tuvo con su par mexicana esta semana en el foro de Cooperación Económica Asia-Pacífico (APEC) ."
    ],
-   "acceso": "sin_verificar"
+   "datos": [
+    {
+     "v": "3.000 kilómetros",
+     "t": "cantidad",
+     "c": "…organizado gobierna al país con el que comparte más de 3.000 kilómetros de frontera."
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://elpais.com/mexico/2026-11-20/trump-sobre-su-reunion-con-sheinbaum-le-dije-claudia-no-les-permitiremos-tener-un-superavit-comercial.html"
   },
   {
    "id": "3f1f917f73",
@@ -4925,41 +5129,6 @@ window.NOTICIAS = {
      "v": "1 de diciembre",
      "t": "fecha",
      "c": "Por su parte, Estonia anunció el cierre de sus pasos fronterizos terrestres durante seis meses, a partir del 1 de diciembre.."
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "a1316839ad",
-   "sector": "mundo",
-   "titulo": "Rusia ataca infraestructura energética, edificios comerciales y sedes diplomáticas en Kiev",
-   "resumen": "Durante la madrugada de este 20 de noviembre, Rusia lanzó más de 110 misiles balísticos y drones contra Kiev, en una ofensiva que dejó al menos nueve personas muertas. El presidente ucraniano, Volodímir Zelenski, señaló que los ataques estuvieron dirigidos principalmente contra…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/video/20261120-rusia-ataca-infraestructura-energ%C3%A9tica-edificios-comerciales-y-sedes-diplom%C3%A1ticas-en-kiev",
-   "fecha": "2026-11-20T18:32:15Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/d9b52fbe-e50e-11f1-8df7-6b451f569414/w:1024/p:16x9/ES-20261120-120610-120739-CS-01.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "url_medio": "https://www.france24.com/es/video/20261120-rusia-ataca-infraestructura-energ%C3%A9tica-edificios-comerciales-y-sedes-diplom%C3%A1ticas-en-kiev",
-   "sintesis": "Durante la madrugada de este 20 de noviembre, Rusia lanzó más de 110 misiles balísticos y drones contra Kiev, en una ofensiva que dejó al menos nueve personas muertas. Una extensión de tu navegador parece estar bloqueando la carga del reproductor de video.",
-   "puntos": [
-    "Durante la madrugada de este 20 de noviembre, Rusia lanzó más de 110 misiles balísticos y drones contra Kiev, en una ofensiva que dejó al menos nueve personas muertas.",
-    "Una extensión de tu navegador parece estar bloqueando la carga del reproductor de video.",
-    "Para poder ver este contenido, debes desactivarla en este sitio."
-   ],
-   "datos": [
-    {
-     "v": "20 de noviembre",
-     "t": "fecha",
-     "c": "Durante la madrugada de este 20 de noviembre, Rusia lanzó más de 110 misiles balísticos y drones contra…"
     }
    ],
    "acceso": "abierto"
@@ -5338,7 +5507,7 @@ window.NOTICIAS = {
   {
    "id": "8749472869",
    "sector": "ia",
-   "titulo": "Grupo RPP premia iniciativas de proyectos con inteligencia artificial entre sus colaboradores",
+   "titulo": "GRUPORPP premió iniciativas de proyectos con inteligencia artificial entre sus colaboradores",
    "resumen": "La segunda edición del certamen Agentes IA en Acción reúne cinco soluciones tecnológicas desarrolladas por equipos internos para optimizar procesos periodísticos, comerciales y financieros, con el respaldo de Amazon Web Services e Itera Perú.",
    "fuente": "RPP",
    "url": "https://rpp.pe/videos/actualidad/grupo-rpp-premia-iniciativas-de-proyectos-con-inteligencia-artificial-entre-sus-colaboradores-noticia-1718813",
@@ -5354,12 +5523,12 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
+   "url_medio": "https://rpp.pe/videos/actualidad/grupo-rpp-premia-iniciativas-de-proyectos-con-inteligencia-artificial-entre-sus-colaboradores-noticia-1718813",
    "sintesis": "La segunda edición del certamen Agentes IA en Acción reúne cinco soluciones tecnológicas desarrolladas por equipos internos para optimizar procesos periodísticos, comerciales y financieros, con el respaldo de Amazon Web Services e Itera Perú.",
    "puntos": [
     "La segunda edición del certamen Agentes IA en Acción reúne cinco soluciones tecnológicas desarrolladas por equipos internos para optimizar procesos periodísticos, comerciales y financieros, con el respaldo de Amazon Web Services e Itera Perú."
    ],
-   "acceso": "sin_verificar",
-   "url_medio": "https://rpp.pe/videos/actualidad/grupo-rpp-premia-iniciativas-de-proyectos-con-inteligencia-artificial-entre-sus-colaboradores-noticia-1718813"
+   "acceso": "sin_verificar"
   },
   {
    "id": "3e1b344c0d",
@@ -5459,7 +5628,7 @@ window.NOTICIAS = {
    "ambito": "mundo",
    "procedencia": "directa",
    "url_medio": "https://www.nytimes.com/es/2026/11/20/espanol/negocios/jensen-huang-maltrato-empleados.html",
-   "imagen_intentos": 4,
+   "imagen_intentos": 5,
    "acceso": "sin_verificar"
   },
   {
@@ -5649,51 +5818,6 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
-   "id": "8051da6516",
-   "sector": "politica",
-   "titulo": "Keiko Fujimori saluda a emperador Naruhito de Japón e invita a que Perú sea la «puerta de entrada a Sudamérica»",
-   "resumen": "También se reúne con la primera ministra, Sanae Takaichi y la gobernadora de Tokio, Yuriko Koike",
-   "fuente": "El Búho",
-   "url": "https://elbuho.pe/2026/11/keiko-fujimori-saluda-a-emperador-naruhito-de-japon-e-invita-a-que-peru-sea-la-puerta-de-entrada-a-sudamerica/",
-   "fecha": "2026-11-20T17:16:52Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/fujimori-emperador-naruhito-6b007cd8234c3-3.webp",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://elbuho.pe/2026/11/keiko-fujimori-saluda-a-emperador-naruhito-de-japon-e-invita-a-que-peru-sea-la-puerta-de-entrada-a-sudamerica/",
-   "sintesis": "Keiko Fujimori: También se reúne con la primera ministra, Sanae Takaichi y la gobernadora de Tokio, Yuriko Koike Su majestad el emperador Naruhito de Japón , recibió este viernes 20 de noviembre, a la presidenta, Keiko Fujimori en una reunión protocolar en el Palacio Imperial de Tokio, por espacio de unos 20 minutos.",
-   "puntos": [
-    "Keiko Fujimori: También se reúne con la primera ministra, Sanae Takaichi y la gobernadora de Tokio, Yuriko Koike",
-    "Su majestad el emperador Naruhito de Japón , recibió este viernes 20 de noviembre, a la presidenta, Keiko Fujimori en una reunión protocolar en el Palacio Imperial de Tokio, por espacio de unos 20 minutos.",
-    "De acuerdo con los reportes oficiales y medios nipones como Noticias Nippon, el monarca tuvo el gesto de cortesía de dirigirse a la mandataria en castellano al darle la bienvenida a su residencia oficial: «Bienvenida a Japón»."
-   ],
-   "datos": [
-    {
-     "v": "27 años",
-     "t": "cantidad",
-     "c": "…Sayako Kuroda, quien llegó en visita oficial al Perú hace 27 años.."
-    },
-    {
-     "v": "150 años",
-     "t": "cantidad",
-     "c": "…japonesa frente al fenómeno El Niño, destacar los más de 150 años de relaciones diplomáticas y resaltar el aporte de la…"
-    },
-    {
-     "v": "20 de noviembre",
-     "t": "fecha",
-     "c": "…el emperador Naruhito de Japón , recibió este viernes 20 de noviembre, a la presidenta, Keiko Fujimori en una reunión protocolar…"
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
    "id": "96ad5291d8",
    "sector": "politica",
    "titulo": "Minería informal: Más de 170 gobernadores regionales y alcaldes electos están en el REINFO",
@@ -5803,34 +5927,6 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
-   "id": "f41d12166a",
-   "sector": "deporte",
-   "titulo": "¿Santiago González con la Bicolor? El camino que empieza a recorrer el atacante de Cristal",
-   "resumen": "Santiago González atraviesa uno de sus mejores momentos desde que llegó al fútbol peruano y ahora tiene un nuevo horizonte en su… The post ¿Santiago González con la Bicolor? El camino que empieza a recorrer el atacante de Cristal appeared first on Caretas .",
-   "fuente": "Caretas",
-   "url": "https://caretas.pe/deportes/santiago-gonzalez-con-la-bicolor-el-camino-que-empieza-a-recorrer-el-atacante-de-cristal/",
-   "fecha": "2026-11-20T16:53:35Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://caretas.pe/wp-content/uploads/2026/11/Foto-7-969x768.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "contexto_peru_resumen"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://caretas.pe/deportes/santiago-gonzalez-con-la-bicolor-el-camino-que-empieza-a-recorrer-el-atacante-de-cristal/",
-   "sintesis": "Santiago González expresó su deseo de jugar por la Bicolor. ¿Qué necesita el atacante de Sporting Cristal para ser convocado?",
-   "puntos": [
-    "Santiago González expresó su deseo de jugar por la Bicolor.",
-    "¿Qué necesita el atacante de Sporting Cristal para ser convocado?",
-    "Santiago González atraviesa uno de sus mejores momentos desde que llegó al fútbol peruano y ahora tiene un nuevo horizonte en su carrera."
-   ],
-   "acceso": "abierto"
-  },
-  {
    "id": "612ac107bd",
    "sector": "mundo",
    "titulo": "Rusia lanza uno de los \"mayores ataques\" contra Ucrania desde el inicio de la invasión",
@@ -5857,81 +5953,6 @@ window.NOTICIAS = {
     "Asimismo, provocó apagones en varios puntos del país y causó daños en tres puentes de Kiev."
    ],
    "acceso": "abierto"
-  },
-  {
-   "id": "8d0beb9c39",
-   "sector": "politica",
-   "titulo": "«El sector transporte en Ayacucho ya está colapsando»: Aún no hay fecha para el paro regional",
-   "resumen": "Escribe: Roy Ayala Huamán. Por alza de combustible y situación de la vía Libertadores. En entrevista con el Diario Jornada, el presidente del gremio de transportistas de Ayacucho, Edwin Canales, anunció la convocatoria a una asamblea este sábado para definir la fecha de un paro…",
-   "fuente": "El Búho",
-   "url": "https://elbuho.pe/2026/11/el-sector-transporte-en-ayacucho-ya-esta-colapsando-aun-no-hay-fecha-para-el-paro-regional/",
-   "fecha": "2026-11-20T16:23:42Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/20-11-El-sector-transporte-en-Ayacucho-ya-esta-colapsando.-Aun-no-hay-fecha-para-el-paro-regional.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://elbuho.pe/2026/11/el-sector-transporte-en-ayacucho-ya-esta-colapsando-aun-no-hay-fecha-para-el-paro-regional/",
-   "sintesis": "Por alza de combustible y situación de la vía Libertadores. En entrevista con el Diario Jornada, el presidente del gremio de transportistas de Ayacucho, Edwin Canales, anunció la convocatoria a una asamblea este sábado para definir la fecha de un paro macrorregional multisectorial, debido al abandono de la principal vía de […]",
-   "puntos": [
-    "Por alza de combustible y situación de la vía Libertadores.",
-    "En entrevista con el Diario Jornada, el presidente del gremio de transportistas de Ayacucho, Edwin Canales, anunció la convocatoria a una asamblea este sábado para definir la fecha de un paro macrorregional multisectorial, debido al abandono de la principal vía de […]",
-    "La crisis económica golpea sin tregua a los pequeños y medianos empresarios del transporte en Ayacucho, quienes denuncian sentirse abandonados por las autoridades nacionales; « Recalco que ya la…"
-   ],
-   "datos": [
-    {
-     "v": "70%",
-     "t": "porcentaje",
-     "c": "…donde la afluencia de visitantes habría caído en casi un 70%, según detalló Canales ."
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "7b55022011",
-   "sector": "deporte",
-   "titulo": "¿Vuelve el “Depredador”? Paolo Guerrero apunta a reaparecer ante FC Cajamarca",
-   "resumen": "Paolo Guerrero está cerca de volver a vestirse de corto. El atacante de Alianza Lima superó el desgarro que lo mantuvo fuera… The post ¿Vuelve el “Depredador”? Paolo Guerrero apunta a reaparecer ante FC Cajamarca appeared first on Caretas .",
-   "fuente": "Caretas",
-   "url": "https://caretas.pe/deportes/vuelve-el-depredador-paolo-guerrero-apunta-a-reaparecer-ante-fc-cajamarca/",
-   "fecha": "2026-11-20T16:20:08Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://caretas.pe/wp-content/uploads/2026/11/Foto-4-6-1124x768.jpeg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Paolo Guerrero volvería a la convocatoria de Alianza Lima ante FC Cajamarca tras superar su lesión. Paolo Guerrero está cerca de volver a vestirse de corto.",
-   "puntos": [
-    "Paolo Guerrero volvería a la convocatoria de Alianza Lima ante FC Cajamarca tras superar su lesión.",
-    "Paolo Guerrero está cerca de volver a vestirse de corto.",
-    "El atacante de Alianza Lima superó el desgarro que lo mantuvo fuera de competencia durante casi tres meses y se encuentra nuevamente trabajando con normalidad junto al plantel, por lo que apunta a reaparecer este sábado 21 de noviembre frente a FC Cajamarca, en Matute."
-   ],
-   "datos": [
-    {
-     "v": "21 de noviembre",
-     "t": "fecha",
-     "c": "…al plantel, por lo que apunta a reaparecer este sábado 21 de noviembre frente a FC Cajamarca, en Matute.."
-    },
-    {
-     "v": "29 de agosto",
-     "t": "fecha",
-     "c": "Guerrero disputó su último encuentro oficial el pasado 29 de agosto, cuando Alianza Lima enfrentó a Deportivo Garcilaso en el…"
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://caretas.pe/deportes/vuelve-el-depredador-paolo-guerrero-apunta-a-reaparecer-ante-fc-cajamarca/"
   },
   {
    "id": "f58208e880",
@@ -6000,86 +6021,6 @@ window.NOTICIAS = {
     "En Puno, el gobernador Richard Hancco realizó una ceremonia presentada como inicio de actividades del hospital Manuel Núñez Butrón, aunque el terreno todavía no estaba habilitado."
    ],
    "acceso": "abierto"
-  },
-  {
-   "id": "9b92da8494",
-   "sector": "investigacion",
-   "titulo": "Detienen a artistas por presunto terrorismo en regiones y vía Los Libertadores colapsa en Ayacucho (VIDEO)",
-   "resumen": "Mientras en varias regiones se reportan detenciones e investigaciones judiciales, en Ayacucho los transportistas amenazan con protestas por el abandono de la vía Los Libertadores.",
-   "fuente": "El Búho",
-   "url": "https://elbuho.pe/2026/11/detienen-a-artistas-por-presunto-terrorismo-en-regiones-y-via-los-libertadores-colapsa-en-ayacucho-video/",
-   "fecha": "2026-11-20T15:58:37Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/1795180099_hqdefault.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://elbuho.pe/2026/11/detienen-a-artistas-por-presunto-terrorismo-en-regiones-y-via-los-libertadores-colapsa-en-ayacucho-video/",
-   "sintesis": "Detienen a artistas en regiones por presunto terrorismo y transportistas de Ayacucho amenazan con paro por vía Los Libertadores. En el caso particular de la región Ayacucho , el crítico estado de la vía Los Libertadores continúa generando graves perjuicios económicos, duplicando los tiempos habituales de viaje y elevando de manera considerable las tarifas del transporte terrestre.",
-   "puntos": [
-    "Detienen a artistas en regiones por presunto terrorismo y transportistas de Ayacucho amenazan con paro por vía Los Libertadores.",
-    "En el caso particular de la región Ayacucho , el crítico estado de la vía Los Libertadores continúa generando graves perjuicios económicos, duplicando los tiempos habituales de viaje y elevando de manera considerable las tarifas del transporte terrestre.",
-    "Esta situación afecta el traslado diario de pasajeros y productos de primera necesidad, debilitando la conectividad de la zona andina."
-   ],
-   "datos": [
-    {
-     "v": "70 %",
-     "t": "porcentaje",
-     "c": "…ayacuchano , el cual reporta una caída cercana al 70 % en la afluencia de visitantes durante los últimos tres…"
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "292418bf2e",
-   "sector": "deporte",
-   "titulo": "Liga 2 2026: horarios y lo que necesitan Mannucci, San Martín, Unión Comercio y ADA Jaén para llegar a la final",
-   "resumen": "La Liga 2 2026 entra en su etapa decisiva. Este domingo 22 de noviembre se conocerán a los finalistas del campeonato, luego…",
-   "fuente": "Caretas",
-   "url": "https://caretas.pe/deportes/liga-2-2026-horarios-y-lo-que-necesitan-mannucci-san-martin-union-comercio-y-ada-jaen-para-llegar-a-la-final/",
-   "fecha": "2026-11-20T15:52:25Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://caretas.pe/wp-content/uploads/2026/11/Foto-2-9-1159x768.jpeg",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "La Liga 2 definirá este domingo a sus finalistas. Mannucci, ADA Jaén, San Martín y Unión Comercio buscarán el pase al ascenso",
-   "puntos": [
-    "La Liga 2 definirá este domingo a sus finalistas.",
-    "Mannucci, ADA Jaén, San Martín y Unión Comercio buscarán el pase al ascenso",
-    "La Liga 2 2026 entra en su etapa decisiva."
-   ],
-   "datos": [
-    {
-     "v": "0-0",
-     "t": "marcador",
-     "c": "El primer encuentro terminó 0-0 en el estadio Víctor Montoya Segura de Jaén, dejando la clasificación abierta.."
-    },
-    {
-     "v": "1-1",
-     "t": "marcador",
-     "c": "En la ida, disputada en la Villa Deportiva de Santa Anita, ambos equipos empataron 1-1."
-    },
-    {
-     "v": "22 de noviembre",
-     "t": "fecha",
-     "c": "Este domingo 22 de noviembre se conocerán a los finalistas del campeonato , luego de…"
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://caretas.pe/deportes/liga-2-2026-horarios-y-lo-que-necesitan-mannucci-san-martin-union-comercio-y-ada-jaen-para-llegar-a-la-final/"
   },
   {
    "id": "e0b2312015",
@@ -6154,69 +6095,6 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
-   "id": "809b65b157",
-   "sector": "mundo",
-   "titulo": "La cumbre Xi-Trump-Putin en Shenzhen deja más dudas que acuerdos",
-   "resumen": "La reunión de Shenzhen entre Xi, Trump y Putin avivó las comparaciones con la Conferencia de Yalta. La cita no aportó soluciones para los conflictos actuales ni cambios en el sistema internacional.",
-   "fuente": "DW Español",
-   "url": "https://www.dw.com/es/la-cumbre-xi-trump-putin-en-shenzhen-deja-más-dudas-que-acuerdos/a-80004824?maca=spa-rss-sp-all-1122-xml-mrss",
-   "fecha": "2026-11-20T15:06:00Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://static.dw.com/image/79991876_6.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "url_medio": "https://www.dw.com/es/la-cumbre-xi-trump-putin-en-shenzhen-deja-m%C3%A1s-dudas-que-acuerdos/a-80004824",
-   "sintesis": "La reunión de Shenzhen entre Xi, Trump y Putin avivó las comparaciones con la Conferencia de Yalta. La cita no aportó soluciones para los conflictos actuales ni cambios en el sistema internacional.",
-   "puntos": [
-    "La reunión de Shenzhen entre Xi, Trump y Putin avivó las comparaciones con la Conferencia de Yalta.",
-    "La cita no aportó soluciones para los conflictos actuales ni cambios en el sistema internacional.",
-    "Esta reunión terminó con una Declaración de Paz , en la que se resumieron los puntos de acuerdo entre los tres presidentes para el futuro desarrollo de la política global, en la que no se hacía ninguna mención a los demás miembros de la comunidad internacional."
-   ],
-   "datos": [
-    {
-     "v": "11 de febrero de 1945",
-     "t": "fecha",
-     "c": "…como la Conferencia de Crimea), que tuvo lugar del 4 al 11 de febrero de 1945 en la ciudad de Yalta, en la península de Crimea .."
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "0868389835",
-   "sector": "investigacion",
-   "titulo": "SBS sobre allanamiento de Fiscalía: “Se ha abierto una investigación contra dos funcionarios; seguiremos brindando información”",
-   "resumen": "Carlos Cueva, superintendente adjunto de Regulación Jurídica de la SBS, se refirió al operativo de allanamiento y descerraje en las sede de la Superintendencia de Banca, Seguros y AFP, como parte de una investigación contra la presunta organización criminal denominada “Los…",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/economia/peru/sbs-sobre-allanamiento-de-fiscalia-se-ha-abierto-una-investigacion-contra-dos-funcionarios-seguiremos-brindando-informacion-l-apuesplan-l-ultimas-noticia/",
-   "fecha": "2026-11-20T14:58:05Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/ZZCQD6CBLFGNFLKD6UXCKQFOG4.jpg?auth=dd7c19f927fdda02cf9cfb10e3d7ba718a0372b8cc1d2811e303fe0600b3dac4&smart=true&width=1200&height=802",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "Carlos Cueva, superintendente adjunto de Regulación Jurídica de la SBS, se refirió al operativo de allanamiento y descerraje en las sede de la Superintendencia de Banca, Seguros y AFP, como parte de una investigación contra la presunta organización criminal denominada “Los Herméticos del Caudal”. De acuerdo con el superintendente adjunto, la SBS ha brindado todo el requerimiento de información que ya hace varios meses pidió la Fiscalía.",
-   "puntos": [
-    "Carlos Cueva, superintendente adjunto de Regulación Jurídica de la SBS, se refirió al operativo de allanamiento y descerraje en las sede de la Superintendencia de Banca, Seguros y AFP, como parte de una investigación contra la presunta organización criminal denominada “Los Herméticos del Caudal”.",
-    "De acuerdo con el superintendente adjunto, la SBS ha brindado todo el requerimiento de información que ya hace varios meses pidió la Fiscalía.",
-    "“ De hecho, ahora estamos entregando toda la información que nos están solicitando en el marco de un espíritu de colaboración como siempre ocurre con la Superintendencia ”, explicó."
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://elcomercio.pe/economia/peru/sbs-sobre-allanamiento-de-fiscalia-se-ha-abierto-una-investigacion-contra-dos-funcionarios-seguiremos-brindando-informacion-l-apuesplan-l-ultimas-noticia/"
-  },
-  {
    "id": "e6096d0bd0",
    "sector": "ia",
    "titulo": "Las acciones tecnológicas caen, incluido Anthropic",
@@ -6236,7 +6114,7 @@ window.NOTICIAS = {
    "ambito": "pendiente",
    "procedencia": "directa",
    "url_medio": "https://global.morningstar.com/es/mercados/las-acciones-tecnolgicas-caen-incluido-anthropic",
-   "imagen_intentos": 4,
+   "imagen_intentos": 5,
    "acceso": "sin_verificar"
   },
   {
@@ -6275,6 +6153,30 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
+   "id": "3d4833ce14",
+   "sector": "politica",
+   "titulo": "BERMEJO SEGUIRÁ EN PRISIÓN HASTA EL 2040 | JNE CONFIRMA QUE LÓPEZ ALIAGA NO ASUMIRÁ COMO ALCALDE",
+   "resumen": "",
+   "fuente": "Expreso",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPVjFZcjdnaUt1RTd6ckdQbFFvTm1Uak1OLWFYRS1kVnJVUHJjQnRIZENvc0l0NS1tbm9qS0g1U3Ntcy03UmhDWXEzWFZHYWlhbU9wX2twYUVIWXctVU9kT1NPdHYyOW9XMHotSHFITFB6aU5MamFiYnZLRmk1cWxOc2lOWWg3eEtfSFVBWkl6ei1mU1FDcmtWNzRteDdZMlBpakNsZ0FMQjhRQjRhU2dfVG1vbi1JQzdGT053RjFtSWRLSGRpS3BXOE5nd3o2Mi1RamlNdmxGUEkwRkRKV0Ew?oc=5",
+   "fecha": "2026-11-20T13:45:47Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "agregador",
+   "via": "Google Noticias",
+   "imagen_intentos": 1,
+   "url_medio": "https://www.expreso.com.pe/expreso-tv/%F0%9F%94%B4-bermejo-seguira-en-prision-hasta-el-2040-jne-confirma-que-lopez-aliaga-no-asumira-como-alcalde/",
+   "acceso": "sin_verificar"
+  },
+  {
    "id": "2ea1f90984",
    "sector": "tecnologia",
    "titulo": "Perú inauguró en Shenzhen centro de innovación para conectar productos nacionales",
@@ -6306,61 +6208,6 @@ window.NOTICIAS = {
    ],
    "acceso": "sin_verificar",
    "url_medio": "https://andina.pe/agencia/noticia-peru-inauguro-shenzhen-centro-innovacion-para-conectar-productos-nacionales-1100790.aspx"
-  },
-  {
-   "id": "3792c2d92e",
-   "sector": "economia",
-   "titulo": "Precio del cobre se encamina a su peor semana en una década por ola de ventas en los mercados y dudas sobre la inteligencia artificial",
-   "resumen": "El precio del cobre se desplomó este viernes 20 de septiembre hasta su nivel más bajo desde marzo, tras una semana de agitación en los mercados provocada por la creciente preocupación sobre la demanda mundial.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/economia/mercados/precio-del-cobre-se-encamina-a-su-peor-semana-en-una-decada-por-ola-de-ventas-en-los-mercados-y-dudas-sobre-la-inteligencia-artificial-l-ultimas-noticia/",
-   "fecha": "2026-11-20T13:37:36Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/GA3SROYOEVGZLIT4RKCFTJEZ4M.jpg?auth=f6bfc0814d41e09c6ba93b52b5907ca85573785ed010cbf8d2450ace3da01fe5&smart=true&width=1200&height=800",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "contexto_internacional_resumen"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "El precio del cobre se desplomó este viernes 20 de septiembre hasta su nivel más bajo desde marzo, tras una semana de agitación en los mercados provocada por la creciente preocupación sobre la demanda mundial. Los contratos de futuros a tres meses en la Bolsa de Metales de Londres se desplomaron más de un 3% . lo que sitúa al cobre en camino de registrar una de sus peores semanas en la última década.",
-   "puntos": [
-    "El precio del cobre se desplomó este viernes 20 de septiembre hasta su nivel más bajo desde marzo, tras una semana de agitación en los mercados provocada por la creciente preocupación sobre la demanda mundial.",
-    "Los contratos de futuros a tres meses en la Bolsa de Metales de Londres se desplomaron más de un 3% . lo que sitúa al cobre en camino de registrar una de sus peores semanas en la última década.",
-    "La ola de ventas tiene numerosos factores impulsores, siendo el más acuciante la creciente duda sobre la sostenibilidad del gasto en inteligencia artificial y el papel del metal en su implantación."
-   ],
-   "datos": [
-    {
-     "v": "US$15.000",
-     "t": "monto",
-     "c": "…disparó hasta alcanzar un máximo histórico cercano a los US$15.000 por tonelada en septiembre, cuando los inversores alcistas…"
-    },
-    {
-     "v": "US$12.212,3",
-     "t": "monto",
-     "c": "…de Shanghái, el cobre cotizaba con una caída del 2,5%, a US$12.212,3 la tonelada, encaminándose hacia un descenso semanal de…"
-    },
-    {
-     "v": "US$12.000",
-     "t": "monto",
-     "c": "Ahora los precios amenazan con caer por debajo de los US$12.000 ya que el nerviosismo sobre las expectativas de…"
-    },
-    {
-     "v": "3%",
-     "t": "porcentaje",
-     "c": "…en la Bolsa de Metales de Londres se desplomaron más de un 3% . lo que sitúa al cobre en camino de registrar una de sus…"
-    },
-    {
-     "v": "2,5%",
-     "t": "porcentaje",
-     "c": "…a.m. hora de Shanghái, el cobre cotizaba con una caída del 2,5%, a US$12.212,3 la tonelada, encaminándose hacia un…"
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://elcomercio.pe/economia/mercados/precio-del-cobre-se-encamina-a-su-peor-semana-en-una-decada-por-ola-de-ventas-en-los-mercados-y-dudas-sobre-la-inteligencia-artificial-l-ultimas-noticia/"
   },
   {
    "id": "6e57cfded7",
@@ -6401,30 +6248,6 @@ window.NOTICIAS = {
     }
    ],
    "acceso": "abierto"
-  },
-  {
-   "id": "42bb3b9218",
-   "sector": "investigacion",
-   "titulo": "Funcionarios de SBS y Sucamec habrían favorecido a Hermes y Prosegur: todo sobre el caso 'Los Herméticos del Caudal'",
-   "resumen": "",
-   "fuente": "Expreso",
-   "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNQjZuZDZGTjVFM2tlRV9PRkNWQjZvM2NHS3ZaOVFyS0cxS3VubXNjSy1zbGNxQXBmdlFxT3ZrZXdpa1BDeXQ5Ql9Ka0pQQ1hFb2hzM2d3Vkp6YkpmVHpUS2lEZjJTbWhFVnVKdGhxUHk2U0E5STZHMC05RVZxdW10SnZTT2JGamhpcDRURGM2WGlDN2hEZldoeVFVSHRUc0p5UENRNWRiN0RpaF82X2laN1hBaGsxZlpFbWFVSmdkT2xHRE5rZUQyc01nSEw3Y1pWV25MV2NVSU4tVUxHZWhQUlpKRVNDQ1ZCdndMUjJ6WXRGSS1leTYwYW93eE9hUVN0bHItazJDbXd1a2h3bkdfYlFsZEg?oc=5",
-   "fecha": "2026-11-20T13:08:11Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "agregador",
-   "via": "Google Noticias",
-   "imagen_intentos": 1,
-   "url_medio": "https://www.expreso.com.pe/judicial/funcionarios-de-sbs-y-sucamec-habrian-favorecido-a-hermes-y-prosegur-todo-sobre-el-caso-los-hermeticos-del-caudal-pnp-fiscalia-asepri-noticia/1333477/",
-   "acceso": "sin_verificar"
   },
   {
    "id": "7856e390e7",
@@ -6472,6 +6295,41 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
+   "id": "656c354d7c",
+   "sector": "mundo",
+   "titulo": "COP31: Sin mención a los combustibles fósiles, no habrá acuerdo, aseguran varios países",
+   "resumen": "Los países definieron seis prioridades que deseaban ver reflejadas en el acuerdo: la necesidad de una transición, decidir con la ciencia en la mano, obligar a pagar a quienes contaminan, electrificar los países con base en las energías limpias, reducir las emisiones de metano y…",
+   "fuente": "ONU Noticias",
+   "url": "https://news.un.org/feed/view/es/story/2026/11/1542196",
+   "fecha": "2026-11-20T12:00:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/55662349225_208649f008_k.jpg/image560x340cropped.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Los países definieron seis prioridades que deseaban ver reflejadas en el acuerdo: la necesidad de una transición, decidir con la ciencia en la mano, obligar a pagar a quienes contaminan, electrificar los países con base en las energías limpias, reducir las emisiones de metano y fortalecer la cooperación internacional. Mientras la sociedad civil habla de “vergüenza”.",
+   "puntos": [
+    "Los países definieron seis prioridades que deseaban ver reflejadas en el acuerdo: la necesidad de una transición, decidir con la ciencia en la mano, obligar a pagar a quienes contaminan, electrificar los países con base en las energías limpias, reducir las emisiones de metano y fortalecer la cooperación internacional.",
+    "Mientras la sociedad civil habla de “vergüenza”.",
+    "Un grupo de países de Europa, África, América Latina y el Pacífico ha cuestionado el acuerdo propuesto para la COP31, exigiendo medidas explícitas sobre los combustibles fósiles y una financiación climática más sólida."
+   ],
+   "datos": [
+    {
+     "v": "1,5 °C",
+     "t": "temperatura",
+     "c": "“No podemos decirle al mundo que estamos alcanzando los 1,5 °C [de calentamiento] y, al mismo tiempo, seguir actuando…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://news.un.org/es/story/2026/11/1542196"
+  },
+  {
    "id": "d71b8aa013",
    "sector": "politica",
    "titulo": "Carlos Bruce sobre decisión del JNE que impide reelección encubierta de López Aliaga: “Afectó los resultados”",
@@ -6508,16 +6366,16 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
-   "id": "e742d8333e",
+   "id": "0586699588",
    "sector": "politica",
    "titulo": "Rafael López Aliaga no podrá asumir como alcalde de Lima: JNE rechaza pedido de reconsideración de Renovación Popular",
    "resumen": "",
    "fuente": "La República",
-   "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNMi05V3hsZkJDQTN6bndGbWhsVW5PRGVDb284cmp3WTFITXFkMHpSNTFpcGoxeUV6VGg1aFMxYzZ6dVRsdlljWk5LdFRxdC1hRFZqUUgyWERDWHJVV1BxSlVuWFZibl93RU50bGxfUTlwSWlnMnJkQ29YaWkwSzBRaGQ1TjRpV2l1Y3Bfck5MWnlNZmZLRFFaMk8wWTdLMXlIYU10MWtzOGhGSEdYY1lBZVZ0ZkQwNW0wejFvZGZEdmxsaDlxX01GNkJvVHUySVhud0tMa040Y3ZUa1JIdlpWMnhFQ3JMMTE3aTF4em12aUxSS1ZNcThZNFNTT3NLV2RlSERF0gGIAkFVX3lxTFBDd21CZzVobnJmUk9jMThXd2psZ1I0bTVpQkVWbG1wY1dwRU40OHc1NWZBZWlrMUJEQnR2VnE2RF9lRjU3TUgyWE5YbzZtSklJcktkRXlWM3lkdlg2Mjd3VGlSbEM5aGhWZnE1T19CaTRObFgycmo2TEh5a0lZa3h5RjB1SWN2MFlDVnhMMHZaTEY3Ny1yeGt1Q2ZIT3M5cC1XRTBPaTZiUWwyVDVMOWJnakpFQ1dLYkFHcmg4VnQxY0hQVzVqemNzcl94cU1tbTlfMzZDcldjdjFyZEdmNUZZdC1lWkl0c3E3QzNFVUxSa2d3aW9USHhKWF9NUDlYSUpGMW9YUG9RSA?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNMi05V3hsZkJDQTN6bndGbWhsVW5PRGVDb284cmp3WTFITXFkMHpSNTFpcGoxeUV6VGg1aFMxYzZ6dVRsdlljWk5LdFRxdC1hRFZqUUgyWERDWHJVV1BxSlVuWFZibl93RU50bGxfUTlwSWlnMnJkQ29YaWkwSzBRaGQ1TjRpV2l1Y3Bfck5MWnlNZmZLRFFaMk8wWTdLMXlIYU10MWtzOGhGSEdYY1lBZVZ0ZkQwNW0wejFvZGZEdmxsaDlxX01GNkJvVHUySVhud0tMa040Y3ZUa1JIdlpWMnhFQ3JMMTE3aTF4em12aUxSS1ZNcThZNFNTT3NLV2RlSERF?oc=5",
    "fecha": "2026-11-20T11:46:07Z",
    "tipo": "comercial",
    "genero": "noticia",
-   "imagen": null,
+   "imagen": "https://imgmedia.larepublica.pe/1200x735/larepublica/original/2026/11/19/6af487541e47858cd401df33.jpg",
    "geografia": {
     "version": 1,
     "ambito": "peru",
@@ -6527,9 +6385,26 @@ window.NOTICIAS = {
    "ambito": "peru",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 1,
    "url_medio": "https://larepublica.pe/politica/2026/11/19/rafael-lopez-aliaga-no-podra-asumir-como-alcalde-de-lima-jne-rechaza-pedido-de-reconsideracion-de-renovacion-popular-hnews-1265552",
-   "acceso": "sin_verificar"
+   "sintesis": "El Pleno del JNE fue tajante: las decisiones emitidas por el ente electoral son definitivas y no están sujetas a revisión. De esta manera, Jeanette Alonzo será la segunda regidora hábil que asumirá las riendas de la Municipalidad de Lima.",
+   "puntos": [
+    "El Pleno del JNE fue tajante: las decisiones emitidas por el ente electoral son definitivas y no están sujetas a revisión.",
+    "De esta manera, Jeanette Alonzo será la segunda regidora hábil que asumirá las riendas de la Municipalidad de Lima.",
+    "Como se recuerda, el pasado 10 de noviembre, el partido solicitó a la autoridad electoral reconsiderar el tercer punto de la Resolución n.º 4557-2026-JNE."
+   ],
+   "datos": [
+    {
+     "v": "10 de noviembre",
+     "t": "fecha",
+     "c": "Como se recuerda, el pasado 10 de noviembre, el partido solicitó a la autoridad electoral reconsiderar…"
+    },
+    {
+     "v": "4 de octubre",
+     "t": "fecha",
+     "c": "…a que hizo pública su postura luego de las elecciones del 4 de octubre."
+    }
+   ],
+   "acceso": "abierto"
   },
   {
    "id": "935f6843ce",
@@ -6608,8 +6483,8 @@ window.NOTICIAS = {
    "ambito": "pendiente",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 1,
    "url_medio": "https://www.expreso.com.pe/politica/denuncian-boicot-contra-el-ministro-guillermo-shinno-para-extender-el-reinfo-noticia/1333464/",
+   "imagen_intentos": 2,
    "acceso": "sin_verificar"
   },
   {
@@ -6641,51 +6516,6 @@ window.NOTICIAS = {
    "url_medio": "https://gestion.pe/tu-dinero/finanzas-personales/pagos-digitales-que-puede-aprender-peru-del-modelo-chino-para-facilitar-transacciones-noticia/"
   },
   {
-   "id": "f17d6231a5",
-   "sector": "economia",
-   "titulo": "Precio del dólar Perú y tipo de cambio hoy 20 de noviembre del 2026",
-   "resumen": "En Perú, el tipo de cambio para hoy viernes 20 de noviembre es de S/3.46 según el Banco Central de Reserva Del Perú.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/economia/economia/precio-del-dolar-peru-y-tipo-de-cambio-hoy-20-de-noviembre-del-2026-noticia-1718731",
-   "fecha": "2026-11-20T11:05:39Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2025/08/25/423342_1784718.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://rpp.pe/economia/economia/precio-del-dolar-peru-y-tipo-de-cambio-hoy-20-de-noviembre-del-2026-noticia-1718731",
-   "sintesis": "En Perú, el tipo de cambio para hoy viernes 20 de noviembre es de S/3.46 según el Banco Central de Reserva Del Perú. Al cierre de hoy, viernes 20 de noviembre, el precio del dólar marcó 3.46, es decir, muestra un avance del 0.20 % frente al sol peruano en comparación con la última cotización del Banco Central de Reserva del Perú (BCR).",
-   "puntos": [
-    "En Perú, el tipo de cambio para hoy viernes 20 de noviembre es de S/3.46 según el Banco Central de Reserva Del Perú.",
-    "Al cierre de hoy, viernes 20 de noviembre, el precio del dólar marcó 3.46, es decir, muestra un avance del 0.20 % frente al sol peruano en comparación con la última cotización del Banco Central de Reserva del Perú (BCR).",
-    "Ello representa una ganancia porcentual en los mercados financieros, lo cual implica que el dólar está más caro."
-   ],
-   "datos": [
-    {
-     "v": "S/3.46",
-     "t": "monto",
-     "c": "En Perú, el tipo de cambio para hoy viernes 20 de noviembre es de S/3.46 según el Banco Central de Reserva Del Perú.."
-    },
-    {
-     "v": "0.20 %",
-     "t": "porcentaje",
-     "c": "…del dólar marcó 3.46, es decir, muestra un avance del 0.20 % frente al sol peruano en comparación con la última…"
-    },
-    {
-     "v": "20 de noviembre",
-     "t": "fecha",
-     "c": "Precio del dólar Perú y tipo de cambio hoy 20 de noviembre del 2026."
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
    "id": "13281c7e95",
    "sector": "politica",
    "titulo": "“Hay que aprovechar este nuevo escenario”, afirma diputado Félix Chang",
@@ -6705,8 +6535,8 @@ window.NOTICIAS = {
    "ambito": "pendiente",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 1,
    "url_medio": "https://www.expreso.com.pe/politica/hay-que-aprovechar-este-nuevo-escenario-afirma-diputado-felix-chang-peru-china-estados-unidos-noticia/1333458/",
+   "imagen_intentos": 2,
    "acceso": "sin_verificar"
   },
   {
@@ -7217,7 +7047,7 @@ window.NOTICIAS = {
    "procedencia": "agregador",
    "via": "Google Noticias",
    "url_medio": "https://www.expreso.com.pe/en-portada/peru-codiciado-china-y-ee-uu-ponen-la-mirada-en-nuestro-pais-mientras-cumbre-apec-abre-oportunidades-comerciales-y-millonarias-inversiones-noticia/1333442/",
-   "imagen_intentos": 2,
+   "imagen_intentos": 3,
    "acceso": "sin_verificar"
   },
   {
@@ -7420,6 +7250,41 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
+   "id": "4008859d4f",
+   "sector": "politica",
+   "titulo": "GOBERNAR DESDE EL SUR: DESAFÍOS Y HOJA DE RUTA PARA LA MACROREGIÓN SUR ANDINO-AMAZÓNICA",
+   "resumen": "Ese reclamo de dignidad y respeto al voto popular se trasladó a las urnas en las recientes elecciones regionales y municipales. El electorado del Macro Sur apostó mayoritariamente por fuerzas políticas de oposición al gobiern",
+   "fuente": "La Mula",
+   "url": "https://redaccion.lamula.pe/2026/11/19/gobernar-desde-el-sur-desafios-y-hoja-de-ruta-para-la-macroregion-sur-andino-amazonica-s/redaccionmulera/",
+   "fecha": "2026-11-20T04:41:44Z",
+   "tipo": "independiente",
+   "genero": "noticia",
+   "imagen": "https://lamula.pe/media/uploads/t/667a38aa9e9e56687001e649cdbb19f9.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "Ese reclamo de dignidad y respeto al voto popular se trasladó a las urnas en las recientes elecciones regionales y municipales. El electorado del Macro Sur apostó mayoritariamente por fuerzas políticas de oposición al gobierno central, otorgando el mandato de gestión para los próximos cuatro años a organizaciones como Ahora Nación, ASI-Juntos por el Perú y Venceremos en 4 gobiernos regionales, 15 municipalidades provinciales y 112 municipalidades distritales.",
+   "puntos": [
+    "Ese reclamo de dignidad y respeto al voto popular se trasladó a las urnas en las recientes elecciones regionales y municipales.",
+    "El electorado del Macro Sur apostó mayoritariamente por fuerzas políticas de oposición al gobierno central, otorgando el mandato de gestión para los próximos cuatro años a organizaciones como Ahora Nación, ASI-Juntos por el Perú y Venceremos en 4 gobiernos regionales, 15 municipalidades provinciales y 112 municipalidades distritales.",
+    "Entre diciembre de 2022 y febrero de 2023, las poblaciones de Cusco, Puno, Apurímac y Madre de Dios alzaron su voz con firmeza frente a un Estado centralista que históricamente las ha tratado como ciudadanía de segunda clase."
+   ],
+   "datos": [
+    {
+     "v": "70 %",
+     "t": "porcentaje",
+     "c": "Hoy enfrentamos problemas urgentes: más del 70 % de la población sobrevive en la informalidad ante un…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://redaccion.lamula.pe/2026/11/19/gobernar-desde-el-sur-desafios-y-hoja-de-ruta-para-la-macroregion-sur-andino-amazonica-s/redaccionmulera/"
+  },
+  {
    "id": "e47942e2ed",
    "sector": "mundo",
    "titulo": "Me llamo Antígona González y busco a 130.000 hermanos",
@@ -7550,6 +7415,46 @@ window.NOTICIAS = {
      "v": "21 años",
      "t": "cantidad",
      "c": "Por ejemplo, Erick Santos , de 21 años, garantiza “tres citas por semana en menos de tres meses”."
+    }
+   ],
+   "acceso": "abierto"
+  },
+  {
+   "id": "c91a5f6229",
+   "sector": "politica",
+   "titulo": "Diputados presentan moción para citar al canciller por organización y fallas en visita del papa León XIV",
+   "resumen": "",
+   "fuente": "La República",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPQW9zZU5kaDJRVGJtRmc0d0pyRjBPMjM3V25jR2JvaFMzTkZrdkhRSkpVNklwanZmVWcxbDZUc3VSSC1raXd6b1NBSGRQd2JiX2g2eEFRUUhYNjJxN0MxbE0wWHBSU1NHYXlVZkVjWXRHNzI5TVYzN2xCaVlZOXRVMVV6VHZmODhkSUVZdDVXRVQ5UnJDaWxzeTVEUW5OaDZhR2l4bXBpTnNDZHpvVXE1RUtqZEhJa25ocHJZLXV4X09zLXhMM09NbFBYZzNONnFkblVLai1wM1NUZzY2WHA5ZmxBZ1VxbktWQUdLTEI0OEk5ZzTSAfgBQVVfeXFMT3B6S0pHdExyRVNIWWFFQjB1d2VvdlBpZjA5Vl95SlQzM0Jaa0ZJNEV6VW1VdlBjOVZpdC1UbGRkQW5rRFlnMXVuN2kyZGExNk9YRmZxajE0REJqS0tKaWtxTGJ3RnRsVW1pVVVZZ0VVVkxLclUyLXdibkE0MGVjSy1CNWF4UnN0WDltdW1TNUk3RTc0YkVjTjVXRXpkQXhmc3c3cjhMTk5BMjFNRWt1dFVNdE0xdHNqVVpiWXFOdmhZZVRNTElBblcxZFlIVzNlTHlXZjY4RUctbVFSdy1lQTFYMjIxYXdTSFRvMmljUkxfVG0tZUxGR0w?oc=5",
+   "fecha": "2026-11-20T04:22:06Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://imgmedia.larepublica.pe/1200x735/larepublica/original/2026/11/19/6affc942439e1cb7a2007db0.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "agregador",
+   "via": "Google Noticias",
+   "url_medio": "https://larepublica.pe/politica/2026/11/19/diputados-presentan-mocion-para-citar-al-canciller-por-organizacion-y-fallas-en-visita-del-papa-leon-xiv-hnews-1000996",
+   "sintesis": "La iniciativa, firmada por parlamentarios de Renovación Popular, Buen Gobierno, Juntos por el Perú y Obras, exige detallar el presupuesto ejecutado durante la visita del pontífice y esclarecer las fallas técnicas ocurridas en la misa de despedida del pasado 16 de noviembre. Resumen Escuchar Compartir Diputados de diversas bancadas impulsaron una moción para que el ministro de Relaciones Exteriores acuda al pleno a informar sobre la organización, los gastos y las fallas técnicas ocurridas durante la visita del papa León XIV .",
+   "puntos": [
+    "La iniciativa, firmada por parlamentarios de Renovación Popular, Buen Gobierno, Juntos por el Perú y Obras, exige detallar el presupuesto ejecutado durante la visita del pontífice y esclarecer las fallas técnicas ocurridas en la misa de despedida del pasado 16 de noviembre.",
+    "Resumen Escuchar Compartir Diputados de diversas bancadas impulsaron una moción para que el ministro de Relaciones Exteriores acuda al pleno a informar sobre la organización, los gastos y las fallas técnicas ocurridas durante la visita del papa León XIV ."
+   ],
+   "datos": [
+    {
+     "v": "16 de noviembre",
+     "t": "fecha",
+     "c": "…técnicas ocurridas en la misa de despedida del pasado 16 de noviembre.."
+    },
+    {
+     "v": "19 de noviembre",
+     "t": "fecha",
+     "c": "El documento, fechado este 19 de noviembre, lleva las firmas de legisladores de Renovación Popular…"
     }
    ],
    "acceso": "abierto"
@@ -7696,42 +7601,6 @@ window.NOTICIAS = {
      "v": "4 de noviembre",
      "t": "fecha",
      "c": "El pasado 4 de noviembre, en una entrevista con este medio , el infectólogo Juan…"
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "e6fbeabf1e",
-   "sector": "nino",
-   "titulo": "Gobierno declara en emergencia el abastecimiento de combustibles en Perú por riesgo de El Niño: ¿qué implica la medida?",
-   "resumen": "",
-   "fuente": "La República",
-   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOdFNwc2E3QnJwQ2NGQlUtbDhCRnpMdThQTlktdGdqZ1g3SVJwdzVJUGhOMXVqc3YzcTFBWFpCTVEyclc4dzZWd3F4OTBvbjJVNnY3MXJVOG1WcHcxbVhGU0RtbU9jd2F6ZGlvd09sNjJMTDA5blZQdDktcG4tNlU1bGpSekxQQXBIQld6M0xlUzZ0VHBWZTh1TEQ4NGxESGhUcTZLWlJoNnJsYWc3VEtQUnZoTmNPclpCWTFRQUhSN2VEb1RaVUk4cC1MZUhZZ0txNDl3a1Y0U3lOT3ZoWHNSN1VZQVAyXzA1Ykw2WUpzYTJhaG1vU1HSAfsBQVVfeXFMUHVlcjRFX3JpYWR1WFdqNjEzZzFqMU9JNklFbEN4UzkyYjNTc2dQNTZHOTViVG4xQXNKazA2aERiYzhtQTNYSUkwMnZBTUNHeEZlVWJ2RzhMNTlmSHZ1YXhqVXJ1LXVoX0ZRR0l3RXBHZ0VOOEZHWDFSVnVYdXplRmVncW44UDBDWmJMNVoxb0JzZ1h3dkQ4eWpBOXpjUkRGT3picG4xM204akRpMHhpdm16TWktNTlKa3lnejM4OWFaWjc3Q1hrZl9HN1RpM2p1YTFPTDlGVFJFY05MME8tNGNFLVA3ZEo3ZHAzc0VfaXJyaF9KQzlxTGJpSjA?oc=5",
-   "fecha": "2026-11-20T01:34:41Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://imgmedia.larepublica.pe/1200x735/larepublica/original/2026/11/18/6afdd419d3f1e107840d1a96.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "agregador",
-   "via": "Google Noticias",
-   "url_medio": "https://larepublica.pe/economia/2026/11/18/el-nino-amenaza-el-suministro-de-combustibles-en-peru-minem-declara-en-emergencia-toda-la-cadena-de-hidrocarburos-847026",
-   "sintesis": "El impacto podría extenderse al transporte de pasajeros y mercancías, la actividad industrial y los servicios públicos, además de presionar los costos logísticos y la inflación. La medida busca evitar que las lluvias intensas, inundaciones, huaicos y deslizamientos interrumpan el traslado de combustibles entre regiones, con consecuencias para el transporte, la industria y los hogares.",
-   "puntos": [
-    "El impacto podría extenderse al transporte de pasajeros y mercancías, la actividad industrial y los servicios públicos, además de presionar los costos logísticos y la inflación.",
-    "La medida busca evitar que las lluvias intensas, inundaciones, huaicos y deslizamientos interrumpan el traslado de combustibles entre regiones, con consecuencias para el transporte, la industria y los hogares.",
-    "La decisión fue oficializada por el Ministerio de Energía y Minas (Minem) mediante una resolución ministerial."
-   ],
-   "datos": [
-    {
-     "v": "S/1.405 millones",
-     "t": "monto",
-     "c": "Puedes ver Congreso ratifica presupuesto de S/1.405 millones para sus dos cámaras en 2027."
     }
    ],
    "acceso": "abierto"
@@ -7966,6 +7835,42 @@ window.NOTICIAS = {
    ],
    "acceso": "abierto",
    "url_medio": "https://www.infobae.com/peru/2026/11/20/dni-digital-genera-dudas-reniec-defiende-el-codigo-qr-y-promete-control-de-datos-personales/"
+  },
+  {
+   "id": "d925686bb5",
+   "sector": "politica",
+   "titulo": "Galarreta evita responder por críticas de Espá a China: “No voy a opinar lo que dijo un ministro en enero”",
+   "resumen": "",
+   "fuente": "La República",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxONzVod3d2QmJ0aWtXeXJpYm15bDFpaWJDZFlwSWpoeS00WTMwY0lBQ2VOUnZLd25RUDZoTzNLVlh3TlJtWnFiQmVNOTZKcXpad2VabXc3TWhuY0Q5ODUtTUFKeUJSbTI1dWdkakEzR01xbjZYeFFGRmhUZEt5allIcU1uTUJ4VkxKRE92WUR0R01kajZQQkdQalJhWjRXaFlyVzRzckFFNl8zVUNaVXp6VVNnX21lVG5nQk5BOC1raE91VkJiZS1BX184VWpDSFA4Yk1jSXN0VmZlRWxkS0I1cmt5T1M0RENIVjBKMXFaRnFMUdIB9wFBVV95cUxQT28wNk9CbDhjR2hySHlTU0N5Y095WGdlZ2plWndVVlFkckh3RzdOaW5sazJ2eGJRaUJwQzJfNUtHa3ZSX0hzSmNCeDEzRDg4RTVtN0duRjQxM1NrbV9LdGt5cGRMSWlReUJ1Wm9DR0NVMjZXRjZCZHRDUjA4R3owNnZCTkt3ZGtjcFQ1bEdrTld6Z09QM2V1S1NEQjFBN2JIWTcwSGRscEJaeEJWZU1JY3YwcDVXU1NkZDdWR0pTRy1INS1YdHVha1Zqc0ZUdmlrSkhzZ1NFWmRhZkd5dFpYSktKemo3V0hvTnNYVm85cTJRbjhRc3Jn?oc=5",
+   "fecha": "2026-11-20T00:00:11Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://imgmedia.larepublica.pe/1200x735/larepublica/original/2026/11/19/6aefb291c952737485031eb4.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "agregador",
+   "via": "Google Noticias",
+   "url_medio": "https://larepublica.pe/politica/2026/11/19/galarreta-evita-responder-por-criticas-de-espa-a-china-no-voy-a-opinar-lo-que-dijo-un-ministro-en-enero-hnews-1808211",
+   "sintesis": "El canciller Carlos Espá dijo en enero que las empresas chinas contribuyen a la corrupción en el Perú. Por su parte, Galarreta evitó responder si Espá seguirá en el cargo y habló de su propia condecoración de Taiwán.",
+   "puntos": [
+    "El canciller Carlos Espá dijo en enero que las empresas chinas contribuyen a la corrupción en el Perú.",
+    "Por su parte, Galarreta evitó responder si Espá seguirá en el cargo y habló de su propia condecoración de Taiwán.",
+    "\"No voy a opinar lo que dijo un ministro en enero o hace 10 años, si era antifujimorista o fujimorista\", manifestó."
+   ],
+   "datos": [
+    {
+     "v": "10 años",
+     "t": "cantidad",
+     "c": "\"No voy a opinar lo que dijo un ministro en enero o hace 10 años, si era antifujimorista o fujimorista\", manifestó.."
+    }
+   ],
+   "acceso": "abierto"
   },
   {
    "id": "2e7c879e6d",
@@ -8232,7 +8137,7 @@ window.NOTICIAS = {
    "procedencia": "agregador",
    "via": "Google Noticias",
    "url_medio": "https://www.expreso.com.pe/actualidad/calor-y-deshidratacion-essalud-explica-como-pueden-afectar-tu-desempeno-en-el-trabajo-y-los-estudios-hospital-nacional-alberto-sabogal-sologuren-maria-salazar-noticia/1333385/",
-   "imagen_intentos": 2,
+   "imagen_intentos": 3,
    "acceso": "sin_verificar"
   },
   {
@@ -8264,39 +8169,35 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
-   "id": "38817a188f",
-   "sector": "mundo",
-   "titulo": "Cómo una mujer fue drogada por su marido y violada por desconocidos durante 13 años en Reino Unido",
-   "resumen": "Cuatro hombres han sido declarados culpables en Reino Unido de abusar de una mujer después de que su marido la drogara.",
-   "fuente": "BBC Mundo",
-   "url": "https://www.bbc.com/mundo/articles/c6pw4ddp2glpo?at_medium=RSS&at_campaign=rss",
-   "fecha": "2026-11-19T21:38:59Z",
-   "tipo": "internacional",
+   "id": "0108e30705",
+   "sector": "politica",
+   "titulo": "Congreso: sobrino de Jorge Nieto cobra más de S/8,000 en despacho de Óscar Reto",
+   "resumen": "",
+   "fuente": "Expreso",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQYTRPUFBHaVBndXFUcWNGT1pJem82UDA1dEVZY2hlX01MNnoxdFpJMTNScU9zNE8ydGtMN2NsamVQc1poODZRMU1QVE96R2h6TUNiN3pMWkFxOTFCTTNwbW5OS1luMk5sQ0I0ME5aWkVBZk1IN3h1UXVBQ0x1SzJqRlpaVHhpZGt6bHRpNTloUXd4U1B2U3NJdWJWUE1RV1JoQ0VUbUg4VGVyVkprZlctdTQ1T20yQW4tbTRUQ0E1aFlBLUZYT3ExWW5R?oc=5",
+   "fecha": "2026-11-19T21:10:29Z",
+   "tipo": "comercial",
    "genero": "noticia",
-   "imagen": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/e2e3/live/742cad20-e469-11f1-8d7b-99dd39142fe0.png",
+   "imagen": null,
    "geografia": {
     "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
    },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "url_medio": "https://www.bbc.com/mundo/articles/c6pw4ddp2glpo",
-   "sintesis": "Cuatro hombres han sido declarados culpables en Reino Unido de abusar de una mujer después de que su marido la drogara. Cuando Joanne Young despertó atada a su cama, no tenía ni idea del horror que se había pasado mientras estaba inconsciente.",
-   "puntos": [
-    "Cuatro hombres han sido declarados culpables en Reino Unido de abusar de una mujer después de que su marido la drogara.",
-    "Cuando Joanne Young despertó atada a su cama, no tenía ni idea del horror que se había pasado mientras estaba inconsciente.",
-    "Tras oír a su entonces marido, Philip Young, pedir que alguien más \"se agachara\", rápidamente se dio cuenta de que había otra persona en el dormitorio con ellos."
-   ],
+   "ambito": "pendiente",
+   "procedencia": "agregador",
+   "via": "Google Noticias",
+   "imagen_intentos": 1,
+   "url_medio": "https://www.expreso.com.pe/politica/congreso-sobrino-de-jorge-nieto-cobra-mas-de-s-8000-en-despacho-de-oscar-reto-noticia/1333365/",
    "datos": [
     {
-     "v": "13 años",
-     "t": "cantidad",
-     "c": "Cómo una mujer fue drogada por su marido y violada por desconocidos durante 13 años."
+     "v": "S/8,000",
+     "t": "monto",
+     "c": "Congreso: sobrino de Jorge Nieto cobra más de S/8,000 en despacho de Óscar Reto."
     }
    ],
-   "acceso": "abierto"
+   "acceso": "sin_verificar"
   },
   {
    "id": "6fa249e8f8",
@@ -8628,7 +8529,7 @@ window.NOTICIAS = {
    "ambito": "mundo",
    "procedencia": "directa",
    "url_medio": "https://www.nytimes.com/es/2026/11/19/espanol/estados-unidos/esquema-ponzi-estafa-millones.html",
-   "imagen_intentos": 5,
+   "imagen_intentos": 6,
    "datos": [
     {
      "v": "600 millones de dólares",
@@ -9062,16 +8963,116 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
-   "id": "f134fe4f94",
+   "id": "5393293b1e",
    "sector": "mundo",
-   "titulo": "Carrera para replantar cinco baobabs sudafricanos después de que se bloqueara su exportación",
-   "resumen": "Los árboles, destinados a un comprador anónimo en Georgia, fueron supuestamente desenterrados sin los permisos necesarios. Los ambientalistas de Sudáfrica se están apresurando a replantar cinco baobabs centenarios después de que un exportador desenterrara los árboles de 20 toneladas, que intentaron enviarles miles de...",
-   "fuente": "The Guardian",
-   "url": "https://www.theguardian.com/environment/2026/nov/19/baobab-five-trees-south-africa-dug-up-export-blocked-georgia-aoe",
-   "fecha": "2026-11-19T11:03:24Z",
+   "titulo": "No se necesita aprobación del gobierno para formar una asociación",
+   "resumen": "Ante la reducción del espacio público por parte de los Gobiernos, un Comité de la ONU emite un observación general sobre el Pacto Internacional de Derechos Civiles y Políticos: la libertad de asociación, reconocida en las leyes internacionales, permite a las personas unirse de…",
+   "fuente": "ONU Noticias",
+   "url": "https://news.un.org/feed/view/es/story/2026/11/1542195",
+   "fecha": "2026-11-19T12:00:00Z",
    "tipo": "internacional",
    "genero": "noticia",
-   "imagen": "https://i.guim.co.uk/img/media/048c1619883c277fcef86d2ceda7a59071397137/0_191_1360_1088/master/1360.jpg?width=140&quality=85&auto=format&fit=max&s=beca2d51f3567cbad90b41ec6f97d5a4",
+   "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/23-07-2025-UN-Photo-ICJ-advisory-opinion-03.jpg/image560x340cropped.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Ante la reducción del espacio público por parte de los Gobiernos, un Comité de la ONU emite un observación general sobre el Pacto Internacional de Derechos Civiles y Políticos: la libertad de asociación, reconocida en las leyes internacionales, permite a las personas unirse de forma voluntaria, también en el trabajo, para perseguir objetivos comunes. Las personas no necesitan el permiso de su gobierno para formar o unirse a una asociación, afirmó este jueves el Comité de Derechos Humanos de la ONU al emitir una nueva orientación mientras el espacio cívico se reduce en todo el mundo.",
+   "puntos": [
+    "Ante la reducción del espacio público por parte de los Gobiernos, un Comité de la ONU emite un observación general sobre el Pacto Internacional de Derechos Civiles y Políticos: la libertad de asociación, reconocida en las leyes internacionales, permite a las personas unirse de forma voluntaria, también en el trabajo, para perseguir objetivos comunes.",
+    "Las personas no necesitan el permiso de su gobierno para formar o unirse a una asociación, afirmó este jueves el Comité de Derechos Humanos de la ONU al emitir una nueva orientación mientras el espacio cívico se reduce en todo el mundo."
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://news.un.org/es/story/2026/11/1542195"
+  },
+  {
+   "id": "01d1bdb0b2",
+   "sector": "mundo",
+   "titulo": "COP31: Los combustibles fósiles quedan fuera del borrador del acuerdo",
+   "resumen": "La decisión preocupa a los activistas presentes en la Conferencia y exigen un plan significativo que proteja a todo el mundo. Actualmente, el borrador sí respalda la meta de Turquía de aumentar al 35% la proporción de electricidad en el consumo final de energía mundial para…",
+   "fuente": "ONU Noticias",
+   "url": "https://news.un.org/feed/view/es/story/2026/11/1542194",
+   "fecha": "2026-11-19T12:00:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/19-11-2026_COP31.jpg/image560x340cropped.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "La decisión preocupa a los activistas presentes en la Conferencia y exigen un plan significativo que proteja a todo el mundo. Actualmente, el borrador sí respalda la meta de Turquía de aumentar al 35% la proporción de electricidad en el consumo final de energía mundial para 2035 a la vez que reafirma el objetivo de triplicar los fondos para 2035, aunque todavía no expone la forma de conseguir ese aumento.",
+   "puntos": [
+    "La decisión preocupa a los activistas presentes en la Conferencia y exigen un plan significativo que proteja a todo el mundo.",
+    "Actualmente, el borrador sí respalda la meta de Turquía de aumentar al 35% la proporción de electricidad en el consumo final de energía mundial para 2035 a la vez que reafirma el objetivo de triplicar los fondos para 2035, aunque todavía no expone la forma de conseguir ese aumento.",
+    "Bajo un cielo gris en Antalya, activistas climáticos sostenían carteles frente a las puertas de la sede de la COP31."
+   ],
+   "datos": [
+    {
+     "v": "35%",
+     "t": "porcentaje",
+     "c": "…el borrador sí respalda la meta de Turquía de aumentar al 35% la proporción de electricidad en el consumo final de…"
+    },
+    {
+     "v": "1.5 °C",
+     "t": "temperatura",
+     "c": "“Ambición” odia superar el límite de temperatura de 1.5 °C, le encanta una transición alejada de los combustibles…"
+    },
+    {
+     "v": "10 días",
+     "t": "cantidad",
+     "c": "…exigencia se ha oído por toda la sede durante los últimos 10 días: los gobiernos deben ponerse de acuerdo sobre cómo…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://news.un.org/es/story/2026/11/1542194"
+  },
+  {
+   "id": "d3c1f921b1",
+   "sector": "mundo",
+   "titulo": "Myanmar, COP31 y El Niño en Guatemala… las noticias del jueves",
+   "resumen": "La Corte Internacional de Justicia declara a Myanmar responsable de genocidio contra los rohinyá. En la COP31 desaparece del borrador final la salida de los combustibles fósiles. El Niño deja a más de tres millones de guatemaltecos en riesgo de hambre.",
+   "fuente": "ONU Noticias",
+   "url": "https://news.un.org/feed/view/es/story/2026/11/1542193",
+   "fecha": "2026-11-19T12:00:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/19-11-2026_ICJ_Myanmar.jpg/image560x340cropped.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "La Corte Internacional de Justicia declara a Myanmar responsable de genocidio contra los rohinyá. En la COP31 desaparece del borrador final la salida de los combustibles fósiles.",
+   "puntos": [
+    "La Corte Internacional de Justicia declara a Myanmar responsable de genocidio contra los rohinyá.",
+    "En la COP31 desaparece del borrador final la salida de los combustibles fósiles.",
+    "El Niño deja a más de tres millones de guatemaltecos en riesgo de hambre."
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://news.un.org/es/story/2026/11/1542193"
+  },
+  {
+   "id": "f9b20fca20",
+   "sector": "mundo",
+   "titulo": "La Corte Internacional de Justicia declara a Myanmar culpable de genocidio contra los rohinyás",
+   "resumen": "La Corte Internacional de Justicia, el principal órgano judicial de la ONU, dictó este jueves su sentencia en el caso “Gambia contra Myanmar” sobre la aplicación de la Convención sobre el Genocidio, en la que declara a Myanmar responsable del crimen cometido contra la etnia…",
+   "fuente": "ONU Noticias",
+   "url": "https://news.un.org/feed/view/es/story/2026/11/1542191",
+   "fecha": "2026-11-19T12:00:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/15-01-2026-ICJ-Gambia-Myanmar-01.jpg/image560x340cropped.jpg",
    "geografia": {
     "version": 1,
     "ambito": "mundo",
@@ -9080,73 +9081,13 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "titulo_original": "Race to replant five South African baobabs after export blocked",
-   "traducido": true,
-   "sintesis": "The trees, intended for an unnamed buyer in Georgia, were reportedly dug up without the necessary permits Environmentalists in South Africa are racing to replant five centuries-old baobabs after the 20-tonne trees were dug up by an exporter, who tried to ship them thousands of miles to Georgia.",
+   "sintesis": "La Corte Internacional de Justicia, el principal órgano judicial de la ONU, dictó este jueves su sentencia en el caso “Gambia contra Myanmar” sobre la aplicación de la Convención sobre el Genocidio, en la que declara a Myanmar responsable del crimen cometido contra la etnia rohinyá del país, lo que supone la primera sentencia de este tipo contra un Estado. Al término de una sesión de tres horas en la Corte Internacional de Justicia ( CIJ ) de La Haya, el presidente Yuji Iwasawa, de Japón, declaró además que Myanmar no había logrado prevenir ni castigar el genocidio, tras detallar cómo el ejército de Myanmar había perpetrado “violencia extrema” contra las comunidades rohinyá, en su mayoría musulmanas, en el estado de Rakáin.",
    "puntos": [
-    "The trees, intended for an unnamed buyer in Georgia, were reportedly dug up without the necessary permits",
-    "Environmentalists in South Africa are racing to replant five centuries-old baobabs after the 20-tonne trees were dug up by an exporter, who tried to ship them thousands of miles to Georgia.",
-    "The baobabs arrived at a reserve in Timbavati, in north-eastern South Africa , on Wednesday, where they will be replanted and supported by cables to help them recover."
+    "La Corte Internacional de Justicia, el principal órgano judicial de la ONU, dictó este jueves su sentencia en el caso “Gambia contra Myanmar” sobre la aplicación de la Convención sobre el Genocidio, en la que declara a Myanmar responsable del crimen cometido contra la etnia rohinyá del país, lo que supone la primera sentencia de este tipo contra un Estado.",
+    "Al término de una sesión de tres horas en la Corte Internacional de Justicia ( CIJ ) de La Haya, el presidente Yuji Iwasawa, de Japón, declaró además que Myanmar no había logrado prevenir ni castigar el genocidio, tras detallar cómo el ejército de Myanmar había perpetrado “violencia extrema” contra las comunidades rohinyá, en su mayoría musulmanas, en el estado de Rakáin."
    ],
    "acceso": "abierto",
-   "url_medio": "https://www.theguardian.com/environment/2026/nov/19/baobab-five-trees-south-africa-dug-up-export-blocked-georgia-aoe"
-  },
-  {
-   "id": "ec331620b9",
-   "sector": "mundo",
-   "titulo": "Los primeros 100 días de Abelardo de la Espriella - The New York Times",
-   "resumen": "Los primeros 100 días de Abelardo de la Espriella The New York Times",
-   "fuente": "The New York Times en Español",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOaURreEtQSjltOEZoWHMySEl2VkN1T1NVYUVBU2N1SGtKMkVzY3UxOXJmdXNjQUtCaGhYc3I3c09FV3ZLQVBoX3A2NFZ2YmV5ckg0cV93VUtobjlLQXI1Y2V6T0FvWXdKNlBuaUJreVBzbkFvSkJoY2Rsb3IwWmhVQWlrbkwtRlRNQXJxeXU0T3RGYmFPQkdaUEZIYWluMjJCSjBsWA?oc=5",
-   "fecha": "2026-11-19T10:05:06Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "imagen_intentos": 1,
-   "url_medio": "https://www.nytimes.com/es/2026/11/19/espanol/america-latina/100-dias-de-abelardo-de-la-espriella.html",
-   "sintesis": "Los primeros 100 días de Abelardo de la Espriella The New York Times",
-   "puntos": [
-    "Los primeros 100 días de Abelardo de la Espriella The New York Times"
-   ],
-   "datos": [
-    {
-     "v": "100 días",
-     "t": "cantidad",
-     "c": "Los primeros 100 días de Abelardo de la Espriella - The New York Times."
-    }
-   ],
-   "acceso": "sin_verificar"
-  },
-  {
-   "id": "af9f38ceff",
-   "sector": "mundo",
-   "titulo": "¿Sirve de algo manifestar? - The New York Times",
-   "resumen": "¿Sirve de algo manifestar? The New York Times",
-   "fuente": "The New York Times en Español",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPWXRaUm1ocTBwS2lpX0gyMUVzcW1IY1g3ZEhkR1NXM3k0YWNaR3FZWXNnamhDdWZ3clRGdm54N3UzakdMQkRjV1NESGdhcEYyMjlfNnFfaHpFWHRGVVV1TXNaNm5EdjVheWFkMmY3RXl0NWpraGFLTmdZa1hrTDRNcQ?oc=5",
-   "fecha": "2026-11-19T10:03:36Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "imagen_intentos": 1,
-   "url_medio": "https://www.nytimes.com/es/2026/11/19/espanol/manifestar-como-funciona.html",
-   "acceso": "sin_verificar"
+   "url_medio": "https://news.un.org/es/story/2026/11/1542191"
   },
   {
    "id": "7c460765fc",
@@ -9168,34 +9109,7 @@ window.NOTICIAS = {
    "ambito": "pendiente",
    "procedencia": "directa",
    "url_medio": "https://es.marketscreener.com/noticias/openai-y-otras-empresas-de-inteligencia-artificial-afrontan-una-investigaci-n-penal-en-arizona-por-a-ce785eddd08cf321",
-   "imagen_intentos": 4,
-   "acceso": "sin_verificar"
-  },
-  {
-   "id": "37a632bcfc",
-   "sector": "mundo",
-   "titulo": "From nytimes.com - The New York Times - The New York Times",
-   "resumen": "From nytimes.com - The New York Times The New York Times",
-   "fuente": "The New York Times en Español",
-   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOMGlwRjFWUTJqdFgwNUhRbmVCYjBKa0E1M0ZhRVBPbmp4RHdjNnNES04wWjJacFIxOGVRWEI4NXZKR29ZR2xqOEp1REswUlZBajV6ak1HNi1IeHVjdEFJMmZiaVlmY09mR295THFHUW9xR3BWQ2hLTTNMSXpuTmpvVVF2azhhY2wxaWY4UEJBSkg2T3NfekJoUnpaRkNqQm01eVQtMTNkYTNTbHpyYmI1VVFHa25nY0FBQ2IzektTaFlDZHNEcXQ2Tms0WmNuU0dqbXlxaXpCTHYzVUp6aXFHX3dJM2ZqTlVwdllKTzdDbGxCNzZmWFE?oc=5",
-   "fecha": "2026-11-19T08:00:00Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "imagen_intentos": 1,
-   "url_medio": "https://www.nytimes.com/es/2026/11/19/espanol/america-latina/100-dias-de-abelardo-de-la-espriella.html?unlocked_article_code=1.R1E.lav0.-SgPqVzCdlDe&smid=url-share",
-   "sintesis": "From nytimes.com - The New York Times The New York Times",
-   "puntos": [
-    "From nytimes.com - The New York Times The New York Times"
-   ],
+   "imagen_intentos": 5,
    "acceso": "sin_verificar"
   },
   {
@@ -9274,48 +9188,6 @@ window.NOTICIAS = {
     "Revisa qué celulares son compatibles, cómo activar el documento y por qué su aceptación todavía requiere una implementación progresiva."
    ],
    "acceso": "restringido"
-  },
-  {
-   "id": "0f144ace96",
-   "sector": "mundo",
-   "titulo": "Una de cada cuatro mujeres en el mundo no puede negarse a tener relaciones sexuales dentro del matrimonio, según la ONU",
-   "resumen": "Casi la mitad de las mujeres en África occidental y central no pueden negar su consentimiento, y las niñas son las más afectadas, según el UNFPA. Según un informe de la ONU, una de cada cuatro mujeres en todo el mundo no tiene poder para dar su consentimiento si su marido o pareja exige relaciones sexuales. En África occidental y central, casi la mitad...",
-   "fuente": "The Guardian",
-   "url": "https://www.theguardian.com/global-development/2026/nov/19/women-girls-rights-rape-sexual-violence-africa-marriage-unfpa",
-   "fecha": "2026-11-19T04:00:16Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://i.guim.co.uk/img/media/91c39e6279d80734110ea1274bb82ba750178aca/464_0_4640_3712/master/4640.jpg?width=140&quality=85&auto=format&fit=max&s=e6d08589972906e0a23904745fa60bc8",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "titulo_original": "One in four women globally unable to refuse sex within marriage, says UN",
-   "traducido": true,
-   "sintesis": "Almost half of women in west and central Africa cannot withhold consent, with girls worst affected, UNFPA finds One in four women around the world have no power of consent if their husband or partner demands sex, according to a UN report.",
-   "puntos": [
-    "Almost half of women in west and central Africa cannot withhold consent, with girls worst affected, UNFPA finds",
-    "One in four women around the world have no power of consent if their husband or partner demands sex, according to a UN report.",
-    "In west and central Africa, almost half of women (45%) are not able to say no in their own marriage, while a third of women (33%) in east and southern Africa and in Arab states face the same predicament."
-   ],
-   "datos": [
-    {
-     "v": "45%",
-     "t": "porcentaje",
-     "c": "In west and central Africa, almost half of women (45%) are not able to say no in their own marriage, while a…"
-    },
-    {
-     "v": "33%",
-     "t": "porcentaje",
-     "c": "…to say no in their own marriage, while a third of women (33%) in east and southern Africa and in Arab states face the…"
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://www.theguardian.com/global-development/2026/nov/19/women-girls-rights-rape-sexual-violence-africa-marriage-unfpa"
   },
   {
    "id": "4e617aecdd",
@@ -9614,7 +9486,7 @@ window.NOTICIAS = {
    "procedencia": "agregador",
    "via": "Google Noticias",
    "url_medio": "https://larepublica.pe/economia/2026/11/18/elmer-cuba-40-de-la-inversion-publica-de-la-ultima-decada-esta-paralizada-hnews-978858",
-   "imagen_intentos": 2,
+   "imagen_intentos": 3,
    "datos": [
     {
      "v": "40%",
@@ -10011,6 +9883,35 @@ window.NOTICIAS = {
      "t": "monto",
      "c": "…Argentinos (AySA) al mercado internacional por US$500 millones y financió parte de un préstamo para que Trenes Argentinos…"
     }
+   ],
+   "acceso": "abierto"
+  },
+  {
+   "id": "85d94f2f95",
+   "sector": "politica",
+   "titulo": "Renovación Popular denuncia al presidente del JNE y segunda regidora anuncia que recibirá credenciales",
+   "resumen": "",
+   "fuente": "Convoca",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRFBxWDBKU3ladWxkbGdPdTRMeE5kbG03SVczVWJxeXdtODgyY244dFAyNTk4LUNHQ01KT0ZFXzVsMHFDQnlKOG9HYTNzcWlQTmYweGNlUHd1UUtYQVZnNE1uRGYtam1jbi10Y3ZqbnhjeVY5T1pzTlpYaGFWN1l3WV85UzF1cjVGdFZWSXg3X1lDb3NSaWVxLXBQQTEwY29MMzJ6THBobEhYUW1OMXlPbkNuTQ?oc=5",
+   "fecha": "2026-11-18T03:51:01Z",
+   "tipo": "independiente",
+   "genero": "noticia",
+   "imagen": "https://convoca.pe/sites/default/files/2026-11/L%C3%B3pez%20Aliaga%20y%20futura%20alcaldesa%20electa.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "agregador",
+   "via": "Google Noticias",
+   "url_medio": "https://convoca.pe/agenda-propia/renovacion-popular-denuncia-al-presidente-del-jne-y-segunda-regidora-anuncia-que",
+   "sintesis": "Renovación Popular presenta una denuncia constitucional contra el presidente del Jurado Nacional de Elecciones, Roberto Burneo, por la resolución que se determina no entregar credenciales a alcalde a los candidatos que postularon a primer regidor y que fueron burgomaestres en la gestión inmediata anterior. Miengtra que Jeanette Alonzo, segunda regidora electa de ese partido y persona de confianza de Rafael López Aliaga, anunció que aceptará las credenciales a la Municipalidad de Lima.",
+   "puntos": [
+    "Renovación Popular presenta una denuncia constitucional contra el presidente del Jurado Nacional de Elecciones, Roberto Burneo, por la resolución que se determina no entregar credenciales a alcalde a los candidatos que postularon a primer regidor y que fueron burgomaestres en la gestión inmediata anterior.",
+    "Miengtra que Jeanette Alonzo, segunda regidora electa de ese partido y persona de confianza de Rafael López Aliaga, anunció que aceptará las credenciales a la Municipalidad de Lima.",
+    "Como se recuerda, la semana pasada el JNE dictó una resolución señalando que no se entregará las credenciales para alcalde a quienes hayan postulado como primer regidor habiendo ejercido el cargo de burgomaestre en el período inmediato anterior ."
    ],
    "acceso": "abierto"
   },
@@ -10491,6 +10392,30 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
+   "id": "93e31600c3",
+   "sector": "investigacion",
+   "titulo": "Derechos Humanos",
+   "resumen": "",
+   "fuente": "Convoca",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1Ta05XNFJqTVVaMENOaU5ZSEVhaEZ1UVhmb2NGVjZPY3ZhV3ByZGpoMHdXUVVUckxYbzBTUGQtaVoteHBrSm5TdUJkSkhRV0xLWWxmQ1BrdXd2MG5Y?oc=5",
+   "fecha": "2026-11-16T23:19:38Z",
+   "tipo": "independiente",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "agregador",
+   "via": "Google Noticias",
+   "imagen_intentos": 1,
+   "url_medio": "https://convoca.pe/tags/derechos-humanos",
+   "acceso": "sin_verificar"
+  },
+  {
    "id": "3cd64b9c52",
    "sector": "investigacion",
    "titulo": "El Papa denuncia explotación, crímenes y abusos sexuales contra los pueblos indígenas",
@@ -10755,6 +10680,29 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
+   "id": "2b0c2332c8",
+   "sector": "politica",
+   "titulo": "Injerencia descarada en elecciones de Brasil",
+   "resumen": "",
+   "fuente": "Hildebrandt en sus trece",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5wQXZHQjFEX3dYM1pibU9TM29NeWtIbW83cEZXV181d1U0ZVVSeVRLcjJrQ0dHdzY4UkhQNHpYYUNOWUpsd0xleW1zMkJuMk9GRFNTdkpoc3k2cDBYX2tmcDZQNmdMYzhGNmZV?oc=5",
+   "fecha": "2026-11-15T13:56:40Z",
+   "tipo": "independiente",
+   "genero": "noticia",
+   "imagen": "https://www.hildebrandtensustrece.com/storage/archivo/r8paVfx4WLpDMS7BYW5E32WGWqEAF0W1f6FAfPT7.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "agregador",
+   "via": "Google Noticias",
+   "url_medio": "https://www.hildebrandtensustrece.com/opinion/articulo/2769",
+   "acceso": "sin_verificar"
+  },
+  {
    "id": "df572cb58b",
    "sector": "nino",
    "titulo": "El Niño costero extraordinario se queda hasta 2027: las consecuencias que anticipa el Enfen y lo que viene",
@@ -10789,29 +10737,6 @@ window.NOTICIAS = {
     }
    ],
    "acceso": "abierto"
-  },
-  {
-   "id": "33cfdc0bd5",
-   "sector": "investigacion",
-   "titulo": "Los detalles del memorándum de entendimiento entre Perú y EE.UU. sobre infraestructura nuclear",
-   "resumen": "",
-   "fuente": "OjoPúblico",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNVHdiaVV0OGlfTHVsaFg1U3MtazhFM29fMXNlN1VnYVJ3OGd3NVFINjVaZE1fN0JZaENZeTlpWGsxWng3WkdGNWJBTjcwaUp2eF9Id3g4emVvZGUyN2xETTFsbTBSemFWQnZCRWM2TVJ4SFMyXzJQUDVRcmR3UjN0TGdyclZlOFJOWVQ1Zk9WNEtLbVVEM2dySWxlQQ?oc=5",
-   "fecha": "2026-11-15T06:30:07Z",
-   "tipo": "independiente",
-   "genero": "noticia",
-   "imagen": "https://ojo-publico.com/sites/default/files/2026-11/Memorando%201_USA%20embajada.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "agregador",
-   "via": "Google Noticias",
-   "url_medio": "https://ojo-publico.com/6586/los-detalles-del-memorandum-entre-peru-y-eeuu-para-energia-nuclear",
-   "acceso": "restringido"
   },
   {
    "id": "8747c9fd2b",
@@ -11477,9 +11402,9 @@ window.NOTICIAS = {
    "enlace": "https://news.bgov.com/bloomberg-government-news/ai-regulation-chip-exports-data-centers-form-2026-tech-fights"
   },
   "deporte": {
-   "url": "https://www.infobae.com/resizer/v2/W6XQTQ5TXRAFRCAAPQUSMH2EOE.png?auth=a6d1474aa5efde4b988e04e13a9177f91f5a8ce0e815d138b9ce80329746b2df&smart=true&width=1024&height=512&quality=85",
-   "fuente": "Infobae",
-   "enlace": "https://www.infobae.com/peru/deportes/2026/08/15/tabla-de-posiciones-liga-1-peru-2026-en-vivo-hoy-partidos-fecha-5-torneo-clausura-acumulada-alianza-lima-universitario-sporting-cristal-melgar-cienciano-sport-boys/"
+   "url": "https://imgmedia.larepublica.pe/1200x735/larepublica/original/2026/10/08/6ac7c909f6daf0dda50fdcf4.jpg",
+   "fuente": "La República",
+   "enlace": "https://larepublica.pe/deportes/2026/10/08/tabla-de-posiciones-torneo-clausura-y-acumulado-de-la-liga-1-2026-683392"
   },
   "investigacion": {
    "url": "https://cpj.org/wp-content/uploads/2021/11/000_14M7IR.jpg?resize=1200,814&strip=all&quality=80",
@@ -12149,26 +12074,10 @@ window.NOTICIAS = {
   "fecha": "2026-11-13",
   "url": "https://enfen.imarpe.gob.pe/download/comunicado-oficial-enfen-n-20-2026/?wpdmdl=2218",
   "alerta": "Alerta de El Niño Costero",
-  "comprobado": "2026-11-21T00:50:57Z",
+  "comprobado": "2026-11-21T02:13:16Z",
   "ok": true
  },
  "registro": [
-  {
-   "t": "2026-11-18T02:27:14Z",
-   "fuentes_ok": 27,
-   "fuentes": 27,
-   "nuevas": 342,
-   "notas": 322,
-   "descartes": {},
-   "agregador": [
-    "OjoPúblico",
-    "Convoca",
-    "Hildebrandt en sus trece",
-    "La República",
-    "Expreso"
-   ],
-   "sin_datos": []
-  },
   {
    "t": "2026-11-18T04:22:33Z",
    "fuentes_ok": 27,
@@ -12651,6 +12560,24 @@ window.NOTICIAS = {
    ],
    "sin_datos": [
     "ONU Noticias"
+   ]
+  },
+  {
+   "t": "2026-11-21T02:11:35Z",
+   "fuentes_ok": 27,
+   "fuentes": 28,
+   "nuevas": 368,
+   "notas": 322,
+   "descartes": {},
+   "agregador": [
+    "OjoPúblico",
+    "Convoca",
+    "Hildebrandt en sus trece",
+    "La República",
+    "Expreso"
+   ],
+   "sin_datos": [
+    "El Búho"
    ]
   }
  ]
