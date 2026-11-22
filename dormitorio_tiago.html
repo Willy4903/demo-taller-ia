@@ -69,7 +69,10 @@ body {
   font-family: var(--font-body);
   font-size: 15px;
   line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
+button { touch-action: manipulation; }
 .wrap {
   max-width: 1200px;
   margin: 0 auto;
@@ -94,10 +97,9 @@ h1 {
   gap: 24px;
   align-items: start;
 }
-@media (max-width: 880px) { .app { grid-template-columns: minmax(0, 1fr); } }
 
 .plan-panel { display: grid; gap: 12px; min-width: 0; }
-@media (min-width: 881px) { .plan-panel { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); } }
+.plan-panel { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); }
 
 .layout-bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
 .layout-bar .lbl { font-size: 13px; color: var(--muted); margin-right: 2px; }
@@ -124,7 +126,13 @@ button:focus-visible, input:focus-visible, .furn:focus-visible { outline: 2px so
   background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
   padding: 10px; display: grid; gap: 8px;
 }
-.plan svg { width: 100%; height: auto; display: block; user-select: none; -webkit-user-select: none; }
+.plan svg { width: 100%; height: auto; display: block; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; -webkit-tap-highlight-color: transparent; }
+.mini { display: none; align-items: center; gap: 8px; padding: 2px 4px 2px; font-size: 13px; line-height: 1.3; min-width: 0; }
+.mini .pill { flex: none; font-size: 11px; padding: 5px 8px; }
+.mini span:last-child { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.plan-notes { display: grid; gap: 6px; }
+.hint-touch { display: none; }
+@media (pointer: coarse) { .hint-touch { display: block; } .hint-mouse { display: none; } }
 .legend {
   display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 12px; color: var(--muted);
   padding: 0 6px 4px;
@@ -156,7 +164,7 @@ button:focus-visible, input:focus-visible, .furn:focus-visible { outline: 2px so
 .metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
 .metric { display: grid; gap: 2px; border-top: 1px solid var(--line); padding-top: 8px; }
 .metric .k { font-size: 12px; color: var(--muted); }
-.metric .v { font: 500 20px/1.2 var(--font-mono); font-variant-numeric: tabular-nums; }
+.metric .v { font: 500 20px/1.2 var(--font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .metric .v small { font-size: 12px; color: var(--muted); font-weight: 400; }
 .checks { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
 .checks li { display: grid; grid-template-columns: 10px 1fr; gap: 10px; align-items: baseline; font-size: 14px; }
@@ -238,10 +246,45 @@ button:focus-visible, input:focus-visible, .furn:focus-visible { outline: 2px so
 .f-name, .f-dim { paint-order: stroke; stroke: var(--f); stroke-width: 3px; }
 
 footer { margin-top: 28px; font-size: 12px; color: var(--muted); max-width: 75ch; }
-@media (max-width: 520px) {
-  .metrics { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+/* Teléfono en vertical: el plano queda fijo arriba mientras se ajustan las medidas */
+@media (max-width: 599px), (max-width: 880px) and (orientation: portrait) {
+  body::before {
+    content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+    z-index: 10; background: var(--paper);
+  }
+  .wrap { padding-block: 16px 32px; }
+  header { margin-bottom: 14px; }
+  .lede { font-size: 14px; }
+  .app { display: flex; flex-direction: column; gap: 12px; }
+  .plan-panel { display: contents; }
+  .layout-bar { order: 1; }
+  .plan {
+    order: 2; position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+    padding: 6px; gap: 4px; border-radius: 0 0 12px 12px;
+    box-shadow: 0 8px 18px -12px rgba(0, 0, 0, .45);
+  }
+  .plan svg { max-height: 46vh; max-height: 46svh; }
+  .mini { display: flex; }
+  .plan-notes { order: 3; }
+  .flash { order: 4; }
+  .flash:empty { display: none; }
+  .side { order: 5; }
+  .f-name { font-size: 16px; }
+  .f-dim { font-size: 12.5px; }
+  .zone-text { font-size: 13.5px; }
+  .tag-text { font-size: 12px; }
+  .dim-text { font-size: 13px; }
+  .seg button, .btn { padding: 11px 12px; font-size: 14px; }
+  .presets button { padding: 10px 12px; font-size: 13px; }
+  .slider input { height: 32px; }
+  .metrics { gap: 8px; }
   .metric .v { font-size: 17px; }
-  .seg button { padding: 9px 10px; }
+  .summary, .card { padding: 14px; }
+}
+/* Teléfono en horizontal: dos columnas, plano limitado a la altura visible */
+@media (orientation: landscape) and (max-height: 500px) {
+  .plan svg { max-height: calc(100vh - 110px); max-height: calc(100svh - 110px); }
+  .plan-notes { display: none; }
 }
 @media (prefers-reduced-motion: no-preference) {
   .card { transition: border-color .15s, box-shadow .15s; }
@@ -275,13 +318,17 @@ footer { margin-top: 28px; font-size: 12px; color: var(--muted); max-width: 75ch
           <g id="static"></g>
           <g id="dyn"></g>
         </svg>
+        <div class="mini" aria-hidden="true"><span class="pill" id="miniPill"></span><span id="miniText"></span></div>
+      </div>
+      <div class="plan-notes">
         <div class="legend">
           <span><i class="sw ok"></i>Paso suficiente</span>
           <span><i class="sw warn"></i>Paso justo</span>
           <span><i class="sw bad"></i>Paso bloqueado</span>
           <span><i class="sw door"></i>Giro de la puerta</span>
         </div>
-        <p class="hint">Cuadrícula de 50 cm. Arrastra un mueble o selecciónalo y usa las flechas (Mayús para pasos de 25 cm) y la tecla R para girarlo.</p>
+        <p class="hint hint-mouse">Cuadrícula de 50 cm. Arrastra un mueble o selecciónalo y usa las flechas (Mayús para pasos de 25 cm) y la tecla R para girarlo.</p>
+        <p class="hint hint-touch">Cuadrícula de 50 cm. Toca un mueble para seleccionarlo y arrástralo con el dedo. El plano queda fijo arriba mientras ajustas las medidas.</p>
       </div>
       <p class="flash" id="flash" aria-live="polite"></p>
     </section>
@@ -709,6 +756,10 @@ footer { margin-top: 28px; font-size: 12px; color: var(--muted); max-width: 75ch
     document.getElementById('mFree').innerHTML = `${fmt(Math.max(0, 16 - occ))} <small>m²</small>`;
     document.getElementById('mPct').innerHTML = `${Math.round(occ / 16 * 100)} <small>%</small>`;
     const rank = { bad: 0, warn: 1, ok: 2 };
+    const miniPill = document.getElementById('miniPill');
+    miniPill.className = pill.className; miniPill.textContent = pill.textContent;
+    const first = ev.checks.find(c => c.level === 'bad') || ev.checks.find(c => c.level === 'warn');
+    document.getElementById('miniText').textContent = first ? first.text : verdict.textContent;
     document.getElementById('checks').innerHTML = ev.checks.slice()
       .sort((a, b) => rank[a.level] - rank[b.level])
       .map(c => `<li class="${c.level}">${c.text}</li>`).join('');
