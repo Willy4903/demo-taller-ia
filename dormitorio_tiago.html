@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Dormitorio de Tiago</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap">
+<style>
+/* Layout: plano de planta a escala (izquierda, fijo) + panel de verificación y medidas (derecha); una columna en móvil */
+:root {
+  --paper: #eceff2;
+  --surface: #f9fafb;
+  --floor: #fdfdfc;
+  --ink: #1c2731;
+  --muted: #5b6873;
+  --line: #cfd7dd;
+  --wall: #2b3640;
+  --grid-minor: #e6eaed;
+  --grid-major: #d3dbe0;
+  --accent: #2c6c9f;
+  --accent-soft: #dce8f2;
+  --bed-fill: #dce6f1;
+  --bed-stroke: #3e6388;
+  --ward-fill: #efe1c9;
+  --ward-stroke: #8a6232;
+  --desk-fill: #d5e9e0;
+  --desk-stroke: #2e7356;
+  --door-fill: rgba(44, 108, 159, 0.07);
+  --ok: #2c8653;
+  --warn: #b97c0c;
+  --bad: #c0402c;
+  --ok-soft: #e1f1e7;
+  --warn-soft: #f8ecd2;
+  --bad-soft: #f8e0dc;
+  --font-display: "Space Grotesk", "IBM Plex Sans", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #12191f; --surface: #19222a; --floor: #161f26; --ink: #e2e8ed; --muted: #93a2ad;
+    --line: #2b3842; --wall: #c3ced6; --grid-minor: #1c262e; --grid-major: #27343e;
+    --accent: #79aee0; --accent-soft: #1f3346;
+    --bed-fill: #233649; --bed-stroke: #8cb2d9; --ward-fill: #3a2f22; --ward-stroke: #d4a666;
+    --desk-fill: #1d382e; --desk-stroke: #77c2a0; --door-fill: rgba(121, 174, 224, 0.08);
+    --ok: #5cc08a; --warn: #e2ae48; --bad: #ee7461;
+    --ok-soft: #173326; --warn-soft: #3a2e14; --bad-soft: #3d1d18;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #12191f; --surface: #19222a; --floor: #161f26; --ink: #e2e8ed; --muted: #93a2ad;
+  --line: #2b3842; --wall: #c3ced6; --grid-minor: #1c262e; --grid-major: #27343e;
+  --accent: #79aee0; --accent-soft: #1f3346;
+  --bed-fill: #233649; --bed-stroke: #8cb2d9; --ward-fill: #3a2f22; --ward-stroke: #d4a666;
+  --desk-fill: #1d382e; --desk-stroke: #77c2a0; --door-fill: rgba(121, 174, 224, 0.08);
+  --ok: #5cc08a; --warn: #e2ae48; --bad: #ee7461;
+  --ok-soft: #173326; --warn-soft: #3a2e14; --bad-soft: #3d1d18;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.5;
+}
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 28px 40px;
+}
+header { display: grid; gap: 6px; margin-bottom: 22px; }
+.eyebrow {
+  font-family: var(--font-mono); font-size: 12px; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--muted);
+}
+h1 {
+  font-family: var(--font-display); font-weight: 600; font-size: clamp(28px, 4.2vw, 40px);
+  line-height: 1.1; margin: 0; text-wrap: balance;
+}
+.lede { margin: 0; color: var(--muted); max-width: 62ch; }
+
+.app {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+@media (max-width: 880px) { .app { grid-template-columns: minmax(0, 1fr); } }
+
+.plan-panel { display: grid; gap: 12px; min-width: 0; }
+@media (min-width: 881px) { .plan-panel { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); } }
+
+.layout-bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.layout-bar .lbl { font-size: 13px; color: var(--muted); margin-right: 2px; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--surface); }
+.seg button {
+  font: 500 13px/1 var(--font-body); color: var(--ink); background: transparent; border: 0;
+  padding: 9px 12px; cursor: pointer; border-right: 1px solid var(--line);
+}
+.seg button:last-child { border-right: 0; }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--surface); }
+.btn {
+  font: 500 13px/1 var(--font-body); color: var(--accent); background: transparent;
+  border: 1px solid var(--accent); border-radius: 8px; padding: 9px 12px; cursor: pointer;
+}
+.btn:hover { background: var(--accent-soft); }
+.btn.ghost { color: var(--muted); border-color: var(--line); }
+.manual-tag {
+  font: 500 12px/1 var(--font-mono); color: var(--warn); background: var(--warn-soft);
+  border-radius: 999px; padding: 6px 10px;
+}
+button:focus-visible, input:focus-visible, .furn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.plan {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  padding: 10px; display: grid; gap: 8px;
+}
+.plan svg { width: 100%; height: auto; display: block; user-select: none; -webkit-user-select: none; }
+.legend {
+  display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 12px; color: var(--muted);
+  padding: 0 6px 4px;
+}
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.sw { width: 14px; height: 10px; border-radius: 2px; border: 1.5px dashed; display: inline-block; }
+.sw.ok { border-color: var(--ok); background: var(--ok-soft); }
+.sw.warn { border-color: var(--warn); background: var(--warn-soft); }
+.sw.bad { border-color: var(--bad); background: var(--bad-soft); }
+.sw.door { border-style: solid; border-color: var(--muted); background: var(--door-fill); border-radius: 0 10px 0 0; }
+.hint { font-size: 12px; color: var(--muted); margin: 0; padding: 0 6px; }
+.flash { font-size: 13px; color: var(--ink); min-height: 1.2em; margin: 0; }
+
+.side { display: grid; gap: 16px; min-width: 0; }
+
+.summary {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  padding: 18px; display: grid; gap: 14px;
+}
+.status { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.pill {
+  font: 600 12px/1 var(--font-mono); letter-spacing: .06em; text-transform: uppercase;
+  padding: 7px 10px; border-radius: 999px;
+}
+.pill.ok { color: var(--ok); background: var(--ok-soft); }
+.pill.warn { color: var(--warn); background: var(--warn-soft); }
+.pill.bad { color: var(--bad); background: var(--bad-soft); }
+.status h2 { font: 600 18px/1.25 var(--font-display); margin: 0; }
+.metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.metric { display: grid; gap: 2px; border-top: 1px solid var(--line); padding-top: 8px; }
+.metric .k { font-size: 12px; color: var(--muted); }
+.metric .v { font: 500 20px/1.2 var(--font-mono); font-variant-numeric: tabular-nums; }
+.metric .v small { font-size: 12px; color: var(--muted); font-weight: 400; }
+.checks { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.checks li { display: grid; grid-template-columns: 10px 1fr; gap: 10px; align-items: baseline; font-size: 14px; }
+.checks li::before { content: ""; width: 9px; height: 9px; border-radius: 50%; transform: translateY(-1px); }
+.checks li.ok::before { background: var(--ok); }
+.checks li.warn::before { background: var(--warn); }
+.checks li.bad::before { background: var(--bad); }
+.checks li.ok { color: var(--muted); }
+
+.cards { display: grid; gap: 12px; }
+.card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  padding: 14px 16px 16px; display: grid; gap: 12px;
+}
+.card.is-selected { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.card-head { display: flex; align-items: center; gap: 10px; }
+.card-head h3 { font: 600 16px/1.2 var(--font-display); margin: 0; flex: 1; display: flex; align-items: center; gap: 8px; }
+.card-head .chip-swatch { width: 14px; height: 14px; border-radius: 3px; border: 1.5px solid; }
+.card-head .size { font: 400 13px/1 var(--font-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.presets { display: flex; flex-wrap: wrap; gap: 6px; }
+.presets button {
+  font: 500 12px/1 var(--font-body); color: var(--ink); background: transparent;
+  border: 1px solid var(--line); border-radius: 999px; padding: 7px 10px; cursor: pointer;
+}
+.presets button small { font-family: var(--font-mono); color: var(--muted); font-size: 11px; margin-left: 4px; }
+.presets button[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); }
+.slider { display: grid; gap: 4px; }
+.slider .row { display: flex; justify-content: space-between; font-size: 13px; color: var(--muted); }
+.slider output { font: 500 13px/1 var(--font-mono); color: var(--ink); font-variant-numeric: tabular-nums; }
+.slider input { width: 100%; accent-color: var(--accent); margin: 0; }
+.card-foot { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
+.gaps { font: 400 12px/1.4 var(--font-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+
+/* SVG */
+.room-floor { fill: var(--floor); }
+.wall { fill: var(--wall); }
+.g-minor { stroke: var(--grid-minor); stroke-width: 1; }
+.g-major { stroke: var(--grid-major); stroke-width: 1; }
+.win-glass { fill: var(--surface); stroke: var(--wall); stroke-width: 1; }
+.win-line { stroke: var(--accent); stroke-width: 1.2; }
+.door-swing { fill: var(--door-fill); stroke: var(--muted); stroke-width: 1; stroke-dasharray: 4 3; }
+.door-leaf { stroke: var(--ink); stroke-width: 2.5; stroke-linecap: round; }
+.dim-line { stroke: var(--muted); stroke-width: 1; }
+.dim-text { fill: var(--muted); font: 500 11px var(--font-mono); }
+.tag-text { fill: var(--muted); font: 500 10px var(--font-body); letter-spacing: .06em; text-transform: uppercase; }
+
+.zone { stroke-width: 1.2; stroke-dasharray: 5 3; }
+.zone.ok { fill: url(#h-ok); stroke: var(--ok); }
+.zone.warn { fill: url(#h-warn); stroke: var(--warn); }
+.zone.bad { fill: url(#h-bad); stroke: var(--bad); }
+.hl-ok { stroke: var(--ok); stroke-width: 1.4; opacity: .45; }
+.hl-warn { stroke: var(--warn); stroke-width: 1.4; opacity: .5; }
+.hl-bad { stroke: var(--bad); stroke-width: 1.4; opacity: .5; }
+.zone-text { font: 600 10px var(--font-mono); paint-order: stroke; stroke: var(--floor); stroke-width: 3px; }
+.zone-text.ok { fill: var(--ok); }
+.zone-text.warn { fill: var(--warn); }
+.zone-text.bad { fill: var(--bad); }
+.chair { fill: var(--surface); stroke: var(--desk-stroke); stroke-width: 1.3; }
+
+.furn { cursor: grab; touch-action: none; outline: none; }
+.furn.dragging { cursor: grabbing; }
+.f-cama { --f: var(--bed-fill); --s: var(--bed-stroke); }
+.f-ropero { --f: var(--ward-fill); --s: var(--ward-stroke); }
+.f-escritorio { --f: var(--desk-fill); --s: var(--desk-stroke); }
+.furn .body { fill: var(--f); stroke: var(--s); stroke-width: 1.6; }
+.furn.is-bad .body { stroke: var(--bad); stroke-width: 3; }
+.furn .head { fill: var(--s); opacity: .85; }
+.furn .pillow { fill: var(--surface); stroke: var(--s); stroke-width: 1.1; }
+.furn .blanket { fill: var(--s); opacity: .13; }
+.furn .fold { stroke: var(--s); stroke-width: 1; opacity: .6; }
+.furn .rod { stroke: var(--s); stroke-width: 1.2; stroke-dasharray: 6 3; }
+.furn .hanger { stroke: var(--s); stroke-width: 1; opacity: .6; }
+.furn .div { stroke: var(--s); stroke-width: 1; opacity: .7; }
+.furn .front { stroke: var(--s); stroke-width: 3; }
+.furn .monitor { fill: var(--s); opacity: .7; }
+.furn .sel { fill: none; stroke: var(--accent); stroke-width: 1.6; stroke-dasharray: 6 4; }
+.f-name { fill: var(--ink); font: 600 12px var(--font-body); pointer-events: none; }
+.f-dim { fill: var(--muted); font: 500 10px var(--font-mono); pointer-events: none; }
+.f-name, .f-dim { paint-order: stroke; stroke: var(--f); stroke-width: 3px; }
+
+footer { margin-top: 28px; font-size: 12px; color: var(--muted); max-width: 75ch; }
+@media (max-width: 520px) {
+  .metrics { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .metric .v { font-size: 17px; }
+  .seg button { padding: 9px 10px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .card { transition: border-color .15s, box-shadow .15s; }
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Planta · 4,00 × 4,00 m · 16 m²</span>
+    <h1>Dormitorio de Tiago</h1>
+    <p class="lede">Cambia las medidas de la cama, el ropero y el escritorio, o arrastra cada mueble sobre el plano. La distribución y los espacios de paso se recalculan al instante.</p>
+  </header>
+
+  <div class="app">
+    <section class="plan-panel" aria-label="Plano del dormitorio">
+      <div class="layout-bar">
+        <span class="lbl">Distribución</span>
+        <div class="seg" id="layouts" role="group" aria-label="Distribución"></div>
+        <span class="manual-tag" id="manualTag" hidden>Ajustada a mano</span>
+        <button class="btn" id="bestBtn" type="button">Elegir la mejor</button>
+      </div>
+      <div class="plan">
+        <svg id="plan" viewBox="-50 -42 480 494" role="img" aria-label="Plano a escala del dormitorio de 4 por 4 metros">
+          <defs>
+            <pattern id="h-ok" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line class="hl-ok" x1="0" y1="0" x2="0" y2="7"/></pattern>
+            <pattern id="h-warn" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line class="hl-warn" x1="0" y1="0" x2="0" y2="7"/></pattern>
+            <pattern id="h-bad" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line class="hl-bad" x1="0" y1="0" x2="0" y2="7"/></pattern>
+          </defs>
+          <g id="static"></g>
+          <g id="dyn"></g>
+        </svg>
+        <div class="legend">
+          <span><i class="sw ok"></i>Paso suficiente</span>
+          <span><i class="sw warn"></i>Paso justo</span>
+          <span><i class="sw bad"></i>Paso bloqueado</span>
+          <span><i class="sw door"></i>Giro de la puerta</span>
+        </div>
+        <p class="hint">Cuadrícula de 50 cm. Arrastra un mueble o selecciónalo y usa las flechas (Mayús para pasos de 25 cm) y la tecla R para girarlo.</p>
+      </div>
+      <p class="flash" id="flash" aria-live="polite"></p>
+    </section>
+
+    <aside class="side">
+      <section class="summary" aria-live="polite">
+        <div class="status"><span class="pill" id="pill"></span><h2 id="verdict"></h2></div>
+        <div class="metrics">
+          <div class="metric"><span class="k">Muebles</span><span class="v" id="mOcc"></span></div>
+          <div class="metric"><span class="k">Piso libre</span><span class="v" id="mFree"></span></div>
+          <div class="metric"><span class="k">Ocupación</span><span class="v" id="mPct"></span></div>
+        </div>
+        <ul class="checks" id="checks"></ul>
+      </section>
+      <div class="cards" id="cards"></div>
+      <div><button class="btn ghost" id="resetBtn" type="button">Restablecer medidas y distribución</button></div>
+    </aside>
+  </div>
+
+  <footer>Medidas de referencia: paso al costado de la cama 60 cm, frente del ropero 70 cm para abrir puertas y cajones, 75 cm detrás del escritorio para la silla. La puerta (80 cm) y la ventana (1,20 m) están en posiciones fijas. Lo que cambies queda guardado en este navegador.</footer>
+</div>
+
+<script>
+(() => {
+  const ROOM = 400, STEP = 5;
+  const DOOR = { x: 300, y: 320, W: 80, H: 80 };
+  const WIN = { a: 140, b: 260 };
+  const KEYS = ['cama', 'ropero', 'escritorio'];
+  const META = {
+    cama: {
+      name: 'Cama', art: 'la cama', wLabel: 'Ancho', dLabel: 'Largo',
+      w: [80, 200], d: [180, 210], color: 'bed',
+      presets: [
+        { l: '1 plaza', w: 90, d: 190 }, { l: '1½ plazas', w: 105, d: 190 },
+        { l: '2 plazas', w: 135, d: 190 }, { l: 'Queen', w: 150, d: 200 }
+      ]
+    },
+    ropero: {
+      name: 'Ropero', art: 'el ropero', wLabel: 'Ancho', dLabel: 'Fondo',
+      w: [60, 300], d: [40, 70], color: 'ward',
+      presets: [
+        { l: '2 puertas', w: 90, d: 55 }, { l: '3 puertas', w: 135, d: 60 },
+        { l: '4 puertas', w: 180, d: 60 }, { l: 'Pared completa', w: 240, d: 60 }
+      ]
+    },
+    escritorio: {
+      name: 'Escritorio', art: 'el escritorio', wLabel: 'Ancho', dLabel: 'Fondo',
+      w: [70, 180], d: [40, 80], color: 'desk',
+      presets: [
+        { l: 'Compacto', w: 90, d: 50 }, { l: 'Estándar', w: 120, d: 60 }, { l: 'Amplio', w: 150, d: 70 }
+      ]
+    }
+  };
+
+  const snap = v => Math.round(v / STEP) * STEP;
+  const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+  const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+  const fpOf = it => (it.rot % 180 === 0)
+    ? { x: it.x, y: it.y, W: it.w, H: it.d }
+    : { x: it.x, y: it.y, W: it.d, H: it.w };
+  const facing = it => ({ 0: 'down', 90: 'left', 180: 'up', 270: 'right' })[it.rot];
+  const inter = (A, B) => {
+    const w = Math.min(A.x + A.W, B.x + B.W) - Math.max(A.x, B.x);
+    const h = Math.min(A.y + A.H, B.y + B.H) - Math.max(A.y, B.y);
+    return (w > 0 && h > 0) ? w * h : 0;
+  };
+  const clampItem = it => {
+    const f = fpOf(it);
+    it.x = clamp(snap(it.x), 0, ROOM - f.W);
+    it.y = clamp(snap(it.y), 0, ROOM - f.H);
+  };
+
+  // Distribuciones base: se recalculan con las medidas actuales
+  const LAYOUTS = {
+    esquina: {
+      label: 'Esquina',
+      apply(I) {
+        const { cama: c, ropero: r, escritorio: e } = I;
+        Object.assign(c, { rot: 0, x: 0, y: 0 });
+        Object.assign(e, { rot: 0, x: Math.max(200 - e.w / 2, c.w), y: 0 });
+        Object.assign(r, { rot: 90, x: ROOM - r.d, y: 0 });
+      }
+    },
+    centrada: {
+      label: 'Centrada',
+      apply(I) {
+        const { cama: c, ropero: r, escritorio: e } = I;
+        Object.assign(c, { rot: 0, x: 200 - c.w / 2, y: 0 });
+        Object.assign(e, { rot: 90, x: ROOM - e.d, y: 0 });
+        Object.assign(r, { rot: 270, x: 0, y: ROOM - r.w });
+      }
+    },
+    lateral: {
+      label: 'Lateral',
+      apply(I) {
+        const { cama: c, ropero: r, escritorio: e } = I;
+        Object.assign(c, { rot: 270, x: 0, y: ROOM - c.w });
+        Object.assign(r, { rot: 270, x: 0, y: 0 });
+        Object.assign(e, { rot: 0, x: Math.max(200 - e.w / 2, r.d + 75), y: 0 });
+      }
+    }
+  };
+
+  function applyLayout(I, name) {
+    LAYOUTS[name].apply(I);
+    KEYS.forEach(k => clampItem(I[k]));
+  }
+
+  function fresh() {
+    const s = {
+      items: {
+        cama: { w: 105, d: 190, rot: 0, x: 0, y: 0 },
+        ropero: { w: 135, d: 60, rot: 0, x: 0, y: 0 },
+        escritorio: { w: 120, d: 60, rot: 0, x: 0, y: 0 }
+      },
+      layout: 'esquina', sel: 'cama'
+    };
+    applyLayout(s.items, s.layout);
+    return s;
+  }
+
+  const STORE = 'dormitorio-tiago-v1';
+  function load() {
+    try {
+      const raw = localStorage.getItem(STORE);
+      if (!raw) return null;
+      const s = JSON.parse(raw);
+      if (!s || !s.items || !KEYS.every(k => s.items[k] && [0, 90, 180, 270].includes(s.items[k].rot))) return null;
+      KEYS.forEach(k => clampItem(s.items[k]));
+      if (!(s.layout in LAYOUTS) && s.layout !== 'manual') s.layout = 'manual';
+      if (!KEYS.includes(s.sel)) s.sel = 'cama';
+      return s;
+    } catch (e) { return null; }
+  }
+  function save() { try { localStorage.setItem(STORE, JSON.stringify(S)); } catch (e) { /* sin almacenamiento */ } }
+
+  let S = load() || fresh();
+
+  // Profundidad libre desde un borde del mueble hasta la pared o el mueble más cercano
+  function depthAt(R, others, dir, t) {
+    const E = 0.01;
+    let lim;
+    if (dir === 'down') {
+      const e = R.y + R.H; lim = ROOM - e;
+      others.forEach(O => { if (t > O.x && t < O.x + O.W && O.y >= e - E) lim = Math.min(lim, O.y - e); });
+    } else if (dir === 'up') {
+      const e = R.y; lim = e;
+      others.forEach(O => { if (t > O.x && t < O.x + O.W && O.y + O.H <= e + E) lim = Math.min(lim, e - (O.y + O.H)); });
+    } else if (dir === 'right') {
+      const e = R.x + R.W; lim = ROOM - e;
+      others.forEach(O => { if (t > O.y && t < O.y + O.H && O.x >= e - E) lim = Math.min(lim, O.x - e); });
+    } else {
+      const e = R.x; lim = e;
+      others.forEach(O => { if (t > O.y && t < O.y + O.H && O.x + O.W <= e + E) lim = Math.min(lim, e - (O.x + O.W)); });
+    }
+    return Math.max(0, lim);
+  }
+
+  // mode 'full': todo el borde debe estar libre; 'window': basta un tramo de 70 cm
+  function measure(F, key, dir, mode) {
+    const R = F[key];
+    const others = KEYS.filter(k => k !== key).map(k => F[k]);
+    const horiz = dir === 'up' || dir === 'down';
+    const s0 = horiz ? R.x : R.y, s1 = horiz ? R.x + R.W : R.y + R.H;
+    const samples = [];
+    for (let t = s0 + STEP / 2; t < s1; t += STEP) samples.push(depthAt(R, others, dir, t));
+    if (mode === 'full') return { dir, depth: Math.min(...samples), a: s0, b: s1 };
+    const m = Math.max(1, Math.min(samples.length, Math.round(70 / STEP)));
+    const mid = (s0 + s1) / 2;
+    let best = -1, bestA = s0, bestDist = Infinity;
+    for (let i = 0; i + m <= samples.length; i++) {
+      let mn = Infinity;
+      for (let j = i; j < i + m; j++) mn = Math.min(mn, samples[j]);
+      const a = s0 + i * STEP, dist = Math.abs(a + m * STEP / 2 - mid);
+      if (mn > best || (mn === best && dist < bestDist)) { best = mn; bestA = a; bestDist = dist; }
+    }
+    return { dir, depth: best, a: bestA, b: bestA + m * STEP };
+  }
+
+  function zoneRect(R, m, need) {
+    let z;
+    if (m.dir === 'down') z = { x: m.a, y: R.y + R.H, W: m.b - m.a, H: need };
+    else if (m.dir === 'up') z = { x: m.a, y: R.y - need, W: m.b - m.a, H: need };
+    else if (m.dir === 'right') z = { x: R.x + R.W, y: m.a, W: need, H: m.b - m.a };
+    else z = { x: R.x - need, y: m.a, W: need, H: m.b - m.a };
+    const x0 = Math.max(0, z.x), y0 = Math.max(0, z.y);
+    const x1 = Math.min(ROOM, z.x + z.W), y1 = Math.min(ROOM, z.y + z.H);
+    return { x: x0, y: y0, W: Math.max(0, x1 - x0), H: Math.max(0, y1 - y0) };
+  }
+
+  function evaluate(I) {
+    const F = {};
+    KEYS.forEach(k => { F[k] = fpOf(I[k]); });
+    const checks = [], zones = [], bad = new Set(), gaps = {};
+    const lvl = (v, need, warn) => v >= need ? 'ok' : (v >= warn ? 'warn' : 'bad');
+
+    for (let i = 0; i < KEYS.length; i++) for (let j = i + 1; j < KEYS.length; j++) {
+      const a = KEYS[i], b = KEYS[j];
+      if (inter(F[a], F[b]) > 0) {
+        checks.push({ level: 'bad', text: cap(`${META[a].art} y ${META[b].art} se superponen.`) });
+        bad.add(a); bad.add(b);
+      }
+    }
+    KEYS.forEach(k => {
+      if (inter(F[k], DOOR) > 0) {
+        checks.push({ level: 'bad', text: cap(`${META[k].art} choca con la puerta al abrirse.`) });
+        bad.add(k);
+      }
+    });
+
+    // Cama: un costado libre de 60 cm y espacio al pie
+    const bf = facing(I.cama);
+    const sideDirs = (bf === 'down' || bf === 'up') ? ['left', 'right'] : ['up', 'down'];
+    const sides = sideDirs.map(d => measure(F, 'cama', d, 'window'));
+    const side = sides[0].depth >= sides[1].depth ? sides[0] : sides[1];
+    const sl = lvl(side.depth, 60, 45);
+    checks.push({ level: sl, text: `Paso al costado de la cama: ${side.depth} cm (mínimo 60).` });
+    zones.push({ r: zoneRect(F.cama, side, 60), level: sl, depth: side.depth });
+    const foot = measure(F, 'cama', bf, 'window');
+    const fl = foot.depth >= 50 ? 'ok' : 'warn';
+    checks.push({ level: fl, text: `Espacio al pie de la cama: ${foot.depth} cm (recomendado 50).` });
+    zones.push({ r: zoneRect(F.cama, foot, 50), level: fl, depth: foot.depth });
+    gaps.cama = `Costado ${side.depth} cm · Pie ${foot.depth} cm`;
+
+    // Ropero: todo el frente libre para abrir puertas
+    const rf = measure(F, 'ropero', facing(I.ropero), 'full');
+    const rl = lvl(rf.depth, 70, 55);
+    checks.push({ level: rl, text: `Frente del ropero: ${rf.depth} cm para abrir puertas (mínimo 70).` });
+    zones.push({ r: zoneRect(F.ropero, rf, 70), level: rl, depth: rf.depth });
+    gaps.ropero = `Frente libre ${rf.depth} cm`;
+
+    // Escritorio: espacio para la silla
+    const ef = measure(F, 'escritorio', facing(I.escritorio), 'window');
+    const el = lvl(ef.depth, 75, 60);
+    checks.push({ level: el, text: `Espacio para la silla del escritorio: ${ef.depth} cm (mínimo 75).` });
+    zones.push({ r: zoneRect(F.escritorio, ef, 75), level: el, depth: ef.depth });
+    gaps.escritorio = `Silla ${ef.depth} cm`;
+
+    const R = F.ropero;
+    if (R.y <= 0 && R.x < WIN.b && R.x + R.W > WIN.a) {
+      checks.push({ level: 'warn', text: 'El ropero tapa parte de la ventana.' });
+    }
+    const D = F.escritorio;
+    if (D.y <= 0 && D.x < WIN.b && D.x + D.W > WIN.a) {
+      checks.push({ level: 'ok', text: 'El escritorio recibe luz natural de la ventana.' });
+    }
+
+    const nBad = checks.filter(c => c.level === 'bad').length;
+    const nWarn = checks.filter(c => c.level === 'warn').length;
+    return { F, checks, zones, bad, gaps, chair: ef, nBad, nWarn, score: nBad * 10 + nWarn };
+  }
+
+  // ---------- Dibujo ----------
+  const svg = document.getElementById('plan');
+  const dyn = document.getElementById('dyn');
+
+  function buildStatic() {
+    let s = '';
+    s += `<rect class="wall" x="-15" y="-15" width="${ROOM + 30}" height="${ROOM + 30}"/>`;
+    s += `<rect class="room-floor" x="0" y="0" width="${ROOM}" height="${ROOM}"/>`;
+    for (let v = 50; v < ROOM; v += 50) {
+      const cls = v % 100 === 0 ? 'g-major' : 'g-minor';
+      s += `<line class="${cls}" x1="${v}" y1="0" x2="${v}" y2="${ROOM}"/><line class="${cls}" x1="0" y1="${v}" x2="${ROOM}" y2="${v}"/>`;
+    }
+    // Ventana (pared superior)
+    s += `<rect class="win-glass" x="${WIN.a}" y="-15" width="${WIN.b - WIN.a}" height="15"/>`;
+    s += `<line class="win-line" x1="${WIN.a}" y1="-9.5" x2="${WIN.b}" y2="-9.5"/><line class="win-line" x1="${WIN.a}" y1="-5.5" x2="${WIN.b}" y2="-5.5"/>`;
+    s += `<text class="tag-text" x="${(WIN.a + WIN.b) / 2}" y="-21" text-anchor="middle">Ventana 1,20 m</text>`;
+    // Puerta (pared inferior, bisagra a la derecha)
+    s += `<rect class="room-floor" x="${DOOR.x}" y="${ROOM}" width="${DOOR.W}" height="15"/>`;
+    s += `<path class="door-swing" d="M${DOOR.x + DOOR.W} ${ROOM} L${DOOR.x} ${ROOM} A${DOOR.W} ${DOOR.W} 0 0 1 ${DOOR.x + DOOR.W} ${ROOM - DOOR.W} Z"/>`;
+    s += `<line class="door-leaf" x1="${DOOR.x + DOOR.W}" y1="${ROOM}" x2="${DOOR.x + DOOR.W}" y2="${ROOM - DOOR.W}"/>`;
+    s += `<text class="tag-text" x="${DOOR.x + DOOR.W / 2}" y="${ROOM + 29}" text-anchor="middle">Puerta 0,80 m</text>`;
+    // Cotas
+    s += `<line class="dim-line" x1="0" y1="${ROOM + 40}" x2="${ROOM}" y2="${ROOM + 40}"/>`;
+    s += `<line class="dim-line" x1="0" y1="${ROOM + 34}" x2="0" y2="${ROOM + 46}"/><line class="dim-line" x1="${ROOM}" y1="${ROOM + 34}" x2="${ROOM}" y2="${ROOM + 46}"/>`;
+    s += `<rect x="128" y="${ROOM + 33}" width="44" height="14" style="fill:var(--surface)"/>`;
+    s += `<text class="dim-text" x="150" y="${ROOM + 44}" text-anchor="middle">4,00 m</text>`;
+    s += `<line class="dim-line" x1="-34" y1="0" x2="-34" y2="${ROOM}"/>`;
+    s += `<line class="dim-line" x1="-40" y1="0" x2="-28" y2="0"/><line class="dim-line" x1="-40" y1="${ROOM}" x2="-28" y2="${ROOM}"/>`;
+    s += `<rect x="-41" y="178" width="14" height="44" style="fill:var(--surface)"/>`;
+    s += `<text class="dim-text" x="-30" y="200" text-anchor="middle" transform="rotate(-90 -30 200)">4,00 m</text>`;
+    document.getElementById('static').innerHTML = s;
+  }
+
+  const MATRIX = {
+    0: () => '1 0 0 1 0 0',
+    90: it => `0 1 -1 0 ${it.d} 0`,
+    180: it => `-1 0 0 -1 ${it.w} ${it.d}`,
+    270: it => `0 -1 1 0 0 ${it.w}`
+  };
+
+  function drawLocal(k, w, d) {
+    let s = `<rect class="body" x="0" y="0" width="${w}" height="${d}" rx="3"/>`;
+    if (k === 'cama') {
+      s += `<rect class="head" x="0" y="0" width="${w}" height="7" rx="2"/>`;
+      const n = w >= 130 ? 2 : 1, gap = 6, pw = (w - 16 - (n - 1) * gap) / n;
+      for (let i = 0; i < n; i++) s += `<rect class="pillow" x="${8 + i * (pw + gap)}" y="13" width="${pw}" height="30" rx="7"/>`;
+      s += `<rect class="blanket" x="2" y="54" width="${w - 4}" height="${d - 56}" rx="2"/>`;
+      s += `<line class="fold" x1="2" y1="70" x2="${w - 2}" y2="70"/>`;
+    } else if (k === 'ropero') {
+      const n = clamp(Math.round(w / 45), 1, 7);
+      for (let i = 1; i < n; i++) s += `<line class="div" x1="${(i * w / n).toFixed(1)}" y1="0" x2="${(i * w / n).toFixed(1)}" y2="${d}"/>`;
+      const my = d * 0.45;
+      for (let u = 14; u < w - 8; u += 11) s += `<line class="hanger" x1="${u}" y1="${my - 11}" x2="${u}" y2="${my + 11}"/>`;
+      s += `<line class="rod" x1="6" y1="${my}" x2="${w - 6}" y2="${my}"/>`;
+      s += `<line class="front" x1="0" y1="${d - 1.5}" x2="${w}" y2="${d - 1.5}"/>`;
+    } else {
+      s += `<rect class="monitor" x="${w / 2 - 26}" y="7" width="52" height="5" rx="2"/>`;
+      s += `<line class="front" x1="0" y1="${d - 1.5}" x2="${w}" y2="${d - 1.5}"/>`;
+    }
+    return s;
+  }
+
+  function chairSVG(R, m) {
+    const c = (m.a + m.b) / 2, sz = 42, off = 10;
+    let x, y;
+    if (m.dir === 'down') { x = c - sz / 2; y = R.y + R.H + off; }
+    else if (m.dir === 'up') { x = c - sz / 2; y = R.y - off - sz; }
+    else if (m.dir === 'right') { x = R.x + R.W + off; y = c - sz / 2; }
+    else { x = R.x - off - sz; y = c - sz / 2; }
+    x = clamp(x, 0, ROOM - sz); y = clamp(y, 0, ROOM - sz);
+    return `<rect class="chair" x="${x}" y="${y}" width="${sz}" height="${sz}" rx="10"/>`;
+  }
+
+  function render() {
+    const ev = evaluate(S.items);
+    let s = '';
+    ev.zones.forEach(z => {
+      const r = z.r;
+      if (r.W <= 0 || r.H <= 0) return;
+      s += `<rect class="zone ${z.level}" x="${r.x}" y="${r.y}" width="${r.W}" height="${r.H}"/>`;
+      if (Math.min(r.W, r.H) >= 14) {
+        s += `<text class="zone-text ${z.level}" x="${r.x + r.W / 2}" y="${r.y + r.H / 2 + 3.5}" text-anchor="middle">${z.depth} cm</text>`;
+      }
+    });
+    s += chairSVG(ev.F.escritorio, ev.chair);
+    // El mueble seleccionado se dibuja al final para quedar encima
+    const order = KEYS.filter(k => k !== S.sel).concat(S.sel);
+    order.forEach(k => {
+      const it = S.items[k], f = ev.F[k], sel = k === S.sel;
+      const cls = `furn f-${k}${ev.bad.has(k) ? ' is-bad' : ''}${dragging && dragging.key === k ? ' dragging' : ''}`;
+      const cx = f.x + f.W / 2, cy = f.y + f.H / 2;
+      const rotLbl = f.W < 80 && f.H > f.W;
+      const tf = rotLbl ? ` transform="rotate(-90 ${cx} ${cy})"` : '';
+      s += `<g class="${cls}" data-key="${k}" tabindex="0" role="button" aria-label="${META[k].name}, ${it.w} por ${it.d} centímetros. Arrastra o usa las flechas para mover, R para girar.">`;
+      s += `<g transform="translate(${f.x} ${f.y}) matrix(${MATRIX[it.rot](it)})">${drawLocal(k, it.w, it.d)}</g>`;
+      if (sel) s += `<rect class="sel" x="${f.x - 4}" y="${f.y - 4}" width="${f.W + 8}" height="${f.H + 8}" rx="5"/>`;
+      s += `<g${tf}><text class="f-name" x="${cx}" y="${cy - 2}" text-anchor="middle">${META[k].name}</text>`;
+      s += `<text class="f-dim" x="${cx}" y="${cy + 11}" text-anchor="middle">${it.w} × ${it.d}</text></g>`;
+      s += `</g>`;
+    });
+    dyn.innerHTML = s;
+    if (focusKey) {
+      const el = dyn.querySelector(`[data-key="${focusKey}"]`);
+      if (el) el.focus({ preventScroll: true });
+    }
+    renderPanel(ev);
+  }
+
+  // ---------- Panel ----------
+  const cardsEl = document.getElementById('cards');
+  function buildCards() {
+    cardsEl.innerHTML = KEYS.map(k => {
+      const m = META[k];
+      return `<section class="card" data-card="${k}">
+        <div class="card-head">
+          <h3><span class="chip-swatch" style="background:var(--${m.color}-fill);border-color:var(--${m.color}-stroke)"></span>${m.name}</h3>
+          <span class="size" id="${k}-size"></span>
+        </div>
+        <div class="presets" role="group" aria-label="Medidas comunes de ${m.name.toLowerCase()}">
+          ${m.presets.map((p, i) => `<button type="button" data-preset="${k}:${i}" aria-pressed="false">${p.l}<small>${p.w}×${p.d}</small></button>`).join('')}
+        </div>
+        <div class="slider">
+          <div class="row"><label for="${k}-w">${m.wLabel}</label><output id="${k}-w-out" for="${k}-w"></output></div>
+          <input type="range" id="${k}-w" data-k="${k}" data-dim="w" min="${m.w[0]}" max="${m.w[1]}" step="${STEP}">
+        </div>
+        <div class="slider">
+          <div class="row"><label for="${k}-d">${m.dLabel}</label><output id="${k}-d-out" for="${k}-d"></output></div>
+          <input type="range" id="${k}-d" data-k="${k}" data-dim="d" min="${m.d[0]}" max="${m.d[1]}" step="${STEP}">
+        </div>
+        <div class="card-foot">
+          <span class="gaps" id="${k}-gaps"></span>
+          <button type="button" class="btn ghost" data-rotate="${k}" id="${k}-rot">Girar 90°</button>
+        </div>
+      </section>`;
+    }).join('');
+  }
+
+  const layoutsEl = document.getElementById('layouts');
+  layoutsEl.innerHTML = Object.entries(LAYOUTS)
+    .map(([id, l]) => `<button type="button" id="lay-${id}" data-layout="${id}" aria-pressed="false">${l.label}</button>`).join('');
+
+  function renderPanel(ev) {
+    KEYS.forEach(k => {
+      const it = S.items[k];
+      document.getElementById(`${k}-w`).value = it.w;
+      document.getElementById(`${k}-d`).value = it.d;
+      document.getElementById(`${k}-w-out`).textContent = `${it.w} cm`;
+      document.getElementById(`${k}-d-out`).textContent = `${it.d} cm`;
+      document.getElementById(`${k}-size`).textContent = `${(it.w / 100).toFixed(2).replace('.', ',')} × ${(it.d / 100).toFixed(2).replace('.', ',')} m`;
+      document.getElementById(`${k}-gaps`).textContent = ev.gaps[k];
+      META[k].presets.forEach((p, i) => {
+        cardsEl.querySelector(`[data-preset="${k}:${i}"]`).setAttribute('aria-pressed', String(p.w === it.w && p.d === it.d));
+      });
+      cardsEl.querySelector(`[data-card="${k}"]`).classList.toggle('is-selected', k === S.sel);
+    });
+    layoutsEl.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.layout === S.layout)));
+    document.getElementById('manualTag').hidden = S.layout !== 'manual';
+
+    const pill = document.getElementById('pill'), verdict = document.getElementById('verdict');
+    if (ev.nBad) {
+      pill.className = 'pill bad'; pill.textContent = `${ev.nBad} ${ev.nBad === 1 ? 'problema' : 'problemas'}`;
+      verdict.textContent = 'Así no funciona';
+    } else if (ev.nWarn) {
+      pill.className = 'pill warn'; pill.textContent = `${ev.nWarn} ${ev.nWarn === 1 ? 'aviso' : 'avisos'}`;
+      verdict.textContent = 'Funciona, con espacios justos';
+    } else {
+      pill.className = 'pill ok'; pill.textContent = 'Todo en orden';
+      verdict.textContent = 'Distribución cómoda';
+    }
+    const occ = KEYS.reduce((a, k) => a + ev.F[k].W * ev.F[k].H, 0) / 10000;
+    const fmt = v => v.toFixed(2).replace('.', ',');
+    document.getElementById('mOcc').innerHTML = `${fmt(occ)} <small>m²</small>`;
+    document.getElementById('mFree').innerHTML = `${fmt(Math.max(0, 16 - occ))} <small>m²</small>`;
+    document.getElementById('mPct').innerHTML = `${Math.round(occ / 16 * 100)} <small>%</small>`;
+    const rank = { bad: 0, warn: 1, ok: 2 };
+    document.getElementById('checks').innerHTML = ev.checks.slice()
+      .sort((a, b) => rank[a.level] - rank[b.level])
+      .map(c => `<li class="${c.level}">${c.text}</li>`).join('');
+  }
+
+  // ---------- Interacción ----------
+  const flash = document.getElementById('flash');
+  let focusKey = null, dragging = null;
+
+  function commit() { save(); render(); }
+
+  function setSize(k, w, d) {
+    const it = S.items[k];
+    const m = META[k];
+    w = clamp(w, m.w[0], m.w[1]); d = clamp(d, m.d[0], m.d[1]);
+    if (S.layout !== 'manual') {
+      it.w = w; it.d = d;
+      applyLayout(S.items, S.layout);
+    } else {
+      // Mantiene el mueble pegado a la pared derecha o inferior si ya lo estaba
+      const f0 = fpOf(it);
+      const right = f0.x + f0.W >= ROOM && f0.x > 0;
+      const bottom = f0.y + f0.H >= ROOM && f0.y > 0;
+      it.w = w; it.d = d;
+      const f1 = fpOf(it);
+      if (right) it.x = ROOM - f1.W;
+      if (bottom) it.y = ROOM - f1.H;
+      clampItem(it);
+    }
+    S.sel = k;
+    flash.textContent = '';
+    commit();
+  }
+
+  function rotate(k) {
+    const it = S.items[k], f0 = fpOf(it);
+    const cx = f0.x + f0.W / 2, cy = f0.y + f0.H / 2;
+    it.rot = (it.rot + 90) % 360;
+    const f1 = fpOf(it);
+    it.x = cx - f1.W / 2; it.y = cy - f1.H / 2;
+    clampItem(it);
+    S.layout = 'manual'; S.sel = k;
+    commit();
+  }
+
+  function move(k, dx, dy) {
+    const it = S.items[k];
+    it.x += dx; it.y += dy;
+    clampItem(it);
+    S.layout = 'manual';
+    commit();
+  }
+
+  cardsEl.addEventListener('input', e => {
+    const t = e.target;
+    if (t.matches('input[type="range"]')) {
+      const k = t.dataset.k, it = S.items[k], v = Number(t.value);
+      setSize(k, t.dataset.dim === 'w' ? v : it.w, t.dataset.dim === 'd' ? v : it.d);
+    }
+  });
+  cardsEl.addEventListener('click', e => {
+    const p = e.target.closest('[data-preset]');
+    if (p) {
+      const [k, i] = p.dataset.preset.split(':');
+      const pr = META[k].presets[Number(i)];
+      setSize(k, pr.w, pr.d);
+      return;
+    }
+    const r = e.target.closest('[data-rotate]');
+    if (r) { rotate(r.dataset.rotate); return; }
+    const c = e.target.closest('[data-card]');
+    if (c && S.sel !== c.dataset.card) { S.sel = c.dataset.card; commit(); }
+  });
+
+  layoutsEl.addEventListener('click', e => {
+    const b = e.target.closest('[data-layout]');
+    if (!b) return;
+    S.layout = b.dataset.layout;
+    applyLayout(S.items, S.layout);
+    flash.textContent = '';
+    commit();
+  });
+
+  document.getElementById('bestBtn').addEventListener('click', () => {
+    let best = null;
+    Object.keys(LAYOUTS).forEach(id => {
+      const I = JSON.parse(JSON.stringify(S.items));
+      applyLayout(I, id);
+      const ev = evaluate(I);
+      if (!best || ev.score < best.score) best = { id, score: ev.score, nBad: ev.nBad, nWarn: ev.nWarn };
+    });
+    S.layout = best.id;
+    applyLayout(S.items, best.id);
+    const detail = best.nBad ? `${best.nBad} problema(s), ${best.nWarn} aviso(s)` : (best.nWarn ? `${best.nWarn} aviso(s)` : 'sin observaciones');
+    flash.textContent = `Con estas medidas la mejor opción es «${LAYOUTS[best.id].label}»: ${detail}.`;
+    commit();
+  });
+
+  document.getElementById('resetBtn').addEventListener('click', () => {
+    S = fresh();
+    flash.textContent = 'Se restablecieron las medidas iniciales.';
+    commit();
+  });
+
+  function svgPoint(e) {
+    const pt = svg.createSVGPoint();
+    pt.x = e.clientX; pt.y = e.clientY;
+    return pt.matrixTransform(svg.getScreenCTM().inverse());
+  }
+
+  svg.addEventListener('pointerdown', e => {
+    const g = e.target.closest('[data-key]');
+    if (!g) return;
+    e.preventDefault();
+    const k = g.dataset.key, it = S.items[k], p = svgPoint(e);
+    dragging = { key: k, ox: p.x - it.x, oy: p.y - it.y, moved: false, id: e.pointerId };
+    S.sel = k; focusKey = k;
+    try { svg.setPointerCapture(e.pointerId); } catch (err) { /* sin captura */ }
+    render();
+  });
+  svg.addEventListener('pointermove', e => {
+    if (!dragging || e.pointerId !== dragging.id) return;
+    const it = S.items[dragging.key], p = svgPoint(e);
+    const nx = p.x - dragging.ox, ny = p.y - dragging.oy;
+    const px = it.x, py = it.y;
+    it.x = nx; it.y = ny;
+    clampItem(it);
+    if (it.x !== px || it.y !== py) {
+      dragging.moved = true;
+      S.layout = 'manual';
+      render();
+    }
+  });
+  const endDrag = e => {
+    if (!dragging || e.pointerId !== dragging.id) return;
+    dragging = null;
+    try { svg.releasePointerCapture(e.pointerId); } catch (err) { /* nada */ }
+    commit();
+  };
+  svg.addEventListener('pointerup', endDrag);
+  svg.addEventListener('pointercancel', endDrag);
+
+  svg.addEventListener('focusin', e => {
+    const g = e.target.closest('[data-key]');
+    if (g) focusKey = g.dataset.key;
+  });
+  svg.addEventListener('focusout', e => {
+    if (!svg.contains(e.relatedTarget)) focusKey = null;
+  });
+  svg.addEventListener('keydown', e => {
+    const g = e.target.closest('[data-key]');
+    if (!g) return;
+    const k = g.dataset.key, d = e.shiftKey ? 25 : STEP;
+    const moves = { ArrowLeft: [-d, 0], ArrowRight: [d, 0], ArrowUp: [0, -d], ArrowDown: [0, d] };
+    if (moves[e.key]) { e.preventDefault(); S.sel = k; move(k, ...moves[e.key]); }
+    else if (e.key === 'r' || e.key === 'R') { e.preventDefault(); rotate(k); }
+    else if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); S.sel = k; commit(); }
+  });
+
+  buildStatic();
+  buildCards();
+  render();
+})();
+</script>
+</body>
+</html>
