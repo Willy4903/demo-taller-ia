@@ -41,7 +41,7 @@ window.EDITORIAL = {
         { id: "pobreza", un: "% de la población", corte: "Año 2025", fp: "INEI (ENAHO)", tag: "INEI", c: "Pobreza monetaria: personas cuyo gasto por persona no alcanza para comprar una canasta básica de alimentos y otros bienes y servicios.", e: "Un 25,7 % de la población equivale a unos 8,8 millones de personas.", k: "Pobreza monetaria", v: "25,7 %", n: "Año 2025 (27,6 % en 2024); unos 8,8 millones de personas", f: "INEI vía El Peruano", u: "https://elperuano.pe/noticia/295035-inei-pobreza-se-redujo-en-19-en-el-2025-y-afecta-al-257-de-peruanos", dest: true }
       ]},
       { id: "salud", g: "Salud", items: [
-        { id: "dengue", un: "fallecidos", corte: "Semana epidemiológica 41 de 2026", fp: "CDC-Minsa", tag: "CDC-Minsa", k: "Dengue · fallecidos 2026", v: "81", n: "Semana epidemiológica 41 (11 al 17 de octubre) · 76 784 casos", c: "Fallecidos por dengue acumulados en el año, según la sala situacional del CDC-Minsa.", e: "Los casos de 2026 superan en 137 % a los del mismo periodo de 2025, según reportes citados por la prensa.", f: "CDC-Minsa", u: "https://www.dge.gob.pe/portalnuevo/?p=4861" }
+        { id: "dengue", un: "fallecidos", corte: "Semana epidemiológica 44 de 2026", fp: "CDC-Minsa", tag: "CDC-Minsa", k: "Dengue · fallecidos 2026", v: "125", n: "Semana epidemiológica 44 · 100 644 casos", c: "Fallecidos por dengue acumulados en el año, según la sala situacional del CDC-Minsa.", e: "De los fallecidos, 94 están relacionados a dengue y 31 siguen en investigación. La Libertad (20 530 casos) y Piura (17 459) encabezan los casos.", f: "CDC-Minsa", u: "https://www.dge.gob.pe/portal/docs/vigilancia/sala/2026/SE44/dengue.pdf" }
       ]},
       { id: "ambiente", g: "Ambiente", items: [
         { id: "lluvias-tumbes", k: "Cultivos afectados por lluvias en Tumbes", v: "Alrededor de 700", un: "hectáreas", corte: "16 y 17 de noviembre de 2026", fp: "Andina · reporte de la alcaldía", n: "Distrito de Pampas de Hospital.", c: "Estima la superficie de cultivo con daños reportada por el alcalde después de las lluvias.", e: "700 hectáreas equivalen a 7 kilómetros cuadrados.", f: "Andina · reporte de la alcaldía", u: "https://andina.pe/agencia/noticia-tumbes-lluvias-intensas-causaron-danos-700-hectareas-cultivo-pampas-hospital-1100551.aspx" }
@@ -98,7 +98,7 @@ window.EDITORIAL = {
     { k: "Inflación 2026 · proyección BCRP", un: "% anual", corte: "Proyección para 2026", fp: "BCRP", v: "~4,2 %", n: "Meta 1 %-3 %; proyección previa a octubre: la inflación observada (4,83 % nacional) ya la supera", f: "Forbes Perú", u: "https://forbes.pe/economia-y-finanzas/2026-09-10/bcp-elevo-su-proyeccion-de-inflacion-de-42-a-47-para-cierre-de-ano/" },
     { k: "Tasa de referencia BCRP", un: "% anual", corte: "Vigente desde noviembre de 2026", fp: "BCRP", v: "4,50 %", n: "Subió desde 4,25 % tras 14 meses sin cambios", f: "Andina (BCRP)", u: "https://andina.pe/agencia/noticia-bcr-eleva-tasa-interes-referencia-a-450-inflacion-1099738.aspx" },
     { k: "El Niño costero · estado ENFEN", un: "estado", corte: "Comunicado ENFEN N.° 20-2026 (13 de noviembre de 2026)", fp: "ENFEN", v: "Alerta", n: "Magnitud extraordinaria hasta febrero de 2027 (según prensa); ver la sección El Niño", f: "ENFEN", u: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" },
-    { k: "Dengue · fallecidos 2026", un: "fallecidos", corte: "Semana epidemiológica 41 de 2026", fp: "CDC-Minsa", v: "81", n: "Corte semana epidemiológica 41", f: "CDC-Minsa", u: "https://www.dge.gob.pe/portalnuevo/?p=4861" },
+    { k: "Dengue · fallecidos 2026", un: "fallecidos", corte: "Semana epidemiológica 44 de 2026", fp: "CDC-Minsa", v: "125", n: "Corte semana epidemiológica 44", f: "CDC-Minsa", u: "https://www.dge.gob.pe/portal/docs/vigilancia/sala/2026/SE44/dengue.pdf" },
     { k: "Congreso bicameral", un: "senadores + diputados", corte: "Julio de 2026", fp: "Congreso", v: "60 + 130", n: "Senadores y diputados", f: "Diario Libre", u: "https://www.diariolibre.com/mundo/america-latina/2026/07/24/peru-establece-un-sistema-parlamentario-bicameral/3610006" }
   ],
 
@@ -345,8 +345,8 @@ window.EDITORIAL = {
     },
     {
       sector: "salud", nivel: "media",
-      titulo: "Dengue: 81 fallecidos y más de 76 mil casos hasta la semana 41",
-      resumen: "Según cifras del CDC-Minsa citadas por la prensa, hasta la semana epidemiológica 41 (11 al 17 de octubre) hubo 81 fallecidos y 76 784 casos de dengue, 59 % y 137 % más que en el mismo periodo de 2025. El 21 de octubre el CDC emitió la alerta epidemiológica N.° 008-2026, que advierte que El Niño 2026-2027 podría alimentar una segunda ola. Según la prensa, La Libertad ya encabeza el ranking de casos, por delante de Piura.",
+      titulo: "Dengue: 125 fallecidos y más de 100 mil casos hasta la semana 44",
+      resumen: "Según el informe del CDC-Minsa, hasta la semana epidemiológica 44 de 2026 se notificaron 100 644 casos de dengue en el país y 125 defunciones (94 relacionadas a dengue y 31 en investigación). La Libertad (20 530 casos) y Piura (17 459) encabezan el ranking de casos. El CDC emitió la alerta epidemiológica N.° 008-2026, que advierte que El Niño 2026-2027 podría alimentar una segunda ola.",
       paraTi: "Elimina agua estancada, usa repelente y acude al establecimiento de salud ante fiebre. Cifras en dge.gob.pe (se actualizan cada semana).",
       fuentes: [
         { n: "CDC-Minsa · alerta epidemiológica", u: "https://www.dge.gob.pe/portalnuevo/?p=4861" },
