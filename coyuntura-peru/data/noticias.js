@@ -1,16 +1,16 @@
 /* Generado por scripts/actualizar_noticias.py (GitHub Actions, 8 veces al día, hora de Lima). No editar a mano. */
 window.NOTICIAS = {
- "generado": "2026-11-23T01:40:14Z",
+ "generado": "2026-11-23T03:43:43Z",
  "modo": "automatico",
  "estado_fuentes": {
   "IDL-Reporteros": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.idl-reporteros.pe/feed/",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 10,
    "ultima_nota": "2026-11-21T15:48:55Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "OjoPúblico": {
    "ok": true,
@@ -18,10 +18,10 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:ojo-publico.com+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 1,
    "ultima_nota": "2026-11-22T13:00:00Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "Convoca": {
    "ok": true,
@@ -29,10 +29,10 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:convoca.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 6,
    "ultima_nota": "2026-11-22T00:59:35Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "Hildebrandt en sus trece": {
    "ok": true,
@@ -40,82 +40,82 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:hildebrandtensustrece.com+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 15,
    "ultima_nota": "2026-11-22T17:36:04Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "Wayka": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://wayka.pe/feed/",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 5,
    "ultima_nota": "2026-11-20T21:56:22Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "La Mula": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.lamula.pe/feed/",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 15,
-   "ultima_nota": "2026-11-22T19:31:23Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultima_nota": "2026-11-22T22:18:00Z",
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "Salud con Lupa": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://saludconlupa.com/feed/",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 12,
    "ultima_nota": "2026-11-20T01:35:00Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "Mongabay Latam": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://es.mongabay.com/feed/",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 15,
    "ultima_nota": "2026-11-22T14:07:36Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "Caretas": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://caretas.pe/feed/",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 15,
-   "ultima_nota": "2026-11-22T23:47:52Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultima_nota": "2026-11-23T02:01:10Z",
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "Agencia Andina": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://andina.pe/agencia/rss.aspx",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 15,
-   "ultima_nota": "2026-11-23T00:18:17Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultima_nota": "2026-11-23T02:33:18Z",
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "El Comercio": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 15,
-   "ultima_nota": "2026-11-23T01:31:50Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultima_nota": "2026-11-23T03:35:46Z",
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "Gestión": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://gestion.pe/arc/outboundfeeds/rss/?outputType=xml",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 15,
-   "ultima_nota": "2026-11-23T01:37:28Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultima_nota": "2026-11-23T03:30:00Z",
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "La República": {
    "ok": true,
@@ -123,28 +123,28 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:larepublica.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 404: Not Found",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 15,
-   "ultima_nota": "2026-11-22T22:11:56Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultima_nota": "2026-11-23T01:59:39Z",
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "RPP": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://rpp.pe/feed",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 15,
-   "ultima_nota": "2026-11-23T01:10:03Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultima_nota": "2026-11-23T03:15:03Z",
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "Infobae Perú": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/category/peru/",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 15,
-   "ultima_nota": "2026-11-23T01:34:06Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultima_nota": "2026-11-23T03:10:21Z",
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "Expreso": {
    "ok": true,
@@ -152,120 +152,1979 @@ window.NOTICIAS = {
    "via": "Google Noticias",
    "url": "https://news.google.com/rss/search?q=site:expreso.com.pe+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
    "error_directo": "HTTPError: HTTP Error 403: Forbidden",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 15,
-   "ultima_nota": "2026-11-22T14:08:43Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultima_nota": "2026-11-22T15:08:13Z",
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "El Búho": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://elbuho.pe/feed/",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 15,
    "ultima_nota": "2026-11-22T23:46:29Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "BBC Mundo": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://feeds.bbci.co.uk/mundo/rss.xml",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 15,
    "ultima_nota": "2026-11-22T14:00:13Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "DW Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://rss.dw.com/xml/rss-sp-all",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 13,
-   "ultima_nota": "2026-11-22T21:55:00Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultima_nota": "2026-11-23T02:31:00Z",
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "El País América": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 15,
    "ultima_nota": "2026-11-22T19:08:03Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "France 24 Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.france24.com/es/rss",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 15,
-   "ultima_nota": "2026-11-23T01:06:11Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultima_nota": "2026-11-23T02:35:44Z",
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "ONU Noticias": {
-   "ok": false,
-   "procedencia": "sin datos",
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0",
-   "comprobado": "2026-11-23T01:40:14Z",
-   "ultimo_ok": "2026-11-22T21:06:16Z",
-   "ultima_nota": "2026-11-22T12:00:00Z"
+   "ok": true,
+   "procedencia": "directa",
+   "url": "https://news.un.org/feed/subscribe/es/news/all/rss.xml",
+   "comprobado": "2026-11-23T03:43:43Z",
+   "n": 15,
+   "ultima_nota": "2026-11-22T12:00:00Z",
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "The New York Times en Español": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=site:nytimes.com/es+when:7d&hl=es-419&gl=US&ceid=US:es-419",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 15,
    "ultima_nota": "2026-11-22T18:40:07Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "The Guardian": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.theguardian.com/world/rss",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 15,
    "ultima_nota": "2026-11-22T21:33:44Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "The New Yorker": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://www.newyorker.com/feed/everything",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 15,
    "ultima_nota": "2026-11-22T11:00:00Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "Google Noticias · IA en el Perú": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22inteligencia+artificial%22+Per%C3%BA+when:7d&hl=es-419&gl=PE&ceid=PE:es-419",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 15,
-   "ultima_nota": "2026-11-22T13:03:00Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultima_nota": "2026-11-22T22:40:00Z",
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "Google Noticias · El Niño": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22Fen%C3%B3meno+El+Ni%C3%B1o%22+OR+%22Ni%C3%B1o+costero%22+ENFEN+when:14d&hl=es-419&gl=PE&ceid=PE:es-419",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 15,
    "ultima_nota": "2026-11-21T20:25:40Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   },
   "Google Noticias · IA en el mundo": {
    "ok": true,
    "procedencia": "directa",
    "url": "https://news.google.com/rss/search?q=%22inteligencia+artificial%22+(OpenAI+OR+Anthropic+OR+Google+OR+regulaci%C3%B3n+OR+NVIDIA)+when:7d&hl=es-419&gl=US&ceid=US:es-419",
-   "comprobado": "2026-11-23T01:40:14Z",
+   "comprobado": "2026-11-23T03:43:43Z",
    "n": 15,
    "ultima_nota": "2026-11-22T17:33:15Z",
-   "ultimo_ok": "2026-11-23T01:40:14Z"
+   "ultimo_ok": "2026-11-23T03:43:43Z"
   }
  },
  "items": [
+  {
+   "id": "98e2affff6",
+   "sector": "coyuntura",
+   "titulo": "Resultados La Tinka, domingo 22 de noviembre: mira los números ganadores del Pozo Millonario",
+   "resumen": "La Tinka EN VIVO: resultados y sorteo del domingo 22 de noviembre que tiene un Pozo Millonario de S/11'250,627. Revisa también la bolilla del Sí o Sí.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/loterias/resultados-de-la-tinka-en-vivo-numeros-ganadores-hoy-domingo-22-de-noviembre-de-2026-ver-jugada-ganadora-pozo-millonario-loteria-si-o-si-boliyapa-intralot-lbposting-noticia/",
+   "fecha": "2026-11-23T03:35:46Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/YQNF7ELVSND3ZNJWURBV35FGTA.webp?auth=bc323b5a611b7cda6550f517e533d7fac43af63b36c768c121c43fa806e5fc67&smart=true&width=1200&height=700",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "La Tinka EN VIVO: resultados y sorteo del domingo 22 de noviembre que tiene un Pozo Millonario de S/11'250,627. Además, revisa los resultados y ganadores del Sí o Sí.",
+   "puntos": [
+    "La Tinka EN VIVO: resultados y sorteo del domingo 22 de noviembre que tiene un Pozo Millonario de S/11'250,627.",
+    "Además, revisa los resultados y ganadores del Sí o Sí.",
+    "Disfruta de todos los sorteos EN VIVO todos los miércoles y domingos a las 10:50 PM por América TV desde tu televisión y en Facebook o YouTube en tu celular o laptop."
+   ],
+   "datos": [
+    {
+     "v": "S/11",
+     "t": "monto",
+     "c": "La Tinka EN VIVO: resultados y sorteo del domingo 22 de noviembre que tiene un Pozo Millonario de S/11'250,627."
+    },
+    {
+     "v": "22 de noviembre",
+     "t": "fecha",
+     "c": "Resultados La Tinka, domingo 22 de noviembre: mira los números ganadores del Pozo Millonario."
+    },
+    {
+     "v": "18 de noviembre",
+     "t": "fecha",
+     "c": "Revisa también la bolilla del Sí o Sí. • La Tinka: resultados del miércoles 18 de noviembre."
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://elcomercio.pe/respuestas/loterias/resultados-de-la-tinka-en-vivo-numeros-ganadores-hoy-domingo-22-de-noviembre-de-2026-ver-jugada-ganadora-pozo-millonario-loteria-si-o-si-boliyapa-intralot-lbposting-noticia/"
+  },
+  {
+   "id": "d334be9b0e",
+   "sector": "coyuntura",
+   "titulo": "La Tinka EN VIVO del domingo 22 de noviembre: sigue el sorteo y descubre si ganaste",
+   "resumen": "La Tinka EN VIVO: resultados y sorteo del domingo 22 de noviembre que tiene un Pozo Millonario de S/11'250,627. Revisa también la bolilla del Sí o Sí.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/loterias/tinka-en-vivo-resultados-hoy-domingo-22-de-noviembre-de-2026-numeros-ganadores-y-premios-pozo-millonario-loteria-si-o-si-boliyapa-intralot-lbposting-noticia/",
+   "fecha": "2026-11-23T03:35:42Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/WPRH7DHF55AAJNKEHLSOPGY2PM.jpg?auth=83c13423b171b9f6c47892616ca95bcd5802ecb3e6250448dd0d27ad777b3c29&smart=true&width=882&height=532",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "La Tinka EN VIVO: resultados y sorteo del domingo 22 de noviembre que tiene un Pozo Millonario de S/11'250,627. Además, revisa los resultados y ganadores del Sí o Sí.",
+   "puntos": [
+    "La Tinka EN VIVO: resultados y sorteo del domingo 22 de noviembre que tiene un Pozo Millonario de S/11'250,627.",
+    "Además, revisa los resultados y ganadores del Sí o Sí.",
+    "Disfruta de todos los sorteos EN VIVO todos los miércoles y domingos a las 10:50 PM por América TV desde tu televisión y en Facebook o YouTube en tu celular o laptop."
+   ],
+   "datos": [
+    {
+     "v": "S/11",
+     "t": "monto",
+     "c": "La Tinka EN VIVO: resultados y sorteo del domingo 22 de noviembre que tiene un Pozo Millonario de S/11'250,627."
+    },
+    {
+     "v": "22 de noviembre",
+     "t": "fecha",
+     "c": "La Tinka EN VIVO del domingo 22 de noviembre: sigue el sorteo y descubre si ganaste."
+    },
+    {
+     "v": "18 de noviembre",
+     "t": "fecha",
+     "c": "…bolilla del Sí o Sí. • La Tinka: resultados del miércoles 18 de noviembre 00:15 • Kábala: revisar resultados del sábado 21 de…"
+    },
+    {
+     "v": "21 de noviembre",
+     "t": "fecha",
+     "c": "…de noviembre 00:15 • Kábala: revisar resultados del sábado 21 de noviembre."
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://elcomercio.pe/respuestas/loterias/tinka-en-vivo-resultados-hoy-domingo-22-de-noviembre-de-2026-numeros-ganadores-y-premios-pozo-millonario-loteria-si-o-si-boliyapa-intralot-lbposting-noticia/"
+  },
+  {
+   "id": "a64adc4ce8",
+   "sector": "coyuntura",
+   "titulo": "Temblor en Colombia hoy: consulta los últimos sismos según el SGC",
+   "resumen": "Temblor en Colombia EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Servicio Geológico Colombiano (SGC).",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/colombia/temblor-en-colombia-hoy-en-vivo-via-el-sgc-del-23-al-24-de-noviembre-de-2026-y-ultimos-sismos-servicio-geologico-colombiano-choco-co-lbposting-noticia/",
+   "fecha": "2026-11-23T03:32:38Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/UJTVBHIL2FBCFPYDKLKSFMPH7M.jpeg?auth=46ea97cf9b0908940014ece649ca98ff0d905f9ed983325906d0758a83739103&smart=true&width=1200&height=700",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Temblor en Colombia EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Servicio Geológico Colombiano (SGC). Temblor en Colombia: mira aquí la magnitud, el epicentro y los reportes sobre los últimos sismos en el país (Diseño: El Comercio).",
+   "puntos": [
+    "Temblor en Colombia EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Servicio Geológico Colombiano (SGC).",
+    "Temblor en Colombia: mira aquí la magnitud, el epicentro y los reportes sobre los últimos sismos en el país (Diseño: El Comercio).",
+    "Momentos clave 2026-11-22 22:30:33 | ¿De qué magnitud y en dónde fue el último temblor?"
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://elcomercio.pe/respuestas/colombia/temblor-en-colombia-hoy-en-vivo-via-el-sgc-del-23-al-24-de-noviembre-de-2026-y-ultimos-sismos-servicio-geologico-colombiano-choco-co-lbposting-noticia/"
+  },
+  {
+   "id": "95b5922fb9",
+   "sector": "economia",
+   "titulo": "Embajador de Rusia en Libia acusa a Ucrania del ataque a un buque ruso en Bengasi",
+   "resumen": "Embajador de Rusia en Libia acusa a Ucrania del ataque a un buque ruso en Bengasi. Ataque a un buque ruso en base naval de Libia dejo diez heridos leves y cuantiosos daños materiales.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/mundo/embajador-de-rusia-en-libia-acusa-a-ucrania-del-ataque-a-un-buque-ruso-en-bengasi-noticia/",
+   "fecha": "2026-11-23T03:30:00Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/SQRFXAUNDJFP7IJJDQ6MDHLCLE.jpg?auth=5a6a24b87d2a8c66aa99fe488e4629add8cd912c156478e2bf1f7a6445e99f86&smart=true&width=1920&height=1305",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "url_medio": "https://gestion.pe/mundo/embajador-de-rusia-en-libia-acusa-a-ucrania-del-ataque-a-un-buque-ruso-en-bengasi-noticia/",
+   "sintesis": "Ataque a un buque ruso en base naval de Libia dejo diez heridos leves y cuantiosos daños materiales.",
+   "puntos": [
+    "Ataque a un buque ruso en base naval de Libia dejo diez heridos leves y cuantiosos daños materiales."
+   ],
+   "acceso": "restringido"
+  },
+  {
+   "id": "7cf55c36bf",
+   "sector": "coyuntura",
+   "titulo": "Temblor en Perú hoy, domingo 22 de noviembre: epicentro y magnitud según reporte IGP",
+   "resumen": "Temblor en Perú EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Instituto Geofísico del Perú (IGP).",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/temblor-en-peru-hoy-en-vivo-via-el-igp-del-21-al-22-de-noviembre-de-2026-y-ultimos-sismos-instituto-geofisico-del-peru-lima-ica-nasca-lbposting-noticia/",
+   "fecha": "2026-11-23T03:22:50Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/IDNFHBJS4VDDNGQVVNFWLR5CKI.jpeg?auth=00f5971d1ea274e5d5220a2871cd5fb3e709ea529d744594d0c219954638c0f4&smart=true&width=1200&height=700",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "url_medio": "https://elcomercio.pe/respuestas/temblor-en-peru-hoy-en-vivo-via-el-igp-del-21-al-22-de-noviembre-de-2026-y-ultimos-sismos-instituto-geofisico-del-peru-lima-ica-nasca-lbposting-noticia/",
+   "sintesis": "Temblor en Perú EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Instituto Geofísico del Perú (IGP). Temblor en Perú: mira aquí la magnitud, el epicentro y los reportes del IGP sobre los últimos sismos en el país (Diseño: El Comercio).",
+   "puntos": [
+    "Temblor en Perú EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Instituto Geofísico del Perú (IGP).",
+    "Temblor en Perú: mira aquí la magnitud, el epicentro y los reportes del IGP sobre los últimos sismos en el país (Diseño: El Comercio).",
+    "Momentos clave 2026-11-21 00:16:57 | Consulta aquí los últimos registros del Instituto Geofísico del Perú sobre los movimientos sísmicos en el país."
+   ],
+   "datos": [
+    {
+     "v": "30 km",
+     "t": "cantidad",
+     "c": "…-10.96 Longitud: -76.17 Intensidad: IV Junín Referencia: 30 km al NO de Junín, Junín - Junín https://t.co/WxMQdDcRzU."
+    },
+    {
+     "v": "132 km",
+     "t": "cantidad",
+     "c": "…Hora Local: 22/11/2026,00:51:57 Magnitud: 5.1 Profundidad: 132 km Latitud: -10.85 Longitud: -76.10 Intensidad: IV Cerro de…"
+    },
+    {
+     "v": "25 km",
+     "t": "cantidad",
+     "c": "…Longitud: -76.10 Intensidad: IV Cerro de Pasco Referencia: 25 km al SE de Cerro de Pasco, Pasco - Pasco…"
+    },
+    {
+     "v": "22 de noviembre",
+     "t": "fecha",
+     "c": "Temblor en Perú hoy, domingo 22 de noviembre: último sismo de 5 grados sentido en Lima."
+    },
+    {
+     "v": "20 de noviembre",
+     "t": "fecha",
+     "c": "…por el fuerte movimiento telúrico registrado el viernes 20 de noviembre."
+    }
+   ],
+   "acceso": "abierto"
+  },
+  {
+   "id": "e4eeb4024f",
+   "sector": "coyuntura",
+   "titulo": "Temblor en Chile hoy, domingo 22 de noviembre: epicentro y magnitud según reporte CSN",
+   "resumen": "Temblor en Chile EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Centro Sismológico Nacional (CSN).",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/chile/temblor-en-chile-hoy-en-vivo-del-21-al-22-de-noviembre-de-2026-y-ultimos-sismos-segun-el-csn-centro-sismologico-nacional-socaire-ollague-lbposting-noticia/",
+   "fecha": "2026-11-23T03:22:48Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/27ORT2QMHVB4PJRQ7KIOKKUJUA.jpeg?auth=e2090a3bed544844749b265667e089da7755b6c1c623f27a0d7e33363fbac79f&smart=true&width=1200&height=700",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "url_medio": "https://elcomercio.pe/respuestas/chile/temblor-en-chile-hoy-en-vivo-del-21-al-22-de-noviembre-de-2026-y-ultimos-sismos-segun-el-csn-centro-sismologico-nacional-socaire-ollague-lbposting-noticia/",
+   "sintesis": "Temblor en Chile EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Centro Sismológico Nacional (CSN). Temblor en Chile: mira aquí la magnitud, el epicentro y los reportes del CSN sobre los últimos sismos en el país (Diseño: El Comercio).",
+   "puntos": [
+    "Temblor en Chile EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Centro Sismológico Nacional (CSN).",
+    "Temblor en Chile: mira aquí la magnitud, el epicentro y los reportes del CSN sobre los últimos sismos en el país (Diseño: El Comercio).",
+    "Momentos clave 2026-11-21 01:01:26 | Sigue en vivo los reportes de los últimos sismos en Chile registrados por el Centro Sismológico Nacional."
+   ],
+   "datos": [
+    {
+     "v": "80 km",
+     "t": "cantidad",
+     "c": "Referencia geográfica del sismo a 80 km al O de San Antonio de los Cobres.."
+    },
+    {
+     "v": "22 de noviembre",
+     "t": "fecha",
+     "c": "Temblor en Chile hoy, domingo 22 de noviembre: epicentro y magnitud según reporte CSN."
+    }
+   ],
+   "acceso": "abierto"
+  },
+  {
+   "id": "3830b64a94",
+   "sector": "coyuntura",
+   "titulo": "Temblor en México hoy: reportes y últimos sismos según el SSN",
+   "resumen": "Temblor en México EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Servicio Sismológico Nacional (SSN).",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/mexico/temblor-en-mexico-hoy-en-vivo-segun-el-ssn-del-23-al-24-de-noviembre-de-2026-y-ultimos-sismos-servicio-sismologico-nacional-cdmx-mx-lbposting-noticia/",
+   "fecha": "2026-11-23T03:22:01Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/Z6X2ZU7C7ND7ZFITQG6OBGNDAA.png?auth=38bfd6a131f9cab77ac82613e20e0bfa89a415c8b9d236543fdbd35072f5e3cb&smart=true&width=1347&height=782",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Temblor en México EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Servicio Sismológico Nacional (SSN). Temblor en México: mira aquí la magnitud, el epicentro y los reportes sobre los últimos sismos en el país (Diseño: El Comercio).",
+   "puntos": [
+    "Temblor en México EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Servicio Sismológico Nacional (SSN).",
+    "Temblor en México: mira aquí la magnitud, el epicentro y los reportes sobre los últimos sismos en el país (Diseño: El Comercio).",
+    "Momentos clave 2026-11-22 22:19:00 | ¿De qué magnitud y en dónde fue el último temblor en México?"
+   ],
+   "datos": [
+    {
+     "v": "60%",
+     "t": "porcentaje",
+     "c": "…a 4 grados en la escala de Richter, lo que equivale a un 60% de todos los movimientos telúricos que se registran en el…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://elcomercio.pe/respuestas/mexico/temblor-en-mexico-hoy-en-vivo-segun-el-ssn-del-23-al-24-de-noviembre-de-2026-y-ultimos-sismos-servicio-sismologico-nacional-cdmx-mx-lbposting-noticia/"
+  },
+  {
+   "id": "93d4b215d1",
+   "sector": "politica",
+   "titulo": "Exabogado de Martín Vizcarra trabaja en el despacho de la diputada Catherine Palomino",
+   "resumen": "César Roberto Figueredo Muñoz, abogado y excolaborador cercano del expresidente Martín Vizcarra, se desempeña actualmente como asesor principal en el despacho de la diputada Catherine Palomino (Juntos por el Perú), reveló este domingo Panorama.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/peru/politica/cesar-figueredo-exasesor-de-martin-vizcarra-trabaja-en-el-despacho-de-la-diputada-catherine-palomino-noticia/",
+   "fecha": "2026-11-23T03:19:48Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/AZC6YHWCVRFLBGCYE63RYL2VZE.jpg?auth=7696457fb5250fc94eae6fdf28416722e1b24a62fd609cf71bd141f3550caf52&smart=true&width=1600&height=1066",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "César Roberto Figueredo Muñoz, abogado y excolaborador cercano del expresidente Martín Vizcarra, se desempeña actualmente como asesor principal en el despacho de la diputada Catherine Palomino (Juntos por el Perú), reveló este domingo Panorama.",
+   "puntos": [
+    "César Roberto Figueredo Muñoz, abogado y excolaborador cercano del expresidente Martín Vizcarra, se desempeña actualmente como asesor principal en el despacho de la diputada Catherine Palomino (Juntos por el Perú), reveló este domingo Panorama."
+   ],
+   "acceso": "restringido",
+   "url_medio": "https://gestion.pe/peru/politica/cesar-figueredo-exasesor-de-martin-vizcarra-trabaja-en-el-despacho-de-la-diputada-catherine-palomino-noticia/"
+  },
+  {
+   "id": "c4a19a5bca",
+   "sector": "coyuntura",
+   "titulo": "Los expertos en psicología coinciden: quienes sienten molestia cuando alguien se adelanta en una cola suelen ser más apegados a las normas",
+   "resumen": "Presta atención a lo que dice la psicología sobre esta reacción.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/mag/respuestas/los-expertos-en-psicologia-coinciden-quienes-sienten-molestia-cuando-alguien-se-adelanta-en-una-cola-suelen-ser-mas-apegados-a-las-normas-nnda-nnrt-noticia/",
+   "fecha": "2026-11-23T03:16:30Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/HJYNIVPABJE6DD7F6OXV6NLSUQ.jpg?auth=cf385d5ca8e599d82d87cd28d768c72e7ddb591de66bd1f606b84babcbfb6832&smart=true&width=2400&height=1600",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "Presta atención a lo que dice la psicología sobre esta reacción. ¿Te causa incomodidad cuando percibes que una persona extraña se adelanta en una cola?",
+   "puntos": [
+    "Presta atención a lo que dice la psicología sobre esta reacción.",
+    "¿Te causa incomodidad cuando percibes que una persona extraña se adelanta en una cola?",
+    "Gran parte de los seres humanos tienen esta reacción, pues se trata de una falta de respeto por aquellos que han esperado su turno."
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://elcomercio.pe/mag/respuestas/los-expertos-en-psicologia-coinciden-quienes-sienten-molestia-cuando-alguien-se-adelanta-en-una-cola-suelen-ser-mas-apegados-a-las-normas-nnda-nnrt-noticia/"
+  },
+  {
+   "id": "c33c22838e",
+   "sector": "coyuntura",
+   "titulo": "Liga MX: Julián Carranza rescata a Necaxa con un penal agónico ante Querétaro",
+   "resumen": "Querétaro vs Necaxa se enfrentaron por la México - Liga MX. Aquí todos los detalles y resumen del encuentro.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/futbol/ligas-internacionales/liga-mx-queretaro-quiere-romper-su-racha-negativa-y-ganar-frente-a-necaxa-noticia-1719054",
+   "fecha": "2026-11-23T03:15:03Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/23/1932059.jpg?imgdimension=look",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "contexto_latinoamerica_resumen"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Querétaro vs Necaxa se enfrentaron por la México - Liga MX. Aquí todos los detalles y resumen del encuentro.",
+   "puntos": [
+    "Querétaro vs Necaxa se enfrentaron por la México - Liga MX.",
+    "Aquí todos los detalles y resumen del encuentro.",
+    "Con muchas emociones en el estadio la Corregidora, Los Gallos Blancos y los Rayos empataron 2-2 en el partido de la fecha 17 del Apertura."
+   ],
+   "datos": [
+    {
+     "v": "2-2",
+     "t": "marcador",
+     "c": "Con muchas emociones en el estadio la Corregidora, Los Gallos Blancos y los Rayos empataron 2-2 en el partido de la fecha 17 del Apertura.."
+    },
+    {
+     "v": "4-4",
+     "t": "marcador",
+     "c": "…de Querétaro, Esteban González, planteó una estrategia 4-4-2 con José Hernández en el arco; Enzo Giménez, Diego…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://rpp.pe/futbol/ligas-internacionales/liga-mx-queretaro-quiere-romper-su-racha-negativa-y-ganar-frente-a-necaxa-noticia-1719054"
+  },
+  {
+   "id": "1615a0f1ce",
+   "sector": "economia",
+   "titulo": "MEF aprueba endeudamiento por S/ 5,700 millones para financiar proyecto de la Fuerza Aérea",
+   "resumen": "El Ministerio de Economía y Finanzas (MEF) autorizó la emisión de bonos soberanos por hasta S/ 5,700 millones para financiar el segundo tramo de un proyecto de inversión a cargo del Ministerio de Defensa, a través de la Fuerza Aérea del Perú (FAP).",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/economia/empresas/mef-aprueba-endeudamiento-por-s-5700-millones-para-financiar-proyecto-de-la-fuerza-aerea-noticia/",
+   "fecha": "2026-11-23T03:15:00Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/RWSISBS4SNGZVPJZ5LAI5FY27I.png?auth=12829e0495237bace654a3fdf8b7ac885306eac1cd971eeed329f122d7cb66af&smart=true&width=1400&height=800",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "url_medio": "https://gestion.pe/economia/empresas/mef-aprueba-endeudamiento-por-s-5700-millones-para-financiar-proyecto-de-la-fuerza-aerea-noticia/",
+   "sintesis": "El Ministerio de Economía y Finanzas (MEF) autorizó la emisión de bonos soberanos por hasta S/ 5,700 millones para financiar el segundo tramo de un proyecto de inversión a cargo del Ministerio de Defensa, a través de la Fuerza Aérea del Perú (FAP). La medida fue oficializada mediante el Decreto Supremo N° 262-2026-EF , publicado hoy en el diario oficial El Peruano, que aprueba una operación de endeudamiento interno para cubrir los recursos que demande la ejecución del proyecto.",
+   "puntos": [
+    "El Ministerio de Economía y Finanzas (MEF) autorizó la emisión de bonos soberanos por hasta S/ 5,700 millones para financiar el segundo tramo de un proyecto de inversión a cargo del Ministerio de Defensa, a través de la Fuerza Aérea del Perú (FAP).",
+    "La medida fue oficializada mediante el Decreto Supremo N° 262-2026-EF , publicado hoy en el diario oficial El Peruano, que aprueba una operación de endeudamiento interno para cubrir los recursos que demande la ejecución del proyecto.",
+    "Según la norma, la colocación de los bonos se realizará en soles, mediante una o más subastas, en el marco del Programa de Creadores de Mercado o del mecanismo que lo reemplace."
+   ],
+   "datos": [
+    {
+     "v": "S/ 5,700 millones",
+     "t": "monto",
+     "c": "MEF aprueba endeudamiento por S/ 5,700 millones para financiar proyecto de la Fuerza Aérea."
+    },
+    {
+     "v": "360 días",
+     "t": "cantidad",
+     "c": "Los títulos tendrán libre negociación y pagarán cupones de manera semestral, sobre la base de 30/360 días."
+    }
+   ],
+   "acceso": "abierto"
+  },
+  {
+   "id": "7785d687db",
+   "sector": "coyuntura",
+   "titulo": "Temblor en Chile: últimos sismos reportados este lunes 23 de noviembre",
+   "resumen": "Temblor en Chile EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Centro Sismológico Nacional (CSN).",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/chile/temblor-en-chile-en-vivo-epicentro-intensidad-y-magnitud-del-ultimo-sismo-reportado-el-23-y-24-de-noviembre-2026-segun-csn-centro-sismologico-nacional-socaire-ollague-lbposting-noticia/",
+   "fecha": "2026-11-23T03:13:41Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/XWYOFUHMTJDAJE52M6ZPFIJH7U.jpeg?auth=337b56344c2164e9c71a456d202136fd4302e5af4e7257839083ca65088c594e&smart=true&width=1200&height=700",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Temblor en Chile EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Centro Sismológico Nacional (CSN). Temblor en Chile: mira aquí la magnitud, el epicentro y los reportes del CSN sobre los últimos sismos en el país (Diseño: El Comercio).",
+   "puntos": [
+    "Temblor en Chile EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Centro Sismológico Nacional (CSN).",
+    "Temblor en Chile: mira aquí la magnitud, el epicentro y los reportes del CSN sobre los últimos sismos en el país (Diseño: El Comercio).",
+    "Momentos clave 2026-11-22 22:14:13 | Sigue en vivo los reportes de los últimos sismos en Chile registrados por el Centro Sismológico Nacional."
+   ],
+   "datos": [
+    {
+     "v": "23 de noviembre",
+     "t": "fecha",
+     "c": "Temblor en Chile: últimos sismos reportados este lunes 23 de noviembre."
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://elcomercio.pe/respuestas/chile/temblor-en-chile-en-vivo-epicentro-intensidad-y-magnitud-del-ultimo-sismo-reportado-el-23-y-24-de-noviembre-2026-segun-csn-centro-sismologico-nacional-socaire-ollague-lbposting-noticia/"
+  },
+  {
+   "id": "227b2c0040",
+   "sector": "coyuntura",
+   "titulo": "Fuertes lluvias se registran en Piura: Chulucanas y Tambogrande las zonas más afectadas",
+   "resumen": "Fuertes lluvias se vienen registrando este domingo 22 de noviembre en la región Piura, siendo Chulucanas y Tambogrande las zonas más afectadas por las intensas precipitaciones.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/peru/piura/fenomeno-el-nino-fuertes-lluvias-se-registran-en-piura-chulucanas-y-tambogrande-las-zonas-mas-afectadas-apuesplan-ultimas-noticia/",
+   "fecha": "2026-11-23T03:12:40Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/UPEP5MFO4RDSNNPSAOHWSU7I4A.jpg?auth=f7d3402d212a84f458424bf0776c8ab8d95cbd39f48acbea729b5710043381b0&smart=true&width=604&height=626",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Fuertes lluvias se vienen registrando este domingo 22 de noviembre en la región Piura, siendo Chulucanas y Tambogrande las zonas más afectadas por las intensas precipitaciones. ⛈️Intensa lluvia en #Chulucanas, #Piura 📌Ubicación (cruce Jr.",
+   "puntos": [
+    "Fuertes lluvias se vienen registrando este domingo 22 de noviembre en la región Piura, siendo Chulucanas y Tambogrande las zonas más afectadas por las intensas precipitaciones.",
+    "⛈️Intensa lluvia en #Chulucanas, #Piura 📌Ubicación (cruce Jr.",
+    "Pisagua y Lambayeque): https://t.co/2uKs9KYol6 @Senamhiperu @COENPeru @indeciperu https://t.co/yJ2FBzsyvn"
+   ],
+   "datos": [
+    {
+     "v": "50 kilómetros",
+     "t": "cantidad",
+     "c": "…de Las Lomas y Tambogrande, aproximadamente a 40 o 50 kilómetros al noroeste de Chulucanas."
+    },
+    {
+     "v": "22 de noviembre",
+     "t": "fecha",
+     "c": "Fuertes lluvias se vienen registrando este domingo 22 de noviembre en la región Piura, siendo Chulucanas y Tambogrande las…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://elcomercio.pe/peru/piura/fenomeno-el-nino-fuertes-lluvias-se-registran-en-piura-chulucanas-y-tambogrande-las-zonas-mas-afectadas-apuesplan-ultimas-noticia/"
+  },
+  {
+   "id": "522eeee6e4",
+   "sector": "politica",
+   "titulo": "Franco Vidal habría usado personal contratado por la Municipalidad de Ate para actividades proselitistas en plena segunda vuelta regional",
+   "resumen": "Las imágenes difundidas por Cuarto Poder ubican a Franco Vidal en actividades políticas el 11 y 20 de noviembre, fechas que no figuraban entre los permisos solicitados ante el Concejo Municipal",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/23/franco-vidal-habria-usado-personal-contratado-por-la-municipalidad-de-ate-para-actividades-proselitistas-en-plena-segunda-vuelta-regional/",
+   "fecha": "2026-11-23T03:10:21Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/BCRAA6BHLBHTXO5SXY2ZXZNLHY.jpg?auth=06a0bc1336acc6b2b5211be0865b8a4405784af59b93ca2753a692435f5e0868&smart=true&width=1920&height=1080",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "Las imágenes difundidas por Cuarto Poder ubican a Franco Vidal en actividades políticas el 11 y 20 de noviembre, fechas que no figuraban entre los permisos solicitados ante el Concejo Municipal Gestión de Franco Vidal responde por informe de Contraloría sobre 'trabajadores fantasmas' en el municipio de Ate| Foto composición: Infobae Perú 22 Nov, 2026 10:10 p. m.",
+   "puntos": [
+    "Las imágenes difundidas por Cuarto Poder ubican a Franco Vidal en actividades políticas el 11 y 20 de noviembre, fechas que no figuraban entre los permisos solicitados ante el Concejo Municipal",
+    "Gestión de Franco Vidal responde por informe de Contraloría sobre 'trabajadores fantasmas' en el municipio de Ate| Foto composición: Infobae Perú 22 Nov, 2026 10:10 p. m.",
+    "EST Guardar El alcalde de Ate, Franco Vidal , enfrenta cuestionamientos por sus viajes a distintas regiones del país para respaldar a candidatos que participan en la segunda vuelta de las Elecciones Regionales 2026 ."
+   ],
+   "datos": [
+    {
+     "v": "20 de noviembre",
+     "t": "fecha",
+     "c": "…ubican a Franco Vidal en actividades políticas el 11 y 20 de noviembre, fechas que no figuraban entre los permisos solicitados…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://www.infobae.com/peru/2026/11/23/franco-vidal-habria-usado-personal-contratado-por-la-municipalidad-de-ate-para-actividades-proselitistas-en-plena-segunda-vuelta-regional/"
+  },
+  {
+   "id": "66fbdd053d",
+   "sector": "coyuntura",
+   "titulo": "Temblor en México: reportes de los últimos sismos del domingo 22 de noviembre",
+   "resumen": "Temblor en México EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Servicio Sismológico Nacional (SSN).",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/mexico/temblor-en-mexico-en-vivo-intensidad-profundidad-epicentro-y-magnitud-del-ultimo-sismo-reportado-el-21-y-22-de-noviembre-segun-el-ssn-servicio-sismologico-nacional-cdmx-mx-lbposting-noticia/",
+   "fecha": "2026-11-23T03:08:59Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/HLULOCO5RVEK7HRU3C5SF6DPMI.webp?auth=9ba6f073dae5272ccfdaf17f95c39299f9724506349c4acd554e9369867c1162&smart=true&width=1200&height=700",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "url_medio": "https://elcomercio.pe/respuestas/mexico/temblor-en-mexico-en-vivo-intensidad-profundidad-epicentro-y-magnitud-del-ultimo-sismo-reportado-el-21-y-22-de-noviembre-segun-el-ssn-servicio-sismologico-nacional-cdmx-mx-lbposting-noticia/",
+   "sintesis": "Temblor en México EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Servicio Sismológico Nacional (SSN). Temblor en México: mira aquí la magnitud, el epicentro y los reportes sobre los últimos sismos en el país (Diseño: El Comercio).",
+   "puntos": [
+    "Temblor en México EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Servicio Sismológico Nacional (SSN).",
+    "Temblor en México: mira aquí la magnitud, el epicentro y los reportes sobre los últimos sismos en el país (Diseño: El Comercio).",
+    "Momentos clave 2026-11-20 22:43:20 | ¿De qué magnitud y en dónde fue el último temblor en México?"
+   ],
+   "datos": [
+    {
+     "v": "60%",
+     "t": "porcentaje",
+     "c": "…a 4 grados en la escala de Richter, lo que equivale a un 60% de todos los movimientos telúricos que se registran en el…"
+    },
+    {
+     "v": "22 de noviembre",
+     "t": "fecha",
+     "c": "Temblor en México hoy, domingo 22 de noviembre: sismos recientes reportados por el SSN."
+    }
+   ],
+   "acceso": "abierto"
+  },
+  {
+   "id": "6f199de309",
+   "sector": "politica",
+   "titulo": "Mauro Lionel celebra diez años de carrera con un concierto gratuito en el Teatro Municipal de Lima",
+   "resumen": "A sus 13 años, el compositor peruano reunirá el 29 de noviembre una selección de piezas distinguidas internacionalmente y ofrecerá ingreso mediante reserva previa para esta gala titulada “Sólo Premiados”.",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/23/mauro-lionel-celebra-diez-anos-de-carrera-con-un-concierto-gratuito-en-el-teatro-municipal-de-lima/",
+   "fecha": "2026-11-23T03:08:48Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/LEAYUCECCJGMRISXQ76FCNMFNA.png?auth=5e7f9001153b3c4132704f9ac73e76aa1cb9bc059d02a119566b6b7507b646ce&smart=true&width=1280&height=720",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "A sus 13 años, el compositor peruano reunirá el 29 de noviembre una selección de piezas distinguidas internacionalmente y ofrecerá ingreso mediante reserva previa para esta gala titulada “Sólo Premiados”. Mauro Lionel celebrará diez años de trayectoria musical con el concierto \"Sólo Premiados\" en el Teatro Municipal de Lima.",
+   "puntos": [
+    "A sus 13 años, el compositor peruano reunirá el 29 de noviembre una selección de piezas distinguidas internacionalmente y ofrecerá ingreso mediante reserva previa para esta gala titulada “Sólo Premiados”.",
+    "Mauro Lionel celebrará diez años de trayectoria musical con el concierto \"Sólo Premiados\" en el Teatro Municipal de Lima.",
+    "EST Guardar El compositor y director de orquesta peruano Mauro Lionel , de apenas 13 años, presentará el próximo domingo 29 de noviembre su décimo concierto de carrera, con el que marcará diez años de actividad musical ininterrumpida desde que comenzó a componer a los cuatro años de edad."
+   ],
+   "datos": [
+    {
+     "v": "13 años",
+     "t": "cantidad",
+     "c": "A sus 13 años, el compositor peruano reunirá el 29 de noviembre una…"
+    },
+    {
+     "v": "14 años",
+     "t": "cantidad",
+     "c": "El músico, que cumplirá 14 años dentro de pocos meses, acumula un catálogo superior a las 220 obras originales pese a su corta edad."
+    },
+    {
+     "v": "29 de noviembre",
+     "t": "fecha",
+     "c": "A sus 13 años, el compositor peruano reunirá el 29 de noviembre una selección de piezas distinguidas internacionalmente y…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://www.infobae.com/peru/2026/11/23/mauro-lionel-celebra-diez-anos-de-carrera-con-un-concierto-gratuito-en-el-teatro-municipal-de-lima/"
+  },
+  {
+   "id": "0f6330e713",
+   "sector": "economia",
+   "titulo": "Audios revelarían presunto plan de Prosegur y Hermes para mantener el duopolio del transporte de caudales",
+   "resumen": "En las conversaciones se mencionan acciones contra quienes consideraban obstáculos, acercamientos al Banco Central de Reserva y una presunta estrategia para archivar el proyecto de ley 9476",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/23/audios-revelarian-presunto-plan-de-prosegur-y-hermes-para-mantener-el-duopolio-del-transporte-de-caudales/",
+   "fecha": "2026-11-23T03:08:36Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/MJ4DRM7SX5AFFA6JUJ6ULFPNFE.jpg?auth=ea0bd3ce1755a273e855ed1d0c206b3487a4805ec9e7d426ff706e90c830aa52&smart=true&width=1472&height=832",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "En las conversaciones se mencionan acciones contra quienes consideraban obstáculos, acercamientos al Banco Central de Reserva y una presunta estrategia para archivar el proyecto de ley 9476 Panorama tuvo acceso exclusivo a grabaciones que podrían cambiar el curso de la investigación sobre la SBS y Sucamec. (Crédito: Panorama) 22 Nov, 2026 10:08 p. m.",
+   "puntos": [
+    "En las conversaciones se mencionan acciones contra quienes consideraban obstáculos, acercamientos al Banco Central de Reserva y una presunta estrategia para archivar el proyecto de ley 9476",
+    "Panorama tuvo acceso exclusivo a grabaciones que podrían cambiar el curso de la investigación sobre la SBS y Sucamec. (Crédito: Panorama) 22 Nov, 2026 10:08 p. m.",
+    "EST Guardar Tres fragmentos de grabaciones de reuniones de la Asociación de Empresas de Seguridad Privada del Perú (ASEPRI), realizadas entre julio y setiembre de 2025, revelarían las estrategias que representantes de Prosegur y Hermes habrían discutido para conservar el control del transporte de caudales en el país."
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://www.infobae.com/peru/2026/11/23/audios-revelarian-presunto-plan-de-prosegur-y-hermes-para-mantener-el-duopolio-del-transporte-de-caudales/"
+  },
+  {
+   "id": "bfa62cf327",
+   "sector": "coyuntura",
+   "titulo": "Temblor en Perú: últimos sismos reportados este lunes 23 de noviembre",
+   "resumen": "Temblor en Perú EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Instituto Geofísico del Perú (IGP).",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/temblor-en-peru-en-vivo-intensidad-epicentro-y-magnitud-del-ultimo-sismo-reportado-el-23-y-24-de-noviembre-2026-segun-igp-temblor-en-lima-y-junin-instituto-geofisico-del-peru-noticia/",
+   "fecha": "2026-11-23T03:08:29Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/BBTZQXKDTRH2NLRGREQWFSKJBE.webp?auth=e252e1a4cf64efe2850f230a45c667a3c6ff9a9c34a44a75c22be209b0861c41&smart=true&width=1200&height=700",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Temblor en Perú EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Instituto Geofísico del Perú (IGP). Temblor en Perú: mira aquí la magnitud, el epicentro y los reportes del IGP sobre los últimos sismos en el país (Diseño: El Comercio).",
+   "puntos": [
+    "Temblor en Perú EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Instituto Geofísico del Perú (IGP).",
+    "Temblor en Perú: mira aquí la magnitud, el epicentro y los reportes del IGP sobre los últimos sismos en el país (Diseño: El Comercio).",
+    "Momentos clave 2026-11-22 22:09:20 | Consulta aquí los últimos registros del Instituto Geofísico del Perú sobre los movimientos sísmicos en el país."
+   ],
+   "datos": [
+    {
+     "v": "23 de noviembre",
+     "t": "fecha",
+     "c": "Temblor en Perú: últimos sismos reportados este lunes 23 de noviembre."
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://elcomercio.pe/respuestas/temblor-en-peru-en-vivo-intensidad-epicentro-y-magnitud-del-ultimo-sismo-reportado-el-23-y-24-de-noviembre-2026-segun-igp-temblor-en-lima-y-junin-instituto-geofisico-del-peru-noticia/"
+  },
+  {
+   "id": "85b389a230",
+   "sector": "coyuntura",
+   "titulo": "Temblor en Colombia: reportes de los últimos sismos del domingo 22 de noviembre",
+   "resumen": "Temblor en Colombia EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Servicio Geológico Colombiano (SGC).",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/respuestas/colombia/temblor-en-colombia-hoy-en-vivo-segun-el-sgc-del-21-al-22-de-noviembre-de-2026-y-ultimo-sismos-servicio-geologico-colombiano-choco-co-lbposting-noticia/",
+   "fecha": "2026-11-23T03:08:26Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/FJGXBNOUZFH6RN43DIPDKXW33Y.jpeg?auth=c8ab1a98373607eec97e46072e99f3df514cd41b8419b871cd672684746d4919&smart=true&width=1200&height=700",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "url_medio": "https://elcomercio.pe/respuestas/colombia/temblor-en-colombia-hoy-en-vivo-segun-el-sgc-del-21-al-22-de-noviembre-de-2026-y-ultimo-sismos-servicio-geologico-colombiano-choco-co-lbposting-noticia/",
+   "sintesis": "Temblor en Colombia EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Servicio Geológico Colombiano (SGC). Temblor en Colombia: mira aquí la magnitud, el epicentro y los reportes sobre los últimos sismos en el país (Diseño: El Comercio).",
+   "puntos": [
+    "Temblor en Colombia EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Servicio Geológico Colombiano (SGC).",
+    "Temblor en Colombia: mira aquí la magnitud, el epicentro y los reportes sobre los últimos sismos en el país (Diseño: El Comercio).",
+    "Momentos clave 2026-11-20 23:06:59 | ¿De qué magnitud y en dónde fue el último temblor?"
+   ],
+   "datos": [
+    {
+     "v": "25%",
+     "t": "porcentaje",
+     "c": "El peso ideal no debe superar el 25% del peso corporal de la persona que la va a cargar, garantizando una evacuación rápida y ágil.."
+    },
+    {
+     "v": "22 de noviembre",
+     "t": "fecha",
+     "c": "Temblor en Colombia hoy, domingo 22 de noviembre: epicentro, magnitud y hora exacta."
+    }
+   ],
+   "acceso": "abierto"
+  },
+  {
+   "id": "efe3991ffc",
+   "sector": "nino",
+   "titulo": "Lluvias en regiones del Perú por El Niño EN VIVO HOY: inundaciones, posibles desbordes, huaicos y pronóstico de Senamhi",
+   "resumen": "Lluvias en Perú por El Niño EN VIVO HOY Senamhi regiones inundaciones.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/peru/lluvias-en-regiones-peru-por-el-nino-en-vivo-hoy-posibles-desbordes-inundaciones-huaicos-y-pronostico-de-senamhi-lbposting-noticia/",
+   "fecha": "2026-11-23T03:07:35Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/2DVFJQSXTBBSBMMICGDXG5ZAN4.jpg?auth=95e11e931bfdaa1a3f9b987689c7098c7cbba48365d56043d55c0e150f04c992&smart=true&width=1200&height=642",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "url_medio": "https://elcomercio.pe/peru/lluvias-en-regiones-peru-por-el-nino-en-vivo-hoy-posibles-desbordes-inundaciones-huaicos-y-pronostico-de-senamhi-lbposting-noticia/",
+   "sintesis": "Lluvias en Perú por El Niño EN VIVO HOY Senamhi regiones inundaciones. Noticias Información basada en hechos y verificada de primera mano por el reportero, o reportada y verificada por fuentes expertas.",
+   "puntos": [
+    "Lluvias en Perú por El Niño EN VIVO HOY Senamhi regiones inundaciones.",
+    "Noticias Información basada en hechos y verificada de primera mano por el reportero, o reportada y verificada por fuentes expertas.",
+    "Soy Merlín , el agente de IA de El Comercio."
+   ],
+   "acceso": "abierto"
+  },
+  {
+   "id": "b07c07ca60",
+   "sector": "coyuntura",
+   "titulo": "Venezuela: chavismo y oposición suman otra ronda de diálogo para acabar con su crisis",
+   "resumen": "Chavismo y oposición venezolana concluyen una cuarta ronda de diálogo para avanzar en acuerdos políticos y una posible transición en Venezuela.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/mundo/internacional/venezuela-suma-otra-ronda-de-conversaciones-en-busca-de-una-salida-a-su-crisis-politica-noticia/",
+   "fecha": "2026-11-23T03:00:00Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/A7PB43AAHVE33KGZKEKPMLQWCM.jpg?auth=bd738ee9b9af70ac50c480072b0d05cd2ae69e921b4e302ea95aec4a420079e2&smart=true&width=1200&height=801",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Chavismo y oposición venezolana concluyen una cuarta ronda de diálogo para avanzar en acuerdos políticos y una posible transición en Venezuela. El chavismo y la oposición prevén concluir este lunes la cuarta ronda del diálogo que impulsa Estados Unidos en el marco de su plan de transición en Venezuela, de acuerdo con una convocatoria enviada este domingo por el Ministerio de Comunicación e Información.",
+   "puntos": [
+    "Chavismo y oposición venezolana concluyen una cuarta ronda de diálogo para avanzar en acuerdos políticos y una posible transición en Venezuela.",
+    "El chavismo y la oposición prevén concluir este lunes la cuarta ronda del diálogo que impulsa Estados Unidos en el marco de su plan de transición en Venezuela, de acuerdo con una convocatoria enviada este domingo por el Ministerio de Comunicación e Información.",
+    "El cuarto ciclo, que inició el pasado 13 de noviembre, se centró en la discusión de varias leyes relacionadas con derechos políticos; también la del Financiamiento al Terrorismo -un delito que usualmente imputan a manifestantes-, según señalaron a EFE recientemente fuentes cercanas a este proceso."
+   ],
+   "datos": [
+    {
+     "v": "13 de noviembre",
+     "t": "fecha",
+     "c": "El cuarto ciclo, que inició el pasado 13 de noviembre, se centró en la discusión de varias leyes relacionadas…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://gestion.pe/mundo/internacional/venezuela-suma-otra-ronda-de-conversaciones-en-busca-de-una-salida-a-su-crisis-politica-noticia/"
+  },
+  {
+   "id": "5ff1ecd22f",
+   "sector": "politica",
+   "titulo": "Luren Márquez revela la promesa que cumplió con su traje típico en Miss Universo 2026",
+   "resumen": "La Miss Perú contó que el diseño \"Oasis de Ica\" nació de un sueño que mantuvo durante años antes de pisar el escenario internacional y agradeció al diseñador Beto Pinedo tras lucir su traje típico en Puerto Rico.",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/23/luren-marquez-revela-la-promesa-que-cumplio-con-su-traje-tipico-en-miss-universo-2026/",
+   "fecha": "2026-11-23T02:47:16Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/R4MOEDVVAVBIXPVMSHKDHSPZVE.png?auth=2306f6839045e4962b57deb3838ff2d945c07cf070e59456d77795729616dea9&smart=true&width=1280&height=720",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "La Miss Perú contó que el diseño \"Oasis de Ica\" nació de un sueño que mantuvo durante años antes de pisar el escenario internacional y agradeció al diseñador Beto Pinedo tras lucir su traje típico en Puerto Rico. La confección de la pieza tomó cerca de un mes e integró homenajes a las Líneas de Nasca y a la tradicional Vendimia.",
+   "puntos": [
+    "La Miss Perú contó que el diseño \"Oasis de Ica\" nació de un sueño que mantuvo durante años antes de pisar el escenario internacional y agradeció al diseñador Beto Pinedo tras lucir su traje típico en Puerto Rico.",
+    "La confección de la pieza tomó cerca de un mes e integró homenajes a las Líneas de Nasca y a la tradicional Vendimia.",
+    "EST Guardar Luren Márquez reveló el significado personal detrás del traje típico que lució durante el Miss Universo 2026, al confirmar que el diseño “Oasis de Ica” respondió a una promesa que se hizo a sí misma años antes de representar al Perú en el certamen internacional."
+   ],
+   "datos": [
+    {
+     "v": "21 de noviembre",
+     "t": "fecha",
+     "c": "…en la competencia de trajes típicos, realizada el sábado 21 de noviembre.."
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://www.infobae.com/peru/2026/11/23/luren-marquez-revela-la-promesa-que-cumplio-con-su-traje-tipico-en-miss-universo-2026/"
+  },
+  {
+   "id": "3c9d4aef42",
+   "sector": "deporte",
+   "titulo": "Sport Huancayo celebró con el trofeo del Torneo Clausura tras superar en puntaje a Cristal y Universitario",
+   "resumen": "El plantel de Sport Huancayo festejó en casa tras golear por 4-1 a Universitario de Deportes en el final del Torneo Clausura.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/futbol/descentralizado/sport-huancayo-celebro-con-el-trofeo-del-torneo-clausura-tras-superar-en-la-tabla-a-cristal-y-universitario-noticia-1719205",
+   "fecha": "2026-11-23T02:46:51Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/22/portada_1834902.jpg?width=860&quality=80",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El plantel de Sport Huancayo festejó en casa tras golear por 4-1 a Universitario de Deportes en el final del Torneo Clausura.",
+   "puntos": [
+    "El plantel de Sport Huancayo festejó en casa tras golear por 4-1 a Universitario de Deportes en el final del Torneo Clausura."
+   ],
+   "acceso": "sin_verificar",
+   "url_medio": "https://rpp.pe/futbol/descentralizado/sport-huancayo-celebro-con-el-trofeo-del-torneo-clausura-tras-superar-en-la-tabla-a-cristal-y-universitario-noticia-1719205"
+  },
+  {
+   "id": "37cb2dc221",
+   "sector": "investigacion",
+   "titulo": "Empresa facturó S/3 millones a la Municipalidad del Callao: fundador dice ser dueño “en papeles” y trabajar como mototaxista",
+   "resumen": "Las contrataciones incluyen órdenes de servicio por montos menores a ocho UIT. La Contraloría advirtió que un eventual fraccionamiento podría tener implicancias penales",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/23/empresa-facturo-s3-millones-a-la-municipalidad-del-callao-fundador-dice-ser-dueno-en-papeles-y-trabajar-como-mototaxista/",
+   "fecha": "2026-11-23T02:45:26Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/UKBL3POI2VDBNIKAIFCLIKAAAI.png?auth=1a17ceea1678328e0f0a5f026685517764e83d94b2ed3dae058a3f694d08c0e6&smart=true&width=1920&height=1080",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Las contrataciones incluyen órdenes de servicio por montos menores a ocho UIT. La Contraloría advirtió que un eventual fraccionamiento podría tener implicancias penales",
+   "puntos": [
+    "Las contrataciones incluyen órdenes de servicio por montos menores a ocho UIT.",
+    "La Contraloría advirtió que un eventual fraccionamiento podría tener implicancias penales",
+    "Una investigación fiscal que destapa una posible red de corrupción y malversación de fondos públicos en el corazón del municipio chalaco. (Crédito: Panorama) 22 Nov, 2026 09:45 p. m."
+   ],
+   "datos": [
+    {
+     "v": "S/3 millones",
+     "t": "monto",
+     "c": "Empresa facturó S/3 millones a la Municipalidad del Callao: fundador dice ser dueño “en papeles” y trabajar como mototaxista."
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://www.infobae.com/peru/2026/11/23/empresa-facturo-s3-millones-a-la-municipalidad-del-callao-fundador-dice-ser-dueno-en-papeles-y-trabajar-como-mototaxista/"
+  },
+  {
+   "id": "151c3eb1bd",
+   "sector": "politica",
+   "titulo": "Renovación Popular evalúa respaldar interpelación al canciller Carlos Espá",
+   "resumen": "El diputado de Renovación Popular, Christian Aranda, señaló que su bancada evalúa respaldar la moción de interpelación contra el canciller Carlos Espá, presentada por la legisladora de Ahora Nación, Marleny Arminta.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/peru/politica/renovacion-popular-evalua-respaldar-interpelacion-al-canciller-carlos-espa-noticia/",
+   "fecha": "2026-11-23T02:45:00Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/WCGDRWAZR5BCBGWALUUOVMFZUY.jpg?auth=10054cfaa10b58166e80c43778b4ed8a47896727cc018761d88a339f2f4ba5dc&smart=true&width=1200&height=800",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El diputado de Renovación Popular, Christian Aranda, señaló que su bancada evalúa respaldar la moción de interpelación contra el canciller Carlos Espá, presentada por la legisladora de Ahora Nación, Marleny Arminta.",
+   "puntos": [
+    "El diputado de Renovación Popular, Christian Aranda, señaló que su bancada evalúa respaldar la moción de interpelación contra el canciller Carlos Espá, presentada por la legisladora de Ahora Nación, Marleny Arminta."
+   ],
+   "acceso": "restringido",
+   "url_medio": "https://gestion.pe/peru/politica/renovacion-popular-evalua-respaldar-interpelacion-al-canciller-carlos-espa-noticia/"
+  },
+  {
+   "id": "adfbfadad9",
+   "sector": "salud",
+   "titulo": "Revelan millonario gasto de entidades del Estado en tarjetas navideñas para sus trabajadores",
+   "resumen": "Diversas entidades del Estado, como el Seguro Social de Salud (Essalud), Perupetro, Provías Descentralizado y la Empresa Nacional de Puertos (Enapu) gastarán más de S/ 6 millones en tarjetas navideñas, según reveló “Cuarto Poder”.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/politica/gobierno/revelan-millonario-gasto-de-entidades-del-estado-en-tarjetas-navidenas-para-sus-trabajadores-essalud-perupetro-provias-descentralizado-enapu-ultimas-noticia/",
+   "fecha": "2026-11-23T02:43:38Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/ISX3QXQCBNC3ZG7VSSTMBIY4PE.jpg?auth=64e5fd0de9593f68c558b311e70657846a0d69cd6338f0d449f68ce00895b71e&smart=true&width=1270&height=833",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Diversas entidades del Estado, como el Seguro Social de Salud (Essalud), Perupetro, Provías Descentralizado y la Empresa Nacional de Puertos (Enapu) gastarán más de S/ 6 millones en tarjetas navideñas, según reveló “Cuarto Poder”. Según el dominical, en Essalud solo la red asistencial Sabogal gastará S/5 millones 901 mil en compras navideñas que consiste en dos tarjetas, una para alimentos y otra adicional para que puedan adquirir juguetes.",
+   "puntos": [
+    "Diversas entidades del Estado, como el Seguro Social de Salud (Essalud), Perupetro, Provías Descentralizado y la Empresa Nacional de Puertos (Enapu) gastarán más de S/ 6 millones en tarjetas navideñas, según reveló “Cuarto Poder”.",
+    "Según el dominical, en Essalud solo la red asistencial Sabogal gastará S/5 millones 901 mil en compras navideñas que consiste en dos tarjetas, una para alimentos y otra adicional para que puedan adquirir juguetes.",
+    "Son dos procesos de contratación en simultáneo para los trabajadores del régimen 276 y 728, y el otro para los del régimen CAS 1057."
+   ],
+   "datos": [
+    {
+     "v": "S/ 6 millones",
+     "t": "monto",
+     "c": "…y la Empresa Nacional de Puertos (Enapu) gastarán más de S/ 6 millones en tarjetas navideñas, según reveló “Cuarto Poder”.."
+    },
+    {
+     "v": "S/5 millones",
+     "t": "monto",
+     "c": "…en Essalud solo la red asistencial Sabogal gastará S/5 millones 901 mil en compras navideñas que consiste en dos tarjetas…"
+    },
+    {
+     "v": "S/800",
+     "t": "monto",
+     "c": "Se trata de vales de consumo para canjear alimentos y/o bebidas, un total de 7.188 tarjetas de S/800 cada una.."
+    },
+    {
+     "v": "S/50",
+     "t": "monto",
+     "c": "Adicionalmente, se solicitaron 2.593 tarjetas de S/50 cada una, para la compra única y exclusiva de juguetes."
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://elcomercio.pe/politica/gobierno/revelan-millonario-gasto-de-entidades-del-estado-en-tarjetas-navidenas-para-sus-trabajadores-essalud-perupetro-provias-descentralizado-enapu-ultimas-noticia/"
+  },
+  {
+   "id": "94469797e2",
+   "sector": "coyuntura",
+   "titulo": "Piura: intensas lluvias inundan calles en el distrito de Tambogrande y Chulucanas [VIDEO]",
+   "resumen": "El Centro de Operaciones de Emergencia Nacional (COEN) informó la posible activación de quebradas en nivel rojo en la región Piura, Tumbes, y Cajamarca.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/peru/piura/piura-intensas-lluvias-inundan-calles-en-el-distrito-de-tambogrande-y-chulucanas-noticia-1719203",
+   "fecha": "2026-11-23T02:43:35Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/22/atsapp-video-2026-11-22-at-85809-pm-1932041mp4_1932042.jpg?width=860&quality=80",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El Centro de Operaciones de Emergencia Nacional (COEN) informó la posible activación de quebradas en nivel rojo en la región Piura, Tumbes, y Cajamarca. Intensas lluvias inundaron este domingo varias calles de los distritos de Chulucanas y Tambogrande , en la región Piura.",
+   "puntos": [
+    "El Centro de Operaciones de Emergencia Nacional (COEN) informó la posible activación de quebradas en nivel rojo en la región Piura, Tumbes, y Cajamarca.",
+    "Intensas lluvias inundaron este domingo varias calles de los distritos de Chulucanas y Tambogrande , en la región Piura.",
+    "El agua ingresó a las viviendas, perjudicando a las familias que descansaban."
+   ],
+   "datos": [
+    {
+     "v": "37,2 °C",
+     "t": "temperatura",
+     "c": "…de Piura registró ayer, sábado, temperaturas de hasta 37,2 °C y que el calor persistirá hasta el martes 24 de noviembre…"
+    },
+    {
+     "v": "37 °C",
+     "t": "temperatura",
+     "c": "…alta, con 37,2 °C, seguida de San Miguel, en Catacaos, con 37 °C; Miraflores, en Piura, con 36 °C; y Lancones, con 35 °C."
+    },
+    {
+     "v": "36 °C",
+     "t": "temperatura",
+     "c": "…Miguel, en Catacaos, con 37 °C; Miraflores, en Piura, con 36 °C; y Lancones, con 35 °C."
+    },
+    {
+     "v": "35 °C",
+     "t": "temperatura",
+     "c": "…37 °C; Miraflores, en Piura, con 36 °C; y Lancones, con 35 °C."
+    },
+    {
+     "v": "24 de noviembre",
+     "t": "fecha",
+     "c": "…de hasta 37,2 °C y que el calor persistirá hasta el martes 24 de noviembre, advirtió el Servicio Nacional de Meteorología e…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://rpp.pe/peru/piura/piura-intensas-lluvias-inundan-calles-en-el-distrito-de-tambogrande-y-chulucanas-noticia-1719203"
+  },
+  {
+   "id": "fb71767b02",
+   "sector": "deporte",
+   "titulo": "Fabián Bustos y su advertencia a Sport Huancayo: \"El próximo fin de semana es otra historia\"",
+   "resumen": "Fabián Bustos habló sobre las semifinales de la Liga 1 2026 después de la derrota por goleada de Universitario ante Sport Huancayo.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/futbol/descentralizado/universitario-de-deportes-fabian-bustos-y-su-advertencia-a-sport-huancayo-el-proximo-fin-de-semana-es-otra-historia-noticia-1719202",
+   "fecha": "2026-11-23T02:41:50Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/22/594259_1932038.jpg?imgdimension=look",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Fabián Bustos habló sobre las semifinales de la Liga 1 2026 después de la derrota por goleada de Universitario ante Sport Huancayo. Fabián Bustos , entrenador de Universitario de Deportes, lamentó la derrota por 4-0 del cuadro crema ante Sport Huancayo , que se proclamó ganador del Torneo Clausura 2026.",
+   "puntos": [
+    "Fabián Bustos habló sobre las semifinales de la Liga 1 2026 después de la derrota por goleada de Universitario ante Sport Huancayo.",
+    "Fabián Bustos , entrenador de Universitario de Deportes, lamentó la derrota por 4-0 del cuadro crema ante Sport Huancayo , que se proclamó ganador del Torneo Clausura 2026.",
+    "Sin embargo, confía que su equipo se recuperará ante el 'Rojo Matador' en las semifinales de la Liga 1 2026."
+   ],
+   "datos": [
+    {
+     "v": "100%",
+     "t": "porcentaje",
+     "c": "Si hubiera estado para jugar al 100%, lo hubiera puesto, pero va a estar para el 29”, culminó.."
+    },
+    {
+     "v": "4-0",
+     "t": "marcador",
+     "c": "…de Universitario de Deportes, lamentó la derrota por 4-0 del cuadro crema ante Sport Huancayo , que se proclamó…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://rpp.pe/futbol/descentralizado/universitario-de-deportes-fabian-bustos-y-su-advertencia-a-sport-huancayo-el-proximo-fin-de-semana-es-otra-historia-noticia-1719202"
+  },
+  {
+   "id": "7c51b1954a",
+   "sector": "investigacion",
+   "titulo": "El alcalde electo de APP acusado de integrar una red ligada a 23 asesinatos sigue prófugo",
+   "resumen": "Fernando Morales Chinchay, electo en Huaylillas por una diferencia de siete votos, es investigado por presuntamente integrar una organización criminal vinculada a homicidios, extorsiones y tráfico de drogas en Lima Norte. La Policía no logró ubicarlo durante un operativo en 39…",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/23/el-alcalde-electo-de-app-acusado-de-integrar-una-red-ligada-a-23-asesinatos-sigue-profugo/",
+   "fecha": "2026-11-23T02:40:21Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/PD4VXNFNWBGXPCMXO4SA3OLLRE.png?auth=bf9e823772af3c5744cedf96c06b966bc5f0a3cb5f51c479964e4c53ca0bcab4&smart=true&width=871&height=603",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Fernando Morales Chinchay, electo en Huaylillas por una diferencia de siete votos, es investigado por presuntamente integrar una organización criminal vinculada a homicidios, extorsiones y tráfico de drogas en Lima Norte. La Policía no logró ubicarlo durante un operativo en 39 inmuebles y dos penales",
+   "puntos": [
+    "Fernando Morales Chinchay, electo en Huaylillas por una diferencia de siete votos, es investigado por presuntamente integrar una organización criminal vinculada a homicidios, extorsiones y tráfico de drogas en Lima Norte.",
+    "La Policía no logró ubicarlo durante un operativo en 39 inmuebles y dos penales",
+    "Reportaje televisivo de Punto Final sobre la búsqueda policial y fiscal de Fernando Morales Chinchay, alcalde electo del distrito de Huaylillas por Alianza para el Progreso."
+   ],
+   "datos": [
+    {
+     "v": "23 personas",
+     "t": "cantidad",
+     "c": "El Poder Judicial autorizó la detención de 23 personas, entre ellas dos policías investigados por una presunta…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://www.infobae.com/peru/2026/11/23/el-alcalde-electo-de-app-acusado-de-integrar-una-red-ligada-a-23-asesinatos-sigue-profugo/"
+  },
+  {
+   "id": "162cb71c11",
+   "sector": "politica",
+   "titulo": "Miss Universo 2026: Luren Márquez deslumbra con traje típico inspirado en el oasis de su natal Ica",
+   "resumen": "La riqueza cultural, la belleza natural y las tradiciones de Ica cobran vida en una imponente creación del diseñador peruano Beto Pinedo, que rinde homenaje a la Huacachina, las Líneas de Nasca y la tradición vitivinícola de la región.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/famosos/farandula/miss-universo-2026-luren-marquez-deslumbra-con-traje-tipico-inspirado-en-el-oasis-de-su-natal-ica-noticia-1719201",
+   "fecha": "2026-11-23T02:39:04Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/22/304430_1932039.jpg?imgdimension=look",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "La riqueza cultural, la belleza natural y las tradiciones de Ica cobran vida en una imponente creación del diseñador peruano Beto Pinedo, que rinde homenaje a la Huacachina, las Líneas de Nasca y la tradición vitivinícola de la región. El Perú volvió a brillar en el escenario de Miss Universo .",
+   "puntos": [
+    "La riqueza cultural, la belleza natural y las tradiciones de Ica cobran vida en una imponente creación del diseñador peruano Beto Pinedo, que rinde homenaje a la Huacachina, las Líneas de Nasca y la tradición vitivinícola de la región.",
+    "El Perú volvió a brillar en el escenario de Miss Universo .",
+    "La representante nacional, Luren Márquez , deslumbró durante la competencia de traje típico con una imponente creación inspirada en los paisajes y las tradiciones de su natal Ica."
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://rpp.pe/famosos/farandula/miss-universo-2026-luren-marquez-deslumbra-con-traje-tipico-inspirado-en-el-oasis-de-su-natal-ica-noticia-1719201"
+  },
+  {
+   "id": "bf14cd868c",
+   "sector": "coyuntura",
+   "titulo": "La psicología dice que las personas que guardan silencio durante una discusión intentan proteger su estado emocional",
+   "resumen": "Descubre qué dice la psicología sobre esta reacción ante una discusión.",
+   "fuente": "El Comercio",
+   "url": "https://elcomercio.pe/mag/respuestas/la-psicologia-dice-que-las-personas-que-guardan-silencio-durante-una-discusion-intentan-proteger-su-estado-emocional-nnda-nnrt-noticia/",
+   "fecha": "2026-11-23T02:37:02Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://elcomercio.pe/resizer/v2/A4ITN3MHONHFDDUM7YATL3VXYA.jpg?auth=d557d1ca1a3ee77c002dfc96b6ae39418bac60fec551727157cae94c5647fb14&smart=true&width=6000&height=4000",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "Descubre qué dice la psicología sobre esta reacción ante una discusión. Una discusión es capaz de despertar emociones negativas, pues la mayoría suele dejarse llevar por la ira o la frustración.",
+   "puntos": [
+    "Descubre qué dice la psicología sobre esta reacción ante una discusión.",
+    "Una discusión es capaz de despertar emociones negativas, pues la mayoría suele dejarse llevar por la ira o la frustración.",
+    "Sorprendentemente, hay personas que tienen una reacción adecuada ante tensos momentos, tal como guardar silencio."
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://elcomercio.pe/mag/respuestas/la-psicologia-dice-que-las-personas-que-guardan-silencio-durante-una-discusion-intentan-proteger-su-estado-emocional-nnda-nnrt-noticia/"
+  },
+  {
+   "id": "34c6901f57",
+   "sector": "mundo",
+   "titulo": "Otro golpe a Trump: los demócratas logran una mayoría histórica en la Cámara de Representantes",
+   "resumen": "El Partido Demócrata alcanzó este domingo 22 de noviembre al menos 258 escaños en la Cámara de Representantes de Estados Unidos, su mayor representación desde 1992, tras otra victoria en Carolina del Norte. El resultado reafirma su triunfo en las elecciones de medio mandato del…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/ee-uu-y-canad%C3%A1/20261123-otro-golpe-a-trump-los-dem%C3%B3cratas-logran-una-mayor%C3%ADa-hist%C3%B3rica-en-la-c%C3%A1mara-de-representantes",
+   "fecha": "2026-11-23T02:35:44Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/b4dbdca2-9e00-11f0-b8f5-005056bf30b7/w:1024/p:16x9/2025-09-19T154156Z-1092563262-RC22VGABX7E6-RTRMADP-3-USA-CONGRESS-SHUTDOWN.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "El Partido Demócrata alcanzó este domingo 22 de noviembre al menos 258 escaños en la Cámara de Representantes de Estados Unidos, su mayor representación desde 1992, tras otra victoria en Carolina del… El resultado reafirma su triunfo en las elecciones de medio mandato del pasado 3 de noviembre, en las que también consiguió su mayoría más amplia en el Senado desde 2010.",
+   "puntos": [
+    "El Partido Demócrata alcanzó este domingo 22 de noviembre al menos 258 escaños en la Cámara de Representantes de Estados Unidos, su mayor representación desde 1992, tras otra victoria en Carolina del…",
+    "El resultado reafirma su triunfo en las elecciones de medio mandato del pasado 3 de noviembre, en las que también consiguió su mayoría más amplia en el Senado desde 2010.",
+    "Por: FRANCE 24 Los demócratas alcanzaron este domingo al menos 258 escaños en la Cámara de Representantes , obteniendo así el mayor número de asientos desde principios de la década de 1990."
+   ],
+   "datos": [
+    {
+     "v": "258 escaños",
+     "t": "cantidad",
+     "c": "…Demócrata alcanzó este domingo 22 de noviembre al menos 258 escaños en la Cámara de Representantes de Estados Unidos, su mayor…"
+    },
+    {
+     "v": "250 escaños",
+     "t": "cantidad",
+     "c": "Mientras, los republicanos no han conseguido más de 250 escaños desde la Gran Depresión."
+    },
+    {
+     "v": "22 de noviembre",
+     "t": "fecha",
+     "c": "El Partido Demócrata alcanzó este domingo 22 de noviembre al menos 258 escaños en la Cámara de Representantes de…"
+    },
+    {
+     "v": "3 de noviembre",
+     "t": "fecha",
+     "c": "…su triunfo en las elecciones de medio mandato del pasado 3 de noviembre, en las que también consiguió su mayoría más amplia en el…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://www.france24.com/es/ee-uu-y-canad%C3%A1/20261123-otro-golpe-a-trump-los-dem%C3%B3cratas-logran-una-mayor%C3%ADa-hist%C3%B3rica-en-la-c%C3%A1mara-de-representantes"
+  },
+  {
+   "id": "2c2d08a647",
+   "sector": "deporte",
+   "titulo": "Liga Peruana de Vóley: Alianza Lima venció 3-0 a Atlético Atenea y se recupera",
+   "resumen": "Alianza Lima, con una mayor capacidad y variedad ofensiva, venció este domingo al Atlético Atenea por 3 set a 0 en partido que cerró la sexta fecha de la Liga Peruana de Vóley 2026-2027, que se disputó en el Polideportivo Lucha Fuentes de Villa El Salvador.",
+   "fuente": "Agencia Andina",
+   "url": "https://andina.pe/agencia/noticia-liga-peruana-voley-alianza-lima-vencio-30-a-atletico-atenea-y-se-recupera-1101056.aspx",
+   "fecha": "2026-11-23T02:33:18Z",
+   "tipo": "estatal",
+   "genero": "noticia",
+   "imagen": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2026/11/22/001333944W.webp",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Alianza Lima, con una mayor capacidad y variedad ofensiva, venció este domingo al Atlético Atenea por 3 set a 0 en partido que cerró la sexta fecha de la Liga Peruana de Vóley 2026-2027, que se disputó en el Polideportivo Lucha Fuentes de Villa El Salvador.",
+   "puntos": [
+    "Alianza Lima, con una mayor capacidad y variedad ofensiva, venció este domingo al Atlético Atenea por 3 set a 0 en partido que cerró la sexta fecha de la Liga Peruana de Vóley 2026-2027, que se disputó en el Polideportivo Lucha Fuentes de Villa El Salvador."
+   ],
+   "datos": [
+    {
+     "v": "3-0",
+     "t": "marcador",
+     "c": "Liga Peruana de Vóley: Alianza Lima venció 3-0 a Atlético Atenea y se recupera."
+    }
+   ],
+   "acceso": "sin_verificar",
+   "url_medio": "https://andina.pe/agencia/noticia-liga-peruana-voley-alianza-lima-vencio-30-a-atletico-atenea-y-se-recupera-1101056.aspx"
+  },
+  {
+   "id": "97368aa10b",
+   "sector": "mundo",
+   "titulo": "Kim dice que Corea del Norte no busca \"supremacía ni expansión\", sino seguridad",
+   "resumen": "Los ideales de Pyongyang son de \"independencia, paz y amistad\", dijo el gobernante, que persiste en desarrollar su programa nuclear.",
+   "fuente": "DW Español",
+   "url": "https://www.dw.com/es/kim-dice-que-corea-del-norte-no-busca-supremacía-ni-expansión-sino-seguridad/a-80015541?maca=spa-rss-sp-all-1122-xml-mrss",
+   "fecha": "2026-11-23T02:31:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://static.dw.com/image/79965795_6.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "Los ideales de Pyongyang son de \"independencia, paz y amistad\", dijo el gobernante, que persiste en desarrollar su programa nuclear. Kim hizo estas declaraciones en una ceremonia para recibir las cartas credenciales de embajadores recién nombrados, en una inusual ruptura del protocolo.",
+   "puntos": [
+    "Los ideales de Pyongyang son de \"independencia, paz y amistad\", dijo el gobernante, que persiste en desarrollar su programa nuclear.",
+    "Kim hizo estas declaraciones en una ceremonia para recibir las cartas credenciales de embajadores recién nombrados, en una inusual ruptura del protocolo.",
+    "La tarea tradicionalmente ha sido realizada por un alto funcionario."
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://www.dw.com/es/kim-dice-que-corea-del-norte-no-busca-supremac%C3%ADa-ni-expansi%C3%B3n-sino-seguridad/a-80015541"
+  },
+  {
+   "id": "c5f64e6eb2",
+   "sector": "politica",
+   "titulo": "Trump anticipa una reacción si Schumer vuelve a liderar el Senado",
+   "resumen": "Donald Trump se mostró dispuesto a trabajar con los demócratas, pero expresó sus reparos sobre Chuck Schumer y su liderazgo en el Senado.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/mundo/internacional/donald-trump-anticipa-una-reaccion-politica-si-schumer-vuelve-a-liderar-el-senado-noticia/",
+   "fecha": "2026-11-23T02:30:00Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/5M6QNLFTBZF4HN2IQM72KY232A.jpg?auth=871fdff8ae723640bbade2bc8f27d119018cd4f0f309d0d2494050a551776ee0&smart=true&width=1200&height=800",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Donald Trump se mostró dispuesto a trabajar con los demócratas, pero expresó sus reparos sobre Chuck Schumer y su liderazgo en el Senado. El presidente estadounidense, Donald Trump, advirtió este domingo que le resultará “muy difícil” trabajar con el demócrata Chuck Schumer en caso de que vuelva a convertirse en el líder de la mayoría en el Senado, y lo calificó como “uno de los peores de la historia” en ese cargo.",
+   "puntos": [
+    "Donald Trump se mostró dispuesto a trabajar con los demócratas, pero expresó sus reparos sobre Chuck Schumer y su liderazgo en el Senado.",
+    "El presidente estadounidense, Donald Trump, advirtió este domingo que le resultará “muy difícil” trabajar con el demócrata Chuck Schumer en caso de que vuelva a convertirse en el líder de la mayoría en el Senado, y lo calificó como “uno de los peores de la historia” en ese cargo.",
+    "“Va a ser muy difícil para mí trabajar con Chuck Schumer en caso de que se convierta en líder de la mayoría en el Senado."
+   ],
+   "datos": [
+    {
+     "v": "56 escaños",
+     "t": "cantidad",
+     "c": "…en las que recuperaron el control del Senado con 56 escaños."
+    },
+    {
+     "v": "3 de noviembre",
+     "t": "fecha",
+     "c": "…de los demócratas en las elecciones de medio mandato del 3 de noviembre, en las que recuperaron el control del Senado con 56…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://gestion.pe/mundo/internacional/donald-trump-anticipa-una-reaccion-politica-si-schumer-vuelve-a-liderar-el-senado-noticia/"
+  },
+  {
+   "id": "721045654b",
+   "sector": "nino",
+   "titulo": "Presidenta participará en entrega de maquinaria donada para trabajos por fenómeno El Niño",
+   "resumen": "La presidenta de la república, Keiko Fujimori, estará presente mañana en la ceremonia de entrega de 14 máquinas donadas por el Fondo General de Contravalor Perú-Japón, las cuales serán empleadas en los trabajos de preparación y prevención ante el fenómeno El Niño.",
+   "fuente": "Agencia Andina",
+   "url": "https://andina.pe/agencia/noticia-presidenta-participara-entrega-maquinaria-donada-para-trabajos-fenomeno-nino-1101054.aspx",
+   "fecha": "2026-11-23T02:16:07Z",
+   "tipo": "estatal",
+   "genero": "noticia",
+   "imagen": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2026/09/25/001318379W.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "La presidenta de la república, Keiko Fujimori, estará presente mañana en la ceremonia de entrega de 14 máquinas donadas por el Fondo General de Contravalor Perú-Japón, las cuales serán empleadas en los trabajos de preparación y prevención ante el fenómeno El Niño.",
+   "puntos": [
+    "La presidenta de la república, Keiko Fujimori, estará presente mañana en la ceremonia de entrega de 14 máquinas donadas por el Fondo General de Contravalor Perú-Japón, las cuales serán empleadas en los trabajos de preparación y prevención ante el fenómeno El Niño."
+   ],
+   "acceso": "sin_verificar",
+   "url_medio": "https://andina.pe/agencia/noticia-presidenta-participara-entrega-maquinaria-donada-para-trabajos-fenomeno-nino-1101054.aspx"
+  },
+  {
+   "id": "acaeeb9d2d",
+   "sector": "salud",
+   "titulo": "EsSalud, Perú Petro y Provías: entidades públicas destinarán miles de soles a tarjetas navideñas para sus trabajadores",
+   "resumen": "Los procedimientos contemplan tarjetas de consumo, vales para juguetes y beneficios destinados a la compra de ropa",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/23/essalud-peru-petro-y-provias-entidades-publicas-destinaran-miles-de-soles-a-tarjetas-navidenas-para-sus-trabajadores/",
+   "fecha": "2026-11-23T02:16:06Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/VJ3PFS7SBBC4VOJQC46SD66FZM.jpg?auth=5d341b7ac1f6e8e25b13afd242dead8af5c0a4bb27925b773db5fb662f7a4e7c&smart=true&width=1920&height=1080",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Los procedimientos contemplan tarjetas de consumo, vales para juguetes y beneficios destinados a la compra de ropa La Red Asistencial Sabogal de EsSalud concentra adquisiciones por S/ 5,9 millones, mientras Perú Petro prevé entregar S/ 3.000 por trabajador.",
+   "puntos": [
+    "Los procedimientos contemplan tarjetas de consumo, vales para juguetes y beneficios destinados a la compra de ropa",
+    "La Red Asistencial Sabogal de EsSalud concentra adquisiciones por S/ 5,9 millones, mientras Perú Petro prevé entregar S/ 3.000 por trabajador.",
+    "Composición: Infobae 22 Nov, 2026 09:16 p. m."
+   ],
+   "datos": [
+    {
+     "v": "S/ 5,9 millones",
+     "t": "monto",
+     "c": "…Asistencial Sabogal de EsSalud concentra adquisiciones por S/ 5,9 millones, mientras Perú Petro prevé entregar S/ 3.000 por…"
+    },
+    {
+     "v": "S/ 3.000",
+     "t": "monto",
+     "c": "…por S/ 5,9 millones, mientras Perú Petro prevé entregar S/ 3.000 por trabajador."
+    },
+    {
+     "v": "S/ 5.901.500",
+     "t": "monto",
+     "c": "El presupuesto total asciende a S/ 5.901.500, destinado a tarjetas electrónicas para los trabajadores y sus hijos."
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://www.infobae.com/peru/2026/11/23/essalud-peru-petro-y-provias-entidades-publicas-destinaran-miles-de-soles-a-tarjetas-navidenas-para-sus-trabajadores/"
+  },
+  {
+   "id": "003cbcde1f",
+   "sector": "coyuntura",
+   "titulo": "JNJ publica cronograma complementario de concursos para nombramiento de jueces",
+   "resumen": "La Junta Nacional de Justicia (JNJ) publicó, en el Boletín Oficial de la Magistratura, el cronograma complementario de los concursos para seleccionar y nombrar jueces y jueces de control de las convocatorias 002, 003, 004 y 005-2026-SN/JNJ.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/peru/politica/jnj-publica-cronograma-complementario-de-concursos-para-nombramiento-de-jueces-noticia/",
+   "fecha": "2026-11-23T02:15:00Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/575GAKC3XZACPBHRXWBMRO4Z7E.jpg?auth=d86e4c5eba97ccbcf1dcfcd81390496ac916ab76346a31fc00f246acdc35f64a&smart=true&width=1200&height=800",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "seccion_nacional_fuente"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "La Junta Nacional de Justicia (JNJ) publicó, en el Boletín Oficial de la Magistratura, el cronograma complementario de los concursos para seleccionar y nombrar jueces y jueces de control de las convocatorias 002, 003, 004 y 005-2026-SN/JNJ.",
+   "puntos": [
+    "La Junta Nacional de Justicia (JNJ) publicó, en el Boletín Oficial de la Magistratura, el cronograma complementario de los concursos para seleccionar y nombrar jueces y jueces de control de las convocatorias 002, 003, 004 y 005-2026-SN/JNJ."
+   ],
+   "acceso": "restringido",
+   "url_medio": "https://gestion.pe/peru/politica/jnj-publica-cronograma-complementario-de-concursos-para-nombramiento-de-jueces-noticia/"
+  },
+  {
+   "id": "6aeebcc91c",
+   "sector": "coyuntura",
+   "titulo": "Candelaria 2027: artistas realizaron pasacalle en exteriores del Estadio Nacional tras cancelación de evento",
+   "resumen": "Más de 500 participantes desfilaron por la calle José Díaz exhibiendo sus mejores pasos en homenaje a la Virgen de la Candelaria.",
+   "fuente": "RPP",
+   "url": "https://rpp.pe/lima/actualidad/candelaria-2027-artistas-realizaron-pasacalle-en-exteriores-del-estadio-nacional-tras-cancelacion-de-evento-noticia-1719206",
+   "fecha": "2026-11-23T02:10:56Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://f.rpp-noticias.io/2026/11/22/471847_1932055.jpg?imgdimension=look",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "seccion_nacional_fuente"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Más de 500 participantes desfilaron por la calle José Díaz exhibiendo sus mejores pasos en homenaje a la Virgen de la Candelaria. Luego de varias horas de espera e incertidumbre, grupos de danzantes realizaron un pasacalle en homenaje a la Virgen de la Candelaria en los exteriores del Estadio Nacional, a raíz de la cancelación del evento Candelaria 2027 que se iba a realizar en dicho recinto deportivo.",
+   "puntos": [
+    "Más de 500 participantes desfilaron por la calle José Díaz exhibiendo sus mejores pasos en homenaje a la Virgen de la Candelaria.",
+    "Luego de varias horas de espera e incertidumbre, grupos de danzantes realizaron un pasacalle en homenaje a la Virgen de la Candelaria en los exteriores del Estadio Nacional, a raíz de la cancelación del evento Candelaria 2027 que se iba a realizar en dicho recinto deportivo.",
+    "Los artistas no iban a desperdiciar la oportunidad de presentar sus danzas tras semanas de ensayos y decidieron presentar sus bailes ante grupos de personas que habían llegado al estadio con la expectativa de poder ingresar."
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://rpp.pe/lima/actualidad/candelaria-2027-artistas-realizaron-pasacalle-en-exteriores-del-estadio-nacional-tras-cancelacion-de-evento-noticia-1719206"
+  },
+  {
+   "id": "2848e499fd",
+   "sector": "mundo",
+   "titulo": "'Los juegos del hambre': la saga que sigue inspirando a los manifestantes en el mundo",
+   "resumen": "El sábado 21 de noviembre, varios manifestantes franceses hicieron el saludo a tres dedos, un gesto de resistencia popularizado en 'Los juegos del hambre' y que desde entonces ha sido utilizado en movimientos prodemocracia. Luego del estreno de 'Amanecer en la cosecha', la…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/programas/cultura/20261123-los-juegos-del-hambre-la-saga-que-sigue-inspirando-a-los-manifestantes-en-el-mundo",
+   "fecha": "2026-11-23T02:03:03Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/79dd1862-e6db-11f1-8a28-6b451f569414/w:1024/p:16x9/IVS-22NOV-WEB-PORTADA-SINSAJO-CULTURA.png",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "sintesis": "El sábado 21 de noviembre, varios manifestantes franceses hicieron el saludo a tres dedos, un gesto de resistencia popularizado en 'Los juegos del hambre' y que desde entonces ha sido utilizado en movimientos… Una extensión de tu navegador parece estar bloqueando la carga del reproductor de video.",
+   "puntos": [
+    "El sábado 21 de noviembre, varios manifestantes franceses hicieron el saludo a tres dedos, un gesto de resistencia popularizado en 'Los juegos del hambre' y que desde entonces ha sido utilizado en movimientos…",
+    "Una extensión de tu navegador parece estar bloqueando la carga del reproductor de video.",
+    "Para poder ver este contenido, debes desactivarla en este sitio."
+   ],
+   "datos": [
+    {
+     "v": "21 de noviembre",
+     "t": "fecha",
+     "c": "El sábado 21 de noviembre, varios manifestantes franceses hicieron el saludo a tres…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://www.france24.com/es/programas/cultura/20261123-los-juegos-del-hambre-la-saga-que-sigue-inspirando-a-los-manifestantes-en-el-mundo"
+  },
+  {
+   "id": "a7d0b918ec",
+   "sector": "tecnologia",
+   "titulo": "INPE interviene a dos agentes por presunto ingreso de drogas y celulares a penales de Challapalca y Arequipa",
+   "resumen": "Dos agentes del Instituto Nacional Penitenciario (INPE) fueron intervenidos en los establecimientos penitenciarios de Challapalca y Varones de Arequipa, luego de que… The post INPE interviene a dos agentes por presunto ingreso de drogas y celulares a penales de Challapalca y…",
+   "fuente": "Caretas",
+   "url": "https://caretas.pe/nacional/inpe-interviene-a-dos-agentes-por-presunto-ingreso-de-drogas-y-celulares-a-penales-de-challapalca-y-arequipa/",
+   "fecha": "2026-11-23T02:01:10Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://caretas.pe/wp-content/uploads/2026/11/1-42.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "acceso": "sin_verificar",
+   "url_medio": "https://caretas.pe/nacional/inpe-interviene-a-dos-agentes-por-presunto-ingreso-de-drogas-y-celulares-a-penales-de-challapalca-y-arequipa/"
+  },
+  {
+   "id": "6a9ec868e0",
+   "sector": "economia",
+   "titulo": "La guerra de Rusia contra Ucrania amenaza con abrir un nuevo frente de riesgo nuclear",
+   "resumen": "Los ataques rusos contra la infraestructura energética de Ucrania elevan el riesgo de una fuga radiactiva y encienden las alarmas internacionales.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/mundo/internacional/la-guerra-de-rusia-contra-ucrania-amenaza-con-abrir-un-nuevo-frente-de-riesgo-nuclear-noticia/",
+   "fecha": "2026-11-23T02:00:00Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/DVUU2AHEVZEDXO5MVR2PMVEAVE.jpg?auth=02c6a62a531125a72d5ce8eeaee8cf2274f5541dce76b938087dbaa25a63ffc1&smart=true&width=1200&height=800",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Los ataques rusos contra la infraestructura energética de Ucrania elevan el riesgo de una fuga radiactiva y encienden las alarmas internacionales. Los ataques masivos de Rusia contra las infraestructuras situadas en torno a las centrales nucleares de Ucrania aumentan el riesgo de una fuga radiactiva, advierten expertos ucranianos e internacionales, al tiempo que instan a los organismos internacionales de control a adoptar medidas más contundentes.",
+   "puntos": [
+    "Los ataques rusos contra la infraestructura energética de Ucrania elevan el riesgo de una fuga radiactiva y encienden las alarmas internacionales.",
+    "Los ataques masivos de Rusia contra las infraestructuras situadas en torno a las centrales nucleares de Ucrania aumentan el riesgo de una fuga radiactiva, advierten expertos ucranianos e internacionales, al tiempo que instan a los organismos internacionales de control a adoptar medidas más contundentes.",
+    "En detalle, las centrales nucleares cubren actualmente la mayor parte del consumo eléctrico de Ucrania, ya que todas las demás grandes centrales han sido destruidas o dañadas por los ataques rusos, y aislarlas constituye el eje central de la estrategia de Moscú para dejar a los ucranianos sin luz este invierno."
+   ],
+   "datos": [
+    {
+     "v": "200 kilómetros",
+     "t": "cantidad",
+     "c": "…nucleares de Rivne o Jmelnitski, situadas a menos de 200 kilómetros del territorio de la Unión Europea (UE), millones de…"
+    },
+    {
+     "v": "16 de noviembre",
+     "t": "fecha",
+     "c": "En una declaración conjunta firmada el pasado 16 de noviembre por miembros de tres asociaciones internacionales -WENRA…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://gestion.pe/mundo/internacional/la-guerra-de-rusia-contra-ucrania-amenaza-con-abrir-un-nuevo-frente-de-riesgo-nuclear-noticia/"
+  },
+  {
+   "id": "aa9fc64eb6",
+   "sector": "politica",
+   "titulo": "César Figueredo, exasesor de Martín Vizcarra, trabaja como asesor de Catherine Palomino en el Congreso",
+   "resumen": "",
+   "fuente": "La República",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPR09yNkJJZlRRQXd3cGl3Vi1HdjdYdUpqZWdxV1h3ZTZDRlp0TW5SUzhxT3QwanJESXIwYzVJbDVKS1hJc1h6azZ2Nk5oRnBDc2dtYTFKZWM0RXdDXzU2aS1KYnNhb0o5WHhMY2c2M19vcmtrcHk0SnlNY1cyOXVwY0doM2lzTHV6cjV2MHNwT2tCcWxHOU1Ccm12QVgzY0I3T1Z1M1M0enEtUXFKYW1ndFBkNkdldEtuN1g5Y1gyanJoUFJFYnMyWmR0cTZ2OFJXRTFFX2p3MW04ZkNfbkxkLVRTLWFVTHVvdzI1StIB8gFBVV95cUxQREYwQ1BPRGxWdmNWOUtVTGliX3huRldxakFFM2thQnlzWHZPRkh5ZjVTTERNaXNBLW5ZbFNBMkcxR2tyWkZvWno1UHJyUTV5WThUZmJCTnZ1SmpkN05tNHpKVDBmNWljVnZQSy0xT204UmRGanFBc0NZWFR4dXUtTXBvNHlyV0VsNVUzUTM1UTNBMG41RHlPeUdSWjN2bjFIMXJ0LXEzUEJzaEJfcExkU3Vqd190Q1RaOFowR2JmREJ4ZlNCNFJMUW5vUTBVYXU5Z0FKRXBiZkJSM2pfV3o5Qm9SNTZreVE4QTZnX1lWdmtDZw?oc=5",
+   "fecha": "2026-11-23T01:59:39Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://imgmedia.larepublica.pe/1200x735/larepublica/original/2026/11/22/6b0390bad3f1e107840d1b2b.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "agregador",
+   "via": "Google Noticias",
+   "url_medio": "https://larepublica.pe/politica/2026/11/22/cesar-figueredo-exasesor-de-martin-vizcarra-trabaja-como-asesor-de-catherine-palomino-en-el-congreso-hnews-804936",
+   "sintesis": "De acuerdo con el portal de Transparencia del Congreso, Figueredo cobró S/14.784,81 en octubre como asesor principal de la diputada de Juntos por el Perú. De acuerdo con el informe periodístico, un exasesor de la parlamentaria aseguró que Figueredo, presuntamente, habría gestionado dinero para financiar la segunda vuelta presidencial de JP en 2026; además, habría llegado al despacho parlamentario después de que Palomino se quedara sin asesor.",
+   "puntos": [
+    "De acuerdo con el portal de Transparencia del Congreso, Figueredo cobró S/14.784,81 en octubre como asesor principal de la diputada de Juntos por el Perú.",
+    "De acuerdo con el informe periodístico, un exasesor de la parlamentaria aseguró que Figueredo, presuntamente, habría gestionado dinero para financiar la segunda vuelta presidencial de JP en 2026; además, habría llegado al despacho parlamentario después de que Palomino se quedara sin asesor.",
+    "Por su parte, el propio abogado sostuvo que presentó su currículum, fue evaluado y posteriormente contratado."
+   ],
+   "datos": [
+    {
+     "v": "S/14.784,81",
+     "t": "monto",
+     "c": "…el portal de Transparencia del Congreso, Figueredo cobró S/14.784,81 en octubre como asesor principal de la diputada de Juntos…"
+    }
+   ],
+   "acceso": "abierto"
+  },
+  {
+   "id": "3b1d08cc93",
+   "sector": "deporte",
+   "titulo": "Se inaugura el Campeonato de Tiro de las Américas 2026 en la Base Aérea Las Palmas",
+   "resumen": "El presidente del Instituto Peruano del Deporte (IPD), Óscar Fernández Cáceres, inauguró el XV Campeonato de Tiro de las Américas CAT Lima 2026, torneo que otorga 208 cupos para los Juegos Panamericanos Lima 2027 y 12 plazas para los Juegos Olímpicos Los Ángeles 2028.",
+   "fuente": "Agencia Andina",
+   "url": "https://andina.pe/agencia/noticia-se-inaugura-campeonato-tiro-las-americas-2026-la-base-aerea-las-palmas-1101055.aspx",
+   "fecha": "2026-11-23T01:50:53Z",
+   "tipo": "estatal",
+   "genero": "noticia",
+   "imagen": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2026/11/22/001333927W.webp",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "contexto_peru_resumen"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El presidente del Instituto Peruano del Deporte (IPD), Óscar Fernández Cáceres, inauguró el XV Campeonato de Tiro de las Américas CAT Lima 2026, torneo que otorga 208 cupos para los Juegos Panamericanos Lima 2027 y 12 plazas para los Juegos Olímpicos Los Ángeles 2028.",
+   "puntos": [
+    "El presidente del Instituto Peruano del Deporte (IPD), Óscar Fernández Cáceres, inauguró el XV Campeonato de Tiro de las Américas CAT Lima 2026, torneo que otorga 208 cupos para los Juegos Panamericanos Lima 2027 y 12 plazas para los Juegos Olímpicos Los Ángeles 2028."
+   ],
+   "acceso": "sin_verificar",
+   "url_medio": "https://andina.pe/agencia/noticia-se-inaugura-campeonato-tiro-las-americas-2026-la-base-aerea-las-palmas-1101055.aspx"
+  },
+  {
+   "id": "84d9c49f38",
+   "sector": "deporte",
+   "titulo": "Deportes TVC transmitió el Clásico Olimpia vs. Motagua hoy por la Liga Nacional de Honduras.",
+   "resumen": "Deportes TVC te llevó el superclásico CD Olimpia vs. Motagua hoy por la Jornada 15 del Torneo Apertura 2026 de la Liga Nacional de Honduras.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/mix/sports/canal-deportes-tvc-en-vivo-por-internet-como-ver-partido-olimpia-vs-motagua-en-directo-en-futbol-tv-y-app-tvc-plus-hd-online-nnda-nnrt-noticia/",
+   "fecha": "2026-11-23T01:49:41Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/DR2YE3DT7RGRREK3HKFTHVX6RA.jpg?auth=ba8e691589b383dd7a0ef3b58763e40e1e6cd9b40ae962f50d5eaa4c1eccd7fc&smart=true&width=2400&height=1620",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "url_medio": "https://gestion.pe/mix/sports/canal-deportes-tvc-en-vivo-por-internet-como-ver-partido-olimpia-vs-motagua-en-directo-en-futbol-tv-y-app-tvc-plus-hd-online-nnda-nnrt-noticia/",
+   "sintesis": "Transmisión oficial vía Deportes TVC EN VIVO ONLINE para ver el superclásico CD Olimpia vs. Motagua hoy por la Jornada 15 del Torneo Apertura 2026 de la Liga Nacional de Honduras.",
+   "puntos": [
+    "Transmisión oficial vía Deportes TVC EN VIVO ONLINE para ver el superclásico CD Olimpia vs.",
+    "Motagua hoy por la Jornada 15 del Torneo Apertura 2026 de la Liga Nacional de Honduras.",
+    "El encuentro se disputará en el Estadio Carlos Miranda de Comayagua, debido a que el Estadio Nacional Chelato Uclés de Tegucigalpa no estará disponible, y tendrá transmisión de Canal Deportes TVC y su plataforma digital DTVC+ ."
+   ],
+   "datos": [
+    {
+     "v": "22 de noviembre",
+     "t": "fecha",
+     "c": "…concentrará la atención de los aficionados este domingo 22 de noviembre, cuando ambos equipos se enfrenten por la Jornada 15 del…"
+    }
+   ],
+   "acceso": "abierto"
+  },
+  {
+   "id": "4a6f7d1cab",
+   "sector": "mundo",
+   "titulo": "Pedro Sánchez, ante la hora de la verdad: gestas, deudas y escándalos de ocho años en el poder",
+   "resumen": "El socialista Pedro Sánchez llega a las elecciones generales del 29 de noviembre en España tras casi ocho años y medio como jefe del Gobierno. La mayoría de las encuestas dan ventaja al opositor Partido Popular (derecha), mientras su Administración carga con las causas…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/europa/20261123-pedro-s%C3%A1nchez-ante-la-hora-de-la-verdad-gestas-deudas-y-esc%C3%A1ndalos-de-ocho-a%C3%B1os-en-el-poder",
+   "fecha": "2026-11-23T01:49:32Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/2a54bece-266f-11ee-84de-005056bf30b7/w:1024/p:16x9/000_33PD8VP.jpeg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "contexto_internacional_resumen"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "El socialista Pedro Sánchez llega a las elecciones generales del 29 de noviembre en España tras casi ocho años y medio como jefe del Gobierno. La mayoría de las encuestas dan ventaja al opositor Partido…",
+   "puntos": [
+    "El socialista Pedro Sánchez llega a las elecciones generales del 29 de noviembre en España tras casi ocho años y medio como jefe del Gobierno.",
+    "La mayoría de las encuestas dan ventaja al opositor Partido…",
+    "Primera modificación: 23/11/2026 - 02:49 Última modificación: 23/11/2026 - 02:54"
+   ],
+   "datos": [
+    {
+     "v": "29 de noviembre",
+     "t": "fecha",
+     "c": "…Pedro Sánchez llega a las elecciones generales del 29 de noviembre en España tras casi ocho años y medio como jefe del…"
+    },
+    {
+     "v": "5 de octubre",
+     "t": "fecha",
+     "c": "El 5 de octubre de este año adelantó los comicios, previstos originalmente…"
+    },
+    {
+     "v": "29 de febrero de 1972",
+     "t": "fecha",
+     "c": "Sánchez nació en Madrid el 29 de febrero de 1972."
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://www.france24.com/es/europa/20261123-pedro-s%C3%A1nchez-ante-la-hora-de-la-verdad-gestas-deudas-y-esc%C3%A1ndalos-de-ocho-a%C3%B1os-en-el-poder"
+  },
+  {
+   "id": "ca918e7186",
+   "sector": "economia",
+   "titulo": "En qué canal transmiten Olimpia vs. Motagua hoy por la Liga Nacional de Honduras 2026",
+   "resumen": "Revisa los horarios y canales para ver Olimpia vs. Motagua EN VIVO, este domingo 22 de noviembre, desde el Estadio Nacional Chelato Uclés en Tegucigalpa, por el clásico de la Liga Nacional de Honduras.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/mix/sports/a-que-hora-juega-y-en-que-canal-transmiten-olimpia-vs-motagua-en-vivo-hoy-por-el-clasico-de-la-liga-nacional-de-honduras-2026-canales-tv-online-nnda-nnrt-noticia/",
+   "fecha": "2026-11-23T01:48:44Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/LNQ3XGSFNRHQ7AV3NOKZLOO6J4.jpg?auth=7d583c81b6c08cce354c80638eae5ae4241271bc7306e533af6235f50b0bd42f&smart=true&width=2300&height=1320",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "latam",
+    "motivo": "referencia_latinoamerica_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "url_medio": "https://gestion.pe/mix/sports/a-que-hora-juega-y-en-que-canal-transmiten-olimpia-vs-motagua-en-vivo-hoy-por-el-clasico-de-la-liga-nacional-de-honduras-2026-canales-tv-online-nnda-nnrt-noticia/",
+   "sintesis": "Revisa los horarios y canales para ver Olimpia vs. Motagua EN VIVO, este domingo 22 de noviembre, desde el Estadio Nacional Chelato Uclés en Tegucigalpa, por el clásico de la Liga Nacional de Honduras.",
+   "puntos": [
+    "Revisa los horarios y canales para ver Olimpia vs.",
+    "Motagua EN VIVO, este domingo 22 de noviembre, desde el Estadio Nacional Chelato Uclés en Tegucigalpa, por el clásico de la Liga Nacional de Honduras."
+   ],
+   "datos": [
+    {
+     "v": "22 de noviembre",
+     "t": "fecha",
+     "c": "Motagua EN VIVO, este domingo 22 de noviembre, desde el Estadio Nacional Chelato Uclés en Tegucigalpa…"
+    }
+   ],
+   "acceso": "restringido"
+  },
+  {
+   "id": "880c607c5a",
+   "sector": "economia",
+   "titulo": "¿Quién es Luren Márquez, la Miss Perú que busca la corona en el Miss Universo 2026?",
+   "resumen": "La modelo iqueña construyó su camino entre Lima y Miami, marcado por la pérdida de su padre y una historia de resiliencia que hoy la respalda en Puerto Rico.",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/2026/11/23/quien-es-luren-marquez-la-miss-peru-que-busca-la-corona-en-el-miss-universo-2026/",
+   "fecha": "2026-11-23T01:48:26Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/NYS7IVY7GZB25A2YWJLAO67KKI.png?auth=ccb5b3b59eac821a319016e7551231911d8de5b6152a8e79c3dc535f2ab746cf&smart=true&width=1280&height=720",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "La modelo iqueña construyó su camino entre Lima y Miami, marcado por la pérdida de su padre y una historia de resiliencia que hoy la respalda en Puerto Rico. La representante peruana para Miss Universo, Luren Márquez, participó en un recorrido de despedida por las calles de su ciudad natal, Ica.",
+   "puntos": [
+    "La modelo iqueña construyó su camino entre Lima y Miami, marcado por la pérdida de su padre y una historia de resiliencia que hoy la respalda en Puerto Rico.",
+    "La representante peruana para Miss Universo, Luren Márquez, participó en un recorrido de despedida por las calles de su ciudad natal, Ica.",
+    "La jornada incluyó presentaciones de danzas tradicionales, agrupaciones musicales y muestras de apoyo de los residentes locales."
+   ],
+   "datos": [
+    {
+     "v": "27 años",
+     "t": "cantidad",
+     "c": "…un oasis en las afueras de la ciudad de Ica, tiene 27 años y construyó su carrera lejos de los reflectores antes de…"
+    },
+    {
+     "v": "24 de noviembre",
+     "t": "fecha",
+     "c": "…2026 , certamen que celebra su gala final el martes 24 de noviembre en el…."
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://www.infobae.com/peru/2026/11/23/quien-es-luren-marquez-la-miss-peru-que-busca-la-corona-en-el-miss-universo-2026/"
+  },
+  {
+   "id": "322fddeb0e",
+   "sector": "deporte",
+   "titulo": "Hernán Barcos tras cerrar con gol el Torneo Clausura 2026 con Sporting Cristal: “Mi intención está en seguir”",
+   "resumen": "Pese a cerrar victoriosos la última jornada del Clausura, los rimenses quedaron al margen del duelo definitorio por el campeonato local al depender de resultados ajenos, situación que provocó evidente desazón en el atacante argentino",
+   "fuente": "Infobae Perú",
+   "url": "https://www.infobae.com/peru/deportes/2026/11/23/hernan-barcos-tras-cerrar-con-gol-el-torneo-clausura-2026-con-sporting-cristal-mi-intencion-esta-en-seguir/",
+   "fecha": "2026-11-23T01:48:18Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://www.infobae.com/resizer/v2/HXG4NE7TTZA3ZPGSNCKIHUYSXM.jpg?auth=2f1e695fdbd2c1a7b43ee08ae8eb52f2d0381c7a39a775b1a8bf3873bbdd9b02&smart=true&width=1920&height=1008",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "Pese a cerrar victoriosos la última jornada del Clausura, los rimenses quedaron al margen del duelo definitorio por el campeonato local al depender de resultados ajenos, situación que provocó evidente desazón en el atacante argentino La directiva y el cuerpo técnico encontraron en el ariete extranjero una pieza clave para transmitir serenidad a los jóvenes del plantel, logrando transformar radicalmente la imagen competitiva del club durante todo el segundo semestre (Liga 1) 22 Nov, 2026 08:48 p. m.",
+   "puntos": [
+    "Pese a cerrar victoriosos la última jornada del Clausura, los rimenses quedaron al margen del duelo definitorio por el campeonato local al depender de resultados ajenos, situación que provocó evidente desazón en el atacante argentino",
+    "La directiva y el cuerpo técnico encontraron en el ariete extranjero una pieza clave para transmitir serenidad a los jóvenes del plantel, logrando transformar radicalmente la imagen competitiva del club durante todo el segundo semestre (Liga 1) 22 Nov, 2026 08:48 p. m.",
+    "EST Guardar Hernán Barcos terminó el año con sabor agridulce."
+   ],
+   "datos": [
+    {
+     "v": "42 años",
+     "t": "cantidad",
+     "c": "Aun así, el atacante de 42 años dejó en claro cuál es su deseo para la próxima temporada:…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://www.infobae.com/peru/deportes/2026/11/23/hernan-barcos-tras-cerrar-con-gol-el-torneo-clausura-2026-con-sporting-cristal-mi-intencion-esta-en-seguir/"
+  },
+  {
+   "id": "34bba37af7",
+   "sector": "coyuntura",
+   "titulo": "La COP31 termina sin consensos y deja en suspenso la agenda climática global",
+   "resumen": "La Cumbre del Clima COP31, celebrada en Antalya, concluyó sin consenso sobre combustibles fósiles, financiación climática y transición energética.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/mundo/internacional/la-cop31-termina-sin-consensos-y-deja-en-suspenso-la-agenda-climatica-global-noticia/",
+   "fecha": "2026-11-23T01:45:00Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/43TBSVTKTBHUJMIY2VJYKZPOTE.jpg?auth=1a243129e7205b71ffcd73fa399f1b45d9a8976e946a61f7ca5fce074604fdf0&smart=true&width=1200&height=800",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "La Cumbre del Clima COP31, celebrada en Antalya, concluyó sin consenso sobre combustibles fósiles, financiación climática y transición energética. La Cumbre del Clima de Antalya (COP31) terminó este domingo sin un acuerdo político y reflejó así las actuales fisuras del multilateralismo, a pesar de que la cita contó con una prórroga récord de más de 44 horas de negociación que falló al tratar de reconciliar las posturas de diferentes bloques regionales.",
+   "puntos": [
+    "La Cumbre del Clima COP31, celebrada en Antalya, concluyó sin consenso sobre combustibles fósiles, financiación climática y transición energética.",
+    "La Cumbre del Clima de Antalya (COP31) terminó este domingo sin un acuerdo político y reflejó así las actuales fisuras del multilateralismo, a pesar de que la cita contó con una prórroga récord de más de 44 horas de negociación que falló al tratar de reconciliar las posturas de diferentes bloques regionales.",
+    "El abandono de los hidrocarburos —ya pactados en la COP28 de Dubái—; el aumento de la financiación climática en favor de los países en desarrollo que exigieron naciones como la India y varias latinoamericanas; y el impulso de la controvertida tecnología de captación de carbono fueron asuntos que encallaron las negociaciones."
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://gestion.pe/mundo/internacional/la-cop31-termina-sin-consensos-y-deja-en-suspenso-la-agenda-climatica-global-noticia/"
+  },
+  {
+   "id": "98bdfbed58",
+   "sector": "mundo",
+   "titulo": "Ucrania: al menos 12 muertos en bombardeos rusos sobre región de Kiev",
+   "resumen": "Los rescatistas trabajan entre una montaña de escombros, donde siguen buscando a personas desaparecidas.",
+   "fuente": "DW Español",
+   "url": "https://www.dw.com/es/ucrania-al-menos-12-muertos-en-bombardeos-rusos-sobre-región-de-kiev/a-80015527?maca=spa-rss-sp-all-1122-xml-mrss",
+   "fecha": "2026-11-23T01:41:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://static.dw.com/image/80013135_6.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Los rescatistas trabajan entre una montaña de escombros, donde siguen buscando a personas desaparecidas. Rusia ha intensificado sus ataques contra Kiev en los últimos seis meses, incluidos bombardeos contra zonas residenciales, cuando se avecina el invierno con temperaturas por debajo de los 0ºC en medio de la guerra, tras la invasión que comenzó en febrero de 2022.",
+   "puntos": [
+    "Los rescatistas trabajan entre una montaña de escombros, donde siguen buscando a personas desaparecidas.",
+    "Rusia ha intensificado sus ataques contra Kiev en los últimos seis meses, incluidos bombardeos contra zonas residenciales, cuando se avecina el invierno con temperaturas por debajo de los 0ºC en medio de la guerra, tras la invasión que comenzó en febrero de 2022.",
+    "Uno de los bombardeos nocturnos impactó un edificio de cinco pisos en la localidad de Dimer, en la región de Kiev, a unos 45 kilómetros al norte de la capital, y dejó siete muertos."
+   ],
+   "datos": [
+    {
+     "v": "45 kilómetros",
+     "t": "cantidad",
+     "c": "…en la localidad de Dimer, en la región de Kiev, a unos 45 kilómetros al norte de la capital, y dejó siete muertos.."
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://www.dw.com/es/ucrania-al-menos-12-muertos-en-bombardeos-rusos-sobre-regi%C3%B3n-de-kiev/a-80015527"
+  },
+  {
+   "id": "c0e8c8297c",
+   "sector": "politica",
+   "titulo": "JNE anuncia fechas de debates para la segunda vuelta regional en 15 departamentos",
+   "resumen": "El Jurado Nacional de Elecciones (JNE) anunció el cronograma de debates en los 15 departamentos donde se realizará una segunda vuelta regional para elegir a sus gobernadores y vicegobernadores. Las jornadas se desarrollarán entre el 24 de noviembre y el 1 de diciembre.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/peru/politica/jne-anuncia-fechas-de-debates-para-la-segunda-vuelta-regional-en-15-departamentos-noticia/",
+   "fecha": "2026-11-23T01:38:09Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/S3PVYIVYKFESRGYRXYHWGTHZIE.jpg?auth=dae0e74c3fc4552e892e844accf119c5b23c5f149aa5122411b5a7d167896d2b&smart=true&width=3888&height=2592",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "sintesis": "El Jurado Nacional de Elecciones (JNE) anunció el cronograma de debates en los 15 departamentos donde se realizará una segunda vuelta regional para elegir a sus gobernadores y vicegobernadores. Las jornadas se desarrollarán entre el 24 de noviembre y el 1 de diciembre.",
+   "puntos": [
+    "El Jurado Nacional de Elecciones (JNE) anunció el cronograma de debates en los 15 departamentos donde se realizará una segunda vuelta regional para elegir a sus gobernadores y vicegobernadores.",
+    "Las jornadas se desarrollarán entre el 24 de noviembre y el 1 de diciembre."
+   ],
+   "datos": [
+    {
+     "v": "24 de noviembre",
+     "t": "fecha",
+     "c": "Las jornadas se desarrollarán entre el 24 de noviembre y el 1 de diciembre."
+    },
+    {
+     "v": "1 de diciembre",
+     "t": "fecha",
+     "c": "Las jornadas se desarrollarán entre el 24 de noviembre y el 1 de diciembre."
+    }
+   ],
+   "acceso": "restringido",
+   "url_medio": "https://gestion.pe/peru/politica/jne-anuncia-fechas-de-debates-para-la-segunda-vuelta-regional-en-15-departamentos-noticia/"
+  },
   {
    "id": "23a14f7f40",
    "sector": "coyuntura",
@@ -318,6 +2177,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
+   "url_medio": "https://gestion.pe/economia/joyeria-de-peru-pierde-brillo-exportaciones-caerian-60-en-2026-pero-productos-estrella-aun-resisten-segun-adex-noticia/",
    "sintesis": "Perú cerraría el 2026 con una caída de 60% en sus exportaciones de joyas. Conoce qué ocurre con la industria joyera.",
    "puntos": [
     "Perú cerraría el 2026 con una caída de 60% en sus exportaciones de joyas.",
@@ -351,8 +2211,7 @@ window.NOTICIAS = {
      "c": "Perú cerraría el 2026 con una caída de 60% en sus exportaciones de joyas."
     }
    ],
-   "acceso": "abierto",
-   "url_medio": "https://gestion.pe/economia/joyeria-de-peru-pierde-brillo-exportaciones-caerian-60-en-2026-pero-productos-estrella-aun-resisten-segun-adex-noticia/"
+   "acceso": "abierto"
   },
   {
    "id": "732ed07d8f",
@@ -423,6 +2282,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
+   "url_medio": "https://www.infobae.com/peru/2026/11/23/lluvias-intensas-provocan-aniegos-en-piura-y-senamhi-mantiene-alerta-roja-por-quebradas/",
    "sintesis": "Las precipitaciones afectaron calles de Frías, Chulucanas y Tambogrande. El aviso de corto plazo también alcanza a Cajamarca y Tumbes por riesgo extremo de activación de quebradas",
    "puntos": [
     "Las precipitaciones afectaron calles de Frías, Chulucanas y Tambogrande.",
@@ -446,35 +2306,6 @@ window.NOTICIAS = {
      "c": "EST Guardar Las lluvias registradas el domingo 22 de noviembre en varias provincias de Piura provocaron aniegos e…"
     }
    ],
-   "acceso": "abierto",
-   "url_medio": "https://www.infobae.com/peru/2026/11/23/lluvias-intensas-provocan-aniegos-en-piura-y-senamhi-mantiene-alerta-roja-por-quebradas/"
-  },
-  {
-   "id": "efe3991ffc",
-   "sector": "nino",
-   "titulo": "Lluvias en regiones del Perú por El Niño EN VIVO HOY: inundaciones, posibles desbordes, huaicos y pronóstico de Senamhi",
-   "resumen": "Lluvias en Perú por El Niño EN VIVO HOY Senamhi regiones inundaciones.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/peru/lluvias-en-regiones-peru-por-el-nino-en-vivo-hoy-posibles-desbordes-inundaciones-huaicos-y-pronostico-de-senamhi-lbposting-noticia/",
-   "fecha": "2026-11-23T01:31:50Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/2DVFJQSXTBBSBMMICGDXG5ZAN4.jpg?auth=95e11e931bfdaa1a3f9b987689c7098c7cbba48365d56043d55c0e150f04c992&smart=true&width=1200&height=642",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://elcomercio.pe/peru/lluvias-en-regiones-peru-por-el-nino-en-vivo-hoy-posibles-desbordes-inundaciones-huaicos-y-pronostico-de-senamhi-lbposting-noticia/",
-   "sintesis": "Lluvias en Perú por El Niño EN VIVO HOY Senamhi regiones inundaciones. Noticias Información basada en hechos y verificada de primera mano por el reportero, o reportada y verificada por fuentes expertas.",
-   "puntos": [
-    "Lluvias en Perú por El Niño EN VIVO HOY Senamhi regiones inundaciones.",
-    "Noticias Información basada en hechos y verificada de primera mano por el reportero, o reportada y verificada por fuentes expertas.",
-    "Soy Merlín , el agente de IA de El Comercio."
-   ],
    "acceso": "abierto"
   },
   {
@@ -496,14 +2327,40 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
+   "url_medio": "https://www.infobae.com/peru/deportes/2026/11/23/richard-pellejero-se-mantendra-en-sport-huancayo-para-el-2027-directorio-del-rojo-matador-respalda-su-proceso-tras-levantar-torneo-clausura-2026/",
    "sintesis": "Richard Pellejero seguirá vinculado con Sport Huancayo, tras la conducción hacia el título del Torneo Clausura 2026. EST Guardar No hay personaje más clave en el reciente éxito de Sport Huancayo como Richard Pellejero .",
    "puntos": [
     "Richard Pellejero seguirá vinculado con Sport Huancayo, tras la conducción hacia el título del Torneo Clausura 2026.",
     "EST Guardar No hay personaje más clave en el reciente éxito de Sport Huancayo como Richard Pellejero .",
     "El entrenador uruguayo levantó el rendimiento de un conjunto alicaído, que coqueteaba con el descenso, hasta conducirlo a su primer título en el fútbol peruano: el Torneo Clausura 2026 ."
    ],
-   "acceso": "abierto",
-   "url_medio": "https://www.infobae.com/peru/deportes/2026/11/23/richard-pellejero-se-mantendra-en-sport-huancayo-para-el-2027-directorio-del-rojo-matador-respalda-su-proceso-tras-levantar-torneo-clausura-2026/"
+   "acceso": "abierto"
+  },
+  {
+   "id": "5e42aebcd5",
+   "sector": "economia",
+   "titulo": "Gobierno autoriza la graduación excepcional de 341 cadetes de la PNP",
+   "resumen": "El Gobierno autorizó, de manera excepcional y por causas de interés nacional, el egreso y graduación de 341 cadetes de la Escuela de Oficiales de la Policía Nacional del Perú, integrantes de la Promoción “Precursores” 2023-2027.",
+   "fuente": "Gestión",
+   "url": "https://gestion.pe/peru/politica/gobierno-autoriza-la-graduacion-excepcional-de-341-cadetes-de-la-pnp-noticia/",
+   "fecha": "2026-11-23T01:30:00Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": "https://gestion.pe/resizer/v2/VS6CSMQHQRB4TDNG46BCK7FR3U.jpg?auth=13504977c8c718d5601bce01e4df1974aeda268b899e8f8d07d83eabed2beb5b&smart=true&width=1200&height=800",
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "url_medio": "https://gestion.pe/peru/politica/gobierno-autoriza-la-graduacion-excepcional-de-341-cadetes-de-la-pnp-noticia/",
+   "sintesis": "El Gobierno autorizó, de manera excepcional y por causas de interés nacional, el egreso y graduación de 341 cadetes de la Escuela de Oficiales de la Policía Nacional del Perú, integrantes de la Promoción “Precursores” 2023-2027.",
+   "puntos": [
+    "El Gobierno autorizó, de manera excepcional y por causas de interés nacional, el egreso y graduación de 341 cadetes de la Escuela de Oficiales de la Policía Nacional del Perú, integrantes de la Promoción “Precursores” 2023-2027."
+   ],
+   "acceso": "restringido"
   },
   {
    "id": "be9fc0b781",
@@ -549,99 +2406,6 @@ window.NOTICIAS = {
    ],
    "acceso": "abierto",
    "url_medio": "https://elcomercio.pe/economia/mercados/precio-del-dolar-hoy-en-peru-2026-cuanto-esta-el-dolar-este-domingo-22-de-noviembre-tasa-cotizacion-compra-y-venta-segun-bcrp-dolares-a-soles-sbs-ocona-lbposting-noticia/"
-  },
-  {
-   "id": "5e42aebcd5",
-   "sector": "economia",
-   "titulo": "Gobierno autoriza la graduación excepcional de 341 cadetes de la PNP",
-   "resumen": "El Gobierno autorizó, de manera excepcional y por causas de interés nacional, el egreso y graduación de 341 cadetes de la Escuela de Oficiales de la Policía Nacional del Perú, integrantes de la Promoción “Precursores” 2023-2027.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/peru/politica/gobierno-autoriza-la-graduacion-excepcional-de-341-cadetes-de-la-pnp-noticia/",
-   "fecha": "2026-11-23T01:30:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/VS6CSMQHQRB4TDNG46BCK7FR3U.jpg?auth=13504977c8c718d5601bce01e4df1974aeda268b899e8f8d07d83eabed2beb5b&smart=true&width=1200&height=800",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "El Gobierno autorizó, de manera excepcional y por causas de interés nacional, el egreso y graduación de 341 cadetes de la Escuela de Oficiales de la Policía Nacional del Perú, integrantes de la Promoción “Precursores” 2023-2027.",
-   "puntos": [
-    "El Gobierno autorizó, de manera excepcional y por causas de interés nacional, el egreso y graduación de 341 cadetes de la Escuela de Oficiales de la Policía Nacional del Perú, integrantes de la Promoción “Precursores” 2023-2027."
-   ],
-   "acceso": "restringido",
-   "url_medio": "https://gestion.pe/peru/politica/gobierno-autoriza-la-graduacion-excepcional-de-341-cadetes-de-la-pnp-noticia/"
-  },
-  {
-   "id": "7df300b9f7",
-   "sector": "politica",
-   "titulo": "Rafael López Aliaga: “En caso no pudiera asumir, estoy tranquilo de tener a Janette Alonso como alcaldesa”",
-   "resumen": "Rafael López Aliaga, líder de Renovación Popular, afirmó este domingo que en caso él no pudiera asumir la Municipalidad de Lima se encuentra “tranquilo” de “tener a Janette Alonzo como alcaldesa”.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/politica/rafael-lopez-aliaga-en-caso-no-pudiera-asumir-estoy-tranquilo-de-tener-a-janette-alonso-como-alcaldesa-apuesplan-noticia/",
-   "fecha": "2026-11-23T01:29:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/HVAVGEAD3ZEBFOHHB6RJYEJOKY.jpg?auth=4396303656104f5b899a27a8df0d666ec364c6cb28d2c0f79046325bf22267c7&smart=true&width=1920&height=1080",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "contexto_peru_resumen"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Rafael López Aliaga, líder de Renovación Popular, afirmó este domingo que en caso él no pudiera asumir la Municipalidad de Lima se encuentra “tranquilo” de “tener a Janette Alonzo como alcaldesa”. “Querida Janette Alonzo, mi compañera de fórmula.",
-   "puntos": [
-    "Rafael López Aliaga, líder de Renovación Popular, afirmó este domingo que en caso él no pudiera asumir la Municipalidad de Lima se encuentra “tranquilo” de “tener a Janette Alonzo como alcaldesa”.",
-    "“Querida Janette Alonzo, mi compañera de fórmula.",
-    "Digo una cosa clara, estoy litigando contra esta mafia (...) que me ha robado cuatro elecciones ya."
-   ],
-   "datos": [
-    {
-     "v": "22 de noviembre",
-     "t": "fecha",
-     "c": "Este domingo 22 de noviembre, en Villa María del Triunfo, el líder de Renovación…"
-    },
-    {
-     "v": "6 de noviembre",
-     "t": "fecha",
-     "c": "…tras la resolución del Jurado Nacional de Elecciones del 6 de noviembre."
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://elcomercio.pe/politica/rafael-lopez-aliaga-en-caso-no-pudiera-asumir-estoy-tranquilo-de-tener-a-janette-alonso-como-alcaldesa-apuesplan-noticia/"
-  },
-  {
-   "id": "2cc7adf414",
-   "sector": "politica",
-   "titulo": "Luis Romero sobre Peruanos que Suman: “Es posible generar cambios concretos desde el espacio que cada uno ocupa”",
-   "resumen": "Peruanos que Suman 2026 | Luis Romero | La campaña reconoció en primer lugar a Rómulo Zamora, agricultor de Andahuaylas, y en segundo a Luis Miguel Zárate, docente de Casma. El presidente del directorio del BCP y Credicorp destaca el valor de sus historias y el potencial de…",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/lima/peruanos-que-suman-luis-romero-presidente-del-directorio-del-bcp-y-credicorp-es-posible-generar-cambios-concretos-desde-el-espacio-que-cada-uno-ocupa-noticia/",
-   "fecha": "2026-11-23T01:28:52Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/6YPCJSLJ6FCQBF4HGLC7I3BVM4.JPG?auth=1edbb0b96342e80543c01abc029598acf5892b87499fe0f55876dcee642c204b&smart=true&width=4696&height=3206",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Peruanos que Suman 2026 | Luis Romero | La campaña reconoció en primer lugar a Rómulo Zamora, agricultor de Andahuaylas, y en segundo a Luis Miguel Zárate, docente de Casma. El presidente del directorio del BCP y Credicorp destaca el valor de sus historias y el potencial de…",
-   "puntos": [
-    "Peruanos que Suman 2026 | Luis Romero | La campaña reconoció en primer lugar a Rómulo Zamora, agricultor de Andahuaylas, y en segundo a Luis Miguel Zárate, docente de Casma.",
-    "El presidente del directorio del BCP y Credicorp destaca el valor de sus historias y el potencial de…"
-   ],
-   "acceso": "restringido",
-   "url_medio": "https://elcomercio.pe/lima/peruanos-que-suman-luis-romero-presidente-del-directorio-del-bcp-y-credicorp-es-posible-generar-cambios-concretos-desde-el-espacio-que-cada-uno-ocupa-noticia/"
   },
   {
    "id": "db6f6be9db",
@@ -699,6 +2463,34 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
+   "id": "50cb4181f7",
+   "sector": "mundo",
+   "titulo": "Buque ruso es atacado en las costas de Libia",
+   "resumen": "\"El Gobierno reafirma su rechazo categórico a que Libia se convierta en un campo de batalla para conflictos internacionales\", señaló un comunicado del Gobierno de Unidad Nacional, luego de que dos buques fueran atacados frente a sus costas. Uno de los barcos se dirigía a Rusia…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/video/20261123-buque-ruso-es-atacado-en-las-costas-de-libia",
+   "fecha": "2026-11-23T01:19:16Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://s.france24.com/media/display/9284a7ea-e6db-11f1-a8c0-13439ca2fe89/w:1024/p:16x9/ES-20261122-190743-190908-CS.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "contexto_internacional_resumen"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "\"El Gobierno reafirma su rechazo categórico a que Libia se convierta en un campo de batalla para conflictos internacionales\", señaló un comunicado del Gobierno de Unidad Nacional, luego de que dos buques… Una extensión de tu navegador parece estar bloqueando la carga del reproductor de video.",
+   "puntos": [
+    "\"El Gobierno reafirma su rechazo categórico a que Libia se convierta en un campo de batalla para conflictos internacionales\", señaló un comunicado del Gobierno de Unidad Nacional, luego de que dos buques…",
+    "Una extensión de tu navegador parece estar bloqueando la carga del reproductor de video.",
+    "Para poder ver este contenido, debes desactivarla en este sitio."
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://www.france24.com/es/video/20261123-buque-ruso-es-atacado-en-las-costas-de-libia"
+  },
+  {
    "id": "b62ea05019",
    "sector": "politica",
    "titulo": "Cancelación de la Candelaria 2027 en Lima: dirigente puneño denuncia presiones para contratar productora y acusa presunto trato discriminatorio",
@@ -717,6 +2509,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
+   "url_medio": "https://www.infobae.com/peru/2026/11/23/cancelacion-de-la-candelaria-2027-en-lima-dirigente-puneno-denuncia-presiones-para-contratar-productora-y-acusa-presunto-trato-discriminatorio/",
    "sintesis": "Alexander Quispe Huaracha, presidente de la Federación Regional de Folklore y Cultura de Puno, sostuvo que algunos funcionarios del IPD pretendían imponer la contratación de proveedores y una productora para la presentación gratuita en el Estadio Nacional El dirigente cuestionó las condiciones que, según denunció, se plantearon pocos días antes de la actividad cultural prevista para el 22 de noviembre.",
    "puntos": [
     "Alexander Quispe Huaracha, presidente de la Federación Regional de Folklore y Cultura de Puno, sostuvo que algunos funcionarios del IPD pretendían imponer la contratación de proveedores y una productora para la presentación gratuita en el Estadio Nacional",
@@ -730,131 +2523,42 @@ window.NOTICIAS = {
      "c": "…pocos días antes de la actividad cultural prevista para el 22 de noviembre."
     }
    ],
-   "acceso": "abierto",
-   "url_medio": "https://www.infobae.com/peru/2026/11/23/cancelacion-de-la-candelaria-2027-en-lima-dirigente-puneno-denuncia-presiones-para-contratar-productora-y-acusa-presunto-trato-discriminatorio/"
+   "acceso": "abierto"
   },
   {
-   "id": "063955a781",
-   "sector": "coyuntura",
-   "titulo": "Cita del día, Octavio Paz, poeta: “Quien ha visto la esperanza no la olvida. La busca bajo los cielos y entre todos los hombres”",
-   "resumen": "Estas palabras escritas por el poeta mexicano y ganador del Premio Nobel de Literatura en 1990 nos explica sobre cómo influye la esperanza en la vida del ser humano.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/mag/respuestas/cita-del-dia-octavio-paz-poeta-quien-ha-visto-la-esperanza-no-la-olvida-la-busca-bajo-los-cielos-y-entre-todos-los-hombres-nnda-nnrt-noticia/",
-   "fecha": "2026-11-23T01:16:48Z",
-   "tipo": "comercial",
+   "id": "baa1921566",
+   "sector": "mundo",
+   "titulo": "Partido Demócrata consigue su mayoría más amplia en la Cámara desde 1992",
+   "resumen": "Con 258 representantes en la Cámara Baja de EE. UU., el Partido Demócrata consiguió su mayoría más amplia desde 1992. Chuck Hubbard ganó este 22 de noviembre un reñido escaño por el quinto distrito de Carolina del Norte, arrebatándoselo a la congresista republicana Virginia…",
+   "fuente": "France 24 Español",
+   "url": "https://www.france24.com/es/video/20261123-partido-dem%C3%B3crata-consigue-su-mayor%C3%ADa-m%C3%A1s-amplia-en-la-c%C3%A1mara-desde-1992",
+   "fecha": "2026-11-23T01:17:26Z",
+   "tipo": "internacional",
    "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/NH5BOSBLRNHT3DVPJ22A3JWWNM.jpg?auth=487397fbedf861ba04efc7e57e9d08ad77b3491af0d2324f0ce7485673990315&smart=true&width=924&height=530",
+   "imagen": "https://s.france24.com/media/display/e609fc3e-e6d7-11f1-9c27-6b451f569414/w:1024/p:16x9/ES-20261122-160140-160305-CS.jpg",
    "geografia": {
     "version": 1,
     "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "contexto_latinoamerica_resumen"
+    "zona": "mundo",
+    "motivo": "contexto_internacional_resumen"
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "sintesis": "Estas palabras escritas por el poeta mexicano y ganador del Premio Nobel de Literatura en 1990 nos explica sobre cómo influye la esperanza en la vida del ser humano. Hoy, pretendo compartirte una cita del día correspondiente al poeta mexicano Octavio Paz , la cual nos invita a reflexionar sobre el poder que genera la esperanza en un ser humano.",
+   "sintesis": "Con 258 representantes en la Cámara Baja de EE. UU., el Partido Demócrata consiguió su mayoría más amplia desde 1992.",
    "puntos": [
-    "Estas palabras escritas por el poeta mexicano y ganador del Premio Nobel de Literatura en 1990 nos explica sobre cómo influye la esperanza en la vida del ser humano.",
-    "Hoy, pretendo compartirte una cita del día correspondiente al poeta mexicano Octavio Paz , la cual nos invita a reflexionar sobre el poder que genera la esperanza en un ser humano.",
-    "Las situaciones complicadas aparecen repentinamente, pero siempre existe ese camino que nos permite liberarnos de ellas."
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://elcomercio.pe/mag/respuestas/cita-del-dia-octavio-paz-poeta-quien-ha-visto-la-esperanza-no-la-olvida-la-busca-bajo-los-cielos-y-entre-todos-los-hombres-nnda-nnrt-noticia/"
-  },
-  {
-   "id": "e4eeb4024f",
-   "sector": "coyuntura",
-   "titulo": "Temblor en Chile hoy, domingo 22 de noviembre: epicentro y magnitud según reporte CSN",
-   "resumen": "Temblor en Chile EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Centro Sismológico Nacional (CSN).",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/chile/temblor-en-chile-hoy-en-vivo-del-21-al-22-de-noviembre-de-2026-y-ultimos-sismos-segun-el-csn-centro-sismologico-nacional-socaire-ollague-lbposting-noticia/",
-   "fecha": "2026-11-23T01:16:23Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/27ORT2QMHVB4PJRQ7KIOKKUJUA.jpeg?auth=e2090a3bed544844749b265667e089da7755b6c1c623f27a0d7e33363fbac79f&smart=true&width=1200&height=700",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Temblor en Chile EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Centro Sismológico Nacional (CSN). Temblor en Chile: mira aquí la magnitud, el epicentro y los reportes del CSN sobre los últimos sismos en el país (Diseño: El Comercio).",
-   "puntos": [
-    "Temblor en Chile EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Centro Sismológico Nacional (CSN).",
-    "Temblor en Chile: mira aquí la magnitud, el epicentro y los reportes del CSN sobre los últimos sismos en el país (Diseño: El Comercio).",
-    "Momentos clave 2026-11-21 01:01:26 | Sigue en vivo los reportes de los últimos sismos en Chile registrados por el Centro Sismológico Nacional."
+    "Con 258 representantes en la Cámara Baja de EE.",
+    "UU., el Partido Demócrata consiguió su mayoría más amplia desde 1992.",
+    "Chuck Hubbard ganó este 22 de noviembre un reñido escaño por el quinto distrito de…"
    ],
    "datos": [
     {
-     "v": "80 km",
-     "t": "cantidad",
-     "c": "Referencia geográfica del sismo a 80 km al O de San Antonio de los Cobres.."
-    },
-    {
      "v": "22 de noviembre",
      "t": "fecha",
-     "c": "Temblor en Chile hoy, domingo 22 de noviembre: epicentro y magnitud según reporte CSN."
+     "c": "Chuck Hubbard ganó este 22 de noviembre un reñido escaño por el quinto distrito de…."
     }
    ],
    "acceso": "abierto",
-   "url_medio": "https://elcomercio.pe/respuestas/chile/temblor-en-chile-hoy-en-vivo-del-21-al-22-de-noviembre-de-2026-y-ultimos-sismos-segun-el-csn-centro-sismologico-nacional-socaire-ollague-lbposting-noticia/"
-  },
-  {
-   "id": "7cf55c36bf",
-   "sector": "coyuntura",
-   "titulo": "Temblor en Perú hoy, domingo 22 de noviembre: último sismo de 5 grados sentido en Lima",
-   "resumen": "Temblor en Perú EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Instituto Geofísico del Perú (IGP).",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/temblor-en-peru-hoy-en-vivo-via-el-igp-del-21-al-22-de-noviembre-de-2026-y-ultimos-sismos-instituto-geofisico-del-peru-lima-ica-nasca-lbposting-noticia/",
-   "fecha": "2026-11-23T01:16:18Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/IDNFHBJS4VDDNGQVVNFWLR5CKI.jpeg?auth=00f5971d1ea274e5d5220a2871cd5fb3e709ea529d744594d0c219954638c0f4&smart=true&width=1200&height=700",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Temblor en Perú EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Instituto Geofísico del Perú (IGP). Temblor en Perú: mira aquí la magnitud, el epicentro y los reportes del IGP sobre los últimos sismos en el país (Diseño: El Comercio).",
-   "puntos": [
-    "Temblor en Perú EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Instituto Geofísico del Perú (IGP).",
-    "Temblor en Perú: mira aquí la magnitud, el epicentro y los reportes del IGP sobre los últimos sismos en el país (Diseño: El Comercio).",
-    "Momentos clave 2026-11-21 00:16:57 | Consulta aquí los últimos registros del Instituto Geofísico del Perú sobre los movimientos sísmicos en el país."
-   ],
-   "datos": [
-    {
-     "v": "30 km",
-     "t": "cantidad",
-     "c": "…-10.96 Longitud: -76.17 Intensidad: IV Junín Referencia: 30 km al NO de Junín, Junín - Junín https://t.co/WxMQdDcRzU."
-    },
-    {
-     "v": "132 km",
-     "t": "cantidad",
-     "c": "…Hora Local: 22/11/2026,00:51:57 Magnitud: 5.1 Profundidad: 132 km Latitud: -10.85 Longitud: -76.10 Intensidad: IV Cerro de…"
-    },
-    {
-     "v": "25 km",
-     "t": "cantidad",
-     "c": "…Longitud: -76.10 Intensidad: IV Cerro de Pasco Referencia: 25 km al SE de Cerro de Pasco, Pasco - Pasco…"
-    },
-    {
-     "v": "22 de noviembre",
-     "t": "fecha",
-     "c": "Temblor en Perú hoy, domingo 22 de noviembre: último sismo de 5 grados sentido en Lima."
-    },
-    {
-     "v": "20 de noviembre",
-     "t": "fecha",
-     "c": "…por el fuerte movimiento telúrico registrado el viernes 20 de noviembre."
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://elcomercio.pe/respuestas/temblor-en-peru-hoy-en-vivo-via-el-igp-del-21-al-22-de-noviembre-de-2026-y-ultimos-sismos-instituto-geofisico-del-peru-lima-ica-nasca-lbposting-noticia/"
+   "url_medio": "https://www.france24.com/es/video/20261123-partido-dem%C3%B3crata-consigue-su-mayor%C3%ADa-m%C3%A1s-amplia-en-la-c%C3%A1mara-desde-1992"
   },
   {
    "id": "9050ae2717",
@@ -902,6 +2606,7 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
+   "url_medio": "https://rpp.pe/futbol/ligas-internacionales/liga-mx-chivas-necesita-los-3-puntos-para-escalar-en-la-tabla-de-posiciones-y-llegar-a-la-cima-noticia-1719030",
    "sintesis": "Chivas vs Cruz Azul se enfrentaron por la México - Liga MX. Aquí todos los detalles y resumen del encuentro.",
    "puntos": [
     "Chivas vs Cruz Azul se enfrentaron por la México - Liga MX.",
@@ -920,8 +2625,7 @@ window.NOTICIAS = {
      "c": "…de Guadalajara, Gabriel Milito, propuso una formación 5-4-1 con Raúl Rangel en el arco; Richard Ledezma, Daniel…"
     }
    ],
-   "acceso": "abierto",
-   "url_medio": "https://rpp.pe/futbol/ligas-internacionales/liga-mx-chivas-necesita-los-3-puntos-para-escalar-en-la-tabla-de-posiciones-y-llegar-a-la-cima-noticia-1719030"
+   "acceso": "abierto"
   },
   {
    "id": "17db2fc395",
@@ -942,14 +2646,14 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
+   "url_medio": "https://rpp.pe/futbol/descentralizado/sporting-cristal-martin-tavara-anuncio-su-salida-del-club-estoy-cerrando-una-etapa-en-el-club-noticia-1719192",
    "sintesis": "RPP pudo conocer que Martín Távara tiene oferta del fútbol africano. Martín Távara sorprendió al anunciar que está \"cerrando una etapa\" en Sporting Cristal.",
    "puntos": [
     "RPP pudo conocer que Martín Távara tiene oferta del fútbol africano.",
     "Martín Távara sorprendió al anunciar que está \"cerrando una etapa\" en Sporting Cristal.",
     "En conversación con L1 Max , luego del partido ante Cienciano , agradeció a club y a todos los que lo apoyaron durante su estadía en el equipo Celeste."
    ],
-   "acceso": "abierto",
-   "url_medio": "https://rpp.pe/futbol/descentralizado/sporting-cristal-martin-tavara-anuncio-su-salida-del-club-estoy-cerrando-una-etapa-en-el-club-noticia-1719192"
+   "acceso": "abierto"
   },
   {
    "id": "e4916eacab",
@@ -1007,80 +2711,6 @@ window.NOTICIAS = {
    "url_medio": "https://elcomercio.pe/peru/piura/piura-alcanzo-los-372-grados-y-ola-de-calor-persistira-en-los-proximos-dias-advierte-el-senamhi-ultimas-noticia/"
   },
   {
-   "id": "037a57a5c7",
-   "sector": "politica",
-   "titulo": "Prime VIDEO transmitió el partido Chivas de Guadalajara vs. Cruz Azul hoy por señal abierta",
-   "resumen": "Prime VIDEO te llevó el partido de Chivas de Guadalajara vs. Cruz Azul hoy por el Torneo Apertura de la Liga MX 2026 desde el Estadio Akron.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/mag/usa/en-vivo-us/prime-video-en-vivo-gratis-ver-partido-chivas-de-guadalajara-vs-cruz-azul-hoy-por-futbol-tv-online-video-nnda-nnrt-noticia/",
-   "fecha": "2026-11-23T01:08:48Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/QEDYBM5WDNBVNCP2ZMMUYKTKTA.jpg?auth=decc70ef0335014642a9f2a589bd7630bab8048d2a00b2848ab54152d2164839&smart=true&width=2400&height=1620",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "seccion_internacional_fuente"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Prime VIDEO te llevó el partido de Chivas de Guadalajara vs. Cruz Azul hoy por el Torneo Apertura de la Liga MX 2026 desde el Estadio Akron.",
-   "puntos": [
-    "Prime VIDEO te llevó el partido de Chivas de Guadalajara vs.",
-    "Cruz Azul hoy por el Torneo Apertura de la Liga MX 2026 desde el Estadio Akron.",
-    "El partido, que iniciará a las 6:07 pm ET y 5:07 pm en CDMX, apunta a ser emocionante."
-   ],
-   "datos": [
-    {
-     "v": "10 años",
-     "t": "cantidad",
-     "c": "Tengo casi 10 años de experiencia en investigación, análisis y coberturas en…"
-    },
-    {
-     "v": "22 de noviembre",
-     "t": "fecha",
-     "c": "Este domingo 22 de noviembre, se enfrentarán Chivas de Guadalajara y Cruz Azul en el…"
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://elcomercio.pe/mag/usa/en-vivo-us/prime-video-en-vivo-gratis-ver-partido-chivas-de-guadalajara-vs-cruz-azul-hoy-por-futbol-tv-online-video-nnda-nnrt-noticia/"
-  },
-  {
-   "id": "4cdfcfa901",
-   "sector": "coyuntura",
-   "titulo": "Canal para ver Chivas de Guadalajara vs. Cruz Azul hoy por Liga MX 2026",
-   "resumen": "Consulta los horarios y canales de TV que transmiten Chivas vs. Cruz Azul EN VIVO y EN DIRECTO, este domingo 22 de noviembre, por la Jornada 17 del Apertura 2026 de la Liga MX.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/mag/usa/en-vivo-us/a-que-hora-juega-y-en-que-canal-transmiten-chivas-de-guadalajara-vs-cruz-azul-en-vivo-hoy-por-liga-mx-2026-en-mexico-y-eeuu-canales-tv-online-nnda-nnrt-noticia/",
-   "fecha": "2026-11-23T01:08:06Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/U4KM6YADIRAGFILW4PASMA3PZI.jpg?auth=5e320b766457a27db817cdfad92ad05f0bfb470622fc167582c497a163416cfb&smart=true&width=2400&height=1620",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "seccion_internacional_fuente"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Consulta los horarios y canales de TV que transmiten Chivas vs. Cruz Azul EN VIVO y EN DIRECTO, este domingo 22 de noviembre, por la Jornada 17 del Apertura 2026 de la Liga MX.",
-   "puntos": [
-    "Consulta los horarios y canales de TV que transmiten Chivas vs.",
-    "Cruz Azul EN VIVO y EN DIRECTO, este domingo 22 de noviembre, por la Jornada 17 del Apertura 2026 de la Liga MX."
-   ],
-   "datos": [
-    {
-     "v": "22 de noviembre",
-     "t": "fecha",
-     "c": "Cruz Azul EN VIVO y EN DIRECTO, este domingo 22 de noviembre, por la Jornada 17 del Apertura 2026 de la Liga MX."
-    }
-   ],
-   "acceso": "restringido",
-   "url_medio": "https://elcomercio.pe/mag/usa/en-vivo-us/a-que-hora-juega-y-en-que-canal-transmiten-chivas-de-guadalajara-vs-cruz-azul-en-vivo-hoy-por-liga-mx-2026-en-mexico-y-eeuu-canales-tv-online-nnda-nnrt-noticia/"
-  },
-  {
    "id": "13a7340ea7",
    "sector": "mundo",
    "titulo": "Libia: dos buques, entre ellos un barco ruso, fueron atacados por drones marítimos",
@@ -1099,6 +2729,7 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
+   "url_medio": "https://www.france24.com/es/europa/20261123-libia-dos-buques-entre-ellos-un-barco-ruso-fueron-atacados-por-drones-mar%C3%ADtimos",
    "sintesis": "Este domingo 22 de noviembre se produjo un incendio tras una explosión a bordo de un buque ruso en la base naval de Bengasi, en Libia. El Ministerio de Salud del este de Libia declaró que la embarcación…",
    "puntos": [
     "Este domingo 22 de noviembre se produjo un incendio tras una explosión a bordo de un buque ruso en la base naval de Bengasi, en Libia.",
@@ -1112,20 +2743,19 @@ window.NOTICIAS = {
      "c": "Este domingo 22 de noviembre se produjo un incendio tras una explosión a bordo de un buque ruso en la base naval de Bengasi, en Libia."
     }
    ],
-   "acceso": "abierto",
-   "url_medio": "https://www.france24.com/es/europa/20261123-libia-dos-buques-entre-ellos-un-barco-ruso-fueron-atacados-por-drones-mar%C3%ADtimos"
+   "acceso": "abierto"
   },
   {
-   "id": "99b02e1be7",
-   "sector": "coyuntura",
-   "titulo": "Junín: buscan a niño de 11 años desaparecido hace más de 20 días en Chupaca",
-   "resumen": "Rotafono de RPP | Roger Grados Narvaes salió de su casa ubicada en el distrito de El Tambo, provincia de Huancayo con destino a una empresa de transportes en Chupaca, pero no sabe nada de él desde el 1 de noviembre.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/rotafono/servicios-a-la-comunidad/junin-buscan-a-nino-de-11-anos-desaparecido-hace-seis-dias-en-chupaca-noticia-1716555",
-   "fecha": "2026-11-23T01:00:27Z",
+   "id": "41dcc86abf",
+   "sector": "economia",
+   "titulo": "CADE 2026 reunirá a más de 35 líderes empresariales y autoridades para debatir el crecimiento económico del Perú",
+   "resumen": "",
+   "fuente": "La República",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOM3FNZDlkYlc3bTdGVEJ5OE0wMThZSE5Ra1dZNURqc3FKMlhEd25qWnltbEhtTjJiR2JzYURKeFV6aUhpZkhkMTdsWFZoZGlPSE5GRU0zWng2MDcwZXdvTlg4Sk1aUzBHNXVwUW4zdFAwb1BXUTJGMk5IUjc2LXo2dE4yamNySUZDMV9XWkNrR3QtNEpYeGZNWkR4SXg1S1VnUU5VeS1aNlU4Z05mcmtNSVJWLUkzSmxFNU14cHlaaTQ0cHRLVTMyT3BwQTNaUVk5R3k5RmdJSEIxeTlwSVFEbl91ZmJnc1pVMHZBaURqMEl2UHp3MkHSAfsBQVVfeXFMT1d5a2p3N2hZUVM4U0tpNERsVFh2RkdPbTVaZFZ4ZUxCOG1uY3BoZEE5Y01tYmxkeHVyY0RLdm8wSGZOOVBuX0MxV3VIQlFRWU1mcm91c0E0aVYwQklvUmFoQ0JjSE9sMU0xTUtzWXN6YkxPRFZwWkoxNkx4b29rcHZtZk1OajdWOFJZWl9FT2ZkalNyQlU5OHd2MTZEeFU4VC02SHFCU2hudWU4QnZsUFk2V1hLUlJqcWhtbXg0VFZLX184bGRmWmo5cEk4elFLRE45aDFsMjZXUVpyRGxWM2FTTTVpVVJxX1dMTzBzcTYxSWpVUWxjMXpTNXc?oc=5",
+   "fecha": "2026-11-23T01:01:09Z",
    "tipo": "comercial",
    "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/07/043704_1926883.jpg?imgdimension=look",
+   "imagen": null,
    "geografia": {
     "version": 1,
     "ambito": "peru",
@@ -1133,32 +2763,11 @@ window.NOTICIAS = {
     "motivo": "referencia_peru_titulo"
    },
    "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Rotafono de RPP | Roger Grados Narvaes salió de su casa ubicada en el distrito de El Tambo, provincia de Huancayo con destino a una empresa de transportes en Chupaca, pero no sabe nada de él desde el 1 de noviembre. Compartir Servicios a la comunidad Share El menor vestía una polera negra con capucha, un pantalón azul y zapatillas color marrón.",
-   "puntos": [
-    "Rotafono de RPP | Roger Grados Narvaes salió de su casa ubicada en el distrito de El Tambo, provincia de Huancayo con destino a una empresa de transportes en Chupaca, pero no sabe nada de él desde el 1 de noviembre.",
-    "Compartir Servicios a la comunidad Share El menor vestía una polera negra con capucha, un pantalón azul y zapatillas color marrón.",
-    "00:00 · 01:00 Desde la región Junín , Lady Narvaes pide ayuda urgentemente para localizar a su hijo Roger Walter Grados Narvaes , de 11 años , quien desapareció el 1 de noviembre cuando salió de su casa en…"
-   ],
-   "datos": [
-    {
-     "v": "11 años",
-     "t": "cantidad",
-     "c": "Junín: buscan a niño de 11 años desaparecido hace más de 20 días en Chupaca."
-    },
-    {
-     "v": "20 días",
-     "t": "cantidad",
-     "c": "Junín: buscan a niño de 11 años desaparecido hace más de 20 días en Chupaca."
-    },
-    {
-     "v": "1 de noviembre",
-     "t": "fecha",
-     "c": "…transportes en Chupaca, pero no sabe nada de él desde el 1 de noviembre.."
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://rpp.pe/rotafono/servicios-a-la-comunidad/junin-buscan-a-nino-de-11-anos-desaparecido-hace-seis-dias-en-chupaca-noticia-1716555"
+   "procedencia": "agregador",
+   "via": "Google Noticias",
+   "imagen_intentos": 1,
+   "url_medio": "https://larepublica.pe/economia/2026/11/22/cade-2026-reunira-a-mas-de-35-lideres-empresariales-y-autoridades-para-debatir-el-crecimiento-economico-del-peru-1502930",
+   "acceso": "sin_verificar"
   },
   {
    "id": "4ca4b2b1b7",
@@ -1234,34 +2843,6 @@ window.NOTICIAS = {
    "url_medio": "https://elcomercio.pe/deporte-total/futbol-peruano/sporting-cristal-vs-cienciano-en-vivo-online-gratis-transmision-del-partido-por-torneo-clausura-liga-1-lbposting-noticia/"
   },
   {
-   "id": "ad4e27f72f",
-   "sector": "coyuntura",
-   "titulo": "“La bola negra”: de qué trataba el mecanismo de segregación social en España que le da nombre a la película de Los Javis",
-   "resumen": "Antes de ser el título de una obra inacabada de Federico García Lorca, “La bola negra” fue un sistema que los clubes privados usaban para vetar a candidatos. Su historia atraviesa la masonería, los clubes británicos y los casinos de la élite española.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/eldominical/articulos-historicos/la-bola-negra-de-que-trataba-el-mecanismo-de-segregacion-social-en-espana-que-le-da-nombre-a-la-pelicula-de-los-javis-noticia/",
-   "fecha": "2026-11-23T01:00:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/3QCTJOZVU5FE3PVFDOL6VID22Y.jpg?auth=b87be69084d753c634ec491391d9650b1911306a265926d91430e98603a3413e&smart=true&width=1200&height=674",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Antes de ser el título de una obra inacabada de Federico García Lorca, “La bola negra” fue un sistema que los clubes privados usaban para vetar a candidatos. Su historia atraviesa la masonería, los clubes británicos y los casinos de la élite española.",
-   "puntos": [
-    "Antes de ser el título de una obra inacabada de Federico García Lorca, “La bola negra” fue un sistema que los clubes privados usaban para vetar a candidatos.",
-    "Su historia atraviesa la masonería, los clubes británicos y los casinos de la élite española.",
-    "Hay algo que hace tiempo da vueltas en la cabeza de Federico García Lorca : una historia nueva."
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://elcomercio.pe/eldominical/articulos-historicos/la-bola-negra-de-que-trataba-el-mecanismo-de-segregacion-social-en-espana-que-le-da-nombre-a-la-pelicula-de-los-javis-noticia/"
-  },
-  {
    "id": "54321d74b3",
    "sector": "economia",
    "titulo": "El plan de Purina de Nestlé para crecer en un mercado que supera los S/ 2,000 millones",
@@ -1317,114 +2898,6 @@ window.NOTICIAS = {
    "url_medio": "https://gestion.pe/economia/empresas/el-plan-de-purina-de-nestle-para-crecer-en-un-mercado-que-supera-los-s-2000-millones-noticia/"
   },
   {
-   "id": "22bc17e722",
-   "sector": "coyuntura",
-   "titulo": "Callao: Oleajes anómalos provocan cierre del acceso a la plaza Grau del primer puerto",
-   "resumen": "El fuerte oleaje anómalo que se viene registrando en el litoral peruano provocó que las autoridades del Callao restringieran parcialmente el acceso a sectores del muelle de la plaza Grau.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/lima/sucesos/callao-oleajes-anomalos-provocan-cierre-del-acceso-a-la-plaza-grau-del-primer-puerto-fotos-ultimas-noticia/",
-   "fecha": "2026-11-23T00:58:42Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/5N264F5GKVCKNAL4E6I5TTZMMM.jpeg?auth=b71a1948df124f8de8264c13fe3c4342878c2629e6d6ee3ef689a55541886235&smart=true&width=1280&height=854",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "El fuerte oleaje anómalo que se viene registrando en el litoral peruano provocó que las autoridades del Callao restringieran parcialmente el acceso a sectores del muelle de la plaza Grau. La medida se adoptó como precaución desde el último sábado, luego que el mar sobrepasara las barreras de rocas e ingresara a sectores del muelle y zona peatonal, inundándolos.",
-   "puntos": [
-    "El fuerte oleaje anómalo que se viene registrando en el litoral peruano provocó que las autoridades del Callao restringieran parcialmente el acceso a sectores del muelle de la plaza Grau.",
-    "La medida se adoptó como precaución desde el último sábado, luego que el mar sobrepasara las barreras de rocas e ingresara a sectores del muelle y zona peatonal, inundándolos.",
-    "Así, se colocaron cercos de seguridad y cintas de advertencia para alertar a los lugareños y visitantes que no deben acercarse a la zona restringida para evitar hechos luctuosos."
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://elcomercio.pe/lima/sucesos/callao-oleajes-anomalos-provocan-cierre-del-acceso-a-la-plaza-grau-del-primer-puerto-fotos-ultimas-noticia/"
-  },
-  {
-   "id": "66fbdd053d",
-   "sector": "coyuntura",
-   "titulo": "Temblor en México hoy, domingo 22 de noviembre: sismos recientes reportados por el SSN",
-   "resumen": "Temblor en México EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Servicio Sismológico Nacional (SSN).",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/mexico/temblor-en-mexico-en-vivo-intensidad-profundidad-epicentro-y-magnitud-del-ultimo-sismo-reportado-el-21-y-22-de-noviembre-segun-el-ssn-servicio-sismologico-nacional-cdmx-mx-lbposting-noticia/",
-   "fecha": "2026-11-23T00:50:25Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/HLULOCO5RVEK7HRU3C5SF6DPMI.webp?auth=9ba6f073dae5272ccfdaf17f95c39299f9724506349c4acd554e9369867c1162&smart=true&width=1200&height=700",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "url_medio": "https://elcomercio.pe/respuestas/mexico/temblor-en-mexico-en-vivo-intensidad-profundidad-epicentro-y-magnitud-del-ultimo-sismo-reportado-el-21-y-22-de-noviembre-segun-el-ssn-servicio-sismologico-nacional-cdmx-mx-lbposting-noticia/",
-   "sintesis": "Temblor en México EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Servicio Sismológico Nacional (SSN). Temblor en México: mira aquí la magnitud, el epicentro y los reportes sobre los últimos sismos en el país (Diseño: El Comercio).",
-   "puntos": [
-    "Temblor en México EN VIVO: cuál fue el epicentro y magnitud del último evento sísmico reportado HOY por el Servicio Sismológico Nacional (SSN).",
-    "Temblor en México: mira aquí la magnitud, el epicentro y los reportes sobre los últimos sismos en el país (Diseño: El Comercio).",
-    "Momentos clave 2026-11-20 22:43:20 | ¿De qué magnitud y en dónde fue el último temblor en México?"
-   ],
-   "datos": [
-    {
-     "v": "60%",
-     "t": "porcentaje",
-     "c": "…a 4 grados en la escala de Richter, lo que equivale a un 60% de todos los movimientos telúricos que se registran en el…"
-    },
-    {
-     "v": "22 de noviembre",
-     "t": "fecha",
-     "c": "Temblor en México hoy, domingo 22 de noviembre: sismos recientes reportados por el SSN."
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "85b389a230",
-   "sector": "coyuntura",
-   "titulo": "Temblor en Colombia hoy, domingo 22 de noviembre: epicentro, magnitud y hora exacta",
-   "resumen": "Temblor en Colombia EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Servicio Geológico Colombiano (SGC).",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/respuestas/colombia/temblor-en-colombia-hoy-en-vivo-segun-el-sgc-del-21-al-22-de-noviembre-de-2026-y-ultimo-sismos-servicio-geologico-colombiano-choco-co-lbposting-noticia/",
-   "fecha": "2026-11-23T00:48:57Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/FJGXBNOUZFH6RN43DIPDKXW33Y.jpeg?auth=c8ab1a98373607eec97e46072e99f3df514cd41b8419b871cd672684746d4919&smart=true&width=1200&height=700",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "url_medio": "https://elcomercio.pe/respuestas/colombia/temblor-en-colombia-hoy-en-vivo-segun-el-sgc-del-21-al-22-de-noviembre-de-2026-y-ultimo-sismos-servicio-geologico-colombiano-choco-co-lbposting-noticia/",
-   "sintesis": "Temblor en Colombia EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Servicio Geológico Colombiano (SGC). Temblor en Colombia: mira aquí la magnitud, el epicentro y los reportes sobre los últimos sismos en el país (Diseño: El Comercio).",
-   "puntos": [
-    "Temblor en Colombia EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Servicio Geológico Colombiano (SGC).",
-    "Temblor en Colombia: mira aquí la magnitud, el epicentro y los reportes sobre los últimos sismos en el país (Diseño: El Comercio).",
-    "Momentos clave 2026-11-20 23:06:59 | ¿De qué magnitud y en dónde fue el último temblor?"
-   ],
-   "datos": [
-    {
-     "v": "25%",
-     "t": "porcentaje",
-     "c": "El peso ideal no debe superar el 25% del peso corporal de la persona que la va a cargar, garantizando una evacuación rápida y ágil.."
-    },
-    {
-     "v": "22 de noviembre",
-     "t": "fecha",
-     "c": "Temblor en Colombia hoy, domingo 22 de noviembre: epicentro, magnitud y hora exacta."
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
    "id": "e747440d54",
    "sector": "economia",
    "titulo": "Japonesa Mikimoto amplía su presencia en Perú con nuevo espacio en Jockey Plaza",
@@ -1452,73 +2925,26 @@ window.NOTICIAS = {
    "url_medio": "https://gestion.pe/economia/empresas/jockey-plaza-suma-a-mikimoto-la-apuesta-de-aldo-co-por-la-alta-joyeria-japonesa-noticia/"
   },
   {
-   "id": "84d9c49f38",
-   "sector": "deporte",
-   "titulo": "🔘 Deportes TVC EN VIVO - Ver Clásico Olimpia vs. Motagua GRATIS por TV online​​​",
-   "resumen": "Transmisión oficial vía Deportes TVC EN VIVO ONLINE para ver el superclásico CD Olimpia vs. Motagua hoy por la Jornada 15 del Torneo Apertura 2026 de la Liga Nacional de Honduras.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/mix/sports/canal-deportes-tvc-en-vivo-por-internet-como-ver-partido-olimpia-vs-motagua-en-directo-en-futbol-tv-y-app-tvc-plus-hd-online-nnda-nnrt-noticia/",
-   "fecha": "2026-11-23T00:42:19Z",
+   "id": "dc50b11819",
+   "sector": "politica",
+   "titulo": "Rafael López Aliaga revela su nueva estrategia tras no poder asumir como alcalde de Lima: negociará votos en el Congreso",
+   "resumen": "Rafael López Aliaga anunció que buscará negociar votos en el Congreso para impulsar reformas en el Poder Judicial, el Ministerio Público y… The post Rafael López Aliaga revela su nueva estrategia tras no poder asumir como alcalde de Lima: negociará votos en el Congreso appeared…",
+   "fuente": "Caretas",
+   "url": "https://caretas.pe/politica/rafael-lopez-aliaga-revela-su-nueva-estrategia-tras-no-poder-asumir-como-alcalde-de-lima-negociara-votos-en-el-congreso-reformas-judiciales/",
+   "fecha": "2026-11-23T00:44:21Z",
    "tipo": "comercial",
    "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/DR2YE3DT7RGRREK3HKFTHVX6RA.jpg?auth=ba8e691589b383dd7a0ef3b58763e40e1e6cd9b40ae962f50d5eaa4c1eccd7fc&smart=true&width=2400&height=1620",
+   "imagen": "https://caretas.pe/wp-content/uploads/2026/11/1-41.jpg",
    "geografia": {
     "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "contexto_latinoamerica_resumen"
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
    },
-   "ambito": "mundo",
+   "ambito": "peru",
    "procedencia": "directa",
-   "url_medio": "https://gestion.pe/mix/sports/canal-deportes-tvc-en-vivo-por-internet-como-ver-partido-olimpia-vs-motagua-en-directo-en-futbol-tv-y-app-tvc-plus-hd-online-nnda-nnrt-noticia/",
-   "sintesis": "Transmisión oficial vía Deportes TVC EN VIVO ONLINE para ver el superclásico CD Olimpia vs. Motagua hoy por la Jornada 15 del Torneo Apertura 2026 de la Liga Nacional de Honduras.",
-   "puntos": [
-    "Transmisión oficial vía Deportes TVC EN VIVO ONLINE para ver el superclásico CD Olimpia vs.",
-    "Motagua hoy por la Jornada 15 del Torneo Apertura 2026 de la Liga Nacional de Honduras.",
-    "El encuentro se disputará en el Estadio Carlos Miranda de Comayagua, debido a que el Estadio Nacional Chelato Uclés de Tegucigalpa no estará disponible, y tendrá transmisión de Canal Deportes TVC y su plataforma digital DTVC+ ."
-   ],
-   "datos": [
-    {
-     "v": "22 de noviembre",
-     "t": "fecha",
-     "c": "…concentrará la atención de los aficionados este domingo 22 de noviembre, cuando ambos equipos se enfrenten por la Jornada 15 del…"
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "ca918e7186",
-   "sector": "economia",
-   "titulo": "📲​ En qué canal transmiten Olimpia vs. Motagua EN VIVO GRATIS por la Liga Nacional de Honduras 2026",
-   "resumen": "Revisa los horarios y canales para ver Olimpia vs. Motagua EN VIVO, este domingo 22 de noviembre, desde el Estadio Nacional Chelato Uclés en Tegucigalpa, por el clásico de la Liga Nacional de Honduras.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/mix/sports/a-que-hora-juega-y-en-que-canal-transmiten-olimpia-vs-motagua-en-vivo-hoy-por-el-clasico-de-la-liga-nacional-de-honduras-2026-canales-tv-online-nnda-nnrt-noticia/",
-   "fecha": "2026-11-23T00:42:15Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/LNQ3XGSFNRHQ7AV3NOKZLOO6J4.jpg?auth=7d583c81b6c08cce354c80638eae5ae4241271bc7306e533af6235f50b0bd42f&smart=true&width=2300&height=1320",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "latam",
-    "motivo": "referencia_latinoamerica_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "url_medio": "https://gestion.pe/mix/sports/a-que-hora-juega-y-en-que-canal-transmiten-olimpia-vs-motagua-en-vivo-hoy-por-el-clasico-de-la-liga-nacional-de-honduras-2026-canales-tv-online-nnda-nnrt-noticia/",
-   "sintesis": "Revisa los horarios y canales para ver Olimpia vs. Motagua EN VIVO, este domingo 22 de noviembre, desde el Estadio Nacional Chelato Uclés en Tegucigalpa, por el clásico de la Liga Nacional de Honduras.",
-   "puntos": [
-    "Revisa los horarios y canales para ver Olimpia vs.",
-    "Motagua EN VIVO, este domingo 22 de noviembre, desde el Estadio Nacional Chelato Uclés en Tegucigalpa, por el clásico de la Liga Nacional de Honduras."
-   ],
-   "datos": [
-    {
-     "v": "22 de noviembre",
-     "t": "fecha",
-     "c": "Motagua EN VIVO, este domingo 22 de noviembre, desde el Estadio Nacional Chelato Uclés en Tegucigalpa…"
-    }
-   ],
-   "acceso": "restringido"
+   "acceso": "sin_verificar",
+   "url_medio": "https://caretas.pe/politica/rafael-lopez-aliaga-revela-su-nueva-estrategia-tras-no-poder-asumir-como-alcalde-de-lima-negociara-votos-en-el-congreso-reformas-judiciales/"
   },
   {
    "id": "2fe70a8c6f",
@@ -1539,14 +2965,14 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
+   "url_medio": "https://www.infobae.com/peru/2026/11/23/canastas-vales-o-tarjetas-las-3-variables-que-toda-empresa-debe-revisar-para-entregar-beneficios-de-fin-de-ano/",
    "sintesis": "Una canasta puede llegar a tiempo y, aun así, no resolver lo que un trabajador necesita en diciembre. Antes de elegir, las empresas deben revisar tres factores que suelen quedar fuera de la decisión",
    "puntos": [
     "Una canasta puede llegar a tiempo y, aun así, no resolver lo que un trabajador necesita en diciembre.",
     "Antes de elegir, las empresas deben revisar tres factores que suelen quedar fuera de la decisión",
     "El formato seleccionado para la gratificación determina el valor percibido por el empleado y la carga administrativa de la empresa."
    ],
-   "acceso": "abierto",
-   "url_medio": "https://www.infobae.com/peru/2026/11/23/canastas-vales-o-tarjetas-las-3-variables-que-toda-empresa-debe-revisar-para-entregar-beneficios-de-fin-de-ano/"
+   "acceso": "abierto"
   },
   {
    "id": "88a2e51aee",
@@ -1575,65 +3001,10 @@ window.NOTICIAS = {
    "url_medio": "https://gestion.pe/economia/empresas/mia-beauty-bar-de-la-duena-de-inkafarma-apuesta-por-el-k-beauty-y-alista-nuevas-tiendas-noticia/"
   },
   {
-   "id": "e65a7b9ed2",
-   "sector": "coyuntura",
-   "titulo": "Sismo de magnitud 6.7 en Junín: COEN reporta 1 fallecido, 15 lesionados y más de 850 damnificados en el centro del país",
-   "resumen": "Según un reporte del COEN, la infraestructura pública también sufrió el embate del sismo: 10 instituciones educativas y 29 establecimientos de salud resultaron afectados.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/peru/actualidad/sismo-de-magnitud-67-en-junin-coen-reporta-1-fallecido-15-lesionados-y-mas-de-850-damnificados-en-el-centro-del-pais-noticia-1719200",
-   "fecha": "2026-11-23T00:29:32Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/22/302330_1932034.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Según un reporte del COEN, la infraestructura pública también sufrió el embate del sismo: 10 instituciones educativas y 29 establecimientos de salud resultaron afectados. El Centro de Operaciones de Emergencia Nacional ( COEN ) del Instituto Nacional de Defensa Civil ( Indeci ) emitió un reporte tras el fuerte sismo magnitud 6.7, registrado el viernes pasado, el cual causó severos daños en viviendas, colegios y establecimientos de salud en los departamentos de Junín, Pasco, Huánuco, Lima y Callao.",
-   "puntos": [
-    "Según un reporte del COEN, la infraestructura pública también sufrió el embate del sismo: 10 instituciones educativas y 29 establecimientos de salud resultaron afectados.",
-    "El Centro de Operaciones de Emergencia Nacional ( COEN ) del Instituto Nacional de Defensa Civil ( Indeci ) emitió un reporte tras el fuerte sismo magnitud 6.7, registrado el viernes pasado, el cual causó severos daños en viviendas, colegios y establecimientos de salud en los departamentos de Junín, Pasco, Huánuco, Lima y Callao.",
-    "De acuerdo con el documento, el temblor ha dejado un saldo preliminar de una persona fallecida en Huánuco, 15 lesionados en Junín y Pasco y un total de 1 481 personas perjudicadas entre damnificadas (853) y afectadas (628) en los cinco departamentos del Perú."
-   ],
-   "datos": [
-    {
-     "v": "1 481 personas",
-     "t": "cantidad",
-     "c": "…en Huánuco, 15 lesionados en Junín y Pasco y un total de 1 481 personas perjudicadas entre damnificadas (853) y afectadas (628) en…"
-    },
-    {
-     "v": "30 kilómetros",
-     "t": "cantidad",
-     "c": "…del Perú (IGP), el movimiento telúrico, que se localizó a 30 kilómetros al noroeste de la provincia de Junín, tuvo una profundidad…"
-    },
-    {
-     "v": "129 kilómetros",
-     "t": "cantidad",
-     "c": "…noroeste de la provincia de Junín, tuvo una profundidad de 129 kilómetros .."
-    },
-    {
-     "v": "42 años",
-     "t": "cantidad",
-     "c": "El reporte señala que un hombre de 42 años perdió la vida en el Hospital Regional Hermilio Valdizán, ubicado en el distrito de Huánuco."
-    },
-    {
-     "v": "15 personas",
-     "t": "cantidad",
-     "c": "Asimismo, 15 personas resultaron heridas, todas con traumatismos superficiales…"
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://rpp.pe/peru/actualidad/sismo-de-magnitud-67-en-junin-coen-reporta-1-fallecido-15-lesionados-y-mas-de-850-damnificados-en-el-centro-del-pais-noticia-1719200"
-  },
-  {
    "id": "a1f018b53a",
    "sector": "economia",
    "titulo": "Nicole Favre revela que su reciente disco es el más personal y cómo una nueva experiencia amorosa influyó en su composición",
-   "resumen": "La cantante presentó su álbum 1988 en el programa En Escena de RPP. El disco recoge sus experiencias personales y el proceso que vivió durante los últimos años en México. El 3 de diciembre ofrecerá su primer concierto en Perú como artista independiente en Lima.",
+   "resumen": "La cantante presentó su álbum 1998 en el programa En Escena de RPP. El disco recoge sus experiencias personales y el proceso que vivió durante los últimos años en México. El 3 de diciembre ofrecerá su primer concierto en Perú como artista independiente en Lima.",
    "fuente": "RPP",
    "url": "https://rpp.pe/famosos/farandula/nicole-favre-revela-por-que-su-nuevo-disco-es-el-mas-personal-he-vivido-mas-en-estos-tres-anos-que-en-toda-mi-vida-noticia-1719199",
    "fecha": "2026-11-23T00:29:20Z",
@@ -1648,6 +3019,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
+   "url_medio": "https://rpp.pe/famosos/farandula/nicole-favre-revela-por-que-su-nuevo-disco-es-el-mas-personal-he-vivido-mas-en-estos-tres-anos-que-en-toda-mi-vida-noticia-1719199",
    "sintesis": "La cantante presentó su álbum 1988 en el programa En Escena de RPP. El disco recoge sus experiencias personales y el proceso que vivió durante los últimos años en México.",
    "puntos": [
     "La cantante presentó su álbum 1988 en el programa En Escena de RPP.",
@@ -1661,102 +3033,7 @@ window.NOTICIAS = {
      "c": "El 3 de diciembre ofrecerá su primer concierto en Perú como artista independiente en Lima.."
     }
    ],
-   "acceso": "abierto",
-   "url_medio": "https://rpp.pe/famosos/farandula/nicole-favre-revela-por-que-su-nuevo-disco-es-el-mas-personal-he-vivido-mas-en-estos-tres-anos-que-en-toda-mi-vida-noticia-1719199"
-  },
-  {
-   "id": "22abb168b7",
-   "sector": "coyuntura",
-   "titulo": "Javier Sanguinetti aplaude la tenacidad de sus compañeros para llevar a Sport Huancayo a la gloria en el Torneo Clausura 2026: “Mérito al esfuerzo”",
-   "resumen": "El mediocentro argentino ha tomado la batuta del club huancaíno. No solo es el máximo anotador de los suyos en un año calendario, con 12 aportaciones, también es el jerarca con mayor voz de mando",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/deportes/2026/11/22/javier-sanguinetti-aplaude-la-tenacidad-de-sus-companeros-para-llevar-a-sport-huancayo-a-la-gloria-en-el-torneo-clausura-2026-merito-al-esfuerzo/",
-   "fecha": "2026-11-23T00:28:06Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/IDGGEWVUF5CNLL6ZKIC7FOUP54.jpg?auth=e2c676b38cdbdd67885af0ef4d35e630cbf5c0bd417d1c47f4106c62aa84de70&smart=true&width=1920&height=1080",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://www.infobae.com/peru/deportes/2026/11/22/javier-sanguinetti-aplaude-la-tenacidad-de-sus-companeros-para-llevar-a-sport-huancayo-a-la-gloria-en-el-torneo-clausura-2026-merito-al-esfuerzo/",
-   "sintesis": "El mediocentro argentino ha tomado la batuta del club huancaíno. No solo es el máximo anotador de los suyos en un año calendario, con 12 aportaciones, también es el jerarca con mayor voz de mando",
-   "puntos": [
-    "El mediocentro argentino ha tomado la batuta del club huancaíno.",
-    "No solo es el máximo anotador de los suyos en un año calendario, con 12 aportaciones, también es el jerarca con mayor voz de mando",
-    "Javier Sanguinetti marcó un doblete contra Universitario por la última fecha del Torneo Clausura 2026."
-   ],
    "acceso": "abierto"
-  },
-  {
-   "id": "a847ec6ed8",
-   "sector": "coyuntura",
-   "titulo": "Christian Cueva deja abierta la posibilidad de casarse con Pamela Franco: “Hay cosas por resolver y espero estén a fin de año”",
-   "resumen": "Durante una visita televisiva, el jugador habló de asuntos pendientes y elogió a la cantante de cumbia, sin precisar cuándo podrían formalizar su relación tras más de un año juntos.",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/23/christian-cueva-deja-abierta-la-posibilidad-de-casarse-con-pamela-franco-antes-de-fin-de-ano/",
-   "fecha": "2026-11-23T00:27:32Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/PRBCKL2VBFA2DB2UKHO7SFRD24.png?auth=96d57a52b6d8932b92c52c85ed6475b0f251409c03059c086df234a848870358&smart=true&width=1280&height=720",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "Durante una visita televisiva, el jugador habló de asuntos pendientes y elogió a la cantante de cumbia, sin precisar cuándo podrían formalizar su relación tras más de un año juntos. Christian Cueva dejó abierta la posibilidad de contraer matrimonio con Pamela Franco tras cumplir más de un año de relación sentimental.",
-   "puntos": [
-    "Durante una visita televisiva, el jugador habló de asuntos pendientes y elogió a la cantante de cumbia, sin precisar cuándo podrían formalizar su relación tras más de un año juntos.",
-    "Christian Cueva dejó abierta la posibilidad de contraer matrimonio con Pamela Franco tras cumplir más de un año de relación sentimental.",
-    "EST Guardar Christian Cueva dejó entrever la posibilidad de contraer matrimonio con Pamela Franco antes de finalizar el año, aunque evitó confirmar una fecha concreta para el enlace."
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://www.infobae.com/peru/2026/11/23/christian-cueva-deja-abierta-la-posibilidad-de-casarse-con-pamela-franco-antes-de-fin-de-ano/"
-  },
-  {
-   "id": "4847570847",
-   "sector": "coyuntura",
-   "titulo": "Sutran: Descuento del 90% en multas de tránsito vence este lunes 23 de noviembre",
-   "resumen": "La Superintendencia de Transporte Terrestre de Personas, Carga y Mercancías (Sutran) atenderá este lunes 23 de noviembre en su sede central, de 7 a. m. a 7 p. m., por el último día de vigencia del descuento excepcional del 90% en multas de tránsito.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/peru/sutran-descuento-del-90-en-multas-de-transito-vence-este-lunes-23-de-noviembre-noticia/",
-   "fecha": "2026-11-23T00:22:04Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/ARULVRLX4ZCLRLXYN67HPTUQUY.png?auth=daa74568a20fece34f1aa12168f4b19557ab0671752498c2f6bc9c2f63048c7c&smart=true&width=1400&height=800",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "La Superintendencia de Transporte Terrestre de Personas, Carga y Mercancías (Sutran) atenderá este lunes 23 de noviembre en su sede central, de 7 a. m. a 7 p. m., por el último día de vigencia del descuento excepcional del 90% en multas de tránsito.",
-   "puntos": [
-    "La Superintendencia de Transporte Terrestre de Personas, Carga y Mercancías (Sutran) atenderá este lunes 23 de noviembre en su sede central, de 7 a. m. a 7 p. m., por el último día de vigencia del descuento excepcional del 90% en multas de tránsito."
-   ],
-   "datos": [
-    {
-     "v": "90%",
-     "t": "porcentaje",
-     "c": "Sutran: Descuento del 90% en multas de tránsito vence este lunes 23 de noviembre."
-    },
-    {
-     "v": "23 de noviembre",
-     "t": "fecha",
-     "c": "Sutran: Descuento del 90% en multas de tránsito vence este lunes 23 de noviembre."
-    }
-   ],
-   "acceso": "restringido",
-   "url_medio": "https://gestion.pe/peru/sutran-descuento-del-90-en-multas-de-transito-vence-este-lunes-23-de-noviembre-noticia/"
   },
   {
    "id": "a53db7ccf6",
@@ -1829,32 +3106,6 @@ window.NOTICIAS = {
    "url_medio": "https://gestion.pe/mix/usa/alerta-en-las-playas-de-los-angeles-tras-la-tormenta-por-que-piden-evitar-el-contacto-con-el-agua-nnda-nnrt-noticia/"
   },
   {
-   "id": "95b5922fb9",
-   "sector": "economia",
-   "titulo": "Embajador de Rusia en Libia acusa a Ucrania del ataque a un buque ruso en Bengasi",
-   "resumen": "Embajador de Rusia en Libia acusa a Ucrania del ataque a un buque ruso en Bengasi. Ataque a un buque ruso en base naval de Libia dejo diez heridos leves y cuantiosos daños materiales.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/mundo/embajador-de-rusia-en-libia-acusa-a-ucrania-del-ataque-a-un-buque-ruso-en-bengasi-noticia/",
-   "fecha": "2026-11-23T00:19:43Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/SQRFXAUNDJFP7IJJDQ6MDHLCLE.jpg?auth=5a6a24b87d2a8c66aa99fe488e4629add8cd912c156478e2bf1f7a6445e99f86&smart=true&width=1920&height=1305",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "Ataque a un buque ruso en base naval de Libia dejo diez heridos leves y cuantiosos daños materiales.",
-   "puntos": [
-    "Ataque a un buque ruso en base naval de Libia dejo diez heridos leves y cuantiosos daños materiales."
-   ],
-   "acceso": "restringido",
-   "url_medio": "https://gestion.pe/mundo/embajador-de-rusia-en-libia-acusa-a-ucrania-del-ataque-a-un-buque-ruso-en-bengasi-noticia/"
-  },
-  {
    "id": "7a9002841e",
    "sector": "politica",
    "titulo": "Congreso: conoce los temas que debatirá el pleno de Diputados este jueves 26",
@@ -1916,107 +3167,6 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
-   "id": "2f9a50e092",
-   "sector": "politica",
-   "titulo": "Municipalidad de Lima: evento de la Virgen de la Candelaria en el Estadio Nacional no tenía autorización municipal ni permisos del Mininter",
-   "resumen": "La comuna señaló que los organizadores no completaron los procedimientos administrativos ni obtuvieron las garantías de orden público del Ministerio del Interior para realizar la actividad cultural",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/22/municipalidad-de-lima-evento-de-la-virgen-de-la-candelaria-en-el-estadio-nacional-no-tenia-autorizacion-municipal-ni-permisos-del-mininter/",
-   "fecha": "2026-11-23T00:11:48Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/43XKL3EB2FAVHNOJJ57SOOALCA.png?auth=a28e2cad19835166b75719d73c6157108f227c6cbe43d1dcb384e32f056e5152&smart=true&width=1920&height=1080",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://www.infobae.com/peru/2026/11/22/municipalidad-de-lima-evento-de-la-virgen-de-la-candelaria-en-el-estadio-nacional-no-tenia-autorizacion-municipal-ni-permisos-del-mininter/",
-   "sintesis": "La comuna señaló que los organizadores no completaron los procedimientos administrativos ni obtuvieron las garantías de orden público del Ministerio del Interior para realizar la actividad cultural La Federación Regional de Folklore y Cultura de Puno convoca al lanzamiento de la Festividad Virgen de la Candelaria en el Estadio Nacional de Lima. (Composición: Infobae Perú ) 22 Nov, 2026 07:11 p. m.",
-   "puntos": [
-    "La comuna señaló que los organizadores no completaron los procedimientos administrativos ni obtuvieron las garantías de orden público del Ministerio del Interior para realizar la actividad cultural",
-    "La Federación Regional de Folklore y Cultura de Puno convoca al lanzamiento de la Festividad Virgen de la Candelaria en el Estadio Nacional de Lima. (Composición: Infobae Perú ) 22 Nov, 2026 07:11 p. m.",
-    "EST Guardar La presentación de la festividad de la Virgen de la Candelaria , prevista para este domingo 22 de noviembre en el Estadio Nacional de Lima , quedó bajo cuestionamiento por la falta de autorizaciones necesarias para su realización."
-   ],
-   "datos": [
-    {
-     "v": "22 de noviembre",
-     "t": "fecha",
-     "c": "…de la Virgen de la Candelaria , prevista para este domingo 22 de noviembre en el Estadio Nacional de Lima , quedó bajo…"
-    },
-    {
-     "v": "18 de noviembre",
-     "t": "fecha",
-     "c": "…Puno presentó una carta ante la Municipalidad de Lima el 18 de noviembre , cuando faltaban dos días hábiles para la fecha prevista…"
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "f3af10a3f5",
-   "sector": "politica",
-   "titulo": "Receta de Olluquito con Carne",
-   "resumen": "Descubre cómo preparar el tradicional Olluquito con Carne, un plato emblemático de la cocina peruana, que en tan solo 35 minutos estará listo para deleitar a toda tu familia. Su combinación de carne de res con olluco y papa amarilla hace de este plato una elección perfecta para…",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2024/10/30/receta-de-olluquito-con-carne/",
-   "fecha": "2026-11-23T00:08:47Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/K7XUPV7P6NA2RFSFKJXNYKIFZU.jpg?auth=7bd089dca520598cdcd7968ac5e3ae9802f1e89363f07abf894e5a06515f3989&smart=true&width=1200&height=692",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "contexto_peru_resumen"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://www.infobae.com/peru/2024/10/30/receta-de-olluquito-con-carne/",
-   "sintesis": "Descubre cómo preparar el tradicional Olluquito con Carne, un plato emblemático de la cocina peruana, que en tan solo 35 minutos estará listo para deleitar a toda tu familia. Su combinación de carne de res con olluco y papa amarilla hace de este plato una elección perfecta para un almuerzo nutritivo y reconfortante.",
-   "puntos": [
-    "Descubre cómo preparar el tradicional Olluquito con Carne, un plato emblemático de la cocina peruana, que en tan solo 35 minutos estará listo para deleitar a toda tu familia.",
-    "Su combinación de carne de res con olluco y papa amarilla hace de este plato una elección perfecta para un almuerzo nutritivo y reconfortante.",
-    "La preparación de Olluquito con Carne se basa en una técnica simple de guisado, que permite que los ingredientes se mezclen de manera perfecta."
-   ],
-   "datos": [
-    {
-     "v": "3 días",
-     "t": "cantidad",
-     "c": "El Olluquito con Carne puede conservarse en el refrigerador hasta por 3 días en un recipiente hermético."
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "a3fddfd32c",
-   "sector": "economia",
-   "titulo": "Scott, Kleenex y Suave, los frentes de Arbex para ganar mercado en Perú",
-   "resumen": "Arbex creció a doble dígito en Perú y busca ampliar la distribución de papel tissue, impulsar sus marcas y mejorar la productividad de su planta.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/economia/empresas/scott-kleenex-y-suave-bajo-la-estrategia-de-arbex-para-ganar-terreno-en-peru-noticia/",
-   "fecha": "2026-11-23T00:00:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/CEI7YRSGZ5GSZNA6Y454TNYKUA.png?auth=94208ee1edb724a2dadf0c492643759adfe5d412bdbb9ca832fbea9d689cc072&smart=true&width=1672&height=941",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://gestion.pe/economia/empresas/scott-kleenex-y-suave-bajo-la-estrategia-de-arbex-para-ganar-terreno-en-peru-noticia/",
-   "sintesis": "Arbex creció a doble dígito en Perú y busca ampliar la distribución de papel tissue, impulsar sus marcas y mejorar la productividad de su planta.",
-   "puntos": [
-    "Arbex creció a doble dígito en Perú y busca ampliar la distribución de papel tissue, impulsar sus marcas y mejorar la productividad de su planta."
-   ],
-   "acceso": "restringido"
-  },
-  {
    "id": "d1e708cbe7",
    "sector": "deporte",
    "titulo": "Tabla de posiciones de Liga 1 Perú 2026: así quedaron los equipos tras el final del Torneo Clausura y Acumulada",
@@ -2052,196 +3202,6 @@ window.NOTICIAS = {
      "v": "21 de noviembre",
      "t": "fecha",
      "c": "Alianza Lima cerró su participación en el Clausura este sábado 21 de noviembre con una goleada por 5-0 ante FC Cajamarca ."
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "6d3852b8dc",
-   "sector": "coyuntura",
-   "titulo": "Sismo de 5.0 en Junín: jefe del IGP explica por qué el fuerte movimiento no provocó mayores daños en la superficie",
-   "resumen": "El movimiento se suma a una secuencia de al menos cuatro eventos registrados en menos de tres días, luego del temblor de magnitud 6,7 que dejó heridos y damnificados el viernes",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/22/sismo-de-50-en-junin-jefe-del-igp-explica-por-que-el-fuerte-movimiento-no-provoco-mayores-danos-en-la-superficie/",
-   "fecha": "2026-11-22T23:55:40Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/GXG6FLMX4FC3ZM3MMLG5OO4BVA.png?auth=05df02a476d04ca43fa6d3e13aad0e4c97a7e8d4546abbf87063692e6ea5ccb1&smart=true&width=2752&height=1536",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://www.infobae.com/peru/2026/11/22/sismo-de-50-en-junin-jefe-del-igp-explica-por-que-el-fuerte-movimiento-no-provoco-mayores-danos-en-la-superficie/",
-   "sintesis": "El movimiento se suma a una secuencia de al menos cuatro eventos registrados en menos de tres días, luego del temblor de magnitud 6,7 que dejó heridos y damnificados el viernes Un sismo a 140 km de profundidad es inusual y, en este caso, favorable.",
-   "puntos": [
-    "El movimiento se suma a una secuencia de al menos cuatro eventos registrados en menos de tres días, luego del temblor de magnitud 6,7 que dejó heridos y damnificados el viernes",
-    "Un sismo a 140 km de profundidad es inusual y, en este caso, favorable.",
-    "Sin embargo, esta situación nos recuerda la importancia de la preparación ante movimientos telúricos de mayor magnitud. (Crédito: Canal N) 22 Nov, 2026 06:55 p. m."
-   ],
-   "datos": [
-    {
-     "v": "140 km",
-     "t": "cantidad",
-     "c": "Un sismo a 140 km de profundidad es inusual y, en este caso, favorable."
-    },
-    {
-     "v": "15 personas",
-     "t": "cantidad",
-     "c": "…un sismo de magnitud 6,7 sacudió la zona con un saldo de 15 personas heridas y más de 850 damnificados, según reportes del…"
-    },
-    {
-     "v": "145 kilómetros",
-     "t": "cantidad",
-     "c": "…oficial del IGP ubicó el hipocentro del movimiento a 145 kilómetros de profundidad , una cifra considerable que, según Tavera…"
-    },
-    {
-     "v": "20 de noviembre",
-     "t": "fecha",
-     "c": "EST Guardar La región Junín atraviesa una secuencia sísmica intensa desde el viernes 20 de noviembre."
-    },
-    {
-     "v": "22 de noviembre",
-     "t": "fecha",
-     "c": "…adicionales, entre ellos uno de magnitud 5,0 este domingo 22 de noviembre , con…."
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "2c193924c2",
-   "sector": "politica",
-   "titulo": "Partidos de hoy, domingo 22 de noviembre de 2026: programación, canales TV y resultados en vivo",
-   "resumen": "La jornada dominical reúne encuentros de Liga 1, Liga 2, Copa Perú, Liga Femenina, LaLiga y Premier League, además de otras competiciones alrededor del mundo. También habría participación para varios peruanos en clubes del exterior",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/deportes/2026/11/22/partidos-de-hoy-domingo-22-de-noviembre-de-2026-programacion-canales-tv-y-resultados-en-vivo/",
-   "fecha": "2026-11-22T23:52:43Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/Z7YRBMFG6NEDFE3SFC6FSRZ3X4.png?auth=72fa21223a2978f8a58f30d01c048082a81660e40c466a6f2a4ebd6e4dd259cc&smart=true&width=1920&height=1080",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "contexto_peru_resumen"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://www.infobae.com/peru/deportes/2026/11/22/partidos-de-hoy-domingo-22-de-noviembre-de-2026-programacion-canales-tv-y-resultados-en-vivo/",
-   "sintesis": "La jornada dominical reúne encuentros de Liga 1, Liga 2, Copa Perú, Liga Femenina, LaLiga y Premier League, además de otras competiciones alrededor del mundo. También habría participación para varios peruanos en clubes del exterior",
-   "puntos": [
-    "La jornada dominical reúne encuentros de Liga 1, Liga 2, Copa Perú, Liga Femenina, LaLiga y Premier League, además de otras competiciones alrededor del mundo.",
-    "También habría participación para varios peruanos en clubes del exterior",
-    "EST Guardar Hoy domingo 22 de noviembre, la programación de partidos reúne actividad en el fútbol peruano, ligas europeas y torneos de otros países, además de posibles participaciones de jugadores peruanos en el extranjero."
-   ],
-   "datos": [
-    {
-     "v": "22 de noviembre de 2026",
-     "t": "fecha",
-     "c": "Partidos de hoy, domingo 22 de noviembre de 2026: programación, canales TV y resultados en vivo."
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "fc3db988c4",
-   "sector": "politica",
-   "titulo": "Candelaria 2027: IPD explica por qué no se realizó la presentación en el Estadio Nacional",
-   "resumen": "El Instituto Peruano del Deporte señaló que la Federación Regional de Folklore y Cultura de Puno no presentó las autorizaciones ni las garantías de seguridad necesarias. La Municipalidad de Lima confirmó que el espectáculo tampoco contaba con permiso municipal.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/cultura/mas-cultura/candelaria-2027-ipd-explica-por-que-no-se-realizo-la-presentacion-en-el-estadio-nacional-noticia-1719193",
-   "fecha": "2026-11-22T23:52:34Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/22/334633_1932029.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "contexto_peru_resumen"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://rpp.pe/cultura/mas-cultura/candelaria-2027-ipd-explica-por-que-no-se-realizo-la-presentacion-en-el-estadio-nacional-noticia-1719193",
-   "sintesis": "El Instituto Peruano del Deporte señaló que la Federación Regional de Folklore y Cultura de Puno no presentó las autorizaciones ni las garantías de seguridad necesarias. La Municipalidad de Lima confirmó que el espectáculo tampoco contaba con permiso municipal.",
-   "puntos": [
-    "El Instituto Peruano del Deporte señaló que la Federación Regional de Folklore y Cultura de Puno no presentó las autorizaciones ni las garantías de seguridad necesarias.",
-    "La Municipalidad de Lima confirmó que el espectáculo tampoco contaba con permiso municipal.",
-    "La presentación oficial de la Festividad de la Virgen de la Candelaria 2027 no se realizó este domingo 22 de noviembre en el Estadio Nacional."
-   ],
-   "datos": [
-    {
-     "v": "2 000 personas",
-     "t": "cantidad",
-     "c": "…con el programa Siempre en casa , RPP informó que más de 2 000 personas aguardaban en los exteriores del recinto sin recibir…"
-    },
-    {
-     "v": "22 de noviembre",
-     "t": "fecha",
-     "c": "…la Virgen de la Candelaria 2027 no se realizó este domingo 22 de noviembre en el Estadio Nacional."
-    },
-    {
-     "v": "17 de noviembre",
-     "t": "fecha",
-     "c": "En su pronunciamiento, el IPD explicó que el 17 de noviembre recibió una solicitud formal del Ministerio de Cultura…"
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "20fdb11858",
-   "sector": "coyuntura",
-   "titulo": "Oliver Sonne volvió a ser titular en la Segunda División de Inglaterra: ¿Cómo le fue al lateral peruano?",
-   "resumen": "El carrilero inca volvió a competir desde el arranque en Turf Moor tras superar semanas complicadas por molestias físicas, logrando disputar el choque completo frente a Blackburn Rovers en la Championship",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/deportes/2026/11/22/oliver-sonne-volvio-a-ser-titular-en-la-segunda-division-de-inglaterra-como-le-fue-al-lateral-peruano/",
-   "fecha": "2026-11-22T23:52:12Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/ACC2BVMQIFCYBP7NUVWUUUSFDA.jpg?auth=62b27e98ce27668fd40a54d59b145baece6b4e6d4115d3ef34c202ca866fc659&smart=true&width=1920&height=1050",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://www.infobae.com/peru/deportes/2026/11/22/oliver-sonne-volvio-a-ser-titular-en-la-segunda-division-de-inglaterra-como-le-fue-al-lateral-peruano/",
-   "sintesis": "El carrilero inca volvió a competir desde el arranque en Turf Moor tras superar semanas complicadas por molestias físicas, logrando disputar el choque completo frente a Blackburn Rovers en la Championship El lateral peruano volvió a ser titular en la segunda división de Inglaterra después de 71 días y ocho jornadas en el banco: disputó el partido completo, completó 47 pases y recibió una amarilla, pero su equipo no pudo salir de la zona de descenso. (Burnley) 22 Nov, 2026 06:52 p. m.",
-   "puntos": [
-    "El carrilero inca volvió a competir desde el arranque en Turf Moor tras superar semanas complicadas por molestias físicas, logrando disputar el choque completo frente a Blackburn Rovers en la Championship",
-    "El lateral peruano volvió a ser titular en la segunda división de Inglaterra después de 71 días y ocho jornadas en el banco: disputó el partido completo, completó 47 pases y recibió una amarilla, pero su equipo no pudo salir de la zona de descenso. (Burnley) 22 Nov, 2026 06:52 p. m.",
-    "EST Guardar El lateral derecho peruano Oliver Sonne regresó al once inicial del Burnley este domingo 22 de noviembre en Turf Moor, donde el conjunto inglés igualó 2-2 ante el Blackburn Rovers en la decimosexta jornada de la EFL Championship."
-   ],
-   "datos": [
-    {
-     "v": "71 días",
-     "t": "cantidad",
-     "c": "…titular en la segunda división de Inglaterra después de 71 días y ocho jornadas en el banco: disputó el partido completo…"
-    },
-    {
-     "v": "11 puntos",
-     "t": "cantidad",
-     "c": "…Burnley permanece en el vigésimo segundo lugar con apenas 11 puntos, hundido en la zona de descenso de la segunda división…"
-    },
-    {
-     "v": "2-2",
-     "t": "marcador",
-     "c": "…de noviembre en Turf Moor, donde el conjunto inglés igualó 2-2 ante el Blackburn Rovers en la decimosexta jornada de la…"
-    },
-    {
-     "v": "3-1",
-     "t": "marcador",
-     "c": "…había sido el sábado 12 de septiembre, en la derrota 3-1 ante el Swansea City como visitante por la séptima fecha…"
-    },
-    {
-     "v": "1-1",
-     "t": "marcador",
-     "c": "…Andri Gudjohnsen respondió al minuto 31 para establecer el 1-1 y devolverle el equilibrio al visitante antes del descanso."
     }
    ],
    "acceso": "abierto"
@@ -2355,19 +3315,41 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "sintesis": "El temblor de magnitud 6,7 que sacudió el centro del Perú el viernes 20 de noviembre dejó una persona fallecida y 15…",
+   "url_medio": "https://caretas.pe/nacional/temblor-en-peru-chofer-murio-por-caida-de-rocas-y-reportan-danos-en-huanuco-y-pasco-tras-sismo-de-magnitud-67-en-junin/",
+   "sintesis": "El COEN-Indeci reporta 853 damnificados, 628 afectados y daños en viviendas, colegios y establecimientos de salud tras el temblor. El temblor de magnitud 6,7 que sacudió el centro del Perú el viernes 20 de noviembre dejó una persona fallecida y 15 heridos, según el último reporte del Centro de Operaciones de Emergencia Nacional (COEN-Indeci) , actualizado el domingo 22.",
    "puntos": [
-    "El temblor de magnitud 6,7 que sacudió el centro del Perú el viernes 20 de noviembre dejó una persona fallecida y 15…"
+    "El COEN-Indeci reporta 853 damnificados, 628 afectados y daños en viviendas, colegios y establecimientos de salud tras el temblor.",
+    "El temblor de magnitud 6,7 que sacudió el centro del Perú el viernes 20 de noviembre dejó una persona fallecida y 15 heridos, según el último reporte del Centro de Operaciones de Emergencia Nacional (COEN-Indeci) , actualizado el domingo 22.",
+    "La víctima fue identificada como Luis Paitán Coyllahua , de 42 años, quien conducía un camión cisterna cuando varias rocas cayeron sobre el vehículo en Huánuco."
    ],
    "datos": [
     {
+     "v": "15 heridos",
+     "t": "cantidad",
+     "c": "…el viernes 20 de noviembre dejó una persona fallecida y 15 heridos, según el último reporte del Centro de Operaciones de…"
+    },
+    {
+     "v": "42 años",
+     "t": "cantidad",
+     "c": "La víctima fue identificada como Luis Paitán Coyllahua , de 42 años, quien conducía un camión cisterna cuando varias rocas…"
+    },
+    {
+     "v": "628 personas",
+     "t": "cantidad",
+     "c": "El balance oficial también registra 853 damnificados y 628 personas afectadas.."
+    },
+    {
+     "v": "15 personas",
+     "t": "cantidad",
+     "c": "…de Salud confirmó el deceso y mantiene el registro de 15 personas heridas por el temblor."
+    },
+    {
      "v": "20 de noviembre",
      "t": "fecha",
-     "c": "El temblor de magnitud 6,7 que sacudió el centro del Perú el viernes 20 de noviembre dejó una persona fallecida y 15…"
+     "c": "…de magnitud 6,7 que sacudió el centro del Perú el viernes 20 de noviembre dejó una persona fallecida y 15 heridos, según el último…"
     }
    ],
-   "acceso": "sin_verificar",
-   "url_medio": "https://caretas.pe/nacional/temblor-en-peru-chofer-murio-por-caida-de-rocas-y-reportan-danos-en-huanuco-y-pasco-tras-sismo-de-magnitud-67-en-junin/"
+   "acceso": "abierto"
   },
   {
    "id": "790383c24e",
@@ -2453,32 +3435,6 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
-   "id": "0b4f4cf5bf",
-   "sector": "economia",
-   "titulo": "Negocios buscan evitar estafas con Yape y Plin: ¿qué herramientas están utilizando?",
-   "resumen": "Entre las modalidades de fraude figuran los comprobantes falsos de pago o pantallazos adulterados, con los que algunos clientes simulan haber realizado una operación.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/tu-dinero/negocios-buscan-evitar-estafas-con-yape-y-plin-que-herramientas-estan-utilizando-noticia/",
-   "fecha": "2026-11-22T23:45:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/C6QYHIVWGZB33GV6CEEJEMDU34.jpg?auth=1430f0a2f86a6fbaf5f2411be1398d31ed43f9f101a793aa415004ca8b5d26f5&smart=true&width=1200&height=801",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "url_medio": "https://gestion.pe/tu-dinero/negocios-buscan-evitar-estafas-con-yape-y-plin-que-herramientas-estan-utilizando-noticia/",
-   "sintesis": "Entre las modalidades de fraude figuran los comprobantes falsos de pago o pantallazos adulterados, con los que algunos clientes simulan haber realizado una operación.",
-   "puntos": [
-    "Entre las modalidades de fraude figuran los comprobantes falsos de pago o pantallazos adulterados, con los que algunos clientes simulan haber realizado una operación."
-   ],
-   "acceso": "restringido"
-  },
-  {
    "id": "6eda7e1e32",
    "sector": "deporte",
    "titulo": "LDU confirmó la salida de José Carabalí y el lateral izquierdo ya tendría listo su próximo destino: ¿volverá a Universitario?",
@@ -2514,124 +3470,6 @@ window.NOTICIAS = {
    "url_medio": "https://www.infobae.com/peru/deportes/2026/11/22/ldu-confirmo-la-salida-de-jose-carabali-y-el-lateral-izquierdo-ya-tendria-listo-su-proximo-destino-volvera-a-universitario/"
   },
   {
-   "id": "89c144a3ae",
-   "sector": "investigacion",
-   "titulo": "“Es un foco infeccioso”: vecinos de Chorrillos denuncian nuevamente falta de recojo de basura en varios puntos del distrito",
-   "resumen": "Los vecinos de Chorrillos indicaron que los residuos llevan varios días en el lugar y esperan que las autoridades puedan cumplir con la limpieza a brevedad.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/lima/actualidad/es-un-foco-infeccioso-vecinos-de-chorrillos-denuncian-nuevamente-falta-de-recojo-de-basura-en-varios-puntos-del-distrito-noticia-1719196",
-   "fecha": "2026-11-22T23:39:50Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/22/174617_1932028.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://rpp.pe/lima/actualidad/es-un-foco-infeccioso-vecinos-de-chorrillos-denuncian-nuevamente-falta-de-recojo-de-basura-en-varios-puntos-del-distrito-noticia-1719196",
-   "sintesis": "Los vecinos de Chorrillos indicaron que los residuos llevan varios días en el lugar y esperan que las autoridades puedan cumplir con la limpieza a brevedad. Vecinos del distrito de Chorrillos denunciaron nuevamente la acumulación de basura en diversos puntos de la jurisdicción , pese a que el municipio reconoció retrasos en el recojo de residuos y anunció operativos de limpieza.",
-   "puntos": [
-    "Los vecinos de Chorrillos indicaron que los residuos llevan varios días en el lugar y esperan que las autoridades puedan cumplir con la limpieza a brevedad.",
-    "Vecinos del distrito de Chorrillos denunciaron nuevamente la acumulación de basura en diversos puntos de la jurisdicción , pese a que el municipio reconoció retrasos en el recojo de residuos y anunció operativos de limpieza.",
-    "En declaraciones a RPP, los vecinos indicaron que esta situación puede agravarse, pues estos puntos de residuos sin recoger pueden convertirse en focos infecciosos ante el aumento de temperatura registrado en los últimos días."
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "1615a0f1ce",
-   "sector": "economia",
-   "titulo": "MEF aprueba endeudamiento por S/ 5,700 millones para financiar proyecto de la Fuerza Aérea",
-   "resumen": "El Ministerio de Economía y Finanzas (MEF) autorizó la emisión de bonos soberanos por hasta S/ 5,700 millones para financiar el segundo tramo de un proyecto de inversión a cargo del Ministerio de Defensa, a través de la Fuerza Aérea del Perú (FAP).",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/economia/empresas/mef-aprueba-endeudamiento-por-s-5700-millones-para-financiar-proyecto-de-la-fuerza-aerea-noticia/",
-   "fecha": "2026-11-22T23:37:48Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/RWSISBS4SNGZVPJZ5LAI5FY27I.png?auth=12829e0495237bace654a3fdf8b7ac885306eac1cd971eeed329f122d7cb66af&smart=true&width=1400&height=800",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "El Ministerio de Economía y Finanzas (MEF) autorizó la emisión de bonos soberanos por hasta S/ 5,700 millones para financiar el segundo tramo de un proyecto de inversión a cargo del Ministerio de Defensa, a través de la Fuerza Aérea del Perú (FAP). La medida fue oficializada mediante el Decreto Supremo N° 262-2026-EF , publicado hoy en el diario oficial El Peruano, que aprueba una operación de endeudamiento interno para cubrir los recursos que demande la ejecución del proyecto.",
-   "puntos": [
-    "El Ministerio de Economía y Finanzas (MEF) autorizó la emisión de bonos soberanos por hasta S/ 5,700 millones para financiar el segundo tramo de un proyecto de inversión a cargo del Ministerio de Defensa, a través de la Fuerza Aérea del Perú (FAP).",
-    "La medida fue oficializada mediante el Decreto Supremo N° 262-2026-EF , publicado hoy en el diario oficial El Peruano, que aprueba una operación de endeudamiento interno para cubrir los recursos que demande la ejecución del proyecto.",
-    "Según la norma, la colocación de los bonos se realizará en soles, mediante una o más subastas, en el marco del Programa de Creadores de Mercado o del mecanismo que lo reemplace."
-   ],
-   "datos": [
-    {
-     "v": "S/ 5,700 millones",
-     "t": "monto",
-     "c": "MEF aprueba endeudamiento por S/ 5,700 millones para financiar proyecto de la Fuerza Aérea."
-    },
-    {
-     "v": "360 días",
-     "t": "cantidad",
-     "c": "Los títulos tendrán libre negociación y pagarán cupones de manera semestral, sobre la base de 30/360 días."
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://gestion.pe/economia/empresas/mef-aprueba-endeudamiento-por-s-5700-millones-para-financiar-proyecto-de-la-fuerza-aerea-noticia/"
-  },
-  {
-   "id": "f05b6820d0",
-   "sector": "economia",
-   "titulo": "Infocorp: cómo lograr que tu reporte se actualice más rápido tras pagar una deuda",
-   "resumen": "Sepa el paso clave a dar para que el reporte de Infocorp se actualice en 16 días hábiles.",
-   "fuente": "Gestión",
-   "url": "https://gestion.pe/tu-dinero/finanzas-personales/infocorp-como-lograr-que-tu-reporte-se-actualice-mas-rapido-tras-pagar-una-deuda-noticia/",
-   "fecha": "2026-11-22T23:30:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://gestion.pe/resizer/v2/AWDY6LBMXJG25O3TZG3SJRLOUY.jpg?auth=cc170f6f2d5629c134fe143b15ac50efa52db8ae6a4290ae9f052aff2b340ec7&smart=true&width=1212&height=675",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "sintesis": "Sepa el paso clave a dar para que el reporte de Infocorp se actualice en 16 días hábiles. En mayo del 2025 se publicó la ley Nº 32327 , la cual agiliza los plazos para que se actualicen los reportes de una persona en las centrales de riesgo crediticio, como Infocorp , luego de que abona una deuda pendiente, deja de ser moroso, por lo que vuelve a estar al día en sus obligaciones de pago de un crédito en el sistema financiero.",
-   "puntos": [
-    "Sepa el paso clave a dar para que el reporte de Infocorp se actualice en 16 días hábiles.",
-    "En mayo del 2025 se publicó la ley Nº 32327 , la cual agiliza los plazos para que se actualicen los reportes de una persona en las centrales de riesgo crediticio, como Infocorp , luego de que abona una deuda pendiente, deja de ser moroso, por lo que vuelve a estar al día en sus obligaciones de pago de un crédito en el sistema financiero.",
-    "La reciente ley da un plazo total de 16 días hábiles para que se actualice la información en las centrales de riesgo ."
-   ],
-   "datos": [
-    {
-     "v": "16 días",
-     "t": "cantidad",
-     "c": "Sepa el paso clave a dar para que el reporte de Infocorp se actualice en 16 días hábiles.."
-    },
-    {
-     "v": "7 días",
-     "t": "cantidad",
-     "c": "…deuda morosa, la entidad financiera cuenta con un plazo de 7 días hábiles para reportar este pago a la Superintendencia de…"
-    },
-    {
-     "v": "2 días",
-     "t": "cantidad",
-     "c": "Y éstas cuentan con 2 días hábiles para actualizar sus reportes, tras recibir la nueva información.."
-    },
-    {
-     "v": "11 de noviembre",
-     "t": "fecha",
-     "c": "“Por ejemplo, si alguien se pone al día en su deuda un 11 de noviembre, en el reporte de Infocorp de fines de diciembre saldrá…"
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://gestion.pe/tu-dinero/finanzas-personales/infocorp-como-lograr-que-tu-reporte-se-actualice-mas-rapido-tras-pagar-una-deuda-noticia/"
-  },
-  {
    "id": "61a2d087c4",
    "sector": "coyuntura",
    "titulo": "Humor: cosas del Papa",
@@ -2656,46 +3494,6 @@ window.NOTICIAS = {
     "Si valoras nuestro contenido, hazte miembro de la #BúhoComunidad.",
     "Así podremos seguir haciendo periodismo.",
     "También puedes apoyarnos uniéndote a nuestro canal de YouTube ."
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "2c1da48af9",
-   "sector": "politica",
-   "titulo": "Ministro de Vivienda advierte que presupuesto asignado para 2027 es insuficiente para cerrar brechas en agua y saneamiento",
-   "resumen": "El ministro Mauricio Arnillas señaló que la brecha económica en infraestructura de agua y desagüe asciende a 132 000 millones de soles para ejecutar los proyectos requeridos a nivel nacional.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/politica/gobierno/ministro-de-vivienda-advierte-que-presupuesto-asignado-para-2027-es-insuficiente-para-cerrar-brechas-en-agua-y-saneamiento-noticia-1719186",
-   "fecha": "2026-11-22T23:17:20Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/22/005000_1932016.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "seccion_nacional_fuente"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://rpp.pe/politica/gobierno/ministro-de-vivienda-advierte-que-presupuesto-asignado-para-2027-es-insuficiente-para-cerrar-brechas-en-agua-y-saneamiento-noticia-1719186",
-   "sintesis": "El ministro Mauricio Arnillas señaló que la brecha económica en infraestructura de agua y desagüe asciende a 132 000 millones de soles para ejecutar los proyectos requeridos a nivel nacional. Compartir Gobierno Share El ministro de Vivienda, Mauricio Arnillas, supervisa puntos críticos en Ica ante el Fenómeno de El Niño.",
-   "puntos": [
-    "El ministro Mauricio Arnillas señaló que la brecha económica en infraestructura de agua y desagüe asciende a 132 000 millones de soles para ejecutar los proyectos requeridos a nivel nacional.",
-    "Compartir Gobierno Share El ministro de Vivienda, Mauricio Arnillas, supervisa puntos críticos en Ica ante el Fenómeno de El Niño.",
-    "00:00 · 01:44 El ministro de Vivienda, Construcción y Saneamiento, Mauricio Arnillas , señaló desde la provincia de Nasca, región de Ica, que el presupuesto asignado por el Congreso a su sector para el 2027 no…"
-   ],
-   "datos": [
-    {
-     "v": "132 000 millones de soles",
-     "t": "escala",
-     "c": "…económica en infraestructura de agua y desagüe asciende a 132 000 millones de soles para ejecutar los proyectos requeridos a nivel nacional.."
-    },
-    {
-     "v": "30 de noviembre",
-     "t": "fecha",
-     "c": "La medida se concretó diez días antes del vencimiento del plazo establecido por la Constitución Política, fijado para el 30 de noviembre."
-    }
    ],
    "acceso": "abierto"
   },
@@ -2785,124 +3583,6 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
-   "id": "bda05da524",
-   "sector": "coyuntura",
-   "titulo": "Arequipa: guagua de nueve metros protagoniza tradicional bautizo en homenaje a “La Benita”",
-   "resumen": "La preparación estuvo a cargo de 40 estudiantes del Instituto Stendhal y permitió repartir gratuitamente más de 5 mil porciones.",
-   "fuente": "El Búho",
-   "url": "https://elbuho.pe/2026/11/arequipa-guagua-de-nueve-metros-protagoniza-tradicional-bautizo-en-homenaje-a-la-benita/",
-   "fecha": "2026-11-22T23:06:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/IMAGEN-12.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://elbuho.pe/2026/11/arequipa-guagua-de-nueve-metros-protagoniza-tradicional-bautizo-en-homenaje-a-la-benita/",
-   "sintesis": "La Plaza de Armas de Arequipa fue escenario del tradicional Bautizo de Guagua. Este año, el evento rindió homenaje a \"La Benita\"",
-   "puntos": [
-    "La Plaza de Armas de Arequipa fue escenario del tradicional Bautizo de Guagua.",
-    "Este año, el evento rindió homenaje a \"La Benita\"",
-    "La celebración se realizó el viernes 20 de noviembre y permitió distribuir gratuitamente más de 5 mil porciones de este pan tradicional entre los asistentes."
-   ],
-   "datos": [
-    {
-     "v": "20 de noviembre",
-     "t": "fecha",
-     "c": "La celebración se realizó el viernes 20 de noviembre y permitió distribuir gratuitamente más de 5 mil porciones…"
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "6aa7f1b534",
-   "sector": "coyuntura",
-   "titulo": "Arequipa: Verduras y tubérculos registran alzas en el mercado San Camilo",
-   "resumen": "Comerciantes atribuyen el incremento de algunos productos al aumento de los costos de transporte y a las variaciones climáticas que afectan las zonas de producción.",
-   "fuente": "El Búho",
-   "url": "https://elbuho.pe/2026/11/arequipa-verduras-y-tuberculos-registran-alzas-en-el-mercado-san-camilo/",
-   "fecha": "2026-11-22T23:02:21Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/FOTOS-NOTAS-42.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://elbuho.pe/2026/11/arequipa-verduras-y-tuberculos-registran-alzas-en-el-mercado-san-camilo/",
-   "sintesis": "Los precios de diversos alimentos registraron variaciones durante los últimos días en el mercado San Camilo. Según los comerciantes, algunos productos agrícolas presentan incrementos debido al aumento del combustible utilizado para el transporte.",
-   "puntos": [
-    "Los precios de diversos alimentos registraron variaciones durante los últimos días en el mercado San Camilo.",
-    "Según los comerciantes, algunos productos agrícolas presentan incrementos debido al aumento del combustible utilizado para el transporte.",
-    "Además, las lluvias y las altas temperaturas están afectando la producción y conservación de varios cultivos."
-   ],
-   "datos": [
-    {
-     "v": "S/ 2.50",
-     "t": "monto",
-     "c": "Entre los productos que muestran mayores variaciones figura la cebolla roja, que pasó de S/ 2.50 a S/ 4 por kilogramo."
-    },
-    {
-     "v": "S/ 4",
-     "t": "monto",
-     "c": "Entre los productos que muestran mayores variaciones figura la cebolla roja, que pasó de S/ 2.50 a S/ 4 por kilogramo."
-    },
-    {
-     "v": "S/ 3",
-     "t": "monto",
-     "c": "Del mismo modo, la zanahoria aumentó de S/ 3 a S/ 5, mientras que el choclo pasó de S/ 5 a S/ 8."
-    },
-    {
-     "v": "S/ 5",
-     "t": "monto",
-     "c": "Del mismo modo, la zanahoria aumentó de S/ 3 a S/ 5, mientras que el choclo pasó de S/ 5 a S/ 8."
-    },
-    {
-     "v": "S/ 8",
-     "t": "monto",
-     "c": "Del mismo modo, la zanahoria aumentó de S/ 3 a S/ 5, mientras que el choclo pasó de S/ 5 a S/ 8."
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "d5e02e3c4a",
-   "sector": "deporte",
-   "titulo": "Tabla de la Liga Peruana de Vóley 2026-2027 EN VIVO: así se encuentran las posiciones en la fecha 6 de la fase 1",
-   "resumen": "Conoce como se encuentran los equipos en la primera fase de la Liga Peruana de Vóley 2026-2027.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/voley/mas-voley/tabla-liga-peruana-de-voley-2026-2027-en-vivo-resultados-y-posiciones-fase-1-y-fase-2-lpv-voley-en-vivo-alianza-lima-universitario-sporting-cristal-noticia-1713237",
-   "fecha": "2026-11-22T23:00:26Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/10/18/212921_1919936.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://rpp.pe/voley/mas-voley/tabla-liga-peruana-de-voley-2026-2027-en-vivo-resultados-y-posiciones-fase-1-y-fase-2-lpv-voley-en-vivo-alianza-lima-universitario-sporting-cristal-noticia-1713237",
-   "sintesis": "Conoce como se encuentran los equipos en la primera fase de la Liga Peruana de Vóley 2026-2027. Ya se juega la primera fase de la Liga Peruana de Vóley 2026-2027 , donde 12 equipos intentarán alzarse con el trofeo que posee Alianza Lima hace tres temporadas.",
-   "puntos": [
-    "Conoce como se encuentran los equipos en la primera fase de la Liga Peruana de Vóley 2026-2027.",
-    "Ya se juega la primera fase de la Liga Peruana de Vóley 2026-2027 , donde 12 equipos intentarán alzarse con el trofeo que posee Alianza Lima hace tres temporadas.",
-    "En esta etapa del campeonato nacional, se ha dispuesto que solo 10 equipos clasificarán a la fase 2 y el último -sacando al invitado Perú Sub 19- perderá la categoría."
-   ],
-   "acceso": "abierto"
-  },
-  {
    "id": "5f85e7a7dc",
    "sector": "nino",
    "titulo": "Fenómeno El Niño impacta en agroindustria, pesca y consumo: ¿qué empresas reportan efectos?",
@@ -2928,69 +3608,6 @@ window.NOTICIAS = {
     "Agroindustrias AIB, Austral Group y Pesquera Exalmar reportaron menores niveles de producción, mientras que Alicorp registró una menor…"
    ],
    "acceso": "restringido"
-  },
-  {
-   "id": "5d732b60bf",
-   "sector": "coyuntura",
-   "titulo": "Municipalidad de Lima: Evento de la Candelaria 2027 no tiene autorización ni garantías del Ministerio del Interior",
-   "resumen": "La comuna capitalina informó que los organizadores del evento no cumplieron con los requisitos exigidos para llevar adelante el espectáculo dentro del estadio Nacional.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/lima/actualidad/candelaria-2027-municipalidad-de-lima-advierte-que-evento-no-tiene-autorizacion-ni-garantias-del-ministerio-del-interior-noticia-1719190",
-   "fecha": "2026-11-22T22:57:07Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/22/300130_1932023.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://rpp.pe/lima/actualidad/candelaria-2027-municipalidad-de-lima-advierte-que-evento-no-tiene-autorizacion-ni-garantias-del-ministerio-del-interior-noticia-1719190",
-   "sintesis": "La comuna capitalina informó que los organizadores del evento no cumplieron con los requisitos exigidos para llevar adelante el espectáculo dentro del estadio Nacional. Compartir Actualidad Share Candelaria 2027 Candelaria 2027 00:00 · 04:25 La Municipalidad de Lima informó este domingo que la festividad de la Virgen de la Candelaria 2027, que se iba a dar en el Estadio Nacional, no cuenta con autorización municipal ni permisos del Ministerio del Interior .",
-   "puntos": [
-    "La comuna capitalina informó que los organizadores del evento no cumplieron con los requisitos exigidos para llevar adelante el espectáculo dentro del estadio Nacional.",
-    "Compartir Actualidad Share Candelaria 2027 Candelaria 2027 00:00 · 04:25 La Municipalidad de Lima informó este domingo que la festividad de la Virgen de la Candelaria 2027, que se iba a dar en el Estadio Nacional, no cuenta con autorización municipal ni permisos del Ministerio del Interior .",
-    "En ese sentido, el evento ya no se realizará."
-   ],
-   "datos": [
-    {
-     "v": "20 de noviembre",
-     "t": "fecha",
-     "c": "Sin embargo, hasta el 20 de noviembre, no se subsanaron las observaciones, por lo que no se…"
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "359ce0b17f",
-   "sector": "coyuntura",
-   "titulo": "IQUITOS: Electro Oriente promete acabar con los apagones, pero ciudadanos expresan dudas (VIDEO)",
-   "resumen": "Se cuestiona la rapidez de la adjudicación de los equipos y se pide esclarecer si hubo estudio de mercado y participación de otros postores.",
-   "fuente": "El Búho",
-   "url": "https://elbuho.pe/2026/11/iquitos-electro-oriente-promete-acabar-con-los-apagones-pero-ciudadanos-expresan-dudas-video/",
-   "fecha": "2026-11-22T22:56:33Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elbuho.pe/wp-content/uploads/2026/11/1795204564_hqdefault.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://elbuho.pe/2026/11/iquitos-electro-oriente-promete-acabar-con-los-apagones-pero-ciudadanos-expresan-dudas-video/",
-   "sintesis": "Electro Oriente promete reducir los apagones en Iquitos con una potencia de 32 MW hasta diciembre de 2026, mediante recursos propios Sin embargo, los equipos alquilados aportarían nueve MW y estarían instalados entre la segunda y tercera semana de diciembre; los pagos empezarían en enero de 2027.",
-   "puntos": [
-    "Electro Oriente promete reducir los apagones en Iquitos con una potencia de 32 MW hasta diciembre de 2026, mediante recursos propios",
-    "Sin embargo, los equipos alquilados aportarían nueve MW y estarían instalados entre la segunda y tercera semana de diciembre; los pagos empezarían en enero de 2027.",
-    "Un técnico consultado señala que conectarse al SEIN implicaría depender de energía de otras regiones y que se necesita generación local para justificar esa inversión."
-   ],
-   "acceso": "abierto"
   },
   {
    "id": "b840f94d5a",
@@ -3157,6 +3774,36 @@ window.NOTICIAS = {
    "url_medio": "https://gestion.pe/mundo/eeuu/trump-confirma-el-ciberataque-al-fbi-y-cree-que-podria-destapar-enganos-contra-el-noticia/"
   },
   {
+   "id": "ec89557044",
+   "sector": "ia",
+   "titulo": "Estudiante peruano de 15 años crea plataforma de inteligencia artificial para empresas",
+   "resumen": "",
+   "fuente": "tvperu.gob.pe",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPdXN1cFdobHh1bFA5dzF4aEZLTDJUd2hpT1B2eExveFhUOHdoTFladnh5Q1E3QXVUM3JsdVFPamF2MFdpUzB4S0hyWFEzMWY0T1Qtc1FVRmI0eFRORHZVTjEtb0lNWGZ3MGZYeTZoc2FsckFYaDNUUVRGYWRUaFVKWnpHbm53TW1nb1BGUlA5QUZxLV80SkVMaVBWOWR3SE1uNjRLYlFDQVNaUjRWbVFtMkU0c2gyOHRRVGdxOG1RMzA?oc=5",
+   "fecha": "2026-11-22T22:40:00Z",
+   "tipo": "comercial",
+   "genero": "noticia",
+   "imagen": null,
+   "geografia": {
+    "version": 1,
+    "ambito": "peru",
+    "zona": "peru",
+    "motivo": "referencia_peru_titulo"
+   },
+   "ambito": "peru",
+   "procedencia": "directa",
+   "imagen_intentos": 1,
+   "url_medio": "https://www.tvperu.gob.pe/noticias/tecnologia/estudiante-peruano-de-15-anos-crea-plataforma-de-inteligencia-artificial-para",
+   "datos": [
+    {
+     "v": "15 años",
+     "t": "cantidad",
+     "c": "Estudiante peruano de 15 años crea plataforma de inteligencia artificial para empresas."
+    }
+   ],
+   "acceso": "sin_verificar"
+  },
+  {
    "id": "b53a3841e1",
    "sector": "tecnologia",
    "titulo": "Cajamarca: presunta estafa piramidal «FAF» desaparece y deja cientos de afectados en Celendín y Cutervo",
@@ -3205,34 +3852,6 @@ window.NOTICIAS = {
     }
    ],
    "acceso": "abierto"
-  },
-  {
-   "id": "ddf8d24f3e",
-   "sector": "deporte",
-   "titulo": "Representarán al Perú: estos son los equipos que jugarán la Copa Libertadores y Copa Sudamericana en el 2027",
-   "resumen": "Terminó el Torneo Clausura y se han definido a los representante peruanos en la Copa Libertadores y Copa Sudamericana.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/futbol/descentralizado/los-equipos-peruanos-que-jugaran-la-copa-libertadores-y-copa-sudamericana-2027-universitario-alianza-lima-melgar-deportivo-garcilaso-noticia-1719140",
-   "fecha": "2026-11-22T22:37:52Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/22/482848_1932007.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Terminó el Torneo Clausura y se han definido a los representante peruanos en la Copa Libertadores y Copa Sudamericana. El Torneo Clausura llegó a su final y no solo se ha definido cómo se jugarán los playoffs de la Liga1.",
-   "puntos": [
-    "Terminó el Torneo Clausura y se han definido a los representante peruanos en la Copa Libertadores y Copa Sudamericana.",
-    "El Torneo Clausura llegó a su final y no solo se ha definido cómo se jugarán los playoffs de la Liga1.",
-    "También se ha conocido qué equipos disputarán la Copa Libertadores y la Copa Sudamericana 2027 ."
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://rpp.pe/futbol/descentralizado/los-equipos-peruanos-que-jugaran-la-copa-libertadores-y-copa-sudamericana-2027-universitario-alianza-lima-melgar-deportivo-garcilaso-noticia-1719140"
   },
   {
    "id": "dc87b4d23e",
@@ -3288,41 +3907,6 @@ window.NOTICIAS = {
     }
    ],
    "acceso": "abierto"
-  },
-  {
-   "id": "909e7b6c79",
-   "sector": "deporte",
-   "titulo": "Sporting Cristal vs Cienciano: resultado, resumen y goles por la fecha 17 del Clausura 2026",
-   "resumen": "Sporting Cristal jugó en el estadio Alberto Gallardo en la última fecha del Torneo Clausura 2026.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/futbol/descentralizado/sporting-cristal-vs-cienciano-en-vivo-a-que-hora-juegan-y-donde-ver-fecha-17-torneo-clausura-2026-via-l1max-partidos-de-hoy-noticia-1718853",
-   "fecha": "2026-11-22T22:30:53Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/22/073607_1932012.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Sporting Cristal jugó en el estadio Alberto Gallardo en la última fecha del Torneo Clausura 2026. Sporting Cristal derrotó por 4-1 a Cienciano de Cusco, pero no le alcanzó este resultado para ganar el Torneo Clausura 2026, cuyo ganador fue Sport Huancayo, que goleó a Universitario de Deportes.",
-   "puntos": [
-    "Sporting Cristal jugó en el estadio Alberto Gallardo en la última fecha del Torneo Clausura 2026.",
-    "Sporting Cristal derrotó por 4-1 a Cienciano de Cusco, pero no le alcanzó este resultado para ganar el Torneo Clausura 2026, cuyo ganador fue Sport Huancayo, que goleó a Universitario de Deportes.",
-    "Sporting Cristal: Diego Enriquez; Miguel Araujo, Rafael Lutiger, Luis Abram; Leandro Sosa, Martín Távara, Agustín Álvarez Wallace, Maxloren Castro; Santiago González, Luis Iberico y Hernán Barcos."
-   ],
-   "datos": [
-    {
-     "v": "4-1",
-     "t": "marcador",
-     "c": "Sporting Cristal derrotó por 4-1 a Cienciano de Cusco, pero no le alcanzó este resultado…"
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://rpp.pe/futbol/descentralizado/sporting-cristal-vs-cienciano-en-vivo-a-que-hora-juegan-y-donde-ver-fecha-17-torneo-clausura-2026-via-l1max-partidos-de-hoy-noticia-1718853"
   },
   {
    "id": "f14bbe4f5b",
@@ -3410,86 +3994,6 @@ window.NOTICIAS = {
     "Desde Arequipa y en el marco de la última edición del Hay Festival, el internacionalista Farid Kahhat analiza las tensiones",
     "¿Por qué los jóvenes europeos sienten que vivirán peor que sus padres?",
     "Kahhat examina la crisis de vivienda, la especulación inmobiliaria y las contradicciones de los […]"
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "34827bf872",
-   "sector": "deporte",
-   "titulo": "VIDEO: Sporting Cristal venció 4-1 a Cienciano en el Rímac",
-   "resumen": "Mira lo mejor del partido de Sporting Cristal vs. Cienciano por la fecha 17 del Torneo Clausura de la Liga 1.",
-   "fuente": "El Comercio",
-   "url": "https://elcomercio.pe/deporte-total/futbol-peruano/video-liga-1-max-en-vivo-futbol-libre-tv-sporting-cristal-vs-cienciano-en-directo-via-liga-1-play-directv-dgo-por-torneo-clausura-liga-1s-noticia/",
-   "fecha": "2026-11-22T22:26:17Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://elcomercio.pe/resizer/v2/MQU6ZYUJZVFI7A3QVYJMW24KIE.jpeg?auth=88e829e263ef10631c108fd8dc66d48d147cfe7128d609b2cbe8b6f7fbddc983&smart=true&width=1280&height=854",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "Mira lo mejor del partido de Sporting Cristal vs. Cienciano por la fecha 17 del Torneo Clausura de la Liga 1.",
-   "puntos": [
-    "Mira lo mejor del partido de Sporting Cristal vs.",
-    "Cienciano por la fecha 17 del Torneo Clausura de la Liga 1.",
-    "Sporting Cristal goleó a Cienciano , pero no consiguió conquistar el Torneo Clausura 2026 de la Liga 1 ."
-   ],
-   "datos": [
-    {
-     "v": "4-1",
-     "t": "marcador",
-     "c": "VIDEO: Sporting Cristal venció 4-1 a Cienciano en el Rímac."
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://elcomercio.pe/deporte-total/futbol-peruano/video-liga-1-max-en-vivo-futbol-libre-tv-sporting-cristal-vs-cienciano-en-directo-via-liga-1-play-directv-dgo-por-torneo-clausura-liga-1s-noticia/"
-  },
-  {
-   "id": "216e5c10a7",
-   "sector": "deporte",
-   "titulo": "¡Sport Huancayo ganador del Torneo Clausura 2026! Goles y resumen del triunfazo 4-1 ante Universitario por Liga 1",
-   "resumen": "El ‘rojo matador’ hizo su trabajo y ganó sin problemas a un desconocido cuando ‘crema’ ante su gente. El resultado también lo pone en los ‘play-offs’ del certamen y justamente volverá a enfrentar a los de Fabián Bustos",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/deportes/2026/11/22/universitario-vs-sport-huancayo-en-vivo-hoy-minuto-a-minuto-partido-fecha-17-torneo-clausura-liga-1-2026-goles-resumen-resultado-campeon/",
-   "fecha": "2026-11-22T22:25:13Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/L2GXQSUK2ZD35MKYY6KOPNXTCU.png?auth=173d98a77729c3a404cf2d44eac848c87deeea51da84bc401e76f73891747526&smart=true&width=1920&height=1080",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://www.infobae.com/peru/deportes/2026/11/22/universitario-vs-sport-huancayo-en-vivo-hoy-minuto-a-minuto-partido-fecha-17-torneo-clausura-liga-1-2026-goles-resumen-resultado-campeon/",
-   "sintesis": "El ‘rojo matador’ llega como líder y depende de su propio resultado para quedarse con el torneo, mientras que la ‘U’ necesita ganar y esperar que se den otros resultados para alcanzar la gloria. Sigue todas las incidencias Por Eliezer Benedetti",
-   "puntos": [
-    "El ‘rojo matador’ llega como líder y depende de su propio resultado para quedarse con el torneo, mientras que la ‘U’ necesita ganar y esperar que se den otros resultados para alcanzar la gloria.",
-    "Sigue todas las incidencias Por Eliezer Benedetti",
-    "La pasión crema se hizo sentir en Huancayo."
-   ],
-   "datos": [
-    {
-     "v": "32 puntos",
-     "t": "cantidad",
-     "c": "Universitario llega a la última jornada ubicado en el tercer puesto del Clausura, con 32 puntos y una diferencia de gol de +11."
-    },
-    {
-     "v": "2-2",
-     "t": "marcador",
-     "c": "…crema perdió terreno en la recta final luego de empatar 2-2 frente a Deportivo Moquegua en el Estadio Monumental…"
-    },
-    {
-     "v": "22 de noviembre",
-     "t": "fecha",
-     "c": "Sport Huancayo y Universitario de Deportes se enfrentarán hoy, domingo 22 de noviembre, por la última fecha del Torneo Clausura 2026."
-    }
    ],
    "acceso": "abierto"
   },
@@ -3986,39 +4490,6 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
-   "id": "227ab26cc3",
-   "sector": "politica",
-   "titulo": "Congreso: conoce la agenda de la Cámara de Diputados y el Senado para este lunes 23",
-   "resumen": "El Congreso de la República bicameral continuará este lunes 23 de noviembre con sus labores legislativas y fiscalizadoras.",
-   "fuente": "Agencia Andina",
-   "url": "https://andina.pe/agencia/noticia-congreso-conoce-agenda-de-camara-diputados-y-senado-para-este-lunes-23-1100933.aspx",
-   "fecha": "2026-11-22T21:16:25Z",
-   "tipo": "estatal",
-   "genero": "noticia",
-   "imagen": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2025/07/09/001186260W.webp",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "url_medio": "https://andina.pe/agencia/noticia-congreso-conoce-agenda-de-camara-diputados-y-senado-para-este-lunes-23-1100933.aspx",
-   "sintesis": "El Congreso de la República bicameral continuará este lunes 23 de noviembre con sus labores legislativas y fiscalizadoras.",
-   "puntos": [
-    "El Congreso de la República bicameral continuará este lunes 23 de noviembre con sus labores legislativas y fiscalizadoras."
-   ],
-   "datos": [
-    {
-     "v": "23 de noviembre",
-     "t": "fecha",
-     "c": "El Congreso de la República bicameral continuará este lunes 23 de noviembre con sus labores legislativas y fiscalizadoras."
-    }
-   ],
-   "acceso": "sin_verificar"
-  },
-  {
    "id": "048d138b8d",
    "sector": "mundo",
    "titulo": "Elecciones en España: largas filas marcan el inicio del voto anticipado en el exterior",
@@ -4109,32 +4580,6 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
-   "id": "f2c1c6ad25",
-   "sector": "economia",
-   "titulo": "Fintech impulsan inclusión financiera con reducción del tiempo de aprobación de créditos",
-   "resumen": "Las fintech reducen el tiempo de aprobación de créditos de días a minutos e impulsan de esta manera el acceso al financiamiento a miles de peruanos mediante el uso de tecnología avanzada, especialmente en los trabajadores independientes y la micro y pequeña empresa (mype),…",
-   "fuente": "Agencia Andina",
-   "url": "https://andina.pe/agencia/noticia-fintech-impulsan-inclusion-financiera-reduccion-del-tiempo-aprobacion-creditos-1101041.aspx",
-   "fecha": "2026-11-22T20:55:13Z",
-   "tipo": "estatal",
-   "genero": "noticia",
-   "imagen": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2025/01/17/001135612W.webp",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "contexto_peru_resumen"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://andina.pe/agencia/noticia-fintech-impulsan-inclusion-financiera-reduccion-del-tiempo-aprobacion-creditos-1101041.aspx",
-   "sintesis": "Las fintech reducen el tiempo de aprobación de créditos de días a minutos e impulsan de esta manera el acceso al financiamiento a miles de peruanos mediante el uso de tecnología avanzada, especialmente en los trabajadores independientes y la micro y pequeña empresa (mype),…",
-   "puntos": [
-    "Las fintech reducen el tiempo de aprobación de créditos de días a minutos e impulsan de esta manera el acceso al financiamiento a miles de peruanos mediante el uso de tecnología avanzada, especialmente en los trabajadores independientes y la micro y pequeña empresa (mype),…"
-   ],
-   "acceso": "sin_verificar"
-  },
-  {
    "id": "040fc819c0",
    "sector": "mundo",
    "titulo": "El exilio que Colombia no cuenta después de diez años del acuerdo de paz",
@@ -4219,34 +4664,6 @@ window.NOTICIAS = {
    "url_medio": "https://www.infobae.com/peru/2026/11/22/cint-g-la-hija-de-tongo-llego-a-pesar-48-kilos-por-las-exigencias-de-su-manager-y-exnovio-me-descompensaba/"
   },
   {
-   "id": "2acc032f32",
-   "sector": "nino",
-   "titulo": "El Niño no espera: las 4 medidas que debían activarse antes que las quebradas en Perú, ¿se están cumpliendo?",
-   "resumen": "El riesgo no empieza cuando el agua ingresa a una vivienda, sino cuando una ciudad desconoce qué zonas pueden inundarse y cómo responderá ante un corte de vías. Tome nota",
-   "fuente": "Infobae Perú",
-   "url": "https://www.infobae.com/peru/2026/11/22/el-nino-no-espera-las-4-medidas-que-debian-activarse-antes-que-las-quebradas-en-peru-se-estan-cumpliendo/",
-   "fecha": "2026-11-22T20:17:04Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://www.infobae.com/resizer/v2/P7SNCNCPDVGBHO2Y2FHZIHX3VA.jpg?auth=814c502e03389175afa76d49a5fac59c99fd877a63bad59b7bdf88ba2e9a4a45&smart=true&width=2048&height=1152",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "sintesis": "El riesgo no empieza cuando el agua ingresa a una vivienda, sino cuando una ciudad desconoce qué zonas pueden inundarse y cómo responderá ante un corte de vías. Las autoridades deben revisar los puentes e infraestructura crítica, además de mantener libres los drenajes y alcantarillas.",
-   "puntos": [
-    "El riesgo no empieza cuando el agua ingresa a una vivienda, sino cuando una ciudad desconoce qué zonas pueden inundarse y cómo responderá ante un corte de vías.",
-    "Las autoridades deben revisar los puentes e infraestructura crítica, además de mantener libres los drenajes y alcantarillas.",
-    "EST Guardar Frente a una temporada de lluvias intensas, la prevención puede definir la diferencia entre una afectación limitada y una emergencia que interrumpa servicios, dañe viviendas y aísle a comunidades."
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://www.infobae.com/peru/2026/11/22/el-nino-no-espera-las-4-medidas-que-debian-activarse-antes-que-las-quebradas-en-peru-se-estan-cumpliendo/"
-  },
-  {
    "id": "37ec4d99fe",
    "sector": "salud",
    "titulo": "Minsa Móvil brinda más de 9000 atenciones gratuitas a familias de Manchay",
@@ -4283,7 +4700,7 @@ window.NOTICIAS = {
    "fecha": "2026-11-22T19:58:07Z",
    "tipo": "comercial",
    "genero": "noticia",
-   "imagen": null,
+   "imagen": "https://imgmedia.larepublica.pe/1200x735/larepublica/original/2026/11/22/6b03442653776e52ec087e73.jpg",
    "geografia": {
     "version": 1,
     "ambito": "peru",
@@ -4293,46 +4710,18 @@ window.NOTICIAS = {
    "ambito": "peru",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 1,
    "url_medio": "https://larepublica.pe/economia/2026/11/22/combustibles-en-riesgo-por-el-nino-exigen-reforzar-a-petroperu-para-evitar-el-desabastecimiento-2036100",
-   "acceso": "sin_verificar"
-  },
-  {
-   "id": "96f6fb9813",
-   "sector": "politica",
-   "titulo": "San Martín ganó 1-0 a Unión Comercio y clasificó a la final de la Liga 2",
-   "resumen": "En un partido que se decidió tras el gol de Otávio Gut, San Martín se llevó los tres puntos en las semifinales de Liga 2.",
-   "fuente": "RPP",
-   "url": "https://rpp.pe/futbol/segunda-division/union-comercio-vs-san-martin-en-vivo-a-que-hora-juegan-y-donde-ver-la-semifinal-de-vuelta-liga-2-bicolor-partidos-de-hoy-noticia-1719040",
-   "fecha": "2026-11-22T19:45:34Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://f.rpp-noticias.io/2026/11/22/035403_1932021.jpg?imgdimension=look",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "url_medio": "https://rpp.pe/futbol/segunda-division/union-comercio-vs-san-martin-en-vivo-a-que-hora-juegan-y-donde-ver-la-semifinal-de-vuelta-liga-2-bicolor-partidos-de-hoy-noticia-1719040",
-   "sintesis": "Unión Comercio vs San Martín EN VIVO: sigue el partido por la semifinal de vuelta de la Liga 2. Universidad San Martín EN VIVO se enfrentan este domingo 22 de noviembre, desde las 3:00 p. m. (hora peruana), por la semifinal de vuelta de la Liga 2 2026 .",
+   "sintesis": "Los trabajadores petroleros alertan sobre posibles cortes de rutas por huaicos e inundaciones y cuestionan que el Gobierno impulse la reorganización de la estatal mientras reclama garantizar el abastecimiento nacional. La advertencia llega después de que el Ministerio de Energía y Minas (Minem) declarara en emergencia, por un periodo de hasta ocho meses, las actividades de hidrocarburos vinculadas al abastecimiento nacional de combustibles .",
    "puntos": [
-    "Unión Comercio vs San Martín EN VIVO: sigue el partido por la semifinal de vuelta de la Liga 2.",
-    "Universidad San Martín EN VIVO se enfrentan este domingo 22 de noviembre, desde las 3:00 p. m. (hora peruana), por la semifinal de vuelta de la Liga 2 2026 .",
-    "El encuentro se disputará en el estadio Carlos Vidaurre García de Tarapoto y será transmitido EN DIRECTO por Bicolor+ Premium y TV360 de Bitel."
+    "Los trabajadores petroleros alertan sobre posibles cortes de rutas por huaicos e inundaciones y cuestionan que el Gobierno impulse la reorganización de la estatal mientras reclama garantizar el abastecimiento nacional.",
+    "La advertencia llega después de que el Ministerio de Energía y Minas (Minem) declarara en emergencia, por un periodo de hasta ocho meses, las actividades de hidrocarburos vinculadas al abastecimiento nacional de combustibles .",
+    "Mediante la Resolución Ministerial N.° 490-2026-MINEM/DM, el Ejecutivo encargó a Osinergmin evaluar y establecer medidas transitorias para preservar el suministro."
    ],
    "datos": [
     {
-     "v": "2-2",
-     "t": "marcador",
-     "c": "…llegan con la eliminatoria abierta luego de empatar 2-2 en el partido de ida disputado en Santa Anita, por lo que…"
-    },
-    {
-     "v": "22 de noviembre",
-     "t": "fecha",
-     "c": "Universidad San Martín EN VIVO se enfrentan este domingo 22 de noviembre, desde las 3:00 p. m. (hora peruana), por la semifinal de…"
+     "v": "75%",
+     "t": "porcentaje",
+     "c": "…este año Petroperú mantenía una participación superior al 75% en los mercados de combustibles de Loreto, Ucayali y Madre…"
     }
    ],
    "acceso": "abierto"
@@ -4454,6 +4843,7 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
+   "url_medio": "https://www.france24.com/es/deportes/20261122-el-manchester-united-se-hunde-en-liverpool-en-el-debut-de-pochettino",
    "sintesis": "Los Diablos Rojos cayeron al penúltimo lugar de la liga inglesa después de una contundente goleada 4-0 en contra en Anfield. La expulsión del francés Leny Yoro marcó el estreno del técnico argentino.…",
    "puntos": [
     "Los Diablos Rojos cayeron al penúltimo lugar de la liga inglesa después de una contundente goleada 4-0 en contra en Anfield.",
@@ -4467,8 +4857,7 @@ window.NOTICIAS = {
      "c": "Los Diablos Rojos cayeron al penúltimo lugar de la liga inglesa después de una contundente goleada 4-0 en contra en Anfield."
     }
    ],
-   "acceso": "abierto",
-   "url_medio": "https://www.france24.com/es/deportes/20261122-el-manchester-united-se-hunde-en-liverpool-en-el-debut-de-pochettino"
+   "acceso": "abierto"
   },
   {
    "id": "c3ae32764c",
@@ -4603,7 +4992,7 @@ window.NOTICIAS = {
    "ambito": "mundo",
    "procedencia": "directa",
    "url_medio": "https://www.nytimes.com/es/2026/11/22/espanol/america-latina/chapo-isidro-captura.html",
-   "imagen_intentos": 2,
+   "imagen_intentos": 3,
    "acceso": "sin_verificar"
   },
   {
@@ -4626,11 +5015,13 @@ window.NOTICIAS = {
    "ambito": "mundo",
    "procedencia": "directa",
    "url_medio": "https://caretas.pe/mundo/trump-advierte-que-sera-dificil-trabajar-con-un-congreso-democrata/",
-   "sintesis": "MADRID 22 Nov. (EUROPA PRESS) - El presidente estadounidense, Donald Trump, advirtió este domingo de que será \"muy difícil trabajar\" con un…",
+   "sintesis": "El presidente estadounidense, Donald Trump, advirtió que será \"muy difícil trabajar\" con un Congreso controlado por el Partido Demócrata. \"Va a ser muy difícil para mí trabajar con Chuck Schumer si se convierte en el portavoz de la mayoría en el Senado\", escribió Trump en un mensaje publicado en redes sociales.",
    "puntos": [
-    "MADRID 22 Nov. (EUROPA PRESS) - El presidente estadounidense, Donald Trump, advirtió este domingo de que será \"muy difícil trabajar\" con un…"
+    "El presidente estadounidense, Donald Trump, advirtió que será \"muy difícil trabajar\" con un Congreso controlado por el Partido Demócrata.",
+    "\"Va a ser muy difícil para mí trabajar con Chuck Schumer si se convierte en el portavoz de la mayoría en el Senado\", escribió Trump en un mensaje publicado en redes sociales.",
+    "\"Ha sido un gran fracaso como líder, uno de los peores de la historia, y me caben pocas dudas de que volverá a fracasar\", argumentó."
    ],
-   "acceso": "sin_verificar"
+   "acceso": "abierto"
   },
   {
    "id": "1fc1bad2b6",
@@ -4731,7 +5122,7 @@ window.NOTICIAS = {
    "ambito": "pendiente",
    "procedencia": "directa",
    "url_medio": "https://www.nytimes.com/es/2026/11/22/espanol/negocios/anthropic-wall-street-silicon-valley.html",
-   "imagen_intentos": 5,
+   "imagen_intentos": 6,
    "acceso": "sin_verificar"
   },
   {
@@ -4902,156 +5293,6 @@ window.NOTICIAS = {
    "url_medio": "https://rpp.pe/famosos/celebridades/raphael-recibe-el-alta-medica-y-asegura-que-todo-esta-bien-noticia-1719141"
   },
   {
-   "id": "37e15b8486",
-   "sector": "mundo",
-   "titulo": "Incendio en fábrica de confitería en Indonesia deja al menos tres muertos y 36 desaparecidos",
-   "resumen": "Al menos tres personas murieron y otras 36 permanecen desaparecidas tras un incendio en una fábrica de confitería en la provincia de Banten, cerca de Yakarta, Indonesia. El fuego comenzó el sábado 21 de noviembre y continúa activo en varias zonas de las instalaciones, según…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/video/20261122-incendio-en-f%C3%A1brica-de-confiter%C3%ADa-en-indonesia-deja-al-menos-tres-muertos-y-36-desaparecidos",
-   "fecha": "2026-11-22T16:36:52Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/9d66fb3e-e692-11f1-88de-ebb478925cf0/w:1024/p:16x9/2026-11-22T032718Z-625999293-RC20SOATBXWK-RTRMADP-3-INDONESIA-FIRE.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "url_medio": "https://www.france24.com/es/video/20261122-incendio-en-f%C3%A1brica-de-confiter%C3%ADa-en-indonesia-deja-al-menos-tres-muertos-y-36-desaparecidos",
-   "sintesis": "Al menos tres personas murieron y otras 36 permanecen desaparecidas tras un incendio en una fábrica de confitería en la provincia de Banten, cerca de Yakarta, Indonesia. Una extensión de tu navegador parece estar bloqueando la carga del reproductor de video.",
-   "puntos": [
-    "Al menos tres personas murieron y otras 36 permanecen desaparecidas tras un incendio en una fábrica de confitería en la provincia de Banten, cerca de Yakarta, Indonesia.",
-    "Una extensión de tu navegador parece estar bloqueando la carga del reproductor de video.",
-    "Para poder ver este contenido, debes desactivarla en este sitio."
-   ],
-   "datos": [
-    {
-     "v": "21 de noviembre",
-     "t": "fecha",
-     "c": "El fuego comenzó el sábado 21 de noviembre y continúa activo en varias zonas de las instalaciones…"
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "202d0d8228",
-   "sector": "mundo",
-   "titulo": "¿Qué llevó al fracaso de las negociaciones de la COP31 en Antalya?",
-   "resumen": "La COP31 concluyó este 22 de noviembre en Antalya, Turquía, sin un acuerdo político, tras el rechazo de la UE y Panamá al texto final, que omitía el abandono de los combustibles fósiles. Después de 44 horas de prórroga, el presidente de la cumbre, Murat Kurum, descartó redactar…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/video/20261122-qu%C3%A9-llev%C3%B3-al-fracaso-de-las-negociaciones-de-la-cop31-en-antalya",
-   "fecha": "2026-11-22T16:34:22Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/b28a10a4-e68e-11f1-92ed-ebb478925cf0/w:1024/p:16x9/ES-20261122-100210-100833-CS.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "url_medio": "https://www.france24.com/es/video/20261122-qu%C3%A9-llev%C3%B3-al-fracaso-de-las-negociaciones-de-la-cop31-en-antalya",
-   "sintesis": "La COP31 concluyó este 22 de noviembre en Antalya, Turquía, sin un acuerdo político, tras el rechazo de la UE y Panamá al texto final, que omitía el abandono de los combustibles fósiles. Una extensión de tu navegador parece estar bloqueando la carga del reproductor de video.",
-   "puntos": [
-    "La COP31 concluyó este 22 de noviembre en Antalya, Turquía, sin un acuerdo político, tras el rechazo de la UE y Panamá al texto final, que omitía el abandono de los combustibles fósiles.",
-    "Una extensión de tu navegador parece estar bloqueando la carga del reproductor de video.",
-    "Para poder ver este contenido, debes desactivarla en este sitio."
-   ],
-   "datos": [
-    {
-     "v": "22 de noviembre",
-     "t": "fecha",
-     "c": "La COP31 concluyó este 22 de noviembre en Antalya, Turquía, sin un acuerdo político, tras el…"
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "b9dd2596db",
-   "sector": "mundo",
-   "titulo": "El escándalo por el fraude con IA en exámenes universitarios fulmina a un ministro en Corea del Sur",
-   "resumen": "El ministro de Educación de Corea del Sur, Choi Kyo-jin, presentó su dimisión este 22 de noviembre, responsabilizándose por la falta de preparación para hacer frente a posibles trampas con dispositivos e inteligencia artificial en los cruciales exámenes universitarios, que se…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/asia-pac%C3%ADfico/20261122-el-esc%C3%A1ndalo-por-el-fraude-con-ia-en-ex%C3%A1menes-universitarios-fulmina-a-un-ministro-en-corea-del-sur",
-   "fecha": "2026-11-22T16:20:06Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/761a353e-e681-11f1-87dc-13439ca2fe89/w:1024/p:16x9/FOTO-PORTADA-COREA-MINISTRO-EDUCACION.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "url_medio": "https://www.france24.com/es/asia-pac%C3%ADfico/20261122-el-esc%C3%A1ndalo-por-el-fraude-con-ia-en-ex%C3%A1menes-universitarios-fulmina-a-un-ministro-en-corea-del-sur",
-   "sintesis": "El ministro de Educación de Corea del Sur, Choi Kyo-jin, presentó su dimisión este 22 de noviembre, responsabilizándose por la falta de preparación para hacer frente a posibles trampas con dispositivos… El Gobierno surcoreano adoptó controvertidas medidas de último minuto para evitar potenciales fraudes, luego de que un destacado aspirante de contabilidad confesara haber hecho trampa en su prueba.",
-   "puntos": [
-    "El ministro de Educación de Corea del Sur, Choi Kyo-jin, presentó su dimisión este 22 de noviembre, responsabilizándose por la falta de preparación para hacer frente a posibles trampas con dispositivos…",
-    "El Gobierno surcoreano adoptó controvertidas medidas de último minuto para evitar potenciales fraudes, luego de que un destacado aspirante de contabilidad confesara haber hecho trampa en su prueba.",
-    "Una extensión de tu navegador parece estar bloqueando la carga del reproductor de video."
-   ],
-   "datos": [
-    {
-     "v": "22 de noviembre",
-     "t": "fecha",
-     "c": "…de Corea del Sur, Choi Kyo-jin, presentó su dimisión este 22 de noviembre, responsabilizándose por la falta de preparación para…"
-    },
-    {
-     "v": "19 de noviembre",
-     "t": "fecha",
-     "c": "Aunque las evaluaciones se desarrollaron el 19 de noviembre sin grandes incidencias, Choi aseguró sentir una \"profunda…"
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "b752f0f066",
-   "sector": "mundo",
-   "titulo": "Márquez levanta en Portugal una heroica octava corona mundial de MotoGP",
-   "resumen": "El español Marc Márquez se hizo eterno en el circuito de Portimao al igualar las ocho coronas de Giacomo Agostini y, de paso, superar en el palmarés al también italiano, Valentino Rossi, quien fuera uno de sus principales rivales. Es un título histórico en la categoría reina…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/deportes/20261122-m%C3%A1rquez-levanta-en-portugal-una-heroica-octava-corona-mundial-de-motogp",
-   "fecha": "2026-11-22T15:08:20Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/8d074f5c-e686-11f1-bacc-e56ab3dc0809/w:1024/p:16x9/704185dfeec09bb54908f924f15b22fc3d34c1fb.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "sintesis": "El español Marc Márquez se hizo eterno en el circuito de Portimao al igualar las ocho coronas de Giacomo Agostini y, de paso, superar en el palmarés al también italiano, Valentino Rossi, quien fuera… Es un título histórico en la categoría reina que tiene lugar después de la mayor remontada en la historia.",
-   "puntos": [
-    "El español Marc Márquez se hizo eterno en el circuito de Portimao al igualar las ocho coronas de Giacomo Agostini y, de paso, superar en el palmarés al también italiano, Valentino Rossi, quien fuera…",
-    "Es un título histórico en la categoría reina que tiene lugar después de la mayor remontada en la historia.",
-    "Primera modificación: 22/11/2026 - 16:08 Última modificación: 23/11/2026 - 01:07"
-   ],
-   "datos": [
-    {
-     "v": "33 años",
-     "t": "cantidad",
-     "c": "…apoda, fue a abrazar a su joven sucesor Marc Márquez, de 33 años, que sonreía de oreja a oreja mientras estrechaba a…"
-    },
-    {
-     "v": "22 de noviembre",
-     "t": "fecha",
-     "c": "…el décimo contando las tres categorías, este domingo 22 de noviembre al terminar octavo en el Gran Premio de Portugal…"
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://www.france24.com/es/deportes/20261122-m%C3%A1rquez-levanta-en-portugal-una-heroica-octava-corona-mundial-de-motogp"
-  },
-  {
    "id": "f39afb87ca",
    "sector": "mundo",
    "titulo": "Sánchez apela en la recta final de la campaña al voto joven para lograr otra remontada como en 2023",
@@ -5160,6 +5401,7 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
+   "url_medio": "https://elbuho.pe/2026/11/como-moscu-y-pekin-refuerzan-la-consolidacion-autoritaria-en-nicaragua/",
    "sintesis": "Análisis L21 | Resistir las presiones externas. Esta decisión pone de manifiesto el alejamiento de Nicaragua de las instituciones multilaterales regionales.",
    "puntos": [
     "Análisis L21 | Resistir las presiones externas.",
@@ -5171,42 +5413,6 @@ window.NOTICIAS = {
      "v": "5 de octubre de 2026",
      "t": "fecha",
      "c": "…refuerzan la consolidación autoritaria en Nicaragua El 5 de octubre de 2026, el presidente Daniel Ortega anunció la retirada de…"
-    }
-   ],
-   "acceso": "abierto",
-   "url_medio": "https://elbuho.pe/2026/11/como-moscu-y-pekin-refuerzan-la-consolidacion-autoritaria-en-nicaragua/"
-  },
-  {
-   "id": "cdb2abf904",
-   "sector": "mundo",
-   "titulo": "Corea del Sur: escándalo por fraude con IA en exámenes provoca la renuncia del ministro de Educación",
-   "resumen": "El ministro de Educación de Corea del Sur renunció este 22 de noviembre tras un escándalo de fraude académico que estalló días antes de los exámenes de ingreso a la universidad. La polémica surgió después de que el aspirante con la calificación más alta en un examen nacional…",
-   "fuente": "France 24 Español",
-   "url": "https://www.france24.com/es/video/20261122-corea-del-sur-esc%C3%A1ndalo-por-fraude-con-ia-en-ex%C3%A1menes-provoca-la-renuncia-del-ministro-de-educaci%C3%B3n",
-   "fecha": "2026-11-22T14:14:01Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://s.france24.com/media/display/ee92e06a-e67c-11f1-aed9-13439ca2fe89/w:1024/p:16x9/ES-20261122-083702-083848-CS.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "url_medio": "https://www.france24.com/es/video/20261122-corea-del-sur-esc%C3%A1ndalo-por-fraude-con-ia-en-ex%C3%A1menes-provoca-la-renuncia-del-ministro-de-educaci%C3%B3n",
-   "sintesis": "El ministro de Educación de Corea del Sur renunció este 22 de noviembre tras un escándalo de fraude académico que estalló días antes de los exámenes de ingreso a la universidad. Una extensión de tu navegador parece estar bloqueando la carga del reproductor de video.",
-   "puntos": [
-    "El ministro de Educación de Corea del Sur renunció este 22 de noviembre tras un escándalo de fraude académico que estalló días antes de los exámenes de ingreso a la universidad.",
-    "Una extensión de tu navegador parece estar bloqueando la carga del reproductor de video.",
-    "Para poder ver este contenido, debes desactivarla en este sitio."
-   ],
-   "datos": [
-    {
-     "v": "22 de noviembre",
-     "t": "fecha",
-     "c": "El ministro de Educación de Corea del Sur renunció este 22 de noviembre tras un escándalo de fraude académico que estalló días…"
     }
    ],
    "acceso": "abierto"
@@ -5232,7 +5438,7 @@ window.NOTICIAS = {
    "procedencia": "agregador",
    "via": "Google Noticias",
    "url_medio": "https://www.expreso.com.pe/economia/la-paradoja-de-la-balanza-de-pagos-record-exportador-pero-cada-vez-mas-dolares-salen-del-pais-lima-noticia/1334042/",
-   "imagen_intentos": 4,
+   "imagen_intentos": 5,
    "acceso": "sin_verificar"
   },
   {
@@ -5540,6 +5746,34 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
+   "id": "6a039b4b9e",
+   "sector": "mundo",
+   "titulo": "La COP31 termina sin pacto climático por la división sobre los combustibles fósiles",
+   "resumen": "El titular de la ONU califica el fracaso como un revés “profundamente decepcionante” y advierte que \"no hay ambigüedad en la ciencia\". \"No podemos apagar el fuego mientras le echamos combustible\", dijo, acusando a los poderosos intereses de los combustibles fósiles de obstruir…",
+   "fuente": "ONU Noticias",
+   "url": "https://news.un.org/feed/view/es/story/2026/11/1542199",
+   "fecha": "2026-11-22T12:00:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/22-11-2026_COP31-Close1.jpg/image560x340cropped.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "El titular de la ONU califica el fracaso como un revés “profundamente decepcionante” y advierte que \"no hay ambigüedad en la ciencia\". \"No podemos apagar el fuego mientras le echamos combustible\", dijo, acusando a los poderosos intereses de los combustibles fósiles de obstruir la acción climática mientras siguen lucrándose.",
+   "puntos": [
+    "El titular de la ONU califica el fracaso como un revés “profundamente decepcionante” y advierte que \"no hay ambigüedad en la ciencia\".",
+    "\"No podemos apagar el fuego mientras le echamos combustible\", dijo, acusando a los poderosos intereses de los combustibles fósiles de obstruir la acción climática mientras siguen lucrándose.",
+    "La COP31 terminó el domingo sin un pacto climático después de que los negociadores no lograran superar las divisiones en torno a los combustibles fósiles, poniendo fin a dos semanas de conversaciones y dos días de prórroga que el Secretario General de la ONU calificó como un revés \"profundamente decepcionante\"."
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://news.un.org/es/story/2026/11/1542199"
+  },
+  {
    "id": "89602e0da1",
    "sector": "mundo",
    "titulo": "\"Fui coaccionada para tener un hijo\": cómo un multimillonario engañó a la exitosa DJ Liv Nervo para que quedara embarazada",
@@ -5753,36 +5987,6 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
-   "id": "11a433792d",
-   "sector": "mundo",
-   "titulo": "Mary Gaitskill lee “Fuera de tiempo”",
-   "resumen": "La autora lee su historia del número de la revista del 30 de noviembre y 7 de diciembre de 2026.",
-   "fuente": "The New Yorker",
-   "url": "https://www.newyorker.com/podcast/the-writers-voice/mary-gaitskill-reads-out-of-time",
-   "fecha": "2026-11-22T11:00:00Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://media.newyorker.com/photos/6afc9b004b856176dd130952/master/pass/TNY_Writers_Voice_Mary-Gaitskill.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "titulo_original": "Mary Gaitskill Reads “Out of Time”",
-   "traducido": true,
-   "url_medio": "https://www.newyorker.com/podcast/the-writers-voice/mary-gaitskill-reads-out-of-time",
-   "sintesis": "On The Writer’s Voice podcast, Mary Gaitskill reads “Out of Time,” her story from the November 30 & December 7, 2026, issue of The New Yorker. With Deborah Treisman November 22, 2026 Save this story Save this story Save this story Save this story Listen and subscribe: Apple | Spotify | Wherever You Listen",
-   "puntos": [
-    "On The Writer’s Voice podcast, Mary Gaitskill reads “Out of Time,” her story from the November 30 & December 7, 2026, issue of The New Yorker.",
-    "With Deborah Treisman November 22, 2026 Save this story Save this story Save this story Save this story Listen and subscribe: Apple | Spotify | Wherever You Listen",
-    "Gaitskill is the author of the story collections “ Because They Wanted To ” and “ Don’t Cry ” and the novels “ Veronica ” and “ The Mare ,” among others."
-   ],
-   "acceso": "abierto"
-  },
-  {
    "id": "c90e863986",
    "sector": "mundo",
    "titulo": "“Fuera del tiempo”, de Mary Gaitskill",
@@ -5809,6 +6013,36 @@ window.NOTICIAS = {
     "Fiction by Mary Gaitskill, the author of “The Mare” and “Veronica”: It occurred to her that he, too, might want affection, to be embraced and held with sincerity; most people did.",
     "Search Search Open Navigation Menu Menu Fiction Out of Time By Mary Gaitskill November 22, 2026 Photograph by Charlie Engman Save this story Save this story Save this story Save this story Carrie walked through the produce section in a daze, trying to remember what she had come to buy.",
     "The dull cacophony of the HVAC half blotted out the music issuing from the store’s sound system: a yearning love song from decades past, which eerily surged over, then sank under, the aural sludge."
+   ],
+   "acceso": "abierto"
+  },
+  {
+   "id": "11a433792d",
+   "sector": "mundo",
+   "titulo": "Mary Gaitskill lee “Fuera de tiempo”",
+   "resumen": "La autora lee su historia del número de la revista del 30 de noviembre y 7 de diciembre de 2026.",
+   "fuente": "The New Yorker",
+   "url": "https://www.newyorker.com/podcast/the-writers-voice/mary-gaitskill-reads-out-of-time",
+   "fecha": "2026-11-22T11:00:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://media.newyorker.com/photos/6afc9b004b856176dd130952/master/pass/TNY_Writers_Voice_Mary-Gaitskill.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "directa",
+   "titulo_original": "Mary Gaitskill Reads “Out of Time”",
+   "traducido": true,
+   "url_medio": "https://www.newyorker.com/podcast/the-writers-voice/mary-gaitskill-reads-out-of-time",
+   "sintesis": "On The Writer’s Voice podcast, Mary Gaitskill reads “Out of Time,” her story from the November 30 & December 7, 2026, issue of The New Yorker. With Deborah Treisman November 22, 2026 Save this story Save this story Save this story Save this story Listen and subscribe: Apple | Spotify | Wherever You Listen",
+   "puntos": [
+    "On The Writer’s Voice podcast, Mary Gaitskill reads “Out of Time,” her story from the November 30 & December 7, 2026, issue of The New Yorker.",
+    "With Deborah Treisman November 22, 2026 Save this story Save this story Save this story Save this story Listen and subscribe: Apple | Spotify | Wherever You Listen",
+    "Gaitskill is the author of the story collections “ Because They Wanted To ” and “ Don’t Cry ” and the novels “ Veronica ” and “ The Mare ,” among others."
    ],
    "acceso": "abierto"
   },
@@ -6151,6 +6385,7 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
+   "url_medio": "https://elpais.com/us/entretenimiento/2026-11-22/emmy-rossum-actriz-cuando-el-arte-es-entretenido-y-tiene-sentido-puede-moldear-el-debate-social-y-hacernos-sentir-menos-solas.html",
    "sintesis": "En la serie ‘Furia’, la intérprete encarna a una policía que muestra los fallos del sistema de justicia y que da una imagen realista de una mujer trabajadora: “Mostrar la totalidad de quienes somos tiene un gran impacto” Lejos de aplacarla, tres décadas de actuación no han hecho más que acrecentar la pasión de Emmy Rossum por su oficio.",
    "puntos": [
     "En la serie ‘Furia’, la intérprete encarna a una policía que muestra los fallos del sistema de justicia y que da una imagen realista de una mujer trabajadora: “Mostrar la totalidad de quienes somos tiene un gran impacto”",
@@ -6164,8 +6399,7 @@ window.NOTICIAS = {
      "c": "La actriz neoyorquina de 40 años, que empezó en la profesión siendo una niña de siete…"
     }
    ],
-   "acceso": "abierto",
-   "url_medio": "https://elpais.com/us/entretenimiento/2026-11-22/emmy-rossum-actriz-cuando-el-arte-es-entretenido-y-tiene-sentido-puede-moldear-el-debate-social-y-hacernos-sentir-menos-solas.html"
+   "acceso": "abierto"
   },
   {
    "id": "c9403f2940",
@@ -6280,62 +6514,6 @@ window.NOTICIAS = {
     "Relatives of the missing victims flocked to the factory’s entrance, seeking updates about their loved ones",
     "A fire at a confectionery factory west of Jakarta has killed three people with 36 remaining missing, an Indonesian rescue official says.",
     "Drone footage showed large parts of the factory destroyed, with the roof collapsed in places and smoke still rising from the complex."
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "0a216b9168",
-   "sector": "mundo",
-   "titulo": "Buscan a decenas de desaparecidos tras un incendio en una fábrica de dulces en Indonesia",
-   "resumen": "El saldo provisional es de tres fallecidos y cuatro heridos, dijeron los servicios de rescate.",
-   "fuente": "DW Español",
-   "url": "https://www.dw.com/es/buscan-a-decenas-de-desaparecidos-tras-un-incendio-en-una-fábrica-de-dulces-en-indonesia/a-80012286?maca=spa-rss-sp-all-1122-xml-mrss",
-   "fecha": "2026-11-22T05:19:00Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://static.dw.com/image/80012341_6.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "url_medio": "https://www.dw.com/es/buscan-a-decenas-de-desaparecidos-tras-un-incendio-en-una-f%C3%A1brica-de-dulces-en-indonesia/a-80012286",
-   "sintesis": "El saldo provisional es de tres fallecidos y cuatro heridos, dijeron los servicios de rescate. Quince personas sobrevivieron al incendio que se declaró en una planta de la empresa de caramelos PT Fonua Agung Mulia, a unos cincuenta kilómetros de Yakarta, en la regencia de Serang.",
-   "puntos": [
-    "El saldo provisional es de tres fallecidos y cuatro heridos, dijeron los servicios de rescate.",
-    "Quince personas sobrevivieron al incendio que se declaró en una planta de la empresa de caramelos PT Fonua Agung Mulia, a unos cincuenta kilómetros de Yakarta, en la regencia de Serang.",
-    "Cuatro de los sobrevivientes fueron trasladadas a centros médicos, dijeron los equipos de rescate."
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "5a0fc0db84",
-   "sector": "mundo",
-   "titulo": "Baréin acusa a Irán de atacar un sitio industrial civil y provocar un incendio",
-   "resumen": "El siniestro dejó daños materiales pero no víctimas, según un informe oficial preliminar que no reveló dónde ocurrió el ataque.",
-   "fuente": "DW Español",
-   "url": "https://www.dw.com/es/baréin-acusa-a-irán-de-atacar-un-sitio-industrial-civil-y-provocar-un-incendio/a-80012297?maca=spa-rss-sp-all-1122-xml-mrss",
-   "fecha": "2026-11-22T05:15:00Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://static.dw.com/image/76275270_6.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "url_medio": "https://www.dw.com/es/bar%C3%A9in-acusa-a-ir%C3%A1n-de-atacar-un-sitio-industrial-civil-y-provocar-un-incendio/a-80012297",
-   "sintesis": "El siniestro dejó daños materiales pero no víctimas, según un informe oficial preliminar que no reveló dónde ocurrió el ataque. \"Como resultado de la atroz agresión iraní, una instalación industrial civil fue atacada, provocando un incendio en el lugar\", señaló el Ministerio del Interior del reino en X, sin agregar la ubicación.",
-   "puntos": [
-    "El siniestro dejó daños materiales pero no víctimas, según un informe oficial preliminar que no reveló dónde ocurrió el ataque.",
-    "\"Como resultado de la atroz agresión iraní, una instalación industrial civil fue atacada, provocando un incendio en el lugar\", señaló el Ministerio del Interior del reino en X, sin agregar la ubicación.",
-    "\"La Defensa Civil trabaja para controlar el fuego."
    ],
    "acceso": "abierto"
   },
@@ -6657,32 +6835,6 @@ window.NOTICIAS = {
    "url_medio": "https://rpp.pe/futbol/copa-sudamericana/leandro-paredes-se-desmaya-en-plena-entrevista-luego-de-ganar-la-copa-sudamericana-noticia-1719098"
   },
   {
-   "id": "a53bd82773",
-   "sector": "salud",
-   "titulo": "Minsa brinda consejos para prevenir enfermedades respiratorias y diarreicas ante El Niño",
-   "resumen": "Ante los riesgos sanitarios asociados al fenómeno El Niño, el Ministerio de Salud (Minsa) brindó una serie de recomendaciones para prevenir las infecciones respiratorias agudas y las enfermedades diarreicas agudas, que pueden afectar especialmente a los niños y adultos mayores.…",
-   "fuente": "Agencia Andina",
-   "url": "https://andina.pe/agencia/noticia-minsa-brinda-consejos-para-prevenir-enfermedades-respiratorias-y-diarreicas-ante-nino-1100985.aspx",
-   "fecha": "2026-11-22T02:25:19Z",
-   "tipo": "estatal",
-   "genero": "noticia",
-   "imagen": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2026/11/21/001333807W.webp",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://andina.pe/agencia/noticia-minsa-brinda-consejos-para-prevenir-enfermedades-respiratorias-y-diarreicas-ante-nino-1100985.aspx",
-   "sintesis": "Ante los riesgos sanitarios asociados al fenómeno El Niño, el Ministerio de Salud (Minsa) brindó una serie de recomendaciones para prevenir las infecciones respiratorias agudas y las enfermedades diarreicas agudas, que pueden afectar especialmente a los niños y adultos mayores.…",
-   "puntos": [
-    "Ante los riesgos sanitarios asociados al fenómeno El Niño, el Ministerio de Salud (Minsa) brindó una serie de recomendaciones para prevenir las infecciones respiratorias agudas y las enfermedades diarreicas agudas, que pueden afectar especialmente a los niños y adultos mayores.…"
-   ],
-   "acceso": "sin_verificar"
-  },
-  {
    "id": "0281d621ee",
    "sector": "ia",
    "titulo": "Keiko Fujimori desea aplicar inteligencia artificial en el Estado: “Queremos darle mucha más velocidad y transparencia”",
@@ -6986,42 +7138,6 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
-   "id": "aacbe1fdad",
-   "sector": "salud",
-   "titulo": "Un \"hospital flotante\" de 1.000 camas rumbo al Perú: EE. UU. adelanta llegada del buque USNS Comfort para enero ante proyecciones de El Niño",
-   "resumen": "",
-   "fuente": "La República",
-   "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxONnpwUC1peG1SX25VVTdMLWtaSnVBODhWU1l1SmhJQktFOFNCU3N4c2F4OENrZ0J6WXpYMXpLM3VrSzN2QmIwaUhFd3pFMVY1MUpHVTVleDd0dDhfQlVpTGR1M0ZuNWF6a09Vb0NMUzlXdEpNUXoxVVgwR2RzaHdodV93OGR6MmREQmUzdUtBcnBpN0hTZDdxT19SbWlJSVl4Skt2TE4wXzFmNksyM1VjM2s5Zk9yd1dDZXFSMmRTOFQ0ZUxHUFFuVTVITlVGeWhUZDdZOFJIWmhCampVNzI5TmgzMktId2VOYzc2YVV4aU1xNUxDQXdwWm5yZnlaRzNZODFLa18ySWxEeVZRdDVGOUU0c9IBmAJBVV95cUxQam9BRXN1QmVGNGUwc3BDeWN4U1JEWkJ6V1ZFRlNLUm81R3JYM0xMMzhJb3M4S0Z0Z1ZvSDE4SGxpOWZzdzFCc29rTV9vTUd2M0wyNDlxeS1DVERXOVRydEhPN3dCc1VEb3lVZmhkYmVPU2JDYTN4OEFaQnVvdGF6aWE2NVdqS2xGOHcwcTVsVF9jSUx6SFRlWVpYUkFaRm1DYUhNMWJoTDFCMjJVN0I1RjNpbG5mQldnVzZPaV93YzFXSFEzUWFtVFpkVlQ1Szl5UGNtWVl3cGRReU9GUnFUdDZRbHFUX0R4OHJBTC1sTFpXcHZkcmNJa2RUcDFFd3VLS19NVTY5bHI0d1NmSHROX01VazJIcWI2?oc=5",
-   "fecha": "2026-11-21T19:43:16Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://imgmedia.larepublica.pe/1200x735/larepublica/original/2026/11/21/6b01e65b96c1e97c3500e731.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "agregador",
-   "via": "Google Noticias",
-   "url_medio": "https://larepublica.pe/sociedad/2026/11/21/un-hospital-flotante-de-1000-camas-rumbo-al-peru-ee-uu-adelanta-llegada-del-buque-usns-comfort-para-enero-ante-proyecciones-de-el-nino-2039688",
-   "sintesis": "Con capacidad para 1.000 camas, el USNS Comfort funcionará como un hospital flotante, reforzando la capacidad de respuesta sanitaria de Perú frente a la incidencia del fenómeno climático. El anuncio se realizó el 20 de noviembre de 2026, luego de que Estados Unidos decidiera modificar la fecha inicial de llegada, que estaba prevista para febrero.",
-   "puntos": [
-    "Con capacidad para 1.000 camas, el USNS Comfort funcionará como un hospital flotante, reforzando la capacidad de respuesta sanitaria de Perú frente a la incidencia del fenómeno climático.",
-    "El anuncio se realizó el 20 de noviembre de 2026, luego de que Estados Unidos decidiera modificar la fecha inicial de llegada, que estaba prevista para febrero.",
-    "Según explicó el diplomático, el cambio responde a las proyecciones de la Administración Nacional Oceánica y Atmosférica (NOAA), que anticipan los efectos de El Niño antes de lo previsto."
-   ],
-   "datos": [
-    {
-     "v": "20 de noviembre de 2026",
-     "t": "fecha",
-     "c": "El anuncio se realizó el 20 de noviembre de 2026, luego de que Estados Unidos decidiera modificar la fecha…"
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
    "id": "1adb819eaa",
    "sector": "politica",
    "titulo": "Trump abre la puerta a una \"histórica\" colaboración con el Congreso controlado por los demócratas",
@@ -7040,12 +7156,26 @@ window.NOTICIAS = {
    },
    "ambito": "mundo",
    "procedencia": "directa",
-   "sintesis": "MADRID 21 Nov. (EUROPA PRESS) - El presidente estadounidense, Donald Trump, planteó este sábado la posibilidad de llegar a una \"histórica\" colaboración…",
+   "url_medio": "https://caretas.pe/mundo/trump-abre-la-puerta-a-colaborar-con-el-congreso-democrata/",
+   "sintesis": "El presidente Donald Trump planteó la posibilidad de llegar a una \"histórica\" colaboración con el Congreso Demócrata, que controlará a partir de enero las dos cámaras. En concreto Trump mencionó una posible regulación sobre los tipos de interés de las empresas de tarjetas de crédito para limitar el tipo de interés a un 10% durante un año.",
    "puntos": [
-    "MADRID 21 Nov. (EUROPA PRESS) - El presidente estadounidense, Donald Trump, planteó este sábado la posibilidad de llegar a una \"histórica\" colaboración…"
+    "El presidente Donald Trump planteó la posibilidad de llegar a una \"histórica\" colaboración con el Congreso Demócrata, que controlará a partir de enero las dos cámaras.",
+    "En concreto Trump mencionó una posible regulación sobre los tipos de interés de las empresas de tarjetas de crédito para limitar el tipo de interés a un 10% durante un año.",
+    "Las tasas son muy altas y los tipos de interés son muy elevados\", afirmó en una entrevista con la cadena de televisión Fox News."
    ],
-   "acceso": "sin_verificar",
-   "url_medio": "https://caretas.pe/mundo/trump-abre-la-puerta-a-colaborar-con-el-congreso-democrata/"
+   "datos": [
+    {
+     "v": "10%",
+     "t": "porcentaje",
+     "c": "…tarjetas de crédito para limitar el tipo de interés a un 10% durante un año."
+    },
+    {
+     "v": "3 de noviembre",
+     "t": "fecha",
+     "c": "…claramente en las elecciones de mitad de mandato del 3 de noviembre.."
+    }
+   ],
+   "acceso": "abierto"
   },
   {
    "id": "464ba893b1",
@@ -7438,7 +7568,7 @@ window.NOTICIAS = {
    "fecha": "2026-11-21T15:42:56Z",
    "tipo": "comercial",
    "genero": "noticia",
-   "imagen": null,
+   "imagen": "https://imgmedia.larepublica.pe/1200x735/larepublica/original/2026/11/21/6b018cf6c952737485032121.jpg",
    "geografia": {
     "version": 1,
     "ambito": "pendiente",
@@ -7448,8 +7578,13 @@ window.NOTICIAS = {
    "ambito": "pendiente",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 1,
    "url_medio": "https://larepublica.pe/politica/2026/11/21/congreso-aprueba-presupuesto-2027-de-s-266-506-millones-con-107-votos-a-favor-46-en-contra-y-15-abstenciones-hnews-822192",
+   "sintesis": "La ley faculta al MEF a modificar el presupuesto durante 2027 para reactivación económica, lucha contra el crimen organizado, elecciones municipales complementarias y los Juegos Panamericanos Lima 2027. En Diputados obtuvo 71 votos a favor, 32 en contra y 12 abstenciones; y en el Senado, 36 a favor, 14 en contra y 3 abstenciones.",
+   "puntos": [
+    "La ley faculta al MEF a modificar el presupuesto durante 2027 para reactivación económica, lucha contra el crimen organizado, elecciones municipales complementarias y los Juegos Panamericanos Lima 2027.",
+    "En Diputados obtuvo 71 votos a favor, 32 en contra y 12 abstenciones; y en el Senado, 36 a favor, 14 en contra y 3 abstenciones.",
+    "Junto con el presupuesto se aprobaron las leyes de Equilibrio Financiero y de Endeudamiento del Sector Público."
+   ],
    "datos": [
     {
      "v": "S/ 266 506 millones",
@@ -7457,12 +7592,27 @@ window.NOTICIAS = {
      "c": "Congreso aprueba presupuesto 2027 de S/ 266 506 millones con 107 votos a favor, 46 en contra y 15 abstenciones."
     },
     {
-     "v": "107 votos",
-     "t": "cantidad",
-     "c": "Congreso aprueba presupuesto 2027 de S/ 266 506 millones con 107 votos a favor, 46 en contra y 15 abstenciones."
+     "v": "S/165 604 millones",
+     "t": "monto",
+     "c": "El gobierno nacional se queda con S/165 604 millones, más del 60% del total, para gasto corriente, gasto de capital y pago de la deuda."
+    },
+    {
+     "v": "S/58 832 millones",
+     "t": "monto",
+     "c": "A los gobiernos regionales les tocan S/58 832 millones y a los locales, S/42 069 millones.."
+    },
+    {
+     "v": "S/42 069 millones",
+     "t": "monto",
+     "c": "A los gobiernos regionales les tocan S/58 832 millones y a los locales, S/42 069 millones.."
+    },
+    {
+     "v": "S/120",
+     "t": "monto",
+     "c": "…prohibición de pagar horas extras en el Estado, un tope de S/120 mensuales por equipo de telefonía móvil y límites a las…"
     }
    ],
-   "acceso": "sin_verificar"
+   "acceso": "abierto"
   },
   {
    "id": "bdfaafe31a",
@@ -7630,6 +7780,29 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
+   "id": "f9ba04e0ad",
+   "sector": "economia",
+   "titulo": "Agencia de empleos fujimorista",
+   "resumen": "",
+   "fuente": "Hildebrandt en sus trece",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1DYm13d2JFQWpicDZSVUd0R201QjFDa1pUNjcta0RNd3FDcklOMExieDFtOHJsVlBzeFhaTHVBQmMzTUwxWENkYUhSb2hKMkZTaUlNWWg4UE55RlFWWGRXVnNaak0zYjRtX2JGYXln?oc=5",
+   "fecha": "2026-11-21T13:51:05Z",
+   "tipo": "independiente",
+   "genero": "noticia",
+   "imagen": "https://www.hildebrandtensustrece.com/storage/archivo/lnKeffgFKYekubHeuGDuMxJSDZKbzXjs8XN2uJG5.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "pendiente",
+    "zona": "pendiente",
+    "motivo": "sin_evidencia_geografica"
+   },
+   "ambito": "pendiente",
+   "procedencia": "agregador",
+   "via": "Google Noticias",
+   "url_medio": "https://www.hildebrandtensustrece.com/reportaje/articulo/3149",
+   "acceso": "sin_verificar"
+  },
+  {
    "id": "63269d8cf7",
    "sector": "deporte",
    "titulo": "Día Mundial de la Pesca | Dejar descansar el mar y reinventar la pesca, las apuestas de comunidades en América Latina",
@@ -7698,37 +7871,6 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
-   "id": "71c9796bce",
-   "sector": "economia",
-   "titulo": "Dólar, cotización HOY en Perú: ¿cuál es el tipo de cambio este sábado 21 de noviembre de 2026?",
-   "resumen": "",
-   "fuente": "Expreso",
-   "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxPTzl6RzNRMFBxMkF4YlBsMG5odlVjWC00MXA4cEtDSWZZeE14R1cwVUR0aUxMcHhpV3pxYmhIRXl4MEJKRVJfdTZ1VTJPNlB3ZENWNzItYmhpenF3SFotVkFFVXkxd2txdi1pMWxnd3k3TEY3QlV0QUF2djRBU2dITnFlLXd2RlFlaXpMQlRZdTlPQlMzWDk1eVFNdkhScmpjVzZNbU0zQ3RPaEN0UjdUMGFIVndTY3BhNDlvNEJ5Y1JZbWV6WjRsRUtsWWZNbkQ3VG1mYmdmMkIxa1NUUUprWE1zUmUzdG5ZX2NNZ3Z5S2JuZFV3b1ZUNklJOGRJZGNFeUNObnBtdnhlVDZVaU1rQWRGek4wUTJQR3Jac2N1LWNZTkY2NlVKc2hEZ2Q?oc=5",
-   "fecha": "2026-11-21T11:38:34Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "agregador",
-   "via": "Google Noticias",
-   "url_medio": "https://www.expreso.com.pe/economia/dolar-cotizacion-hoy-en-peru-cual-es-el-tipo-de-cambio-este-sabado-21-de-noviembre-de-2026-sunat-mef-bcrp-ultima-hora-ultimo-minuto-precio-soles-divisa-noticia/1333773/",
-   "imagen_intentos": 6,
-   "datos": [
-    {
-     "v": "21 de noviembre de 2026",
-     "t": "fecha",
-     "c": "Dólar, cotización HOY en Perú: ¿cuál es el tipo de cambio este sábado 21 de noviembre de 2026?."
-    }
-   ],
-   "acceso": "sin_verificar"
-  },
-  {
    "id": "012b68c4d2",
    "sector": "politica",
    "titulo": "Partidos de hoy, sábado 21 de noviembre: horarios, canales de TV y plataformas para ver EN VIVO",
@@ -7748,8 +7890,8 @@ window.NOTICIAS = {
    "ambito": "pendiente",
    "procedencia": "agregador",
    "via": "Google Noticias",
-   "imagen_intentos": 1,
    "url_medio": "https://www.expreso.com.pe/deportes/partidos-de-hoy-sabado-21-de-noviembre-horarios-canales-de-tv-y-plataformas-para-ver-en-vivo-futbol-programacion-pronostico-boca-juniors-mineiro-final-sudamericana-alianza-real-madrid-noticia/1333770/",
+   "imagen_intentos": 2,
    "datos": [
     {
      "v": "21 de noviembre",
@@ -8077,7 +8219,7 @@ window.NOTICIAS = {
    "ambito": "mundo",
    "procedencia": "directa",
    "url_medio": "https://www.nytimes.com/es/2026/11/21/espanol/mundo/pedro-sanchez-espana-campana.html",
-   "imagen_intentos": 5,
+   "imagen_intentos": 6,
    "acceso": "sin_verificar"
   },
   {
@@ -8166,7 +8308,7 @@ window.NOTICIAS = {
    "procedencia": "agregador",
    "via": "Google Noticias",
    "url_medio": "https://www.expreso.com.pe/actualidad/allanamiento-a-la-sbs-por-que-la-institucion-considera-excesiva-la-medida-judicial-lima-expediente-fiscal-informacion-reservada-noticia/1333710/",
-   "imagen_intentos": 2,
+   "imagen_intentos": 3,
    "acceso": "sin_verificar"
   },
   {
@@ -8851,6 +8993,81 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
+   "id": "4702153b3c",
+   "sector": "mundo",
+   "titulo": "Discordia en la COP31, Ucrania, Afganistán y hambre global: las noticias del viernes",
+   "resumen": "Discordia en el último día de la cumbre del clima contra el borrador del acuerdo. Ucrania registra el máximo de niños muertos en casi cuatro años. En Afganistán, la mitad de las organizaciones de mujeres anuncia que tendrá que cerrar sus servicios por falta de dinero.",
+   "fuente": "ONU Noticias",
+   "url": "https://news.un.org/feed/view/es/story/2026/11/1542198",
+   "fecha": "2026-11-20T12:00:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/20-11-2026_COP31.jpg/image560x340cropped.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Discordia en el último día de la cumbre del clima contra el borrador del acuerdo. Ucrania registra el máximo de niños muertos en casi cuatro años.",
+   "puntos": [
+    "Discordia en el último día de la cumbre del clima contra el borrador del acuerdo.",
+    "Ucrania registra el máximo de niños muertos en casi cuatro años.",
+    "En Afganistán, la mitad de las organizaciones de mujeres anuncia que tendrá que cerrar sus servicios por falta de dinero."
+   ],
+   "datos": [
+    {
+     "v": "20 %",
+     "t": "porcentaje",
+     "c": "Es el nivel más alto en casi cuatro años: un 20 % más de muertos que en 2025 y un aumento de casi el 60 % en los heridos."
+    },
+    {
+     "v": "60 %",
+     "t": "porcentaje",
+     "c": "Es el nivel más alto en casi cuatro años: un 20 % más de muertos que en 2025 y un aumento de casi el 60 % en los heridos."
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://news.un.org/es/story/2026/11/1542198"
+  },
+  {
+   "id": "656c354d7c",
+   "sector": "mundo",
+   "titulo": "COP31: Sin mención a los combustibles fósiles, no habrá acuerdo, aseguran varios países",
+   "resumen": "Los países definieron seis prioridades que deseaban ver reflejadas en el acuerdo: la necesidad de una transición, decidir con la ciencia en la mano, obligar a pagar a quienes contaminan, electrificar los países con base en las energías limpias, reducir las emisiones de metano y…",
+   "fuente": "ONU Noticias",
+   "url": "https://news.un.org/feed/view/es/story/2026/11/1542196",
+   "fecha": "2026-11-20T12:00:00Z",
+   "tipo": "internacional",
+   "genero": "noticia",
+   "imagen": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/55662349225_208649f008_k.jpg/image560x340cropped.jpg",
+   "geografia": {
+    "version": 1,
+    "ambito": "mundo",
+    "zona": "mundo",
+    "motivo": "referencia_internacional_titulo"
+   },
+   "ambito": "mundo",
+   "procedencia": "directa",
+   "sintesis": "Los países definieron seis prioridades que deseaban ver reflejadas en el acuerdo: la necesidad de una transición, decidir con la ciencia en la mano, obligar a pagar a quienes contaminan, electrificar los países con base en las energías limpias, reducir las emisiones de metano y fortalecer la cooperación internacional. Mientras la sociedad civil habla de “vergüenza”.",
+   "puntos": [
+    "Los países definieron seis prioridades que deseaban ver reflejadas en el acuerdo: la necesidad de una transición, decidir con la ciencia en la mano, obligar a pagar a quienes contaminan, electrificar los países con base en las energías limpias, reducir las emisiones de metano y fortalecer la cooperación internacional.",
+    "Mientras la sociedad civil habla de “vergüenza”.",
+    "Un grupo de países de Europa, África, América Latina y el Pacífico ha cuestionado el acuerdo propuesto para la COP31, exigiendo medidas explícitas sobre los combustibles fósiles y una financiación climática más sólida."
+   ],
+   "datos": [
+    {
+     "v": "1,5 °C",
+     "t": "temperatura",
+     "c": "“No podemos decirle al mundo que estamos alcanzando los 1,5 °C [de calentamiento] y, al mismo tiempo, seguir actuando…"
+    }
+   ],
+   "acceso": "abierto",
+   "url_medio": "https://news.un.org/es/story/2026/11/1542196"
+  },
+  {
    "id": "ac9287c9b5",
    "sector": "tecnologia",
    "titulo": "Pagos digitales: ¿qué puede aprender Perú del modelo chino para facilitar transacciones?",
@@ -8937,89 +9154,6 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
-   "id": "d6a9e301bc",
-   "sector": "mundo",
-   "titulo": "Las víctimas de abusos sexuales por parte del clero quieren que León haga rendir cuentas - The New York Times",
-   "resumen": "Las víctimas de abusos sexuales por parte del clero quieren que León haga rendir cuentas The New York Times",
-   "fuente": "The New York Times en Español",
-   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPWWN0cnZRMEp3OGU1NWEwcjBRVTNJdEMwR3FRQ1FsTjVMMFk1OHJaWkVJdUxlcUNyQUdRRk5BYjVscFFOWWRnRUgyRmozMnc5YUwyMWJOT2hTQjdNb3VUemtlS2MyeGh6R2NHc051cGl6RWlmcE81MnB0XzNPMTcxZ3hMcGdpZw?oc=5",
-   "fecha": "2026-11-20T10:10:05Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "url_medio": "https://www.nytimes.com/es/2026/11/20/espanol/mundo/papa-leon-abuso-sexual.html",
-   "imagen_intentos": 2,
-   "acceso": "sin_verificar"
-  },
-  {
-   "id": "34ed9397c7",
-   "sector": "mundo",
-   "titulo": "Las comunidades costeras de California en alerta mientras las olas más grandes en años azotan el estado",
-   "resumen": "Advertencias de peligro emitidas durante toda la semana después de que se registraran poderosos oleajes y olas de más de 9 metros Esta semana se emitieron múltiples advertencias de peligro costero en toda California, ya que áreas sucesivas de baja presión generaron poderosos oleajes y grandes olas rompientes para la costa...",
-   "fuente": "The Guardian",
-   "url": "https://www.theguardian.com/us-news/2026/nov/20/california-coastal-communities-alert-big-waves-hit-state",
-   "fecha": "2026-11-20T09:03:20Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://i.guim.co.uk/img/media/5fa16e1c9eefe44e08e715a5f83a895ce2dd9ea6/376_0_2493_1995/master/2493.jpg?width=140&quality=85&auto=format&fit=max&s=cd548202b629035c561b80f699fa5ef7",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "titulo_original": "California’s coastal communities on alert as biggest waves in years hit state",
-   "traducido": true,
-   "url_medio": "https://www.theguardian.com/us-news/2026/nov/20/california-coastal-communities-alert-big-waves-hit-state",
-   "sintesis": "Hazard warnings issued throughout week after powerful swells and waves of more than 9 metres recorded Multiple coastal hazard warnings were issued this week across California as successive areas of low pressure generated powerful swells and large breaking waves for coastal communities.",
-   "puntos": [
-    "Hazard warnings issued throughout week after powerful swells and waves of more than 9 metres recorded",
-    "Multiple coastal hazard warnings were issued this week across California as successive areas of low pressure generated powerful swells and large breaking waves for coastal communities.",
-    "Beaches and piers were closed last weekend as large waves crashed into California’s coastline."
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "51ca9e41ea",
-   "sector": "mundo",
-   "titulo": "La carrera para ser el próximo secretario general de la ONU expone las divisiones entre las potencias mundiales",
-   "resumen": "El debate sobre el predominio de los cinco miembros permanentes podría reavivarse si las principales potencias bloquean al líder costarricense La carrera para convertirse en el próximo secretario general de la ONU podría llegar a un momento decisivo el viernes, cuando una votación del consejo de seguridad de la ONU probablemente revele si Costa Rica...",
-   "fuente": "The Guardian",
-   "url": "https://www.theguardian.com/world/2026/nov/20/race-to-be-next-un-secretary-general-exposes-divisions-among-world-powers",
-   "fecha": "2026-11-20T05:00:24Z",
-   "tipo": "internacional",
-   "genero": "noticia",
-   "imagen": "https://i.guim.co.uk/img/media/7298fc5c87ed7c445360fa35f598662e4d8a510d/624_0_2779_2223/master/2779.jpg?width=140&quality=85&auto=format&fit=max&s=810844650f584edda94e8970574c9af8",
-   "geografia": {
-    "version": 1,
-    "ambito": "mundo",
-    "zona": "mundo",
-    "motivo": "referencia_internacional_titulo"
-   },
-   "ambito": "mundo",
-   "procedencia": "directa",
-   "titulo_original": "Race to be next UN secretary general exposes divisions among world powers",
-   "traducido": true,
-   "url_medio": "https://www.theguardian.com/world/2026/nov/20/race-to-be-next-un-secretary-general-exposes-divisions-among-world-powers",
-   "sintesis": "Debate about dominance of permanent five members could reignite if major powers block Costa Rican frontrunner Rebeca Grynspan, an economist and UN insider who is from a family of Polish-Jewish wartime refugees to Costa Rica , has been in the lead in all but one of the eight straw polls of the 15 UN security council members since the first secret ballot was held on 30 July.",
-   "puntos": [
-    "Debate about dominance of permanent five members could reignite if major powers block Costa Rican frontrunner",
-    "Rebeca Grynspan, an economist and UN insider who is from a family of Polish-Jewish wartime refugees to Costa Rica , has been in the lead in all but one of the eight straw polls of the 15 UN security council members since the first secret ballot was held on 30 July.",
-    "Each member goes down the list of candidates, casting an “encourage”, “discourage” or “no opinion” vote for each candidate."
-   ],
-   "acceso": "abierto"
-  },
-  {
    "id": "20c9551c0f",
    "sector": "tecnologia",
    "titulo": "La Casa Blanca despide al jefe de ciberseguridad tras una serie de fallos tecnológicos",
@@ -9086,8 +9220,8 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
-   "imagen_intentos": 1,
    "url_medio": "https://www.tvperu.gob.pe/noticias/nacionales/enfen-mantiene-activo-estado-de-alerta-el-nino-costero-y-se-espera-que-continue",
+   "imagen_intentos": 2,
    "acceso": "sin_verificar"
   },
   {
@@ -9181,61 +9315,6 @@ window.NOTICIAS = {
      "v": "9,52%",
      "t": "porcentaje",
      "c": "…seguido de México (16,67%), Argentina (15,79%) y Colombia (9,52%).."
-    }
-   ],
-   "acceso": "abierto"
-  },
-  {
-   "id": "5df620367e",
-   "sector": "investigacion",
-   "titulo": "\"El nuevo esquema mide indicadores como el ratio estudiante-docente o el tiempo de titulación sin ajustar por tamaño institucional\".",
-   "resumen": "La razón de ser de una universidad nacional o privada es la investigación dentro de la sociedad donde está inmersa.",
-   "fuente": "La Mula",
-   "url": "https://elmoscon.lamula.pe/2026/11/19/el-nuevo-esquema-mide-indicadores-como-el-ratio-estudiante-docente-o-el-tiempo-de-titulacion-sin-ajustar-por-tamano-institucional/molochnovoa/",
-   "fecha": "2026-11-20T00:58:22Z",
-   "tipo": "independiente",
-   "genero": "noticia",
-   "imagen": "https://lamula.pe/media/uploads/t/a07ebd57d4b9aa308201f36bf2599ecb.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "url_medio": "https://elmoscon.lamula.pe/2026/11/19/el-nuevo-esquema-mide-indicadores-como-el-ratio-estudiante-docente-o-el-tiempo-de-titulacion-sin-ajustar-por-tamano-institucional/molochnovoa/",
-   "sintesis": "La razón de ser de una universidad nacional o privada es la investigación dentro de la sociedad donde está inmersa. La Sunedu , organismo educativo superior que evalúa a las universidades públicas como privadas en la calidad de la formación educativa, en la semana que concluye, ha publicado el ranking de las mejores universidades del país como públicas y de privadas que forman profesionales que necesita la sociedad peruana.",
-   "puntos": [
-    "La razón de ser de una universidad nacional o privada es la investigación dentro de la sociedad donde está inmersa.",
-    "La Sunedu , organismo educativo superior que evalúa a las universidades públicas como privadas en la calidad de la formación educativa, en la semana que concluye, ha publicado el ranking de las mejores universidades del país como públicas y de privadas que forman profesionales que necesita la sociedad peruana.",
-    "La Sunedu, en los últimos años ha sido criticado constantemente contra los que han asumidos la conducción de dicha institución, han sido acusados de ser muy flexibles en relación a las condiciones que debe presentar una universidad nacional como privada, como favoreciendo algunas de ellas."
-   ],
-   "datos": [
-    {
-     "v": "51,43 %",
-     "t": "porcentaje",
-     "c": "…puntaje en tres ejes: Investigación pasa a representar el 51,43 %, el ámbito Formativo sube al 38,57 % y se incorpora…"
-    },
-    {
-     "v": "38,57 %",
-     "t": "porcentaje",
-     "c": "…pasa a representar el 51,43 %, el ámbito Formativo sube al 38,57 % y se incorpora Capacidad Institucional con el 10 %."
-    },
-    {
-     "v": "10 %",
-     "t": "porcentaje",
-     "c": "…al 38,57 % y se incorpora Capacidad Institucional con el 10 %."
-    },
-    {
-     "v": "38.57%",
-     "t": "porcentaje",
-     "c": "Sin embargo; está condición ha sido cambiada a otro nivel dándose preferencia al ámbito formativo que sube al 38.57%."
-    },
-    {
-     "v": "59 %",
-     "t": "porcentaje",
-     "c": "Asimismo, las fichas de Sunedu advierten que el 59 % de universidades licenciadas supera el 25 % de docentes…"
     }
    ],
    "acceso": "abierto"
@@ -9623,61 +9702,6 @@ window.NOTICIAS = {
    "url_medio": "https://andina.pe/agencia/noticia-el-dni-digital-reemplaza-al-dni-fisico-esto-responde-reniec-video-1100647.aspx"
   },
   {
-   "id": "a04d678cba",
-   "sector": "tecnologia",
-   "titulo": "MAC Lima inaugura su primer Festival de Arte Digital",
-   "resumen": "MAC Lima El arte contemporáneo se encuentra con la tecnología en MAC Digital, el primer Festival de Arte Digital organizado por el…",
-   "fuente": "Caretas",
-   "url": "https://caretas.pe/cultura/mac-lima-inaugura-su-primer-festival-de-arte-digital/",
-   "fecha": "2026-11-19T16:57:37Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": "https://caretas.pe/wp-content/uploads/2026/11/mac-arte-digital.jpg",
-   "geografia": {
-    "version": 1,
-    "ambito": "peru",
-    "zona": "peru",
-    "motivo": "referencia_peru_titulo"
-   },
-   "ambito": "peru",
-   "procedencia": "directa",
-   "url_medio": "https://caretas.pe/cultura/mac-lima-inaugura-su-primer-festival-de-arte-digital/",
-   "sintesis": "El arte contemporáneo se encuentra con la tecnología en MAC Digital, el primer Festival de Arte Digital organizado por el MAC Lima. La iniciativa, que se inaugura este jueves 19 de noviembre, reúne a 79 artistas de Perú, Brasil, Colombia, Chile y México, además de creadores de otras procedencias, en una programación que se extenderá hasta el 7 de marzo de 2027.",
-   "puntos": [
-    "El arte contemporáneo se encuentra con la tecnología en MAC Digital, el primer Festival de Arte Digital organizado por el MAC Lima.",
-    "La iniciativa, que se inaugura este jueves 19 de noviembre, reúne a 79 artistas de Perú, Brasil, Colombia, Chile y México, además de creadores de otras procedencias, en una programación que se extenderá hasta el 7 de marzo de 2027.",
-    "El festival propone explorar las posibilidades creativas de las tecnologías digitales a través de nueve exposiciones distribuidas entre el museo y siete espacios culturales de Lima y Callao."
-   ],
-   "acceso": "abierto",
-   "datos": [
-    {
-     "v": "19 de noviembre",
-     "t": "fecha",
-     "c": "La iniciativa, que se inaugura este jueves 19 de noviembre, reúne a 79 artistas de Perú, Brasil, Colombia, Chile y…"
-    },
-    {
-     "v": "7 de marzo de 2027",
-     "t": "fecha",
-     "c": "…en una programación que se extenderá hasta el 7 de marzo de 2027.."
-    },
-    {
-     "v": "20 de noviembre",
-     "t": "fecha",
-     "c": "La primera, del 20 de noviembre al 3 de enero, reunirá obras de Cristian Alarcón Ismodes…"
-    },
-    {
-     "v": "3 de enero",
-     "t": "fecha",
-     "c": "La primera, del 20 de noviembre al 3 de enero, reunirá obras de Cristian Alarcón Ismodes, Analivia…"
-    },
-    {
-     "v": "19 de enero",
-     "t": "fecha",
-     "c": "La segunda etapa, del 19 de enero al 7 de marzo, contará con trabajos de Cristhian Ávila, Florencia S."
-    }
-   ]
-  },
-  {
    "id": "cd95920bed",
    "sector": "ia",
    "titulo": "¿Debe el Perú regular la notificación de incidentes graves de inteligencia artificial?",
@@ -9837,8 +9861,8 @@ window.NOTICIAS = {
    },
    "ambito": "pendiente",
    "procedencia": "directa",
-   "imagen_intentos": 2,
    "url_medio": "https://es.marketscreener.com/noticias/openai-y-otras-empresas-de-inteligencia-artificial-afrontan-una-investigaci-n-penal-en-arizona-por-a-ce785eddd08cf321",
+   "imagen_intentos": 3,
    "acceso": "sin_verificar"
   },
   {
@@ -10857,29 +10881,6 @@ window.NOTICIAS = {
    "acceso": "abierto"
   },
   {
-   "id": "871a75d653",
-   "sector": "ia",
-   "titulo": "Poder Judicial analiza delitos cometidos con inteligencia artificial en jornada académica",
-   "resumen": "",
-   "fuente": "tvperu.gob.pe",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPYTFCRDE3Smw0dWpWVkFZU0FaMjI4MVdvT3dJdEhwejF6aFZFYlZXUGJ6MGtZMm14Q18zZG01VFl3MlFiUGNxZHNyT0VyOVVuMlRvVWRkNGl3eXluZjhLeXFtaDZvMmlGaWZEbHhhdjZlTFpiV0xNZ1JlbC00OGJ2emMyNjd6emxUWXZwUVBBdXBUYnRyTnI4MzdKbEdaNHhCcHVEdGVOcllVV3NaV0N3UFJjeUY0TnptOTJzeW9wRQ?oc=5",
-   "fecha": "2026-11-16T02:48:00Z",
-   "tipo": "comercial",
-   "genero": "noticia",
-   "imagen": null,
-   "geografia": {
-    "version": 1,
-    "ambito": "pendiente",
-    "zona": "pendiente",
-    "motivo": "sin_evidencia_geografica"
-   },
-   "ambito": "pendiente",
-   "procedencia": "directa",
-   "url_medio": "https://www.tvperu.gob.pe/noticias/locales/poder-judicial-analiza-delitos-cometidos-con-inteligencia-artificial-en-jornada",
-   "imagen_intentos": 6,
-   "acceso": "sin_verificar"
-  },
-  {
    "id": "df572cb58b",
    "sector": "nino",
    "titulo": "El Niño costero extraordinario se queda hasta 2027: las consecuencias que anticipa el Enfen y lo que viene",
@@ -11202,6 +11203,7 @@ window.NOTICIAS = {
    },
    "ambito": "peru",
    "procedencia": "directa",
+   "url_medio": "https://saludconlupa.com/noticias/medifarma-denuncia-a-funcionarios-de-indecopi-que-confirmaron-multa-por-suero-defectuoso/",
    "sintesis": "El laboratorio, de propiedad de la familia Picasso Candamo, presentó una denuncia penal contra los integrantes de la Sala Especializada en Protección al… La empresa sostiene que Indecopi debió esperar el resultado de la investigación penal antes de resolver el caso.",
    "puntos": [
     "El laboratorio, de propiedad de la familia Picasso Candamo, presentó una denuncia penal contra los integrantes de la Sala Especializada en Protección al…",
@@ -11230,8 +11232,7 @@ window.NOTICIAS = {
      "c": "Según la resolución del 30 de julio de 2026, en esa decisión participaron Hernando Montoya Alberti…"
     }
    ],
-   "acceso": "abierto",
-   "url_medio": "https://saludconlupa.com/noticias/medifarma-denuncia-a-funcionarios-de-indecopi-que-confirmaron-multa-por-suero-defectuoso/"
+   "acceso": "abierto"
   },
   {
    "id": "fa7ed1736a",
@@ -12204,26 +12205,10 @@ window.NOTICIAS = {
   "fecha": "2026-11-13",
   "url": "https://enfen.imarpe.gob.pe/download/comunicado-oficial-enfen-n-20-2026/?wpdmdl=2218",
   "alerta": "Alerta de El Niño Costero",
-  "comprobado": "2026-11-23T01:41:03Z",
+  "comprobado": "2026-11-23T03:44:46Z",
   "ok": true
  },
  "registro": [
-  {
-   "t": "2026-11-19T22:41:05Z",
-   "fuentes_ok": 28,
-   "fuentes": 28,
-   "nuevas": 379,
-   "notas": 322,
-   "descartes": {},
-   "agregador": [
-    "OjoPúblico",
-    "Convoca",
-    "Hildebrandt en sus trece",
-    "La República",
-    "Expreso"
-   ],
-   "sin_datos": []
-  },
   {
    "t": "2026-11-19T23:35:54Z",
    "fuentes_ok": 28,
@@ -12715,6 +12700,22 @@ window.NOTICIAS = {
    "sin_datos": [
     "ONU Noticias"
    ]
+  },
+  {
+   "t": "2026-11-23T03:43:43Z",
+   "fuentes_ok": 28,
+   "fuentes": 28,
+   "nuevas": 377,
+   "notas": 322,
+   "descartes": {},
+   "agregador": [
+    "OjoPúblico",
+    "Convoca",
+    "Hildebrandt en sus trece",
+    "La República",
+    "Expreso"
+   ],
+   "sin_datos": []
   }
  ]
 };
