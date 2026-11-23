@@ -15,7 +15,7 @@ window.EDITORIAL = {
 
   /* ───────────── DataPerú: estadísticas oficiales (INEI y otros). Cada cifra lleva periodo y fuente; contrastar en la fuente primaria ───────────── */
   datos: {
-    corte: "2026-11-18",
+    corte: "2026-11-23",
     intro: "Cada indicador incluye su periodo, población medida y fuente.",
     grupos: [
       { id: "ia", g: "IA", items: [
@@ -37,7 +37,7 @@ window.EDITORIAL = {
         { id: "pagos-alias", un: "millones de operaciones", corte: "Julio de 2026", fp: "BCRPData", k: "Transferencias inmediatas entre entidades", v: "267,1", n: "Pagos con alias, como un número de celular.", c: "Cuenta las operaciones entre distintas entidades financieras. Una persona puede hacer varias transferencias.", e: "En julio de 2025 se registraron 186,0 millones. El volumen creció 43,6 % en un año.", f: "BCRPData", u: "https://estadisticas.bcrp.gob.pe/estadisticas/series/mensuales/resultados/PN42675EM/html" },
         { id: "inflobs", un: "% anual", corte: "Octubre de 2026", fp: "INEI", tag: "INEI", k: "Inflación anual · Lima Metropolitana", v: "5,25 %", n: "Octubre de 2026: la más alta en 38 meses y octavo mes sobre la meta (1 %-3 %). A nivel nacional, 4,83 %", c: "Cuánto subieron los precios en Lima en los últimos 12 meses, según el INEI. La meta del BCRP es entre 1 % y 3 %.", e: "Con 5,25 %, lo que costaba S/ 100 hace un año cuesta hoy unos S/ 105,25.", f: "Infomercado, a partir del INEI", u: "https://infomercado.pe/inei-inflacion-en-lima-supera-el-5-por-el-nino-y-el-alza-de-combustibles/" },
         { id: "desemp", un: "% de la población económicamente activa", corte: "Trimestre móvil julio-setiembre de 2026", fp: "INEI", tag: "INEI", c: "Tasa de desempleo: porcentaje de la población que quiere trabajar y busca empleo, pero no lo tiene. Un trimestre móvil promedia tres meses seguidos.", e: "Una tasa de 4,4 % equivale a unas 4 personas sin empleo por cada 100 que trabajan o buscan trabajo.", k: "Desempleo en Lima Metropolitana", v: "4,4 %", n: "Trimestre móvil julio-setiembre de 2026 (5,7 % un año antes). Cifra citada por prensa: confirma en el INEI", f: "Expreso, a partir del INEI", u: "https://www.expreso.com.pe/actualidad/empleo-en-lima-metropolitana-crecio-6-y-supero-los-seis-millones-de-trabajadores-que-revela-el-avance-del-mercado-laboral-mtpe-keiko-fujimori-juan-sheput-noticia/1322978/", dest: true },
-        { id: "tasa", un: "% anual", corte: "Vigente (más de un año sin cambios)", fp: "BCRP", tag: "BCRP", k: "Tasa de referencia BCRP", v: "4,25 %", n: "Más de un año sin cambios", c: "Tasa de interés que fija el BCRP. Sirve de guía para el costo del crédito en la economía.", e: "Ejemplo simplificado: 4,25 % anual sobre S/ 1 000 son S/ 42,50 al año; las tasas que cobran los bancos son mayores.", f: "Perú Retail", u: "https://www.peru-retail.com/bcrp-mantiene-la-tasa-de-referencia-en-425-por-mas-de-un-ano-que-factores-influyen-en-su-decision/" },
+        { id: "tasa", un: "% anual", corte: "Vigente desde noviembre de 2026", fp: "BCRP", tag: "BCRP", k: "Tasa de referencia BCRP", v: "4,50 %", n: "Subió desde 4,25 % tras 14 meses sin cambios", c: "Tasa de interés que fija el BCRP. Sirve de guía para el costo del crédito en la economía.", e: "Ejemplo simplificado: 4,50 % anual sobre S/ 1 000 son S/ 45 al año; las tasas que cobran los bancos son mayores.", f: "Andina (BCRP)", u: "https://andina.pe/agencia/noticia-bcr-eleva-tasa-interes-referencia-a-450-inflacion-1099738.aspx" },
         { id: "pobreza", un: "% de la población", corte: "Año 2025", fp: "INEI (ENAHO)", tag: "INEI", c: "Pobreza monetaria: personas cuyo gasto por persona no alcanza para comprar una canasta básica de alimentos y otros bienes y servicios.", e: "Un 25,7 % de la población equivale a unos 8,8 millones de personas.", k: "Pobreza monetaria", v: "25,7 %", n: "Año 2025 (27,6 % en 2024); unos 8,8 millones de personas", f: "INEI vía El Peruano", u: "https://elperuano.pe/noticia/295035-inei-pobreza-se-redujo-en-19-en-el-2025-y-afecta-al-257-de-peruanos", dest: true }
       ]},
       { id: "salud", g: "Salud", items: [
@@ -96,7 +96,7 @@ window.EDITORIAL = {
   indicadores: [
     { k: "PBI 2026 · proyección BCRP", un: "% de variación anual", corte: "Proyección para 2026", fp: "BCRP", v: "3,2 %", n: "Recortada citando El Niño", f: "BCRP", u: "https://www.bcrp.gob.pe" },
     { k: "Inflación 2026 · proyección BCRP", un: "% anual", corte: "Proyección para 2026", fp: "BCRP", v: "~4,2 %", n: "Meta 1 %-3 %; proyección previa a octubre: la inflación observada (4,83 % nacional) ya la supera", f: "Forbes Perú", u: "https://forbes.pe/economia-y-finanzas/2026-09-10/bcp-elevo-su-proyeccion-de-inflacion-de-42-a-47-para-cierre-de-ano/" },
-    { k: "Tasa de referencia BCRP", un: "% anual", corte: "Vigente", fp: "BCRP", v: "4,25 %", n: "Más de un año sin cambios", f: "Perú Retail", u: "https://www.peru-retail.com/bcrp-mantiene-la-tasa-de-referencia-en-425-por-mas-de-un-ano-que-factores-influyen-en-su-decision/" },
+    { k: "Tasa de referencia BCRP", un: "% anual", corte: "Vigente desde noviembre de 2026", fp: "BCRP", v: "4,50 %", n: "Subió desde 4,25 % tras 14 meses sin cambios", f: "Andina (BCRP)", u: "https://andina.pe/agencia/noticia-bcr-eleva-tasa-interes-referencia-a-450-inflacion-1099738.aspx" },
     { k: "El Niño costero · estado ENFEN", un: "estado", corte: "Comunicado ENFEN N.° 20-2026 (13 de noviembre de 2026)", fp: "ENFEN", v: "Alerta", n: "Magnitud extraordinaria hasta febrero de 2027 (según prensa); ver la sección El Niño", f: "ENFEN", u: "https://www.gob.pe/institucion/senamhi/colecciones/1308-comunicados-enfen" },
     { k: "Dengue · fallecidos 2026", un: "fallecidos", corte: "Semana epidemiológica 41 de 2026", fp: "CDC-Minsa", v: "81", n: "Corte semana epidemiológica 41", f: "CDC-Minsa", u: "https://www.dge.gob.pe/portalnuevo/?p=4861" },
     { k: "Congreso bicameral", un: "senadores + diputados", corte: "Julio de 2026", fp: "Congreso", v: "60 + 130", n: "Senadores y diputados", f: "Diario Libre", u: "https://www.diariolibre.com/mundo/america-latina/2026/07/24/peru-establece-un-sistema-parlamentario-bicameral/3610006" }
@@ -339,7 +339,7 @@ window.EDITORIAL = {
         { n: "Infomercado · inflación supera el 5 % (INEI)", u: "https://infomercado.pe/inei-inflacion-en-lima-supera-el-5-por-el-nino-y-el-alza-de-combustibles/" },
         { n: "Forbes Perú · inflación de octubre", u: "https://forbes.pe/economia-y-finanzas/2026-11-01/inflacion-de-octubre-en-peru-sube-un-056-por-alzas-en-alimentos-y-transporte/" },
         { n: "Forbes Perú · inflación (10-sep-2026)", u: "https://forbes.pe/economia-y-finanzas/2026-09-10/bcp-elevo-su-proyeccion-de-inflacion-de-42-a-47-para-cierre-de-ano/" },
-        { n: "Perú Retail · tasa 4,25 %", u: "https://www.peru-retail.com/bcrp-mantiene-la-tasa-de-referencia-en-425-por-mas-de-un-ano-que-factores-influyen-en-su-decision/" },
+        { n: "Andina · tasa 4,50 %", u: "https://andina.pe/agencia/noticia-bcr-eleva-tasa-interes-referencia-a-450-inflacion-1099738.aspx" },
         { n: "BCRP · fuente oficial", u: "https://www.bcrp.gob.pe" }
       ]
     },
