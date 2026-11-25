@@ -1,5 +1,5 @@
 {
- "corte": "2026-11-24T15:56:13-05:00",
+ "corte": "2026-11-25T15:18:42-05:00",
  "peliculas": [
   {
    "id": "andre rieu 2026 let it snow concierto de navidad",
@@ -29,6 +29,43 @@
    "nueva_desde": "2026-11-22"
   },
   {
+   "id": "avengers doomsday",
+   "titulo": "AVENGERS: DOOMSDAY",
+   "generos": [],
+   "sinopsis": "Avengers: Doomsday, los queridos héroes de tres universos distintos se verán envueltos en un curso de colisión mortal y deberán enfrentar una amenaza existencial como ninguna que hayan conocido antes.",
+   "reparto": [],
+   "origen": "",
+   "cines": [
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1085",
+     "dias": {
+      "2026-11-27": [
+       "Lima"
+      ],
+      "2026-11-28": [
+       "Lima"
+      ],
+      "2026-11-29": [
+       "Lima"
+      ],
+      "2026-11-30": [
+       "Lima"
+      ],
+      "2026-12-01": [
+       "Lima"
+      ],
+      "2026-12-02": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://uvk.pe/images/movie/1789513535.jpg",
+   "fuente_sinopsis": "UVK",
+   "nueva_desde": "2026-11-25"
+  },
+  {
    "id": "clayface",
    "titulo": "Clayface",
    "generos": [
@@ -46,9 +83,6 @@
      "cadena": "Cinépolis",
      "url": "https://cinepolis.com.pe/cartelera/lima-peru",
      "dias": {
-      "2026-11-24": [
-       "Lima"
-      ],
       "2026-11-25": [
        "Lima"
       ]
@@ -58,12 +92,6 @@
      "cadena": "Cineplanet",
      "url": "https://www.cineplanet.com.pe/peliculas/clayface",
      "dias": {
-      "2026-11-24": [
-       "Arequipa",
-       "Chiclayo",
-       "Huancayo",
-       "Lima"
-      ],
       "2026-11-25": [
        "Arequipa",
        "Chiclayo",
@@ -76,12 +104,6 @@
      "cadena": "Cinemark",
      "url": "https://www.cinemark-peru.com/pelicula/clayface",
      "dias": {
-      "2026-11-24": [
-       "Arequipa",
-       "Lima",
-       "Piura",
-       "Trujillo"
-      ],
       "2026-11-25": [
        "Arequipa",
        "Lima",
@@ -109,10 +131,14 @@
      "url": "https://www.cinemark-peru.com/pelicula/coquito-la-pelicula",
      "dias": {
       "2026-11-26": [
-       "Arequipa"
+       "Arequipa",
+       "Lima",
+       "Trujillo"
       ],
       "2026-11-27": [
-       "Arequipa"
+       "Arequipa",
+       "Lima",
+       "Trujillo"
       ]
      }
     },
@@ -142,6 +168,41 @@
      "url": "https://www.cinestar.com.pe/peliculas/coquito-la-pelicula",
      "dias": {
       "2026-11-26": [
+       "Ilo",
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1160",
+     "dias": {
+      "2026-11-26": [
+       "Ilo",
+       "Lima"
+      ],
+      "2026-11-27": [
+       "Ilo",
+       "Lima"
+      ],
+      "2026-11-28": [
+       "Ilo",
+       "Lima"
+      ],
+      "2026-11-29": [
+       "Ilo",
+       "Lima"
+      ],
+      "2026-11-30": [
+       "Ilo",
+       "Lima"
+      ],
+      "2026-12-01": [
+       "Ilo",
+       "Lima"
+      ],
+      "2026-12-02": [
+       "Ilo",
        "Lima"
       ]
      }
@@ -169,9 +230,6 @@
      "cadena": "Cinemark",
      "url": "https://www.cinemark-peru.com/pelicula/coyote-vs-acme",
      "dias": {
-      "2026-11-24": [
-       "Arequipa"
-      ],
       "2026-11-25": [
        "Arequipa"
       ]
@@ -226,21 +284,6 @@
      "cadena": "Cineplanet",
      "url": "https://www.cineplanet.com.pe/peliculas/ebenezer-los-fantasmas-de-la-navidad",
      "dias": {
-      "2026-11-24": [
-       "Arequipa",
-       "Cajamarca",
-       "Chiclayo",
-       "Cusco",
-       "Huancayo",
-       "Huánuco",
-       "Juliaca",
-       "Lima",
-       "Piura",
-       "Pucallpa",
-       "Puno",
-       "Tacna",
-       "Trujillo"
-      ],
       "2026-11-25": [
        "Arequipa",
        "Cajamarca",
@@ -262,17 +305,18 @@
      "cadena": "Cinemark",
      "url": "https://www.cinemark-peru.com/pelicula/ebenezer-los-fantasmas-de-la-navidad",
      "dias": {
-      "2026-11-24": [
+      "2026-11-25": [
        "Arequipa",
        "Huancayo",
        "Huanuco",
        "Lima",
        "Trujillo"
       ],
-      "2026-11-25": [
+      "2026-11-26": [
        "Arequipa",
-       "Huancayo",
-       "Huanuco",
+       "Lima"
+      ],
+      "2026-11-27": [
        "Lima",
        "Trujillo"
       ]
@@ -282,22 +326,14 @@
      "cadena": "Movie Time",
      "url": "https://www.movietime.com.pe/peliculas/ebenezer-los-fantasmas-de-la-navidad-dob",
      "dias": {
-      "2026-11-24": [
-       "Barranca",
+      "2026-11-25": [
        "Cajamarca",
        "Cañete",
-       "Chincha",
        "Huaral",
        "Iquitos",
        "Jaén",
        "Lima",
        "Pisco"
-      ],
-      "2026-11-25": [
-       "Cajamarca",
-       "Huaral",
-       "Iquitos",
-       "Lima"
       ]
      }
     },
@@ -305,14 +341,9 @@
      "cadena": "Cine Star",
      "url": "https://www.cinestar.com.pe/peliculas/ebenezer-los-fantasmas-de-la-navidad-dob",
      "dias": {
-      "2026-11-24": [
-       "Lima",
-       "Moquegua",
-       "Sullana",
-       "Tarapoto"
-      ],
       "2026-11-25": [
        "Lima",
+       "Moquegua",
        "Sullana"
       ]
      }
@@ -321,13 +352,36 @@
      "cadena": "UVK",
      "url": "https://uvk.pe/peliculas/1130",
      "dias": {
-      "2026-11-24": [
+      "2026-11-25": [
        "Ilo",
        "Lima",
        "Tumbes"
       ],
-      "2026-11-25": [
-       "Ilo",
+      "2026-11-26": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-27": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-28": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-29": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-30": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-12-01": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-12-02": [
        "Lima",
        "Tumbes"
       ]
@@ -337,10 +391,28 @@
      "cadena": "Cinépolis",
      "url": "https://cinepolis.com.pe/cartelera/lima-peru",
      "dias": {
-      "2026-11-24": [
+      "2026-11-25": [
        "Lima"
       ],
-      "2026-11-25": [
+      "2026-11-26": [
+       "Lima"
+      ],
+      "2026-11-27": [
+       "Lima"
+      ],
+      "2026-11-28": [
+       "Lima"
+      ],
+      "2026-11-29": [
+       "Lima"
+      ],
+      "2026-11-30": [
+       "Lima"
+      ],
+      "2026-12-01": [
+       "Lima"
+      ],
+      "2026-12-02": [
        "Lima"
       ]
      }
@@ -365,16 +437,9 @@
      "cadena": "Cineplanet",
      "url": "https://www.cineplanet.com.pe/peliculas/el-corazon-de-la-bestia",
      "dias": {
-      "2026-11-24": [
-       "Chiclayo",
-       "Cusco",
-       "Huancayo",
-       "Lima"
-      ],
       "2026-11-25": [
        "Chiclayo",
        "Cusco",
-       "Huancayo",
        "Lima"
       ]
      }
@@ -383,13 +448,6 @@
      "cadena": "Cinemark",
      "url": "https://www.cinemark-peru.com/pelicula/el-corazon-de-la-bestia",
      "dias": {
-      "2026-11-24": [
-       "Arequipa",
-       "Huancayo",
-       "Lima",
-       "Piura",
-       "Trujillo"
-      ],
       "2026-11-25": [
        "Arequipa",
        "Huancayo",
@@ -412,9 +470,6 @@
      "cadena": "Cinépolis",
      "url": "https://cinepolis.com.pe/cartelera/lima-peru",
      "dias": {
-      "2026-11-24": [
-       "Lima"
-      ],
       "2026-11-25": [
        "Lima"
       ]
@@ -441,10 +496,28 @@
      "cadena": "Cinépolis",
      "url": "https://cinepolis.com.pe/cartelera/lima-peru",
      "dias": {
-      "2026-11-24": [
+      "2026-11-25": [
        "Lima"
       ],
-      "2026-11-25": [
+      "2026-11-26": [
+       "Lima"
+      ],
+      "2026-11-27": [
+       "Lima"
+      ],
+      "2026-11-28": [
+       "Lima"
+      ],
+      "2026-11-29": [
+       "Lima"
+      ],
+      "2026-11-30": [
+       "Lima"
+      ],
+      "2026-12-01": [
+       "Lima"
+      ],
+      "2026-12-02": [
        "Lima"
       ]
      }
@@ -453,34 +526,16 @@
      "cadena": "Cineplanet",
      "url": "https://www.cineplanet.com.pe/peliculas/el-gato-con-sombrero",
      "dias": {
-      "2026-11-24": [
-       "Arequipa",
-       "Cajamarca",
-       "Chiclayo",
-       "Cusco",
-       "Huancayo",
-       "Huánuco",
-       "Juliaca",
-       "Lima",
-       "Piura",
-       "Pucallpa",
-       "Puno",
-       "Tacna"
-      ],
       "2026-11-25": [
        "Arequipa",
-       "Cajamarca",
        "Chiclayo",
        "Cusco",
        "Huancayo",
-       "Huánuco",
        "Juliaca",
        "Lima",
        "Piura",
        "Pucallpa",
-       "Puno",
-       "Tacna",
-       "Trujillo"
+       "Tacna"
       ]
      }
     },
@@ -488,32 +543,19 @@
      "cadena": "Cinemark",
      "url": "https://www.cinemark-peru.com/pelicula/el-gato-con-sombrero",
      "dias": {
-      "2026-11-24": [
+      "2026-11-25": [
        "Arequipa",
        "Huancayo",
        "Lima",
        "Trujillo"
       ],
-      "2026-11-25": [
-       "Arequipa",
-       "Huancayo",
+      "2026-11-26": [
        "Lima",
-       "Piura",
        "Trujillo"
-      ]
-     }
-    },
-    {
-     "cadena": "UVK",
-     "url": "https://uvk.pe/peliculas/1079",
-     "dias": {
-      "2026-11-24": [
-       "Lima",
-       "Tumbes"
       ],
-      "2026-11-25": [
+      "2026-11-27": [
        "Lima",
-       "Tumbes"
+       "Trujillo"
       ]
      }
     },
@@ -521,12 +563,8 @@
      "cadena": "Movie Time",
      "url": "https://www.movietime.com.pe/peliculas/el-gato-con-sombrero-dob",
      "dias": {
-      "2026-11-24": [
-       "Chincha",
-       "Jaén",
-       "Lima"
-      ],
       "2026-11-25": [
+       "Jaén",
        "Lima"
       ]
      }
@@ -535,10 +573,38 @@
      "cadena": "Cine Star",
      "url": "https://www.cinestar.com.pe/peliculas/el-gato-con-sombrero-dob",
      "dias": {
-      "2026-11-24": [
+      "2026-11-25": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1079",
+     "dias": {
+      "2026-11-25": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-26": [
        "Lima"
       ],
-      "2026-11-25": [
+      "2026-11-27": [
+       "Lima"
+      ],
+      "2026-11-28": [
+       "Lima"
+      ],
+      "2026-11-29": [
+       "Lima"
+      ],
+      "2026-11-30": [
+       "Lima"
+      ],
+      "2026-12-01": [
+       "Lima"
+      ],
+      "2026-12-02": [
        "Lima"
       ]
      }
@@ -560,10 +626,28 @@
      "cadena": "Cinépolis",
      "url": "https://cinepolis.com.pe/cartelera/lima-peru",
      "dias": {
-      "2026-11-24": [
+      "2026-11-25": [
        "Lima"
       ],
-      "2026-11-25": [
+      "2026-11-26": [
+       "Lima"
+      ],
+      "2026-11-27": [
+       "Lima"
+      ],
+      "2026-11-28": [
+       "Lima"
+      ],
+      "2026-11-29": [
+       "Lima"
+      ],
+      "2026-11-30": [
+       "Lima"
+      ],
+      "2026-12-01": [
+       "Lima"
+      ],
+      "2026-12-02": [
        "Lima"
       ]
      }
@@ -572,9 +656,6 @@
      "cadena": "Cineplanet",
      "url": "https://www.cineplanet.com.pe/peliculas/ellas",
      "dias": {
-      "2026-11-24": [
-       "Lima"
-      ],
       "2026-11-25": [
        "Lima"
       ]
@@ -584,11 +665,11 @@
      "cadena": "Cinemark",
      "url": "https://www.cinemark-peru.com/pelicula/ellas",
      "dias": {
-      "2026-11-24": [
-       "Lima"
-      ],
       "2026-11-25": [
        "Lima"
+      ],
+      "2026-11-27": [
+       "Huancayo"
       ]
      }
     },
@@ -596,27 +677,52 @@
      "cadena": "UVK",
      "url": "https://uvk.pe/peliculas/1153",
      "dias": {
-      "2026-11-24": [
-       "Lima"
-      ],
       "2026-11-25": [
-       "Lima"
-      ]
-     }
-    },
-    {
-     "cadena": "Movie Time",
-     "url": "https://www.movietime.com.pe/peliculas/ellas",
-     "dias": {
-      "2026-11-24": [
        "Lima"
       ]
      }
     }
    ],
    "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003157?referenceScheme=HeadOffice&allowPlaceHolder=true",
-   "recomendada": "Un drama peruano sobre el trabajo del hogar, la memoria y las diferencias de clase.",
-   "nueva_desde": "2026-11-18"
+   "recomendada": "Un drama peruano sobre el trabajo del hogar, la memoria y las diferencias de clase."
+  },
+  {
+   "id": "flywheel vida con proposito",
+   "titulo": "FLYWHEEL: Vida con propósito",
+   "generos": [],
+   "sinopsis": "",
+   "reparto": [],
+   "origen": "",
+   "cines": [
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-26": [
+       "Lima"
+      ],
+      "2026-11-27": [
+       "Lima"
+      ],
+      "2026-11-28": [
+       "Lima"
+      ],
+      "2026-11-29": [
+       "Lima"
+      ],
+      "2026-11-30": [
+       "Lima"
+      ],
+      "2026-12-01": [
+       "Lima"
+      ],
+      "2026-12-02": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "nueva_desde": "2026-11-25"
   },
   {
    "id": "forrest gump",
@@ -658,9 +764,6 @@
      "cadena": "Cinépolis",
      "url": "https://cinepolis.com.pe/cartelera/lima-peru",
      "dias": {
-      "2026-11-24": [
-       "Lima"
-      ],
       "2026-11-25": [
        "Lima"
       ]
@@ -670,20 +773,6 @@
      "cadena": "Cineplanet",
      "url": "https://www.cineplanet.com.pe/peliculas/godzilla-minus-zero",
      "dias": {
-      "2026-11-24": [
-       "Arequipa",
-       "Cajamarca",
-       "Chiclayo",
-       "Cusco",
-       "Huancayo",
-       "Huánuco",
-       "Juliaca",
-       "Lima",
-       "Piura",
-       "Pucallpa",
-       "Puno",
-       "Tacna"
-      ],
       "2026-11-25": [
        "Arequipa",
        "Cajamarca",
@@ -704,14 +793,6 @@
      "cadena": "Cinemark",
      "url": "https://www.cinemark-peru.com/pelicula/godzilla-minus-zero",
      "dias": {
-      "2026-11-24": [
-       "Arequipa",
-       "Huancayo",
-       "Huanuco",
-       "Lima",
-       "Piura",
-       "Trujillo"
-      ],
       "2026-11-25": [
        "Arequipa",
        "Huancayo",
@@ -719,22 +800,13 @@
        "Lima",
        "Piura",
        "Trujillo"
-      ]
-     }
-    },
-    {
-     "cadena": "UVK",
-     "url": "https://uvk.pe/peliculas/1123",
-     "dias": {
-      "2026-11-24": [
-       "Ilo",
-       "Lima",
-       "Tumbes"
       ],
-      "2026-11-25": [
-       "Ilo",
+      "2026-11-26": [
+       "Trujillo"
+      ],
+      "2026-11-27": [
        "Lima",
-       "Tumbes"
+       "Trujillo"
       ]
      }
     },
@@ -742,22 +814,15 @@
      "cadena": "Movie Time",
      "url": "https://www.movietime.com.pe/peliculas/godzilla-minus-zero-dob",
      "dias": {
-      "2026-11-24": [
+      "2026-11-25": [
        "Barranca",
        "Cajamarca",
        "Cañete",
-       "Chincha",
        "Huaral",
        "Iquitos",
        "Jaén",
        "Lima",
        "Pisco"
-      ],
-      "2026-11-25": [
-       "Cajamarca",
-       "Huaral",
-       "Iquitos",
-       "Lima"
       ]
      }
     },
@@ -765,7 +830,7 @@
      "cadena": "Cine Star",
      "url": "https://www.cinestar.com.pe/peliculas/godzilla-minus-zero-dob",
      "dias": {
-      "2026-11-24": [
+      "2026-11-25": [
        "Callao",
        "Ilo",
        "Lima",
@@ -773,13 +838,17 @@
        "Sullana",
        "Tarapoto",
        "Tingo María"
-      ],
+      ]
+     }
+    },
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1123",
+     "dias": {
       "2026-11-25": [
-       "Callao",
        "Ilo",
        "Lima",
-       "Sullana",
-       "Tingo María"
+       "Tumbes"
       ]
      }
     }
@@ -814,6 +883,116 @@
     }
    ],
    "poster": "https://uvk.pe/images/movie/1793984117.jpg"
+  },
+  {
+   "id": "hechizo bienvenidos a hexe",
+   "titulo": "Hechizo: Bienvenidos a Hexe",
+   "generos": [
+    "Animación",
+    "Aventuras"
+   ],
+   "sinopsis": "Billie descubre habilidades mágicas secretas que, una vez develadas, la conducen fuera de los suburbios y hacia un reino mágico llamado Hexe, donde es recibida por Ms.",
+   "reparto": [],
+   "origen": "",
+   "cines": [
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-26": [
+       "Lima"
+      ],
+      "2026-11-27": [
+       "Lima"
+      ],
+      "2026-11-28": [
+       "Lima"
+      ],
+      "2026-11-29": [
+       "Lima"
+      ],
+      "2026-11-30": [
+       "Lima"
+      ],
+      "2026-12-01": [
+       "Lima"
+      ],
+      "2026-12-02": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/hechizo-bienvenidos-a-hexe",
+     "dias": {
+      "2026-11-26": [
+       "Arequipa",
+       "Huanuco",
+       "Lima",
+       "Trujillo"
+      ],
+      "2026-11-27": [
+       "Huanuco",
+       "Lima",
+       "Trujillo"
+      ]
+     }
+    },
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/hechizo-bienvenidos-a-hexe-dob",
+     "dias": {
+      "2026-11-26": [
+       "Ilo"
+      ]
+     }
+    },
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1136",
+     "dias": {
+      "2026-11-26": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-27": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-28": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-29": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-30": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-12-01": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-12-02": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.cinemark-peru.com/content/posters/HO00010199.jpg",
+   "fuente_sinopsis": "Cinemark",
+   "nueva_desde": "2026-11-25"
   },
   {
    "id": "juliana",
@@ -884,9 +1063,6 @@
      "cadena": "Movie Time",
      "url": "https://www.movietime.com.pe/peliculas/la-casa-de-las-galletas",
      "dias": {
-      "2026-11-24": [
-       "Lima"
-      ],
       "2026-11-25": [
        "Lima"
       ]
@@ -971,22 +1147,14 @@
      "cadena": "Movie Time",
      "url": "https://www.movietime.com.pe/peliculas/la-gran-sangre-ojo-x-ojo",
      "dias": {
-      "2026-11-24": [
-       "Barranca",
+      "2026-11-25": [
        "Cajamarca",
        "Cañete",
-       "Chincha",
        "Huaral",
        "Iquitos",
        "Jaén",
        "Lima",
        "Pisco"
-      ],
-      "2026-11-25": [
-       "Cajamarca",
-       "Huaral",
-       "Iquitos",
-       "Lima"
       ]
      }
     },
@@ -994,7 +1162,7 @@
      "cadena": "Cine Star",
      "url": "https://www.cinestar.com.pe/peliculas/la-gran-sangre-ojo-x-ojo",
      "dias": {
-      "2026-11-24": [
+      "2026-11-25": [
        "Ayacucho",
        "Callao",
        "Chimbote",
@@ -1005,15 +1173,8 @@
        "Tarapoto",
        "Tingo María"
       ],
-      "2026-11-25": [
-       "Ayacucho",
-       "Callao",
-       "Chimbote",
-       "Ilo",
-       "Lima",
-       "Sullana",
-       "Tarapoto",
-       "Tingo María"
+      "2026-11-26": [
+       "Ilo"
       ]
      }
     },
@@ -1021,10 +1182,28 @@
      "cadena": "Cinépolis",
      "url": "https://cinepolis.com.pe/cartelera/lima-peru",
      "dias": {
-      "2026-11-24": [
+      "2026-11-25": [
        "Lima"
       ],
-      "2026-11-25": [
+      "2026-11-26": [
+       "Lima"
+      ],
+      "2026-11-27": [
+       "Lima"
+      ],
+      "2026-11-28": [
+       "Lima"
+      ],
+      "2026-11-29": [
+       "Lima"
+      ],
+      "2026-11-30": [
+       "Lima"
+      ],
+      "2026-12-01": [
+       "Lima"
+      ],
+      "2026-12-02": [
        "Lima"
       ]
      }
@@ -1033,21 +1212,6 @@
      "cadena": "Cineplanet",
      "url": "https://www.cineplanet.com.pe/peliculas/la-gran-sangre-ojo-x-ojo",
      "dias": {
-      "2026-11-24": [
-       "Arequipa",
-       "Cajamarca",
-       "Chiclayo",
-       "Cusco",
-       "Huancayo",
-       "Huánuco",
-       "Juliaca",
-       "Lima",
-       "Piura",
-       "Pucallpa",
-       "Puno",
-       "Tacna",
-       "Trujillo"
-      ],
       "2026-11-25": [
        "Arequipa",
        "Cajamarca",
@@ -1069,18 +1233,19 @@
      "cadena": "Cinemark",
      "url": "https://www.cinemark-peru.com/pelicula/la-gran-sangre-ojo-x-ojo",
      "dias": {
-      "2026-11-24": [
+      "2026-11-25": [
        "Arequipa",
        "Huancayo",
        "Lima",
        "Piura",
        "Trujillo"
       ],
-      "2026-11-25": [
-       "Arequipa",
-       "Huancayo",
+      "2026-11-26": [
        "Lima",
-       "Piura",
+       "Trujillo"
+      ],
+      "2026-11-27": [
+       "Lima",
        "Trujillo"
       ]
      }
@@ -1089,13 +1254,36 @@
      "cadena": "UVK",
      "url": "https://uvk.pe/peliculas/1146",
      "dias": {
-      "2026-11-24": [
+      "2026-11-25": [
        "Ilo",
        "Lima",
        "Tumbes"
       ],
-      "2026-11-25": [
-       "Ilo",
+      "2026-11-26": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-27": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-28": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-29": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-30": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-12-01": [
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-12-02": [
        "Lima",
        "Tumbes"
       ]
@@ -1117,9 +1305,6 @@
      "cadena": "Cinépolis",
      "url": "https://cinepolis.com.pe/cartelera/lima-peru",
      "dias": {
-      "2026-11-24": [
-       "Lima"
-      ],
       "2026-11-25": [
        "Lima"
       ]
@@ -1186,6 +1371,15 @@
       ],
       "2026-11-29": [
        "Lima"
+      ],
+      "2026-11-30": [
+       "Lima"
+      ],
+      "2026-12-01": [
+       "Lima"
+      ],
+      "2026-12-02": [
+       "Lima"
       ]
      }
     },
@@ -1203,7 +1397,15 @@
      "url": "https://www.cinemark-peru.com/pelicula/la-nueva-focker",
      "dias": {
       "2026-11-26": [
-       "Lima"
+       "Arequipa",
+       "Huanuco",
+       "Lima",
+       "Trujillo"
+      ],
+      "2026-11-27": [
+       "Huanuco",
+       "Lima",
+       "Trujillo"
       ]
      }
     },
@@ -1217,10 +1419,60 @@
        "Lima"
       ]
      }
+    },
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/la-nueva-focker-dob",
+     "dias": {
+      "2026-11-26": [
+       "Ilo",
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1137",
+     "dias": {
+      "2026-11-26": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-27": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-28": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-29": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-30": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-12-01": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-12-02": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ]
+     }
     }
    ],
-   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003079?referenceScheme=HeadOffice&allowPlaceHolder=true",
-   "nueva_desde": "2026-11-18"
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003079?referenceScheme=HeadOffice&allowPlaceHolder=true"
   },
   {
    "id": "la tribu",
@@ -1236,9 +1488,6 @@
      "cadena": "Cineplanet",
      "url": "https://www.cineplanet.com.pe/peliculas/la-tribu",
      "dias": {
-      "2026-11-24": [
-       "Lima"
-      ],
       "2026-11-25": [
        "Lima"
       ]
@@ -1267,7 +1516,7 @@
      "cadena": "Cinemark",
      "url": "https://www.cinemark-peru.com/pelicula/juegos-del-hambre-amanecer-cosecha",
      "dias": {
-      "2026-11-24": [
+      "2026-11-25": [
        "Arequipa",
        "Huancayo",
        "Huanuco",
@@ -1275,12 +1524,15 @@
        "Piura",
        "Trujillo"
       ],
-      "2026-11-25": [
+      "2026-11-26": [
        "Arequipa",
-       "Huancayo",
        "Huanuco",
        "Lima",
-       "Piura",
+       "Trujillo"
+      ],
+      "2026-11-27": [
+       "Huanuco",
+       "Lima",
        "Trujillo"
       ]
      }
@@ -1289,12 +1541,42 @@
      "cadena": "UVK",
      "url": "https://uvk.pe/peliculas/1131",
      "dias": {
-      "2026-11-24": [
+      "2026-11-25": [
        "Ilo",
        "Lima",
        "Tumbes"
       ],
-      "2026-11-25": [
+      "2026-11-26": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-27": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-28": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-29": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-30": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-12-01": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-12-02": [
        "Ilo",
        "Lima",
        "Tumbes"
@@ -1305,10 +1587,28 @@
      "cadena": "Cinépolis",
      "url": "https://cinepolis.com.pe/cartelera/lima-peru",
      "dias": {
-      "2026-11-24": [
+      "2026-11-25": [
        "Lima"
       ],
-      "2026-11-25": [
+      "2026-11-26": [
+       "Lima"
+      ],
+      "2026-11-27": [
+       "Lima"
+      ],
+      "2026-11-28": [
+       "Lima"
+      ],
+      "2026-11-29": [
+       "Lima"
+      ],
+      "2026-11-30": [
+       "Lima"
+      ],
+      "2026-12-01": [
+       "Lima"
+      ],
+      "2026-12-02": [
        "Lima"
       ]
      }
@@ -1317,21 +1617,6 @@
      "cadena": "Cineplanet",
      "url": "https://www.cineplanet.com.pe/peliculas/los-juegos-del-hambre-amanecer-en-la-cosecha",
      "dias": {
-      "2026-11-24": [
-       "Arequipa",
-       "Cajamarca",
-       "Chiclayo",
-       "Cusco",
-       "Huancayo",
-       "Huánuco",
-       "Juliaca",
-       "Lima",
-       "Piura",
-       "Pucallpa",
-       "Puno",
-       "Tacna",
-       "Trujillo"
-      ],
       "2026-11-25": [
        "Arequipa",
        "Cajamarca",
@@ -1353,22 +1638,15 @@
      "cadena": "Movie Time",
      "url": "https://www.movietime.com.pe/peliculas/los-juegos-del-hambre-amanecer-en-la-cosecha-dob",
      "dias": {
-      "2026-11-24": [
+      "2026-11-25": [
        "Barranca",
        "Cajamarca",
        "Cañete",
-       "Chincha",
        "Huaral",
        "Iquitos",
        "Jaén",
        "Lima",
        "Pisco"
-      ],
-      "2026-11-25": [
-       "Cajamarca",
-       "Huaral",
-       "Iquitos",
-       "Lima"
       ]
      }
     },
@@ -1376,7 +1654,7 @@
      "cadena": "Cine Star",
      "url": "https://www.cinestar.com.pe/peliculas/los-juegos-del-hambre-amanecer-en-la-cosecha-dob",
      "dias": {
-      "2026-11-24": [
+      "2026-11-25": [
        "Ayacucho",
        "Callao",
        "Chimbote",
@@ -1387,15 +1665,8 @@
        "Tarapoto",
        "Tingo María"
       ],
-      "2026-11-25": [
-       "Ayacucho",
-       "Callao",
-       "Chimbote",
-       "Ilo",
-       "Lima",
-       "Sullana",
-       "Tarapoto",
-       "Tingo María"
+      "2026-11-26": [
+       "Ilo"
       ]
      }
     }
@@ -1417,9 +1688,6 @@
      "cadena": "Cineplanet",
      "url": "https://www.cineplanet.com.pe/peliculas/madre-siniestra",
      "dias": {
-      "2026-11-24": [
-       "Lima"
-      ],
       "2026-11-25": [
        "Lima"
       ]
@@ -1443,9 +1711,6 @@
      "cadena": "Cineplanet",
      "url": "https://www.cineplanet.com.pe/peliculas/migrantes",
      "dias": {
-      "2026-11-24": [
-       "Lima"
-      ],
       "2026-11-25": [
        "Lima"
       ]
@@ -1455,20 +1720,8 @@
      "cadena": "Cinemark",
      "url": "https://www.cinemark-peru.com/pelicula/migrantes",
      "dias": {
-      "2026-11-24": [
-       "Lima"
-      ],
       "2026-11-25": [
        "Lima"
-      ]
-     }
-    },
-    {
-     "cadena": "UVK",
-     "url": "https://uvk.pe/peliculas/1155",
-     "dias": {
-      "2026-11-25": [
-       "Tumbes"
       ]
      }
     },
@@ -1476,9 +1729,6 @@
      "cadena": "Movie Time",
      "url": "https://www.movietime.com.pe/peliculas/migrantes",
      "dias": {
-      "2026-11-24": [
-       "Huaral"
-      ],
       "2026-11-25": [
        "Huaral"
       ]
@@ -1488,11 +1738,8 @@
      "cadena": "Cine Star",
      "url": "https://www.cinestar.com.pe/peliculas/migrantes",
      "dias": {
-      "2026-11-24": [
-       "Lima",
-       "Tarapoto"
-      ],
       "2026-11-25": [
+       "Lima",
        "Tarapoto"
       ]
      }
@@ -1512,9 +1759,6 @@
      "cadena": "Cinépolis",
      "url": "https://cinepolis.com.pe/cartelera/lima-peru",
      "dias": {
-      "2026-11-24": [
-       "Lima"
-      ],
       "2026-11-25": [
        "Lima"
       ]
@@ -1537,9 +1781,6 @@
      "cadena": "Cineplanet",
      "url": "https://www.cineplanet.com.pe/peliculas/minotauro",
      "dias": {
-      "2026-11-24": [
-       "Lima"
-      ],
       "2026-11-25": [
        "Lima"
       ]
@@ -1607,6 +1848,51 @@
    "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003163?referenceScheme=HeadOffice&allowPlaceHolder=true"
   },
   {
+   "id": "one piece doble aventura",
+   "titulo": "ONE PIECE Doble Aventura",
+   "generos": [
+    "Anime"
+   ],
+   "sinopsis": "¡Dos películas originales de ONE PIECE llegan a la gran pantalla por primera vez en América Latina! No te pierdas esta doble función más 2 cortometrajes de regalo. Presentadas tanto subtituladas como dobladas.",
+   "reparto": [],
+   "origen": "",
+   "cines": [
+    {
+     "cadena": "Cineplanet",
+     "url": "https://www.cineplanet.com.pe/peliculas/one-piece-doble-aventura",
+     "dias": {
+      "2026-12-03": [
+       "Chiclayo",
+       "Cusco",
+       "Lima",
+       "Piura",
+       "Tacna"
+      ],
+      "2026-12-04": [
+       "Chiclayo",
+       "Cusco",
+       "Lima",
+       "Piura",
+       "Tacna"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/one-piece-doble-aventura",
+     "dias": {
+      "2026-12-03": [
+       "Lima",
+       "Trujillo"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003164?referenceScheme=HeadOffice&allowPlaceHolder=true",
+   "fuente_sinopsis": "Cineplanet",
+   "nueva_desde": "2026-11-25"
+  },
+  {
    "id": "pantaleon y las visitadoras",
    "titulo": "Pantaleón y las visitadoras",
    "generos": [
@@ -1653,9 +1939,6 @@
      "cadena": "Cineplanet",
      "url": "https://www.cineplanet.com.pe/peliculas/pinocho-sin-cuerdas",
      "dias": {
-      "2026-11-24": [
-       "Chiclayo"
-      ],
       "2026-11-25": [
        "Chiclayo"
       ]
@@ -1663,6 +1946,123 @@
     }
    ],
    "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003099?referenceScheme=HeadOffice&allowPlaceHolder=true"
+  },
+  {
+   "id": "ramayana",
+   "titulo": "RAMAYANA",
+   "generos": [],
+   "sinopsis": "Una antigua epopeya sobre un príncipe y una princesa cuyo matrimonio y destierro marcan el inicio de un viaje legendario. Su historia de amor, deber y destino da paso a mayores desafíos.",
+   "reparto": [],
+   "origen": "",
+   "cines": [
+    {
+     "cadena": "Cine Star",
+     "url": "https://www.cinestar.com.pe/peliculas/ramayana-dob",
+     "dias": {
+      "2026-11-26": [
+       "Ilo"
+      ]
+     }
+    }
+   ],
+   "poster": "https://www.cinestar.com.pe/bucket/images/cine/4d14a17a-5f88-4daf-8034-34f4ec82ff43.jpeg",
+   "fuente_sinopsis": "Cine Star",
+   "nueva_desde": "2026-11-25"
+  },
+  {
+   "id": "ramayana el nacimiento de una leyenda",
+   "titulo": "Ramayana el Nacimiento de una Leyenda",
+   "generos": [],
+   "sinopsis": "Una antigua epopeya sobre un príncipe y una princesa cuyo matrimonio y destierro marcan el inicio de un viaje legendario. Su historia de amor, deber y destino da paso a mayores desafíos.",
+   "reparto": [],
+   "origen": "",
+   "cines": [
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1159",
+     "dias": {
+      "2026-11-26": [
+       "Lima"
+      ],
+      "2026-11-27": [
+       "Lima"
+      ],
+      "2026-11-28": [
+       "Lima"
+      ],
+      "2026-11-29": [
+       "Lima"
+      ],
+      "2026-11-30": [
+       "Lima"
+      ],
+      "2026-12-01": [
+       "Lima"
+      ],
+      "2026-12-02": [
+       "Lima"
+      ]
+     }
+    },
+    {
+     "cadena": "Cinépolis",
+     "url": "https://cinepolis.com.pe/cartelera/lima-peru",
+     "dias": {
+      "2026-11-26": [
+       "Lima"
+      ],
+      "2026-11-27": [
+       "Lima"
+      ],
+      "2026-11-28": [
+       "Lima"
+      ],
+      "2026-11-29": [
+       "Lima"
+      ],
+      "2026-11-30": [
+       "Lima"
+      ],
+      "2026-12-01": [
+       "Lima"
+      ],
+      "2026-12-02": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://uvk.pe/images/movie/1795634106.png",
+   "fuente_sinopsis": "UVK",
+   "nueva_desde": "2026-11-25"
+  },
+  {
+   "id": "ramayana nacimiento de una leyenda",
+   "titulo": "RAMAYANA NACIMIENTO DE UNA LEYENDA",
+   "generos": [
+    "Acción",
+    "Aventuras"
+   ],
+   "sinopsis": "Una antigua epopeya sobre un príncipe y una princesa cuyo matrimonio y destierro marcan el inicio de un viaje legendario. Su historia de amor, deber y destino da paso a mayores desafíos.",
+   "reparto": [],
+   "origen": "",
+   "cines": [
+    {
+     "cadena": "Cinemark",
+     "url": "https://www.cinemark-peru.com/pelicula/ramayana-nacimiento-de-una-leyenda",
+     "dias": {
+      "2026-11-26": [
+       "Lima"
+      ],
+      "2026-11-27": [
+       "Lima"
+      ]
+     }
+    }
+   ],
+   "poster": "https://cdn.cinemark-peru.com/content/posters/HO00010112.jpg",
+   "fuente_sinopsis": "Cinemark",
+   "nueva_desde": "2026-11-25"
   },
   {
    "id": "ratoncitos en apuros",
@@ -1679,9 +2079,6 @@
      "cadena": "Cinépolis",
      "url": "https://cinepolis.com.pe/cartelera/lima-peru",
      "dias": {
-      "2026-11-24": [
-       "Lima"
-      ],
       "2026-11-25": [
        "Lima"
       ]
@@ -1691,31 +2088,13 @@
      "cadena": "Cineplanet",
      "url": "https://www.cineplanet.com.pe/peliculas/ratoncitos-en-apuros",
      "dias": {
-      "2026-11-24": [
-       "Arequipa",
-       "Cajamarca",
-       "Chiclayo",
-       "Cusco",
-       "Huancayo",
-       "Huánuco",
-       "Juliaca",
-       "Lima",
-       "Piura",
-       "Pucallpa",
-       "Trujillo"
-      ],
       "2026-11-25": [
        "Arequipa",
-       "Cajamarca",
        "Chiclayo",
        "Cusco",
-       "Huancayo",
-       "Huánuco",
-       "Juliaca",
        "Lima",
        "Piura",
-       "Pucallpa",
-       "Trujillo"
+       "Pucallpa"
       ]
      }
     },
@@ -1723,30 +2102,16 @@
      "cadena": "Cinemark",
      "url": "https://www.cinemark-peru.com/pelicula/ratoncitos-en-apuros",
      "dias": {
-      "2026-11-24": [
-       "Arequipa"
-      ],
       "2026-11-25": [
        "Arequipa",
        "Huancayo",
-       "Huanuco",
-       "Lima",
-       "Piura",
-       "Trujillo"
-      ]
-     }
-    },
-    {
-     "cadena": "UVK",
-     "url": "https://uvk.pe/peliculas/1156",
-     "dias": {
-      "2026-11-24": [
        "Lima"
       ],
-      "2026-11-25": [
-       "Ilo",
-       "Lima",
-       "Tumbes"
+      "2026-11-26": [
+       "Lima"
+      ],
+      "2026-11-27": [
+       "Lima"
       ]
      }
     },
@@ -1754,8 +2119,7 @@
      "cadena": "Movie Time",
      "url": "https://www.movietime.com.pe/peliculas/ratoncitos-en-apuros-dob",
      "dias": {
-      "2026-11-24": [
-       "Barranca",
+      "2026-11-25": [
        "Cajamarca",
        "Cañete",
        "Huaral",
@@ -1763,12 +2127,6 @@
        "Jaén",
        "Lima",
        "Pisco"
-      ],
-      "2026-11-25": [
-       "Cajamarca",
-       "Huaral",
-       "Iquitos",
-       "Lima"
       ]
      }
     },
@@ -1776,25 +2134,27 @@
      "cadena": "Cine Star",
      "url": "https://www.cinestar.com.pe/peliculas/ratoncitos-en-apuros-dob",
      "dias": {
-      "2026-11-24": [
-       "Callao",
-       "Chimbote",
-       "Lima",
-       "Moquegua",
-       "Sullana",
-       "Tarapoto"
-      ],
       "2026-11-25": [
        "Callao",
        "Chimbote",
        "Lima",
+       "Moquegua",
        "Sullana"
+      ]
+     }
+    },
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1156",
+     "dias": {
+      "2026-11-25": [
+       "Lima",
+       "Tumbes"
       ]
      }
     }
    ],
-   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003120?referenceScheme=HeadOffice&allowPlaceHolder=true",
-   "nueva_desde": "2026-11-18"
+   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003120?referenceScheme=HeadOffice&allowPlaceHolder=true"
   },
   {
    "id": "re el camino del papa leon xiv",
@@ -1808,9 +2168,6 @@
      "cadena": "Cinépolis",
      "url": "https://cinepolis.com.pe/cartelera/lima-peru",
      "dias": {
-      "2026-11-24": [
-       "Lima"
-      ],
       "2026-11-25": [
        "Lima"
       ]
@@ -1851,37 +2208,6 @@
    "nueva_desde": "2026-11-22"
   },
   {
-   "id": "street fighter",
-   "titulo": "Street Fighter",
-   "generos": [
-    "Acción"
-   ],
-   "sinopsis": "Ambientada en 1993, los distanciados Street Fighters Ryu (Andrew Koji) y Ken Masters (Noah Centineo) vuelven al combate cuando la misteriosa Chun-Li (Callina Liang) los recluta para el próximo Torneo Mundial de Guerreros: un…",
-   "reparto": [
-    "Andrew Koji",
-    "Noah Centineo",
-    "Callina Liang"
-   ],
-   "origen": "Internacional",
-   "cines": [
-    {
-     "cadena": "Cineplanet",
-     "url": "https://www.cineplanet.com.pe/peliculas/street-fighter",
-     "dias": {
-      "2026-11-24": [
-       "Lima"
-      ],
-      "2026-11-25": [
-       "Lima"
-      ]
-     }
-    }
-   ],
-   "poster": "https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00003064?referenceScheme=HeadOffice&allowPlaceHolder=true",
-   "fuente_sinopsis": "Cineplanet",
-   "nueva_desde": "2026-11-23"
-  },
-  {
    "id": "wildwood el bosque salvaje",
    "titulo": "Wildwood: El bosque salvaje",
    "generos": [
@@ -1898,9 +2224,6 @@
      "cadena": "Cineplanet",
      "url": "https://www.cineplanet.com.pe/peliculas/el-bosque-salvaje-wildwood",
      "dias": {
-      "2026-11-24": [
-       "Lima"
-      ],
       "2026-11-25": [
        "Lima"
       ]
@@ -1927,10 +2250,28 @@
      "cadena": "Cinépolis",
      "url": "https://cinepolis.com.pe/cartelera/lima-peru",
      "dias": {
-      "2026-11-24": [
+      "2026-11-25": [
        "Lima"
       ],
-      "2026-11-25": [
+      "2026-11-26": [
+       "Lima"
+      ],
+      "2026-11-27": [
+       "Lima"
+      ],
+      "2026-11-28": [
+       "Lima"
+      ],
+      "2026-11-29": [
+       "Lima"
+      ],
+      "2026-11-30": [
+       "Lima"
+      ],
+      "2026-12-01": [
+       "Lima"
+      ],
+      "2026-12-02": [
        "Lima"
       ]
      }
@@ -1939,21 +2280,6 @@
      "cadena": "Cineplanet",
      "url": "https://www.cineplanet.com.pe/peliculas/yo-soy-rocky",
      "dias": {
-      "2026-11-24": [
-       "Arequipa",
-       "Cajamarca",
-       "Chiclayo",
-       "Cusco",
-       "Huancayo",
-       "Huánuco",
-       "Juliaca",
-       "Lima",
-       "Piura",
-       "Pucallpa",
-       "Puno",
-       "Tacna",
-       "Trujillo"
-      ],
       "2026-11-25": [
        "Arequipa",
        "Cajamarca",
@@ -1975,14 +2301,6 @@
      "cadena": "Cinemark",
      "url": "https://www.cinemark-peru.com/pelicula/yo-soy-rocky",
      "dias": {
-      "2026-11-24": [
-       "Arequipa",
-       "Huancayo",
-       "Huanuco",
-       "Lima",
-       "Piura",
-       "Trujillo"
-      ],
       "2026-11-25": [
        "Arequipa",
        "Huancayo",
@@ -1990,22 +2308,15 @@
        "Lima",
        "Piura",
        "Trujillo"
-      ]
-     }
-    },
-    {
-     "cadena": "UVK",
-     "url": "https://uvk.pe/peliculas/1152",
-     "dias": {
-      "2026-11-24": [
-       "Ilo",
-       "Lima",
-       "Tumbes"
       ],
-      "2026-11-25": [
-       "Ilo",
+      "2026-11-26": [
+       "Arequipa",
        "Lima",
-       "Tumbes"
+       "Trujillo"
+      ],
+      "2026-11-27": [
+       "Lima",
+       "Trujillo"
       ]
      }
     },
@@ -2013,22 +2324,15 @@
      "cadena": "Movie Time",
      "url": "https://www.movietime.com.pe/peliculas/yo-soy-rocky-dob",
      "dias": {
-      "2026-11-24": [
+      "2026-11-25": [
        "Barranca",
        "Cajamarca",
        "Cañete",
-       "Chincha",
        "Huaral",
        "Iquitos",
        "Jaén",
        "Lima",
        "Pisco"
-      ],
-      "2026-11-25": [
-       "Cajamarca",
-       "Huaral",
-       "Iquitos",
-       "Lima"
       ]
      }
     },
@@ -2036,7 +2340,7 @@
      "cadena": "Cine Star",
      "url": "https://www.cinestar.com.pe/peliculas/yo-soy-rocky-dob",
      "dias": {
-      "2026-11-24": [
+      "2026-11-25": [
        "Ayacucho",
        "Callao",
        "Chimbote",
@@ -2047,15 +2351,54 @@
        "Tarapoto",
        "Tingo María"
       ],
+      "2026-11-26": [
+       "Ilo"
+      ]
+     }
+    },
+    {
+     "cadena": "UVK",
+     "url": "https://uvk.pe/peliculas/1152",
+     "dias": {
       "2026-11-25": [
-       "Ayacucho",
-       "Callao",
-       "Chimbote",
        "Ilo",
        "Lima",
-       "Sullana",
-       "Tarapoto",
-       "Tingo María"
+       "Tumbes"
+      ],
+      "2026-11-26": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-27": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-28": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-29": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-11-30": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-12-01": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
+      ],
+      "2026-12-02": [
+       "Ilo",
+       "Lima",
+       "Tumbes"
       ]
      }
     }
