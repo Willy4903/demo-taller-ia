@@ -219,3 +219,15 @@
 .pe-ficha ul.ps-cifras li{padding:10px 12px;border-left:3px solid var(--red-t);background:var(--card2);border-radius:0 8px 8px 0;font:.9rem/1.55 var(--sans);color:var(--tx2)}
 .pe-ficha .ps-tipo{color:var(--tx3)}
 .pe-ficha[hidden],.pe-ficha.sin-foto{display:none!important}
+
+/* Lo anterior a 3 días: una sola línea, sin tarjeta destacada */
+.fondo-viejo{margin:14px 0 6px}
+.fondo-1l{margin:0 0 6px;padding:8px 12px;border:1px dashed var(--border);border-radius:10px;font:500 .84rem/1.4 var(--sans);color:var(--tx3)}
+.fondo-1l-k{font-weight:700;margin-right:4px}
+.fondo-1l a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.nx-viejos{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:4px}
+.nx-viejos li{font-size:.76rem;line-height:1.4;color:var(--tx3);padding:6px 0;border-top:1px solid var(--border)}
+.nx-viejos li b{color:var(--tx2,inherit)}
+.hero-ref{grid-column:1/-1;margin:8px 0 0;font:500 .74rem/1.45 var(--sans);color:var(--tx3)}
+.home .hero-stats{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))!important}
+.home .hero-stats .hero-ref{grid-column:1/-1;margin:0;padding:10px 14px;border-top:1px solid var(--border);background:transparent}
