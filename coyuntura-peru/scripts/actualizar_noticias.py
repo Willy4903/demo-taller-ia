@@ -36,6 +36,9 @@ MAX_POR_FEED = 15
 SECTORES = {"politica", "economia", "salud", "nino", "tecnologia", "ia", "deporte", "investigacion", "coyuntura", "mundo"}
 UMBRAL_REDUCCION = 0.5  # no se publica si las notas caen por debajo de esta fracción de las anteriores
 MAX_REGISTRO = 30
+# Actualizaciones publicadas hasta el 26-11-2026 (commits «actualización automática» en main).
+# Sirve de punto de partida al contador; a partir de ahí cada publicación suma 1.
+CONTADOR_INICIAL = 206
 DIAS_MAXIMOS = 30
 TIMEOUT = 20
 MAX_BYTES = 3 * 1024 * 1024
@@ -1180,9 +1183,12 @@ def main(feeds=None):
     registro.append({"t": ahora, "fuentes_ok": ok, "fuentes": len(feeds), "nuevas": len(nuevos), "notas": len(items),
                      "descartes": descartes, "agregador": [n for n, v in estado.items() if v.get("procedencia") == "agregador"],
                      "sin_datos": [n for n, v in estado.items() if not v.get("ok")]})
+    base = previo.get("ejecuciones")
+    ejecuciones = (base if isinstance(base, int) else CONTADOR_INICIAL) + 1
     datos = {
         "generado": ahora,
         "modo": "automatico",
+        "ejecuciones": ejecuciones,
         "estado_fuentes": estado,
         "items": items,
         "imagenes_editorial": imagenes_editoriales(previo.get("imagenes_editorial")),

@@ -588,6 +588,7 @@
     h += '<section class="nx-mod" aria-labelledby="nx-sis-h"><h2 id="nx-sis-h" class="nx-mod-h">Estado del sistema automático</h2><p class="nx-mod-sub">Siete cortes diarios, hora de Lima (UTC−5).</p><ol class="nx-cortes">' +
       HORAS.map(function (x) { var hh = String(x).padStart(2, "0") + ":17", cls = x * 60 + 17 <= hl ? "hecho" : x === sig ? "prox" : ""; return '<li class="' + cls + '"' + (cls === "prox" ? ' aria-current="time"' : "") + "><span>" + hh + "</span></li>"; }).join("") +
       '</ol><dl class="nx-sis"><div><dt>Última comprobación</dt><dd>' + (NOT.generado ? esc(fechaHora(NOT.generado)) : "sin registro") + "</dd></div><div><dt>Próxima</dt><dd>" + esc(proxima()) + "</dd></div><div><dt>Corte editorial</dt><dd>" + esc(fechaLarga(ED.corte)) + "</dd></div>" +
+      (typeof NOT.ejecuciones === "number" ? "<div><dt>Actualizaciones publicadas</dt><dd>" + NOT.ejecuciones.toLocaleString("es-PE") + "</dd></div>" : "") +
       (nombres.length ? "<div><dt>Medios con datos</dt><dd>" + ok + " de " + nombres.length + "</dd></div>" : "") + '</dl><a class="nx-all" href="#/fuentes">Estado de cada fuente →</a></section>';
     return h;
   }

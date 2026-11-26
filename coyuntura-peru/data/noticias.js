@@ -2,6 +2,7 @@
 window.NOTICIAS = {
  "generado": "2026-11-26T12:33:16Z",
  "modo": "automatico",
+ "ejecuciones": 206,
  "estado_fuentes": {
   "IDL-Reporteros": {
    "ok": true,
